@@ -359,6 +359,12 @@
           "bytes": 132908,
           "sha256": "6ea11b59d6d13838f3386ca9f644d3a0ae22b4f1e6af5253902be86583fff835",
           "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r05/sakura_hero_pbr_under_diagnostic.png",
+          "bytes": 882614,
+          "sha256": "7d1282422f030d2c3f7ae3da1827e499508be006fdfbc146ea2a554cff2e31b5",
+          "status": "pending_owner_upload"
         }
       ],
       "screenshotRefs": [
