@@ -1,6 +1,6 @@
 # OnlinePagodaVer2 — Design index
 
-**Status:** DRAFT — chờ owner duyệt. **Nguồn chuẩn hình ảnh:** `chuav2.mp4` do owner cung cấp, 46.87 s, 720×1556, 30 fps. **Ưu tiên:** làm giống video nhất có thể về thế giới 3D, bố cục, ánh sáng, camera, avatar và tương tác, không sao chép UI TikTok.
+**Status:** DRAFT — chờ owner duyệt toàn bộ design; **gift-camera behavior confirmed by owner 2026-11-20**. **Nguồn chuẩn hình ảnh:** `chuav2.mp4` do owner cung cấp, 46.87 s, 720×1556, 30 fps. **Ưu tiên:** làm giống video nhất có thể về thế giới 3D, bố cục, ánh sáng, camera, avatar và tương tác, không sao chép UI TikTok.
 
 ## Quy tắc quan trọng
 1. **VIDEO FIRST:** video là visual ground truth; V1 không quyết định kiến trúc đồ họa của V2.
@@ -18,6 +18,14 @@
 - [06 — Architecture và V1 reuse audit](06_ARCHITECTURE_AND_V1_AUDIT.md)
 - [07 — Quy tắc AI Visual / AI Code / Review PR](07_WORK_RULES.md)
 - [08 — Acceptance, benchmark, unanswered decisions](08_ACCEPTANCE_AND_DECISIONS.md)
+- [09 — Gift-aware camera director (owner-approved)](09_GIFT_CAMERA_DIRECTOR.md)
+- [10 — Performance profiles for RTX 3050 Ti 4GB / RTX 3060 8GB](10_GRAPHICS_PROFILES.md)
+
+## Camera behavior đã chốt với owner
+
+**Bình thường:** camera chạy cinematic liên tục qua close/community/aerial/under-tree. **Khi phát hiện quà hợp lệ:** chuyển cận đúng nhân vật của người tặng, hiển thị tên/avatar và hiệu ứng; giữ shot đủ lâu; tiếp tục lần lượt tới những người tặng khác trong hàng chờ. **Không còn quà chờ:** blend mượt trở lại cinematic. Quy tắc chuẩn ở [09_GIFT_CAMERA_DIRECTOR.md](09_GIFT_CAMERA_DIRECTOR.md); không giữ camera đứng yên khi chờ quà.
+
+**Máy đích:** RTX 3050 Ti 4GB (ECO) và RTX 3060 8GB (QUALITY); bắt buộc thiết kế cho máy 4GB hoạt động được sau benchmark, không chỉ máy 8GB. Xem [10_GRAPHICS_PROFILES.md](10_GRAPHICS_PROFILES.md).
 
 ## Cảnh bắt buộc
 - Cận 1 avatar ngồi xếp bằng trên lá sen nổi ở hồ nước xanh đậm.
