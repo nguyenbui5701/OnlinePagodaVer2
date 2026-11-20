@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "status": "PROTOTYPE_FOR_SA_REVIEW_NOT_APPROVED",
+  "status": "pending_owner_upload",
   "coordinateSystem": {
     "handedness": "right",
     "up": "+Y",
@@ -129,7 +129,8 @@
             "Sakura_petal_cream": 43020
           },
           "animationCount": 0,
-          "externalTextureCount": 0
+          "externalTextureCount": 0,
+          "deliveryStatus": "pending_owner_upload"
         },
         "eco": {
           "file": "sakura_hero_eco.glb",
@@ -172,7 +173,8 @@
             "Sakura_petal_blush": 21075
           },
           "animationCount": 0,
-          "externalTextureCount": 0
+          "externalTextureCount": 0,
+          "deliveryStatus": "pending_owner_upload"
         },
         "vtkGltfImporterRenderedViewCount": 4,
         "blenderImportVerified": false,
@@ -186,6 +188,45 @@
         "LOD has geometry reduction but no progressive screen-space fade implementation",
         "Production .blend source absent",
         "Not profiled together with TikTok LIVE Studio"
+      ],
+      "deliveryStatus": "pending_owner_upload",
+      "binaryFiles": [
+        {
+          "path": "Assets3D/Review/sakura_hero/r04/sakura_hero.glb",
+          "bytes": 7968912,
+          "sha256": "1f35bbc067e711d5b632b460a268f409df21774bc270b8a8fa5c3d9cef005751",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r04/sakura_hero_eco.glb",
+          "bytes": 2298240,
+          "sha256": "c4d4a73281d9c1ce2b3256ffff29aeebc0b12a0f5da5883c6026e38bcdfb7e28",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r04/sakura_hero_editable.obj",
+          "bytes": 20817143,
+          "sha256": "23ebf4e3116e08a0fd5205c3e163499bdffb644975c25dadc533ee42ef889411",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r04/sakura_hero_4_views.jpg",
+          "bytes": 508621,
+          "sha256": "ddb51da6f913eecfefd576081407dbae73623d8bb1181163607137903f2d6a93",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r04/sakura_hero_preview_top.png",
+          "bytes": 781512,
+          "sha256": "4c06ffc7419021214f6a17df3d07e4105d046c3e2e86e209a6528a6036495b54",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r04/sakura_hero_preview_under.png",
+          "bytes": 1001000,
+          "sha256": "6fba59edb6ec9a810a5fe2dd2d5d016524fc3a7f12007e253d0349c7ac70cce3",
+          "status": "pending_owner_upload"
+        }
       ]
     }
   ]
