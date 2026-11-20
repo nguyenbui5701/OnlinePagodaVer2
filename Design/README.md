@@ -20,6 +20,15 @@
 - [08 — Acceptance, benchmark, unanswered decisions](08_ACCEPTANCE_AND_DECISIONS.md)
 - [09 — Gift-aware camera director (owner-approved)](09_GIFT_CAMERA_DIRECTOR.md)
 - [10 — Performance profiles for RTX 3050 Ti 4GB / RTX 3060 8GB](10_GRAPHICS_PROFILES.md)
+- [11 — Real 3D asset production: AI 3D + Blender + GLB](11_3D_ASSET_PRODUCTION_PIPELINE.md)
+- [12 — P0 priorities and roles for AI 3D / Codex / SA](12_CORE_PRIORITIES_AND_AI_ROLES.md)
+- [13 — Cross-AI asset and event integration contract](13_3D_EVENT_INTEGRATION_CONTRACT.md)
+
+## P0 focus and AI ownership (confirmed 2026-11-20)
+
+**P0-A = V2 Event Engine (Codex)**: TikTok event adapter, validated identities, session/seat registry, gift FIFO/confirmation, typed state and tests. **P0-B = 3D Scene + Camera (AI 3D + Codex)**: AI 3D delivers source 3D meshes/GLBs/animations, Codex only writes renderer/shader/LOD/camera code to consume approved assets. **SA** reviews both, owns design changes and cross-AI contract. Postpone noncritical admin panels, rituals, fortune and other V1 features until P0 runs like video. See 11,12,13.
+
+**No Codex 3D/art generation** and no pretend-3D screenshots. An optional AI 3D generation service (e.g. connected fal if compatible) must be verified to output real mesh; Blender handles cleanup and GLB export.
 
 ## Camera behavior đã chốt với owner
 
