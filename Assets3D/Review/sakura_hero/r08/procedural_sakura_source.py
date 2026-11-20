@@ -2,7 +2,7 @@
 
 R08 targeted response to SA R07 review (2026-11-20):
 * Fewer exposed LOW-POLY ECO core surfaces: recessed cores + blossom surface coverage,
-  targeted 0.8% local hole-patch budget for ECO, no uniform doubling.
+  targeted ~1.8% ECO triangle increase vs R07, no uniform doubling.
 * Shared lobe layout QUALITY/ECO; layered, overlapping irregular crown; filled inner ring.
 * Taller offset leader instead of low equal-width Y split; tapered braided roots;
   short randomized golden bark fissures in place of continuous parallel ribbons.
