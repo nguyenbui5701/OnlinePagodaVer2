@@ -36,6 +36,10 @@ Reference: large head, compact torso, rounded hands/feet, sit cross-legged in ze
 - Distance fog pink-violet to integrate mountains and avatars, preserving foreground contrast.
 - Avoid photorealistic textures; video is stylized.
 
+## AI 3D vs Codex ownership (owner-confirmed)
+
+AI 3D specialist produces **real assets**: Blender source, GLB mesh, textures, rig/animation and asset manifest; can use compatible 3D generation tools for initial meshes and Blender for cleaning/optimization. Codex **does not generate images or 3D models**; it writes water/fog/particle shaders, scene graph, loads GLBs, manages GPU instancing, scene and camera runtime. SA reviews each side independently then combined video fidelity. Production formats, review gates and handoff are specified in [11](11_3D_ASSET_PRODUCTION_PIPELINE.md) and [13](13_3D_EVENT_INTEGRATION_CONTRACT.md).
+
 ## Pipeline & technology
 
 Three.js / Babylon.js WebGL renderer candidates; need first 3D spike, camera test, GPU benchmark. Existing V1 PixiJS renderer is 2D, not primary implementation for this scene. Use `glTF/GLB` with original models + compressed textures; suitable instancing and LOD. Avoid drawing one AI-generated image as a fake 3D scene. AI image output is **concept**, not rigged/optimized production model.
