@@ -1,0 +1,387 @@
+{
+  "version": "0.2.0",
+  "status": "pending_owner_upload",
+  "approval": "PROTOTYPE_R05_NOT_APPROVED_FOR_RUNTIME",
+  "coordinateSystem": {
+    "handedness": "right",
+    "up": "+Y",
+    "actorForward": "+Z",
+    "metersPerUnit": 1,
+    "waterSurfaceY": 0
+  },
+  "assets": [
+    {
+      "assetId": "sakura_hero",
+      "revision": 5,
+      "kind": "environment_tree",
+      "runtime": "sakura_hero.glb",
+      "path": "Assets3D/Review/sakura_hero/r05/sakura_hero.glb",
+      "source": "Assets3D/Review/sakura_hero/r05/procedural_sakura_source.py",
+      "sourceBlend": null,
+      "editableSource": "sakura_hero_editable.obj",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "forwardAxis": "+Z (radial tree)",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "boundsMeters": [
+        27.3309,
+        22.6931,
+        26.5596
+      ],
+      "triangleCount": 290060,
+      "meshCount": 11,
+      "materialCount": 11,
+      "texturesAndResolutions": [],
+      "animations": [],
+      "lods": [
+        {
+          "assetId": "sakura_hero_eco",
+          "path": "Assets3D/Review/sakura_hero/r05/sakura_hero_eco.glb",
+          "runtime": "sakura_hero_eco.glb",
+          "triangleCount": 63874,
+          "meshCount": 10,
+          "materialCount": 10
+        }
+      ],
+      "validation": {
+        "quality": {
+          "file": "sakura_hero.glb",
+          "path": "Assets3D/Review/sakura_hero/r05/sakura_hero.glb",
+          "bytes": 8971236,
+          "sha256": "fabe3eae4eb6efb37ed4ed185dda55a124638a63dfcf05b6ce8eb5685b6555d8",
+          "triangleCount": 290060,
+          "vertexCount": 458817,
+          "meshCount": 11,
+          "materialCount": 11,
+          "boundsMin": [
+            -13.4746,
+            -0.7467,
+            -12.2807
+          ],
+          "boundsMax": [
+            13.8563,
+            21.9464,
+            14.2789
+          ],
+          "boundsMeters": [
+            27.3309,
+            22.6931,
+            26.5596
+          ],
+          "materials": {
+            "Trunk_bark_plumblack": {
+              "triangles": 2144,
+              "vertices": 1094,
+              "doubleSided": false,
+              "emissiveFactor": null
+            },
+            "Branches_plum": {
+              "triangles": 7700,
+              "vertices": 3994,
+              "doubleSided": false,
+              "emissiveFactor": null
+            },
+            "Golden_bark_veins": {
+              "triangles": 4500,
+              "vertices": 2292,
+              "doubleSided": false,
+              "emissiveFactor": [
+                0.55,
+                0.24,
+                0.05
+              ]
+            },
+            "Canopy_rose": {
+              "triangles": 2080,
+              "vertices": 1092,
+              "doubleSided": false,
+              "emissiveFactor": [
+                0.42,
+                0.25,
+                0.23
+              ]
+            },
+            "Canopy_peach": {
+              "triangles": 2000,
+              "vertices": 1050,
+              "doubleSided": false,
+              "emissiveFactor": [
+                0.42,
+                0.25,
+                0.23
+              ]
+            },
+            "Canopy_depth_rose": {
+              "triangles": 2000,
+              "vertices": 1050,
+              "doubleSided": false,
+              "emissiveFactor": [
+                0.42,
+                0.25,
+                0.23
+              ]
+            },
+            "Sakura_petal_blush": {
+              "triangles": 84870,
+              "vertices": 141450,
+              "doubleSided": true,
+              "emissiveFactor": [
+                0.78,
+                0.55,
+                0.52
+              ]
+            },
+            "Sakura_flower_gold": {
+              "triangles": 2756,
+              "vertices": 3445,
+              "doubleSided": false,
+              "emissiveFactor": null
+            },
+            "Sakura_petal_pink": {
+              "triangles": 82980,
+              "vertices": 138300,
+              "doubleSided": true,
+              "emissiveFactor": [
+                0.78,
+                0.55,
+                0.52
+              ]
+            },
+            "Sakura_petal_cream": {
+              "triangles": 70860,
+              "vertices": 118100,
+              "doubleSided": true,
+              "emissiveFactor": [
+                0.78,
+                0.55,
+                0.52
+              ]
+            },
+            "Sakura_petal_warm_rose": {
+              "triangles": 28170,
+              "vertices": 46950,
+              "doubleSided": true,
+              "emissiveFactor": [
+                0.78,
+                0.55,
+                0.52
+              ]
+            }
+          },
+          "deliveryStatus": "pending_owner_upload"
+        },
+        "eco": {
+          "file": "sakura_hero_eco.glb",
+          "path": "Assets3D/Review/sakura_hero/r05/sakura_hero_eco.glb",
+          "bytes": 1887408,
+          "sha256": "2ab6357a63d1c6b827b795b998ebdb0b6008d716544c9daa04e17a22a656521b",
+          "triangleCount": 63874,
+          "vertexCount": 93949,
+          "meshCount": 10,
+          "materialCount": 10,
+          "boundsMin": [
+            -13.3071,
+            -0.7807,
+            -11.6965
+          ],
+          "boundsMax": [
+            13.4731,
+            21.6785,
+            11.9372
+          ],
+          "boundsMeters": [
+            26.7802,
+            22.4592,
+            23.6337
+          ],
+          "materials": {
+            "Trunk_bark_plumblack": {
+              "triangles": 1226,
+              "vertices": 631,
+              "doubleSided": false,
+              "emissiveFactor": null
+            },
+            "Branches_plum": {
+              "triangles": 3148,
+              "vertices": 1642,
+              "doubleSided": false,
+              "emissiveFactor": null
+            },
+            "Golden_bark_veins": {
+              "triangles": 3000,
+              "vertices": 1528,
+              "doubleSided": false,
+              "emissiveFactor": [
+                0.55,
+                0.24,
+                0.05
+              ]
+            },
+            "Canopy_rose": {
+              "triangles": 1200,
+              "vertices": 630,
+              "doubleSided": false,
+              "emissiveFactor": [
+                0.42,
+                0.25,
+                0.23
+              ]
+            },
+            "Canopy_peach": {
+              "triangles": 1200,
+              "vertices": 630,
+              "doubleSided": false,
+              "emissiveFactor": [
+                0.42,
+                0.25,
+                0.23
+              ]
+            },
+            "Canopy_depth_rose": {
+              "triangles": 1120,
+              "vertices": 588,
+              "doubleSided": false,
+              "emissiveFactor": [
+                0.42,
+                0.25,
+                0.23
+              ]
+            },
+            "Sakura_petal_pink": {
+              "triangles": 15780,
+              "vertices": 26300,
+              "doubleSided": true,
+              "emissiveFactor": [
+                0.78,
+                0.55,
+                0.52
+              ]
+            },
+            "Sakura_petal_cream": {
+              "triangles": 14160,
+              "vertices": 23600,
+              "doubleSided": true,
+              "emissiveFactor": [
+                0.78,
+                0.55,
+                0.52
+              ]
+            },
+            "Sakura_petal_warm_rose": {
+              "triangles": 5880,
+              "vertices": 9800,
+              "doubleSided": true,
+              "emissiveFactor": [
+                0.78,
+                0.55,
+                0.52
+              ]
+            },
+            "Sakura_petal_blush": {
+              "triangles": 17160,
+              "vertices": 28600,
+              "doubleSided": true,
+              "emissiveFactor": [
+                0.78,
+                0.55,
+                0.52
+              ]
+            }
+          },
+          "deliveryStatus": "pending_owner_upload"
+        },
+        "vtkgltfImporterFourViews": true,
+        "viewMode": "VTK GLB import with Phong/ambient preview lights; NOT a Three.js PBR proof",
+        "vtkPbrBaselineUnderCanopyDark": true,
+        "blenderImportVerified": false,
+        "threeJsImportVerified": false,
+        "gpuBenchmarkVerified": false,
+        "paidGenerationUsed": false
+      },
+      "binaryFiles": [
+        {
+          "path": "Assets3D/Review/sakura_hero/r05/sakura_hero.glb",
+          "bytes": 8971236,
+          "sha256": "fabe3eae4eb6efb37ed4ed185dda55a124638a63dfcf05b6ce8eb5685b6555d8",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r05/sakura_hero_eco.glb",
+          "bytes": 1887408,
+          "sha256": "2ab6357a63d1c6b827b795b998ebdb0b6008d716544c9daa04e17a22a656521b",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r05/sakura_hero_editable.obj",
+          "bytes": 23405821,
+          "sha256": "pending_calculation",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r05/sakura_hero_r05_4_views.jpg",
+          "bytes": 253452,
+          "sha256": "pending_calculation",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r05/sakura_hero_preview_top.png",
+          "bytes": 742888,
+          "sha256": "pending_calculation",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r05/sakura_hero_preview_under.png",
+          "bytes": 896456,
+          "sha256": "pending_calculation",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r05/sakura_hero_preview_side.png",
+          "bytes": 698396,
+          "sha256": "pending_calculation",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r05/sakura_hero_preview_three_quarter.png",
+          "bytes": 708221,
+          "sha256": "pending_calculation",
+          "status": "pending_owner_upload"
+        },
+        {
+          "path": "Assets3D/Review/sakura_hero/r05/r05_reference_comparison.jpg",
+          "bytes": 132908,
+          "sha256": "pending_calculation",
+          "status": "pending_owner_upload"
+        }
+      ],
+      "screenshotRefs": [
+        "sakura_hero_preview_three_quarter.png",
+        "sakura_hero_preview_top.png",
+        "sakura_hero_preview_side.png",
+        "sakura_hero_preview_under.png"
+      ],
+      "license": "Original procedural geometry for OnlinePagodaV2; owner may modify/use commercially",
+      "provenance": {
+        "method": "Python/trimesh local procedural mesh, no paid API, no third-party mesh or screenshot texture",
+        "reference": "Owner chuav2.mp4",
+        "render": "Same actual imported GLB in four VTK camera poses",
+        "softwareCostVND": 0
+      },
+      "knownRisks": [
+        "VTK PBR without IBL still produces dark facets; actual Blender/Three.js PBR validation pending",
+        "Flower petal triangles and lobes still geometric versus soft video reference",
+        "Main trunk gold improvements need SA visual recheck",
+        "Blender source absent; editable OBJ and Python included",
+        "Live GPU performance on RTX 3050 Ti and 3060 not tested",
+        "Binary files not present on this GitHub branch pending owner upload"
+      ]
+    }
+  ]
+}
