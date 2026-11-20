@@ -61,6 +61,12 @@ Choose renderer only after measurement; **Three.js preferred exploration candida
 - V1 `client.ts` snapshot/delta with revision checks requires V2 counterpart data schema.
 - Both V1/V2 should keep separate config/session/ports/capture name to avoid impacting production live.
 
+## V2 event-driven camera addendum (owner-approved)
+
+V2 requires a **GiftFocusScheduler** independent from TikTok worker and 3D renderer. Ingest validated identity-scoped gift observations/final confirmations, collapse combo repeats and same-giver pending items, FIFO across distinct gifters, bound queue and TTL, expose instrumentation. `CameraDirector3D` consumes the scheduler, switches from auto cinematic to giver-focus shot and returns only when queue is empty. `AvatarRegistry/SeatManager` ensures the giver has a focusable position and nameplate; `GiftEffectRouter` emits targeted FX. **Do not** reuse V1 camera-switch implementation as-is. See [09](09_GIFT_CAMERA_DIRECTOR.md).
+
+Rendering must have **two quality profiles** for RTX 3050 Ti 4GB and RTX 3060 8GB; choose renderer by actual 4GB-machine benchmark, not by theoretical scene complexity. See [10](10_GRAPHICS_PROFILES.md).
+
 ## Repositories
 
 V1: source only for reference/copy targeted files, **read-only** for this project. V2: own repo, no auto-mutating original. Never commit credential files or node_modules/dist. Design folder only until approved.
