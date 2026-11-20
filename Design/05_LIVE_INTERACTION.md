@@ -27,7 +27,7 @@ flowchart LR
 
 Use `userKey` normalized identity, room/session scoped. Per-user actor instance exactly 1; update label/avatar and lastSeen if event repeats. Scene registry separate from shader/mesh objects. Seat manager assigns deterministic unique lily pad, and frees it after TTL/graceful departure; bulk queue on seat shortage.
 
-## Event to visual mapping (PROPOSAL, not proven video backend)
+## Event to visual mapping (gift camera behavior CONFIRMED by owner; other event spawn defaults proposed)
 
 | Event | Default V2 candidate | Must not do |
 |---|---|---|
@@ -35,8 +35,8 @@ Use `userKey` normalized identity, room/session scoped. Per-user actor instance 
 | chat | if configured spawn or refresh avatar, show moderated small bubble | Don't execute untrusted chat as HTML/commands |
 | follow | only when connector support/verified, may spawn/focus | Do not pretend existing worker receives follow by default |
 | like | optionally trigger small soft ripple/tree pulse, rate-limited | Never spawn hundreds of actors from like count |
-| gift: rose | avatar focus / petals / ripple / thanks; combo progression vs finished | Never double count streak |
-| higher gift | larger pink blossom shower, gentle group acknowledgment | Don't flood camera, no forced high-value gift requirement |
+| gift: rose | **Required:** enqueue giver for close-up, show their avatar/name and pink petals/ripple; process other gifters FIFO; return cinematic when empty. Provisional combo progress acknowledged without confirmed count. | Never double count streak or repeatedly refocus same progress |
+| higher gift | **Required same fairness:** focus its giver in FIFO order; heavier FX only if performance allows | Don't jump another giver ahead because gift costs more; don't flood camera |
 | roomUser | update viewer count only | Never equate total count with per-user identities |
 | disconnect/reconnect | pause arrivals; preserve and resync scene by room/session; no dup | Never replay stale events or copy LIVE credentials |
 
@@ -51,6 +51,12 @@ IMPORTANT: In old V1 `engine.ts`, `member` spawn depends on `autoJoinMember`; ch
 
 Use active nameplate culling (distance, priority, overlap), grapheme-safe Unicode clipping. Mask/clean text. Queue and TTL; no raw TikTok user IDs written to public logs, no token/cookie in source, do not reuse V1 production session files. Throttle FX and camera changes. On burst, retain true state and discard redundant visual effects first.
 
+## Camera/gift integration: approved rule
+
+**Owner confirmed:** when no gift queue, camera rotates continuously as cinematic. When a gift is recorded, camera focuses close-up on the correct giver's avatar and effect, then focuses the next queued *different giver* if any; once none remain, smoothly resumes cinema. See [09_GIFT_CAMERA_DIRECTOR.md](09_GIFT_CAMERA_DIRECTOR.md) for queue/coalescing/transition/event-lifecycle spec and [10_GRAPHICS_PROFILES.md](10_GRAPHICS_PROFILES.md) for 4GB/8GB GPU constraints.
+
+**Key implementation detail:** reserve/ensure a temporary avatar for the giver even if regular spawnOnChat or member is disabled. Do not infer that viewer counts equal identities. With combo events, allow prompt provisional camera response for valid observed streak but only show *confirmed* count/reward after finished event; no duplicate camera entries per progress packet.
+
 ## Mock demonstrations
 
 Recorded/synthetic fixture sequence:
@@ -59,3 +65,7 @@ Recorded/synthetic fixture sequence:
 - One rose streak with progress, then finished -> one logical confirmed sequence.
 - Like storm 500 units -> <= configured FX rate, no phantom actors.
 - Reconnect same room, then new room -> no historical replay; reset when room changes.
+- No gifts for >=45s -> continuous cinematic cycle, camera never freezes.
+- A gives, then B/C before A shot ends -> close A, B, C then return cinematic; correct name/FX each time.
+- A sends 5 combo progress packets and one finished -> one giver focus/queue slot, final confirmed quantity accurate.
+- Gift giver not previously spawned -> create visible seat/temporary avatar then focus; if capacity exhausted, show non-misleading fallback instead of wrong avatar.
