@@ -1,0 +1,292 @@
+{
+  "r05Quality": {
+    "name": "sakura_hero.glb",
+    "bytes": 8971236,
+    "sha256": "fabe3eae4eb6efb37ed4ed185dda55a124638a63dfcf05b6ce8eb5685b6555d8",
+    "gltfMagic": "glTF",
+    "triangles": 290060,
+    "vertices": 458817,
+    "meshCount": 11,
+    "materialCount": 11,
+    "materials": [
+      "Trunk_bark_plumblack",
+      "Branches_plum",
+      "Golden_bark_veins",
+      "Canopy_rose",
+      "Canopy_peach",
+      "Canopy_depth_rose",
+      "Sakura_petal_blush",
+      "Sakura_flower_gold",
+      "Sakura_petal_pink",
+      "Sakura_petal_cream",
+      "Sakura_petal_warm_rose"
+    ],
+    "triangleByMaterial": {
+      "Trunk_bark_plumblack": 2144,
+      "Branches_plum": 7700,
+      "Golden_bark_veins": 4500,
+      "Canopy_rose": 2080,
+      "Canopy_peach": 2000,
+      "Canopy_depth_rose": 2000,
+      "Sakura_petal_blush": 84870,
+      "Sakura_flower_gold": 2756,
+      "Sakura_petal_pink": 82980,
+      "Sakura_petal_cream": 70860,
+      "Sakura_petal_warm_rose": 28170
+    },
+    "petalTriangles": 266880,
+    "petalTrianglePct": 92.0,
+    "zeroAreaTriangleCount": 0,
+    "boundsMin": [
+      -13.4746,
+      -0.7467,
+      -12.2807
+    ],
+    "boundsMax": [
+      13.8563,
+      21.9464,
+      14.2789
+    ],
+    "boundsMeters": [
+      27.3309,
+      22.6931,
+      26.5596
+    ]
+  },
+  "r05Eco": {
+    "name": "sakura_hero_eco.glb",
+    "bytes": 1887408,
+    "sha256": "2ab6357a63d1c6b827b795b998ebdb0b6008d716544c9daa04e17a22a656521b",
+    "gltfMagic": "glTF",
+    "triangles": 63874,
+    "vertices": 93949,
+    "meshCount": 10,
+    "materialCount": 10,
+    "materials": [
+      "Trunk_bark_plumblack",
+      "Branches_plum",
+      "Golden_bark_veins",
+      "Canopy_rose",
+      "Canopy_peach",
+      "Canopy_depth_rose",
+      "Sakura_petal_pink",
+      "Sakura_petal_cream",
+      "Sakura_petal_warm_rose",
+      "Sakura_petal_blush"
+    ],
+    "triangleByMaterial": {
+      "Trunk_bark_plumblack": 1226,
+      "Branches_plum": 3148,
+      "Golden_bark_veins": 3000,
+      "Canopy_rose": 1200,
+      "Canopy_peach": 1200,
+      "Canopy_depth_rose": 1120,
+      "Sakura_petal_pink": 15780,
+      "Sakura_petal_cream": 14160,
+      "Sakura_petal_warm_rose": 5880,
+      "Sakura_petal_blush": 17160
+    },
+    "petalTriangles": 52980,
+    "petalTrianglePct": 82.9,
+    "zeroAreaTriangleCount": 0,
+    "boundsMin": [
+      -13.3071,
+      -0.7807,
+      -11.6965
+    ],
+    "boundsMax": [
+      13.4731,
+      21.6785,
+      11.9372
+    ],
+    "boundsMeters": [
+      26.7802,
+      22.4592,
+      23.6337
+    ]
+  },
+  "r06Quality": {
+    "name": "sakura_hero.glb",
+    "bytes": 3962840,
+    "sha256": "076aa8abb662ec4328d7d5260c7badce4e5403f80ca0868b5af56c28f247593d",
+    "gltfMagic": "glTF",
+    "triangles": 148193,
+    "vertices": 199243,
+    "meshCount": 11,
+    "materialCount": 11,
+    "materials": [
+      "Trunk_bark_plumblack",
+      "Branches_plum",
+      "Golden_bark_veins",
+      "Canopy_rose",
+      "Canopy_peach",
+      "Canopy_depth_rose",
+      "Sakura_petal_cream",
+      "Sakura_flower_gold",
+      "Sakura_petal_pink",
+      "Sakura_petal_warm_rose",
+      "Sakura_petal_blush"
+    ],
+    "triangleByMaterial": {
+      "Trunk_bark_plumblack": 2288,
+      "Branches_plum": 7700,
+      "Golden_bark_veins": 3600,
+      "Canopy_rose": 8960,
+      "Canopy_peach": 8960,
+      "Canopy_depth_rose": 8960,
+      "Sakura_petal_cream": 30240,
+      "Sakura_flower_gold": 2200,
+      "Sakura_petal_pink": 32925,
+      "Sakura_petal_warm_rose": 10500,
+      "Sakura_petal_blush": 31860
+    },
+    "petalTriangles": 105525,
+    "petalTrianglePct": 71.2,
+    "zeroAreaTriangleCount": 0,
+    "boundsMin": [
+      -13.095,
+      -0.9319,
+      -12.1726
+    ],
+    "boundsMax": [
+      16.9741,
+      22.5002,
+      12.1679
+    ],
+    "boundsMeters": [
+      30.0691,
+      23.432,
+      24.3404
+    ]
+  },
+  "r06Eco": {
+    "name": "sakura_hero_eco.glb",
+    "bytes": 898296,
+    "sha256": "3ac8d166dc7423a118483b7bdb520520086e06d5ab7f7bdf6f051d0ef479c102",
+    "gltfMagic": "glTF",
+    "triangles": 32609,
+    "vertices": 42782,
+    "meshCount": 10,
+    "materialCount": 10,
+    "materials": [
+      "Trunk_bark_plumblack",
+      "Branches_plum",
+      "Golden_bark_veins",
+      "Canopy_rose",
+      "Canopy_peach",
+      "Canopy_depth_rose",
+      "Sakura_petal_warm_rose",
+      "Sakura_petal_blush",
+      "Sakura_petal_pink",
+      "Sakura_petal_cream"
+    ],
+    "triangleByMaterial": {
+      "Trunk_bark_plumblack": 1226,
+      "Branches_plum": 3148,
+      "Golden_bark_veins": 2040,
+      "Canopy_rose": 1280,
+      "Canopy_peach": 1200,
+      "Canopy_depth_rose": 1200,
+      "Sakura_petal_warm_rose": 2850,
+      "Sakura_petal_blush": 7005,
+      "Sakura_petal_pink": 6870,
+      "Sakura_petal_cream": 5790
+    },
+    "petalTriangles": 22515,
+    "petalTrianglePct": 69.0,
+    "zeroAreaTriangleCount": 0,
+    "boundsMin": [
+      -13.3731,
+      -1.0026,
+      -12.3424
+    ],
+    "boundsMax": [
+      13.6244,
+      21.5569,
+      13.4874
+    ],
+    "boundsMeters": [
+      26.9975,
+      22.5595,
+      25.8298
+    ]
+  },
+  "r06ABExplicit": {
+    "name": "sakura_hero.glb",
+    "bytes": 7339652,
+    "sha256": "464fc8366fe29bae782dee8d9cd6a7c0ff7f877bdfabf2e05b58430bd146e4f8",
+    "gltfMagic": "glTF",
+    "triangles": 253718,
+    "vertices": 375118,
+    "meshCount": 11,
+    "materialCount": 11,
+    "materials": [
+      "Trunk_bark_plumblack",
+      "Branches_plum",
+      "Golden_bark_veins",
+      "Canopy_rose",
+      "Canopy_peach",
+      "Canopy_depth_rose",
+      "Sakura_petal_cream",
+      "Sakura_flower_gold",
+      "Sakura_petal_pink",
+      "Sakura_petal_warm_rose",
+      "Sakura_petal_blush"
+    ],
+    "triangleByMaterial": {
+      "Trunk_bark_plumblack": 2288,
+      "Branches_plum": 7700,
+      "Golden_bark_veins": 3600,
+      "Canopy_rose": 8960,
+      "Canopy_peach": 8960,
+      "Canopy_depth_rose": 8960,
+      "Sakura_petal_cream": 60480,
+      "Sakura_flower_gold": 2200,
+      "Sakura_petal_pink": 65850,
+      "Sakura_petal_warm_rose": 21000,
+      "Sakura_petal_blush": 63720
+    },
+    "petalTriangles": 211050,
+    "petalTrianglePct": 83.2,
+    "zeroAreaTriangleCount": 0,
+    "boundsMin": [
+      -13.095,
+      -0.9319,
+      -12.1726
+    ],
+    "boundsMax": [
+      16.9741,
+      22.5002,
+      12.1679
+    ],
+    "boundsMeters": [
+      30.0691,
+      23.432,
+      24.3404
+    ]
+  },
+  "pbrImageHeuristicOnly": {
+    "R05_PBR_under": {
+      "upperImageMedianLuma8bit": 146.2,
+      "upperImagePctUnder50": 0.0
+    },
+    "R06_single_PBR_under": {
+      "upperImageMedianLuma8bit": 134.9,
+      "upperImagePctUnder50": 0.0
+    },
+    "R06_explicit_PBR_under": {
+      "upperImageMedianLuma8bit": 135.3,
+      "upperImagePctUnder50": 0.0
+    },
+    "R06_single_NO_IBL": {
+      "upperImageMedianLuma8bit": 79.5,
+      "upperImagePctUnder50": 20.34
+    },
+    "R06_ECO_PBR_under": {
+      "upperImageMedianLuma8bit": 127.7,
+      "upperImagePctUnder50": 0.0
+    }
+  },
+  "qualityGeometryReductionPct": 48.91,
+  "ecoGeometryReductionPct": 48.95
+}
