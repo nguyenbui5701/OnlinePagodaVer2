@@ -1,0 +1,379 @@
+{
+  "revision": "R07",
+  "status": "GEOMETRY_PROTOTYPE_NOT_PRODUCTION_APPROVED",
+  "commitBranch": "assets/sakura-hero-r04-sa-review",
+  "assetId": "sakura_hero",
+  "quality": {
+    "filename": "sakura_hero.glb",
+    "repoPath": "Assets3D/Review/sakura_hero/r07/sakura_hero.glb",
+    "bytes": 4494556,
+    "sha256": "a6571ebc56bd360a550231fa7ee46572c7bb227f57d99755941da43faf6d1424",
+    "triangles": 158701,
+    "vertices": 215101,
+    "meshCount": 11,
+    "materialCount": 11,
+    "materials": [
+      "Trunk_bark_plumblack",
+      "Branches_plum",
+      "Golden_bark_veins",
+      "Canopy_depth_rose",
+      "Canopy_peach",
+      "Canopy_rose",
+      "Sakura_petal_pink",
+      "Sakura_flower_gold",
+      "Sakura_petal_blush",
+      "Sakura_petal_cream",
+      "Sakura_petal_warm_rose"
+    ],
+    "boundsMin": [
+      -12.9873,
+      -0.9482,
+      -11.9591
+    ],
+    "boundsMax": [
+      13.6852,
+      24.5706,
+      11.8321
+    ],
+    "boundsMeters": [
+      26.6725,
+      25.5189,
+      23.7912
+    ],
+    "nonFiniteVertices": false,
+    "areaLessThan1e-12": 0,
+    "petalDoubleSided": true,
+    "externalTextures": 0,
+    "animations": 0,
+    "status": "pending_owner_upload"
+  },
+  "eco": {
+    "filename": "sakura_hero_eco.glb",
+    "repoPath": "Assets3D/Review/sakura_hero/r07/sakura_hero_eco.glb",
+    "bytes": 1358528,
+    "sha256": "2ef5ab5a49bf017c6b3d16ac7b3902a7e66be1a2e7fdb0609967ea409bd65a79",
+    "triangles": 43014,
+    "vertices": 69518,
+    "meshCount": 10,
+    "materialCount": 10,
+    "materials": [
+      "Trunk_bark_plumblack",
+      "Branches_plum",
+      "Golden_bark_veins",
+      "Canopy_depth_rose",
+      "Canopy_peach",
+      "Canopy_rose",
+      "Sakura_petal_blush",
+      "Sakura_petal_warm_rose",
+      "Sakura_petal_pink",
+      "Sakura_petal_cream"
+    ],
+    "boundsMin": [
+      -13.0913,
+      -0.9101,
+      -12.0439
+    ],
+    "boundsMax": [
+      13.8936,
+      24.6721,
+      12.0484
+    ],
+    "boundsMeters": [
+      26.9849,
+      25.5822,
+      24.0923
+    ],
+    "nonFiniteVertices": false,
+    "areaLessThan1e-12": 0,
+    "petalDoubleSided": true,
+    "externalTextures": 0,
+    "animations": 0,
+    "status": "pending_owner_upload"
+  },
+  "baselineR06": {
+    "qualityTriangles": 148193,
+    "ecoTriangles": 32609,
+    "qualityBytes": 3962840,
+    "ecoBytes": 898296
+  },
+  "baselineR05": {
+    "qualityTriangles": 290060,
+    "ecoTriangles": 63874
+  },
+  "percentChangeR06": {
+    "QUALITY_tri_pct": 7.09,
+    "ECO_tri_pct": 31.91
+  },
+  "textureSummary": "no external texture; baseColorFactor and emissiveFactor PBR factors only",
+  "backfacePolicy": "single-surface 3 triangles per petal QUALITY / 2 triangles per petal ECO, glTF doubleSided=true; no explicit reversed back faces",
+  "pbrTest": {
+    "renderer": "VTK 9.6.2 native vtkGLTFImporter + vtkProperty interpolation=PBR",
+    "shader": "PBR, no Phong override",
+    "environment": "synthetic sky [216,181,195] → middle [172,132,165] → ground [124,98,142], 256x128 env texture",
+    "imageBasedLighting": true,
+    "lights": [
+      {
+        "position": [
+          22,
+          40,
+          26
+        ],
+        "intensity": 1.25,
+        "color": [
+          1,
+          0.84,
+          0.82
+        ]
+      },
+      {
+        "position": [
+          -18,
+          23,
+          -15
+        ],
+        "intensity": 0.65,
+        "color": [
+          1,
+          0.76,
+          0.89
+        ]
+      },
+      {
+        "position": [
+          6,
+          3,
+          18
+        ],
+        "intensity": 0.84,
+        "color": [
+          1,
+          0.74,
+          0.83
+        ]
+      }
+    ],
+    "cameras": {
+      "aerial_15s_approx": {
+        "position": [
+          3,
+          54,
+          10
+        ],
+        "target": [
+          0,
+          13.5,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ],
+        "verticalFovDegrees": 50
+      },
+      "under": {
+        "position": [
+          3,
+          4.8,
+          18.5
+        ],
+        "target": [
+          0,
+          11.9,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "verticalFovDegrees": 44
+      },
+      "trunk_33s_approx": {
+        "position": [
+          4.8,
+          4,
+          11.5
+        ],
+        "target": [
+          0,
+          6.6,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "verticalFovDegrees": 56
+      }
+    },
+    "resolution": [
+      420,
+      480
+    ],
+    "iblOffControl": "r07_eco_under_no_ibl_pbr.png: darker faceted petals recur, LIGHTING DEPENDENCY REMAINS",
+    "knownLimit": "PBR parity NOT verified in Blender or Three.js; 15s/33s video focal parameters unknown, camera only approximate"
+  },
+  "blenderImportVerified": false,
+  "threeJsGLTFLoaderVerified": false,
+  "ownerGPUFpsBenchmarkVerified": false,
+  "liveStudioTested": false,
+  "paidServiceSpendVND": 0,
+  "binaryHandoff": [
+    {
+      "filename": "sakura_hero.glb",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/sakura_hero.glb",
+      "bytes": 4494556,
+      "sha256": "a6571ebc56bd360a550231fa7ee46572c7bb227f57d99755941da43faf6d1424",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "sakura_hero_eco.glb",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/sakura_hero_eco.glb",
+      "bytes": 1358528,
+      "sha256": "2ef5ab5a49bf017c6b3d16ac7b3902a7e66be1a2e7fdb0609967ea409bd65a79",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "sakura_hero_editable.obj",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/sakura_hero_editable.obj",
+      "bytes": 11289053,
+      "sha256": "86612d6e2d5c815b99f745147718434a35595b4e9dbcf4a3b029d756a00126f8",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r07_quality_top_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r07_quality_top_pbr.png",
+      "bytes": 242774,
+      "sha256": "17e648ea7c74a5cb495f65c2b8de9d580154a275d1025e8fd38760569f04b619",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r07_quality_under_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r07_quality_under_pbr.png",
+      "bytes": 214494,
+      "sha256": "0a3398c3a79a4f9f72f1479525d337dc8dd9b6f9d667548af43e15b68d2364ae",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r07_quality_three_quarter_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r07_quality_three_quarter_pbr.png",
+      "bytes": 208924,
+      "sha256": "1ca7cc556d612bbdfd913e006caf4d5e890d56053b06bd26413af10306047e42",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r07_quality_trunk_33s_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r07_quality_trunk_33s_pbr.png",
+      "bytes": 148279,
+      "sha256": "53d6cbdefa855561c1f23ee57f5717255f01156535937b4c1307654f90dd96af",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r07_eco_top_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r07_eco_top_pbr.png",
+      "bytes": 187786,
+      "sha256": "9efb98f325e4499beebb2dc2ac5a84b1aab49fda5dd58c6eaf855b3427408c63",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r07_eco_under_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r07_eco_under_pbr.png",
+      "bytes": 169335,
+      "sha256": "82065388e18315c3dec6199457106cea86e786d56adc343d924d3fb0b7d30860",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r07_eco_under_no_ibl_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r07_eco_under_no_ibl_pbr.png",
+      "bytes": 176677,
+      "sha256": "d1a01c94a5fec584da40c76f280b3892b9d5b40f8a155f218a8969195f103cc0",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r06_eco_top_matched_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r06_eco_top_matched_pbr.png",
+      "bytes": 189605,
+      "sha256": "a6cdbf96c967a0962484cd665adb210a9bcad9ff3d14452184cbe32b3e07ddba",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r06_eco_under_matched_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r06_eco_under_matched_pbr.png",
+      "bytes": 159740,
+      "sha256": "947b6cc721cf70a047123519329fbec1e8f0ca81cc6ecd1dda60cdedd5e4f585",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r06_quality_top_matched_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r06_quality_top_matched_pbr.png",
+      "bytes": 231895,
+      "sha256": "19a1920571e986cc010b1f3b8013685cac799ed1923a746a3bed235a933f3270",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r06_quality_under_matched_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r06_quality_under_matched_pbr.png",
+      "bytes": 200549,
+      "sha256": "6544d82ad2858de0977c63848f2b01667aa03169c81444eae42f3dc2ed0f467c",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r06_quality_trunk_33s_matched_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r06_quality_trunk_33s_matched_pbr.png",
+      "bytes": 136957,
+      "sha256": "adfbf3667d56010935ba8ebbe2430c653d9c45cc361ac528cf5d8fa93d857fd9",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r06_r07_eco_matched_pbr.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r06_r07_eco_matched_pbr.jpg",
+      "bytes": 141647,
+      "sha256": "f1e6402acafb716a845950c8cc6dd6f4129dccd77fbc0e4c173e972737207953",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r06_r07_quality_matched_pbr.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r06_r07_quality_matched_pbr.jpg",
+      "bytes": 168484,
+      "sha256": "ae0d20a81631cf60b5c9c89127f45f5c14e7e4042396f9547a6826273f82b0fd",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r06_r07_trunk_33s_pbr.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r06_r07_trunk_33s_pbr.jpg",
+      "bytes": 60140,
+      "sha256": "d7978a438bc9364334ca81b1b0a0baa86e9348fc0ee3db8e468ad8bc9a05f8d0",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r07_quality_eco_matched_pbr.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r07_quality_eco_matched_pbr.jpg",
+      "bytes": 152170,
+      "sha256": "dd7cc247f28e6cf29dcccac216df379cbffe0bbc8d2ee9014b3caefcafb40d4a",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r07_eco_ibl_control_pbr.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r07_eco_ibl_control_pbr.jpg",
+      "bytes": 80375,
+      "sha256": "1246e25d2f86a9d3d6efdc0709c7fb0952802fe41a7fad8827c9474877f000fa",
+      "status": "pending_owner_upload"
+    },
+    {
+      "filename": "r07_video_reference_comparison.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r07/r07_video_reference_comparison.jpg",
+      "bytes": 141289,
+      "sha256": "41d3afc5d66b3c7e9522dfba49cded3dbac359d0105195c33a56316b28a3179f",
+      "status": "pending_owner_upload"
+    }
+  ],
+  "knownOpenIssues": [
+    "Small ECO aerial dark gap still present in one region; full tree silhouette still clumpy from some perspectives",
+    "QUALITY has low-poly triangular petals compared with glowing organic scene",
+    "PBR output depends on IBL/lower fill, Blender/Three.js parity unverified",
+    "Ancient bark still stylized; no sculpted bark normal map or .blend",
+    "No 3050 Ti/3060 LIVE Studio profiling"
+  ]
+}
