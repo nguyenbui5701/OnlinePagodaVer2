@@ -40,6 +40,10 @@
 
 When task ready, provide user exact Windows PowerShell commands e.g. `npm.cmd ci`, `npm.cmd run typecheck`, `npm.cmd test`, `npm.cmd run build`, `npm.cmd run test:e2e:live` ONLY when scripts verified in V2's own package.json. V1 script names are reference, not guarantee V2 scripts. Ask user to upload screenshot/log rather than claim testing done.
 
+## Zero-cost asset workflow and PR binaries
+
+[Design/14](14_ZERO_COST_AND_ASSET_PR_POLICY.md) is mandatory. AI 3D uses Blender, free commercial-compatible assets and/or local procedural mesh creation; no paid generations or 3D subscription without user authorization. AI 3D proactively pushes small textual files (review README, manifest, source script, technical/visual notes, pending media list) into their asset PR branch via GitHub connector or local Git. Owner may push large GLB/BLEND/media later to the same branch, then SA verifies exact SHA-256 before final signoff. Missing binaries must be marked pending; text-only PR cannot be accepted as production runtime assets. Codex does not do asset generation.
+
 ## Git policy
 
 Commit docs after meaningful design revisions. Do not force push or overwrite other branch heads. User's target repo `nguyenbui5701/OnlinePagodaVer2`. Never upload private TikTok data, raw user avatars from video, production tokens or cookies.
