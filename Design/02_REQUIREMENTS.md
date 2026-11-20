@@ -19,9 +19,12 @@ Một không gian thiền **vườn sen 3D** livestream TikTok bằng Windows/El
 | VIS-07 | Độ sáng hồng/tím, núi nhiều lớp, fog xa, petals | 6 screenshot goldens đạt review bằng mắt với cùng FOV |
 | LIVE-01 | Reuse TikTok connector/mapper, demo/provider, được kiểm thử | Chat, member, gift, like, viewer-total qua demo fixture |
 | LIVE-02 | Avatar/name identity ổn định, bounded | Event lặp không spawn 2; queue/backpressure; nickname Việt có dấu |
-| LIVE-03 | Quà hoa hồng, bình luận -> hiệu ứng định vị nhân vật, configurable | Preview event, không tính streak nhiều lần |
+| LIVE-03 | Khi ghi nhận quà hợp lệ, focus góc cận đúng avatar người tặng, nameplate và gift FX; nếu nhiều người tặng, FIFO theo người; hết queue trở về cinematic | 4 kịch bản A/B/C và no-gift ở 09 phải PASS; combo progress/confirmed không đếm trùng |
 | APP-01 | Capture dọc TikTok LIVE Studio, tách V1 | Không đụng repo/cấu hình/session V1; capture riêng |
 | APP-02 | Cấu hình scene, camera, quality, trigger, max avatars | Có mode DEMO và diagnostics |
+| CAM-08 | Cinematic chạy liên tục khi không có gift; chỉ chuyển sang GIFT_FOCUS khi có item hợp lệ trong queue | No-gift không bị kẹt, queue B/C đúng thứ tự sau A, return mượt |
+| PERF-01 | Profile ECO cho RTX 3050 Ti 4GB; QUALITY cho RTX 3060 8GB | Chạy demo cùng LIVE Studio, report FPS/VRAM/load, không suy đoán máy |
+| PERF-02 | Duy trì camera và gift focus ưu tiên trước hạt/sương/shadow khi quá tải | Preset tự hạ visual effects, không bỏ gift focus |
 
 ## P1 nên có
 
@@ -41,5 +44,5 @@ Một không gian thiền **vườn sen 3D** livestream TikTok bằng Windows/El
 1. AI Visual cung cấp **moodboard & asset specifications** trước khi AI Code nhận task.
 2. Renderer spike xác nhận **camera/parallax/pose/fog** đạt yêu cầu bằng 4 shot sớm; không xây business logic trước.
 3. Mock first; LIVE only after event and reconnect tests.
-4. 30fps mục tiêu ban đầu ở 720×1280; tối ưu tại máy streamer. Test 10/30/100 avatars, ghi CPU/GPU/VRAM, ổn định ít nhất 30 phút (ngưỡng nghiệm thu điều chỉnh theo phần cứng).
+4. 30fps mục tiêu ban đầu ở 720×1280, cần đo trên **RTX 3050 Ti 4GB với LIVE Studio**, và đánh giá preset trên **RTX 3060 8GB**; thử 1080×1920 chỉ khi được benchmark chứng minh. Test 10/30/100 avatars, CPU/GPU/VRAM, queue A/B/C, ổn định ít nhất 30 phút (ngưỡng nghiệm thu điều chỉnh theo phần cứng).
 5. V1 không bị thay đổi.
