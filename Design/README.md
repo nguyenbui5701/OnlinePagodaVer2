@@ -24,6 +24,7 @@
 - [12 — P0 priorities and roles for AI 3D / Codex / SA](12_CORE_PRIORITIES_AND_AI_ROLES.md)
 - [13 — Cross-AI asset and event integration contract](13_3D_EVENT_INTEGRATION_CONTRACT.md)
 - [14 — Zero-cost 3D production and lightweight PR handoff](14_ZERO_COST_AND_ASSET_PR_POLICY.md)
+- [15 — Next AI Visual prompt: Sakura R04 zero-cost review fixes](15_AI_VISUAL_SAKURA_NEXT_PROMPT.md)
 
 ## P0 focus and AI ownership (confirmed 2026-11-20)
 
