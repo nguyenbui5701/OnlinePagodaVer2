@@ -19,10 +19,13 @@ Score each 1–5; P0 categories should all reach >=4 by owner approval after sid
 
 - Mock 1/10/30/100 viewers, stable seat mapping, Unicode Vietnamese names, rejoin/dedup.
 - Fake gift streak progress -> final confirmation exactly once. Gift visual cannot stall connection.
+- **Camera (owner-approved):** zero gifts for 45+ seconds = continuously moving cinematic; A sends during AERIAL -> close A/name/FX; B and C queue -> focus B then C; after queue empty -> cinematic resumes without teleport.
+- Same giver multiple gifts/progress packets: coalesce bounded focus, no starvation of another queued giver; gift giver absent from scene still shown correctly.
+- Simultaneous/rapid gifts test with queue overflow, disconnect and room changes; verify dedup, TTL and honest fallback.
 - 500 likes/event burst with bounded scene FX; viewer total not used for spawn.
 - Reconnect same room and switch room, no stale events.
 - Capture 720×1280 and/or 1080×1920, proper safe area (video phone record is 720×1556, separate resolution).
-- Run reproducible `DEMO` locally, report GPU/FPS/VRAM on stream computer, acceptable degradation when crowd > maximum.
+- Run reproducible `DEMO` locally, profile both **RTX 3050 Ti 4GB (ECO baseline)** and **RTX 3060 8GB (QUALITY)** together with LIVE Studio; report measured GPU/FPS/VRAM and acceptable degradation when crowd > maximum. Targets are provisional, not guaranteed.
 - V1 code and production settings unmodified.
 
 ## Owner decisions (only genuinely unknown from clip)
@@ -30,8 +33,8 @@ Score each 1–5; P0 categories should all reach >=4 by owner approval after sid
 1. **Spawn rule:** comment only? member/join? gift? follow after additional connector support? Suggested starting point: chat + gift, optionally member toggle; V1 uses chat by default and member OFF. The clip alone does not prove rule.
 2. **Avatar lifetime:** remain until stream end or TTL (e.g. idle 8–20 min)? Suggested TTL+restore for disconnect.
 3. **Visual density:** maximum active avatars visible simultaneously; suggested P0 100 with distant LOD while many static lily pads can exist, benchmark before commit number.
-4. **Gift reactions:** rose shows subtle petals/ripple/focus? other expensive gifts large event? Need explicit mapping and no implicit economic claims.
-5. **Visual engine & budget:** PC GPU/VRAM, concurrent TikTok LIVE Studio, target FPS. Spike picks Three.js vs Babylon.
+4. **Gift-camera behavior — CONFIRMED 2026-11-20:** gift -> close-up correct giver/name/effect -> next gifter FIFO -> return cinematic when empty. Still open only detailed FX mapping per gift type, exact hold/transition times. See 09.
+5. **Visual engine & budget:** owner hardware CONFIRMED RTX 3050 Ti 4GB and RTX 3060 8GB. Remaining: measured CPU/RAM, simultaneous TikTok LIVE Studio frame-rate and renderer spike; Two presets in 10.
 6. **Content:** comments/bubble moderation; ambient background music rights; whether V2 needs fortune/incense/lantern (not visible in reference video, recommended OFF for first version).
 
 ## Work ordering after owner approves design
@@ -39,9 +42,9 @@ Score each 1–5; P0 categories should all reach >=4 by owner approval after sid
 - Stage 0: final owner decisions & approve visual direction.
 - Stage 1: AI Visual produces moodboard/meshes + validation of 6 target shots.
 - Stage 2: 3D scene/camera performance spike in isolated V2 branch.
-- Stage 3: Avatar registry, seating, nameplates, scalable crowd.
+- Stage 3: Avatar registry, seating, nameplates, scalable crowd, gift focus scheduling state machine (09) and its deterministic mock tests.
 - Stage 4: V1 connector reuse via small V2 adapter, DEMO and fixture verification.
-- Stage 5: chat/gifts/FX, camera director integration.
+- Stage 5: chat/gifts/FX, queue-aware camera director integration, ECO/QUALITY GPU profiling (10).
 - Stage 6: Electron/OBS capture, regression test, optimization and staged LIVE rollout.
 
 **Only after design sign-off** does SA create `Task/*.md` file-by-file with input references and verification commands for AI Code.
