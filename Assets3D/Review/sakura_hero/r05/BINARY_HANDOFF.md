@@ -15,6 +15,8 @@
 | `Assets3D/Review/sakura_hero/r05/sakura_hero_preview_three_quarter.png` | 708221 | `328be2d4394ef0d79679f44df69a05c56066a1129e95ceb9bb6852e6f0baa59c` | `pending_owner_upload` |
 | `Assets3D/Review/sakura_hero/r05/r05_reference_comparison.jpg` | 132908 | `6ea11b59d6d13838f3386ca9f644d3a0ae22b4f1e6af5253902be86583fff835` | `pending_owner_upload` |
 
+| `Assets3D/Review/sakura_hero/r05/sakura_hero_pbr_under_diagnostic.png` | 882614 | `7d1282422f030d2c3f7ae3da1827e499508be006fdfbc146ea2a554cff2e31b5` | `pending_owner_upload` |
+
 **`.blend` does not exist:** Blender was not available; do not invent a filename or SHA. Instead, the editable polygon OBJ and generator Python source are supplied.
 
 ## Windows PowerShell owner upload (same PR)
