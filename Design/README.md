@@ -23,6 +23,7 @@
 - [11 — Real 3D asset production: AI 3D + Blender + GLB](11_3D_ASSET_PRODUCTION_PIPELINE.md)
 - [12 — P0 priorities and roles for AI 3D / Codex / SA](12_CORE_PRIORITIES_AND_AI_ROLES.md)
 - [13 — Cross-AI asset and event integration contract](13_3D_EVENT_INTEGRATION_CONTRACT.md)
+- [14 — Zero-cost 3D production and lightweight PR handoff](14_ZERO_COST_AND_ASSET_PR_POLICY.md)
 
 ## P0 focus and AI ownership (confirmed 2026-11-20)
 
