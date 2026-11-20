@@ -1,0 +1,341 @@
+{
+  "revision": "R09",
+  "geometry": {
+    "QUALITY": {
+      "filename": "sakura_hero.glb",
+      "bytes": 5028124,
+      "sha256": "e68a479a2ea4705d711702e015ef290c72757cca107a261913d4988d5ae9bbc8",
+      "glTFVersion": 2,
+      "triangles": 185026,
+      "vertices": 233238,
+      "meshCount": 11,
+      "materialCount": 11,
+      "materialNames": [
+        "Trunk_bark_plumblack",
+        "Golden_bark_veins",
+        "Branches_plum",
+        "Canopy_depth_rose",
+        "Canopy_peach",
+        "Canopy_rose",
+        "Sakura_petal_warm_rose",
+        "Sakura_flower_gold",
+        "Sakura_petal_blush",
+        "Sakura_petal_pink",
+        "Sakura_petal_cream"
+      ],
+      "boundsMin": [
+        -13.2016,
+        -1.0098,
+        -12.9647
+      ],
+      "boundsMax": [
+        14.3499,
+        26.3189,
+        14.3544
+      ],
+      "boundsMeters": [
+        27.5516,
+        27.3287,
+        27.3191
+      ],
+      "degenerateFaces": 0,
+      "nonfiniteVertices": 0,
+      "petalDoubleSided": true,
+      "petalTriMeshCount": 4,
+      "texturesInGLTF": 0,
+      "imagesInGLTF": 0,
+      "animations": 0,
+      "chunks": [
+        {
+          "type": "JSON",
+          "bytes": 8928
+        },
+        {
+          "type": "BIN\u0000",
+          "bytes": 5019168
+        }
+      ],
+      "repoPath": "Assets3D/Review/sakura_hero/r09/sakura_hero.glb",
+      "status": "pending_owner_upload",
+      "changeVsR08": {
+        "triangles": 16.362,
+        "vertices": 8.354,
+        "bytes": 11.733,
+        "materialCount": 0
+      }
+    },
+    "ECO": {
+      "filename": "sakura_hero_eco.glb",
+      "bytes": 1393492,
+      "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+      "glTFVersion": 2,
+      "triangles": 44412,
+      "vertices": 71032,
+      "meshCount": 10,
+      "materialCount": 10,
+      "materialNames": [
+        "Trunk_bark_plumblack",
+        "Golden_bark_veins",
+        "Branches_plum",
+        "Canopy_depth_rose",
+        "Canopy_peach",
+        "Canopy_rose",
+        "Sakura_petal_blush",
+        "Sakura_petal_cream",
+        "Sakura_petal_pink",
+        "Sakura_petal_warm_rose"
+      ],
+      "boundsMin": [
+        -12.7865,
+        -1.026,
+        -12.0262
+      ],
+      "boundsMax": [
+        13.2873,
+        24.8686,
+        10.9339
+      ],
+      "boundsMeters": [
+        26.0738,
+        25.8947,
+        22.9601
+      ],
+      "degenerateFaces": 0,
+      "nonfiniteVertices": 0,
+      "petalDoubleSided": true,
+      "petalTriMeshCount": 4,
+      "texturesInGLTF": 0,
+      "imagesInGLTF": 0,
+      "animations": 0,
+      "chunks": [
+        {
+          "type": "JSON",
+          "bytes": 8136
+        },
+        {
+          "type": "BIN\u0000",
+          "bytes": 1385328
+        }
+      ],
+      "repoPath": "Assets3D/Review/sakura_hero/r09/sakura_hero_eco.glb",
+      "status": "pending_owner_upload",
+      "changeVsR08": {
+        "triangles": 1.411,
+        "vertices": 0.673,
+        "bytes": 0.95,
+        "materialCount": 0
+      }
+    }
+  },
+  "baselineR08": {
+    "QUALITY": {
+      "triangles": 159009,
+      "vertices": 215255,
+      "bytes": 4500120,
+      "materialCount": 11
+    },
+    "ECO": {
+      "triangles": 43794,
+      "vertices": 70557,
+      "bytes": 1380376,
+      "materialCount": 10
+    }
+  },
+  "pbrRig": {
+    "software": "VTK 9.6.2 vtkGLTFImporter, default imported Physically Based Rendering",
+    "pbrMaterialOverride": false,
+    "sRGB": "VTK defaults; no explicit exposure grade applied",
+    "exposureEV": "Not independently calibrated in VTK; same settings all shots",
+    "ibl": {
+      "type": "synthetic sky/middle/ground gradient texture",
+      "pixels": [
+        256,
+        128
+      ],
+      "skyRGB": [
+        216,
+        181,
+        195
+      ],
+      "midRGB": [
+        172,
+        132,
+        165
+      ],
+      "groundRGB": [
+        124,
+        98,
+        142
+      ]
+    },
+    "lights": [
+      {
+        "position": [
+          22,
+          40,
+          26
+        ],
+        "intensity": 1.25,
+        "RGB": [
+          1,
+          0.84,
+          0.82
+        ]
+      },
+      {
+        "position": [
+          -18,
+          23,
+          -15
+        ],
+        "intensity": 0.65,
+        "RGB": [
+          1,
+          0.76,
+          0.89
+        ]
+      },
+      {
+        "position": [
+          6,
+          3,
+          18
+        ],
+        "intensity": 0.84,
+        "RGB": [
+          1,
+          0.74,
+          0.83
+        ]
+      }
+    ],
+    "cameras": {
+      "top": {
+        "position": [
+          3,
+          54,
+          10
+        ],
+        "target": [
+          0,
+          13.5,
+          0
+        ],
+        "fovDeg": 50
+      },
+      "aerial_e": {
+        "position": [
+          15,
+          54,
+          7
+        ],
+        "target": [
+          0,
+          13.5,
+          0
+        ],
+        "fovDeg": 50
+      },
+      "aerial_w": {
+        "position": [
+          -13,
+          54,
+          8
+        ],
+        "target": [
+          0,
+          13.5,
+          0
+        ],
+        "fovDeg": 50
+      },
+      "aerial_n": {
+        "position": [
+          5,
+          54,
+          -15
+        ],
+        "target": [
+          0,
+          13.5,
+          0
+        ],
+        "fovDeg": 50
+      },
+      "aerial_s": {
+        "position": [
+          -6,
+          54,
+          18
+        ],
+        "target": [
+          0,
+          13.5,
+          0
+        ],
+        "fovDeg": 50
+      },
+      "under": {
+        "position": [
+          3,
+          4.8,
+          18.5
+        ],
+        "target": [
+          0,
+          11.9,
+          0
+        ],
+        "fovDeg": 44
+      },
+      "three_quarter": {
+        "position": [
+          31,
+          25,
+          31
+        ],
+        "target": [
+          0,
+          11.6,
+          0
+        ],
+        "fovDeg": 44
+      },
+      "trunk_33s": {
+        "position": [
+          4.8,
+          4,
+          11.5
+        ],
+        "target": [
+          0,
+          6.6,
+          0
+        ],
+        "fovDeg": 56
+      }
+    },
+    "r08r09SameCamerasAndLights": true,
+    "blenderRendererExecuted": false,
+    "blenderOwnerScriptProvided": true,
+    "nativeThreeJSVerified": false
+  },
+  "aerialEcoAuditedViews": [
+    "top",
+    "aerial_e",
+    "aerial_w",
+    "aerial_n",
+    "aerial_s"
+  ],
+  "aerialEcoFinding": "Five camera comparison screenshots of R08 versus R09 show no visually obvious new large exposed ECO void. Small dark seams remain; no new ECO-specific blossom patch added. Qualitative judgment only, not 3D cavity segmentation.",
+  "qualityFinding": "R09 uses four-triangle shallow-notched curled petals, staggered warped anisotropic blossom tiers, 94 clusters; visually stronger breakup than R08, but edge spikes remain.",
+  "trunkFinding": "R09 uses helical heavily swept fluted bole and recessed geometric fissure strips: conspicuous lower horizontal gold cables are reduced. Trunk still stylized; shading not production-validated.",
+  "previewFiles": 31,
+  "otherRenderer": {
+    "Blender": "not present; script created but NOT executed",
+    "ThreeJS": "not executed"
+  },
+  "fpsAndVram": "not measured",
+  "paidServiceSpendVND": 0,
+  "status": "provisional geometry/PBR prototype"
+}
