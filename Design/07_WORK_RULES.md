@@ -4,14 +4,22 @@
 
 **SA (this assistant):** analyze video/source, create and version `Design/**`, resolve tradeoffs and architecture; wait for owner to approve design; then write isolated `Task/*.md` with reading order, scope, acceptance, tests, and PR instructions. During design phase, do not mutate runtime source, package manifests, workflow config or `Task/**`.
 
-**AI Visual:** read 01–04 & 02 acceptance. Provide world screenshot/board, GLB/mesh specs and model list with license/provenance. Maintain same 3D geography and proportions across shots; no platform UI baked in, no direct copy of branded avatars. Need explicitly flag image-only outputs as concepts not actual 3D scene meshes.
+**AI 3D (independent ChatGPT specialist):** read 01–04, 10–13; owns production 3D meshes, editable Blender source, low-poly variants/LODs, materials, UV, rig, animations, GLB exports, art provenance, asset_manifest and true multi-angle GLB renders. May use 3D generation service (including connected fal **when actual mesh capability is verified**) and Blender; must flag conceptual images as concept only and never claim a PNG is game-ready GLB. Focus on giant sakura, seated chibi, lotus pads/flowers and minimal lake terrain. Do not implement the app's renderer or LIVE business logic.
 
-**AI Code:** read all `Design/**`, only `Task/<assigned>.md`, source files named there, and tests. Commit on isolated branch; PR includes screenshot of 6 camera shots, log and commands run by owner. No additional feature scope without SA/owner approval. No developer edits to V1 production repo.
+**AI Code (Codex):** code only. Read all `Design/**` and assigned future `Task/<assigned>.md`; own V2 Event Engine, event queue, client/server, shader water/fog/particles, renderer integration (load approved GLBs), animation player, camera, test harness. **Codex MUST NOT spend tokens generating images or 3D models, text-to-3D/image-to-3D calls, and must not manually compose production meshes from thousands of vertices.** Temporary debug primitives are allowed, clearly marked placeholders. PR requires engine tests and six actual 3D camera screenshots. No additional scope without SA/owner approval and no edits to V1 production repo.
+
+## Primary priority / coordination
+
+**Highest priority P0:** (1) V2 Event Engine, (2) real 3D Scene + camera. AI 3D and Codex can work concurrently **only after** SA locks asset manifest (11/13) and event-to-camera protocol (09/13). Test mocks decouple Event Engine development from asset delivery. Gift camera FIFO and no-gift cinematic are owner-confirmed hard requirements. Secondary polish, rituals, expanded dashboard, fortune, voice and unrelated V1 modules remain deferred (12).
+
+**SA review gate for AI 3D:** asset files must genuinely open as GLB, meshes/animations/materials correct, manifest/LOD/provenance present and video reference shots match. If assets fail, AI 3D revises; don't ask Codex to disguise a broken model in code.
+
+**SA review gate for Codex:** architecture boundary, deterministic engine tests, focus correct actor, queue fairness, 3D camera, measured ECO/QUALITY on owner GPUs; ask Codex to fix code defects, not to generate art.
 
 ## Merge / review procedure
 
 1. After design sign-off, SA creates `Task/<task-id>.md`, commits it.
-2. AI Code executes a single defined task in V2 branch, with unit/E2E/visual evidence and PR.
+2. AI 3D produces approved asset deliverables in a separate asset branch or versioned handoff; Codex executes an assigned code task in a separate V2 branch with unit/E2E/visual evidence and PR. Do not let both modify the same files simultaneously.
 3. SA checks out PR in `ReviewPR/<PR-number>/` or separate git worktree (never switches AI Code's own branch/worktree); diff against expected base SHA.
 4. SA posts inline PR comments where possible; if blocker, request changes, **keep** review checkout and amend assigned task with blockers; owner/AI Code fixes and updates PR.
 5. If no blocker (or only optional nonblocking comments), SA posts summary review; **delete** local review worktree and assigned `Task/<task-id>.md` only after verifying no dependent ongoing work, and commit cleanup. Never delete shared branches or user's working files blindly.
