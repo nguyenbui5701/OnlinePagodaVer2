@@ -1,39 +1,56 @@
-# 04 — Cinematic camera director
+# 04 — Cinematic 3D Camera Director
 
-Camera movement is **central** to faithful reproduction; not optional UI polish. Sample video visibly sweeps from near-water focus into full aerial overview and back to ground level. These are inferred shot categories, not a claim about exact camera algorithm.
+**Important:** User-confirmed operational gift interruption / FIFO / return requirements are specified normatively in [09_GIFT_CAMERA_DIRECTOR.md](09_GIFT_CAMERA_DIRECTOR.md). 04 specifies cinematic world path and visual cinematography; it must not override 09.
 
-## State machine
+## Cinematic behavior
+
+Camera must **always keep moving while there is no pending/active gift focus**, following a soft, smooth repeating movie-like route. These modes come from the example video and must be achievable using real 3D parallax, not 2D static art:
+- `CLOSE`: 1–3 foreground avatars near the water, readable nameplate.
+- `COMMUNITY`: 8–30 characters, with lake, mountains and sakura tree in the background.
+- `AERIAL`: fly high above canopy and lotus-pad formations, revealing dense crowd and landmark pink tree (video approx. 12–19s).
+- `UNDER_TREE`: fly below/beside large branches, dark trunk silhouette, misty pink backlight.
+- `CLOSE` / `COMMUNITY` again via smooth spline loop.
+
+## Interruption by gifts — user-approved
+
+Default camera owner is `CINEMATIC`. When gift events yield valid identified giver focus requests, transfer camera to `GIFT_TRANSITION`, then `GIFT_FOCUS` on **that giver's actual avatar/seat**, ensuring name, avatar and gift effect in close-up. When focus shot ends, advance **FIFO to other gifters** without jumping to cinematic if queue still has people. When queue is empty, `CINE_RETURN` blends to a suitable point in cinematic path and resumes constant movement. Additional gifts while a focus is active join the queue; prioritize fair turn-taking rather than monetary value. Progress vs final gift is distinguished as in 09 and 05.
 
 ```mermaid
-stateDiagram-v2
-  [*] --> CLOSE
-  CLOSE --> COMMUNITY: timed
-  COMMUNITY --> AERIAL: timed
-  AERIAL --> UNDER_TREE: timed
-  UNDER_TREE --> COMMUNITY: timed
-  COMMUNITY --> FOCUS: recent viewer event / queue
-  FOCUS --> COMMUNITY: hold expires
-  COMMUNITY --> CLOSE: timed
-  AERIAL --> COMMUNITY: manual
+flowchart LR
+ C[CINEMATIC moving] -->|valid gift| T[GIFT_TRANSITION]
+ T --> F[GIFT_FOCUS: viewer + gift FX]
+ F -->|another giver queued| T
+ F -->|queue empty| R[CINE_RETURN]
+ R --> C
+ R -->|new gift queued| T
 ```
 
-Required modes:
-- `CLOSE`: 1–3 foreground avatars, view near water and slightly above leaf, readable name.
-- `COMMUNITY`: 8–30 visible avatars, tree and mountains as background, gentle dolly/pan.
-- `AERIAL`: flyout rising above tree and seating arc; dramatic top-down overview of pink tree and crowd. MUST see hundreds of pads possible via LOD, not simulate 100 individual expensive materials.
-- `UNDER_TREE`: pass trunk/branches while looking over group into pink fog, strong dark silhouette.
-- `FOCUS`: optional timed highlight for specific event/seat, camera eases to actor and returns.
-- `MANUAL`: operator may choose shot; return to auto gracefully.
+Manual camera override is allowed for operator, but gift queue must remain bounded and visible in dashboard. Details in 09.
 
-## Initial choreography for DEMO (proposed)
+## Camera path / framing technical requirements
 
-0–5s CLOSE, 5–11s COMMUNITY with slow lateral motion, 11–17s AERIAL rising/flyover, 17–23s UNDER_TREE, 23–30s COMMUNITY, 30–38s FOCUS/CLOSE, 38–45s COMMUNITY hero. These approximate video cuts/moves rather than hard facts; timing adjustable in config. Loop seam must not teleport; continuous camera path or eased blend.
+Store camera `position`, `target/lookAt`, `FOV`, `near/far`, `path progress`, `mode`; use smooth splines/easing for movement, damping for lookAt and nameplate collision/culling; constrain excessive roll and keep foreground avatars in focus. Ensure sakura tree remains landmark across aerial and under-tree shots. Avoid camera occlusion by canopy when framing gifters. Dynamic gift focus anchor must use actual seat location; never estimate position from username text.
 
-## Technical
+## Approximate DEMO script for reference (not a hard runtime timeline)
 
-Store camera **position, target/lookAt, FOV, near/far, path progress, mode**; use spline/Catmull-Rom for positions + smooth target interpolation, clamp roll to zero, ease to avoid motion sickness. Use ray/occlusion avoidance so trunk or canopy does not fully block focal avatar. Reframe by target group bounding box; update target with critically damped spring smoothing. Use perspective for scale change and real parallax. Dynamic focus should yield to existing scheduled shot with cooldown not switch each gift.
+- 0–5s: CLOSE
+- 5–11s: COMMUNITY smooth orbit
+- 11–17s: AERIAL gradual rise/flyover
+- 17–23s: UNDER_TREE near trunk, pink atmosphere
+- 23–30s: COMMUNITY
+- 30–38s: CLOSE / guest view
+- 38–45s: COMMUNITY
 
-Proposed controls:
-`cameraAuto`, `cameraMode`, `orbitSpeed`, `shotHoldMs`, `transitionMs`, `eventFocusCooldownMs`, `showNameplatesAtDistance`, `motionReduced`, `replaySeed`.
+These timestamps approximate the **camera choreography in the sample video**; in runtime gift focus can interrupt **any** cinematic shot. When no gifts, the path loops continuously and never becomes static. Resuming after gift is via eased blend into the next coherent path location (not teleport).
 
-Do not reuse V1 `packages/shared/src/camera.ts` as a 3D camera path; can reuse generic easing/priority concepts only after review. Need deterministic camera snapshot tests and 9:16 safe area tests.
+## Initial tunables (proposed, not locked)
+
+`cameraAuto`, `cameraMode`, `cinePathSpeed`, `shotHoldMs`, `transitionMs`, `focusHoldMs`, `focusMaxMs`, `returnMs`, `maxPendingGifters`, `focusOnObservedGift`, `motionReduced`, `replaySeed`. Concrete initial values, fairness, queue, gift lifecycle and sequences: **09**.
+
+## Acceptance
+
+- No-gift 45s demo cycles close -> crowd -> aerial -> under-tree -> crowd without stalling.
+- If A gives during aerial, camera completes smooth transfer to A and displays A + name + gift.
+- B, C give while A is focused -> B then C get individual focus.
+- No queued gifts after last close-up -> seamless blend to moving cinematic.
+- Fits vertical frame and passes GPU 4GB/8GB preset checks in **10**.
