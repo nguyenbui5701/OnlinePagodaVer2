@@ -67,6 +67,10 @@ V2 requires a **GiftFocusScheduler** independent from TikTok worker and 3D rende
 
 Rendering must have **two quality profiles** for RTX 3050 Ti 4GB and RTX 3060 8GB; choose renderer by actual 4GB-machine benchmark, not by theoretical scene complexity. See [10](10_GRAPHICS_PROFILES.md).
 
+## Separate AI asset producer and Codex consumer
+
+AI 3D creates and owns asset pipeline (`*.blend`, `*.glb`, textures, rig, animations, LODs and manifest) under SA quality checks. Codex only produces code for V2 Event Engine, GLB runtime loading, shader water/fog, scalable scene and camera. The handoff contract is defined in [11](11_3D_ASSET_PRODUCTION_PIPELINE.md), [12](12_CORE_PRIORITIES_AND_AI_ROLES.md), [13](13_3D_EVENT_INTEGRATION_CONTRACT.md). Most development priority goes to these two P0 workstreams; don't build a temple UI before the world, event scheduler and cinematic/gift focus work.
+
 ## Repositories
 
 V1: source only for reference/copy targeted files, **read-only** for this project. V2: own repo, no auto-mutating original. Never commit credential files or node_modules/dist. Design folder only until approved.
