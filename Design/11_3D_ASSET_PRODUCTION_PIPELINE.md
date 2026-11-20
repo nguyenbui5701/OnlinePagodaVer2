@@ -2,6 +2,10 @@
 
 **Owner decision: CONFIRMED on 2026-11-20.** Codex is only responsible for CODE; a separate ChatGPT AI 3D specialist creates production 3D art/assets. SA reviews both. Video reference `chuav2.mp4` remains primary visual reference. The result must be REAL editable 3D files, not just moodboard images.
 
+## Zero-cost constraint (owner policy)
+
+**Mandatory:** [Design/14 — ZERO-COST AND ASSET PR POLICY](14_ZERO_COST_AND_ASSET_PR_POLICY.md) supersedes optional paid-tool suggestions. Start only with Blender, original procedural Blender/Python meshes or verifiably commercial-use-free assets. Do **not** call fal/Meshy/Tripo paid endpoints or buy assets without owner's explicit approval. AI 3D must commit the small reproducible source, manifest, README and visual analysis to an asset branch and open a PR; OWNER may add large GLB/BLEND/media to the same branch later. Before upload, label them pending and include SHA-256, size and exact intended paths.
+
 ## 1. Authoring and rendering split
 
 - **AI 3D ChatGPT**: inspect reference frames, refine concept art, create or supervise production meshes, textures, rig/animation, optimize geometry, export assets, screenshots and asset manifests. Can use a connected 3D-asset generation service such as fal *where its enabled capabilities actually support exportable 3D meshes*, or specialized text/image-to-3D tools. Do not assert the output is `.glb` unless its file content and mesh import are verified.
