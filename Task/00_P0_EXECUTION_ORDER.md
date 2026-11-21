@@ -26,7 +26,7 @@ Build the first working, **true-3D** lotus meditation vertical slice from owner-
 ## Independent PR rule
 
 - AI Visual: new `assets/lotus-pad-chibi-p0` or similar branch and PR. Sakura PR #1 remains separate and Draft.
-- Codex: separate `feature/v2-renderer-camera-p0` and `feature/v2-demo-events-p0` branches/PRs (or two nonoverlapping worktrees); do not overlap shared configuration edits without coordination.
+- Codex: separate `feature/v2-renderer-camera-p0` and `feature/v2-demo-events-p0` branches/PRs. **Path ownership until integration:** renderer owns `apps/v2-viewer/**`; Event Engine owns `packages/v2-events/**`. Each may keep a local scoped `package.json` under its own directory, but **neither edits/creates root `package.json`, workspace config or shared `packages/**` outside its assigned prefix** without SA's explicit coordination. SA integrates root workspace/scripts later in a dedicated PR. No shared file edits in parallel.
 - Every PR includes exact changed paths, baseline SHA, runnable commands **derived from actual package/scripts**, test outputs, actual screenshots and unresolved issues. If runtime skeleton doesn't exist, Codex must create an isolated V2 scaffold and document setup; never invent an npm script as if already present.
 - All 3D-generation/tooling stays **zero-cost** under Design/14. No secret tokens, private viewer data or production TikTok session content.
 - Keep `Task/` docs as living acceptance contracts while active; SA closes/removes only after integration is reviewed and no one depends on them.
