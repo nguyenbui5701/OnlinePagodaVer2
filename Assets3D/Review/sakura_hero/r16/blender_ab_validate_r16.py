@@ -130,7 +130,7 @@ def main():
     except (ValueError,TypeError):pass
     scene.view_settings.exposure=0.;scene.view_settings.gamma=1.
     blend=None
-    if a.case in ('r16_final','eco_unchanged')
+    if a.case in ('r16_final','eco_unchanged'):
         set_camera('hero_medium_9x16')
         bpy.context.preferences.filepaths.save_version=0
         name='sakura_hero_r16_quality.blend' if a.case=='r16_final' else 'sakura_hero_r16_eco.blend'
