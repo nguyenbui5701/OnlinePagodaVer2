@@ -1,0 +1,307 @@
+{
+  "sourceFile": "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r10\\sakura_hero.glb",
+  "sourceBytes": 5096052,
+  "sourceSha256": "ac4322fb00475d0dde3334a375fca0e0094715583edf7f6460b30a9139b1e273",
+  "blenderFile": "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r10\\Blender_Evidence_R10_AxesV2\\QUALITY\\sakura_hero_r10_quality.blend",
+  "blenderFileSha256": "419ef583831ef7bc67e932ce08df19a8f72e0422f7f85e8f0e4217f960c74e61",
+  "blenderVersion": "4.5.16 LTS",
+  "engine": "Cycles CPU physically based, imported glTF PBR nodes unmodified",
+  "status": "RENDERED_ON_OWNER_MACHINE_AXES_V2",
+  "axisConversion": "glTF (x,y,z) -> Blender (x,-z,y)",
+  "importedBoundsBlenderZup": {
+    "min": [
+      -12.894033432006836,
+      -13.751632690429688,
+      -1.022316575050354
+    ],
+    "max": [
+      14.082527160644531,
+      12.722424507141113,
+      26.170320510864258
+    ]
+  },
+  "world": {
+    "color": [
+      0.69,
+      0.47,
+      0.6
+    ],
+    "strength": 0.65
+  },
+  "lights": [
+    {
+      "name": "R10_Key",
+      "position": [
+        22,
+        40,
+        26
+      ],
+      "energy": 2.1,
+      "color": [
+        1.0,
+        0.84,
+        0.82
+      ],
+      "angle": 0.12
+    },
+    {
+      "name": "R10_Rim",
+      "position": [
+        -18,
+        23,
+        -15
+      ],
+      "energy": 1.05,
+      "color": [
+        1.0,
+        0.76,
+        0.89
+      ],
+      "angle": 0.17
+    },
+    {
+      "name": "R10_LowerFill",
+      "position": [
+        6,
+        3,
+        18
+      ],
+      "energy": 0.72,
+      "color": [
+        1.0,
+        0.74,
+        0.83
+      ],
+      "angle": 0.32
+    }
+  ],
+  "exposureEV": 0.0,
+  "cameras": [
+    "top",
+    "aerial_e",
+    "aerial_w",
+    "aerial_n",
+    "aerial_s",
+    "three_quarter",
+    "under",
+    "trunk_33s"
+  ],
+  "cameraDataSourceYup": {
+    "top": [
+      [
+        3,
+        54,
+        10
+      ],
+      [
+        0,
+        13.5,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      50
+    ],
+    "aerial_e": [
+      [
+        15,
+        54,
+        7
+      ],
+      [
+        0,
+        13.5,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      50
+    ],
+    "aerial_w": [
+      [
+        -13,
+        54,
+        8
+      ],
+      [
+        0,
+        13.5,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      50
+    ],
+    "aerial_n": [
+      [
+        5,
+        54,
+        -15
+      ],
+      [
+        0,
+        13.5,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      50
+    ],
+    "aerial_s": [
+      [
+        -6,
+        54,
+        18
+      ],
+      [
+        0,
+        13.5,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      50
+    ],
+    "three_quarter": [
+      [
+        31,
+        25,
+        31
+      ],
+      [
+        0,
+        11.6,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      44
+    ],
+    "under": [
+      [
+        3,
+        4.8,
+        18.5
+      ],
+      [
+        0,
+        11.9,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      44
+    ],
+    "trunk_33s": [
+      [
+        4.8,
+        4,
+        11.5
+      ],
+      [
+        0,
+        6.6,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      56
+    ]
+  },
+  "cameraSensorFit": "VERTICAL",
+  "meshCount": 11,
+  "triangleCount": 188782,
+  "materials": [
+    "Trunk_bark_plumblack",
+    "Golden_bark_veins",
+    "Branches_plum",
+    "Canopy_depth_rose",
+    "Canopy_peach",
+    "Canopy_rose",
+    "Sakura_petal_warm_rose",
+    "Sakura_flower_gold",
+    "Sakura_petal_blush",
+    "Sakura_petal_pink",
+    "Sakura_petal_cream"
+  ],
+  "materialNodeTypes": {
+    "Trunk_bark_plumblack": [
+      "BSDF_PRINCIPLED",
+      "OUTPUT_MATERIAL"
+    ],
+    "Golden_bark_veins": [
+      "BSDF_PRINCIPLED",
+      "OUTPUT_MATERIAL"
+    ],
+    "Branches_plum": [
+      "BSDF_PRINCIPLED",
+      "OUTPUT_MATERIAL"
+    ],
+    "Canopy_depth_rose": [
+      "BSDF_PRINCIPLED",
+      "OUTPUT_MATERIAL"
+    ],
+    "Canopy_peach": [
+      "BSDF_PRINCIPLED",
+      "OUTPUT_MATERIAL"
+    ],
+    "Canopy_rose": [
+      "BSDF_PRINCIPLED",
+      "OUTPUT_MATERIAL"
+    ],
+    "Sakura_petal_warm_rose": [
+      "BSDF_PRINCIPLED",
+      "OUTPUT_MATERIAL"
+    ],
+    "Sakura_flower_gold": [
+      "BSDF_PRINCIPLED",
+      "OUTPUT_MATERIAL"
+    ],
+    "Sakura_petal_blush": [
+      "BSDF_PRINCIPLED",
+      "OUTPUT_MATERIAL"
+    ],
+    "Sakura_petal_pink": [
+      "BSDF_PRINCIPLED",
+      "OUTPUT_MATERIAL"
+    ],
+    "Sakura_petal_cream": [
+      "BSDF_PRINCIPLED",
+      "OUTPUT_MATERIAL"
+    ]
+  },
+  "screenshots": [
+    "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r10\\Blender_Evidence_R10_AxesV2\\QUALITY\\r10_quality_top_blender_cycles.png",
+    "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r10\\Blender_Evidence_R10_AxesV2\\QUALITY\\r10_quality_aerial_e_blender_cycles.png",
+    "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r10\\Blender_Evidence_R10_AxesV2\\QUALITY\\r10_quality_aerial_w_blender_cycles.png",
+    "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r10\\Blender_Evidence_R10_AxesV2\\QUALITY\\r10_quality_aerial_n_blender_cycles.png",
+    "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r10\\Blender_Evidence_R10_AxesV2\\QUALITY\\r10_quality_aerial_s_blender_cycles.png",
+    "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r10\\Blender_Evidence_R10_AxesV2\\QUALITY\\r10_quality_three_quarter_blender_cycles.png",
+    "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r10\\Blender_Evidence_R10_AxesV2\\QUALITY\\r10_quality_under_blender_cycles.png",
+    "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r10\\Blender_Evidence_R10_AxesV2\\QUALITY\\r10_quality_trunk_33s_blender_cycles.png"
+  ]
+}
