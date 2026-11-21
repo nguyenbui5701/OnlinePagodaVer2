@@ -1,0 +1,138 @@
+{
+  "revision": "P0.4",
+  "assetId": "meditator_female_ao_ba_ba",
+  "task": "Task/AI_VISUAL_03_FEMALE_AO_BA_BA_LONG_HAIR.md",
+  "reviewedBaselineHead": "dff58dde2d71467cb17916f6b4016e71b2ef4158",
+  "branch": "assets/lotus-pad-chibi-p0",
+  "pr": 2,
+  "status": "P04_FEMALE_OWNER_VISUAL_REVIEW_REQUIRED",
+  "runtime": {
+    "file": "meditator_female_ao_ba_ba_p04.glb",
+    "sha256": "586134fdeab962f35458c16255985513b070da47195110d3c83eef2dd9b6be09",
+    "bytes": 244348,
+    "triangles": 9718,
+    "vertices": 5063,
+    "meshes": 9,
+    "materials": 21,
+    "textures": 0,
+    "upload": "pending_owner_upload"
+  },
+  "source": {
+    "file": "procedural_female_p04.py",
+    "bytes": 16549,
+    "sha256": "b3b8b0c5bb1f9730c426f9e4b2ce1485e0f4df9b45adffcb9300ac92348f8ad2",
+    "upload": "pending_owner_upload_in_source_zip"
+  },
+  "baseline": {
+    "p03Actor": {
+      "sha256": "646842c7574976020f6583c4e18879c9bef012e5f31dc851589c0a1491786be0",
+      "bytes": 212040,
+      "triangles": 8724,
+      "meshes": 11
+    },
+    "frozenP02Leaf": {
+      "path": "Assets3D/Review/lotus_pad_chibi/p3/lotus_pad_01.glb",
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+      "bytes": 262108,
+      "reexported": false
+    }
+  },
+  "delta": {
+    "triangles": 994,
+    "bytes": 32308,
+    "meshes": -2,
+    "materialDefinitions": 13
+  },
+  "coordinates": {
+    "up": "+Y",
+    "front": "+Z",
+    "metersPerUnit": 1,
+    "origin": "SeatRoot",
+    "actorSeatOffsetY": 0.195
+  },
+  "anchors": {
+    "SeatRoot": [
+      0,
+      0,
+      0
+    ],
+    "HeadAnchor": [
+      0,
+      0.835,
+      0.04
+    ],
+    "NameplateAnchor": [
+      0,
+      1.335,
+      0.03
+    ],
+    "FXAnchor": [
+      0.37,
+      0.805,
+      0.16
+    ]
+  },
+  "idle": {
+    "name": "sit_idle",
+    "durationSeconds": 2,
+    "keyframes": 17,
+    "peakY": 0.016,
+    "breathingNode": "UpperBodyBreath"
+  },
+  "palettes": {
+    "extension": "KHR_materials_variants",
+    "slots": [
+      "ao_ba_ba_top",
+      "ao_ba_ba_pants"
+    ],
+    "sRGBHex": {
+      "pastel_lilac": [
+        "#B9A4D7",
+        "#44435D"
+      ],
+      "blush_rose": [
+        "#D998A6",
+        "#59515C"
+      ],
+      "sage_green": [
+        "#94B6A0",
+        "#394D48"
+      ],
+      "sky_blue": [
+        "#85B8D4",
+        "#35495F"
+      ],
+      "warm_cream": [
+        "#E7CBAA",
+        "#665A59"
+      ],
+      "terracotta": [
+        "#BD806B",
+        "#484044"
+      ]
+    },
+    "geometryDuplicated": false,
+    "primitiveMappings": 6
+  },
+  "hair": {
+    "description": "three closed flowing sections to waist, temple strands and soft forehead part, no bun or simulation",
+    "minimumY": 0.32,
+    "nearestHairToPantsSampleDistanceMin": 0.1590878749
+  },
+  "statusChecks": {
+    "localNativeRealGLBPBR": "PASS",
+    "sixVariantSwatches": "PASS",
+    "gltfStructuralAnchorsIdle": "PASS",
+    "originalP03GLBReadLocally": false,
+    "originalLeafReadLocally": false,
+    "exactSurfaceCollisions": "NOT_RUN",
+    "p04Cycles": "PENDING_OWNER_RUN",
+    "p04EditableBlend": "NOT_CREATED",
+    "nativeThreeJs": "NOT_RUN",
+    "gpuLiveStudio": "NOT_RUN",
+    "femaleOwner": "PENDING"
+  },
+  "license": "original procedural mesh, no external paid models",
+  "paidExternalCostVND": 0,
+  "STOP": "NO_MALE_CODEX_RUNTIME_MERGE"
+}
