@@ -27,4 +27,9 @@ All below remain `pending_owner_upload` until independent GitHub SHA checks; Ble
 | `Assets3D/Review/sakura_hero/r12/PBR_Review/R12_quality_trunk_33s_VTK_PBR.png` | 146983 | `f692c11298daca45c8c42bf4fb5684025927f61d11a8e976f46f6c00401cb7f7` | pending_owner_upload |
 | `Assets3D/Review/sakura_hero/r12/PBR_Review/R12_quality_under_VTK_PBR.png` | 199928 | `2c899a6e4610f68b99af991d13214f53a1dad462b1f6838c02a0f957695c3cfd` | pending_owner_upload |
 
+| `Assets3D/Review/sakura_hero/r12/PBR_Review/VIDEO_15s_R12_CameraApprox.jpg` | 115269 | `20203cb418dbcce830537a0660601d2c19976b5c57095ff0b36dc9413b3fc240` | pending_owner_upload |
+| `Assets3D/Review/sakura_hero/r12/PBR_Review/VIDEO_33s_R12_CameraApprox.jpg` | 96952 | `1df211d7bb060b872375a74b6dbe2fe371c2dd6c17c5578eb4f0190ec2ca4270` | pending_owner_upload |
+
+These two montages use genuine owner video frames (~15s and ~33s) against new R12 VTK PBR, with non-calibrated approximate camera; they are NOT matched Blender/Cycles R12 renders.
+
 Verify using `Get-FileHash -Algorithm SHA256`, then commit on existing PR branch (never main). Original Cycles reference images of R10 palette-only vs R11 were produced by the owner in R11; the VTK R12 proof is separate and must not be described as Cycles. Do not upload .blend1 backups.
