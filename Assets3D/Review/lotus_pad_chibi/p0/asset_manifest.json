@@ -1,0 +1,386 @@
+{
+  "version": "0.1.0",
+  "contractSource": "Design/13_3D_EVENT_INTEGRATION_CONTRACT.md v0.1.0 and Design/16_P0_APPROVAL_AND_HANDOFF.md",
+  "revision": "p0.1",
+  "branch": "assets/lotus-pad-chibi-p0",
+  "task": "Task/AI_VISUAL_01_LOTUS_PAD_CHIBI.md",
+  "coordinateSystem": {
+    "up": "+Y",
+    "actorForward": "+Z",
+    "handedness": "right-handed",
+    "metersPerUnit": 1,
+    "proposedWaterSurfaceWorldY": 0
+  },
+  "assets": [
+    {
+      "assetId": "lotus_pad_01",
+      "revision": "p0.1",
+      "kind": "floating_seat",
+      "runtime": "lotus_pad_01.glb",
+      "source": "lotus_pad_01.blend",
+      "sourceBlenderStatus": "PENDING_OWNER_BLENDER_RUN",
+      "binaryState": "pending_owner_upload",
+      "binarySHA256": "0c80e5d4b2590716fdf9a985340fe2446af7ecc056727a03b82a3997db52bba5",
+      "bytes": 270128,
+      "originMeters": [
+        0,
+        0,
+        0
+      ],
+      "pivot": "leaf center XZ, zero height is proposed water Y=0",
+      "boundsMeters": [
+        2.09308,
+        0.452102,
+        2.043781
+      ],
+      "boundsMinMaxMeters": [
+        [
+          -1.062186,
+          -0.239377,
+          -1.046373
+        ],
+        [
+          1.030894,
+          0.212725,
+          0.997408
+        ]
+      ],
+      "seatTopSurfaceY_m": 0.195,
+      "anchors": {
+        "PadSeatAnchor": [
+          0,
+          0.195,
+          0
+        ]
+      },
+      "up": "+Y",
+      "triangles": 10984,
+      "vertices": 5530,
+      "meshCount": 5,
+      "materialCount": 5,
+      "texturesAndResolutions": [],
+      "animations": [],
+      "lods": {
+        "quality": "lotus_pad_01.glb",
+        "eco": "NOT_CREATED_FIRST_PAIR_ONLY"
+      },
+      "preview": [
+        "PBR_Review/pad_top.png",
+        "PBR_Review/pad_waterlevel.png",
+        "PBR_Review/pad_side.png"
+      ],
+      "originalAuthoring": "Original authored procedural leaf radial surface, V-notch, 15 veins, real stem and thickness"
+    },
+    {
+      "assetId": "meditator_base",
+      "revision": "p0.1",
+      "kind": "seated_animated_avatar",
+      "runtime": "meditator_base.glb",
+      "source": "meditator_base.blend",
+      "sourceBlenderStatus": "PENDING_OWNER_BLENDER_RUN",
+      "binaryState": "pending_owner_upload",
+      "binarySHA256": "f4e184b57046ad442183931bf9fd2f6d7953000ea07270458e291f627f787d2b",
+      "bytes": 205588,
+      "originMeters": [
+        0,
+        0,
+        0
+      ],
+      "pivot": "actor seat contact origin, place on pad at leaf SeatAnchor Y=0.195",
+      "boundsMeters": [
+        0.703,
+        1.154961,
+        0.634742
+      ],
+      "boundsMinMaxMeters": [
+        [
+          -0.367,
+          0.009039,
+          -0.248271
+        ],
+        [
+          0.336,
+          1.164,
+          0.386471
+        ]
+      ],
+      "seatContactWorldOffsetOnPad_m": [
+        0,
+        0.195,
+        0
+      ],
+      "forwardAxis": "+Z",
+      "up": "+Y",
+      "anchorNodes": {
+        "seat": "SeatRoot",
+        "head": "HeadAnchor",
+        "nameplate": "NameplateAnchor",
+        "giftFx": "FXAnchor"
+      },
+      "anchors": {
+        "seat": [
+          0,
+          0,
+          0
+        ],
+        "head": [
+          0.0,
+          0.835,
+          0.04
+        ],
+        "nameplate": [
+          0.0,
+          1.335,
+          0.03
+        ],
+        "giftFx": [
+          0.37,
+          0.805,
+          0.16
+        ]
+      },
+      "rig": {
+        "type": "hierarchical transform (no skeletal skin)",
+        "animatedNode": "UpperBodyBreath",
+        "nameplateHeadFxFollowBreathing": true
+      },
+      "triangles": 8484,
+      "vertices": 4315,
+      "meshCount": 11,
+      "materialCount": 8,
+      "texturesAndResolutions": [],
+      "animations": [
+        {
+          "name": "sit_idle",
+          "durationSeconds": 2.0,
+          "loop": true,
+          "target": "UpperBodyBreath",
+          "channels": [
+            "translation"
+          ],
+          "peakTranslationY_m": 0.016,
+          "keyframes": 17
+        }
+      ],
+      "lods": {
+        "quality": "meditator_base.glb",
+        "eco": "NOT_CREATED_FIRST_PAIR_ONLY"
+      },
+      "preview": [
+        "PBR_Review/chibi_front.png",
+        "PBR_Review/chibi_side.png",
+        "PBR_Review/chibi_back.png",
+        "PBR_Review/chibi_three_quarter.png",
+        "PBR_Review/sit_idle_native_gltf.gif"
+      ],
+      "originalAuthoring": "Original simplified zen chibi with dark asymmetrical hair bun, white/lilac robe, hands, closed eyes and physically crossed legs"
+    }
+  ],
+  "pairSeatContactTest": {
+    "actorPlacementY_m": 0.195,
+    "padCenterSurfaceY_m": 0.195,
+    "minSeatToLeafTopGapMeters": 0.014768,
+    "verticesTested": 658,
+    "penetrationVerticesBelow5mm": 0,
+    "contactToleranceMeters": 0.04,
+    "status": "PASS",
+    "method": "actual lower-body imported GLB vertex clearance against procedural pad top surface"
+  },
+  "reference": {
+    "document": "Design/01_VIDEO_BREAKDOWN.md",
+    "video": "chuav2.mp4",
+    "videoDirectInspection": "NOT_AVAILABLE_THIS_SESSION_USE_APPROVED_DOCUMENT_DESCRIPTION",
+    "checkpoints": [
+      "~3s close chibi/pad",
+      "~9s medium pad/avatars",
+      "~42s nearby community"
+    ]
+  },
+  "production": {
+    "BlenderSourceFiles": "PENDING_OWNER_BLENDER_RUN",
+    "BlenderCyclesImages": "PENDING_OWNER_BLENDER_RUN",
+    "VTKNATIVEGLTFPBR": "EXECUTED_MULTIVIEW",
+    "nativeGLTFAnimation": "EXECUTED_5_KEYFRAME_STILLS",
+    "threeJsGLTFLoader": "NOT_RUN",
+    "RTX3050Ti_GPUFPS": "NOT_RUN",
+    "RTX3060_GPUFPS": "NOT_RUN",
+    "SAApproved": false,
+    "productionReady": false
+  },
+  "licenses": {
+    "asset": "Original owner-generated procedural geometry, no paid calls",
+    "sourceFiles": [
+      "LICENSE_AND_PROVENANCE.md"
+    ]
+  },
+  "binaryHandoff": [
+    {
+      "path": "lotus_pad_01.glb",
+      "bytes": 270128,
+      "sha256": "0c80e5d4b2590716fdf9a985340fe2446af7ecc056727a03b82a3997db52bba5",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "meditator_base.glb",
+      "bytes": 205588,
+      "sha256": "f4e184b57046ad442183931bf9fd2f6d7953000ea07270458e291f627f787d2b",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "lotus_chibi_seated_review_only.glb",
+      "bytes": 471880,
+      "sha256": "394b86849296a2ef20bf932f577d6cbe5537850768e5b5d3a2a89c66a8fb15fb",
+      "githubState": "pending_owner_upload",
+      "kind": "review_only"
+    },
+    {
+      "path": "PBR_Review/asset_turnaround_contact.jpg",
+      "bytes": 90537,
+      "sha256": "9941234e851756e6ddbf56d7af9f78fc99769e9309f8071e8585e5adfb775bbb",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/chibi_back.png",
+      "bytes": 199306,
+      "sha256": "579407ce981c8fffa381d48e3ac477d56b53bd2d69c7e17091ff303de24566a1",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/chibi_front.png",
+      "bytes": 203710,
+      "sha256": "3a30c66050c54dbed6e7d9d7303f69988150e417253c48135219fec98f755f9c",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/chibi_side.png",
+      "bytes": 200912,
+      "sha256": "59e06696ebdd780f0ecc8f49e826c891a587addaa4af7e3b4d8e01b0756240d6",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/chibi_three_quarter.png",
+      "bytes": 202024,
+      "sha256": "9fe32f015b34b84d8c294af752b355a9de1f36870379c2a16dfa9639a182b9c5",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/idle_front_t0.00.png",
+      "bytes": 178718,
+      "sha256": "2548fb07c61053fdd137cba8eb45104f7b2a1bce53d16b195e998802f16beff2",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/idle_front_t0.50.png",
+      "bytes": 179049,
+      "sha256": "5ffe4eddc5755bec46d6148c4cfc64e33739a0a57d633ee8918c18e5027a322e",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/idle_front_t1.00.png",
+      "bytes": 179251,
+      "sha256": "70a2c889e53705cae897ab2c960e9b4b36d83cceb95142c4c30efdcf4f64e33e",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/idle_front_t1.50.png",
+      "bytes": 179049,
+      "sha256": "5ffe4eddc5755bec46d6148c4cfc64e33739a0a57d633ee8918c18e5027a322e",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/idle_front_t2.00.png",
+      "bytes": 178718,
+      "sha256": "2548fb07c61053fdd137cba8eb45104f7b2a1bce53d16b195e998802f16beff2",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/pad_side.png",
+      "bytes": 124936,
+      "sha256": "2a2573e1caf7b9a629512b19c5dc159906873d1f185ca1acb297c39274a679a5",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/pad_top.png",
+      "bytes": 181385,
+      "sha256": "053a949aa711af16ec791da1fcb06b35745d5ec94781d044325eae0cbe680b86",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/pad_waterlevel.png",
+      "bytes": 115527,
+      "sha256": "1eecb1f7c5499cf3ded5ad9244299fce21d75f482d28de7a511f77d4dd7e4629",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/pair_9x16.png",
+      "bytes": 226973,
+      "sha256": "519c69d94353f8b5b9d0197eadd03120ba0bd888ce025861c6b88b918f18f190",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/pair_anchor_debug.png",
+      "bytes": 228045,
+      "sha256": "26604349783741b3584a9b64b4f7749e489882b5b3ea5b5a48740dcf3fce41f4",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/pair_front.png",
+      "bytes": 181598,
+      "sha256": "9b776af8b6c8357a6b5f9a9cc84b3f55ccfba2ec1209b11f61fed28907bc9ce0",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/pair_hero_contact.jpg",
+      "bytes": 75734,
+      "sha256": "69ff73a4ecec57d39c72f71596cceabade3d156d56d1dfe2b25509e9ce692b9d",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/pair_three_quarter.png",
+      "bytes": 134934,
+      "sha256": "3a20e16f5e9803fee1b96c56281ea22c6f1c5652e281bde5108728ea3695f1fb",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/pair_top.png",
+      "bytes": 199937,
+      "sha256": "8f65eb1e08b5092bc1982e68d3af9b4e9cba326ea0e7812982535fb40fd51d6b",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/sit_idle_5_frames.jpg",
+      "bytes": 45934,
+      "sha256": "197b3e757302393c28fc80e12b2bd18e5afa0379f43a61a3a6e38d07943d5796",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    },
+    {
+      "path": "PBR_Review/sit_idle_native_gltf.gif",
+      "bytes": 245873,
+      "sha256": "a4f31362a53834f818ad1b46bb37053775a8f14e9ea03f626201d2c4de460964",
+      "githubState": "pending_owner_upload",
+      "kind": "asset_or_media"
+    }
+  ]
+}
