@@ -163,5 +163,20 @@
       "sha256": "cc3740e2ef67645afb3580d32e868e854332de07741f71e15d4559f4a418c1f2",
       "state": "pending_owner_upload"
     }
-  ]
+  ],
+  "secondaryContactScreening": {
+    "method": "VTK implicit signed-distance vertex sign change across exported joined GLB bark; approximate proxy NOT exact triangle collision",
+    "R15": {
+      "independentBranchParts": 77,
+      "crossingProxy": 31,
+      "within15cmProxy": 43
+    },
+    "R16": {
+      "independentBranchParts": 68,
+      "crossingProxy": 45,
+      "within15cmProxy": 54
+    },
+    "status": "OPEN_REGRESSION_RISK_SECONDARY_INTERFACES_NOT_ACCEPTED",
+    "source": "R16_SECONDARY_BRANCH_CONTACT_AUDIT.json; R16_SECONDARY_CONTACTS.csv in owner Source Reports bundle"
+  }
 }
