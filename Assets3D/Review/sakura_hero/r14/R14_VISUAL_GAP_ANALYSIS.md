@@ -1,3 +1,5 @@
+> **Post-owner execution update 2026-11-21:** Independent SA review verified original R14 Blender/Cycles **3/3 cases, 21/21 PNG, 32/32 archive SHA and two original valid .blend files PASS**. **ART PARTIAL; production NOT APPROVED; GitHub binaries still `pending_owner_upload`.** Historical pre-run instructions below are superseded by [R14_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md](R14_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md). Three.js and GPU/LIVE Studio remain NOT RUN.
+
 # R14 vs R13 SA artistic gap review (not production acceptance)
 
 **R13 real Cycles PASS**, reviewed in SA #6004407478; palette/lower-emissive material retained. **R14 Cycles NOT RUN**. True-GLB VTK PBR shows R14 branch shoulders smoother than R13; two procedural alternatives A and B were locally compared, B chosen because narrower R13 knuckle bumps are less prominent. New shoulder surface is nonadditive and broad, not raised tubes; Gold remains in the bark grooves. However secondary branches remain distinct intersecting tube meshes, not a proper fused manifold. The ancient heavy shape of owner video 33s is still an open artistic gap.
