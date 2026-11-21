@@ -74,7 +74,7 @@
     "originalBlendSourceIntegrity": "PASS"
   },
   "blenderCyclesR13": {
-    "status": "PENDING_OWNER_RUN",
+    "status": "OWNER_CYCLES_PASS_INDEPENDENT_SA_REVIEW",
     "script": "run_sakura_R13_blender.ps1",
     "cases": [
       "r12_baseline",
@@ -83,10 +83,38 @@
     ],
     "cameras": 6,
     "quickCameras": 3,
-    "cyclesCameraAndLightingLocked": true
+    "cyclesCameraAndLightingLocked": true,
+    "casesCompleted": 3,
+    "imagesVerified": 18
   },
   "threeJsGltfLoader": "NOT_RUN",
   "gpuLiveStudio": "NOT_RUN",
   "art": "PARTIAL_NOT_APPROVED",
-  "githubMedia": "PENDING_OWNER_UPLOAD"
+  "githubMedia": "PENDING_OWNER_UPLOAD",
+  "ownerCyclesR13": {
+    "status": "OWNER_CYCLES_PASS_SA_INDEPENDENTLY_REVIEWED",
+    "blenderVersion": "4.5.16 LTS",
+    "engine": "Cycles CPU",
+    "casesCompleted": 3,
+    "imagesVerified": 18,
+    "archiveHashesVerified": 29,
+    "samples": 32,
+    "viewTransform": "AgX",
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "zipBytes": 15307370,
+    "zipSHA256": "e9441363da7334c5f43fbfa3fecd535129eeed283a0dfb009eeaefc236529d32",
+    "qualityBlend": {
+      "bytes": 12822286,
+      "sha256": "46bda0fb631e56d07d23828ce5322fe90412f282d77c27ec0cd9fc4a20284283"
+    },
+    "ecoBlend": {
+      "bytes": 3936772,
+      "sha256": "41ea93df79576d9eec9c5f55270c1b9a2d0605345119bc52fe39fc4cff323af3"
+    },
+    "art": "PARTIAL",
+    "production": false,
+    "githubBinary": "pending_owner_upload",
+    "reference": "R13_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  }
 }
