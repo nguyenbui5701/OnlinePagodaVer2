@@ -12,7 +12,7 @@
 
 ## Proof boundary
 
-**Executed**: actual GLB/trimesh structural checks and zero-face/nonfinite tests, exact clean rebuild, VTK native glTF PBR on fixed 3 lights + synthetic IBL and same camera/FOV; no Phong material override. **Previously executed/SA-reviewed**: R12 Blender 4-case Cycles with 20 PNGs. **NOT YET RUN**: R13 Blender/Cycles fixed-rig A/B (script included); native Three.js, RTX+LIVE Studio. Comparison to owner video ~15s and ~33s uses non-calibrated camera; these screenshots do not prove production fidelity. **ART PARTIAL.**
+**Executed**: actual GLB/trimesh structural checks and zero-face/nonfinite tests, exact clean rebuild, VTK native glTF PBR on fixed 3 lights + synthetic IBL and same camera/FOV; no Phong material override. **Previously executed/SA-reviewed**: R12 Blender 4-case Cycles with 20 PNGs. **NOT YET RUN**: R13 Blender/Cycles fixed-rig A/B (script included); native Three.js, RTX GPU/LIVE Studio. Comparison to owner video ~15s and ~33s uses non-calibrated camera; these screenshots do not prove production fidelity. **ART PARTIAL.**
 
 ## Next SA acceptance questions
 
