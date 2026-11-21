@@ -1,5 +1,8 @@
 # P0 execution order — OnlinePagodaVer2
 
+> **LATEST OWNER POSE PRIORITY — 2026-11-22:** Owner accepts the P0.4 female áo bà ba/long-hair *general direction*, but requests **P0.5 pose revision** before approving females: make crossed-leg knees prettier and palms together in prayer, and provide a second kneeling-on-both-knees palms-together prayer pose. Current active assignment [AI_VISUAL_04](AI_VISUAL_04_FEMALE_PRAYER_POSES.md), on PR #2 p5. **No male task or Codex / integration / merge** until new owner decision. Previous parallel plans below are future only.
+
+
 > **LATEST OWNER ART PRIORITY — 2026-11-21:** P0.3 lotus+chibi overall is an accepted working direction, **female apparel/hair not final approved**. Active work moves to [AI_VISUAL_03 P0.4 FEMALE](AI_VISUAL_03_FEMALE_AO_BA_BA_LONG_HAIR.md): Vietnamese áo bà ba in reusable color variants and loose hair to waist, Cycles A/B, SA review and **owner approval**. Only after explicit `OK female` is a separate male task allowed. All Codex and integration paths below remain paused. No male modeling in P0.4.
 
 > **OWNER PRIORITY OVERRIDE — 2026-11-21:** Owner requests **visual-only AI Visual focus on lotus pad + chibi until owner explicitly says OK**. Previous parallel starts are now PAUSED. **Do not start/continue Codex renderer, Event Engine or vertical-slice integration**, do not merge PR #3/#4, and do not require Sakura R16 binary upload for this art review. Active work: [AI_VISUAL_02](AI_VISUAL_02_ART_REFINEMENT_AND_OWNER_GATE.md), on PR #2. Resume implementation only after owner aesthetic approval, then SA reopens Codex tasks. Existing PR code and tests are preserved; not rejected.
