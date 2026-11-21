@@ -133,7 +133,7 @@ def main():
     if a.case in ('r15_final','eco_unchanged'):
         set_camera('hero_medium_9x16')
         bpy.context.preferences.filepaths.save_version=0
-        name='sakura_hero_r15_quality.blend' if a.case=='r14_final' else 'sakura_hero_r15_eco.blend'
+        name='sakura_hero_r15_quality.blend' if a.case=='r15_final' else 'sakura_hero_r15_eco.blend'
         blend=out/name
         bpy.ops.wm.save_as_mainfile(filepath=str(blend))
         if not blend.is_file():raise RuntimeError('Editable BLEND was not written')
