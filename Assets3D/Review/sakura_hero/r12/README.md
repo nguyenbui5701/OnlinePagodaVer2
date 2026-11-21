@@ -1,4 +1,4 @@
-# Sakura Hero R12 — controlled zero-cost geometry candidate
+> **Verified update, 2026-11-21 (supersedes pre-owner-run checkpoints):** Blender 4.5.16 LTS Cycles CPU R12 completed: four cases, 20 PNGs, 34/34 ZIP hashes, original two .blend structures and SHA independently SA reviewed. **Technical Blender PASS; visual ART PARTIAL; production NOT APPROVED.** R12 original binary GitHub upload still `pending_owner_upload`. See [R12_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md](R12_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md). Native Three.js and GPU/LIVE Studio NOT RUN.\n\n# Sakura Hero R12 — controlled zero-cost geometry candidate
 
 **PR #1:** https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/1  
 **Branch:** `assets/sakura-hero-r04-sa-review` · **Sakura only** · Draft · no production approval.
@@ -34,7 +34,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run_sakura_R12_blender
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run_sakura_R12_blender.ps1 -Mode all -Samples 32 -Size 520
 ```
 Optional `-BlenderPath 'C:\Program Files\Blender Foundation\Blender 4.5\blender.exe'` if auto discovery fails.
-The script verifies GLB SHA, imports PBR Principled materials, saves two actual editable R12 .blend files, produces 5 camera shots per case (including 9:16 aerial) and case JSON/logs. Same **Cycles CPU, AgX, 0 EV, World 0.65 + 3 SUNs**. Correct glTF Y-up → Blender Z-up axes. **R12 Cycles remains NOT RUN in this environment**. Owner should upload `Sakura_R12_Blender_Evidence_Cycles.zip`.
+The script verifies GLB SHA, imports PBR Principled materials, saves two actual editable R12 .blend files, produces 5 camera shots per case (including 9:16 aerial) and case JSON/logs. Same **Cycles CPU, AgX, 0 EV, World 0.65 + 3 SUNs**. Correct glTF Y-up → Blender Z-up axes. **Owner independently executed R12 Cycles on Windows; this separate AI environment has not rerendered**. Owner should upload `Sakura_R12_Blender_Evidence_Cycles.zip`.
 
 ## Final gates
 VTK PBR 3-model shots are not Blender footage. See `R12_VISUAL_GAP_ANALYSIS.md`, `asset_manifest.json` and `BINARY_HANDOFF.md`. Native glTF/Three.js and owner RTX+LIVE Studio FPS/VRAM remain OPEN. Large binaries not committed; preserve R10/R11 original files.
