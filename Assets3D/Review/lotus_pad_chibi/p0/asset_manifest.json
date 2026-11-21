@@ -19,7 +19,7 @@
       "runtime": "lotus_pad_01.glb",
       "source": "lotus_pad_01.blend",
       "sourceBlenderStatus": "PENDING_OWNER_BLENDER_RUN",
-      "binaryState": "pending_owner_upload",
+      "binaryState": "uploaded_sha_verified",
       "binarySHA256": "0c80e5d4b2590716fdf9a985340fe2446af7ecc056727a03b82a3997db52bba5",
       "bytes": 270128,
       "originMeters": [
@@ -75,7 +75,8 @@
         "PBR_Review/pad_top.png",
         "PBR_Review/pad_waterlevel.png",
         "PBR_Review/pad_side.png"
-      ]
+      ],
+      "githubBlobSHA": "5d5af1728e97ea8b188cab37e8b71df986296851"
     },
     {
       "assetId": "meditator_base",
@@ -84,7 +85,7 @@
       "runtime": "meditator_base.glb",
       "source": "meditator_base.blend",
       "sourceBlenderStatus": "PENDING_OWNER_BLENDER_RUN",
-      "binaryState": "pending_owner_upload",
+      "binaryState": "uploaded_sha_verified",
       "binarySHA256": "f4e184b57046ad442183931bf9fd2f6d7953000ea07270458e291f627f787d2b",
       "bytes": 205588,
       "originMeters": [
@@ -187,7 +188,8 @@
         "PBR_Review/chibi_back.png",
         "PBR_Review/chibi_three_quarter.png",
         "PBR_Review/sit_idle_native_gltf.gif"
-      ]
+      ],
+      "githubBlobSHA": "ed394a9bc7edb9d7e47eac046d4ce2bcc0aaddfd"
     }
   ],
   "pairSeatContactTest": {
@@ -232,15 +234,17 @@
       "path": "lotus_pad_01.glb",
       "bytes": 270128,
       "sha256": "0c80e5d4b2590716fdf9a985340fe2446af7ecc056727a03b82a3997db52bba5",
-      "githubState": "pending_owner_upload",
-      "kind": "asset_or_media"
+      "githubState": "uploaded_sha_verified",
+      "kind": "asset_or_media",
+      "githubBlobSHA": "5d5af1728e97ea8b188cab37e8b71df986296851"
     },
     {
       "path": "meditator_base.glb",
       "bytes": 205588,
       "sha256": "f4e184b57046ad442183931bf9fd2f6d7953000ea07270458e291f627f787d2b",
-      "githubState": "pending_owner_upload",
-      "kind": "asset_or_media"
+      "githubState": "uploaded_sha_verified",
+      "kind": "asset_or_media",
+      "githubBlobSHA": "ed394a9bc7edb9d7e47eac046d4ce2bcc0aaddfd"
     },
     {
       "path": "lotus_chibi_seated_review_only.glb",
@@ -253,8 +257,9 @@
       "path": "PBR_Review/asset_turnaround_contact.jpg",
       "bytes": 90537,
       "sha256": "9941234e851756e6ddbf56d7af9f78fc99769e9309f8071e8585e5adfb775bbb",
-      "githubState": "pending_owner_upload",
-      "kind": "asset_or_media"
+      "githubState": "uploaded_sha_verified",
+      "kind": "asset_or_media",
+      "githubBlobSHA": "27564dba7735838a0026eea92d4c9200c3051490"
     },
     {
       "path": "PBR_Review/chibi_back.png",
@@ -351,8 +356,9 @@
       "path": "PBR_Review/pair_anchor_debug.png",
       "bytes": 228045,
       "sha256": "26604349783741b3584a9b64b4f7749e489882b5b3ea5b5a48740dcf3fce41f4",
-      "githubState": "pending_owner_upload",
-      "kind": "asset_or_media"
+      "githubState": "uploaded_sha_verified",
+      "kind": "asset_or_media",
+      "githubBlobSHA": "1cb844a74a601cf699677fc9512fe6246f04930e"
     },
     {
       "path": "PBR_Review/pair_front.png",
@@ -365,8 +371,9 @@
       "path": "PBR_Review/pair_hero_contact.jpg",
       "bytes": 75734,
       "sha256": "69ff73a4ecec57d39c72f71596cceabade3d156d56d1dfe2b25509e9ce692b9d",
-      "githubState": "pending_owner_upload",
-      "kind": "asset_or_media"
+      "githubState": "uploaded_sha_verified",
+      "kind": "asset_or_media",
+      "githubBlobSHA": "be4ae4af1e3801a5370089b5e08e86c483295ab9"
     },
     {
       "path": "PBR_Review/pair_three_quarter.png",
@@ -393,8 +400,24 @@
       "path": "PBR_Review/sit_idle_native_gltf.gif",
       "bytes": 245873,
       "sha256": "a4f31362a53834f818ad1b46bb37053775a8f14e9ea03f626201d2c4de460964",
-      "githubState": "pending_owner_upload",
-      "kind": "asset_or_media"
+      "githubState": "uploaded_sha_verified",
+      "kind": "asset_or_media",
+      "githubBlobSHA": "5d573939cac364fd9baf8f31273e1c839b8cb5b4"
     }
-  ]
+  ],
+  "gitHubBinaryVerification": {
+    "branch": "assets/lotus-pad-chibi-p0",
+    "verifiedRealBytesViaBlobSHA": 6,
+    "format": "Exact Git blob SHA from remote GitHub file fetch, equal to local Git hash-object",
+    "verifiedPaths": [
+      "lotus_pad_01.glb",
+      "meditator_base.glb",
+      "PBR_Review/asset_turnaround_contact.jpg",
+      "PBR_Review/pair_hero_contact.jpg",
+      "PBR_Review/sit_idle_native_gltf.gif",
+      "PBR_Review/pair_anchor_debug.png"
+    ],
+    "blenderBlendFiles": "NOT_CREATED",
+    "otherMedia": "pending_owner_upload"
+  }
 }
