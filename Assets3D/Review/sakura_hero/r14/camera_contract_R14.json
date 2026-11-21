@@ -1,0 +1,113 @@
+{
+  "revision": "R14",
+  "axis": "+Y up, glTF; Blender conversion to +Z",
+  "aspectWH": 0.5625,
+  "hero_full_9x16": {
+    "positionYup": [
+      24.641505854426047,
+      38.825045790301786,
+      54.139118204520734
+    ],
+    "targetYup": [
+      0.15,
+      12.4,
+      0
+    ],
+    "upYup": [
+      0,
+      1,
+      0
+    ],
+    "verticalFovDeg": 50,
+    "intent": "uncropped full tree"
+  },
+  "hero_medium_9x16": {
+    "positionYup": [
+      18.22713557959851,
+      31.90427786219839,
+      39.95998391279671
+    ],
+    "targetYup": [
+      0.15,
+      12.4,
+      0
+    ],
+    "upYup": [
+      0,
+      1,
+      0
+    ],
+    "verticalFovDeg": 50,
+    "distanceFromTargetM": 48,
+    "intent": "tighter hero, intentionally crop outer canopy edges"
+  },
+  "hero_close_9x16": {
+    "positionYup": [
+      3,
+      54,
+      10
+    ],
+    "targetYup": [
+      0,
+      13.5,
+      0
+    ],
+    "upYup": [
+      0,
+      0,
+      -1
+    ],
+    "verticalFovDeg": 50,
+    "intent": "intentional high-angle close"
+  },
+  "projectionChecked": {
+    "R13": {
+      "full": {
+        "ndcX": [
+          -0.803,
+          0.8598
+        ],
+        "ndcY": [
+          -0.4546,
+          0.48
+        ],
+        "outOfFramePercent": 0
+      },
+      "medium": {
+        "ndcX": [
+          -1.1214,
+          1.2005
+        ],
+        "ndcY": [
+          -0.6089,
+          0.664
+        ],
+        "outOfFramePercent": 1.23
+      }
+    },
+    "R14": {
+      "full": {
+        "ndcX": [
+          -0.8045,
+          0.8624
+        ],
+        "ndcY": [
+          -0.4465,
+          0.4807
+        ],
+        "outOfFramePercent": 0
+      },
+      "medium": {
+        "ndcX": [
+          -1.1235,
+          1.205
+        ],
+        "ndcY": [
+          -0.597,
+          0.6657
+        ],
+        "outOfFramePercent": 1.235
+      }
+    }
+  }
+}
