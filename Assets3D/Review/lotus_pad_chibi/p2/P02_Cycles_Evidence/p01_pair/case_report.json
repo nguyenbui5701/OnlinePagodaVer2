@@ -1,0 +1,54 @@
+{
+  "status": "ACTUAL_OWNER_EXECUTION",
+  "revision": "p01",
+  "kind": "pair",
+  "blenderVersion": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "viewTransform": "AgX",
+  "exposureEV": 0.0,
+  "worldStrength": 0.65,
+  "lighting": "fixed warm key + lilac fill + rose rim",
+  "sourceGLBs": {
+    "lotus_pad_01.glb": {
+      "bytes": 270128,
+      "sha256": "0c80e5d4b2590716fdf9a985340fe2446af7ecc056727a03b82a3997db52bba5"
+    },
+    "meditator_base.glb": {
+      "bytes": 205588,
+      "sha256": "f4e184b57046ad442183931bf9fd2f6d7953000ea07270458e291f627f787d2b"
+    }
+  },
+  "importedMeshCount": 16,
+  "principledMaterialSlots": 16,
+  "animationNames": [
+    "sit_idle"
+  ],
+  "originalBlender": null,
+  "images": [
+    {
+      "view": "pair_front",
+      "file": "p01_pair_pair_front_cycles.png",
+      "bytes": 372626,
+      "sha256": "bb6fd52c5a2818981f352e425999b9d660a6df2ec5a73d5f067bd3d0d9f0ac3e"
+    },
+    {
+      "view": "pair_three_quarter",
+      "file": "p01_pair_pair_three_quarter_cycles.png",
+      "bytes": 345600,
+      "sha256": "0b1867a954e10a2c13bef085deba54a3a5faba858b1b2e554382247c4378a428"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p01_pair_pair_medium_9x16_cycles.png",
+      "bytes": 535932,
+      "sha256": "d7f4e7a80cca6e7cc7107a79b2335cdd7fc6b6c8a91891404a71a142610248c5"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "p01_pair_pair_close_9x16_cycles.png",
+      "bytes": 565061,
+      "sha256": "af8af679d94305305e0eaae22d529bc58dc95f39ac733a695240d578dabe61fe"
+    }
+  ]
+}
