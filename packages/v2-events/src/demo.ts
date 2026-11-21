@@ -1,3 +1,4 @@
+import { writeFileSync } from 'node:fs';
 import { DemoEngine } from './engine.ts';
 import { demoScript } from './fixture.ts';
 
@@ -11,4 +12,7 @@ for (const event of demoScript()) {
 for (const atMs of [49000, 51700, 52600, 57400, 58300, 63100, 64300]) {
   trace.push({ effects: engine.advance(atMs), state: engine.snapshot() });
 }
-console.log(JSON.stringify({ fixtureSeed: 16, trace }, null, 2));
+const json = JSON.stringify({ fixtureSeed: 16, trace }, null, 2) + '\n';
+const path = process.argv[2];
+if (path) writeFileSync(path, json, 'utf8');
+else process.stdout.write(json);

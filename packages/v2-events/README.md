@@ -7,10 +7,10 @@ Set-Location packages/v2-events
 npm.cmd ci
 npm.cmd run build
 npm.cmd test
-node src/demo.ts > demo-trace.json
+node src/demo.ts demo-trace.json
 ```
 
-`npm run demo` prints the same trace with the npm banner. The included [trace](evidence/demo-trace.json) was generated with the direct Node command. It shows 45 s idle, five provisional A packets, final A count 5, B and C arrivals during A focus, chronological A → B → C start/end, then cinematic return. The final confirmed total is 7.
+`npm run demo` prints the same trace with the npm banner. Pass a filename to the direct Node command for UTF-8 JSON on Windows PowerShell. The included [trace](evidence/demo-trace.json) shows 45 s idle, five provisional A packets, final A count 5, B and C arrivals during A focus, chronological A → B → C start/end, then cinematic return. The final confirmed total is 7.
 
 ## Integration seam
 
