@@ -50,16 +50,31 @@ if(-not (Test-Path -LiteralPath $py)){throw "Missing Python importer $py"}
 foreach($case in $selected){
  $dest=Join-Path $out $case.Name
  New-Item -ItemType Directory -Force -Path $dest | Out-Null
- $args=@('--background','--factory-startup','--python',$py,'--',
+ $args=@('--background','--factory-startup','--python-exit-code','97','--python',$py,'--',
    '--model',(Join-Path $rootDir $case.File),
    '--out',$dest,'--case',$case.Name,'--samples',"$Samples",'--size',"$Size")
  if($Mode -eq 'quick'){$args+='--quick'}
  Write-Host "[R13 RENDER START] $($case.Name) $Samples samples $Size wide"
- & $BlenderPath @args 1> (Join-Path $out ($case.Name+'_stdout.log')) 2> (Join-Path $out ($case.Name+'_stderr.log'))
- if($LASTEXITCODE -ne 0){
-  Get-Content (Join-Path $out ($case.Name+'_stdout.log')) -Tail 25
-  Get-Content (Join-Path $out ($case.Name+'_stderr.log')) -Tail 25
-  throw "Blender Cycles failed $($case.Name) (exit $LASTEXITCODE)"
+ # Windows PowerShell 5.1 turns native stderr text into NativeCommandError
+ # when $ErrorActionPreference='Stop'. That hides Blender's actual Python traceback.
+ # Disable *only for this native invocation*; restore immediately afterward.
+ $stdout=Join-Path $out ($case.Name+'_stdout.log')
+ $stderr=Join-Path $out ($case.Name+'_stderr.log')
+ $previousErrorActionPreference=$ErrorActionPreference
+ try {
+  $ErrorActionPreference='Continue'
+  & $BlenderPath @args 1> $stdout 2> $stderr
+  $blenderExitCode=$LASTEXITCODE
+ } finally {
+  $ErrorActionPreference=$previousErrorActionPreference
+ }
+ # --python-exit-code 97 guarantees nonzero exit when Blender's Python fails.
+ if($blenderExitCode -ne 0){
+  Write-Host '[R13 BLENDER STDOUT - last 50 lines]' -ForegroundColor Yellow
+  if(Test-Path -LiteralPath $stdout){Get-Content -LiteralPath $stdout -Tail 50}
+  Write-Host '[R13 BLENDER STDERR - last 80 lines]' -ForegroundColor Yellow
+  if(Test-Path -LiteralPath $stderr){Get-Content -LiteralPath $stderr -Tail 80}
+  throw "Blender Cycles failed $($case.Name) (exit $blenderExitCode). See $stderr and $stdout for the FULL Python traceback."
  }
  $report=Join-Path $dest ($case.Name+'_report.json')
  if(-not (Test-Path -LiteralPath $report)){throw "No case report $report"}
