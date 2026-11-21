@@ -52,3 +52,15 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run_sakura_R16_blender
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run_sakura_R16_blender.ps1 -Mode all -Samples 32 -Size 520
 ```
 Original glTF materials + **Cycles CPU, AgX, 0 EV, World strength 0.65 and 3 SUNs**, same R15/R16 rig and 10 views/case (including 3 junctions and full/medium/close). This has **not** been executed for R16 by the AI environment. Send original Cycles ZIP and editable R16 QUALITY/ECO .blend to SA. See `README_WINDOWS.md` and `BINARY_HANDOFF.md`.
+
+## P0 additional raw-GLB secondary-contact screening — unresolved regression risk
+
+A **second independent test on the exported, SHA-pinned R15 and R16 GLBs** used VTK implicit signed distance to the joined woody shell and checked whether each remaining `Branches_plum` connected component has vertex samples on both the inside and outside (15 mm sign tolerance). This is a **proxy**, NOT a definitive triangle-triangle intersection or self-intersection proof.
+
+| Metric | R15 | R16 |
+|---|---:|---:|
+| Remaining independent small branch components | 77 | 68 |
+| Components whose vertex samples cross signed-distance sign | **31** | **45** |
+| Components with any vertex within 15 cm of fused main surface | 43 | 54 |
+
+While R16 merges the 11 main arms and one selected secondary into a watertight connected SDF parent, the broader joined shape has **more, not fewer, remaining secondary contact candidates** under this screening. The increase may reflect expanded parent geometry; exact triangle collision and visually visible penetration are **not proved** by this proxy. **Do not call secondary interfaces P0 PASS** or claim all branches are cleanly fused. SA must evaluate matched fork front/side/back Cycles and a later targeted secondary-branch retopology should inspect these components. Full per-component evidence, reproducing script and CSV are bundled in the owner Source Reports ZIP: `R16_SECONDARY_BRANCH_CONTACT_AUDIT.json`, `audit_secondary_contacts.py`, `R16_SECONDARY_CONTACTS.csv`. **P0 main continuous shell topology PASS; P0 secondary-branch junctions OPEN / regression risk.**
