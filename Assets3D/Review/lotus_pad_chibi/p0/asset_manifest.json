@@ -69,7 +69,13 @@
         "PBR_Review/pad_waterlevel.png",
         "PBR_Review/pad_side.png"
       ],
-      "originalAuthoring": "Original authored procedural leaf radial surface, V-notch, 15 veins, real stem and thickness"
+      "originalAuthoring": "Original authored procedural leaf radial surface, V-notch, 15 veins, real stem and thickness",
+      "sourceBlend": "lotus_pad_01.blend",
+      "screenshotRefs": [
+        "PBR_Review/pad_top.png",
+        "PBR_Review/pad_waterlevel.png",
+        "PBR_Review/pad_side.png"
+      ]
     },
     {
       "assetId": "meditator_base",
@@ -124,12 +130,12 @@
           0
         ],
         "head": [
-          0.0,
+          0,
           0.835,
           0.04
         ],
         "nameplate": [
-          0.0,
+          0,
           1.335,
           0.03
         ],
@@ -152,7 +158,7 @@
       "animations": [
         {
           "name": "sit_idle",
-          "durationSeconds": 2.0,
+          "durationSeconds": 2,
           "loop": true,
           "target": "UpperBodyBreath",
           "channels": [
@@ -173,7 +179,15 @@
         "PBR_Review/chibi_three_quarter.png",
         "PBR_Review/sit_idle_native_gltf.gif"
       ],
-      "originalAuthoring": "Original simplified zen chibi with dark asymmetrical hair bun, white/lilac robe, hands, closed eyes and physically crossed legs"
+      "originalAuthoring": "Original simplified zen chibi with dark asymmetrical hair bun, white/lilac robe, hands, closed eyes and physically crossed legs",
+      "sourceBlend": "meditator_base.blend",
+      "screenshotRefs": [
+        "PBR_Review/chibi_front.png",
+        "PBR_Review/chibi_side.png",
+        "PBR_Review/chibi_back.png",
+        "PBR_Review/chibi_three_quarter.png",
+        "PBR_Review/sit_idle_native_gltf.gif"
+      ]
     }
   ],
   "pairSeatContactTest": {
