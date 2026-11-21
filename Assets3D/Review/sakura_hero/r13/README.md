@@ -46,7 +46,4 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run_sakura_R13_blender
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run_sakura_R13_blender.ps1 -Mode all -Samples 32 -Size 520
 ```
 
-`-BlenderPath 'C:\Program Files\Blender Foundation\Blender 4.5\blender.exe'` is supported if Blender isn't detected. The script verifies GLB SHA, imports PBR Principled materials, saves two actual editable R13 .blend files, produces 6 camera shots per case (including 9:16 aerial) and case JSON/logs. Same **Cycles CPU, AgX, 0 EV, World 0.65 + 3 SUNs**. Correct glTF Y-up → Blender Z-up axes. **R13 Cycles remains NOT RUN in this environment**. Owner should upload `Sakura_R13_Blender_Evidence_Cycles.zip`.
-
-## Final gates
-VTK PBR 3-model shots are not Blender footage. See `R13_VISUAL_GAP_ANALYSIS.md`, `asset_manifest.json` and `BINARY_HANDOFF.md`. Native glTF/Three.js and owner RTX+LIVE Studio FPS/VRAM remain OPEN. Large binaries not committed; preserve R10/R11/R12 original files.
+`-BlenderPath 'C:\Program Files\Blender Foundation\Blender 4.5\blender.exe'` is supported if Blender isn't detected. The script SHA-verifies three source GLBs, imports actual Principled materials, uses **Cycles CPU, AgX 0 EV, World 0.65, SUN KEY 2.10/RIM 1.05/LOWER 0.72** and the corrected Y-up→Z-up coordinates. Full mode makes 6 camera PNGs/case (including full-tree and close 9:16), JSON/log/hash manifest and editable R13 QUALITY/ECO `.blend`. **R13 Cycles PASS must wait for real owner output.**
