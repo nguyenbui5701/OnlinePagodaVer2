@@ -1,4 +1,4 @@
-# Sakura Hero R12 — exact binary handoff
+> **Verified update, 2026-11-21 (supersedes pre-owner-run checkpoints):** Blender 4.5.16 LTS Cycles CPU R12 completed: four cases, 20 PNGs, 34/34 ZIP hashes, original two .blend structures and SHA independently SA reviewed. **Technical Blender PASS; visual ART PARTIAL; production NOT APPROVED.** R12 original binary GitHub upload still `pending_owner_upload`. See [R12_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md](R12_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md). Native Three.js and GPU/LIVE Studio NOT RUN.\n\n# Sakura Hero R12 — exact binary handoff
 
 Destination branch: `assets/sakura-hero-r04-sa-review`. Relative root: `Assets3D/Review/sakura_hero/r12/`.
 All below remain `pending_owner_upload` until independent GitHub SHA checks; Blender .blend R12 not produced until Windows test.
