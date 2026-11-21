@@ -1,3 +1,5 @@
+> **Post-owner Cycles audit, SA review #6005994936:** P0.2 **OWNER_CYCLES_EXECUTED_SA_IMAGE_HASH_REVIEW_PASS** (6/6 cases, 32/32 PNGs). Three original owner .blend Git blobs **exist**; their raw SHA-256 and ZIP CRC **were not independently recalculated by SA** due GitHub connector limit. Art **OWNER_PENDING**; integration/Three.js/GPU NOT RUN. Old historical “not run” notes below are superseded. [Full owner Cycles audit](P02_OWNER_CYCLES_SA_AUDIT.md). PR Draft / no merge.
+
 # P0-02 binary and media handoff — branch `assets/lotus-pad-chibi-p0`
 
 Full GitHub binary paths and exact source SHA-256 before upload; **uploaded_sha_verified** for 2/2 real GLBs and 5/5 PBR A/B JPEGs, checked against remote Git blob SHA. Only p0.2 text/source/manifest are initially committed. Do not place files in `main`, do not overwrite p0.1 originals.
