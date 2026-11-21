@@ -162,13 +162,32 @@
       }
     ]
   },
-  "newSourceBlender": "PENDING_OWNER_RUN",
-  "newCyclesImages": "PENDING_OWNER_RUN",
+  "newSourceBlender": "THREE_ORIGINAL_P02_BLEND_GIT_BLOBS_EXIST_SA_RAW_SHA256_NOT_VERIFIED",
+  "newCyclesImages": "OWNER_RUN_SA_32_OF_32_PNG_HASHES_PASS",
   "p01OwnerCycles": "PASS_SA_REVIEW_6005380374",
   "nativeThreeJs": "NOT_RUN",
   "ownerArt": "ART_OWNER_PENDING",
   "production": "NOT_APPROVED",
   "pr": "DRAFT_NO_MERGE",
   "githubOriginalGLBUploads": "2/2_VERIFIED_GIT_BLOB",
-  "githubRealPBRMediaUploads": "5/5_VERIFIED_GIT_BLOB"
+  "githubRealPBRMediaUploads": "5/5_VERIFIED_GIT_BLOB",
+  "ownerBlenderCyclesP02": {
+    "status": "OWNER_CYCLES_EXECUTED_SA_IMAGE_HASH_REVIEW_PASS",
+    "saReview": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6005994936",
+    "cases": 6,
+    "pngShaMatches": 32,
+    "stdoutComplete": 6,
+    "emptyStderr": 6,
+    "originalGitTextEncodingAdjustments": {
+      "jsonCRLFToLF": 6,
+      "stdoutUTF16LEtoUTF8": 6
+    },
+    "originalBlendGitBlobsPresent": 3,
+    "originalBlendRawSha256DirectlyVerifiedBySA": false,
+    "originalZipCRCVerifiedBySA": false,
+    "originalZipReportedBytes": 12698132,
+    "originalZipGitBlob": "540b0a55bc2977af73cfda014add28ec837a11e3",
+    "ownerArt": "PENDING",
+    "reference": "../p0.2/P02_OWNER_CYCLES_SA_AUDIT.md"
+  }
 }
