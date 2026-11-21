@@ -1,0 +1,72 @@
+{
+  "revision": "R13",
+  "reason": "Whole hero crown and roots fit in vertical portrait for BOTH R12 and R13; 14% NDC padding, shared camera, no model edits",
+  "hero_full_9x16": {
+    "positionYup": [
+      24.641505854426047,
+      38.825045790301786,
+      54.139118204520734
+    ],
+    "targetYup": [
+      0.15,
+      12.4,
+      0.0
+    ],
+    "viewUpYup": [
+      0,
+      1,
+      0
+    ],
+    "verticalFovDeg": 50.0,
+    "aspectWH": 0.5625,
+    "resolutionYXRatio": 1.7777777777777777,
+    "fitMarginNDC": 0.86,
+    "distanceM": 65.032
+  },
+  "hero_close_9x16": {
+    "positionYup": [
+      3,
+      54,
+      10
+    ],
+    "targetYup": [
+      0,
+      13.5,
+      0
+    ],
+    "viewUpYup": [
+      0,
+      0,
+      -1
+    ],
+    "verticalFovDeg": 50.0,
+    "aspectWH": 0.5625,
+    "purpose": "deliberately cropped close aerial, not whole canopy"
+  },
+  "diagnostics": {
+    "R12": {
+      "vertexCount": 226267,
+      "NDCleftRightBottomTopDepthMin": [
+        -0.8039310659543085,
+        0.8599988435978078,
+        -0.44351113361114197,
+        0.4799052508280123,
+        48.731482405542174
+      ]
+    },
+    "R13": {
+      "vertexCount": 224909,
+      "NDCleftRightBottomTopDepthMin": [
+        -0.8029549809362994,
+        0.8597880706250829,
+        -0.45457117455575125,
+        0.4800233056182428,
+        48.7303757283363
+      ]
+    }
+  },
+  "inputs": {
+    "r12_quality.glb": "0e1f656c74a3f7860cb640395d95cebdb852d7e1269f1463e04408aa6bc8bb25",
+    "sakura_hero.glb": "5e03020ac3160d6746b96715254e37290d140a1e7b3cee00708a105d2955e840"
+  }
+}
