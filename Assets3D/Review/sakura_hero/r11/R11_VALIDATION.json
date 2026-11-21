@@ -1,0 +1,133 @@
+{
+  "revision": "R11",
+  "structural": {
+    "quality": {
+      "filename": "sakura_hero.glb",
+      "bytes": 7599884,
+      "sha256": "584d95eb9467c8342d018a4a0331f8205b20f042325ef82b56d1bd8daddab375",
+      "glTFVersion": 2,
+      "triangles": 188782,
+      "vertices": 235142,
+      "meshCount": 11,
+      "materialCount": 11,
+      "materialNames": [
+        "Trunk_bark_plumblack",
+        "Golden_bark_veins",
+        "Branches_plum",
+        "Canopy_depth_rose",
+        "Canopy_peach",
+        "Canopy_rose",
+        "Sakura_petal_warm_rose",
+        "Sakura_flower_gold",
+        "Sakura_petal_blush",
+        "Sakura_petal_pink",
+        "Sakura_petal_cream"
+      ],
+      "boundsMin": [
+        -12.6784,
+        -1.027,
+        -12.6079
+      ],
+      "boundsMax": [
+        13.9638,
+        26.1148,
+        13.402
+      ],
+      "boundsMeters": [
+        26.6422,
+        27.1418,
+        26.01
+      ],
+      "degenerateFaces": 0,
+      "nonfiniteVertices": 0,
+      "petalDoubleSided": true,
+      "petalTriMeshCount": 4,
+      "texturesInGLTF": 0,
+      "imagesInGLTF": 0,
+      "animations": 0,
+      "chunks": [
+        {
+          "type": "JSON",
+          "bytes": 10048
+        },
+        {
+          "type": "BIN\u0000",
+          "bytes": 7589808
+        }
+      ]
+    },
+    "eco": {
+      "filename": "sakura_hero_eco.glb",
+      "bytes": 1393492,
+      "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+      "glTFVersion": 2,
+      "triangles": 44412,
+      "vertices": 71032,
+      "meshCount": 10,
+      "materialCount": 10,
+      "materialNames": [
+        "Trunk_bark_plumblack",
+        "Golden_bark_veins",
+        "Branches_plum",
+        "Canopy_depth_rose",
+        "Canopy_peach",
+        "Canopy_rose",
+        "Sakura_petal_blush",
+        "Sakura_petal_cream",
+        "Sakura_petal_pink",
+        "Sakura_petal_warm_rose"
+      ],
+      "boundsMin": [
+        -12.7865,
+        -1.026,
+        -12.0262
+      ],
+      "boundsMax": [
+        13.2873,
+        24.8686,
+        10.9339
+      ],
+      "boundsMeters": [
+        26.0738,
+        25.8947,
+        22.9601
+      ],
+      "degenerateFaces": 0,
+      "nonfiniteVertices": 0,
+      "petalDoubleSided": true,
+      "petalTriMeshCount": 4,
+      "texturesInGLTF": 0,
+      "imagesInGLTF": 0,
+      "animations": 0,
+      "chunks": [
+        {
+          "type": "JSON",
+          "bytes": 8136
+        },
+        {
+          "type": "BIN\u0000",
+          "bytes": 1385328
+        }
+      ]
+    }
+  },
+  "materialGltfNormals": [
+    "Sakura_petal_warm_rose",
+    "Sakura_petal_blush",
+    "Sakura_petal_pink",
+    "Sakura_petal_cream"
+  ],
+  "r10PaletteOnlySamePositionsAndFaces": true,
+  "r11GeometryOnlySamePositionsAndFaces": true,
+  "materialABPBR": "VTK native PBR executed 4-case top, under, trunk; A/B source GLBs actually exported",
+  "blenderCyclesAB": "NOT EXECUTED in this environment; owner-run Windows script syntax-compiled only",
+  "validatedR10Blender": "SA confirmed R10 Cycles import/render and original 2 .blend file integrity",
+  "unresolved": [
+    "R11 Cycles image parity, particularly pale top canopy",
+    "R11 material/normal underside shading in Blender",
+    "native ThreeJS material parity",
+    "LIVE Studio GPU FPS/VRAM on owner hardware",
+    "old-growth branch merge art fidelity"
+  ],
+  "costVND": 0
+}
