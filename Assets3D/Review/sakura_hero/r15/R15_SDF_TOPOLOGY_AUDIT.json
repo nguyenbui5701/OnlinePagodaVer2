@@ -51,5 +51,31 @@
   "sha256R14Baseline": "ba3183c7b738dbd814b2b23cedc1f6da0470b13121882c116e1775154bda44f5",
   "sha256ECO": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
   "geometryChangesLimitedToSakura": true,
-  "R15BlenderCycles": "NOT_RUN_OWNER_WINDOWS_PENDING"
+  "R15BlenderCycles": "NOT_RUN_OWNER_WINDOWS_PENDING",
+  "ownerBlenderCyclesR15": {
+    "status": "OWNER_CYCLES_PASS_SA_INDEPENDENTLY_REVIEWED",
+    "cases": 3,
+    "imagesVerified": 30,
+    "zipMembersVerified": 41,
+    "zipBytes": 20833552,
+    "zipSha256": "19d4385dc3523d2c5f72fa9900cefc09bfb9e8d69572feaec4bfcc2f50ca86c4",
+    "blender": "4.5.16 LTS Cycles CPU",
+    "samples": 32,
+    "viewTransform": "AgX",
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "qualityBlend": {
+      "bytes": 13112769,
+      "sha256": "beff1990257e20e1b8743430aca52189e85778f228ec12cffaad24e4cdd76bce"
+    },
+    "ecoBlend": {
+      "bytes": 3936772,
+      "sha256": "66c3b5803b470fcca0d2404539f0b5fa1d382353e4d87af8a5adf63fb55cdb44"
+    },
+    "art": "PARTIAL",
+    "productionApproved": false,
+    "githubBinaryStatus": "pending_owner_upload",
+    "source": "R15_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  },
+  "rawGLBIndependentAuditAtR16": "R16/R15_RAW_GLB_INDEPENDENT_AUDIT.json"
 }

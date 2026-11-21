@@ -1,0 +1,174 @@
+{
+  "revision": "R13",
+  "branch": "assets/sakura-hero-r04-sa-review",
+  "pr": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/1",
+  "status": "GEOMETRY_PROTOTYPE_R13_CYCLES_OWNER_PASS_ART_PARTIAL",
+  "quality": {
+    "filename": "sakura_hero.glb",
+    "bytes": 4888192,
+    "sha256": "5e03020ac3160d6746b96715254e37290d140a1e7b3cee00708a105d2955e840",
+    "triangles": 181694,
+    "vertices": 224909,
+    "meshes": 11,
+    "materials": 11,
+    "customNormalAttributes": 0,
+    "petalDoubleSided": true,
+    "status": "pending_owner_upload"
+  },
+  "eco": {
+    "filename": "sakura_hero_eco.glb",
+    "bytes": 1393492,
+    "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+    "triangles": 44412,
+    "vertices": 71032,
+    "meshes": 10,
+    "materials": 10,
+    "exactR12CarryForward": true,
+    "status": "pending_owner_upload"
+  },
+  "baselineR12": {
+    "quality": {
+      "bytes": 4916248,
+      "sha256": "0e1f656c74a3f7860cb640395d95cebdb852d7e1269f1463e04408aa6bc8bb25",
+      "triangles": 182674,
+      "vertices": 226267
+    },
+    "ecoSha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+    "ownerBlenderR12": "OWNER_AND_SA_VERIFIED_4_CASES_20_IMAGES"
+  },
+  "diffQualityVsR12": {
+    "triangles": -980,
+    "vertices": -1358,
+    "bytes": -28056,
+    "trianglesPercent": -0.5365,
+    "verticesPercent": -0.6002,
+    "bytesPercent": -0.5707
+  },
+  "materialPolicy": {
+    "pinkR11PalettePreserved": true,
+    "emissiveReducedR11Preserved": true,
+    "noExtraNormalBuffers": true,
+    "petalSingleSurfaceDoubleSided": true
+  },
+  "changes": {
+    "trunk": "Swept old-growth shaft with stronger S-curve, genuine branch attachment bulges in continuous main bark surface, asymmetrical buttress roots, twisted bark relief; still intersecting branch tubes, not watertight Boolean union",
+    "flower": "Shorter rounded outward petal outlines at original 4 triangles per petal, 7 instead of 11 twig drop clusters; retained canopy tier layout and warm R12 color",
+    "eco": "Unchanged exact GLB SHA"
+  },
+  "heroCameras": "camera_contract_R13.json",
+  "validation": {
+    "actualGLBImportTrimesh": "PASS",
+    "actualVTKglTFPBR": "PASS_DOCUMENTED_IBL_3_LIGHTS",
+    "blenderR12": "OWNER_AND_SA_PASS",
+    "blenderR13": "OWNER_CYCLES_PASS_INDEPENDENT_SA_REVIEW",
+    "threeJSGltfLoader": "NOT_RUN",
+    "gpuFPSVramLiveStudio": "NOT_RUN",
+    "art": "PARTIAL",
+    "productionApproved": false
+  },
+  "handoff": [
+    {
+      "path": "Assets3D/Review/sakura_hero/r13/sakura_hero.glb",
+      "bytes": 4888192,
+      "sha256": "5e03020ac3160d6746b96715254e37290d140a1e7b3cee00708a105d2955e840",
+      "status": "pending_owner_upload",
+      "kind": "glb"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r13/sakura_hero_eco.glb",
+      "bytes": 1393492,
+      "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+      "status": "pending_owner_upload",
+      "kind": "glb"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r13/sakura_hero_editable.obj",
+      "bytes": 12149394,
+      "sha256": "2f73834e3b3ba05cb7ff84281c9c0bb256540e36af89033bcf34e0fa41115006",
+      "status": "pending_owner_upload",
+      "kind": "obj"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r13/PBR_Review/R12_R13_9x16_FULL_CLOSE_VTK.jpg",
+      "bytes": 250661,
+      "sha256": "b26bf544029ce4b85a4b57b76334bdfb05506d7a76b664decc29ce04fdc8b0aa",
+      "status": "pending_owner_upload",
+      "kind": "vtk_preview"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r13/PBR_Review/R12_R13_CONTACT.jpg",
+      "bytes": 346532,
+      "sha256": "b8847fabe6ffefef28749d9e99084cc3bf53953ddce83dea395049770afd932d",
+      "status": "pending_owner_upload",
+      "kind": "vtk_preview"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r13/PBR_Review/R12_R13_three_quarter_MATCHED_VTK.jpg",
+      "bytes": 79186,
+      "sha256": "96965e557e1813772c7a3aa7866de3853272b074ae30c532877385834f837fef",
+      "status": "pending_owner_upload",
+      "kind": "vtk_preview"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r13/PBR_Review/R12_R13_top_MATCHED_VTK.jpg",
+      "bytes": 99006,
+      "sha256": "5166fdecd6c91b6af29c27cacf6cf0cfe423a8b3dd0e5325f7c11d2af2a24ce9",
+      "status": "pending_owner_upload",
+      "kind": "vtk_preview"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r13/PBR_Review/R12_R13_trunk_33s_MATCHED_VTK.jpg",
+      "bytes": 64732,
+      "sha256": "778deec8685b1e2cb78d58cada271d59577de373088b37d29f10bc10ed21d1e3",
+      "status": "pending_owner_upload",
+      "kind": "vtk_preview"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r13/PBR_Review/R12_R13_under_MATCHED_VTK.jpg",
+      "bytes": 99547,
+      "sha256": "50543c8f7f4b22b37ecd842d7e0e111d50fd12251b53f90ee2ea16118097031c",
+      "status": "pending_owner_upload",
+      "kind": "vtk_preview"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r13/PBR_Review/VIDEO_15s_R12_R13_CameraApprox.jpg",
+      "bytes": 184575,
+      "sha256": "d041d1629f6b2eb8a18b87556b4ab8365b9d548cd370a02fc8a7e0f9c9615eea",
+      "status": "pending_owner_upload",
+      "kind": "vtk_preview"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r13/PBR_Review/VIDEO_33s_R12_R13_CameraApprox.jpg",
+      "bytes": 127099,
+      "sha256": "50430e8996a28f4dd8f678114e1e52d3b6aba616ff4c5d8ba623ce0b87022919",
+      "status": "pending_owner_upload",
+      "kind": "vtk_preview"
+    }
+  ],
+  "ownerCyclesR13": {
+    "status": "OWNER_CYCLES_PASS_SA_INDEPENDENTLY_REVIEWED",
+    "blenderVersion": "4.5.16 LTS",
+    "engine": "Cycles CPU",
+    "casesCompleted": 3,
+    "imagesVerified": 18,
+    "archiveHashesVerified": 29,
+    "samples": 32,
+    "viewTransform": "AgX",
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "zipBytes": 15307370,
+    "zipSHA256": "e9441363da7334c5f43fbfa3fecd535129eeed283a0dfb009eeaefc236529d32",
+    "qualityBlend": {
+      "bytes": 12822286,
+      "sha256": "46bda0fb631e56d07d23828ce5322fe90412f282d77c27ec0cd9fc4a20284283"
+    },
+    "ecoBlend": {
+      "bytes": 3936772,
+      "sha256": "41ea93df79576d9eec9c5f55270c1b9a2d0605345119bc52fe39fc4cff323af3"
+    },
+    "art": "PARTIAL",
+    "production": false,
+    "githubBinary": "pending_owner_upload",
+    "reference": "R13_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  }
+}

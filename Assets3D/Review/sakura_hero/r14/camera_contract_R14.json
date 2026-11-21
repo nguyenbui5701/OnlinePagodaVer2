@@ -1,6 +1,6 @@
 {
   "revision": "R14",
-  "axis": "+Y up; angles in Blender script are converted to +Z up",
+  "axis": "+Y up, glTF; Blender conversion to +Z",
   "aspectWH": 0.5625,
   "hero_full_9x16": {
     "positionYup": [
@@ -11,15 +11,15 @@
     "targetYup": [
       0.15,
       12.4,
-      0.0
+      0
     ],
     "upYup": [
       0,
       1,
       0
     ],
-    "fovVerticalDeg": 50,
-    "intent": "No cropped vertices; technical full-coverage reference"
+    "verticalFovDeg": 50,
+    "intent": "uncropped full tree"
   },
   "hero_medium_9x16": {
     "positionYup": [
@@ -30,16 +30,16 @@
     "targetYup": [
       0.15,
       12.4,
-      0.0
+      0
     ],
     "upYup": [
       0,
       1,
       0
     ],
-    "fovVerticalDeg": 50,
-    "distanceFromTargetMeters": 48,
-    "intent": "Controlled small lateral crop for stronger TikTok hero; never alter GLB for framing"
+    "verticalFovDeg": 50,
+    "distanceFromTargetM": 48,
+    "intent": "tighter hero, intentionally crop outer canopy edges"
   },
   "hero_close_9x16": {
     "positionYup": [
@@ -57,64 +57,56 @@
       0,
       -1
     ],
-    "fovVerticalDeg": 50,
-    "intent": "Deliberately cropped near-overhead flower detail"
+    "verticalFovDeg": 50,
+    "intent": "intentional high-angle close"
   },
-  "projectedChecks": {
+  "projectionChecked": {
     "R13": {
       "full": {
-        "projectedVertices": 224909,
-        "ndcLeftRight": [
+        "ndcX": [
           -0.803,
           0.8598
         ],
-        "ndcBottomTop": [
+        "ndcY": [
           -0.4546,
           0.48
         ],
-        "verticesOutsideFramePct": 0.0,
-        "minimumPositiveDepthM": 48.73
+        "outOfFramePercent": 0
       },
       "medium": {
-        "projectedVertices": 224909,
-        "ndcLeftRight": [
+        "ndcX": [
           -1.1214,
           1.2005
         ],
-        "ndcBottomTop": [
+        "ndcY": [
           -0.6089,
           0.664
         ],
-        "verticesOutsideFramePct": 1.23,
-        "minimumPositiveDepthM": 31.698
+        "outOfFramePercent": 1.23
       }
     },
     "R14": {
       "full": {
-        "projectedVertices": 224395,
-        "ndcLeftRight": [
+        "ndcX": [
           -0.8045,
           0.8624
         ],
-        "ndcBottomTop": [
+        "ndcY": [
           -0.4465,
           0.4807
         ],
-        "verticesOutsideFramePct": 0.0,
-        "minimumPositiveDepthM": 48.687
+        "outOfFramePercent": 0
       },
       "medium": {
-        "projectedVertices": 224395,
-        "ndcLeftRight": [
+        "ndcX": [
           -1.1235,
           1.205
         ],
-        "ndcBottomTop": [
+        "ndcY": [
           -0.597,
           0.6657
         ],
-        "verticesOutsideFramePct": 1.235,
-        "minimumPositiveDepthM": 31.655
+        "outOfFramePercent": 1.235
       }
     }
   }

@@ -1,13 +1,12 @@
-# Sakura Hero R14 — Blender Windows A/B launcher
+# Sakura R14 free Blender Cycles owner run
 
-Extract this ZIP into a new folder. It contains exact original R13 QUALITY, actual R14 QUALITY and unchanged ECO GLBs, SHA-gated PowerShell launcher and a self-contained Blender Python render script. Blender 4.5+ free edition recommended.
+Extract the complete Windows Starter archive in a separate folder. It includes exact R13 QUALITY, R14 QUALITY and unchanged ECO GLBs plus self-contained Blender Python and PowerShell scripts. Blender 4.5+ (free) recommended.
 
-From Windows PowerShell in this folder:
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run_sakura_R14_blender.ps1 -Mode quick -Samples 8 -Size 320
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run_sakura_R14_blender.ps1 -Mode all -Samples 32 -Size 520
 ```
 
-If executable auto detection fails use `-BlenderPath 'C:\Program Files\Blender Foundation\Blender 4.5\blender.exe'` with your actual path. Script does not overwrite reserved `$HOME`; native Blender stderr is captured without PowerShell 5.1 masking a Python traceback. `--python-exit-code 97` preserves failure status. On failure the script prints stdout/stderr tails.
+Pass `-BlenderPath 'C:\Program Files\Blender Foundation\Blender 4.5\blender.exe'` (actual installed location) if needed. Script SHA checks sources before any render. Uses `--python-exit-code 97`, native-stderr-safe PowerShell 5.1 handling, prints traceback tails upon failure, and never assigns `$HOME`.
 
-Full mode: 3 cases (`r13_baseline`, `r14_final`, `eco_unchanged`) × 7 views each (top, under, three-quarter, trunk_33s, full 9:16, medium 9:16, close 9:16), 32 samples, 520px width. Cycles CPU + AgX, exposure 0 EV, fixed World .65, Sun keys 2.10/1.05/.72, glTF Principled nodes unchanged. It writes `Sakura_R14_Blender_Evidence_Cycles.zip`, with two new `.blend` sources and case reports. Send ZIP for independent checksum/visual evaluation. Do NOT say Blender R14 PASS until outputs are actually inspected.
+Full: three cases, seven views each (top, under, 3/4, trunk, full 9:16, medium 9:16, close 9:16), 32 samples, 520x603 conventional or 520x924 portrait, Cycles CPU, AgX, 0 EV, World .65, 3 SUNs fixed, real imported glTF Principled materials unmodified. Output `Sakura_R14_Blender_Evidence_Cycles.zip`, editable R14 .blend sources in the archive, JSON/PNG/log/sha. **R14 Blender is NOT TESTED until owner runs and evidence is audited.**

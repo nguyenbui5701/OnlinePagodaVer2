@@ -65,7 +65,7 @@
     "R14": {
       "hero_full_9x16": {
         "sampleVertices": 224395,
-        "outsideFramePct": 0.0,
+        "outsideFramePct": 0,
         "ndcLeftRight": [
           -0.8045,
           0.8624
@@ -106,7 +106,7 @@
     "R15": {
       "hero_full_9x16": {
         "sampleVertices": 227360,
-        "outsideFramePct": 0.0,
+        "outsideFramePct": 0,
         "ndcLeftRight": [
           -0.804,
           0.8621

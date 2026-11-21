@@ -265,7 +265,7 @@
   "pbrEvidence": {
     "VTKnativePBR": "EXECUTED: actual GLB imported, synthetic dusk gradient IBL+3 scene lights, top/under/trunk. No Phong override.",
     "blenderR10": "PASS by owner and independent SA (review #6003449385); not repeated locally",
-    "blenderR11": "NOT EXECUTED; Windows Cycles A/B script supplied",
+    "blenderR11": "PASS_EXECUTED_OWNER_AND_SA_VERIFIED_2026-11-21",
     "lightingContract": "R11_BLENDER_AB_CONTRACT.md",
     "threeJsGLTFLoader": false,
     "gpuLiveStudioBenchmark": false
@@ -454,5 +454,29 @@
       "sha256": "7132828777ae1e7b9abfcbb9ce486d353347380fdc4a26e4cf2d42bad732043a",
       "status": "pending_owner_upload"
     }
-  ]
+  ],
+  "ownerBlenderCyclesR11": {
+    "status": "PASS_EXECUTED_OWNER_INDEPENDENT_SA_EVIDENCE",
+    "blenderVersion": "4.5.16 LTS",
+    "renderEngine": "Cycles CPU",
+    "casesCompleted": 9,
+    "imageCount": 22,
+    "samples": 32,
+    "resolution": [
+      520,
+      603
+    ],
+    "viewTransform": "AgX",
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "qualityBlendBytes": 15303787,
+    "qualityBlendSha256": "f5f871d1c2b6c8cab7d687f844c3eed021c60d66f0e94fe497a5c9ad839451ea",
+    "ecoBlendBytes": 3936772,
+    "ecoBlendSha256": "71a8c3b9346c008bbce383eef2daaebdf7d3139d6cab518cac2f0ca918c68edb",
+    "allUploadedMediaOnPR": false,
+    "productionApproved": false,
+    "source": "R11_BLENDER_CYCLES_AB_OWNER_EVIDENCE_AUDIT.md",
+    "note": "Evidence actually executed, independently verified by SA. Historical pre-run source fields below are superseded; untouched hashes and pending_owner_upload entries remain valid."
+  },
+  "ownerBlenderCyclesR11Note": "For historical notes describing unexecuted Blender, the ownerBlenderCyclesR11 post-execution block supersedes them. No binary/media status changes."
 }

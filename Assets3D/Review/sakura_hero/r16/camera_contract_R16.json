@@ -1,96 +1,70 @@
 {
-  "fovVertical": 50,
-  "aspectWH": 0.5625,
-  "sameCamerasAcrossRevisions": true,
-  "cameraOnlyNeverGeometryChange": true,
+  "revision": "R16",
+  "basis": "+Y up / meters",
+  "fovVerticalDeg": 50,
+  "aspectWidthOverHeight": 0.5625,
+  "identicalR15R16CameraAndLights": true,
   "views": {
-    "R15": {
-      "hero_full_9x16": {
-        "vertices": 227360,
-        "outsideCount": 0,
-        "outsidePercent": 0.0,
-        "NDCleftRight": [
-          -0.8039565802778758,
-          0.8620906277119421
-        ],
-        "NDCbottomTop": [
-          -0.4392943219915695,
-          0.4819602942014256
-        ],
-        "minDepthMeters": 48.67245274677243
-      },
-      "hero_medium_9x16": {
-        "vertices": 227360,
-        "outsideCount": 2774,
-        "outsidePercent": 1.22009148486981,
-        "NDCleftRight": [
-          -1.1227111929759999,
-          1.2048431859250655
-        ],
-        "NDCbottomTop": [
-          -0.5920898108734829,
-          0.6662212112078754
-        ],
-        "minDepthMeters": 31.64045274677243
-      },
-      "hero_close_9x16": {
-        "vertices": 227360,
-        "outsideCount": 16890,
-        "outsidePercent": 7.428747361013372,
-        "NDCleftRight": [
-          -1.5758819488635698,
-          1.471554375653356
-        ],
-        "NDCbottomTop": [
-          -0.7702905140162412,
-          0.7292415475998346
-        ],
-        "minDepthMeters": 28.944144962845126
-      }
+    "hero_full_9x16": {
+      "position": [
+        24.641505854426047,
+        38.825045790301786,
+        54.139118204520734
+      ],
+      "target": [
+        0.15,
+        12.4,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "R15OutsidePercent": 0,
+      "R16OutsidePercent": 0,
+      "description": "whole tree"
     },
-    "R16": {
-      "hero_full_9x16": {
-        "vertices": 229235,
-        "outsideCount": 0,
-        "outsidePercent": 0.0,
-        "NDCleftRight": [
-          -0.8039565802778758,
-          0.8620906277119421
-        ],
-        "NDCbottomTop": [
-          -0.4392943219915695,
-          0.4819602942014256
-        ],
-        "minDepthMeters": 48.67245274677243
-      },
-      "hero_medium_9x16": {
-        "vertices": 229235,
-        "outsideCount": 2774,
-        "outsidePercent": 1.2101118939079982,
-        "NDCleftRight": [
-          -1.1227111929759999,
-          1.2048431859250655
-        ],
-        "NDCbottomTop": [
-          -0.5920898108734829,
-          0.6662212112078754
-        ],
-        "minDepthMeters": 31.64045274677243
-      },
-      "hero_close_9x16": {
-        "vertices": 229235,
-        "outsideCount": 16890,
-        "outsidePercent": 7.367984819072131,
-        "NDCleftRight": [
-          -1.5758819488635698,
-          1.471554375653356
-        ],
-        "NDCbottomTop": [
-          -0.7702905140162412,
-          0.7292415475998346
-        ],
-        "minDepthMeters": 28.944144962845126
-      }
+    "hero_medium_9x16": {
+      "position": [
+        18.22713557959851,
+        31.90427786219839,
+        39.95998391279671
+      ],
+      "target": [
+        0.15,
+        12.4,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "R15OutsidePercent": 1.22,
+      "R16OutsidePercent": 1.21,
+      "description": "intentionally crops outer edge crown, NOT whole tree"
+    },
+    "hero_close_9x16": {
+      "position": [
+        3,
+        54,
+        10
+      ],
+      "target": [
+        0,
+        13.5,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        -1
+      ],
+      "R15OutsidePercent": 7.429,
+      "R16OutsidePercent": 7.368,
+      "description": "intentional close crown crop"
     }
-  }
+  },
+  "assetSourceSha256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c"
 }
