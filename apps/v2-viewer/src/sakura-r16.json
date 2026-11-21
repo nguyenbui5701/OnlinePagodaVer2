@@ -1,0 +1,20 @@
+{
+  "version": "0.1.0",
+  "baselineCommit": "fcc6ede4cb7a96ba09cb94d2088fbf9e09481766",
+  "assetId": "sakura_hero",
+  "revision": "R16",
+  "canonicalDirectory": "Assets3D/Review/sakura_hero/r16",
+  "coordinateSystem": { "up": "+Y", "actorForward": "+Z", "metersPerUnit": 1, "waterY": 0 },
+  "profiles": {
+    "quality": {
+      "file": "sakura_hero.glb", "bytes": 5055232, "triangles": 191288,
+      "yBounds": [-0.518381, 26.480442],
+      "sha256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c"
+    },
+    "eco": {
+      "file": "sakura_hero_eco.glb", "bytes": 1393492, "triangles": 44412,
+      "yBounds": [-1.026049, 24.868639],
+      "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173"
+    }
+  }
+}
