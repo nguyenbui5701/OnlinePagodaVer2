@@ -1,3 +1,5 @@
+> **Post-execution status (SA review #6005380374):** genuine owner p0.1 Blender/Cycles **3/3 cases, 18/18 PNG, 30/30 ZIP SHA and 3 original .blend file-integrity PASS**. These Blender files are owner-controlled, **not uploaded into PR**. The older pre-run instructions below are historical. **ART_OWNER_PENDING**, no merge or Codex. See [P0_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md](P0_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md).
+
 # AI Visual P0-01 — Original 3D lotus leaf pad + seated meditation chibi
 
 **New branch:** `assets/lotus-pad-chibi-p0` (from main, independent of Sakura PR #1). Task [AI_VISUAL_01](https://github.com/nguyenbui5701/OnlinePagodaVer2/blob/main/Task/AI_VISUAL_01_LOTUS_PAD_CHIBI.md). **Review-only prototype; not an integrated runtime asset or production approval.**
@@ -44,4 +46,4 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run_p0_blender.ps1 -Mo
 - `meditator_base.glb` remote blob `ed394a9bc7edb9d7e47eac046d4ce2bcc0aaddfd` — uploaded and SHA verified.
 - `PBR_Review/asset_turnaround_contact.jpg`, `pair_hero_contact.jpg`, `sit_idle_native_gltf.gif`, `pair_anchor_debug.png` — uploaded and SHA verified.
 
-Other PBR stills remain in the owner evidence ZIP and are marked pending. **`.blend` files / native Cycles evidence still do not exist** until owner executes the Blender script. This distinction is important for Level 2 vs Level 3 SA acceptance.
+Other PBR stills remain in the owner evidence ZIP and are marked pending. **owner p0.1 .blend/Cycles evidence now EXISTS and was SHA-verified by SA, but is NOT uploaded to GitHub; this is not production approval**. This distinction is important for Level 2 vs Level 3 SA acceptance.

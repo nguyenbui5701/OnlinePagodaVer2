@@ -1,3 +1,5 @@
+> **Remote binary audit:** both real p0.2 GLBs and all five actual-GLB PBR comparison JPEGs are now uploaded to PR #2 and exact Git blob SHA verified. **Only p0.2 Blender .blend / Cycles evidence remains owner-run pending.** The source p0.1 GLBs are immutable.
+
 # AI Visual P0-02 — owner-directed lotus pad / chibi visual refinement
 
 **Authoritative task:** [Task/AI_VISUAL_02](https://github.com/nguyenbui5701/OnlinePagodaVer2/blob/main/Task/AI_VISUAL_02_ART_REFINEMENT_AND_OWNER_GATE.md) · **existing PR #2:** https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2 · branch `assets/lotus-pad-chibi-p0` · original p0.1 immutable HEAD `e8eb34c5d405e308e616c89cd385eb5d1d342b2f`. No Sakura, runtime, Codex or event code changed. **ART_OWNER_PENDING / DRAFT / DO NOT MERGE.**

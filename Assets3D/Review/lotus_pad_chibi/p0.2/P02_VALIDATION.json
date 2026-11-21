@@ -125,35 +125,40 @@
         "bytes": 91864,
         "sha256": "3ddf9dfe72dc2702919d204819794e78f8d59c57ebadc6e0e06796b3319b64fc",
         "engine": "actual GLB vtkGLTFImporter native PBR",
-        "githubStatus": "pending_owner_upload"
+        "githubStatus": "uploaded_sha_verified",
+        "gitBlobSHA": "44c3064a61e91f4a7e27cebe539a45fd8e743fc3"
       },
       {
         "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/CHIBI_FRONT_SIDE_BACK_AB.jpg",
         "bytes": 140465,
         "sha256": "6bc04a655d5d19a3d04423a6c46ddce201c969c49cfd153991713b89e7fc65ce",
         "engine": "actual GLB vtkGLTFImporter native PBR",
-        "githubStatus": "pending_owner_upload"
+        "githubStatus": "uploaded_sha_verified",
+        "gitBlobSHA": "b0c6103b420e2aa9590a4191a9f3414b082156a7"
       },
       {
         "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/PAIR_MEDIUM_CLOSE_AB.jpg",
         "bytes": 123526,
         "sha256": "81727727286914721f145f73d527aa7f4216b890598e8621f0958fe9cd9975a1",
         "engine": "actual GLB vtkGLTFImporter native PBR",
-        "githubStatus": "pending_owner_upload"
+        "githubStatus": "uploaded_sha_verified",
+        "gitBlobSHA": "719ac29fe0d288666cab747939abbbbca3ae4cd8"
       },
       {
         "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/PAIR_CONTACT_AB.jpg",
         "bytes": 114775,
         "sha256": "1f0df36661f882e9e967f693b859064150098619574b63b82eb5b20da26f0964",
         "engine": "actual GLB vtkGLTFImporter native PBR",
-        "githubStatus": "pending_owner_upload"
+        "githubStatus": "uploaded_sha_verified",
+        "gitBlobSHA": "2818c8db02709a96b50d5be570eb579614f361bf"
       },
       {
         "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/SIT_IDLE_5_PHASES_AB.jpg",
         "bytes": 200580,
         "sha256": "006eaf14cd48a1c94e64bb3d5e704f54443093b79b88572ffd8afa32e83390b2",
         "engine": "actual GLB vtkGLTFImporter native PBR",
-        "githubStatus": "pending_owner_upload"
+        "githubStatus": "uploaded_sha_verified",
+        "gitBlobSHA": "3a5286d639a52e502bbce0bfd31423ff92b2711b"
       }
     ]
   },
@@ -163,5 +168,7 @@
   "nativeThreeJs": "NOT_RUN",
   "ownerArt": "ART_OWNER_PENDING",
   "production": "NOT_APPROVED",
-  "pr": "DRAFT_NO_MERGE"
+  "pr": "DRAFT_NO_MERGE",
+  "githubOriginalGLBUploads": "2/2_VERIFIED_GIT_BLOB",
+  "githubRealPBRMediaUploads": "5/5_VERIFIED_GIT_BLOB"
 }
