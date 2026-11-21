@@ -32,8 +32,8 @@
       "kind": "pad",
       "runtime": "Assets3D/Review/lotus_pad_chibi/p0.2/lotus_pad_01.glb",
       "source": "Assets3D/Review/lotus_pad_chibi/p0.2/procedural_lotus_pad_chibi.py",
-      "editableBlenderSource": "Assets3D/Review/lotus_pad_chibi/p0.2/lotus_pad_01_p02.blend",
-      "sourceBlenderState": "NOT_CREATED_OWNER_BLENDER_RUN_PENDING",
+      "editableBlenderSource": "Assets3D/Review/lotus_pad_chibi/p2/P02_Cycles_Evidence/p02_pad/lotus_pad_01_p02.blend",
+      "sourceBlenderState": "ORIGINAL_P02_BLEND_GIT_BLOB_PRESENT_RAW_SHA256_NOT_SA_VERIFIED",
       "originMeters": [
         0,
         0,
@@ -41,7 +41,7 @@
       ],
       "forwardAxis": "none",
       "upAxis": "+Y",
-      "scale": 1.0,
+      "scale": 1,
       "boundsMinMaxMeters": [
         [
           -1.057189,
@@ -85,8 +85,8 @@
       "kind": "avatar",
       "runtime": "Assets3D/Review/lotus_pad_chibi/p0.2/meditator_base.glb",
       "source": "Assets3D/Review/lotus_pad_chibi/p0.2/procedural_lotus_pad_chibi.py",
-      "editableBlenderSource": "Assets3D/Review/lotus_pad_chibi/p0.2/meditator_base_p02.blend",
-      "sourceBlenderState": "NOT_CREATED_OWNER_BLENDER_RUN_PENDING",
+      "editableBlenderSource": "Assets3D/Review/lotus_pad_chibi/p2/P02_Cycles_Evidence/p02_actor/meditator_base_p02.blend",
+      "sourceBlenderState": "ORIGINAL_P02_BLEND_GIT_BLOB_PRESENT_RAW_SHA256_NOT_SA_VERIFIED",
       "originMeters": [
         0,
         0,
@@ -94,7 +94,7 @@
       ],
       "forwardAxis": "+Z",
       "upAxis": "+Y",
-      "scale": 1.0,
+      "scale": 1,
       "boundsMinMaxMeters": [
         [
           -0.362,
@@ -142,7 +142,7 @@
       "animations": [
         {
           "name": "sit_idle",
-          "durationSeconds": 2.0,
+          "durationSeconds": 2,
           "keyframeCount": 17,
           "channel": "UpperBodyBreath.translation",
           "motionYRangeMeters": [
@@ -291,8 +291,8 @@
     "p02SeatContact": "PASS_INDEPENDENT_EXPORTED_TRIANGLE_BARYCENTRIC",
     "p02Idle": "PASS_NATIVE_GLTF_DATA_AND_PBR_FRAMES",
     "p02VTKSameCameraAB": "PASS",
-    "p02BlenderCycles": "PENDING_OWNER_RUN",
-    "p02EditableBlenderFiles": "PENDING_OWNER_RUN",
+    "p02BlenderCycles": "OWNER_EXECUTED_SA_32_PNG_HASH_PASS",
+    "p02EditableBlenderFiles": "3_GITHUB_BLOBS_PRESENT_SA_RAW_SHA256_NOT_VERIFIED",
     "nativeThreeJs": "NOT_RUN",
     "RTX3050TiAnd3060LiveStudio": "NOT_RUN",
     "ownerImageApproval": "ART_OWNER_PENDING",
@@ -301,5 +301,24 @@
   },
   "costPolicy": "zero-cost local tools; no paid AI 3D providers",
   "licenseAndProvenance": "LICENSE_AND_PROVENANCE.md",
-  "remoteBinaryProof": "2/2 actual exported GLB Git blob SHA verified + 5/5 native GLB VTK PBR A/B screenshot blobs verified"
+  "remoteBinaryProof": "2/2 actual exported GLB Git blob SHA verified + 5/5 native GLB VTK PBR A/B screenshot blobs verified",
+  "ownerBlenderCyclesP02": {
+    "status": "OWNER_CYCLES_EXECUTED_SA_IMAGE_HASH_REVIEW_PASS",
+    "saReview": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6005994936",
+    "cases": 6,
+    "pngShaMatches": 32,
+    "stdoutComplete": 6,
+    "emptyStderr": 6,
+    "originalGitTextEncodingAdjustments": {
+      "jsonCRLFToLF": 6,
+      "stdoutUTF16LEtoUTF8": 6
+    },
+    "originalBlendGitBlobsPresent": 3,
+    "originalBlendRawSha256DirectlyVerifiedBySA": false,
+    "originalZipCRCVerifiedBySA": false,
+    "originalZipReportedBytes": 12698132,
+    "originalZipGitBlob": "540b0a55bc2977af73cfda014add28ec837a11e3",
+    "ownerArt": "PENDING",
+    "reference": "../p0.2/P02_OWNER_CYCLES_SA_AUDIT.md"
+  }
 }
