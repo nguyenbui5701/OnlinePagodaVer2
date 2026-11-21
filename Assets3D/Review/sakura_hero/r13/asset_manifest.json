@@ -2,7 +2,7 @@
   "revision": "R13",
   "branch": "assets/sakura-hero-r04-sa-review",
   "pr": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/1",
-  "status": "GEOMETRY_PROTOTYPE_CYCLES_R13_PENDING_ART_PARTIAL",
+  "status": "GEOMETRY_PROTOTYPE_R13_CYCLES_OWNER_PASS_ART_PARTIAL",
   "quality": {
     "filename": "sakura_hero.glb",
     "bytes": 4888192,
@@ -60,7 +60,7 @@
     "actualGLBImportTrimesh": "PASS",
     "actualVTKglTFPBR": "PASS_DOCUMENTED_IBL_3_LIGHTS",
     "blenderR12": "OWNER_AND_SA_PASS",
-    "blenderR13": "NOT_EXECUTED_PREPARED_WINDOWS_SCRIPT",
+    "blenderR13": "OWNER_CYCLES_PASS_INDEPENDENT_SA_REVIEW",
     "threeJSGltfLoader": "NOT_RUN",
     "gpuFPSVramLiveStudio": "NOT_RUN",
     "art": "PARTIAL",
@@ -144,5 +144,31 @@
       "status": "pending_owner_upload",
       "kind": "vtk_preview"
     }
-  ]
+  ],
+  "ownerCyclesR13": {
+    "status": "OWNER_CYCLES_PASS_SA_INDEPENDENTLY_REVIEWED",
+    "blenderVersion": "4.5.16 LTS",
+    "engine": "Cycles CPU",
+    "casesCompleted": 3,
+    "imagesVerified": 18,
+    "archiveHashesVerified": 29,
+    "samples": 32,
+    "viewTransform": "AgX",
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "zipBytes": 15307370,
+    "zipSHA256": "e9441363da7334c5f43fbfa3fecd535129eeed283a0dfb009eeaefc236529d32",
+    "qualityBlend": {
+      "bytes": 12822286,
+      "sha256": "46bda0fb631e56d07d23828ce5322fe90412f282d77c27ec0cd9fc4a20284283"
+    },
+    "ecoBlend": {
+      "bytes": 3936772,
+      "sha256": "41ea93df79576d9eec9c5f55270c1b9a2d0605345119bc52fe39fc4cff323af3"
+    },
+    "art": "PARTIAL",
+    "production": false,
+    "githubBinary": "pending_owner_upload",
+    "reference": "R13_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  }
 }
