@@ -4,7 +4,7 @@
   "pr": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/1",
   "baseline": "R14 owner Cycles 3/3 cases, 21/21 PNG, 32/32 archive hash SA PASS; artistic PARTIAL",
   "assetId": "sakura_hero",
-  "status": "R15_UNIFIED_FORK_TOPOLOGY_PASS_NATIVE_VTK_PBR_PASS_BLENDER_CYCLES_PENDING_ART_PARTIAL",
+  "status": "R15_OWNER_CYCLES_TECHNICAL_PASS_ART_PARTIAL_GITHUB_BINARIES_PENDING",
   "quality": {
     "sha256": "9ad2dc4ceb807e0a60d89c8cbfdbcc26f09bd2ba190a1bb1ed09825be23f81ba",
     "bytes": 4985692,
@@ -117,7 +117,7 @@
     "cleanRegenQualityGlb": "BYTE_IDENTICAL",
     "cleanRegenEcoGlb": "BYTE_IDENTICAL",
     "cleanRegenEditableObj": "BYTE_IDENTICAL",
-    "R15BlenderCycles": "NOT_EXECUTED_OWNER_CYCLES_PENDING",
+    "R15BlenderCycles": "OWNER_EXECUTED_SA_AUDITED_PASS",
     "R14BlenderCycles": "OWNER_EXECUTED_SA_AUDITED_PASS",
     "nativeVTKActualGLBPBR": "EXECUTED",
     "nativeThreeJs": "NOT_RUN",
@@ -162,5 +162,30 @@
       "sha256": "219b902f13c49b1900fd77c4b05e1c191b302a450e28eb5f2c338114faed73e2",
       "status": "pending_owner_upload"
     }
-  ]
+  ],
+  "ownerBlenderCyclesR15": {
+    "status": "OWNER_CYCLES_PASS_SA_INDEPENDENTLY_REVIEWED",
+    "cases": 3,
+    "imagesVerified": 30,
+    "zipMembersVerified": 41,
+    "zipBytes": 20833552,
+    "zipSha256": "19d4385dc3523d2c5f72fa9900cefc09bfb9e8d69572feaec4bfcc2f50ca86c4",
+    "blender": "4.5.16 LTS Cycles CPU",
+    "samples": 32,
+    "viewTransform": "AgX",
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "qualityBlend": {
+      "bytes": 13112769,
+      "sha256": "beff1990257e20e1b8743430aca52189e85778f228ec12cffaad24e4cdd76bce"
+    },
+    "ecoBlend": {
+      "bytes": 3936772,
+      "sha256": "66c3b5803b470fcca0d2404539f0b5fa1d382353e4d87af8a5adf63fb55cdb44"
+    },
+    "art": "PARTIAL",
+    "productionApproved": false,
+    "githubBinaryStatus": "pending_owner_upload",
+    "source": "R15_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  }
 }
