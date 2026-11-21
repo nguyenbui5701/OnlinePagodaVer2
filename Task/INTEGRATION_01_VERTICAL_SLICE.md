@@ -1,5 +1,8 @@
 # Integration P0-01 — Real Sakura + one pad + one chibi + mock gift focus
 
+> **OWNER HOLD — 2026-11-21:** Integration is **ON HOLD** until owner explicitly accepts the visual appearance of **lotus_pad_01 + meditator_base**. Technical Blender/Cycles PASS alone does not satisfy owner art approval. Current active work: [AI_VISUAL_02](AI_VISUAL_02_ART_REFINEMENT_AND_OWNER_GATE.md) on asset PR #2. **Do not begin new Codex integration PR, do not merge PRs, do not start GPU or LIVE Studio validation** yet. Previous SA integration guidance below is retained as the *future* gated plan, not a current instruction.
+
+
 **Owner:** SA coordination; AI Visual supplies real GLBs/anchors; Codex integrates runtime. **Status:** GATED / START AFTER INITIAL ART + CODE INTERFACE REVIEWS. This is a review milestone, not permission to merge Sakura PR #1 or publish LIVE.
 
 ## Prerequisites
