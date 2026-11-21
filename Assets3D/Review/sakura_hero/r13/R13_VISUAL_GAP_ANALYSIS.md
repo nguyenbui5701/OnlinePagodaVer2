@@ -1,17 +1,22 @@
-# R13 vs R12 Sakura-only art comparison
+# R13 vs R12 visual gap — controlled Sakura-only technical review
 
-## SA requirements and model changes
-- R12 Cycles and original .blend SHA passed independent SA checks in review #6004186709. R12 rose color and compactness are retained.
-- R13 main old-growth shaft is physically bent more; actual trunk-ring radial bark displacement adds long twisted grain and anisotropic bulges at 11 primary branch origins. Roots are shaped with thicker origin collars and altered curves/taper, and main branches exit more slowly from a hidden centerline. Gold is still a tiny inset strip in bark grooves.
-- **Known geometric limitation:** branch/secondary tubes still geometrically intersect rather than a fully remeshed/watertight union; this must remain an ART open issue. Do not describe it as a fully Boolean-welded trunk.
-- QUALITY floral surface: four triangles per canted petal, rounded central tip by changing existing positions, seven vs eleven dangling twig blossom clusters, same layered lobe layout and warm low-emission palette. The result has 980 fewer triangles than R12, not a blanket density increase. ECO is SHA-identical.
+## What genuinely changed
 
-## Actual 9:16 hero camera control
-- Full portrait hero `hero_full_9x16` projection fit was checked on **all** R12/R13 GLB source vertices: R12 horizontal NDC [-0.8039,+0.8600], R13 [-0.8030,+0.8598]; vertical NDC [-0.444,+0.480] and [-0.455,+0.480]. Entire crown and roots visible at FOV 50° and 9:16; scene deliberately leaves vertical headroom because the tree crown is wider than it is tall.
-- Separate close portrait `hero_close_9x16` intentionally crops the left/right crown from the old top camera; do not mislabel this as full coverage.
-- Same VTK light/camera rig and later same Cycles rig for both revisions; no individual visual cheats.
+- Stronger trunk silhouette: R13 uses an S-swept core, thicker organic branch shoulders and asymmetric root collars. Bark wood-grain is a radial displacement of the same trunk mesh (not shading paint); gold remains within carved troughs. A/B VTK under/trunk/3-4 images visibly change shape. However small branches **still intersect** the trunk rather than form a true watertight Boolean manifold; no final old-growth sculpt approval.
+- Crown: R12 rose/peach albedo plus low emission unchanged. R13 alters 6-point petal silhouette only, **four triangles unchanged per petal**, no explicit NORMAL. It decreases isolated dangling blossoms (11 groups to 7) so total polygon count shrinks. Some flat sheets and a speckled profile persist.
+- ECO identical R12 checksum; its old angular petals/exposed branches remain a known LOD compromise.
 
-## PBR proof boundary
-- **Executed:** real glTF 2.0 model in native VTK PBR with synthetic gradient IBL plus 3 scene lights, no Phong override; top/under/3/4/trunk and full+close 9:16 matched frames, source video (~15s/~33s) only approximate framing.
-- **Actually run before:** owner R12 Cycles four-case A/B, SA verified all 20 images/hashes.
-- **Pending:** R13 true Cycles screenshot A/B (owner launcher supplied), native Three.js GLTFLoader, RTX+LIVE Studio FPS/VRAM. R13 is **ART PARTIAL**: flower edge facets and mechanical branch overlaps still visible. No production merge.
+## Actual 9:16 camera comparison
+
+`hero_full_9x16`: single 50° vertical FOV camera calculated from both real GLBs, entire crown + roots within NDC ±0.86 at width:height 9:16. Fits all 226,267 R12 and 224,909 R13 vertices. Source geometry is not modified or camera-specific optimized. In a 9:16 frame the full wide tree occupies less vertical space than a close crop, as expected from its physical aspect ratio. `hero_close_9x16` deliberately reuses R12 top shot and crops part of the canopy. Same VTK lights and render settings R12/R13.
+
+## Proof boundary
+
+**Executed**: actual GLB/trimesh structural checks and zero-face/nonfinite tests, exact clean rebuild, VTK native glTF PBR on fixed 3 lights + synthetic IBL and same camera/FOV; no Phong material override. **Previously executed/SA-reviewed**: R12 Blender 4-case Cycles with 20 PNGs. **NOT YET RUN**: R13 Blender/Cycles fixed-rig A/B (script included); native Three.js, RTX+LIVE Studio. Comparison to owner video ~15s and ~33s uses non-calibrated camera; these screenshots do not prove production fidelity. **ART PARTIAL.**
+
+## Next SA acceptance questions
+
+1. Does real Cycles show a substantially more organic trunk/fork profile at trunk 33s and underside than R12, without dislodging inset gold?
+2. Do R13 petals look smoother at medium and close distance across top/under/3-4, not simply smaller?
+3. Does `hero_full_9x16` keep all crown lobes visible under Cycles at the fixed camera, while `hero_close_9x16` gives intentional detail cropping?
+4. Validate native Three.js and RTX 3050 Ti/3060 in LIVE Studio separately; no inference from Blender CPU rendering.
