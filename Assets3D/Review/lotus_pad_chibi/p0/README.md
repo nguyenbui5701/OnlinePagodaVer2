@@ -35,3 +35,13 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run_p0_blender.ps1 -Mo
 3. Send `P0_LOTUS_CHIBI_Blender_Evidence_Cycles.zip` plus original .blend files; independent SA should verify hashes, actual imported glTF2 materials, 2-second animation, pad seated 9:16 and anchor positions.
 
 **No native Three.js, LIVE Studio FPS/VRAM, or art approval is implied by standalone VTK multi-angle render.** Task review must decide visual fidelity against owner clip at ~3s/9s/42s; this session only accessed the approved textual Design/01 observations, **not the actual `chuav2.mp4` video bytes**.
+
+## Exact remote GitHub binary status (post-PR upload)
+
+**Both GLBs and four core visual evidence media are now actually present on this branch**, verified remotely by Git blob SHA equal to local `git hash-object`. The remote models are exact original bytes, not substitutes:
+
+- `lotus_pad_01.glb` remote blob `5d5af1728e97ea8b188cab37e8b71df986296851` — uploaded and SHA verified.
+- `meditator_base.glb` remote blob `ed394a9bc7edb9d7e47eac046d4ce2bcc0aaddfd` — uploaded and SHA verified.
+- `PBR_Review/asset_turnaround_contact.jpg`, `pair_hero_contact.jpg`, `sit_idle_native_gltf.gif`, `pair_anchor_debug.png` — uploaded and SHA verified.
+
+Other PBR stills remain in the owner evidence ZIP and are marked pending. **`.blend` files / native Cycles evidence still do not exist** until owner executes the Blender script. This distinction is important for Level 2 vs Level 3 SA acceptance.
