@@ -16,6 +16,24 @@
 
 **SA review gate for Codex:** architecture boundary, deterministic engine tests, focus correct actor, queue fairness, 3D camera, measured ECO/QUALITY on owner GPUs; ask Codex to fix code defects, not to generate art.
 
+## SA prompt-writing rule — use the proven Sakura review/task format
+
+**Required for future SA-to-AI Visual prompts** (and recommended for all substantial SA-to-Codex task prompts): write **an actionable, evidence-driven assignment like the Sakura R04–R16 tasks**, not a vague creative brief or a long chat recap. Use [Design/15 — Sakura example](15_AI_VISUAL_SAKURA_NEXT_PROMPT.md) as the style reference; preserve the exact current task context instead of copying obsolete Sakura R04 checksums or targets.
+
+Every new iteration prompt must contain, **in this order**:
+1. **Role, scope, objective and STOP/GATE:** name AI Visual versus Codex; focus on exactly one asset/workstream; explicitly state what is out of scope and when work must stop for SA/owner review.
+2. **Repo + correct PR/branch + exact reviewed HEAD:** supply verifiable GitHub URL and immutable commit/SHA; keep baseline revision intact and create a separately versioned output (e.g. `p0.1` → `p0.2`); never pretend a changed HEAD has been reviewed.
+3. **Required reading order:** specific `Design/**`, `Task/**`, latest SA review permalink, original video/reference frames and current source/manifest. If a source is unavailable, explicitly mark it unavailable instead of inventing content.
+4. **SA's grounded assessment:** report `PASS/PARTIAL/BLOCKED/PENDING` per actual technical/artifact gate; identify **P0/P1 priorities**, concrete shot-specific defects and constraints to preserve; never turn aesthetic preferences into unverified technical failures.
+5. **Phased execution:** `Phase 1` inspect existing PR and answer SA findings, `Phase 2` build a focused A/B revision, `Phase 3` validate real 3D files and image evidence, `Phase 4` push small files and hand off large binaries. Do not order a rerun of a test already proven PASS unless the asset under test changed.
+6. **Deliverables and evidence:** actual GLB/Blender sources/animations/anchors, manifest and license, exact **SHA-256/byte size/triangles/materials**, matched camera/light/exposure multi-angle **Blender Cycles** comparison and Windows PowerShell validation when needed. Rendered concept PNGs must never be represented as GLB or native-runtime tests.
+7. **GitHub/binary handoff:** target versioned paths, branch/PR policy, small source/docs to push, big binary `pending_owner_upload` until byte-verified, exact checksums and truthful logging/limitations. Do not force-push, silently overwrite or merge without owner/SA authorization.
+8. **Response format:** brief **SA finding → action → evidence**, tools used and zero-cost confirmation, precise new HEAD/PR and file paths, owner tasks, blockers and **explicit acceptance decision requested**.
+
+**Current P0 hold overrides generic parallelism:** until the owner explicitly approves lotus pad + chibi **visuals**, SA prompts must ask AI Visual to iterate **only PR #2** and must say **Codex PR #3/#4, integration, GPU/LIVE Studio and all merges remain paused**. An engineering PASS is **not** owner visual acceptance.
+
+A usable SA prompt must be **copy-pastable as a standalone task** with links, versioned inputs and objective pass/fail gates. Avoid superficial advice such as “make it prettier,” unspecified variants, or unsupported claims of completed uploads/tests. Keep a compact chat handoff if helpful, but the authoritative detailed requirements belong in the assigned versioned `Task/*.md`.
+
 ## Merge / review procedure
 
 1. After design sign-off, SA creates `Task/<task-id>.md`, commits it.
