@@ -42,5 +42,23 @@
   "nativeThreeJs": "NOT_RUN",
   "runtimeGPU": "NOT_RUN",
   "art": "PARTIAL",
-  "productionApproved": false
+  "productionApproved": false,
+  "secondaryContactScreening": {
+    "method": "VTK implicit signed-distance vertex sign change across exported joined GLB bark; approximate proxy NOT exact triangle collision",
+    "R15": {
+      "independentBranchParts": 77,
+      "crossingProxy": 31,
+      "within15cmProxy": 43
+    },
+    "R16": {
+      "independentBranchParts": 68,
+      "crossingProxy": 45,
+      "within15cmProxy": 54
+    },
+    "status": "OPEN_REGRESSION_RISK_SECONDARY_INTERFACES_NOT_ACCEPTED",
+    "source": "R16_SECONDARY_BRANCH_CONTACT_AUDIT.json; R16_SECONDARY_CONTACTS.csv in owner Source Reports bundle"
+  },
+  "knownLimitations": [
+    "R16 secondary signed-distance crossing candidate count 45/68 vs R15 31/77; P0 secondary interface unresolved."
+  ]
 }
