@@ -1,0 +1,55 @@
+{
+  "revision": "P0.3",
+  "unit": "meters, glTF +Y up / +Z forward",
+  "aspectWH": 0.5617977528089888,
+  "cases": {
+    "mediumOld": {
+      "pos": [
+        1.75,
+        1.26,
+        4.1
+      ],
+      "target": [
+        0,
+        0.59,
+        0
+      ],
+      "verticalFovDeg": 47,
+      "actorOutsidePct": 0,
+      "padOutsidePct": 0
+    },
+    "mediumCloser": {
+      "pos": [
+        1.18,
+        1.29,
+        2.92
+      ],
+      "target": [
+        0,
+        0.61,
+        0
+      ],
+      "verticalFovDeg": 42,
+      "actorOutsidePct": 0,
+      "padOutsidePct": 16.4802,
+      "allPairOutsidePct": 8.9956
+    },
+    "close": {
+      "pos": [
+        1.3,
+        1.22,
+        2.55
+      ],
+      "target": [
+        0,
+        0.74,
+        0.04
+      ],
+      "verticalFovDeg": 43,
+      "actorOutsidePct": 0,
+      "padOutsidePct": 19.6495
+    }
+  },
+  "identicalForP02AndP03A_B": true,
+  "geometryNotModifiedForFraming": true
+}
