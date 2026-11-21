@@ -1,0 +1,57 @@
+{
+  "status": "EXECUTED_ONLY_WHEN_THIS_JSON_EXISTS",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p03",
+  "kind": "actor",
+  "inputs": [
+    {
+      "name": "meditator_base.glb",
+      "bytes": 212040,
+      "sha256": "646842c7574976020f6583c4e18879c9bef012e5f31dc851589c0a1491786be0"
+    }
+  ],
+  "realImportedMeshes": 11,
+  "pbrMaterialSlots": 11,
+  "animations": [
+    "sit_idle"
+  ],
+  "cameraFOVAndLightingFixed": true,
+  "AgX": true,
+  "exposureEV": 0,
+  "worldStrength": 0.65,
+  "originalBlend": null,
+  "images": [
+    {
+      "name": "p03_actor_front_cycles.png",
+      "bytes": 341546,
+      "sha256": "c44d138b71556e5ec5634dd00c95c39d6e97bbd69c805c8897a4d1d278d8b04d"
+    },
+    {
+      "name": "p03_actor_side_cycles.png",
+      "bytes": 325809,
+      "sha256": "e54c66ed1d18505513c14dc34f4cc80485fa7abfe6fa1d043ddf581299c970bd"
+    },
+    {
+      "name": "p03_actor_quarter_cycles.png",
+      "bytes": 327401,
+      "sha256": "40ff9ed6465c7629c9445b1f0181389b344bd372195afe74884be0639eee512a"
+    },
+    {
+      "name": "p03_actor_back_cycles.png",
+      "bytes": 322506,
+      "sha256": "2f639ab70fd4504b0dcb833a580715a07039b15d608e02a7765c7ab33a004fa8"
+    },
+    {
+      "name": "p03_actor_placket_cycles.png",
+      "bytes": 348593,
+      "sha256": "fa9774b199f5e38b6e67bc2c85b26772860a609fde49045d32dc6bb845a7c5fc"
+    },
+    {
+      "name": "p03_actor_backhair_cycles.png",
+      "bytes": 331209,
+      "sha256": "293780d10e4f557ee508c7c36b5e848c30417aa475f58ad2545daad135a6defc"
+    }
+  ]
+}

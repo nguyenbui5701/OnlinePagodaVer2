@@ -1,0 +1,123 @@
+{
+  "revision": "P0.4",
+  "gltf2": true,
+  "bytes": 244348,
+  "sha256": "586134fdeab962f35458c16255985513b070da47195110d3c83eef2dd9b6be09",
+  "vertices": 5063,
+  "triangles": 9718,
+  "meshes": 9,
+  "materials": 21,
+  "textures": 0,
+  "localBounds": [
+    [
+      -0.336,
+      -0.00167,
+      -0.31513
+    ],
+    [
+      0.336,
+      1.152,
+      0.39317
+    ]
+  ],
+  "femaleOnly": true,
+  "hairMinY": 0.3199999928474426,
+  "hairFrontBackRangeZ": [
+    -0.3151264190673828,
+    0.31673064827919006
+  ],
+  "nPalette": 6,
+  "paletteIds": [
+    "pastel_lilac",
+    "blush_rose",
+    "sage_green",
+    "sky_blue",
+    "warm_cream",
+    "terracotta"
+  ],
+  "materialVariantMappingCounts": {
+    "ao_ba_ba_pants": 6,
+    "ao_ba_ba_top": 6
+  },
+  "meshGeometryDuplicatedForVariants": false,
+  "variantImportInThreeJs": "NOT_RUN",
+  "anchors": {
+    "SeatRoot": [
+      0,
+      0,
+      0
+    ],
+    "HeadAnchor": [
+      0,
+      0.835,
+      0.04
+    ],
+    "NameplateAnchor": [
+      0,
+      1.335,
+      0.03
+    ],
+    "FXAnchor": [
+      0.37,
+      0.805,
+      0.16
+    ]
+  },
+  "animation": {
+    "name": "sit_idle",
+    "durationSec": 2,
+    "keyframes": 17,
+    "peakY": 0.01600000075995922,
+    "identicalMathematicalFormulaToP03": true
+  },
+  "idleSamples": [
+    {
+      "timeSec": 0,
+      "breathOffsetY": 0.0,
+      "minHairToPantsVertexSampleDistance": 0.1590878748748161,
+      "minHairToSkinSampleDistance": 0.4130459536995449,
+      "maxSpatialJumpAcrossIdle": "none; same rigid parent animated translation"
+    },
+    {
+      "timeSec": 0.5,
+      "breathOffsetY": 0.007999999999999998,
+      "minHairToPantsVertexSampleDistance": 0.16390390034854022,
+      "minHairToSkinSampleDistance": 0.4114213497395307,
+      "maxSpatialJumpAcrossIdle": "none; same rigid parent animated translation"
+    },
+    {
+      "timeSec": 1.0,
+      "breathOffsetY": 0.016,
+      "minHairToPantsVertexSampleDistance": 0.16896160855869968,
+      "minHairToSkinSampleDistance": 0.40994645281478886,
+      "maxSpatialJumpAcrossIdle": "none; same rigid parent animated translation"
+    },
+    {
+      "timeSec": 1.5,
+      "breathOffsetY": 0.008000000000000002,
+      "minHairToPantsVertexSampleDistance": 0.16390390034854022,
+      "minHairToSkinSampleDistance": 0.4114213497395307,
+      "maxSpatialJumpAcrossIdle": "none; same rigid parent animated translation"
+    },
+    {
+      "timeSec": 2.0,
+      "breathOffsetY": 0.0,
+      "minHairToPantsVertexSampleDistance": 0.1590878748748161,
+      "minHairToSkinSampleDistance": 0.4130459536995449,
+      "maxSpatialJumpAcrossIdle": "none; same rigid parent animated translation"
+    }
+  ],
+  "collisionAssessment": "vertex-nearest unsigned distance to pants, animation tracked; mesh-surface exact self intersection and Cycles visual review PENDING",
+  "leafSHAExpected": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+  "leafReadLocally": false,
+  "leafRemoteP03Preserved": true,
+  "leafTouch": false,
+  "leafPairCollisionNotVerifiedLocally": true,
+  "baselineP03ExactGLBReadLocally": false,
+  "baselineP03SAIndependentReview": true,
+  "p04BlenderCycles": "NOT_RUN",
+  "p04EditableBlend": "NOT_CREATED",
+  "ownerArt": "P04_FEMALE_OWNER_VISUAL_REVIEW_REQUIRED",
+  "nativeThreeJs": "NOT_RUN",
+  "gpuLiveStudio": "NOT_RUN"
+}
