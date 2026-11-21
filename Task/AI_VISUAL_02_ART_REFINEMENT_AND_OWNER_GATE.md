@@ -1,6 +1,8 @@
 # AI Visual P0-02 — Owner-directed visual refinement and ART ACCEPTANCE GATE
 
-**Status:** ACTIVE — VISUAL-ONLY. **Owner direction:** 2026-11-21: focus solely on appearance of the 3D lotus pad + seated chibi; **do NOT advance Codex/integration until owner explicitly approves this artwork**. Source of truth: [AI Visual PR #2](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2), review HEAD `e8eb34c5d405e308e616c89cd385eb5d1d342b2f`. All files/claims must be grounded in actual GLB and owner Cycles evidence. Keep Sakura R16 art-frozen.
+**Status:** HISTORICAL P0.2 visual-refinement task; P0.3 baseline now available. **Current assignment is [AI_VISUAL_03 female áo bà ba + long hair](AI_VISUAL_03_FEMALE_AO_BA_BA_LONG_HAIR.md)**. Its owner visual gate remains open; do not restart Codex. 
+
+**Previous status:** ACTIVE — VISUAL-ONLY. **Owner direction:** 2026-11-21: focus solely on appearance of the 3D lotus pad + seated chibi; **do NOT advance Codex/integration until owner explicitly approves this artwork**. Source of truth: [AI Visual PR #2](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2), review HEAD `e8eb34c5d405e308e616c89cd385eb5d1d342b2f`. All files/claims must be grounded in actual GLB and owner Cycles evidence. Keep Sakura R16 art-frozen.
 
 ## Required prompt and handoff format — follow Sakura process
 
