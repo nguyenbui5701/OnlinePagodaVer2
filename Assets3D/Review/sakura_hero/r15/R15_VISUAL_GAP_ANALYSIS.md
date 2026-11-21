@@ -1,3 +1,5 @@
+> **2026-11-21 post-execution verification:** SA independently checked original R15 Blender/Cycles **3/3 cases, 30/30 PNGs, 41/41 archive hashes and two original .blend file integrity PASS**. **ART PARTIAL, production NOT APPROVED**, large GitHub binary uploads still `pending_owner_upload`. This supersedes historical `NOT RUN` statements below; see [R15_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md](R15_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md). Native Three.js and GPU/LIVE Studio remain NOT RUN.
+
 # R15 artistic gap assessment vs R14
 
 P0 achieves a new **single watertight topology for trunk plus 3 selected major limbs [0,5,9]** through true implicit SDF smooth-min union and marching cubes; Euler=2, 15,054 faces; VTK actual-GLB matched front/side/back shots show selected branch sockets are no longer separate pipe meshes. **Secondary tubes and decorative roots are not fused**. R15 close views retain some triangular shading on the SDF bark; the ancient rough old-growth trunk of owner footage ~33s is still not fully recreated.
