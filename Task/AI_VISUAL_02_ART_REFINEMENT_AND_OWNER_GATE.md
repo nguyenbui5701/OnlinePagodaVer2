@@ -2,6 +2,10 @@
 
 **Status:** ACTIVE — VISUAL-ONLY. **Owner direction:** 2026-11-21: focus solely on appearance of the 3D lotus pad + seated chibi; **do NOT advance Codex/integration until owner explicitly approves this artwork**. Source of truth: [AI Visual PR #2](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2), review HEAD `e8eb34c5d405e308e616c89cd385eb5d1d342b2f`. All files/claims must be grounded in actual GLB and owner Cycles evidence. Keep Sakura R16 art-frozen.
 
+## Required prompt and handoff format — follow Sakura process
+
+**Must follow [Design/07 — SA prompt-writing rule](../Design/07_WORK_RULES.md)** and the phase/evidence style used in [Design/15 Sakura example](../Design/15_AI_VISUAL_SAKURA_NEXT_PROMPT.md). Treat this `Task/AI_VISUAL_02` file as the authoritative detailed assignment and use a **standalone, copy-paste-ready** prompt. For p0.2, include: exact PR #2/head baseline, SA review URL, prioritized visual findings, immutable p0.1 baseline, Phase 1→4 action plan, true Cycles A/B views, GLB/BLEND/idle/anchor preservation, SHA+bytes+triangles, zero-cost, branch paths and large-binary handoff; end with explicit **owner image approval gate**. Do **not** copy legacy Sakura R04 SHA values. Do **not** restart Codex before owner says OK.
+
 ## Source and known evidence
 
 - Main task [AI_VISUAL_01](AI_VISUAL_01_LOTUS_PAD_CHIBI.md); [Design/13](../Design/13_3D_EVENT_INTEGRATION_CONTRACT.md); [Design/16](../Design/16_P0_APPROVAL_AND_HANDOFF.md).
