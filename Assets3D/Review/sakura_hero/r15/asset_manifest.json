@@ -1,0 +1,166 @@
+{
+  "revision": "R15",
+  "branch": "assets/sakura-hero-r04-sa-review",
+  "pr": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/1",
+  "baseline": "R14 owner Cycles 3/3 cases, 21/21 PNG, 32/32 archive hash SA PASS; artistic PARTIAL",
+  "assetId": "sakura_hero",
+  "status": "R15_UNIFIED_FORK_TOPOLOGY_PASS_NATIVE_VTK_PBR_PASS_BLENDER_CYCLES_PENDING_ART_PARTIAL",
+  "quality": {
+    "sha256": "9ad2dc4ceb807e0a60d89c8cbfdbcc26f09bd2ba190a1bb1ed09825be23f81ba",
+    "bytes": 4985692,
+    "triangles": 187368,
+    "vertices": 227360,
+    "meshes": 11,
+    "materials": 11,
+    "normalAttributes": 0,
+    "petalDoubleSided": true
+  },
+  "eco": {
+    "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+    "bytes": 1393492,
+    "triangles": 44412,
+    "vertices": 71032,
+    "meshes": 10,
+    "materials": 10,
+    "normalAttributes": 0,
+    "petalDoubleSided": true
+  },
+  "r14Quality": {
+    "sha256": "ba3183c7b738dbd814b2b23cedc1f6da0470b13121882c116e1775154bda44f5",
+    "bytes": 4877460,
+    "triangles": 181314,
+    "vertices": 224395,
+    "meshes": 11
+  },
+  "diffVsR14": {
+    "triangles": 6054,
+    "vertices": 2965,
+    "bytes": 108232
+  },
+  "implicitUnion": {
+    "method": "implicit SDF polynomial smooth-min continuous trunk+3 full branches, one marching-cubes surface",
+    "ids": [
+      0,
+      5,
+      9
+    ],
+    "voxelPitchMeters": 0.16,
+    "smoothUnionKmeters": 0.56,
+    "gridDimensions": [
+      134,
+      129,
+      97
+    ],
+    "voxels": 1676742,
+    "discardedTinyIsoIslands": 16,
+    "discardedTinyFaces": 208,
+    "unifiedSurfaceTriangles": 15054,
+    "unifiedSurfaceVertices": 7529,
+    "isWatertight": true,
+    "faceConnectedComponents": 1,
+    "componentFaces": [
+      15054
+    ],
+    "eulerNumber": 2,
+    "windingConsistent": true,
+    "degenerate": 0,
+    "bbox": [
+      [
+        -5.1829,
+        -0.0089,
+        -4.1248
+      ],
+      [
+        8.6968,
+        15.5559,
+        4.6002
+      ]
+    ]
+  },
+  "goldProjection": {
+    "goldRibbonCount": 23,
+    "goldVertexCount": 414,
+    "goldProjectionMeanMeters": 0.17696,
+    "goldProjectionMaxMeters": 1.08343,
+    "ribbonOffsetMeters": 0.012,
+    "type": "flat inset triangles, not cylindrical emissive cords"
+  },
+  "paletteIdentical": true,
+  "qualityPetalFaceBudgetUnchanged": true,
+  "ecoExactlyUnchanged": true,
+  "cameras": [
+    "top",
+    "under",
+    "three_quarter",
+    "trunk_33s",
+    "fork_front",
+    "fork_side",
+    "fork_back",
+    "hero_full_9x16",
+    "hero_medium_9x16",
+    "hero_close_9x16"
+  ],
+  "portraitContract": "camera_contract_R15.json",
+  "toolchainVersionsTested": {
+    "python": "3.13",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikitImage": "0.26.0",
+    "trimesh": "4.11.1",
+    "VTK": "9.6.2"
+  },
+  "sourceFiles": [
+    "procedural_sakura_source.py",
+    "sdf_smooth_union_forks.py"
+  ],
+  "validation": {
+    "cleanRegenQualityGlb": "BYTE_IDENTICAL",
+    "cleanRegenEcoGlb": "BYTE_IDENTICAL",
+    "cleanRegenEditableObj": "BYTE_IDENTICAL",
+    "R15BlenderCycles": "NOT_EXECUTED_OWNER_CYCLES_PENDING",
+    "R14BlenderCycles": "OWNER_EXECUTED_SA_AUDITED_PASS",
+    "nativeVTKActualGLBPBR": "EXECUTED",
+    "nativeThreeJs": "NOT_RUN",
+    "RTX3050Ti_RTX3060_LIVE_STUDIO": "NOT_RUN",
+    "art": "PARTIAL",
+    "productionApproved": false
+  },
+  "binaryHandoff": [
+    {
+      "path": "Assets3D/Review/sakura_hero/r15/sakura_hero.glb",
+      "bytes": 4985692,
+      "sha256": "9ad2dc4ceb807e0a60d89c8cbfdbcc26f09bd2ba190a1bb1ed09825be23f81ba",
+      "status": "pending_owner_upload"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r15/sakura_hero_eco.glb",
+      "bytes": 1393492,
+      "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+      "status": "pending_owner_upload"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r15/sakura_hero_editable.obj",
+      "bytes": 12354600,
+      "sha256": "774fd6750cc69726b9c209a90381b2449a1885877bb98fc21d736ac57b67a47f",
+      "status": "pending_owner_upload"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r15/PBR_Review/R14_R15_FORK_3_ANGLES_VTK_PBR_AB.jpg",
+      "bytes": 204577,
+      "sha256": "e26b1b09e3acc0a60615188df70f685ad7160b7a8981a83e6480d35631c1c9fc",
+      "status": "pending_owner_upload"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r15/PBR_Review/R14_R15_PORTRAIT_3SHOTS_VTK_PBR_AB.jpg",
+      "bytes": 279949,
+      "sha256": "db8a096a5a3fe7f3f45674ca2ad87e817a85922c6634a2ef237e7dad66abafe1",
+      "status": "pending_owner_upload"
+    },
+    {
+      "path": "Assets3D/Review/sakura_hero/r15/PBR_Review/R14_R15_TOP_UNDER_TRUNK_VTK_PBR_AB.jpg",
+      "bytes": 294311,
+      "sha256": "219b902f13c49b1900fd77c4b05e1c191b302a450e28eb5f2c338114faed73e2",
+      "status": "pending_owner_upload"
+    }
+  ]
+}
