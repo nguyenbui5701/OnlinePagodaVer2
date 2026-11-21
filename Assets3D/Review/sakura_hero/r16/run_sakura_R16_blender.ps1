@@ -11,7 +11,7 @@ $ErrorActionPreference='Stop'
 $rootDir=$PSScriptRoot
 $cases=@(
  @{Name='r15_baseline';File='r15_quality.glb';Hash='9ad2dc4ceb807e0a60d89c8cbfdbcc26f09bd2ba190a1bb1ed09825be23f81ba'},
- @{Name='r16_final';File='sakura_hero.glb';Hash='c8db96966410bf34c9be2cbdce887bee3b051beab5d9d2a3b99875dbb938c'},
+ @{Name='r16_final';File='sakura_hero.glb';Hash='c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c'},
  @{Name='eco_unchanged';File='sakura_hero_eco.glb';Hash='accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173'}
 )
 if(-not $BlenderPath){
