@@ -1,0 +1,2 @@
+# R11 original asset provenance / commercial use
+All R11 geometry, palette choices, normals and test scripts are original locally written procedural work for OnlinePagodaVer2. Only NumPy, trimesh, VTK, Pillow and the freely available Blender application are used; no third-party 3D model or paid AI generation. Owner reference video is used only for artistic comparison, not a mesh texture. Project owner may use these outputs commercially. Zero-cost service expenditure: 0 VND. Do not include Blender or system fonts in the repository or output ZIPs.
