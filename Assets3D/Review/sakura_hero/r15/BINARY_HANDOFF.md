@@ -1,3 +1,5 @@
+> **2026-11-21 post-execution verification:** SA independently checked original R15 Blender/Cycles **3/3 cases, 30/30 PNGs, 41/41 archive hashes and two original .blend file integrity PASS**. **ART PARTIAL, production NOT APPROVED**, large GitHub binary uploads still `pending_owner_upload`. This supersedes historical `NOT RUN` statements below; see [R15_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md](R15_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md). Native Three.js and GPU/LIVE Studio remain NOT RUN.
+
 # R15 binary handoff — NOT uploaded to GitHub
 
 Branch: `assets/sakura-hero-r04-sa-review`; large assets remain **pending_owner_upload** until exact remote SHA verification. R15 Blender/Cycles evidence ZIP and editable `.blend` files do **not** exist yet; their creation requires actual owner Blender run.
