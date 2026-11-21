@@ -1,4 +1,4 @@
-# Sakura Hero R12 — SA review response
+> **Verified update, 2026-11-21 (supersedes pre-owner-run checkpoints):** Blender 4.5.16 LTS Cycles CPU R12 completed: four cases, 20 PNGs, 34/34 ZIP hashes, original two .blend structures and SHA independently SA reviewed. **Technical Blender PASS; visual ART PARTIAL; production NOT APPROVED.** R12 original binary GitHub upload still `pending_owner_upload`. See [R12_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md](R12_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md). Native Three.js and GPU/LIVE Studio NOT RUN.\n\n# Sakura Hero R12 — SA review response
 
 **SA source review:** [R11 final Cycles evidence review](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/1#pullrequestreview-6004001670). R11 owner Cycles 9/9 A/B and 22/22 PNG independently reviewed; two original .blend SHA valid.
 
