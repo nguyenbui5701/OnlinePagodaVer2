@@ -1,0 +1,92 @@
+{
+  "revision": "R13",
+  "quality": {
+    "filename": "sakura_hero.glb",
+    "bytes": 4888192,
+    "sha256": "5e03020ac3160d6746b96715254e37290d140a1e7b3cee00708a105d2955e840",
+    "triangles": 181694,
+    "vertices": 224909,
+    "meshes": 11,
+    "materials": 11,
+    "customNormalAttributes": 0,
+    "petalDoubleSided": true,
+    "status": "pending_owner_upload"
+  },
+  "eco": {
+    "filename": "sakura_hero_eco.glb",
+    "bytes": 1393492,
+    "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+    "triangles": 44412,
+    "vertices": 71032,
+    "meshes": 10,
+    "materials": 10,
+    "exactR12CarryForward": true,
+    "status": "pending_owner_upload"
+  },
+  "glbVersion": "glTF 2.0",
+  "degenerateFaces": 0,
+  "nonFiniteVertices": 0,
+  "noUnexpectedTexturesOrAnimations": true,
+  "qualityPetalDoubleSided": true,
+  "qualityNoExplicitNormals": true,
+  "ecoExactR12Bytes": true,
+  "deterministicRebuild": {
+    "qualityGlb": true,
+    "ecoGlb": true,
+    "qualityObj": true
+  },
+  "nativeVTKPbr": {
+    "run": true,
+    "actualGLB": true,
+    "images": [
+      "top",
+      "under",
+      "three_quarter",
+      "trunk_33s",
+      "hero_full_9x16",
+      "hero_close_9x16"
+    ],
+    "sameCamerasR12R13": true,
+    "syntheticIBL": true,
+    "fixedSceneLights": 3,
+    "PhongOverride": false,
+    "radiometricallyCalibratedToBlender": false
+  },
+  "portraitFit": {
+    "sameCameraAcrossBothRevisions": true,
+    "horizontalNDCBoundsR12": [
+      -0.8039310659543085,
+      0.8599988435978078
+    ],
+    "horizontalNDCBoundsR13": [
+      -0.8029549809362994,
+      0.8597880706250829
+    ],
+    "fullCanopyVisibleVTK": true,
+    "portraitAspect": "9:16",
+    "verticalFovDeg": 50
+  },
+  "blenderCyclesR12": {
+    "status": "OWNER_AND_SA_INDEPENDENT_VERIFIED",
+    "cases": 4,
+    "pngs": 20,
+    "hashes": 34,
+    "originalBlendSourceIntegrity": "PASS"
+  },
+  "blenderCyclesR13": {
+    "status": "PENDING_OWNER_RUN",
+    "script": "run_sakura_R13_blender.ps1",
+    "cases": [
+      "r12_baseline",
+      "r13_final",
+      "eco_unchanged"
+    ],
+    "cameras": 6,
+    "quickCameras": 3,
+    "cyclesCameraAndLightingLocked": true
+  },
+  "threeJsGltfLoader": "NOT_RUN",
+  "gpuLiveStudio": "NOT_RUN",
+  "art": "PARTIAL_NOT_APPROVED",
+  "githubMedia": "PENDING_OWNER_UPLOAD"
+}
