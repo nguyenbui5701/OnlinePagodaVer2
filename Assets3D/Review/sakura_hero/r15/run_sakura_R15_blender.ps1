@@ -43,7 +43,7 @@ foreach($c in $chosen){
 $out=Join-Path $rootDir 'Blender_Evidence_R15'
 if(Test-Path -LiteralPath $out){Remove-Item -LiteralPath $out -Force -Recurse}
 New-Item -ItemType Directory -Path $out -Force | Out-Null
-$py=Join-Path $rootDir 'blender_ab_validate_r14.py'
+$py=Join-Path $rootDir 'blender_ab_validate_r15.py'
 if(-not(Test-Path -LiteralPath $py)){throw "Missing Blender Python script: $py"}
 foreach($c in $chosen){
  $target=Join-Path $out $c.Name
