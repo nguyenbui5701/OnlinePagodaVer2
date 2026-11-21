@@ -1,5 +1,8 @@
 # 16 — P0 design approval, R16 Sakura freeze and implementation handoff
 
+> **Sequencing amendment — owner 2026-11-21:** The approved P0 *architecture* remains unchanged, but the owner has **paused parallel Codex/integration work** to focus solely on the art quality of **lotus pad + seated chibi** on PR #2. Visual iteration and explicit owner **OK** is now a **hard prerequisite** before any further Codex execution or integrated vertical-slice work. Existing PR #3 and #4 remain as reviewed prototypes on hold, not rejected. See [AI_VISUAL_02](../Task/AI_VISUAL_02_ART_REFINEMENT_AND_OWNER_GATE.md). No merge or release authorization implied.
+
+
 **Owner authorization:** 2026-11-21 — owner explicitly accepted SA's recommendation to proceed with the P0 plan. **Status: P0 DESIGN BASELINE APPROVED FOR IMPLEMENTATION**, not acceptance of final runtime behavior, GPU results, release or the still-open production defaults. Previous Design/01–15 remain the normative design references; changes to contracts require an SA-reviewed versioned amendment.
 
 ## 1. What is approved
