@@ -1,0 +1,266 @@
+{
+  "revision": 10,
+  "status": "R10_GEOMETRY_PROTOTYPE_BLENDER_R10_UNVERIFIED",
+  "branch": "assets/sakura-hero-r04-sa-review",
+  "origin": "original project procedural meshes, 0 VND, no third-party mesh",
+  "quality": {
+    "filename": "sakura_hero.glb",
+    "path": "Assets3D/Review/sakura_hero/r10/sakura_hero.glb",
+    "bytes": 5096052,
+    "sha256": "ac4322fb00475d0dde3334a375fca0e0094715583edf7f6460b30a9139b1e273",
+    "triangles": 188782,
+    "vertices": 235142,
+    "meshCount": 11,
+    "materialCount": 11,
+    "materialNames": [
+      "Trunk_bark_plumblack",
+      "Golden_bark_veins",
+      "Branches_plum",
+      "Canopy_depth_rose",
+      "Canopy_peach",
+      "Canopy_rose",
+      "Sakura_petal_warm_rose",
+      "Sakura_flower_gold",
+      "Sakura_petal_blush",
+      "Sakura_petal_pink",
+      "Sakura_petal_cream"
+    ],
+    "boundsMin": [
+      -12.894,
+      -1.0223,
+      -12.7224
+    ],
+    "boundsMax": [
+      14.0825,
+      26.1703,
+      13.7516
+    ],
+    "petalDoubleSided": true,
+    "degenerateFaces": 0,
+    "status": "pending_owner_upload"
+  },
+  "eco": {
+    "filename": "sakura_hero_eco.glb",
+    "path": "Assets3D/Review/sakura_hero/r10/sakura_hero_eco.glb",
+    "bytes": 1393492,
+    "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+    "triangles": 44412,
+    "vertices": 71032,
+    "meshCount": 10,
+    "materialCount": 10,
+    "materialNames": [
+      "Trunk_bark_plumblack",
+      "Golden_bark_veins",
+      "Branches_plum",
+      "Canopy_depth_rose",
+      "Canopy_peach",
+      "Canopy_rose",
+      "Sakura_petal_blush",
+      "Sakura_petal_cream",
+      "Sakura_petal_pink",
+      "Sakura_petal_warm_rose"
+    ],
+    "boundsMin": [
+      -12.7865,
+      -1.026,
+      -12.0262
+    ],
+    "boundsMax": [
+      13.2873,
+      24.8686,
+      10.9339
+    ],
+    "petalDoubleSided": true,
+    "degenerateFaces": 0,
+    "status": "pending_owner_upload"
+  },
+  "baselineR09": {
+    "QUALITY": {
+      "triangles": 185026,
+      "vertices": 233238,
+      "bytes": 5028124
+    },
+    "ECO": {
+      "triangles": 44412,
+      "vertices": 71032,
+      "bytes": 1393492
+    }
+  },
+  "differenceQuality": {
+    "triangles": 3756,
+    "trianglesPercent": 2.03,
+    "vertices": 1904,
+    "verticesPercent": 0.816,
+    "bytes": 67928,
+    "bytesPercent": 1.351
+  },
+  "ecoExactCarryForward": true,
+  "r09IndependentBlenderEvidence": {
+    "blender": "4.5.16 LTS",
+    "renderEngine": "Cycles CPU",
+    "samples": 32,
+    "screenshotCount": 16,
+    "axesV2": true,
+    "panoramaCameraFix": "GLTF Y-up to Blender Z-up (x,y,z)->(x,-z,y)",
+    "qualityBlendSha256": "adee1eacea83b0a1bf33946695cf3ae395d7afdb26d3792ac136145d52ac97cd",
+    "ecoBlendSha256": "3531bdae8749c4a453aa7d349abc30f357e7c1674584852e8accb8e463035948",
+    "qualityGLBSha256": "e68a479a2ea4705d711702e015ef290c72757cca107a261913d4988d5ae9bbc8",
+    "ecoGLBSha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+    "reportMeshCount": {
+      "QUALITY": 11,
+      "ECO": 10
+    },
+    "blenderPBRImportAndRenderVerified": true,
+    "blenderR10Verified": false,
+    "threeJsGLTFLoaderVerified": false,
+    "ownerGpuLiveStudioBenchmarked": false,
+    "firstEvidenceOriginalBlendSHA": "adee1eacea83b0a1bf33946695cf3ae395d7afdb26d3792ac136145d52ac97cd"
+  },
+  "r10PBRTest": {
+    "engine": "VTK 9.6 glTF importer native physically based materials",
+    "environment": "pink gradient IBL texture 256x128",
+    "lights": "three fixed scene lights, source render_pbr_truth.py",
+    "exposure": "VTK default, 0 extra material override",
+    "fovDegrees": {
+      "top": 50,
+      "under": 44,
+      "trunk_33s": 56,
+      "three_quarter": 44
+    },
+    "cameraPositions": "identical R09/R10 per R09 render_pbr_truth.py",
+    "materialOverride": "none, no Phong",
+    "blenderR10": "pending owner render"
+  },
+  "handoff": [
+    {
+      "file": "sakura_hero.glb",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/sakura_hero.glb",
+      "bytes": 5096052,
+      "sha256": "ac4322fb00475d0dde3334a375fca0e0094715583edf7f6460b30a9139b1e273",
+      "status": "pending_owner_upload",
+      "kind": "binary"
+    },
+    {
+      "file": "sakura_hero_eco.glb",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/sakura_hero_eco.glb",
+      "bytes": 1393492,
+      "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+      "status": "pending_owner_upload",
+      "kind": "binary"
+    },
+    {
+      "file": "sakura_hero_editable.obj",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/sakura_hero_editable.obj",
+      "bytes": 12693668,
+      "sha256": "ed4213795d6aae7436c106fb93c7ba26317eb360e90332f5bc1e3ba8d03aae67",
+      "status": "pending_owner_upload",
+      "kind": "binary"
+    },
+    {
+      "file": "PBR_Review/R09_R10_three_quarter_MATCHED_PBR.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/R09_R10_three_quarter_MATCHED_PBR.jpg",
+      "bytes": 77692,
+      "sha256": "e8fa0f23b901e6a77b7a26f593ba6c21419ff7b46ecaba2fd9e6ec87c8d82ac1",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    },
+    {
+      "file": "PBR_Review/R09_R10_top_MATCHED_PBR.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/R09_R10_top_MATCHED_PBR.jpg",
+      "bytes": 85875,
+      "sha256": "b55e9b3ce560feed9f96c90967e3de7ebc2be93991d7564f18ae10ca992c1229",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    },
+    {
+      "file": "PBR_Review/R09_R10_trunk_33s_MATCHED_PBR.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/R09_R10_trunk_33s_MATCHED_PBR.jpg",
+      "bytes": 61329,
+      "sha256": "3faeff062ab4ed935383574831bd886b0e757573fa146dccca0ef4f1ea0bbf82",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    },
+    {
+      "file": "PBR_Review/R09_R10_under_MATCHED_PBR.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/R09_R10_under_MATCHED_PBR.jpg",
+      "bytes": 96157,
+      "sha256": "7108ea9315d3d5ff71355f5890f9c967196826f07a58feecca07e1385b3a9900",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    },
+    {
+      "file": "PBR_Review/r09_quality_three_quarter_vtk_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/r09_quality_three_quarter_vtk_pbr.png",
+      "bytes": 208073,
+      "sha256": "6b9b3d7c5a9356d936b9faf9cef1a75f9cf128ba686942dacfd1757409b88a44",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    },
+    {
+      "file": "PBR_Review/r09_quality_top_vtk_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/r09_quality_top_vtk_pbr.png",
+      "bytes": 239375,
+      "sha256": "c43e4a8b23ef695566842b11d552c0b07a8a62278c768d11a23b52742693f537",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    },
+    {
+      "file": "PBR_Review/r09_quality_trunk_33s_vtk_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/r09_quality_trunk_33s_vtk_pbr.png",
+      "bytes": 142044,
+      "sha256": "03759c1d920144deb761ff444e8ea4bab370df5d6dbb519d7517cd37cfd55b59",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    },
+    {
+      "file": "PBR_Review/r09_quality_under_vtk_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/r09_quality_under_vtk_pbr.png",
+      "bytes": 199029,
+      "sha256": "82d1a9364b42d5d3b6239f665cd6e5c23e2a4c353924478ddef1530594a59afd",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    },
+    {
+      "file": "PBR_Review/r10_eco_top_vtk_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/r10_eco_top_vtk_pbr.png",
+      "bytes": 188010,
+      "sha256": "4f62982e1d89f4be3711e3f063d0252687f9d27944e87475e8e86b848bff4b8e",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    },
+    {
+      "file": "PBR_Review/r10_quality_three_quarter_vtk_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/r10_quality_three_quarter_vtk_pbr.png",
+      "bytes": 197434,
+      "sha256": "e45d5ad2b03f8e3aff1ad31eda4bd3c5530e60bd9c85c1269f356d1fba2788f2",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    },
+    {
+      "file": "PBR_Review/r10_quality_top_vtk_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/r10_quality_top_vtk_pbr.png",
+      "bytes": 220182,
+      "sha256": "d4f56637e94d0e42b6e4341f91f6768b6acc36ae1b47c460a56f399b85ffbb46",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    },
+    {
+      "file": "PBR_Review/r10_quality_trunk_33s_vtk_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/r10_quality_trunk_33s_vtk_pbr.png",
+      "bytes": 140503,
+      "sha256": "737d83939ac60466edc2b88352d5049b4f70610f93e9e1682025538c8a76b0d7",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    },
+    {
+      "file": "PBR_Review/r10_quality_under_vtk_pbr.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r10/PBR_Review/r10_quality_under_vtk_pbr.png",
+      "bytes": 189842,
+      "sha256": "511a60eb66a2fae12864eca53918ce14e9fff12a6e3d7b3b8555fc579c2c31ef",
+      "status": "pending_owner_upload",
+      "kind": "preview"
+    }
+  ],
+  "blenderFileStatus": "pending owner R10 Cycles execution",
+  "costVND": 0
+}

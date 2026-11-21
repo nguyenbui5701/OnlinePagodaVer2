@@ -1,0 +1,267 @@
+{
+  "revision": "R12",
+  "status": "GEOMETRY_PROTOTYPE_OWNER_CYCLES_PASS_ART_PARTIAL",
+  "branch": "assets/sakura-hero-r04-sa-review",
+  "reviewPR": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/1",
+  "assetId": "sakura_hero",
+  "costVND": 0,
+  "quality": {
+    "bytes": 4916248,
+    "sha256": "0e1f656c74a3f7860cb640395d95cebdb852d7e1269f1463e04408aa6bc8bb25",
+    "triangles": 182674,
+    "vertices": 226267,
+    "meshCount": 11,
+    "materialCount": 11,
+    "explicitNormals": 0,
+    "pbr": true,
+    "doubleSidedPetals": true,
+    "uploadStatus": "pending_owner_upload"
+  },
+  "eco": {
+    "bytes": 1393492,
+    "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+    "triangles": 44412,
+    "vertices": 71032,
+    "meshCount": 10,
+    "materialCount": 10,
+    "explicitNormals": 0,
+    "pbr": true,
+    "doubleSidedPetals": true,
+    "exactR10R11CarryForward": true,
+    "uploadStatus": "pending_owner_upload"
+  },
+  "baselines": {
+    "r10PaletteOnly": {
+      "bytes": 5096532,
+      "sha256": "a9f178d1a4d6c4e0b5b969ab25a7fe0462d1284a06ac3a89abd761094420dd41",
+      "triangles": 188782,
+      "vertices": 235142
+    },
+    "r11Final": {
+      "bytes": 7599884,
+      "sha256": "584d95eb9467c8342d018a4a0331f8205b20f042325ef82b56d1bd8daddab375",
+      "triangles": 188782,
+      "vertices": 235142
+    }
+  },
+  "qualityDeltaVsR11": {
+    "triangles": -6108,
+    "percentTriangles": -3.235,
+    "vertices": -8875,
+    "percentVertices": -3.774,
+    "bytes": -2683636,
+    "percentBytes": -35.312
+  },
+  "materialPolicy": {
+    "qualityBaseColorAndEmissive": "Same R11 warmer palette and reduced emission",
+    "petalDoubleSided": true,
+    "singleSheet": true,
+    "explicitFlowerNormalAttributes": false
+  },
+  "geometryChanges": "Nonidentical cupped/shorter petal lobes, nested tiers, fewer hanging flowers; QUALITY-only stronger old growth trunk sweep and buttress, curved branch attachment, irregular root flare, recessed bark gold fissures",
+  "pbrEvidence": {
+    "r11NativeCycles": "OWNER_AND_SA_PASS_9_CASES_22_IMAGES",
+    "r12VTK": "EXECUTED_REAL_GLB_IBL_3_LIGHTS_SAME_CAMERA",
+    "r12NativeCycles": "OWNER_CYCLES_PASS_INDEPENDENT_SA_REVIEWED",
+    "threeJSGLTFLoader": "NOT_RUN",
+    "fpsVramLiveStudio": "NOT_RUN",
+    "productionApproved": false
+  },
+  "sourceFile": "Assets3D/Review/sakura_hero/r12/procedural_sakura_source.py",
+  "sourceGitBlobSha": "b7401469a9fe3751d62ca269dee85a240e590a1a",
+  "binaryHandoff": [
+    {
+      "file": "sakura_hero.glb",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/sakura_hero.glb",
+      "bytes": 4916248,
+      "sha256": "0e1f656c74a3f7860cb640395d95cebdb852d7e1269f1463e04408aa6bc8bb25",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "sakura_hero_eco.glb",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/sakura_hero_eco.glb",
+      "bytes": 1393492,
+      "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "sakura_hero_editable.obj",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/sakura_hero_editable.obj",
+      "bytes": 12223284,
+      "sha256": "ed022744c34733bf7d782473b1ccbf1d714f8b7e8c51ba2798ac7e790a31e36f",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R10PALETTE_vs_R11_CYCLES_top_OWNER_EVIDENCE.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R10PALETTE_vs_R11_CYCLES_top_OWNER_EVIDENCE.jpg",
+      "bytes": 124905,
+      "sha256": "0dd052c84753aa66a54cd9d025b6f41d04253705adeb3f4bdbaef1d889bbab6f",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R10PALETTE_vs_R11_CYCLES_under_OWNER_EVIDENCE.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R10PALETTE_vs_R11_CYCLES_under_OWNER_EVIDENCE.jpg",
+      "bytes": 116775,
+      "sha256": "90d0f914156bc1cdd3bd179c84e2318361ac9d9d4dd03c18f5ecd2fc17d5968c",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R10PAL_R11_R12_three_quarter_MATCHED_VTK.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R10PAL_R11_R12_three_quarter_MATCHED_VTK.jpg",
+      "bytes": 108988,
+      "sha256": "4de5b5997a5c11d210585c4f56b0488487c22f9cda69ddf74cf269d32a2047ff",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R10PAL_R11_R12_top_MATCHED_VTK.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R10PAL_R11_R12_top_MATCHED_VTK.jpg",
+      "bytes": 129426,
+      "sha256": "ed729fc606e3202948d71bcf88dba41d8764c78b3af999b1c2304649a8269002",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R10PAL_R11_R12_trunk_33s_MATCHED_VTK.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R10PAL_R11_R12_trunk_33s_MATCHED_VTK.jpg",
+      "bytes": 86929,
+      "sha256": "269c9a72e9d0ffb5fdb258278adcee7f040099c8b10f34a237978364f5b9c698",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R10PAL_R11_R12_under_MATCHED_VTK.jpg",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R10PAL_R11_R12_under_MATCHED_VTK.jpg",
+      "bytes": 138267,
+      "sha256": "29105d18107c0b776f58d67f722c3690ef71240604fcda3965966be788574a8c",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R10_palette_only_three_quarter_VTK_PBR.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R10_palette_only_three_quarter_VTK_PBR.png",
+      "bytes": 207911,
+      "sha256": "ba8c7b204e30ecd162239ec56aa2d2d3e8779930e3a7c47d50731533f584712f",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R10_palette_only_top_VTK_PBR.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R10_palette_only_top_VTK_PBR.png",
+      "bytes": 230960,
+      "sha256": "81b3eb16355f39cfce452eeccb28aa51fe80edca339278ce38cd585de5832add",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R10_palette_only_trunk_33s_VTK_PBR.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R10_palette_only_trunk_33s_VTK_PBR.png",
+      "bytes": 146604,
+      "sha256": "2740ede683afae5c07fb494990f1d7808e22b872948158db7b3eaa22357887e3",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R10_palette_only_under_VTK_PBR.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R10_palette_only_under_VTK_PBR.png",
+      "bytes": 198030,
+      "sha256": "11b24a62c126fd8cb27a6fa589260586fb2031cd606b680b155320d8cf112907",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R11_final_three_quarter_VTK_PBR.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R11_final_three_quarter_VTK_PBR.png",
+      "bytes": 194803,
+      "sha256": "0a8c79a4405e2b72a04bd3c7a049aa259474cdf0a703bf0953dd9e0da695d917",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R11_final_top_VTK_PBR.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R11_final_top_VTK_PBR.png",
+      "bytes": 207846,
+      "sha256": "381b856eda452aab3ae0314ccb36bb58a8c4793b444f2a9fee466dad22dc154d",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R11_final_trunk_33s_VTK_PBR.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R11_final_trunk_33s_VTK_PBR.png",
+      "bytes": 141802,
+      "sha256": "08837c819cbd88f6aab5de9262de741c010836c2ca478b35c9a41ead00637d4f",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R11_final_under_VTK_PBR.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R11_final_under_VTK_PBR.png",
+      "bytes": 187071,
+      "sha256": "f5ea31e2c4dc43a2146a8c7dd68472eee22c216bc3de9ddf774670f022681d15",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R12_quality_three_quarter_VTK_PBR.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R12_quality_three_quarter_VTK_PBR.png",
+      "bytes": 213923,
+      "sha256": "4d4d3724662ed4a3f9023ed15bcf0b23206b5b889ef4daacaedfc0e4b11330bb",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R12_quality_top_VTK_PBR.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R12_quality_top_VTK_PBR.png",
+      "bytes": 252755,
+      "sha256": "ac41e6bc8c16f43065ef1a5d1ec0d4d643d34c68dbee22cd0369a713f3bea29b",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R12_quality_trunk_33s_VTK_PBR.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R12_quality_trunk_33s_VTK_PBR.png",
+      "bytes": 146983,
+      "sha256": "f692c11298daca45c8c42bf4fb5684025927f61d11a8e976f46f6c00401cb7f7",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R12_quality_under_VTK_PBR.png",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/R12_quality_under_VTK_PBR.png",
+      "bytes": 199928,
+      "sha256": "2c899a6e4610f68b99af991d13214f53a1dad462b1f6838c02a0f957695c3cfd",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/VIDEO_15s_R12_CameraApprox.jpg",
+      "bytes": 115269,
+      "sha256": "20203cb418dbcce830537a0660601d2c19976b5c57095ff0b36dc9413b3fc240",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/VIDEO_15s_R12_CameraApprox.jpg",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/VIDEO_33s_R12_CameraApprox.jpg",
+      "bytes": 96952,
+      "sha256": "1df211d7bb060b872375a74b6dbe2fe371c2dd6c17c5578eb4f0190ec2ca4270",
+      "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/VIDEO_33s_R12_CameraApprox.jpg",
+      "status": "pending_owner_upload"
+    }
+  ],
+  "ownerBlenderCyclesR12": {
+    "status": "OWNER_CYCLES_PASS_INDEPENDENT_SA_REVIEWED",
+    "blenderVersion": "4.5.16 LTS",
+    "renderer": "Cycles CPU",
+    "cases": 4,
+    "imagesVerified": 20,
+    "shaListVerified": "34/34",
+    "samples": 32,
+    "look": "AgX",
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "lightEnergies": [
+      2.1,
+      1.05,
+      0.72
+    ],
+    "zipBytes": 16152983,
+    "zipSHA256": "006984dd319f75389c73bfa92b63fb51366603eb43833af33044dc450f117647",
+    "qualityBlend": {
+      "bytes": 12890180,
+      "sha256": "c74f9f9d5a0b7722c080f0bdd33eeca3d36f513dba7b9739ee9ac33a8ac7da83"
+    },
+    "ecoBlend": {
+      "bytes": 3936772,
+      "sha256": "8a4c73638aeab834fd1a1432b85960f0f04b2f09cf1730889318373a3985a7c7"
+    },
+    "art": "PARTIAL",
+    "githubBinaryStatus": "pending_owner_upload",
+    "threeJsNative": "NOT_RUN",
+    "gpuLiveStudio": "NOT_RUN",
+    "source": "R12_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  }
+}

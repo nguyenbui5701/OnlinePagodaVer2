@@ -1,0 +1,187 @@
+{
+  "revision": "R14",
+  "assetId": "sakura_hero",
+  "branch": "assets/sakura-hero-r04-sa-review",
+  "reviewPR": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/1",
+  "reviewedR13Head": "cc8f8cc6f639f5439226745465ab0c7011fb888a",
+  "status": "R14_OWNER_CYCLES_PASS_ART_PARTIAL_BINARIES_PENDING",
+  "quality": {
+    "bytes": 4877460,
+    "sha256": "ba3183c7b738dbd814b2b23cedc1f6da0470b13121882c116e1775154bda44f5",
+    "triangles": 181314,
+    "vertices": 224395,
+    "meshes": 11,
+    "materials": 11,
+    "explicitNORMALPrimitives": 0,
+    "doubleSidedPetals": true
+  },
+  "eco": {
+    "bytes": 1393492,
+    "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+    "triangles": 44412,
+    "vertices": 71032,
+    "meshes": 10,
+    "materials": 10,
+    "exactR13CarryForward": true
+  },
+  "baselineR13": {
+    "bytes": 4888192,
+    "sha256": "5e03020ac3160d6746b96715254e37290d140a1e7b3cee00708a105d2955e840",
+    "triangles": 181694,
+    "vertices": 224909
+  },
+  "qualityDeltaR13": {
+    "triangles": -380,
+    "vertices": -514,
+    "bytes": -10732,
+    "trianglesPercent": -0.209,
+    "bytesPercent": -0.22
+  },
+  "sourceGitBlobSha": "f3f0374ca03f7bcf6ceb56f88b34fb01e4b2e1ad",
+  "materialPolicy": {
+    "exactR13PbrMaterials": true,
+    "originalWarmPinkLowEmission": true,
+    "noExtraNormalArrays": true,
+    "singleSurfaceDoubleSided": true
+  },
+  "geometryChanges": "R13 collar sum of tall narrow .34 bumps replaced by broad nonadditive .108 shoulder field, smoother root collar .115 and delayed branch departure; blunt cupped petal lips within 4 triangles, hanging clusters 7->5; no welded Boolean union",
+  "cameraContract": "camera_contract_R14.json",
+  "evidence": {
+    "r13OwnerCycles": "PASS_SA_INDEPENDENT_REVIEW_3_CASES_18_IMAGES",
+    "r14VTKglTFPBR": "EXECUTED_IBL_PLUS_3_LIGHTS",
+    "r14BlenderCycles": "NOT_EXECUTED_OWNER_SCRIPT_PREPARED",
+    "nativeThreeJs": "NOT_RUN",
+    "RTXGPU_LiveStudioFPS": "NOT_RUN",
+    "art": "PARTIAL",
+    "production": "NOT_APPROVED",
+    "ownerCyclesR14": "OWNER_EXECUTED_SA_AUDITED_PASS",
+    "source": "R14_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  },
+  "license": "Original procedural zero-cost geometry, project owner commercial use permitted",
+  "binaryHandoff": [
+    {
+      "file": "sakura_hero.glb",
+      "path": "Assets3D/Review/sakura_hero/r14/sakura_hero.glb",
+      "bytes": 4877460,
+      "sha256": "ba3183c7b738dbd814b2b23cedc1f6da0470b13121882c116e1775154bda44f5",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "sakura_hero_eco.glb",
+      "path": "Assets3D/Review/sakura_hero/r14/sakura_hero_eco.glb",
+      "bytes": 1393492,
+      "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "sakura_hero_editable.obj",
+      "path": "Assets3D/Review/sakura_hero/r14/sakura_hero_editable.obj",
+      "bytes": 12121415,
+      "sha256": "1ce8513fe002bb21620e14d145c5160f25b8b28a391bafaa44a1bafde18c582f",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R13_R14_4VIEWS_CONTACT.jpg",
+      "path": "Assets3D/Review/sakura_hero/r14/PBR_Review/R13_R14_4VIEWS_CONTACT.jpg",
+      "bytes": 227150,
+      "sha256": "9e32ac63f65a71d317120430e9c3783d97e63d9a98449e0b6fd5fbe6a533def8",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R13_vs_R14_hero_close_9x16_MATCHED_VTK.jpg",
+      "path": "Assets3D/Review/sakura_hero/r14/PBR_Review/R13_vs_R14_hero_close_9x16_MATCHED_VTK.jpg",
+      "bytes": 179283,
+      "sha256": "c13344cd332b9932b3f10d7f00a7166fae1ea463c60967d1241f7284c9fdf777",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R13_vs_R14_hero_full_9x16_MATCHED_VTK.jpg",
+      "path": "Assets3D/Review/sakura_hero/r14/PBR_Review/R13_vs_R14_hero_full_9x16_MATCHED_VTK.jpg",
+      "bytes": 91404,
+      "sha256": "cff8f7805cf7e0025e8cb399832dc78a3fbb5aa4698d0aa3249a0ccfd868fc46",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R13_vs_R14_hero_medium48_9x16_MATCHED_VTK.jpg",
+      "path": "Assets3D/Review/sakura_hero/r14/PBR_Review/R13_vs_R14_hero_medium48_9x16_MATCHED_VTK.jpg",
+      "bytes": 130138,
+      "sha256": "8d8bb06790fad5b06247c6093ae5a6e45e4e9b6f0e5d82c5a07a9d08567f5263",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R13_vs_R14_three_quarter_MATCHED_VTK.jpg",
+      "path": "Assets3D/Review/sakura_hero/r14/PBR_Review/R13_vs_R14_three_quarter_MATCHED_VTK.jpg",
+      "bytes": 79647,
+      "sha256": "4b9c9b3f59f007bf751d16223077850cd5ec950d3d7e31af87e7dd43b3aa0e2c",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R13_vs_R14_top_MATCHED_VTK.jpg",
+      "path": "Assets3D/Review/sakura_hero/r14/PBR_Review/R13_vs_R14_top_MATCHED_VTK.jpg",
+      "bytes": 99723,
+      "sha256": "fd477c99d0ee2e3e9e0fc8b833b2856359238a340fb171e191b6cedba217bc4b",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R13_vs_R14_trunk_33s_MATCHED_VTK.jpg",
+      "path": "Assets3D/Review/sakura_hero/r14/PBR_Review/R13_vs_R14_trunk_33s_MATCHED_VTK.jpg",
+      "bytes": 63261,
+      "sha256": "2024f67f243211266a9a7db0caa85e823eb7843dc7ab88fefe99f4486cf0a9fb",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R13_vs_R14_under_MATCHED_VTK.jpg",
+      "path": "Assets3D/Review/sakura_hero/r14/PBR_Review/R13_vs_R14_under_MATCHED_VTK.jpg",
+      "bytes": 100578,
+      "sha256": "0e31c96aea66ab03eac8a2f0af2b499490f19004beb142008761ee152e56c3bc",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/R14_3_PORTRAIT_9x16.jpg",
+      "path": "Assets3D/Review/sakura_hero/r14/PBR_Review/R14_3_PORTRAIT_9x16.jpg",
+      "bytes": 154775,
+      "sha256": "579dfbbb9e61e7ef5542090cf80df23afc3914b28582519af5c4356ef77de8d1",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/VIDEO_15s_vs_R13_R14_CAMERA_APPROX.jpg",
+      "path": "Assets3D/Review/sakura_hero/r14/PBR_Review/VIDEO_15s_vs_R13_R14_CAMERA_APPROX.jpg",
+      "bytes": 150167,
+      "sha256": "54e4dcd647ce264a365c80538cc5559615e0c75139f6a65e29fb65bd3b8a219e",
+      "status": "pending_owner_upload"
+    },
+    {
+      "file": "PBR_Review/VIDEO_33s_vs_R13_R14_CAMERA_APPROX.jpg",
+      "path": "Assets3D/Review/sakura_hero/r14/PBR_Review/VIDEO_33s_vs_R13_R14_CAMERA_APPROX.jpg",
+      "bytes": 102025,
+      "sha256": "a20a8774031016ba1262c15d0cd1e2863f29c70e6b8e92c8b4eb66b828bfec9b",
+      "status": "pending_owner_upload"
+    }
+  ],
+  "ownerBlenderCyclesR14": {
+    "status": "OWNER_EXECUTED_SA_AUDITED_TECHNICAL_PASS",
+    "zipBytes": 17157620,
+    "zipSha256": "1a8664296e5d8e35b9d213e91d0fa15c3532d8f542aba5ccbd54482ef2127336",
+    "filesVerified": 32,
+    "imagesVerified": 21,
+    "casesCompleted": 3,
+    "blenderVersion": "4.5.16 LTS",
+    "renderer": "Cycles CPU",
+    "samples": 32,
+    "agx": true,
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "qualityBlend": {
+      "bytes": 12796204,
+      "sha256": "ff4d23d72c9c88e3b9da3427d8d00cfdc4ac8fcc6b3d8ea33b533a3fbf56c6fd"
+    },
+    "ecoBlend": {
+      "bytes": 3936772,
+      "sha256": "a140b87bcad1cdf275eee289fecf75616eb6180cdb70aa1063fb4717710e20b7"
+    },
+    "art": "PARTIAL",
+    "productionApproved": false,
+    "githubBinaryStatus": "pending_owner_upload",
+    "audit": "R14_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  }
+}

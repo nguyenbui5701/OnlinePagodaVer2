@@ -1,0 +1,524 @@
+{
+  "case": "r15_baseline",
+  "status": "OWNER_RUN_EVIDENCE_FOR_SA_REVIEW",
+  "blenderVersion": "4.5.16 LTS",
+  "renderEngine": "Cycles CPU",
+  "sourceName": "r15_quality.glb",
+  "sourceBytes": 4985692,
+  "sourceSha256": "9ad2dc4ceb807e0a60d89c8cbfdbcc26f09bd2ba190a1bb1ed09825be23f81ba",
+  "meshCount": 11,
+  "triangles": 187368,
+  "materials": {
+    "Trunk_bark_plumblack": {
+      "Base Color": [
+        0.11372549086809158,
+        0.0470588244497776,
+        0.13333334028720856,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.0
+    },
+    "Golden_bark_veins": {
+      "Base Color": [
+        0.9686274528503418,
+        0.6784313917160034,
+        0.3960784375667572,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.7300000190734863,
+      "Emission Color": [
+        0.3499999940395355,
+        0.12999999523162842,
+        0.03500000014901161,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Branches_plum": {
+      "Base Color": [
+        0.16470588743686676,
+        0.07450980693101883,
+        0.1882352977991104,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.0
+    },
+    "Canopy_depth_rose": {
+      "Base Color": [
+        0.7607843279838562,
+        0.43921568989753723,
+        0.5803921818733215,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.02500000037252903,
+        0.009999999776482582,
+        0.014000000432133675,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Canopy_peach": {
+      "Base Color": [
+        0.95686274766922,
+        0.6549019813537598,
+        0.6274510025978088,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.02500000037252903,
+        0.009999999776482582,
+        0.014000000432133675,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Canopy_rose": {
+      "Base Color": [
+        0.8784313797950745,
+        0.5215686559677124,
+        0.6274510025978088,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.02500000037252903,
+        0.009999999776482582,
+        0.014000000432133675,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Sakura_petal_warm_rose": {
+      "Base Color": [
+        0.8941176533699036,
+        0.49803921580314636,
+        0.6000000238418579,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Sakura_flower_gold": {
+      "Base Color": [
+        1.0,
+        0.8156862854957581,
+        0.5176470875740051,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.0
+    },
+    "Sakura_petal_blush": {
+      "Base Color": [
+        0.929411768913269,
+        0.6823529601097107,
+        0.7137255072593689,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Sakura_petal_pink": {
+      "Base Color": [
+        0.9058823585510254,
+        0.5647059082984924,
+        0.6549019813537598,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Sakura_petal_cream": {
+      "Base Color": [
+        0.9607843160629272,
+        0.800000011920929,
+        0.729411780834198,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    }
+  },
+  "samples": 32,
+  "viewTransform": "AgX",
+  "look": "None",
+  "exposureEV": 0.0,
+  "worldStrength": 0.6499999761581421,
+  "lights": [
+    {
+      "name": "R10_Key",
+      "energy": 2.0999999046325684,
+      "color": [
+        1.0,
+        0.8399999737739563,
+        0.8199999928474426
+      ]
+    },
+    {
+      "name": "R10_Rim",
+      "energy": 1.0499999523162842,
+      "color": [
+        1.0,
+        0.7599999904632568,
+        0.8899999856948853
+      ]
+    },
+    {
+      "name": "R10_LowerFill",
+      "energy": 0.7200000286102295,
+      "color": [
+        1.0,
+        0.7400000095367432,
+        0.8299999833106995
+      ]
+    }
+  ],
+  "cameras": [
+    "top",
+    "under",
+    "three_quarter",
+    "trunk_33s",
+    "hero_full_9x16",
+    "hero_medium_9x16",
+    "hero_close_9x16",
+    "fork_front",
+    "fork_side",
+    "fork_back"
+  ],
+  "cameraDataYup": {
+    "top": [
+      [
+        3.0,
+        54.0,
+        10.0
+      ],
+      [
+        0.0,
+        13.5,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      50
+    ],
+    "under": [
+      [
+        3.0,
+        4.8,
+        18.5
+      ],
+      [
+        0.0,
+        11.9,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      44
+    ],
+    "three_quarter": [
+      [
+        31.0,
+        25.0,
+        31.0
+      ],
+      [
+        0.0,
+        11.6,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      44
+    ],
+    "trunk_33s": [
+      [
+        4.8,
+        4.0,
+        11.5
+      ],
+      [
+        0.0,
+        6.6,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      56
+    ],
+    "hero_full_9x16": [
+      [
+        24.641505854426047,
+        38.825045790301786,
+        54.139118204520734
+      ],
+      [
+        0.15,
+        12.4,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      50
+    ],
+    "hero_medium_9x16": [
+      [
+        18.227136611938477,
+        31.904277801513672,
+        39.959983825683594
+      ],
+      [
+        0.15,
+        12.4,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      50
+    ],
+    "hero_close_9x16": [
+      [
+        3.0,
+        54.0,
+        10.0
+      ],
+      [
+        0.0,
+        13.5,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      50
+    ],
+    "fork_front": [
+      [
+        4.0,
+        10.2,
+        12.0
+      ],
+      [
+        1.8,
+        11.9,
+        1.2
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      38
+    ],
+    "fork_side": [
+      [
+        12.0,
+        12.1,
+        3.5
+      ],
+      [
+        1.8,
+        11.9,
+        1.2
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      38
+    ],
+    "fork_back": [
+      [
+        -6.6,
+        12.0,
+        -10.0
+      ],
+      [
+        1.8,
+        11.9,
+        1.2
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      38
+    ]
+  },
+  "axisTransform": "glTF(x,y,z)->Blender(x,-z,y)",
+  "boundsBlenderZup": [
+    [
+      -12.705632209777832,
+      -13.2966947555542,
+      -0.5183812975883484
+    ],
+    [
+      13.742024421691895,
+      12.642970085144043,
+      26.48044204711914
+    ]
+  ],
+  "images": [
+    {
+      "view": "top",
+      "filename": "r15_baseline_top_cycles.png",
+      "bytes": 483630,
+      "sha256": "6baf5b4af695a395a99ac798a1b4bab08326763bab479117768333797b8172e2",
+      "width": 520,
+      "height": 603
+    },
+    {
+      "view": "under",
+      "filename": "r15_baseline_under_cycles.png",
+      "bytes": 449231,
+      "sha256": "cfb67add9cad5fd3fe8b95216542732bdbcc0fe3b2bf27164bd214003cbc1c15",
+      "width": 520,
+      "height": 603
+    },
+    {
+      "view": "three_quarter",
+      "filename": "r15_baseline_three_quarter_cycles.png",
+      "bytes": 418141,
+      "sha256": "22c519a1b94d3be138d1bcda704056b6e06a0d0d7a86100e42eb45546f5eca02",
+      "width": 520,
+      "height": 603
+    },
+    {
+      "view": "trunk_33s",
+      "filename": "r15_baseline_trunk_33s_cycles.png",
+      "bytes": 388439,
+      "sha256": "4576504a4452845a13100f8a5d8f33fcc052c6775a2a9ea093eee85f5e6d130e",
+      "width": 520,
+      "height": 603
+    },
+    {
+      "view": "hero_full_9x16",
+      "filename": "r15_baseline_hero_full_9x16_cycles.png",
+      "bytes": 552115,
+      "sha256": "649ad7d8e36ab12960202962b87f48b567d2c9a90a47c0bf2a5d433d3e5b99c2",
+      "width": 520,
+      "height": 924
+    },
+    {
+      "view": "hero_medium_9x16",
+      "filename": "r15_baseline_hero_medium_9x16_cycles.png",
+      "bytes": 628246,
+      "sha256": "b23d921a25c1af125649f4e60e1919d5fd821fb7fe465abb2ead2df4d4fced6b",
+      "width": 520,
+      "height": 924
+    },
+    {
+      "view": "hero_close_9x16",
+      "filename": "r15_baseline_hero_close_9x16_cycles.png",
+      "bytes": 762630,
+      "sha256": "529c3462d1b7f0ea28471d8e042b7eb0588ec426d05fafee2bad2ea5a730d2e0",
+      "width": 520,
+      "height": 924
+    },
+    {
+      "view": "fork_front",
+      "filename": "r15_baseline_fork_front_cycles.png",
+      "bytes": 389910,
+      "sha256": "cfb62d682dcc6340afe6e494bc20b172de16b95aa6a723a60c2d3186e33b05dc",
+      "width": 520,
+      "height": 603
+    },
+    {
+      "view": "fork_side",
+      "filename": "r15_baseline_fork_side_cycles.png",
+      "bytes": 367355,
+      "sha256": "9a5f8d414cac022b9c633a7d3991dcbf3c931583287ae8ce28fd6a6fccf4155b",
+      "width": 520,
+      "height": 603
+    },
+    {
+      "view": "fork_back",
+      "filename": "r15_baseline_fork_back_cycles.png",
+      "bytes": 391827,
+      "sha256": "21311af2837839fd8249b986f95c4abd4549c6156eccacfc9926cece6ad7a93e",
+      "width": 520,
+      "height": 603
+    }
+  ],
+  "blend": null
+}

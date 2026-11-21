@@ -1,0 +1,14 @@
+# Sakura Hero R15 — owner Blender/Cycles verified evidence
+
+SA independent source: [PR review #6004773600](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/1#pullrequestreview-6004773600), review of original owner upload at HEAD `0460fb71bb76722fbd0e0859b043009d3763cdb3` on 2026-11-21.
+
+**Technical Blender/Cycles R15 PASS. Artistic quality PARTIAL. Production NOT APPROVED.** Evidence reviewed from original owner bytes, not a fresh Cycles re-render by SA:
+
+- Original `Sakura_R15_Blender_Evidence_Cycles.zip`: **20,833,552 bytes**, SHA256 `19d4385dc3523d2c5f72fa9900cefc09bfb9e8d69572feaec4bfcc2f50ca86c4`; CRC PASS; **41/41 actual non-hash-list entries** match `FILE_HASHES_SHA256.txt` by exact path.
+- Three cases `r14_baseline`, `r15_final`, `eco_unchanged`: **3/3 completed**, **30/30 PNG hashes, sizes and dimensions** match JSON, 10 distinct views/case including `fork_front`, `fork_side`, `fork_back`, and FULL/MEDIUM/CLOSE 9:16. Three stdout completion markers `[R15_CYCLES_COMPLETED]`, three empty stderr logs.
+- **Blender 4.5.16 LTS**, **Cycles CPU, 32 samples**, AgX, 0 EV, World strength 0.65 and 3 fixed SUN lamps; fixed R14/R15 glTF PBR source import, Y-up→Z-up.
+- Original `sakura_hero_r15_quality.blend`: **13,112,769 bytes**, SHA `beff1990257e20e1b8743430aca52189e85778f228ec12cffaad24e4cdd76bce`; ECO `sakura_hero_r15_eco.blend`: **3,936,772 bytes**, SHA `66c3b5803b470fcca0d2404539f0b5fa1d382353e4d87af8a5adf63fb55cdb44`. Both agree with ZIP members and corresponding case JSON; SA verified `BLENDER-v405`, `DNA1`, `ENDB` and 0 malformed/trailing blocks. This is file-integrity verification, not independent GUI rendering.
+- R15 QUALITY actual Cycles case reports source GLB SHA `9ad2dc4ceb807e0a60d89c8cbfdbcc26f09bd2ba190a1bb1ed09825be23f81ba` (4,985,692 B, 187,368 triangles, 227,360 vertices), ECO SHA `accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173` (1,393,492 B, 44,412 triangles). **SA did not independently inspect raw R15 GLB** in this review; independent GLB topology audit was performed later for R16 from local original SHA-exact binary.
+- P0 SDF as a technique ACCEPTED AS PROTOTYPE. Visual defects remain: `fork_side` broad planar patch, several unfused secondary pipes, gold ribbon unbounded nearest-face displacement raw max 1.08343m, paperish petals at close zoom; FULL/MEDIUM/CLOSE intent correct.
+
+**Delivery is separate:** Large R15 raw GLB/OBJ, Cycles ZIP and original editable .blend are **not confirmed uploaded to PR branch** and must continue `pending_owner_upload`. Native Three.js GLTFLoader and target GPU+TikTok LIVE Studio 720×1280 @30fps/VRAM **NOT RUN**. Do not merge Draft PR or call production approval. Historical R15 pre-run protocol files remain useful as instructions; this audit supersedes their pending-run status.

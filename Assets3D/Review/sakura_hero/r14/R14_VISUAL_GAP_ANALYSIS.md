@@ -1,0 +1,9 @@
+> **Post-owner execution update 2026-11-21:** Independent SA review verified original R14 Blender/Cycles **3/3 cases, 21/21 PNG, 32/32 archive SHA and two original valid .blend files PASS**. **ART PARTIAL; production NOT APPROVED; GitHub binaries still `pending_owner_upload`.** Historical pre-run instructions below are superseded by [R14_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md](R14_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md). Three.js and GPU/LIVE Studio remain NOT RUN.
+
+# R14 vs R13 SA artistic gap review (not production acceptance)
+
+**R13 real Cycles PASS**, reviewed in SA #6004407478; palette/lower-emissive material retained. **R14 Cycles NOT RUN**. True-GLB VTK PBR shows R14 branch shoulders smoother than R13; two procedural alternatives A and B were locally compared, B chosen because narrower R13 knuckle bumps are less prominent. New shoulder surface is nonadditive and broad, not raised tubes; Gold remains in the bark grooves. However secondary branches remain distinct intersecting tube meshes, not a proper fused manifold. The ancient heavy shape of owner video 33s is still an open artistic gap.
+
+Canopy outer 6-vertex shape is blunter/cupped and detached hanging clusters reduce from 7 to 5. SAME glTF material JSON and no extra NORMAL; but sheet-like petal facets still visible under VTK, especially close. Do not claim fully soft photographic blossom rendering. Compare R13/R14 Cycles using provided 7 exact cameras, AgX, 0EV and constant 3-Sun/World dusk rig.
+
+**Portrait:** medium at distance 48m lies between full 65.032m fit and overhead close detail, full fits both crown edges; medium trims about 1.23% source vertices, intentional lateral crop; visual hierarchy improved but TikTok LIVE composition not yet approved. Owner video around 15 and 33 seconds is approximate framing only. Three.js + owner RTX GPU/LIVE Studio tests NOT RUN; no FPS guarantees. ECO unchanged SHA.
