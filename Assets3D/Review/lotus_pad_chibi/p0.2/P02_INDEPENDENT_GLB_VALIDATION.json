@@ -1,0 +1,194 @@
+{
+  "p01": {
+    "lotus_pad_01.glb": {
+      "sha256": "0c80e5d4b2590716fdf9a985340fe2446af7ecc056727a03b82a3997db52bba5",
+      "bytes": 270128,
+      "triangles": 10984,
+      "vertices": 5530,
+      "meshes": 5,
+      "materials": 5,
+      "textures": 0,
+      "nonfinite": 0,
+      "degenerate": 0,
+      "boundsMinMax": [
+        [
+          -1.062186,
+          -0.239377,
+          -1.046373
+        ],
+        [
+          1.030894,
+          0.212725,
+          0.997408
+        ]
+      ],
+      "animClips": [],
+      "nodeNames": [
+        "world",
+        "SeatRoot",
+        "PadSeatAnchor",
+        "leaf_satin_green_SeatRoot_object",
+        "leaf_underside_jade_SeatRoot_object",
+        "leaf_edge_lime_SeatRoot_object",
+        "leaf_vein_sage_SeatRoot_object",
+        "leaf_stem_olive_SeatRoot_object"
+      ]
+    },
+    "meditator_base.glb": {
+      "sha256": "f4e184b57046ad442183931bf9fd2f6d7953000ea07270458e291f627f787d2b",
+      "bytes": 205588,
+      "triangles": 8484,
+      "vertices": 4315,
+      "meshes": 11,
+      "materials": 8,
+      "textures": 0,
+      "nonfinite": 0,
+      "degenerate": 0,
+      "boundsMinMax": [
+        [
+          -0.367,
+          0.009039,
+          -0.248271
+        ],
+        [
+          0.336,
+          1.164,
+          0.386471
+        ]
+      ],
+      "animClips": [
+        "sit_idle"
+      ],
+      "nodeNames": [
+        "world",
+        "SeatRoot",
+        "UpperBodyBreath",
+        "HeadAnchor",
+        "NameplateAnchor",
+        "FXAnchor",
+        "robe_lavender_SeatRoot_object",
+        "robe_cream_SeatRoot_object",
+        "robe_amethyst_SeatRoot_object",
+        "robe_cream_UpperBodyBreath_object",
+        "robe_lavender_UpperBodyBreath_object",
+        "skin_rose_cream_UpperBodyBreath_object",
+        "robe_amethyst_UpperBodyBreath_object",
+        "hair_blue_black_UpperBodyBreath_object",
+        "hair_pin_gold_UpperBodyBreath_object",
+        "eyes_mauve_UpperBodyBreath_object",
+        "skin_blush_UpperBodyBreath_object"
+      ]
+    },
+    "independentSeatContact": {
+      "actorPlacementY": 0.195,
+      "padCenterSeatY": 0.195,
+      "vertexSamples": 658,
+      "matchedTopTriangles": 658,
+      "minGapM": 0.014818456586649487,
+      "maxGapM": 0.32439354287778477,
+      "penetrationsMoreThan5mm": 0,
+      "method": "Actual imported GLB triangle barycentric surface height vs exact imported lower body vertex positions; no generator surface formula"
+    }
+  },
+  "p02": {
+    "lotus_pad_01.glb": {
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+      "bytes": 262108,
+      "triangles": 10648,
+      "vertices": 5364,
+      "meshes": 5,
+      "materials": 5,
+      "textures": 0,
+      "nonfinite": 0,
+      "degenerate": 0,
+      "boundsMinMax": [
+        [
+          -1.057189,
+          -0.239377,
+          -1.041386
+        ],
+        [
+          1.025895,
+          0.242502,
+          0.992598
+        ]
+      ],
+      "animClips": [],
+      "nodeNames": [
+        "world",
+        "SeatRoot",
+        "PadSeatAnchor",
+        "leaf_satin_green_SeatRoot_object",
+        "leaf_underside_jade_SeatRoot_object",
+        "leaf_edge_lime_SeatRoot_object",
+        "leaf_vein_sage_SeatRoot_object",
+        "leaf_stem_olive_SeatRoot_object"
+      ]
+    },
+    "meditator_base.glb": {
+      "sha256": "83009fab6f4f00730260ef70dcd4d8605b2c634bc99f1fd6e34a1030833abd4c",
+      "bytes": 216012,
+      "triangles": 8906,
+      "vertices": 4538,
+      "meshes": 11,
+      "materials": 8,
+      "textures": 0,
+      "nonfinite": 0,
+      "degenerate": 0,
+      "boundsMinMax": [
+        [
+          -0.362,
+          0.009039,
+          -0.268751
+        ],
+        [
+          0.336,
+          1.157,
+          0.386471
+        ]
+      ],
+      "animClips": [
+        "sit_idle"
+      ],
+      "nodeNames": [
+        "world",
+        "SeatRoot",
+        "UpperBodyBreath",
+        "HeadAnchor",
+        "NameplateAnchor",
+        "FXAnchor",
+        "robe_lavender_SeatRoot_object",
+        "robe_cream_SeatRoot_object",
+        "robe_amethyst_SeatRoot_object",
+        "robe_cream_UpperBodyBreath_object",
+        "robe_lavender_UpperBodyBreath_object",
+        "skin_rose_cream_UpperBodyBreath_object",
+        "robe_amethyst_UpperBodyBreath_object",
+        "hair_blue_black_UpperBodyBreath_object",
+        "hair_pin_gold_UpperBodyBreath_object",
+        "eyes_mauve_UpperBodyBreath_object",
+        "skin_blush_UpperBodyBreath_object"
+      ]
+    },
+    "independentSeatContact": {
+      "actorPlacementY": 0.195,
+      "padCenterSeatY": 0.195,
+      "vertexSamples": 658,
+      "matchedTopTriangles": 658,
+      "minGapM": 0.014818456586649487,
+      "maxGapM": 0.32439354287778477,
+      "penetrationsMoreThan5mm": 0,
+      "method": "Actual imported GLB triangle barycentric surface height vs exact imported lower body vertex positions; no generator surface formula"
+    }
+  },
+  "compared": {
+    "sameCoordinatesAndNamedAnchors": true,
+    "sameSitIdle": true,
+    "totalTriangleDelta": 86,
+    "ECOorLODCreated": false,
+    "ownerVisualApproval": "PENDING",
+    "BlenderCyclesP02": "NOT_RUN",
+    "nativeThreeJs": "NOT_RUN",
+    "runtimeGPU": "NOT_RUN"
+  }
+}

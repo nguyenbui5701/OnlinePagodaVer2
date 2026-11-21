@@ -1,0 +1,295 @@
+{
+  "version": "0.1.0",
+  "revision": "p0.2",
+  "task": "Task/AI_VISUAL_02_ART_REFINEMENT_AND_OWNER_GATE.md",
+  "pr": 2,
+  "branch": "assets/lotus-pad-chibi-p0",
+  "baselinePR2Head": "e8eb34c5d405e308e616c89cd385eb5d1d342b2f",
+  "scope": "original 3D lotus pad + chibi visual refinement only",
+  "coordinateSystem": {
+    "up": "+Y",
+    "actorForward": "+Z",
+    "metersPerUnit": 1,
+    "rightHanded": true,
+    "waterWorldY": 0
+  },
+  "p01OriginalImmutable": {
+    "lotus_pad_01.glb": {
+      "sha256": "0c80e5d4b2590716fdf9a985340fe2446af7ecc056727a03b82a3997db52bba5",
+      "bytes": 270128,
+      "triangles": 10984
+    },
+    "meditator_base.glb": {
+      "sha256": "f4e184b57046ad442183931bf9fd2f6d7953000ea07270458e291f627f787d2b",
+      "bytes": 205588,
+      "triangles": 8484
+    }
+  },
+  "assets": [
+    {
+      "assetId": "lotus_pad_01",
+      "revision": "p0.2",
+      "kind": "pad",
+      "runtime": "Assets3D/Review/lotus_pad_chibi/p0.2/lotus_pad_01.glb",
+      "source": "Assets3D/Review/lotus_pad_chibi/p0.2/procedural_lotus_pad_chibi.py",
+      "editableBlenderSource": "Assets3D/Review/lotus_pad_chibi/p0.2/lotus_pad_01_p02.blend",
+      "sourceBlenderState": "NOT_CREATED_OWNER_BLENDER_RUN_PENDING",
+      "originMeters": [
+        0,
+        0,
+        0
+      ],
+      "forwardAxis": "none",
+      "upAxis": "+Y",
+      "scale": 1.0,
+      "boundsMinMaxMeters": [
+        [
+          -1.057189,
+          -0.239377,
+          -1.041386
+        ],
+        [
+          1.025895,
+          0.242502,
+          0.992598
+        ]
+      ],
+      "boundsMeters": [
+        2.083084,
+        0.481879,
+        2.033984
+      ],
+      "anchors": {
+        "PadSeatAnchor": [
+          0,
+          0.195,
+          0
+        ]
+      },
+      "triangleCount": 10648,
+      "vertexCount": 5364,
+      "meshCount": 5,
+      "materialCount": 5,
+      "textures": [],
+      "animations": [],
+      "lods": [],
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+      "bytes": 262108,
+      "githubStatus": "pending_owner_upload",
+      "provenance": "original procedural local Python/trimesh, 0 paid tools"
+    },
+    {
+      "assetId": "meditator_base",
+      "revision": "p0.2",
+      "kind": "avatar",
+      "runtime": "Assets3D/Review/lotus_pad_chibi/p0.2/meditator_base.glb",
+      "source": "Assets3D/Review/lotus_pad_chibi/p0.2/procedural_lotus_pad_chibi.py",
+      "editableBlenderSource": "Assets3D/Review/lotus_pad_chibi/p0.2/meditator_base_p02.blend",
+      "sourceBlenderState": "NOT_CREATED_OWNER_BLENDER_RUN_PENDING",
+      "originMeters": [
+        0,
+        0,
+        0
+      ],
+      "forwardAxis": "+Z",
+      "upAxis": "+Y",
+      "scale": 1.0,
+      "boundsMinMaxMeters": [
+        [
+          -0.362,
+          0.009039,
+          -0.268751
+        ],
+        [
+          0.336,
+          1.157,
+          0.386471
+        ]
+      ],
+      "boundsMeters": [
+        0.698,
+        1.147961,
+        0.655222
+      ],
+      "anchors": {
+        "SeatRoot": [
+          0,
+          0,
+          0
+        ],
+        "HeadAnchor": [
+          0,
+          0.835,
+          0.04
+        ],
+        "NameplateAnchor": [
+          0,
+          1.335,
+          0.03
+        ],
+        "FXAnchor": [
+          0.37,
+          0.805,
+          0.16
+        ]
+      },
+      "triangleCount": 8906,
+      "vertexCount": 4538,
+      "meshCount": 11,
+      "materialCount": 8,
+      "textures": [],
+      "animations": [
+        {
+          "name": "sit_idle",
+          "durationSeconds": 2.0,
+          "keyframeCount": 17,
+          "channel": "UpperBodyBreath.translation",
+          "motionYRangeMeters": [
+            0,
+            0.016
+          ],
+          "rigType": "hierarchical node animation, not skinned skeleton"
+        }
+      ],
+      "lods": [],
+      "sha256": "83009fab6f4f00730260ef70dcd4d8605b2c634bc99f1fd6e34a1030833abd4c",
+      "bytes": 216012,
+      "githubStatus": "pending_owner_upload",
+      "provenance": "original procedural local Python/trimesh, 0 paid tools"
+    }
+  ],
+  "seatPlacementContract": {
+    "scenePadPosition": [
+      0,
+      0,
+      0
+    ],
+    "actorPlacementOffset": [
+      0,
+      0.195,
+      0
+    ],
+    "doNotApplySeatOffsetTwice": true,
+    "actorAndPadRootsScopedPerGLB": true
+  },
+  "independentContactValidation": {
+    "actorPlacementY": 0.195,
+    "padCenterSeatY": 0.195,
+    "vertexSamples": 658,
+    "matchedTopTriangles": 658,
+    "minGapM": 0.014818456586649487,
+    "maxGapM": 0.32439354287778477,
+    "penetrationsMoreThan5mm": 0,
+    "method": "Actual imported GLB triangle barycentric surface height vs exact imported lower body vertex positions; no generator surface formula"
+  },
+  "actualModelBinaries": [
+    {
+      "path": "Assets3D/Review/lotus_pad_chibi/p0.2/lotus_pad_01.glb",
+      "filename": "lotus_pad_01.glb",
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+      "bytes": 262108,
+      "triangleCount": 10648,
+      "vertexCount": 5364,
+      "meshCount": 5,
+      "materialCount": 5,
+      "textureCount": 0,
+      "boundsMeters": [
+        [
+          -1.057189,
+          -0.239377,
+          -1.041386
+        ],
+        [
+          1.025895,
+          0.242502,
+          0.992598
+        ]
+      ],
+      "githubStatus": "pending_owner_upload"
+    },
+    {
+      "path": "Assets3D/Review/lotus_pad_chibi/p0.2/meditator_base.glb",
+      "filename": "meditator_base.glb",
+      "sha256": "83009fab6f4f00730260ef70dcd4d8605b2c634bc99f1fd6e34a1030833abd4c",
+      "bytes": 216012,
+      "triangleCount": 8906,
+      "vertexCount": 4538,
+      "meshCount": 11,
+      "materialCount": 8,
+      "textureCount": 0,
+      "boundsMeters": [
+        [
+          -0.362,
+          0.009039,
+          -0.268751
+        ],
+        [
+          0.336,
+          1.157,
+          0.386471
+        ]
+      ],
+      "githubStatus": "pending_owner_upload"
+    }
+  ],
+  "realPBRComparisonImages": [
+    {
+      "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/LEAF_TOP_SIDE_WATERLINE_AB.jpg",
+      "bytes": 91864,
+      "sha256": "3ddf9dfe72dc2702919d204819794e78f8d59c57ebadc6e0e06796b3319b64fc",
+      "engine": "actual GLB vtkGLTFImporter native PBR",
+      "githubStatus": "pending_owner_upload"
+    },
+    {
+      "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/CHIBI_FRONT_SIDE_BACK_AB.jpg",
+      "bytes": 140465,
+      "sha256": "6bc04a655d5d19a3d04423a6c46ddce201c969c49cfd153991713b89e7fc65ce",
+      "engine": "actual GLB vtkGLTFImporter native PBR",
+      "githubStatus": "pending_owner_upload"
+    },
+    {
+      "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/PAIR_MEDIUM_CLOSE_AB.jpg",
+      "bytes": 123526,
+      "sha256": "81727727286914721f145f73d527aa7f4216b890598e8621f0958fe9cd9975a1",
+      "engine": "actual GLB vtkGLTFImporter native PBR",
+      "githubStatus": "pending_owner_upload"
+    },
+    {
+      "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/PAIR_CONTACT_AB.jpg",
+      "bytes": 114775,
+      "sha256": "1f0df36661f882e9e967f693b859064150098619574b63b82eb5b20da26f0964",
+      "engine": "actual GLB vtkGLTFImporter native PBR",
+      "githubStatus": "pending_owner_upload"
+    },
+    {
+      "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/SIT_IDLE_5_PHASES_AB.jpg",
+      "bytes": 200580,
+      "sha256": "006eaf14cd48a1c94e64bb3d5e704f54443093b79b88572ffd8afa32e83390b2",
+      "engine": "actual GLB vtkGLTFImporter native PBR",
+      "githubStatus": "pending_owner_upload"
+    }
+  ],
+  "cameraEvidence": {
+    "engine": "VTK native glTF Physically Based Rendering",
+    "fixedLightingAndCamera": true,
+    "viewsPerRevision": 12,
+    "sitIdleSamplesPerRevision": 5,
+    "videoRefs": "chuav2.mp4 viewed 3s, 9s, 42s; no copyrighted video frame committed"
+  },
+  "acceptance": {
+    "p01OwnerCycles": "OWNER_EXECUTED_AND_SA_VERIFIED_PASS",
+    "p02RealGLBImport": "PASS",
+    "p02SeatContact": "PASS_INDEPENDENT_EXPORTED_TRIANGLE_BARYCENTRIC",
+    "p02Idle": "PASS_NATIVE_GLTF_DATA_AND_PBR_FRAMES",
+    "p02VTKSameCameraAB": "PASS",
+    "p02BlenderCycles": "PENDING_OWNER_RUN",
+    "p02EditableBlenderFiles": "PENDING_OWNER_RUN",
+    "nativeThreeJs": "NOT_RUN",
+    "RTX3050TiAnd3060LiveStudio": "NOT_RUN",
+    "ownerImageApproval": "ART_OWNER_PENDING",
+    "codexIntegration": "ON_HOLD_PENDING_EXPLICIT_OWNER_OK",
+    "pr2MergeAllowed": false
+  },
+  "costPolicy": "zero-cost local tools; no paid AI 3D providers",
+  "licenseAndProvenance": "LICENSE_AND_PROVENANCE.md"
+}
