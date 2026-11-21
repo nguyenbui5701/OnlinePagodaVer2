@@ -11,7 +11,7 @@ R15 targeted response to SA R14 Cycles review #6004536603:
 Usage:
   python procedural_sakura_source.py  # writes QUALITY/ECO GLB and editable OBJ
   python procedural_sakura_source.py --quality-only
-Requires: numpy, trimesh. No paid services and no runtime renderer code.
+Requires: numpy, scipy, scikit-image, vtk, trimesh. No paid services and no runtime renderer code.
 """
 import os, math, random, argparse
 from collections import defaultdict
