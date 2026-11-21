@@ -1,5 +1,8 @@
 # AI VISUAL 03 — P0.4 Female Chibi: Vietnamese Áo Bà Ba, Multi-Color Variants & Long Loose Hair
 
+> **P0.5 successor task — 2026-11-22:** This P0.4 assignment is now the **historical baseline**: owner accepts its overall áo bà ba/long-hair female appearance, but **does not grant final female pose acceptance**. Follow [AI_VISUAL_04](AI_VISUAL_04_FEMALE_PRAYER_POSES.md) for improved cross-legged knees and praying hands plus a new kneeling prayer pose. Preserve P0.4 source and six colors. No male, Codex or merge.
+
+
 **Issued by:** SA · **Owner decision:** 2026-11-21 · **Status:** ASSIGNED — FEMALE VISUAL ONLY / OWNER GATE OPEN.
 
 **REQUIRED PROCESS:** Follow [Design/07 — Rules](../Design/07_WORK_RULES.md) and the exact evidence-driven **Sakura task style** in [Design/15](../Design/15_AI_VISUAL_SAKURA_NEXT_PROMPT.md). This is an independent, executable GitHub task, not a concept-art suggestion. Sequence: **SA task → AI Visual actual source + GLB + Cycles → SA review on PR → owner views images and explicitly approves → only then next stage**.
