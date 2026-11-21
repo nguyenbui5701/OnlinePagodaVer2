@@ -1,3 +1,5 @@
+> **Post-owner execution update 2026-11-21:** Independent SA review verified original R14 Blender/Cycles **3/3 cases, 21/21 PNG, 32/32 archive SHA and two original valid .blend files PASS**. **ART PARTIAL; production NOT APPROVED; GitHub binaries still `pending_owner_upload`.** Historical pre-run instructions below are superseded by [R14_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md](R14_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md). Three.js and GPU/LIVE Studio remain NOT RUN.
+
 # Sakura R14 — pending owner binary and media handoff
 
 Branch `assets/sakura-hero-r04-sa-review`. The following objects are **not uploaded by AI Visual to GitHub**; preserve exact SHA and path. Actual R14 `.blend` files do not exist until owner runs Blender Cycles and cannot have a fabricated hash.
