@@ -209,8 +209,7 @@ def hair_cap(center=(0,.824,.036),radii=(.297,.321,.286)):
             front=max(0.,math.sin(ph))**5
             oval=math.exp(-((math.atan2(math.sin(ph-(math.pi/2+.39)),math.cos(ph-(math.pi/2+.39))))/.36)**2)
             other=math.exp(-((math.atan2(math.sin(ph-(math.pi/2-.49)),math.cos(ph-(math.pi/2-.49))))/.33)**2)
-            captheta=polar+.052*math.sin(ph*2.5+.9)*(li/levels)+\
-                     (li/levels)**5*front*(.082*oval+.058*other-.012)
+            captheta=polar+.052*math.sin(ph*2.5+.9)*(li/levels)+                     (li/levels)**5*front*(.082*oval+.058*other-.012)
             v.append((center[0]+radii[0]*1.023*math.sin(captheta)*math.cos(ph),
                       center[1]+radii[1]*1.045*math.cos(captheta),
                       center[2]+radii[2]*1.035*math.sin(captheta)*math.sin(ph)))
