@@ -1,0 +1,70 @@
+{
+  "revision": "P0.4",
+  "realGLB": {
+    "sha256": "586134fdeab962f35458c16255985513b070da47195110d3c83eef2dd9b6be09",
+    "bytes": 244348,
+    "triangles": 9718,
+    "vertices": 5063,
+    "meshes": 9,
+    "materials": 21,
+    "textures": 0,
+    "degenerateFaces": 0
+  },
+  "variantNames": [
+    "pastel_lilac",
+    "blush_rose",
+    "sage_green",
+    "sky_blue",
+    "warm_cream",
+    "terracotta"
+  ],
+  "variantMappings": {
+    "top": 6,
+    "pants": 6,
+    "geometryCopies": 0
+  },
+  "sit_idle": {
+    "name": "sit_idle",
+    "duration": 2,
+    "samples": 17,
+    "peakTranslationY": 0.016
+  },
+  "anchors": {
+    "SeatRoot": [
+      0,
+      0,
+      0
+    ],
+    "HeadAnchor": [
+      0,
+      0.835,
+      0.04
+    ],
+    "NameplateAnchor": [
+      0,
+      1.335,
+      0.03
+    ],
+    "FXAnchor": [
+      0.37,
+      0.805,
+      0.16
+    ]
+  },
+  "hairMinimumY": 0.32,
+  "hairToPantsNearestVertexByIdleSeconds": {
+    "0": 0.1590878749,
+    "1": 0.1689616086,
+    "2": 0.1590878749,
+    "0.5": 0.1639039003,
+    "1.5": 0.1639039003
+  },
+  "proxyNotExactTriangleCollision": true,
+  "frozenLeafNotReadLocally": true,
+  "p03BaselineNotReadLocally": true,
+  "localVTKRealGLBPBR": "EXECUTED",
+  "blenderCycles": "NOT_EXECUTED",
+  "editableBlend": "NOT_CREATED",
+  "ownerGate": "P04_FEMALE_OWNER_VISUAL_REVIEW_REQUIRED",
+  "runtime": "NOT_RUN"
+}
