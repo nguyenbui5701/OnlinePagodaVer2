@@ -120,14 +120,36 @@
   "r10PaletteOnlySamePositionsAndFaces": true,
   "r11GeometryOnlySamePositionsAndFaces": true,
   "materialABPBR": "VTK native PBR executed 4-case top, under, trunk; A/B source GLBs actually exported",
-  "blenderCyclesAB": "NOT EXECUTED in this environment; owner-run Windows script syntax-compiled only",
+  "blenderCyclesAB": "PASS_EXECUTED_OWNER_SA_VERIFIED",
   "validatedR10Blender": "SA confirmed R10 Cycles import/render and original 2 .blend file integrity",
   "unresolved": [
-    "R11 Cycles image parity, particularly pale top canopy",
-    "R11 material/normal underside shading in Blender",
     "native ThreeJS material parity",
     "LIVE Studio GPU FPS/VRAM on owner hardware",
-    "old-growth branch merge art fidelity"
+    "old-growth branch merge art fidelity",
+    "Art quality PARTIAL; native Three.js and GPU LIVE Studio performance not tested"
   ],
-  "costVND": 0
+  "costVND": 0,
+  "ownerBlenderCyclesR11": {
+    "status": "PASS_EXECUTED_OWNER_INDEPENDENT_SA_EVIDENCE",
+    "blenderVersion": "4.5.16 LTS",
+    "renderEngine": "Cycles CPU",
+    "casesCompleted": 9,
+    "imageCount": 22,
+    "samples": 32,
+    "resolution": [
+      520,
+      603
+    ],
+    "viewTransform": "AgX",
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "qualityBlendBytes": 15303787,
+    "qualityBlendSha256": "f5f871d1c2b6c8cab7d687f844c3eed021c60d66f0e94fe497a5c9ad839451ea",
+    "ecoBlendBytes": 3936772,
+    "ecoBlendSha256": "71a8c3b9346c008bbce383eef2daaebdf7d3139d6cab518cac2f0ca918c68edb",
+    "allUploadedMediaOnPR": false,
+    "productionApproved": false,
+    "source": "R11_BLENDER_CYCLES_AB_OWNER_EVIDENCE_AUDIT.md",
+    "note": "Evidence actually executed, independently verified by SA. Historical pre-run source fields below are superseded; untouched hashes and pending_owner_upload entries remain valid."
+  }
 }
