@@ -1,0 +1,183 @@
+{
+  "lotus_pad_01.glb": {
+    "file": "lotus_pad_01.glb",
+    "sha256": "0c80e5d4b2590716fdf9a985340fe2446af7ecc056727a03b82a3997db52bba5",
+    "bytes": 270128,
+    "triangles": 10984,
+    "vertices": 5530,
+    "meshes": 5,
+    "materials": 5,
+    "textures": 0,
+    "boundsMinMax": [
+      [
+        -1.062186,
+        -0.239377,
+        -1.046373
+      ],
+      [
+        1.030894,
+        0.212725,
+        0.997408
+      ]
+    ],
+    "materialsPBR": true,
+    "nonFinite": 0,
+    "degenerateTriangles": 0,
+    "nodeNames": [
+      "world",
+      "SeatRoot",
+      "PadSeatAnchor",
+      "leaf_satin_green_SeatRoot_object",
+      "leaf_underside_jade_SeatRoot_object",
+      "leaf_edge_lime_SeatRoot_object",
+      "leaf_vein_sage_SeatRoot_object",
+      "leaf_stem_olive_SeatRoot_object"
+    ],
+    "padSeatAnchor_m": [
+      0,
+      0.195,
+      0
+    ],
+    "leafUpFacingSurfaceFaceRatio": 0.9518693596905887
+  },
+  "meditator_base.glb": {
+    "file": "meditator_base.glb",
+    "sha256": "f4e184b57046ad442183931bf9fd2f6d7953000ea07270458e291f627f787d2b",
+    "bytes": 205588,
+    "triangles": 8484,
+    "vertices": 4315,
+    "meshes": 11,
+    "materials": 8,
+    "textures": 0,
+    "boundsMinMax": [
+      [
+        -0.367,
+        0.009039,
+        -0.248271
+      ],
+      [
+        0.336,
+        1.164,
+        0.386471
+      ]
+    ],
+    "materialsPBR": true,
+    "nonFinite": 0,
+    "degenerateTriangles": 0,
+    "nodeNames": [
+      "world",
+      "SeatRoot",
+      "UpperBodyBreath",
+      "HeadAnchor",
+      "NameplateAnchor",
+      "FXAnchor",
+      "robe_lavender_SeatRoot_object",
+      "robe_cream_SeatRoot_object",
+      "robe_amethyst_SeatRoot_object",
+      "robe_cream_UpperBodyBreath_object",
+      "robe_lavender_UpperBodyBreath_object",
+      "skin_rose_cream_UpperBodyBreath_object",
+      "robe_amethyst_UpperBodyBreath_object",
+      "hair_blue_black_UpperBodyBreath_object",
+      "hair_pin_gold_UpperBodyBreath_object",
+      "eyes_mauve_UpperBodyBreath_object",
+      "skin_blush_UpperBodyBreath_object"
+    ],
+    "animation": {
+      "name": "sit_idle",
+      "durationSeconds": 2,
+      "keyCount": 17,
+      "targets": "UpperBodyBreath",
+      "interpolation": "LINEAR",
+      "translationMinMaxY": [
+        0,
+        0.01600000075995922
+      ],
+      "sampleY_m": {
+        "0.0": 0,
+        "0.5": 0.008,
+        "1.0": 0.016,
+        "1.5": 0.008,
+        "2.0": 0
+      }
+    },
+    "anchors": {
+      "seat": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0.835,
+        0.04
+      ],
+      "nameplate": [
+        0,
+        1.335,
+        0.03
+      ],
+      "giftFx": [
+        0.37,
+        0.805,
+        0.16
+      ],
+      "animatedParent": "UpperBodyBreath",
+      "actorForward": "+Z",
+      "up": "+Y"
+    }
+  },
+  "contactTest": {
+    "actorPlacementY_m": 0.195,
+    "padCenterSurfaceY_m": 0.195,
+    "minSeatToLeafTopGapMeters": 0.014768,
+    "verticesTested": 658,
+    "penetrationVerticesBelow5mm": 0,
+    "contactToleranceMeters": 0.04,
+    "status": "PASS",
+    "method": "actual lower-body imported GLB vertex clearance against procedural pad top surface"
+  },
+  "gates": {
+    "nativeTrimeshGLBImport": "PASS",
+    "trueVtkGLTFPBRFrames": "PASS",
+    "sitIdleNativeGLTFAnimation": "PASS",
+    "cyclesBlenderWindows": "OWNER_EXECUTED_SA_AUDITED_3_3_PASS",
+    "blenderSourceBlendFiles": "ORIGINAL_BLENDS_SA_SHA_VERIFIED_OWNER_CONTROLLED",
+    "threeJsLoader": "NOT_RUN",
+    "liveStudioFPSVram": "NOT_RUN",
+    "releaseApproved": false
+  },
+  "ownerCyclesP01": {
+    "status": "OWNER_CYCLES_PASS_SA_INDEPENDENTLY_REVIEWED",
+    "zipBytes": 7008614,
+    "zipSHA256": "e3a02ea4069d614331c81316d33da2a7b1861fc4b5777ec2860392b8825d5e36",
+    "archiveMembersSHAverified": 30,
+    "pngSHAverified": 18,
+    "casesCompleted": 3,
+    "engine": "Blender 4.5.16 LTS Cycles CPU",
+    "samples": 32,
+    "viewTransform": "AgX",
+    "exposureEV": 0,
+    "sourceBlends": [
+      {
+        "filename": "lotus_pad_01(1).blend",
+        "bytes": 1258524,
+        "sha256": "9bb6baf2d2b457674154ff5758852a46ac93568360ead6f250ed6b8d3c9667e9"
+      },
+      {
+        "filename": "meditator_base(1).blend",
+        "bytes": 1204551,
+        "sha256": "ba48fc0db3707865eb26ebe9bcc380ac6d035e6a47035bfc9f78b31bfb30bf96"
+      },
+      {
+        "filename": "lotus_chibi_seated_review.blend",
+        "bytes": 2074525,
+        "sha256": "405929cfaa763645cb71bd62ec08536319385faf5da38d0283009525fff6491f"
+      }
+    ],
+    "blenderFilesGitHubState": "OWNER_CONTROLLED_NOT_COMMITTED",
+    "ownerArt": "PENDING",
+    "productionApproved": false,
+    "source": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6005380374"
+  }
+}

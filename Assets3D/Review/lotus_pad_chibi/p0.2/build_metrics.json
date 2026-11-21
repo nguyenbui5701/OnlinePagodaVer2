@@ -1,0 +1,97 @@
+{
+  "pad": {
+    "file": "lotus_pad_01.glb",
+    "bytes": 262108,
+    "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+    "triangles": 10648,
+    "vertices": 5364,
+    "meshes": 5,
+    "materials": 5,
+    "textures": 0,
+    "animatedClips": [],
+    "nodeNames": [
+      "world",
+      "SeatRoot",
+      "PadSeatAnchor",
+      "leaf_satin_green_SeatRoot_object",
+      "leaf_underside_jade_SeatRoot_object",
+      "leaf_edge_lime_SeatRoot_object",
+      "leaf_vein_sage_SeatRoot_object",
+      "leaf_stem_olive_SeatRoot_object"
+    ],
+    "measuredBoundsMinMax": [
+      [
+        -1.057189,
+        -0.239377,
+        -1.041386
+      ],
+      [
+        1.025895,
+        0.242502,
+        0.992598
+      ]
+    ],
+    "gltfUp": "+Y",
+    "gltfForward": "pad normal +Y"
+  },
+  "actor": {
+    "file": "meditator_base.glb",
+    "bytes": 216012,
+    "sha256": "83009fab6f4f00730260ef70dcd4d8605b2c634bc99f1fd6e34a1030833abd4c",
+    "triangles": 8906,
+    "vertices": 4538,
+    "meshes": 11,
+    "materials": 8,
+    "textures": 0,
+    "animatedClips": [
+      "sit_idle"
+    ],
+    "nodeNames": [
+      "world",
+      "SeatRoot",
+      "UpperBodyBreath",
+      "HeadAnchor",
+      "NameplateAnchor",
+      "FXAnchor",
+      "robe_lavender_SeatRoot_object",
+      "robe_cream_SeatRoot_object",
+      "robe_amethyst_SeatRoot_object",
+      "robe_cream_UpperBodyBreath_object",
+      "robe_lavender_UpperBodyBreath_object",
+      "skin_rose_cream_UpperBodyBreath_object",
+      "robe_amethyst_UpperBodyBreath_object",
+      "hair_blue_black_UpperBodyBreath_object",
+      "hair_pin_gold_UpperBodyBreath_object",
+      "eyes_mauve_UpperBodyBreath_object",
+      "skin_blush_UpperBodyBreath_object"
+    ],
+    "measuredBoundsMinMax": [
+      [
+        -0.362,
+        0.009039,
+        -0.268751
+      ],
+      [
+        0.336,
+        1.157,
+        0.386471
+      ]
+    ],
+    "gltfUp": "+Y",
+    "gltfForward": "+Z"
+  },
+  "padSeatAnchor": [
+    0,
+    0.195,
+    0
+  ],
+  "actorOrigin": [
+    0,
+    0,
+    0
+  ],
+  "actorForward": "+Z",
+  "actorUp": "+Y",
+  "animationDurationSeconds": 2.0,
+  "breathingPeakMeters": 0.016
+}

@@ -1,0 +1,252 @@
+{
+  "p02": {
+    "medium_original": {
+      "pair": {
+        "vertices": 9902,
+        "croppedPct": 0.0,
+        "ndcLeftRight": [
+          -0.9685,
+          0.9486
+        ],
+        "ndcBottomTop": [
+          -0.3959,
+          0.3928
+        ],
+        "minDepth": 3.5503
+      },
+      "actor": {
+        "vertices": 4538,
+        "croppedPct": 0.0,
+        "ndcLeftRight": [
+          -0.3624,
+          0.2826
+        ],
+        "ndcBottomTop": [
+          -0.2337,
+          0.3928
+        ],
+        "minDepth": 4.0539
+      },
+      "pad": {
+        "vertices": 5364,
+        "croppedPct": 0.0,
+        "ndcLeftRight": [
+          -0.9685,
+          0.9486
+        ],
+        "ndcBottomTop": [
+          -0.3959,
+          -0.0885
+        ],
+        "minDepth": 3.5503
+      }
+    },
+    "medium_refined": {
+      "pair": {
+        "vertices": 9902,
+        "croppedPct": 8.9275,
+        "ndcLeftRight": [
+          -1.561,
+          1.5094
+        ],
+        "ndcBottomTop": [
+          -0.7331,
+          0.6141
+        ],
+        "minDepth": 2.3047
+      },
+      "actor": {
+        "vertices": 4538,
+        "croppedPct": 0.0,
+        "ndcLeftRight": [
+          -0.5715,
+          0.4631
+        ],
+        "ndcBottomTop": [
+          -0.4073,
+          0.6141
+        ],
+        "minDepth": 2.739
+      },
+      "pad": {
+        "vertices": 5364,
+        "croppedPct": 16.4802,
+        "ndcLeftRight": [
+          -1.561,
+          1.5094
+        ],
+        "ndcBottomTop": [
+          -0.7331,
+          -0.1018
+        ],
+        "minDepth": 2.3047
+      }
+    },
+    "close_original": {
+      "pair": {
+        "vertices": 9902,
+        "croppedPct": 10.6443,
+        "ndcLeftRight": [
+          -1.6822,
+          1.6834
+        ],
+        "ndcBottomTop": [
+          -0.9256,
+          0.5492
+        ],
+        "minDepth": 1.9901
+      },
+      "actor": {
+        "vertices": 4538,
+        "croppedPct": 0.0,
+        "ndcLeftRight": [
+          -0.5961,
+          0.5099
+        ],
+        "ndcBottomTop": [
+          -0.5494,
+          0.5492
+        ],
+        "minDepth": 2.4639
+      },
+      "pad": {
+        "vertices": 5364,
+        "croppedPct": 19.6495,
+        "ndcLeftRight": [
+          -1.6822,
+          1.6834
+        ],
+        "ndcBottomTop": [
+          -0.9256,
+          -0.2147
+        ],
+        "minDepth": 1.9901
+      }
+    }
+  },
+  "p03": {
+    "medium_original": {
+      "pair": {
+        "vertices": 9827,
+        "croppedPct": 0.0,
+        "ndcLeftRight": [
+          -0.9685,
+          0.9486
+        ],
+        "ndcBottomTop": [
+          -0.3959,
+          0.3928
+        ],
+        "minDepth": 3.5503
+      },
+      "actor": {
+        "vertices": 4463,
+        "croppedPct": 0.0,
+        "ndcLeftRight": [
+          -0.3624,
+          0.2826
+        ],
+        "ndcBottomTop": [
+          -0.2337,
+          0.3928
+        ],
+        "minDepth": 4.1158
+      },
+      "pad": {
+        "vertices": 5364,
+        "croppedPct": 0.0,
+        "ndcLeftRight": [
+          -0.9685,
+          0.9486
+        ],
+        "ndcBottomTop": [
+          -0.3959,
+          -0.0885
+        ],
+        "minDepth": 3.5503
+      }
+    },
+    "medium_refined": {
+      "pair": {
+        "vertices": 9827,
+        "croppedPct": 8.9956,
+        "ndcLeftRight": [
+          -1.561,
+          1.5094
+        ],
+        "ndcBottomTop": [
+          -0.7331,
+          0.6141
+        ],
+        "minDepth": 2.3047
+      },
+      "actor": {
+        "vertices": 4463,
+        "croppedPct": 0.0,
+        "ndcLeftRight": [
+          -0.5715,
+          0.4631
+        ],
+        "ndcBottomTop": [
+          -0.4073,
+          0.6141
+        ],
+        "minDepth": 2.8046
+      },
+      "pad": {
+        "vertices": 5364,
+        "croppedPct": 16.4802,
+        "ndcLeftRight": [
+          -1.561,
+          1.5094
+        ],
+        "ndcBottomTop": [
+          -0.7331,
+          -0.1018
+        ],
+        "minDepth": 2.3047
+      }
+    },
+    "close_original": {
+      "pair": {
+        "vertices": 9827,
+        "croppedPct": 10.7256,
+        "ndcLeftRight": [
+          -1.6822,
+          1.6834
+        ],
+        "ndcBottomTop": [
+          -0.9256,
+          0.5492
+        ],
+        "minDepth": 1.9901
+      },
+      "actor": {
+        "vertices": 4463,
+        "croppedPct": 0.0,
+        "ndcLeftRight": [
+          -0.5961,
+          0.5099
+        ],
+        "ndcBottomTop": [
+          -0.5494,
+          0.5492
+        ],
+        "minDepth": 2.5268
+      },
+      "pad": {
+        "vertices": 5364,
+        "croppedPct": 19.6495,
+        "ndcLeftRight": [
+          -1.6822,
+          1.6834
+        ],
+        "ndcBottomTop": [
+          -0.9256,
+          -0.2147
+        ],
+        "minDepth": 1.9901
+      }
+    }
+  }
+}

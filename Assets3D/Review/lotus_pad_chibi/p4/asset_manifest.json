@@ -1,0 +1,192 @@
+{
+  "assetId": "meditator_female_ao_ba_ba",
+  "revision": "P0.4",
+  "task": "Task/AI_VISUAL_03_FEMALE_AO_BA_BA_LONG_HAIR.md",
+  "pr": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2",
+  "baselineHead": "dff58dde2d71467cb17916f6b4016e71b2ef4158",
+  "branch": "assets/lotus-pad-chibi-p0",
+  "path": "Assets3D/Review/lotus_pad_chibi/p4/",
+  "status": "P04_FEMALE_OWNER_VISUAL_REVIEW_REQUIRED",
+  "runtime": "meditator_female_ao_ba_ba_p04.glb",
+  "runtimeGitHubUpload": "pending_owner_upload",
+  "source": "procedural_female_p04.py",
+  "editableBlender": "meditator_female_p04_actor.blend",
+  "editableBlenderStatus": "pending_owner_Blender_execution",
+  "runtimeSha256": "586134fdeab962f35458c16255985513b070da47195110d3c83eef2dd9b6be09",
+  "runtimeBytes": 244348,
+  "triangles": 9718,
+  "vertices": 5063,
+  "meshes": 9,
+  "materialDefinitions": 21,
+  "textureCount": 0,
+  "localBounds": [
+    [
+      -0.336,
+      -0.001673,
+      -0.315126
+    ],
+    [
+      0.336,
+      1.152,
+      0.393174
+    ]
+  ],
+  "lodCreated": false,
+  "baselineP03": {
+    "file": "Assets3D/Review/lotus_pad_chibi/p3/meditator_base.glb",
+    "sha256": "646842c7574976020f6583c4e18879c9bef012e5f31dc851589c0a1491786be0",
+    "bytes": 212040,
+    "triangles": 8724,
+    "meshes": 11,
+    "materials": 8,
+    "sourceReviewedBySA": true
+  },
+  "costDelta": {
+    "triangles": 994,
+    "bytes": 32308,
+    "meshDrawCallsApprox": -2,
+    "materialDefinitions": 13,
+    "measuredRuntimeFPS": null
+  },
+  "frozenLotus": {
+    "sourcePath": "Assets3D/Review/lotus_pad_chibi/p3/lotus_pad_01.glb",
+    "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+    "bytes": 262108,
+    "triangles": 10648,
+    "reexported": false,
+    "localCopyPresent": false
+  },
+  "coordinateSystem": {
+    "up": "+Y",
+    "actorForward": "+Z",
+    "worldUnitMeters": 1,
+    "origin": "SeatRoot at [0,0,0]"
+  },
+  "anchors": {
+    "SeatRoot": [
+      0,
+      0,
+      0
+    ],
+    "HeadAnchor": [
+      0,
+      0.835,
+      0.04
+    ],
+    "NameplateAnchor": [
+      0,
+      1.335,
+      0.03
+    ],
+    "FXAnchor": [
+      0.37,
+      0.805,
+      0.16
+    ]
+  },
+  "sit_idle": {
+    "name": "sit_idle",
+    "durationSec": 2,
+    "keyframes": 17,
+    "peakY": 0.01600000075995922,
+    "identicalMathematicalFormulaToP03": true
+  },
+  "colorVariantImplementation": {
+    "extension": "KHR_materials_variants",
+    "slots": [
+      "ao_ba_ba_top",
+      "ao_ba_ba_pants"
+    ],
+    "paletteIds": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "singleGeometry": true,
+    "numAdditionalMaterialDefinitions": 12,
+    "tested": "GLB JSON actual primitive mappings verified; renderer-specific variant selection NOT tested"
+  },
+  "paletteSRGBHex": {
+    "pastel_lilac": {
+      "top": "#B9A4D7",
+      "pants": "#44435D"
+    },
+    "blush_rose": {
+      "top": "#D998A6",
+      "pants": "#59515C"
+    },
+    "sage_green": {
+      "top": "#94B6A0",
+      "pants": "#394D48"
+    },
+    "sky_blue": {
+      "top": "#85B8D4",
+      "pants": "#35495F"
+    },
+    "warm_cream": {
+      "top": "#E7CBAA",
+      "pants": "#665A59"
+    },
+    "terracotta": {
+      "top": "#BD806B",
+      "pants": "#484044"
+    }
+  },
+  "previewEvidence": [
+    {
+      "relativePath": "PBR_Review/P04_FRONT_SIDE_THREEQUARTER_BACK.jpg",
+      "githubUpload": "pending_owner_upload",
+      "engine": "VTK glTF native PBR; NOT Blender Cycles",
+      "bytes": 38692,
+      "sha256": "0fb8cb3c743eb937b1ccea31af7ee706c835fd4234a8716b16b76b9048cf955e"
+    },
+    {
+      "relativePath": "PBR_Review/P04_HAIR_IDLE_BACK_5FRAMES.jpg",
+      "githubUpload": "pending_owner_upload",
+      "engine": "VTK glTF native PBR; NOT Blender Cycles",
+      "bytes": 29010,
+      "sha256": "b99b24be1330b0d8f943ac644036f8c3f30b563ae6789f82ce5680344bc6250d"
+    },
+    {
+      "relativePath": "PBR_Review/P04_IDLE_FRONT_5FRAMES.jpg",
+      "githubUpload": "pending_owner_upload",
+      "engine": "VTK glTF native PBR; NOT Blender Cycles",
+      "bytes": 41864,
+      "sha256": "8d1acf0461ae948641b737796ad74bdc49c403ac19771f2f616dec74e4ca1d72"
+    },
+    {
+      "relativePath": "PBR_Review/P04_PLACKET_HAIR_PORTRAIT.jpg",
+      "githubUpload": "pending_owner_upload",
+      "engine": "VTK glTF native PBR; NOT Blender Cycles",
+      "bytes": 54278,
+      "sha256": "e900b86ef29512e1cafb09d98105007f5ec20125fb2e7a94822a8d6d91aa54d2"
+    },
+    {
+      "relativePath": "PBR_Review/P04_SIX_COLORS_SAME_GEOMETRY.jpg",
+      "githubUpload": "pending_owner_upload",
+      "engine": "VTK glTF native PBR; NOT Blender Cycles",
+      "bytes": 92688,
+      "sha256": "d0d9d350cb1cdb5614daa5f31bed2dfa5ff62108ed559e67cb6f45b17d9095d4"
+    }
+  ],
+  "validation": {
+    "importGLB": "PASS",
+    "nativePBRActorImages": "PASS",
+    "sixMaterialSwatches": "PASS",
+    "idleAnchors": "PASS",
+    "hairVsPantsVertexProximity": "PASS_PROXY_ONLY",
+    "exactHairSelfIntersection": "NOT_RUN",
+    "p03ABBlenderCycles": "NOT_RUN_FOR_P04",
+    "p04EditableBlend": "NOT_CREATED",
+    "pairWithFrozenLeafCycles": "NOT_RUN",
+    "nativeThreeJs": "NOT_RUN",
+    "RTXVRAMFPS": "NOT_RUN",
+    "ownerArt": "PENDING"
+  },
+  "externalPaidCostVND": 0,
+  "license": "original procedural geometry; no copied third-party assets",
+  "stop": "NO_MALE_OR_CODEX_OR_MERGE"
+}

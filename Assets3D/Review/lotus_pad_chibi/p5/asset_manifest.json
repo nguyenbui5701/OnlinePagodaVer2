@@ -1,0 +1,178 @@
+{
+  "revision": "P0.5",
+  "pr": 2,
+  "branch": "assets/lotus-pad-chibi-p0",
+  "baselineHead": "6894dcdd60e5c03a638824950419015e7634fe00",
+  "task": "Task/AI_VISUAL_04_FEMALE_PRAYER_POSES.md",
+  "status": "P05_FEMALE_POSE_OWNER_VISUAL_REVIEW_REQUIRED",
+  "sourceAuthority": "Original P0.4 frozen Python + original author-created two-pose P0.5 generator in owner source ZIP; GitHub original generator pending_owner_upload",
+  "originalP04": {
+    "path": "Assets3D/Review/lotus_pad_chibi/p4/meditator_female_ao_ba_ba_p04.glb",
+    "sha256": "586134fdeab962f35458c16255985513b070da47195110d3c83eef2dd9b6be09",
+    "bytes": 244348,
+    "triangles": 9718,
+    "vertices": 5063,
+    "meshes": 9,
+    "materials": 21
+  },
+  "frozenLeafP02": {
+    "path": "Assets3D/Review/lotus_pad_chibi/p3/lotus_pad_01.glb",
+    "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+    "reexported": false,
+    "originalBinaryImportedLocally": false
+  },
+  "poses": {
+    "cross_prayer": {
+      "file": "meditator_female_cross_prayer_p05.glb",
+      "sha256": "981ecf0b83378ce3fca7cd49db9473baac43238af3b5ee2fa857024ff66b57fd",
+      "bytes": 338176,
+      "triangles": 13262,
+      "vertices": 6855,
+      "meshes": 9,
+      "materials": 21,
+      "textures": 0,
+      "animations": [
+        "sit_idle",
+        "cross_prayer_idle"
+      ],
+      "bounds": [
+        [
+          -0.366199,
+          -0.005278,
+          -0.315126
+        ],
+        [
+          0.363024,
+          1.152,
+          0.385907
+        ]
+      ],
+      "deltaTrianglesFromP04": 3544,
+      "deltaBytesFromP04": 93828,
+      "githubBinary": "pending_owner_upload"
+    },
+    "kneel_prayer": {
+      "file": "meditator_female_kneel_prayer_p05.glb",
+      "sha256": "04a1d0e03e5186085118dd06d158dbba43e7180843895ed1661a03529040785e",
+      "bytes": 352636,
+      "triangles": 14190,
+      "vertices": 7319,
+      "meshes": 9,
+      "materials": 21,
+      "textures": 0,
+      "animations": [
+        "sit_idle",
+        "kneel_prayer_idle"
+      ],
+      "bounds": [
+        [
+          -0.336,
+          0.00031,
+          -0.355
+        ],
+        [
+          0.336,
+          1.152,
+          0.385907
+        ]
+      ],
+      "deltaTrianglesFromP04": 4472,
+      "deltaBytesFromP04": 108288,
+      "githubBinary": "pending_owner_upload"
+    }
+  },
+  "unchangedMeshNames": [
+    "hair_blue_black_UpperBodyBreath_mesh",
+    "eyes_mauve_UpperBodyBreath_mesh",
+    "skin_blush_UpperBodyBreath_mesh",
+    "ao_ba_ba_buttons_UpperBodyBreath_mesh",
+    "ao_ba_ba_placket_UpperBodyBreath_mesh"
+  ],
+  "changedMeshesOnly": [
+    "ao_ba_ba_pants_SeatRoot_mesh",
+    "sandal_trim_SeatRoot_mesh",
+    "ao_ba_ba_top_UpperBodyBreath_mesh",
+    "skin_rose_cream_UpperBodyBreath_mesh"
+  ],
+  "anchors": {
+    "SeatRoot": [
+      0,
+      0,
+      0
+    ],
+    "HeadAnchor": [
+      0,
+      0.835,
+      0.04
+    ],
+    "NameplateAnchor": [
+      0,
+      1.335,
+      0.03
+    ],
+    "FXAnchor": [
+      0.37,
+      0.805,
+      0.16
+    ]
+  },
+  "animation": {
+    "preservedClip": "sit_idle",
+    "durationSeconds": 2,
+    "keyframes": 17,
+    "peakY": 0.016,
+    "poseSpecificAliasesShareOriginalKeyframeTimesValues": true,
+    "animatedNode": "UpperBodyBreath",
+    "legIKOrArmature": false
+  },
+  "variants": {
+    "extension": "KHR_materials_variants",
+    "names": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "slots": [
+      "ao_ba_ba_top",
+      "ao_ba_ba_pants"
+    ],
+    "mapsPerClothingPrimitive": 6,
+    "geometryCopiesPerColor": 0,
+    "rendererIndependentRuntimeSelection": "NOT_RUN"
+  },
+  "collision": {
+    "crossAnalyticPadMinGapM": 0.0000202,
+    "crossAnalyticPadSupportWithin10mm": 31,
+    "kneelAnalyticPadMinGapM": 0.0014666,
+    "kneelAnalyticPadSupportWithin10mm": 92,
+    "analyticPenetrationsOver5mm": 0,
+    "originalFrozenPadImportedForCollision": false,
+    "exactTriangleCollision": "NOT_RUN",
+    "status": "COLLISION_PROXY_ONLY"
+  },
+  "evidence": {
+    "P05RealGLBImport": "PASS",
+    "P05CleanGeneratorRebuildByteExact": "PASS",
+    "P05RealGLBPBR": "EXECUTED",
+    "P05Idle5x3": "EXECUTED",
+    "P05TwoSixColorSheets": "EXECUTED",
+    "P04OwnerCycles": "GITHUB_REPORTS_PRESENT_NOT_INDEPENDENTLY_REAUDITED_THIS_TURN",
+    "P05BlenderCycles": "PENDING_OWNER_RUN",
+    "P05BlenderEditable": "NOT_CREATED",
+    "P05NativeThreeJs": "NOT_RUN",
+    "P05GPULIVEStudio": "NOT_RUN"
+  },
+  "sourceFilesWithActualLocalSHA": {
+    "procedural_female_prayer_p05.py": "e6f7d06d3a3c78d055c6510d61d009a6bca877f03cd1c1323ee5602dcc633ad9",
+    "p04_source_frozen.py": "b3b8b0c5bb1f9730c426f9e4b2ce1485e0f4df9b45adffcb9300ac92348f8ad2",
+    "blender_p05_cycles.py": "32f05a1c85821cfa5a4e9f6db5fc0a2b71b0a46f24c9005e99dacd655f0c7f66",
+    "run_p05_blender.ps1": "6b5328ce69b01dd4563ef13cb88b66ebf42f3f3206993d680efe1d561dcca2e4",
+    "validate_p05.py": "f56b502aba8a9329e7538c7369364a8c72859e1680a75db0296b2be46da1be1b",
+    "compose_p05_cycles_sheets.py": "dee6547dc1304ba3a49df5f46804b2ff3b070bc9b4f994c3dbe23a3f9287a86b"
+  },
+  "externalPaidCostVND": 0,
+  "stop": "NO_MALE_NO_CODEX_NO_RUNTIME_NO_MERGE"
+}

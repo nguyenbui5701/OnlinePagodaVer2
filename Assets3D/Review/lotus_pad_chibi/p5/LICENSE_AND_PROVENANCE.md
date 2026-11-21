@@ -1,0 +1,3 @@
+# Zero-cost original 3D provenance
+
+P0.5 female crossed/kneeling hand/forearm/leg geometry is newly authored with free Python/numpy/trimesh, from the user's original P0.4 female áo bà ba generator and exact frozen source SHA256 `b3b8b0c5bb1f9730c426f9e4b2ce1485e0f4df9b45adffcb9300ac92348f8ad2`. Original P0.4 skin face, hair, placket/buttons, P0.2 lotus, Sakura and runtime are unchanged. No external copyrighted model, marketplace item, generated third-party likeness, unlicensed texture or paid 3D generation service. VTK native 3D PBR for local review, free Blender Windows for owner-run Cycles. Zero external paid cost **0 VND**. Use subject to dependency licenses; no male asset and no merge.

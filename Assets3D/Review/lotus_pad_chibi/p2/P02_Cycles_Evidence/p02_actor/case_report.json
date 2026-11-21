@@ -1,0 +1,89 @@
+{
+  "status": "ACTUAL_OWNER_EXECUTION",
+  "revision": "p02",
+  "kind": "actor",
+  "blenderVersion": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "viewTransform": "AgX",
+  "exposureEV": 0.0,
+  "worldStrength": 0.65,
+  "lighting": "fixed warm key + lilac fill + rose rim",
+  "sourceGLBs": {
+    "meditator_base.glb": {
+      "bytes": 216012,
+      "sha256": "83009fab6f4f00730260ef70dcd4d8605b2c634bc99f1fd6e34a1030833abd4c"
+    }
+  },
+  "importedMeshCount": 11,
+  "principledMaterialSlots": 11,
+  "animationNames": [
+    "sit_idle"
+  ],
+  "originalBlender": {
+    "file": "meditator_base_p02.blend",
+    "bytes": 1232559,
+    "sha256": "2bc10c2813df9743e1d8db0fd57c8961ea8460e726b2621d165885a386468cc2"
+  },
+  "images": [
+    {
+      "view": "chibi_front",
+      "file": "p02_actor_chibi_front_cycles.png",
+      "bytes": 346494,
+      "sha256": "7af859bd4d911cb8e6c4b7d2734959dad7a96b1c0da8d63b8415012f624e8b93"
+    },
+    {
+      "view": "chibi_side",
+      "file": "p02_actor_chibi_side_cycles.png",
+      "bytes": 327811,
+      "sha256": "2b078139e3b33e9d3df1a68e8fafcd98db3b053d7eae2b34d88aa1e1747d4d94"
+    },
+    {
+      "view": "chibi_three_quarter",
+      "file": "p02_actor_chibi_three_quarter_cycles.png",
+      "bytes": 327650,
+      "sha256": "0f9084f6468b03b62a6f90f6686981d7c1e9e7f369d1863ac58089ffb8582785"
+    },
+    {
+      "view": "chibi_back",
+      "file": "p02_actor_chibi_back_cycles.png",
+      "bytes": 322744,
+      "sha256": "5f0723ae9faefac7d33a139952110882f1dcdbb05be737d807774aa1bfe1b004"
+    },
+    {
+      "view": "sit_idle",
+      "timeSeconds": 0.0,
+      "file": "p02_sit_idle_t0.0_cycles.png",
+      "bytes": 346522,
+      "sha256": "4cad8004de9149a90544e9470a9a951cd0987ec0117a504a32ee3de2ec56ca5a"
+    },
+    {
+      "view": "sit_idle",
+      "timeSeconds": 0.5,
+      "file": "p02_sit_idle_t0.5_cycles.png",
+      "bytes": 347011,
+      "sha256": "ac5488a57b28ba15401ef41f1c934ecbdba8d7263fc506a2a2fb5030b302e1ac"
+    },
+    {
+      "view": "sit_idle",
+      "timeSeconds": 1.0,
+      "file": "p02_sit_idle_t1.0_cycles.png",
+      "bytes": 347441,
+      "sha256": "c0089bcfef7a9a9cf8d62e4a87a55480e1d805f0ea0fb0e96a7fca7f093d373b"
+    },
+    {
+      "view": "sit_idle",
+      "timeSeconds": 1.5,
+      "file": "p02_sit_idle_t1.5_cycles.png",
+      "bytes": 347011,
+      "sha256": "42a65f4f9bdc94415f4da710b4d0307d469c4da97da30b3a35074469b2a2dc7b"
+    },
+    {
+      "view": "sit_idle",
+      "timeSeconds": 2.0,
+      "file": "p02_sit_idle_t2.0_cycles.png",
+      "bytes": 346522,
+      "sha256": "bcd5559a68927e3c4b8e18fe3ee5cd72a4b09d26a02941c7554ee4b57538eb86"
+    }
+  ]
+}

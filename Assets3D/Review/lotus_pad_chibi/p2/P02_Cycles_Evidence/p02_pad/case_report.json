@@ -1,0 +1,46 @@
+{
+  "status": "ACTUAL_OWNER_EXECUTION",
+  "revision": "p02",
+  "kind": "pad",
+  "blenderVersion": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "viewTransform": "AgX",
+  "exposureEV": 0.0,
+  "worldStrength": 0.65,
+  "lighting": "fixed warm key + lilac fill + rose rim",
+  "sourceGLBs": {
+    "lotus_pad_01.glb": {
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  },
+  "importedMeshCount": 5,
+  "principledMaterialSlots": 5,
+  "animationNames": [],
+  "originalBlender": {
+    "file": "lotus_pad_01_p02.blend",
+    "bytes": 1236374,
+    "sha256": "0b9d593eedee4a63f1391a69fa5dfb5fcc31550ea8f9e004a03332a84203131a"
+  },
+  "images": [
+    {
+      "view": "pad_top",
+      "file": "p02_pad_pad_top_cycles.png",
+      "bytes": 343833,
+      "sha256": "33f4e0ef6ee14de61a549bb61ca0d5412b1264aa6976beaf6c0e534eaad140b6"
+    },
+    {
+      "view": "pad_waterlevel",
+      "file": "p02_pad_pad_waterlevel_cycles.png",
+      "bytes": 309549,
+      "sha256": "cc72a158881c7984030184fe0e5ca5acb678ff693d12a0e54968aadda3b95ecb"
+    },
+    {
+      "view": "pad_side",
+      "file": "p02_pad_pad_side_cycles.png",
+      "bytes": 312887,
+      "sha256": "3869f18790cb05aa36a3e7a0e017bb08f40df5d1c8b3687303d366c58c66f291"
+    }
+  ]
+}

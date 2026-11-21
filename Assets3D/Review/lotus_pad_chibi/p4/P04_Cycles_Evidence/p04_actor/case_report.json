@@ -1,0 +1,111 @@
+{
+  "status": "EXECUTED_ONLY_WHEN_THIS_JSON_EXISTS",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p04",
+  "kind": "actor",
+  "inputs": [
+    {
+      "name": "meditator_female_ao_ba_ba_p04.glb",
+      "bytes": 244348,
+      "sha256": "586134fdeab962f35458c16255985513b070da47195110d3c83eef2dd9b6be09"
+    }
+  ],
+  "realImportedMeshes": 9,
+  "pbrMaterialSlots": 9,
+  "animations": [
+    "sit_idle"
+  ],
+  "cameraFOVAndLightingFixed": true,
+  "AgX": true,
+  "exposureEV": 0,
+  "worldStrength": 0.65,
+  "originalBlend": {
+    "name": "meditator_female_p04_actor.blend",
+    "bytes": 1598592,
+    "sha256": "91e5e07ebb79789ebc2e08bee054c948552e7cae8edce0636090ee69717bd069"
+  },
+  "images": [
+    {
+      "name": "p04_actor_front_cycles.png",
+      "bytes": 344189,
+      "sha256": "ac61727bd9ca52bbe137a93cd0009cf85f00018ae948686b89700898ae12375a"
+    },
+    {
+      "name": "p04_actor_side_cycles.png",
+      "bytes": 336334,
+      "sha256": "efbbc640eef7f01c3efc95c5cda626ae0b81ea10d909139cbf75587c58b96187"
+    },
+    {
+      "name": "p04_actor_quarter_cycles.png",
+      "bytes": 332787,
+      "sha256": "6b95730dbd7915680c7d495542b16dbe57cc13ae1b61fbbf78b83234115e7807"
+    },
+    {
+      "name": "p04_actor_back_cycles.png",
+      "bytes": 318145,
+      "sha256": "e1e028ddfc77b9b37d765c32b04a2bd705cf6df33ecc1cf5e75f5ed62a4cee66"
+    },
+    {
+      "name": "p04_actor_placket_cycles.png",
+      "bytes": 358146,
+      "sha256": "c9ad8781368d4d880a4915a710c242073fca323d9d867666a5657023e628c64d"
+    },
+    {
+      "name": "p04_actor_backhair_cycles.png",
+      "bytes": 324933,
+      "sha256": "52d839fe8ee1d600e804969ca3836bd75f49696c72300d657f60c00d407683e4"
+    },
+    {
+      "name": "P04_idle_front_t0.0_cycles.png",
+      "bytes": 343970,
+      "sha256": "926747e460ab54e21c57850a2af50e5f2f7c9c31f980027c03561730fe6efff5"
+    },
+    {
+      "name": "P04_idle_back_t0.0_cycles.png",
+      "bytes": 317978,
+      "sha256": "996c47d390670ad2006695a2575e9b38bb0bd1ab7a0d81588a1b0280da72484b"
+    },
+    {
+      "name": "P04_idle_front_t0.5_cycles.png",
+      "bytes": 344648,
+      "sha256": "db731002b4b95d8e7f141bbba7f93b8d2f143b0dbb0ed8a859ae8c0b0a9054da"
+    },
+    {
+      "name": "P04_idle_back_t0.5_cycles.png",
+      "bytes": 318483,
+      "sha256": "e3e1737475cddc802347c7c30d4c3c907da815cfe605a6d8b0e6ad9cb88a3f33"
+    },
+    {
+      "name": "P04_idle_front_t1.0_cycles.png",
+      "bytes": 344646,
+      "sha256": "643a42746943cb3fa3e31e87d294656f73207480f655c0b2a917cbdb99829583"
+    },
+    {
+      "name": "P04_idle_back_t1.0_cycles.png",
+      "bytes": 317987,
+      "sha256": "07fc008f6ab0b5b434bb420ea3e621cd290996e059c40636ba57249f5a9c7023"
+    },
+    {
+      "name": "P04_idle_front_t1.5_cycles.png",
+      "bytes": 344648,
+      "sha256": "063c72a3d0651b9c40b12fbe97c58d7d1b3f391596b30623bb5622c58344f780"
+    },
+    {
+      "name": "P04_idle_back_t1.5_cycles.png",
+      "bytes": 318483,
+      "sha256": "bd7a9aa7a9b78ec1331afce273039bb816ba62ee6c10516e6c522f037e99dac7"
+    },
+    {
+      "name": "P04_idle_front_t2.0_cycles.png",
+      "bytes": 343970,
+      "sha256": "7dc6d21bd7c969e9270093b52895f91d5f3f667386a1f87391143dd4a13a554a"
+    },
+    {
+      "name": "P04_idle_back_t2.0_cycles.png",
+      "bytes": 317978,
+      "sha256": "f725e69892880cbe13286afcf7ea716fbdebb793ce5dcc87c8af8d5e077ecc16"
+    }
+  ]
+}
