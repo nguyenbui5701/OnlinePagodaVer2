@@ -51,7 +51,7 @@
     "exposure": 0
   },
   "blenderCyclesR12": {
-    "status": "PENDING_OWNER_EXECUTION",
+    "status": "OWNER_CYCLES_PASS_INDEPENDENT_SA_REVIEWED",
     "script": "run_sakura_R12_blender.ps1",
     "cases": [
       "r10_palette_only",
@@ -65,7 +65,9 @@
       "three_quarter",
       "trunk_33s",
       "top_9x16"
-    ]
+    ],
+    "checkedCases": 4,
+    "checkedImages": 20
   },
   "threeJsGLTFLoader": "NOT_RUN",
   "ownerGPU_FPS_VRAM": "NOT_RUN",
@@ -76,5 +78,37 @@
     "vertices": -8875,
     "bytes": -2683636
   },
-  "ecoSameSHA": true
+  "ecoSameSHA": true,
+  "ownerBlenderCyclesR12": {
+    "status": "OWNER_CYCLES_PASS_INDEPENDENT_SA_REVIEWED",
+    "blenderVersion": "4.5.16 LTS",
+    "renderer": "Cycles CPU",
+    "cases": 4,
+    "imagesVerified": 20,
+    "shaListVerified": "34/34",
+    "samples": 32,
+    "look": "AgX",
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "lightEnergies": [
+      2.1,
+      1.05,
+      0.72
+    ],
+    "zipBytes": 16152983,
+    "zipSHA256": "006984dd319f75389c73bfa92b63fb51366603eb43833af33044dc450f117647",
+    "qualityBlend": {
+      "bytes": 12890180,
+      "sha256": "c74f9f9d5a0b7722c080f0bdd33eeca3d36f513dba7b9739ee9ac33a8ac7da83"
+    },
+    "ecoBlend": {
+      "bytes": 3936772,
+      "sha256": "8a4c73638aeab834fd1a1432b85960f0f04b2f09cf1730889318373a3985a7c7"
+    },
+    "art": "PARTIAL",
+    "githubBinaryStatus": "pending_owner_upload",
+    "threeJsNative": "NOT_RUN",
+    "gpuLiveStudio": "NOT_RUN",
+    "source": "R12_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  }
 }
