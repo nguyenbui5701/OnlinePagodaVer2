@@ -1,0 +1,153 @@
+{
+  "revision": "R15",
+  "unit": "meters Y-up",
+  "aspectWH": 0.5625,
+  "full": "uncropped technical entire-tree framing",
+  "medium": "INTENTIONALLY CROPPED lateral outer canopy edges for portrait TikTok LIVE composition; never claim whole tree",
+  "close": "high aerial petal detail deliberately cropped",
+  "cameras": {
+    "hero_full_9x16": {
+      "position": [
+        24.641505854426047,
+        38.825045790301786,
+        54.139118204520734
+      ],
+      "target": [
+        0.15,
+        12.4,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "fovVerticalDeg": 50
+    },
+    "hero_medium_9x16": {
+      "position": [
+        18.22713557959851,
+        31.90427786219839,
+        39.95998391279671
+      ],
+      "target": [
+        0.15,
+        12.4,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "fovVerticalDeg": 50
+    },
+    "hero_close_9x16": {
+      "position": [
+        3,
+        54,
+        10
+      ],
+      "target": [
+        0,
+        13.5,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        -1
+      ],
+      "fovVerticalDeg": 50
+    }
+  },
+  "fitChecks": {
+    "R14": {
+      "hero_full_9x16": {
+        "sampleVertices": 224395,
+        "outsideFramePct": 0.0,
+        "ndcLeftRight": [
+          -0.8045,
+          0.8624
+        ],
+        "ndcBottomTop": [
+          -0.4465,
+          0.4807
+        ],
+        "minDepthM": 48.687
+      },
+      "hero_medium_9x16": {
+        "sampleVertices": 224395,
+        "outsideFramePct": 1.2349,
+        "ndcLeftRight": [
+          -1.1235,
+          1.205
+        ],
+        "ndcBottomTop": [
+          -0.597,
+          0.6657
+        ],
+        "minDepthM": 31.655
+      },
+      "hero_close_9x16": {
+        "sampleVertices": 224395,
+        "outsideFramePct": 7.5323,
+        "ndcLeftRight": [
+          -1.5761,
+          1.4705
+        ],
+        "ndcBottomTop": [
+          -0.7714,
+          0.7308
+        ],
+        "minDepthM": 28.969
+      }
+    },
+    "R15": {
+      "hero_full_9x16": {
+        "sampleVertices": 227360,
+        "outsideFramePct": 0.0,
+        "ndcLeftRight": [
+          -0.804,
+          0.8621
+        ],
+        "ndcBottomTop": [
+          -0.4393,
+          0.482
+        ],
+        "minDepthM": 48.672
+      },
+      "hero_medium_9x16": {
+        "sampleVertices": 227360,
+        "outsideFramePct": 1.2201,
+        "ndcLeftRight": [
+          -1.1227,
+          1.2048
+        ],
+        "ndcBottomTop": [
+          -0.5921,
+          0.6662
+        ],
+        "minDepthM": 31.64
+      },
+      "hero_close_9x16": {
+        "sampleVertices": 227360,
+        "outsideFramePct": 7.4287,
+        "ndcLeftRight": [
+          -1.5759,
+          1.4716
+        ],
+        "ndcBottomTop": [
+          -0.7703,
+          0.7292
+        ],
+        "minDepthM": 28.944
+      }
+    }
+  },
+  "geometryUnchangedByFraming": true,
+  "sourceGLBSha256": {
+    "R14": "ba3183c7b738dbd814b2b23cedc1f6da0470b13121882c116e1775154bda44f5",
+    "R15": "9ad2dc4ceb807e0a60d89c8cbfdbcc26f09bd2ba190a1bb1ed09825be23f81ba"
+  }
+}

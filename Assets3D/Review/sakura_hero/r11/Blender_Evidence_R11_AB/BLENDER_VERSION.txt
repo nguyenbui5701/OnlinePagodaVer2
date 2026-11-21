@@ -1,0 +1,6 @@
+Blender 4.5.16 LTS
+	build date: 2026-11-10
+	build time: 01:34:06
+	build commit date: 2026-11-09
+	build commit time: 14:39
+

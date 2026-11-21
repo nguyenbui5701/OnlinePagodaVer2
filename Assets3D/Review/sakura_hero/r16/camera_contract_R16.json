@@ -1,0 +1,96 @@
+{
+  "fovVertical": 50,
+  "aspectWH": 0.5625,
+  "sameCamerasAcrossRevisions": true,
+  "cameraOnlyNeverGeometryChange": true,
+  "views": {
+    "R15": {
+      "hero_full_9x16": {
+        "vertices": 227360,
+        "outsideCount": 0,
+        "outsidePercent": 0.0,
+        "NDCleftRight": [
+          -0.8039565802778758,
+          0.8620906277119421
+        ],
+        "NDCbottomTop": [
+          -0.4392943219915695,
+          0.4819602942014256
+        ],
+        "minDepthMeters": 48.67245274677243
+      },
+      "hero_medium_9x16": {
+        "vertices": 227360,
+        "outsideCount": 2774,
+        "outsidePercent": 1.22009148486981,
+        "NDCleftRight": [
+          -1.1227111929759999,
+          1.2048431859250655
+        ],
+        "NDCbottomTop": [
+          -0.5920898108734829,
+          0.6662212112078754
+        ],
+        "minDepthMeters": 31.64045274677243
+      },
+      "hero_close_9x16": {
+        "vertices": 227360,
+        "outsideCount": 16890,
+        "outsidePercent": 7.428747361013372,
+        "NDCleftRight": [
+          -1.5758819488635698,
+          1.471554375653356
+        ],
+        "NDCbottomTop": [
+          -0.7702905140162412,
+          0.7292415475998346
+        ],
+        "minDepthMeters": 28.944144962845126
+      }
+    },
+    "R16": {
+      "hero_full_9x16": {
+        "vertices": 229235,
+        "outsideCount": 0,
+        "outsidePercent": 0.0,
+        "NDCleftRight": [
+          -0.8039565802778758,
+          0.8620906277119421
+        ],
+        "NDCbottomTop": [
+          -0.4392943219915695,
+          0.4819602942014256
+        ],
+        "minDepthMeters": 48.67245274677243
+      },
+      "hero_medium_9x16": {
+        "vertices": 229235,
+        "outsideCount": 2774,
+        "outsidePercent": 1.2101118939079982,
+        "NDCleftRight": [
+          -1.1227111929759999,
+          1.2048431859250655
+        ],
+        "NDCbottomTop": [
+          -0.5920898108734829,
+          0.6662212112078754
+        ],
+        "minDepthMeters": 31.64045274677243
+      },
+      "hero_close_9x16": {
+        "vertices": 229235,
+        "outsideCount": 16890,
+        "outsidePercent": 7.367984819072131,
+        "NDCleftRight": [
+          -1.5758819488635698,
+          1.471554375653356
+        ],
+        "NDCbottomTop": [
+          -0.7702905140162412,
+          0.7292415475998346
+        ],
+        "minDepthMeters": 28.944144962845126
+      }
+    }
+  }
+}

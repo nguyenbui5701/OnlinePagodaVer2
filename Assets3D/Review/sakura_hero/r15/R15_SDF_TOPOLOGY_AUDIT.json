@@ -1,0 +1,55 @@
+{
+  "unifiedTrunkBranches": {
+    "method": "implicit SDF polynomial smooth-min continuous trunk+3 full branches, one marching-cubes surface",
+    "ids": [
+      0,
+      5,
+      9
+    ],
+    "voxelPitchMeters": 0.16,
+    "smoothUnionKmeters": 0.56,
+    "gridDimensions": [
+      134,
+      129,
+      97
+    ],
+    "voxels": 1676742,
+    "discardedTinyIsoIslands": 16,
+    "discardedTinyFaces": 208,
+    "unifiedSurfaceTriangles": 15054,
+    "unifiedSurfaceVertices": 7529,
+    "isWatertight": true,
+    "faceConnectedComponents": 1,
+    "componentFaces": [
+      15054
+    ],
+    "eulerNumber": 2,
+    "windingConsistent": true,
+    "degenerate": 0,
+    "bbox": [
+      [
+        -5.1829,
+        -0.0089,
+        -4.1248
+      ],
+      [
+        8.6968,
+        15.5559,
+        4.6002
+      ]
+    ]
+  },
+  "goldProjection": {
+    "goldRibbonCount": 23,
+    "goldVertexCount": 414,
+    "goldProjectionMeanMeters": 0.17696,
+    "goldProjectionMaxMeters": 1.08343,
+    "ribbonOffsetMeters": 0.012,
+    "type": "flat inset triangles, not cylindrical emissive cords"
+  },
+  "sha256Quality": "9ad2dc4ceb807e0a60d89c8cbfdbcc26f09bd2ba190a1bb1ed09825be23f81ba",
+  "sha256R14Baseline": "ba3183c7b738dbd814b2b23cedc1f6da0470b13121882c116e1775154bda44f5",
+  "sha256ECO": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+  "geometryChangesLimitedToSakura": true,
+  "R15BlenderCycles": "NOT_RUN_OWNER_WINDOWS_PENDING"
+}

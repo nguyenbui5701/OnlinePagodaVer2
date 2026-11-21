@@ -1,0 +1,121 @@
+{
+  "revision": "R14",
+  "axis": "+Y up; angles in Blender script are converted to +Z up",
+  "aspectWH": 0.5625,
+  "hero_full_9x16": {
+    "positionYup": [
+      24.641505854426047,
+      38.825045790301786,
+      54.139118204520734
+    ],
+    "targetYup": [
+      0.15,
+      12.4,
+      0.0
+    ],
+    "upYup": [
+      0,
+      1,
+      0
+    ],
+    "fovVerticalDeg": 50,
+    "intent": "No cropped vertices; technical full-coverage reference"
+  },
+  "hero_medium_9x16": {
+    "positionYup": [
+      18.22713557959851,
+      31.90427786219839,
+      39.95998391279671
+    ],
+    "targetYup": [
+      0.15,
+      12.4,
+      0.0
+    ],
+    "upYup": [
+      0,
+      1,
+      0
+    ],
+    "fovVerticalDeg": 50,
+    "distanceFromTargetMeters": 48,
+    "intent": "Controlled small lateral crop for stronger TikTok hero; never alter GLB for framing"
+  },
+  "hero_close_9x16": {
+    "positionYup": [
+      3,
+      54,
+      10
+    ],
+    "targetYup": [
+      0,
+      13.5,
+      0
+    ],
+    "upYup": [
+      0,
+      0,
+      -1
+    ],
+    "fovVerticalDeg": 50,
+    "intent": "Deliberately cropped near-overhead flower detail"
+  },
+  "projectedChecks": {
+    "R13": {
+      "full": {
+        "projectedVertices": 224909,
+        "ndcLeftRight": [
+          -0.803,
+          0.8598
+        ],
+        "ndcBottomTop": [
+          -0.4546,
+          0.48
+        ],
+        "verticesOutsideFramePct": 0.0,
+        "minimumPositiveDepthM": 48.73
+      },
+      "medium": {
+        "projectedVertices": 224909,
+        "ndcLeftRight": [
+          -1.1214,
+          1.2005
+        ],
+        "ndcBottomTop": [
+          -0.6089,
+          0.664
+        ],
+        "verticesOutsideFramePct": 1.23,
+        "minimumPositiveDepthM": 31.698
+      }
+    },
+    "R14": {
+      "full": {
+        "projectedVertices": 224395,
+        "ndcLeftRight": [
+          -0.8045,
+          0.8624
+        ],
+        "ndcBottomTop": [
+          -0.4465,
+          0.4807
+        ],
+        "verticesOutsideFramePct": 0.0,
+        "minimumPositiveDepthM": 48.687
+      },
+      "medium": {
+        "projectedVertices": 224395,
+        "ndcLeftRight": [
+          -1.1235,
+          1.205
+        ],
+        "ndcBottomTop": [
+          -0.597,
+          0.6657
+        ],
+        "verticesOutsideFramePct": 1.235,
+        "minimumPositiveDepthM": 31.655
+      }
+    }
+  }
+}

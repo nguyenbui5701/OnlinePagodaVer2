@@ -1,0 +1,289 @@
+{
+  "case": "r10_palette_only",
+  "originalGLB": "r10_palette_only.glb",
+  "sourceBytes": 5096532,
+  "sourceSha256": "a9f178d1a4d6c4e0b5b969ab25a7fe0462d1284a06ac3a89abd761094420dd41",
+  "blender": "4.5.16 LTS",
+  "renderEngine": "Blender Cycles CPU",
+  "samples": 32,
+  "width": 520,
+  "viewTransform": "AgX",
+  "exposureEV": 0.0,
+  "worldStrength": 0.6499999761581421,
+  "lights": [
+    {
+      "name": "R10_Key",
+      "energy": 2.0999999046325684,
+      "color": [
+        1.0,
+        0.8399999737739563,
+        0.8199999928474426
+      ]
+    },
+    {
+      "name": "R10_Rim",
+      "energy": 1.0499999523162842,
+      "color": [
+        1.0,
+        0.7599999904632568,
+        0.8899999856948853
+      ]
+    },
+    {
+      "name": "R10_LowerFill",
+      "energy": 0.7200000286102295,
+      "color": [
+        1.0,
+        0.7400000095367432,
+        0.8299999833106995
+      ]
+    }
+  ],
+  "meshCount": 11,
+  "triangles": 188782,
+  "materials": {
+    "Sakura_petal_cream": {
+      "Base Color": [
+        0.9607843160629272,
+        0.800000011920929,
+        0.729411780834198,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Sakura_petal_pink": {
+      "Base Color": [
+        0.9058823585510254,
+        0.5647059082984924,
+        0.6549019813537598,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Sakura_petal_blush": {
+      "Base Color": [
+        0.929411768913269,
+        0.6823529601097107,
+        0.7137255072593689,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Sakura_flower_gold": {
+      "Base Color": [
+        1.0,
+        0.8156862854957581,
+        0.5176470875740051,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.0
+    },
+    "Sakura_petal_warm_rose": {
+      "Base Color": [
+        0.8941176533699036,
+        0.49803921580314636,
+        0.6000000238418579,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Canopy_rose": {
+      "Base Color": [
+        0.8784313797950745,
+        0.5215686559677124,
+        0.6274510025978088,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.02500000037252903,
+        0.009999999776482582,
+        0.014000000432133675,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Canopy_peach": {
+      "Base Color": [
+        0.95686274766922,
+        0.6549019813537598,
+        0.6274510025978088,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.02500000037252903,
+        0.009999999776482582,
+        0.014000000432133675,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Canopy_depth_rose": {
+      "Base Color": [
+        0.7607843279838562,
+        0.43921568989753723,
+        0.5803921818733215,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        0.02500000037252903,
+        0.009999999776482582,
+        0.014000000432133675,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Branches_plum": {
+      "Base Color": [
+        0.16470588743686676,
+        0.07450980693101883,
+        0.1882352977991104,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.0
+    },
+    "Golden_bark_veins": {
+      "Base Color": [
+        0.9686274528503418,
+        0.6784313917160034,
+        0.3960784375667572,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.7300000190734863,
+      "Emission Color": [
+        0.3499999940395355,
+        0.12999999523162842,
+        0.03500000014901161,
+        1.0
+      ],
+      "Emission Strength": 1.0
+    },
+    "Trunk_bark_plumblack": {
+      "Base Color": [
+        0.11372549086809158,
+        0.0470588244497776,
+        0.13333334028720856,
+        1.0
+      ],
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284,
+      "Emission Color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.0
+    }
+  },
+  "cameras": [
+    "top",
+    "three_quarter",
+    "under",
+    "trunk_33s",
+    "top_9x16"
+  ],
+  "cameraFovDegrees": {
+    "top": 50,
+    "three_quarter": 44,
+    "under": 44,
+    "trunk_33s": 56,
+    "top_9x16": 50
+  },
+  "glTFToBlenderAxes": "(x,y,z)->(x,-z,y)",
+  "boundsBlenderZUp": {
+    "min": [
+      -12.894033432006836,
+      -13.751632690429688,
+      -1.022316575050354
+    ],
+    "max": [
+      14.082527160644531,
+      12.722424507141113,
+      26.170320510864258
+    ]
+  },
+  "images": [
+    {
+      "name": "r10_palette_only_top_cycles.png",
+      "bytes": 483023,
+      "sha256": "4d712c62d8ffae91fee9bbac1d00683c865b283c1de9c9530f09431be7febae8"
+    },
+    {
+      "name": "r10_palette_only_three_quarter_cycles.png",
+      "bytes": 420783,
+      "sha256": "42d04918a56390e561384dd56e9b4802f944e63b8d13a9f25facbba61b1134c3"
+    },
+    {
+      "name": "r10_palette_only_under_cycles.png",
+      "bytes": 455498,
+      "sha256": "764c7ff13f4cfc0d01a4fc78a912bf4f87c867af037e025467f30ecd282e1acf"
+    },
+    {
+      "name": "r10_palette_only_trunk_33s_cycles.png",
+      "bytes": 379633,
+      "sha256": "927826ba5524351faeb8b2ae9155e21493ff6ce6e3ab4d5c4ccd599cb597969b"
+    },
+    {
+      "name": "r10_palette_only_top_9x16_cycles.png",
+      "bytes": 756138,
+      "sha256": "1a425ef12c3606dc7a92571aba82753092014c1c620b4c5b16d62f2c4178f2c7"
+    }
+  ],
+  "blend": null,
+  "status": "OWNER_RUN_AWAITING_SA_VISUAL_ART_ASSESSMENT"
+}
