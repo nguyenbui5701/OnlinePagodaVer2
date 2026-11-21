@@ -1,0 +1,107 @@
+{
+  "revision": "R15",
+  "quality": {
+    "sha256": "9ad2dc4ceb807e0a60d89c8cbfdbcc26f09bd2ba190a1bb1ed09825be23f81ba",
+    "bytes": 4985692,
+    "triangles": 187368,
+    "vertices": 227360,
+    "meshes": 11,
+    "materials": 11,
+    "normalAttributes": 0,
+    "petalDoubleSided": true
+  },
+  "eco": {
+    "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+    "bytes": 1393492,
+    "triangles": 44412,
+    "vertices": 71032,
+    "meshes": 10,
+    "materials": 10,
+    "normalAttributes": 0,
+    "petalDoubleSided": true
+  },
+  "r14Quality": {
+    "sha256": "ba3183c7b738dbd814b2b23cedc1f6da0470b13121882c116e1775154bda44f5",
+    "bytes": 4877460,
+    "triangles": 181314,
+    "vertices": 224395,
+    "meshes": 11
+  },
+  "qualityDeltaVsR14": {
+    "triangles": 6054,
+    "vertices": 2965,
+    "bytes": 108232
+  },
+  "glTFVersion": "2.0",
+  "nonfiniteVertices": 0,
+  "degenerateTriangles": 0,
+  "paletteIdenticalToR14": true,
+  "qualityPetalsDoubleSided": true,
+  "noExtraNormalAttributes": true,
+  "SDFTopology": {
+    "method": "implicit SDF polynomial smooth-min continuous trunk+3 full branches, one marching-cubes surface",
+    "ids": [
+      0,
+      5,
+      9
+    ],
+    "voxelPitchMeters": 0.16,
+    "smoothUnionKmeters": 0.56,
+    "gridDimensions": [
+      134,
+      129,
+      97
+    ],
+    "voxels": 1676742,
+    "discardedTinyIsoIslands": 16,
+    "discardedTinyFaces": 208,
+    "unifiedSurfaceTriangles": 15054,
+    "unifiedSurfaceVertices": 7529,
+    "isWatertight": true,
+    "faceConnectedComponents": 1,
+    "componentFaces": [
+      15054
+    ],
+    "eulerNumber": 2,
+    "windingConsistent": true,
+    "degenerate": 0,
+    "bbox": [
+      [
+        -5.1829,
+        -0.0089,
+        -4.1248
+      ],
+      [
+        8.6968,
+        15.5559,
+        4.6002
+      ]
+    ]
+  },
+  "goldProjection": {
+    "goldRibbonCount": 23,
+    "goldVertexCount": 414,
+    "goldProjectionMeanMeters": 0.17696,
+    "goldProjectionMaxMeters": 1.08343,
+    "ribbonOffsetMeters": 0.012,
+    "type": "flat inset triangles, not cylindrical emissive cords"
+  },
+  "reproClean": {
+    "qualityGlb": "BYTE_IDENTICAL",
+    "ecoGlb": "BYTE_IDENTICAL",
+    "editableObj": "BYTE_IDENTICAL"
+  },
+  "pbr": {
+    "realGLBImported": true,
+    "engine": "VTK Physically Based Rendering, same 3 scene lights and synthetic IBL",
+    "matchedViews": 10,
+    "notCycles": true
+  },
+  "blenderR14": "OWNER_EXECUTED_SA_AUDITED_PASS",
+  "blenderR15": "NOT_RUN",
+  "nativeThreeJs": "NOT_RUN",
+  "gpuLiveStudio": "NOT_RUN",
+  "art": "PARTIAL",
+  "productionApproved": false,
+  "binaryOnGithub": "pending_owner_upload"
+}
