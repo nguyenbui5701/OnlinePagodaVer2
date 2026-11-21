@@ -1,3 +1,5 @@
+> **2026-11-21 post-execution verification:** SA independently checked original R15 Blender/Cycles **3/3 cases, 30/30 PNGs, 41/41 archive hashes and two original .blend file integrity PASS**. **ART PARTIAL, production NOT APPROVED**, large GitHub binary uploads still `pending_owner_upload`. This supersedes historical `NOT RUN` statements below; see [R15_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md](R15_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md). Native Three.js and GPU/LIVE Studio remain NOT RUN.
+
 # Sakura Hero R15 — genuine implicit smooth-union branch prototype
 
 **PR #1:** https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/1, branch `assets/sakura-hero-r04-sa-review`. R14 is immutable baseline; this revision changes only the Sakura tree. **Zero paid tools, PR stays Draft, no merge or production approval.**
