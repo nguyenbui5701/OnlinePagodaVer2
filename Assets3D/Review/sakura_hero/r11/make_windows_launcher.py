@@ -67,9 +67,9 @@ if(-not $BlenderPath){
  if($cmd){$BlenderPath=$cmd.Source}
 }
 if(-not $BlenderPath){
- $home=Join-Path $env:ProgramFiles 'Blender Foundation'
- if(Test-Path -LiteralPath $home){
-  $candidates=@(Get-ChildItem -LiteralPath $home -Directory -ErrorAction SilentlyContinue |
+ $blenderInstallDir=Join-Path $env:ProgramFiles 'Blender Foundation'
+ if(Test-Path -LiteralPath $blenderInstallDir){
+  $candidates=@(Get-ChildItem -LiteralPath $blenderInstallDir -Directory -ErrorAction SilentlyContinue |
    ForEach-Object {Join-Path $_.FullName 'blender.exe'} |
    Where-Object {Test-Path -LiteralPath $_})
   if($candidates.Count -gt 0){$BlenderPath=$candidates[-1]}
