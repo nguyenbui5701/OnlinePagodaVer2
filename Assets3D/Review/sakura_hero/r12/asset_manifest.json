@@ -1,6 +1,6 @@
 {
   "revision": "R12",
-  "status": "GEOMETRY_PROTOTYPE_BLENDER_R12_PENDING",
+  "status": "GEOMETRY_PROTOTYPE_OWNER_CYCLES_PASS_ART_PARTIAL",
   "branch": "assets/sakura-hero-r04-sa-review",
   "reviewPR": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/1",
   "assetId": "sakura_hero",
@@ -62,7 +62,7 @@
   "pbrEvidence": {
     "r11NativeCycles": "OWNER_AND_SA_PASS_9_CASES_22_IMAGES",
     "r12VTK": "EXECUTED_REAL_GLB_IBL_3_LIGHTS_SAME_CAMERA",
-    "r12NativeCycles": "NOT_RUN_PREPARED_FOR_OWNER",
+    "r12NativeCycles": "OWNER_CYCLES_PASS_INDEPENDENT_SA_REVIEWED",
     "threeJSGLTFLoader": "NOT_RUN",
     "fpsVramLiveStudio": "NOT_RUN",
     "productionApproved": false
@@ -231,5 +231,37 @@
       "repoPath": "Assets3D/Review/sakura_hero/r12/PBR_Review/VIDEO_33s_R12_CameraApprox.jpg",
       "status": "pending_owner_upload"
     }
-  ]
+  ],
+  "ownerBlenderCyclesR12": {
+    "status": "OWNER_CYCLES_PASS_INDEPENDENT_SA_REVIEWED",
+    "blenderVersion": "4.5.16 LTS",
+    "renderer": "Cycles CPU",
+    "cases": 4,
+    "imagesVerified": 20,
+    "shaListVerified": "34/34",
+    "samples": 32,
+    "look": "AgX",
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "lightEnergies": [
+      2.1,
+      1.05,
+      0.72
+    ],
+    "zipBytes": 16152983,
+    "zipSHA256": "006984dd319f75389c73bfa92b63fb51366603eb43833af33044dc450f117647",
+    "qualityBlend": {
+      "bytes": 12890180,
+      "sha256": "c74f9f9d5a0b7722c080f0bdd33eeca3d36f513dba7b9739ee9ac33a8ac7da83"
+    },
+    "ecoBlend": {
+      "bytes": 3936772,
+      "sha256": "8a4c73638aeab834fd1a1432b85960f0f04b2f09cf1730889318373a3985a7c7"
+    },
+    "art": "PARTIAL",
+    "githubBinaryStatus": "pending_owner_upload",
+    "threeJsNative": "NOT_RUN",
+    "gpuLiveStudio": "NOT_RUN",
+    "source": "R12_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  }
 }
