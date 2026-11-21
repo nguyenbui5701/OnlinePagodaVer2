@@ -1,3 +1,5 @@
+> **Post-execution status (2026-11-21):** SA independently verified owner R13 Blender/Cycles **3/3 cases and 18/18 PNGs PASS**, plus two original `.blend` files and 29/29 archived SHA checks. **ART PARTIAL; production NOT APPROVED**; GitHub large binaries remain `pending_owner_upload`. This supersedes the historical pre-run checklist below. See [R13_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md](R13_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md).
+
 # Sakura R13 exact binary handoff
 
 Branch: `assets/sakura-hero-r04-sa-review`; binary paths below are **pending_owner_upload** until uploaded and SHA verified on GitHub. Do not commit `.blend1` backups. R13 editable `.blend` files **have not yet been generated** (owner Cycles pending).
