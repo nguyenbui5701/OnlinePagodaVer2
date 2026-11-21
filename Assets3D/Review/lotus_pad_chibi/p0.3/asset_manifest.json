@@ -1,0 +1,160 @@
+{
+  "revision": "P0.3",
+  "pr": 2,
+  "branch": "assets/lotus-pad-chibi-p0",
+  "status": "ART_OWNER_PENDING_CYCLES_P03_NOT_RUN",
+  "task": "Task/AI_VISUAL_02_ART_REFINEMENT_AND_OWNER_GATE.md",
+  "saReview": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6005994936",
+  "reviewedP02Head": "28d895ee1fc6c17d4d9388c05040193e607292fc",
+  "assets": {
+    "pad": {
+      "file": "lotus_pad_01.glb",
+      "sourceRevision": "P0.2",
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+      "bytes": 262108,
+      "triangles": 10648,
+      "vertices": 5364,
+      "meshes": 5,
+      "materials": 5,
+      "github": "REUSE_EXISTING_P02_GLB_BYTE_IDENTICAL"
+    },
+    "actor": {
+      "file": "meditator_base.glb",
+      "sourceRevision": "P0.3",
+      "sha256": "646842c7574976020f6583c4e18879c9bef012e5f31dc851589c0a1491786be0",
+      "bytes": 212040,
+      "triangles": 8724,
+      "vertices": 4463,
+      "meshes": 11,
+      "materials": 8,
+      "github": "PENDING_OWNER_BINARY_UPLOAD"
+    },
+    "p02BaselineActor": {
+      "sha256": "83009fab6f4f00730260ef70dcd4d8605b2c634bc99f1fd6e34a1030833abd4c",
+      "bytes": 216012,
+      "triangles": 8906,
+      "vertices": 4538
+    }
+  },
+  "geometryDiff": {
+    "actorTriangles": -182,
+    "actorVertices": -75,
+    "actorBytes": -3972,
+    "padByteIdentical": true,
+    "onlyChangedGeometry": "hair_blue_black_UpperBodyBreath_mesh",
+    "hairFacesBefore": 1462,
+    "hairFacesAfter": 1280,
+    "allOtherMeshesBytewiseVertexAndFaceEqual": true,
+    "allNonHairPBRMaterialFactorsEqual": true,
+    "blanketGeometryIncrease": false
+  },
+  "hairChange": "P0.3 original two narrow scalp-conforming tapered ribbons, hairline edge integrated into cap and single small bun connector, roughness .66→.72, subtle blue-black value lift",
+  "anchors": {
+    "PadSeatAnchor": [
+      0,
+      0.195,
+      0
+    ],
+    "SeatRoot": [
+      0,
+      0,
+      0
+    ],
+    "HeadAnchor": [
+      0,
+      0.835,
+      0.04
+    ],
+    "NameplateAnchor": [
+      0,
+      1.335,
+      0.03
+    ],
+    "FXAnchor": [
+      0.37,
+      0.805,
+      0.16
+    ]
+  },
+  "assetCoords": {
+    "up": "+Y",
+    "front": "+Z",
+    "worldWaterY": 0,
+    "actorPlaceYOnce": 0.195
+  },
+  "animation": {
+    "clip": "sit_idle",
+    "durationSeconds": 2,
+    "keyframes": 17,
+    "peakTranslationY": 0.016,
+    "originalP02TimeValuesAndAnimationSamplesUnchanged": true
+  },
+  "seat": {
+    "sampledLowerBodyVertices": 658,
+    "minGapMeters": 0.014818456586649487,
+    "penetrationsDeeperThan5mm": 0,
+    "source": "Independent actual imported GLB triangle barycentric test"
+  },
+  "fixedCameras": {
+    "portraitOriginal": {
+      "pos": [
+        1.75,
+        1.26,
+        4.1
+      ],
+      "target": [
+        0,
+        0.59,
+        0
+      ],
+      "fovVerticalDeg": 47,
+      "allVerticesInFrame": true
+    },
+    "portraitRefined": {
+      "pos": [
+        1.18,
+        1.29,
+        2.92
+      ],
+      "target": [
+        0,
+        0.61,
+        0
+      ],
+      "fovVerticalDeg": 42,
+      "actorCroppedPct": 0,
+      "padCroppedVerticesPct": 16.4802,
+      "pairCroppedPct": 8.9956
+    },
+    "portraitClose": {
+      "pos": [
+        1.3,
+        1.22,
+        2.55
+      ],
+      "target": [
+        0,
+        0.74,
+        0.04
+      ],
+      "fovVerticalDeg": 43
+    },
+    "aspectWidthHeight": 0.5617977528089888,
+    "cameraAffectsGLB": false
+  },
+  "evidence": {
+    "P02OwnerCycles": "SA_VERIFIED_6_OF_6_CASES_32_OF_32_PNG_HASHES",
+    "P02Blend": "3_GITHUB_GIT_BLOBS_PRESENT_SHA256_NOT_INDEPENDENTLY_READ",
+    "P02EvidenceZipCRC": "NOT_INDEPENDENTLY_CHECKED",
+    "P03NativeGLBVTK": "EXECUTED_13_SAME_VIEWS_PLUS_5_IDLE_SAMPLES_PER_VERSION",
+    "P03Cycles": "NOT_EXECUTED",
+    "P03BlenderEditable": "NOT_CREATED_UNTIL_OWNER_RUN",
+    "nativeThreeJs": "NOT_RUN",
+    "gpuLiveStudio": "NOT_RUN"
+  },
+  "ownerGate": "ART_OWNER_PENDING",
+  "productionApproved": false,
+  "prMerge": false,
+  "codexAndIntegration": "ON_HOLD",
+  "binaryHandOff": "BINARY_HANDOFF.md"
+}
