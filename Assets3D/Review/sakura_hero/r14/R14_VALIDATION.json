@@ -50,23 +50,7 @@
     "images": 18,
     "archiveHashes": 29
   },
-  "blenderR14": {
-    "status": "NOT_RUN_WINDOWS_HARNESS_PREPARED",
-    "cases": [
-      "r13_baseline",
-      "r14_final",
-      "eco_unchanged"
-    ],
-    "fullViewsPerCase": 7,
-    "agx": true,
-    "exposureEV": 0,
-    "worldStrength": 0.65,
-    "sunEnergies": [
-      2.1,
-      1.05,
-      0.72
-    ]
-  },
+  "blenderR14": "OWNER_EXECUTED_SA_AUDITED_PASS",
   "cameraProjection": {
     "R13": {
       "full": {
@@ -120,5 +104,31 @@
   "nativeThreeJs": "NOT_RUN",
   "GPU_LIVE_STUDIO": "NOT_RUN",
   "art": "PARTIAL",
-  "productionApproved": false
+  "productionApproved": false,
+  "ownerBlenderCyclesR14": {
+    "status": "OWNER_EXECUTED_SA_AUDITED_TECHNICAL_PASS",
+    "zipBytes": 17157620,
+    "zipSha256": "1a8664296e5d8e35b9d213e91d0fa15c3532d8f542aba5ccbd54482ef2127336",
+    "filesVerified": 32,
+    "imagesVerified": 21,
+    "casesCompleted": 3,
+    "blenderVersion": "4.5.16 LTS",
+    "renderer": "Cycles CPU",
+    "samples": 32,
+    "agx": true,
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "qualityBlend": {
+      "bytes": 12796204,
+      "sha256": "ff4d23d72c9c88e3b9da3427d8d00cfdc4ac8fcc6b3d8ea33b533a3fbf56c6fd"
+    },
+    "ecoBlend": {
+      "bytes": 3936772,
+      "sha256": "a140b87bcad1cdf275eee289fecf75616eb6180cdb70aa1063fb4717710e20b7"
+    },
+    "art": "PARTIAL",
+    "productionApproved": false,
+    "githubBinaryStatus": "pending_owner_upload",
+    "audit": "R14_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  }
 }
