@@ -1,3 +1,5 @@
+> **Post-owner execution update 2026-11-21:** Independent SA review verified original R14 Blender/Cycles **3/3 cases, 21/21 PNG, 32/32 archive SHA and two original valid .blend files PASS**. **ART PARTIAL; production NOT APPROVED; GitHub binaries still `pending_owner_upload`.** Historical pre-run instructions below are superseded by [R14_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md](R14_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md). Three.js and GPU/LIVE Studio remain NOT RUN.
+
 # Sakura Hero R14 — smooth collar + flower silhouette + medium 9:16
 
 PR [#1](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/1) · Branch `assets/sakura-hero-r04-sa-review`. **Draft, Sakura-only, zero-cost; NOT production approved.** Immutable R13 baseline, Cycles R13 independently owner/SA verified (3 cases, 18 images, 29 hashes). R13 source/model original not overwritten.
