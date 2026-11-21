@@ -1,0 +1,70 @@
+{
+  "revision": "R16",
+  "basis": "+Y up / meters",
+  "fovVerticalDeg": 50,
+  "aspectWidthOverHeight": 0.5625,
+  "identicalR15R16CameraAndLights": true,
+  "views": {
+    "hero_full_9x16": {
+      "position": [
+        24.641505854426047,
+        38.825045790301786,
+        54.139118204520734
+      ],
+      "target": [
+        0.15,
+        12.4,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "R15OutsidePercent": 0,
+      "R16OutsidePercent": 0,
+      "description": "whole tree"
+    },
+    "hero_medium_9x16": {
+      "position": [
+        18.22713557959851,
+        31.90427786219839,
+        39.95998391279671
+      ],
+      "target": [
+        0.15,
+        12.4,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "R15OutsidePercent": 1.22,
+      "R16OutsidePercent": 1.21,
+      "description": "intentionally crops outer edge crown, NOT whole tree"
+    },
+    "hero_close_9x16": {
+      "position": [
+        3,
+        54,
+        10
+      ],
+      "target": [
+        0,
+        13.5,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        -1
+      ],
+      "R15OutsidePercent": 7.429,
+      "R16OutsidePercent": 7.368,
+      "description": "intentional close crown crop"
+    }
+  },
+  "assetSourceSha256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c"
+}
