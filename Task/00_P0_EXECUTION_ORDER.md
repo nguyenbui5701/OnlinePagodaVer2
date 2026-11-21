@@ -1,5 +1,8 @@
 # P0 execution order — OnlinePagodaVer2
 
+> **OWNER PRIORITY OVERRIDE — 2026-11-21:** Owner requests **visual-only AI Visual focus on lotus pad + chibi until owner explicitly says OK**. Previous parallel starts are now PAUSED. **Do not start/continue Codex renderer, Event Engine or vertical-slice integration**, do not merge PR #3/#4, and do not require Sakura R16 binary upload for this art review. Active work: [AI_VISUAL_02](AI_VISUAL_02_ART_REFINEMENT_AND_OWNER_GATE.md), on PR #2. Resume implementation only after owner aesthetic approval, then SA reopens Codex tasks. Existing PR code and tests are preserved; not rejected.
+
+
 **Status:** ASSIGNED AFTER OWNER P0 DESIGN SIGN-OFF (2026-11-21). **Baseline:** [Design/16](../Design/16_P0_APPROVAL_AND_HANDOFF.md). Deliver on V2 repository only. **Do not alter OnlinePagoda V1.**
 
 ## Objective
