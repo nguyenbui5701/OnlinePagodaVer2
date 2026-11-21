@@ -8,6 +8,8 @@ import json
 import sys
 from pathlib import Path
 import bpy
+# Blender --python may not put the script directory on sys.path. Match R12.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from blender_reference_rig_r10 import (VIEWS,load_and_set_lighting,
     imported_world_bounds,set_camera,sha)
 
