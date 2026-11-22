@@ -1,0 +1,57 @@
+{
+  "revision": "P0.6c",
+  "sourceHead": "9ff521549af8b8f1449579a4c7fd7ab6021c7e94",
+  "inputs": [
+    {
+      "pose": "cross",
+      "sha256": "d6add5fdd5ec7122c24aee774c1ea10cc0588643842c891e334ffd30c60ce4cb",
+      "bytes": 589264
+    },
+    {
+      "pose": "kneel",
+      "sha256": "db78a1b26bff1cd2dced82d4ed4d4255280cfb6eb3db3ea2dd5ab5b5674c0701",
+      "bytes": 455680
+    }
+  ],
+  "outputs": [
+    {
+      "pose": "cross",
+      "sha256": "c9d1513bad21398fd776776cad97791cfa76a591d641838f885596d13f120ea4",
+      "bytes": 589656,
+      "triangles": 18380,
+      "vertices": 9469,
+      "meshes": 10,
+      "materials": 21
+    },
+    {
+      "pose": "kneel",
+      "sha256": "38e47f84b6b4f8987a47b39e791aaa06c3fed2d4d03e11e55fc72f0ef926c4ad",
+      "bytes": 456072,
+      "triangles": 18420,
+      "vertices": 9485,
+      "meshes": 9,
+      "materials": 21
+    }
+  ],
+  "hairGeometryIdentity": {
+    "positionBytesExact": true,
+    "normalBytesExact": true,
+    "indicesBytesExact": true,
+    "sourceP6bIndexesUnchanged": true,
+    "eyebrowsPositionNormalBytesUnchanged": true
+  },
+  "nonHair": {
+    "crossIdenticalMeshes": 9,
+    "kneelIdenticalMeshes": 8,
+    "POSITION_NORMAL_INDICES": "ALL_BYTE_EXACT",
+    "originalSamplers": "ALL_BYTE_EXACT",
+    "anchorTransformsAndNodes": "EXACT_EXCEPT_HAIR_NAME",
+    "materialsAndKHRVariants": "JSON_BYTE_EQUAL",
+    "allFourNativeClipNames": true
+  },
+  "scalpReport": "P06C_SCALP_COVERAGE_REPORT.json",
+  "cycles": "NOT_RUN",
+  "blender": "NOT_RUN",
+  "gpu": "NOT_RUN",
+  "ownerArt": "PENDING"
+}

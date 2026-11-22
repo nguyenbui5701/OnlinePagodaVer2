@@ -1,0 +1,214 @@
+{
+  "revision": "P06C",
+  "task": "Task/AI_VISUAL_12_MALE_HAIR_SCALP_COVERAGE_P06C.md",
+  "baselineHead": "9ff521549af8b8f1449579a4c7fd7ab6021c7e94",
+  "metricLabel": "REAL glTF scalp/skin triangle-ray intersections (sampled; continuous collision = PROXY_ONLY)",
+  "poseCoverage": "BOTH CROSS AND KNEEL validated separately using their actual source mesh #3 and hair #6",
+  "method": {
+    "rayAlgorithm": "Moller-Trumbore, double-sided, closest positive hit for actual skin triangle meshes 3 and hair triangle mesh 6; original input hashes verified",
+    "radialOriginMeters": [
+      0,
+      0.85,
+      0.005
+    ],
+    "scalpScan": "841 original hair cap vertices (y>=.957,z>=-.095) plus hair cap triangle centroids, intersect exact skull skin triangle mesh",
+    "screenCamera": "matching P06b actual Blender camera eye/target/FOV, sampled 43x39 rays per camera (upper head screen mask y>=.98 and |x|<=.245), compare first-hit glTF skin vs first-hit hair",
+    "flags": "Each sampled ray intersection is exact for the triangle meshes. 0 samples does NOT certify the continuous surface or Cycles ART"
+  },
+  "causalEvidence": {
+    "beforeCapNegativeSamples": 87,
+    "beforeCapTotalSamples": 1586,
+    "beforeCapMinClearanceMm": -8.734,
+    "beforeClumpNegativeVertices": 90,
+    "beforeClumpVerticesTotal": 567,
+    "beforeClumpMinClearanceMm": -11.557,
+    "cause": "P06b shellWarp negative groove and buried open clump edges intersect the fixed skin mesh. 0 triangle degeneration; source hair material is doubleSided; base hair shell is continuous with 1736 cap triangles incl 112 inward under-rim faces; no missing triangles. Intersections dominate visual exposure.",
+    "afterCapNegativeSamples": 0,
+    "afterCapTotalSamples": 1591,
+    "afterCapMinClearanceMm": 8.083,
+    "afterClumpNegativeVertices": 0,
+    "afterClumpVerticesTotal": 567,
+    "afterClumpMinClearanceMm": 6.606
+  },
+  "methodFix": {
+    "editedMeshIndex": 6,
+    "capTotalBaseVertices": 841,
+    "capMovedVertices": 572,
+    "lipVerticesFollowing": 56,
+    "sweptLayerVerticesFollowing": 567,
+    "eyebrowVerticesExactlyFrozen": 208,
+    "sampledTargetMinClearanceMm": 14,
+    "maxCapDisplacementMm": 22.734,
+    "patchMinDisplacementMm": 0.645,
+    "patchMaxDisplacementMm": 22.153,
+    "geometry": "Local radial corrective displacement using first skin triangle hit + 7 passes constrained neighbor smoothing. Three existing soft side-swept layers follow interpolated shell displacement. No material change; no replacement cap/helmet; no camera or skin changes."
+  },
+  "cameraRaysOldVsNew": [
+    {
+      "view": "hair_front",
+      "upperHeadRays": 280,
+      "beforeScalpFirst": 45,
+      "afterScalpFirst": 0
+    },
+    {
+      "view": "hair_top",
+      "upperHeadRays": 1167,
+      "beforeScalpFirst": 155,
+      "afterScalpFirst": 0
+    },
+    {
+      "view": "hair_right_3q",
+      "upperHeadRays": 267,
+      "beforeScalpFirst": 41,
+      "afterScalpFirst": 0
+    },
+    {
+      "view": "hair_left",
+      "upperHeadRays": 239,
+      "beforeScalpFirst": 0,
+      "afterScalpFirst": 0
+    },
+    {
+      "view": "hair_right",
+      "upperHeadRays": 239,
+      "beforeScalpFirst": 15,
+      "afterScalpFirst": 0
+    },
+    {
+      "view": "hair_back",
+      "upperHeadRays": 205,
+      "beforeScalpFirst": 0,
+      "afterScalpFirst": 0
+    }
+  ],
+  "poseValidation": {
+    "cross": {
+      "scalpScanOld": {
+        "samples": 1586,
+        "negative": 87,
+        "minMm": -8.734
+      },
+      "scalpScanNew": {
+        "samples": 1591,
+        "negative": 0,
+        "minMm": 8.083
+      },
+      "softSweepsOld": {
+        "sampledVertices": 567,
+        "negative": 90,
+        "minMm": -11.557
+      },
+      "softSweepsNew": {
+        "sampledVertices": 567,
+        "negative": 0,
+        "minMm": 6.606
+      },
+      "views": [
+        {
+          "view": "hair_front",
+          "upperHeadRays": 280,
+          "beforeScalpFirst": 45,
+          "afterScalpFirst": 0
+        },
+        {
+          "view": "hair_top",
+          "upperHeadRays": 1167,
+          "beforeScalpFirst": 155,
+          "afterScalpFirst": 0
+        },
+        {
+          "view": "hair_right_3q",
+          "upperHeadRays": 267,
+          "beforeScalpFirst": 41,
+          "afterScalpFirst": 0
+        },
+        {
+          "view": "hair_left",
+          "upperHeadRays": 239,
+          "beforeScalpFirst": 0,
+          "afterScalpFirst": 0
+        },
+        {
+          "view": "hair_right",
+          "upperHeadRays": 239,
+          "beforeScalpFirst": 15,
+          "afterScalpFirst": 0
+        },
+        {
+          "view": "hair_back",
+          "upperHeadRays": 205,
+          "beforeScalpFirst": 0,
+          "afterScalpFirst": 0
+        }
+      ]
+    },
+    "kneel": {
+      "scalpScanOld": {
+        "samples": 1586,
+        "negative": 87,
+        "minMm": -8.734
+      },
+      "scalpScanNew": {
+        "samples": 1591,
+        "negative": 0,
+        "minMm": 8.083
+      },
+      "softSweepsOld": {
+        "sampledVertices": 567,
+        "negative": 90,
+        "minMm": -11.557
+      },
+      "softSweepsNew": {
+        "sampledVertices": 567,
+        "negative": 0,
+        "minMm": 6.606
+      },
+      "views": [
+        {
+          "view": "hair_front",
+          "upperHeadRays": 280,
+          "beforeScalpFirst": 45,
+          "afterScalpFirst": 0
+        },
+        {
+          "view": "hair_top",
+          "upperHeadRays": 1167,
+          "beforeScalpFirst": 155,
+          "afterScalpFirst": 0
+        },
+        {
+          "view": "hair_right_3q",
+          "upperHeadRays": 267,
+          "beforeScalpFirst": 41,
+          "afterScalpFirst": 0
+        },
+        {
+          "view": "hair_left",
+          "upperHeadRays": 239,
+          "beforeScalpFirst": 0,
+          "afterScalpFirst": 0
+        },
+        {
+          "view": "hair_right",
+          "upperHeadRays": 239,
+          "beforeScalpFirst": 15,
+          "afterScalpFirst": 0
+        },
+        {
+          "view": "hair_back",
+          "upperHeadRays": 205,
+          "beforeScalpFirst": 0,
+          "afterScalpFirst": 0
+        }
+      ]
+    }
+  },
+  "limitations": {
+    "newBlenderCycles": "NOT_RUN_IN_THIS_AI_RUNTIME",
+    "newEditableBlend": "NOT_CREATED",
+    "fullSurfaceContinuousIntersection": "NOT_PROVEN_BY_SAMPLES",
+    "phoneArtApproval": "PENDING",
+    "nativeThreeJsAndGPU": "NOT_RUN"
+  },
+  "rerun": "node validate_p06c_scalp_rays.mjs cross; node validate_p06c_scalp_rays.mjs kneel"
+}
