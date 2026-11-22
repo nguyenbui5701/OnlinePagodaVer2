@@ -77,7 +77,7 @@ Create lightweight **procedural runtime visual primitives** (GPU Points, small p
 - Keep motes away from characters' faces and gift overlays where possible; fade with scene depth/distance. Layer stays alive in both idle cinematic and gift focus, but can dim during celebration so the intended gift remains readable.
 
 **Ambient layer B — falling Sakura petals (required):**
-- Sparse, visible petals originate near canopy volume, drift downward and sideways with a mild wind field; turn/float and recycle smoothly without popping in front of the lens. Pedals should be **petals**, not rectangular rain or flat confetti. Use simple runtime stylization and camera/viewport tests.
+- Sparse, visible petals originate near canopy volume, drift downward and sideways with a mild wind field; turn/float and recycle smoothly without popping in front of the lens. Particles must read as **petals**, not rectangular rain or flat confetti. Use simple runtime stylization and camera/viewport tests.
 - Prefer a small number of foreground/readable petals and many fewer distant particles; budget within quality profile.
 
 **Ambient layer C — drifting leaves (required but minimal):**
