@@ -184,7 +184,8 @@ export function createGiftFx(capacity: number) {
         ? { x: origin.x, z: origin.z, progress: gift.progress, opacity: gift.opacity } : undefined;
       return {
         gift, ripple, count, capacity: capacity + 1, starts: { ...lifecycle.starts }, ledgerSize: lifecycle.ledgerSize,
-        ledgerCapacity, suppressed: lifecycle.suppressed, poolId: geometry.id, materialId: material.id,
+        // Three r181 assigns a numeric Material.id at runtime, including after context restoration.
+        ledgerCapacity, suppressed: lifecycle.suppressed, poolId: geometry.id, materialId: (material as ShaderMaterial & { readonly id: number }).id,
         anchorWorld: gift ? anchor.toArray() : undefined,
         waterAnchor: ripple ? [ripple.x, 0, ripple.z] : undefined,
       };
