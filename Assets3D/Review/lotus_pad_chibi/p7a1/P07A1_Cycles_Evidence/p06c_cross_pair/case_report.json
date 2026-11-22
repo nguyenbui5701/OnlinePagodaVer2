@@ -1,0 +1,75 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "Actual SHA-pinned approved P06c and new P07a1 undercut GLB reimports; original P02 lotus pair frozen",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p06c_cross",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_male_cross_prayer_p06c.glb",
+      "bytes": 589656,
+      "sha256": "c9d1513bad21398fd776776cad97791cfa76a591d641838f885596d13f120ea4"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 15,
+  "principledMaterialSlots": 15,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "cross_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 10
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P06c identical front/top/L-R/right3Q/low-back/focal lengths and pair 720x1280; 3 fixed suns AgX EV0 World .65; additional ear macro same-camera both versions; diagnostic is never art proof",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "pair_medium_9x16",
+      "file": "p06c_cross_pair_pair_medium_9x16_cycles.png",
+      "bytes": 1031699,
+      "sha256": "b75cba8cca8bf0eaf414347bb701f6846b5c9352ce1f42518b8775910f17d364"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "p06c_cross_pair_pair_close_9x16_cycles.png",
+      "bytes": 1040908,
+      "sha256": "7b54a4d36e4955c7117aa7ce3a0d94b5219315981c1849012e21adaa5122be43"
+    },
+    {
+      "view": "pair_front",
+      "file": "p06c_cross_pair_pair_front_cycles.png",
+      "bytes": 667291,
+      "sha256": "1e83ae8a0d8ad08cea0b2d9fa8eea415c3ff89cb5c273d7fcdb3b53d0eb28f35"
+    },
+    {
+      "view": "pair_side",
+      "file": "p06c_cross_pair_pair_side_cycles.png",
+      "bytes": 656639,
+      "sha256": "6bf9f81c16ee781e611080571d2fe5910574c5f471fa365353d7cb8702e40ff9"
+    }
+  ],
+  "diagnosticImagesNotArtApproval": []
+}
