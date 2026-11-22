@@ -1,0 +1,271 @@
+{
+  "revision": "P07a1",
+  "source": "EXACT P06c camera/3sun/AgX EV0 in p6c/blender_p06c_cycles.py; P07a1 adds only matched supplemental ear/nape macro to both",
+  "cameraCoordinateSystem": "+Y up, +Z actor forward",
+  "matchedViews": [
+    {
+      "name": "hair_front",
+      "eye": [
+        0,
+        1.11,
+        1.12
+      ],
+      "target": [
+        0,
+        0.995,
+        0
+      ],
+      "verticalFovDegrees": 35
+    },
+    {
+      "name": "hair_top",
+      "eye": [
+        0.29,
+        1.62,
+        0.28
+      ],
+      "target": [
+        0,
+        1.045,
+        0
+      ],
+      "verticalFovDegrees": 35
+    },
+    {
+      "name": "hair_right_3q",
+      "eye": [
+        0.87,
+        1.14,
+        0.79
+      ],
+      "target": [
+        0,
+        0.995,
+        0
+      ],
+      "verticalFovDegrees": 34
+    },
+    {
+      "name": "hair_left",
+      "eye": [
+        -1.11,
+        1.06,
+        0.12
+      ],
+      "target": [
+        0,
+        0.995,
+        0
+      ],
+      "verticalFovDegrees": 35
+    },
+    {
+      "name": "hair_right",
+      "eye": [
+        1.11,
+        1.06,
+        0.12
+      ],
+      "target": [
+        0,
+        0.995,
+        0
+      ],
+      "verticalFovDegrees": 35
+    },
+    {
+      "name": "hair_back",
+      "eye": [
+        0,
+        1.1,
+        -1.16
+      ],
+      "target": [
+        0,
+        0.995,
+        0
+      ],
+      "verticalFovDegrees": 35
+    },
+    {
+      "name": "hair_quarter",
+      "eye": [
+        0.86,
+        1.14,
+        0.8
+      ],
+      "target": [
+        0,
+        0.995,
+        0
+      ],
+      "verticalFovDegrees": 34
+    },
+    {
+      "name": "hair_left_3q",
+      "eye": [
+        -0.87,
+        1.14,
+        0.79
+      ],
+      "target": [
+        0,
+        0.995,
+        0
+      ],
+      "verticalFovDegrees": 34
+    },
+    {
+      "name": "hair_low_back",
+      "eye": [
+        0.61,
+        0.8,
+        -0.82
+      ],
+      "target": [
+        0,
+        0.975,
+        0
+      ],
+      "verticalFovDegrees": 36
+    },
+    {
+      "name": "pair_medium_9x16",
+      "eye": [
+        1.18,
+        1.29,
+        2.92
+      ],
+      "target": [
+        0,
+        0.61,
+        0
+      ],
+      "verticalFovDegrees": 42
+    },
+    {
+      "name": "pair_close_9x16",
+      "eye": [
+        1.3,
+        1.22,
+        2.55
+      ],
+      "target": [
+        0,
+        0.74,
+        0.04
+      ],
+      "verticalFovDegrees": 43
+    },
+    {
+      "name": "pair_front",
+      "eye": [
+        0,
+        1.04,
+        3
+      ],
+      "target": [
+        0,
+        0.67,
+        0
+      ],
+      "verticalFovDegrees": 42
+    },
+    {
+      "name": "pair_side",
+      "eye": [
+        2.75,
+        0.62,
+        0.43
+      ],
+      "target": [
+        0,
+        0.45,
+        0
+      ],
+      "verticalFovDegrees": 42
+    },
+    {
+      "name": "hair_ear_left",
+      "eye": [
+        -0.8,
+        0.982,
+        0.23
+      ],
+      "target": [
+        -0.245,
+        0.963,
+        0.018
+      ],
+      "verticalFovDegrees": 28,
+      "supplementalButMatchedOldNew": true
+    },
+    {
+      "name": "hair_ear_right",
+      "eye": [
+        0.8,
+        0.982,
+        0.23
+      ],
+      "target": [
+        0.245,
+        0.963,
+        0.018
+      ],
+      "verticalFovDegrees": 28,
+      "supplementalButMatchedOldNew": true
+    },
+    {
+      "name": "hair_nape_macro",
+      "eye": [
+        0.58,
+        0.79,
+        -0.85
+      ],
+      "target": [
+        0,
+        0.93,
+        -0.16
+      ],
+      "verticalFovDegrees": 30,
+      "supplementalButMatchedOldNew": true
+    }
+  ],
+  "blender": {
+    "recommended": "4.5.16 LTS",
+    "renderEngine": "Cycles CPU",
+    "samples": 32,
+    "colorManagement": "AgX Medium High Contrast",
+    "exposureEV": 0,
+    "gamma": 1,
+    "worldStrength": 0.65,
+    "threeOriginalSunLights": true,
+    "originalPadOffsetActorY": 0.195,
+    "portraitPixels": [
+      720,
+      1280
+    ],
+    "idleSeconds": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2
+    ]
+  },
+  "productionCases": [
+    "p06c_cross_actor",
+    "p07a1_cross_actor",
+    "p06c_cross_pair",
+    "p07a1_cross_pair",
+    "p06c_kneel_actor",
+    "p07a1_kneel_actor",
+    "p06c_kneel_pair",
+    "p07a1_kneel_pair"
+  ],
+  "sourceHandoffStatus": "REAL GLB SOURCE PREPARED, NEW CYCLES NOT_RUN",
+  "oldOriginalCyclesPreserved": true,
+  "requiredHumanAcceptance": "Identifiable gentle undercut from front/sides/9:16 both poses; no scalp holes, hard band, ears/eyebrows/collar clipping. Must inspect real same-camera Blender before PASS.",
+  "referenceP06cHEAD": "91bbfd5fa2a98894a096d7a60426ca62fe720c96",
+  "originalCameraPreserved": true
+}
