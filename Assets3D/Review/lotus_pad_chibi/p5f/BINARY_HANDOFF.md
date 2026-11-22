@@ -15,3 +15,5 @@
 **True owner Blender/PNG source:** `P05F_Cycles_Evidence/p05f_cross_actor/*.blend` and `.../p05f_cross_pair/*.blend` / original PNG files / `P05F_FEMALE_SEAT_Blender_Cycles_Evidence.zip` **do not exist yet** in this AI run. No fake SHA/bytes. Owner must run the free Windows Blender starter and upload real outputs, then SA independently checks original SHA, ZIP CRC and image comparisons. Only then P0.5f Cycles gate can pass.
 
 All old raw GLB, leaf, image references must be SHA-pinned; do NOT move the global SeatRoot or change runtime offsets. No male/Codex/integration/merge.
+
+**Source-status update (2026-11-22):** The four **exact original source files** (exporter, Blender Python, PowerShell, validator) have now been uploaded as separately versioned compressed UTF-8 Git blobs `P05F_CANONICAL_*.zlib.b64`, with Git SHA-1 verified against the original local source compression, plus `restore_p05f_toolchain.py` and `restore_p05f_source.py`. See `P05F_SOURCE_REMOTE_AUDIT.md`. Only the **new runtime GLB and actually executed Cycles/Blend binaries** remain pending owner upload/run. Historical table statuses for plain Python/PS are superseded by this update.
