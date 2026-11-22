@@ -1,5 +1,8 @@
 # P0 execution order — OnlinePagodaVer2
 
+> **ACTIVE SA REWORK P0.5e — owner 2026-11-22:** P0.5d was rejected for (1) exposed foot looking like a detached beige pebble and (2) a visible upper shirt-to-crossed-trouser gap from low side. Actual GLB shows min shirt Y=0.267000854m and max pants Y=0.252515256m; vertical separation at least **14.49mm at t=0**, growing to **30.49mm with 16mm breathing**. Active task **[AI_VISUAL_08 P0.5e](AI_VISUAL_08_FEMALE_CROSS_FOOT_WAIST_CONTINUITY.md)**, version p5e/ on same PR #2; [SA Review #6010466650](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6010466650). Freeze P0.5c prayer hands/kneel and all old folders. No male, Codex, integration or merge until owner and SA approve. Earlier assignments below are historical.
+
+
 > **ACTIVE MICRO-POLISH P0.5d — owner 2026-11-22:** Owner **temporarily accepts** P0.5c female appearance/prayer hands and kneeling pose; only remaining visual request is a **modest visible foot tip/instep** on **female cross-legged prayer** pose. New official task **[AI_VISUAL_07](AI_VISUAL_07_FEMALE_CROSS_LEGGED_FOOT_VISIBILITY.md)** in PR #2, immutable original p5c/ and new p5d/. **No new kneeling build. No male, Codex #3/#4, integration, GPU/LIVE or merge** before SA reviews real GLB + Cycles and owner approves P0.5d feet. Previous task statuses below are historical, not active.
 
 
