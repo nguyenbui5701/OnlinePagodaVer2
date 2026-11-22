@@ -1,0 +1,3 @@
+# P06b original asset provenance / zero-cost
+
+P06b inherits approved project-owned P06a male chibi pose meshes under exact SHA locks. The ONLY new art is hand-authored procedural short hair topology, three nested surface-attached swept clumps, and subtly sculpted asymmetric hairline/temple/nape. No third-party meshes, textures or celebrity likeness; no paid generation, subscriptions, fal/Meshy/Tripo or external artwork. Hair material inherited from P06a. All 21 materials and six garment variants unchanged. Node.js22, Blender, Python and PowerShell can be used under their applicable original licenses without paid per-call model generation. Project owner retains licensing responsibilities for inherited female-derived geometry. Zero-cost spend: VND 0.

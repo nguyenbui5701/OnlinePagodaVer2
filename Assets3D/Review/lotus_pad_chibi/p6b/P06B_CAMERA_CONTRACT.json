@@ -1,0 +1,215 @@
+{
+  "source": "p6a/blender_p06a_cycles.py, exact original camera/lights; new views explicitly supplemental",
+  "world": {
+    "up": "+Y",
+    "actorForward": "+Z",
+    "actorOnLotusY": 0.195
+  },
+  "matching": [
+    [
+      "hair_front",
+      [
+        0,
+        1.11,
+        1.12
+      ],
+      [
+        0,
+        0.995,
+        0
+      ],
+      35
+    ],
+    [
+      "hair_left",
+      [
+        -1.11,
+        1.06,
+        0.12
+      ],
+      [
+        0,
+        0.995,
+        0
+      ],
+      35
+    ],
+    [
+      "hair_right",
+      [
+        1.11,
+        1.06,
+        0.12
+      ],
+      [
+        0,
+        0.995,
+        0
+      ],
+      35
+    ],
+    [
+      "hair_back",
+      [
+        0,
+        1.1,
+        -1.16
+      ],
+      [
+        0,
+        0.995,
+        0
+      ],
+      35
+    ],
+    [
+      "hair_quarter",
+      [
+        0.86,
+        1.14,
+        0.8
+      ],
+      [
+        0,
+        0.995,
+        0
+      ],
+      34
+    ],
+    [
+      "hair_top",
+      [
+        0.29,
+        1.62,
+        0.28
+      ],
+      [
+        0,
+        1.045,
+        0
+      ],
+      35
+    ],
+    [
+      "pair_medium_9x16",
+      [
+        1.18,
+        1.29,
+        2.92
+      ],
+      [
+        0,
+        0.61,
+        0
+      ],
+      42
+    ],
+    [
+      "pair_close_9x16",
+      [
+        1.3,
+        1.22,
+        2.55
+      ],
+      [
+        0,
+        0.74,
+        0.04
+      ],
+      43
+    ],
+    [
+      "pair_front",
+      [
+        0,
+        1.04,
+        3
+      ],
+      [
+        0,
+        0.67,
+        0
+      ],
+      42
+    ],
+    [
+      "pair_side",
+      [
+        2.75,
+        0.62,
+        0.43
+      ],
+      [
+        0,
+        0.45,
+        0
+      ],
+      42
+    ]
+  ],
+  "supplementalNoExactP06aMatch": [
+    [
+      "hair_left_3q",
+      [
+        -0.87,
+        1.14,
+        0.79
+      ],
+      [
+        0,
+        0.995,
+        0
+      ],
+      34
+    ],
+    [
+      "hair_right_3q",
+      [
+        0.87,
+        1.14,
+        0.79
+      ],
+      [
+        0,
+        0.995,
+        0
+      ],
+      34
+    ],
+    [
+      "hair_low_back",
+      [
+        0.61,
+        0.8,
+        -0.82
+      ],
+      [
+        0,
+        0.975,
+        0
+      ],
+      36
+    ]
+  ],
+  "blender": {
+    "expected": "4.5.16 LTS",
+    "engine": "Cycles CPU",
+    "samples": 32,
+    "AgX": true,
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "sunLamps": 3,
+    "portraitPixels": [
+      720,
+      1280
+    ],
+    "timeSamplesSeconds": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2
+    ]
+  },
+  "newActualRender": "NOT_RUN"
+}

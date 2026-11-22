@@ -1,0 +1,180 @@
+{
+  "baselineHead": "b368444ccb851e88521d97d5be94299fc0f790f7",
+  "poses": {
+    "cross": {
+      "oldHairVertices": 1105,
+      "newHairVertices": 1672,
+      "oldHairTriangles": 2120,
+      "newHairTriangles": 3080,
+      "boundsOld": [
+        -0.3156349862456088,
+        0.8451199888696562,
+        -0.29849569820779753,
+        0.3151502505592756,
+        1.158,
+        0.3154789593862229
+      ],
+      "boundsNew": [
+        -0.31563499569892883,
+        0.8344703688621521,
+        -0.29849570989608765,
+        0.31515026092529297,
+        1.1570903311933802,
+        0.31547895073890686
+      ],
+      "eyebrowPositionNormalIndicesByteExact": true,
+      "sourceHairMaterialId": 6,
+      "newHairMaterialId": 6,
+      "oldSourceFullBodyTriangles": 17420,
+      "newFullBodyTriangles": 18380,
+      "newFullBodyVertices": 9469,
+      "allNonHairAccessorsExact": true,
+      "allOriginalAnimationFloatsExact": true,
+      "allNodeTransformsAndMaterialVariantsExact": true,
+      "binBytes": 589264,
+      "sourceBytes": 563688,
+      "sculpt": [
+        {
+          "name": "sweep_main_center",
+          "vertices": 189,
+          "triangles": 320,
+          "maxRaisedHeightMeters": 0.0118,
+          "edgeBurialMeters": 0.0042,
+          "nose": [
+            -0.02912592427316617,
+            0.9908826222648547,
+            0.26869612934952203
+          ]
+        },
+        {
+          "name": "sweep_left_flow",
+          "vertices": 189,
+          "triangles": 320,
+          "maxRaisedHeightMeters": 0.0078,
+          "edgeBurialMeters": 0.0042,
+          "nose": [
+            -0.1637858910776403,
+            0.9800720275466367,
+            0.2250175948795234
+          ]
+        },
+        {
+          "name": "sweep_right_temple",
+          "vertices": 189,
+          "triangles": 320,
+          "maxRaisedHeightMeters": 0.0068,
+          "edgeBurialMeters": 0.0042,
+          "nose": [
+            0.12404169594146439,
+            1.0060467204708154,
+            0.22904551645793095
+          ]
+        }
+      ]
+    },
+    "kneel": {
+      "oldHairVertices": 1105,
+      "newHairVertices": 1672,
+      "oldHairTriangles": 2120,
+      "newHairTriangles": 3080,
+      "boundsOld": [
+        -0.3156349862456088,
+        0.8451199888696562,
+        -0.29849569820779753,
+        0.3151502505592756,
+        1.158,
+        0.3154789593862229
+      ],
+      "boundsNew": [
+        -0.31563499569892883,
+        0.8344703688621521,
+        -0.29849570989608765,
+        0.31515026092529297,
+        1.1570903311933802,
+        0.31547895073890686
+      ],
+      "eyebrowPositionNormalIndicesByteExact": true,
+      "sourceHairMaterialId": 6,
+      "newHairMaterialId": 6,
+      "oldSourceFullBodyTriangles": 17460,
+      "newFullBodyTriangles": 18420,
+      "newFullBodyVertices": 9485,
+      "allNonHairAccessorsExact": true,
+      "allOriginalAnimationFloatsExact": true,
+      "allNodeTransformsAndMaterialVariantsExact": true,
+      "binBytes": 455680,
+      "sourceBytes": 430104,
+      "sculpt": [
+        {
+          "name": "sweep_main_center",
+          "vertices": 189,
+          "triangles": 320,
+          "maxRaisedHeightMeters": 0.0118,
+          "edgeBurialMeters": 0.0042,
+          "nose": [
+            -0.02912592427316617,
+            0.9908826222648547,
+            0.26869612934952203
+          ]
+        },
+        {
+          "name": "sweep_left_flow",
+          "vertices": 189,
+          "triangles": 320,
+          "maxRaisedHeightMeters": 0.0078,
+          "edgeBurialMeters": 0.0042,
+          "nose": [
+            -0.1637858910776403,
+            0.9800720275466367,
+            0.2250175948795234
+          ]
+        },
+        {
+          "name": "sweep_right_temple",
+          "vertices": 189,
+          "triangles": 320,
+          "maxRaisedHeightMeters": 0.0068,
+          "edgeBurialMeters": 0.0042,
+          "nose": [
+            0.12404169594146439,
+            1.0060467204708154,
+            0.22904551645793095
+          ]
+        }
+      ]
+    }
+  },
+  "hairGeometryIdenticalAcrossPoses": true,
+  "finalOutputs": [
+    {
+      "pose": "cross",
+      "file": "meditator_male_cross_prayer_p06b.glb",
+      "sha256": "d6add5fdd5ec7122c24aee774c1ea10cc0588643842c891e334ffd30c60ce4cb",
+      "bytes": 589264,
+      "triangles": 18380,
+      "vertices": 9469,
+      "meshes": 10,
+      "baseSha256": "c684934ff2ceb8da08265fcc8304f2684255f144dc7df94819f007c5e803cb61",
+      "baseBytes": 563688,
+      "baseTriangles": 17420
+    },
+    {
+      "pose": "kneel",
+      "file": "meditator_male_kneel_prayer_p06b.glb",
+      "sha256": "db78a1b26bff1cd2dced82d4ed4d4255280cfb6eb3db3ea2dd5ab5b5674c0701",
+      "bytes": 455680,
+      "triangles": 18420,
+      "vertices": 9485,
+      "meshes": 9,
+      "baseSha256": "9aad5f3f4d1b84d0a9ffb2cda3bc01b39ece676318ba883e417f7337e9d2251e",
+      "baseBytes": 430104,
+      "baseTriangles": 17460
+    }
+  ],
+  "prHeadAtSource": "b368444ccb851e88521d97d5be94299fc0f790f7",
+  "blenderCycles": "NOT_RUN",
+  "newBlend": "NOT_CREATED",
+  "zipCRC": "NOT_RUN",
+  "ownerArtApproval": "PENDING",
+  "source": "independent raw glTF accessor comparison from both actual P06A input GLBs and generated P06B output GLBs"
+}
