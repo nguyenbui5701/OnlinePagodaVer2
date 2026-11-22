@@ -1,0 +1,99 @@
+{
+  "revision": "p5f",
+  "method": "actual glTF2 immutable original P02 lotus triangles vertical xz intersection at original pant underside-facing triangle centroids (normalY < -0.55), original +0.195m actor transform; finite samples, NOT exact continuous polygon collision",
+  "originalPadSha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+  "p05eSha256": "0829edde73666460c457267672e344a61443ee2c882319998d5b84a359f81367",
+  "p05fSha256": "3ed6946640ed057868b64a9998b1c3a4bf30f28866b3e0c1de9a9ab55c5cc1a4",
+  "actorY": 0.195,
+  "leafY": 0,
+  "supportRanges": {
+    "left": {
+      "x": [
+        -0.3,
+        -0.1
+      ],
+      "z": [
+        0.17,
+        0.35
+      ],
+      "p05e": {
+        "samples": 141,
+        "minMm": 13.377,
+        "p10Mm": 14.995,
+        "medianMm": 23.775,
+        "near5mm": 0,
+        "deepPenetrationGt2mm": 0
+      },
+      "p05f": {
+        "samples": 141,
+        "minMm": 2.784,
+        "p10Mm": 6.748,
+        "medianMm": 18.337,
+        "near5mm": 11,
+        "deepPenetrationGt2mm": 0
+      }
+    },
+    "right": {
+      "x": [
+        0.07,
+        0.3
+      ],
+      "z": [
+        0.16,
+        0.32
+      ],
+      "p05e": {
+        "samples": 151,
+        "minMm": 1.637,
+        "p10Mm": 4.684,
+        "medianMm": 19.723,
+        "near5mm": 17,
+        "deepPenetrationGt2mm": 0
+      },
+      "p05f": {
+        "samples": 151,
+        "minMm": 1.637,
+        "p10Mm": 3.457,
+        "medianMm": 17.857,
+        "near5mm": 29,
+        "deepPenetrationGt2mm": 0
+      }
+    }
+  },
+  "allUndersideNear5mm": {
+    "p05e": 17,
+    "p05f": 40
+  },
+  "animationTimeSeconds": [
+    0,
+    0.5,
+    1,
+    1.5,
+    2
+  ],
+  "UpperBodyBreathLiftMm": [
+    0,
+    8,
+    16,
+    8,
+    0
+  ],
+  "contactInvariantAcrossIdle": true,
+  "waistRepeatedRealGLBRays": {
+    "raysPerCondition": 725,
+    "directions": 4,
+    "frames": 5,
+    "oldBackgroundPct": 0,
+    "newBackgroundPct": 0
+  },
+  "geometryChanges": {
+    "pantsMovedVertices": 296,
+    "maxDownMm": 11.013,
+    "normalVerticesUpdated": 437,
+    "otherMeshesPositionNormalIndicesUnchanged": 9,
+    "trianglesAdded": 0
+  },
+  "continuousCollision": "PROXY_ONLY",
+  "newCycles": "NOT_RUN",
+  "ownerGate": "PENDING"
+}
