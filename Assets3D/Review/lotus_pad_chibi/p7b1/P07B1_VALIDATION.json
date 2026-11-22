@@ -1,0 +1,85 @@
+{
+  "revision": "P07B1",
+  "reviewedHead": "f2cbaac94c9168fb080f2dcedb4f1ae42a2e1e41",
+  "technicalMethod": "Actual GLB2 source & two derived P07b1 GLBs decoded; binary raw arrays compared; finite triangle-ray samples",
+  "style": {
+    "part": "character RIGHT +X",
+    "majority": "sweep left -X",
+    "geometry": "single sculpted cap/forelock, original 960 dark-rim ribbon triangles REMOVED from draw indices"
+  },
+  "inputSourceSHA256": {
+    "cross": "c9d1513bad21398fd776776cad97791cfa76a591d641838f885596d13f120ea4",
+    "kneel": "38e47f84b6b4f8987a47b39e791aaa06c3fed2d4d03e11e55fc72f0ef926c4ad"
+  },
+  "assets": [
+    {
+      "pose": "cross",
+      "file": "meditator_male_cross_prayer_sidepart73_p07b1.glb",
+      "sha256": "4e8c8d082352d67d0eaf637df7973931442c724a0f7db598ea8fde8de3873097",
+      "bytes": 589932,
+      "vertices": 9469,
+      "triangles": 17420,
+      "meshes": 10,
+      "materials": 21,
+      "nonHairMeshCountFrozen": 9,
+      "nonHairArraysExact": 27,
+      "animationSamplerArraysExact": 4
+    },
+    {
+      "pose": "kneel",
+      "file": "meditator_male_kneel_prayer_sidepart73_p07b1.glb",
+      "sha256": "3707ec76f311b10f4b672940edbda211c2d021f12c8c5300367f7fb4d2e1f96c",
+      "bytes": 456348,
+      "vertices": 9485,
+      "triangles": 17460,
+      "meshes": 9,
+      "materials": 21,
+      "nonHairMeshCountFrozen": 8,
+      "nonHairArraysExact": 24,
+      "animationSamplerArraysExact": 4
+    }
+  ],
+  "hair": {
+    "meshIndex": 6,
+    "positionAccessorVertices": 1672,
+    "unusedHistoricalRibbonVertices": 567,
+    "indexCountBefore": 9240,
+    "indexCountAfter": 6360,
+    "renderedHairTrianglesBefore": 3080,
+    "renderedHairTrianglesAfter": 2120,
+    "removedRibbonTriangles": 960,
+    "additionalPrimitives": 0,
+    "additionalMaterial": 0,
+    "additionalDrawcall": 0,
+    "eyebrowRaw208Exact": true,
+    "oldUnusedRibbonRawBytesExact": true,
+    "canonicalHairAcrossBothPoses": true,
+    "skinBodyAndPalettesFrozen": true,
+    "nativeClips17Samples2sExact": true,
+    "anchorNodesTransformsExact": true
+  },
+  "shapeSample": {
+    "majorityVertices": 286,
+    "majorityMeanRadialMM": 27.533415377974386,
+    "minorityVertices": 45,
+    "minorityMeanRadialMM": 1.292077115485249,
+    "partVertices": 51,
+    "partMeanRadialMM": 15.35749883492085,
+    "fringeVertices": 30,
+    "fringeMeanYMM": -25.15942498863882,
+    "fringeMinYMM": -48.37264569314614
+  },
+  "scalpReport": "P07B1_HAIR_SCALP_REPORT.json",
+  "status": {
+    "GLB2": "PASS",
+    "structuralFreeze": "PASS",
+    "sampledScalp": "PROXY_ONLY",
+    "smokeCycles": "NOT_RUN",
+    "fullCycles": "NOT_RUN",
+    "editableBlend": "NOT_CREATED",
+    "newZIPCRC": "NOT_RUN",
+    "SAArt": "PENDING",
+    "ownerArt": "PENDING"
+  },
+  "paidVND": 0
+}

@@ -1,0 +1,62 @@
+{
+  "revision": "P07B1",
+  "actualGlb": "meditator_male_cross_prayer_sidepart73_p07b1.glb",
+  "sameHairInKneel": true,
+  "method": "On real P07b1 GLB2: mesh #6 cap/rim 897 radial centre-to-skin mesh #3 triangle samples, 19x21 sparse camera per view (restricted upper head); no global continuous collision proof",
+  "capAndRim": {
+    "samples": 897,
+    "negative": 0,
+    "under5mm": 10,
+    "minimumClearanceMM": 2.4949100273948255
+  },
+  "cameraSamples": [
+    {
+      "view": "front",
+      "rays": 66,
+      "skinFirst": 0
+    },
+    {
+      "view": "top",
+      "rays": 273,
+      "skinFirst": 0
+    },
+    {
+      "view": "right3Q",
+      "rays": 60,
+      "skinFirst": 0
+    },
+    {
+      "view": "left3Q",
+      "rays": 60,
+      "skinFirst": 0
+    },
+    {
+      "view": "left",
+      "rays": 53,
+      "skinFirst": 0
+    },
+    {
+      "view": "right",
+      "rays": 53,
+      "skinFirst": 0
+    },
+    {
+      "view": "back",
+      "rays": 42,
+      "skinFirst": 0
+    }
+  ],
+  "cameraRayTotal": 607,
+  "skinFirstTotal": 0,
+  "hairFaces": {
+    "active": 2120,
+    "oldDegenerate": 0,
+    "newDegenerate": 0,
+    "faceReversals": 0,
+    "maxNormalRotationDeg": 27.668021724797292
+  },
+  "knownCaveat": "10/897 cap-and-rim samples below 5mm margin; real Cycles and 5 animation frames required. Ear/collar proximity not independently measured, cannot label PASS",
+  "earCollar": "NOT_RUN",
+  "realBlenderClipVisual": "NOT_RUN",
+  "continuousCollision": "NOT_PROVEN"
+}
