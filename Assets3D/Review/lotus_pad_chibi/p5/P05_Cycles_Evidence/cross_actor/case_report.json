@@ -1,0 +1,196 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport actual exported GLB",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "cross",
+  "kind": "actor",
+  "inputs": [
+    {
+      "file": "meditator_female_cross_prayer_p05.glb",
+      "bytes": 338176,
+      "sha256": "981ecf0b83378ce3fca7cd49db9473baac43238af3b5ee2fa857024ff66b57fd"
+    }
+  ],
+  "meshCount": 9,
+  "principledMaterialSlots": 9,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05_CAMERA_CONTRACT.json",
+  "originalBlend": {
+    "file": "meditator_female_cross_prayer_p05_actor.blend",
+    "bytes": 1838471,
+    "sha256": "8075cffa74738004249298b6a0fae40bb4a41f465a81684446ac1aa3575eca1d"
+  },
+  "images": [
+    {
+      "view": "front",
+      "file": "cross_actor_front_cycles.png",
+      "bytes": 343068,
+      "sha256": "07df068c44f9d6587ea947f5df1d74636da6d3dd00962a9b4467996e41ad54da"
+    },
+    {
+      "view": "left",
+      "file": "cross_actor_left_cycles.png",
+      "bytes": 337578,
+      "sha256": "0817cc114c23d8b5d64b3c77101571429bd96f6c5985b75bb52d531f9e61270a"
+    },
+    {
+      "view": "right",
+      "file": "cross_actor_right_cycles.png",
+      "bytes": 336853,
+      "sha256": "4d4bda66a9d8cd2bcabf868a9091334cde7f0800d79f3dc794f4982afbca7994"
+    },
+    {
+      "view": "quarter",
+      "file": "cross_actor_quarter_cycles.png",
+      "bytes": 331069,
+      "sha256": "03f5c1f5b06435d3430b617d0eecc74c6ea243d5aa4dc3be5c3f5ee7cc48f6e5"
+    },
+    {
+      "view": "back",
+      "file": "cross_actor_back_cycles.png",
+      "bytes": 319154,
+      "sha256": "f94a888a83b3c8d4d78ebea638b321be5ccf799fa5da26019f070952860015e0"
+    },
+    {
+      "view": "hands_front",
+      "file": "cross_actor_hands_front_cycles.png",
+      "bytes": 365143,
+      "sha256": "75c51d1e2dc99f3a488b8630edc9def16bdb64b672c671e9f52201c1cd5ef0c6"
+    },
+    {
+      "view": "hands_side",
+      "file": "cross_actor_hands_side_cycles.png",
+      "bytes": 343326,
+      "sha256": "0c4bf20659fc4b33a4c3fb92264fe2d24680a55e0d8d32fb2f7a74f4f47090f3"
+    },
+    {
+      "view": "knees_front",
+      "file": "cross_actor_knees_front_cycles.png",
+      "bytes": 346428,
+      "sha256": "7cc695a8e41a5bff3c767f2f00bbed9ce029bf6e59e587b2306949d182d8c3f6"
+    },
+    {
+      "view": "knees_side",
+      "file": "cross_actor_knees_side_cycles.png",
+      "bytes": 339087,
+      "sha256": "027d941150442fa330d252bd5ab452cfeb111aff03e2c87d91528a4d59ee3349"
+    },
+    {
+      "view": "full_9x16",
+      "file": "cross_actor_full_9x16_cycles.png",
+      "bytes": 511289,
+      "sha256": "103d16bae951ac590cae16a5bc8bd39ea4189d4dcab996d8de1df6c3da499cc5"
+    },
+    {
+      "view": "medium_9x16",
+      "file": "cross_actor_medium_9x16_cycles.png",
+      "bytes": 521884,
+      "sha256": "48955602d36783ac021e4f1c902eebb3d6bc23e60bf95bcb189d2fd9840c38e1"
+    },
+    {
+      "view": "close_9x16",
+      "file": "cross_actor_close_9x16_cycles.png",
+      "bytes": 527094,
+      "sha256": "c2630bd3436b0ceff5288cf6170d7fdffb4782d539c3b35cf148a6940e35fc01"
+    },
+    {
+      "view": "front",
+      "file": "cross_idle_front_0.0_cycles.png",
+      "bytes": 343301,
+      "sha256": "497bf0a3d59e497131d5fdcf0a9439568b81934d93966e3314dbc60ccac75184"
+    },
+    {
+      "view": "right",
+      "file": "cross_idle_right_0.0_cycles.png",
+      "bytes": 337077,
+      "sha256": "621969be3ca9889855ccdb44a6950a474f0a96bf44d904015f971d2c445dc7e0"
+    },
+    {
+      "view": "back",
+      "file": "cross_idle_back_0.0_cycles.png",
+      "bytes": 319134,
+      "sha256": "e9eed84dd268664d54dbd975ab128e9af16cd58387c5b75656d05eeadca8ec21"
+    },
+    {
+      "view": "front",
+      "file": "cross_idle_front_0.5_cycles.png",
+      "bytes": 343259,
+      "sha256": "c91295c43a457bc1917aae2d77858a3f765306736513d7e0e80ea8baaf1945cc"
+    },
+    {
+      "view": "right",
+      "file": "cross_idle_right_0.5_cycles.png",
+      "bytes": 337030,
+      "sha256": "6fee1c4e9ea9bc08d698cce7ccb7f86acd209a580b8fac92dd59428f1e528250"
+    },
+    {
+      "view": "back",
+      "file": "cross_idle_back_0.5_cycles.png",
+      "bytes": 319143,
+      "sha256": "3b2cdab85c4e61debf65133f03312f811bebe390a25431c5d707e60ca8ec3f01"
+    },
+    {
+      "view": "front",
+      "file": "cross_idle_front_1.0_cycles.png",
+      "bytes": 343296,
+      "sha256": "24e41c28b4fea92935255bf134493d7caaa07c95aadbaabbc395ee6a1eec98dd"
+    },
+    {
+      "view": "right",
+      "file": "cross_idle_right_1.0_cycles.png",
+      "bytes": 337413,
+      "sha256": "425d550d74b1fa797ba6f176d2c45fd66a854cd9d23363e97ff8672a3ba993e7"
+    },
+    {
+      "view": "back",
+      "file": "cross_idle_back_1.0_cycles.png",
+      "bytes": 319294,
+      "sha256": "56766e88898533bbf8578e9a4da8f237e262d53db41b8035bd4734fda1fdeafc"
+    },
+    {
+      "view": "front",
+      "file": "cross_idle_front_1.5_cycles.png",
+      "bytes": 343259,
+      "sha256": "a85b0d4bb0d3ca7cd84b73977bf93dcb109ba06281b3d615bcaf242c2fbbad50"
+    },
+    {
+      "view": "right",
+      "file": "cross_idle_right_1.5_cycles.png",
+      "bytes": 337030,
+      "sha256": "495a3e34f6247ae877e59d03a8f1ca5eb8c52bf64963e60853e273151741e26b"
+    },
+    {
+      "view": "back",
+      "file": "cross_idle_back_1.5_cycles.png",
+      "bytes": 319143,
+      "sha256": "e3c1789381920158a0b18adc10fba0fd7f691e51b72f63c52283bf992325d199"
+    },
+    {
+      "view": "front",
+      "file": "cross_idle_front_2.0_cycles.png",
+      "bytes": 343301,
+      "sha256": "40db78e828b4c01c3b4d88e21553b24009a4b1ff0339899711a49ec4920b706e"
+    },
+    {
+      "view": "right",
+      "file": "cross_idle_right_2.0_cycles.png",
+      "bytes": 337077,
+      "sha256": "37ad477ed8158a86f1870e7fae98f55da82d31e8a149e0ef044a8525d92b7114"
+    },
+    {
+      "view": "back",
+      "file": "cross_idle_back_2.0_cycles.png",
+      "bytes": 319134,
+      "sha256": "f687daa26f04d50bd2f95c9cbaac4b03b4f1b09d03cc8082761a9280db571196"
+    }
+  ]
+}

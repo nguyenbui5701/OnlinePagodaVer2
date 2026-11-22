@@ -1,0 +1,101 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport actual exported GLB",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p04",
+  "kind": "actor",
+  "inputs": [
+    {
+      "file": "meditator_female_ao_ba_ba_p04.glb",
+      "bytes": 244348,
+      "sha256": "586134fdeab962f35458c16255985513b070da47195110d3c83eef2dd9b6be09"
+    }
+  ],
+  "meshCount": 9,
+  "principledMaterialSlots": 9,
+  "importedActionNames": [
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05_CAMERA_CONTRACT.json",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "front",
+      "file": "p04_actor_front_cycles.png",
+      "bytes": 341119,
+      "sha256": "3ec5c72d1f2e7bac34c8588b91d28b47da6f46db4216951b28d41734010c6b69"
+    },
+    {
+      "view": "left",
+      "file": "p04_actor_left_cycles.png",
+      "bytes": 335048,
+      "sha256": "dd9f192d998dd353d8787c85272722ce54383d010a35de98c64a26b1d15ef2e4"
+    },
+    {
+      "view": "right",
+      "file": "p04_actor_right_cycles.png",
+      "bytes": 334319,
+      "sha256": "06c1717cdcd9012dbe090922b90aeaf720dc183f3f6e68d4df275570b1ede7d5"
+    },
+    {
+      "view": "quarter",
+      "file": "p04_actor_quarter_cycles.png",
+      "bytes": 330780,
+      "sha256": "85f8da751bd6c6be4f0ae3a54de79c9e0dff90e311acaa9da387e04435a24184"
+    },
+    {
+      "view": "back",
+      "file": "p04_actor_back_cycles.png",
+      "bytes": 317382,
+      "sha256": "016325bd8752b5ed32c7d12733e47f8201346ed4fa35209fcf96185b78c0c5a0"
+    },
+    {
+      "view": "hands_front",
+      "file": "p04_actor_hands_front_cycles.png",
+      "bytes": 361321,
+      "sha256": "ebdd79f2a591ab1c0553ce00789c4dbf894e72143eb1cd5640a6686278daab7a"
+    },
+    {
+      "view": "hands_side",
+      "file": "p04_actor_hands_side_cycles.png",
+      "bytes": 343987,
+      "sha256": "702f9f2372c94fbc62e6ee5c9dc7bd23385abca87ecfb9e1eda5ef188a4feb64"
+    },
+    {
+      "view": "knees_front",
+      "file": "p04_actor_knees_front_cycles.png",
+      "bytes": 343207,
+      "sha256": "341c8f211942ad46bc5a01aeb563017273a664760f8c86f82f9ee53d67b45cae"
+    },
+    {
+      "view": "knees_side",
+      "file": "p04_actor_knees_side_cycles.png",
+      "bytes": 336565,
+      "sha256": "7458b844fed47c19e8f1ffc323c78d6a97b59e7774485a6bcc94bbbd4d4354b5"
+    },
+    {
+      "view": "full_9x16",
+      "file": "p04_actor_full_9x16_cycles.png",
+      "bytes": 510919,
+      "sha256": "bc51c6b1993791cf9a12947e89508e7d4a10267723b0e215468344099b3acf99"
+    },
+    {
+      "view": "medium_9x16",
+      "file": "p04_actor_medium_9x16_cycles.png",
+      "bytes": 521556,
+      "sha256": "8c2b438813b221db0240b76f9b99026f9f6921365f432a8f89e4076182f01ca6"
+    },
+    {
+      "view": "close_9x16",
+      "file": "p04_actor_close_9x16_cycles.png",
+      "bytes": 526313,
+      "sha256": "3c74a90b483205efba9cad7db85799a138646eff6e26ca2e1e1eb925f0d7913e"
+    }
+  ]
+}

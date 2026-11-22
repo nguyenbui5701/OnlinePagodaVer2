@@ -1,0 +1,196 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport actual exported GLB",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "kneel",
+  "kind": "actor",
+  "inputs": [
+    {
+      "file": "meditator_female_kneel_prayer_p05.glb",
+      "bytes": 352636,
+      "sha256": "04a1d0e03e5186085118dd06d158dbba43e7180843895ed1661a03529040785e"
+    }
+  ],
+  "meshCount": 9,
+  "principledMaterialSlots": 9,
+  "importedActionNames": [
+    "kneel_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05_CAMERA_CONTRACT.json",
+  "originalBlend": {
+    "file": "meditator_female_kneel_prayer_p05_actor.blend",
+    "bytes": 1899719,
+    "sha256": "0df0fc434c2d1f525aaa14c38a51b3919cddf7fd399c88dad5ef25cc7e561815"
+  },
+  "images": [
+    {
+      "view": "front",
+      "file": "kneel_actor_front_cycles.png",
+      "bytes": 338898,
+      "sha256": "5f2cd1a877e95ebbd39bd130253df88112f78068dc40229536408eedfae058eb"
+    },
+    {
+      "view": "left",
+      "file": "kneel_actor_left_cycles.png",
+      "bytes": 337879,
+      "sha256": "a5dc7a15dea84d963e0208a47940bc11565aeb4eb33b781dcff87d1695976788"
+    },
+    {
+      "view": "right",
+      "file": "kneel_actor_right_cycles.png",
+      "bytes": 337029,
+      "sha256": "58e5f64ab154c3d71db5d9f29d7d05f45c94646c1060093c219d5536c39dd44e"
+    },
+    {
+      "view": "quarter",
+      "file": "kneel_actor_quarter_cycles.png",
+      "bytes": 329414,
+      "sha256": "98b33248b87aaff500e2058867eeb5d0eaf80adccc9ff51d1c70ce2f3fa2a31e"
+    },
+    {
+      "view": "back",
+      "file": "kneel_actor_back_cycles.png",
+      "bytes": 320634,
+      "sha256": "79ddb4d9bfa987e378c521f87034ef9dc43c6696444482c9b43fdf8aa5148281"
+    },
+    {
+      "view": "hands_front",
+      "file": "kneel_actor_hands_front_cycles.png",
+      "bytes": 362021,
+      "sha256": "ad7e0c9281fc0ea29e257b3c4848c2ceffeadf0afea81137e4fc3fe2798d4912"
+    },
+    {
+      "view": "hands_side",
+      "file": "kneel_actor_hands_side_cycles.png",
+      "bytes": 339966,
+      "sha256": "27a6d4a71a5d9457b9e475237dff0247373770200c4955766b51232cf40419f8"
+    },
+    {
+      "view": "knees_front",
+      "file": "kneel_actor_knees_front_cycles.png",
+      "bytes": 340799,
+      "sha256": "c7a45a913b0f116589b688d7ecd15cd7f374658b6f7d9e3a05cf076dc129bf53"
+    },
+    {
+      "view": "knees_side",
+      "file": "kneel_actor_knees_side_cycles.png",
+      "bytes": 338486,
+      "sha256": "30ab8f57291b1d769ea9f5b43c1f0ae49ac4f58c9db9d640e30fa52c9cd3d897"
+    },
+    {
+      "view": "full_9x16",
+      "file": "kneel_actor_full_9x16_cycles.png",
+      "bytes": 509756,
+      "sha256": "3a9f3c13f89119428bda78c1137319af5947adfd892c0e93b8775c114fefeb2f"
+    },
+    {
+      "view": "medium_9x16",
+      "file": "kneel_actor_medium_9x16_cycles.png",
+      "bytes": 519788,
+      "sha256": "7ee5b7fdda778222e1fff810830cc95cf8d471b023f4d14de8efe6d6cc8e4b55"
+    },
+    {
+      "view": "close_9x16",
+      "file": "kneel_actor_close_9x16_cycles.png",
+      "bytes": 523859,
+      "sha256": "e3e934cc41a966b6dae1222f1467032faab30454dcb2ede99d92320607413472"
+    },
+    {
+      "view": "front",
+      "file": "kneel_idle_front_0.0_cycles.png",
+      "bytes": 338693,
+      "sha256": "27e0b2c232023d988bace05d1e838279e9863007ae9dc5ad9a8aa5554768cd95"
+    },
+    {
+      "view": "right",
+      "file": "kneel_idle_right_0.0_cycles.png",
+      "bytes": 337211,
+      "sha256": "76587bfe09cd15121e144e74b94fbd5585c9f50ccb90ee11f30f5bc9379d2bcf"
+    },
+    {
+      "view": "back",
+      "file": "kneel_idle_back_0.0_cycles.png",
+      "bytes": 320324,
+      "sha256": "c129d0412dc1497ed47feed6360b371ddf14f9aa8fbb147d7400bf22562a0f5f"
+    },
+    {
+      "view": "front",
+      "file": "kneel_idle_front_0.5_cycles.png",
+      "bytes": 338885,
+      "sha256": "74347936a771b1ac7ce08c867adbd22db67c6616de0a7d3a90f34b6605981998"
+    },
+    {
+      "view": "right",
+      "file": "kneel_idle_right_0.5_cycles.png",
+      "bytes": 337194,
+      "sha256": "7204940a40e37e71becf1d1ed4e99f09459d4f5cd7d8137d4203162999669d2f"
+    },
+    {
+      "view": "back",
+      "file": "kneel_idle_back_0.5_cycles.png",
+      "bytes": 320355,
+      "sha256": "e268bf2f660ae862e17359f2873bbe6d246082e6fe7dd2b2d8f163b84a79f7ae"
+    },
+    {
+      "view": "front",
+      "file": "kneel_idle_front_1.0_cycles.png",
+      "bytes": 338966,
+      "sha256": "0a9171c386e498e09faa435c089e5f28e9095a090db0ab01b180240c3e5e5234"
+    },
+    {
+      "view": "right",
+      "file": "kneel_idle_right_1.0_cycles.png",
+      "bytes": 337471,
+      "sha256": "d290650300e5738619c7975e4e935ea262687d70e9ddf534e4ca2c69ec0f7ded"
+    },
+    {
+      "view": "back",
+      "file": "kneel_idle_back_1.0_cycles.png",
+      "bytes": 320793,
+      "sha256": "c389901296f9164c3958058649684f0192cec02a9032e860f3ba1f490dcda4ed"
+    },
+    {
+      "view": "front",
+      "file": "kneel_idle_front_1.5_cycles.png",
+      "bytes": 338885,
+      "sha256": "0672764d033165dde7a57c23a5f19235160634c86afd0c0017418794c61bb3f8"
+    },
+    {
+      "view": "right",
+      "file": "kneel_idle_right_1.5_cycles.png",
+      "bytes": 337194,
+      "sha256": "3a8b6579dff5e43104680ddb1a1b5d4b3b1cbfd649d63277eabf75c76e561f7e"
+    },
+    {
+      "view": "back",
+      "file": "kneel_idle_back_1.5_cycles.png",
+      "bytes": 320355,
+      "sha256": "1b990dfd5b0a11598b7193416a734d3d898a653c2a61f8e5217a40ecca6b2abb"
+    },
+    {
+      "view": "front",
+      "file": "kneel_idle_front_2.0_cycles.png",
+      "bytes": 338693,
+      "sha256": "335d3875c4d71cddc5759787fbe414c48137fbb505c26f1fde86cae3a5176006"
+    },
+    {
+      "view": "right",
+      "file": "kneel_idle_right_2.0_cycles.png",
+      "bytes": 337211,
+      "sha256": "098e4fa03362c79b5cb0a4df835d8b3633211ef8287e415d28696fde089c7c20"
+    },
+    {
+      "view": "back",
+      "file": "kneel_idle_back_2.0_cycles.png",
+      "bytes": 320324,
+      "sha256": "675e58c315ef3580b0a905df30208f2a7b909efd11b14e9825f643314e82aa73"
+    }
+  ]
+}

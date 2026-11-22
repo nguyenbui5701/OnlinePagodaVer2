@@ -1,0 +1,75 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport actual exported GLB",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "kneel",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_female_kneel_prayer_p05.glb",
+      "bytes": 352636,
+      "sha256": "04a1d0e03e5186085118dd06d158dbba43e7180843895ed1661a03529040785e"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 14,
+  "principledMaterialSlots": 14,
+  "importedActionNames": [
+    "kneel_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05_CAMERA_CONTRACT.json",
+  "originalBlend": {
+    "file": "meditator_female_kneel_prayer_p05_pair.blend",
+    "bytes": 2775570,
+    "sha256": "6d247019aca682c0068af1ef730457c540e49ad5de802796c0ef8e9ee78e4b64"
+  },
+  "images": [
+    {
+      "view": "pair_front",
+      "file": "kneel_pair_pair_front_cycles.png",
+      "bytes": 360832,
+      "sha256": "429dd5acb7a552c6daea162f0cb7eb87575d1a210f9c97ee6975d81a230558b7"
+    },
+    {
+      "view": "pair_quarter",
+      "file": "kneel_pair_pair_quarter_cycles.png",
+      "bytes": 340034,
+      "sha256": "a8f667b731ec49ea21d51e71987126bb92c259c45bda2164d37df197ba7c925a"
+    },
+    {
+      "view": "pair_side",
+      "file": "kneel_pair_pair_side_cycles.png",
+      "bytes": 356182,
+      "sha256": "df37b7b94218128b65d183874dec902f1d63f01a8838e466c81d7b102062ce96"
+    },
+    {
+      "view": "pair_full_9x16",
+      "file": "kneel_pair_pair_full_9x16_cycles.png",
+      "bytes": 539838,
+      "sha256": "7fa1c81cbbda8c45e480bbf0d8e51d3ad4d180ef39bfdb0c922de3f93624c852"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "kneel_pair_pair_medium_9x16_cycles.png",
+      "bytes": 559089,
+      "sha256": "4c676dc5598a1c9a1c9a0f27f2ee5bbf6f75263b35df238701ea524459b4954a"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "kneel_pair_pair_close_9x16_cycles.png",
+      "bytes": 563446,
+      "sha256": "9e77fe8255ee81fdd6154bb945e7dd030d7eadea7a3f4b555cc5278b7076c3f6"
+    }
+  ]
+}

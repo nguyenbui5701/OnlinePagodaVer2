@@ -1,15 +1,11 @@
 {
-  "coordinate": "glTF +Y up / +Z front, meters",
-  "sameP04P05AB": true,
-  "Blender": {
-    "engine": "Cycles CPU",
-    "agx": true,
-    "exposureEV": 0,
-    "samples": 32,
-    "worldStrength": 0.65,
-    "sunLamps": 3
-  },
-  "shots": {
+  "source": "Fixed Blender 4.5+ Cycles and native GLB VTK PBR owner art rig",
+  "allP04P05MatchCameraPositionFOVAndTarget": true,
+  "notGeometryBakedInGLB": true,
+  "coordinate": "+Y up, +Z actor forward",
+  "exposureEV": 0,
+  "blender": "Cycles CPU AgX World 0.65 three SUN lamps",
+  "views": {
     "front": {
       "position": [
         0,
@@ -21,12 +17,7 @@
         0.6,
         0
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 36
+      "fovVerticalDeg": 36
     },
     "left": {
       "position": [
@@ -39,12 +30,7 @@
         0.61,
         0
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 36
+      "fovVerticalDeg": 36
     },
     "right": {
       "position": [
@@ -57,12 +43,7 @@
         0.61,
         0
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 36
+      "fovVerticalDeg": 36
     },
     "quarter": {
       "position": [
@@ -75,12 +56,7 @@
         0.63,
         0
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 40
+      "fovVerticalDeg": 40
     },
     "back": {
       "position": [
@@ -93,12 +69,7 @@
         0.61,
         0
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 36
+      "fovVerticalDeg": 36
     },
     "hands_front": {
       "position": [
@@ -111,12 +82,7 @@
         0.53,
         0.28
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 32
+      "fovVerticalDeg": 32
     },
     "hands_side": {
       "position": [
@@ -129,12 +95,7 @@
         0.53,
         0.26
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 38
+      "fovVerticalDeg": 38
     },
     "knees_front": {
       "position": [
@@ -147,12 +108,7 @@
         0.16,
         0.12
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 38
+      "fovVerticalDeg": 38
     },
     "knees_side": {
       "position": [
@@ -165,12 +121,7 @@
         0.15,
         0.005
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 41
+      "fovVerticalDeg": 41
     },
     "full_9x16": {
       "position": [
@@ -183,12 +134,7 @@
         0.57,
         0
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 43
+      "fovVerticalDeg": 43
     },
     "medium_9x16": {
       "position": [
@@ -201,12 +147,7 @@
         0.61,
         0
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 42
+      "fovVerticalDeg": 42
     },
     "close_9x16": {
       "position": [
@@ -219,30 +160,20 @@
         0.74,
         0.04
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 43
+      "fovVerticalDeg": 43
     },
     "pair_front": {
       "position": [
         0,
         1.04,
-        3
+        3.0
       ],
       "target": [
         0,
         0.67,
         0
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 42
+      "fovVerticalDeg": 42
     },
     "pair_quarter": {
       "position": [
@@ -255,12 +186,7 @@
         0.55,
         0
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 47
+      "fovVerticalDeg": 47
     },
     "pair_side": {
       "position": [
@@ -273,12 +199,7 @@
         0.45,
         0
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 42
+      "fovVerticalDeg": 42
     },
     "pair_full_9x16": {
       "position": [
@@ -291,12 +212,7 @@
         0.55,
         0
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 43
+      "fovVerticalDeg": 43
     },
     "pair_medium_9x16": {
       "position": [
@@ -309,12 +225,7 @@
         0.61,
         0
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 42
+      "fovVerticalDeg": 42
     },
     "pair_close_9x16": {
       "position": [
@@ -327,13 +238,9 @@
         0.74,
         0.04
       ],
-      "up": [
-        0,
-        1,
-        0
-      ],
-      "verticalFovDeg": 43
+      "fovVerticalDeg": 43
     }
   },
-  "note": "FULL/MEDIUM/CLOSE 9:16 actors rendered by VTK; TRUE pair with frozen pad only after owner Blender, label cropped leaf accurately"
+  "portraitDisclosure": "FULL actor 9:16 is actor-only local; true full lotus pair owner Blender pending, MEDIUM and CLOSE may intentionally clip rim",
+  "cyclesP05Executed": false
 }

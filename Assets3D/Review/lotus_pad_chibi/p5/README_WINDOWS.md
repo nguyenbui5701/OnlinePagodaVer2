@@ -1,8 +1,10 @@
-# Windows Blender 4.5+ REAL P0.4/P0.5 female prayer Cycles owner run
+# P0.5 owner Windows Blender/Cycles — both FEMALE prayer poses
 
-AI model container has **no Blender**; local evidence only includes native VTK actual GLB PBR, not Cycles. Download `P05_FEMALE_PRAYER_BLENDER_WINDOWS_STARTER.zip` containing two SHA-verified P0.5 GLBs and original P0.4 GLB in `p04_baseline/`, plus the free Blender Python source and SHA-gated PowerShell script.
+**Blender/Cycles NOT RUN in AI environment; `.blend` P0.5 NOT CREATED yet.** Download and unzip `P05_FEMALE_PRAYER_BLENDER_WINDOWS_STARTER.zip` into its own clean folder. This ZIP includes P0.4 original SHA-verified GLB in `p04_baseline/`, both new P0.5 GLBs, `blender_p05_cycles.py`, PowerShell launcher and `compose_p05_cycles_sheets.py`. No other asset or runtime is changed.
 
-**One missing prerequisite:** copy the unmodified frozen P0.2 lotus binary from checked-out PR #2 `Assets3D/Review/lotus_pad_chibi/p3/lotus_pad_01.glb` to `p02_baseline/lotus_pad_01.glb` in the extracted Starter. This MUST hash to `80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9`.
+Copy exactly **ONE** frozen P0.2 lotus pad into `p02_baseline/lotus_pad_01.glb` from `Assets3D/Review/lotus_pad_chibi/p3/lotus_pad_01.glb` of your PR #2 checkout. The runner verifies the correct frozen lotus SHA-256 **`80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9`** before rendering.
+
+In PowerShell inside extracted starter:
 
 ```powershell
 New-Item -ItemType Directory -Force .\p02_baseline | Out-Null
@@ -11,13 +13,13 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run_p05_blender.ps1 -M
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run_p05_blender.ps1 -Mode all -Samples 32 -Size 520
 ```
 
-Adjust the repository drive/path and optionally use `-BlenderPath 'C:\Program Files\Blender Foundation\Blender 4.5\blender.exe'`. The PowerShell script hashes **all 4 original input GLBs**, uses Blender `--python-exit-code 97` and captures stdout/stderr. Full mode performs **8 cases**: p04_actor, cross_actor, kneel_actor, p04_pair, cross_pair, kneel_pair, cross_palette, kneel_palette. **Same fixed Cycles CPU, 32 samples, AgX/0EV, world 0.65, 3 SUN lights and FOV**; actor fronts, left/right, rear, 3/4, hand/knee close; with TRUE unchanged lotus pair front, side/waterline, quarter, FULL/MEDIUM/CLOSE 9:16. For EACH new pose includes five idle phases front/right/rear and six palette colors. Four actual new .blend actor/pair source projects saved by owner only when scripts finish.
+Adjust your local repo path. If Blender is not auto-found, supply `-BlenderPath 'C:\Program Files\Blender Foundation\Blender 4.5\blender.exe'` (actual version/path). **Quick mode generates a small proof and clears old evidence; full mode always rebuilds a fresh evidence directory.** The launcher checks four SHA-pinned input GLBs first, uses Blender `--python-exit-code 97`, validates each PNG against its per-case JSON hash and exports original `P05_FEMALE_PRAYER_Blender_Cycles_Evidence.zip` with SHA list. It runs P0.4 original actor+pair, both P0.5 actor+pair and two palette cases. Real original P0.2 leaf imported and +Y .195 actor offset applied once. Fixed Cycles CPU/32 samples, AgX/0EV/World 0.65, three SUNs and matching cameras, front/left/right/back/3/4, detailed hand/knee, 9:16 FULL/MEDIUM/CLOSE. Both P0.5 have five idle time phases sampled front/right/back and six-color swatches. Four new editable Blender `.blend` (actor+pair per P0.5 pose) are created only by this run.
 
-Runner creates `P05_FEMALE_PRAYER_Blender_Cycles_Evidence.zip`, per-case `case_report.json` with each original PNG byte/SHA, raw stdout/stderr and `FILE_HASHES_SHA256.txt`. For matched **original Cycles contact sheets**, run:
+After the full run, make the requested six true Cycles contact sheets:
 
 ```powershell
 py -m pip install pillow
 py .\compose_p05_cycles_sheets.py
 ```
 
-Send original ZIP and four .blend plus contact sheet output to SA. Quick is only for smoke checks and full deletes/replaces quick evidence. **Blender PASS is forbidden before full outputs and independent review. P05 owner approval of BOTH poses required; no merge or male.**
+Send original `P05_FEMALE_PRAYER_Blender_Cycles_Evidence.zip`, four editable P0.5 `.blend` and `P05_Cycles_Contact_Sheets/` to SA for SHA/visual review. The artifact filenames/hashes do NOT exist until these commands complete successfully. **Do not call P05 Cycles PASS or approve female poses merely from the preliminary VTK PBR images.**

@@ -1,156 +1,574 @@
 {
-  "status": "P05_ACTUAL_GLTF_IMPORT_AND_VTK_PBR_PASS_CYCLES_PENDING_ART_OWNER_PENDING",
-  "baseline": {
+  "p04": {
+    "path": "meditator_female_ao_ba_ba_p04.glb",
     "sha256": "586134fdeab962f35458c16255985513b070da47195110d3c83eef2dd9b6be09",
     "bytes": 244348,
     "triangles": 9718,
-    "vertices": 5063
-  },
-  "poses": {
-    "cross_prayer": {
-      "file": "meditator_female_cross_prayer_p05.glb",
-      "sha256": "981ecf0b83378ce3fca7cd49db9473baac43238af3b5ee2fa857024ff66b57fd",
-      "bytes": 338176,
-      "triangles": 13262,
-      "vertices": 6855,
-      "meshes": 9,
-      "materials": 21,
-      "textures": 0,
-      "animations": [
-        {
-          "name": "sit_idle",
-          "durationSeconds": 2,
-          "keyframes": 17
-        },
-        {
-          "name": "cross_prayer_idle",
-          "durationSeconds": 2,
-          "keyframes": 17
-        }
+    "vertices": 5063,
+    "meshes": 9,
+    "materials": 21,
+    "textures": 0,
+    "bounds": [
+      [
+        -0.336,
+        -0.001673,
+        -0.315126
       ],
-      "bounds": [
-        [
-          -0.366199,
-          -0.005278,
-          -0.315126
-        ],
-        [
-          0.363024,
-          1.152,
-          0.385907
-        ]
-      ],
-      "padSourceDerivedAnalyticProxy": {
-        "minGapMeters": 0.0000202021,
-        "samples": 1538,
-        "within10mm": 31,
-        "penetrationDepthOver5mm": 0
-      },
-      "hairToPantsVertexProxyIdleMinMeters": 0.171216
+      [
+        0.336,
+        1.152,
+        0.393174
+      ]
+    ],
+    "animations": [
+      {
+        "name": "sit_idle",
+        "durationSeconds": 2.0,
+        "keyframes": 17,
+        "maxTranslationYMeters": 0.01600000075995922
+      }
+    ],
+    "variantMappings": {
+      "ao_ba_ba_pants": 6,
+      "ao_ba_ba_top": 6
     },
-    "kneel_prayer": {
-      "file": "meditator_female_kneel_prayer_p05.glb",
-      "sha256": "04a1d0e03e5186085118dd06d158dbba43e7180843895ed1661a03529040785e",
-      "bytes": 352636,
-      "triangles": 14190,
-      "vertices": 7319,
-      "meshes": 9,
-      "materials": 21,
-      "textures": 0,
-      "animations": [
-        {
-          "name": "sit_idle",
-          "durationSeconds": 2,
-          "keyframes": 17
-        },
-        {
-          "name": "kneel_prayer_idle",
-          "durationSeconds": 2,
-          "keyframes": 17
-        }
+    "anchors": {
+      "SeatRoot": [
+        0,
+        0,
+        0
       ],
-      "bounds": [
-        [
-          -0.336,
-          0.00031,
-          -0.355
-        ],
-        [
-          0.336,
-          1.152,
-          0.385907
-        ]
+      "HeadAnchor": [
+        0.0,
+        0.835,
+        0.04
       ],
-      "padSourceDerivedAnalyticProxy": {
-        "minGapMeters": 0.001466609,
-        "samples": 1762,
-        "within10mm": 92,
-        "penetrationDepthOver5mm": 0
+      "NameplateAnchor": [
+        0.0,
+        1.335,
+        0.03
+      ],
+      "FXAnchor": [
+        0.37,
+        0.805,
+        0.16
+      ]
+    },
+    "materialsByName": [
+      "ao_ba_ba_pants",
+      "sandal_trim",
+      "ao_ba_ba_top",
+      "skin_rose_cream",
+      "ao_ba_ba_placket",
+      "ao_ba_ba_buttons",
+      "hair_blue_black",
+      "eyes_mauve",
+      "skin_blush",
+      "ao_ba_ba_top__pastel_lilac",
+      "ao_ba_ba_pants__pastel_lilac",
+      "ao_ba_ba_top__blush_rose",
+      "ao_ba_ba_pants__blush_rose",
+      "ao_ba_ba_top__sage_green",
+      "ao_ba_ba_pants__sage_green",
+      "ao_ba_ba_top__sky_blue",
+      "ao_ba_ba_pants__sky_blue",
+      "ao_ba_ba_top__warm_cream",
+      "ao_ba_ba_pants__warm_cream",
+      "ao_ba_ba_top__terracotta",
+      "ao_ba_ba_pants__terracotta"
+    ],
+    "nodeNames": [
+      "FXAnchor",
+      "HeadAnchor",
+      "NameplateAnchor",
+      "SeatRoot",
+      "UpperBodyBreath",
+      "ao_ba_ba_buttons_UpperBodyBreath_object",
+      "ao_ba_ba_pants_SeatRoot_object",
+      "ao_ba_ba_placket_UpperBodyBreath_object",
+      "ao_ba_ba_top_UpperBodyBreath_object",
+      "eyes_mauve_UpperBodyBreath_object",
+      "hair_blue_black_UpperBodyBreath_object",
+      "sandal_trim_SeatRoot_object",
+      "skin_blush_UpperBodyBreath_object",
+      "skin_rose_cream_UpperBodyBreath_object",
+      "world"
+    ],
+    "nonFiniteVertices": 0,
+    "degenerateFaces": 0,
+    "visibleHandRegionVertexCount": 324,
+    "handFaceVertexDistanceProxyM": 0.380482,
+    "idleCollisionProxySamples": [
+      {
+        "sec": 0,
+        "hairPantsNearestVertexM": 0.159088,
+        "handPantsNearestVertexM": 0.003243
       },
-      "hairToPantsVertexProxyIdleMinMeters": 0.043605
-    }
-  },
-  "identicalP04MeshGeometry": [
-    "hair_blue_black_UpperBodyBreath_mesh",
-    "eyes_mauve_UpperBodyBreath_mesh",
-    "skin_blush_UpperBodyBreath_mesh",
-    "ao_ba_ba_buttons_UpperBodyBreath_mesh",
-    "ao_ba_ba_placket_UpperBodyBreath_mesh"
-  ],
-  "poseEditedMeshes": [
-    "ao_ba_ba_pants_SeatRoot_mesh",
-    "sandal_trim_SeatRoot_mesh",
-    "ao_ba_ba_top_UpperBodyBreath_mesh",
-    "skin_rose_cream_UpperBodyBreath_mesh"
-  ],
-  "anchorPositions": {
-    "SeatRoot": [
-      0,
-      0,
-      0
+      {
+        "sec": 0.5,
+        "hairPantsNearestVertexM": 0.163904,
+        "handPantsNearestVertexM": 0.007723
+      },
+      {
+        "sec": 1.0,
+        "hairPantsNearestVertexM": 0.168962,
+        "handPantsNearestVertexM": 0.01359
+      },
+      {
+        "sec": 1.5,
+        "hairPantsNearestVertexM": 0.163904,
+        "handPantsNearestVertexM": 0.007723
+      },
+      {
+        "sec": 2.0,
+        "hairPantsNearestVertexM": 0.159088,
+        "handPantsNearestVertexM": 0.003243
+      }
     ],
-    "HeadAnchor": [
-      0,
-      0.835,
-      0.04
+    "padContactAnalyticProxy": null,
+    "collisionStatus": "COLLISION_PROXY_ONLY_UNTIL_EXACT_IMPORTED_PAD_TRIANGLE_TEST",
+    "cyclesStatus": "NOT_EXECUTED_LOCAL_NO_BLENDER"
+  },
+  "cross_prayer": {
+    "path": "meditator_female_cross_prayer_p05.glb",
+    "sha256": "981ecf0b83378ce3fca7cd49db9473baac43238af3b5ee2fa857024ff66b57fd",
+    "bytes": 338176,
+    "triangles": 13262,
+    "vertices": 6855,
+    "meshes": 9,
+    "materials": 21,
+    "textures": 0,
+    "bounds": [
+      [
+        -0.366199,
+        -0.005278,
+        -0.315126
+      ],
+      [
+        0.363024,
+        1.152,
+        0.385907
+      ]
     ],
-    "NameplateAnchor": [
-      0,
-      1.335,
-      0.03
+    "animations": [
+      {
+        "name": "sit_idle",
+        "durationSeconds": 2.0,
+        "keyframes": 17,
+        "maxTranslationYMeters": 0.01600000075995922
+      },
+      {
+        "name": "cross_prayer_idle",
+        "durationSeconds": 2.0,
+        "keyframes": 17,
+        "maxTranslationYMeters": 0.01600000075995922
+      }
     ],
-    "FXAnchor": [
-      0.37,
-      0.805,
-      0.16
-    ]
+    "variantMappings": {
+      "ao_ba_ba_pants": 6,
+      "ao_ba_ba_top": 6
+    },
+    "anchors": {
+      "SeatRoot": [
+        0,
+        0,
+        0
+      ],
+      "HeadAnchor": [
+        0.0,
+        0.835,
+        0.04
+      ],
+      "NameplateAnchor": [
+        0.0,
+        1.335,
+        0.03
+      ],
+      "FXAnchor": [
+        0.37,
+        0.805,
+        0.16
+      ]
+    },
+    "materialsByName": [
+      "ao_ba_ba_pants",
+      "sandal_trim",
+      "ao_ba_ba_top",
+      "skin_rose_cream",
+      "ao_ba_ba_placket",
+      "ao_ba_ba_buttons",
+      "hair_blue_black",
+      "eyes_mauve",
+      "skin_blush",
+      "ao_ba_ba_top__pastel_lilac",
+      "ao_ba_ba_pants__pastel_lilac",
+      "ao_ba_ba_top__blush_rose",
+      "ao_ba_ba_pants__blush_rose",
+      "ao_ba_ba_top__sage_green",
+      "ao_ba_ba_pants__sage_green",
+      "ao_ba_ba_top__sky_blue",
+      "ao_ba_ba_pants__sky_blue",
+      "ao_ba_ba_top__warm_cream",
+      "ao_ba_ba_pants__warm_cream",
+      "ao_ba_ba_top__terracotta",
+      "ao_ba_ba_pants__terracotta"
+    ],
+    "nodeNames": [
+      "FXAnchor",
+      "HeadAnchor",
+      "NameplateAnchor",
+      "SeatRoot",
+      "UpperBodyBreath",
+      "ao_ba_ba_buttons_UpperBodyBreath_object",
+      "ao_ba_ba_pants_SeatRoot_object",
+      "ao_ba_ba_placket_UpperBodyBreath_object",
+      "ao_ba_ba_top_UpperBodyBreath_object",
+      "eyes_mauve_UpperBodyBreath_object",
+      "hair_blue_black_UpperBodyBreath_object",
+      "sandal_trim_SeatRoot_object",
+      "skin_blush_UpperBodyBreath_object",
+      "skin_rose_cream_UpperBodyBreath_object",
+      "world"
+    ],
+    "nonFiniteVertices": 0,
+    "degenerateFaces": 0,
+    "visibleHandRegionVertexCount": 632,
+    "handFaceVertexDistanceProxyM": 0.080196,
+    "idleCollisionProxySamples": [
+      {
+        "sec": 0,
+        "hairPantsNearestVertexM": 0.171216,
+        "handPantsNearestVertexM": 0.305129
+      },
+      {
+        "sec": 0.5,
+        "hairPantsNearestVertexM": 0.17781,
+        "handPantsNearestVertexM": 0.313007
+      },
+      {
+        "sec": 1.0,
+        "hairPantsNearestVertexM": 0.184515,
+        "handPantsNearestVertexM": 0.32089
+      },
+      {
+        "sec": 1.5,
+        "hairPantsNearestVertexM": 0.17781,
+        "handPantsNearestVertexM": 0.313007
+      },
+      {
+        "sec": 2.0,
+        "hairPantsNearestVertexM": 0.171216,
+        "handPantsNearestVertexM": 0.305129
+      }
+    ],
+    "padContactAnalyticProxy": {
+      "ao_ba_ba_pants_SeatRoot_mesh": {
+        "N": 1538,
+        "minGapM": 2.0202112789940996e-05,
+        "p01GapM": 0.006243059918237734,
+        "p10GapM": 0.024180969092366045,
+        "countPenetrationsOver5mm": 0,
+        "countSupportWithin10mm": 31,
+        "supportLocationsXZ": [
+          [
+            0.1413,
+            0.2454
+          ],
+          [
+            0.1199,
+            0.2467
+          ],
+          [
+            0.1624,
+            0.243
+          ],
+          [
+            0.098,
+            0.2465
+          ],
+          [
+            0.1831,
+            0.2396
+          ],
+          [
+            0.2029,
+            0.2351
+          ]
+        ]
+      },
+      "sandal_trim_SeatRoot_mesh": {
+        "N": 84,
+        "minGapM": 0.046105192209564105,
+        "p01GapM": 0.04612392878256934,
+        "p10GapM": 0.05083961021285326,
+        "countPenetrationsOver5mm": 0,
+        "countSupportWithin10mm": 0,
+        "supportLocationsXZ": [
+          [
+            0.134,
+            0.199
+          ],
+          [
+            -0.143,
+            0.198
+          ],
+          [
+            0.1124,
+            0.199
+          ],
+          [
+            -0.1214,
+            0.198
+          ],
+          [
+            0.1213,
+            0.1825
+          ],
+          [
+            -0.1303,
+            0.1815
+          ]
+        ]
+      }
+    },
+    "collisionStatus": "COLLISION_PROXY_ONLY_UNTIL_EXACT_IMPORTED_PAD_TRIANGLE_TEST",
+    "cyclesStatus": "NOT_EXECUTED_LOCAL_NO_BLENDER",
+    "changedMeshesOnly": [
+      "ao_ba_ba_pants_SeatRoot_mesh",
+      "sandal_trim_SeatRoot_mesh",
+      "ao_ba_ba_top_UpperBodyBreath_mesh",
+      "skin_rose_cream_UpperBodyBreath_mesh"
+    ],
+    "unchangedSourceMeshes": 5
   },
-  "sitIdleP04TimeAndTranslationSamplesIdentical": true,
-  "poseQualifiedIdleAliasesIdentical": true,
-  "KHR_materials_variants": {
-    "eachPoseHasSixVariants": true,
-    "materialMappingsForBothClothingPrimitiveSlots": 6,
-    "geometryCopiesPerPalette": 0
+  "kneel_prayer": {
+    "path": "meditator_female_kneel_prayer_p05.glb",
+    "sha256": "04a1d0e03e5186085118dd06d158dbba43e7180843895ed1661a03529040785e",
+    "bytes": 352636,
+    "triangles": 14190,
+    "vertices": 7319,
+    "meshes": 9,
+    "materials": 21,
+    "textures": 0,
+    "bounds": [
+      [
+        -0.336,
+        0.00031,
+        -0.355
+      ],
+      [
+        0.336,
+        1.152,
+        0.385907
+      ]
+    ],
+    "animations": [
+      {
+        "name": "sit_idle",
+        "durationSeconds": 2.0,
+        "keyframes": 17,
+        "maxTranslationYMeters": 0.01600000075995922
+      },
+      {
+        "name": "kneel_prayer_idle",
+        "durationSeconds": 2.0,
+        "keyframes": 17,
+        "maxTranslationYMeters": 0.01600000075995922
+      }
+    ],
+    "variantMappings": {
+      "ao_ba_ba_pants": 6,
+      "ao_ba_ba_top": 6
+    },
+    "anchors": {
+      "SeatRoot": [
+        0,
+        0,
+        0
+      ],
+      "HeadAnchor": [
+        0.0,
+        0.835,
+        0.04
+      ],
+      "NameplateAnchor": [
+        0.0,
+        1.335,
+        0.03
+      ],
+      "FXAnchor": [
+        0.37,
+        0.805,
+        0.16
+      ]
+    },
+    "materialsByName": [
+      "ao_ba_ba_pants",
+      "sandal_trim",
+      "ao_ba_ba_top",
+      "skin_rose_cream",
+      "ao_ba_ba_placket",
+      "ao_ba_ba_buttons",
+      "hair_blue_black",
+      "eyes_mauve",
+      "skin_blush",
+      "ao_ba_ba_top__pastel_lilac",
+      "ao_ba_ba_pants__pastel_lilac",
+      "ao_ba_ba_top__blush_rose",
+      "ao_ba_ba_pants__blush_rose",
+      "ao_ba_ba_top__sage_green",
+      "ao_ba_ba_pants__sage_green",
+      "ao_ba_ba_top__sky_blue",
+      "ao_ba_ba_pants__sky_blue",
+      "ao_ba_ba_top__warm_cream",
+      "ao_ba_ba_pants__warm_cream",
+      "ao_ba_ba_top__terracotta",
+      "ao_ba_ba_pants__terracotta"
+    ],
+    "nodeNames": [
+      "FXAnchor",
+      "HeadAnchor",
+      "NameplateAnchor",
+      "SeatRoot",
+      "UpperBodyBreath",
+      "ao_ba_ba_buttons_UpperBodyBreath_object",
+      "ao_ba_ba_pants_SeatRoot_object",
+      "ao_ba_ba_placket_UpperBodyBreath_object",
+      "ao_ba_ba_top_UpperBodyBreath_object",
+      "eyes_mauve_UpperBodyBreath_object",
+      "hair_blue_black_UpperBodyBreath_object",
+      "sandal_trim_SeatRoot_object",
+      "skin_blush_UpperBodyBreath_object",
+      "skin_rose_cream_UpperBodyBreath_object",
+      "world"
+    ],
+    "nonFiniteVertices": 0,
+    "degenerateFaces": 0,
+    "visibleHandRegionVertexCount": 632,
+    "handFaceVertexDistanceProxyM": 0.080196,
+    "idleCollisionProxySamples": [
+      {
+        "sec": 0,
+        "hairPantsNearestVertexM": 0.043605,
+        "handPantsNearestVertexM": 0.302006
+      },
+      {
+        "sec": 0.5,
+        "hairPantsNearestVertexM": 0.047998,
+        "handPantsNearestVertexM": 0.308333
+      },
+      {
+        "sec": 1.0,
+        "hairPantsNearestVertexM": 0.053237,
+        "handPantsNearestVertexM": 0.313162
+      },
+      {
+        "sec": 1.5,
+        "hairPantsNearestVertexM": 0.047998,
+        "handPantsNearestVertexM": 0.308333
+      },
+      {
+        "sec": 2.0,
+        "hairPantsNearestVertexM": 0.043605,
+        "handPantsNearestVertexM": 0.302006
+      }
+    ],
+    "padContactAnalyticProxy": {
+      "ao_ba_ba_pants_SeatRoot_mesh": {
+        "N": 1762,
+        "minGapM": 0.0014666091151323835,
+        "p01GapM": 0.0033409606440432736,
+        "p10GapM": 0.01911248246715845,
+        "countPenetrationsOver5mm": 0,
+        "countSupportWithin10mm": 92,
+        "supportLocationsXZ": [
+          [
+            0.123,
+            -0.0314
+          ],
+          [
+            -0.123,
+            -0.0314
+          ],
+          [
+            -0.1236,
+            -0.0141
+          ],
+          [
+            0.1236,
+            -0.0141
+          ],
+          [
+            -0.1225,
+            -0.0483
+          ],
+          [
+            0.1225,
+            -0.0483
+          ]
+        ]
+      },
+      "sandal_trim_SeatRoot_mesh": {
+        "N": 324,
+        "minGapM": 0.01920517619283077,
+        "p01GapM": 0.020071065476978126,
+        "p10GapM": 0.025270201278176002,
+        "countPenetrationsOver5mm": 0,
+        "countSupportWithin10mm": 0,
+        "supportLocationsXZ": [
+          [
+            0.143,
+            -0.288
+          ],
+          [
+            -0.143,
+            -0.288
+          ],
+          [
+            0.1282,
+            -0.288
+          ],
+          [
+            0.1342,
+            -0.2704
+          ],
+          [
+            -0.1342,
+            -0.2704
+          ],
+          [
+            -0.1282,
+            -0.288
+          ]
+        ]
+      }
+    },
+    "collisionStatus": "COLLISION_PROXY_ONLY_UNTIL_EXACT_IMPORTED_PAD_TRIANGLE_TEST",
+    "cyclesStatus": "NOT_EXECUTED_LOCAL_NO_BLENDER",
+    "changedMeshesOnly": [
+      "ao_ba_ba_pants_SeatRoot_mesh",
+      "sandal_trim_SeatRoot_mesh",
+      "ao_ba_ba_top_UpperBodyBreath_mesh",
+      "skin_rose_cream_UpperBodyBreath_mesh"
+    ],
+    "unchangedSourceMeshes": 5
   },
-  "executed": {
-    "sourceCleanIndependentRebuildByteIdentical": true,
-    "trimeshImportedActualGLB": true,
-    "glTF2AndAnimationAndAnchors": true,
-    "nativeVTKGLBMetalicRoughnessPBR": true,
-    "P04toP05MatchedActorCameras": true,
-    "sixColorsEach": true,
-    "idleFiveTimesFrontSideBack": true
-  },
-  "notExecuted": {
-    "trueOriginalFrozenLotusImportedLocally": true,
-    "exactPadMeshTriangleContact": true,
-    "exactSelfIntersection": true,
-    "BlenderCyclesP05": true,
-    "P05EditableBlend": true,
-    "nativeThreeJs": true,
-    "GPUFPS": true
-  },
-  "ownerGate": "P05_FEMALE_POSE_OWNER_VISUAL_REVIEW_REQUIRED",
-  "runtimeCompatibility": "two static-pose meshes; animated UpperBodyBreath only; no armature IK",
-  "externalPaidCostVND": 0
+  "audit": {
+    "p04BaselineOwnerGLBExactSha": "586134fdeab962f35458c16255985513b070da47195110d3c83eef2dd9b6be09",
+    "independentlyImportedAllThreeRealGLBs": true,
+    "p04ComparedByExactMeshVertexAndFaceArrays": true,
+    "hairEyeBlushButtonsPlacketIdentical": true,
+    "bothP05PosesStaticLowerBodyAndPrayerGesture": true,
+    "keptSitIdleBytesEqualToP04": true,
+    "poseQualifiedIdleClipsAliasIdenticalSamples": true,
+    "lotusLeaf": "FROZEN_P02_UNCHANGED_NOT_PRESENT_LOCALLY",
+    "P04Cy c lesRepo": "REPORTS_EXISTED_NOT_INDEPENDENTLY_BYTE_AUDITED",
+    "P05BlenderCycles": "NOT_RUN",
+    "P05BlenderProject": "NOT_CREATED",
+    "P05OwnerVisual": "P05_FEMALE_POSE_OWNER_VISUAL_REVIEW_REQUIRED",
+    "nativeThreeJs": "NOT_RUN",
+    "gpuFPS": "NOT_RUN",
+    "collision": "ANALYTIC_PAD_AND_VERTEX_PROXIES_ONLY",
+    "externalPaidCostVND": 0
+  }
 }
