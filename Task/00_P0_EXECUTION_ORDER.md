@@ -1,5 +1,8 @@
 # P0 execution order — OnlinePagodaVer2
 
+> **ACTIVE AI VISUAL P0.5c — 2026-11-22:** Owner chose one small final prayer-palm polish: both female poses must show **palms actually facing and gently contacting one another**, not two broad palm faces held side by side. SA verified P0.5b actual GLB and selected Cycles evidence at PR #2 HEAD `4c8762912024866778dfe1f39f50ca77ccc26744`; new task **[AI_VISUAL_06](AI_VISUAL_06_FEMALE_PRAYER_PALM_ORIENTATION.md)** in immutable `p5c/`, A/B glTF+Cycles and measured contact. **Codex, male and merges are on hold** until SA review and explicit owner approval. Earlier P0.5b instructions below are previous stages only.
+
+
 > **ACTIVE ART TASK — P0.5b hands-only, 2026-11-22:** Owner feedback at P0.5: praying hands in both female poses need aesthetic improvement. SA's real GLB + Cycles review at PR #2 HEAD `a3673005d2c262bb8577c43335747e62d6dbce96` is **PARTIAL**, with hand ART blocker. Execute [AI_VISUAL_05](AI_VISUAL_05_FEMALE_PRAYER_HANDS_REFINEMENT.md) in new `p5b/`, keep P0.5 leg poses, leaf and female identity intact. **Codex and integration remain STOPPED; no male or merge.** The original schedule/parallel tasks below are superseded until owner accepts the female visual output.
 
 
