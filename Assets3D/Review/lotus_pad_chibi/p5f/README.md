@@ -11,3 +11,7 @@
 **Evidence:** local native VTK GLTF PBR re-import of real p05e/p05f GLBs plus frozen SHA-pinned real lotus was executed at same original owner `pair_side`, true front/quarter, new low-side, 720-like phone preview and five idle stages. Model diff is deliberately subtle and **actual P0.5f Cycles/Blender .blend NOT RUN/NOT CREATED in this AI container**. Windows starter ZIP (includes all three original GLBs) supplied to owner; run true Cycles on Windows before SA review and owner visual approval. Native Three.js/GPU/LIVE not tested.
 
 **STOP:** `P05F_FEMALE_CROSS_SEAT_CONTACT_OWNER_REVIEW_REQUIRED`. PR #2 Draft, no merge, no male, no Codex or integration. Paid-tool cost: 0 VND.
+
+## Reproducible Git checkout source (updated after initial handoff)
+
+**ALL FOUR original source scripts are now SHA-exact on PR**, as `P05F_CANONICAL_*.zlib.b64` (exporter, owner Blender Cycles, Windows runner, independent validator). See [P05F_SOURCE_REMOTE_AUDIT.md](P05F_SOURCE_REMOTE_AUDIT.md) for exact Git object SHA-1 and original Python/PS SHA256 and sizes. Run `py Assets3D/Review/lotus_pad_chibi/p5f/restore_p05f_toolchain.py` to materialize plain source; `py Assets3D/Review/lotus_pad_chibi/p5f/restore_p05f_source.py --build` checks the original P0.5e/pad SHA and reproduces 574608B GLB byte-for-byte in a temporary directory. This does NOT run Blender; old source/binary inputs remain immutable.
