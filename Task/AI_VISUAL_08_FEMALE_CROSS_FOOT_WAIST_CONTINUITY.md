@@ -1,5 +1,8 @@
 # AI VISUAL 08 — P0.5e Female Cross-Legged Instep & Waist Continuity Fix
 
+> **Successor AI_VISUAL_09 P0.5f — 2026-11-22:** Owner considers P0.5e foot and waist art broadly okay after actual owner Cycles upload (PR #2 HEAD `5118dbd532347103ec5e84e2a22b88f63617dda5`), but its SIDE still suggests the female cross-legged body sits a little above the lotus. New **[AI_VISUAL_09 Seat Contact](AI_VISUAL_09_FEMALE_CROSS_SEAT_CONTACT.md)** is the ONLY active micro-polish: diagnose actual torso/leg/lotus support or shading before correcting, with real GLB/Cycles five-idle-frame proof, preserve p5e untouched. No kneeling build, male, Codex or merge without SA + owner gate.
+
+
 **Issued by:** SA, 2026-11-22 | **Status:** ASSIGNED — TWO P0 ART BLOCKERS, FEMALE CROSS-LEGGED ONLY | **Owner gate:** OPEN
 
 **Mandatory Sakura sequence:** SA assigns task → AI Visual delivers genuine GLB + editable Blender source + real Cycles → SA independently reviews exact evidence on PR → owner approves → only then next phase. Follow Design/07_WORK_RULES.md and Design/15_AI_VISUAL_SAKURA_NEXT_PROMPT.md. This is the standalone executable task, NOT generic advice to “improve the feet” or to hide an error using a camera.
