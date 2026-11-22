@@ -1,0 +1,218 @@
+{
+  "revision": "P0.5b",
+  "assetId": "female_prayer_hands_refined",
+  "branch": "assets/lotus-pad-chibi-p0",
+  "pr": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2",
+  "saBaselineHead": "a3673005d2c262bb8577c43335747e62d6dbce96",
+  "task": "Task/AI_VISUAL_05_FEMALE_PRAYER_HANDS_REFINEMENT.md",
+  "saReview": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6009630175",
+  "outputFolder": "Assets3D/Review/lotus_pad_chibi/p5b/",
+  "poses": [
+    {
+      "poseId": "cross_prayer",
+      "orig": {
+        "sha256": "981ecf0b83378ce3fca7cd49db9473baac43238af3b5ee2fa857024ff66b57fd",
+        "bytes": 338176,
+        "triangles": 13262,
+        "vertices": 6855
+      },
+      "revised": {
+        "path": "Assets3D/Review/lotus_pad_chibi/p5b/meditator_female_cross_prayer_p05b.glb",
+        "sha256": "81e8548cf6e46d9f5ff60c7bdf342ac1857015140e7d06d67dbd9284054137fd",
+        "bytes": 424628,
+        "triangles": 16864,
+        "vertices": 8636,
+        "meshes": 9,
+        "materials": 21,
+        "textures": 0
+      },
+      "animationClips": [
+        "sit_idle",
+        "cross_prayer_idle"
+      ],
+      "originalP05Path": "Assets3D/Review/lotus_pad_chibi/p5/meditator_female_cross_prayer_p05.glb",
+      "revisedGitHubStatus": "pending_owner_upload",
+      "triangleDelta": 3602,
+      "byteDelta": 86452
+    },
+    {
+      "poseId": "kneel_prayer",
+      "orig": {
+        "sha256": "04a1d0e03e5186085118dd06d158dbba43e7180843895ed1661a03529040785e",
+        "bytes": 352636,
+        "triangles": 14190,
+        "vertices": 7319
+      },
+      "revised": {
+        "path": "Assets3D/Review/lotus_pad_chibi/p5b/meditator_female_kneel_prayer_p05b.glb",
+        "sha256": "533b84cba69332107ea25c57ed952b76c8276d4971a558496e4caf7aea400e9f",
+        "bytes": 439088,
+        "triangles": 17792,
+        "vertices": 9100,
+        "meshes": 9,
+        "materials": 21,
+        "textures": 0
+      },
+      "animationClips": [
+        "sit_idle",
+        "kneel_prayer_idle"
+      ],
+      "originalP05Path": "Assets3D/Review/lotus_pad_chibi/p5/meditator_female_kneel_prayer_p05.glb",
+      "revisedGitHubStatus": "pending_owner_upload",
+      "triangleDelta": 3602,
+      "byteDelta": 86452
+    }
+  ],
+  "source": {
+    "p05bGenerator": {
+      "file": "Assets3D/Review/lotus_pad_chibi/p5b/procedural_female_hands_p05b.py",
+      "gitBlobSHA1": "08ed3cec27d9989356804c0369fbdf53c693fc50",
+      "status": "uploaded_verified"
+    },
+    "originalP05Source": {
+      "file": "p05_source_frozen.py",
+      "sha256": "e6f7d06d3a3c78d055c6510d61d009a6bca877f03cd1c1323ee5602dcc633ad9",
+      "bytes": 10597,
+      "status": "recovered_local_pending_owner_upload"
+    },
+    "frozenP04Source": {
+      "file": "p04_source_frozen.py",
+      "sha256": "b3b8b0c5bb1f9730c426f9e4b2ce1485e0f4df9b45adffcb9300ac92348f8ad2",
+      "bytes": 16549,
+      "status": "recovered_local_pending_owner_upload"
+    },
+    "blenderPython": {
+      "file": "blender_p05b_cycles.py",
+      "bytes": 10839,
+      "sha256": "6e08af09de3daf5327c192d7cad0d616ed470b3f4f1086f05f958f1c9af9a202",
+      "status": "pending_owner_upload"
+    },
+    "windowsRunner": {
+      "file": "run_p05b_blender.ps1",
+      "bytes": 5451,
+      "sha256": "0a8cb44f1c1ac6212fba8c127524935198369f7eb4cac726844cde37eb7330f0",
+      "status": "pending_owner_upload"
+    }
+  },
+  "immutableLotus": {
+    "path": "Assets3D/Review/lotus_pad_chibi/p3/lotus_pad_01.glb",
+    "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+  },
+  "geometryDiff": {
+    "identicalMeshCount": 7,
+    "totalMeshCount": 9,
+    "unchangedMeshNames": [
+      "ao_ba_ba_pants_SeatRoot_mesh",
+      "sandal_trim_SeatRoot_mesh",
+      "ao_ba_ba_placket_UpperBodyBreath_mesh",
+      "ao_ba_ba_buttons_UpperBodyBreath_mesh",
+      "hair_blue_black_UpperBodyBreath_mesh",
+      "eyes_mauve_UpperBodyBreath_mesh",
+      "skin_blush_UpperBodyBreath_mesh"
+    ],
+    "modified": [
+      "skin_rose_cream_UpperBodyBreath_mesh",
+      "ao_ba_ba_top_UpperBodyBreath_mesh"
+    ],
+    "allNonHairMaterialsUnchanged": true,
+    "nonHandFaceVerticesYAbove07Identical": true,
+    "sleeveCuffRadiiOnly": [
+      {
+        "old": 0.048,
+        "new": 0.046
+      },
+      {
+        "old": 0.041,
+        "new": 0.036
+      }
+    ]
+  },
+  "handSurface": {
+    "perHandConnectedComponents": 1,
+    "watertight": true,
+    "windingConsistent": true,
+    "nearestVertexSeparationMm": 2.0667,
+    "approxCenterPlaneGapMm": 2.0613,
+    "exactMeshCollision": "NOT_RUN_PROXIES_ONLY"
+  },
+  "pbrEvidence": {
+    "engine": "VTK GLB Native PBR",
+    "status": "EXECUTED_ACTUAL_EXPORTED_GLB_IMPORT",
+    "views": [
+      "front_macro",
+      "side_macro",
+      "left_right_quarter",
+      "torso",
+      "9x16_medium_close",
+      "five_idle_time_samples"
+    ],
+    "binaryMediaGitHub": "pending_owner_upload"
+  },
+  "colors": {
+    "extension": "KHR_materials_variants",
+    "names": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "slots": [
+      "ao_ba_ba_top",
+      "ao_ba_ba_pants"
+    ],
+    "duplicatedGeometry": false,
+    "unchangedMappings": true
+  },
+  "anchors": {
+    "SeatRoot": [
+      0,
+      0,
+      0
+    ],
+    "HeadAnchor": [
+      0,
+      0.835,
+      0.04
+    ],
+    "NameplateAnchor": [
+      0,
+      1.335,
+      0.03
+    ],
+    "FXAnchor": [
+      0.37,
+      0.805,
+      0.16
+    ]
+  },
+  "animation": {
+    "durationSeconds": 2,
+    "keyframes": 17,
+    "existingAnimationTimeAndValueArraysExact": true,
+    "clipNamesByPose": {
+      "cross_prayer": [
+        "sit_idle",
+        "cross_prayer_idle"
+      ],
+      "kneel_prayer": [
+        "sit_idle",
+        "kneel_prayer_idle"
+      ]
+    }
+  },
+  "blender": {
+    "version": "NOT_EXECUTED_IN_AI_CONTAINER",
+    "ownerWindowsRunner": "run_p05b_blender.ps1",
+    "newCycleShots": "PENDING_OWNER_EXECUTION",
+    "newEditableBlendFiles": "NOT_CREATED",
+    "originalP05OwnerCycles": "SA_VERIFIED_8_CASE_LOGS_AND_SELECTED_HAND_SHOT_SHA"
+  },
+  "nativeThreeJS": "NOT_RUN",
+  "gpuLiveStudio": "NOT_RUN",
+  "externalPaidCostVND": 0,
+  "status": "P05B_FEMALE_HAND_ART_OWNER_REVIEW_REQUIRED",
+  "productionApproved": false,
+  "stop": "No male, Codex, integration or merge"
+}
