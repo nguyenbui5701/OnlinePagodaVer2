@@ -1,5 +1,8 @@
 # AI VISUAL 07 — P0.5d Female Cross-Legged Foot Visibility Micro-Polish
 
+> **Successor AI_VISUAL_08 P0.5e — 2026-11-22:** Owner rejected P0.5d visual (detached-looking foot capsule and inherited waist/hip gap). SA confirmed genuine P0.5d Cycles and GLB plus a 14.49–30.49mm animated vertical gap: [PR #2 review #6010466650](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6010466650). P0.5d stays immutable as baseline/evidence; active corrective [AI_VISUAL_08 P0.5e](AI_VISUAL_08_FEMALE_CROSS_FOOT_WAIST_CONTINUITY.md) in new versioned p5e/. No male, Codex or merge.
+
+
 **SA issued:** 2026-11-22. **Status:** ASSIGNED — FEMALE CROSS-LEGGED POSE ONLY. **Owner:** overall female P0.5c art temporarily accepted; one remaining small foot visibility refinement.
 
 **Mandatory workflow: SA assigns an independent versioned task → AI Visual produces real editable Blender source + GLB + Cycles → SA verifies actual artifacts on PR → owner approves → only then next phase.** Follow Design/07_WORK_RULES.md and the phase/evidence structure in Design/15_AI_VISUAL_SAKURA_NEXT_PROMPT.md. This is the full authoritative standalone assignment, not a vague instruction to “make the feet prettier”.
