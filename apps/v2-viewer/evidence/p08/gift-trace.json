@@ -1,0 +1,910 @@
+[
+  {
+    "atMs": 46000,
+    "state": {
+      "version": "0.1.0",
+      "revision": 922,
+      "atMs": 46000,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 0,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 922,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_TRANSITION",
+        "pendingGivers": 0,
+        "activeActorId": "demo-1-actor-1",
+        "activeRequestId": "demo-1-gift-1"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 0,
+        "confirmation": "observed",
+        "firstSeenAtMs": 46000,
+        "expiresAtMs": 136000
+      }
+    },
+    "effects": [
+      {
+        "type": "giftFx",
+        "atMs": 46000,
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "displayName": "An",
+        "giftId": "rose",
+        "confirmation": "observed",
+        "giftCount": 0,
+        "anchor": "giftFx",
+        "dedicatedFocus": true
+      }
+    ],
+    "disposition": "accepted"
+  },
+  {
+    "atMs": 46000,
+    "state": {
+      "version": "0.1.0",
+      "revision": 922,
+      "atMs": 46000,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 0,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 922,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_TRANSITION",
+        "pendingGivers": 0,
+        "activeActorId": "demo-1-actor-1",
+        "activeRequestId": "demo-1-gift-1"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 0,
+        "confirmation": "observed",
+        "firstSeenAtMs": 46000,
+        "expiresAtMs": 136000
+      }
+    },
+    "effects": [],
+    "disposition": "duplicate"
+  },
+  {
+    "atMs": 46050,
+    "state": {
+      "version": "0.1.0",
+      "revision": 924,
+      "atMs": 46050,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 0,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 922,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_TRANSITION",
+        "pendingGivers": 0,
+        "activeActorId": "demo-1-actor-1",
+        "activeRequestId": "demo-1-gift-1"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 0,
+        "confirmation": "observed",
+        "firstSeenAtMs": 46000,
+        "expiresAtMs": 136000
+      }
+    },
+    "effects": [],
+    "disposition": "accepted"
+  },
+  {
+    "atMs": 46100,
+    "state": {
+      "version": "0.1.0",
+      "revision": 926,
+      "atMs": 46100,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 0,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 922,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_TRANSITION",
+        "pendingGivers": 0,
+        "activeActorId": "demo-1-actor-1",
+        "activeRequestId": "demo-1-gift-1"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 0,
+        "confirmation": "observed",
+        "firstSeenAtMs": 46000,
+        "expiresAtMs": 136000
+      }
+    },
+    "effects": [],
+    "disposition": "accepted"
+  },
+  {
+    "atMs": 46150,
+    "state": {
+      "version": "0.1.0",
+      "revision": 928,
+      "atMs": 46150,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 0,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 922,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_TRANSITION",
+        "pendingGivers": 0,
+        "activeActorId": "demo-1-actor-1",
+        "activeRequestId": "demo-1-gift-1"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 0,
+        "confirmation": "observed",
+        "firstSeenAtMs": 46000,
+        "expiresAtMs": 136000
+      }
+    },
+    "effects": [],
+    "disposition": "accepted"
+  },
+  {
+    "atMs": 46200,
+    "state": {
+      "version": "0.1.0",
+      "revision": 930,
+      "atMs": 46200,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 0,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 922,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_TRANSITION",
+        "pendingGivers": 0,
+        "activeActorId": "demo-1-actor-1",
+        "activeRequestId": "demo-1-gift-1"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 0,
+        "confirmation": "observed",
+        "firstSeenAtMs": 46000,
+        "expiresAtMs": 136000
+      }
+    },
+    "effects": [],
+    "disposition": "accepted"
+  },
+  {
+    "atMs": 46300,
+    "state": {
+      "version": "0.1.0",
+      "revision": 933,
+      "atMs": 46300,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 5,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 933,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_TRANSITION",
+        "pendingGivers": 0,
+        "activeActorId": "demo-1-actor-1",
+        "activeRequestId": "demo-1-gift-1"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 5,
+        "confirmation": "confirmed",
+        "firstSeenAtMs": 46000,
+        "expiresAtMs": 136000
+      }
+    },
+    "effects": [
+      {
+        "type": "giftFx",
+        "atMs": 46300,
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "displayName": "An",
+        "giftId": "rose",
+        "confirmation": "confirmed",
+        "giftCount": 5,
+        "anchor": "giftFx",
+        "dedicatedFocus": true
+      }
+    ],
+    "disposition": "accepted"
+  },
+  {
+    "atMs": 46300,
+    "state": {
+      "version": "0.1.0",
+      "revision": 933,
+      "atMs": 46300,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 5,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 933,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_TRANSITION",
+        "pendingGivers": 0,
+        "activeActorId": "demo-1-actor-1",
+        "activeRequestId": "demo-1-gift-1"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 5,
+        "confirmation": "confirmed",
+        "firstSeenAtMs": 46000,
+        "expiresAtMs": 136000
+      }
+    },
+    "effects": [],
+    "disposition": "duplicate"
+  },
+  {
+    "atMs": 46305,
+    "state": {
+      "version": "0.1.0",
+      "revision": 933,
+      "atMs": 46300,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 5,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 933,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_TRANSITION",
+        "pendingGivers": 0,
+        "activeActorId": "demo-1-actor-1",
+        "activeRequestId": "demo-1-gift-1"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 5,
+        "confirmation": "confirmed",
+        "firstSeenAtMs": 46000,
+        "expiresAtMs": 136000
+      }
+    },
+    "effects": [],
+    "disposition": "duplicate"
+  },
+  {
+    "atMs": 47050,
+    "state": {
+      "version": "0.1.0",
+      "revision": 948,
+      "atMs": 47050,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 5,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 933,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_FOCUS",
+        "pendingGivers": 0,
+        "activeActorId": "demo-1-actor-1",
+        "activeRequestId": "demo-1-gift-1"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 5,
+        "confirmation": "confirmed",
+        "firstSeenAtMs": 46000,
+        "expiresAtMs": 136000
+      }
+    },
+    "effects": [
+      {
+        "type": "focusStarted",
+        "atMs": 47050,
+        "intent": {
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "roomSessionId": "demo-1",
+          "giftId": "rose",
+          "giftCount": 5,
+          "confirmation": "confirmed",
+          "firstSeenAtMs": 46000,
+          "expiresAtMs": 136000
+        }
+      }
+    ]
+  },
+  {
+    "atMs": 48003,
+    "state": {
+      "version": "0.1.0",
+      "revision": 969,
+      "atMs": 48003,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 6,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 933,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "visible": true,
+          "revision": 969,
+          "displayName": "Bình",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_FOCUS",
+        "pendingGivers": 1,
+        "activeActorId": "demo-1-actor-1",
+        "activeRequestId": "demo-1-gift-1"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 5,
+        "confirmation": "confirmed",
+        "firstSeenAtMs": 46000,
+        "expiresAtMs": 136000
+      }
+    },
+    "effects": [
+      {
+        "type": "giftFx",
+        "atMs": 48003,
+        "requestId": "demo-1-gift-2",
+        "actorId": "demo-1-actor-2",
+        "displayName": "Bình",
+        "giftId": "rose",
+        "confirmation": "confirmed",
+        "giftCount": 1,
+        "anchor": "giftFx",
+        "dedicatedFocus": true
+      }
+    ],
+    "disposition": "accepted"
+  },
+  {
+    "atMs": 48108,
+    "state": {
+      "version": "0.1.0",
+      "revision": 973,
+      "atMs": 48108,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 7,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 933,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "visible": true,
+          "revision": 969,
+          "displayName": "Bình",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "visible": true,
+          "revision": 973,
+          "displayName": "Chi",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_FOCUS",
+        "pendingGivers": 2,
+        "activeActorId": "demo-1-actor-1",
+        "activeRequestId": "demo-1-gift-1"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-1",
+        "actorId": "demo-1-actor-1",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 5,
+        "confirmation": "confirmed",
+        "firstSeenAtMs": 46000,
+        "expiresAtMs": 136000
+      }
+    },
+    "effects": [
+      {
+        "type": "giftFx",
+        "atMs": 48108,
+        "requestId": "demo-1-gift-3",
+        "actorId": "demo-1-actor-3",
+        "displayName": "Chi",
+        "giftId": "rose",
+        "confirmation": "confirmed",
+        "giftCount": 1,
+        "anchor": "giftFx",
+        "dedicatedFocus": true
+      }
+    ],
+    "disposition": "accepted"
+  },
+  {
+    "atMs": 51850,
+    "state": {
+      "version": "0.1.0",
+      "revision": 1048,
+      "atMs": 51850,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 7,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 933,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "visible": true,
+          "revision": 969,
+          "displayName": "Bình",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "visible": true,
+          "revision": 973,
+          "displayName": "Chi",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_TRANSITION",
+        "pendingGivers": 1,
+        "activeActorId": "demo-1-actor-2",
+        "activeRequestId": "demo-1-gift-2"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-2",
+        "actorId": "demo-1-actor-2",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 1,
+        "confirmation": "confirmed",
+        "firstSeenAtMs": 48003,
+        "expiresAtMs": 138003
+      }
+    },
+    "effects": [
+      {
+        "type": "focusEnded",
+        "atMs": 51850,
+        "intent": {
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "roomSessionId": "demo-1",
+          "giftId": "rose",
+          "giftCount": 5,
+          "confirmation": "confirmed",
+          "firstSeenAtMs": 46000,
+          "expiresAtMs": 136000
+        }
+      }
+    ]
+  },
+  {
+    "atMs": 52900,
+    "state": {
+      "version": "0.1.0",
+      "revision": 1069,
+      "atMs": 52900,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 7,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 933,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "visible": true,
+          "revision": 969,
+          "displayName": "Bình",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "visible": true,
+          "revision": 973,
+          "displayName": "Chi",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_FOCUS",
+        "pendingGivers": 1,
+        "activeActorId": "demo-1-actor-2",
+        "activeRequestId": "demo-1-gift-2"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-2",
+        "actorId": "demo-1-actor-2",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 1,
+        "confirmation": "confirmed",
+        "firstSeenAtMs": 48003,
+        "expiresAtMs": 138003
+      }
+    },
+    "effects": [
+      {
+        "type": "focusStarted",
+        "atMs": 52900,
+        "intent": {
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "roomSessionId": "demo-1",
+          "giftId": "rose",
+          "giftCount": 1,
+          "confirmation": "confirmed",
+          "firstSeenAtMs": 48003,
+          "expiresAtMs": 138003
+        }
+      }
+    ]
+  },
+  {
+    "atMs": 57700,
+    "state": {
+      "version": "0.1.0",
+      "revision": 1165,
+      "atMs": 57700,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 7,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 933,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "visible": true,
+          "revision": 969,
+          "displayName": "Bình",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "visible": true,
+          "revision": 973,
+          "displayName": "Chi",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_TRANSITION",
+        "pendingGivers": 0,
+        "activeActorId": "demo-1-actor-3",
+        "activeRequestId": "demo-1-gift-3"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-3",
+        "actorId": "demo-1-actor-3",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 1,
+        "confirmation": "confirmed",
+        "firstSeenAtMs": 48108,
+        "expiresAtMs": 138108
+      }
+    },
+    "effects": [
+      {
+        "type": "focusEnded",
+        "atMs": 57700,
+        "intent": {
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "roomSessionId": "demo-1",
+          "giftId": "rose",
+          "giftCount": 1,
+          "confirmation": "confirmed",
+          "firstSeenAtMs": 48003,
+          "expiresAtMs": 138003
+        }
+      }
+    ]
+  },
+  {
+    "atMs": 58750,
+    "state": {
+      "version": "0.1.0",
+      "revision": 1186,
+      "atMs": 58750,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 7,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 933,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "visible": true,
+          "revision": 969,
+          "displayName": "Bình",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "visible": true,
+          "revision": 973,
+          "displayName": "Chi",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "GIFT_FOCUS",
+        "pendingGivers": 0,
+        "activeActorId": "demo-1-actor-3",
+        "activeRequestId": "demo-1-gift-3"
+      },
+      "focus": {
+        "requestId": "demo-1-gift-3",
+        "actorId": "demo-1-actor-3",
+        "roomSessionId": "demo-1",
+        "giftId": "rose",
+        "giftCount": 1,
+        "confirmation": "confirmed",
+        "firstSeenAtMs": 48108,
+        "expiresAtMs": 138108
+      }
+    },
+    "effects": [
+      {
+        "type": "focusStarted",
+        "atMs": 58750,
+        "intent": {
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "roomSessionId": "demo-1",
+          "giftId": "rose",
+          "giftCount": 1,
+          "confirmation": "confirmed",
+          "firstSeenAtMs": 48108,
+          "expiresAtMs": 138108
+        }
+      }
+    ]
+  },
+  {
+    "atMs": 63550,
+    "state": {
+      "version": "0.1.0",
+      "revision": 1282,
+      "atMs": 63550,
+      "roomSessionId": "demo-1",
+      "connected": true,
+      "viewerCount": 0,
+      "confirmedGiftCount": 7,
+      "avatars": [
+        {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "visible": true,
+          "revision": 933,
+          "displayName": "An",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "visible": true,
+          "revision": 969,
+          "displayName": "Bình",
+          "appearanceVariant": "meditator_base"
+        },
+        {
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "visible": true,
+          "revision": 973,
+          "displayName": "Chi",
+          "appearanceVariant": "meditator_base"
+        }
+      ],
+      "camera": {
+        "mode": "CINE_RETURN",
+        "pendingGivers": 0
+      }
+    },
+    "effects": [
+      {
+        "type": "focusEnded",
+        "atMs": 63550,
+        "intent": {
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "roomSessionId": "demo-1",
+          "giftId": "rose",
+          "giftCount": 1,
+          "confirmation": "confirmed",
+          "firstSeenAtMs": 48108,
+          "expiresAtMs": 138108
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "version": "0.1.0",
+  "world": { "up": "+Y", "actorForward": "+Z", "metersPerUnit": 1, "waterY": 0 },
+  "sources": {
+    "sakura": { "ref": "refs/pull/1/head", "commit": "d9dbeb6a81d1e667d471b8f62910829bb1ce2bd9" },
+    "pair": { "ref": "refs/pull/2/head", "commit": "ce0db947e5e9ea4c6214bc900b0cdd9c6a83cced" }
+  },
+  "pair": {
+    "pad": {
+      "assetId": "lotus_pad_01", "revision": "P02", "file": "lotus_pad_01.glb",
+      "path": "Assets3D/Review/lotus_pad_chibi/p5f/p02_baseline/lotus_pad_01.glb",
+      "bytes": 262108, "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+      "meshes": 5, "materials": 5, "animations": [], "materialVariants": [],
+      "anchors": ["SeatRoot", "PadSeatAnchor"], "padSeatAnchor": [0, 0.195, 0]
+    },
+    "actor": {
+      "assetId": "meditator_base", "revision": "P07b1 cross prayer Side Part 7/3",
+      "file": "meditator_male_cross_prayer_sidepart73_p07b1.glb",
+      "path": "Assets3D/Review/lotus_pad_chibi/p7b1/meditator_male_cross_prayer_sidepart73_p07b1.glb",
+      "bytes": 589932, "sha256": "4e8c8d082352d67d0eaf637df7973931442c724a0f7db598ea8fde8de3873097",
+      "meshes": 10, "materials": 21, "triangles": 17420, "animations": ["sit_idle", "cross_prayer_idle"],
+      "idleDuration": 2, "idleSamples": 17,
+      "anchors": ["SeatRoot", "HeadAnchor", "NameplateAnchor", "FXAnchor", "UpperBodyBreath"],
+      "materialVariants": ["pastel_lilac", "blush_rose", "sage_green", "sky_blue", "warm_cream", "terracotta"]
+    }
+  }
+}

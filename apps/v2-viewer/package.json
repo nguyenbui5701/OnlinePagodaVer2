@@ -1,0 +1,24 @@
+{
+  "name": "@online-pagoda/v2-viewer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "assets": "node scripts/prepare-assets.mjs",
+    "assets:p08": "node scripts/stage-p08.mjs",
+    "dev": "vite --host 127.0.0.1",
+    "test": "node --test",
+    "build": "tsc --noEmit && vite build",
+    "evidence": "node scripts/evidence.mjs",
+    "evidence:p08": "node scripts/evidence-p08.mjs"
+  },
+  "dependencies": { "three": "0.181.2" },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/three": "0.181.0",
+    "playwright-core": "1.56.1",
+    "typescript": "5.9.3",
+    "vite": "7.2.2"
+  }
+}
