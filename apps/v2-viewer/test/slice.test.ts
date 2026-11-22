@@ -3,7 +3,8 @@ import test from 'node:test';
 import { Vector3 } from 'three';
 import { DemoEngine } from '../../../packages/v2-events/src/engine.ts';
 import { gift, session } from '../../../packages/v2-events/src/fixture.ts';
-import { SliceCamera, sliceCinematic } from '../src/slice-camera.ts';
+import { createCinematicRoutes } from '../src/camera.ts';
+import { SliceCamera } from '../src/slice-camera.ts';
 import { SceneObserver, SliceDriver } from '../src/slice-driver.ts';
 
 test('v0.1.0 serialized snapshots resolve exact actor/seat and reject stale room/revision', () => {
@@ -51,7 +52,8 @@ test('integrated controller counts final gifts once, focuses A/B/C, and reports 
 test('renderer camera starts each handoff at the prior pose and reaches the current cinematic on return', () => {
   const director = new SliceCamera();
   const demo = new SliceDriver('gifts');
-  const close = { position: new Vector3(2, 1.3, 17.5), target: new Vector3(2, 0.8, 13.5), fov: 42 };
+  const close = { position: new Vector3(0.47, 1.4, 8.7), target: new Vector3(2, 0.97, 13.5), fov: 48 };
+  const routes = createCinematicRoutes(close, new Vector3(), 9);
   const targets = [2, -1.4, 4.8];
   let previous;
   let previousId;
@@ -60,9 +62,9 @@ test('renderer camera starts each handoff at the prior pose and reaches the curr
     const { state, actor } = demo.update(at);
     const x = actor ? targets[Number(actor.seatId.at(-1)) - 1] : undefined;
     const focus = x !== undefined && state.focus ? { requestId: state.focus.requestId, pose: {
-      ...close, position: new Vector3(x, 1.4, 17), target: new Vector3(x, 0.9, 13),
+      ...close, position: new Vector3(x, 1.4, 8), target: new Vector3(x, 0.9, 13),
     } } : undefined;
-    const cinematic = sliceCinematic(director.routeSeconds(at, focus?.requestId), close);
+    const cinematic = routes.sample(director.routeSeconds(at, focus?.requestId));
     const pose = director.move(at, cinematic, focus);
     if (previous && focus?.requestId !== previousId) {
       handoffs++;
@@ -73,6 +75,6 @@ test('renderer camera starts each handoff at the prior pose and reaches the curr
     previousId = focus?.requestId;
   }
   assert.equal(handoffs, 4);
-  const cinematic = sliceCinematic(director.routeSeconds(66500), close);
+  const cinematic = routes.sample(director.routeSeconds(66500));
   assert.deepEqual(director.move(66500, cinematic), cinematic);
 });
