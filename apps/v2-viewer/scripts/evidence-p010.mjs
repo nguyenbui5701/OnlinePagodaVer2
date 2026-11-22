@@ -161,11 +161,7 @@ try {
   await write('baseline.json', before);
   if (baselineOnly) console.log(`Captured baseline ${before.source} in ${output}`);
   else {
-    const after = await serverAt(app, 4181, async url => {
-      const data = await sample(url, 'after');
-      await regressions(url);
-      return data;
-    });
+    const after = await serverAt(app, 4181, url => sample(url, 'after'));
     for (const key of Object.keys(before.snapshots)) {
       const a = after.snapshots[key];
       const b = before.snapshots[key];
@@ -177,6 +173,7 @@ try {
       ['fps', 'p50ms', 'p95ms', 'p99ms', 'drawCalls', 'triangles', 'textures', 'geometries', 'points'].map(field =>
         [field, after.metrics[profile][field] - before.metrics[profile][field]]))]));
     await write('browser-report.json', after);
+    await serverAt(app, 4181, regressions);
     await writeFile(join(output, 'asset-verification.jsonl'), execFileSync(process.execPath, ['scripts/stage-p08.mjs']));
     console.log('P0.10 matched native browser review and regressions completed.');
   }
@@ -273,20 +270,26 @@ async function regressions(base) {
     assert.deepEqual(restored.fx.starts, preLoss.fx.starts);
     assert.equal(restored.fx.gift.requestId, preLoss.fx.gift.requestId);
     assert.equal(restored.drawCalls, preLoss.drawCalls);
+    assert.equal(restored.fx.poolId, preLoss.fx.poolId);
+    assert.equal(restored.fx.materialId, preLoss.fx.materialId);
     assert.deepEqual(pageErrors, []);
     await write('context-cycle.json', { before: preLoss.fx, restored: restored.fx, errors: restored.errors,
       drawCalls: restored.drawCalls, geometries: restored.geometries, textures: restored.textures,
       contextRestores: restored.contextRestores });
     await inspect(page, base, 'eco', 'gifts');
+    const warmed = await advance(page, 12);
+    const maximumSceneGeometries = warmed.asset.meshes + warmed.pair.pad.meshes + warmed.pair.actor.meshes + 3;
     const samples = [];
     for (const time of [47.72, 53.65, 59.48, 64.32, 66]) {
       const frame = await advance(page, time);
       samples.push({ time, drawCalls: frame.drawCalls, geometries: frame.geometries, textures: frame.textures,
-        points: frame.pointsDrawn, giftCapacity: frame.fx.capacity, ledgerSize: frame.fx.ledgerSize });
+        points: frame.pointsDrawn, giftCapacity: frame.fx.capacity, ledgerSize: frame.fx.ledgerSize,
+        poolId: frame.fx.poolId, materialId: frame.fx.materialId });
     }
-    assert.ok(samples.every(frame => frame.geometries === samples[0].geometries &&
-      frame.textures === samples[0].textures && frame.giftCapacity === 19));
-    await write('pool-samples.json', samples);
+    await write('pool-samples.json', { maximumSceneGeometries, samples });
+    assert.ok(samples.every(frame => frame.geometries <= maximumSceneGeometries &&
+      frame.poolId === samples[0].poolId && frame.materialId === samples[0].materialId &&
+      frame.textures === samples[0].textures && frame.giftCapacity === 19), JSON.stringify(samples));
 
     await page.goto(`${base}/?seed=9&clean=1&demo=gifts`);
     await page.waitForFunction(() => window.viewerReport.drawCalls > 0);
