@@ -14,6 +14,8 @@ import trimesh
 
 ROOT=Path(__file__).resolve().parent
 OLD=ROOT/'p05c_baseline/meditator_female_cross_prayer_p05c.glb'
+if not OLD.is_file():
+    OLD=ROOT.parent/'p5c/meditator_female_cross_prayer_p05c.glb'  # exact PR checkout layout
 NEW=ROOT/'meditator_female_cross_prayer_p05d.glb'
 BASE_SHA='1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf'
 POSE='cross_prayer'
