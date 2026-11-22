@@ -1,5 +1,8 @@
 # AI VISUAL 06 — P0.5c Female Prayer Palm-to-Palm Orientation & Contact Refinement
 
+> **Successor P0.5d foot-only polish — 2026-11-22:** SA inspected owner-uploaded P0.5c real GLBs and Cycles and posted [review #6010091090](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6010091090); owner **temporarily accepts P0.5c female hand/body art**. New and only active [AI_VISUAL_07](AI_VISUAL_07_FEMALE_CROSS_LEGGED_FOOT_VISIBILITY.md) asks for a tiny visible foot/instep in **cross-legged** pose; **do not modify P0.5c palms or kneeling**. Full clean-room source handoff of P0.5c is still a separate technical item. No male/Codex/merge until owner gate.
+
+
 **SA issued:** 2026-11-22 · **Owner decision:** one more *small* female prayer-hand art pass · **State:** ASSIGNED / FEMALE VISUAL OWNER GATE OPEN.
 
 **Follow the successful Sakura process, with no shortcuts: SA task → AI Visual genuine, editable 3D + two GLBs + Blender Cycles → SA independent GLB/Cycles/PR review → owner visual OK → only then next phase.** This is the authoritative versioned task; follow [Design/07 Rules](../Design/07_WORK_RULES.md) and [Design/15 Sakura prompt exemplar](../Design/15_AI_VISUAL_SAKURA_NEXT_PROMPT.md). Do NOT treat a conceptual image, render-only screenshot or prose summary as a tested 3D deliverable.
