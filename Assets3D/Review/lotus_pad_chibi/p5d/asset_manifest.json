@@ -10,9 +10,11 @@
     "testedCleanFolder": true,
     "baselineInputSha256": "1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf",
     "outputSha256": "0f169e427cc70bc0b5b744db935c4de4ecac356ef3fc8a1113812a5bf0780e44",
-    "sourceGitBlobSha": "31794d5028572b618bdb37a74ab3975708082e61",
+    "sourceGitBlobSha": "9cd65fbb4bc1a6e8b4978086d4789ac79103f6ea",
     "onlyRequiresOriginalP05cBinaryNumpyTrimesh": true,
-    "p05cOriginalSourceCheckout": "HISTORICALLY_BLOCKED_MISSING_P04_P05_SOURCE"
+    "p05cOriginalSourceCheckout": "HISTORICALLY_BLOCKED_MISSING_P04_P05_SOURCE",
+    "sourceSha256": "ff6dd5e17efdcc7875b4ab080efb3ad369e4fc34a67cf6041b3d26a0600cb638",
+    "checkoutFallbackSourcePath": "../p5c/meditator_female_cross_prayer_p05c.glb"
   },
   "original": {
     "cross": {
