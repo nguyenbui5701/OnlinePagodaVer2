@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OnlinePagoda V2 · Sakura R16</title>
+  </head>
+  <body>
+    <main>
+      <div id="stage">
+        <canvas id="capture" width="720" height="1280" aria-label="Cảnh 3D Sakura R16"></canvas>
+        <p id="status" role="status" aria-live="polite">Đang tải Sakura R16…</p>
+      </div>
+      <aside>
+        <h1>Sakura R16</h1>
+        <nav aria-label="Cấu hình hiển thị">
+          <a href="?profile=eco">ECO</a>
+          <a href="?profile=quality">QUALITY</a>
+          <a href="?clean=1">Capture ECO</a>
+          <a href="?profile=quality&amp;clean=1">Capture QUALITY</a>
+        </nav>
+        <pre id="diagnostics"></pre>
+      </aside>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

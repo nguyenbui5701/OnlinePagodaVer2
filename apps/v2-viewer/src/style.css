@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #171322; color: #f7e9f0; font: 15px/1.5 system-ui, sans-serif; }
+main { display: flex; justify-content: center; gap: 24px; padding: 16px; }
+#stage { position: relative; flex: none; width: min(100%, 480px, calc((100dvh - 32px) * 9 / 16)); }
+canvas { display: block; width: 100%; height: auto; background: #292239; }
+#status { position: absolute; inset: auto 12px 10px; margin: 0; padding: 10px; background: #171322ed; overflow-wrap: anywhere; }
+aside { min-width: 0; max-width: 32rem; }
+h1 { margin: 0 0 8px; font-size: 24px; }
+nav { display: flex; flex-wrap: wrap; gap: 12px; }
+a { color: #ffc7de; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.clean main { padding: 0; }
+.clean #stage { width: min(100%, calc(100dvh * 9 / 16)); }
+.clean aside { display: none; }
+@media (max-width: 760px) { main { align-items: center; flex-direction: column; } }

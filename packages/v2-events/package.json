@@ -1,0 +1,14 @@
+{
+  "name": "@online-pagoda/v2-events",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/engine.ts",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "demo": "node src/demo.ts",
+    "test": "node --test",
+    "build": "tsc --noEmit"
+  },
+  "devDependencies": { "typescript": "5.9.3", "@types/node": "24.10.1" }
+}
