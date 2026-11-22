@@ -1,5 +1,8 @@
 # 16 — P0 design approval, R16 Sakura freeze and implementation handoff
 
+> **P0.5d final cross-foot owner gate — 2026-11-22:** After SA verified P0.5c real GLB and Blender Cycles in [PR #2 review #6010091090](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6010091090), the owner **temporarily accepts female P0.5c art**, except the cross-legged trousers/legs hide the feet; asks for only a **small believable exposed instep / foot tip**. Current active task **[AI_VISUAL_07](../Task/AI_VISUAL_07_FEMALE_CROSS_LEGGED_FOOT_VISIBILITY.md)**, new p5d/ version on PR #2. **P0.5c palms, kneeling GLB, apparel, hair, six colors, lotus, animation and anchors remain frozen.** SA validates new GLB + real Cycles and owner decides. No male, Codex, integration or merge during the gate.
+
+
 > **P0.5c owner-selected hand gesture gate — 2026-11-22:** Owner explicitly requests **one additional, tightly scoped pass** to orient the **two female prayer palms toward each other** and make their gentle contact look natural, after SA's review of P0.5b PR #2 HEAD `4c8762912024866778dfe1f39f50ca77ccc26744` ([review #6009865513](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6009865513)). **Current active task:** [AI_VISUAL_06 — P0.5c Female Prayer Palm Orientation](../Task/AI_VISUAL_06_FEMALE_PRAYER_PALM_ORIENTATION.md), new immutable `p5c/`. Preserve `p5b/`, both leg poses, áo bà ba, hair, palettes, anchors, animations and frozen lotus. **SA review and explicit owner female approval required; no male, Codex #3/#4, integration, GPU/LIVE or PR merge.** Previous tasks below are historical, not concurrently active.
 
 
