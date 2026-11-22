@@ -1,0 +1,140 @@
+{
+  "revision": "P0.7a",
+  "assetScope": "ADD-ONLY undercut variant; owner-approved P06c remains unchanged and is not replaced",
+  "baselineHead": "91bbfd5fa2a98894a096d7a60426ca62fe720c96",
+  "pr": 2,
+  "branch": "assets/lotus-pad-chibi-p0",
+  "task": "Task/AI_VISUAL_13_MALE_UNDERCUT_VARIANT_P07A.md",
+  "versionedFolder": "Assets3D/Review/lotus_pad_chibi/p7a/",
+  "assets": [
+    {
+      "pose": "cross",
+      "name": "meditator_male_cross_prayer_undercut_p07a.glb",
+      "base": "meditator_male_cross_prayer_p06c.glb",
+      "oldHash": "c9d1513bad21398fd776776cad97791cfa76a591d641838f885596d13f120ea4",
+      "hash": "72c407bf3b6ae8a6edc8ed9a0e544168db7edcac379a8ea92b9677cceed00107",
+      "oldBytes": 589656,
+      "bytes": 590124,
+      "triangles": 18380,
+      "vertices": 9469,
+      "meshes": 10,
+      "path": "Assets3D/Review/lotus_pad_chibi/p7a/meditator_male_cross_prayer_undercut_p07a.glb",
+      "type": "glTF 2.0 real binary",
+      "status": "UPLOADED_REAL_GLB",
+      "source": "P06c, exact SHA verified",
+      "animationKeys": 17,
+      "animationSeconds": 2,
+      "materialCount": 21
+    },
+    {
+      "pose": "kneel",
+      "name": "meditator_male_kneel_prayer_undercut_p07a.glb",
+      "base": "meditator_male_kneel_prayer_p06c.glb",
+      "oldHash": "38e47f84b6b4f8987a47b39e791aaa06c3fed2d4d03e11e55fc72f0ef926c4ad",
+      "hash": "e7f86beb4cd43f899c57922c0e34c94020e93dc007c6b9f5094b2757363960da",
+      "oldBytes": 456072,
+      "bytes": 456540,
+      "triangles": 18420,
+      "vertices": 9485,
+      "meshes": 9,
+      "path": "Assets3D/Review/lotus_pad_chibi/p7a/meditator_male_kneel_prayer_undercut_p07a.glb",
+      "type": "glTF 2.0 real binary",
+      "status": "UPLOADED_REAL_GLB",
+      "source": "P06c, exact SHA verified",
+      "animationKeys": 17,
+      "animationSeconds": 2,
+      "materialCount": 21
+    }
+  ],
+  "material": {
+    "count": 21,
+    "hairMaterialName": "hair_blue_black",
+    "hairMaterialIndex": 6,
+    "changedMaterials": 0,
+    "textureOnlyFix": false,
+    "clothingVariantNames": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "changedVariantData": false
+  },
+  "geometry": {
+    "hairMeshIndex": 6,
+    "baselineHairVerts": 1672,
+    "newHairVerts": 1672,
+    "baselineHairTris": 3080,
+    "newHairTris": 3080,
+    "extraTriangles": 0,
+    "extraMaterials": 0,
+    "extraPrimitives": 0,
+    "drawCallEstimate": "SAME hair primitive count; no measured runtime FPS",
+    "scalpRayReport": "P07A_SCALP_COVERAGE_REPORT.json",
+    "crossKneelHairPositionNormalIndexBytesIdentical": true
+  },
+  "invariants": {
+    "allNonHairMeshesBitwiseExact": true,
+    "originalEyebrowPositionNormalBitwiseExact": true,
+    "originalHairIndicesBitwiseExact": true,
+    "allNodeTransformsAnchorsBitwiseExact": true,
+    "animationsBitwiseExact": true,
+    "coordinate": {
+      "up": "+Y",
+      "forward": "+Z",
+      "worldActorOnLotusOffsetY": 0.195
+    },
+    "anchors": [
+      "SeatRoot",
+      "UpperBodyBreath",
+      "HeadAnchor",
+      "NameplateAnchor",
+      "FXAnchor"
+    ],
+    "original6ColorwaysBitwiseExact": true
+  },
+  "preserved": {
+    "p6c": true,
+    "p6b": true,
+    "p6a": true,
+    "femaleCrossSha": "3ed6946640ed057868b64a9998b1c3a4bf30f28866b3e0c1de9a9ab55c5cc1a4",
+    "femaleKneelSha": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac",
+    "lotusSha": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+    "SakuraR16": true
+  },
+  "sourceFiles": [
+    "build_male_undercut_p07a.mjs",
+    "validate_p07a_glb_rays.mjs",
+    "blender_p07a_cycles.py",
+    "run_p07a_blender.ps1",
+    "validate_p07a_zip_crc.py"
+  ],
+  "ownerMediaPending": [
+    "P07A_Cycles_Evidence/**/meditator_p07a_*.blend",
+    "P07A_Cycles_Evidence/**/*.png",
+    "P07A_Cycles_Evidence/**/case_report.json",
+    "P07A_Cycles_Evidence/**/*_stdout.log",
+    "P07A_UNDERCUT_Blender_Cycles_Evidence.zip",
+    "P07A_ZIP_CRC_stdout.log"
+  ],
+  "status": {
+    "binaryGlb": "PASS",
+    "nodeSource": "COMMITTED",
+    "riggedBlenderSource": "COMMITTED_NOT_EXECUTED",
+    "newBlenderProjects": "NOT_CREATED",
+    "newCycles": "NOT_RUN",
+    "newZIPCRC": "NOT_RUN",
+    "scalpCoverage": "PASS_SAMPLED_PROXY",
+    "SAArt": "PENDING",
+    "ownerGO": "PENDING",
+    "nativeGPU": "NOT_RUN"
+  },
+  "stop": "P07A_MALE_UNDERCUT_SA_REVIEW_REQUIRED",
+  "noSidepart7_3": true,
+  "noCodex": true,
+  "noIntegration": true,
+  "noMerge": true,
+  "paidToolsVND": 0
+}

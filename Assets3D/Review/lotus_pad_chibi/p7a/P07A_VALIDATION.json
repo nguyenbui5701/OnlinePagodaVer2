@@ -1,0 +1,81 @@
+{
+  "revision": "P07A",
+  "sourceHEAD": "91bbfd5fa2a98894a096d7a60426ca62fe720c96",
+  "assets": [
+    {
+      "pose": "cross",
+      "inputSha256": "c9d1513bad21398fd776776cad97791cfa76a591d641838f885596d13f120ea4",
+      "inputBytes": 589656,
+      "newSha256": "72c407bf3b6ae8a6edc8ed9a0e544168db7edcac379a8ea92b9677cceed00107",
+      "newBytes": 590124,
+      "vertices": 9469,
+      "triangles": 18380,
+      "meshes": 10,
+      "materials": 21,
+      "sourceHairVertices": 1672,
+      "newHairVertices": 1672,
+      "sourceHairTriangles": 3080,
+      "newHairTriangles": 3080
+    },
+    {
+      "pose": "kneel",
+      "inputSha256": "38e47f84b6b4f8987a47b39e791aaa06c3fed2d4d03e11e55fc72f0ef926c4ad",
+      "inputBytes": 456072,
+      "newSha256": "e7f86beb4cd43f899c57922c0e34c94020e93dc007c6b9f5094b2757363960da",
+      "newBytes": 456540,
+      "vertices": 9485,
+      "triangles": 18420,
+      "meshes": 9,
+      "materials": 21,
+      "sourceHairVertices": 1672,
+      "newHairVertices": 1672,
+      "sourceHairTriangles": 3080,
+      "newHairTriangles": 3080
+    }
+  ],
+  "method": "Independently read both original P06c GitHub glTF2 binary bytes, SHA256 verify, generate 2 new P07a binary GLB2, then parse both and compare actual glTF accessor bytes not just metadata",
+  "rawBytesContracts": {
+    "crossNonHairMeshesExact": 9,
+    "kneelNonHairMeshesExact": 8,
+    "allNonHairPositionNormalIndices": true,
+    "hairIndexArrayExact": true,
+    "originalEyebrowPositionNormalByteExact": true,
+    "originalAnimationInputOutputSamplerByteExact": true,
+    "originalNodeAnchorJSONExactExceptHairNodeName": true,
+    "sixMaterialVariantMappingsJSONEqual": true,
+    "all21MaterialsJSONEqual": true,
+    "bothMaleUndercutHairPositionNormalIndexExact": true,
+    "clipsCross": [
+      "sit_idle",
+      "cross_prayer_idle"
+    ],
+    "clipsKneel": [
+      "sit_idle",
+      "kneel_prayer_idle"
+    ],
+    "durationSeconds": 2,
+    "keys": 17
+  },
+  "topologyAndGeometry": {
+    "trianglesAdded": 0,
+    "materialsAdded": 0,
+    "meshesAdded": 0,
+    "drawcallsAddedByHair": 0,
+    "sourceDegenerateTriangles": 0,
+    "newDegenerateTriangles": 0,
+    "sourceInwardFacingUnderRimTriangles": 112,
+    "newInwardFacingUnderRimTriangles": 112,
+    "scalpClearance": "P07A_SCALP_COVERAGE_REPORT.json"
+  },
+  "runnable": [
+    "node validate_p07a_glb_rays.mjs",
+    "node build_male_undercut_p07a.mjs ../p6c/meditator_male_cross_prayer_p06c.glb cross",
+    "node build_male_undercut_p07a.mjs ../p6c/meditator_male_kneel_prayer_p06c.glb kneel"
+  ],
+  "blenderCycles": "NOT_RUN",
+  "actualEditableBlend": "NOT_CREATED",
+  "originalNewImageSHA": "NOT_AVAILABLE",
+  "ZIPCRC": "NOT_RUN",
+  "artAppearance": "PENDING_REAL_CYCLES_AND_SA_OWNER_GATE",
+  "provenanceVND": 0
+}
