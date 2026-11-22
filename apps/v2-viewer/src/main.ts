@@ -11,6 +11,9 @@ import { SliceCamera } from './slice-camera.ts';
 import { SliceDriver } from './slice-driver.ts';
 import { showGift } from './slice-overlay.ts';
 import { createWater } from './water.ts';
+import { createAmbientFx } from './ambient-fx.ts';
+import { createGiftFx } from './gift-fx.ts';
+import { fxProfiles } from './fx-profiles.ts';
 
 declare const __REPO_REVISION__: string;
 const canvas = document.querySelector<HTMLCanvasElement>('#capture')!;
@@ -21,6 +24,8 @@ const profile: Profile = query.get('profile') === 'quality' ? 'quality' : 'eco';
 const requestedView = query.get('view') ?? '';
 const view = Object.hasOwn(referenceViews, requestedView) ? requestedView as keyof typeof referenceViews : undefined;
 const comparison = view ? referenceViews[view] : undefined;
+const fxEnabled = !comparison && query.get('fx') !== 'off';
+const fxProfile = fxProfiles[profile];
 const captureWidth = view && view !== 'hero_full_9x16' ? 720 : capture.width;
 const captureHeight = view && view !== 'hero_full_9x16' ? 835 : capture.height;
 const requestedTime = query.has('time') ? Number(query.get('time')) : NaN;
@@ -35,7 +40,7 @@ if (query.get('clean') === '1') document.body.classList.add('clean');
 const errors: string[] = [];
 const report: Record<string, unknown> = {
   repoRevision: __REPO_REVISION__, profile, viewport: [captureWidth, captureHeight],
-  safeMargin: capture.safeMargin, near: capture.near, far: capture.far, scenario, seed, errors,
+  safeMargin: capture.safeMargin, near: capture.near, far: capture.far, scenario, seed, errors, contextRestores: 0,
 };
 Object.assign(window, { viewerReport: report });
 
@@ -76,7 +81,9 @@ async function boot() {
   const environment = new Group();
   environment.name = 'Environment';
   scene.add(environment);
-  const water = comparison ? undefined : createWater();
+  const water = comparison ? undefined : createWater(fxProfile.water);
+  let ambient: ReturnType<typeof createAmbientFx> | undefined;
+  let giftFx: ReturnType<typeof createGiftFx> | undefined;
   if (water) environment.add(water.mesh);
   setupLighting(scene, profile, !!comparison);
 
@@ -135,6 +142,10 @@ async function boot() {
     camera.updateProjectionMatrix();
     camera.updateMatrixWorld();
     const labels = presentation ? showGift(camera, presentation, selected) : undefined;
+    const celebration = presentation && giftFx?.update(presentation.state, presentation.active, selected);
+    ambient?.update(seconds, celebration?.gift?.opacity ?? 0);
+    water?.setRipple(celebration?.ripple);
+    if (!comparison) report.fx = { enabled: fxEnabled, ambient: ambient?.counts, ...celebration };
     let focus;
     if (selected) {
       focus = {
@@ -162,7 +173,7 @@ async function boot() {
     const info = renderer.info;
     Object.assign(report, {
       drawCalls: info.render.calls, trianglesDrawn: info.render.triangles,
-      textures: info.memory.textures, geometries: info.memory.geometries,
+      textures: info.memory.textures, geometries: info.memory.geometries, pointsDrawn: info.render.points,
     });
     if (now - lastReport >= 500) {
       lastReport = now;
@@ -172,6 +183,7 @@ async function boot() {
           samples: times.length, fps: 1000 * times.length / times.reduce((a, b) => a + b, 0),
           p50ms: times[Math.floor((times.length - 1) * 0.50)],
           p95ms: times[Math.floor((times.length - 1) * 0.95)],
+          p99ms: times[Math.floor((times.length - 1) * 0.99)],
         };
       }
       diagnostics.textContent = JSON.stringify(report, null, 2);
@@ -187,6 +199,7 @@ async function boot() {
   };
   const contextRestored = () => {
     lost = false;
+    report.contextRestores = Number(report.contextRestores) + 1;
     last = undefined;
     frameTimes.length = 0;
     show(sakura ? '' : 'Đang tải Sakura R16…');
@@ -205,6 +218,8 @@ async function boot() {
     window.removeEventListener('pagehide', onPageHide);
     sakura?.dispose();
     seats?.dispose();
+    ambient?.dispose();
+    giftFx?.dispose();
     water?.dispose();
     for (const light of scene.children) if (light instanceof DirectionalLight) light.dispose();
     renderer.dispose();
@@ -224,12 +239,18 @@ async function boot() {
     if (!comparison) {
       // R16's imported scene pivot is the trunk base. Resolve it after scene attachment.
       const tree = asset.root.localToWorld(new Vector3());
+      water?.tree.set(tree.x, tree.z);
       const pair = await createSeatScene(abort.signal, tree);
       if (disposed) { pair.dispose(); return; }
       seats = pair;
       scene.add(pair.group);
       pair.preview.sample(0);
       routes = createCinematicRoutes(seatPose(pair.preview, 0.16, 5.05), tree, seed);
+      if (fxEnabled) {
+        ambient = createAmbientFx(tree, seed, fxProfile.ambient);
+        giftFx = createGiftFx(fxProfile.giftSparks);
+        environment.add(ambient.points, giftFx.cloud);
+      }
       Object.assign(report, { pair: pair.report, treeTarget: tree.toArray(), rejectedRoutes: routes.rejected });
       if (routes.rejected.length) console.warn('P0.9 cinematic clearance fallback', routes.rejected);
     }

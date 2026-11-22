@@ -1,0 +1,5994 @@
+{
+  "rows": [
+    {
+      "t": 0,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        0.4706391074916876,
+        1.14915,
+        8.6668466883945
+      ],
+      "fov": 50,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 0.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        0.613358783591831,
+        1.1255351623535155,
+        8.673452242633504
+      ],
+      "fov": 49.9871826171875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 0.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        0.7805946482655565,
+        1.0978160644531252,
+        8.668075132553447
+      ],
+      "fov": 49.9521484375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 0.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        0.9653369560728067,
+        1.0678683288574218,
+        8.65323719895873
+      ],
+      "fov": 49.9000244140625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 1,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.160575961573524,
+        1.0375675781249998,
+        8.631460282653748
+      ],
+      "fov": 49.8359375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 1.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.3593019193276512,
+        1.008789434814453,
+        8.605266224442898
+      ],
+      "fov": 49.7650146484375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 1.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.554505083895131,
+        0.9834095214843748,
+        8.577176865130587
+      ],
+      "fov": 49.6923828125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 1.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.7391757098359057,
+        0.9633034606933593,
+        8.549714045521206
+      ],
+      "fov": 49.6231689453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 2,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.9063040517099181,
+        0.9503468749999998,
+        8.525399606419157
+      ],
+      "fov": 49.5625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 2.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        2.048880364077111,
+        0.9464153869628904,
+        8.506755388628838
+      ],
+      "fov": 49.5155029296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 2.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        2.159894901497427,
+        0.9533846191406248,
+        8.496303232954645
+      ],
+      "fov": 49.4873046875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 2.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        2.232337918530808,
+        0.9731301940917967,
+        8.496564980200981
+      ],
+      "fov": 49.4830322265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 3,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        2.259199669737197,
+        1.0075277343749998,
+        8.510062471172239
+      ],
+      "fov": 49.5078125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 3.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        2.2334704096765368,
+        1.0584528625488279,
+        8.539317546672821
+      ],
+      "fov": 49.5667724609375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 3.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        2.14814039290877,
+        1.1277812011718746,
+        8.586852047507127
+      ],
+      "fov": 49.6650390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 3.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.9961998739938402,
+        1.2173883728027342,
+        8.655187814479556
+      ],
+      "fov": 49.8077392578125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 4,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.7706391074916876,
+        1.3291499999999998,
+        8.7468466883945
+      ],
+      "fov": 50,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 4.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.4791067575817158,
+        1.4531486206054687,
+        8.825026900809645
+      ],
+      "fov": 50.250732421875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 4.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.1353119949484405,
+        1.5799440429687497,
+        8.859826361048869
+      ],
+      "fov": 50.560546875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 4.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        0.7413358339094764,
+        1.7121277954101561,
+        8.864116426565875
+      ],
+      "fov": 50.922119140625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        0.2992592887824387,
+        1.8522914062499996,
+        8.850768454814366
+      ],
+      "fov": 51.328125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 5.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -0.1888366261150582,
+        2.0030264038085934,
+        8.832653803248046
+      ],
+      "fov": 51.771240234375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 5.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -0.7208708964653996,
+        2.16692431640625,
+        8.822643829320619
+      ],
+      "fov": 52.244140625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 5.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -1.2947625079509706,
+        2.3465766723632813,
+        8.833609890485786
+      ],
+      "fov": 52.739501953125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 6,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -1.908430446254156,
+        2.544575,
+        8.87842334419725
+      ],
+      "fov": 53.25,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 6.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -2.5597936970573416,
+        2.7635108276367193,
+        8.969955547908713
+      ],
+      "fov": 53.768310546875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 6.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -3.246771246042912,
+        3.0059756835937503,
+        9.12107785907388
+      ],
+      "fov": 54.287109375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 6.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -3.9672820788932537,
+        3.2745610961914062,
+        9.344661635146451
+      ],
+      "fov": 54.799072265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 7,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -4.71924518129075,
+        3.57185859375,
+        9.65357823358013
+      ],
+      "fov": 55.296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 7.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -5.500579538917788,
+        3.900459704589844,
+        10.060699011828623
+      ],
+      "fov": 55.773193359375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 7.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -6.309204137456752,
+        4.2629559570312505,
+        10.57889532734563
+      ],
+      "fov": 56.220703125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 7.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -7.143037962590027,
+        4.6619388793945316,
+        11.221038537584855
+      ],
+      "fov": 56.632080078125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 8,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -8,
+        5.1,
+        12
+      ],
+      "fov": 57,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 8.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -8.933763891502151,
+        5.57061050415039,
+        12.975947203993073
+      ],
+      "fov": 57.3525390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 8.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -9.986095035417083,
+        6.065987939453125,
+        14.178129406512372
+      ],
+      "fov": 57.71875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 8.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        -11.137050052184849,
+        6.586843377685547,
+        15.573040616331054
+      ],
+      "fov": 58.0927734375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 9,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -12.36668556224551,
+        7.133887890625,
+        17.12717484222226
+      ],
+      "fov": 58.46875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 9.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -13.655058186039119,
+        7.707832550048827,
+        18.80702609295915
+      ],
+      "fov": 58.8408203125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 9.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -14.982224544005739,
+        8.309388427734374,
+        20.579088377314857
+      ],
+      "fov": 59.203125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 9.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -16.32824125658542,
+        8.939266595458983,
+        22.40985570406254
+      ],
+      "fov": 59.5498046875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 10,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -17.67316494421823,
+        9.598178125,
+        24.265822081975344
+      ],
+      "fov": 59.875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 10.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -18.99705222734422,
+        10.286834088134766,
+        26.113481519826422
+      ],
+      "fov": 60.1728515625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 10.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -20.27995972640344,
+        11.005945556640626,
+        27.919328026388918
+      ],
+      "fov": 60.4375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 10.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -21.501944061835964,
+        11.756223602294922,
+        29.649855610435978
+      ],
+      "fov": 60.6630859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 11,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -22.643061854081836,
+        12.538379296874998,
+        31.271558280740756
+      ],
+      "fov": 60.84375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 11.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -23.68336972358112,
+        13.353123712158204,
+        32.7509300460764
+      ],
+      "fov": 60.9736328125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 11.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -24.60292429077387,
+        14.201167919921875,
+        34.05446491521606
+      ],
+      "fov": 61.046875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 11.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -25.381782176100145,
+        15.08322299194336,
+        35.14865689693288
+      ],
+      "fov": 61.0576171875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 12,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -26,
+        16,
+        36
+      ],
+      "fov": 61,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 12.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -26.490478515625,
+        16.96502685546875,
+        36.636962890625
+      ],
+      "fov": 60.8572998046875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 12.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -26.900390625,
+        17.98740234375,
+        37.119140625
+      ],
+      "fov": 60.6240234375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 12.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -27.231201171875,
+        19.06119384765625,
+        37.459716796875
+      ],
+      "fov": 60.3111572265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 13,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -27.484375,
+        20.180468750000003,
+        37.671875
+      ],
+      "fov": 59.9296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 13.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -27.661376953125,
+        21.33929443359375,
+        37.768798828125
+      ],
+      "fov": 59.4906005859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 13.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -27.763671875,
+        22.53173828125,
+        37.763671875
+      ],
+      "fov": 59.0048828125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 13.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -27.792724609375,
+        23.75186767578125,
+        37.669677734375
+      ],
+      "fov": 58.4835205078125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 14,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -27.75,
+        24.99375,
+        37.5
+      ],
+      "fov": 57.9375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 14.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -27.636962890625,
+        26.25145263671875,
+        37.267822265625
+      ],
+      "fov": 57.3778076171875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 14.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -27.455078125,
+        27.51904296875,
+        36.986328125
+      ],
+      "fov": 56.8154296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 14.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -27.205810546875,
+        28.79058837890625,
+        36.668701171875
+      ],
+      "fov": 56.2613525390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 15,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -26.890625,
+        30.06015625,
+        36.328125
+      ],
+      "fov": 55.7265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 15.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -26.510986328125,
+        31.32181396484375,
+        35.977783203125
+      ],
+      "fov": 55.2220458984375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 15.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -26.068359375,
+        32.569628906249996,
+        35.630859375
+      ],
+      "fov": 54.7587890625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 15.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "COMMUNITY",
+      "position": [
+        -25.564208984375,
+        33.79766845703125,
+        35.300537109375
+      ],
+      "fov": 54.3477783203125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 16,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -25,
+        35,
+        35
+      ],
+      "fov": 54,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 16.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -24.347412109375,
+        36.2406005859375,
+        34.686767578125
+      ],
+      "fov": 53.6971435546875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 16.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -23.583984375,
+        37.5732421875,
+        34.314453125
+      ],
+      "fov": 53.4130859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 16.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -22.719970703125,
+        38.9766845703125,
+        33.890380859375
+      ],
+      "fov": 53.1470947265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 17,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -21.765625,
+        40.4296875,
+        33.421875
+      ],
+      "fov": 52.8984375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 17.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -20.731201171875,
+        41.9110107421875,
+        32.916259765625
+      ],
+      "fov": 52.6663818359375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 17.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -19.626953125,
+        43.3994140625,
+        32.380859375
+      ],
+      "fov": 52.4501953125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 17.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -18.463134765625,
+        44.8736572265625,
+        31.822998046875
+      ],
+      "fov": 52.2491455078125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 18,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -17.25,
+        46.3125,
+        31.25
+      ],
+      "fov": 52.0625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 18.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -15.997802734375,
+        47.6947021484375,
+        30.669189453125
+      ],
+      "fov": 51.8895263671875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 18.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -14.716796875,
+        48.9990234375,
+        30.087890625
+      ],
+      "fov": 51.7294921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 18.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -13.417236328125,
+        50.2042236328125,
+        29.513427734375
+      ],
+      "fov": 51.5816650390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 19,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -12.109375,
+        51.2890625,
+        28.953125
+      ],
+      "fov": 51.4453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 19.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -10.803466796875,
+        52.2322998046875,
+        28.414306640625
+      ],
+      "fov": 51.3197021484375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 19.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -9.509765625,
+        53.0126953125,
+        27.904296875
+      ],
+      "fov": 51.2041015625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 19.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -8.238525390625,
+        53.6090087890625,
+        27.430419921875
+      ],
+      "fov": 51.0977783203125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 20,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -7,
+        54,
+        27
+      ],
+      "fov": 51,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 20.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -5.749755859375,
+        54.18798828125,
+        26.6087646484375
+      ],
+      "fov": 50.9176025390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 20.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -4.443359375,
+        54.19921875,
+        26.2451171875
+      ],
+      "fov": 50.8564453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 20.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -3.091064453125,
+        54.04833984375,
+        25.9053955078125
+      ],
+      "fov": 50.8143310546875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 21,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -1.703125,
+        53.75,
+        25.5859375
+      ],
+      "fov": 50.7890625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 21.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        -0.289794921875,
+        53.31884765625,
+        25.2830810546875
+      ],
+      "fov": 50.7784423828125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 21.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        1.138671875,
+        52.76953125,
+        24.9931640625
+      ],
+      "fov": 50.7802734375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 21.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        2.572021484375,
+        52.11669921875,
+        24.7125244140625
+      ],
+      "fov": 50.7923583984375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 22,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        4,
+        51.375,
+        24.4375
+      ],
+      "fov": 50.8125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 22.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        5.412353515625,
+        50.55908203125,
+        24.1644287109375
+      ],
+      "fov": 50.8385009765625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 22.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        6.798828125,
+        49.68359375,
+        23.8896484375
+      ],
+      "fov": 50.8681640625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 22.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        8.149169921875,
+        48.76318359375,
+        23.6094970703125
+      ],
+      "fov": 50.8992919921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 23,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        9.453125,
+        47.8125,
+        23.3203125
+      ],
+      "fov": 50.9296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 23.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        10.700439453125,
+        46.84619140625,
+        23.0184326171875
+      ],
+      "fov": 50.9571533203125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 23.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        11.880859375,
+        45.87890625,
+        22.7001953125
+      ],
+      "fov": 50.9794921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 23.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        12.984130859375,
+        44.92529296875,
+        22.3619384765625
+      ],
+      "fov": 50.9945068359375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 24,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        14,
+        44,
+        22
+      ],
+      "fov": 51,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 24.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        14.9564208984375,
+        43.05841064453125,
+        21.61761474609375
+      ],
+      "fov": 50.9945068359375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 24.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        15.8857421875,
+        42.05087890625,
+        21.22138671875
+      ],
+      "fov": 50.9794921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 24.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        16.7843017578125,
+        40.984509277343754,
+        20.812707519531248
+      ],
+      "fov": 50.9571533203125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        17.6484375,
+        39.86640625,
+        20.39296875
+      ],
+      "fov": 50.9296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 25.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        18.4744873046875,
+        38.70367431640625,
+        19.96356201171875
+      ],
+      "fov": 50.8992919921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 25.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        19.2587890625,
+        37.50341796875,
+        19.52587890625
+      ],
+      "fov": 50.8681640625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 25.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        19.9976806640625,
+        36.27274169921875,
+        19.08131103515625
+      ],
+      "fov": 50.8385009765625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 26,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        20.6875,
+        35.018750000000004,
+        18.631249999999998
+      ],
+      "fov": 50.8125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 26.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        21.3245849609375,
+        33.74854736328125,
+        18.17708740234375
+      ],
+      "fov": 50.7923583984375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 26.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        21.9052734375,
+        32.46923828125,
+        17.72021484375
+      ],
+      "fov": 50.7802734375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 26.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        22.4259033203125,
+        31.18792724609375,
+        17.26202392578125
+      ],
+      "fov": 50.7784423828125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 27,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        22.8828125,
+        29.911718750000002,
+        16.80390625
+      ],
+      "fov": 50.7890625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 27.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        23.2723388671875,
+        28.647717285156247,
+        16.347253417968748
+      ],
+      "fov": 50.8143310546875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 27.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        23.5908203125,
+        27.40302734375,
+        15.893457031250001
+      ],
+      "fov": 50.8564453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 27.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        23.8345947265625,
+        26.18475341796875,
+        15.44390869140625
+      ],
+      "fov": 50.9176025390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 28,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        24,
+        25,
+        15
+      ],
+      "fov": 51,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 28.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        24.090690968431108,
+        23.812123138427737,
+        14.545232824667247
+      ],
+      "fov": 51.117919921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 28.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        24.11357961547613,
+        22.586040966796876,
+        14.065900462091053
+      ],
+      "fov": 51.279296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 28.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "AERIAL",
+      "position": [
+        24.069889553762632,
+        21.33120110473633,
+        13.567581657404522
+      ],
+      "fov": 51.476806640625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 29,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        23.960844395918166,
+        20.057051171875,
+        13.055855155740755
+      ],
+      "fov": 51.703125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 29.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        23.787667754570286,
+        18.773038787841795,
+        12.536299702232851
+      ],
+      "fov": 51.950927734375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 29.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        23.551583242346556,
+        17.488611572265626,
+        12.014494042013913
+      ],
+      "fov": 52.212890625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 29.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        23.253814471874534,
+        16.213217144775392,
+        11.496016920217045
+      ],
+      "fov": 52.481689453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 30,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        22.89558505578177,
+        14.956303125000002,
+        10.986447081975344
+      ],
+      "fov": 52.75,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 30.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        22.47811860669583,
+        13.72731713256836,
+        10.491363272421914
+      ],
+      "fov": 53.010498046875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 30.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        22.002638737244258,
+        12.535706787109374,
+        10.016344236689855
+      ],
+      "fov": 53.255859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 30.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        21.47036906005463,
+        11.390919708251955,
+        9.566968719912273
+      ],
+      "fov": 53.478759765625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 31,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        20.88253318775449,
+        10.302403515625002,
+        9.148815467222263
+      ],
+      "fov": 53.671875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 31.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        20.2403547329714,
+        9.279605828857424,
+        8.76746322375293
+      ],
+      "fov": 53.827880859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 31.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        19.545057308332918,
+        8.331974267578127,
+        8.428490734637375
+      ],
+      "fov": 53.939453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 31.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        18.7978645264666,
+        7.468956451416017,
+        8.137476745008698
+      ],
+      "fov": 53.999267578125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 32,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        18,
+        6.7,
+        7.9
+      ],
+      "fov": 54,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 32.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        17.08063147100372,
+        6.025633947753907,
+        7.719718957506731
+      ],
+      "fov": 53.9349365234375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 32.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        15.986401331293248,
+        5.43532900390625,
+        7.592869936720633
+      ],
+      "fov": 53.8076171875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 32.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        14.74474516811346,
+        4.921945300292968,
+        7.513898474719251
+      ],
+      "fov": 53.6260986328125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 33,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        13.38309856870925,
+        4.478342968750001,
+        7.477250108580133
+      ],
+      "fov": 53.3984375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 33.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        11.928897120325495,
+        4.097382141113282,
+        7.477370375380828
+      ],
+      "fov": 53.1326904296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 33.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        10.409576410207086,
+        3.77192294921875,
+        7.50870481219888
+      ],
+      "fov": 52.8369140625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 33.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        8.852572025598906,
+        3.494825524902344,
+        7.565698956111839
+      ],
+      "fov": 52.5191650390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 34,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        7.285319553745843,
+        3.2589499999999996,
+        7.642798344197249
+      ],
+      "fov": 52.1875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 34.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        5.735254581892779,
+        3.0571565063476553,
+        7.734448513532661
+      ],
+      "fov": 51.8499755859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 34.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        4.229812697284599,
+        2.8823051757812497,
+        7.83509500119562
+      ],
+      "fov": 51.5146484375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 34.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        2.7964294871661917,
+        2.727256140136719,
+        7.9391833442636734
+      ],
+      "fov": 51.1895751953125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 35,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        1.4625405387824362,
+        2.584869531249999,
+        8.041159079814369
+      ],
+      "fov": 50.8828125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 35.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        0.25558143937822386,
+        2.4480054809570304,
+        8.13546774492525
+      ],
+      "fov": 50.6024169921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 35.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -0.7970122238015644,
+        2.3095241210937503,
+        8.216554876673868
+      ],
+      "fov": 50.3564453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 35.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -1.6678048635120373,
+        2.162285583496093,
+        8.278866012137769
+      ],
+      "fov": 50.1529541015625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 36,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -2.329360892508312,
+        1.9991499999999998,
+        8.3168466883945
+      ],
+      "fov": 50,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 36.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -2.7868811806936598,
+        1.8383722595214842,
+        8.341052072292053
+      ],
+      "fov": 49.89013671875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 36.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -3.075883044591229,
+        1.7015897949218748,
+        8.365641110007127
+      ],
+      "fov": 49.80859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 36.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -3.214405566885963,
+        1.5867365539550777,
+        8.390465007610322
+      ],
+      "fov": 49.75244140625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 37,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -3.2204878302628024,
+        1.4917464843749997,
+        8.415374971172238
+      ],
+      "fov": 49.71875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 37.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -3.1121689174066924,
+        1.4145535339355466,
+        8.44022220676348
+      ],
+      "fov": 49.70458984375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 37.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -2.9074879110025735,
+        1.353091650390625,
+        8.464857920454643
+      ],
+      "fov": 49.70703125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 37.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -2.6244838937353885,
+        1.3052947814941405,
+        8.489133318316336
+      ],
+      "fov": 49.72314453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 38,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -2.281195948290082,
+        1.269096875,
+        8.512899606419158
+      ],
+      "fov": 49.75,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 38.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -1.8956631573515947,
+        1.2424318786621094,
+        8.536007990833705
+      ],
+      "fov": 49.78466796875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 38.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -1.4859246036048699,
+        1.2232337402343751,
+        8.558309677630586
+      ],
+      "fov": 49.82421875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 38.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -1.0700193697348501,
+        1.2094364074707031,
+        8.5796558728804
+      ],
+      "fov": 49.86572265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 39,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -0.665986538426476,
+        1.1989738281250002,
+        8.599897782653745
+      ],
+      "fov": 49.90625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 39.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -0.29186519236469355,
+        1.189779949951172,
+        8.618886613021226
+      ],
+      "fov": 49.94287109375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 39.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        0.034305585765556756,
+        1.1797887207031252,
+        8.636473570053447
+      ],
+      "fov": 49.97265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 39.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        0.2944867132793316,
+        1.1669340881347658,
+        8.652509859821
+      ],
+      "fov": 49.99267578125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 40,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        0.4706391074916876,
+        1.14915,
+        8.6668466883945
+      ],
+      "fov": 50,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 40.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        0.584061908591831,
+        1.1255351623535155,
+        8.673452242633504
+      ],
+      "fov": 49.9871826171875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 40.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        0.6712196482655565,
+        1.0978160644531252,
+        8.668075132553447
+      ],
+      "fov": 49.9521484375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 40.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        0.7368213310728067,
+        1.0678683288574218,
+        8.65323719895873
+      ],
+      "fov": 49.9000244140625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 41,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        0.785575961573524,
+        1.0375675781249998,
+        8.631460282653748
+      ],
+      "fov": 49.8359375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 41.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        0.8221925443276512,
+        1.008789434814453,
+        8.605266224442898
+      ],
+      "fov": 49.7650146484375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 41.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        0.8513800838951311,
+        0.9834095214843748,
+        8.577176865130587
+      ],
+      "fov": 49.6923828125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 41.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        0.8778475848359057,
+        0.9633034606933593,
+        8.549714045521206
+      ],
+      "fov": 49.6231689453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 42,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        0.9063040517099181,
+        0.9503468749999998,
+        8.525399606419157
+      ],
+      "fov": 49.5625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 42.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        0.941458489077111,
+        0.9464153869628904,
+        8.506755388628838
+      ],
+      "fov": 49.5155029296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 42.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        0.9880199014974267,
+        0.9533846191406248,
+        8.496303232954645
+      ],
+      "fov": 49.4873046875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 42.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        1.0506972935308077,
+        0.9731301940917967,
+        8.496564980200981
+      ],
+      "fov": 49.4830322265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 43,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        1.1341996697371972,
+        1.0075277343749998,
+        8.510062471172239
+      ],
+      "fov": 49.5078125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 43.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        1.243236034676537,
+        1.0584528625488279,
+        8.539317546672821
+      ],
+      "fov": 49.5667724609375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 43.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        1.3825153929087706,
+        1.1277812011718746,
+        8.586852047507127
+      ],
+      "fov": 49.6650390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 43.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        1.5567467489938398,
+        1.2173883728027342,
+        8.655187814479556
+      ],
+      "fov": 49.8077392578125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 44,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        1.7706391074916876,
+        1.3291499999999998,
+        8.7468466883945
+      ],
+      "fov": 50,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 44.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        2.0030325388317154,
+        1.4531486206054687,
+        8.825026900809645
+      ],
+      "fov": 50.250732421875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 44.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        2.2329682449484407,
+        1.5799440429687497,
+        8.859826361048869
+      ],
+      "fov": 50.560546875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 44.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        2.465456927659477,
+        1.7121277954101561,
+        8.864116426565875
+      ],
+      "fov": 50.922119140625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 45,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        2.705509288782439,
+        1.8522914062499996,
+        8.850768454814366
+      ],
+      "fov": 51.328125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 45.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        2.9581360301349418,
+        2.0030264038085934,
+        8.832653803248046
+      ],
+      "fov": 51.771240234375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 45.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        3.2283478535346006,
+        2.16692431640625,
+        8.822643829320619
+      ],
+      "fov": 52.244140625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 45.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        3.52115546079903,
+        2.3465766723632813,
+        8.833609890485786
+      ],
+      "fov": 52.739501953125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 46,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        3.8415695537458445,
+        2.544575,
+        8.87842334419725
+      ],
+      "fov": 53.25,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 46.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        4.194600834192659,
+        2.7635108276367193,
+        8.969955547908713
+      ],
+      "fov": 53.768310546875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 46.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        4.585260003957088,
+        3.0059756835937503,
+        9.12107785907388
+      ],
+      "fov": 54.287109375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 46.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        5.018557764856747,
+        3.2745610961914062,
+        9.344661635146451
+      ],
+      "fov": 54.799072265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 47,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        5.499504818709251,
+        3.57185859375,
+        9.65357823358013
+      ],
+      "fov": 55.296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 47.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        6.033111867332212,
+        3.900459704589844,
+        10.060699011828623
+      ],
+      "fov": 55.773193359375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 47.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        6.624389612543249,
+        4.2629559570312505,
+        10.57889532734563
+      ],
+      "fov": 56.220703125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 47.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        7.278348756159974,
+        4.6619388793945316,
+        11.221038537584855
+      ],
+      "fov": 56.632080078125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 48,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        8,
+        5.1,
+        12
+      ],
+      "fov": 57,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 48.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        8.836499780372849,
+        5.57061050415039,
+        12.975947203993073
+      ],
+      "fov": 57.3525390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 48.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        9.816639339582917,
+        6.065987939453125,
+        14.178129406512372
+      ],
+      "fov": 57.71875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 48.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "CLOSE",
+      "position": [
+        10.917881588440151,
+        6.586843377685547,
+        15.573040616331054
+      ],
+      "fov": 58.0927734375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 49,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        12.11768943775449,
+        7.133887890625,
+        17.12717484222226
+      ],
+      "fov": 58.46875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 49.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        13.393525798335881,
+        7.707832550048827,
+        18.80702609295915
+      ],
+      "fov": 58.8408203125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 49.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        14.722853580994261,
+        8.309388427734374,
+        20.579088377314857
+      ],
+      "fov": 59.203125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 49.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        16.08313569653958,
+        8.939266595458983,
+        22.40985570406254
+      ],
+      "fov": 59.5498046875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 50,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        17.45183505578177,
+        9.598178125,
+        24.265822081975344
+      ],
+      "fov": 59.875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 50.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        18.80641456953078,
+        10.286834088134766,
+        26.113481519826422
+      ],
+      "fov": 60.1728515625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 50.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        20.124337148596553,
+        11.005945556640626,
+        27.919328026388918
+      ],
+      "fov": 60.4375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 50.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        21.383065703789036,
+        11.756223602294922,
+        29.649855610435978
+      ],
+      "fov": 60.6630859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 51,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        22.560063145918164,
+        12.538379296874998,
+        31.271558280740756
+      ],
+      "fov": 60.84375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 51.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        23.63279238579388,
+        13.353123712158204,
+        32.7509300460764
+      ],
+      "fov": 60.9736328125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 51.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        24.57871633422613,
+        14.201167919921875,
+        34.05446491521606
+      ],
+      "fov": 61.046875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 51.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        25.375297902024855,
+        15.08322299194336,
+        35.14865689693288
+      ],
+      "fov": 61.0576171875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 52,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        26,
+        16,
+        36
+      ],
+      "fov": 61,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 52.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        26.490478515625,
+        16.96502685546875,
+        36.636962890625
+      ],
+      "fov": 60.8572998046875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 52.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        26.900390625,
+        17.98740234375,
+        37.119140625
+      ],
+      "fov": 60.6240234375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 52.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        27.231201171875,
+        19.06119384765625,
+        37.459716796875
+      ],
+      "fov": 60.3111572265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 53,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        27.484375,
+        20.180468750000003,
+        37.671875
+      ],
+      "fov": 59.9296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 53.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        27.661376953125,
+        21.33929443359375,
+        37.768798828125
+      ],
+      "fov": 59.4906005859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 53.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        27.763671875,
+        22.53173828125,
+        37.763671875
+      ],
+      "fov": 59.0048828125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 53.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        27.792724609375,
+        23.75186767578125,
+        37.669677734375
+      ],
+      "fov": 58.4835205078125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 54,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        27.75,
+        24.99375,
+        37.5
+      ],
+      "fov": 57.9375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 54.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        27.636962890625,
+        26.25145263671875,
+        37.267822265625
+      ],
+      "fov": 57.3778076171875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 54.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        27.455078125,
+        27.51904296875,
+        36.986328125
+      ],
+      "fov": 56.8154296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 54.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        27.205810546875,
+        28.79058837890625,
+        36.668701171875
+      ],
+      "fov": 56.2613525390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 55,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        26.890625,
+        30.06015625,
+        36.328125
+      ],
+      "fov": 55.7265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 55.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        26.510986328125,
+        31.32181396484375,
+        35.977783203125
+      ],
+      "fov": 55.2220458984375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 55.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        26.068359375,
+        32.569628906249996,
+        35.630859375
+      ],
+      "fov": 54.7587890625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 55.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "COMMUNITY",
+      "position": [
+        25.564208984375,
+        33.79766845703125,
+        35.300537109375
+      ],
+      "fov": 54.3477783203125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 56,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        25,
+        35,
+        35
+      ],
+      "fov": 54,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 56.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        24.347412109375,
+        36.2406005859375,
+        34.686767578125
+      ],
+      "fov": 53.6971435546875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 56.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        23.583984375,
+        37.5732421875,
+        34.314453125
+      ],
+      "fov": 53.4130859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 56.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        22.719970703125,
+        38.9766845703125,
+        33.890380859375
+      ],
+      "fov": 53.1470947265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 57,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        21.765625,
+        40.4296875,
+        33.421875
+      ],
+      "fov": 52.8984375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 57.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        20.731201171875,
+        41.9110107421875,
+        32.916259765625
+      ],
+      "fov": 52.6663818359375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 57.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        19.626953125,
+        43.3994140625,
+        32.380859375
+      ],
+      "fov": 52.4501953125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 57.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        18.463134765625,
+        44.8736572265625,
+        31.822998046875
+      ],
+      "fov": 52.2491455078125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 58,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        17.25,
+        46.3125,
+        31.25
+      ],
+      "fov": 52.0625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 58.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        15.997802734375,
+        47.6947021484375,
+        30.669189453125
+      ],
+      "fov": 51.8895263671875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 58.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        14.716796875,
+        48.9990234375,
+        30.087890625
+      ],
+      "fov": 51.7294921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 58.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        13.417236328125,
+        50.2042236328125,
+        29.513427734375
+      ],
+      "fov": 51.5816650390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 59,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        12.109375,
+        51.2890625,
+        28.953125
+      ],
+      "fov": 51.4453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 59.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        10.803466796875,
+        52.2322998046875,
+        28.414306640625
+      ],
+      "fov": 51.3197021484375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 59.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        9.509765625,
+        53.0126953125,
+        27.904296875
+      ],
+      "fov": 51.2041015625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 59.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        8.238525390625,
+        53.6090087890625,
+        27.430419921875
+      ],
+      "fov": 51.0977783203125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 60,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        7,
+        54,
+        27
+      ],
+      "fov": 51,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 60.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        5.749755859375,
+        54.18798828125,
+        26.6087646484375
+      ],
+      "fov": 50.9176025390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 60.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        4.443359375,
+        54.19921875,
+        26.2451171875
+      ],
+      "fov": 50.8564453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 60.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        3.091064453125,
+        54.04833984375,
+        25.9053955078125
+      ],
+      "fov": 50.8143310546875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 61,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        1.703125,
+        53.75,
+        25.5859375
+      ],
+      "fov": 50.7890625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 61.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        0.289794921875,
+        53.31884765625,
+        25.2830810546875
+      ],
+      "fov": 50.7784423828125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 61.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -1.138671875,
+        52.76953125,
+        24.9931640625
+      ],
+      "fov": 50.7802734375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 61.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -2.572021484375,
+        52.11669921875,
+        24.7125244140625
+      ],
+      "fov": 50.7923583984375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 62,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -4,
+        51.375,
+        24.4375
+      ],
+      "fov": 50.8125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 62.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -5.412353515625,
+        50.55908203125,
+        24.1644287109375
+      ],
+      "fov": 50.8385009765625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 62.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -6.798828125,
+        49.68359375,
+        23.8896484375
+      ],
+      "fov": 50.8681640625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 62.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -8.149169921875,
+        48.76318359375,
+        23.6094970703125
+      ],
+      "fov": 50.8992919921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 63,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -9.453125,
+        47.8125,
+        23.3203125
+      ],
+      "fov": 50.9296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 63.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -10.700439453125,
+        46.84619140625,
+        23.0184326171875
+      ],
+      "fov": 50.9571533203125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 63.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -11.880859375,
+        45.87890625,
+        22.7001953125
+      ],
+      "fov": 50.9794921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 63.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -12.984130859375,
+        44.92529296875,
+        22.3619384765625
+      ],
+      "fov": 50.9945068359375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 64,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -14,
+        44,
+        22
+      ],
+      "fov": 51,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 64.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -14.9564208984375,
+        43.05841064453125,
+        21.61761474609375
+      ],
+      "fov": 50.9945068359375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 64.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -15.8857421875,
+        42.05087890625,
+        21.22138671875
+      ],
+      "fov": 50.9794921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 64.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -16.7843017578125,
+        40.984509277343754,
+        20.812707519531248
+      ],
+      "fov": 50.9571533203125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 65,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -17.6484375,
+        39.86640625,
+        20.39296875
+      ],
+      "fov": 50.9296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 65.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -18.4744873046875,
+        38.70367431640625,
+        19.96356201171875
+      ],
+      "fov": 50.8992919921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 65.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -19.2587890625,
+        37.50341796875,
+        19.52587890625
+      ],
+      "fov": 50.8681640625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 65.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -19.9976806640625,
+        36.27274169921875,
+        19.08131103515625
+      ],
+      "fov": 50.8385009765625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 66,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -20.6875,
+        35.018750000000004,
+        18.631249999999998
+      ],
+      "fov": 50.8125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 66.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -21.3245849609375,
+        33.74854736328125,
+        18.17708740234375
+      ],
+      "fov": 50.7923583984375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 66.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -21.9052734375,
+        32.46923828125,
+        17.72021484375
+      ],
+      "fov": 50.7802734375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 66.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -22.4259033203125,
+        31.18792724609375,
+        17.26202392578125
+      ],
+      "fov": 50.7784423828125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 67,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -22.8828125,
+        29.911718750000002,
+        16.80390625
+      ],
+      "fov": 50.7890625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 67.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -23.2723388671875,
+        28.647717285156247,
+        16.347253417968748
+      ],
+      "fov": 50.8143310546875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 67.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -23.5908203125,
+        27.40302734375,
+        15.893457031250001
+      ],
+      "fov": 50.8564453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 67.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -23.8345947265625,
+        26.18475341796875,
+        15.44390869140625
+      ],
+      "fov": 50.9176025390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 68,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -24,
+        25,
+        15
+      ],
+      "fov": 51,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 68.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -24.082160594068892,
+        23.812123138427737,
+        14.545232824667247
+      ],
+      "fov": 51.117919921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 68.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -24.08173288452387,
+        22.586040966796876,
+        14.065900462091053
+      ],
+      "fov": 51.279296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 68.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "AERIAL",
+      "position": [
+        -24.003352633737368,
+        21.33120110473633,
+        13.567581657404522
+      ],
+      "fov": 51.476806640625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 69,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -23.851655604081834,
+        20.057051171875,
+        13.055855155740755
+      ],
+      "fov": 51.703125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 69.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -23.631277557929714,
+        18.773038787841795,
+        12.536299702232851
+      ],
+      "fov": 51.950927734375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 69.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -23.346854257653444,
+        17.488611572265626,
+        12.014494042013913
+      ],
+      "fov": 52.212890625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 69.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -23.003021465625466,
+        16.213217144775392,
+        11.496016920217045
+      ],
+      "fov": 52.481689453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 70,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -22.60441494421823,
+        14.956303125000002,
+        10.986447081975344
+      ],
+      "fov": 52.75,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 70.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -22.15567045580417,
+        13.72731713256836,
+        10.491363272421914
+      ],
+      "fov": 53.010498046875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 70.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -21.661423762755742,
+        12.535706787109374,
+        10.016344236689855
+      ],
+      "fov": 53.255859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 70.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -21.12631062744537,
+        11.390919708251955,
+        9.566968719912273
+      ],
+      "fov": 53.478759765625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 71,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -20.55496681224551,
+        10.302403515625002,
+        9.148815467222263
+      ],
+      "fov": 53.671875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 71.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -19.9520280795286,
+        9.279605828857424,
+        8.76746322375293
+      ],
+      "fov": 53.827880859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 71.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -19.322130191667082,
+        8.331974267578127,
+        8.428490734637375
+      ],
+      "fov": 53.939453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 71.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -18.6699089110334,
+        7.468956451416017,
+        8.137476745008698
+      ],
+      "fov": 53.999267578125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 72,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -18,
+        6.7,
+        7.9
+      ],
+      "fov": 54,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 72.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -17.26263024774628,
+        6.025633947753907,
+        7.719718957506731
+      ],
+      "fov": 53.9349365234375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 72.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -16.415942418706752,
+        5.43532900390625,
+        7.592869936720633
+      ],
+      "fov": 53.8076171875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 72.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -15.47644623813654,
+        4.921945300292968,
+        7.513898474719251
+      ],
+      "fov": 53.6260986328125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 73,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -14.46065143129075,
+        4.478342968750001,
+        7.477250108580133
+      ],
+      "fov": 53.3984375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 73.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -13.385067723424505,
+        4.097382141113282,
+        7.477370375380828
+      ],
+      "fov": 53.1326904296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 73.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -12.266204839792914,
+        3.77192294921875,
+        7.50870481219888
+      ],
+      "fov": 52.8369140625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 73.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -11.120572505651092,
+        3.494825524902344,
+        7.565698956111839
+      ],
+      "fov": 52.5191650390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 74,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -9.964680446254157,
+        3.2589499999999996,
+        7.642798344197249
+      ],
+      "fov": 52.1875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 74.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -8.815038386857221,
+        3.0571565063476553,
+        7.734448513532661
+      ],
+      "fov": 51.8499755859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 74.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -7.688156052715399,
+        2.8823051757812497,
+        7.83509500119562
+      ],
+      "fov": 51.5146484375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 74.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -6.600543169083808,
+        2.727256140136719,
+        7.9391833442636734
+      ],
+      "fov": 51.1895751953125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -5.568709461217563,
+        2.584869531249999,
+        8.041159079814369
+      ],
+      "fov": 50.8828125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 75.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -4.609164654371775,
+        2.4480054809570304,
+        8.13546774492525
+      ],
+      "fov": 50.6024169921875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 75.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -3.738418473801561,
+        2.3095241210937503,
+        8.216554876673868
+      ],
+      "fov": 50.3564453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 75.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -2.9729806447620355,
+        2.162285583496093,
+        8.278866012137769
+      ],
+      "fov": 50.1529541015625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 76,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -2.329360892508312,
+        1.9991499999999998,
+        8.3168466883945
+      ],
+      "fov": 50,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 76.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -1.7981116494436598,
+        1.8383722595214842,
+        8.341052072292053
+      ],
+      "fov": 49.89013671875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 76.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -1.3532267945912293,
+        1.7015897949218748,
+        8.365641110007127
+      ],
+      "fov": 49.80859375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 76.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -0.9863782231359628,
+        1.5867365539550777,
+        8.390465007610322
+      ],
+      "fov": 49.75244140625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 77,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -0.6892378302628028,
+        1.4917464843749997,
+        8.415374971172238
+      ],
+      "fov": 49.71875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 77.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -0.453477511156692,
+        1.4145535339355466,
+        8.44022220676348
+      ],
+      "fov": 49.70458984375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 77.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -0.2707691610025735,
+        1.353091650390625,
+        8.464857920454643
+      ],
+      "fov": 49.70703125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 77.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -0.13278467498538876,
+        1.3052947814941405,
+        8.489133318316336
+      ],
+      "fov": 49.72314453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 78,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        -0.031195948290081987,
+        1.269096875,
+        8.512899606419158
+      ],
+      "fov": 49.75,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 78.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        0.04232512389840504,
+        1.2424318786621094,
+        8.536007990833705
+      ],
+      "fov": 49.78466796875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 78.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        0.09610664639513078,
+        1.2232337402343751,
+        8.558309677630586
+      ],
+      "fov": 49.82421875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 78.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        0.13847672401515077,
+        1.2094364074707031,
+        8.5796558728804
+      ],
+      "fov": 49.86572265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 79,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        0.17776346157352352,
+        1.1989738281250002,
+        8.599897782653745
+      ],
+      "fov": 49.90625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 79.25,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        0.22229496388530556,
+        1.189779949951172,
+        8.618886613021226
+      ],
+      "fov": 49.94287109375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 79.5,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        0.2803993357655563,
+        1.1797887207031252,
+        8.636473570053447
+      ],
+      "fov": 49.97265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 79.75,
+      "mode": "CINEMATIC",
+      "routeId": "east-low",
+      "shot": "UNDER_TREE",
+      "position": [
+        0.36040468202932896,
+        1.1669340881347658,
+        8.652509859821
+      ],
+      "fov": 49.99267578125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 80,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        0.4706391074916876,
+        1.14915,
+        8.6668466883945
+      ],
+      "fov": 50,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 80.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        0.613358783591831,
+        1.1255351623535155,
+        8.673452242633504
+      ],
+      "fov": 49.9871826171875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 80.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        0.7805946482655565,
+        1.0978160644531252,
+        8.668075132553447
+      ],
+      "fov": 49.9521484375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 80.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        0.9653369560728067,
+        1.0678683288574218,
+        8.65323719895873
+      ],
+      "fov": 49.9000244140625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 81,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.160575961573524,
+        1.0375675781249998,
+        8.631460282653748
+      ],
+      "fov": 49.8359375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 81.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.3593019193276512,
+        1.008789434814453,
+        8.605266224442898
+      ],
+      "fov": 49.7650146484375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 81.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.554505083895131,
+        0.9834095214843748,
+        8.577176865130587
+      ],
+      "fov": 49.6923828125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 81.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.7391757098359057,
+        0.9633034606933593,
+        8.549714045521206
+      ],
+      "fov": 49.6231689453125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 82,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.9063040517099181,
+        0.9503468749999998,
+        8.525399606419157
+      ],
+      "fov": 49.5625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 82.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        2.048880364077111,
+        0.9464153869628904,
+        8.506755388628838
+      ],
+      "fov": 49.5155029296875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 82.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        2.159894901497427,
+        0.9533846191406248,
+        8.496303232954645
+      ],
+      "fov": 49.4873046875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 82.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        2.232337918530808,
+        0.9731301940917967,
+        8.496564980200981
+      ],
+      "fov": 49.4830322265625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 83,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        2.259199669737197,
+        1.0075277343749998,
+        8.510062471172239
+      ],
+      "fov": 49.5078125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 83.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        2.2334704096765368,
+        1.0584528625488279,
+        8.539317546672821
+      ],
+      "fov": 49.5667724609375,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 83.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        2.14814039290877,
+        1.1277812011718746,
+        8.586852047507127
+      ],
+      "fov": 49.6650390625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 83.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.9961998739938402,
+        1.2173883728027342,
+        8.655187814479556
+      ],
+      "fov": 49.8077392578125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 84,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.7706391074916876,
+        1.3291499999999998,
+        8.7468466883945
+      ],
+      "fov": 50,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 84.25,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.4791067575817158,
+        1.4531486206054687,
+        8.825026900809645
+      ],
+      "fov": 50.250732421875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 84.5,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        1.1353119949484405,
+        1.5799440429687497,
+        8.859826361048869
+      ],
+      "fov": 50.560546875,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 84.75,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        0.7413358339094764,
+        1.7121277954101561,
+        8.864116426565875
+      ],
+      "fov": 50.922119140625,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    },
+    {
+      "t": 85,
+      "mode": "CINEMATIC",
+      "routeId": "west-low",
+      "shot": "CLOSE",
+      "position": [
+        0.2992592887824387,
+        1.8522914062499996,
+        8.850768454814366
+      ],
+      "fov": 51.328125,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "count": 0
+    }
+  ],
+  "trace": [],
+  "report": {
+    "repoRevision": "4c5c28ad1bf85814fa5f417d7246ce0ef5a56c8c",
+    "profile": "eco",
+    "viewport": [
+      720,
+      1280
+    ],
+    "safeMargin": 0.08,
+    "near": 0.05,
+    "far": 500,
+    "scenario": "idle",
+    "seed": 9,
+    "errors": [],
+    "contextRestores": 0,
+    "graphics": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+    "asset": {
+      "assetId": "sakura_hero",
+      "assetRevision": "R16",
+      "baselineCommit": "fcc6ede4cb7a96ba09cb94d2088fbf9e09481766",
+      "profile": "eco",
+      "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+      "bytes": 1393492,
+      "triangles": 44412,
+      "meshes": 10,
+      "bounds": [
+        [
+          -12.786479949951172,
+          -1.026049256324768,
+          -12.026215553283691
+        ],
+        [
+          13.287308692932129,
+          24.86863899230957,
+          10.933910369873047
+        ]
+      ],
+      "axesValid": true,
+      "materials": [
+        {
+          "name": "Trunk_bark_plumblack",
+          "pbr": true,
+          "doubleSided": false,
+          "matchesSource": true
+        },
+        {
+          "name": "Golden_bark_veins",
+          "pbr": true,
+          "doubleSided": false,
+          "matchesSource": true
+        },
+        {
+          "name": "Branches_plum",
+          "pbr": true,
+          "doubleSided": false,
+          "matchesSource": true
+        },
+        {
+          "name": "Canopy_depth_rose",
+          "pbr": true,
+          "doubleSided": false,
+          "matchesSource": true
+        },
+        {
+          "name": "Canopy_peach",
+          "pbr": true,
+          "doubleSided": false,
+          "matchesSource": true
+        },
+        {
+          "name": "Canopy_rose",
+          "pbr": true,
+          "doubleSided": false,
+          "matchesSource": true
+        },
+        {
+          "name": "Sakura_petal_blush",
+          "pbr": true,
+          "doubleSided": true,
+          "matchesSource": true
+        },
+        {
+          "name": "Sakura_petal_cream",
+          "pbr": true,
+          "doubleSided": true,
+          "matchesSource": true
+        },
+        {
+          "name": "Sakura_petal_pink",
+          "pbr": true,
+          "doubleSided": true,
+          "matchesSource": true
+        },
+        {
+          "name": "Sakura_petal_warm_rose",
+          "pbr": true,
+          "doubleSided": true,
+          "matchesSource": true
+        }
+      ],
+      "gltfTextures": 0
+    },
+    "pair": {
+      "pad": {
+        "assetId": "lotus_pad_01",
+        "revision": "P02",
+        "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+        "bytes": 262108,
+        "meshes": 5,
+        "triangles": 10648,
+        "materials": 5,
+        "usedMaterials": 5,
+        "materialVariants": [],
+        "animations": []
+      },
+      "actor": {
+        "assetId": "meditator_base",
+        "revision": "P07b1 cross prayer Side Part 7/3",
+        "sha256": "4e8c8d082352d67d0eaf637df7973931442c724a0f7db598ea8fde8de3873097",
+        "bytes": 589932,
+        "meshes": 10,
+        "triangles": 17420,
+        "materials": 21,
+        "usedMaterials": 9,
+        "materialVariants": [
+          "pastel_lilac",
+          "blush_rose",
+          "sage_green",
+          "sky_blue",
+          "warm_cream",
+          "terracotta"
+        ],
+        "animations": [
+          "sit_idle",
+          "cross_prayer_idle"
+        ]
+      }
+    },
+    "treeTarget": [
+      0,
+      0,
+      0
+    ],
+    "rejectedRoutes": [],
+    "fx": {
+      "enabled": true,
+      "ambient": {
+        "motes": 48,
+        "petals": 36,
+        "leaves": 7
+      },
+      "count": 0,
+      "capacity": 19,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "ledgerSize": 0,
+      "ledgerCapacity": 256,
+      "suppressed": 0,
+      "poolId": 75,
+      "materialId": 101
+    },
+    "elapsedSeconds": 85,
+    "shot": "CLOSE",
+    "visited": [
+      "CLOSE",
+      "COMMUNITY",
+      "AERIAL",
+      "UNDER_TREE"
+    ],
+    "mode": "CINEMATIC",
+    "revision": 5101,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0,
+    "pendingGivers": 0,
+    "position": [
+      0.2992592887824387,
+      1.8522914062499996,
+      8.850768454814366
+    ],
+    "target": [
+      1.4091345771852577,
+      1.2273435635711234,
+      13.020224046830997
+    ],
+    "fov": 51.328125,
+    "routeId": "west-low",
+    "direction": "west-first",
+    "cycle": 2
+  }
+}

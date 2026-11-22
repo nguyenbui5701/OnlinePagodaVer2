@@ -1,0 +1,101 @@
+{
+  "before": {
+    "enabled": true,
+    "ambient": {
+      "motes": 48,
+      "petals": 36,
+      "leaves": 7
+    },
+    "gift": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "roomSessionId": "demo-1",
+      "requestId": "demo-1-gift-1",
+      "phase": "confirmed",
+      "startedAtMs": 47050,
+      "expiresAtMs": 136000,
+      "progress": 0.40606060606060607,
+      "opacity": 0.642215542315089
+    },
+    "ripple": {
+      "x": 2,
+      "z": 13.5,
+      "progress": 0.40606060606060607,
+      "opacity": 0.642215542315089
+    },
+    "count": 19,
+    "capacity": 19,
+    "starts": {
+      "observed": 1,
+      "confirmed": 1
+    },
+    "ledgerSize": 1,
+    "ledgerCapacity": 256,
+    "suppressed": 0,
+    "poolId": 75,
+    "materialId": 101,
+    "anchorWorld": [
+      1.914320325294046,
+      0.34,
+      13.477109099137827
+    ],
+    "waterAnchor": [
+      2,
+      0,
+      13.5
+    ]
+  },
+  "restored": {
+    "enabled": true,
+    "ambient": {
+      "motes": 48,
+      "petals": 36,
+      "leaves": 7
+    },
+    "gift": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "roomSessionId": "demo-1",
+      "requestId": "demo-1-gift-1",
+      "phase": "confirmed",
+      "startedAtMs": 47050,
+      "expiresAtMs": 136000,
+      "progress": 0.42424242424242425,
+      "opacity": 0.6254660075758284
+    },
+    "ripple": {
+      "x": 2,
+      "z": 13.5,
+      "progress": 0.42424242424242425,
+      "opacity": 0.6254660075758284
+    },
+    "count": 19,
+    "capacity": 19,
+    "starts": {
+      "observed": 1,
+      "confirmed": 1
+    },
+    "ledgerSize": 1,
+    "ledgerCapacity": 256,
+    "suppressed": 0,
+    "poolId": 75,
+    "materialId": 101,
+    "anchorWorld": [
+      1.914320325294046,
+      0.34,
+      13.477109099137827
+    ],
+    "waterAnchor": [
+      2,
+      0,
+      13.5
+    ]
+  },
+  "errors": [
+    "webglcontextlost"
+  ],
+  "drawCalls": 20,
+  "geometries": 20,
+  "textures": 1,
+  "contextRestores": 1
+}

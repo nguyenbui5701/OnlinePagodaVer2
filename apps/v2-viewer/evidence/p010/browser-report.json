@@ -1,0 +1,880 @@
+{
+  "label": "after",
+  "seed": 9,
+  "viewport": {
+    "width": 720,
+    "height": 1280
+  },
+  "source": "4c5c28ad1bf85814fa5f417d7246ce0ef5a56c8c",
+  "graphics": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+  "os": "10.0.19045",
+  "cpu": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
+  "liveStudio": false,
+  "metrics": {
+    "eco": {
+      "samples": 90,
+      "virtualStart": 7,
+      "virtualEnd": 14,
+      "wallSeconds": 12.1108,
+      "fps": 7.431383558476732,
+      "p50ms": 173.60000000000036,
+      "p95ms": 222.30000000000018,
+      "p99ms": 256.89999999999964,
+      "drawCalls": 27,
+      "triangles": 72482,
+      "textures": 1,
+      "points": 91,
+      "geometries": 27,
+      "heapBytes": 23458203,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 48,
+          "petals": 36,
+          "leaves": 7
+        },
+        "count": 0,
+        "capacity": 19,
+        "starts": {
+          "observed": 0,
+          "confirmed": 0
+        },
+        "ledgerSize": 0,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 75,
+        "materialId": 101
+      },
+      "errors": []
+    },
+    "quality": {
+      "samples": 90,
+      "virtualStart": 7,
+      "virtualEnd": 14,
+      "wallSeconds": 43.01989999999999,
+      "fps": 2.092055072187523,
+      "p50ms": 618,
+      "p95ms": 777.7000000000007,
+      "p99ms": 791.7000000000007,
+      "drawCalls": 28,
+      "triangles": 219358,
+      "textures": 2,
+      "points": 183,
+      "geometries": 28,
+      "heapBytes": 15828803,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 94,
+          "petals": 74,
+          "leaves": 15
+        },
+        "count": 0,
+        "capacity": 31,
+        "starts": {
+          "observed": 0,
+          "confirmed": 0
+        },
+        "ledgerSize": 0,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 76,
+        "materialId": 103
+      },
+      "errors": []
+    }
+  },
+  "snapshots": {
+    "near-water": {
+      "time": 3,
+      "seed": 9,
+      "profile": "eco",
+      "shot": "CLOSE",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52,
+      "labels": {},
+      "count": 0,
+      "fx": {
+        "enabled": false
+      },
+      "measuredDraws": 26,
+      "measuredPoints": 0,
+      "textures": 1,
+      "geometries": 26
+    },
+    "near-water-later": {
+      "time": 6,
+      "seed": 9,
+      "profile": "eco",
+      "shot": "CLOSE",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52,
+      "labels": {},
+      "count": 0,
+      "fx": {
+        "enabled": false
+      },
+      "measuredDraws": 26,
+      "measuredPoints": 0,
+      "textures": 1,
+      "geometries": 26
+    },
+    "aerial": {
+      "time": 20,
+      "seed": 9,
+      "profile": "eco",
+      "shot": "AERIAL",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "position": [
+        -7,
+        54,
+        27
+      ],
+      "target": [
+        8.881784197001252e-16,
+        12.799999999999997,
+        -3.552713678800501e-15
+      ],
+      "fov": 51,
+      "labels": {},
+      "count": 0,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 48,
+          "petals": 36,
+          "leaves": 7
+        },
+        "count": 0,
+        "capacity": 19,
+        "starts": {
+          "observed": 0,
+          "confirmed": 0
+        },
+        "ledgerSize": 0,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 75,
+        "materialId": 101
+      },
+      "measuredDraws": 27,
+      "measuredPoints": 91,
+      "textures": 1,
+      "geometries": 27
+    },
+    "under-tree": {
+      "time": 31,
+      "seed": 9,
+      "profile": "eco",
+      "shot": "UNDER_TREE",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "position": [
+        20.88253318775449,
+        10.302403515625002,
+        9.148815467222263
+      ],
+      "target": [
+        -3.4410781043725542,
+        13.019460164062057,
+        -0.4919126965215863
+      ],
+      "fov": 53.671875,
+      "labels": {},
+      "count": 0,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 48,
+          "petals": 36,
+          "leaves": 7
+        },
+        "count": 0,
+        "capacity": 19,
+        "starts": {
+          "observed": 0,
+          "confirmed": 0
+        },
+        "ledgerSize": 0,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 75,
+        "materialId": 101
+      },
+      "measuredDraws": 12,
+      "measuredPoints": 91,
+      "textures": 1,
+      "geometries": 12
+    },
+    "observed": {
+      "time": 46.2,
+      "seed": 9,
+      "profile": "eco",
+      "shot": "CLOSE",
+      "routeId": "east-low",
+      "mode": "GIFT_TRANSITION",
+      "position": [
+        -0.16453682873832176,
+        1.15060335816266,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.67060335816266,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0966494731418788,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5966494731418788,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.066649473141879,
+          13.395950450626481
+        ]
+      },
+      "labels": {},
+      "count": 0,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 48,
+          "petals": 36,
+          "leaves": 7
+        },
+        "gift": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "phase": "observed",
+          "startedAtMs": 46000,
+          "expiresAtMs": 136000,
+          "progress": 0.21052631578947367,
+          "opacity": 0.8179693100540129
+        },
+        "count": 5,
+        "capacity": 19,
+        "starts": {
+          "observed": 1,
+          "confirmed": 0
+        },
+        "ledgerSize": 1,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 75,
+        "materialId": 101,
+        "anchorWorld": [
+          1.914320325294046,
+          0.34,
+          13.477109099137827
+        ]
+      },
+      "measuredDraws": 20,
+      "measuredPoints": 96,
+      "textures": 1,
+      "geometries": 20
+    },
+    "confirmed-A": {
+      "time": 47.72,
+      "seed": 9,
+      "profile": "eco",
+      "shot": "CLOSE",
+      "routeId": "east-low",
+      "mode": "GIFT_FOCUS",
+      "position": [
+        -0.16453682873832176,
+        1.15060335816266,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.67060335816266,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0979660370666533,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5979660370666533,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0679660370666535,
+          13.395950450626481
+        ]
+      },
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "count": 5,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 48,
+          "petals": 36,
+          "leaves": 7
+        },
+        "gift": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "phase": "confirmed",
+          "startedAtMs": 47050,
+          "expiresAtMs": 136000,
+          "progress": 0.40606060606060607,
+          "opacity": 0.642215542315089
+        },
+        "ripple": {
+          "x": 2,
+          "z": 13.5,
+          "progress": 0.40606060606060607,
+          "opacity": 0.642215542315089
+        },
+        "count": 19,
+        "capacity": 19,
+        "starts": {
+          "observed": 1,
+          "confirmed": 1
+        },
+        "ledgerSize": 1,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 75,
+        "materialId": 101,
+        "anchorWorld": [
+          1.914320325294046,
+          0.34,
+          13.477109099137827
+        ],
+        "waterAnchor": [
+          2,
+          0,
+          13.5
+        ]
+      },
+      "measuredDraws": 20,
+      "measuredPoints": 110,
+      "textures": 1,
+      "geometries": 20
+    },
+    "confirmed-B": {
+      "time": 53.65,
+      "seed": 9,
+      "profile": "eco",
+      "shot": "COMMUNITY",
+      "routeId": "east-low",
+      "mode": "GIFT_FOCUS",
+      "position": [
+        -2.327949597176647,
+        1.1513155325288884,
+        7.417805796912665
+      ],
+      "target": [
+        -1.3977922776081078,
+        0.6713155325288884,
+        12.33052473461438
+      ],
+      "fov": 50,
+      "focus": {
+        "actorId": "demo-1-actor-2",
+        "seatId": "seat-2",
+        "requestId": "demo-1-gift-2",
+        "name": "Bình",
+        "headWorld": [
+          -1.3954944440981791,
+          1.0994194541405886,
+          12.31025456043751
+        ],
+        "nameWorld": [
+          -1.3966208330736343,
+          1.5994194541405886,
+          12.320190920328132
+        ],
+        "fxWorld": [
+          -1.749623092345752,
+          1.0694194541405888,
+          12.149341849658196
+        ]
+      },
+      "labels": {
+        "name": "Bình",
+        "fx": "1 hoa hồng"
+      },
+      "count": 7,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 48,
+          "petals": 36,
+          "leaves": 7
+        },
+        "gift": {
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "phase": "confirmed",
+          "startedAtMs": 52900,
+          "expiresAtMs": 138003,
+          "progress": 0.45454545454545453,
+          "opacity": 0.5973718871162847
+        },
+        "ripple": {
+          "x": -1.4,
+          "z": 12.35,
+          "progress": 0.45454545454545453,
+          "opacity": 0.5973718871162847
+        },
+        "count": 19,
+        "capacity": 19,
+        "starts": {
+          "observed": 1,
+          "confirmed": 2
+        },
+        "ledgerSize": 2,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 75,
+        "materialId": 101,
+        "anchorWorld": [
+          -1.4769170803160654,
+          0.34,
+          12.305855206924804
+        ],
+        "waterAnchor": [
+          -1.4,
+          0,
+          12.35
+        ]
+      },
+      "measuredDraws": 25,
+      "measuredPoints": 110,
+      "textures": 1,
+      "geometries": 23
+    },
+    "confirmed-C": {
+      "time": 59.48,
+      "seed": 9,
+      "profile": "eco",
+      "shot": "AERIAL",
+      "routeId": "east-low",
+      "mode": "GIFT_FOCUS",
+      "position": [
+        1.5463180526429787,
+        1.1533100190412253,
+        7.328850448188187
+      ],
+      "target": [
+        4.792249962242094,
+        0.6733100190412253,
+        11.131997308124866
+      ],
+      "fov": 50,
+      "focus": {
+        "actorId": "demo-1-actor-3",
+        "seatId": "seat-3",
+        "requestId": "demo-1-gift-3",
+        "name": "Chi",
+        "headWorld": [
+          4.784183596412437,
+          1.1034898347780109,
+          11.113259812499725
+        ],
+        "nameWorld": [
+          4.788137697309328,
+          1.6034898347780109,
+          11.122444859374795
+        ],
+        "fxWorld": [
+          4.396887651272209,
+          1.073489834778011,
+          11.149340983183851
+        ]
+      },
+      "labels": {
+        "name": "Chi",
+        "fx": "1 hoa hồng"
+      },
+      "count": 7,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 48,
+          "petals": 36,
+          "leaves": 7
+        },
+        "gift": {
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "phase": "confirmed",
+          "startedAtMs": 58750,
+          "expiresAtMs": 138108,
+          "progress": 0.44242424242424244,
+          "opacity": 0.6086369304787997
+        },
+        "ripple": {
+          "x": 4.8,
+          "z": 11.15,
+          "progress": 0.44242424242424244,
+          "opacity": 0.6086369304787997
+        },
+        "count": 19,
+        "capacity": 19,
+        "starts": {
+          "observed": 1,
+          "confirmed": 3
+        },
+        "ledgerSize": 3,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 75,
+        "materialId": 101,
+        "anchorWorld": [
+          4.711315283279886,
+          0.34,
+          11.149855016300448
+        ],
+        "waterAnchor": [
+          4.8,
+          0,
+          11.15
+        ]
+      },
+      "measuredDraws": 23,
+      "measuredPoints": 110,
+      "textures": 1,
+      "geometries": 23
+    },
+    "return": {
+      "time": 64.32,
+      "seed": 9,
+      "profile": "eco",
+      "shot": "CLOSE",
+      "routeId": "east-low",
+      "mode": "CINE_RETURN",
+      "position": [
+        1.1871132633997803,
+        1.0403878608717443,
+        7.998062072202499
+      ],
+      "target": [
+        3.087218858471781,
+        0.5236291130494324,
+        12.227188373049888
+      ],
+      "fov": 49.75957358389455,
+      "labels": {},
+      "count": 7,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 48,
+          "petals": 36,
+          "leaves": 7
+        },
+        "count": 0,
+        "capacity": 19,
+        "starts": {
+          "observed": 1,
+          "confirmed": 3
+        },
+        "ledgerSize": 3,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 75,
+        "materialId": 101
+      },
+      "measuredDraws": 21,
+      "measuredPoints": 91,
+      "textures": 1,
+      "geometries": 18
+    },
+    "no-seat": {
+      "time": 48.9,
+      "seed": 9,
+      "profile": "eco",
+      "shot": "CLOSE",
+      "routeId": "east-low",
+      "mode": "GIFT_FOCUS",
+      "position": [
+        -0.16453682873832176,
+        1.156751286891848,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6767512868918478,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.1105128303915262,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.6105128303915262,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0805128303915263,
+          13.395950450626481
+        ]
+      },
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "count": 8,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 48,
+          "petals": 36,
+          "leaves": 7
+        },
+        "count": 0,
+        "capacity": 19,
+        "starts": {
+          "observed": 1,
+          "confirmed": 1
+        },
+        "ledgerSize": 1,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 75,
+        "materialId": 101
+      },
+      "measuredDraws": 19,
+      "measuredPoints": 91,
+      "textures": 1,
+      "geometries": 19
+    },
+    "ambient-eco": {
+      "time": 5.8,
+      "seed": 9,
+      "profile": "eco",
+      "shot": "CLOSE",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "position": [
+        6,
+        2.8,
+        17
+      ],
+      "target": [
+        0,
+        7,
+        0
+      ],
+      "fov": 55,
+      "labels": {},
+      "count": 0,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 48,
+          "petals": 36,
+          "leaves": 7
+        },
+        "count": 0,
+        "capacity": 19,
+        "starts": {
+          "observed": 0,
+          "confirmed": 0
+        },
+        "ledgerSize": 0,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 75,
+        "materialId": 101
+      },
+      "measuredDraws": 14,
+      "measuredPoints": 91,
+      "textures": 1,
+      "geometries": 14
+    },
+    "ambient-quality-low": {
+      "time": 8.5,
+      "seed": 9,
+      "profile": "quality",
+      "shot": "CLOSE",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "position": [
+        6,
+        2.8,
+        17
+      ],
+      "target": [
+        0,
+        7,
+        0
+      ],
+      "fov": 55,
+      "labels": {},
+      "count": 0,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 94,
+          "petals": 74,
+          "leaves": 15
+        },
+        "count": 0,
+        "capacity": 31,
+        "starts": {
+          "observed": 0,
+          "confirmed": 0
+        },
+        "ledgerSize": 0,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 76,
+        "materialId": 103
+      },
+      "measuredDraws": 15,
+      "measuredPoints": 183,
+      "textures": 2,
+      "geometries": 28
+    },
+    "ambient-quality-drift": {
+      "time": 28.5,
+      "seed": 9,
+      "profile": "quality",
+      "shot": "AERIAL",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "position": [
+        9,
+        6,
+        17
+      ],
+      "target": [
+        0,
+        11.5,
+        0
+      ],
+      "fov": 57,
+      "labels": {},
+      "count": 0,
+      "fx": {
+        "enabled": true,
+        "ambient": {
+          "motes": 94,
+          "petals": 74,
+          "leaves": 15
+        },
+        "count": 0,
+        "capacity": 31,
+        "starts": {
+          "observed": 0,
+          "confirmed": 0
+        },
+        "ledgerSize": 0,
+        "ledgerCapacity": 256,
+        "suppressed": 0,
+        "poolId": 76,
+        "materialId": 103
+      },
+      "measuredDraws": 13,
+      "measuredPoints": 183,
+      "textures": 2,
+      "geometries": 28
+    },
+    "water-only-pixel-delta": {
+      "rect": {
+        "x": 35,
+        "y": 1120,
+        "width": 650,
+        "height": 105
+      },
+      "changed": 51947,
+      "meanChannelDelta": 2.788166056166056
+    }
+  },
+  "pageErrors": [],
+  "delta": {
+    "eco": {
+      "fps": -0.689161420319623,
+      "p50ms": 20.800000000000637,
+      "p95ms": 13.899999999998727,
+      "p99ms": -118.10000000000036,
+      "drawCalls": 1,
+      "triangles": 0,
+      "textures": 0,
+      "geometries": 1,
+      "points": 91
+    },
+    "quality": {
+      "fps": -0.12679231055871965,
+      "p50ms": 83.29999999999927,
+      "p95ms": 34.60000000000218,
+      "p99ms": 20.80000000000291,
+      "drawCalls": 1,
+      "triangles": 0,
+      "textures": 0,
+      "geometries": 1,
+      "points": 183
+    }
+  }
+}

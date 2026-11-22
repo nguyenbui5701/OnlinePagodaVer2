@@ -12,7 +12,8 @@
     "build": "tsc --noEmit && vite build",
     "evidence": "node scripts/evidence.mjs",
     "evidence:p08": "node scripts/evidence-p08.mjs",
-    "evidence:p09": "node scripts/evidence-p09.mjs"
+    "evidence:p09": "node scripts/evidence-p09.mjs",
+    "evidence:p010": "node scripts/evidence-p010.mjs"
   },
   "dependencies": { "three": "0.181.2" },
   "devDependencies": {
