@@ -1,0 +1,3593 @@
+[
+  {
+    "seconds": 0.19183399999999998,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.1152040656791495,
+      1.1499027294286321,
+      17.940660843009823
+    ],
+    "target": [
+      2.002735045047027,
+      0.6699027294286317,
+      13.519408233525768
+    ],
+    "revision": 3,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 0.49033400000000005,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.1543822274361215,
+      1.152953998967686,
+      17.92172744077518
+    ],
+    "target": [
+      2.002735045047027,
+      0.672953998967686,
+      13.519408233525768
+    ],
+    "revision": 4,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 0.622334,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.1716423909862,
+      1.1545381253032447,
+      17.913249482903254
+    ],
+    "target": [
+      2.002735045047027,
+      0.6745381253032443,
+      13.519408233525768
+    ],
+    "revision": 5,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 0.726434,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.185193541641208,
+      1.1556021007450035,
+      17.906534275782118
+    ],
+    "target": [
+      2.002735045047027,
+      0.6756021007450039,
+      13.519408233525768
+    ],
+    "revision": 6,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 0.823734,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.197920803492024,
+      1.156343102542074,
+      17.900179796380908
+    ],
+    "target": [
+      2.002735045047027,
+      0.6763431025420745,
+      13.519408233525768
+    ],
+    "revision": 7,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 0.9279339999999999,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.211379180163568,
+      1.1568179691154996,
+      17.89340995785274
+    ],
+    "target": [
+      2.002735045047027,
+      0.6768179691154996,
+      13.519408233525768
+    ],
+    "revision": 8,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 1.0320340000000001,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.2247845143617555,
+      1.156913530779077,
+      17.886615139079723
+    ],
+    "target": [
+      2.002735045047027,
+      0.6769135307790775,
+      13.519408233525768
+    ],
+    "revision": 9,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 1.1432339999999999,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.239029614666809,
+      1.1565676533693603,
+      17.879337888679515
+    ],
+    "target": [
+      2.002735045047027,
+      0.6765676533693608,
+      13.519408233525768
+    ],
+    "revision": 10,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 1.2542339999999998,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.253205986003559,
+      1.1557987819252848,
+      17.872037386567666
+    ],
+    "target": [
+      2.002735045047027,
+      0.6757987819252849,
+      13.519408233525768
+    ],
+    "revision": 11,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 1.358434,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.266422235683978,
+      1.1547386592262474,
+      17.8651786258666
+    ],
+    "target": [
+      2.002735045047027,
+      0.6747386592262474,
+      13.519408233525768
+    ],
+    "revision": 12,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 1.462634,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.279697099397472,
+      1.1535184274130525,
+      17.858238006984067
+    ],
+    "target": [
+      2.002735045047027,
+      0.6735184274130521,
+      13.519408233525768
+    ],
+    "revision": 13,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 1.573734,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.293651861098564,
+      1.1521851215965837,
+      17.850886057771472
+    ],
+    "target": [
+      2.002735045047027,
+      0.6721851215965833,
+      13.519408233525768
+    ],
+    "revision": 14,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 1.691834,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.308393500842105,
+      1.1508899167797915,
+      17.84305704965557
+    ],
+    "target": [
+      2.002735045047027,
+      0.6708899167797906,
+      13.519408233525768
+    ],
+    "revision": 15,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 1.802934,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.322168761593537,
+      1.14993829590522,
+      17.835682927581654
+    ],
+    "target": [
+      2.002735045047027,
+      0.6699382959052205,
+      13.519408233525768
+    ],
+    "revision": 16,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 1.9070340000000001,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.334990879593925,
+      1.149371922586436,
+      17.828768130566388
+    ],
+    "target": [
+      2.002735045047027,
+      0.6693719225864356,
+      13.519408233525768
+    ],
+    "revision": 17,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 2.011234,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.347728007730896,
+      1.1491768171185424,
+      17.821850331330587
+    ],
+    "target": [
+      2.002735045047027,
+      0.6691768171185419,
+      13.519408233525768
+    ],
+    "revision": 18,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 2.1014340000000002,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.358679462194346,
+      1.1493921370484461,
+      17.815863272661215
+    ],
+    "target": [
+      2.002735045047027,
+      0.6693921370484457,
+      13.519408233525768
+    ],
+    "revision": 19,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 2.2472339999999997,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.376299457635191,
+      1.150279338241175,
+      17.806154316430028
+    ],
+    "target": [
+      2.002735045047027,
+      0.6702793382411745,
+      13.519408233525768
+    ],
+    "revision": 20,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 2.3375340000000002,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.387187343428003,
+      1.151188705041311,
+      17.800107619928145
+    ],
+    "target": [
+      2.002735045047027,
+      0.6711887050413115,
+      13.519408233525768
+    ],
+    "revision": 21,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 2.441634,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.399538701917276,
+      1.1523695525222957,
+      17.79320423127922
+    ],
+    "target": [
+      2.002735045047027,
+      0.6723695525222961,
+      13.519408233525768
+    ],
+    "revision": 22,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 2.552834,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.412609950588287,
+      1.1537040587670795,
+      17.785847374031878
+    ],
+    "target": [
+      2.002735045047027,
+      0.6737040587670791,
+      13.519408233525768
+    ],
+    "revision": 23,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 2.6639340000000002,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.425562587304222,
+      1.1549662310603743,
+      17.778505168379443
+    ],
+    "target": [
+      2.002735045047027,
+      0.6749662310603739,
+      13.519408233525768
+    ],
+    "revision": 24,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 2.761234,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.436781656651808,
+      1.155918227893622,
+      17.772103507412115
+    ],
+    "target": [
+      2.002735045047027,
+      0.6759182278936233,
+      13.519408233525768
+    ],
+    "revision": 25,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 2.886234,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.451097882304884,
+      1.1567184255941179,
+      17.763877507432067
+    ],
+    "target": [
+      2.002735045047027,
+      0.6767184255941174,
+      13.519408233525768
+    ],
+    "revision": 26,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 2.990434,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.462884431403495,
+      1.1569671650408324,
+      17.75705675562029
+    ],
+    "target": [
+      2.002735045047027,
+      0.676967165040832,
+      13.519408233525768
+    ],
+    "revision": 27,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 3.080634,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.473102523219326,
+      1.1567975158501103,
+      17.751108190137607
+    ],
+    "target": [
+      2.002735045047027,
+      0.6767975158501098,
+      13.519408233525768
+    ],
+    "revision": 28,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 3.1709340000000004,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.483119111082919,
+      1.1563793488240393,
+      17.745244823475176
+    ],
+    "target": [
+      2.002735045047027,
+      0.6763793488240406,
+      13.519408233525768
+    ],
+    "revision": 29,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 3.261234,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.493045224961131,
+      1.1557275644694958,
+      17.739402926391648
+    ],
+    "target": [
+      2.002735045047027,
+      0.6757275644694953,
+      13.519408233525768
+    ],
+    "revision": 30,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 3.3375340000000002,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.501464454021114,
+      1.1549512942013909,
+      17.734423220536847
+    ],
+    "target": [
+      2.002735045047027,
+      0.6749512942013904,
+      13.519408233525768
+    ],
+    "revision": 31,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 3.4209340000000004,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.510485080458965,
+      1.1540306023537354,
+      17.729090486886875
+    ],
+    "target": [
+      2.0027311044137117,
+      0.6740380550731562,
+      13.519381632388178
+    ],
+    "revision": 32,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 3.511134,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.523352156231489,
+      1.154638456455439,
+      17.72546562559118
+    ],
+    "target": [
+      2.002174798553979,
+      0.6756760296443236,
+      13.515626304872924
+    ],
+    "revision": 33,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 3.594534,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.546283256591648,
+      1.1610017495278413,
+      17.72960321985042
+    ],
+    "target": [
+      1.999805173793899,
+      0.6863186619918995,
+      13.499630217636614
+    ],
+    "revision": 34,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 3.677834,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.586923743531431,
+      1.1768257584951698,
+      17.746237265408453
+    ],
+    "target": [
+      1.9945477877943252,
+      0.7113767622569824,
+      13.464140377008297
+    ],
+    "revision": 35,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 3.754134,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.64560121224091,
+      1.202605540773737,
+      17.77667778248326
+    ],
+    "target": [
+      1.9863907671808303,
+      0.7510840295959937,
+      13.40907663209813
+    ],
+    "revision": 36,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 3.8375340000000002,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.740166718573866,
+      1.2468584685888748,
+      17.831722963693302
+    ],
+    "target": [
+      1.9729279947508045,
+      0.8176262633568818,
+      13.318196554432987
+    ],
+    "revision": 37,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 3.9208339999999997,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.86960632852387,
+      1.3095003280379212,
+      17.912476603017375
+    ],
+    "target": [
+      1.9544447037086414,
+      0.9098441032294229,
+      13.193425602970358
+    ],
+    "revision": 38,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 3.997234,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      5.023585629250929,
+      1.3854275152368265,
+      18.01281887883629
+    ],
+    "target": [
+      1.9326122773073053,
+      1.0195168636223304,
+      13.046046404719428
+    ],
+    "revision": 39,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 4.094434000000001,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      5.274333889787011,
+      1.5109415264418429,
+      18.181973148167035
+    ],
+    "target": [
+      1.8975446307053132,
+      1.1970493279925147,
+      12.80932321391402
+    ],
+    "revision": 40,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 4.170834,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      5.519790999543696,
+      1.6349182624542724,
+      18.352023235294702
+    ],
+    "target": [
+      1.8637877345877152,
+      1.3689410310251642,
+      12.581448208461259
+    ],
+    "revision": 41,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 4.268033999999999,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      5.890606035824236,
+      1.8234545654378103,
+      18.614619303416774
+    ],
+    "target": [
+      1.8137496001727702,
+      1.6251187027279634,
+      12.243667148468976
+    ],
+    "revision": 42,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 4.344434000000001,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      6.230578758292692,
+      1.9972623946394021,
+      18.8598699634869
+    ],
+    "target": [
+      1.7687676444551677,
+      1.8566196624508127,
+      11.940017684705602
+    ],
+    "revision": 43,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 4.420834,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      6.619934092077306,
+      2.197080998014271,
+      19.14487629227025
+    ],
+    "target": [
+      1.7181757025386784,
+      2.1180756480056235,
+      11.598498162296794
+    ],
+    "revision": 44,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 4.497234000000001,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      7.048500550425878,
+      2.417845706592689,
+      19.462795097261075
+    ],
+    "target": [
+      1.6635049383932443,
+      2.4017889815904,
+      11.229444661810627
+    ],
+    "revision": 45,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 4.580533999999999,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      7.572583365358229,
+      2.6888229172036677,
+      19.85662422556058
+    ],
+    "target": [
+      1.5979422394082492,
+      2.743453637923272,
+      10.786865452612687
+    ],
+    "revision": 46,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 4.663934,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      8.140879312305104,
+      2.98386308577457,
+      20.289084383525434
+    ],
+    "target": [
+      1.528292908595531,
+      3.1080096641936734,
+      10.316699546854089
+    ],
+    "revision": 47,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 4.733334,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      8.649864109593338,
+      3.2491749413499074,
+      20.680620146078347
+    ],
+    "target": [
+      1.4670731934703378,
+      3.4297446773443294,
+      9.903437531609228
+    ],
+    "revision": 48,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 4.802734,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      9.198292753568472,
+      3.536123563847834,
+      21.106515771140693
+    ],
+    "target": [
+      1.40224126995614,
+      3.771681017740833,
+      9.465791402271847
+    ],
+    "revision": 49,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 4.879234,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      9.827853156555543,
+      3.867089189568193,
+      21.60013102942569
+    ],
+    "target": [
+      1.3291684547695342,
+      4.158693274622852,
+      8.972515358731345
+    ],
+    "revision": 50,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 4.976334,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      10.678083881575493,
+      4.316683884786301,
+      22.274126463287388
+    ],
+    "target": [
+      1.232618858792061,
+      4.672482327053447,
+      8.32075994753526
+    ],
+    "revision": 51,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 5.080533999999999,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      11.649377377834156,
+      4.834435729676884,
+      23.053669360848975
+    ],
+    "target": [
+      1.1251341639183452,
+      5.247927957357117,
+      7.595187449841438
+    ],
+    "revision": 52,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 5.212534,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      12.92926949088784,
+      5.524248284418909,
+      24.095417098901507
+    ],
+    "target": [
+      0.987807808852599,
+      5.98875337038924,
+      6.668169639898268
+    ],
+    "revision": 53,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 5.386134,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      14.668272525329803,
+      6.47760259539715,
+      25.53593715375681
+    ],
+    "target": [
+      0.8087292399816541,
+      6.965260307334309,
+      5.459304650777845
+    ],
+    "revision": 54,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 5.587534,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      16.71458192039721,
+      7.6290874257935375,
+      27.267403030477208
+    ],
+    "target": [
+      0.6090100379688376,
+      8.070913213916727,
+      4.11110563126058
+    ],
+    "revision": 55,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 5.858434,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      19.316130243894637,
+      9.158167689874894,
+      29.52918365583171
+    ],
+    "target": [
+      0.3737076444544744,
+      9.404260359607374,
+      2.5227032491712884
+    ],
+    "revision": 56,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 6.191634,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      22.033343250815605,
+      10.89187609188756,
+      31.98313167693733
+    ],
+    "target": [
+      0.1570482812128366,
+      10.685387473543262,
+      1.0601501338585892
+    ],
+    "revision": 57,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 6.587434,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      24.20076498722215,
+      12.543847076197098,
+      34.062072926041814
+    ],
+    "target": [
+      0.0252740865924405,
+      11.554021819275372,
+      0.17061203139063258
+    ],
+    "revision": 58,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 6.976334,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      25.30412037426029,
+      13.793423469480764,
+      35.233231566224305
+    ],
+    "target": [
+      0.000005874847708744584,
+      11.849677365292974,
+      0.000039657999035237597
+    ],
+    "revision": 59,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 7.330434,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      25.98085987103058,
+      14.960531843655197,
+      35.97931374464744
+    ],
+    "target": [
+      0,
+      11.995389596357768,
+      0
+    ],
+    "revision": 60,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 7.649934,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      26.48730624317969,
+      16.134072342430358,
+      36.53692903685176
+    ],
+    "target": [
+      0,
+      12.09267577146696,
+      0
+    ],
+    "revision": 61,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 7.962434,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      26.901313209221563,
+      17.338792539644906,
+      37.01310574320876
+    ],
+    "target": [
+      0,
+      12.180129001738225,
+      0
+    ],
+    "revision": 62,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 8.274934,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      27.246099183945578,
+      18.59164857345297,
+      37.42899754022461
+    ],
+    "target": [
+      0,
+      12.262809398409516,
+      0
+    ],
+    "revision": 63,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 8.601334000000001,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      27.53650165385392,
+      19.932343845830825,
+      37.80001357737973
+    ],
+    "target": [
+      0,
+      12.344554490858624,
+      0
+    ],
+    "revision": 64,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 8.899934,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      27.744896820724552,
+      21.18678311274286,
+      38.086318735923676
+    ],
+    "target": [
+      0,
+      12.416317858689021,
+      0
+    ],
+    "revision": 65,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 9.191533999999999,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      27.896770023377464,
+      22.42948532657584,
+      38.31650904732628
+    ],
+    "target": [
+      0,
+      12.483947809639602,
+      0
+    ],
+    "revision": 66,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 9.462434,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      27.9923850695731,
+      23.590436232137364,
+      38.48545311608066
+    ],
+    "target": [
+      0,
+      12.544677636740657,
+      0
+    ],
+    "revision": 67,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 9.740234000000001,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      28.045603114757434,
+      24.7943372691654,
+      38.614115598355184
+    ],
+    "target": [
+      0,
+      12.605681232339535,
+      0
+    ],
+    "revision": 68,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 10.038834000000001,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      28.05049633715623,
+      26.094998597427068,
+      38.6989843199022
+    ],
+    "target": [
+      0,
+      12.669842326734864,
+      0
+    ],
+    "revision": 69,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 10.323534,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      28.00275500419275,
+      27.336203587893863,
+      38.72521719053166
+    ],
+    "target": [
+      0,
+      12.729826999951436,
+      0
+    ],
+    "revision": 70,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 10.615134,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      27.898476675410453,
+      28.60000766399504,
+      38.692943589068214
+    ],
+    "target": [
+      0,
+      12.790082891240637,
+      0
+    ],
+    "revision": 71,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 10.906834,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      27.733882293398974,
+      29.858407005312873,
+      38.59560365335025
+    ],
+    "target": [
+      0,
+      12.849683195243303,
+      0
+    ],
+    "revision": 72,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 11.184534,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      27.517491367177207,
+      31.040119267146896,
+      38.437096137305055
+    ],
+    "target": [
+      0,
+      12.905702239095879,
+      0
+    ],
+    "revision": 73,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 11.476234,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      27.22415379446912,
+      32.250325748690614,
+      38.19614144306588
+    ],
+    "target": [
+      0,
+      12.963602973044061,
+      0
+    ],
+    "revision": 74,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 11.760933999999999,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      26.86712378194175,
+      33.39641961644656,
+      37.87775198266446
+    ],
+    "target": [
+      0,
+      13.009577673198848,
+      0
+    ],
+    "revision": 75,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 12.087334,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      26.39154999720642,
+      34.64694738033012,
+      37.40035599589423
+    ],
+    "target": [
+      0,
+      13.039458357565882,
+      0
+    ],
+    "revision": 76,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 12.392933999999999,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      25.901485747548726,
+      35.76984338793093,
+      36.872671251121155
+    ],
+    "target": [
+      0,
+      13.065939273134454,
+      0
+    ],
+    "revision": 77,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 12.670734,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      25.429292949569234,
+      36.75420512543478,
+      36.346239102010664
+    ],
+    "target": [
+      0,
+      13.088935386637237,
+      0
+    ],
+    "revision": 78,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 12.969234,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      24.900354803835654,
+      37.77704979682001,
+      35.74444123699229
+    ],
+    "target": [
+      0,
+      13.112650774687566,
+      0
+    ],
+    "revision": 79,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 13.267933999999999,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      24.34975762323502,
+      38.77379417493241,
+      35.110015440489704
+    ],
+    "target": [
+      0,
+      13.135610224614947,
+      0
+    ],
+    "revision": 80,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 13.566434,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      23.78362059702013,
+      39.741114129857536,
+      34.45301390009122
+    ],
+    "target": [
+      0,
+      13.157768375393232,
+      0
+    ],
+    "revision": 81,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 13.879033999999999,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      23.172050713163422,
+      40.731795780452714,
+      33.740929737207225
+    ],
+    "target": [
+      0,
+      13.180350833235657,
+      0
+    ],
+    "revision": 82,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 14.191434,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      22.54647615093795,
+      41.69536537205129,
+      33.01229639206207
+    ],
+    "target": [
+      0,
+      13.202219793116592,
+      0
+    ],
+    "revision": 83,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 14.503934,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      21.90376313044853,
+      42.63937953837338,
+      32.265276700263215
+    ],
+    "target": [
+      0,
+      13.223563314560973,
+      0
+    ],
+    "revision": 84,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 14.816434,
+    "shot": "COMMUNITY",
+    "mode": "CINEMATIC",
+    "position": [
+      21.248434930797064,
+      43.5589044117091,
+      31.506733150982885
+    ],
+    "target": [
+      0,
+      13.244283248113982,
+      0
+    ],
+    "revision": 85,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 15.142933999999999,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      20.546100493518754,
+      44.50031987527819,
+      30.69869213877133
+    ],
+    "target": [
+      0,
+      13.265431917850883,
+      0
+    ],
+    "revision": 86,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 15.462434,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      19.845575338063515,
+      45.39709637491034,
+      29.89903183349951
+    ],
+    "target": [
+      0,
+      13.285522856817314,
+      0
+    ],
+    "revision": 87,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 15.788634,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      19.11147496304155,
+      46.294186217145565,
+      29.068993967980006
+    ],
+    "target": [
+      0,
+      13.305572400657494,
+      0
+    ],
+    "revision": 88,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 16.142934,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      18.29789454640011,
+      47.239648386925914,
+      28.15995658233942
+    ],
+    "target": [
+      0,
+      13.326656050458618,
+      0
+    ],
+    "revision": 89,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 16.469233999999997,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      17.530520808471067,
+      48.085925337384026,
+      27.314289565813283
+    ],
+    "target": [
+      0,
+      13.345491622763992,
+      0
+    ],
+    "revision": 90,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 16.795634,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      16.742288819952595,
+      48.910124378686625,
+      26.458783634878444
+    ],
+    "target": [
+      0,
+      13.363807212527576,
+      0
+    ],
+    "revision": 91,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 17.135834,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      15.9015755136989,
+      49.739238295766256,
+      25.56245156529021
+    ],
+    "target": [
+      0,
+      13.382208200574643,
+      0
+    ],
+    "revision": 92,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 17.490133999999998,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      15.001500446509166,
+      50.56953099860261,
+      24.623098212622267
+    ],
+    "target": [
+      0,
+      13.400617052775058,
+      0
+    ],
+    "revision": 93,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 17.844133999999997,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      14.073385305051376,
+      51.36260073657319,
+      23.678619931120643
+    ],
+    "target": [
+      0,
+      13.418190452465918,
+      0
+    ],
+    "revision": 94,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 18.212233999999995,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      13.075402155472077,
+      52.14183285891591,
+      22.693248229069727
+    ],
+    "target": [
+      0,
+      13.435457147000472,
+      0
+    ],
+    "revision": 95,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 18.587233999999995,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      12.018767909893175,
+      52.88016442844404,
+      21.68789416174619
+    ],
+    "target": [
+      0,
+      13.451831667814357,
+      0
+    ],
+    "revision": 96,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 18.962233999999995,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      10.915286900317692,
+      53.5502430004512,
+      20.68469925499633
+    ],
+    "target": [
+      0,
+      13.466726552834835,
+      0
+    ],
+    "revision": 97,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 19.344133999999997,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      9.73464099552848,
+      54.143666069182544,
+      19.67143310122951
+    ],
+    "target": [
+      0,
+      13.47998339321258,
+      0
+    ],
+    "revision": 98,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 19.733034,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      8.462355658019803,
+      54.62502373829176,
+      18.659934697545303
+    ],
+    "target": [
+      0,
+      13.49086014132168,
+      0
+    ],
+    "revision": 99,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 20.087134,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      7.231999343155406,
+      54.91367429833912,
+      17.775227221878996
+    ],
+    "target": [
+      0,
+      13.49758746151177,
+      0
+    ],
+    "revision": 100,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 20.503933999999997,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      5.688655748669772,
+      54.98636406079259,
+      16.824002862009966
+    ],
+    "target": [
+      0,
+      13.499808981371759,
+      0
+    ],
+    "revision": 101,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 21.198334,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      3.0070118915909156,
+      54.41314237193876,
+      15.56814171140474
+    ],
+    "target": [
+      0,
+      13.485375410008524,
+      0
+    ],
+    "revision": 102,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 21.281534,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      2.6831069735072752,
+      54.29905931735085,
+      15.441087751352573
+    ],
+    "target": [
+      0,
+      13.482379240055913,
+      0
+    ],
+    "revision": 103,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 21.691233999999998,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      1.1224774759688925,
+      53.6424277371617,
+      14.884018961258107
+    ],
+    "target": [
+      0,
+      13.46497645484664,
+      0
+    ],
+    "revision": 104,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 22.087134,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -0.3555314005058562,
+      52.877081531153465,
+      14.426395065473251
+    ],
+    "target": [
+      0,
+      13.444538373989655,
+      0
+    ],
+    "revision": 105,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 22.524634,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -1.9481413093861952,
+      51.91725726252567,
+      13.99330571094386
+    ],
+    "target": [
+      0,
+      13.418823102376166,
+      0
+    ],
+    "revision": 106,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 22.975934,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -3.5413882918409136,
+      50.830845883554844,
+      13.60983363848339
+    ],
+    "target": [
+      0,
+      13.389685493182798,
+      0
+    ],
+    "revision": 107,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 23.469034,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -5.229597712895902,
+      49.55134739904321,
+      13.246656006734193
+    ],
+    "target": [
+      0,
+      13.355384995974315,
+      0
+    ],
+    "revision": 108,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 23.913534,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -6.706493116280871,
+      48.32698748505653,
+      12.95762364508031
+    ],
+    "target": [
+      0,
+      13.322612694438638,
+      0
+    ],
+    "revision": 109,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 24.406534,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -8.290935736479518,
+      46.90343003215358,
+      12.670053650240026
+    ],
+    "target": [
+      0,
+      13.284600294111218,
+      0
+    ],
+    "revision": 110,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 24.920634,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -9.88382298498751,
+      45.35108147209765,
+      12.397011565128556
+    ],
+    "target": [
+      0,
+      13.243292887275626,
+      0
+    ],
+    "revision": 111,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 25.427433999999998,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -11.389971135932,
+      43.75891030192178,
+      12.14587576520487
+    ],
+    "target": [
+      0,
+      13.201116883778083,
+      0
+    ],
+    "revision": 112,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 25.982834,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -12.967031395478532,
+      41.93751307113362,
+      11.879641567865615
+    ],
+    "target": [
+      0,
+      13.153157019918437,
+      0
+    ],
+    "revision": 113,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 26.559233999999996,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -14.50057038045147,
+      39.96867504736476,
+      11.601353108540422
+    ],
+    "target": [
+      0,
+      13.101741298026003,
+      0
+    ],
+    "revision": 114,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 27.170334,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -15.985449727980274,
+      37.780677192312865,
+      11.283389058278736
+    ],
+    "target": [
+      0,
+      13.045269985074924,
+      0
+    ],
+    "revision": 115,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 27.788434,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -17.27258127502235,
+      35.446031990725885,
+      10.905537416195715
+    ],
+    "target": [
+      0,
+      12.97790082644661,
+      0
+    ],
+    "revision": 116,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 28.441133999999998,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -18.300437787360856,
+      32.83247020667895,
+      10.448858469482369
+    ],
+    "target": [
+      0,
+      12.87824528103604,
+      0
+    ],
+    "revision": 117,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 29.121733999999996,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -19.081566980993586,
+      30.01105303855659,
+      9.959022933093028
+    ],
+    "target": [
+      0,
+      12.775009039199709,
+      0
+    ],
+    "revision": 118,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 29.802233999999995,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -19.637504782211217,
+      27.138214086596584,
+      9.48572333340745
+    ],
+    "target": [
+      0,
+      12.671014823619947,
+      0
+    ],
+    "revision": 119,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 30.510634,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -20.020521229519012,
+      24.104731525622316,
+      9.034087544207651
+    ],
+    "target": [
+      0,
+      12.559830315283353,
+      0
+    ],
+    "revision": 120,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 31.323034,
+    "shot": "AERIAL",
+    "mode": "CINEMATIC",
+    "position": [
+      -20.236012646756567,
+      20.597875201192604,
+      8.60532437210011
+    ],
+    "target": [
+      0,
+      12.426257908559245,
+      0
+    ],
+    "revision": 121,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 32.072934,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      -20.21929904261189,
+      17.339343341500378,
+      8.343975795237185
+    ],
+    "target": [
+      0,
+      12.293104246353629,
+      0
+    ],
+    "revision": 122,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 32.843833999999994,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      -19.94253167537451,
+      13.991890702249032,
+      8.307604267186377
+    ],
+    "target": [
+      0,
+      12.139490016787096,
+      0
+    ],
+    "revision": 123,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 33.552133999999995,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      -19.342473729524215,
+      10.994784076540675,
+      8.683623538068595
+    ],
+    "target": [
+      0,
+      11.970858267170236,
+      0
+    ],
+    "revision": 124,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 34.795233999999994,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      -16.92879079309581,
+      7.285443955261575,
+      11.530472871892501
+    ],
+    "target": [
+      0,
+      11.441716919339529,
+      0
+    ],
+    "revision": 126,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 35.316034,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      -15.57502362532843,
+      6.4836070812676265,
+      13.166349748254072
+    ],
+    "target": [
+      0,
+      11.216073158899752,
+      0
+    ],
+    "revision": 127,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 35.809034,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      -14.157807477020565,
+      5.918750574098991,
+      14.67926504651653
+    ],
+    "target": [
+      0,
+      10.99528517679315,
+      0
+    ],
+    "revision": 128,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 36.329934,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      -12.47835618221232,
+      5.4092924653456045,
+      16.118380834889535
+    ],
+    "target": [
+      0,
+      10.735999670133149,
+      0
+    ],
+    "revision": 129,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 36.843734,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      -10.463897094857444,
+      4.8584137763713215,
+      17.184222289826213
+    ],
+    "target": [
+      0.016321796038630768,
+      10.314605013249107,
+      0.11017983846455918
+    ],
+    "revision": 130,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 37.336833999999996,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      -7.4031563411591454,
+      4.186816150056616,
+      17.73813405975726
+    ],
+    "target": [
+      0.18504822683538524,
+      8.953399739711067,
+      1.2491630021977804
+    ],
+    "revision": 131,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 37.809034,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      -3.6852072909435996,
+      3.41130446965852,
+      17.953352338112975
+    ],
+    "target": [
+      0.5478708669341329,
+      6.827297164623027,
+      3.6983873266991707
+    ],
+    "revision": 132,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 38.274234,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      -0.20316494361300474,
+      2.6033205259944454,
+      18.01035008097322
+    ],
+    "target": [
+      1.027113744619063,
+      4.487598073180259,
+      6.933503285974797
+    ],
+    "revision": 133,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 38.718634,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      2.23620991691118,
+      1.9167787281274085,
+      18.015444790838192
+    ],
+    "target": [
+      1.4809799156078958,
+      2.5677997315545227,
+      9.99731447965227
+    ],
+    "revision": 134,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 39.156234,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      3.542082091338971,
+      1.4321333919197867,
+      18.00523567265527
+    ],
+    "target": [
+      1.8136857350064421,
+      1.3172873982388005,
+      12.243236028407624
+    ],
+    "revision": 135,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 39.406134,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      3.8782378158237183,
+      1.2639140365800934,
+      17.99257948545181
+    ],
+    "target": [
+      1.9280663897147479,
+      0.919357573135211,
+      13.01535951465901
+    ],
+    "revision": 136,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 39.503434,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      3.9517592514255164,
+      1.2206558961340237,
+      17.98638681919522
+    ],
+    "target": [
+      1.9569114886892365,
+      0.8219275927684144,
+      13.210077567622132
+    ],
+    "revision": 137,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 39.642334,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.018913520877767,
+      1.1785698105328324,
+      17.97675965166911
+    ],
+    "target": [
+      1.9844565467772157,
+      0.7300511421829272,
+      13.396019730080686
+    ],
+    "revision": 138,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 39.774234,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.054968735015673,
+      1.157453118732637,
+      17.967446266244885
+    ],
+    "target": [
+      1.9978518681819317,
+      0.6856673925025465,
+      13.486444481441337
+    ],
+    "revision": 139,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 39.906134,
+    "shot": "UNDER_TREE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.077119088742283,
+      1.149937563849682,
+      17.95861130871724
+    ],
+    "target": [
+      2.0023625326882337,
+      0.6705529657243545,
+      13.516893599019815
+    ],
+    "revision": 140,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 40.031134,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.093939183108217,
+      1.1492243211829,
+      17.950758507759996
+    ],
+    "target": [
+      2.002735045047027,
+      0.6692243211829005,
+      13.519408233525768
+    ],
+    "revision": 141,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 40.156134,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.110454325774488,
+      1.1496600410783113,
+      17.94292713069912
+    ],
+    "target": [
+      2.002735045047027,
+      0.6696600410783109,
+      13.519408233525768
+    ],
+    "revision": 142,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 40.26033399999999,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.124166813146818,
+      1.150403278736397,
+      17.936367283969524
+    ],
+    "target": [
+      2.002735045047027,
+      0.6704032787363969,
+      13.519408233525768
+    ],
+    "revision": 143,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 40.371534,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.138900956907367,
+      1.151534618180781,
+      17.92926029419695
+    ],
+    "target": [
+      2.002735045047027,
+      0.6715346181807806,
+      13.519408233525768
+    ],
+    "revision": 144,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 40.482534,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.153465150491621,
+      1.1528603915287938,
+      17.92217554665217
+    ],
+    "target": [
+      2.002735045047027,
+      0.6728603915287934,
+      13.519408233525768
+    ],
+    "revision": 145,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 40.593634,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.167986603103545,
+      1.154193697827159,
+      17.915052178425515
+    ],
+    "target": [
+      2.002735045047027,
+      0.6741936978271585,
+      13.519408233525768
+    ],
+    "revision": 146,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 40.69783399999999,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.1815495356164725,
+      1.1553111267773173,
+      17.908345168101683
+    ],
+    "target": [
+      2.002735045047027,
+      0.6753111267773173,
+      13.519408233525768
+    ],
+    "revision": 147,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 40.829834,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.198698627286306,
+      1.1563845703077633,
+      17.8997899458288
+    ],
+    "target": [
+      2.002735045047027,
+      0.6763845703077633,
+      13.519408233525768
+    ],
+    "revision": 148,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 40.920034,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.210345758185923,
+      1.1567991107505375,
+      17.893931629192362
+    ],
+    "target": [
+      2.002735045047027,
+      0.6767991107505376,
+      13.519408233525768
+    ],
+    "revision": 149,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 41.038134,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.2255562063313565,
+      1.1568989692344949,
+      17.886222413788833
+    ],
+    "target": [
+      2.002735045047027,
+      0.6768989692344949,
+      13.519408233525768
+    ],
+    "revision": 150,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 41.142334,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.238901580856036,
+      1.156573771567584,
+      17.879403557391143
+    ],
+    "target": [
+      2.002735045047027,
+      0.6765737715675844,
+      13.519408233525768
+    ],
+    "revision": 151,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 41.239434,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.251294430323663,
+      1.1559136859592578,
+      17.87302520001287
+    ],
+    "target": [
+      2.002735045047027,
+      0.6759136859592578,
+      13.519408233525768
+    ],
+    "revision": 152,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 41.357534,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.266422235683977,
+      1.1547478157562776,
+      17.8651786258666
+    ],
+    "target": [
+      2.002735045047027,
+      0.6747478157562776,
+      13.519408233525768
+    ],
+    "revision": 153,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 41.461634,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.279571007515709,
+      1.153530428355804,
+      17.85830417604494
+    ],
+    "target": [
+      2.002735045047027,
+      0.6735304283558046,
+      13.519408233525768
+    ],
+    "revision": 154,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 41.545034,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.290014046942743,
+      1.1525295490726695,
+      17.85280814208336
+    ],
+    "target": [
+      2.002735045047027,
+      0.672529549072669,
+      13.519408233525768
+    ],
+    "revision": 155,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 41.649234,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.303032960995138,
+      1.151323325751239,
+      17.845911382476984
+    ],
+    "target": [
+      2.002735045047027,
+      0.6713233257512385,
+      13.519408233525768
+    ],
+    "revision": 156,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 41.788033999999996,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.320312594736091,
+      1.1500395859194175,
+      17.83667986051164
+    ],
+    "target": [
+      2.002735045047027,
+      0.670039585919417,
+      13.519408233525768
+    ],
+    "revision": 157,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 41.850634,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.328097018011713,
+      1.1496140319000387,
+      17.832492013686988
+    ],
+    "target": [
+      2.002735045047027,
+      0.6696140319000392,
+      13.519408233525768
+    ],
+    "revision": 158,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 41.94783399999999,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.3400225738053235,
+      1.1492745273932838,
+      17.82604114194865
+    ],
+    "target": [
+      2.002735045047027,
+      0.6692745273932843,
+      13.519408233525768
+    ],
+    "revision": 159,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 42.038134,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.351020471605607,
+      1.1492410311552872,
+      17.820054179824137
+    ],
+    "target": [
+      2.002735045047027,
+      0.6692410311552877,
+      13.519408233525768
+    ],
+    "revision": 160,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 42.156134,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.365338631212429,
+      1.1496600410783113,
+      17.812205025203472
+    ],
+    "target": [
+      2.002735045047027,
+      0.6696600410783109,
+      13.519408233525768
+    ],
+    "revision": 161,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 42.260234,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.377859383660406,
+      1.1504022613448104,
+      17.80529021698336
+    ],
+    "target": [
+      2.002735045047027,
+      0.67040226134481,
+      13.519408233525768
+    ],
+    "revision": 162,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 42.343534,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.387902613147185,
+      1.1512497485365119,
+      17.799709119220974
+    ],
+    "target": [
+      2.002735045047027,
+      0.6712497485365123,
+      13.519408233525768
+    ],
+    "revision": 163,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 42.44783399999999,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.400248228752375,
+      1.1524439584352608,
+      17.792806241429904
+    ],
+    "target": [
+      2.002735045047027,
+      0.6724439584352613,
+      13.519408233525768
+    ],
+    "revision": 164,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 42.558934,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.413313157708036,
+      1.1537772646069442,
+      17.78545009487215
+    ],
+    "target": [
+      2.002735045047027,
+      0.6737772646069438,
+      13.519408233525768
+    ],
+    "revision": 165,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 42.663134,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.425446436920232,
+      1.1549580919284113,
+      17.778571239526805
+    ],
+    "target": [
+      2.002735045047027,
+      0.6749580919284117,
+      13.519408233525768
+    ],
+    "revision": 166,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 42.767233999999995,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.437472503120333,
+      1.1559590158598736,
+      17.77170802425722
+    ],
+    "target": [
+      2.002735045047027,
+      0.6759590158598741,
+      13.519408233525768
+    ],
+    "revision": 167,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 42.871434,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.4493884827272066,
+      1.1566673668737728,
+      17.76486309206422
+    ],
+    "target": [
+      2.002735045047027,
+      0.6766673668737724,
+      13.519408233525768
+    ],
+    "revision": 168,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 42.982534,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.462094719250073,
+      1.1569483066758703,
+      17.757515121383115
+    ],
+    "target": [
+      2.002735045047027,
+      0.6769483066758699,
+      13.519408233525768
+    ],
+    "revision": 169,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 43.086734,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.47377307568242,
+      1.1567829543055277,
+      17.75071666605034
+    ],
+    "target": [
+      2.002735045047027,
+      0.6767829543055282,
+      13.519408233525768
+    ],
+    "revision": 170,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 43.190833999999995,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.485332793760609,
+      1.1562440686633222,
+      17.743944707280285
+    ],
+    "target": [
+      2.002735045047027,
+      0.6762440686633227,
+      13.519408233525768
+    ],
+    "revision": 171,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 43.420034,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.510374131805044,
+      1.1540398072259226,
+      17.7291527809458
+    ],
+    "target": [
+      2.0027316395554733,
+      0.6740462493356532,
+      13.519385244848028
+    ],
+    "revision": 173,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 43.496434,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.520614968361528,
+      1.1542172816764635,
+      17.72566336301002
+    ],
+    "target": [
+      2.002370296219809,
+      0.6748951953588946,
+      13.516946006527716
+    ],
+    "revision": 174,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 43.628333999999995,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.559907363099256,
+      1.1659243398577894,
+      17.734437031103525
+    ],
+    "target": [
+      1.9981184423408918,
+      0.6942338190148192,
+      13.488243983022139
+    ],
+    "revision": 175,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 43.718634,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.615699345929459,
+      1.1892263501984663,
+      17.760602855609925
+    ],
+    "target": [
+      1.9905871182982053,
+      0.7305889147238886,
+      13.437403985727512
+    ],
+    "revision": 176,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 43.815833999999995,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.7120723329148575,
+      1.2335357152355257,
+      17.8148879744319
+    ],
+    "target": [
+      1.9769412512554774,
+      0.7977347054657127,
+      13.345287932879033
+    ],
+    "revision": 177,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 43.920034,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      4.867814178330525,
+      1.3086223093223666,
+      17.911331378415746
+    ],
+    "target": [
+      1.9546999939300262,
+      0.9085644140638216,
+      13.195148932638686
+    ],
+    "revision": 178,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 44.017334,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      5.070156266237136,
+      1.408630979815638,
+      18.04378377369669
+    ],
+    "target": [
+      1.9260529078543802,
+      1.0526423661735347,
+      13.001767560342124
+    ],
+    "revision": 179,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 44.121534,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      5.358704648643862,
+      1.5534087762166786,
+      18.240011553558915
+    ],
+    "target": [
+      1.885880350607442,
+      1.256296245234326,
+      12.730583809626218
+    ],
+    "revision": 180,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 44.218534,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      5.694546425772408,
+      1.7236164622028678,
+      18.47504438414536
+    ],
+    "target": [
+      1.8400703694475269,
+      1.4901778581593597,
+      12.421344782725146
+    ],
+    "revision": 181,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 44.315833999999995,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      6.1002180974137445,
+      1.930540473858696,
+      18.765391557839287
+    ],
+    "target": [
+      1.785921817186675,
+      1.768226862791554,
+      12.055816459305973
+    ],
+    "revision": 182,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 44.419934,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      6.614587525505588,
+      2.1943328311962826,
+      19.14093643258282
+    ],
+    "target": [
+      1.7188642427619512,
+      2.1145108021547525,
+      11.603146134272242
+    ],
+    "revision": 183,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 44.517233999999995,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      7.16852550306265,
+      2.479808237467431,
+      19.552528140311033
+    ],
+    "target": [
+      1.6483694930894808,
+      2.480528833663495,
+      11.127273251586479
+    ],
+    "revision": 184,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 44.614434,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      7.792639919847186,
+      2.8029434212818876,
+      20.02345707825269
+    ],
+    "target": [
+      1.570802633244656,
+      2.885338366927435,
+      10.603660282298152
+    ],
+    "revision": 185,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 44.711634,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      8.491547590585487,
+      3.1665324918926894,
+      20.558434844620233
+    ],
+    "target": [
+      1.4860031964546399,
+      3.3301218172050184,
+      10.031223999839046
+    ],
+    "revision": 186,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 44.808934,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      9.246738636021188,
+      3.5615315130083323,
+      21.14432634893783
+    ],
+    "target": [
+      1.3965680891246015,
+      3.8016664400252234,
+      9.427494749984335
+    ],
+    "revision": 187,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 44.906134,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      10.059505573086568,
+      3.9892457550543003,
+      21.78295440631794
+    ],
+    "target": [
+      1.302625816302985,
+      4.299629971418033,
+      8.793340002554494
+    ],
+    "revision": 188,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 45.010234,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      10.987267263491932,
+      4.481015585468785,
+      22.52119811233903
+    ],
+    "target": [
+      1.1980876332609962,
+      4.8569682372161305,
+      8.087657852521263
+    ],
+    "revision": 189,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 45.142134,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      12.233886807777353,
+      5.1483505384582555,
+      23.52742671622525
+    ],
+    "target": [
+      1.061824946924607,
+      5.588664952440069,
+      7.167820309290344
+    ],
+    "revision": 190,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 45.301934,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      13.818209400646076,
+      6.009048036805488,
+      24.828230184388584
+    ],
+    "target": [
+      0.89519976859378,
+      6.492159835181112,
+      6.043021592950118
+    ],
+    "revision": 191,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 45.503234,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      15.857067856409593,
+      7.142084195280466,
+      26.536987925740206
+    ],
+    "target": [
+      0.6912306873786885,
+      7.613344984741396,
+      4.6661338799280285
+    ],
+    "revision": 192,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  },
+  {
+    "seconds": 45.753234,
+    "shot": "CLOSE",
+    "mode": "CINEMATIC",
+    "position": [
+      18.33475553319235,
+      8.570720107005588,
+      28.66741812635257
+    ],
+    "target": [
+      0.45980657448215684,
+      8.911561813031643,
+      3.103911725246403
+    ],
+    "revision": 193,
+    "roomSessionId": "demo-1",
+    "labels": {},
+    "confirmedGiftCount": 0
+  }
+]
