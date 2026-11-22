@@ -1,5 +1,8 @@
 # AI VISUAL 10 — P0.6a Male Chibi Prayer Character (Two Poses, Neat Short Hair)
 
+> **SUCCESSOR AI_VISUAL_11 P0.6b — 2026-11-22:** Owner uploaded P0.6a GLBs and genuine male/female Cycles under PR #2 HEAD `b368444ccb851e88521d97d5be94299fc0f790f7`. SA verified two GLB SHA/meshes/idle/variants and Cycles logs but found **hair ART PARTIAL** (smooth uniform cap/helmet in front, side, back, top). [SA review #6011115553](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6011115553). Only current active [AI_VISUAL_11](AI_VISUAL_11_MALE_SHORT_HAIR_REFINEMENT_P06B.md) authorizes minor hair sculpt in new p6b. Keep p6a original unchanged; existing body/pose/hands and approved female/lotus are frozen. No male owner approval yet, no Codex/merge.
+
+
 **SA assignment:** 2026-11-22 · **Status:** ASSIGNED — MALE VISUAL ONLY / OWNER ART GATE OPEN · **Owner instruction:** “Ok chốt nhân vật nữ, tiếp tục chuyển sang nhân vật nam giống như vậy với tóc gọn gàng.” 
 
 **MANDATORY SAKURA RULE:** **SA issues a testable task → independent AI Visual creates genuine editable Blender + exported GLBs + real Cycles → SA independently reviews the files on PR → owner visually approves BOTH male poses → only then next stage.** This is the authoritative standalone, versioned production prompt; follow [Design/07_WORK_RULES](../Design/07_WORK_RULES.md) and the evidence-driven task pattern [Design/15_AI_VISUAL_SAKURA_NEXT_PROMPT](../Design/15_AI_VISUAL_SAKURA_NEXT_PROMPT.md). “Make the male like the female” is NOT an acceptance test.
