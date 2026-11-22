@@ -1,5 +1,8 @@
 # P0 execution order — OnlinePagodaVer2
 
+> **ACTIVE FEMALE MICRO-POLISH P0.5f — owner 2026-11-22:** Owner considers P0.5e foot and waist repair broadly visually acceptable, but in the original side Cycles `p05e_cross_pair_pair_side_cycles.png` the cross-legged chibi still appears slightly elevated rather than resting naturally on the lotus. **Active authoritative task [AI_VISUAL_09 — P0.5f Female Cross Seated Contact](AI_VISUAL_09_FEMALE_CROSS_SEAT_CONTACT.md)** on PR #2. Baseline reviewed HEAD `5118dbd532347103ec5e84e2a22b88f63617dda5`; create versioned `p5f/` and keep p5e/ and all previous assets immutable. First measure whether remaining visual gap is **torso–legs, legs–curved leaf or shading-only**, then only minimal legitimate contact edit, real GLB+Blender Cycles exact side/low-side/9:16 and 5 idle frames. **No new kneel, male, Codex PR #3/#4, integration or merge**. Previous phases below are historical.
+
+
 > **ACTIVE SA REWORK P0.5e — owner 2026-11-22:** P0.5d was rejected for (1) exposed foot looking like a detached beige pebble and (2) a visible upper shirt-to-crossed-trouser gap from low side. Actual GLB shows min shirt Y=0.267000854m and max pants Y=0.252515256m; vertical separation at least **14.49mm at t=0**, growing to **30.49mm with 16mm breathing**. Active task **[AI_VISUAL_08 P0.5e](AI_VISUAL_08_FEMALE_CROSS_FOOT_WAIST_CONTINUITY.md)**, version p5e/ on same PR #2; [SA Review #6010466650](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6010466650). Freeze P0.5c prayer hands/kneel and all old folders. No male, Codex, integration or merge until owner and SA approve. Earlier assignments below are historical.
 
 
