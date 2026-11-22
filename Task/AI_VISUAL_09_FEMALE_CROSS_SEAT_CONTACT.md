@@ -1,5 +1,8 @@
 # AI VISUAL 09 — P0.5f Female Cross-Legged Natural Seated Contact on Lotus
 
+> **SUCCESSOR: female owner art-approved, male P0.6a — 2026-11-22:** After P0.5f owner-uploaded evidence at PR #2 HEAD `e80ddc496df461728d3ee4cb6170ce2c3ff4fbfa`, owner explicitly **chốt nhân vật nữ** and authorizes **next male with neat short hair**. Preserve this task as historical immutable acceptance criteria; actual approved female cross P0.5f GLB SHA256 `3ed6946640ed057868b64a9998b1c3a4bf30f28866b3e0c1de9a9ab55c5cc1a4`, kneel P0.5c SHA256 `a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac`. Current [AI_VISUAL_10 Male P0.6a](AI_VISUAL_10_MALE_CHIBI_PRAYER_P06A.md) replaces the earlier no-male STOP **only for the new male visual task**. No runtime Codex or merge; SA review/owner male gate still mandatory.
+
+
 **Issued by:** Solution Architect (SA), 2026-11-22 · **Status:** ASSIGNED — FEMALE CROSS-LEGGED SEAT-CONTACT MICRO-POLISH ONLY / OWNER GATE OPEN.
 
 **Nonnegotiable workflow:** **SA giao task → AI Visual produces real editable Blender + true GLB + Blender Cycles → SA independently verifies source/bytes/images on PR → owner approves → only then new stage.** Read [Design/07 — WORK_RULES](../Design/07_WORK_RULES.md) and follow [Design/15 — Sakura prompt style](../Design/15_AI_VISUAL_SAKURA_NEXT_PROMPT.md). This is a standalone, independently executable production task with verifiable evidence, NOT a generic request to "make the avatar sit lower."
