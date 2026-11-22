@@ -1,5 +1,8 @@
 # AI VISUAL 11 — P0.6b Male Short Hair Sculpt Refinement
 
+> **SUCCESSOR: AI_VISUAL_12 P0.6c — 2026-11-22:** New P0.6b files from PR #2 HEAD `9ff521549af8b8f1449579a4c7fd7ab6021c7e94` were reviewed by SA: genuine GLB and Cycles **PASS**, only hair changed, but **P0 ART FAIL** due to two large, jagged pale scalp-visible regions across the haircut in front/top/right3Q and normal 9:16 shots, both male poses. [Review #6011459874](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6011459874). This P0.6b task is now historical, originals preserved; active [AI_VISUAL_12 male hair/scalp coverage P0.6c](AI_VISUAL_12_MALE_HAIR_SCALP_COVERAGE_P06C.md) must make true opaque hair underlayer and verify matched real Cycles without changing body/pose/color/idle/female/lotus. Keep PR Draft, no Codex/merge or owner acceptance yet.
+
+
 **SA issued:** 2026-11-22. **Status:** ASSIGNED / MALE ART PARTIAL / OWNER REVIEW GATE OPEN.
 
 **Mandatory Sakura:** SA giao task → AI Visual thực hiện real GLB + editable Blender + genuine Cycles → SA review actual PR evidence → owner duyệt cả hai pose nam → mới sang giai đoạn tiếp. Follow Design/07_WORK_RULES.md and Design/15_AI_VISUAL_SAKURA_NEXT_PROMPT.md. This is an independently executable, versioned task, not a vague request to improve aesthetics.
