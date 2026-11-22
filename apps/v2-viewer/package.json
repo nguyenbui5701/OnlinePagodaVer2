@@ -6,10 +6,12 @@
   "engines": { "node": ">=24" },
   "scripts": {
     "assets": "node scripts/prepare-assets.mjs",
+    "assets:p08": "node scripts/stage-p08.mjs",
     "dev": "vite --host 127.0.0.1",
     "test": "node --test",
     "build": "tsc --noEmit && vite build",
-    "evidence": "node scripts/evidence.mjs"
+    "evidence": "node scripts/evidence.mjs",
+    "evidence:p08": "node scripts/evidence-p08.mjs"
   },
   "dependencies": { "three": "0.181.2" },
   "devDependencies": {

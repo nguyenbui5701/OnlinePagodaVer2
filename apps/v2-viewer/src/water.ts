@@ -20,9 +20,13 @@ export function createWater() {
           sin(world.z * 0.88 - time * 1.0);
         float fresnel = pow(1.0 - clamp(eye.y, 0.0, 1.0), 4.0);
         float haze = 1.0 - exp(-0.00011 * pow(distance(world, cameraPosition), 2.0));
-        vec3 blue = vec3(0.037, 0.040, 0.083);
-        vec3 lilac = vec3(0.30, 0.22, 0.37);
-        vec3 color = mix(blue, lilac, fresnel * 0.55 + ripple * 0.045 + 0.06);
+        vec3 blue = vec3(0.036, 0.032, 0.090);
+        vec3 lilac = vec3(0.423, 0.292, 0.462);
+        float glint = 0.5 + 0.5 * sin(world.z * 3.8 + sin(world.x * 0.38 - time) * 1.2 + time * 1.6);
+        float dusk = exp(-0.007 * pow(world.x + ripple * 1.2, 2.0)) *
+          exp(-0.0025 * pow(world.z - 8.0, 2.0));
+        vec3 color = mix(blue, lilac, fresnel * 0.54 + ripple * 0.043 + 0.06);
+        color += dusk * (0.10 + 0.24 * pow(glint, 5.0)) * vec3(0.55, 0.17, 0.33);
         gl_FragColor = vec4(mix(color, lilac, haze), 1.0);
         #include <tonemapping_fragment>
         #include <colorspace_fragment>

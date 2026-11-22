@@ -9,6 +9,31 @@ h1 { margin: 0 0 8px; font-size: 24px; }
 nav { display: flex; flex-wrap: wrap; gap: 12px; }
 a { color: #ffc7de; }
 pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.gift-label, #gift-fallback {
+  position: absolute;
+  width: max-content;
+  max-width: 60%;
+  padding: 0.26em 0.7em;
+  background: #251b33ed;
+  color: #fff2f6;
+  border: 1px solid #ffb3cf;
+  border-radius: 1em;
+  box-shadow: 0 1px 12px #36213a80;
+  font-size: clamp(12px, 2.6vh, 22px);
+  text-align: center;
+  pointer-events: none;
+  overflow-wrap: anywhere;
+}
+#gift-name { transform: translate(-50%, -100%); }
+#gift-fx {
+  font-size: clamp(11px, 1.9vh, 17px);
+  transform: translate(8%, -50%);
+  animation: gift-glow 1.5s ease-in-out infinite alternate;
+}
+#gift-fallback { bottom: 9%; left: 50%; transform: translateX(-50%); }
+@keyframes gift-glow {
+  to { box-shadow: 0 0 16px #f78fbcb3; }
+}
 .clean main { padding: 0; }
 .clean #stage { width: min(100%, calc(100dvh * 9 / 16)); }
 .clean aside { display: none; }

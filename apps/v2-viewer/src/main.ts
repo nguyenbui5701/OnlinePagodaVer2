@@ -1,12 +1,15 @@
 import './style.css';
 import {
   AgXToneMapping, DirectionalLight, Group, PCFShadowMap, PerspectiveCamera, Scene, SRGBColorSpace,
-  WebGLRenderer,
+  Vector3, WebGLRenderer,
 } from 'three';
 import { loadSakura, type Profile } from './asset.ts';
 import { capture, sampleCinematic } from './camera.ts';
 import { referenceViews, setupLighting } from './lighting.ts';
-import { attachSeat, mockSeat } from './presentation.ts';
+import { createSeatScene, seatPose } from './seat-scene.ts';
+import { SliceCamera, sliceCinematic } from './slice-camera.ts';
+import { SliceDriver } from './slice-driver.ts';
+import { showGift } from './slice-overlay.ts';
 import { createWater } from './water.ts';
 
 declare const __REPO_REVISION__: string;
@@ -22,12 +25,16 @@ const captureWidth = view && view !== 'hero_full_9x16' ? 720 : capture.width;
 const captureHeight = view && view !== 'hero_full_9x16' ? 835 : capture.height;
 const requestedTime = query.has('time') ? Number(query.get('time')) : NaN;
 const frozenAt = Number.isFinite(requestedTime) ? requestedTime : undefined;
+const manual = query.get('inspect') === '1' && !comparison;
+const scenario = query.get('demo') === 'gifts' ? 'gifts' : query.get('demo') === 'capacity' ? 'capacity' : 'idle';
+const driver = new SliceDriver(scenario);
+const director = new SliceCamera();
 if (query.get('clean') === '1') document.body.classList.add('clean');
 
 const errors: string[] = [];
 const report: Record<string, unknown> = {
   repoRevision: __REPO_REVISION__, profile, viewport: [captureWidth, captureHeight],
-  safeMargin: capture.safeMargin, near: capture.near, far: capture.far, errors,
+  safeMargin: capture.safeMargin, near: capture.near, far: capture.far, scenario, errors,
 };
 Object.assign(window, { viewerReport: report });
 
@@ -50,6 +57,7 @@ async function boot() {
   renderer.setSize(captureWidth, captureHeight, false);
   renderer.outputColorSpace = SRGBColorSpace;
   renderer.toneMapping = AgXToneMapping;
+  renderer.toneMappingExposure = 0.94;
   renderer.shadowMap.type = PCFShadowMap;
   renderer.shadowMap.enabled = profile === 'quality';
 
@@ -66,10 +74,7 @@ async function boot() {
 
   const environment = new Group();
   environment.name = 'Environment';
-  const seats = new Group();
-  seats.name = 'Seat anchors (DEMO)';
-  attachSeat(seats, mockSeat);
-  scene.add(environment, seats);
+  scene.add(environment);
   const water = comparison ? undefined : createWater();
   if (water) environment.add(water.mesh);
   setupLighting(scene, profile, !!comparison);
@@ -78,22 +83,40 @@ async function boot() {
   let lost = false;
   let disposed = false;
   let sakura: Awaited<ReturnType<typeof loadSakura>> | undefined;
+  let seats: Awaited<ReturnType<typeof createSeatScene>> | undefined;
   let start: number | undefined;
   let last: number | undefined;
   const frameTimes: number[] = [];
   const visited = new Set<string>();
   let lastReport = -Infinity;
-  const render = (now: number) => {
+  const render = (now: number, review?: { seconds: number; draw: boolean; angle?: number; idle?: number }) => {
     if (lost || disposed || !sakura) return;
     start ??= now;
-    const seconds = frozenAt ?? (now - start) / 1000;
-    const pose = sampleCinematic(seconds);
+    const seconds = review?.seconds ?? frozenAt ?? (now - start) / 1000;
+    let pose = sampleCinematic(seconds);
+    let presentation: ReturnType<SliceDriver['update']> | undefined;
+    let selected;
     if (comparison) {
       camera.position.fromArray(comparison.position);
       camera.up.fromArray(comparison.up);
       camera.lookAt(...comparison.target as [number, number, number]);
       camera.fov = comparison.fov;
     } else {
+      if (!seats) return;
+      const atMs = Math.round(seconds * 1000);
+      presentation = driver.update(atMs);
+      seats.present(presentation.state.avatars, seconds, review?.idle);
+      const actor = presentation.actor;
+      const seat = actor && seats.seats.get(actor.seatId);
+      selected = seat && seat.root.visible && actor ? { seat, presentation: actor } : undefined;
+      const focus = selected && presentation.state.focus && {
+        requestId: presentation.state.focus.requestId, pose: seatPose(selected.seat, 0.23, 5.0),
+      };
+      const routeTime = director.routeSeconds(atMs, focus?.requestId);
+      const close = seatPose(seats.preview, 0.30 + Math.sin(routeTime * Math.PI / 20) * 0.19, 4.9);
+      const cinematic = sliceCinematic(routeTime, close);
+      const live = director.move(atMs, cinematic, focus);
+      pose = { ...(review?.angle !== undefined ? seatPose(seats.preview, review.angle, 5.35) : live), shot: cinematic.shot };
       camera.position.copy(pose.position);
       camera.lookAt(pose.target);
       camera.fov = pose.fov;
@@ -101,6 +124,25 @@ async function boot() {
       visited.add(pose.shot);
     }
     camera.updateProjectionMatrix();
+    camera.updateMatrixWorld();
+    const labels = presentation ? showGift(camera, presentation, selected) : undefined;
+    let focus;
+    if (selected) {
+      focus = {
+        actorId: selected.presentation.actorId, seatId: selected.presentation.seatId,
+        requestId: presentation?.state.focus?.requestId, name: selected.presentation.displayName,
+        headWorld: selected.seat.head.getWorldPosition(new Vector3()).toArray(),
+        nameWorld: selected.seat.name.getWorldPosition(new Vector3()).toArray(),
+        fxWorld: selected.seat.fx.getWorldPosition(new Vector3()).toArray(),
+      };
+    }
+    Object.assign(report, {
+      elapsedSeconds: seconds, shot: view ?? pose.shot, visited: [...visited], mode: presentation?.state.camera.mode,
+      revision: presentation?.state.revision, roomSessionId: presentation?.state.roomSessionId, labels, focus,
+      confirmedGiftCount: presentation?.state.confirmedGiftCount, pendingGivers: presentation?.state.camera.pendingGivers,
+      position: camera.position.toArray(), target: comparison?.target ?? pose.target.toArray(), fov: camera.fov,
+    });
+    if (review && !review.draw) return;
     renderer.render(scene, camera);
     if (last !== undefined && now > last) {
       frameTimes.push(now - last);
@@ -109,8 +151,6 @@ async function boot() {
     last = now;
     const info = renderer.info;
     Object.assign(report, {
-      elapsedSeconds: seconds, shot: view ?? pose.shot, visited: [...visited],
-      position: camera.position.toArray(), target: comparison?.target ?? pose.target.toArray(), fov: camera.fov,
       drawCalls: info.render.calls, trianglesDrawn: info.render.triangles,
       textures: info.memory.textures, geometries: info.memory.geometries,
     });
@@ -126,7 +166,7 @@ async function boot() {
       }
       diagnostics.textContent = JSON.stringify(report, null, 2);
     }
-    if (!comparison && frozenAt === undefined) req = requestAnimationFrame(render);
+    if (!comparison && !manual && frozenAt === undefined) req = requestAnimationFrame(render);
   };
   const contextLost = (event: Event) => {
     event.preventDefault();
@@ -140,7 +180,7 @@ async function boot() {
     last = undefined;
     frameTimes.length = 0;
     show(sakura ? '' : 'Đang tải Sakura R16…');
-    req = requestAnimationFrame(render);
+    if (!manual) req = requestAnimationFrame(render);
   };
   canvas.addEventListener('webglcontextlost', contextLost);
   canvas.addEventListener('webglcontextrestored', contextRestored);
@@ -154,6 +194,7 @@ async function boot() {
     canvas.removeEventListener('webglcontextrestored', contextRestored);
     window.removeEventListener('pagehide', onPageHide);
     sakura?.dispose();
+    seats?.dispose();
     water?.dispose();
     for (const light of scene.children) if (light instanceof DirectionalLight) light.dispose();
     renderer.dispose();
@@ -170,8 +211,25 @@ async function boot() {
     environment.add(sakura.root);
     Object.assign(report, { asset: sakura.report });
     console.info('Verified Sakura R16', sakura.report.sha256, __REPO_REVISION__);
+    if (!comparison) {
+      const pair = await createSeatScene(abort.signal);
+      if (disposed) { pair.dispose(); return; }
+      seats = pair;
+      scene.add(pair.group);
+      Object.assign(report, { pair: pair.report });
+    }
     if (!lost) show('');
-    req = requestAnimationFrame(render);
+    if (manual) {
+      Object.assign(window, { p08Review: {
+        step: (seconds: number, draw = true, angle?: number, idle?: number) => {
+          if (!Number.isFinite(seconds) || seconds < Number(report.elapsedSeconds ?? 0)) throw new RangeError('Monotonic review clock required');
+          render(performance.now(), { seconds, draw, angle, idle });
+          return report;
+        },
+        fit: () => seats?.preview.fit(),
+        trace: () => driver.trace,
+      } });
+    } else req = requestAnimationFrame(render);
   } catch (error) {
     if (disposed) return;
     dispose();

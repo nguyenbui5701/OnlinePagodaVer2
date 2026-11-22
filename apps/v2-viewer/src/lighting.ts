@@ -16,11 +16,11 @@ const suns = [
 ];
 
 export function setupLighting(scene: Scene, profile: Profile, comparison: boolean): void {
-  scene.background = comparison ? new Color(0.69, 0.47, 0.60).multiplyScalar(0.65) : new Color('#a894b6');
-  scene.add(new AmbientLight(new Color(0.69, 0.47, 0.60), 0.65));
-  if (!comparison) scene.fog = new FogExp2('#a894b6', 0.009);
+  scene.background = comparison ? new Color(0.69, 0.47, 0.60).multiplyScalar(0.65) : new Color('#ae93b5');
+  scene.add(new AmbientLight(new Color(0.78, 0.42, 0.52), 0.92));
+  if (!comparison) scene.fog = new FogExp2('#ae93b5', 0.009);
   for (const [index, { position, power, tint }] of suns.entries()) {
-    const sun = new DirectionalLight(new Color().fromArray(tint), power);
+    const sun = new DirectionalLight(new Color().fromArray(tint), power * 0.78);
     sun.position.fromArray(position);
     sun.target.position.set(0, 9, 0);
     if (index === 0 && profile === 'quality') {
@@ -28,7 +28,7 @@ export function setupLighting(scene: Scene, profile: Profile, comparison: boolea
       sun.shadow.mapSize.set(2048, 2048);
       Object.assign(sun.shadow.camera, { left: -23, right: 23, bottom: -23, top: 23, near: 0.5, far: 110 });
       sun.shadow.camera.updateProjectionMatrix();
-      sun.shadow.normalBias = 0.035;
+      sun.shadow.normalBias = 0.019;
       sun.shadow.bias = -0.0002;
     }
     scene.add(sun, sun.target);
