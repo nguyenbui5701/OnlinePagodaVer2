@@ -1,0 +1,81 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "actual SHA pinned P05E/P06A cross GLB reimport; original SHA pinned frozen P02 lotus in pair only",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "male_cross",
+  "kind": "palette",
+  "inputs": [
+    {
+      "file": "meditator_male_cross_prayer_p06a.glb",
+      "bytes": 563688,
+      "sha256": "c684934ff2ceb8da08265fcc8304f2684255f144dc7df94819f007c5e803cb61"
+    }
+  ],
+  "meshCount": 10,
+  "principledMaterialSlots": 10,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "cross_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 10
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05E exact owner pair_side camera (2.75,.62,.43)->(0,.45,0), FOV42; identical in P05E/P06A. Extra low-side pair at (1.45,.22,.38), same sun/AgX/EV0; portrait 720x1280",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "quarter",
+      "file": "male_cross_palette_pastel_lilac_cycles.png",
+      "bytes": 329412,
+      "sha256": "f09fbfd89ee4348261cab0c5475d54090a426b15d3a74e66f2ff354ff2492eb9"
+    },
+    {
+      "view": "quarter",
+      "file": "male_cross_palette_blush_rose_cycles.png",
+      "bytes": 329429,
+      "sha256": "b0e7a1b35869a4e07ae3c6e4cc439917953b7641150db97e416896867fa49a49"
+    },
+    {
+      "view": "quarter",
+      "file": "male_cross_palette_sage_green_cycles.png",
+      "bytes": 329385,
+      "sha256": "b98976d977059b4766c5f5df2d95a69dbe878d153744e5f1a73f7679f53c78a6"
+    },
+    {
+      "view": "quarter",
+      "file": "male_cross_palette_sky_blue_cycles.png",
+      "bytes": 330150,
+      "sha256": "23cbbf5bcd78845e7c8468c3e60825a9d9966e60bf36e849b3b187475ef2bd6b"
+    },
+    {
+      "view": "quarter",
+      "file": "male_cross_palette_warm_cream_cycles.png",
+      "bytes": 329490,
+      "sha256": "c17fd352dd73cd8cfa526c56e72d42de70d5c57023d391e27a2afb5dcf9417a1"
+    },
+    {
+      "view": "quarter",
+      "file": "male_cross_palette_terracotta_cycles.png",
+      "bytes": 329860,
+      "sha256": "b6037e38d91a248d7075503245ceb35b7a3f3156128b6625c8bcd91753e5b6a0"
+    }
+  ]
+}

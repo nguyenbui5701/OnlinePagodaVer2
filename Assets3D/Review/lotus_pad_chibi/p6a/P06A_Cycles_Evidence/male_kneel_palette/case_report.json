@@ -1,0 +1,81 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "actual SHA pinned P05E/P06A cross GLB reimport; original SHA pinned frozen P02 lotus in pair only",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "male_kneel",
+  "kind": "palette",
+  "inputs": [
+    {
+      "file": "meditator_male_kneel_prayer_p06a.glb",
+      "bytes": 430104,
+      "sha256": "9aad5f3f4d1b84d0a9ffb2cda3bc01b39ece676318ba883e417f7337e9d2251e"
+    }
+  ],
+  "meshCount": 9,
+  "principledMaterialSlots": 9,
+  "importedActionNames": [
+    "kneel_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "kneel_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 9
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05E exact owner pair_side camera (2.75,.62,.43)->(0,.45,0), FOV42; identical in P05E/P06A. Extra low-side pair at (1.45,.22,.38), same sun/AgX/EV0; portrait 720x1280",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "quarter",
+      "file": "male_kneel_palette_pastel_lilac_cycles.png",
+      "bytes": 326958,
+      "sha256": "336ab21ab1a1e9f97f29f7986202eedaa3c6c21a81f55f5b22b2ccdbb7330c64"
+    },
+    {
+      "view": "quarter",
+      "file": "male_kneel_palette_blush_rose_cycles.png",
+      "bytes": 327249,
+      "sha256": "afaa635c8ab4e89477dd175319ddc968cb383030b63e5e215415065a4ce1c0e1"
+    },
+    {
+      "view": "quarter",
+      "file": "male_kneel_palette_sage_green_cycles.png",
+      "bytes": 327254,
+      "sha256": "da106fed209cf9660b9da77de5af5ae43ba771e6dade6ae3f52cae34a123e7d7"
+    },
+    {
+      "view": "quarter",
+      "file": "male_kneel_palette_sky_blue_cycles.png",
+      "bytes": 327564,
+      "sha256": "f78fe164033e0a3442f3580e575de925a64d73096cf60842f768138117e829d1"
+    },
+    {
+      "view": "quarter",
+      "file": "male_kneel_palette_warm_cream_cycles.png",
+      "bytes": 326908,
+      "sha256": "96e87c8b8029043fc4009a180040d2517636d13bb5ae9a33da288ad423f25094"
+    },
+    {
+      "view": "quarter",
+      "file": "male_kneel_palette_terracotta_cycles.png",
+      "bytes": 327440,
+      "sha256": "0b407c8a17bafe63814b6639f6a746675205dcb1bea444d0bb5f029e40791bf7"
+    }
+  ]
+}

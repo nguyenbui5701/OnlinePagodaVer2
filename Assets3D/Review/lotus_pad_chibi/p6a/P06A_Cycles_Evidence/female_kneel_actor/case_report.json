@@ -1,0 +1,183 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "actual SHA pinned P05E/P06A cross GLB reimport; original SHA pinned frozen P02 lotus in pair only",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "female_kneel",
+  "kind": "actor",
+  "inputs": [
+    {
+      "file": "meditator_female_kneel_prayer_p05c.glb",
+      "bytes": 439244,
+      "sha256": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac"
+    }
+  ],
+  "meshCount": 9,
+  "principledMaterialSlots": 9,
+  "importedActionNames": [
+    "kneel_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "kneel_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 9
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05E exact owner pair_side camera (2.75,.62,.43)->(0,.45,0), FOV42; identical in P05E/P06A. Extra low-side pair at (1.45,.22,.38), same sun/AgX/EV0; portrait 720x1280",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "front",
+      "file": "female_kneel_actor_front_cycles.png",
+      "bytes": 337930,
+      "sha256": "bcdc0dce8bd9369865bbc9de21e8379b6f34612a20fbf76544697d9e39cd5143"
+    },
+    {
+      "view": "quarter",
+      "file": "female_kneel_actor_quarter_cycles.png",
+      "bytes": 328813,
+      "sha256": "323966e04c428884fbbde9ffa4b5daeedd019906aab39e37b7ddfaf9e1ec6afb"
+    },
+    {
+      "view": "left",
+      "file": "female_kneel_actor_left_cycles.png",
+      "bytes": 337451,
+      "sha256": "cacfb3c13ef328be343ba4ba4ba162546262122ace956b1392bca66fcd1f78f2"
+    },
+    {
+      "view": "right",
+      "file": "female_kneel_actor_right_cycles.png",
+      "bytes": 336877,
+      "sha256": "303f3378a84096635e3ef3fa824013a12cda5c7082f43e8de7407069c4414bea"
+    },
+    {
+      "view": "back",
+      "file": "female_kneel_actor_back_cycles.png",
+      "bytes": 320422,
+      "sha256": "42b76d778a725a3b4d16053adba21b7a2dc855193f96aec2eec270dcdc825a35"
+    },
+    {
+      "view": "hair_front",
+      "file": "female_kneel_actor_hair_front_cycles.png",
+      "bytes": 325205,
+      "sha256": "8b6254be3f897655dbd91ada993eea8ad3b4c2f10176e6261c7993ed57a797af"
+    },
+    {
+      "view": "hair_left",
+      "file": "female_kneel_actor_hair_left_cycles.png",
+      "bytes": 321688,
+      "sha256": "5dd6da7323ab60b0423c329ed6c5cdf16ad2e36316155893ec44c66bdc11b442"
+    },
+    {
+      "view": "hair_right",
+      "file": "female_kneel_actor_hair_right_cycles.png",
+      "bytes": 323983,
+      "sha256": "58fbb1955ebb2f5a86fd1a59890622ed762b0c6d20fe217f4242b4253500c1bf"
+    },
+    {
+      "view": "hair_back",
+      "file": "female_kneel_actor_hair_back_cycles.png",
+      "bytes": 307447,
+      "sha256": "193b42e8aa2116bf21a919700027e471995641e1fa39d80c03d170a10f63154f"
+    },
+    {
+      "view": "hands_front",
+      "file": "female_kneel_actor_hands_front_cycles.png",
+      "bytes": 359605,
+      "sha256": "e9a6ceee5404209cba2ff4a4736803e2cfb823c997c11689c5af088205475f25"
+    },
+    {
+      "view": "hands_side",
+      "file": "female_kneel_actor_hands_side_cycles.png",
+      "bytes": 339570,
+      "sha256": "c01cd06bde13d49a4aa6453e6471fdfe1fbdf5941bf8eaf0847976ac8361c0dc"
+    },
+    {
+      "view": "medium_9x16",
+      "file": "female_kneel_actor_medium_9x16_cycles.png",
+      "bytes": 974651,
+      "sha256": "6d89221782911723c8d6a1aa9def4033a51244042fb5f2f5b1d98539dfae16a3"
+    },
+    {
+      "view": "close_9x16",
+      "file": "female_kneel_actor_close_9x16_cycles.png",
+      "bytes": 979655,
+      "sha256": "f93656f5b666888eac49c5dc638feca83e777371ffd1b34898ee4cdcc7460c49"
+    },
+    {
+      "view": "right",
+      "file": "female_kneel_actor_idle_right_0.0_cycles.png",
+      "bytes": 336903,
+      "sha256": "ec5c2fe7fb1bb70de4b2f25bed7645ca83afd9232a53727e36cf09c7ef3b9c66"
+    },
+    {
+      "view": "hands_front",
+      "file": "female_kneel_actor_idle_hands_front_0.0_cycles.png",
+      "bytes": 359759,
+      "sha256": "d21c9451d41b10ba5339a65f52f6ac216f0b301596f1eb0655a9dc13a142f64f"
+    },
+    {
+      "view": "right",
+      "file": "female_kneel_actor_idle_right_0.5_cycles.png",
+      "bytes": 336817,
+      "sha256": "0f00cc1cbe34346870f44883e1f2cc7b4ab2499d0f437f3d4d4001c77fed2120"
+    },
+    {
+      "view": "hands_front",
+      "file": "female_kneel_actor_idle_hands_front_0.5_cycles.png",
+      "bytes": 360091,
+      "sha256": "9eccffccd99811850f531e199a3c32f1d45c78e8f37e441cd7ff9fbffd926b0d"
+    },
+    {
+      "view": "right",
+      "file": "female_kneel_actor_idle_right_1.0_cycles.png",
+      "bytes": 337307,
+      "sha256": "bc05bbc5fbbd8a5d013dd948c4fac36420b6838d2060a33e4e5752c0d1193399"
+    },
+    {
+      "view": "hands_front",
+      "file": "female_kneel_actor_idle_hands_front_1.0_cycles.png",
+      "bytes": 359433,
+      "sha256": "e705de32815f882d3c4df4bc555880cf89e89f7643391d9654f743a3957444f9"
+    },
+    {
+      "view": "right",
+      "file": "female_kneel_actor_idle_right_1.5_cycles.png",
+      "bytes": 336817,
+      "sha256": "4f0fb9c2a7fd3f1eff0c3e2a1b30a8f1624f5bda1c7defba49d9b113838f320b"
+    },
+    {
+      "view": "hands_front",
+      "file": "female_kneel_actor_idle_hands_front_1.5_cycles.png",
+      "bytes": 360091,
+      "sha256": "f712b43c6a709f412eb2af720f6789d5526e2982812c9188e30f35401dad485c"
+    },
+    {
+      "view": "right",
+      "file": "female_kneel_actor_idle_right_2.0_cycles.png",
+      "bytes": 336903,
+      "sha256": "a7bab89c5c2005a0ebed36a02becfd2a68876a18f342d4f55ed1e6f5dd309eef"
+    },
+    {
+      "view": "hands_front",
+      "file": "female_kneel_actor_idle_hands_front_2.0_cycles.png",
+      "bytes": 359759,
+      "sha256": "dffceab85bb155d02ac0b9eda8d8693537f5e39aa0baa339b110fbc5c5df3618"
+    }
+  ]
+}

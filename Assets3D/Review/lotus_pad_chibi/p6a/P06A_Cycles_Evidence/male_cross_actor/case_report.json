@@ -1,0 +1,253 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "actual SHA pinned P05E/P06A cross GLB reimport; original SHA pinned frozen P02 lotus in pair only",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "male_cross",
+  "kind": "actor",
+  "inputs": [
+    {
+      "file": "meditator_male_cross_prayer_p06a.glb",
+      "bytes": 563688,
+      "sha256": "c684934ff2ceb8da08265fcc8304f2684255f144dc7df94819f007c5e803cb61"
+    }
+  ],
+  "meshCount": 10,
+  "principledMaterialSlots": 10,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "cross_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 10
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05E exact owner pair_side camera (2.75,.62,.43)->(0,.45,0), FOV42; identical in P05E/P06A. Extra low-side pair at (1.45,.22,.38), same sun/AgX/EV0; portrait 720x1280",
+  "originalBlend": {
+    "file": "meditator_male_cross_actor_p06a.blend",
+    "bytes": 2117212,
+    "sha256": "cc487221b71f0a2a1b4869dbc3e4f7ee9271580e9533337c71550cbdc2372a36"
+  },
+  "images": [
+    {
+      "view": "front",
+      "file": "male_cross_actor_front_cycles.png",
+      "bytes": 344582,
+      "sha256": "a8a2f5b1f1d200853c33d6262e4c18547f19150fa3a87b6366d26566ee18531c"
+    },
+    {
+      "view": "quarter",
+      "file": "male_cross_actor_quarter_cycles.png",
+      "bytes": 329584,
+      "sha256": "dbfc7d3074640f1c22ab971e1d53600d705be1ab0e321d8564aa3c751bc16f02"
+    },
+    {
+      "view": "left",
+      "file": "male_cross_actor_left_cycles.png",
+      "bytes": 333386,
+      "sha256": "2fe25054afa5852092b414eac69f318caf42a9d0d48e1090fa7ca9fa5fa9b363"
+    },
+    {
+      "view": "right",
+      "file": "male_cross_actor_right_cycles.png",
+      "bytes": 331567,
+      "sha256": "66b40fb4cc1e379c660fbd7f322c0561b85ad73b71de395d62534a7ea47c0fc9"
+    },
+    {
+      "view": "back",
+      "file": "male_cross_actor_back_cycles.png",
+      "bytes": 320760,
+      "sha256": "79f00c71935aa362c79980a2e325391854668361053a7d53d1fa9642610c50ef"
+    },
+    {
+      "view": "hair_front",
+      "file": "male_cross_actor_hair_front_cycles.png",
+      "bytes": 325538,
+      "sha256": "15ef1e47a5fde5a3eeb134fd955e1189b43fa1f74caa0ca286eb6120ca2e65c7"
+    },
+    {
+      "view": "hair_left",
+      "file": "male_cross_actor_hair_left_cycles.png",
+      "bytes": 318127,
+      "sha256": "ef2d27126256b3bc683a862b0268534cf2ba7e93f4d9b75302930fee28b6e3cc"
+    },
+    {
+      "view": "hair_right",
+      "file": "male_cross_actor_hair_right_cycles.png",
+      "bytes": 315590,
+      "sha256": "cccc9e1bf65571c78968a1826a80ad651c3e5a083e5ac3c4bbaf817a67a6ee98"
+    },
+    {
+      "view": "hair_back",
+      "file": "male_cross_actor_hair_back_cycles.png",
+      "bytes": 313900,
+      "sha256": "102ef3bae44758a883b9e34f345f922d71105c779547ceda6f24882add47dfd9"
+    },
+    {
+      "view": "hair_quarter",
+      "file": "male_cross_actor_hair_quarter_cycles.png",
+      "bytes": 324946,
+      "sha256": "f257da9e1e6463f823e26363b529b141fddd7390211e8dc00e8048495f02f9b4"
+    },
+    {
+      "view": "hair_top",
+      "file": "male_cross_actor_hair_top_cycles.png",
+      "bytes": 296667,
+      "sha256": "71e9802bff995e312c1cbc7f35a86c142cde87657cccf295ef53b8b40da4bf91"
+    },
+    {
+      "view": "hands_front",
+      "file": "male_cross_actor_hands_front_cycles.png",
+      "bytes": 366747,
+      "sha256": "5a6ef6cbe4bb10bb46117fa5397b8df3f259fbbb88189604de2527552411bbaf"
+    },
+    {
+      "view": "hands_left_3q",
+      "file": "male_cross_actor_hands_left_3q_cycles.png",
+      "bytes": 348289,
+      "sha256": "91da5bdbc244405203958ec93f0af627bd2a0066031cd42a0ee290bc58499a3a"
+    },
+    {
+      "view": "hands_right_3q",
+      "file": "male_cross_actor_hands_right_3q_cycles.png",
+      "bytes": 349377,
+      "sha256": "ea5e270b839a1de70095a3fc07eb0a499fb57f3c63d48267908e0cab7faa8ddf"
+    },
+    {
+      "view": "hands_side",
+      "file": "male_cross_actor_hands_side_cycles.png",
+      "bytes": 347922,
+      "sha256": "9d5ae61426490fa6efead57775154bf634419fe1c781f2f91404312e8b1c1b39"
+    },
+    {
+      "view": "hands_contact_diag",
+      "file": "male_cross_actor_hands_contact_diag_cycles.png",
+      "bytes": 347333,
+      "sha256": "eb3652b223a498b7932631a52a97846f66a1e588d095163511b6b230bc91ea83"
+    },
+    {
+      "view": "torso_front",
+      "file": "male_cross_actor_torso_front_cycles.png",
+      "bytes": 361318,
+      "sha256": "fc604ce59899d69c8085b0478201e61918017b54e3e32722dd666cd9e6730d8a"
+    },
+    {
+      "view": "torso_3q",
+      "file": "male_cross_actor_torso_3q_cycles.png",
+      "bytes": 356197,
+      "sha256": "fec1d519b5f533a9c1058240753ffa0417d0f83c8eb5e8171d12169baeb63760"
+    },
+    {
+      "view": "knees_front",
+      "file": "male_cross_actor_knees_front_cycles.png",
+      "bytes": 345107,
+      "sha256": "274c7265425a0b6116cebd09e434e351170b410168c8006b4a7a4c63de34a0b4"
+    },
+    {
+      "view": "knees_side",
+      "file": "male_cross_actor_knees_side_cycles.png",
+      "bytes": 336372,
+      "sha256": "fa0d0d722dec36dd57178c6963a42fbf8936dbf54e55f148061de4a3e8cc4f56"
+    },
+    {
+      "view": "foot_macro_front",
+      "file": "male_cross_actor_foot_macro_front_cycles.png",
+      "bytes": 311787,
+      "sha256": "fb2482c9497fd6b35af51711f5fe6e9e4a3d4392c134d48d92f0c00fec1ee888"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "male_cross_actor_foot_macro_side_cycles.png",
+      "bytes": 317167,
+      "sha256": "edfc3b526c6617682a51b231909ffb4c6004bdc6034da932eea7fbc8d62ac60b"
+    },
+    {
+      "view": "medium_9x16",
+      "file": "male_cross_actor_medium_9x16_cycles.png",
+      "bytes": 978356,
+      "sha256": "b7f08fe490e6c320d0c798b5ff259e8fe30e0ba68a059a1850b5533c2f1b8e21"
+    },
+    {
+      "view": "close_9x16",
+      "file": "male_cross_actor_close_9x16_cycles.png",
+      "bytes": 983674,
+      "sha256": "6e9677fee97e68ee123d264b0767831331efe2eaaafcfce079aaa44b2522d4a7"
+    },
+    {
+      "view": "right",
+      "file": "male_cross_actor_idle_right_0.0_cycles.png",
+      "bytes": 331517,
+      "sha256": "83b63741217963301a32d33e0e3b6c6db1c4037fb5b7db8ea6201b7addb72ae0"
+    },
+    {
+      "view": "hands_front",
+      "file": "male_cross_actor_idle_hands_front_0.0_cycles.png",
+      "bytes": 367468,
+      "sha256": "87e5e81cb89e6a3f8dec636decaf81a112f809ca98fad8b60b0ed5b4ed937c99"
+    },
+    {
+      "view": "right",
+      "file": "male_cross_actor_idle_right_0.5_cycles.png",
+      "bytes": 331229,
+      "sha256": "ac2a1b7f9d0eb3f478a77ca47452a745e5bebd30a4f0e72525e33c824782cd60"
+    },
+    {
+      "view": "hands_front",
+      "file": "male_cross_actor_idle_hands_front_0.5_cycles.png",
+      "bytes": 365340,
+      "sha256": "f54419a9ceb2e5f78c0a79a0d69b4548062b4a472357cb4adf29828f28a6b677"
+    },
+    {
+      "view": "right",
+      "file": "male_cross_actor_idle_right_1.0_cycles.png",
+      "bytes": 331570,
+      "sha256": "3515dcf4d1150183fa3982b8c37a1bd41c5d9798f66d9bff560a7ad40e5a74b5"
+    },
+    {
+      "view": "hands_front",
+      "file": "male_cross_actor_idle_hands_front_1.0_cycles.png",
+      "bytes": 363952,
+      "sha256": "4d395534d62ddd3c9f71d4ffbf12355e9be7644139d28b4a4635465dbd56c444"
+    },
+    {
+      "view": "right",
+      "file": "male_cross_actor_idle_right_1.5_cycles.png",
+      "bytes": 331229,
+      "sha256": "cedf4a677ea9ca916c817fe49a150871ab4cdac8df9044689a2d69a32bca919c"
+    },
+    {
+      "view": "hands_front",
+      "file": "male_cross_actor_idle_hands_front_1.5_cycles.png",
+      "bytes": 365340,
+      "sha256": "4bf77e97cc0570009a7718fb1397a91969b0d4402020234f7a6d601ce2ab6366"
+    },
+    {
+      "view": "right",
+      "file": "male_cross_actor_idle_right_2.0_cycles.png",
+      "bytes": 331517,
+      "sha256": "846f461f9d5d04fcda595b3bb0dffcce4f212028f82824ad2cbd3e903e649765"
+    },
+    {
+      "view": "hands_front",
+      "file": "male_cross_actor_idle_hands_front_2.0_cycles.png",
+      "bytes": 367468,
+      "sha256": "6cb21070e02986fae6773fffe01ec1f494d2a65cff30d3086fa73d413dc06e26"
+    }
+  ]
+}
