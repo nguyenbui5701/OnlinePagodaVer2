@@ -1,107 +1,129 @@
 {
-  "revision": "P0.5b",
-  "testedOnActualExportedGlb": true,
-  "originalSourcesRecoveredAndExactP05GlbRegeneration": "BYTE_EXACT_SHA256_PASS",
-  "poses": {
-    "cross_prayer": {
-      "baseline": {
-        "sha256": "981ecf0b83378ce3fca7cd49db9473baac43238af3b5ee2fa857024ff66b57fd",
-        "bytes": 338176,
-        "triangles": 13262,
-        "vertices": 6855
-      },
-      "revised": {
-        "path": "Assets3D/Review/lotus_pad_chibi/p5b/meditator_female_cross_prayer_p05b.glb",
-        "sha256": "81e8548cf6e46d9f5ff60c7bdf342ac1857015140e7d06d67dbd9284054137fd",
-        "bytes": 424628,
-        "triangles": 16864,
-        "vertices": 8636,
-        "meshes": 9,
-        "materials": 21,
-        "textures": 0
-      },
-      "trianglesDelta": 3602,
-      "bytesDelta": 86452,
-      "changedMeshCount": 2,
-      "exactlyUnchangedMeshCount": 7,
-      "noneditedFaceHairLegMaterialsAndSixVariants": "EXACT_ARRAY_EQUAL",
-      "animations": [
-        "sit_idle",
-        "cross_prayer_idle"
-      ],
-      "allClipTimesAndValuesExactlyMatchP05": true
+  "cross_prayer": {
+    "poseId": "cross_prayer",
+    "old": {
+      "sha256": "981ecf0b83378ce3fca7cd49db9473baac43238af3b5ee2fa857024ff66b57fd",
+      "bytes": 338176,
+      "triangles": 13262,
+      "vertices": 6855
     },
-    "kneel_prayer": {
-      "baseline": {
-        "sha256": "04a1d0e03e5186085118dd06d158dbba43e7180843895ed1661a03529040785e",
-        "bytes": 352636,
-        "triangles": 14190,
-        "vertices": 7319
+    "new": {
+      "sha256": "81e8548cf6e46d9f5ff60c7bdf342ac1857015140e7d06d67dbd9284054137fd",
+      "bytes": 424628,
+      "triangles": 16864,
+      "vertices": 8636,
+      "meshCount": 9,
+      "materials": 21,
+      "textures": 0
+    },
+    "triDelta": 3602,
+    "bytesDelta": 86452,
+    "exactUnchangedMeshes": [
+      "ao_ba_ba_pants_SeatRoot_mesh",
+      "sandal_trim_SeatRoot_mesh",
+      "ao_ba_ba_placket_UpperBodyBreath_mesh",
+      "ao_ba_ba_buttons_UpperBodyBreath_mesh",
+      "hair_blue_black_UpperBodyBreath_mesh",
+      "eyes_mauve_UpperBodyBreath_mesh",
+      "skin_blush_UpperBodyBreath_mesh"
+    ],
+    "onlyChangedMeshes": {
+      "ao_ba_ba_top_UpperBodyBreath_mesh": {
+        "oldTris": 1666,
+        "newTris": 1666,
+        "oldVertices": 924,
+        "newVertices": 924
       },
-      "revised": {
-        "path": "Assets3D/Review/lotus_pad_chibi/p5b/meditator_female_kneel_prayer_p05b.glb",
-        "sha256": "533b84cba69332107ea25c57ed952b76c8276d4971a558496e4caf7aea400e9f",
-        "bytes": 439088,
-        "triangles": 17792,
-        "vertices": 9100,
-        "meshes": 9,
-        "materials": 21,
-        "textures": 0
+      "skin_rose_cream_UpperBodyBreath_mesh": {
+        "oldTris": 3776,
+        "newTris": 7378,
+        "oldVertices": 1922,
+        "newVertices": 3703
+      }
+    },
+    "highFaceVerticesIdentical": true,
+    "materialsIncludingAllSixPalettesBitIdentical": true,
+    "anchorsUnchanged": true,
+    "sit_idleAndPoseIdleExact17KeyArrays": true,
+    "idleTimesChecked": [
+      0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "blenderCycles": "NOT_RUN_IN_THIS_ENVIRONMENT",
+    "ownerArt": "PENDING"
+  },
+  "kneel_prayer": {
+    "poseId": "kneel_prayer",
+    "old": {
+      "sha256": "04a1d0e03e5186085118dd06d158dbba43e7180843895ed1661a03529040785e",
+      "bytes": 352636,
+      "triangles": 14190,
+      "vertices": 7319
+    },
+    "new": {
+      "sha256": "533b84cba69332107ea25c57ed952b76c8276d4971a558496e4caf7aea400e9f",
+      "bytes": 439088,
+      "triangles": 17792,
+      "vertices": 9100,
+      "meshCount": 9,
+      "materials": 21,
+      "textures": 0
+    },
+    "triDelta": 3602,
+    "bytesDelta": 86452,
+    "exactUnchangedMeshes": [
+      "ao_ba_ba_pants_SeatRoot_mesh",
+      "sandal_trim_SeatRoot_mesh",
+      "ao_ba_ba_placket_UpperBodyBreath_mesh",
+      "ao_ba_ba_buttons_UpperBodyBreath_mesh",
+      "hair_blue_black_UpperBodyBreath_mesh",
+      "eyes_mauve_UpperBodyBreath_mesh",
+      "skin_blush_UpperBodyBreath_mesh"
+    ],
+    "onlyChangedMeshes": {
+      "ao_ba_ba_top_UpperBodyBreath_mesh": {
+        "oldTris": 1666,
+        "newTris": 1666,
+        "oldVertices": 924,
+        "newVertices": 924
       },
-      "trianglesDelta": 3602,
-      "bytesDelta": 86452,
-      "changedMeshCount": 2,
-      "exactlyUnchangedMeshCount": 7,
-      "noneditedFaceHairLegMaterialsAndSixVariants": "EXACT_ARRAY_EQUAL",
-      "animations": [
-        "sit_idle",
-        "kneel_prayer_idle"
-      ],
-      "allClipTimesAndValuesExactlyMatchP05": true
-    }
-  },
-  "anchors": {
-    "SeatRoot": [
+      "skin_rose_cream_UpperBodyBreath_mesh": {
+        "oldTris": 3776,
+        "newTris": 7378,
+        "oldVertices": 1922,
+        "newVertices": 3703
+      }
+    },
+    "highFaceVerticesIdentical": true,
+    "materialsIncludingAllSixPalettesBitIdentical": true,
+    "anchorsUnchanged": true,
+    "sit_idleAndPoseIdleExact17KeyArrays": true,
+    "idleTimesChecked": [
       0,
-      0,
-      0
+      0.5,
+      1.0,
+      1.5,
+      2.0
     ],
-    "HeadAnchor": [
-      0,
-      0.835,
-      0.04
-    ],
-    "NameplateAnchor": [
-      0,
-      1.335,
-      0.03
-    ],
-    "FXAnchor": [
-      0.37,
-      0.805,
-      0.16
-    ]
+    "blenderCycles": "NOT_RUN_IN_THIS_ENVIRONMENT",
+    "ownerArt": "PENDING"
   },
-  "animationSamplesSec": [
-    0,
-    0.5,
-    1,
-    1.5,
-    2
-  ],
-  "handChecks": {
-    "independentPalms": 2,
-    "eachSingleConnectedWatertightMesh": true,
-    "nearestVerticesDistanceMm": 2.0667,
-    "centerplaneGapMm": 2.0613,
-    "exactTriangleIntersections": "NOT_TESTED",
-    "otherHandsVsSleevesCollision": "PROXY_ONLY"
+  "handProxy": {
+    "leftHandWatertight": true,
+    "rightHandWatertight": true,
+    "oneConnectedShellEach": true,
+    "leftRightMirrorExact": false,
+    "leftMaxX": -0.0010290927020832896,
+    "rightMinX": 0.0010322502348572016,
+    "planeGapMeters": 0.002061342936940491,
+    "planeAabbOverlapMeters": 0,
+    "sampledVertexToOppositeVertexMinM": 0.0020666614677896165,
+    "exactTriangleSurfacePenetration": "NOT_RUN",
+    "clipStageGuarantee": "Shared UpperBodyBreath parent; transforms identical at all five checked key times",
+    "status": "PROXY_ONLY"
   },
-  "renderEvidence": "NATIVE_VTK_GLTF_PBR_PASS_NOT_BLENDER_CYCLES",
-  "fullBlenderCycles": "NOT_RUN",
-  "editableBlenderSource": "NOT_CREATED",
-  "ownerArt": "PENDING",
-  "trueUnchangedFrozenLotus": "REUSED_BY_SHA_NOT_REEXPORTED",
-  "gpuRuntime": "NOT_RUN",
-  "conclusion": "P05B_FEMALE_HAND_ART_OWNER_REVIEW_REQUIRED"
+  "rootPreservation": "P05_P05B_NEW_BINARY_ONLY; p05/p04/pad untouched"
 }

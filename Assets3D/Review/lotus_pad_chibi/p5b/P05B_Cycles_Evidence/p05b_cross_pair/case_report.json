@@ -1,0 +1,63 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport actual exported P05/P05b GLB",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p05b_cross",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_female_cross_prayer_p05b.glb",
+      "bytes": 424628,
+      "sha256": "81e8548cf6e46d9f5ff60c7bdf342ac1857015140e7d06d67dbd9284054137fd"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 14,
+  "principledMaterialSlots": 14,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05_CAMERA_CONTRACT.json + P05B added macro-left/right/torso",
+  "originalBlend": {
+    "file": "meditator_female_p05b_cross_prayer_pair.blend",
+    "bytes": 2951794,
+    "sha256": "0f7e159f59145160b7d85c8360c5692d4082e15d61b6a3d02b429b6fb121c298"
+  },
+  "images": [
+    {
+      "view": "pair_front",
+      "file": "p05b_cross_pair_pair_front_cycles.png",
+      "bytes": 359551,
+      "sha256": "9016363e3fea0a50546129b82226a81b3733154abf406df06661eac0f9e09f2c"
+    },
+    {
+      "view": "pair_full_9x16",
+      "file": "p05b_cross_pair_pair_full_9x16_cycles.png",
+      "bytes": 998950,
+      "sha256": "6b5a712061f19062dbd86398ed13fe26672664ad76de620a454f75a8814603e3"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p05b_cross_pair_pair_medium_9x16_cycles.png",
+      "bytes": 1023318,
+      "sha256": "087dce8a2dfc19492512fd8ffe05425f4735716ae4d48784589e2cb5857387a8"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "p05b_cross_pair_pair_close_9x16_cycles.png",
+      "bytes": 1032592,
+      "sha256": "4e5abf51225d34d08d353ad3684bf7a7102b2ff412f99c44a43f8faa6190e62c"
+    }
+  ]
+}
