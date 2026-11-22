@@ -1,5 +1,8 @@
 # 16 — P0 design approval, R16 Sakura freeze and implementation handoff
 
+> **P0.5c owner-selected hand gesture gate — 2026-11-22:** Owner explicitly requests **one additional, tightly scoped pass** to orient the **two female prayer palms toward each other** and make their gentle contact look natural, after SA's review of P0.5b PR #2 HEAD `4c8762912024866778dfe1f39f50ca77ccc26744` ([review #6009865513](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6009865513)). **Current active task:** [AI_VISUAL_06 — P0.5c Female Prayer Palm Orientation](../Task/AI_VISUAL_06_FEMALE_PRAYER_PALM_ORIENTATION.md), new immutable `p5c/`. Preserve `p5b/`, both leg poses, áo bà ba, hair, palettes, anchors, animations and frozen lotus. **SA review and explicit owner female approval required; no male, Codex #3/#4, integration, GPU/LIVE or PR merge.** Previous tasks below are historical, not concurrently active.
+
+
 > **P0.5b owner prayer-hand art gate — 2026-11-22:** SA reviewed PR #2 HEAD `a3673005d2c262bb8577c43335747e62d6dbce96` using owner-rendered actual P0.5 Blender Cycles and SHA-verified both real GLBs. **Both female leg poses are the retained working baseline, but their praying hands need art refinement before owner approval** (blocker). Active task: [AI_VISUAL_05 prayer hands refinement](../Task/AI_VISUAL_05_FEMALE_PRAYER_HANDS_REFINEMENT.md), new versioned `p5b/`, preserving `p5/`. No male, Codex #3/#4, integration, GPU/LIVE Studio, PR merge or next stage until owner approval gate explicitly changes. Previous designs remain valid as future plan.
 
 
