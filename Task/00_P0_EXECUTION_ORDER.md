@@ -1,5 +1,8 @@
 # P0 execution order — OnlinePagodaVer2
 
+> **ACTIVE MICRO-POLISH P0.5d — owner 2026-11-22:** Owner **temporarily accepts** P0.5c female appearance/prayer hands and kneeling pose; only remaining visual request is a **modest visible foot tip/instep** on **female cross-legged prayer** pose. New official task **[AI_VISUAL_07](AI_VISUAL_07_FEMALE_CROSS_LEGGED_FOOT_VISIBILITY.md)** in PR #2, immutable original p5c/ and new p5d/. **No new kneeling build. No male, Codex #3/#4, integration, GPU/LIVE or merge** before SA reviews real GLB + Cycles and owner approves P0.5d feet. Previous task statuses below are historical, not active.
+
+
 > **ACTIVE AI VISUAL P0.5c — 2026-11-22:** Owner chose one small final prayer-palm polish: both female poses must show **palms actually facing and gently contacting one another**, not two broad palm faces held side by side. SA verified P0.5b actual GLB and selected Cycles evidence at PR #2 HEAD `4c8762912024866778dfe1f39f50ca77ccc26744`; new task **[AI_VISUAL_06](AI_VISUAL_06_FEMALE_PRAYER_PALM_ORIENTATION.md)** in immutable `p5c/`, A/B glTF+Cycles and measured contact. **Codex, male and merges are on hold** until SA review and explicit owner approval. Earlier P0.5b instructions below are previous stages only.
 
 
