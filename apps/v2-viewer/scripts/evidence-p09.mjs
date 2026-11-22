@@ -140,8 +140,10 @@ try {
     </main>`);
   await sheet.locator('main').screenshot({ path: join(output, 'baseline-facing-ab.png') });
   await sheet.close();
-  const integrated = { position: [7.5, 3.9, 20], target: [0.7, 3.1, 6.1], fov: 52 };
+  const integrated = { position: [5.4, 3.4, 23], target: [0.9, 3.6, 7], fov: 52 };
   await step(3, { fixed: integrated, idle: 1 });
+  const integratedFrame = await page.evaluate(() => window.p08Review.frame('seat-1'));
+  assert.ok(integratedFrame.edge < 0.84 && !integratedFrame.treeOccludes, JSON.stringify(integratedFrame));
   await shot('tree-facing-integrated');
   photos.push({ file: 'tree-facing-integrated.png', time: 3, seed: 9, camera: integrated, profile: 'eco' });
 
@@ -258,6 +260,9 @@ try {
   assert.equal(wall.report.mode, 'CINEMATIC');
   assert.deepEqual([...new Set(wall.rows.filter(row => row.labels?.name).map(row => row.labels.name))], ['An', 'Bình', 'Chi']);
   assert.ok(wall.rows.some(row => row.mode === 'CINE_RETURN'));
+  const idleRaf = wall.rows.filter(row => row.seconds < 46);
+  assert.ok(idleRaf.at(-1).seconds >= 45);
+  assert.deepEqual([...new Set(idleRaf.map(row => row.shot))], families);
 
   const failures = {};
   const route = `**/p08/${pair.pair.actor.file}`;
@@ -284,7 +289,7 @@ try {
     browser: wall.report.browser, graphics: wall.report.graphics, system: release(), cpu: cpus()[0]?.model,
     viewport, liveStudio: false, wallRaf: { seconds: wall.report.elapsedSeconds, frames: wall.rows.length,
       frameTiming: wall.report.frameTiming, drawCalls: wall.report.drawCalls, triangles: wall.report.trianglesDrawn },
-    noGiftObserved: wall.rows.filter(row => row.seconds < 46).at(-1).seconds,
+    noGiftObserved: idleRaf.at(-1).seconds,
     assets: { eco: wall.report.asset, quality: quality.asset, ...wall.report.pair },
     qualityPathTreeCollisions: 0, failures, errors,
   });

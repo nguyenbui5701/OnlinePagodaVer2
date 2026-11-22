@@ -68,3 +68,13 @@ test('seed query is a stable uint32 with a documented fallback', () => {
   assert.equal(parseCinematicSeed('0'), 0);
   assert.equal(parseCinematicSeed('4294967295'), 4294967295);
 });
+
+test('rejecting a route reports which candidate failed and retains an accepted path', () => {
+  const altered = { ...close, position: new Vector3(-8, 1.4, 8.7), fov: 50 };
+  const routes = createCinematicRoutes(altered, new Vector3(), 9);
+  const selected = routes.sample(52);
+  assert.ok(selected.fallback?.startsWith('east-'));
+  assert.ok(routes.rejected.some(rejection => rejection.id === selected.fallback));
+  assert.ok(!routes.rejected.some(rejection => rejection.id === selected.routeId));
+  assert.ok(selected.routeId.startsWith('west-'));
+});
