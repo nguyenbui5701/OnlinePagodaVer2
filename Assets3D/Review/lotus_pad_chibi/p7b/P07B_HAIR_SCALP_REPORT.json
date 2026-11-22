@@ -1,0 +1,75 @@
+{
+  "revision": "P07B",
+  "sampleDate": "2026-11-22",
+  "sourcePRHead": "92dfbf4e26709aa233556fc770d0b8da274a2803",
+  "sampleMethod": "In-process real P06c and P07b GLB2 hair mesh #6, skin mesh #3; finite Moller-Trumbore radial vertex sampling and 19x21 camera grid, NOT continuous collision or Blender",
+  "samplesFromCrossGLB": true,
+  "canonicalHairUsedInKneel": true,
+  "cap": {
+    "rays": 841,
+    "skinIntersections": 841,
+    "scalpPenetratingSamples": 0,
+    "under5mm": 0,
+    "minClearanceMM": 11.735368017640413
+  },
+  "sweptLocks": {
+    "rays": 567,
+    "scalpPenetratingSamples": 0,
+    "under5mm": 0,
+    "minClearanceMM": 12.761147571686449
+  },
+  "cameraRays": [
+    {
+      "view": "front",
+      "rays": 66,
+      "skinFirst": 0
+    },
+    {
+      "view": "top",
+      "rays": 272,
+      "skinFirst": 0
+    },
+    {
+      "view": "right3q",
+      "rays": 60,
+      "skinFirst": 0
+    },
+    {
+      "view": "left3q",
+      "rays": 60,
+      "skinFirst": 0
+    },
+    {
+      "view": "left",
+      "rays": 53,
+      "skinFirst": 0
+    },
+    {
+      "view": "right",
+      "rays": 53,
+      "skinFirst": 0
+    },
+    {
+      "view": "back",
+      "rays": 42,
+      "skinFirst": 0
+    }
+  ],
+  "totalCameraRestrictedHeadSampleRays": 606,
+  "skinFirstTotal": 0,
+  "surface": {
+    "triangles": 3080,
+    "originalDegenerate": 0,
+    "newDegenerate": 0,
+    "newInvertedFaceCount": 0,
+    "maxFaceNormalRotationDeg": 26.75250272590589
+  },
+  "limitations": {
+    "earClearance": "NOT_RUN",
+    "collarCollision": "NOT_RUN",
+    "realScalpOrHairDuringFiveIdleTimes": "NOT_RUN",
+    "globalContinuousCollision": "NOT_PROVEN",
+    "blenderArt": "NOT_RUN"
+  },
+  "review": "PENDING_REAL_CYCLES"
+}

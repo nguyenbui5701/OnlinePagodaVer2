@@ -1,0 +1,5 @@
+# P07b Cycles evidence truthful state (2026-11-22)
+
+Two actual P07b GLB2 remote SHA verified. P06c and P07a1 original Cycles were already owner-run and remain immutable; they are **REUSED, not rerendered**. New P07b Blender 4-case smoke, complete GLB→Cycles 4-case output, editable 4 .blend, full 720×1280 original P02 lotus pair images, per-case stdout/PNG SHA, 5 idle time visual evidence, ZIP CRC **NOT_RUN in current environment**. Builder/Blender Python/PowerShell/CRC source scripts exist, but scripts are not execution proof.
+
+Owner-safe renderer script `run_p07b_blender.ps1`: only `p07b_cross_actor`, `p07b_cross_pair`, `p07b_kneel_actor`, `p07b_kneel_pair`. Separate `P07B_Smoke_Evidence` and `P07B_Cycles_Evidence`, STOP if existing output; full requires evidence from real smoke and explicit `-ArtSmokeAccepted`. Original P06c P07a1 not rendered, not deleted. Full output ZIP `P07B_SIDE_PART_73_Blender_Cycles_Evidence.zip`, actual CRC report only after executed. **Gate P07B_SIDE_PART_73_SA_REVIEW_REQUIRED; no Codex/integration/merge.**

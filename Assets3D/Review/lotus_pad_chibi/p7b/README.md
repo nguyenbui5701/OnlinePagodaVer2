@@ -1,0 +1,7 @@
+# OnlinePagodaVer2 AI Visual 14 — P07b Side Part 7/3
+
+**Versioned addition only:** baseline P06c, immutable owner-accepted P07a1, Draft PR #2. Reproducible two male GLB2 outputs and Node.js 22+ original source `build_male_sidepart73_p07b.mjs`; rebuild with `node build_male_sidepart73_p07b.mjs cross` / `node build_male_sidepart73_p07b.mjs kneel` in this folder. Art identity: quiet classic Side Part 7/3, character RIGHT +X part, majority combed LEFT -X, subtle rounded chibi top. Both same canonical hair. Exact current actual hashes, bytes, geometry, 21 materials/six fabric colorways, 2s/17 samples, five anchors in `P07B_VALIDATION.json` / manifest.
+
+**TECH VERIFIED (real GitHub bytes):** two GLB2 output, source P06c raw nonhair exact 9/8 meshes (27/24 arrays), native animations, frozen brows, six variants, same hair both poses; finite sampled ray coverage is not continuous collision proof. No extra hair triangles/material/drawcall count. `P07B_HAIR_SCALP_REPORT.json` records measured sample points.
+
+**ART / Blender evidence PENDING:** Blender not available in this environment. `blender_p07b_cycles.py` / `run_p07b_blender.ps1` can import only new exported GLBs (4 cases) after smoke, never old P Blender or destructive evidence deletes. Baseline real P06c and P07a1 PNGs reused. Windows steps `README_WINDOWS.md`. Current true new .blend, Cycles PNG, case reports, ZIP CRC NOT_RUN. 0 VND. No merge, Codex or integration; STOP for SA review then owner.

@@ -1,0 +1,98 @@
+{
+  "revision": "P0.7b",
+  "assetID": "meditator_male_sidepart73",
+  "branch": "assets/lotus-pad-chibi-p0",
+  "pr": 2,
+  "baselineHead": "c96b06372587134e38468388edaa60915f90a3bf",
+  "source": "immutable P0.6c",
+  "outputFolder": "Assets3D/Review/lotus_pad_chibi/p7b/",
+  "sidepart": {
+    "partOn": "character_right_+X",
+    "dominantSweep": "character_left_-X",
+    "ratio": "7/3 visual",
+    "scalpCoverage": "P07B_HAIR_SCALP_REPORT.json"
+  },
+  "assets": [
+    {
+      "pose": "cross",
+      "path": "Assets3D/Review/lotus_pad_chibi/p7b/meditator_male_cross_prayer_sidepart73_p07b.glb",
+      "sha256": "1238f5fba9f7cfea0c550fabdc26446905f6e403e558793fb726251d4fec08cb",
+      "bytes": 589864,
+      "vertices": 9469,
+      "triangles": 18380,
+      "meshes": 10,
+      "materials": 21,
+      "status": "REMOTE_GLB2_PRESENT"
+    },
+    {
+      "pose": "kneel",
+      "path": "Assets3D/Review/lotus_pad_chibi/p7b/meditator_male_kneel_prayer_sidepart73_p07b.glb",
+      "sha256": "2bb7430c4da4c58c6ee986a741ff79d3865f581c046003ce0770e80af345b3f2",
+      "bytes": 456280,
+      "vertices": 9485,
+      "triangles": 18420,
+      "meshes": 9,
+      "materials": 21,
+      "status": "REMOTE_GLB2_PRESENT"
+    }
+  ],
+  "hair": {
+    "meshIndex": 6,
+    "vertices": 1672,
+    "triangles": 3080,
+    "meshAdditions": 0,
+    "materialAdditions": 0,
+    "primitiveAdditions": 0,
+    "nonHairByteExact": true,
+    "brow208VertexBytesExact": true,
+    "canonicalAcrossPoses": true
+  },
+  "clips": {
+    "cross": [
+      "sit_idle",
+      "cross_prayer_idle"
+    ],
+    "kneel": [
+      "sit_idle",
+      "kneel_prayer_idle"
+    ],
+    "duration": 2,
+    "keyframes": 17
+  },
+  "anchors": [
+    "SeatRoot",
+    "UpperBodyBreath",
+    "HeadAnchor",
+    "NameplateAnchor",
+    "FXAnchor"
+  ],
+  "materialVariants": [
+    "pastel_lilac",
+    "blush_rose",
+    "sage_green",
+    "sky_blue",
+    "warm_cream",
+    "terracotta"
+  ],
+  "provenance": "Original procedural Node.js 22, Blender is an unexecuted owner runner, no third-party assets; 0 VND paid",
+  "evidence": {
+    "baseline": "Frozen real original P06c & P07a1 Cycles on PR",
+    "newOnlyCases": [
+      "p07b_cross_actor",
+      "p07b_cross_pair",
+      "p07b_kneel_actor",
+      "p07b_kneel_pair"
+    ],
+    "smoke": "PENDING_OWNER_RUN",
+    "newFullCycles": "NOT_RUN",
+    "editableBlend": "PENDING_OWNER_RUN",
+    "newZIPCRC": "NOT_RUN",
+    "ownerVisualGO": "PENDING",
+    "SAArt": "PENDING"
+  },
+  "gate": "P07B_SIDE_PART_73_SA_REVIEW_REQUIRED",
+  "noHistoricBlenderRerun": true,
+  "noCodex": true,
+  "noIntegration": true,
+  "noMerge": true
+}
