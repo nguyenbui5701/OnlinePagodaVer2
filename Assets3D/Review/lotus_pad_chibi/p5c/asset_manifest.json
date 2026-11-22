@@ -1,108 +1,244 @@
 {
   "revision": "P0.5c",
-  "assetId": "female_prayer_palm_contact",
-  "pr": 2,
+  "assetId": "female_prayer_palm_orientation",
+  "headReviewed": "4c8762912024866778dfe1f39f50ca77ccc26744",
   "branch": "assets/lotus-pad-chibi-p0",
-  "reviewedBaselineHead": "4c8762912024866778dfe1f39f50ca77ccc26744",
+  "pr": 2,
+  "task": "Task/AI_VISUAL_06_FEMALE_PRAYER_PALM_ORIENTATION.md",
+  "folder": "Assets3D/Review/lotus_pad_chibi/p5c/",
   "ownerGate": "P05C_FEMALE_PALM_ART_OWNER_REVIEW_REQUIRED",
-  "scope": "local palm facing/contact + wrist deformation only; NO sleeve mesh modifications",
-  "models": {
+  "poses": {
     "cross_prayer": {
-      "old": {
-        "filename": "meditator_female_cross_prayer_p05b.glb",
-        "sha256": "81e8548cf6e46d9f5ff60c7bdf342ac1857015140e7d06d67dbd9284054137fd",
-        "bytes": 424628
-      },
-      "new": {
-        "filename": "meditator_female_cross_prayer_p05c.glb",
-        "sha256": "1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf",
-        "bytes": 424784,
-        "triangles": 16864,
-        "vertices": 8636
-      }
+      "filename": "meditator_female_cross_prayer_p05c.glb",
+      "sha256": "1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf",
+      "bytes": 424784,
+      "triangles": 16864,
+      "vertices": 8636,
+      "meshes": 9,
+      "materials": 21,
+      "githubState": "pending_owner_upload"
     },
     "kneel_prayer": {
-      "old": {
-        "filename": "meditator_female_kneel_prayer_p05b.glb",
-        "sha256": "533b84cba69332107ea25c57ed952b76c8276d4971a558496e4caf7aea400e9f",
-        "bytes": 439088
-      },
-      "new": {
-        "filename": "meditator_female_kneel_prayer_p05c.glb",
-        "sha256": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac",
-        "bytes": 439244,
-        "triangles": 17792,
-        "vertices": 9100
-      }
+      "filename": "meditator_female_kneel_prayer_p05c.glb",
+      "sha256": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac",
+      "bytes": 439244,
+      "triangles": 17792,
+      "vertices": 9100,
+      "meshes": 9,
+      "materials": 21,
+      "githubState": "pending_owner_upload"
     }
   },
-  "materials": 21,
-  "meshes": 9,
-  "colorVariants": 6,
-  "textures": 0,
-  "source": {
-    "builder": "procedural_female_palms_p05c.py",
-    "blobVerifiedOnBranch": true,
-    "exactDependencies": {
-      "p05b": "6f634fc7db7cb6a0d685abb32af57a47b764f3020002671911a0ad21f01f8bc6",
-      "p05": "e6f7d06d3a3c78d055c6510d61d009a6bca877f03cd1c1323ee5602dcc633ad9",
-      "p04": "b3b8b0c5bb1f9730c426f9e4b2ce1485e0f4df9b45adffcb9300ac92348f8ad2"
+  "baseline": {
+    "cross": {
+      "sha256": "81e8548cf6e46d9f5ff60c7bdf342ac1857015140e7d06d67dbd9284054137fd",
+      "bytes": 424628,
+      "triangles": 16864
     },
-    "missingOriginalDependenciesFromGitHub": "PENDING_OWNER_SOURCE_UPLOAD; PROVIDED_IN_LOCAL_ZIP",
-    "originalP05bRebuiltByteExact": true
-  },
-  "contact": {
-    "before": {
-      "gap": 0.002061342936940491,
-      "contactDistance": 0.002417,
-      "contactFaces": 0,
-      "contactArea": 0
+    "kneel": {
+      "sha256": "533b84cba69332107ea25c57ed952b76c8276d4971a558496e4caf7aea400e9f",
+      "bytes": 439088,
+      "triangles": 17792
     },
-    "after": {
-      "gap": 0.0011341619538143277,
-      "contactDistance": 0.0011662,
-      "contactFaces": 54,
-      "contactArea": 0.0004612645823824967,
-      "leftNormal": [
-        0.82508,
-        -0.02379,
-        0.13492
-      ],
-      "rightNormal": [
-        -0.81903,
-        -0.02126,
-        0.1185
-      ],
-      "contactCenter": [
-        -0.00064579,
-        0.52836209,
-        0.34543559
-      ],
-      "oppositionMedianNormalDot": -0.9993639767284361
+    "padFrozenSHA": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+    "padFrozenBytes": 262108
+  },
+  "scopeProof": {
+    "onlyEdited": "skin_rose_cream_UpperBodyBreath_mesh POSITION+NORMAL within hand region",
+    "unchangedMeshes": 8,
+    "sameAllMeshTriangleIndices": true,
+    "noNewPolygons": true,
+    "sameSixKHRMaterialsVariants": true,
+    "sameBothIdleClipsAndAllSamples": true,
+    "sameAnchorTransforms": true,
+    "sameGarmentAndCuffs": true
+  },
+  "handContact": {
+    "cross_prayer": {
+      "leftWatertight": true,
+      "rightWatertight": true,
+      "leftConnectedComponents": 1,
+      "rightConnectedComponents": 1,
+      "leftMaxX": -0.0005680025788024068,
+      "rightMinX": 0.0005661593750119209,
+      "strictHalfspaceSeparationM": 0.0011341619538143277,
+      "handToHandTriangleIntersection": "PROVEN_NONE_USING_DISJOINT_HALFSPACE_BOUND_FOR_ALL_TRIANGLES",
+      "palmZones": {
+        "leftCandidateFaceCount": 314,
+        "rightCandidateFaceCount": 302,
+        "leftInwardMeanNormal": [
+          0.82508,
+          -0.02379,
+          0.13492
+        ],
+        "rightInwardMeanNormal": [
+          -0.81903,
+          -0.02126,
+          0.1185
+        ]
+      },
+      "triangleCentroidToOppositeTriangleSurfaceDistanceM": {
+        "min": 0.0011662178983947822,
+        "p05": 0.0012409617710323862,
+        "median": 0.00621173980532969
+      },
+      "contactPatch": {
+        "method": "Sampled left inward-facing triangle centroids to nearest 20 opposite face centroids, then true point-to-triangle closest point; dot face normals < -0.5",
+        "thresholdMeters": 0.0015,
+        "qualifiedSampledFaces": 54,
+        "areaOfQualifiedLeftTrianglesSquareMeters": 0.0004612645823824967,
+        "centroidLocalXYZ": [
+          -0.00064579,
+          0.52836209,
+          0.34543559
+        ],
+        "sampledNormalsDotMedian": -0.9993639767284361,
+        "label": "TRIANGLE_CENTROID_SAMPLING_NOT_EXACT_PHYSICAL_CONTACT_AREA"
+      },
+      "otherCollision": "HAND_VS_SLEEVE_CHIN_HAIR_UNCHECKED_EXACT; PROXY_ONLY",
+      "poseRelativeInvariantUnderIdle": "All hand geometry follows same UpperBodyBreath as face/torso; full animation arrays independently checked"
     },
-    "method": "Actual exported glTF mesh hand components, sampled inward-face triangle centroid to closest opposite triangle, normal dot <-0.5; no physical exact contact-area claim",
-    "handHandIntersection": "PROVEN_NO_BY_DISJOINT_X_HALFSPACE_FOR_TRIANGLES",
-    "otherCollisions": "PROXY_ONLY"
+    "kneel_prayer": {
+      "leftWatertight": true,
+      "rightWatertight": true,
+      "leftConnectedComponents": 1,
+      "rightConnectedComponents": 1,
+      "leftMaxX": -0.0005680025788024068,
+      "rightMinX": 0.0005661593750119209,
+      "strictHalfspaceSeparationM": 0.0011341619538143277,
+      "handToHandTriangleIntersection": "PROVEN_NONE_USING_DISJOINT_HALFSPACE_BOUND_FOR_ALL_TRIANGLES",
+      "palmZones": {
+        "leftCandidateFaceCount": 314,
+        "rightCandidateFaceCount": 302,
+        "leftInwardMeanNormal": [
+          0.82508,
+          -0.02379,
+          0.13492
+        ],
+        "rightInwardMeanNormal": [
+          -0.81903,
+          -0.02126,
+          0.1185
+        ]
+      },
+      "triangleCentroidToOppositeTriangleSurfaceDistanceM": {
+        "min": 0.0011662178983947822,
+        "p05": 0.0012409617710323862,
+        "median": 0.00621173980532969
+      },
+      "contactPatch": {
+        "method": "Sampled left inward-facing triangle centroids to nearest 20 opposite face centroids, then true point-to-triangle closest point; dot face normals < -0.5",
+        "thresholdMeters": 0.0015,
+        "qualifiedSampledFaces": 54,
+        "areaOfQualifiedLeftTrianglesSquareMeters": 0.0004612645823824967,
+        "centroidLocalXYZ": [
+          -0.00064579,
+          0.52836209,
+          0.34543559
+        ],
+        "sampledNormalsDotMedian": -0.9993639767284361,
+        "label": "TRIANGLE_CENTROID_SAMPLING_NOT_EXACT_PHYSICAL_CONTACT_AREA"
+      },
+      "otherCollision": "HAND_VS_SLEEVE_CHIN_HAIR_UNCHECKED_EXACT; PROXY_ONLY",
+      "poseRelativeInvariantUnderIdle": "All hand geometry follows same UpperBodyBreath as face/torso; full animation arrays independently checked"
+    }
   },
-  "geometryProof": {
-    "unchangedMeshes8Of9": true,
-    "onlyChanged": "skin_rose_cream_UpperBodyBreath_mesh",
-    "identicalAllIndices": true,
-    "unchangedCuffAndLegAndHairAndFace": true,
-    "materialAndVariantAccessorArraysIdentical": true,
-    "animationAndAnchors17SamplesIdentical": true,
-    "addedTriangles": 0
+  "source": [
+    {
+      "file": "procedural_female_palms_p05c.py",
+      "sha256": "63db35c26e3ddf9e8d8962e260998f703b2d90d8f498bd7bcbf45ce1faccdcb4",
+      "bytes": 4562,
+      "githubStatus": "pending_source_push"
+    },
+    {
+      "file": "procedural_female_hands_p05b.py",
+      "sha256": "6f634fc7db7cb6a0d685abb32af57a47b764f3020002671911a0ad21f01f8bc6",
+      "bytes": 8293,
+      "githubStatus": "pending_source_push"
+    },
+    {
+      "file": "p05_source_frozen.py",
+      "sha256": "e6f7d06d3a3c78d055c6510d61d009a6bca877f03cd1c1323ee5602dcc633ad9",
+      "bytes": 10597,
+      "githubStatus": "pending_source_push"
+    },
+    {
+      "file": "p04_source_frozen.py",
+      "sha256": "b3b8b0c5bb1f9730c426f9e4b2ce1485e0f4df9b45adffcb9300ac92348f8ad2",
+      "bytes": 16549,
+      "githubStatus": "pending_source_push"
+    },
+    {
+      "file": "restore_frozen_sources.py",
+      "sha256": "07ae12a8e1f42bc30073d807298c36e5a6f49fa23d7177f76e1350271f3ed216",
+      "bytes": 1805,
+      "githubStatus": "pending_source_push"
+    },
+    {
+      "file": "p05_source_frozen.py.zlib.b64",
+      "sha256": "10ad9ea3e08ddd6db3cf1957bb8d0dead43e18adb4bc6ba30765b5f8ba28722e",
+      "bytes": 6281,
+      "githubStatus": "pending_source_push"
+    },
+    {
+      "file": "p04_source_frozen.py.zlib.b64",
+      "sha256": "606a9eb334968504904fc0035b133bd53481a124776b10c3086c1be7e7fcce6a",
+      "bytes": 8953,
+      "githubStatus": "pending_source_push"
+    },
+    {
+      "file": "blender_p05c_cycles.py",
+      "sha256": "7f59cbcff3da45d9ee0564287063d755d9e020eb338d370ed2ccb09c43d66d46",
+      "bytes": 11002,
+      "githubStatus": "pending_source_push"
+    },
+    {
+      "file": "run_p05c_blender.ps1",
+      "sha256": "a33609077ce0dd753c1712a9740d5a9831e52d4b633f1a5d13719a4b5e9b465f",
+      "bytes": 5458,
+      "githubStatus": "pending_source_push"
+    },
+    {
+      "file": "validate_p05c_independent.py",
+      "sha256": "e22a58ff01b33911204d2185740f11326cd4eecbf8a0937d84be33b8a5e55366",
+      "bytes": 10128,
+      "githubStatus": "pending_source_push"
+    },
+    {
+      "file": "render_p05c_pbr.py",
+      "sha256": "b6311fe651edef7fc75a3cf3e71998aebac79940db481c90a3c4fa6fb1428e1c",
+      "bytes": 2615,
+      "githubStatus": "pending_source_push"
+    },
+    {
+      "file": "P05_CAMERA_CONTRACT.json",
+      "sha256": "10d124d897f891bf84c9147ff3473b63e7938f5d95bfec4918baf853004a3ca5",
+      "bytes": 3829,
+      "githubStatus": "pending_source_push"
+    }
+  ],
+  "evidence": {
+    "p05bOwnerCycles": "SA_CASE_LOG_AND_4_HAND_PNG_SHA_SPOTCHECK_PASS",
+    "p05bOriginalBlendRawSHA": "NOT_INDEPENDENTLY_REHASHED",
+    "p05bOriginalZipCRC": "NOT_INDEPENDENTLY_VERIFIED",
+    "p05cLocalRealGLBVTKPBR": "EXECUTED",
+    "p05cBlenderCycles": "NOT_RUN",
+    "p05cEditableBlend": "NOT_CREATED",
+    "nativeThreeJs": "NOT_RUN",
+    "GPU_LIVE": "NOT_RUN"
   },
-  "renderEvidence": {
-    "localImportedGLBVTKPBR": "EXECUTED",
-    "p05bOwnerCycles": "OWNER_EXECUTED_SA_4_MACRO_PNG_SHA_SPOTCHECK",
-    "p05bRawBlendSha": "SA_NOT_FULLY_VERIFIED",
-    "p05bZipCRC": "SA_NOT_VERIFIED",
-    "p05cCycles": "NOT_RUN",
-    "p05cNewBlend": "NOT_CREATED",
-    "p05cGPUFPS": "NOT_RUN"
+  "costs": {
+    "externalPaidVND": 0,
+    "tools": [
+      "Python",
+      "NumPy",
+      "trimesh",
+      "scikit-image",
+      "VTK",
+      "SciPy",
+      "Pillow",
+      "free owner Blender"
+    ]
   },
-  "padSHA256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
-  "paidExternalVND": 0,
-  "STOP": "NO_MALE_NO_CODEX_NO_INTEGRATION_NO_MERGE"
+  "stop": "NO_MALE_NO_CODEX_NO_INTEGRATION_NO_MERGE"
 }
