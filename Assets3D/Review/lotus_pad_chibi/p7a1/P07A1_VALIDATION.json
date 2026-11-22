@@ -1,0 +1,147 @@
+{
+  "revision": "p7a1",
+  "sourceHead": "3d0bb547451790986200fe4cc3f57250e2cf494a",
+  "inputSHA256": {
+    "cross": "72c407bf3b6ae8a6edc8ed9a0e544168db7edcac379a8ea92b9677cceed00107",
+    "kneel": "e7f86beb4cd43f899c57922c0e34c94020e93dc007c6b9f5094b2757363960da"
+  },
+  "assets": [
+    {
+      "pose": "cross",
+      "sourceSha256": "72c407bf3b6ae8a6edc8ed9a0e544168db7edcac379a8ea92b9677cceed00107",
+      "outputSha256": "ffdb92adf27d8fa14ee2a12dbca57cd71c888f1b9023019761940c460151c09e",
+      "bytes": 590476,
+      "glb2": true,
+      "meshes": 10,
+      "materials": 21,
+      "hairVertices": 1672,
+      "hairTriangles": 3080,
+      "totalTriangles": 18380,
+      "animations": [
+        "sit_idle",
+        "cross_prayer_idle"
+      ],
+      "palettes": [
+        "pastel_lilac",
+        "blush_rose",
+        "sage_green",
+        "sky_blue",
+        "warm_cream",
+        "terracotta"
+      ],
+      "nonHairAccessorBytesExact": true,
+      "animationSamplersExact": true,
+      "anchorsExact": true,
+      "eyebrowsExact": true,
+      "unchangedHairIndices": true,
+      "hairHashes": {
+        "POSITION": "7adeaeec4ebd9737c9f0fdb2080a9b8597b6f28b5ab8a4d4720ca05830121083",
+        "NORMAL": "be215a24e25762a50c05a27064d14f3a291ac3d986dd735e90f6ad980acc76ca",
+        "indices": "b1f7c88b5d8845a12b2b595269d77403185c326c29a254fc45eb151e6d8a1483"
+      },
+      "geometry": {
+        "zones": {
+          "crown": {
+            "samples": 367,
+            "meanDeltaMM": 35.50983945397785,
+            "minDeltaMM": 16.789937045627557,
+            "maxDeltaMM": 47.488317104488075
+          },
+          "temples": {
+            "samples": 77,
+            "meanDeltaMM": -8.383316280449806,
+            "minDeltaMM": -14.8685671034287,
+            "maxDeltaMM": -1.4999796580206295
+          },
+          "nape": {
+            "samples": 55,
+            "meanDeltaMM": -11.040136018492516,
+            "minDeltaMM": -14,
+            "maxDeltaMM": -4.310755810908561
+          }
+        },
+        "capSamples": 841,
+        "capClamps": 91,
+        "patchSamples": 567,
+        "patchClamps": 10,
+        "minCapGapMM": 8.499999999999897,
+        "minPatchGapMM": 7.499999999999951,
+        "maxLiftMm": 47.488317104488075,
+        "maxTaperMm": -14.8685671034287
+      }
+    },
+    {
+      "pose": "kneel",
+      "sourceSha256": "e7f86beb4cd43f899c57922c0e34c94020e93dc007c6b9f5094b2757363960da",
+      "outputSha256": "56de649df89ba124e5a546fe6981cbffd80193a5b858e0d4ae8b1ab444c316b4",
+      "bytes": 456892,
+      "glb2": true,
+      "meshes": 9,
+      "materials": 21,
+      "hairVertices": 1672,
+      "hairTriangles": 3080,
+      "totalTriangles": 18420,
+      "animations": [
+        "sit_idle",
+        "kneel_prayer_idle"
+      ],
+      "palettes": [
+        "pastel_lilac",
+        "blush_rose",
+        "sage_green",
+        "sky_blue",
+        "warm_cream",
+        "terracotta"
+      ],
+      "nonHairAccessorBytesExact": true,
+      "animationSamplersExact": true,
+      "anchorsExact": true,
+      "eyebrowsExact": true,
+      "unchangedHairIndices": true,
+      "hairHashes": {
+        "POSITION": "7adeaeec4ebd9737c9f0fdb2080a9b8597b6f28b5ab8a4d4720ca05830121083",
+        "NORMAL": "be215a24e25762a50c05a27064d14f3a291ac3d986dd735e90f6ad980acc76ca",
+        "indices": "b1f7c88b5d8845a12b2b595269d77403185c326c29a254fc45eb151e6d8a1483"
+      },
+      "geometry": {
+        "zones": {
+          "crown": {
+            "samples": 367,
+            "meanDeltaMM": 35.50983945397785,
+            "minDeltaMM": 16.789937045627557,
+            "maxDeltaMM": 47.488317104488075
+          },
+          "temples": {
+            "samples": 77,
+            "meanDeltaMM": -8.383316280449806,
+            "minDeltaMM": -14.8685671034287,
+            "maxDeltaMM": -1.4999796580206295
+          },
+          "nape": {
+            "samples": 55,
+            "meanDeltaMM": -11.040136018492516,
+            "minDeltaMM": -14,
+            "maxDeltaMM": -4.310755810908561
+          }
+        },
+        "capSamples": 841,
+        "capClamps": 91,
+        "patchSamples": 567,
+        "patchClamps": 10,
+        "minCapGapMM": 8.499999999999897,
+        "minPatchGapMM": 7.499999999999951,
+        "maxLiftMm": 47.488317104488075,
+        "maxTaperMm": -14.8685671034287
+      }
+    }
+  ],
+  "method": "Independent bytewise GLB2 and original glTF accessor comparison; sampled skin radial ray clamps, NOT Blender/continuous collision proof",
+  "source": "build_male_undercut_p07a1.mjs",
+  "status": {
+    "glb": "PASS_IN_MEMORY_BEFORE_GIT_WRITE",
+    "blenderCycles": "NOT_RUN",
+    "blend": "NOT_CREATED",
+    "art": "PENDING",
+    "owner": "PENDING"
+  }
+}
