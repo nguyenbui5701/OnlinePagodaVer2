@@ -1,37 +1,5 @@
 {
-  "revision": "P0.5e",
-  "reference": "p5d owner Blender Cycles fixed rig; added low-side under-waist views applied identically to P05d/P05e",
-  "units": "meters",
-  "forward": "+Z",
-  "up": "+Y",
-  "samples": 32,
-  "blender": "Cycles CPU",
-  "viewTransform": "AgX",
-  "exposureEV": 0,
-  "worldStrength": 0.65,
-  "lights": "3 fixed SUNs",
-  "phoneResolution": [
-    720,
-    1280
-  ],
-  "normalActorAndPairResolution": [
-    520,
-    520
-  ],
-  "newDiagnosticViews": [
-    "waist_side_right",
-    "waist_side_left",
-    "waist_low_side_right",
-    "waist_low_side_left",
-    "waist_under_3q",
-    "waist_front_close"
-  ],
-  "cameraPoseFormat": [
-    "eyeXYZ",
-    "lookAtXYZ",
-    "verticalFovDegrees"
-  ],
-  "cameras": {
+  "lockedOriginal": {
     "front": [
       [
         0,
@@ -58,7 +26,7 @@
       ],
       40
     ],
-    "true_right_side": [
+    "trueRightSide": [
       [
         2.6,
         0.88,
@@ -71,7 +39,7 @@
       ],
       36
     ],
-    "true_left_side": [
+    "trueLeftSide": [
       [
         -2.6,
         0.88,
@@ -84,7 +52,7 @@
       ],
       36
     ],
-    "foot_macro_front": [
+    "footMacroFront": [
       [
         0,
         0.245,
@@ -97,7 +65,7 @@
       ],
       33
     ],
-    "foot_macro_right_3q": [
+    "footMacroRight3q": [
       [
         0.45,
         0.292,
@@ -110,7 +78,7 @@
       ],
       37
     ],
-    "foot_macro_left_3q": [
+    "footMacroLeft3q": [
       [
         -0.45,
         0.292,
@@ -123,98 +91,33 @@
       ],
       37
     ],
-    "foot_macro_side": [
+    "footMacroSide": [
       [
-        0.66,
-        0.24,
-        0.35
+        0.7,
+        0.216,
+        0.24
       ],
       [
-        0.145,
-        0.081,
-        0.255
+        0.12,
+        0.072,
+        0.22
       ],
-      36
+      34
     ],
-    "waist_side_right": [
+    "pairSide": [
       [
-        1.3,
-        0.3,
-        0.08
+        2.75,
+        0.62,
+        0.43
       ],
       [
         0,
-        0.265,
+        0.45,
         0
       ],
-      29
+      42
     ],
-    "waist_side_left": [
-      [
-        -1.3,
-        0.3,
-        0.08
-      ],
-      [
-        0,
-        0.265,
-        0
-      ],
-      29
-    ],
-    "waist_low_side_right": [
-      [
-        1.07,
-        0.07,
-        0.3
-      ],
-      [
-        0,
-        0.265,
-        0
-      ],
-      27
-    ],
-    "waist_low_side_left": [
-      [
-        -1.07,
-        0.07,
-        0.3
-      ],
-      [
-        0,
-        0.265,
-        0
-      ],
-      27
-    ],
-    "waist_under_3q": [
-      [
-        0.96,
-        0.075,
-        -0.72
-      ],
-      [
-        0,
-        0.268,
-        -0.04
-      ],
-      30
-    ],
-    "waist_front_close": [
-      [
-        0,
-        0.22,
-        1.15
-      ],
-      [
-        0,
-        0.275,
-        0
-      ],
-      32
-    ],
-    "pair_medium_9x16": [
+    "pairMedium9x16": [
       [
         1.18,
         1.29,
@@ -227,7 +130,7 @@
       ],
       42
     ],
-    "pair_close_9x16": [
+    "pairClose9x16": [
       [
         1.3,
         1.22,
@@ -241,20 +144,134 @@
       43
     ]
   },
-  "breathTimes": [
-    0,
-    0.5,
-    1,
-    1.5,
-    2
-  ],
-  "actualBreathLiftMeters": [
-    0,
-    0.008,
-    0.016,
-    0.008,
-    0
-  ],
-  "bothRevisionsSameCameras": true,
-  "blenderRun": "NOT_RUN"
+  "newAdditionalDiagnosticBothRevisionsSameCamera": {
+    "waistSideRight": [
+      [
+        1.3,
+        0.3,
+        0.08
+      ],
+      [
+        0,
+        0.265,
+        0
+      ],
+      29
+    ],
+    "waistSideLeft": [
+      [
+        -1.3,
+        0.3,
+        0.08
+      ],
+      [
+        0,
+        0.265,
+        0
+      ],
+      29
+    ],
+    "waistLowSideRight": [
+      [
+        1.07,
+        0.07,
+        0.3
+      ],
+      [
+        0,
+        0.265,
+        0
+      ],
+      27
+    ],
+    "waistLowSideLeft": [
+      [
+        -1.07,
+        0.07,
+        0.3
+      ],
+      [
+        0,
+        0.265,
+        0
+      ],
+      27
+    ],
+    "waistUnder3q": [
+      [
+        0.96,
+        0.075,
+        -0.72
+      ],
+      [
+        0,
+        0.268,
+        -0.04
+      ],
+      30
+    ],
+    "waistFrontClose": [
+      [
+        0,
+        0.22,
+        1.15
+      ],
+      [
+        0,
+        0.275,
+        0
+      ],
+      32
+    ],
+    "footDiagnosticCenteredFront": [
+      [
+        0.17,
+        0.245,
+        0.87
+      ],
+      [
+        0.16,
+        0.069,
+        0.285
+      ],
+      33
+    ],
+    "footDiagnosticCentered3q": [
+      [
+        0.6,
+        0.26,
+        0.68
+      ],
+      [
+        0.16,
+        0.075,
+        0.29
+      ],
+      36
+    ]
+  },
+  "constraints": {
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "coordinate": "glTF +Y up, +Z front; Blender conversion via (x,-z,y)",
+    "fullPhoneResolution": [
+      720,
+      1280
+    ],
+    "sameCameraOldNew": true,
+    "oldLockedCamerasUnchanged": true,
+    "animationOriginal": true,
+    "cycles": {
+      "engine": "CPU Cycles",
+      "samples": 32,
+      "color": "AgX",
+      "exposureEV": 0,
+      "worldStrength": 0.65,
+      "sunLights": 3
+    }
+  },
+  "evidence": "P05e camera contract; new extra views explicitly DIAGNOSTIC, not replacement for old matched shot and normal-sized phone"
 }
