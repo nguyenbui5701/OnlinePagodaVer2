@@ -1,5 +1,8 @@
 # AI VISUAL 05 — P0.5b Female Prayer Hands: Anatomical Chibi Palm-to-Palm Aesthetics, Both Poses
 
+> **P0.5c successor and owner decision — 2026-11-22:** This P0.5b task is completed to owner-review stage: SA verified two GLBs and true Cycles sampling and posted [review #6009865513](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6009865513). P0.5b hand/finger shape improves substantially but **owner chose one further palm-orientation and natural contact pass**. Current task: [AI_VISUAL_06 — P0.5c](AI_VISUAL_06_FEMALE_PRAYER_PALM_ORIENTATION.md). Keep P0.5b immutable, no male/Codex/merge. The `p05_source_frozen.py` and `p04_source_frozen.py` files remain absent from the GitHub p5b checkout as of the reviewed HEAD; recover with exact hashes before asserting clean reproduction.
+
+
 **Issued by:** SA | **Owner feedback:** 2026-11-22 | **Status:** ASSIGNED — FOCUSED ART REVISION / OWNER GATE OPEN.
 
 **Mandatory Sakura procedure:** SA writes task → AI Visual produces independently executable real GLB + editable Blender source + Cycles evidence → SA inspects and independently verifies SHA/geometry/images on PR #2 → owner views and explicitly approves → only then next stage. Follow [Design/07 WORK_RULES](../Design/07_WORK_RULES.md) and [Design/15 Sakura task exemplar](../Design/15_AI_VISUAL_SAKURA_NEXT_PROMPT.md). This task is the authoritative specification, not an unscoped “make the hands prettier” message.
