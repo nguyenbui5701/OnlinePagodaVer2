@@ -1,5 +1,8 @@
 # P0 execution order — OnlinePagodaVer2
 
+> **ACTIVE ART TASK — P0.5b hands-only, 2026-11-22:** Owner feedback at P0.5: praying hands in both female poses need aesthetic improvement. SA's real GLB + Cycles review at PR #2 HEAD `a3673005d2c262bb8577c43335747e62d6dbce96` is **PARTIAL**, with hand ART blocker. Execute [AI_VISUAL_05](AI_VISUAL_05_FEMALE_PRAYER_HANDS_REFINEMENT.md) in new `p5b/`, keep P0.5 leg poses, leaf and female identity intact. **Codex and integration remain STOPPED; no male or merge.** The original schedule/parallel tasks below are superseded until owner accepts the female visual output.
+
+
 > **LATEST OWNER POSE PRIORITY — 2026-11-22:** Owner accepts the P0.4 female áo bà ba/long-hair *general direction*, but requests **P0.5 pose revision** before approving females: make crossed-leg knees prettier and palms together in prayer, and provide a second kneeling-on-both-knees palms-together prayer pose. Current active assignment [AI_VISUAL_04](AI_VISUAL_04_FEMALE_PRAYER_POSES.md), on PR #2 p5. **No male task or Codex / integration / merge** until new owner decision. Previous parallel plans below are future only.
 
 
