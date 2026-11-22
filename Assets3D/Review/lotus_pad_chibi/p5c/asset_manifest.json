@@ -1,0 +1,108 @@
+{
+  "revision": "P0.5c",
+  "assetId": "female_prayer_palm_contact",
+  "pr": 2,
+  "branch": "assets/lotus-pad-chibi-p0",
+  "reviewedBaselineHead": "4c8762912024866778dfe1f39f50ca77ccc26744",
+  "ownerGate": "P05C_FEMALE_PALM_ART_OWNER_REVIEW_REQUIRED",
+  "scope": "local palm facing/contact + wrist deformation only; NO sleeve mesh modifications",
+  "models": {
+    "cross_prayer": {
+      "old": {
+        "filename": "meditator_female_cross_prayer_p05b.glb",
+        "sha256": "81e8548cf6e46d9f5ff60c7bdf342ac1857015140e7d06d67dbd9284054137fd",
+        "bytes": 424628
+      },
+      "new": {
+        "filename": "meditator_female_cross_prayer_p05c.glb",
+        "sha256": "1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf",
+        "bytes": 424784,
+        "triangles": 16864,
+        "vertices": 8636
+      }
+    },
+    "kneel_prayer": {
+      "old": {
+        "filename": "meditator_female_kneel_prayer_p05b.glb",
+        "sha256": "533b84cba69332107ea25c57ed952b76c8276d4971a558496e4caf7aea400e9f",
+        "bytes": 439088
+      },
+      "new": {
+        "filename": "meditator_female_kneel_prayer_p05c.glb",
+        "sha256": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac",
+        "bytes": 439244,
+        "triangles": 17792,
+        "vertices": 9100
+      }
+    }
+  },
+  "materials": 21,
+  "meshes": 9,
+  "colorVariants": 6,
+  "textures": 0,
+  "source": {
+    "builder": "procedural_female_palms_p05c.py",
+    "blobVerifiedOnBranch": true,
+    "exactDependencies": {
+      "p05b": "6f634fc7db7cb6a0d685abb32af57a47b764f3020002671911a0ad21f01f8bc6",
+      "p05": "e6f7d06d3a3c78d055c6510d61d009a6bca877f03cd1c1323ee5602dcc633ad9",
+      "p04": "b3b8b0c5bb1f9730c426f9e4b2ce1485e0f4df9b45adffcb9300ac92348f8ad2"
+    },
+    "missingOriginalDependenciesFromGitHub": "PENDING_OWNER_SOURCE_UPLOAD; PROVIDED_IN_LOCAL_ZIP",
+    "originalP05bRebuiltByteExact": true
+  },
+  "contact": {
+    "before": {
+      "gap": 0.002061342936940491,
+      "contactDistance": 0.002417,
+      "contactFaces": 0,
+      "contactArea": 0
+    },
+    "after": {
+      "gap": 0.0011341619538143277,
+      "contactDistance": 0.0011662,
+      "contactFaces": 54,
+      "contactArea": 0.0004612645823824967,
+      "leftNormal": [
+        0.82508,
+        -0.02379,
+        0.13492
+      ],
+      "rightNormal": [
+        -0.81903,
+        -0.02126,
+        0.1185
+      ],
+      "contactCenter": [
+        -0.00064579,
+        0.52836209,
+        0.34543559
+      ],
+      "oppositionMedianNormalDot": -0.9993639767284361
+    },
+    "method": "Actual exported glTF mesh hand components, sampled inward-face triangle centroid to closest opposite triangle, normal dot <-0.5; no physical exact contact-area claim",
+    "handHandIntersection": "PROVEN_NO_BY_DISJOINT_X_HALFSPACE_FOR_TRIANGLES",
+    "otherCollisions": "PROXY_ONLY"
+  },
+  "geometryProof": {
+    "unchangedMeshes8Of9": true,
+    "onlyChanged": "skin_rose_cream_UpperBodyBreath_mesh",
+    "identicalAllIndices": true,
+    "unchangedCuffAndLegAndHairAndFace": true,
+    "materialAndVariantAccessorArraysIdentical": true,
+    "animationAndAnchors17SamplesIdentical": true,
+    "addedTriangles": 0
+  },
+  "renderEvidence": {
+    "localImportedGLBVTKPBR": "EXECUTED",
+    "p05bOwnerCycles": "OWNER_EXECUTED_SA_4_MACRO_PNG_SHA_SPOTCHECK",
+    "p05bRawBlendSha": "SA_NOT_FULLY_VERIFIED",
+    "p05bZipCRC": "SA_NOT_VERIFIED",
+    "p05cCycles": "NOT_RUN",
+    "p05cNewBlend": "NOT_CREATED",
+    "p05cGPUFPS": "NOT_RUN"
+  },
+  "padSHA256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+  "paidExternalVND": 0,
+  "STOP": "NO_MALE_NO_CODEX_NO_INTEGRATION_NO_MERGE"
+}
