@@ -1,5 +1,8 @@
 # 16 — P0 design approval, R16 Sakura freeze and implementation handoff
 
+> **P0.5e owner art rejection — 2026-11-22:** Owner supplied original P0.5d Cycles FRONT and SIDE and rejected the capsule-like exposed foot and gap between upper torso/shirt and crossed legs in a low side view. SA parsed actual GLB shirt minY=0.267000854m versus pants maxY=0.252515256m (14.49mm global Y gap at rest, at least 30.49mm at peak breathing), and found same slit in P0.5c original. [Review #6010466650](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6010466650) calls for changes. New authoritative [AI_VISUAL_08 P0.5e task](../Task/AI_VISUAL_08_FEMALE_CROSS_FOOT_WAIST_CONTINUITY.md) on PR #2 fixes ONLY foot anatomy and lower-shirt/waist continuity across five idle stages. Preserve hands, hair, áo bà ba design/six colors, kneeling, lotus, animation and anchors. No male, Codex, integration or PR merge pending SA and owner GO.
+
+
 > **P0.5d final cross-foot owner gate — 2026-11-22:** After SA verified P0.5c real GLB and Blender Cycles in [PR #2 review #6010091090](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6010091090), the owner **temporarily accepts female P0.5c art**, except the cross-legged trousers/legs hide the feet; asks for only a **small believable exposed instep / foot tip**. Current active task **[AI_VISUAL_07](../Task/AI_VISUAL_07_FEMALE_CROSS_LEGGED_FOOT_VISIBILITY.md)**, new p5d/ version on PR #2. **P0.5c palms, kneeling GLB, apparel, hair, six colors, lotus, animation and anchors remain frozen.** SA validates new GLB + real Cycles and owner decides. No male, Codex, integration or merge during the gate.
 
 
