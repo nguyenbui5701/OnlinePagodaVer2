@@ -1,5 +1,8 @@
 # 16 — P0 design approval, R16 Sakura freeze and implementation handoff
 
+> **P0.5b owner prayer-hand art gate — 2026-11-22:** SA reviewed PR #2 HEAD `a3673005d2c262bb8577c43335747e62d6dbce96` using owner-rendered actual P0.5 Blender Cycles and SHA-verified both real GLBs. **Both female leg poses are the retained working baseline, but their praying hands need art refinement before owner approval** (blocker). Active task: [AI_VISUAL_05 prayer hands refinement](../Task/AI_VISUAL_05_FEMALE_PRAYER_HANDS_REFINEMENT.md), new versioned `p5b/`, preserving `p5/`. No male, Codex #3/#4, integration, GPU/LIVE Studio, PR merge or next stage until owner approval gate explicitly changes. Previous designs remain valid as future plan.
+
+
 > **P0.5 female prayer pose owner gate — 2026-11-22:** Owner accepts overall P0.4 female appearance as the working baseline and requests (1) **improved cross-legged knees/legs plus palms-together prayer hands**, and (2) **a separate kneeling-on-both-knees prayer-hands pose**. SA issued [AI_VISUAL_04](../Task/AI_VISUAL_04_FEMALE_PRAYER_POSES.md) for a new versioned p5 on PR #2. P0.4 remain immutable; **both poses require owner visual approval**. No male, Codex #3/#4, integration or merge until owner issues subsequent instructions.
 
 
