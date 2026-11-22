@@ -1,0 +1,148 @@
+{
+  "revision": "p5d",
+  "assetId": "female_cross_prayer_foot_visibility",
+  "ownerGate": "P05D_FEMALE_CROSS_FOOT_OWNER_REVIEW_REQUIRED",
+  "task": "Task/AI_VISUAL_07_FEMALE_CROSS_LEGGED_FOOT_VISIBILITY.md",
+  "branch": "assets/lotus-pad-chibi-p0",
+  "pr": 2,
+  "baselineSAHead": "bdb171b82d9ceb8d72bc42ac0ece64cecf4be166",
+  "exactSourceRepro": {
+    "testedCleanFolder": true,
+    "baselineInputSha256": "1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf",
+    "outputSha256": "0f169e427cc70bc0b5b744db935c4de4ecac356ef3fc8a1113812a5bf0780e44",
+    "sourceGitBlobSha": "31794d5028572b618bdb37a74ab3975708082e61",
+    "onlyRequiresOriginalP05cBinaryNumpyTrimesh": true,
+    "p05cOriginalSourceCheckout": "HISTORICALLY_BLOCKED_MISSING_P04_P05_SOURCE"
+  },
+  "original": {
+    "cross": {
+      "bytes": 424784,
+      "sha256": "1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf",
+      "triangles": 16864,
+      "vertices": 8636,
+      "meshes": 9,
+      "materials": 21
+    },
+    "kneelUnmodified": {
+      "bytes": 439244,
+      "sha256": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac",
+      "newKneelExport": false
+    },
+    "lotusUnmodified": {
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  },
+  "output": {
+    "file": "meditator_female_cross_prayer_p05d.glb",
+    "bytes": 471252,
+    "sha256": "0f169e427cc70bc0b5b744db935c4de4ecac356ef3fc8a1113812a5bf0780e44",
+    "triangles": 17184,
+    "vertices": 8798,
+    "meshes": 10,
+    "materials": 21,
+    "textures": 0,
+    "uploadStatus": "pending_owner_upload"
+  },
+  "delta": {
+    "triangles": 320,
+    "vertices": 162,
+    "meshes": 1,
+    "materials": 0,
+    "bytes": 46468
+  },
+  "changedMeshRegions": {
+    "oldEightMeshesExactAllAccessorArrays": true,
+    "pantsMesh": "ao_ba_ba_pants_SeatRoot_mesh",
+    "pantsPositionsChangedOriginalVertexIds": 54,
+    "pantsAdjacentNormalsChangedOriginalVertexIds": 103,
+    "pantsMaxPositionChangeM": 0.0203820467,
+    "pantsFaceIndexArrayIdentical": true,
+    "originalSandalsExactAccessorArrayIdentical": true,
+    "newInstep": "skin_rose_cream_SeatRoot_exposed_instep_p05d_mesh",
+    "newInstepFaces": 320,
+    "newInstepVertices": 162,
+    "watertight": true,
+    "windingConsistent": true,
+    "oldBinaryBytePrefixIdentical": true,
+    "skinPBRMaterialReused": true
+  },
+  "newFootBounds": {
+    "min": [
+      0.106,
+      0.0151212,
+      0.215
+    ],
+    "max": [
+      0.174,
+      0.0748788,
+      0.355
+    ]
+  },
+  "contact": {
+    "method": "nearest-vertex sample only, NOT exact triangle intersection",
+    "footToPantsMinM": 0.0031116928297016634,
+    "footToOriginalSandalMinM": 0.002844327947789319,
+    "leafCollision": "NOT_RUN",
+    "trouserTriangleCollision": "NOT_RUN",
+    "idleFootParent": "SeatRoot",
+    "idleFrameTimes": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2
+    ]
+  },
+  "animations": {
+    "sit_idle": {
+      "seconds": 2,
+      "keyframes": 17
+    },
+    "cross_prayer_idle": {
+      "seconds": 2,
+      "keyframes": 17
+    },
+    "samplerRawBytesIdenticalToP05c": true
+  },
+  "anchors": {
+    "SeatRoot": [
+      0,
+      0,
+      0
+    ],
+    "HeadAnchor": [
+      0,
+      0.835,
+      0.04
+    ],
+    "NameplateAnchor": [
+      0,
+      1.335,
+      0.03
+    ],
+    "FXAnchor": [
+      0.37,
+      0.805,
+      0.16
+    ]
+  },
+  "sixVariants": [
+    "pastel_lilac",
+    "blush_rose",
+    "sage_green",
+    "sky_blue",
+    "warm_cream",
+    "terracotta"
+  ],
+  "engineEvidence": {
+    "actualGLBVTKPBR": "EXECUTED_15_OLD_NEW_MATCHED_CAMERAS_5_NEW_IDLE_TIMES",
+    "p05dBlenderCycles": "NOT_RUN",
+    "newEditableBlend": "NOT_CREATED",
+    "p05cOwnerBlenderCycles": "SA_CONFIRMED_8_CASES_AND_6_PNG_HASHES",
+    "originalLotusPadExactContact": "NOT_RUN",
+    "nativeThreeJs": "NOT_RUN",
+    "GPU_LIVE": "NOT_RUN"
+  },
+  "externalPaidVND": 0,
+  "STOP": "NO_MALE_CODEX_INTEGRATION_MERGE"
+}
