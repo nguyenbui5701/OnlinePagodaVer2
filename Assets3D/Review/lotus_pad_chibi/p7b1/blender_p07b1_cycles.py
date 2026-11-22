@@ -223,7 +223,7 @@ def main():
   if args.kind=='pair':
    views=['pair_medium_9x16']
   elif args.revision=='p07b1_cross':
-   views=['hair_front','hair_top','hair_quarter','hair_left','hair_right','hair_back','hair_right_3q']
+   views=['hair_front','hair_top','hair_left_3q','hair_right_3q','hair_left','hair_right','hair_back']
   else:
    views=['hair_front']
  scene.frame_set(1)
