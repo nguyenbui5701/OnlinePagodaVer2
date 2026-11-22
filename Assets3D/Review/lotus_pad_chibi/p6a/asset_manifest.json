@@ -15,7 +15,7 @@
       "id": "chibi_male_cross_prayer_p06a",
       "file": "meditator_male_cross_prayer_p06a.glb",
       "bytes": 563688,
-      "sha256": "bfee8a10d4311f23e800de3204f5cfbd385e59003b22cc940001c54aace778f5",
+      "sha256": "c684934ff2ceb8da08265fcc8304f2684255f144dc7df94819f007c5e803cb61",
       "triangles": 17420,
       "vertices": 8902,
       "meshes": 10,
@@ -31,7 +31,7 @@
       "id": "chibi_male_kneel_prayer_p06a",
       "file": "meditator_male_kneel_prayer_p06a.glb",
       "bytes": 430104,
-      "sha256": "052bd2a82211b7dc84233f16a40275cb65edf6323d68dcacf016edf97219385a",
+      "sha256": "9aad5f3f4d1b84d0a9ffb2cda3bc01b39ece676318ba883e417f7337e9d2251e",
       "triangles": 17460,
       "vertices": 8918,
       "meshes": 9,
@@ -106,7 +106,11 @@
     "exactPalmContact": "PROXY_ONLY",
     "lotusContact": "PROXY_ONLY_INHERITED_POSE",
     "nativeGPU": "NOT_RUN",
-    "ownerArt": "PENDING"
+    "ownerArt": "PENDING",
+    "independentNormalsAudit": "PASS_UPDATED_ONE_RING: shirt 217 normals and face 146 normals, no unrelated normal cascade",
+    "realPadTriangleContact": "PASS_SAMPLED_PROXY_ONLY: 955 cross / 1096 kneel mesh centroids; no sampled >2mm penetration",
+    "ownerCyclesStatus": "NOT_RUN",
+    "blenderSourceStatus": "PENDING_WINDOWS_EXECUTION"
   },
   "pendingOwnerUpload": [
     "P06A_Cycles_Evidence/*.blend",
@@ -115,5 +119,11 @@
   ],
   "glbGithubStatus": "PUSHED_IN_THIS_COMMIT",
   "zeroPaidCostVND": 0,
-  "noMerge": true
+  "noMerge": true,
+  "sources": {
+    "reproducibleGenerator": "build_male_p06a.mjs",
+    "readiness": "NODE22_OWNER_REPRO_NOT_RUN_IN_OWNER_WINDOWS",
+    "realBlenderPythonScript": "blender_p06a_cycles.py",
+    "windowsRunner": "run_p06a_blender.ps1"
+  }
 }

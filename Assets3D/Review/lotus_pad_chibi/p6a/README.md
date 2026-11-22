@@ -3,8 +3,8 @@
 **Scope:** Task [AI_VISUAL_10](https://github.com/nguyenbui5701/OnlinePagodaVer2/blob/main/Task/AI_VISUAL_10_MALE_CHIBI_PRAYER_P06A.md), owner-approved female cross P0.5f / kneel P0.5c, original frozen lotus P0.2. PR #2 branch `assets/lotus-pad-chibi-p0`. Baseline HEAD `e80ddc496df461728d3ee4cb6170ce2c3ff4fbfa`.
 
 Produced actual GLB2 binaries from exact source SHA references:
-- **Cross** `meditator_male_cross_prayer_p06a.glb`: **563688 B, SHA256 bfee8a10d4311f23e800de3204f5cfbd385e59003b22cc940001c54aace778f5**, 17420 triangles, 8902 vertices, 10 meshes, 21 materials.
-- **Kneel** `meditator_male_kneel_prayer_p06a.glb`: **430104 B, SHA256 052bd2a82211b7dc84233f16a40275cb65edf6323d68dcacf016edf97219385a**, 17460 triangles, 8918 vertices, 9 meshes, 21 materials.
+- **Cross** `meditator_male_cross_prayer_p06a.glb`: **563688 B, SHA256 c684934ff2ceb8da08265fcc8304f2684255f144dc7df94819f007c5e803cb61**, 17420 triangles, 8902 vertices, 10 meshes, 21 materials.
+- **Kneel** `meditator_male_kneel_prayer_p06a.glb`: **430104 B, SHA256 9aad5f3f4d1b84d0a9ffb2cda3bc01b39ece676318ba883e417f7337e9d2251e**, 17460 triangles, 8918 vertices, 9 meshes, 21 materials.
 
 **New original male geometry**: replaced long hair mesh (1287v/2452tri) with real short groomed soft side-part with scalp and subtle brows (1105v/2120tri), no hidden long rear strands. Mild 70-vertex male jawline/cheek adjustment and 118-vertex shoulder tailoring change. Whole female-approved hands/fingers, trouser/feet/waist/pad contact, pose roots, animation data, and six native clothing color mappings unchanged. Same male hair, male upper-body edits for both poses. One geometry for six palettes.
 

@@ -4,8 +4,8 @@
 
 | Canonical repository path | Bytes | SHA256 | State |
 |---|---:|---|---|
-| `Assets3D/Review/lotus_pad_chibi/p6a/meditator_male_cross_prayer_p06a.glb` | 563688 | bfee8a10d4311f23e800de3204f5cfbd385e59003b22cc940001c54aace778f5 | UPLOADED |
-| `Assets3D/Review/lotus_pad_chibi/p6a/meditator_male_kneel_prayer_p06a.glb` | 430104 | 052bd2a82211b7dc84233f16a40275cb65edf6323d68dcacf016edf97219385a | UPLOADED |
+| `Assets3D/Review/lotus_pad_chibi/p6a/meditator_male_cross_prayer_p06a.glb` | 563688 | c684934ff2ceb8da08265fcc8304f2684255f144dc7df94819f007c5e803cb61 | UPLOADED |
+| `Assets3D/Review/lotus_pad_chibi/p6a/meditator_male_kneel_prayer_p06a.glb` | 430104 | 9aad5f3f4d1b84d0a9ffb2cda3bc01b39ece676318ba883e417f7337e9d2251e | UPLOADED |
 
 Owner should use `Get-FileHash -Algorithm SHA256` on downloaded assets and compare.
 

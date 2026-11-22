@@ -56,7 +56,7 @@ function sculpt(input,pose){
  function patchAcc(id,vals){let a=j.accessors[id],v=j.bufferViews[a.bufferView];if(a.byteOffset)throw Error("Nonzero accessor offset");const bytes=writeValues(vals,a.componentType);replace.set(a.bufferView,bytes);a.count=vals.length/(a.type==="VEC3"?3:1);if(a.type==="VEC3"){let b=bounds3(vals);a.min=b[0];a.max=b[1];}else{a.min=[Math.min(...vals)];a.max=[Math.max(...vals)];}}
  function deformMesh(idx,fn){let pr=j.meshes[idx].primitives[0],p=accelRead(j,oldRaw,pr.attributes.POSITION),n=accelRead(j,oldRaw,pr.attributes.NORMAL),f=accelRead(j,oldRaw,pr.indices),orig=p.slice(),changed=[];
   for(let i=0;i<p.length;i+=3){let q=fn(p[i],p[i+1],p[i+2],i/3);if(q){p[i]=q[0];p[i+1]=q[1];p[i+2]=q[2];changed.push(i/3);}}
-  if(changed.length){let nn=normals3(p,f),impact=new Set(changed);for(let i=0;i<f.length;i+=3)if(impact.has(f[i])||impact.has(f[i+1])||impact.has(f[i+2])){impact.add(f[i]);impact.add(f[i+1]);impact.add(f[i+2]);}for(let vi of impact){n[vi*3]=nn[vi*3];n[vi*3+1]=nn[vi*3+1];n[vi*3+2]=nn[vi*3+2];}patchAcc(pr.attributes.POSITION,p);patchAcc(pr.attributes.NORMAL,n);}
+  if(changed.length){let nn=normals3(p,f),seed=new Set(changed),impact=new Set(changed);for(let i=0;i<f.length;i+=3)if(seed.has(f[i])||seed.has(f[i+1])||seed.has(f[i+2])){impact.add(f[i]);impact.add(f[i+1]);impact.add(f[i+2]);}for(let vi of impact){n[vi*3]=nn[vi*3];n[vi*3+1]=nn[vi*3+1];n[vi*3+2]=nn[vi*3+2];}patchAcc(pr.attributes.POSITION,p);patchAcc(pr.attributes.NORMAL,n);}
   return changed.length;
  }
  // Subtle squared/soft cheek-jaw transition; strictly head skin, not palms or fingers.

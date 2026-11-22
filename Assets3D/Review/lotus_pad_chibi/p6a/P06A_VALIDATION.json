@@ -1,0 +1,88 @@
+{
+  "method": "Raw original approved female GLB binary versus dynamically rebuilt new male GLB; positional/normal accessor equality direct independent read; one-ring normals correction",
+  "poses": {
+    "cross": {
+      "meshes": 10,
+      "materialCount": 21,
+      "identicalMeshPrimitives": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "modified": [
+        {
+          "mesh": 2,
+          "name": "ao_ba_ba_top_UpperBodyBreath_mesh",
+          "POSITION_changedVertices": 118,
+          "NORMAL_changedVertices": 217
+        },
+        {
+          "mesh": 3,
+          "name": "skin_rose_cream_UpperBodyBreath_mesh",
+          "POSITION_changedVertices": 70,
+          "NORMAL_changedVertices": 146
+        },
+        {
+          "mesh": 6,
+          "name": "hair_neat_male_sidepart_p06a_mesh",
+          "POSITION_changedVertices": "new mesh",
+          "NORMAL_changedVertices": "new mesh",
+          "indices": "modified"
+        }
+      ],
+      "waistOverlapAtPeakBreathMeters": 0.133,
+      "clipNames": [
+        "sit_idle",
+        "cross_prayer_idle"
+      ],
+      "unchangedFemaleBottomMesh": true
+    },
+    "kneel": {
+      "meshes": 9,
+      "materialCount": 21,
+      "identicalMeshPrimitives": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8
+      ],
+      "modified": [
+        {
+          "mesh": 2,
+          "name": "ao_ba_ba_top_UpperBodyBreath_mesh",
+          "POSITION_changedVertices": 118,
+          "NORMAL_changedVertices": 217
+        },
+        {
+          "mesh": 3,
+          "name": "skin_rose_cream_UpperBodyBreath_mesh",
+          "POSITION_changedVertices": 70,
+          "NORMAL_changedVertices": 146
+        },
+        {
+          "mesh": 6,
+          "name": "hair_neat_male_sidepart_p06a_mesh",
+          "POSITION_changedVertices": "new mesh",
+          "NORMAL_changedVertices": "new mesh",
+          "indices": "modified"
+        }
+      ],
+      "waistOverlapAtPeakBreathMeters": 0.05,
+      "clipNames": [
+        "sit_idle",
+        "kneel_prayer_idle"
+      ],
+      "unchangedFemaleBottomMesh": true
+    }
+  },
+  "hairIdentityExactAcrossPoses": true,
+  "animationOriginalRawSampleByteIdentical": true,
+  "finalStatus": "P06A_MALE_TWO_POSE_OWNER_REVIEW_REQUIRED",
+  "blenderCycles": "NOT_RUN"
+}
