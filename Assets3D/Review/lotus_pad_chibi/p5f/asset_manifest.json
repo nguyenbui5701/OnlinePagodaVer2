@@ -1,0 +1,102 @@
+{
+  "assetId": "meditator_female_cross_prayer",
+  "revision": "p5f",
+  "branch": "assets/lotus-pad-chibi-p0",
+  "pr": 2,
+  "reviewedBaselineHead": "5118dbd532347103ec5e84e2a22b88f63617dda5",
+  "target": "Assets3D/Review/lotus_pad_chibi/p5f/",
+  "state": "P05F_FEMALE_CROSS_SEAT_CONTACT_OWNER_REVIEW_REQUIRED",
+  "newGLB": {
+    "name": "meditator_female_cross_prayer_p05f.glb",
+    "bytes": 574608,
+    "sha256": "3ed6946640ed057868b64a9998b1c3a4bf30f28866b3e0c1de9a9ab55c5cc1a4",
+    "triangles": 17752,
+    "vertices": 9084,
+    "meshes": 10,
+    "materials": 21,
+    "github": "PENDING_OWNER_UPLOAD"
+  },
+  "baselineGLB": {
+    "name": "meditator_female_cross_prayer_p05e.glb",
+    "bytes": 574048,
+    "sha256": "0829edde73666460c457267672e344a61443ee2c882319998d5b84a359f81367",
+    "unchanged": true
+  },
+  "lotusGLB": {
+    "name": "lotus_pad_01.glb",
+    "bytes": 262108,
+    "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+    "unchanged": true
+  },
+  "frozenKneel": {
+    "sha256": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac",
+    "reexported": false
+  },
+  "meshDiff": {
+    "onlyChangedMesh": "ao_ba_ba_pants_SeatRoot_mesh",
+    "accessors": [
+      "POSITION",
+      "NORMAL"
+    ],
+    "movedVertices": 296,
+    "normalsUpdated": 437,
+    "maxDownMeters": 0.011013087816536427,
+    "unchangedMeshes": 9,
+    "indicesUnchanged": true,
+    "textureOrMaterialDelta": 0
+  },
+  "anchors": {
+    "SeatRoot": [
+      0,
+      0,
+      0
+    ],
+    "HeadAnchor": [
+      0,
+      0.835,
+      0.04
+    ],
+    "NameplateAnchor": [
+      0,
+      1.335,
+      0.03
+    ],
+    "FXAnchor": [
+      0.37,
+      0.805,
+      0.16
+    ]
+  },
+  "rig": {
+    "up": "+Y",
+    "forward": "+Z",
+    "originalPairSeatActorY": 0.195,
+    "worldPadY": 0
+  },
+  "idle": {
+    "clips": [
+      "sit_idle",
+      "cross_prayer_idle"
+    ],
+    "durationSeconds": 2,
+    "keyframes": 17,
+    "dyMeters": [
+      0,
+      0.008,
+      0.016,
+      0.008,
+      0
+    ],
+    "originalFloatArraysIdentical": true
+  },
+  "evidence": {
+    "nativeRealGLBVTKPadPBR": "EXECUTED",
+    "sampledTriangleContact": "PASS_PROXY_ONLY",
+    "waistRaysFiveStages": "PASS_IN_TEST_WINDOW",
+    "newCycles": "NOT_RUN",
+    "newBlend": "NOT_CREATED",
+    "ownerApproval": "PENDING"
+  },
+  "paidCostVND": 0,
+  "stop": "NO_MALE_NO_CODEX_NO_INTEGRATION_NO_MERGE"
+}
