@@ -1,0 +1,89 @@
+Node v24.16.0
+
+Checked source dadd1851f0984ad897ad7fa59e8acc477c9e8f52
+
+Gift FX emitted JavaScript byte-identical to browser evidence at 4c5c28a.
+
+packages/v2-events > npm.cmd test
+
+> @online-pagoda/v2-events@0.1.0 test
+> node --test
+
+✔ seeded 45s idle then A → B → C with real actor / seat bindings and cinematic return (4.1844ms)
+✔ one FIFO slot per giver, one capped active extension and a shared pending request ID (0.7857ms)
+✔ reconnect preserves identity, duplicate ledgers and revision; room change cancels old intents (0.4687ms)
+✔ bounded focus and no-seat outcomes acknowledge the correct giver; TTL releases seat (0.4519ms)
+✔ 120 viewers, 500 likes and room viewer total keep capacity and FX bounded (1.0445ms)
+✔ session ledger stays bounded and preserves idempotency at the limit (2.2755ms)
+✔ safe display text, graphemes, photo validation and private packet IDs (0.751ms)
+✔ expired provisional focus adds zero spend; late final acknowledges without replaying the shot (0.2557ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 159.9534
+
+exit=0
+
+packages/v2-events > npm.cmd run build
+
+> @online-pagoda/v2-events@0.1.0 build
+> tsc --noEmit
+
+exit=0
+
+apps/v2-viewer > npm.cmd test
+
+> @online-pagoda/v2-viewer@0.1.0 test
+> node --test
+
+✔ 85s cinematic at 60Hz covers all shots per loop and changes actual route with fixed bounds (127.909ms)
+✔ cross-variant closure uses the same pose and matching position, target and FOV tangents (4.9254ms)
+✔ seed query is a stable uint32 with a documented fallback (0.2729ms)
+✔ rejecting a route reports which candidate failed and retains an accepted path (4.0034ms)
+✔ existing queue plays a provisional A halo, then exactly one confirmed A/B/C celebration (16.751ms)
+✔ observed and confirmed phases follow typed ack, mode and exact actor/seat identity (0.6043ms)
+✔ missing seat, expired request and overlay never receive spatial FX (0.2109ms)
+✔ return shortens a live fade and the next actor owns the only cue (0.2922ms)
+✔ disconnect clears visuals, reconnect avoids replay and room epoch rejects old revision (0.2293ms)
+✔ visual ledger is bounded and has no eviction replay (0.8197ms)
+✔ profile pools have fixed capacity and deterministic seed attributes (2.2415ms)
+✔ turn all three actor pivots through their pad parents without moving pad or contact (6.7817ms)
+✔ coincident X/Z leaves existing facing unchanged (0.4708ms)
+✔ v0.1.0 serialized snapshots resolve exact actor/seat and reject stale room/revision (3.5874ms)
+✔ integrated controller counts final gifts once, focuses A/B/C, and reports D fallback (8.1116ms)
+✔ renderer camera starts each handoff at the prior pose and reaches the current cinematic on return (25.9424ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 339.0131
+
+exit=0
+
+apps/v2-viewer > npm.cmd run build
+
+> @online-pagoda/v2-viewer@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v7.2.2 building client environment for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.26 kB │ gzip:   0.60 kB
+dist/assets/index-CRdGpTTR.css    1.35 kB │ gzip:   0.72 kB
+dist/assets/index-CpRpyyka.js   652.30 kB │ gzip: 176.56 kB
+✓ built in 1.33s
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+exit=0

@@ -1,0 +1,60 @@
+{
+  "maximumSceneGeometries": 28,
+  "samples": [
+    {
+      "time": 47.72,
+      "drawCalls": 20,
+      "geometries": 28,
+      "textures": 1,
+      "points": 110,
+      "giftCapacity": 19,
+      "ledgerSize": 1,
+      "poolId": 75,
+      "materialId": 101
+    },
+    {
+      "time": 53.65,
+      "drawCalls": 25,
+      "geometries": 28,
+      "textures": 1,
+      "points": 110,
+      "giftCapacity": 19,
+      "ledgerSize": 2,
+      "poolId": 75,
+      "materialId": 101
+    },
+    {
+      "time": 59.48,
+      "drawCalls": 23,
+      "geometries": 28,
+      "textures": 1,
+      "points": 110,
+      "giftCapacity": 19,
+      "ledgerSize": 3,
+      "poolId": 75,
+      "materialId": 101
+    },
+    {
+      "time": 64.32,
+      "drawCalls": 21,
+      "geometries": 28,
+      "textures": 1,
+      "points": 91,
+      "giftCapacity": 19,
+      "ledgerSize": 3,
+      "poolId": 75,
+      "materialId": 101
+    },
+    {
+      "time": 66,
+      "drawCalls": 19,
+      "geometries": 28,
+      "textures": 1,
+      "points": 91,
+      "giftCapacity": 19,
+      "ledgerSize": 3,
+      "poolId": 75,
+      "materialId": 101
+    }
+  ]
+}
