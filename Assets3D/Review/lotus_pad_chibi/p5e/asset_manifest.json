@@ -130,7 +130,7 @@
   "sources": {
     "canonicalGenerator": "procedural_female_cross_foot_waist_p05e.py",
     "generatorSha256": "18879f2a0bcc4e59d5299d6b196a3ce11c89d15dff3decb618bb35edba9b3ba1",
-    "generatorGithub": "PENDING_OWNER_SOURCE_UPLOAD",
+    "generatorGithub": "CANONICAL_COMPRESSED_SOURCE_RESTORER_AND_OLD_REFERENCE_COMMITTED",
     "oldHelper": "p05d_original_reference.py",
     "oldHelperGitBlob": "9cd65fbb4bc1a6e8b4978086d4789ac79103f6ea",
     "blenderScript": "blender_p05e_cycles.py",
@@ -138,7 +138,11 @@
     "runner": "run_p05e_blender.ps1",
     "runnerGitBlob": "c70f948d6797a59f49ad4fb3ae3fa5a6c2630a03",
     "localCleanReproduction": "BYTE_EXACT_PASS",
-    "checkoutReproduction": "BLOCKED_UNTIL_OWNER_UPLOADED_FULL_GENERATOR_AND_GLB"
+    "checkoutReproduction": "PASS_FROM_EXACT_COMPRESSED_SOURCE_OLD_GLB_CLEAN_SCRATCH_SIMULATION",
+    "compressedCanonicalSource": "P05E_CANONICAL_SOURCE.zlib.b64",
+    "compressedSourceSha256": "500ab925c8234fb470de03cd599857a674ba034c9e753fdad46dd9344ac65211",
+    "restorer": "restore_p05e_source.py",
+    "restorerSha256": "1877322c7a5cb493cb0f45a1ad3596549325d27de09625ee4de4403407b8e929"
   },
   "evidence": {
     "VTK_GLTF_IMPORTED_PBR": "EXECUTED",
@@ -148,7 +152,8 @@
     "newP05eBlend": "NOT_CREATED",
     "originalLotusContact": "NOT_RUN_LOCALLY",
     "nativeThreeJs": "NOT_RUN",
-    "gpuLive": "NOT_RUN"
+    "gpuLive": "NOT_RUN",
+    "cleanCheckoutSourceReproduction": "PASS_SHA_0829edde73666460c457267672e344a61443ee2c882319998d5b84a359f81367"
   },
   "paidToolsVND": 0,
   "stop": "NO_MALE_NO_CODEX_NO_INTEGRATION_NO_MERGE"
