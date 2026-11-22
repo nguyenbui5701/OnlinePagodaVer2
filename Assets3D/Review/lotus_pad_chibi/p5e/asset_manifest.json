@@ -1,0 +1,155 @@
+{
+  "revision": "P0.5e",
+  "task": "Task/AI_VISUAL_08_FEMALE_CROSS_FOOT_WAIST_CONTINUITY.md",
+  "reviewedBaselineHead": "e34eee82afafbcb174e71f710e6e630b59a784f0",
+  "branch": "assets/lotus-pad-chibi-p0",
+  "pr": 2,
+  "status": "P05E_FEMALE_CROSS_FOOT_WAIST_OWNER_REVIEW_REQUIRED",
+  "newActor": {
+    "path": "Assets3D/Review/lotus_pad_chibi/p5e/meditator_female_cross_prayer_p05e.glb",
+    "bytes": 574048,
+    "sha256": "0829edde73666460c457267672e344a61443ee2c882319998d5b84a359f81367",
+    "vertices": 9084,
+    "triangles": 17752,
+    "meshes": 10,
+    "materials": 21,
+    "textures": 0,
+    "materialVariantCount": 6,
+    "upload": "PENDING_OWNER_UPLOAD"
+  },
+  "oldActor": {
+    "path": "Assets3D/Review/lotus_pad_chibi/p5d/meditator_female_cross_prayer_p05d.glb",
+    "bytes": 471252,
+    "sha256": "0f169e427cc70bc0b5b744db935c4de4ecac356ef3fc8a1113812a5bf0780e44",
+    "vertices": 8798,
+    "triangles": 17184,
+    "meshes": 10,
+    "materials": 21
+  },
+  "frozen": {
+    "kneelP05cSha": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac",
+    "lotusP02Sha": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+    "oldRevisionFilesUnchanged": true,
+    "kneelRebuilt": false,
+    "lotusRebuilt": false
+  },
+  "delta": {
+    "triangles": 568,
+    "vertices": 286,
+    "meshes": 0,
+    "materials": 0
+  },
+  "foot": {
+    "oldMesh": 9,
+    "newShape": "longitudinal swept 222-vertex 440-triangle watertight loft; ankle rooted inside original sandal and trouser, toe points +X,+Z",
+    "ankleRoot": [
+      0.134,
+      0.065,
+      0.192
+    ],
+    "toeEnd": [
+      0.217,
+      0.041,
+      0.355
+    ],
+    "originalFootTriangles": 320,
+    "newFootTriangles": 440,
+    "connection": "visual overlap not topologically welded",
+    "collisionProof": "PROXY_ONLY"
+  },
+  "waist": {
+    "pantsCenterHipPositionChangedCount": 101,
+    "originalShirtHemPositionChangedCount": 104,
+    "newHiddenClothUnderlayerVertices": 226,
+    "underlayerTriangles": 448,
+    "underlayerSameTopMeshAndMaterial": true,
+    "underlayerFollowsUpperBodyBreath": true,
+    "breathMaxMeters": 0.016,
+    "rayTest": "actual GLB vtkOBBTree surface intersection, 725 side rays each condition",
+    "fiveIdleSideRaySummary": [
+      {
+        "time": 0,
+        "liftMm": 0,
+        "oldHorizontal": 44.552,
+        "oldLowRight": 22.069,
+        "oldLowLeft": 19.172,
+        "newBackgroundPct": 0
+      },
+      {
+        "time": 0.5,
+        "liftMm": 8,
+        "oldHorizontal": 50.897,
+        "oldLowRight": 27.448,
+        "oldLowLeft": 25.241,
+        "newBackgroundPct": 0
+      },
+      {
+        "time": 1,
+        "liftMm": 16,
+        "oldHorizontal": 57.379,
+        "oldLowRight": 32.966,
+        "oldLowLeft": 31.586,
+        "newBackgroundPct": 0
+      },
+      {
+        "time": 1.5,
+        "liftMm": 8,
+        "oldHorizontal": 50.897,
+        "oldLowRight": 27.448,
+        "oldLowLeft": 25.241,
+        "newBackgroundPct": 0
+      },
+      {
+        "time": 2,
+        "liftMm": 0,
+        "oldHorizontal": 44.552,
+        "oldLowRight": 22.069,
+        "oldLowLeft": 19.172,
+        "newBackgroundPct": 0
+      }
+    ],
+    "fullSurfaceCollision": "NOT_VERIFIED"
+  },
+  "preservation": {
+    "wholeOldMeshesByteExact": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "foldedLegComponentsUnchanged": true,
+    "upperShirtSleevesUnchanged": true,
+    "palmsFaceHairButtonsPlacketSandalUnchanged": true,
+    "all6KHRVariantMapsUnchanged": true,
+    "anchorNodeJsonUnchanged": true,
+    "originalSitIdleAndCrossPrayerIdle17KeyframeArraysUnchanged": true
+  },
+  "sources": {
+    "canonicalGenerator": "procedural_female_cross_foot_waist_p05e.py",
+    "generatorSha256": "18879f2a0bcc4e59d5299d6b196a3ce11c89d15dff3decb618bb35edba9b3ba1",
+    "generatorGithub": "PENDING_OWNER_SOURCE_UPLOAD",
+    "oldHelper": "p05d_original_reference.py",
+    "oldHelperGitBlob": "9cd65fbb4bc1a6e8b4978086d4789ac79103f6ea",
+    "blenderScript": "blender_p05e_cycles.py",
+    "blenderGitBlob": "58075da43b0049d41d590254ffc06c39ef3ee155",
+    "runner": "run_p05e_blender.ps1",
+    "runnerGitBlob": "c70f948d6797a59f49ad4fb3ae3fa5a6c2630a03",
+    "localCleanReproduction": "BYTE_EXACT_PASS",
+    "checkoutReproduction": "BLOCKED_UNTIL_OWNER_UPLOADED_FULL_GENERATOR_AND_GLB"
+  },
+  "evidence": {
+    "VTK_GLTF_IMPORTED_PBR": "EXECUTED",
+    "fiveFrameDynamicWaistSideRay": "EXECUTED_PASS_IN_DEFINED_WINDOW",
+    "originalP05dCycles": "SA_VERIFIED_4_CASES_SELECTED_PNG_HASHES",
+    "newP05eCycles": "NOT_RUN",
+    "newP05eBlend": "NOT_CREATED",
+    "originalLotusContact": "NOT_RUN_LOCALLY",
+    "nativeThreeJs": "NOT_RUN",
+    "gpuLive": "NOT_RUN"
+  },
+  "paidToolsVND": 0,
+  "stop": "NO_MALE_NO_CODEX_NO_INTEGRATION_NO_MERGE"
+}
