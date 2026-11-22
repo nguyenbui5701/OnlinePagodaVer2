@@ -48,7 +48,7 @@ function exportGLB(m,shape,pose){
  let j=m.j,bin=m.bin.slice(),d=new DataView(bin.buffer),hp=j.meshes[6].primitives[0];
  for(let[id,values]of[[hp.attributes.POSITION,shape.p],[hp.attributes.NORMAL,shape.n]]){let a=j.accessors[id],v=j.bufferViews[a.bufferView],o=(v.byteOffset||0)+(a.byteOffset||0);if(a.count!==1672||a.componentType!==5126)throw Error("Wrong vertex accessor");for(let i=0;i<values.length;i++)d.setFloat32(o+i*4,values[i],true);}
  let a=j.accessors[hp.attributes.POSITION],mn=[Infinity,Infinity,Infinity],mx=[-Infinity,-Infinity,-Infinity];for(let i=0;i<shape.p.length;i+=3)for(let k=0;k<3;k++){mn[k]=Math.min(mn[k],shape.p[i+k]);mx[k]=Math.max(mx[k],shape.p[i+k]);}a.min=mn;a.max=mx;
- let ix=j.accessors[hp.indices];if(ix.count!==9240||ix.componentType!==5125)throw Error("Hair index format");ix.count=6360;
+ let ix=j.accessors[hp.indices];if(ix.count!==9240||ix.componentType!==5125)throw Error("Hair index format");ix.count=6360;ix.max=[1104];
  j.meshes[6].name="hair_male_sidepart73_integrated_p07b1_mesh";j.nodes.find(n=>n.mesh===6).name="hair_male_sidepart73_integrated_p07b1_object";
  j.extras.P07b1={revision:"p7b1",original:"P06c",sourceSHA256:SOURCE_SHA[pose],hairOnly:true,removedDetachedRibbonTriangles:960,partSide:"right +X, major left -X",gate:"P07B_SIDE_PART_73_ART_REVISION_REQUIRED"};
  let js=enc(JSON.stringify(j)),pad=(4-js.length%4)%4,bpad=(4-bin.length%4)%4,len=12+8+js.length+pad+8+bin.length+bpad,b=new Uint8Array(len),o=0;b.set(enc("glTF"),o);o+=4;wr(b,o,2);o+=4;wr(b,o,len);o+=4;wr(b,o,js.length+pad);o+=4;wr(b,o,0x4e4f534a);o+=4;b.set(js,o);o+=js.length;for(let i=0;i<pad;i++)b[o++]=32;wr(b,o,bin.length+bpad);o+=4;wr(b,o,0x004e4942);o+=4;b.set(bin,o);o+=bin.length;while(o<len)b[o++]=0;return b;
