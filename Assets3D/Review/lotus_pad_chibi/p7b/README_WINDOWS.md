@@ -6,6 +6,7 @@ In the owner working copy of Draft PR #2, update `assets/lotus-pad-chibi-p0` usi
 cd Assets3D/Review/lotus_pad_chibi/p7b
 node .\build_male_sidepart73_p07b.mjs cross
 node .\build_male_sidepart73_p07b.mjs kneel
+node .\validate_p07b_glb_rays.mjs
 .\run_p07b_blender.ps1 -Mode smoke -Samples 16 -Size 720
 ```
 
