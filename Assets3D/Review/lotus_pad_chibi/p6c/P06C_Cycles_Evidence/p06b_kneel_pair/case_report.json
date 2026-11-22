@@ -1,0 +1,75 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "Real old P06B and new P06C SHA-pinned GLB reimports, exact same hair cameras and P02 lotus in pair",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p06b_kneel",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_male_kneel_prayer_p06b.glb",
+      "bytes": 455680,
+      "sha256": "db78a1b26bff1cd2dced82d4ed4d4255280cfb6eb3db3ea2dd5ab5b5674c0701"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 14,
+  "principledMaterialSlots": 14,
+  "importedActionNames": [
+    "kneel_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "kneel_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 9
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P06B original exact hair/front/top/right3Q/left/right/back/quarter and pair 9x16 medium/close; same Cycles CPU AgX EV0 World .65 and 3 suns; diagnostic recolor never stored in GLB",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "pair_medium_9x16",
+      "file": "p06b_kneel_pair_pair_medium_9x16_cycles.png",
+      "bytes": 1036509,
+      "sha256": "93ff73520fa6b6c6956610ca3774c009f403f99bf5c108ff18781520b6dd521a"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "p06b_kneel_pair_pair_close_9x16_cycles.png",
+      "bytes": 1043893,
+      "sha256": "b6691ff8a274a35d74efd918311f5007e0bff707fab64cf8347847e065f32d1e"
+    },
+    {
+      "view": "pair_front",
+      "file": "p06b_kneel_pair_pair_front_cycles.png",
+      "bytes": 363149,
+      "sha256": "79f6b5821260c990c734e08d8b9aef7aecfa6c90156535ef6ae0471670cf425f"
+    },
+    {
+      "view": "pair_side",
+      "file": "p06b_kneel_pair_pair_side_cycles.png",
+      "bytes": 355589,
+      "sha256": "db9b4a94afe51f97409f57e6d5d3f783a7ffd8a313a9046efae62a1354f2589b"
+    }
+  ],
+  "diagnosticImagesNotArtApproval": []
+}
