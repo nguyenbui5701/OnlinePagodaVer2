@@ -1,0 +1,5 @@
+# P0.5d actual Cycles gate — 2026-11-22
+
+**P0.5c historical baseline:** [SA review #6010091090](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6010091090) confirms 8/8 original Blender 4.5.16 Cycles logs completed, 8/8 stderr empty, selected 6 PNG SHA/bytes PASS. Full 78 original PNG audit, four .blend raw SHA and ZIP CRC NOT independently rechecked by SA. Old evidence exists; original P0.5c read-only.
+
+**P0.5d:** actual Blender/Cycles reimport, 32-sample render, 720×1280 9:16, original lotus pair and 2 new editable .blend **NOT RUN / NOT CREATED** in AI environment (Blender absent). Preliminary images are **actual GLB/Vtk PBR, NOT Cycles**. Run `run_p05d_blender.ps1` on Windows; only after per-case PNGs, reports, logs, original .blend, checksums and ZIP CRC exist can SA review real Cycles. Exact foot–trouser and foot–original lotus triangle contact **NOT_RUN / PROXY_ONLY**, not an unqualified no-penetration PASS. No GPU/Live Studio bench. Owner approval pending.
