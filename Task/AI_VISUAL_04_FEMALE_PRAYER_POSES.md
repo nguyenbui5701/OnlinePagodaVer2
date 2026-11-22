@@ -1,5 +1,8 @@
 # AI VISUAL 04 — P0.5 Female Prayer Poses: Refined Cross-Legged Knees & Kneeling on Lotus
 
+> **FOLLOW-UP SA review & gate — 2026-11-22:** P0.5 both pose GLBs SHA-verified and owner-run Cycles inspected on PR #2 HEAD `a3673005d2c262bb8577c43335747e62d6dbce96`. **Mỹ thuật PARTIAL because hands look rigid/rectangular.** Preserve P0.5 as versioned baseline. New focused [AI_VISUAL_05 P0.5b](AI_VISUAL_05_FEMALE_PRAYER_HANDS_REFINEMENT.md) refines both praying hands only. No male/Codex/merge until owner final female approval.
+
+
 **SA issued:** 2026-11-22 | **Assignee:** AI Visual 3D artist | **Status:** ASSIGNED — FEMALE ART ONLY / OWNER POSE APPROVAL PENDING
 
 **Mandatory Sakura workflow:** SA assigns a detailed versioned task → AI Visual creates real editable source, GLB and matched Blender Cycles evidence → SA verifies files and reviews PR → owner approves visuals → only then a new phase. Follow Design/07 and Design/15. This is the authoritative self-contained task, not an optional idea list.
