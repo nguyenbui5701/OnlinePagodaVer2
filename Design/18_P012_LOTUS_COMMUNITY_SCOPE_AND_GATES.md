@@ -1,6 +1,6 @@
 # Design 18 — P0.12 Lotus World & Community: SA proposal for Owner sign-off
 
-> **2026-11-23 — SA DESIGN DRAFT, NOT AN IMPLEMENTATION TASK.** Owner explicitly accepted P0.11's browser appearance ("tôi đánh giá oke") after P0.11 SA TECH PASS at [PR #8 review #6015829891](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/8#pullrequestreview-6015829891). Record **OWNER_P011_VISUAL_GO** for the P0.11 scoped dark-twilight/reflective-water look, not an overall scene-completeness, performance, merge or LIVE GO. The existing Owner-approved [Design 17](17_CHUAV2_VIDEO_FIDELITY_ROADMAP_P011_PLUS.md) explicitly places **P0.12 Lotus World & Community** before P0.13 gift choreography, P0.14 scene-parity and P1.0 hardware/LIVE. **This document proposes the next design.** Until Owner approves the actual P0.12 layout/identity/asset scope, SA should issue **no P0.12 Codex/AI Visual task**. Do not edit runtime/PRs here.
+> **2026-11-23 — OWNER DESIGN GO FOR P0.12 12-SLOT / ANONYMOUS COMMUNITY CONCEPT.** Owner explicitly accepted P0.11's browser appearance ("tôi đánh giá oke") after P0.11 SA TECH PASS at [PR #8 review #6015829891](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/8#pullrequestreview-6015829891). Record **OWNER_P011_VISUAL_GO** for the P0.11 scoped dark-twilight/reflective-water look, not an overall scene-completeness, performance, merge or LIVE GO. The existing Owner-approved [Design 17](17_CHUAV2_VIDEO_FIDELITY_ROADMAP_P011_PLUS.md) explicitly places **P0.12 Lotus World & Community** before P0.13 gift choreography, P0.14 scene-parity and P1.0 hardware/LIVE. **This document proposes the next design.** Owner has now approved **12 initial visual positions and anonymous decorative meditators** whose visual form matches the character a real viewer receives when entering a future LIVE room. SA may issue a focused **DEMO-only P0.12-A Codex task** after locking the identity/seat contract below; new art, expanding actual live connectivity and all other phases remain separate later gates. Do not edit runtime/PRs here.
 
 ## 1. Sources, frozen state, reading order, authority
 
@@ -24,11 +24,11 @@
 
 ## 3. Proposed P0.12 architecture and phased work
 
-### P0.12-A — Inventory, layout & identity contract (SA design, Owner review first)
+### P0.12-A — Inventory, layout & identity contract (OWNER CONCEPT APPROVED; SA to issue isolated DEMO task)
 
 1. Inventory **actual GLBs and source assets** on approved PRs/manifests: R16 Sakura, P02 pad, P07b1 male cross, already accepted female/pose/color variants, available original lotus flower/bud or hill assets. Verify **real** file path, GLB SHA-256/byte size, source (.blend), rig/idle clips, LOD/anchor compatibility, Cycles proof and license. Mark missing rather than inventing.
 2. Design a **seed-repeatable, non-overlapping** ring/arc lake layout at world Y=0 with clear corridors to Sakura trunk and uninterrupted CLOSE/COMMUNITY/AERIAL/UNDER_TREE + A/B/C gift views. Produce **top-down coordinate map and three native 9:16 mock layout screenshots** before asset production. Preserve current three hero `seat-1..3` keys/positions/actor facing; treat extra seats as *new* IDs only after event capacity design approval. Do not move currently tested focus seats to chase a decorative composition.
-3. Formalize four distinct scene-item roles: `real occupied seat`, `unoccupied/decorative pad`, `approved decorative anonymous character` (ONLY if Owner explicitly opts in), and `flower/bud/background prop`. Never assign fake online person, name, comment, gift, avatar picture, room ID or authoritative Event Engine actor to decoration. A no-seat gift must remain **text-only**, never transfer to a decorative avatar.
+3. Formalize four distinct scene-item roles: `real occupied seat`, `unoccupied/decorative pad`, `approved decorative anonymous character` (**Owner opted in 2026-11-23**), and `flower/bud/background prop`. Never assign fake online person, name, comment, gift, avatar picture, room ID or authoritative Event Engine actor to decoration. A no-seat gift must remain **text-only**, never transfer to a decorative avatar.
 4. **Proposed visual-density checkpoints, not automatic capacity changes:** current 3 → experiment 12 → experiment 24 visible scene items/seat-capable points. For a meaningful community, distinguish number of pads vs real occupied actors vs approved anonymous stand-ins; do not claim 24 real users if only 3 are connected. 40–60 far LOD only after measured Owner hardware and a new scope.
 5. Lock asset manifest/anchor contract (world +Y, actor forward +Z, PadSeatAnchor/SeatRoot, head/name/FX anchors) and a no-conflict ownership matrix **before** AI Visual and Codex modify anything.
 
@@ -53,11 +53,38 @@
 - **Owner Visual GO:** actual browser scene accepted. Separate gates for hardware ECO/QUALITY and later LIVE Studio still outstanding.
 - **STOP:** `P012_SA_REVIEW_REQUIRED` after new implementation PR. No automatic P0.13, merges or LIVE.
 
-## 4. Owner decisions needed before SA issues tasks
+## 4. Owner decisions — recorded
 
-1. **Anonymous decorative people?** Recommended **yes**, but visibly distinguish them in model and data from real viewer-bound actors; if no, build a populated visual rhythm with empty pads/lotus flowers while real seats remain tied only to authenticated DEMO/room actors.
-2. **First visual checkpoint:** recommend **12 scene items / pads** (not 12 claimed live viewers), then up to 24 if camera composition and resource caps are safe. Existing three real mapped seats must continue working.
+1. **Anonymous decorative people — APPROVED.** They use the same approved chibi/lily-pad visual model as joining real viewers, but stay in a **different identity class**, with no account key, nameplate, viewer count, gift ownership, or artificial online status.
+2. **First visual checkpoint — APPROVED: 12 displayed positions** including the existing three pinned hero slots, **not 12 verified LIVE viewers**. Later 24 is an optional expansion subject to performance review. Existing three hero positions and A/B/C mapping must continue working.
 3. **Minimal initial art:** one lotus blossom and one bud, plus only verified missing far silhouette. Prefer reuse of already approved asset variants and no new hair/poses.
 4. Preserve **dark navy/lavender dusk and pink/gold reflective water** accepted at P0.11; do not commission a new full environment style.
 
-**SA recommendation:** Owner confirms these choices → SA versions a small **P0.12-A asset/identity/layout audit** (or closes it inside Design) → only verified missing AI Visual work proceeds → Codex viewer work after manifest gate → SA review → Owner scene Visual GO. Keep current PR #8 open until a separate merge decision; no production branch mutation or merge.
+**OWNER RESOLUTION:** Owner approved initial 12 positions and an anonymous character layer visually consistent with what a real joining viewer will look like. SA may now issue an isolated **P0.12-A Codex DEMO prototype** built on the exact PR #8 HEAD, followed by SA technical+visual evidence review and Owner P0.12-A visual assessment. The actual LIVE ingestion adapter, real-provider join semantics, 12-real-actor capacity and any missing AI Visual assets are **not automatically approved** by this design GO. Subsequent P0.12-B/C tasks require their own manifest/Owner gates. All current PRs remain open/unmerged.
+
+
+## 5. Owner-approved anonymous-to-real viewer appearance contract
+
+**Owner exact intent:** “yes, việc trang trí nhân vật vô danh này cũng sẽ giống với người xem khi vào phòng live.” SA interpretation: every anonymous meditator **looks like** the on-screen avatar of an authenticated attendee, and a real arrival can take a visible seat with a smooth handoff. This does **not** assert that anonymous figures are real people, that every LIVE provider produces a reliable `member` event, or that LIVE connectivity is already implemented.
+
+### 5.1 Data and authority (no invented viewers)
+- **D (DECORATIVE_ANONYMOUS):** renderer-owned `decorId`/visual slot and seeded look/material variation only. **Never** `actorId`, `userKey`, `roomSessionId`, `displayName`, profile URL, actual viewer count, donation count, gift focus, or text pretending to be a real participant. Same approved chibi GLB and pad, oriented toward Sakura, animated silently and deterministically.
+- **U (EMPTY_LOTUS):** optional visual pad/flower with no person, for lake rhythm and legibility. May be used instead of D where occlusion/performance requires.
+- **R (REAL_OCCUPIED):** only an authoritative `AvatarPresentation` already produced by `DemoEngine/AvatarRegistry` in DEMO; later a provider event must be validated/normalized into the same typed contract through an **independently authorized LIVE adapter**. Only R displays a sanitized name and may be selected by `FocusIntent` via `actorId → seatId`.
+- The physical GLB, pose, body material and leaf may be shared visually between D and R. **Data, telemetry and focus authority may not be shared**. A real join never “converts” a dummy identity: it **reuses a slot/mesh presentation**, dropping the cosmetic D layer and rendering the actual R identity in its place without overlap.
+- `Snapshot.viewerCount` is set by a separately accepted `room` count event; D never increments it. Do not infer live total from visible figures. `confirmedGiftCount` comes only from actual confirmed gifts.
+
+### 5.2 Deterministic transitions and lifecycle
+- Proposed visual states: `DECORATIVE_ANONYMOUS → (validated actor seat allocated) → REAL_OCCUPIED → (actor expires/leaves/session resets) → DECORATIVE_ANONYMOUS`, with gentle opacity/LOD transition. No name label or actor-bound celebration until actual snapshot R exists; no duplicate in the same slot.
+- **Critical: Existing Event Engine default is `spawnOnMember:false`, `spawnOnChat:true`, `spawnOnGift:true`; the current V2 SliceDriver explicitly uses `maxAvatars:3`.** Thus **joining a LIVE room does not already create a real seat**; do not claim that it does. Prototype `member` events can be tested via a **new isolated DEMO scenario** with `spawnOnMember:true`, preserving current idle/gifts/capacity scenario behavior and correct typed event authority.
+- For P0.12-A, start with **12 scene slots**, retaining the original **`seat-1..seat-3` world positions**. Establish a reversible **DEMO-only** occupancy exercise where real member/chat/gift events can inhabit mapped slots. Whether the engine's authentic real-seat cap should rise from 3 to 12 is an explicit separate correctness decision; do **not** silently raise production or default capacity. A prototype can test a `maxAvatars:12` **only inside its separately named DEMO fixture**, if collision/FIFO/capacity evidence supports it; document exact semantics.
+- Overflow/fallback remains truthful: if no real seat can be allocated, report text-only / `no-seat` and never route gift to D. Handle duplicate member, two viewers claiming same time, old room epoch, reconnect/leave/TTL and active gift reservation. Avoid D popping over an R currently in gift focus; preserve until the seat is truly released.
+- The production LIVE event feed and actual adapter remain **OUT OF SCOPE P0.12-A**. Provider `join` event availability is unverified here, and no true user presence is inferred from chat/like or a room total. DEMO event fixtures must label synthetic data and never be advertised as real LIVE evidence.
+
+### 5.3 Layout, visual and performance acceptance
+- Initial 12 slots across **foreground/midground/far arc** avoiding Sakura trunk, water plane and P0.9 camera routes. Three pinned hero positions remain unchanged. Use seed-based appearance/density and stable slot IDs; non-overlap/clearance/occlusion checks for each shot.
+- At least 6 genuine native WebGL captures at **720×1280**: low-angle community empty vs decorated, real-member arrival replacing D, gift focus on newly allocated actual R (if DEMO capacity is expanded), aerial tree with populated depth, under-tree preserving golden veins, and after TTL/reconnect. Include before/after exact seat/actor/visual-layer logs, no fake nameplates, no overlay obscured by anonymous models.
+- ECO and QUALITY: same 3→12 visual slot test, light LOD/instancing and real draw-call/triangles/geometry/memory/rAF logs; existing RTX hardware/LIVE remains a future gate. Keep P0.11 lighting, R16/P02/P07b1 binary SHA, P0.9 camera, P0.10 gift FX and `packages/v2-events/**` source untouched in first phase.
+- Stage gates: **P0.12-A DEMO/code/evidence → SA review → Owner visual decision;** only then consider P0.12-B original lotus bloom/bud assets if actually missing, and later full community scaling/live integration.
+
+**No media cloning:** use entirely approved/original assets; keep actual viewers’ private identities/photos outside committed evidence; test dummy data from deterministic DEMO only.
