@@ -67,3 +67,10 @@
 - **New Codex branch** from exact PR #12 HEAD `385816518987b2a0ea6ef094bb0f65bfb363e720`, suggested `feature/v2-p013a-gift-blessing`, **new stacked PR targeting PR #12 head branch `feature/v2-p012d-character-diversity`**.
 - Only `apps/v2-viewer/**` code/tests/evidence/docs; no `packages/v2-events/**`, `Assets3D/**`, PRs #2/#9/#10/#11/#12 source branch, main runtime, V1, new asset media, paid tools, TikTok LIVE or GPU claims.
 - Hold all previous PRs open/unmerged. On complete new code PR, **STOP `P013A_SA_REVIEW_REQUIRED`** → SA Technical Review → Owner P0.13-A Visual GO, then decision about deferred rose graphic or P0.14 golden shots. No automatic merge/P0.14/hardware test.
+
+
+## 7. Owner P0.13-A Visual GO and transition to P0.14 — 2026-11-23
+
+**Resolved Owner Visual pending:** Following [formal SA Tech PASS #6018488791](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/13#pullrequestreview-6018488791) on [PR #13](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/13) exact HEAD `0810f537a7cbffd539c8acb9b8cd6ba2715bbc9f`, Owner replied **“duyệt, tiếp tục”**. Record **`OWNER_P013A_VISUAL_GO`**, accepting its genuine native WebGL staged abstract FX while retaining `P013_ROSE_ICON_VISUAL_FIDELITY_DEFERRED` (not full rose reference/icon similarity). This overrides only the historical Owner P0.13-A pending field, with earlier sections preserved as audit history. Do not amend PR #13, change GLBs, run Blender or merge.
+
+**Next approved step per Design 17:** [Design 23 — P0.14 Seven-Shot Parity](23_P014_SEVEN_SHOT_PARITY_AND_QA_CONTRACT.md) and [CODEX 10](../Task/CODEX_10_P014_SEVEN_SHOT_PARITY_QA.md), new Viewer-only stacked Code PR starting exactly from PR #13 HEAD. Original 7 reference clip timestamp labels are **not** equal to current DEMO clock; validate descriptive storyboard intent with actual 720×1280 ECO/QUALITY frames and three seeds. Missing original rose icons and far hills remain a future separately approved asset decision. **STOP `P014_SA_REVIEW_REQUIRED`** → SA → Owner P0.14 Visual GO. No V1/LIVE/RTX or mergers.
