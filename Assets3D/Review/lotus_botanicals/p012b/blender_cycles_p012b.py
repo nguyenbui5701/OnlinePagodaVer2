@@ -25,7 +25,7 @@ scene=bpy.context.scene
 scene.render.engine='CYCLES'; scene.cycles.samples=32; scene.cycles.device='CPU'
 scene.render.image_settings.file_format='PNG';scene.render.film_transparent=False
 scene.render.resolution_percentage=100
-scene.view_settings.view_transform='AgX';scene.view_settings.look='Medium High Contrast';scene.view_settings.exposure=0
+scene.view_settings.view_transform='AgX';scene.view_settings.look='AgX - Medium High Contrast';scene.view_settings.exposure=0
 scene.world=bpy.data.worlds.new('P012B_Dusk_World');scene.world.use_nodes=True
 bg=scene.world.node_tree.nodes.get('Background');bg.inputs['Color'].default_value=(.06,.07,.12,1);bg.inputs['Strength'].default_value=.43
 
