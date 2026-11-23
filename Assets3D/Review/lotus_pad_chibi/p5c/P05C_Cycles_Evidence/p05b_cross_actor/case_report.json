@@ -1,0 +1,90 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport actual exported P05b/P05c GLB",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p05b_cross",
+  "kind": "actor",
+  "inputs": [
+    {
+      "file": "meditator_female_cross_prayer_p05b.glb",
+      "bytes": 424628,
+      "sha256": "81e8548cf6e46d9f5ff60c7bdf342ac1857015140e7d06d67dbd9284054137fd"
+    }
+  ],
+  "meshCount": 9,
+  "principledMaterialSlots": 9,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05_CAMERA_CONTRACT.json + exact P05b macro-left/right/torso, new diagnostic separately labeled",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "front",
+      "file": "p05b_cross_actor_front_cycles.png",
+      "bytes": 342286,
+      "sha256": "972bd1d2ac162f70ecc5282b6f2a95775315cf87d37c0d6eb6a59e22fc1f01a9"
+    },
+    {
+      "view": "hands_front",
+      "file": "p05b_cross_actor_hands_front_cycles.png",
+      "bytes": 362561,
+      "sha256": "43e7bc64984bd4ae5400c322ba1b639ec643a5d32bc463174072776adf2f8047"
+    },
+    {
+      "view": "hands_side",
+      "file": "p05b_cross_actor_hands_side_cycles.png",
+      "bytes": 342875,
+      "sha256": "ef76fe4a326d9bceb034a687314435d4a011a4e234f4306e98b2a85cda692795"
+    },
+    {
+      "view": "hands_left_3q",
+      "file": "p05b_cross_actor_hands_left_3q_cycles.png",
+      "bytes": 345865,
+      "sha256": "b20bd45eaeaae3fc629344c77610855a0e149420dcfb10cd88696ee92bf927ee"
+    },
+    {
+      "view": "hands_right_3q",
+      "file": "p05b_cross_actor_hands_right_3q_cycles.png",
+      "bytes": 347704,
+      "sha256": "1bd787fe35f0cd507c7c1bb8ec7256f5c42713d0b9c78e52f3ad677775af0145"
+    },
+    {
+      "view": "torso_front",
+      "file": "p05b_cross_actor_torso_front_cycles.png",
+      "bytes": 357671,
+      "sha256": "df54c48053fe12afc4bf33bffc46198282ac1bbed31ed97141849456ddfb2c78"
+    },
+    {
+      "view": "torso_3q",
+      "file": "p05b_cross_actor_torso_3q_cycles.png",
+      "bytes": 355788,
+      "sha256": "62fefd6dc2a7fd5b65e3a96a56465c44dcd3abe18cbeb99d4542b2e5a05a5448"
+    },
+    {
+      "view": "right",
+      "file": "p05b_cross_actor_right_cycles.png",
+      "bytes": 336382,
+      "sha256": "0c0017324422f9e1857054679ebb74a2a4f1fdc26b0f2ac2f91aeef47289981c"
+    },
+    {
+      "view": "medium_9x16",
+      "file": "p05b_cross_actor_medium_9x16_cycles.png",
+      "bytes": 976675,
+      "sha256": "d8d48f4b06e154967c0dbad142a9784c7e80dad02b18b32f23742a679780b391"
+    },
+    {
+      "view": "close_9x16",
+      "file": "p05b_cross_actor_close_9x16_cycles.png",
+      "bytes": 982846,
+      "sha256": "60af91c52deecc2c426c1168b3137ac654cde80aef7fd739f5ff7926c705a725"
+    }
+  ]
+}

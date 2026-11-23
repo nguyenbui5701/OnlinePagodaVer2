@@ -1,0 +1,92 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "Actual exported new P07b1 side-part GLB reimport; original SHA-pinned P02 lotus in pair; old baselines REUSED, not re-rendered",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 16,
+  "revision": "p07b1_cross",
+  "kind": "actor",
+  "inputs": [
+    {
+      "file": "meditator_male_cross_prayer_sidepart73_p07b1.glb",
+      "bytes": 589932,
+      "sha256": "4e8c8d082352d67d0eaf637df7973931442c724a0f7db598ea8fde8de3873097"
+    }
+  ],
+  "meshCount": 10,
+  "principledMaterialSlots": 10,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "cross_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 10
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "Frozen P06c camera/lighting and 720x1280 pair, 3 original suns, AgX EV0, World .65; no P06c/P07a1 re-render; diagnostic excluded from art",
+  "originalBlend": {
+    "file": "meditator_p07b1_cross_actor.blend",
+    "bytes": 2117212,
+    "sha256": "fed93953c474f4bf330b01f36ed1072ed4a920d7f1cbad7b913d6b0bae8da67a"
+  },
+  "images": [
+    {
+      "view": "hair_front",
+      "file": "p07b1_cross_actor_hair_front_cycles.png",
+      "bytes": 615040,
+      "sha256": "b81afc25144edd0340207faa7a4d9ef60cc5634c2ff4c1d40794936cf3010690"
+    },
+    {
+      "view": "hair_top",
+      "file": "p07b1_cross_actor_hair_top_cycles.png",
+      "bytes": 562737,
+      "sha256": "00f18bc590ba59de45f5e334367ff34220bf865fdd8b7410f68728db5df542ea"
+    },
+    {
+      "view": "hair_left_3q",
+      "file": "p07b1_cross_actor_hair_left_3q_cycles.png",
+      "bytes": 609925,
+      "sha256": "dcf9b4a02e1caf8594175b39fb557fadb1e4250ebd9346031e2369fadc58b664"
+    },
+    {
+      "view": "hair_right_3q",
+      "file": "p07b1_cross_actor_hair_right_3q_cycles.png",
+      "bytes": 610506,
+      "sha256": "734d1053664f93a421e0cb3f6574d441a0c6ff120b30e458b9f4540c8011bc70"
+    },
+    {
+      "view": "hair_left",
+      "file": "p07b1_cross_actor_hair_left_cycles.png",
+      "bytes": 596297,
+      "sha256": "2e8e7355f7290b420ac7f259c1bad3ea675b4e28862697f0ad3e21754e13d7d8"
+    },
+    {
+      "view": "hair_right",
+      "file": "p07b1_cross_actor_hair_right_cycles.png",
+      "bytes": 596181,
+      "sha256": "693424e5d72b3f2a8a3acd10706ede9a95c5fe57fa593a9341d19b97a1e7b50d"
+    },
+    {
+      "view": "hair_back",
+      "file": "p07b1_cross_actor_hair_back_cycles.png",
+      "bytes": 597365,
+      "sha256": "9d4879cd9a173d5047717cd47a0718ea5fa41d882cfcb3cbe36606ed3e66c6c5"
+    }
+  ],
+  "diagnosticImagesNotArtApproval": []
+}

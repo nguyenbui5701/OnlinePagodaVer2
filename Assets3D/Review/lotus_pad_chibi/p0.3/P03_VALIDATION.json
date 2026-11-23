@@ -1,0 +1,104 @@
+{
+  "revision": "P0.3",
+  "actualGlTF2ModelImport": "PASS",
+  "reproduction": {
+    "pad": "BYTE_IDENTICAL",
+    "chibi": "BYTE_IDENTICAL"
+  },
+  "padSha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+  "actorSha256": "646842c7574976020f6583c4e18879c9bef012e5f31dc851589c0a1491786be0",
+  "modelStats": {
+    "pad": {
+      "file": "lotus_pad_01.glb",
+      "sourceRevision": "P0.2",
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+      "bytes": 262108,
+      "triangles": 10648,
+      "vertices": 5364,
+      "meshes": 5,
+      "materials": 5,
+      "github": "REUSE_EXISTING_P02_GLB_BYTE_IDENTICAL"
+    },
+    "actor": {
+      "file": "meditator_base.glb",
+      "sourceRevision": "P0.3",
+      "sha256": "646842c7574976020f6583c4e18879c9bef012e5f31dc851589c0a1491786be0",
+      "bytes": 212040,
+      "triangles": 8724,
+      "vertices": 4463,
+      "meshes": 11,
+      "materials": 8,
+      "github": "PENDING_OWNER_BINARY_UPLOAD"
+    }
+  },
+  "nonHairGeometrySameAsP02": 10,
+  "changedGeometryOnly": "hair_blue_black_UpperBodyBreath_mesh",
+  "nonHairMaterialsUnchanged": true,
+  "actuation": {
+    "name": "sit_idle",
+    "durationSec": 2,
+    "samples": 17,
+    "equalTimeAndTranslationArraysToP02": true
+  },
+  "anchors": {
+    "PadSeatAnchor": [
+      0,
+      0.195,
+      0
+    ],
+    "SeatRoot": [
+      0,
+      0,
+      0
+    ],
+    "HeadAnchor": [
+      0,
+      0.835,
+      0.04
+    ],
+    "NameplateAnchor": [
+      0,
+      1.335,
+      0.03
+    ],
+    "FXAnchor": [
+      0.37,
+      0.805,
+      0.16
+    ]
+  },
+  "seat": {
+    "sampledLowerBodyVertices": 658,
+    "minGapMeters": 0.014818456586649487,
+    "penetrationsDeeperThan5mm": 0,
+    "source": "Independent actual imported GLB triangle barycentric test"
+  },
+  "pbr": {
+    "source": "vtkGLTFImporter actual GLBs, no Phong override",
+    "viewsPerRevision": 13,
+    "idleSamplesPerRevision": 5,
+    "sameLightAndCameraAB": true
+  },
+  "cameraRefined": {
+    "pos": [
+      1.18,
+      1.29,
+      2.92
+    ],
+    "target": [
+      0,
+      0.61,
+      0
+    ],
+    "fovVerticalDeg": 42,
+    "actorCroppedPct": 0,
+    "padCroppedVerticesPct": 16.4802,
+    "pairCroppedPct": 8.9956
+  },
+  "ownerCyclesP02": "SA_REVIEW_6005994936_PASS_32_IMAGES",
+  "ownerCyclesP03": "NOT_RUN",
+  "ownerArt": "PENDING",
+  "nativeThreeJs": "NOT_RUN",
+  "gpuLiveStudio": "NOT_RUN",
+  "release": "NOT_APPROVED"
+}

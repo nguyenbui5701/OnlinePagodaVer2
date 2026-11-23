@@ -1,0 +1,5 @@
+# P0.5d original new GLB upload to existing PR #2
+
+**Branch**: `assets/lotus-pad-chibi-p0`, **exact new path** `Assets3D/Review/lotus_pad_chibi/p5d/meditator_female_cross_prayer_p05d.glb` (NEVER overwrite p5c). New GLB: **471,252 B**, SHA256 **`0f169e427cc70bc0b5b744db935c4de4ecac356ef3fc8a1113812a5bf0780e44`**; GitHub status **pending_owner_upload** until remote raw binary SHA independently verified. Original cross p5c SHA `1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf` and kneel frozen SHA `a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac` unchanged.
+
+Owner: extract `P05D_FEMALE_CROSS_FOOT_GLB.zip`, verify in PowerShell `Get-FileHash -Algorithm SHA256 .meditator_female_cross_prayer_p05d.glb`, then copy binary to p5d path on the original PR branch and push. Full SHA-gated Windows Blender starter provided. Only after owner executes are new `.blend`, real Cycles PNG/JSON/logs, evidence ZIP produced; their byte sizes and SHA cannot truthfully be given yet. Do not add a new kneeling GLB or claim media uploaded until checked. SA reviews, owner approves, no merge.

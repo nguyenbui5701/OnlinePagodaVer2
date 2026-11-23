@@ -1,0 +1,66 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport actual exported GLB",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "cross",
+  "kind": "palette",
+  "inputs": [
+    {
+      "file": "meditator_female_cross_prayer_p05.glb",
+      "bytes": 338176,
+      "sha256": "981ecf0b83378ce3fca7cd49db9473baac43238af3b5ee2fa857024ff66b57fd"
+    }
+  ],
+  "meshCount": 9,
+  "principledMaterialSlots": 9,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05_CAMERA_CONTRACT.json",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "quarter",
+      "file": "cross_palette_pastel_lilac_cycles.png",
+      "bytes": 331155,
+      "sha256": "b92f0b714ebcb5a917544d3a25845e7548a798818dd8cce4a5f2dbfbe6c57285"
+    },
+    {
+      "view": "quarter",
+      "file": "cross_palette_blush_rose_cycles.png",
+      "bytes": 331135,
+      "sha256": "e2deee0ee935c9cfdefdbadf5b0a619eacf91ca137afc6a3d055349caecb0aab"
+    },
+    {
+      "view": "quarter",
+      "file": "cross_palette_sage_green_cycles.png",
+      "bytes": 330740,
+      "sha256": "998e059e3c0135f1af6b2e417af0836a755daf17606ccdcd6e5f81d0ded9aa70"
+    },
+    {
+      "view": "quarter",
+      "file": "cross_palette_sky_blue_cycles.png",
+      "bytes": 331758,
+      "sha256": "0232aa99402af0240d82e4a852c3c6041bbd8502d50f44062bbedb7dc4b3832d"
+    },
+    {
+      "view": "quarter",
+      "file": "cross_palette_warm_cream_cycles.png",
+      "bytes": 331051,
+      "sha256": "fb43585f15299f800ef69ebf41be828a7a02cc02c0b6a7f35b0387f0c48d5416"
+    },
+    {
+      "view": "quarter",
+      "file": "cross_palette_terracotta_cycles.png",
+      "bytes": 331143,
+      "sha256": "d3457e22b82423330e4d757e869102172fcf17c5ec53acfe274e70e256cb5b0a"
+    }
+  ]
+}

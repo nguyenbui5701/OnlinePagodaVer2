@@ -1,0 +1,75 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport actual exported GLB",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "cross",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_female_cross_prayer_p05.glb",
+      "bytes": 338176,
+      "sha256": "981ecf0b83378ce3fca7cd49db9473baac43238af3b5ee2fa857024ff66b57fd"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 14,
+  "principledMaterialSlots": 14,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05_CAMERA_CONTRACT.json",
+  "originalBlend": {
+    "file": "meditator_female_cross_prayer_p05_pair.blend",
+    "bytes": 2714322,
+    "sha256": "d1d1c66036cb5d5b80e1a00b225e3b5844f3e828a2244c342b36427ee46682b8"
+  },
+  "images": [
+    {
+      "view": "pair_front",
+      "file": "cross_pair_pair_front_cycles.png",
+      "bytes": 360130,
+      "sha256": "4c2795f14db7a35ff39eb855ffa2a7cfadbe535f39c14db9161a0717dbe4ae80"
+    },
+    {
+      "view": "pair_quarter",
+      "file": "cross_pair_pair_quarter_cycles.png",
+      "bytes": 339615,
+      "sha256": "6174221732eccdfc86eba24821d743479cc1bfc1457efde4c55a230f3cdce671"
+    },
+    {
+      "view": "pair_side",
+      "file": "cross_pair_pair_side_cycles.png",
+      "bytes": 356434,
+      "sha256": "ef8ddb031180037642cfc668700a9fbdb1e8dd669b6971c46a1585b93a0c321b"
+    },
+    {
+      "view": "pair_full_9x16",
+      "file": "cross_pair_pair_full_9x16_cycles.png",
+      "bytes": 537814,
+      "sha256": "2e02d7d554a606485c2b6d2ef4663c172f9d937ffce614a761a2729aa5ea2f55"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "cross_pair_pair_medium_9x16_cycles.png",
+      "bytes": 555699,
+      "sha256": "145cec975ad6ee7259835aa64c29a515729fabbf26ff177a1d147ee3e19ea8d2"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "cross_pair_pair_close_9x16_cycles.png",
+      "bytes": 561689,
+      "sha256": "53c4cbfb39eba8995ce312946b0f8d80a384500393685637a81af5c7fb77ba3f"
+    }
+  ]
+}

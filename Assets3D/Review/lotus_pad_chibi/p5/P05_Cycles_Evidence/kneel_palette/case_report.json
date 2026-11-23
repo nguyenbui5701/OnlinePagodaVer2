@@ -1,0 +1,66 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport actual exported GLB",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "kneel",
+  "kind": "palette",
+  "inputs": [
+    {
+      "file": "meditator_female_kneel_prayer_p05.glb",
+      "bytes": 352636,
+      "sha256": "04a1d0e03e5186085118dd06d158dbba43e7180843895ed1661a03529040785e"
+    }
+  ],
+  "meshCount": 9,
+  "principledMaterialSlots": 9,
+  "importedActionNames": [
+    "kneel_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05_CAMERA_CONTRACT.json",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "quarter",
+      "file": "kneel_palette_pastel_lilac_cycles.png",
+      "bytes": 329154,
+      "sha256": "17dbbfd70d7e0b526cf0a9b9815b45c80e32e1ae6f6925fcdfddf3582238f83f"
+    },
+    {
+      "view": "quarter",
+      "file": "kneel_palette_blush_rose_cycles.png",
+      "bytes": 329254,
+      "sha256": "890a90ce422aba8ec0da59b4885fcf78c3f6dcb6d265f65cc0cf673cd26c44ac"
+    },
+    {
+      "view": "quarter",
+      "file": "kneel_palette_sage_green_cycles.png",
+      "bytes": 329163,
+      "sha256": "d00a91f62362c641fd0074d936127296ff438a899a203b434f423d290c5fc101"
+    },
+    {
+      "view": "quarter",
+      "file": "kneel_palette_sky_blue_cycles.png",
+      "bytes": 330159,
+      "sha256": "e854f1cf35019e9b67e41ba056af95504967c7985f486cebb86b6e416c777063"
+    },
+    {
+      "view": "quarter",
+      "file": "kneel_palette_warm_cream_cycles.png",
+      "bytes": 329017,
+      "sha256": "4598db8cff7aaaaa360569dc46996a05d91c37109aa2b94de155cb28a4afd033"
+    },
+    {
+      "view": "quarter",
+      "file": "kneel_palette_terracotta_cycles.png",
+      "bytes": 329443,
+      "sha256": "d83d8bd023793416264503dc6e9fa8f2630596170e3673a3fa063843ab6d7a79"
+    }
+  ]
+}

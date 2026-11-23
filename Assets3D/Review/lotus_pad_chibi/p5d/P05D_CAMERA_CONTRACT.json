@@ -1,0 +1,94 @@
+{
+  "revision": "P0.5d",
+  "baseline": "P0.5c fixed Cycles camera/light/exposure",
+  "fixedSharedViews": [
+    "front",
+    "quarter",
+    "left",
+    "right",
+    "knees_front",
+    "knees_side",
+    "medium_9x16",
+    "close_9x16",
+    "pair_front",
+    "pair_side",
+    "pair_quarter",
+    "pair_medium_9x16",
+    "pair_close_9x16"
+  ],
+  "addedDiagnosticViews": {
+    "foot_macro_front": [
+      [
+        0,
+        0.245,
+        0.84
+      ],
+      [
+        0,
+        0.078,
+        0.255
+      ],
+      33
+    ],
+    "foot_macro_left3q": [
+      [
+        -0.45,
+        0.292,
+        0.72
+      ],
+      [
+        0.095,
+        0.088,
+        0.245
+      ],
+      37
+    ],
+    "foot_macro_right3q": [
+      [
+        0.45,
+        0.292,
+        0.72
+      ],
+      [
+        0.095,
+        0.088,
+        0.245
+      ],
+      37
+    ],
+    "foot_macro_side": [
+      [
+        0.7,
+        0.216,
+        0.24
+      ],
+      [
+        0.12,
+        0.072,
+        0.22
+      ],
+      34
+    ],
+    "foot_diag_top": [
+      [
+        0.45,
+        0.67,
+        0.52
+      ],
+      [
+        0.13,
+        0.09,
+        0.23
+      ],
+      38
+    ]
+  },
+  "coordinate": "+Y up, +Z front",
+  "unchangedGlbModelCamera": true,
+  "render": "Cycles CPU 32 samples / AgX 0EV / World 0.65 / 3 SUN",
+  "phoneOutput": [
+    720,
+    1280
+  ],
+  "status": "NOT_RUN_IN_ASSISTANT_BLENDER_OWNER_REQUIRED"
+}

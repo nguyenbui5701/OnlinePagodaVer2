@@ -1,0 +1,70 @@
+{
+  "type": "Independent actual exported glTF2 P0.5c-vs-P0.5d accessor/mesh/animation audit",
+  "independentParserUsed": "validate_p05d_independent.py in owner source ZIP",
+  "status": "PASS_GLTF_SCOPE_ANIMATION_MATERIALS_WITH_COLLISION_PROXY_ONLY",
+  "oldGLB": {
+    "sha256": "1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf",
+    "bytes": 424784,
+    "triangles": 16864,
+    "meshes": 9
+  },
+  "newGLB": {
+    "file": "meditator_female_cross_prayer_p05d.glb",
+    "bytes": 471252,
+    "sha256": "0f169e427cc70bc0b5b744db935c4de4ecac356ef3fc8a1113812a5bf0780e44",
+    "triangles": 17184,
+    "vertices": 8798,
+    "meshes": 10,
+    "materials": 21,
+    "textures": 0,
+    "uploadStatus": "pending_owner_upload"
+  },
+  "changedPantsVertexIdsCount": 54,
+  "adjacentNormalsUpdatedCount": 103,
+  "maxDisplacementM": 0.0203820467,
+  "oldMeshAccessorArraysEqual8Of9": true,
+  "oldPantsFaceIndicesEqual": true,
+  "oldOriginalGLBBinaryBlobPrefixEqual": true,
+  "oldSandalMeshGeometryIdentical": true,
+  "addedFoot": {
+    "vertices": 162,
+    "triangles": 320,
+    "watertight": true,
+    "connectedComponents": 1,
+    "bounds": {
+      "min": [
+        0.106,
+        0.0151212,
+        0.215
+      ],
+      "max": [
+        0.174,
+        0.0748788,
+        0.355
+      ]
+    },
+    "reusedMaterialIndex": 3
+  },
+  "same21Materials": true,
+  "same6ColorVariantMappings": true,
+  "anchorAndAllOldNodesEqualExceptSeatRootNewChild": true,
+  "identicalTwoAnimationSamplerArrays": true,
+  "clips": [
+    "sit_idle",
+    "cross_prayer_idle"
+  ],
+  "samplesPerClip": 17,
+  "durationSeconds": 2,
+  "footDoesNotFollowUpperBodyBreath": true,
+  "idleTimes": [
+    0,
+    0.5,
+    1,
+    1.5,
+    2
+  ],
+  "footPantContact": "PROXY_ONLY",
+  "realPadCollision": "NOT_RUN",
+  "BlenderCycles": "NOT_RUN",
+  "ownerGate": "P05D_FEMALE_CROSS_FOOT_OWNER_REVIEW_REQUIRED"
+}

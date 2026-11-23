@@ -1,0 +1,85 @@
+{
+  "status": "ACTUAL_OWNER_EXECUTION",
+  "revision": "p02",
+  "kind": "actor",
+  "blenderVersion": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "viewTransform": "AgX",
+  "exposureEV": 0.0,
+  "worldStrength": 0.65,
+  "lighting": "fixed warm key + lilac fill + rose rim",
+  "sourceGLBs": {
+    "meditator_base.glb": {
+      "bytes": 216012,
+      "sha256": "83009fab6f4f00730260ef70dcd4d8605b2c634bc99f1fd6e34a1030833abd4c"
+    }
+  },
+  "importedMeshCount": 11,
+  "principledMaterialSlots": 11,
+  "animationNames": [
+    "sit_idle"
+  ],
+  "originalBlender": null,
+  "images": [
+    {
+      "view": "chibi_front",
+      "file": "p02_actor_chibi_front_cycles.png",
+      "bytes": 346374,
+      "sha256": "65d67aaab64c5b822e19e4c6747f90ebb701d540fe4c36db2c0dbd25f50d955c"
+    },
+    {
+      "view": "chibi_side",
+      "file": "p02_actor_chibi_side_cycles.png",
+      "bytes": 327695,
+      "sha256": "2bbb9b899b60bc0fef1c9ad2b6f1a4f39ca8af06ace2a03ddba82a4522b9f1d7"
+    },
+    {
+      "view": "chibi_three_quarter",
+      "file": "p02_actor_chibi_three_quarter_cycles.png",
+      "bytes": 327534,
+      "sha256": "2d636ea8c775a8b98d10dd01f1ce68f5b65442800ce7d7abb538904002cbc93b"
+    },
+    {
+      "view": "chibi_back",
+      "file": "p02_actor_chibi_back_cycles.png",
+      "bytes": 322628,
+      "sha256": "d988034aced63abfcd333235422aea436821430b1bb26891323787b75a63e452"
+    },
+    {
+      "view": "sit_idle",
+      "timeSeconds": 0.0,
+      "file": "p02_sit_idle_t0.0_cycles.png",
+      "bytes": 346406,
+      "sha256": "b06af5bda1bdecff7291e243c52137f3c076e0cd1e0c45ca9f2e8ff6892d0ea1"
+    },
+    {
+      "view": "sit_idle",
+      "timeSeconds": 0.5,
+      "file": "p02_sit_idle_t0.5_cycles.png",
+      "bytes": 346895,
+      "sha256": "3355f3e67b80e289b09a1821e5d80e88d32a3be38b0935d24141f3d5a867dc7a"
+    },
+    {
+      "view": "sit_idle",
+      "timeSeconds": 1.0,
+      "file": "p02_sit_idle_t1.0_cycles.png",
+      "bytes": 347325,
+      "sha256": "882746fffc38d023271c4740585faac48d9e6a1a8bc9664c16b4b527c93e12a3"
+    },
+    {
+      "view": "sit_idle",
+      "timeSeconds": 1.5,
+      "file": "p02_sit_idle_t1.5_cycles.png",
+      "bytes": 346895,
+      "sha256": "d543c779951d7dda4eede3c756b4228a988cac6475a6223ce14f218b1ab9d311"
+    },
+    {
+      "view": "sit_idle",
+      "timeSeconds": 2.0,
+      "file": "p02_sit_idle_t2.0_cycles.png",
+      "bytes": 346406,
+      "sha256": "e65acfd9a1c3f2d6809b15cfbb5f00215c4b4cb937eb84232cd24f139a9bb6b4"
+    }
+  ]
+}

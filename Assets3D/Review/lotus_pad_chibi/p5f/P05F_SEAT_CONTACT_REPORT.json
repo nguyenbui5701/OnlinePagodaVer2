@@ -1,0 +1,358 @@
+{
+  "method": "Real SHA-pinned P0.2 leaf triangles projected vertical ray crossing at exact P0.5e/P0.5f pants triangle centroids and vertices; samples not full continuous triangle-mesh contact. Negative gap means penetration. Distinct left/right support bands physically motivated, not global AABB/nearest vertex alone.",
+  "actorPlacement": {
+    "x": 0,
+    "y": 0.195,
+    "z": 0,
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "padPlacement": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "sampleWindows": {
+    "leftLoadBand": {
+      "x": [
+        -0.3,
+        -0.1
+      ],
+      "z": [
+        0.17,
+        0.35
+      ]
+    },
+    "rightLoadBand": {
+      "x": [
+        0.07,
+        0.3
+      ],
+      "z": [
+        0.16,
+        0.32
+      ]
+    },
+    "centerRidge": {
+      "x": [
+        -0.1,
+        0.1
+      ],
+      "z": [
+        0.12,
+        0.33
+      ]
+    }
+  },
+  "samples": {
+    "p05e": {
+      "lowerTriangleCentroidCount": 963,
+      "regions": {
+        "leftLoadBand": {
+          "lowerFacingTriangleCentroids": {
+            "minMm": 13.377,
+            "p10Mm": 14.995,
+            "medianMm": 23.775,
+            "p90Mm": 43.487,
+            "p95Mm": 44.593,
+            "near3mm": 0,
+            "near5mm": 0,
+            "deepPenetrationGt2mm": 0,
+            "samples": 141
+          },
+          "allRegionVertices": {
+            "minMm": 13.376,
+            "p10Mm": 17.865,
+            "medianMm": 85.902,
+            "p90Mm": 157.407,
+            "p95Mm": 168.213,
+            "near3mm": 0,
+            "near5mm": 0,
+            "deepPenetrationGt2mm": 0,
+            "samples": 213
+          }
+        },
+        "rightLoadBand": {
+          "lowerFacingTriangleCentroids": {
+            "minMm": 1.637,
+            "p10Mm": 4.684,
+            "medianMm": 19.723,
+            "p90Mm": 36.89,
+            "p95Mm": 42.125,
+            "near3mm": 4,
+            "near5mm": 17,
+            "deepPenetrationGt2mm": 0,
+            "samples": 151
+          },
+          "allRegionVertices": {
+            "minMm": 0.088,
+            "p10Mm": 9.998,
+            "medianMm": 81.404,
+            "p90Mm": 148.239,
+            "p95Mm": 160.178,
+            "near3mm": 6,
+            "near5mm": 11,
+            "deepPenetrationGt2mm": 0,
+            "samples": 251
+          }
+        },
+        "centerRidge": {
+          "lowerFacingTriangleCentroids": {
+            "minMm": 3.852,
+            "p10Mm": 12.958,
+            "medianMm": 22.842,
+            "p90Mm": 40.23,
+            "p95Mm": 45.267,
+            "near3mm": 0,
+            "near5mm": 3,
+            "deepPenetrationGt2mm": 0,
+            "samples": 225
+          },
+          "allRegionVertices": {
+            "minMm": 1.166,
+            "p10Mm": 16.953,
+            "medianMm": 78.576,
+            "p90Mm": 130.422,
+            "p95Mm": 135.027,
+            "near3mm": 1,
+            "near5mm": 2,
+            "deepPenetrationGt2mm": 0,
+            "samples": 347
+          }
+        }
+      },
+      "global": {
+        "lowerFacingTriangleCentroids": {
+          "minMm": 1.637,
+          "p10Mm": 14.986,
+          "medianMm": 35.854,
+          "p90Mm": 100.451,
+          "p95Mm": 113.448,
+          "near3mm": 4,
+          "near5mm": 17,
+          "deepPenetrationGt2mm": 0,
+          "samples": 961
+        },
+        "allPantsVertices": {
+          "minMm": 0.088,
+          "p10Mm": 24.199,
+          "medianMm": 104.469,
+          "p90Mm": 198.635,
+          "p95Mm": 229.758,
+          "near3mm": 6,
+          "near5mm": 11,
+          "deepPenetrationGt2mm": 0,
+          "samples": 1536
+        }
+      },
+      "source": "meditator_female_cross_prayer_p05e.glb"
+    },
+    "p05f": {
+      "lowerTriangleCentroidCount": 957,
+      "regions": {
+        "leftLoadBand": {
+          "lowerFacingTriangleCentroids": {
+            "minMm": 2.784,
+            "p10Mm": 6.748,
+            "medianMm": 18.337,
+            "p90Mm": 40.905,
+            "p95Mm": 41.926,
+            "near3mm": 4,
+            "near5mm": 11,
+            "deepPenetrationGt2mm": 0,
+            "samples": 141
+          },
+          "allRegionVertices": {
+            "minMm": 2.58,
+            "p10Mm": 11.145,
+            "medianMm": 85.902,
+            "p90Mm": 157.407,
+            "p95Mm": 168.213,
+            "near3mm": 2,
+            "near5mm": 11,
+            "deepPenetrationGt2mm": 0,
+            "samples": 213
+          }
+        },
+        "rightLoadBand": {
+          "lowerFacingTriangleCentroids": {
+            "minMm": 1.637,
+            "p10Mm": 3.457,
+            "medianMm": 17.857,
+            "p90Mm": 36.89,
+            "p95Mm": 42.125,
+            "near3mm": 9,
+            "near5mm": 29,
+            "deepPenetrationGt2mm": 0,
+            "samples": 151
+          },
+          "allRegionVertices": {
+            "minMm": 0.088,
+            "p10Mm": 9.008,
+            "medianMm": 81.404,
+            "p90Mm": 148.239,
+            "p95Mm": 160.178,
+            "near3mm": 10,
+            "near5mm": 20,
+            "deepPenetrationGt2mm": 0,
+            "samples": 251
+          }
+        },
+        "centerRidge": {
+          "lowerFacingTriangleCentroids": {
+            "minMm": 3.852,
+            "p10Mm": 12.126,
+            "medianMm": 21.819,
+            "p90Mm": 40.23,
+            "p95Mm": 45.052,
+            "near3mm": 0,
+            "near5mm": 3,
+            "deepPenetrationGt2mm": 0,
+            "samples": 225
+          },
+          "allRegionVertices": {
+            "minMm": 1.166,
+            "p10Mm": 16.185,
+            "medianMm": 78.576,
+            "p90Mm": 130.422,
+            "p95Mm": 135.027,
+            "near3mm": 1,
+            "near5mm": 2,
+            "deepPenetrationGt2mm": 0,
+            "samples": 347
+          }
+        }
+      },
+      "global": {
+        "lowerFacingTriangleCentroids": {
+          "minMm": 1.637,
+          "p10Mm": 10.757,
+          "medianMm": 32.867,
+          "p90Mm": 100.452,
+          "p95Mm": 113.682,
+          "near3mm": 13,
+          "near5mm": 40,
+          "deepPenetrationGt2mm": 0,
+          "samples": 955
+        },
+        "allPantsVertices": {
+          "minMm": 0.088,
+          "p10Mm": 21.7,
+          "medianMm": 104.469,
+          "p90Mm": 198.635,
+          "p95Mm": 229.758,
+          "near3mm": 12,
+          "near5mm": 31,
+          "deepPenetrationGt2mm": 0,
+          "samples": 1536
+        }
+      },
+      "source": "meditator_female_cross_prayer_p05f.glb"
+    }
+  },
+  "overlap": {
+    "0": {
+      "p05e": {
+        "breathDyMeters": 0,
+        "upperBlouseLowerBoundWorldY": 0.365,
+        "pantsTopWorldY": 0.514,
+        "sourceUpperBodyAndSeatRootMeshUnmodified": true,
+        "measuredSupportSameAsRest": true
+      },
+      "p05f": {
+        "breathDyMeters": 0,
+        "upperBlouseLowerBoundWorldY": 0.365,
+        "pantsTopWorldY": 0.514,
+        "sourceUpperBodyAndSeatRootMeshUnmodified": true,
+        "measuredSupportSameAsRest": true
+      }
+    },
+    "0.5": {
+      "p05e": {
+        "breathDyMeters": 0.008,
+        "upperBlouseLowerBoundWorldY": 0.373,
+        "pantsTopWorldY": 0.514,
+        "sourceUpperBodyAndSeatRootMeshUnmodified": true,
+        "measuredSupportSameAsRest": true
+      },
+      "p05f": {
+        "breathDyMeters": 0.008,
+        "upperBlouseLowerBoundWorldY": 0.373,
+        "pantsTopWorldY": 0.514,
+        "sourceUpperBodyAndSeatRootMeshUnmodified": true,
+        "measuredSupportSameAsRest": true
+      }
+    },
+    "1": {
+      "p05e": {
+        "breathDyMeters": 0.016,
+        "upperBlouseLowerBoundWorldY": 0.381,
+        "pantsTopWorldY": 0.514,
+        "sourceUpperBodyAndSeatRootMeshUnmodified": true,
+        "measuredSupportSameAsRest": true
+      },
+      "p05f": {
+        "breathDyMeters": 0.016,
+        "upperBlouseLowerBoundWorldY": 0.381,
+        "pantsTopWorldY": 0.514,
+        "sourceUpperBodyAndSeatRootMeshUnmodified": true,
+        "measuredSupportSameAsRest": true
+      }
+    },
+    "1.5": {
+      "p05e": {
+        "breathDyMeters": 0.008,
+        "upperBlouseLowerBoundWorldY": 0.373,
+        "pantsTopWorldY": 0.514,
+        "sourceUpperBodyAndSeatRootMeshUnmodified": true,
+        "measuredSupportSameAsRest": true
+      },
+      "p05f": {
+        "breathDyMeters": 0.008,
+        "upperBlouseLowerBoundWorldY": 0.373,
+        "pantsTopWorldY": 0.514,
+        "sourceUpperBodyAndSeatRootMeshUnmodified": true,
+        "measuredSupportSameAsRest": true
+      }
+    },
+    "2": {
+      "p05e": {
+        "breathDyMeters": 0,
+        "upperBlouseLowerBoundWorldY": 0.365,
+        "pantsTopWorldY": 0.514,
+        "sourceUpperBodyAndSeatRootMeshUnmodified": true,
+        "measuredSupportSameAsRest": true
+      },
+      "p05f": {
+        "breathDyMeters": 0,
+        "upperBlouseLowerBoundWorldY": 0.365,
+        "pantsTopWorldY": 0.514,
+        "sourceUpperBodyAndSeatRootMeshUnmodified": true,
+        "measuredSupportSameAsRest": true
+      }
+    }
+  },
+  "statuses": {
+    "exactPolygonCollision": "PROXY_ONLY",
+    "ownerCyclesP05f": "NOT_RUN",
+    "ownerArt": "PENDING"
+  }
+}

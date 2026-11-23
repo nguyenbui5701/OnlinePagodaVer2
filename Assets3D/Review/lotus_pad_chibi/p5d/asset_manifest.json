@@ -1,0 +1,332 @@
+{
+  "revision": "P0.5d",
+  "assetId": "female_cross_prayer_foot_visibility",
+  "sourceTask": "Task/AI_VISUAL_07_FEMALE_CROSS_LEGGED_FOOT_VISIBILITY.md",
+  "repository": "nguyenbui5701/OnlinePagodaVer2",
+  "branch": "assets/lotus-pad-chibi-p0",
+  "target": "Assets3D/Review/lotus_pad_chibi/p5d",
+  "baselineHead": "bdb171b82d9ceb8d72bc42ac0ece64cecf4be166",
+  "state": "P05D_FEMALE_CROSS_FOOT_OWNER_REVIEW_REQUIRED",
+  "baseline": {
+    "p05c_cross": {
+      "path": "p5c/meditator_female_cross_prayer_p05c.glb",
+      "sha256": "1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf",
+      "bytes": 424784,
+      "triangles": 16864
+    },
+    "p05c_kneel": {
+      "path": "p5c/meditator_female_kneel_prayer_p05c.glb",
+      "sha256": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac",
+      "unchanged": true,
+      "newKneelBinaryProduced": false
+    },
+    "p02_pad": {
+      "path": "p3/lotus_pad_01.glb",
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+      "bytes": 262108,
+      "notReexported": true
+    }
+  },
+  "new": {
+    "filename": "meditator_female_cross_prayer_p05d.glb",
+    "sha256": "0f169e427cc70bc0b5b744db935c4de4ecac356ef3fc8a1113812a5bf0780e44",
+    "bytes": 471252,
+    "triangles": 17184,
+    "vertices": 8798,
+    "meshes": 10,
+    "materials": 21,
+    "textures": 0
+  },
+  "source_files": {
+    "meditator_female_cross_prayer_p05d.glb": {
+      "bytes": 471252,
+      "sha256": "0f169e427cc70bc0b5b744db935c4de4ecac356ef3fc8a1113812a5bf0780e44",
+      "status": "pending_owner_upload_unless_github_verified"
+    },
+    "procedural_female_cross_foot_p05d.py": {
+      "bytes": 7075,
+      "sha256": "ff6dd5e17efdcc7875b4ab080efb3ad369e4fc34a67cf6041b3d26a0600cb638",
+      "status": "pending_owner_upload_unless_github_verified"
+    },
+    "validate_p05d_independent.py": {
+      "bytes": 7629,
+      "sha256": "fa17491e40a738fb8c164e3099249acfd70300755ee20d577697eeda7d4e4327",
+      "status": "pending_owner_upload_unless_github_verified"
+    },
+    "blender_p05d_cycles.py": {
+      "bytes": 11450,
+      "sha256": "f11e064bb72e820ed5c44b8ba104a69d5d21f1b5f4ce3f19e9c6caf083c8a5f5",
+      "status": "pending_owner_upload_unless_github_verified"
+    },
+    "run_p05d_blender.ps1": {
+      "bytes": 5089,
+      "sha256": "c3f242e4ece21d44fd1378e3f2234cc0a316846ed3d6e82ab74ee3d04e2f357c",
+      "status": "pending_owner_upload_unless_github_verified"
+    },
+    "render_ab_p05d.py": {
+      "bytes": 2282,
+      "sha256": "ce1108f984c19d9d8bd87338f14dca88bfa07607fd036fbaf19c669ae9f4d610",
+      "status": "pending_owner_upload_unless_github_verified"
+    },
+    "render_p05d_common.py": {
+      "bytes": 7010,
+      "sha256": "13114703d880616c27e5c97b6b3fbb8a727a3a8a8331bff420981df566f3ffca",
+      "status": "pending_owner_upload_unless_github_verified"
+    }
+  },
+  "geometryChange": {
+    "name": "ao_ba_ba_pants_SeatRoot_mesh",
+    "movedVertices": 54,
+    "movedOriginalVertexIds": [
+      560,
+      572,
+      573,
+      574,
+      586,
+      587,
+      588,
+      599,
+      600,
+      601,
+      602,
+      613,
+      614,
+      615,
+      616,
+      627,
+      628,
+      629,
+      630,
+      642,
+      643,
+      644,
+      656,
+      657,
+      670,
+      671,
+      685,
+      1060,
+      1061,
+      1073,
+      1074,
+      1075,
+      1076,
+      1087,
+      1088,
+      1089,
+      1090,
+      1101,
+      1102,
+      1103,
+      1104,
+      1105,
+      1115,
+      1116,
+      1117,
+      1118,
+      1119,
+      1129,
+      1130,
+      1131,
+      1132,
+      1144,
+      1145,
+      1146
+    ],
+    "recomputedNormalVertexIds": [
+      546,
+      547,
+      558,
+      559,
+      560,
+      561,
+      571,
+      572,
+      573,
+      574,
+      575,
+      585,
+      586,
+      587,
+      588,
+      589,
+      598,
+      599,
+      600,
+      601,
+      602,
+      603,
+      612,
+      613,
+      614,
+      615,
+      616,
+      617,
+      626,
+      627,
+      628,
+      629,
+      630,
+      631,
+      640,
+      641,
+      642,
+      643,
+      644,
+      645,
+      655,
+      656,
+      657,
+      658,
+      669,
+      670,
+      671,
+      672,
+      683,
+      684,
+      685,
+      687,
+      1046,
+      1047,
+      1048,
+      1059,
+      1060,
+      1061,
+      1062,
+      1063,
+      1072,
+      1073,
+      1074,
+      1075,
+      1076,
+      1077,
+      1086,
+      1087,
+      1088,
+      1089,
+      1090,
+      1091,
+      1092,
+      1100,
+      1101,
+      1102,
+      1103,
+      1104,
+      1105,
+      1106,
+      1114,
+      1115,
+      1116,
+      1117,
+      1118,
+      1119,
+      1120,
+      1128,
+      1129,
+      1130,
+      1131,
+      1132,
+      1133,
+      1142,
+      1143,
+      1144,
+      1145,
+      1146,
+      1147,
+      1157,
+      1158,
+      1159,
+      1160
+    ],
+    "maxDisplacementM": 0.020382046699523926,
+    "changedCoordinatesOldBounds": [
+      [
+        0.06379900127649307,
+        0.022717999294400215,
+        0.2444629967212677
+      ],
+      [
+        0.21570700407028198,
+        0.1271190047264099,
+        0.319597989320755
+      ]
+    ],
+    "facesAndIndicesUnchanged": true
+  },
+  "addedSkinInstep": {
+    "name": "skin_rose_cream_SeatRoot_exposed_instep_p05d_mesh",
+    "triangles": 320,
+    "vertices": 162,
+    "watertight": true,
+    "winding": true,
+    "bounds": [
+      [
+        0.106,
+        0.0151212,
+        0.215
+      ],
+      [
+        0.174,
+        0.0748788,
+        0.355
+      ]
+    ],
+    "nearestVertexToPantsMinM": 0.0031116928297016634,
+    "nearestVertexToOriginalSandalMinM": 0.002844327947789319
+  },
+  "materials": {
+    "count": 21,
+    "colors": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "KHR_materials_variants": "same raw glTF JSON"
+  },
+  "animations": {
+    "names": [
+      "sit_idle",
+      "cross_prayer_idle"
+    ],
+    "durationSec": 2,
+    "keys": 17,
+    "rawSamplerByteIdenticalToP05c": true
+  },
+  "anchors": {
+    "SeatRoot": [
+      0,
+      0,
+      0
+    ],
+    "HeadAnchor": [
+      0,
+      0.835,
+      0.04
+    ],
+    "NameplateAnchor": [
+      0,
+      1.335,
+      0.03
+    ],
+    "FXAnchor": [
+      0.37,
+      0.805,
+      0.16
+    ]
+  },
+  "evidence": {
+    "P05cOwnerCycles": "SA_REVIEWED_REAL_EXECUTED_SAMPLED_SHA_PNG_PASS",
+    "P05dNativeVTKPBR": "EXECUTED_MATCHED_15_VIEWS_OLD_NEW_AND_5_TIMESTAMPS_NEW",
+    "P05dBlenderCycles": "NOT_RUN",
+    "P05dNewBlenderSource": "NOT_CREATED_UNTIL_OWNER_RUN",
+    "P02RealPadContact": "NOT_RUN_LOCALLY",
+    "FootPantCollision": "PROXY_ONLY",
+    "GPU_LIVE": "NOT_RUN"
+  },
+  "licensing": "Original own simple procedural geometry using free Blender/Python libraries, no third-party model/texture",
+  "paidToolsVND": 0,
+  "stop": "NO_MALE_NO_CODEX_NO_INTEGRATION_NO_MERGE"
+}

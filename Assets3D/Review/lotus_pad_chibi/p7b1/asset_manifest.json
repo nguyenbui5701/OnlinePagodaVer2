@@ -1,0 +1,89 @@
+{
+  "revision": "P0.7b1",
+  "assetID": "meditator_male_sidepart73_integrated",
+  "repo": "nguyenbui5701/OnlinePagodaVer2",
+  "branch": "assets/lotus-pad-chibi-p0",
+  "pr": 2,
+  "reviewedParentHead": "f2cbaac94c9168fb080f2dcedb4f1ae42a2e1e41",
+  "sourcePath": "../p6c/",
+  "sourceSHA256": {
+    "cross": "c9d1513bad21398fd776776cad97791cfa76a591d641838f885596d13f120ea4",
+    "kneel": "38e47f84b6b4f8987a47b39e791aaa06c3fed2d4d03e11e55fc72f0ef926c4ad"
+  },
+  "partDirection": "character RIGHT +X; majority groom LEFT -X",
+  "assets": [
+    {
+      "pose": "cross",
+      "path": "Assets3D/Review/lotus_pad_chibi/p7b1/meditator_male_cross_prayer_sidepart73_p07b1.glb",
+      "sha256": "4e8c8d082352d67d0eaf637df7973931442c724a0f7db598ea8fde8de3873097",
+      "bytes": 589932,
+      "vertices": 9469,
+      "triangles": 17420,
+      "meshes": 10,
+      "materials": 21,
+      "animation": [
+        "sit_idle",
+        "cross_prayer_idle"
+      ],
+      "state": "REAL_GLB2_PRESENT"
+    },
+    {
+      "pose": "kneel",
+      "path": "Assets3D/Review/lotus_pad_chibi/p7b1/meditator_male_kneel_prayer_sidepart73_p07b1.glb",
+      "sha256": "3707ec76f311b10f4b672940edbda211c2d021f12c8c5300367f7fb4d2e1f96c",
+      "bytes": 456348,
+      "vertices": 9485,
+      "triangles": 17460,
+      "meshes": 9,
+      "materials": 21,
+      "animation": [
+        "sit_idle",
+        "kneel_prayer_idle"
+      ],
+      "state": "REAL_GLB2_PRESENT"
+    }
+  ],
+  "geometryBudget": {
+    "hairVertices": 1672,
+    "hairTriangles": 2120,
+    "removedOldRibbonTriangles": 960,
+    "addedMeshes": 0,
+    "addedMaterials": 0,
+    "addedDrawcalls": 0,
+    "unchangedEyebrows": 208,
+    "canonicalHairBothPoses": true,
+    "animationDurationSeconds": 2,
+    "animationSampleCount": 17
+  },
+  "anchors": [
+    "SeatRoot",
+    "UpperBodyBreath",
+    "HeadAnchor",
+    "NameplateAnchor",
+    "FXAnchor"
+  ],
+  "materialVariants": [
+    "pastel_lilac",
+    "blush_rose",
+    "sage_green",
+    "sky_blue",
+    "warm_cream",
+    "terracotta"
+  ],
+  "provenance": "Original project P06c and procedural Node JS22, Blender owner-run free tool, 0 VND",
+  "evidence": {
+    "oldP06cP07a1P07bCycles": "REUSED_EXISTING_REAL_IMAGES_NO_RERENDER",
+    "newCases": [
+      "p07b1_cross_actor",
+      "p07b1_cross_pair",
+      "p07b1_kneel_actor",
+      "p07b1_kneel_pair"
+    ],
+    "blenderSmoke": "PENDING_OWNER_RUN",
+    "blenderFull": "PENDING_OWNER_RUN",
+    "editableBlend": "PENDING_OWNER_RUN",
+    "zipCRC": "PENDING_OWNER_RUN",
+    "artDecision": "PENDING"
+  },
+  "stop": "P07B_SIDE_PART_73_ART_REVISION_REQUIRED"
+}

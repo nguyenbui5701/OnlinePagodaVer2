@@ -1,0 +1,398 @@
+{
+  "date": "2026-11-22",
+  "status": "REUSED_EXISTING_OWNER_CYCLES_NO_NEW_BLENDER_RUN",
+  "sourcePRHEAD": "c96b06372587134e38468388edaa60915f90a3bf",
+  "evidenceReadHEAD": "115e22ecfb25b1e1260f5435e8f8e78f6664e0f3",
+  "originalSource": "p7a1/P07A1_Cycles_Evidence/ existing owner-run immutable files",
+  "cases": [
+    {
+      "case": "p06c_cross_actor",
+      "reportPath": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_cross_actor/case_report.json",
+      "blender": "4.5.16 LTS",
+      "engine": "Cycles CPU",
+      "samples": 32,
+      "inputs": [
+        {
+          "file": "meditator_male_cross_prayer_p06c.glb",
+          "bytes": 589656,
+          "sha256": "c9d1513bad21398fd776776cad97791cfa76a591d641838f885596d13f120ea4"
+        }
+      ],
+      "staticImages": [
+        {
+          "view": "hair_front",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_cross_actor/p06c_cross_actor_hair_front_cycles.png",
+          "bytes": 620558,
+          "sha256": "bc75ad90576177bc03e8c2d44a16c8451ac8fc68b142ec7c7f2e232f7d54d02c"
+        },
+        {
+          "view": "hair_top",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_cross_actor/p06c_cross_actor_hair_top_cycles.png",
+          "bytes": 578193,
+          "sha256": "3661d60f9228b8bc2a463a33cb0ed5a004acda0d3b6abff0b4410ce98a72f2b7"
+        },
+        {
+          "view": "hair_right_3q",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_cross_actor/p06c_cross_actor_hair_right_3q_cycles.png",
+          "bytes": 621593,
+          "sha256": "cdd22d4de191881dfed994f208af944db095a7b66345549c9d89f8176dfe4370"
+        },
+        {
+          "view": "hair_left",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_cross_actor/p06c_cross_actor_hair_left_cycles.png",
+          "bytes": 597717,
+          "sha256": "067f9b703e83b2d40c94623a972db68957986b462be6d8dde0cd9628444085fd"
+        },
+        {
+          "view": "hair_right",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_cross_actor/p06c_cross_actor_hair_right_cycles.png",
+          "bytes": 601796,
+          "sha256": "08ec4b2578277e99e14c79111fa7f1612f95d14224636400406eedec79ebf531"
+        },
+        {
+          "view": "hair_back",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_cross_actor/p06c_cross_actor_hair_back_cycles.png",
+          "bytes": 597050,
+          "sha256": "fad6c47f5bfd89a3f9246c40ebd7358553cbaa454645c93d44822aa64e2f67c7"
+        },
+        {
+          "view": "hair_left_3q",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_cross_actor/p06c_cross_actor_hair_left_3q_cycles.png",
+          "bytes": 616164,
+          "sha256": "5ddee775e287a65f7228220ef1fe495ec02e9b48ce040d0aee91120dea12dc63"
+        },
+        {
+          "view": "hair_low_back",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_cross_actor/p06c_cross_actor_hair_low_back_cycles.png",
+          "bytes": 594516,
+          "sha256": "53677fb690be26243c10a5770a9833a9c21d30702d18a04e54a512e1546b551b"
+        }
+      ]
+    },
+    {
+      "case": "p06c_cross_pair",
+      "reportPath": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_cross_pair/case_report.json",
+      "blender": "4.5.16 LTS",
+      "engine": "Cycles CPU",
+      "samples": 32,
+      "inputs": [
+        {
+          "file": "meditator_male_cross_prayer_p06c.glb",
+          "bytes": 589656,
+          "sha256": "c9d1513bad21398fd776776cad97791cfa76a591d641838f885596d13f120ea4"
+        },
+        {
+          "file": "lotus_pad_01.glb",
+          "bytes": 262108,
+          "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+        }
+      ],
+      "staticImages": [
+        {
+          "view": "pair_medium_9x16",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_cross_pair/p06c_cross_pair_pair_medium_9x16_cycles.png",
+          "bytes": 1031699,
+          "sha256": "b75cba8cca8bf0eaf414347bb701f6846b5c9352ce1f42518b8775910f17d364"
+        },
+        {
+          "view": "pair_close_9x16",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_cross_pair/p06c_cross_pair_pair_close_9x16_cycles.png",
+          "bytes": 1040908,
+          "sha256": "7b54a4d36e4955c7117aa7ce3a0d94b5219315981c1849012e21adaa5122be43"
+        }
+      ]
+    },
+    {
+      "case": "p06c_kneel_actor",
+      "reportPath": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_kneel_actor/case_report.json",
+      "blender": "4.5.16 LTS",
+      "engine": "Cycles CPU",
+      "samples": 32,
+      "inputs": [
+        {
+          "file": "meditator_male_kneel_prayer_p06c.glb",
+          "bytes": 456072,
+          "sha256": "38e47f84b6b4f8987a47b39e791aaa06c3fed2d4d03e11e55fc72f0ef926c4ad"
+        }
+      ],
+      "staticImages": [
+        {
+          "view": "hair_front",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_kneel_actor/p06c_kneel_actor_hair_front_cycles.png",
+          "bytes": 620664,
+          "sha256": "328ef1c17cc354f3f7d27dfe59fd72b1336497aac01839d1acaf460769ae6470"
+        },
+        {
+          "view": "hair_top",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_kneel_actor/p06c_kneel_actor_hair_top_cycles.png",
+          "bytes": 578193,
+          "sha256": "e7dcb1aa8734aa0ba739754bb21d98e1e870b403ef289d358d8d6279142c1e92"
+        },
+        {
+          "view": "hair_right_3q",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_kneel_actor/p06c_kneel_actor_hair_right_3q_cycles.png",
+          "bytes": 621531,
+          "sha256": "f3b9b3192a346888c71b615f773f609d2213b15c1a6e03017bd083a5767000a5"
+        },
+        {
+          "view": "hair_left",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_kneel_actor/p06c_kneel_actor_hair_left_cycles.png",
+          "bytes": 597657,
+          "sha256": "e4bc34be5e9f254f2f576d314de7b32ae2f5e0dad6e5407451a70cd30ed1c076"
+        },
+        {
+          "view": "hair_right",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_kneel_actor/p06c_kneel_actor_hair_right_cycles.png",
+          "bytes": 602026,
+          "sha256": "d7852c2d554a396aa5a738ad7502a51df37a1e1c790071a2d9f92f08c309f58a"
+        },
+        {
+          "view": "hair_back",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_kneel_actor/p06c_kneel_actor_hair_back_cycles.png",
+          "bytes": 596941,
+          "sha256": "3dc4be90c170ac297e7bf50f051397c0b2d680664895513b1e32a5f0ea42fe62"
+        },
+        {
+          "view": "hair_left_3q",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_kneel_actor/p06c_kneel_actor_hair_left_3q_cycles.png",
+          "bytes": 615947,
+          "sha256": "5c76bbc6d1e6366aff27e3d5edeb97a4cdf0df7716f89fc0be252e594f17a99a"
+        },
+        {
+          "view": "hair_low_back",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_kneel_actor/p06c_kneel_actor_hair_low_back_cycles.png",
+          "bytes": 594580,
+          "sha256": "b653844599249a1f3668733848a316f6bdfbe2692f43ee98e6b0f5926a46efc8"
+        }
+      ]
+    },
+    {
+      "case": "p06c_kneel_pair",
+      "reportPath": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_kneel_pair/case_report.json",
+      "blender": "4.5.16 LTS",
+      "engine": "Cycles CPU",
+      "samples": 32,
+      "inputs": [
+        {
+          "file": "meditator_male_kneel_prayer_p06c.glb",
+          "bytes": 456072,
+          "sha256": "38e47f84b6b4f8987a47b39e791aaa06c3fed2d4d03e11e55fc72f0ef926c4ad"
+        },
+        {
+          "file": "lotus_pad_01.glb",
+          "bytes": 262108,
+          "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+        }
+      ],
+      "staticImages": [
+        {
+          "view": "pair_medium_9x16",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_kneel_pair/p06c_kneel_pair_pair_medium_9x16_cycles.png",
+          "bytes": 1035241,
+          "sha256": "f6f34b411601e353cb9aafc398cd741d728f21d0920eb9941bae13cf310694a1"
+        },
+        {
+          "view": "pair_close_9x16",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p06c_kneel_pair/p06c_kneel_pair_pair_close_9x16_cycles.png",
+          "bytes": 1042408,
+          "sha256": "06248466b477d7aa20fa80afee6f91104e4243d881045e64f3e74842c903e443"
+        }
+      ]
+    },
+    {
+      "case": "p07a1_cross_actor",
+      "reportPath": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_cross_actor/case_report.json",
+      "blender": "4.5.16 LTS",
+      "engine": "Cycles CPU",
+      "samples": 32,
+      "inputs": [
+        {
+          "file": "meditator_male_cross_prayer_undercut_p07a1.glb",
+          "bytes": 590476,
+          "sha256": "ffdb92adf27d8fa14ee2a12dbca57cd71c888f1b9023019761940c460151c09e"
+        }
+      ],
+      "staticImages": [
+        {
+          "view": "hair_front",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_cross_actor/p07a1_cross_actor_hair_front_cycles.png",
+          "bytes": 621110,
+          "sha256": "cce47da7d99f5454f2075199e6fa2d71de3f2b27ab35cac066972dcbd6d2bbf9"
+        },
+        {
+          "view": "hair_top",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_cross_actor/p07a1_cross_actor_hair_top_cycles.png",
+          "bytes": 578196,
+          "sha256": "04d5b30bcc84397361ec0615ce8ad82099f9d56e366083247c9de82a648a8707"
+        },
+        {
+          "view": "hair_right_3q",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_cross_actor/p07a1_cross_actor_hair_right_3q_cycles.png",
+          "bytes": 623067,
+          "sha256": "090a3aa1768038c0d33476433e1ddd5b61997ceb1e2e02aba22aaad3fdefccc1"
+        },
+        {
+          "view": "hair_left",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_cross_actor/p07a1_cross_actor_hair_left_cycles.png",
+          "bytes": 594383,
+          "sha256": "c04ca744d0562ac469cc47f80570cb0c273be158f2b24e80ac8321d356ca56d5"
+        },
+        {
+          "view": "hair_right",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_cross_actor/p07a1_cross_actor_hair_right_cycles.png",
+          "bytes": 600405,
+          "sha256": "56014b308af85a25bc80efeee9db8b5969ba6efc9286e25596f81f3312dd5393"
+        },
+        {
+          "view": "hair_back",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_cross_actor/p07a1_cross_actor_hair_back_cycles.png",
+          "bytes": 593660,
+          "sha256": "9d6436a3aa717b38d69cd9509b0f858a70f3b5ded7485631efd5f25e00d26062"
+        },
+        {
+          "view": "hair_left_3q",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_cross_actor/p07a1_cross_actor_hair_left_3q_cycles.png",
+          "bytes": 615032,
+          "sha256": "99b94dfc360764c975a9c0fbb9c3ec29c5ac048da2294c8b83641eaf938a4a1b"
+        },
+        {
+          "view": "hair_low_back",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_cross_actor/p07a1_cross_actor_hair_low_back_cycles.png",
+          "bytes": 592613,
+          "sha256": "5b4af0f397a3f7e027b841dcfd54b01096978d9e160e03d626cc9ff3e24146f6"
+        }
+      ]
+    },
+    {
+      "case": "p07a1_cross_pair",
+      "reportPath": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_cross_pair/case_report.json",
+      "blender": "4.5.16 LTS",
+      "engine": "Cycles CPU",
+      "samples": 32,
+      "inputs": [
+        {
+          "file": "meditator_male_cross_prayer_undercut_p07a1.glb",
+          "bytes": 590476,
+          "sha256": "ffdb92adf27d8fa14ee2a12dbca57cd71c888f1b9023019761940c460151c09e"
+        },
+        {
+          "file": "lotus_pad_01.glb",
+          "bytes": 262108,
+          "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+        }
+      ],
+      "staticImages": [
+        {
+          "view": "pair_medium_9x16",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_cross_pair/p07a1_cross_pair_pair_medium_9x16_cycles.png",
+          "bytes": 1032059,
+          "sha256": "91a7b9ad73a9e81f7ed3f4d62831ec800495c07f23be1245a8eb88abbd523d4e"
+        },
+        {
+          "view": "pair_close_9x16",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_cross_pair/p07a1_cross_pair_pair_close_9x16_cycles.png",
+          "bytes": 1041871,
+          "sha256": "f4e823f02cb65617579177749eedec9347db3d5c2a2c74cee97dfb14b09110a0"
+        }
+      ]
+    },
+    {
+      "case": "p07a1_kneel_actor",
+      "reportPath": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_kneel_actor/case_report.json",
+      "blender": "4.5.16 LTS",
+      "engine": "Cycles CPU",
+      "samples": 32,
+      "inputs": [
+        {
+          "file": "meditator_male_kneel_prayer_undercut_p07a1.glb",
+          "bytes": 456892,
+          "sha256": "56de649df89ba124e5a546fe6981cbffd80193a5b858e0d4ae8b1ab444c316b4"
+        }
+      ],
+      "staticImages": [
+        {
+          "view": "hair_front",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_kneel_actor/p07a1_kneel_actor_hair_front_cycles.png",
+          "bytes": 621282,
+          "sha256": "ad38d44ed822ab63bf3f1b5e03cf5ef72360b7d822df833bdbbe64a5a285b599"
+        },
+        {
+          "view": "hair_top",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_kneel_actor/p07a1_kneel_actor_hair_top_cycles.png",
+          "bytes": 578196,
+          "sha256": "b5807b85332c86b6e63f93a7c214d8b7d20e2354a197dec2b4a77d0c12be35a8"
+        },
+        {
+          "view": "hair_right_3q",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_kneel_actor/p07a1_kneel_actor_hair_right_3q_cycles.png",
+          "bytes": 623519,
+          "sha256": "880a89c9acb9cba227bcb9e1a7040c0b48aa07738e2359e3b432c741aa6a0bbe"
+        },
+        {
+          "view": "hair_left",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_kneel_actor/p07a1_kneel_actor_hair_left_cycles.png",
+          "bytes": 594103,
+          "sha256": "f3b16a1f72a9a1b933a8d5ce1fd1c1e0d4e6150876e0f27aadc52d58ccfeb178"
+        },
+        {
+          "view": "hair_right",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_kneel_actor/p07a1_kneel_actor_hair_right_cycles.png",
+          "bytes": 600344,
+          "sha256": "661214c0ca394c4d5a2978a86c589fdfc7a472372ec55857380e30eb51c99245"
+        },
+        {
+          "view": "hair_back",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_kneel_actor/p07a1_kneel_actor_hair_back_cycles.png",
+          "bytes": 593749,
+          "sha256": "bd7fd792a379039c02146de6fe1a1d6f095849cae3f256d447fd6b4976515ece"
+        },
+        {
+          "view": "hair_left_3q",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_kneel_actor/p07a1_kneel_actor_hair_left_3q_cycles.png",
+          "bytes": 615143,
+          "sha256": "b3d816c4e68a91a96ce71f9a525fb293711600618c77180e3ae1726b07d04325"
+        },
+        {
+          "view": "hair_low_back",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_kneel_actor/p07a1_kneel_actor_hair_low_back_cycles.png",
+          "bytes": 592865,
+          "sha256": "0ba02eaa6863ed6360d7d6a4d318e5fcb05cb1d2d5f119e2881a853a8f9bf52e"
+        }
+      ]
+    },
+    {
+      "case": "p07a1_kneel_pair",
+      "reportPath": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_kneel_pair/case_report.json",
+      "blender": "4.5.16 LTS",
+      "engine": "Cycles CPU",
+      "samples": 32,
+      "inputs": [
+        {
+          "file": "meditator_male_kneel_prayer_undercut_p07a1.glb",
+          "bytes": 456892,
+          "sha256": "56de649df89ba124e5a546fe6981cbffd80193a5b858e0d4ae8b1ab444c316b4"
+        },
+        {
+          "file": "lotus_pad_01.glb",
+          "bytes": 262108,
+          "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+        }
+      ],
+      "staticImages": [
+        {
+          "view": "pair_medium_9x16",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_kneel_pair/p07a1_kneel_pair_pair_medium_9x16_cycles.png",
+          "bytes": 1036429,
+          "sha256": "e8380afa2bab012c7ef4c3affdef9e1f21fb0294c42c9a0bb08a624cf8d276d9"
+        },
+        {
+          "view": "pair_close_9x16",
+          "path": "Assets3D/Review/lotus_pad_chibi/p7a1/P07A1_Cycles_Evidence/p07a1_kneel_pair/p07a1_kneel_pair_pair_close_9x16_cycles.png",
+          "bytes": 1043066,
+          "sha256": "e73da0e1b17ffe235f75651b7ddffe7c134ea44364e62f80361bb07d0d47e891"
+        }
+      ]
+    }
+  ],
+  "limitations": "Hashes are from original per-case owner-run reports; image bytes were not re-hashed during this index creation. New P07b images PENDING_OWNER_RUN; exact camera/exposure match must be checked after owner render."
+}

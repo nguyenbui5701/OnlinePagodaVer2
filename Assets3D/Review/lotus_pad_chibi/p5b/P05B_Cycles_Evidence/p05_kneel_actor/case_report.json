@@ -1,0 +1,90 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport actual exported P05/P05b GLB",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p05_kneel",
+  "kind": "actor",
+  "inputs": [
+    {
+      "file": "meditator_female_kneel_prayer_p05.glb",
+      "bytes": 352636,
+      "sha256": "04a1d0e03e5186085118dd06d158dbba43e7180843895ed1661a03529040785e"
+    }
+  ],
+  "meshCount": 9,
+  "principledMaterialSlots": 9,
+  "importedActionNames": [
+    "kneel_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05_CAMERA_CONTRACT.json + P05B added macro-left/right/torso",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "front",
+      "file": "p05_kneel_actor_front_cycles.png",
+      "bytes": 338751,
+      "sha256": "10efccce6d4decaee98997ae8cd20f6e1e98cd0e852c1315419fe9a86ea97e08"
+    },
+    {
+      "view": "hands_front",
+      "file": "p05_kneel_actor_hands_front_cycles.png",
+      "bytes": 361878,
+      "sha256": "5c1c5b10add8920637ee451fbc4482e68c269d6814807bd5b60f3d35e4831bbb"
+    },
+    {
+      "view": "hands_side",
+      "file": "p05_kneel_actor_hands_side_cycles.png",
+      "bytes": 339823,
+      "sha256": "fab4c6d3391924286d6d3f839b70186b37359f2e5e4e3b9974222c05a642f6a2"
+    },
+    {
+      "view": "hands_left_3q",
+      "file": "p05_kneel_actor_hands_left_3q_cycles.png",
+      "bytes": 348547,
+      "sha256": "7e9bbe89a9412e142257d6a6a9471d04463937c46c106192a8c452a0f1c94801"
+    },
+    {
+      "view": "hands_right_3q",
+      "file": "p05_kneel_actor_hands_right_3q_cycles.png",
+      "bytes": 349741,
+      "sha256": "03e5f8e11088250e581520ef7881e88c3bdff86bb9a5062349147e457f1dfb79"
+    },
+    {
+      "view": "torso_front",
+      "file": "p05_kneel_actor_torso_front_cycles.png",
+      "bytes": 352448,
+      "sha256": "a3aaa29ea772f8b9ff06c369e0b0191f917a418da814c5d2b2fdb4fa93cc0698"
+    },
+    {
+      "view": "torso_3q",
+      "file": "p05_kneel_actor_torso_3q_cycles.png",
+      "bytes": 353069,
+      "sha256": "ba11c6847bf4baebcb73e819363eb15edfe4ea6c89cea1782f16f8aec22b0522"
+    },
+    {
+      "view": "right",
+      "file": "p05_kneel_actor_right_cycles.png",
+      "bytes": 336886,
+      "sha256": "c6374932c752e48f5ea20531a11bad51d438cd530b8f73bcaaacaa954a058b6a"
+    },
+    {
+      "view": "medium_9x16",
+      "file": "p05_kneel_actor_medium_9x16_cycles.png",
+      "bytes": 975310,
+      "sha256": "beea62e31d016d3fbd735dad1ac802fd0d8a926b014833c7a542e4656485a9d8"
+    },
+    {
+      "view": "close_9x16",
+      "file": "p05_kneel_actor_close_9x16_cycles.png",
+      "bytes": 980144,
+      "sha256": "4b2f3faf85c57084e7fa0038ccf0719542f0f22d5dbb69745eff57aa65140c83"
+    }
+  ]
+}

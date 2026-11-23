@@ -1,0 +1,75 @@
+{
+  "revision": "P07B",
+  "sourcePRHead": "c96b06372587134e38468388edaa60915f90a3bf",
+  "newGLBCommit": "368867ccd1cec5db67e7ed56ddafb5cb6a326d74",
+  "method": "Actual GLB2 re-fetched from GitHub, SHA256 recomputed, glTF arrays independently compared P06c to P07b at build; same canonical hair across both poses; sampled rays independently repeated on uploaded cross GLB",
+  "assets": [
+    {
+      "pose": "cross",
+      "sourceFile": "../p6c/meditator_male_cross_prayer_p06c.glb",
+      "sourceSHA256": "c9d1513bad21398fd776776cad97791cfa76a591d641838f885596d13f120ea4",
+      "sourceBytes": 589656,
+      "outputFile": "meditator_male_cross_prayer_sidepart73_p07b.glb",
+      "sha256": "1238f5fba9f7cfea0c550fabdc26446905f6e403e558793fb726251d4fec08cb",
+      "bytes": 589864,
+      "vertices": 9469,
+      "triangles": 18380,
+      "meshes": 10,
+      "materials": 21,
+      "nonHairMeshesExact": 9,
+      "nonHairAccessorArraysExact": 27,
+      "animationSamplerArraysExact": 4
+    },
+    {
+      "pose": "kneel",
+      "sourceFile": "../p6c/meditator_male_kneel_prayer_p06c.glb",
+      "sourceSHA256": "38e47f84b6b4f8987a47b39e791aaa06c3fed2d4d03e11e55fc72f0ef926c4ad",
+      "sourceBytes": 456072,
+      "outputFile": "meditator_male_kneel_prayer_sidepart73_p07b.glb",
+      "sha256": "2bb7430c4da4c58c6ee986a741ff79d3865f581c046003ce0770e80af345b3f2",
+      "bytes": 456280,
+      "vertices": 9485,
+      "triangles": 18420,
+      "meshes": 9,
+      "materials": 21,
+      "nonHairMeshesExact": 8,
+      "nonHairAccessorArraysExact": 24,
+      "animationSamplerArraysExact": 4
+    }
+  ],
+  "frozen": {
+    "hairMeshIndex": 6,
+    "hairVertices": 1672,
+    "hairTriangles": 3080,
+    "eyebrowsExact208": true,
+    "hairIndicesExact": true,
+    "nonHairPositionNormalIndicesExact": true,
+    "animationsExact17Keys2Seconds": true,
+    "nodesAnchorsExact": true,
+    "materialVariantsSixExact": true,
+    "newHairPositionNormalDataSameTwoPoses": true,
+    "addedTriangles": 0,
+    "addedMaterials": 0,
+    "addedDrawcalls": 0
+  },
+  "zonesVsP06c": {
+    "majorityMeanRadialMM": 26.27175441673487,
+    "majorityVertices": 276,
+    "minorityMeanRadialMM": 7.6496667878446365,
+    "minorityVertices": 45,
+    "partSampleMeanRadialMM": 22.21117242812832,
+    "partVertices": 46
+  },
+  "objective": "Part line at character +X, 70% longer groom toward -X, minority +X",
+  "geometrySample": "P07B_HAIR_SCALP_REPORT.json",
+  "status": {
+    "twoGLBs": "PASS_BINARY",
+    "sampledScalp": "PASS_SAMPLED_PROXY",
+    "blenderCycles": "NOT_RUN",
+    "editableBlender": "NOT_CREATED",
+    "art": "PENDING_OWNER_VISUAL_SMOKE",
+    "ZIPCRC": "NOT_RUN",
+    "GPU": "NOT_RUN",
+    "paidVND": 0
+  }
+}

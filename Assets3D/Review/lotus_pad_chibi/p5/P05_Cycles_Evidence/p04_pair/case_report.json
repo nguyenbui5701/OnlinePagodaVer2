@@ -1,0 +1,70 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport actual exported GLB",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p04",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_female_ao_ba_ba_p04.glb",
+      "bytes": 244348,
+      "sha256": "586134fdeab962f35458c16255985513b070da47195110d3c83eef2dd9b6be09"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 14,
+  "principledMaterialSlots": 14,
+  "importedActionNames": [
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05_CAMERA_CONTRACT.json",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "pair_front",
+      "file": "p04_pair_pair_front_cycles.png",
+      "bytes": 357924,
+      "sha256": "c02298643cb2d6d78b007a3d279467c200c0368bfd1bf443f48ba76ba00a9e7a"
+    },
+    {
+      "view": "pair_quarter",
+      "file": "p04_pair_pair_quarter_cycles.png",
+      "bytes": 338980,
+      "sha256": "36233430a66d4843495cf6f30301663f5c71a2af4c07160105a4d1eb89a24da8"
+    },
+    {
+      "view": "pair_side",
+      "file": "p04_pair_pair_side_cycles.png",
+      "bytes": 355492,
+      "sha256": "161c0b2990e0027de4910ac09730e4586baf3ad38ecca429a6977fb61ef18de0"
+    },
+    {
+      "view": "pair_full_9x16",
+      "file": "p04_pair_pair_full_9x16_cycles.png",
+      "bytes": 536078,
+      "sha256": "3190cc37240d80052f8f256c8b7efd1f12eb4c15591beeb8f7033cad475c5219"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p04_pair_pair_medium_9x16_cycles.png",
+      "bytes": 553505,
+      "sha256": "acc1a6f576556b98dccc768d987e1dbb65fe0a79212b0366eff20cfb9eb756e2"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "p04_pair_pair_close_9x16_cycles.png",
+      "bytes": 559448,
+      "sha256": "c347766faa409bf8269ce983011570d06c610ad2f2fa4800758f11f20fe550c6"
+    }
+  ]
+}

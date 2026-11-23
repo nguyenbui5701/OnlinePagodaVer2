@@ -1,0 +1,134 @@
+{
+  "padTriangles": 5824,
+  "padUpFaces": 2688,
+  "worldActorYOffset": 0.195,
+  "method": "Real GLB upper-facing lotus top triangles, XZ barycentric interpolation, sampled downward-facing pants triangle centroids. PROXY_ONLY, not exact full surface collision",
+  "poses": {
+    "cross": {
+      "lowerFacingTriangles": 957,
+      "mapped": {
+        "samples": 955,
+        "minMm": 1.64,
+        "p10Mm": 10.75,
+        "medianMm": 32.87,
+        "near5Mm": 40,
+        "penetrationBeyond2mm": 0
+      },
+      "left": {
+        "samples": 359,
+        "minMm": 2.78,
+        "p10Mm": 11.28,
+        "medianMm": 33.89,
+        "near5Mm": 11,
+        "penetrationBeyond2mm": 0
+      },
+      "right": {
+        "samples": 350,
+        "minMm": 1.64,
+        "p10Mm": 6.69,
+        "medianMm": 36.23,
+        "near5Mm": 29,
+        "penetrationBeyond2mm": 0
+      },
+      "center": {
+        "samples": 246,
+        "minMm": 5.87,
+        "p10Mm": 13.06,
+        "medianMm": 26.49,
+        "near5Mm": 0,
+        "penetrationBeyond2mm": 0
+      },
+      "unmapped": 2,
+      "animationPhases": [
+        {
+          "t": 0,
+          "breathY": 0,
+          "seatRootBottomUnaffected": true
+        },
+        {
+          "t": 0.5,
+          "breathY": 0.008,
+          "seatRootBottomUnaffected": true
+        },
+        {
+          "t": 1,
+          "breathY": 0.016,
+          "seatRootBottomUnaffected": true
+        },
+        {
+          "t": 1.5,
+          "breathY": 0.008,
+          "seatRootBottomUnaffected": true
+        },
+        {
+          "t": 2,
+          "breathY": 0,
+          "seatRootBottomUnaffected": true
+        }
+      ]
+    },
+    "kneel": {
+      "lowerFacingTriangles": 1098,
+      "mapped": {
+        "samples": 1096,
+        "minMm": 2.19,
+        "p10Mm": 8.49,
+        "medianMm": 32.87,
+        "near5Mm": 47,
+        "penetrationBeyond2mm": 0
+      },
+      "left": {
+        "samples": 493,
+        "minMm": 2.25,
+        "p10Mm": 7.86,
+        "medianMm": 29.17,
+        "near5Mm": 24,
+        "penetrationBeyond2mm": 0
+      },
+      "right": {
+        "samples": 491,
+        "minMm": 2.19,
+        "p10Mm": 7.74,
+        "medianMm": 29.17,
+        "near5Mm": 23,
+        "penetrationBeyond2mm": 0
+      },
+      "center": {
+        "samples": 112,
+        "minMm": 29.13,
+        "p10Mm": 29.46,
+        "medianMm": 198.38,
+        "near5Mm": 0,
+        "penetrationBeyond2mm": 0
+      },
+      "unmapped": 2,
+      "animationPhases": [
+        {
+          "t": 0,
+          "breathY": 0,
+          "seatRootBottomUnaffected": true
+        },
+        {
+          "t": 0.5,
+          "breathY": 0.008,
+          "seatRootBottomUnaffected": true
+        },
+        {
+          "t": 1,
+          "breathY": 0.016,
+          "seatRootBottomUnaffected": true
+        },
+        {
+          "t": 1.5,
+          "breathY": 0.008,
+          "seatRootBottomUnaffected": true
+        },
+        {
+          "t": 2,
+          "breathY": 0,
+          "seatRootBottomUnaffected": true
+        }
+      ]
+    }
+  }
+}

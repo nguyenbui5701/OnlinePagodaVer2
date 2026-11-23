@@ -1,0 +1,177 @@
+{
+  "revision": "p5f",
+  "title": "Cross-legged female seat-contact micro-polish",
+  "repository": "nguyenbui5701/OnlinePagodaVer2",
+  "pr": 2,
+  "branch": "assets/lotus-pad-chibi-p0",
+  "reviewedBaselineHead": "5118dbd532347103ec5e84e2a22b88f63617dda5",
+  "immutableBaseline": "Assets3D/Review/lotus_pad_chibi/p5e/",
+  "target": "Assets3D/Review/lotus_pad_chibi/p5f/",
+  "assetId": "meditator_female_cross_prayer_p05f",
+  "newActorGlb": {
+    "name": "meditator_female_cross_prayer_p05f.glb",
+    "bytes": 574608,
+    "sha256": "3ed6946640ed057868b64a9998b1c3a4bf30f28866b3e0c1de9a9ab55c5cc1a4",
+    "vertices": 9084,
+    "triangles": 17752,
+    "meshes": 10,
+    "materials": 21,
+    "textures": 0,
+    "githubState": "PENDING_OWNER_UPLOAD_UNTIL_REMOTE_VERIFIED"
+  },
+  "oldActorGlb": {
+    "name": "meditator_female_cross_prayer_p05e.glb",
+    "bytes": 574048,
+    "sha256": "0829edde73666460c457267672e344a61443ee2c882319998d5b84a359f81367",
+    "vertices": 9084,
+    "triangles": 17752,
+    "meshes": 10,
+    "materials": 21
+  },
+  "padGlb": {
+    "name": "lotus_pad_01.glb",
+    "bytes": 262108,
+    "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+    "revision": "P0.2",
+    "unchanged": true
+  },
+  "frozenKneel": {
+    "revision": "p5c",
+    "sha256": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac",
+    "produced": false
+  },
+  "changedScope": {
+    "mesh": "ao_ba_ba_pants_SeatRoot_mesh",
+    "onlyAccessorFields": [
+      "POSITION",
+      "NORMAL"
+    ],
+    "movedVertices": 296,
+    "updatedNormals": 437,
+    "maxDownMeters": 0.011013087816536427,
+    "movedOriginalBoundsXYZ": [
+      [
+        -0.3416692018508911,
+        -0.0049855997785925865,
+        0.029216499999165535
+      ],
+      [
+        0.3529801070690155,
+        0.05939260125160217,
+        0.3496243953704834
+      ]
+    ],
+    "movedNewBoundsXYZ": [
+      [
+        -0.3416692018508911,
+        -0.005700199864804745,
+        0.029216499999165535
+      ],
+      [
+        0.3529801070690155,
+        0.059168700128793716,
+        0.3496243953704834
+      ]
+    ],
+    "unchangedMeshes": 9,
+    "trianglesDelta": 0,
+    "verticesDelta": 0,
+    "meshesDelta": 0,
+    "materialsDelta": 0
+  },
+  "exactContracts": {
+    "actorLocalSeatRoot": [
+      0,
+      0,
+      0
+    ],
+    "worldSeatPlacementY": 0.195,
+    "forward": "+Z",
+    "up": "+Y",
+    "metersPerUnit": 1,
+    "preserveAnimations": [
+      "sit_idle",
+      "cross_prayer_idle"
+    ],
+    "durationSeconds": 2,
+    "samplesPerClip": 17,
+    "upperBodyLiftMeters": [
+      0,
+      0.008,
+      0.016,
+      0.008,
+      0
+    ],
+    "headAnchor": [
+      0,
+      0.835,
+      0.04
+    ],
+    "nameplateAnchor": [
+      0,
+      1.335,
+      0.03
+    ],
+    "fxAnchor": [
+      0.37,
+      0.805,
+      0.16
+    ],
+    "materialsAnd6VariantsByteEqual": true
+  },
+  "quantitativeContact": {
+    "method": "actual pad GLB up-facing triangle vertical intersection at pants underside triangle centroids, sampled",
+    "leftOldMinMm": 13.377,
+    "leftNewMinMm": 2.784,
+    "leftNear5mmOld": 0,
+    "leftNear5mmNew": 11,
+    "rightOldMinMm": 1.637,
+    "rightNewMinMm": 1.637,
+    "rightNear5mmOld": 17,
+    "rightNear5mmNew": 29,
+    "oldAllNear5mm": 17,
+    "newAllNear5mm": 40,
+    "oldPenetrationBeyond2mmSamples": 0,
+    "newPenetrationBeyond2mmSamples": 0,
+    "exactContinuousCollision": "NOT_RUN"
+  },
+  "waistRepeat": {
+    "test": "725 rays x 4 directions x 5 idle times, actual GLB meshes, waist window",
+    "oldP05eSeeThroughPct": 0,
+    "newP05fSeeThroughPct": 0,
+    "breathAndWaistMeshFrozen": true
+  },
+  "source": {
+    "generator": "procedural_cross_seat_contact_p05f.py",
+    "generatorSha256": "d24495881eb52a53686d74a7c7ba9e213c025f5036e9c8aff189a8ce4706e3be",
+    "cleanBuildMatchesGLBSha": true,
+    "reproInputs": [
+      "sha-locked p5e original",
+      "sha-locked p02 lotus original",
+      "numpy",
+      "scipy",
+      "trimesh"
+    ]
+  },
+  "artEvidence": {
+    "nativeGLBPBRWithRealPad": "EXECUTED_NOT_CYCLES",
+    "ownerOriginalP05eCycles": "PRESENT_ON_PR_REVIEWED_VISUALLY_SA_REPORTED_SHA",
+    "P05fNewCycles": "NOT_RUN_NO_BLENDER_IN_AI_CONTAINER",
+    "newP05fBlender": "NOT_CREATED_PENDING_OWNER_RUN",
+    "originalP05eBlendRawHashIndependent": "NOT_VERIFIED",
+    "CyclesZipCRCBeforeOwnerRun": "NOT_APPLICABLE"
+  },
+  "goNoGo": "P05F_FEMALE_CROSS_SEAT_CONTACT_OWNER_REVIEW_REQUIRED",
+  "productionApproved": false,
+  "pendingStages": [
+    "SA review",
+    "Owner visual approval"
+  ],
+  "stop": [
+    "NO_MALE",
+    "NO_CODEX",
+    "NO_INTEGRATION",
+    "NO_MERGE"
+  ],
+  "externalPaidCostVND": 0
+}

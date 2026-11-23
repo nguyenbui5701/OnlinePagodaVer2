@@ -1,0 +1,75 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "Real old P06B and new P06C SHA-pinned GLB reimports, exact same hair cameras and P02 lotus in pair",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p06b_cross",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_male_cross_prayer_p06b.glb",
+      "bytes": 589264,
+      "sha256": "d6add5fdd5ec7122c24aee774c1ea10cc0588643842c891e334ffd30c60ce4cb"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 15,
+  "principledMaterialSlots": 15,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "cross_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 10
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P06B original exact hair/front/top/right3Q/left/right/back/quarter and pair 9x16 medium/close; same Cycles CPU AgX EV0 World .65 and 3 suns; diagnostic recolor never stored in GLB",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "pair_medium_9x16",
+      "file": "p06b_cross_pair_pair_medium_9x16_cycles.png",
+      "bytes": 1032970,
+      "sha256": "1f5e255c1def6bf7563b8e6ab083d5cc0420fc4580cdd19940f40d8d78a661ee"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "p06b_cross_pair_pair_close_9x16_cycles.png",
+      "bytes": 1042093,
+      "sha256": "634641c444dd1fdf833c4b3b1ea7bb06f8adce48f681941f878e067abd2c3a65"
+    },
+    {
+      "view": "pair_front",
+      "file": "p06b_cross_pair_pair_front_cycles.png",
+      "bytes": 363280,
+      "sha256": "1e874500e64672a010e5e5a98231eee41e83c1433b6d8f0081db56b5984b2143"
+    },
+    {
+      "view": "pair_side",
+      "file": "p06b_cross_pair_pair_side_cycles.png",
+      "bytes": 355829,
+      "sha256": "4b585acf0ab8a866306f79517fbba1bfc055dbcb3d04609c401e7bb2a0997c3e"
+    }
+  ],
+  "diagnosticImagesNotArtApproval": []
+}

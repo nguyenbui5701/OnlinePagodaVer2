@@ -1,0 +1,761 @@
+{
+  "basis": "P05E original Blender/Cycles exactly for all retained shots, new seat_low_right / seat_low_left / seat_under_3q for diagnosis only",
+  "originalOwnerPrimaryCamera": "pair_side",
+  "ownerOriginalPairSide": {
+    "eye": [
+      2.75,
+      0.62,
+      0.43
+    ],
+    "lookAt": [
+      0,
+      0.45,
+      0
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "verticalFovDeg": 42
+  },
+  "pairPosition": {
+    "actorWorldY": 0.195,
+    "lotusWorldY": 0,
+    "originXZ": [
+      0,
+      0
+    ],
+    "actorTiltOrScale": "NONE"
+  },
+  "fixedBlenderRig": {
+    "renderEngine": "CYCLES CPU",
+    "samplesFull": 32,
+    "AgX": true,
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "sunLights": 3,
+    "actorAndLotusImportedFromOriginalGLBs": true
+  },
+  "cameraPositions": {
+    "front": {
+      "eye": [
+        0,
+        0.91,
+        2.58
+      ],
+      "lookAt": [
+        0,
+        0.6,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 36
+    },
+    "left": {
+      "eye": [
+        -2.6,
+        0.88,
+        0.13
+      ],
+      "lookAt": [
+        0,
+        0.61,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 36
+    },
+    "right": {
+      "eye": [
+        2.6,
+        0.88,
+        0.13
+      ],
+      "lookAt": [
+        0,
+        0.61,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 36
+    },
+    "hands_left_3q": {
+      "eye": [
+        -0.72,
+        0.675,
+        1.1
+      ],
+      "lookAt": [
+        0,
+        0.53,
+        0.352
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 29
+    },
+    "hands_right_3q": {
+      "eye": [
+        0.72,
+        0.675,
+        1.1
+      ],
+      "lookAt": [
+        0,
+        0.53,
+        0.352
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 29
+    },
+    "hands_contact_diag": {
+      "eye": [
+        0.36,
+        0.72,
+        0.64
+      ],
+      "lookAt": [
+        0,
+        0.53,
+        0.35
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 28
+    },
+    "torso_front": {
+      "eye": [
+        0,
+        0.73,
+        1.91
+      ],
+      "lookAt": [
+        0,
+        0.48,
+        0.15
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 35
+    },
+    "torso_3q": {
+      "eye": [
+        1.06,
+        0.88,
+        1.75
+      ],
+      "lookAt": [
+        0,
+        0.51,
+        0.13
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 35
+    },
+    "quarter": {
+      "eye": [
+        2.05,
+        1.22,
+        2.37
+      ],
+      "lookAt": [
+        0,
+        0.63,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 40
+    },
+    "back": {
+      "eye": [
+        0.08,
+        0.87,
+        -2.58
+      ],
+      "lookAt": [
+        0,
+        0.61,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 36
+    },
+    "hands_front": {
+      "eye": [
+        0,
+        0.64,
+        1.45
+      ],
+      "lookAt": [
+        0,
+        0.53,
+        0.28
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 32
+    },
+    "hands_side": {
+      "eye": [
+        1.18,
+        0.67,
+        0.58
+      ],
+      "lookAt": [
+        0,
+        0.53,
+        0.26
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 38
+    },
+    "knees_front": {
+      "eye": [
+        0,
+        0.36,
+        1.42
+      ],
+      "lookAt": [
+        0,
+        0.16,
+        0.12
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 38
+    },
+    "knees_side": {
+      "eye": [
+        1.24,
+        0.32,
+        0.55
+      ],
+      "lookAt": [
+        0,
+        0.15,
+        0.005
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 41
+    },
+    "full_9x16": {
+      "eye": [
+        1.52,
+        1.45,
+        3.65
+      ],
+      "lookAt": [
+        0,
+        0.57,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 43
+    },
+    "medium_9x16": {
+      "eye": [
+        1.18,
+        1.29,
+        2.92
+      ],
+      "lookAt": [
+        0,
+        0.61,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 42
+    },
+    "close_9x16": {
+      "eye": [
+        1.3,
+        1.22,
+        2.55
+      ],
+      "lookAt": [
+        0,
+        0.74,
+        0.04
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 43
+    },
+    "pair_front": {
+      "eye": [
+        0,
+        1.04,
+        3.0
+      ],
+      "lookAt": [
+        0,
+        0.67,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 42
+    },
+    "pair_quarter": {
+      "eye": [
+        2.55,
+        1.52,
+        2.85
+      ],
+      "lookAt": [
+        0,
+        0.55,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 47
+    },
+    "pair_side": {
+      "eye": [
+        2.75,
+        0.62,
+        0.43
+      ],
+      "lookAt": [
+        0,
+        0.45,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 42
+    },
+    "pair_full_9x16": {
+      "eye": [
+        1.52,
+        1.45,
+        3.65
+      ],
+      "lookAt": [
+        0,
+        0.55,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 43
+    },
+    "pair_medium_9x16": {
+      "eye": [
+        1.18,
+        1.29,
+        2.92
+      ],
+      "lookAt": [
+        0,
+        0.61,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 42
+    },
+    "pair_close_9x16": {
+      "eye": [
+        1.3,
+        1.22,
+        2.55
+      ],
+      "lookAt": [
+        0,
+        0.74,
+        0.04
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 43
+    },
+    "foot_macro_front": {
+      "eye": [
+        0,
+        0.245,
+        0.84
+      ],
+      "lookAt": [
+        0,
+        0.078,
+        0.255
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 33
+    },
+    "foot_macro_left3q": {
+      "eye": [
+        -0.45,
+        0.292,
+        0.72
+      ],
+      "lookAt": [
+        0.095,
+        0.088,
+        0.245
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 37
+    },
+    "foot_macro_right3q": {
+      "eye": [
+        0.45,
+        0.292,
+        0.72
+      ],
+      "lookAt": [
+        0.095,
+        0.088,
+        0.245
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 37
+    },
+    "foot_macro_side": {
+      "eye": [
+        0.7,
+        0.216,
+        0.24
+      ],
+      "lookAt": [
+        0.12,
+        0.072,
+        0.22
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 34
+    },
+    "foot_diag_top": {
+      "eye": [
+        0.45,
+        0.67,
+        0.52
+      ],
+      "lookAt": [
+        0.13,
+        0.09,
+        0.23
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 38
+    },
+    "foot_diagnostic_center_front": {
+      "eye": [
+        0.17,
+        0.245,
+        0.87
+      ],
+      "lookAt": [
+        0.16,
+        0.069,
+        0.285
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 33
+    },
+    "foot_diagnostic_center_3q": {
+      "eye": [
+        0.6,
+        0.26,
+        0.68
+      ],
+      "lookAt": [
+        0.16,
+        0.075,
+        0.29
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 36
+    },
+    "waist_side_right": {
+      "eye": [
+        1.3,
+        0.3,
+        0.08
+      ],
+      "lookAt": [
+        0,
+        0.265,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 29
+    },
+    "waist_side_left": {
+      "eye": [
+        -1.3,
+        0.3,
+        0.08
+      ],
+      "lookAt": [
+        0,
+        0.265,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 29
+    },
+    "waist_low_side_right": {
+      "eye": [
+        1.07,
+        0.07,
+        0.3
+      ],
+      "lookAt": [
+        0,
+        0.265,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 27
+    },
+    "waist_low_side_left": {
+      "eye": [
+        -1.07,
+        0.07,
+        0.3
+      ],
+      "lookAt": [
+        0,
+        0.265,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 27
+    },
+    "waist_under3q": {
+      "eye": [
+        0.96,
+        0.075,
+        -0.72
+      ],
+      "lookAt": [
+        0,
+        0.268,
+        -0.04
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 30
+    },
+    "waist_front_close": {
+      "eye": [
+        0,
+        0.22,
+        1.15
+      ],
+      "lookAt": [
+        0,
+        0.275,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 32
+    },
+    "seat_low_right": {
+      "eye": [
+        1.45,
+        0.22,
+        0.38
+      ],
+      "lookAt": [
+        0,
+        0.25,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 32
+    },
+    "seat_low_left": {
+      "eye": [
+        -1.4,
+        0.27,
+        0.4
+      ],
+      "lookAt": [
+        0,
+        0.26,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 32
+    },
+    "seat_under_3q": {
+      "eye": [
+        0.93,
+        0.035,
+        -0.74
+      ],
+      "lookAt": [
+        0,
+        0.21,
+        -0.07
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "verticalFovDeg": 35
+    }
+  },
+  "photo9x16": {
+    "widthPx": 720,
+    "heightPx": 1280,
+    "views": [
+      "pair_medium_9x16",
+      "pair_close_9x16"
+    ]
+  },
+  "timeSamplesSeconds": [
+    0,
+    0.5,
+    1,
+    1.5,
+    2
+  ],
+  "noCameraAdjustmentPerRevision": true,
+  "debugLimitation": "Camera physically below lotus primarily sees underside of leaf; such image is context only, not proof of actor support. Real pair side/seat_low_* remain acceptance shots."
+}

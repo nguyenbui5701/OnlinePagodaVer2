@@ -1,0 +1,61 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "Actual exported new P07b1 side-part GLB reimport; original SHA-pinned P02 lotus in pair; old baselines REUSED, not re-rendered",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 16,
+  "revision": "p07b1_cross",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_male_cross_prayer_sidepart73_p07b1.glb",
+      "bytes": 589932,
+      "sha256": "4e8c8d082352d67d0eaf637df7973931442c724a0f7db598ea8fde8de3873097"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 15,
+  "principledMaterialSlots": 15,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "cross_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 10
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "Frozen P06c camera/lighting and 720x1280 pair, 3 original suns, AgX EV0, World .65; no P06c/P07a1 re-render; diagnostic excluded from art",
+  "originalBlend": {
+    "file": "meditator_p07b1_cross_pair.blend",
+    "bytes": 2993063,
+    "sha256": "d3504f68085855f676577de129ef3fed85f8ed7227c8ec99620c757d0d1678bb"
+  },
+  "images": [
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07b1_cross_pair_pair_medium_9x16_cycles.png",
+      "bytes": 1031438,
+      "sha256": "d7a869113e9fef82baa2043dd0be5a66a0be99bfd1696899369fe8838397a4d3"
+    }
+  ],
+  "diagnosticImagesNotArtApproval": []
+}

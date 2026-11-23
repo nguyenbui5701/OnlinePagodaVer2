@@ -1,0 +1,131 @@
+{
+  "revision": "P0.6c",
+  "branch": "assets/lotus-pad-chibi-p0",
+  "pr": 2,
+  "baselineHead": "9ff521549af8b8f1449579a4c7fd7ab6021c7e94",
+  "gate": "P06C_MALE_HAIR_SCALP_COVERAGE_OWNER_REVIEW_REQUIRED",
+  "assets": [
+    {
+      "id": "chibi_male_cross_prayer_p06c",
+      "pose": "cross",
+      "filename": "meditator_male_cross_prayer_p06c.glb",
+      "path": "Assets3D/Review/lotus_pad_chibi/p6c/meditator_male_cross_prayer_p06c.glb",
+      "bytes": 589656,
+      "sha256": "c9d1513bad21398fd776776cad97791cfa76a591d641838f885596d13f120ea4",
+      "triangles": 18380,
+      "vertices": 9469,
+      "meshes": 10,
+      "materials": 21,
+      "sourceP6bSha256": "d6add5fdd5ec7122c24aee774c1ea10cc0588643842c891e334ffd30c60ce4cb",
+      "sourceP6bBytes": 589264,
+      "animations": [
+        "sit_idle",
+        "cross_prayer_idle"
+      ],
+      "githubBinaryStatus": "PUSHED_REAL_GLTF_2",
+      "editableBlend": "PENDING_OWNER_WINDOWS_RUN",
+      "cycles": "PENDING_OWNER_WINDOWS_RUN"
+    },
+    {
+      "id": "chibi_male_kneel_prayer_p06c",
+      "pose": "kneel",
+      "filename": "meditator_male_kneel_prayer_p06c.glb",
+      "path": "Assets3D/Review/lotus_pad_chibi/p6c/meditator_male_kneel_prayer_p06c.glb",
+      "bytes": 456072,
+      "sha256": "38e47f84b6b4f8987a47b39e791aaa06c3fed2d4d03e11e55fc72f0ef926c4ad",
+      "triangles": 18420,
+      "vertices": 9485,
+      "meshes": 9,
+      "materials": 21,
+      "sourceP6bSha256": "db78a1b26bff1cd2dced82d4ed4d4255280cfb6eb3db3ea2dd5ab5b5674c0701",
+      "sourceP6bBytes": 455680,
+      "animations": [
+        "sit_idle",
+        "kneel_prayer_idle"
+      ],
+      "githubBinaryStatus": "PUSHED_REAL_GLTF_2",
+      "editableBlend": "PENDING_OWNER_WINDOWS_RUN",
+      "cycles": "PENDING_OWNER_WINDOWS_RUN"
+    }
+  ],
+  "hairDiff": {
+    "onlyMeshIndex6": true,
+    "originalVertices": 1672,
+    "newVertices": 1672,
+    "originalTriangles": 3080,
+    "newTriangles": 3080,
+    "meshCountChanges": 0,
+    "materialCountChanges": 0,
+    "sourceNonHairPrimitives": "BITWISE_EXACT_BOTH",
+    "allHairIndexBuffers": "BITWISE_EXACT",
+    "eyebrowVertexFloatsAndNormals": "BITWISE_EXACT",
+    "sameHairBothMalePoses": true,
+    "maxCapLiftMm": 22.734,
+    "changedBaseHairVertices": 572,
+    "scalpGapSourceMinMm": -8.734,
+    "scalpGapTargetMinMm": 8.083
+  },
+  "nonHair": {
+    "sixColorVariants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "animations": {
+      "timeSeconds": 2,
+      "keyframes": 17,
+      "unchangedSamplerBytes": true
+    },
+    "anchors": [
+      "SeatRoot",
+      "UpperBodyBreath",
+      "HeadAnchor",
+      "NameplateAnchor",
+      "FXAnchor"
+    ],
+    "world": {
+      "up": "+Y",
+      "forward": "+Z",
+      "seatWorldOffsetY": 0.195
+    }
+  },
+  "frozen": {
+    "allP6aAndP6b": true,
+    "femaleCrossSha256": "3ed6946640ed057868b64a9998b1c3a4bf30f28866b3e0c1de9a9ab55c5cc1a4",
+    "femaleKneelSha256": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac",
+    "lotusSha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+    "Sakura": true
+  },
+  "validation": {
+    "realGLB2": "PASS",
+    "sourceSHAandNewSHA": "PASS",
+    "nonHairAccessors": "PASS_BYTE_EXACT",
+    "animationSamplers": "PASS_BYTE_EXACT",
+    "sixVariants": "PASS",
+    "maleHairSameBothPoses": "PASS_BYTE_EXACT",
+    "hairCoverageRaySamples": "PASS_PROXY_SAMPLED",
+    "outwardWinding": "NO_NEW_INVERTED_FACES_112_OLD_LIP_BOTH_DOUBLE_SIDED",
+    "newBlenderCycles": "NOT_RUN",
+    "newBlend": "NOT_CREATED",
+    "newZipCRC": "NOT_RUN",
+    "ownerArt": "PENDING"
+  },
+  "source": {
+    "node": "build_male_scalp_p06c.mjs",
+    "rayAudit": "validate_p06c_scalp_rays.mjs",
+    "blender": "blender_p06c_cycles.py",
+    "powershell": "run_p06c_blender.ps1",
+    "zipCrc": "validate_p06c_zip_crc.py"
+  },
+  "pendingOwnerUpload": [
+    "P06C_Cycles_Evidence/**/*.blend",
+    "P06C_Cycles_Evidence/**/*.png",
+    "P06C_Cycles_Evidence/**/*_stdout.log",
+    "P06C_MALE_HAIR_Blender_Cycles_Evidence.zip"
+  ],
+  "zeroPaidTools": true,
+  "noCodexIntegrationOrMerge": true
+}

@@ -1,0 +1,188 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "actual SHA pinned P05E/P06A cross GLB reimport; original SHA pinned frozen P02 lotus in pair only",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "female_kneel",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_female_kneel_prayer_p05c.glb",
+      "bytes": 439244,
+      "sha256": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 14,
+  "principledMaterialSlots": 14,
+  "importedActionNames": [
+    "kneel_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "kneel_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 9
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05E exact owner pair_side camera (2.75,.62,.43)->(0,.45,0), FOV42; identical in P05E/P06A. Extra low-side pair at (1.45,.22,.38), same sun/AgX/EV0; portrait 720x1280",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "pair_front",
+      "file": "female_kneel_pair_pair_front_cycles.png",
+      "bytes": 360164,
+      "sha256": "6a1593eb9018d5a21348b691a4a04f9418146b407e1376b5cba9bfa55d9316f2"
+    },
+    {
+      "view": "pair_quarter",
+      "file": "female_kneel_pair_pair_quarter_cycles.png",
+      "bytes": 339469,
+      "sha256": "3236b38546f901a6b3f51c877aac2786978fe44d8ce6bcc8a0476c47e5c6edc2"
+    },
+    {
+      "view": "pair_side",
+      "file": "female_kneel_pair_pair_side_cycles.png",
+      "bytes": 355905,
+      "sha256": "18c50a4ab794ed8a905a1f489b1ea25a83edeb0aea1f159f0aaa66eab482d142"
+    },
+    {
+      "view": "seat_low_right",
+      "file": "female_kneel_pair_seat_low_right_cycles.png",
+      "bytes": 340997,
+      "sha256": "a5bdb4641311a986cbb5a1649f93b9f977e4cefbc85a19596dea0e22f2b05b20"
+    },
+    {
+      "view": "seat_low_left",
+      "file": "female_kneel_pair_seat_low_left_cycles.png",
+      "bytes": 344264,
+      "sha256": "692d64285c392ed350c2398b4f651a6037537cfa593bcc7a5e25e1fd96d08309"
+    },
+    {
+      "view": "seat_under_3q",
+      "file": "female_kneel_pair_seat_under_3q_cycles.png",
+      "bytes": 290385,
+      "sha256": "f579bd3c0f6d9ba2bce957386350ad879e8333b6c3115c3d39bc61c017773a68"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "female_kneel_pair_pair_medium_9x16_cycles.png",
+      "bytes": 1029874,
+      "sha256": "df7bfd16c234f013f1a17c9c0984a475043552e289549c4c625c65de9e91166d"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "female_kneel_pair_pair_close_9x16_cycles.png",
+      "bytes": 1037822,
+      "sha256": "edf852da0e5b78f8de2d460031d17a4d9ca1832ef01c35afb7a1aa6be3685f0d"
+    },
+    {
+      "view": "pair_side",
+      "file": "female_kneel_pair_idle_pair_side_0.0_cycles.png",
+      "bytes": 356173,
+      "sha256": "4650cc2257878eb5415a820079763c371f4b5b69794e6e353cd7bc9a15f77769"
+    },
+    {
+      "view": "seat_low_right",
+      "file": "female_kneel_pair_idle_seat_low_right_0.0_cycles.png",
+      "bytes": 340979,
+      "sha256": "0e2fcf573a396a07235f80e9b8541212b94ab461d4f398cc738e0c8362d05dd5"
+    },
+    {
+      "view": "seat_low_left",
+      "file": "female_kneel_pair_idle_seat_low_left_0.0_cycles.png",
+      "bytes": 344643,
+      "sha256": "9c4011fc5380f2f6656a496da4b477b9f5d9ebeaf9ed05f1ab9dad37d34e48ff"
+    },
+    {
+      "view": "pair_side",
+      "file": "female_kneel_pair_idle_pair_side_0.5_cycles.png",
+      "bytes": 356677,
+      "sha256": "e183ecd7e43c079ab859b388debb1fe65d44841964ceacbd5f04fe85bcba8a51"
+    },
+    {
+      "view": "seat_low_right",
+      "file": "female_kneel_pair_idle_seat_low_right_0.5_cycles.png",
+      "bytes": 340929,
+      "sha256": "3bfde15f21d4470ec0ba5edfaf4fff9f970eb6091ee1ed6728c828430b0206fb"
+    },
+    {
+      "view": "seat_low_left",
+      "file": "female_kneel_pair_idle_seat_low_left_0.5_cycles.png",
+      "bytes": 344176,
+      "sha256": "2d102e92439bb0414eb8af71912a46275e2ae1117a2fbb849cb33daec206a706"
+    },
+    {
+      "view": "pair_side",
+      "file": "female_kneel_pair_idle_pair_side_1.0_cycles.png",
+      "bytes": 356576,
+      "sha256": "d2e840a65d477692985aaca652a0661e991b482a56dc5ea43a7d96502ec721d6"
+    },
+    {
+      "view": "seat_low_right",
+      "file": "female_kneel_pair_idle_seat_low_right_1.0_cycles.png",
+      "bytes": 340757,
+      "sha256": "1ed7dbc53aed465c995876a77c1d6f7d06e61de560642b2843b1f58db82351d3"
+    },
+    {
+      "view": "seat_low_left",
+      "file": "female_kneel_pair_idle_seat_low_left_1.0_cycles.png",
+      "bytes": 344027,
+      "sha256": "a74c2adf394547ae537847ce73f962d8530510014870c7f23a48b602638f604b"
+    },
+    {
+      "view": "pair_side",
+      "file": "female_kneel_pair_idle_pair_side_1.5_cycles.png",
+      "bytes": 356677,
+      "sha256": "61092318c45ceee7310fe7a14128dee44bcdbb2355d2fc23111db4a45b6142fa"
+    },
+    {
+      "view": "seat_low_right",
+      "file": "female_kneel_pair_idle_seat_low_right_1.5_cycles.png",
+      "bytes": 340929,
+      "sha256": "3a5e4a444c07e35277dd0621087be3365d21bbb8cb2236764927f4722809212f"
+    },
+    {
+      "view": "seat_low_left",
+      "file": "female_kneel_pair_idle_seat_low_left_1.5_cycles.png",
+      "bytes": 344176,
+      "sha256": "d844672cbf5688f486d7e7240cbfd54c3111cc492b527d2caebfca823c99ab62"
+    },
+    {
+      "view": "pair_side",
+      "file": "female_kneel_pair_idle_pair_side_2.0_cycles.png",
+      "bytes": 356173,
+      "sha256": "aafff4d87271a7d86b16e34f480224ab6b299432e13f066808ed4e6d28737ab8"
+    },
+    {
+      "view": "seat_low_right",
+      "file": "female_kneel_pair_idle_seat_low_right_2.0_cycles.png",
+      "bytes": 340979,
+      "sha256": "e62015a116aecbbe644acc5db70ed64380b8443aaadf76add13200daf39f8f1e"
+    },
+    {
+      "view": "seat_low_left",
+      "file": "female_kneel_pair_idle_seat_low_left_2.0_cycles.png",
+      "bytes": 344643,
+      "sha256": "913dc40bae318f3d22197d1381747067f25ae5338a32a4067be06b0d93324e04"
+    }
+  ]
+}

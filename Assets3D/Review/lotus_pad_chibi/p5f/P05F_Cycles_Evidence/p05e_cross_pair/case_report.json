@@ -1,0 +1,191 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "actual SHA pinned P05E/P05F cross GLB reimport; original SHA pinned frozen P02 lotus in pair only",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p05e_cross",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_female_cross_prayer_p05e.glb",
+      "bytes": 574048,
+      "sha256": "0829edde73666460c457267672e344a61443ee2c882319998d5b84a359f81367"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 15,
+  "principledMaterialSlots": 15,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05E exact owner pair_side camera (2.75,.62,.43)->(0,.45,0), FOV42; identical in P05E/P05F. Extra low-side pair at (1.45,.22,.38), same sun/AgX/EV0; portrait 720x1280",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "pair_side",
+      "file": "p05e_cross_pair_pair_side_cycles.png",
+      "bytes": 356489,
+      "sha256": "853a98a8d51126c64b9a4263f27b30984053c6ca10a47cafc017fcf814fd12f7"
+    },
+    {
+      "view": "pair_front",
+      "file": "p05e_cross_pair_pair_front_cycles.png",
+      "bytes": 360177,
+      "sha256": "050ea1e7a5ab2bd92e49afebb22ed46576263473a06620fd5c66eaeb9813a7c3"
+    },
+    {
+      "view": "pair_quarter",
+      "file": "p05e_cross_pair_pair_quarter_cycles.png",
+      "bytes": 339781,
+      "sha256": "8186d68018fd75b18343902a8d941d679b2e0f3be86de8853ff991caa9658509"
+    },
+    {
+      "view": "back",
+      "file": "p05e_cross_pair_back_cycles.png",
+      "bytes": 347338,
+      "sha256": "69817a6da8ea28e727a0fdb01d97931bcff810d58cd01311558e5e28d0520f49"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p05e_cross_pair_pair_medium_9x16_cycles.png",
+      "bytes": 1025743,
+      "sha256": "e156c4e0bdb02a9adca9d1b5c4618e3ff0399b9169e906ede602a9b89ad6ca47"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "p05e_cross_pair_pair_close_9x16_cycles.png",
+      "bytes": 1035988,
+      "sha256": "af67ef8cdb29f737c3c34ee0b5149c7df8e5a2ab3feb69598e5ebb490c33c8fa"
+    },
+    {
+      "view": "seat_low_right",
+      "file": "p05e_cross_pair_seat_low_right_cycles.png",
+      "bytes": 342303,
+      "sha256": "344550ef6d33f13e2b7d76907036110de0670c54d3141645dd275d5e381d62a2"
+    },
+    {
+      "view": "seat_low_left",
+      "file": "p05e_cross_pair_seat_low_left_cycles.png",
+      "bytes": 341837,
+      "sha256": "728467e6f1484930189a791499285caf403c7e0dceefc546ff5bb853c1b5e420"
+    },
+    {
+      "view": "seat_under_3q",
+      "file": "p05e_cross_pair_seat_under_3q_cycles.png",
+      "bytes": 290523,
+      "sha256": "8f2d745cd33582a5265bc57e64ec2cee80efc8df3279bd2b88961fa129fa1f47"
+    },
+    {
+      "view": "waist_side_right",
+      "file": "p05e_cross_pair_waist_side_right_cycles.png",
+      "bytes": 343445,
+      "sha256": "13e09c95c9cdbdfd60d1c6d8e38582206f99ad878b4a9a340018a26ab4c926ab"
+    },
+    {
+      "view": "waist_low_side_right",
+      "file": "p05e_cross_pair_waist_low_side_right_cycles.png",
+      "bytes": 290778,
+      "sha256": "70eb31eee68ddd578c4a78247a2ac44cb24c34277b7431ffdc2792dc37a99ecf"
+    },
+    {
+      "view": "pair_side",
+      "file": "p05e_cross_pair_idle_pair_side_0.0_cycles.png",
+      "bytes": 356111,
+      "sha256": "a9c1f0574499809951827a37a60c50cd06b7f9081d6ec3da49b4f8b9cc169ccc"
+    },
+    {
+      "view": "seat_low_right",
+      "file": "p05e_cross_pair_idle_seat_low_right_0.0_cycles.png",
+      "bytes": 342223,
+      "sha256": "60ff81c9549f351be607d13678acd236335cf9bd772fc579a9f088a6c61bda5b"
+    },
+    {
+      "view": "seat_low_left",
+      "file": "p05e_cross_pair_idle_seat_low_left_0.0_cycles.png",
+      "bytes": 342288,
+      "sha256": "bb37f4804a2c0142fc40c0bd52ab61e846e3c8594044c115ee65924bd3bbbd1c"
+    },
+    {
+      "view": "pair_side",
+      "file": "p05e_cross_pair_idle_pair_side_0.5_cycles.png",
+      "bytes": 356893,
+      "sha256": "b269b36805c570ed86ec7b7b6577321147ee73417410a379708b36cf8ef38e80"
+    },
+    {
+      "view": "seat_low_right",
+      "file": "p05e_cross_pair_idle_seat_low_right_0.5_cycles.png",
+      "bytes": 343057,
+      "sha256": "e4fb24812eb66132845b9cb47da5ab9d3b424dc12279c6ef16978193b0eb98fc"
+    },
+    {
+      "view": "seat_low_left",
+      "file": "p05e_cross_pair_idle_seat_low_left_0.5_cycles.png",
+      "bytes": 342143,
+      "sha256": "3c37f54260d27d3464b88c4d47187fe428fae137c11e37d03d47ceca877127c2"
+    },
+    {
+      "view": "pair_side",
+      "file": "p05e_cross_pair_idle_pair_side_1.0_cycles.png",
+      "bytes": 356949,
+      "sha256": "323413042eb061635c196d5ce3bdbaea82226acdf0d347dd5366ee13bfbb9471"
+    },
+    {
+      "view": "seat_low_right",
+      "file": "p05e_cross_pair_idle_seat_low_right_1.0_cycles.png",
+      "bytes": 343137,
+      "sha256": "b21004854aa6238d9a879a372a2fe091b9d6f6727de8d119a8b3466df295d10d"
+    },
+    {
+      "view": "seat_low_left",
+      "file": "p05e_cross_pair_idle_seat_low_left_1.0_cycles.png",
+      "bytes": 342213,
+      "sha256": "a97898ab95c3deef8111068fde8f05022af824c290222a8ca658b21a7b97d120"
+    },
+    {
+      "view": "pair_side",
+      "file": "p05e_cross_pair_idle_pair_side_1.5_cycles.png",
+      "bytes": 356893,
+      "sha256": "4f81b6d3474a76c8bb08c9429c5f3faac2591e5a08ffa9e8c08bf10e459e2bc5"
+    },
+    {
+      "view": "seat_low_right",
+      "file": "p05e_cross_pair_idle_seat_low_right_1.5_cycles.png",
+      "bytes": 343057,
+      "sha256": "33d54c26e27aeebb0c1a3c3ad8b89c9ecbb6198111be7b24a91fa96ec72c8fe0"
+    },
+    {
+      "view": "seat_low_left",
+      "file": "p05e_cross_pair_idle_seat_low_left_1.5_cycles.png",
+      "bytes": 342143,
+      "sha256": "a413657526019a144b8bd691c67462b06c5f1e3457fd4738ffc63fbbabc81dbb"
+    },
+    {
+      "view": "pair_side",
+      "file": "p05e_cross_pair_idle_pair_side_2.0_cycles.png",
+      "bytes": 356111,
+      "sha256": "3d2d32b0974111b75abeba63334f53d5a7c39ebba79c6062d110ee4695cc01bc"
+    },
+    {
+      "view": "seat_low_right",
+      "file": "p05e_cross_pair_idle_seat_low_right_2.0_cycles.png",
+      "bytes": 342223,
+      "sha256": "2f872baa15a515d7fcffe0e7d5089399a28fd8795a15309406594a4b8c22f05a"
+    },
+    {
+      "view": "seat_low_left",
+      "file": "p05e_cross_pair_idle_seat_low_left_2.0_cycles.png",
+      "bytes": 342288,
+      "sha256": "386c43ba7a284478a3f3f3d8c89ba6c34a31c319c7286653c69747a4c1febbb5"
+    }
+  ]
+}

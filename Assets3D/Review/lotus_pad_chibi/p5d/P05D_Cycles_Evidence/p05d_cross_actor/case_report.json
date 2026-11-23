@@ -1,0 +1,172 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport exact SHA-pinned P05c/P05d cross GLB; real lotus in pair only",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p05d_cross",
+  "kind": "actor",
+  "inputs": [
+    {
+      "file": "meditator_female_cross_prayer_p05d.glb",
+      "bytes": 471252,
+      "sha256": "0f169e427cc70bc0b5b744db935c4de4ecac356ef3fc8a1113812a5bf0780e44"
+    }
+  ],
+  "meshCount": 10,
+  "principledMaterialSlots": 10,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05C locked full/quarter/side/9x16 plus foot macros; diagnostic separately labeled",
+  "originalBlend": {
+    "file": "meditator_female_p05d_cross_actor.blend",
+    "bytes": 2101854,
+    "sha256": "e7c5ee04b424ee67d76436742d7485b35797abdaef87b31d3f1ed793dbaf3709"
+  },
+  "images": [
+    {
+      "view": "front",
+      "file": "p05d_cross_actor_front_cycles.png",
+      "bytes": 343289,
+      "sha256": "8bc6f3c8ee599f653ebcb442843c2bc42efff247d78bc95c2a63241349806bbf"
+    },
+    {
+      "view": "quarter",
+      "file": "p05d_cross_actor_quarter_cycles.png",
+      "bytes": 331056,
+      "sha256": "53f2cda88b02ffef2f8ed5489dc687fe8cc15aba44d367dc22f302887e4af295"
+    },
+    {
+      "view": "left",
+      "file": "p05d_cross_actor_left_cycles.png",
+      "bytes": 337613,
+      "sha256": "8641799147e150288db8ce44b271e06859e1d4f71d2c5c8c1106eb3e481a6f19"
+    },
+    {
+      "view": "right",
+      "file": "p05d_cross_actor_right_cycles.png",
+      "bytes": 337145,
+      "sha256": "981d38218094e3276436f10c8702c5ea7928e2c761e3d46eda65e375eb309b7f"
+    },
+    {
+      "view": "knees_front",
+      "file": "p05d_cross_actor_knees_front_cycles.png",
+      "bytes": 347899,
+      "sha256": "e5323818ecf10a697c610a78c6dd5ee39e51402909a31c52c5db20e377400ade"
+    },
+    {
+      "view": "knees_side",
+      "file": "p05d_cross_actor_knees_side_cycles.png",
+      "bytes": 339892,
+      "sha256": "7091a2712c2eeab4b8a9019d4f2a5a56d4b22a1da87492e7630d8731525ac176"
+    },
+    {
+      "view": "foot_macro_front",
+      "file": "p05d_cross_actor_foot_macro_front_cycles.png",
+      "bytes": 314276,
+      "sha256": "edd9119dee47d932fabdc823d52e36edb4262c1ddce02df2ac5cd26b38af1935"
+    },
+    {
+      "view": "foot_macro_left3q",
+      "file": "p05d_cross_actor_foot_macro_left3q_cycles.png",
+      "bytes": 322859,
+      "sha256": "5831fe6dab7848a599c8baa61fd1e293757538bea68b7e0fadf668f8c9f52bfd"
+    },
+    {
+      "view": "foot_macro_right3q",
+      "file": "p05d_cross_actor_foot_macro_right3q_cycles.png",
+      "bytes": 323751,
+      "sha256": "12745b3825c10196609aea814435727f68e47fbf1dae336630b4631a4c3fbf6b"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "p05d_cross_actor_foot_macro_side_cycles.png",
+      "bytes": 313996,
+      "sha256": "e851830e37368a73ac0969f88a876006a0f0be6c3b884823f2e107c096f0aad4"
+    },
+    {
+      "view": "medium_9x16",
+      "file": "p05d_cross_actor_medium_9x16_cycles.png",
+      "bytes": 979717,
+      "sha256": "eaecfa2ce9d6c9579f18895274b78afa36b7b426a5b806e60272a82155e5a1c3"
+    },
+    {
+      "view": "close_9x16",
+      "file": "p05d_cross_actor_close_9x16_cycles.png",
+      "bytes": 985289,
+      "sha256": "cbe739d057a4aa120837588a4a64d91cc3775b880d842cff30efad284056cef9"
+    },
+    {
+      "view": "foot_diag_top",
+      "file": "p05d_cross_actor_foot_diag_top_cycles.png",
+      "bytes": 318150,
+      "sha256": "bbbceee41a5c647908cfd9139a2994152fdc0679d166862f0e9c4bfe87f27a44"
+    },
+    {
+      "view": "foot_macro_front",
+      "file": "p05d_cross_idle_foot_macro_front_0.0_cycles.png",
+      "bytes": 314295,
+      "sha256": "6d11ac308bb4f82a6931b2f2493bb06ba6429c01dc22680f5bec2720037a1d9e"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "p05d_cross_idle_foot_macro_side_0.0_cycles.png",
+      "bytes": 314122,
+      "sha256": "df646531f2399c41e977dcfa062ca61250727f06c66d37e6fa386fb759c0b07f"
+    },
+    {
+      "view": "foot_macro_front",
+      "file": "p05d_cross_idle_foot_macro_front_0.5_cycles.png",
+      "bytes": 314072,
+      "sha256": "f174895db3de185f56de4d11225f991ba9526249943cce441e4c4ba895f4652c"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "p05d_cross_idle_foot_macro_side_0.5_cycles.png",
+      "bytes": 314144,
+      "sha256": "c94b170b92d2842d54a348e6d1c3afe71d073cc87c0f624b0c4289aa36de6319"
+    },
+    {
+      "view": "foot_macro_front",
+      "file": "p05d_cross_idle_foot_macro_front_1.0_cycles.png",
+      "bytes": 314783,
+      "sha256": "7e64eb52322f93ff90d86969c29f1d937dc0636c74eb4b81def9c91067c6d983"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "p05d_cross_idle_foot_macro_side_1.0_cycles.png",
+      "bytes": 314165,
+      "sha256": "e0d43106cd461ee1caf4c86665f5fc603dae814c07aa074f8e124f5f5525e228"
+    },
+    {
+      "view": "foot_macro_front",
+      "file": "p05d_cross_idle_foot_macro_front_1.5_cycles.png",
+      "bytes": 314072,
+      "sha256": "1632c6ee5572d1428427e3a3728f42bfb505bbf613c2ca6ff3b1c18a1ee9d82e"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "p05d_cross_idle_foot_macro_side_1.5_cycles.png",
+      "bytes": 314144,
+      "sha256": "d85ece3bb291ab74059c5629b5e7c87c26e989be4484a5136861bd087a2a32de"
+    },
+    {
+      "view": "foot_macro_front",
+      "file": "p05d_cross_idle_foot_macro_front_2.0_cycles.png",
+      "bytes": 314295,
+      "sha256": "10770c31dcd178a5a91e40527272822f19f8b55e883a2cb033c90ca0088c0ac8"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "p05d_cross_idle_foot_macro_side_2.0_cycles.png",
+      "bytes": 314122,
+      "sha256": "9c492220d96c63e24e4fd7909a1c2357173a3e16fe64e6f5cefcf48cc5a8b2c2"
+    }
+  ]
+}

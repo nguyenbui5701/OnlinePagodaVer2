@@ -1,0 +1,109 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "Actual exported new P07b side-part GLB reimport; original SHA-pinned P02 lotus in pair; old baselines REUSED, not re-rendered",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p07b_cross",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_male_cross_prayer_sidepart73_p07b.glb",
+      "bytes": 589864,
+      "sha256": "1238f5fba9f7cfea0c550fabdc26446905f6e403e558793fb726251d4fec08cb"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 15,
+  "principledMaterialSlots": 15,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "cross_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 10
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "Frozen P06c camera/lighting and 720x1280 pair, 3 original suns, AgX EV0, World .65; no P06c/P07a1 re-render; diagnostic excluded from art",
+  "originalBlend": {
+    "file": "meditator_p07b_cross_pair.blend",
+    "bytes": 3058310,
+    "sha256": "c7954022ef6f4e3ad0f2fa31518b73f9e7babcf462d110051b755204135c1a43"
+  },
+  "images": [
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07b_cross_pair_pair_medium_9x16_cycles.png",
+      "bytes": 1035611,
+      "sha256": "8e4307aef8d9d3313de63f88b87cb29b0bc3688adfa1a5daf6a5340310db878b"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "p07b_cross_pair_pair_close_9x16_cycles.png",
+      "bytes": 1045387,
+      "sha256": "aff7326de35b9e897914895ef86e640d81eaa544e91b8047f08034cb701800ba"
+    },
+    {
+      "view": "pair_front",
+      "file": "p07b_cross_pair_pair_front_cycles.png",
+      "bytes": 669552,
+      "sha256": "5ced27f4e91e368a3ed0b26c59d327df1d6f4bda52b1cac10e549f78071b25db"
+    },
+    {
+      "view": "pair_side",
+      "file": "p07b_cross_pair_pair_side_cycles.png",
+      "bytes": 658596,
+      "sha256": "8bb97d782e970707c45baa6cd375d2d02fd2b2640c986eeb474ab45347aabfde"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07b_cross_pair_idle_pair_medium_9x16_0.0_cycles.png",
+      "bytes": 1035478,
+      "sha256": "c8c2a10b78307982076bf8726056774799492d9507421c75fe15c0af0218b21d"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07b_cross_pair_idle_pair_medium_9x16_0.5_cycles.png",
+      "bytes": 1036497,
+      "sha256": "84c3483f668b671c56aa64eafa10ef5af5ccde2e3922b96ef6fccc740f6f4e56"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07b_cross_pair_idle_pair_medium_9x16_1.0_cycles.png",
+      "bytes": 1036047,
+      "sha256": "6b2ea2a47b20109981d414f544098162cfe8f336544ae97ddc40047cde64daa2"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07b_cross_pair_idle_pair_medium_9x16_1.5_cycles.png",
+      "bytes": 1036497,
+      "sha256": "bb080041513eacf6a4c83bca4105eec6a4a4975f919c93df424cb7a5da518726"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07b_cross_pair_idle_pair_medium_9x16_2.0_cycles.png",
+      "bytes": 1035478,
+      "sha256": "75b13ea6cf7d25831fc7848b65cd78dce21db8eb0a2f4c8a628479e72a1527b5"
+    }
+  ],
+  "diagnosticImagesNotArtApproval": []
+}

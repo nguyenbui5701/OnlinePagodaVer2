@@ -1,0 +1,193 @@
+{
+  "revision": "p0.2",
+  "baselineSHAExact": {
+    "lotus_pad_01.glb": "0c80e5d4b2590716fdf9a985340fe2446af7ecc056727a03b82a3997db52bba5",
+    "meditator_base.glb": "f4e184b57046ad442183931bf9fd2f6d7953000ea07270458e291f627f787d2b"
+  },
+  "candidateSHAExact": {
+    "lotus_pad_01.glb": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+    "meditator_base.glb": "83009fab6f4f00730260ef70dcd4d8605b2c634bc99f1fd6e34a1030833abd4c"
+  },
+  "measuredGLBCosts": {
+    "p01": {
+      "lotus_pad_01.glb": {
+        "bytes": 270128,
+        "triangles": 10984,
+        "vertices": 5530,
+        "meshes": 5,
+        "materials": 5,
+        "boundsMinMax": [
+          [
+            -1.062186,
+            -0.239377,
+            -1.046373
+          ],
+          [
+            1.030894,
+            0.212725,
+            0.997408
+          ]
+        ]
+      },
+      "meditator_base.glb": {
+        "bytes": 205588,
+        "triangles": 8484,
+        "vertices": 4315,
+        "meshes": 11,
+        "materials": 8,
+        "boundsMinMax": [
+          [
+            -0.367,
+            0.009039,
+            -0.248271
+          ],
+          [
+            0.336,
+            1.164,
+            0.386471
+          ]
+        ]
+      }
+    },
+    "p02": {
+      "lotus_pad_01.glb": {
+        "bytes": 262108,
+        "triangles": 10648,
+        "vertices": 5364,
+        "meshes": 5,
+        "materials": 5,
+        "boundsMinMax": [
+          [
+            -1.057189,
+            -0.239377,
+            -1.041386
+          ],
+          [
+            1.025895,
+            0.242502,
+            0.992598
+          ]
+        ]
+      },
+      "meditator_base.glb": {
+        "bytes": 216012,
+        "triangles": 8906,
+        "vertices": 4538,
+        "meshes": 11,
+        "materials": 8,
+        "boundsMinMax": [
+          [
+            -0.362,
+            0.009039,
+            -0.268751
+          ],
+          [
+            0.336,
+            1.157,
+            0.386471
+          ]
+        ]
+      }
+    }
+  },
+  "tripleNodeAnchorEquality": true,
+  "sameSitIdleData": true,
+  "independentContactBarycentric": {
+    "p01": {
+      "actorPlacementY": 0.195,
+      "padCenterSeatY": 0.195,
+      "vertexSamples": 658,
+      "matchedTopTriangles": 658,
+      "minGapM": 0.014818456586649487,
+      "maxGapM": 0.32439354287778477,
+      "penetrationsMoreThan5mm": 0,
+      "method": "Actual imported GLB triangle barycentric surface height vs exact imported lower body vertex positions; no generator surface formula"
+    },
+    "p02": {
+      "actorPlacementY": 0.195,
+      "padCenterSeatY": 0.195,
+      "vertexSamples": 658,
+      "matchedTopTriangles": 658,
+      "minGapM": 0.014818456586649487,
+      "maxGapM": 0.32439354287778477,
+      "penetrationsMoreThan5mm": 0,
+      "method": "Actual imported GLB triangle barycentric surface height vs exact imported lower body vertex positions; no generator surface formula"
+    }
+  },
+  "sameCameraPBR": {
+    "engine": "VTK native glTF importer",
+    "viewsPerRevision": 12,
+    "idleSamplesPerRevision": 5,
+    "identicalCameraAndLighting": true,
+    "screenshots": [
+      {
+        "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/LEAF_TOP_SIDE_WATERLINE_AB.jpg",
+        "bytes": 91864,
+        "sha256": "3ddf9dfe72dc2702919d204819794e78f8d59c57ebadc6e0e06796b3319b64fc",
+        "engine": "actual GLB vtkGLTFImporter native PBR",
+        "githubStatus": "uploaded_sha_verified",
+        "gitBlobSHA": "44c3064a61e91f4a7e27cebe539a45fd8e743fc3"
+      },
+      {
+        "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/CHIBI_FRONT_SIDE_BACK_AB.jpg",
+        "bytes": 140465,
+        "sha256": "6bc04a655d5d19a3d04423a6c46ddce201c969c49cfd153991713b89e7fc65ce",
+        "engine": "actual GLB vtkGLTFImporter native PBR",
+        "githubStatus": "uploaded_sha_verified",
+        "gitBlobSHA": "b0c6103b420e2aa9590a4191a9f3414b082156a7"
+      },
+      {
+        "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/PAIR_MEDIUM_CLOSE_AB.jpg",
+        "bytes": 123526,
+        "sha256": "81727727286914721f145f73d527aa7f4216b890598e8621f0958fe9cd9975a1",
+        "engine": "actual GLB vtkGLTFImporter native PBR",
+        "githubStatus": "uploaded_sha_verified",
+        "gitBlobSHA": "719ac29fe0d288666cab747939abbbbca3ae4cd8"
+      },
+      {
+        "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/PAIR_CONTACT_AB.jpg",
+        "bytes": 114775,
+        "sha256": "1f0df36661f882e9e967f693b859064150098619574b63b82eb5b20da26f0964",
+        "engine": "actual GLB vtkGLTFImporter native PBR",
+        "githubStatus": "uploaded_sha_verified",
+        "gitBlobSHA": "2818c8db02709a96b50d5be570eb579614f361bf"
+      },
+      {
+        "path": "Assets3D/Review/lotus_pad_chibi/p0.2/PBR_Review/SIT_IDLE_5_PHASES_AB.jpg",
+        "bytes": 200580,
+        "sha256": "006eaf14cd48a1c94e64bb3d5e704f54443093b79b88572ffd8afa32e83390b2",
+        "engine": "actual GLB vtkGLTFImporter native PBR",
+        "githubStatus": "uploaded_sha_verified",
+        "gitBlobSHA": "3a5286d639a52e502bbce0bfd31423ff92b2711b"
+      }
+    ]
+  },
+  "newSourceBlender": "THREE_ORIGINAL_P02_BLEND_GIT_BLOBS_EXIST_SA_RAW_SHA256_NOT_VERIFIED",
+  "newCyclesImages": "OWNER_RUN_SA_32_OF_32_PNG_HASHES_PASS",
+  "p01OwnerCycles": "PASS_SA_REVIEW_6005380374",
+  "nativeThreeJs": "NOT_RUN",
+  "ownerArt": "ART_OWNER_PENDING",
+  "production": "NOT_APPROVED",
+  "pr": "DRAFT_NO_MERGE",
+  "githubOriginalGLBUploads": "2/2_VERIFIED_GIT_BLOB",
+  "githubRealPBRMediaUploads": "5/5_VERIFIED_GIT_BLOB",
+  "ownerBlenderCyclesP02": {
+    "status": "OWNER_CYCLES_EXECUTED_SA_IMAGE_HASH_REVIEW_PASS",
+    "saReview": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6005994936",
+    "cases": 6,
+    "pngShaMatches": 32,
+    "stdoutComplete": 6,
+    "emptyStderr": 6,
+    "originalGitTextEncodingAdjustments": {
+      "jsonCRLFToLF": 6,
+      "stdoutUTF16LEtoUTF8": 6
+    },
+    "originalBlendGitBlobsPresent": 3,
+    "originalBlendRawSha256DirectlyVerifiedBySA": false,
+    "originalZipCRCVerifiedBySA": false,
+    "originalZipReportedBytes": 12698132,
+    "originalZipGitBlob": "540b0a55bc2977af73cfda014add28ec837a11e3",
+    "ownerArt": "PENDING",
+    "reference": "../p0.2/P02_OWNER_CYCLES_SA_AUDIT.md"
+  }
+}

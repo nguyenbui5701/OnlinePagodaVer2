@@ -1,0 +1,61 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "Actual exported new P07b side-part GLB reimport; original SHA-pinned P02 lotus in pair; old baselines REUSED, not re-rendered",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 16,
+  "revision": "p07b_kneel",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_male_kneel_prayer_sidepart73_p07b.glb",
+      "bytes": 456280,
+      "sha256": "2bb7430c4da4c58c6ee986a741ff79d3865f581c046003ce0770e80af345b3f2"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 14,
+  "principledMaterialSlots": 14,
+  "importedActionNames": [
+    "kneel_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "kneel_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 9
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "Frozen P06c camera/lighting and 720x1280 pair, 3 original suns, AgX EV0, World .65; no P06c/P07a1 re-render; diagnostic excluded from art",
+  "originalBlend": {
+    "file": "meditator_p07b_kneel_pair.blend",
+    "bytes": 3056133,
+    "sha256": "6f3c8cbc73dac57b5ee91364f3b7837225807383d34f33bec97572067bacc938"
+  },
+  "images": [
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07b_kneel_pair_pair_medium_9x16_cycles.png",
+      "bytes": 1042994,
+      "sha256": "85346001d5c6b7bdaa756437d9bf5a537eca389919ae259eb0b88124af9ca956"
+    }
+  ],
+  "diagnosticImagesNotArtApproval": []
+}

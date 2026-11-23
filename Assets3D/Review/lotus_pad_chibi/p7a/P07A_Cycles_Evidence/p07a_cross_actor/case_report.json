@@ -1,0 +1,285 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "Actual SHA-pinned approved P06c and new P07a undercut GLB reimports; original P02 lotus pair frozen",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p07a_cross",
+  "kind": "actor",
+  "inputs": [
+    {
+      "file": "meditator_male_cross_prayer_undercut_p07a.glb",
+      "bytes": 590124,
+      "sha256": "72c407bf3b6ae8a6edc8ed9a0e544168db7edcac379a8ea92b9677cceed00107"
+    }
+  ],
+  "meshCount": 10,
+  "principledMaterialSlots": 10,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "cross_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 10
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P06c identical front/top/L-R/right3Q/low-back/focal lengths and pair 720x1280; 3 fixed suns AgX EV0 World .65; additional ear macro same-camera both versions; diagnostic is never art proof",
+  "originalBlend": {
+    "file": "meditator_p07a_cross_actor.blend",
+    "bytes": 2182459,
+    "sha256": "ae4be218a189b99215e5869d1c7a12045d1e542844b490eb86fd1a1cefaa7762"
+  },
+  "images": [
+    {
+      "view": "hair_front",
+      "file": "p07a_cross_actor_hair_front_cycles.png",
+      "bytes": 334824,
+      "sha256": "2900db078d6e77a789a00b8446bd9288957fea804c5ee7be827e2dab5e28cf41"
+    },
+    {
+      "view": "hair_top",
+      "file": "p07a_cross_actor_hair_top_cycles.png",
+      "bytes": 308261,
+      "sha256": "014b7feb45518a1607028e7676f7e4590714318d60f5c5e862b63a2778ffc47f"
+    },
+    {
+      "view": "hair_right_3q",
+      "file": "p07a_cross_actor_hair_right_3q_cycles.png",
+      "bytes": 333960,
+      "sha256": "64c1ca62ca5acc3991283bd0bbb397b1a493f025711ef32934218dc53ac15009"
+    },
+    {
+      "view": "hair_left",
+      "file": "p07a_cross_actor_hair_left_cycles.png",
+      "bytes": 318319,
+      "sha256": "0a7c0227e1837a393c3ec886831795f9f04cb123c7350324f196460930e0a111"
+    },
+    {
+      "view": "hair_right",
+      "file": "p07a_cross_actor_hair_right_cycles.png",
+      "bytes": 321938,
+      "sha256": "a56fc7207d0fd776544ad5527eb46b0ba935ea164b5e2f50329654875488192d"
+    },
+    {
+      "view": "hair_back",
+      "file": "p07a_cross_actor_hair_back_cycles.png",
+      "bytes": 317481,
+      "sha256": "184c80391371f0799feb670ea93066a7d95e1110d4c1dc042e642fbab81d80ff"
+    },
+    {
+      "view": "hair_quarter",
+      "file": "p07a_cross_actor_hair_quarter_cycles.png",
+      "bytes": 334203,
+      "sha256": "3e52889ee465f9b356d7504cdc90b89e302fae375fc504d523ca10cebb2a3c51"
+    },
+    {
+      "view": "hair_left_3q",
+      "file": "p07a_cross_actor_hair_left_3q_cycles.png",
+      "bytes": 330024,
+      "sha256": "c4675e81a0a29f6a28d8be06277eb7522648b7daba2482acb59b1f823d881086"
+    },
+    {
+      "view": "hair_low_back",
+      "file": "p07a_cross_actor_hair_low_back_cycles.png",
+      "bytes": 319226,
+      "sha256": "38755dfea93a19014734fbbb55bfdbca74373254013a36243ab4fc185278a945"
+    },
+    {
+      "view": "hair_ear_left",
+      "file": "p07a_cross_actor_hair_ear_left_cycles.png",
+      "bytes": 306061,
+      "sha256": "f09569f18314f211a154e376d58f5f005a80a933f723a5e0edcba1ee9ec99f3c"
+    },
+    {
+      "view": "hair_ear_right",
+      "file": "p07a_cross_actor_hair_ear_right_cycles.png",
+      "bytes": 306020,
+      "sha256": "34465cc0f9e651f7d935e165639280f6033eae9948c59a2ee39eb44b281cc5da"
+    },
+    {
+      "view": "hair_nape_macro",
+      "file": "p07a_cross_actor_hair_nape_macro_cycles.png",
+      "bytes": 313510,
+      "sha256": "dc1de2450eaa60f5059358481377e79f9860bb2aabab96ff408a81776f088cde"
+    },
+    {
+      "view": "front",
+      "file": "p07a_cross_actor_front_cycles.png",
+      "bytes": 346321,
+      "sha256": "2f72d150e29d8430bce82cdb596bde35bba765cfd1cd539c0dc52a5e50f1b243"
+    },
+    {
+      "view": "left",
+      "file": "p07a_cross_actor_left_cycles.png",
+      "bytes": 333914,
+      "sha256": "a26133de83fa3fdb0d9dcf84c9c200d3e0c0c22056c08f5cea0c37699125733a"
+    },
+    {
+      "view": "right",
+      "file": "p07a_cross_actor_right_cycles.png",
+      "bytes": 333498,
+      "sha256": "609b71e5e4744768651d2583d5a479aa37b4a036126b6f75762708776ec12539"
+    },
+    {
+      "view": "back",
+      "file": "p07a_cross_actor_back_cycles.png",
+      "bytes": 322370,
+      "sha256": "c5dfb115087b6c281067bbc72f8d9dc6b69bbd189c3c5322f262acbccfa9e8af"
+    },
+    {
+      "view": "quarter",
+      "file": "p07a_cross_actor_quarter_cycles.png",
+      "bytes": 331465,
+      "sha256": "57978a906998f836626294533ddc51fae6041e0b6bf85426507351b72b0b9ceb"
+    },
+    {
+      "view": "medium_9x16",
+      "file": "p07a_cross_actor_medium_9x16_cycles.png",
+      "bytes": 983631,
+      "sha256": "bce0b7c36d3db95a4a219ed819ff6d56699cff1081b53876c1dce83a5fab758e"
+    },
+    {
+      "view": "close_9x16",
+      "file": "p07a_cross_actor_close_9x16_cycles.png",
+      "bytes": 989247,
+      "sha256": "93f38b3200b3551d49cc1367923280fd89419216fc9382d60b0272740d202657"
+    },
+    {
+      "view": "hair_front",
+      "file": "p07a_cross_actor_idle_hair_front_0.0_cycles.png",
+      "bytes": 334351,
+      "sha256": "bfe465f750141f241bd70976c96beb135e7f659c1414f633447f6fde9fa628c7"
+    },
+    {
+      "view": "hair_quarter",
+      "file": "p07a_cross_actor_idle_hair_quarter_0.0_cycles.png",
+      "bytes": 334239,
+      "sha256": "3b2914e3fba1c18323f373b6643eb26ebe1181c0c17fc147cd1f8f2336e72622"
+    },
+    {
+      "view": "hair_right",
+      "file": "p07a_cross_actor_idle_hair_right_0.0_cycles.png",
+      "bytes": 322003,
+      "sha256": "eab03922259214567e589e9f991973f102a8d9ae51ef8064295c659070395d2a"
+    },
+    {
+      "view": "hair_front",
+      "file": "p07a_cross_actor_idle_hair_front_0.5_cycles.png",
+      "bytes": 335462,
+      "sha256": "cb583e1f379f3caf48c7818320d2f9fc33ed3fcacf859180215f8fbf5d864424"
+    },
+    {
+      "view": "hair_quarter",
+      "file": "p07a_cross_actor_idle_hair_quarter_0.5_cycles.png",
+      "bytes": 333822,
+      "sha256": "469c22194f866b1425ca471237fac5d648737e209113b4dbc6c21373d8db3a55"
+    },
+    {
+      "view": "hair_right",
+      "file": "p07a_cross_actor_idle_hair_right_0.5_cycles.png",
+      "bytes": 322083,
+      "sha256": "4781102102399c061857ef9e7d5c8397f088371b726af6cc01c12662536478ad"
+    },
+    {
+      "view": "hair_front",
+      "file": "p07a_cross_actor_idle_hair_front_1.0_cycles.png",
+      "bytes": 336803,
+      "sha256": "744d9aca986fa22bb3181d37657de8a2cd75360abb70ec432dc7d373e5b55c02"
+    },
+    {
+      "view": "hair_quarter",
+      "file": "p07a_cross_actor_idle_hair_quarter_1.0_cycles.png",
+      "bytes": 334892,
+      "sha256": "1c0d3dd9482661f5426c3ca799bc8477504f050dfe0f4bbea825c5a504011137"
+    },
+    {
+      "view": "hair_right",
+      "file": "p07a_cross_actor_idle_hair_right_1.0_cycles.png",
+      "bytes": 323492,
+      "sha256": "eab39751bc69021923388b95dad602161324f596903f5d11739e4d84fc07b6e9"
+    },
+    {
+      "view": "hair_front",
+      "file": "p07a_cross_actor_idle_hair_front_1.5_cycles.png",
+      "bytes": 335462,
+      "sha256": "7e645b16f2a5584a2722bb84861421da30a685e934f0cf5726984a2c355c93a6"
+    },
+    {
+      "view": "hair_quarter",
+      "file": "p07a_cross_actor_idle_hair_quarter_1.5_cycles.png",
+      "bytes": 333822,
+      "sha256": "c9fdbc6cde226bf4a5490d18a55b656adac4bd6879aa5c27cbf2f8a4207dcd0e"
+    },
+    {
+      "view": "hair_right",
+      "file": "p07a_cross_actor_idle_hair_right_1.5_cycles.png",
+      "bytes": 322083,
+      "sha256": "5c7a8e38e59a552f311cd7c2e34185f749ecc9381b0d00d99da71fda15f67972"
+    },
+    {
+      "view": "hair_front",
+      "file": "p07a_cross_actor_idle_hair_front_2.0_cycles.png",
+      "bytes": 334351,
+      "sha256": "277558b95c8103070f349f1b16d704ccb52ff3d6464a828506bb10b4fa55a19e"
+    },
+    {
+      "view": "hair_quarter",
+      "file": "p07a_cross_actor_idle_hair_quarter_2.0_cycles.png",
+      "bytes": 334239,
+      "sha256": "8bc56cfed808822e4abb2b1edd515eb5ddcf88402ab2d22c4df28e6a79688da9"
+    },
+    {
+      "view": "hair_right",
+      "file": "p07a_cross_actor_idle_hair_right_2.0_cycles.png",
+      "bytes": 322003,
+      "sha256": "16b6101246d793c9a14f8ed133ae57afee41d89e04893d4a98f70510d3251942"
+    }
+  ],
+  "diagnosticImagesNotArtApproval": [
+    {
+      "view": "hair_front",
+      "file": "p07a_cross_actor_DIAGNOSTIC_only_skin_magenta_hair_front.png",
+      "bytes": 338753,
+      "sha256": "7ebb62114313c4f2777d0dc4e28bc820e5ec381d6cc67e90b2efd3a2f529b65b"
+    },
+    {
+      "view": "hair_top",
+      "file": "p07a_cross_actor_DIAGNOSTIC_only_skin_magenta_hair_top.png",
+      "bytes": 308040,
+      "sha256": "7f71ea4c899eb14168ce15e87eb6585623b7a75dae2d2299ee38e69b4027a2ab"
+    },
+    {
+      "view": "hair_right_3q",
+      "file": "p07a_cross_actor_DIAGNOSTIC_only_skin_magenta_hair_right_3q.png",
+      "bytes": 338333,
+      "sha256": "cbbe464dec8d45674151dd4c8cdc8200de8fa216ab1a8d617a21cb49354bc771"
+    },
+    {
+      "view": "hair_ear_left",
+      "file": "p07a_cross_actor_DIAGNOSTIC_only_skin_magenta_hair_ear_left.png",
+      "bytes": 310083,
+      "sha256": "26707ce28167b37aa01640a87ccb15534e99b103b2831d20d60c34f664f027aa"
+    },
+    {
+      "view": "hair_ear_right",
+      "file": "p07a_cross_actor_DIAGNOSTIC_only_skin_magenta_hair_ear_right.png",
+      "bytes": 307941,
+      "sha256": "2dd15ec6f6b12072d9e75888dca464c4e91a745bd9f37ea9d5da86c355029a2f"
+    }
+  ]
+}

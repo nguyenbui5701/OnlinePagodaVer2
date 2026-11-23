@@ -1,0 +1,142 @@
+{
+  "method": "Finite sampled physical Moller–Trumbore ray/triangle skin mesh #3 vs hair mesh #6, exact hit for each sampled ray; NOT continuous-surface proof or Cycles validation",
+  "baseline": "P06c owner approved, two original SHA-locked GLBs",
+  "meshes": {
+    "skin": 3,
+    "hair": 6
+  },
+  "originalHair": {
+    "vertices": 1672,
+    "triangles": 3080,
+    "inwardUnderRimTriangles": 112,
+    "degenerateTriangles": 0,
+    "hasThreeSoftSweptClumps": true,
+    "originalHairMaterial": "hair_blue_black",
+    "hairMaterialDoubleSided": true
+  },
+  "undercutHair": {
+    "vertices": 1672,
+    "triangles": 3080,
+    "inwardUnderRimTriangles": 112,
+    "degenerateTriangles": 0,
+    "minTriangleAreaSqm": 0.0000072735887692287535,
+    "originalEyebrowVertices": 208,
+    "meshCountDelta": 0,
+    "materialCountDelta": 0,
+    "originalHairIndexExact": true,
+    "originalSweptLocksPreserved": true
+  },
+  "topSideMeasurementsFromActualSourceHair": {
+    "crown": {
+      "vertices": 348,
+      "meanRadialShiftMm": 10.452,
+      "minMm": 7.445,
+      "maxMm": 13.86
+    },
+    "templeBoth": {
+      "vertices": 109,
+      "meanRadialShiftMm": -16.766,
+      "minMm": -20.266,
+      "maxMm": -8.405
+    },
+    "nape": {
+      "vertices": 63,
+      "meanRadialShiftMm": -16.819,
+      "minMm": -26.92,
+      "maxMm": -8.957
+    },
+    "fringe": {
+      "vertices": 63,
+      "meanRadialShiftMm": 1.677
+    }
+  },
+  "sculptField": {
+    "targetTopLiftMm": 10.5,
+    "targetTempleShrinkMm": 18.5,
+    "targetNapeTaperMm": 18,
+    "crownLFringeMm": 3,
+    "headSkinMinimumCapGapMm": 10,
+    "headSkinMinimumThreeLocksGapMm": 7,
+    "actualMaxRadialPositiveMm": 13.86,
+    "actualMaxRadialNegativeMm": -28.487,
+    "capVerticesMoved": 810,
+    "skinClearanceClampedCapVertices": 57,
+    "skinClearanceClampedSweepVertices": 5,
+    "centerLocalYUp": [
+      0,
+      0.85,
+      0.005
+    ]
+  },
+  "zoneScalp": {
+    "baseCapSamples": {
+      "samples": 1591,
+      "negative": 0,
+      "minimumClearanceMm": 8.083
+    },
+    "newCapSamples": {
+      "samples": 1575,
+      "negative": 0,
+      "minimumClearanceMm": 8.083
+    },
+    "sourceSweepSamples": {
+      "samples": 567,
+      "negative": 0,
+      "minimumClearanceMm": 6.606
+    },
+    "newSweepSamples": {
+      "samples": 567,
+      "negative": 0,
+      "minimumClearanceMm": 7
+    }
+  },
+  "rays": {
+    "hair_front": {
+      "upperHeadRays": 280,
+      "p06cSkinFirst": 0,
+      "p07aSkinFirst": 0
+    },
+    "hair_top": {
+      "upperHeadRays": 1167,
+      "p06cSkinFirst": 0,
+      "p07aSkinFirst": 0
+    },
+    "hair_right_3q": {
+      "upperHeadRays": 267,
+      "p06cSkinFirst": 0,
+      "p07aSkinFirst": 0
+    },
+    "hair_left": {
+      "upperHeadRays": 239,
+      "p06cSkinFirst": 0,
+      "p07aSkinFirst": 0
+    },
+    "hair_right": {
+      "upperHeadRays": 239,
+      "p06cSkinFirst": 0,
+      "p07aSkinFirst": 0
+    },
+    "hair_back": {
+      "upperHeadRays": 205,
+      "p06cSkinFirst": 0,
+      "p07aSkinFirst": 0
+    }
+  },
+  "assetsBothPosesHaveIdenticalHair": true,
+  "viewDetailLimit": "hair_ear_left/hair_ear_right/low-back true Cycles pending. Samples do NOT certify real ear mesh or nape continuous collision.",
+  "independentValidation": {
+    "sourceShaHashesVerified": true,
+    "p07aNewGLBShaVerifiedBeforePush": true,
+    "nonHairMeshesByteExact": true,
+    "allOriginalAnimationSamplerBytesExact": true,
+    "sixNativeVariantsJsonEqual": true,
+    "anchorTransformsIdentical": true,
+    "originalHairEyebrowsByteExact": true,
+    "originalHairIndexArrayExact": true
+  },
+  "newBlenderCycles": "PENDING_OWNER_WINDOWS_RUN",
+  "newEditableBlend": "NOT_CREATED",
+  "newZipCrc": "NOT_RUN",
+  "ownerApproval": "PENDING",
+  "zeroCost": true
+}

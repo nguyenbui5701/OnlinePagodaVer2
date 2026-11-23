@@ -1,0 +1,238 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "actual SHA pinned P05d/P05e cross GLB reimport; original frozen P02 lotus in pair only",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p05e_cross",
+  "kind": "actor",
+  "inputs": [
+    {
+      "file": "meditator_female_cross_prayer_p05e.glb",
+      "bytes": 574048,
+      "sha256": "0829edde73666460c457267672e344a61443ee2c882319998d5b84a359f81367"
+    }
+  ],
+  "meshCount": 10,
+  "principledMaterialSlots": 10,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05D locked front/quarter/both-side/foot/9x16; added explicit SAME old/new low-side waist diagnostic cameras; full phone width 720/height 1280",
+  "originalBlend": {
+    "file": "meditator_female_p05e_cross_actor.blend",
+    "bytes": 2139368,
+    "sha256": "ccc965ee077fcb49f08e66bdc417900f2d3e613640366ae67e4b7ed97affbf3b"
+  },
+  "images": [
+    {
+      "view": "front",
+      "file": "p05e_cross_actor_front_cycles.png",
+      "bytes": 343075,
+      "sha256": "e290cb52507140523025f0ae24a9b133788d136e5408c4127fb49d4500699e7a"
+    },
+    {
+      "view": "quarter",
+      "file": "p05e_cross_actor_quarter_cycles.png",
+      "bytes": 331342,
+      "sha256": "4515562b63508c487a90fb1acda96a8aabcdb73574fdb98a8eec9a7aeaaf5da7"
+    },
+    {
+      "view": "left",
+      "file": "p05e_cross_actor_left_cycles.png",
+      "bytes": 337488,
+      "sha256": "62809d4e23da7647aa3bbee2c760b8fbfa655a0ff54b93ab8100dc012b6b9d9a"
+    },
+    {
+      "view": "right",
+      "file": "p05e_cross_actor_right_cycles.png",
+      "bytes": 337218,
+      "sha256": "8a6340df43b90b0b5e411dd7f32aceec39251c114d273ad141f3905f993d5067"
+    },
+    {
+      "view": "back",
+      "file": "p05e_cross_actor_back_cycles.png",
+      "bytes": 318402,
+      "sha256": "03f84bfff83f06e4ff4ae3d94346f34493566cafd1fa4d67faba0c98e5d016c2"
+    },
+    {
+      "view": "foot_macro_front",
+      "file": "p05e_cross_actor_foot_macro_front_cycles.png",
+      "bytes": 311549,
+      "sha256": "0d904a1be38bc1d1424f36c40bda01e8c39424b0dca8b088c054bcbd7502b425"
+    },
+    {
+      "view": "foot_macro_left3q",
+      "file": "p05e_cross_actor_foot_macro_left3q_cycles.png",
+      "bytes": 325320,
+      "sha256": "6f2f827239a2dbcc845b38de266e7bd2b9d60004208980ac63e88b783a512964"
+    },
+    {
+      "view": "foot_macro_right3q",
+      "file": "p05e_cross_actor_foot_macro_right3q_cycles.png",
+      "bytes": 322210,
+      "sha256": "ba6100a074e5f20003e28aaafd3fb6af665c92e1ed89148a40acda3c91f61a9e"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "p05e_cross_actor_foot_macro_side_cycles.png",
+      "bytes": 317205,
+      "sha256": "694a0b93656658d0c6d17daa5d7780fb09e71f36f5f15bda07b8f6d870c69480"
+    },
+    {
+      "view": "foot_diagnostic_center_front",
+      "file": "p05e_cross_actor_foot_diagnostic_center_front_cycles.png",
+      "bytes": 313940,
+      "sha256": "230b2a2fb3ba832a15f5c038768dbb69d06f7797e0f7496bda4abc1591b85390"
+    },
+    {
+      "view": "foot_diagnostic_center_3q",
+      "file": "p05e_cross_actor_foot_diagnostic_center_3q_cycles.png",
+      "bytes": 320963,
+      "sha256": "37b11ee10e1703931fc28dcadc831c41182d8543baaadd947f6f7c6e9d048d74"
+    },
+    {
+      "view": "waist_side_right",
+      "file": "p05e_cross_actor_waist_side_right_cycles.png",
+      "bytes": 332745,
+      "sha256": "fc8fa5c1831080e06799070b8e674cdd5efa4eea6d37084b81f61b2ea2f7fcf5"
+    },
+    {
+      "view": "waist_side_left",
+      "file": "p05e_cross_actor_waist_side_left_cycles.png",
+      "bytes": 338010,
+      "sha256": "f85bbc19ec208f3e9a0d302ca2323bf509b3fd426886d691e45a9051f3c68563"
+    },
+    {
+      "view": "waist_low_side_right",
+      "file": "p05e_cross_actor_waist_low_side_right_cycles.png",
+      "bytes": 331258,
+      "sha256": "ba3c81e08769e09d0add5350f67906d9cc144ee27c269e2c99697efd54e12a72"
+    },
+    {
+      "view": "waist_low_side_left",
+      "file": "p05e_cross_actor_waist_low_side_left_cycles.png",
+      "bytes": 333184,
+      "sha256": "4dd845e2b573f1f905a05b4e6617e0d8ad379db59330ab6fda9027a90c5388d0"
+    },
+    {
+      "view": "waist_under3q",
+      "file": "p05e_cross_actor_waist_under3q_cycles.png",
+      "bytes": 326643,
+      "sha256": "f837edea8161a1299e0d033d471bd798bdc52ccaa57acdceca85325f0ded45c9"
+    },
+    {
+      "view": "waist_front_close",
+      "file": "p05e_cross_actor_waist_front_close_cycles.png",
+      "bytes": 348646,
+      "sha256": "2b2f74af11fd208fdad14848d48db470f3524b00afc98a1f9182b5da60d9a8cd"
+    },
+    {
+      "view": "medium_9x16",
+      "file": "p05e_cross_actor_medium_9x16_cycles.png",
+      "bytes": 980588,
+      "sha256": "97cca687050cd45e736768ac612713e159b21d851dba023ebb480b148f8b42b8"
+    },
+    {
+      "view": "close_9x16",
+      "file": "p05e_cross_actor_close_9x16_cycles.png",
+      "bytes": 986506,
+      "sha256": "9f584dcdb03955e8fa2b97f841d5dec9822df15ac74e4da85eac62e4621887cc"
+    },
+    {
+      "view": "waist_low_side_right",
+      "file": "p05e_cross_actor_idle_waist_low_side_right_0.0_cycles.png",
+      "bytes": 331412,
+      "sha256": "5031a7dfa9ad83b2250b670021ba9d48551397f31c859d83870af5ff8580386f"
+    },
+    {
+      "view": "waist_low_side_left",
+      "file": "p05e_cross_actor_idle_waist_low_side_left_0.0_cycles.png",
+      "bytes": 333219,
+      "sha256": "b663cd5ebe763f07b43a23fbd6fbc785c6d5ec364832aff10d435753c722fe45"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "p05e_cross_actor_idle_foot_macro_side_0.0_cycles.png",
+      "bytes": 317485,
+      "sha256": "a05e5158b5b09e387af0f4cefd872966b71c758f361356eb37312439a93dcc93"
+    },
+    {
+      "view": "waist_low_side_right",
+      "file": "p05e_cross_actor_idle_waist_low_side_right_0.5_cycles.png",
+      "bytes": 332191,
+      "sha256": "01c9938c7cd84ac091d6378fbee606403e7f3fa6a0700953eb6a9666d4e5fde0"
+    },
+    {
+      "view": "waist_low_side_left",
+      "file": "p05e_cross_actor_idle_waist_low_side_left_0.5_cycles.png",
+      "bytes": 333508,
+      "sha256": "044f1e49a2691d75da0e4b6e152633088490e78001d442df91c597b69b035255"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "p05e_cross_actor_idle_foot_macro_side_0.5_cycles.png",
+      "bytes": 317130,
+      "sha256": "1d63a18ed38ecfb03cf7182d3672076462aa8aa97e75b83a93541cc33e448685"
+    },
+    {
+      "view": "waist_low_side_right",
+      "file": "p05e_cross_actor_idle_waist_low_side_right_1.0_cycles.png",
+      "bytes": 333100,
+      "sha256": "2915e453d15601bf24a143f6956cf9a9d23c590db296c467c40c2960bd23d887"
+    },
+    {
+      "view": "waist_low_side_left",
+      "file": "p05e_cross_actor_idle_waist_low_side_left_1.0_cycles.png",
+      "bytes": 333429,
+      "sha256": "ea89cb2c896d3e386efd335c8e8ca2030efa3c98a4e672c7fd8be433051ff8de"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "p05e_cross_actor_idle_foot_macro_side_1.0_cycles.png",
+      "bytes": 316802,
+      "sha256": "3d7dee1bd6e666303f8e60c92ab5d08e4f94d0147a2a54d20f7c16d59dcd41f6"
+    },
+    {
+      "view": "waist_low_side_right",
+      "file": "p05e_cross_actor_idle_waist_low_side_right_1.5_cycles.png",
+      "bytes": 332191,
+      "sha256": "91a4dedbf8d4f3dc97c4f3a5c63c09c16839eedc59d6323e97520cd892029a82"
+    },
+    {
+      "view": "waist_low_side_left",
+      "file": "p05e_cross_actor_idle_waist_low_side_left_1.5_cycles.png",
+      "bytes": 333508,
+      "sha256": "a3e2a11e773a436da6b9b189538673639effcdf7509abec23be87ee7a76e77dc"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "p05e_cross_actor_idle_foot_macro_side_1.5_cycles.png",
+      "bytes": 317130,
+      "sha256": "b08e60908c3a980e2264cb96350f19f3f861964eb806ab75dab70b2256700293"
+    },
+    {
+      "view": "waist_low_side_right",
+      "file": "p05e_cross_actor_idle_waist_low_side_right_2.0_cycles.png",
+      "bytes": 331412,
+      "sha256": "271797ded492d0f1016d486cd93900f32ea46af5cd9d1dc9272b043dc1448331"
+    },
+    {
+      "view": "waist_low_side_left",
+      "file": "p05e_cross_actor_idle_waist_low_side_left_2.0_cycles.png",
+      "bytes": 333219,
+      "sha256": "cd32ab753676ac0d61496a93ba4bac4ffbfa48e8439a03d24460536b32bd8c78"
+    },
+    {
+      "view": "foot_macro_side",
+      "file": "p05e_cross_actor_idle_foot_macro_side_2.0_cycles.png",
+      "bytes": 317485,
+      "sha256": "1d0ea5d05c723c7fc721524c156ae2b2b3606b9573d1f3ef53bd78ab644e37bc"
+    }
+  ]
+}

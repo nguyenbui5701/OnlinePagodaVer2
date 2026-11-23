@@ -1,0 +1,47 @@
+{
+  "revision": "P0.7a1",
+  "branch": "assets/lotus-pad-chibi-p0",
+  "pr": 2,
+  "sourceHead": "3d0bb547451790986200fe4cc3f57250e2cf494a",
+  "scope": "new hair-only alternative, source P07a; P06c and P07a immutable",
+  "assets": [
+    {
+      "pose": "cross",
+      "path": "Assets3D/Review/lotus_pad_chibi/p7a1/meditator_male_cross_prayer_undercut_p07a1.glb",
+      "sha256": "ffdb92adf27d8fa14ee2a12dbca57cd71c888f1b9023019761940c460151c09e",
+      "bytes": 590476,
+      "meshes": 10,
+      "materials": 21,
+      "totalTriangles": 18380,
+      "hairVertices": 1672,
+      "hairTriangles": 3080,
+      "animations": [
+        "sit_idle",
+        "cross_prayer_idle"
+      ],
+      "nonHairExact": true
+    },
+    {
+      "pose": "kneel",
+      "path": "Assets3D/Review/lotus_pad_chibi/p7a1/meditator_male_kneel_prayer_undercut_p07a1.glb",
+      "sha256": "56de649df89ba124e5a546fe6981cbffd80193a5b858e0d4ae8b1ab444c316b4",
+      "bytes": 456892,
+      "meshes": 9,
+      "materials": 21,
+      "totalTriangles": 18420,
+      "hairVertices": 1672,
+      "hairTriangles": 3080,
+      "animations": [
+        "sit_idle",
+        "kneel_prayer_idle"
+      ],
+      "nonHairExact": true
+    }
+  ],
+  "source": "build_male_undercut_p07a1.mjs",
+  "cycles": "NOT_RUN",
+  "blenderSource": "PENDING_OWNER_RUN",
+  "ownerGate": "PENDING",
+  "noSidepart": true,
+  "paidVND": 0
+}

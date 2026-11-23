@@ -1,0 +1,65 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport exact SHA-pinned P05c/P05d cross GLB; real lotus in pair only",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p05c_cross",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_female_cross_prayer_p05c.glb",
+      "bytes": 424784,
+      "sha256": "1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 14,
+  "principledMaterialSlots": 14,
+  "importedActionNames": [
+    "cross_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05C locked full/quarter/side/9x16 plus foot macros; diagnostic separately labeled",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "pair_front",
+      "file": "p05c_cross_pair_pair_front_cycles.png",
+      "bytes": 359531,
+      "sha256": "8e5cc33eb8855d6b4fad1b46b140d9496de88a8d4c462839d0aa841852a90f71"
+    },
+    {
+      "view": "pair_side",
+      "file": "p05c_cross_pair_pair_side_cycles.png",
+      "bytes": 356058,
+      "sha256": "22df30d4741f0c25d801b495c535d463fa7aa532bfaac00c003edd8700816b2f"
+    },
+    {
+      "view": "pair_quarter",
+      "file": "p05c_cross_pair_pair_quarter_cycles.png",
+      "bytes": 339366,
+      "sha256": "1f5275ebab9326666db85979819f174c96ec07556c36683fbc3c40c880133eed"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p05c_cross_pair_pair_medium_9x16_cycles.png",
+      "bytes": 1024475,
+      "sha256": "5060df83d37b93c82bea199e4ce074092880ea1c81437c7c90ce82d975799edb"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "p05c_cross_pair_pair_close_9x16_cycles.png",
+      "bytes": 1033890,
+      "sha256": "db3a6a9418465ff04a49bafffe459e2918a157dfdd4d9ad7b6218ba779e71067"
+    }
+  ]
+}

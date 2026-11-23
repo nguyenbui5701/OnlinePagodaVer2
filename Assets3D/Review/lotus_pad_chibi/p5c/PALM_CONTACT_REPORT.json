@@ -1,0 +1,33 @@
+{
+  "contactStatus": "SAMPLED_CONTACT_PATCH; EXACT_HAND_HAND_NONINTERSECTION_HALFSPACE_PROOF",
+  "baseline": {
+    "gap": 0.002061342936940491,
+    "contactDistance": 0.002417,
+    "contactFaces": 0,
+    "contactArea": 0
+  },
+  "revised": {
+    "gap": 0.0011341619538143277,
+    "contactDistance": 0.0011662,
+    "contactFaces": 54,
+    "contactArea": 0.0004612645823824967,
+    "leftNormal": [
+      0.82508,
+      -0.02379,
+      0.13492
+    ],
+    "rightNormal": [
+      -0.81903,
+      -0.02126,
+      0.1185
+    ],
+    "contactCenter": [
+      -0.00064579,
+      0.52836209,
+      0.34543559
+    ],
+    "oppositionMedianNormalDot": -0.9993639767284361
+  },
+  "technicalExplanation": "All triangles from left hand have X <= -0.000567, and right hand X >= +0.000567 because every vertex is bounded in a disjoint halfspace. Each triangle is a convex combination of vertices, so hand-hand triangle intersections are impossible under the static hand transforms and identical rigid UpperBodyBreath animation. Other mesh intersections not proven.",
+  "sampleMethod": "Inward-oriented face centroids (Y=.505..557, normals X sign) to closest point on 20 nearest opposing triangles; normals dot < -0.5 and distance <=1.5mm, area is sum of matched sampled left face areas, not exact continuous physical contact patch."
+}

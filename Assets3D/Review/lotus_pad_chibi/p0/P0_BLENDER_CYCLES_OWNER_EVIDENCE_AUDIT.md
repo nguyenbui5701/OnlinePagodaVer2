@@ -1,0 +1,14 @@
+# Original p0.1 Blender/Cycles owner evidence — independently SA reviewed
+
+**SA review [#6005380374](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/2#pullrequestreview-6005380374)** (2026-11-21) of immutable p0.1 PR HEAD `e8eb34c5d405e308e616c89cd385eb5d1d342b2f`: real owner Blender/Cycles **TECHNICAL PASS**, **ART OWNER APPROVAL STILL PENDING**. This audit records the owner's *past executed files*, not a new Blender execution by AI Visual.
+
+- Original owner's `P0_LOTUS_CHIBI_Blender_Evidence_Cycles.zip`: 7,008,614 bytes, SHA-256 `e3a02ea4069d614331c81316d33da2a7b1861fc4b5777ec2860392b8825d5e36`. ZIP CRC PASS; **30/30** actual archive members match `FILE_HASHES_SHA256.txt`; pad 3, actor 9, pair 6 = **18/18 true Cycles PNG** match each case report SHA+bytes.
+- All **3/3 cases** contain `[P0_CYCLES_COMPLETED]`, empty stderr. Blender **4.5.16 LTS**, **Cycles CPU, 32 samples**, AgX **0 EV**, native glTF/PBR import and 5 phase `sit_idle` image samples.
+- Original `lotus_pad_01(1).blend` 1,258,524 B SHA-256 `9bb6baf2d2b457674154ff5758852a46ac93568360ead6f250ed6b8d3c9667e9`.
+- Original `meditator_base(1).blend` 1,204,551 B SHA-256 `ba48fc0db3707865eb26ebe9bcc380ac6d035e6a47035bfc9f78b31bfb30bf96`.
+- Original `lotus_chibi_seated_review.blend` 2,074,525 B SHA-256 `405929cfaa763645cb71bd62ec08536319385faf5da38d0283009525fff6491f`.
+- SA verified all three independent original Blender-v405 DNA1/ENDB block streams and hashes against ZIP/reports. These .blend / Cycles evidence were **owner-controlled and provided to SA chat, not present on PR branch** (no fabricated repository upload).
+- Actual original p0.1 GLBs remain uploaded on PR #2: pad SHA `0c80e5d4b2590716fdf9a985340fe2446af7ecc056727a03b82a3997db52bba5` (270,128 B), actor SHA `f4e184b57046ad442183931bf9fd2f6d7953000ea07270458e291f627f787d2b` (205,588 B). No source model mutation.
+- Coordinate contract remains `PadSeatAnchor=[0,.195,0]` world-local +Y, actor +Y-up/+Z-forward `SeatRoot=[0,0,0]`, `HeadAnchor=[0,.835,.04]`, `NameplateAnchor=[0,1.335,.03]`, `FXAnchor=[.37,.805,.16]`, hierarchical `sit_idle` 2s/17 keys (not a skinned rig). Only place actor at Y=.195 once; resolve named nodes in each separate GLB scope since review pair .blend may have duplicate names.
+- The owner's prior stdout path included `Assets3D/Review/sakura_hero/p0/` due to where the Windows starter was extracted. This is a path-location issue, **not invalid ZIP evidence**; all future outputs should go to `Assets3D/Review/lotus_pad_chibi/p0.2/` or a dedicated extracted starter directory.
+- Native Three.js AnimationMixer, FPS/VRAM on RTX 3050Ti 4GB/3060 8GB + LIVE Studio, owner final art and production remain **NOT APPROVED**. P0-02 candidate needs **new** same-camera Cycles A/B; do not reuse P0.1 Cycles as P0.2 acceptance. Codex/integration ON HOLD per [AI_VISUAL_02](https://github.com/nguyenbui5701/OnlinePagodaVer2/blob/main/Task/AI_VISUAL_02_ART_REFINEMENT_AND_OWNER_GATE.md).

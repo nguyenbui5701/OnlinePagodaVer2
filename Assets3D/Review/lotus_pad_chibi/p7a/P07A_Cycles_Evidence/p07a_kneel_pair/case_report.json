@@ -1,0 +1,109 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "Actual SHA-pinned approved P06c and new P07a undercut GLB reimports; original P02 lotus pair frozen",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p07a_kneel",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_male_kneel_prayer_undercut_p07a.glb",
+      "bytes": 456540,
+      "sha256": "e7f86beb4cd43f899c57922c0e34c94020e93dc007c6b9f5094b2757363960da"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 14,
+  "principledMaterialSlots": 14,
+  "importedActionNames": [
+    "kneel_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "kneel_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 9
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P06c identical front/top/L-R/right3Q/low-back/focal lengths and pair 720x1280; 3 fixed suns AgX EV0 World .65; additional ear macro same-camera both versions; diagnostic is never art proof",
+  "originalBlend": {
+    "file": "meditator_p07a_kneel_pair.blend",
+    "bytes": 3056133,
+    "sha256": "5f292ac0e709c4dc5e430add021c4159979106bfcbe5206da332bf6f1fbfa548"
+  },
+  "images": [
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07a_kneel_pair_pair_medium_9x16_cycles.png",
+      "bytes": 1034710,
+      "sha256": "1af5e7f40b0f27f63ab1bed7282b1ff0f954e5e7b968b6e38b253c782d81a1ea"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "p07a_kneel_pair_pair_close_9x16_cycles.png",
+      "bytes": 1041526,
+      "sha256": "2d49908e95b4933bb04b887d3b71f90aad4afb1291d10e4ac5d635487804e3e9"
+    },
+    {
+      "view": "pair_front",
+      "file": "p07a_kneel_pair_pair_front_cycles.png",
+      "bytes": 362487,
+      "sha256": "dfee92dd7d20aae9faf3b19839d9c38757d0f95a06a2350b2cf1c97002f8f69a"
+    },
+    {
+      "view": "pair_side",
+      "file": "p07a_kneel_pair_pair_side_cycles.png",
+      "bytes": 354929,
+      "sha256": "b5200fdfa0cdc89e95ae83ec9b9261577306ad2eb1eedbe3c70b3d9b672682da"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07a_kneel_pair_idle_pair_medium_9x16_0.0_cycles.png",
+      "bytes": 561215,
+      "sha256": "9bc723e69404adc52e71df1387ce5cad68996dd408be988a68e087bcac08500e"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07a_kneel_pair_idle_pair_medium_9x16_0.5_cycles.png",
+      "bytes": 561142,
+      "sha256": "b79c8be54e6739b83643619812f36cb8fb92837dac87287d6e58ad00313e3de5"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07a_kneel_pair_idle_pair_medium_9x16_1.0_cycles.png",
+      "bytes": 561323,
+      "sha256": "5335cd9415e8a0f56911bd4eeaa83ff5a05749899752297d90ce8a39b75cc413"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07a_kneel_pair_idle_pair_medium_9x16_1.5_cycles.png",
+      "bytes": 561142,
+      "sha256": "4155be785006ac8697fec2e43ff394c212691c3ebb083bfb8832bb7dd8dd370d"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p07a_kneel_pair_idle_pair_medium_9x16_2.0_cycles.png",
+      "bytes": 561215,
+      "sha256": "133ded10488cbbe6c0809440af2769a4b691b72c04e08459c6922206a5c0ea4e"
+    }
+  ],
+  "diagnosticImagesNotArtApproval": []
+}

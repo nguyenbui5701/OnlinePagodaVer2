@@ -1,0 +1,59 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "reimport actual exported P05/P05b GLB",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p05_kneel",
+  "kind": "pair",
+  "inputs": [
+    {
+      "file": "meditator_female_kneel_prayer_p05.glb",
+      "bytes": 352636,
+      "sha256": "04a1d0e03e5186085118dd06d158dbba43e7180843895ed1661a03529040785e"
+    },
+    {
+      "file": "lotus_pad_01.glb",
+      "bytes": 262108,
+      "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+    }
+  ],
+  "meshCount": 14,
+  "principledMaterialSlots": 14,
+  "importedActionNames": [
+    "kneel_prayer_idle",
+    "sit_idle"
+  ],
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "P05_CAMERA_CONTRACT.json + P05B added macro-left/right/torso",
+  "originalBlend": null,
+  "images": [
+    {
+      "view": "pair_front",
+      "file": "p05_kneel_pair_pair_front_cycles.png",
+      "bytes": 360687,
+      "sha256": "2b39a1196839975951fe5be54288fc7b243e74bc8717699305121c23102ec65e"
+    },
+    {
+      "view": "pair_full_9x16",
+      "file": "p05_kneel_pair_pair_full_9x16_cycles.png",
+      "bytes": 1002956,
+      "sha256": "12e4df0b0bb4ae4059bc5cbc62db393ec05abac51e1ebbf25162772c85bb9009"
+    },
+    {
+      "view": "pair_medium_9x16",
+      "file": "p05_kneel_pair_pair_medium_9x16_cycles.png",
+      "bytes": 1030450,
+      "sha256": "73235e9cfdf3c2480af681776ce88dd4bcda2f778ce5040ea925424891552839"
+    },
+    {
+      "view": "pair_close_9x16",
+      "file": "p05_kneel_pair_pair_close_9x16_cycles.png",
+      "bytes": 1039454,
+      "sha256": "f89af7cfec8fc28e3912274aec2e4bb3da27f646ffd288464dbc328bc4d74c92"
+    }
+  ]
+}

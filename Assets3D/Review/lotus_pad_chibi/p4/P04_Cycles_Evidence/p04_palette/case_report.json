@@ -1,0 +1,57 @@
+{
+  "status": "EXECUTED_ONLY_WHEN_THIS_JSON_EXISTS",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "revision": "p04",
+  "kind": "palette",
+  "inputs": [
+    {
+      "name": "meditator_female_ao_ba_ba_p04.glb",
+      "bytes": 244348,
+      "sha256": "586134fdeab962f35458c16255985513b070da47195110d3c83eef2dd9b6be09"
+    }
+  ],
+  "realImportedMeshes": 9,
+  "pbrMaterialSlots": 9,
+  "animations": [
+    "sit_idle"
+  ],
+  "cameraFOVAndLightingFixed": true,
+  "AgX": true,
+  "exposureEV": 0,
+  "worldStrength": 0.65,
+  "originalBlend": null,
+  "images": [
+    {
+      "name": "swatch_pastel_lilac_cycles.png",
+      "bytes": 332508,
+      "sha256": "7cd2b81999072b26e145cb6d998856ca8c6ec96f982feaee7457b57879f5e4c4"
+    },
+    {
+      "name": "swatch_blush_rose_cycles.png",
+      "bytes": 332866,
+      "sha256": "59dc438c25f6c1b506bd9e36553df084dd75ae571f38069591ec0c002b997ca6"
+    },
+    {
+      "name": "swatch_sage_green_cycles.png",
+      "bytes": 332339,
+      "sha256": "223a4b5a26b5dfcedd7e38fdad170c7c5454aaf5fb112559b70251ffb7841703"
+    },
+    {
+      "name": "swatch_sky_blue_cycles.png",
+      "bytes": 333340,
+      "sha256": "beff31f08b6f1e25604a8478ed85c80e389918de77cceb19cff8ca7feee7cf91"
+    },
+    {
+      "name": "swatch_warm_cream_cycles.png",
+      "bytes": 332923,
+      "sha256": "4e8e6fafbbf62e5d0e6db4ad1b17f3c9bec553c3968f66df4438adf2e063c61b"
+    },
+    {
+      "name": "swatch_terracotta_cycles.png",
+      "bytes": 333313,
+      "sha256": "9301eeb25e97260af006831b03c8156a951284ea951e7969a9901eaf3c1fcf4e"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Phase 1 — Actual P0.5c lower-leg geometry and targeted edit
+
+Verified against original `p5c/meditator_female_cross_prayer_p05c.glb` SHA `1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf`, 424784 bytes. Exactly 2 connected sandal shells, each 42 vertices/80 triangles, around x±0.14, y0.067, z0.199, embedded inside the folded trouser loops. The crossed knees are broad continuous trouser tubes with 1,538 vertices/3,064 triangles; the opening conceals both toes.
+
+**Scope:** one skin-toned foot tip on right side (front view), other tucked. Apply a Gaussian local fabric cuff Z displacement to only **54 original pants vertices** near x0.138, y0.068, z0.341; max actual displacement 0.020382m, 103 recomputed adjacent normals. Original pants triangles unchanged. Reuse material ID 3 (skin), add 162-vertex/320-triangle watertight foot capsule child of SeatRoot with bounds X[.106,.174], Y[.0151,.0749], Z[.215,.355]. The capsule slants down from concealed ankle root to visible tip. No edits to original sandals or palm/upper body. All historical P0.5c files and kneeling original remain frozen.
+
+**Test and decision:** matched imported-GLB VTK PBR front/left-right-quarter/side, knee macro/foot macro, 9:16 medium/close; five idle samples. Reject any change outside pants/cuff and new SeatRoot foot. Original lotus contact exact check requires Windows Blender/SA. Use P05C fixed lights/cameras rather than a changed angle. **Geometry scope verified; art remains PENDING SA/OWNER.**

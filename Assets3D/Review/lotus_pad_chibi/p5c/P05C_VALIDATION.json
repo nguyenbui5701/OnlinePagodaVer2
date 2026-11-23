@@ -1,0 +1,285 @@
+{
+  "cross_prayer": {
+    "pose": "cross_prayer",
+    "baseline": {
+      "sha256": "81e8548cf6e46d9f5ff60c7bdf342ac1857015140e7d06d67dbd9284054137fd",
+      "bytes": 424628,
+      "triangles": 16864
+    },
+    "new": {
+      "sha256": "1da8c12982165cf57e2ef678013cdd57b67bba7fd6c08e2979c267599d35e5bf",
+      "bytes": 424784,
+      "triangles": 16864,
+      "vertices": 8636,
+      "meshes": 9,
+      "materials": 21
+    },
+    "identicalMeshes8Of9": [
+      "ao_ba_ba_pants_SeatRoot_mesh",
+      "sandal_trim_SeatRoot_mesh",
+      "ao_ba_ba_top_UpperBodyBreath_mesh",
+      "ao_ba_ba_placket_UpperBodyBreath_mesh",
+      "ao_ba_ba_buttons_UpperBodyBreath_mesh",
+      "hair_blue_black_UpperBodyBreath_mesh",
+      "eyes_mauve_UpperBodyBreath_mesh",
+      "skin_blush_UpperBodyBreath_mesh"
+    ],
+    "onlyAlteredMesh": "skin_rose_cream_UpperBodyBreath_mesh",
+    "handMeshIndicesSame": true,
+    "totalChangedSkinVertices": 2413,
+    "changedVertexBoundsMin": [
+      -0.0749994,
+      0.4360177,
+      0.3130157
+    ],
+    "changedVertexBoundsMax": [
+      0.0749993,
+      0.6186039,
+      0.3735143
+    ],
+    "materialsAndSixColorsBitIdentical": true,
+    "poseLegsAndHairAndCuffsExactAccessorEquality": true,
+    "anchorsSame": true,
+    "animationsSameAtAll17Keys": true,
+    "contactOld": {
+      "leftWatertight": true,
+      "rightWatertight": true,
+      "leftConnectedComponents": 1,
+      "rightConnectedComponents": 1,
+      "leftMaxX": -0.0010290927020832896,
+      "rightMinX": 0.0010322502348572016,
+      "strictHalfspaceSeparationM": 0.002061342936940491,
+      "handToHandTriangleIntersection": "PROVEN_NONE_USING_DISJOINT_HALFSPACE_BOUND_FOR_ALL_TRIANGLES",
+      "palmZones": {
+        "leftCandidateFaceCount": 184,
+        "rightCandidateFaceCount": 187,
+        "leftInwardMeanNormal": [
+          0.71781,
+          0.09025,
+          0.05148
+        ],
+        "rightInwardMeanNormal": [
+          -0.73209,
+          0.07475,
+          0.04558
+        ]
+      },
+      "triangleCentroidToOppositeTriangleSurfaceDistanceM": {
+        "min": 0.0024170476092253254,
+        "p05": 0.003583678624941706,
+        "median": 0.010658058076683352
+      },
+      "contactPatch": {
+        "method": "Sampled left inward-facing triangle centroids to nearest 20 opposite face centroids, then true point-to-triangle closest point; dot face normals < -0.5",
+        "thresholdMeters": 0.0015,
+        "qualifiedSampledFaces": 0,
+        "areaOfQualifiedLeftTrianglesSquareMeters": 0.0,
+        "centroidLocalXYZ": [
+          null,
+          null,
+          null
+        ],
+        "sampledNormalsDotMedian": null,
+        "label": "TRIANGLE_CENTROID_SAMPLING_NOT_EXACT_PHYSICAL_CONTACT_AREA"
+      },
+      "otherCollision": "HAND_VS_SLEEVE_CHIN_HAIR_UNCHECKED_EXACT; PROXY_ONLY",
+      "poseRelativeInvariantUnderIdle": "All hand geometry follows same UpperBodyBreath as face/torso; full animation arrays independently checked"
+    },
+    "contactNew": {
+      "leftWatertight": true,
+      "rightWatertight": true,
+      "leftConnectedComponents": 1,
+      "rightConnectedComponents": 1,
+      "leftMaxX": -0.0005680025788024068,
+      "rightMinX": 0.0005661593750119209,
+      "strictHalfspaceSeparationM": 0.0011341619538143277,
+      "handToHandTriangleIntersection": "PROVEN_NONE_USING_DISJOINT_HALFSPACE_BOUND_FOR_ALL_TRIANGLES",
+      "palmZones": {
+        "leftCandidateFaceCount": 314,
+        "rightCandidateFaceCount": 302,
+        "leftInwardMeanNormal": [
+          0.82508,
+          -0.02379,
+          0.13492
+        ],
+        "rightInwardMeanNormal": [
+          -0.81903,
+          -0.02126,
+          0.1185
+        ]
+      },
+      "triangleCentroidToOppositeTriangleSurfaceDistanceM": {
+        "min": 0.0011662178983947822,
+        "p05": 0.0012409617710323862,
+        "median": 0.00621173980532969
+      },
+      "contactPatch": {
+        "method": "Sampled left inward-facing triangle centroids to nearest 20 opposite face centroids, then true point-to-triangle closest point; dot face normals < -0.5",
+        "thresholdMeters": 0.0015,
+        "qualifiedSampledFaces": 54,
+        "areaOfQualifiedLeftTrianglesSquareMeters": 0.0004612645823824967,
+        "centroidLocalXYZ": [
+          -0.00064579,
+          0.52836209,
+          0.34543559
+        ],
+        "sampledNormalsDotMedian": -0.9993639767284361,
+        "label": "TRIANGLE_CENTROID_SAMPLING_NOT_EXACT_PHYSICAL_CONTACT_AREA"
+      },
+      "otherCollision": "HAND_VS_SLEEVE_CHIN_HAIR_UNCHECKED_EXACT; PROXY_ONLY",
+      "poseRelativeInvariantUnderIdle": "All hand geometry follows same UpperBodyBreath as face/torso; full animation arrays independently checked"
+    },
+    "idleSamples": [
+      0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "BlenderP05C": "NOT_RUN",
+    "OwnerArt": "PENDING"
+  },
+  "kneel_prayer": {
+    "pose": "kneel_prayer",
+    "baseline": {
+      "sha256": "533b84cba69332107ea25c57ed952b76c8276d4971a558496e4caf7aea400e9f",
+      "bytes": 439088,
+      "triangles": 17792
+    },
+    "new": {
+      "sha256": "a8b40ffb81e12f7eaf401c42a21a3588bdc05660579f512c95c936514d2029ac",
+      "bytes": 439244,
+      "triangles": 17792,
+      "vertices": 9100,
+      "meshes": 9,
+      "materials": 21
+    },
+    "identicalMeshes8Of9": [
+      "ao_ba_ba_pants_SeatRoot_mesh",
+      "sandal_trim_SeatRoot_mesh",
+      "ao_ba_ba_top_UpperBodyBreath_mesh",
+      "ao_ba_ba_placket_UpperBodyBreath_mesh",
+      "ao_ba_ba_buttons_UpperBodyBreath_mesh",
+      "hair_blue_black_UpperBodyBreath_mesh",
+      "eyes_mauve_UpperBodyBreath_mesh",
+      "skin_blush_UpperBodyBreath_mesh"
+    ],
+    "onlyAlteredMesh": "skin_rose_cream_UpperBodyBreath_mesh",
+    "handMeshIndicesSame": true,
+    "totalChangedSkinVertices": 2413,
+    "changedVertexBoundsMin": [
+      -0.0749994,
+      0.4360177,
+      0.3130157
+    ],
+    "changedVertexBoundsMax": [
+      0.0749993,
+      0.6186039,
+      0.3735143
+    ],
+    "materialsAndSixColorsBitIdentical": true,
+    "poseLegsAndHairAndCuffsExactAccessorEquality": true,
+    "anchorsSame": true,
+    "animationsSameAtAll17Keys": true,
+    "contactOld": {
+      "leftWatertight": true,
+      "rightWatertight": true,
+      "leftConnectedComponents": 1,
+      "rightConnectedComponents": 1,
+      "leftMaxX": -0.0010290927020832896,
+      "rightMinX": 0.0010322502348572016,
+      "strictHalfspaceSeparationM": 0.002061342936940491,
+      "handToHandTriangleIntersection": "PROVEN_NONE_USING_DISJOINT_HALFSPACE_BOUND_FOR_ALL_TRIANGLES",
+      "palmZones": {
+        "leftCandidateFaceCount": 184,
+        "rightCandidateFaceCount": 187,
+        "leftInwardMeanNormal": [
+          0.71781,
+          0.09025,
+          0.05148
+        ],
+        "rightInwardMeanNormal": [
+          -0.73209,
+          0.07475,
+          0.04558
+        ]
+      },
+      "triangleCentroidToOppositeTriangleSurfaceDistanceM": {
+        "min": 0.0024170476092253254,
+        "p05": 0.003583678624941706,
+        "median": 0.010658058076683352
+      },
+      "contactPatch": {
+        "method": "Sampled left inward-facing triangle centroids to nearest 20 opposite face centroids, then true point-to-triangle closest point; dot face normals < -0.5",
+        "thresholdMeters": 0.0015,
+        "qualifiedSampledFaces": 0,
+        "areaOfQualifiedLeftTrianglesSquareMeters": 0.0,
+        "centroidLocalXYZ": [
+          null,
+          null,
+          null
+        ],
+        "sampledNormalsDotMedian": null,
+        "label": "TRIANGLE_CENTROID_SAMPLING_NOT_EXACT_PHYSICAL_CONTACT_AREA"
+      },
+      "otherCollision": "HAND_VS_SLEEVE_CHIN_HAIR_UNCHECKED_EXACT; PROXY_ONLY",
+      "poseRelativeInvariantUnderIdle": "All hand geometry follows same UpperBodyBreath as face/torso; full animation arrays independently checked"
+    },
+    "contactNew": {
+      "leftWatertight": true,
+      "rightWatertight": true,
+      "leftConnectedComponents": 1,
+      "rightConnectedComponents": 1,
+      "leftMaxX": -0.0005680025788024068,
+      "rightMinX": 0.0005661593750119209,
+      "strictHalfspaceSeparationM": 0.0011341619538143277,
+      "handToHandTriangleIntersection": "PROVEN_NONE_USING_DISJOINT_HALFSPACE_BOUND_FOR_ALL_TRIANGLES",
+      "palmZones": {
+        "leftCandidateFaceCount": 314,
+        "rightCandidateFaceCount": 302,
+        "leftInwardMeanNormal": [
+          0.82508,
+          -0.02379,
+          0.13492
+        ],
+        "rightInwardMeanNormal": [
+          -0.81903,
+          -0.02126,
+          0.1185
+        ]
+      },
+      "triangleCentroidToOppositeTriangleSurfaceDistanceM": {
+        "min": 0.0011662178983947822,
+        "p05": 0.0012409617710323862,
+        "median": 0.00621173980532969
+      },
+      "contactPatch": {
+        "method": "Sampled left inward-facing triangle centroids to nearest 20 opposite face centroids, then true point-to-triangle closest point; dot face normals < -0.5",
+        "thresholdMeters": 0.0015,
+        "qualifiedSampledFaces": 54,
+        "areaOfQualifiedLeftTrianglesSquareMeters": 0.0004612645823824967,
+        "centroidLocalXYZ": [
+          -0.00064579,
+          0.52836209,
+          0.34543559
+        ],
+        "sampledNormalsDotMedian": -0.9993639767284361,
+        "label": "TRIANGLE_CENTROID_SAMPLING_NOT_EXACT_PHYSICAL_CONTACT_AREA"
+      },
+      "otherCollision": "HAND_VS_SLEEVE_CHIN_HAIR_UNCHECKED_EXACT; PROXY_ONLY",
+      "poseRelativeInvariantUnderIdle": "All hand geometry follows same UpperBodyBreath as face/torso; full animation arrays independently checked"
+    },
+    "idleSamples": [
+      0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "BlenderP05C": "NOT_RUN",
+    "OwnerArt": "PENDING"
+  },
+  "status": "P05C_REAL_GLB_INDEPENDENT_VALIDATION_PASS_WITH_SPECIFIED_CONTACT_SAMPLING",
+  "ownerGate": "P05C_FEMALE_PALM_ART_OWNER_REVIEW_REQUIRED",
+  "noMaleNoCodexNoMerge": true
+}

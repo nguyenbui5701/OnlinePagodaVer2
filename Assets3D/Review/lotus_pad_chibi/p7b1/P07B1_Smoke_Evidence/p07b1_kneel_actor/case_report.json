@@ -1,0 +1,56 @@
+{
+  "status": "OWNER_EXECUTED_ONLY_IF_REAL_JSON_AND_PNG_EXIST",
+  "source": "Actual exported new P07b1 side-part GLB reimport; original SHA-pinned P02 lotus in pair; old baselines REUSED, not re-rendered",
+  "blender": "4.5.16 LTS",
+  "engine": "Cycles CPU",
+  "samples": 16,
+  "revision": "p07b1_kneel",
+  "kind": "actor",
+  "inputs": [
+    {
+      "file": "meditator_male_kneel_prayer_sidepart73_p07b1.glb",
+      "bytes": 456348,
+      "sha256": "3707ec76f311b10f4b672940edbda211c2d021f12c8c5300367f7fb4d2e1f96c"
+    }
+  ],
+  "meshCount": 9,
+  "principledMaterialSlots": 9,
+  "importedActionNames": [
+    "kneel_prayer_idle",
+    "sit_idle"
+  ],
+  "glbNativeContract": {
+    "clipNames": [
+      "kneel_prayer_idle",
+      "sit_idle"
+    ],
+    "variants": [
+      "pastel_lilac",
+      "blush_rose",
+      "sage_green",
+      "sky_blue",
+      "warm_cream",
+      "terracotta"
+    ],
+    "meshCount": 9
+  },
+  "worldStrength": 0.65,
+  "AgX": true,
+  "exposureEV": 0,
+  "sunLights": 3,
+  "cameraContract": "Frozen P06c camera/lighting and 720x1280 pair, 3 original suns, AgX EV0, World .65; no P06c/P07a1 re-render; diagnostic excluded from art",
+  "originalBlend": {
+    "file": "meditator_p07b1_kneel_actor.blend",
+    "bytes": 2115035,
+    "sha256": "934c233403f227534b08e6932edeff00d55e5385997b3c2624157ea3f8d75ef7"
+  },
+  "images": [
+    {
+      "view": "hair_front",
+      "file": "p07b1_kneel_actor_hair_front_cycles.png",
+      "bytes": 615013,
+      "sha256": "923b97d3d96b2ddf90070e7eed6a16906d05a479e7008e43e2f080a78daad080"
+    }
+  ],
+  "diagnosticImagesNotArtApproval": []
+}

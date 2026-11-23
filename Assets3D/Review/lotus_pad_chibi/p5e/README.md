@@ -1,0 +1,15 @@
+# P0.5e — Female Cross Foot & Waist Continuity, owner ART gate
+
+**Scope:** PR #2 Draft, `assets/lotus-pad-chibi-p0`, only `p5e/`. Task [AI_VISUAL_08](https://github.com/nguyenbui5701/OnlinePagodaVer2/blob/main/Task/AI_VISUAL_08_FEMALE_CROSS_FOOT_WAIST_CONTINUITY.md), reviewed input SHA `e34eee82afafbcb174e71f710e6e630b59a784f0`. Never edit original P05d/P05c, frozen kneel, P02 lotus, Sakura or runtime.
+
+**P0 foot:** old 162/320 spherical/pebble foot replaced by a directional waist-to-toes 222/440 closed 3D instep loft, ankle root hidden in unchanged sandal/pants, rounded low toe angled to screen-right (X increases 0.083m while front Z increases 0.163m). Reuses existing skin material, glTF mesh count unchanged; root is concealed geometric overlap, **NOT welded**.
+
+**P0 waist:** three bottom shirt hem components (104 original verts) softened/down 72mm locally; central hip component of pants (101 original verts) raised up to 99mm; new 226v/448tri inner fabric attached inside existing blouse mesh/material/6-color variants on unchanged animated UpperBodyBreath. Does **not** disable original 16mm breath. On true exported GLB triangle-ray test 725 rays per condition, for left/right horizontal and low-upward at t0,.5,1,1.5,2, background-visible fraction falls from old 19–57% to new **0% in test window**; see `P05E_VALIDATION.json` and source ZIP `P05E_WAIST_RAY_AUDIT.json`. No full physical collision proof.
+
+**P0 preservation:** seven whole glTF meshes (including approved prayer hands, face/hair/placket/buttons/sandal) have exactly matching POSITION/NORMAL/indices; crossed leg surface not remodeled; six palette materials, anchors and both original two-second/17-key animation sampler arrays are unchanged. No new kneel GLB.
+
+**Actual output:** `meditator_female_cross_prayer_p05e.glb` 574048 bytes, SHA `0829edde73666460c457267672e344a61443ee2c882319998d5b84a359f81367`, 17752 triangles / 9084 verts / 10 meshes / 21 materials. +568 tris/+286 verts, no new draw mesh/material. **Real GLB native VTK PBR A/B executed**, 5 idle samples old/new, phone 9:16, foot/low-angle side; images in user ZIP, not Blender/Cycles.
+
+**Truthful gates:** Prior P05d Cycles original 4/4 executed and selected PNG SHA checked by SA; **new P05e Blender Cycles NOT RUN**, new editable .blend NOT CREATED (Blender not installed here). Frozen lotus GLB not available in local 3D runtime, so real leaf/pair contact must be verified in owner's SHA-gated Windows Cycles. The exact original full builder is recoverable from GitHub's SHA-verified `P05E_CANONICAL_SOURCE.zlib.b64` using `restore_p05e_source.py`; isolated clean-checkout-style rebuild with the original P05d GLB **PASS BYTE EXACT** (see `P05E_SOURCE_REPRO_AUDIT.md`). **New GLB/media remain pending owner upload**.
+
+Owner must run the 4-case Windows kit (Cycles CPU 32, AgX 0EV, 3 SUN, fixed same camera, original pad) and send original ZIP + 2 .blend. SA reviews proof → owner says explicit **OK P0.5e** or requests another female foot/waist adjustment. State `P05E_FEMALE_CROSS_FOOT_WAIST_OWNER_REVIEW_REQUIRED`; PR Draft, **NO male/Codex/integration/merge**, zero paid cost.
