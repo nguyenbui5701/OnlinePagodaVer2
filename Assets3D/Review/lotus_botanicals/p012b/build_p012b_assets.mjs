@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import crypto from 'node:crypto';
-const models=(function makeAssets() {
+const rawModels=(function makeAssets() {
   const PI=Math.PI,TAU=2*PI;
   const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
   const mix=(a,b,t)=>a+(b-a)*t;
@@ -179,5 +179,44 @@ const models=(function makeAssets() {
   }
   return [one("bloom","quality"),one("bloom","eco"),one("bud","quality"),one("bud","eco")];
 })();
+// Resolve collapsed tip-grid triangles deterministically, then recompute normals + accessors.
+const models=rawModels.map((function patchBloomGLB(m){
+  if(!m.name.startsWith("lotus_bloom_"))return m;
+  const original=m.bytes,hd=new DataView(original.buffer,original.byteOffset,original.byteLength),jlen=hd.getUint32(12,true);
+  const json=JSON.parse(String.fromCharCode(...original.slice(20,20+jlen)).trim()),base=20+jlen+8;
+  const positions=json.accessors[json.meshes[0].primitives[0].attributes.POSITION],normals=json.accessors[json.meshes[0].primitives[0].attributes.NORMAL],ix=json.accessors[json.meshes[0].primitives[0].indices];
+  const posOffset=base+json.bufferViews[positions.bufferView].byteOffset,norOffset=base+json.bufferViews[normals.bufferView].byteOffset,idxOffset=base+json.bufferViews[ix.bufferView].byteOffset;
+  const quality=m.name.includes("_quality"),rows=quality?6:4,cols=quality?4:3,per=(rows+1)*(cols+1);
+  if(positions.count%per!==0)throw Error("unexpected bloom topology "+m.name);
+  for(let petal=0;petal<positions.count/per;petal++)for(const row of [0,rows]){
+    const start=petal*per+row*(cols+1),x=hd.getFloat32(posOffset+start*12,true),z=hd.getFloat32(posOffset+start*12+8,true),r=Math.hypot(x,z);
+    if(r<.01)throw Error("invalid tip radial center");
+    for(let k=0;k<=cols;k++){
+      const s=2*k/cols-1,at=posOffset+(start+k)*12,delta=.0025*s;
+      hd.setFloat32(at,x-delta*z/r,true);hd.setFloat32(at+8,z+delta*x/r,true)
+    }
+  }
+  const accum=new Float64Array(positions.count*3);
+  function pos(i){const o=posOffset+12*i;return [hd.getFloat32(o,true),hd.getFloat32(o+4,true),hd.getFloat32(o+8,true)]}
+  for(let i=0;i<ix.count;i+=3){const ia=hd.getUint16(idxOffset+i*2,true),ib=hd.getUint16(idxOffset+(i+1)*2,true),ic=hd.getUint16(idxOffset+(i+2)*2,true);
+    const a=pos(ia),b=pos(ib),c=pos(ic),u=[b[0]-a[0],b[1]-a[1],b[2]-a[2]],v=[c[0]-a[0],c[1]-a[1],c[2]-a[2]];
+    const no=[u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]];
+    if(Math.hypot(...no)<1e-9)throw Error("degenerate after tip patch "+m.name+" triangle "+i/3);
+    for(const k of [ia,ib,ic])for(let h=0;h<3;h++)accum[3*k+h]+=no[h]
+  }
+  const lo=[Infinity,Infinity,Infinity],hi=[-Infinity,-Infinity,-Infinity];
+  for(let i=0;i<positions.count;i++){
+    const v=pos(i),ns=accum.slice(3*i,3*i+3),length=Math.hypot(...ns)||1;
+    for(let h=0;h<3;h++){hd.setFloat32(norOffset+12*i+4*h,ns[h]/length,true);lo[h]=Math.min(lo[h],v[h]);hi[h]=Math.max(hi[h],v[h])}
+  }
+  positions.min=lo;positions.max=hi;
+  const allPos=json.meshes[0].primitives.map(p=>json.accessors[p.attributes.POSITION]),mins=[0,1,2].map(k=>Math.min(...allPos.map(a=>a.min[k]))),maxs=[0,1,2].map(k=>Math.max(...allPos.map(a=>a.max[k])));
+  const txt=JSON.stringify(json),jb=[];for(let i=0;i<txt.length;i++)jb.push(txt.charCodeAt(i));while(jb.length%4)jb.push(32);
+  const bb=original.slice(base,base+json.buffers[0].byteLength),total=12+8+jb.length+8+bb.length,final=new Uint8Array(total),dd=new DataView(final.buffer);
+  dd.setUint32(0,0x46546c67,true);dd.setUint32(4,2,true);dd.setUint32(8,total,true);dd.setUint32(12,jb.length,true);dd.setUint32(16,0x4e4f534a,true);
+  final.set(jb,20);const bo=20+jb.length;dd.setUint32(bo,bb.length,true);dd.setUint32(bo+4,0x004e4942,true);final.set(bb,bo+8);
+  m.bytes=final;m.stats.bytes=total;m.stats.boundsMinMaxMeters=[mins,maxs];m.stats.boundsMeters=maxs.map((v,i)=>v-mins[i]);
+  return m
+}));
 const dest=path.dirname(fileURLToPath(import.meta.url));
 for(const m of models){const f=path.join(dest,m.name);fs.writeFileSync(f,m.bytes);console.log(JSON.stringify({...m.stats,filename:m.name,sha256:crypto.createHash('sha256').update(m.bytes).digest('hex')}));}
