@@ -1,0 +1,1386 @@
+[
+  {
+    "source": "9f15513c451eacc5f52a62c47ebd17085beea15e",
+    "profile": "eco",
+    "initialHash": "64b084f410eba0835ffb9623ee59269756068af24c4246d25bb4af29cad09a88",
+    "restores": 1,
+    "frames": [
+      {
+        "time": 47.72,
+        "drawCalls": 29,
+        "geometries": 29,
+        "textures": 1,
+        "giftCount": 5,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "error": 0
+      },
+      {
+        "time": 47.8,
+        "drawCalls": 29,
+        "geometries": 29,
+        "textures": 1,
+        "giftCount": 5,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "error": 0
+      },
+      {
+        "time": 47.879999999999995,
+        "drawCalls": 29,
+        "geometries": 29,
+        "textures": 1,
+        "giftCount": 5,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "error": 0
+      },
+      {
+        "time": 47.96,
+        "drawCalls": 29,
+        "geometries": 29,
+        "textures": 1,
+        "giftCount": 5,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "error": 0
+      }
+    ],
+    "phases": [
+      {
+        "name": "before-loss",
+        "console": []
+      },
+      {
+        "name": "loss",
+        "atMs": 37726.5032,
+        "durationMs": 38.44050000000425,
+        "console": []
+      },
+      {
+        "name": "restore",
+        "atMs": 37764.9581,
+        "durationMs": 85.02329999999347,
+        "console": []
+      },
+      {
+        "name": "post-restore-render",
+        "atMs": 37849.9904,
+        "durationMs": 1345.7077999999965,
+        "console": []
+      },
+      {
+        "name": "teardown",
+        "atMs": 39195.7056,
+        "durationMs": 622.8111999999965,
+        "console": [
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+        ]
+      }
+    ],
+    "knownTeardownWarnings": 105
+  },
+  {
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "profile": "eco",
+    "initialHash": "830bbfffd7af5e34439067ec0a2d0a6273834a421019649c65b03c049b8ac9a3",
+    "restores": 1,
+    "frames": [
+      {
+        "time": 18.4,
+        "drawCalls": 74,
+        "geometries": 29,
+        "textures": 1,
+        "giftCount": 3,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "occupants": [
+          {
+            "slotId": "seat-1",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-1",
+            "seatId": "seat-1"
+          },
+          {
+            "slotId": "seat-2",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-2",
+            "seatId": "seat-2"
+          },
+          {
+            "slotId": "seat-3",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-3",
+            "seatId": "seat-3"
+          },
+          {
+            "slotId": "visual-4",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-4"
+          },
+          {
+            "slotId": "visual-5",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-5"
+          },
+          {
+            "slotId": "visual-6",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-6"
+          },
+          {
+            "slotId": "visual-7",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-7"
+          },
+          {
+            "slotId": "visual-8",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-8"
+          },
+          {
+            "slotId": "visual-9",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-9"
+          },
+          {
+            "slotId": "visual-10",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-10"
+          },
+          {
+            "slotId": "visual-11",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-11"
+          },
+          {
+            "slotId": "visual-12",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-12"
+          }
+        ],
+        "error": 0
+      },
+      {
+        "time": 18.479999999999997,
+        "drawCalls": 74,
+        "geometries": 29,
+        "textures": 1,
+        "giftCount": 3,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "occupants": [
+          {
+            "slotId": "seat-1",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-1",
+            "seatId": "seat-1"
+          },
+          {
+            "slotId": "seat-2",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-2",
+            "seatId": "seat-2"
+          },
+          {
+            "slotId": "seat-3",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-3",
+            "seatId": "seat-3"
+          },
+          {
+            "slotId": "visual-4",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-4"
+          },
+          {
+            "slotId": "visual-5",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-5"
+          },
+          {
+            "slotId": "visual-6",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-6"
+          },
+          {
+            "slotId": "visual-7",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-7"
+          },
+          {
+            "slotId": "visual-8",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-8"
+          },
+          {
+            "slotId": "visual-9",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-9"
+          },
+          {
+            "slotId": "visual-10",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-10"
+          },
+          {
+            "slotId": "visual-11",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-11"
+          },
+          {
+            "slotId": "visual-12",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-12"
+          }
+        ],
+        "error": 0
+      },
+      {
+        "time": 18.56,
+        "drawCalls": 74,
+        "geometries": 29,
+        "textures": 1,
+        "giftCount": 3,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "occupants": [
+          {
+            "slotId": "seat-1",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-1",
+            "seatId": "seat-1"
+          },
+          {
+            "slotId": "seat-2",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-2",
+            "seatId": "seat-2"
+          },
+          {
+            "slotId": "seat-3",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-3",
+            "seatId": "seat-3"
+          },
+          {
+            "slotId": "visual-4",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-4"
+          },
+          {
+            "slotId": "visual-5",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-5"
+          },
+          {
+            "slotId": "visual-6",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-6"
+          },
+          {
+            "slotId": "visual-7",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-7"
+          },
+          {
+            "slotId": "visual-8",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-8"
+          },
+          {
+            "slotId": "visual-9",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-9"
+          },
+          {
+            "slotId": "visual-10",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-10"
+          },
+          {
+            "slotId": "visual-11",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-11"
+          },
+          {
+            "slotId": "visual-12",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-12"
+          }
+        ],
+        "error": 0
+      },
+      {
+        "time": 18.639999999999997,
+        "drawCalls": 74,
+        "geometries": 29,
+        "textures": 1,
+        "giftCount": 3,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "occupants": [
+          {
+            "slotId": "seat-1",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-1",
+            "seatId": "seat-1"
+          },
+          {
+            "slotId": "seat-2",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-2",
+            "seatId": "seat-2"
+          },
+          {
+            "slotId": "seat-3",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-3",
+            "seatId": "seat-3"
+          },
+          {
+            "slotId": "visual-4",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-4"
+          },
+          {
+            "slotId": "visual-5",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-5"
+          },
+          {
+            "slotId": "visual-6",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-6"
+          },
+          {
+            "slotId": "visual-7",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-7"
+          },
+          {
+            "slotId": "visual-8",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-8"
+          },
+          {
+            "slotId": "visual-9",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-9"
+          },
+          {
+            "slotId": "visual-10",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-10"
+          },
+          {
+            "slotId": "visual-11",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-11"
+          },
+          {
+            "slotId": "visual-12",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-12"
+          }
+        ],
+        "error": 0
+      }
+    ],
+    "phases": [
+      {
+        "name": "before-loss",
+        "console": []
+      },
+      {
+        "name": "loss",
+        "atMs": 41523.4427,
+        "durationMs": 16.335800000000745,
+        "console": []
+      },
+      {
+        "name": "restore",
+        "atMs": 41539.7879,
+        "durationMs": 63.932999999997264,
+        "console": []
+      },
+      {
+        "name": "post-restore-render",
+        "atMs": 41603.7431,
+        "durationMs": 1579.593200000003,
+        "console": []
+      },
+      {
+        "name": "teardown",
+        "atMs": 43183.346,
+        "durationMs": 648.1203999999998,
+        "console": [
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+        ]
+      }
+    ],
+    "knownTeardownWarnings": 135
+  },
+  {
+    "source": "9f15513c451eacc5f52a62c47ebd17085beea15e",
+    "profile": "quality",
+    "initialHash": "ae791e8feb13ce4032c327641a962e46025e86057c17189b01dcaa2e6cc1f452",
+    "restores": 1,
+    "frames": [
+      {
+        "time": 47.72,
+        "drawCalls": 30,
+        "geometries": 30,
+        "textures": 2,
+        "giftCount": 5,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "error": 0
+      },
+      {
+        "time": 47.8,
+        "drawCalls": 30,
+        "geometries": 30,
+        "textures": 2,
+        "giftCount": 5,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "error": 0
+      },
+      {
+        "time": 47.879999999999995,
+        "drawCalls": 30,
+        "geometries": 30,
+        "textures": 2,
+        "giftCount": 5,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "error": 0
+      },
+      {
+        "time": 47.96,
+        "drawCalls": 30,
+        "geometries": 30,
+        "textures": 2,
+        "giftCount": 5,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "error": 0
+      }
+    ],
+    "phases": [
+      {
+        "name": "before-loss",
+        "console": []
+      },
+      {
+        "name": "loss",
+        "atMs": 46234.1292,
+        "durationMs": 18.5766999999978,
+        "console": []
+      },
+      {
+        "name": "restore",
+        "atMs": 46252.7253,
+        "durationMs": 59.714899999999034,
+        "console": []
+      },
+      {
+        "name": "post-restore-render",
+        "atMs": 46312.4494,
+        "durationMs": 3682.092000000004,
+        "console": []
+      },
+      {
+        "name": "teardown",
+        "atMs": 49994.5494,
+        "durationMs": 966.9604999999938,
+        "console": [
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+        ]
+      }
+    ],
+    "knownTeardownWarnings": 137
+  },
+  {
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "profile": "quality",
+    "initialHash": "9a78173dbeb0ae34e255303a0ab298828b25c4b23a5583bc81d21ce741632024",
+    "restores": 1,
+    "frames": [
+      {
+        "time": 18.4,
+        "drawCalls": 75,
+        "geometries": 30,
+        "textures": 2,
+        "giftCount": 3,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "occupants": [
+          {
+            "slotId": "seat-1",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-1",
+            "seatId": "seat-1"
+          },
+          {
+            "slotId": "seat-2",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-2",
+            "seatId": "seat-2"
+          },
+          {
+            "slotId": "seat-3",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-3",
+            "seatId": "seat-3"
+          },
+          {
+            "slotId": "visual-4",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-4"
+          },
+          {
+            "slotId": "visual-5",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-5"
+          },
+          {
+            "slotId": "visual-6",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-6"
+          },
+          {
+            "slotId": "visual-7",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-7"
+          },
+          {
+            "slotId": "visual-8",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-8"
+          },
+          {
+            "slotId": "visual-9",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-9"
+          },
+          {
+            "slotId": "visual-10",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-10"
+          },
+          {
+            "slotId": "visual-11",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-11"
+          },
+          {
+            "slotId": "visual-12",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-12"
+          }
+        ],
+        "error": 0
+      },
+      {
+        "time": 18.479999999999997,
+        "drawCalls": 75,
+        "geometries": 30,
+        "textures": 2,
+        "giftCount": 3,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "occupants": [
+          {
+            "slotId": "seat-1",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-1",
+            "seatId": "seat-1"
+          },
+          {
+            "slotId": "seat-2",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-2",
+            "seatId": "seat-2"
+          },
+          {
+            "slotId": "seat-3",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-3",
+            "seatId": "seat-3"
+          },
+          {
+            "slotId": "visual-4",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-4"
+          },
+          {
+            "slotId": "visual-5",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-5"
+          },
+          {
+            "slotId": "visual-6",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-6"
+          },
+          {
+            "slotId": "visual-7",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-7"
+          },
+          {
+            "slotId": "visual-8",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-8"
+          },
+          {
+            "slotId": "visual-9",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-9"
+          },
+          {
+            "slotId": "visual-10",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-10"
+          },
+          {
+            "slotId": "visual-11",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-11"
+          },
+          {
+            "slotId": "visual-12",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-12"
+          }
+        ],
+        "error": 0
+      },
+      {
+        "time": 18.56,
+        "drawCalls": 75,
+        "geometries": 30,
+        "textures": 2,
+        "giftCount": 3,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "occupants": [
+          {
+            "slotId": "seat-1",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-1",
+            "seatId": "seat-1"
+          },
+          {
+            "slotId": "seat-2",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-2",
+            "seatId": "seat-2"
+          },
+          {
+            "slotId": "seat-3",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-3",
+            "seatId": "seat-3"
+          },
+          {
+            "slotId": "visual-4",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-4"
+          },
+          {
+            "slotId": "visual-5",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-5"
+          },
+          {
+            "slotId": "visual-6",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-6"
+          },
+          {
+            "slotId": "visual-7",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-7"
+          },
+          {
+            "slotId": "visual-8",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-8"
+          },
+          {
+            "slotId": "visual-9",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-9"
+          },
+          {
+            "slotId": "visual-10",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-10"
+          },
+          {
+            "slotId": "visual-11",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-11"
+          },
+          {
+            "slotId": "visual-12",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-12"
+          }
+        ],
+        "error": 0
+      },
+      {
+        "time": 18.639999999999997,
+        "drawCalls": 75,
+        "geometries": 30,
+        "textures": 2,
+        "giftCount": 3,
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "occupants": [
+          {
+            "slotId": "seat-1",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-1",
+            "seatId": "seat-1"
+          },
+          {
+            "slotId": "seat-2",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-2",
+            "seatId": "seat-2"
+          },
+          {
+            "slotId": "seat-3",
+            "kind": "REAL_OCCUPIED",
+            "actorId": "demo-1-actor-3",
+            "seatId": "seat-3"
+          },
+          {
+            "slotId": "visual-4",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-4"
+          },
+          {
+            "slotId": "visual-5",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-5"
+          },
+          {
+            "slotId": "visual-6",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-6"
+          },
+          {
+            "slotId": "visual-7",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-7"
+          },
+          {
+            "slotId": "visual-8",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-8"
+          },
+          {
+            "slotId": "visual-9",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-9"
+          },
+          {
+            "slotId": "visual-10",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-10"
+          },
+          {
+            "slotId": "visual-11",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-11"
+          },
+          {
+            "slotId": "visual-12",
+            "kind": "DECORATIVE_ANONYMOUS",
+            "decorId": "decor-visual-12"
+          }
+        ],
+        "error": 0
+      }
+    ],
+    "phases": [
+      {
+        "name": "before-loss",
+        "console": []
+      },
+      {
+        "name": "loss",
+        "atMs": 54012.6386,
+        "durationMs": 19.233299999999872,
+        "console": []
+      },
+      {
+        "name": "restore",
+        "atMs": 54031.8783,
+        "durationMs": 75.226800000004,
+        "console": []
+      },
+      {
+        "name": "post-restore-render",
+        "atMs": 54107.1118,
+        "durationMs": 3240.8871,
+        "console": []
+      },
+      {
+        "name": "teardown",
+        "atMs": 57348.0092,
+        "durationMs": 2034.774400000002,
+        "console": [
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+          "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+        ]
+      }
+    ],
+    "knownTeardownWarnings": 167
+  }
+]

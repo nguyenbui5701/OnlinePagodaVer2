@@ -25,6 +25,20 @@ pre { white-space: pre-wrap; overflow-wrap: anywhere; }
   overflow-wrap: anywhere;
 }
 #gift-name { transform: translate(-50%, -100%); }
+.community-name {
+  position: absolute;
+  z-index: 1;
+  max-width: 36%;
+  padding: 0.12em 0.58em;
+  transform: translate(-50%, -100%);
+  border-radius: 0.8em;
+  background: #251b33df;
+  color: #fff2f6;
+  font-size: clamp(11px, 1.8vh, 16px);
+  pointer-events: none;
+  overflow-wrap: anywhere;
+}
+#stage:has(.community-name) :is(.gift-label, #gift-fallback, #status) { z-index: 2; }
 #gift-fx {
   font-size: clamp(11px, 1.9vh, 17px);
   transform: translate(8%, -50%);

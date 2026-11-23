@@ -1,0 +1,2159 @@
+[
+  {
+    "file": "baseline-low-eco.png",
+    "hash": "a07a12c40a103a3d4a8900014c07dbc70b5fd3cecd3d8ffd978212bee7a5dda6",
+    "url": "http://127.0.0.1:4191/?seed=9&profile=eco&demo=idle&inspect=1&clean=1",
+    "time": 7.5,
+    "fixed": {
+      "position": [
+        14,
+        6,
+        38
+      ],
+      "target": [
+        0,
+        8,
+        3
+      ],
+      "fov": 51
+    },
+    "source": "9f15513c451eacc5f52a62c47ebd17085beea15e",
+    "view": "CLOSE",
+    "labels": {},
+    "camera": {
+      "position": [
+        14,
+        6,
+        38
+      ],
+      "target": [
+        0,
+        8,
+        3
+      ],
+      "fov": 51
+    }
+  },
+  {
+    "file": "baseline-low-quality.png",
+    "hash": "641de694afbebdcaa8490dd5631308a2a749b7e358e213a7f35c4fadbca56e2e",
+    "url": "http://127.0.0.1:4191/?seed=9&profile=quality&demo=idle&inspect=1&clean=1",
+    "time": 7.5,
+    "fixed": {
+      "position": [
+        14,
+        6,
+        38
+      ],
+      "target": [
+        0,
+        8,
+        3
+      ],
+      "fov": 51
+    },
+    "source": "9f15513c451eacc5f52a62c47ebd17085beea15e",
+    "view": "CLOSE",
+    "labels": {},
+    "camera": {
+      "position": [
+        14,
+        6,
+        38
+      ],
+      "target": [
+        0,
+        8,
+        3
+      ],
+      "fov": 51
+    }
+  },
+  {
+    "file": "baseline-gifts-eco.png",
+    "hash": "cc8254cc15e27b30c2f09db82574a32619495b8dd7125b051e64928a3656a45f",
+    "url": "http://127.0.0.1:4191/?seed=9&profile=eco&demo=gifts&inspect=1&clean=1",
+    "time": 47.72,
+    "source": "9f15513c451eacc5f52a62c47ebd17085beea15e",
+    "view": "CLOSE",
+    "labels": {
+      "name": "An",
+      "fx": "5 hoa hồng"
+    },
+    "focus": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "requestId": "demo-1-gift-1",
+      "name": "An",
+      "headWorld": [
+        1.9941380535564215,
+        1.0979660370666533,
+        13.460431861505846
+      ],
+      "nameWorld": [
+        1.9956035401673162,
+        1.5979660370666533,
+        13.470323896129385
+      ],
+      "fxWorld": [
+        1.6105469331547537,
+        1.0679660370666535,
+        13.395950450626481
+      ]
+    },
+    "camera": {
+      "position": [
+        -0.16453682873832176,
+        1.15060335816266,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.67060335816266,
+        13.480611612137865
+      ],
+      "fov": 50
+    }
+  },
+  {
+    "file": "baseline-capacity-eco.png",
+    "hash": "57f6f8c9f48efa4a9136e7103cbef3e2f98bb54dd4f08dfdc3faac4ca5807d4d",
+    "url": "http://127.0.0.1:4191/?seed=9&profile=eco&demo=capacity&inspect=1&clean=1",
+    "time": 48.9,
+    "source": "9f15513c451eacc5f52a62c47ebd17085beea15e",
+    "view": "CLOSE",
+    "labels": {
+      "name": "An",
+      "fx": "5 hoa hồng",
+      "fallback": "Duyên · 1 hoa hồng"
+    },
+    "focus": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "requestId": "demo-1-gift-1",
+      "name": "An",
+      "headWorld": [
+        1.9941380535564215,
+        1.1105128303915262,
+        13.460431861505846
+      ],
+      "nameWorld": [
+        1.9956035401673162,
+        1.6105128303915262,
+        13.470323896129385
+      ],
+      "fxWorld": [
+        1.6105469331547537,
+        1.0805128303915263,
+        13.395950450626481
+      ]
+    },
+    "camera": {
+      "position": [
+        -0.16453682873832176,
+        1.156751286891848,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6767512868918478,
+        13.480611612137865
+      ],
+      "fov": 50
+    }
+  },
+  {
+    "file": "community-low-eco.png",
+    "hash": "6e93e0007f4eafd1898e6a8dc301b37624feae850aeb20d97eef429e822ce938",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=eco&demo=community&inspect=1&clean=1",
+    "time": 7.5,
+    "fixed": {
+      "position": [
+        14,
+        6,
+        38
+      ],
+      "target": [
+        0,
+        8,
+        3
+      ],
+      "fov": 51
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "CLOSE",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 0,
+      "decorativeActors": 12,
+      "batches": 15
+    },
+    "instancesInFrustum": 7,
+    "camera": {
+      "position": [
+        14,
+        6,
+        38
+      ],
+      "target": [
+        0,
+        8,
+        3
+      ],
+      "fov": 51
+    }
+  },
+  {
+    "file": "arrival-before-eco.png",
+    "hash": "7b128813ab68cbb1003cf3b3e052a11a88770cc1d4b3be762c4ff121468de76c",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=eco&demo=community&inspect=1&clean=1",
+    "time": 7.9,
+    "fixed": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "CLOSE",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 0,
+      "decorativeActors": 12,
+      "batches": 15
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    }
+  },
+  {
+    "file": "arrival-seated-eco.png",
+    "hash": "2a5ffcf2bdd34602dbf65edfa1e6def03ae42a9deeedbefaabf64a06128ee663",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=eco&demo=community&inspect=1&clean=1",
+    "time": 8.45,
+    "fixed": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "CLOSE",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "viewerCount": 41,
+      "realActors": 1,
+      "decorativeActors": 11,
+      "batches": 15
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    }
+  },
+  {
+    "file": "community-aerial-eco.png",
+    "hash": "1777fc6860aac2e1b48dcd17d7ae4ddddb9a3894c13c187daa8be62a42ed586d",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=eco&demo=community&inspect=1&clean=1",
+    "time": 14.5,
+    "fixed": {
+      "position": [
+        19,
+        40,
+        31
+      ],
+      "target": [
+        0,
+        12,
+        0
+      ],
+      "fov": 52
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "COMMUNITY",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 3,
+      "decorativeActors": 9,
+      "batches": 15
+    },
+    "instancesInFrustum": 7,
+    "camera": {
+      "position": [
+        19,
+        40,
+        31
+      ],
+      "target": [
+        0,
+        12,
+        0
+      ],
+      "fov": 52
+    }
+  },
+  {
+    "file": "gift-and-overflow-eco.png",
+    "hash": "59ec9e5a75b5000d0e009e552808e17495e63f7a5b1cf93d50caf1846f536670",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=eco&demo=community&inspect=1&clean=1",
+    "time": 18.3,
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "AERIAL",
+    "labels": {
+      "name": "An",
+      "fx": "2 hoa hồng",
+      "fallback": "Duyên · 1 hoa hồng"
+    },
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 3,
+      "decorativeActors": 9,
+      "batches": 15
+    },
+    "focus": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "requestId": "demo-1-gift-1",
+      "name": "An",
+      "headWorld": [
+        1.9941380535564215,
+        1.098381300577894,
+        13.460431861505846
+      ],
+      "nameWorld": [
+        1.9956035401673162,
+        1.598381300577894,
+        13.470323896129385
+      ],
+      "fxWorld": [
+        1.6105469331547537,
+        1.068381300577894,
+        13.395950450626481
+      ]
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        -0.16453682873832176,
+        1.150806837283168,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.670806837283168,
+        13.480611612137865
+      ],
+      "fov": 50
+    }
+  },
+  {
+    "file": "ttl-while-reserved-eco.png",
+    "hash": "83db7d97a8f86708b44c51e10ad24a4bcff47adc360ef3072b265da897ae1f89",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=eco&demo=community&inspect=1&clean=1",
+    "time": 21.3,
+    "fixed": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "AERIAL",
+    "labels": {
+      "name": "An",
+      "fx": "2 hoa hồng"
+    },
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 3,
+      "decorativeActors": 9,
+      "batches": 15
+    },
+    "focus": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "requestId": "demo-1-gift-1",
+      "name": "An",
+      "headWorld": [
+        1.9941380535564215,
+        1.1076186983659864,
+        13.460431861505846
+      ],
+      "nameWorld": [
+        1.9956035401673162,
+        1.6076186983659864,
+        13.470323896129385
+      ],
+      "fxWorld": [
+        1.6105469331547537,
+        1.0776186983659863,
+        13.395950450626481
+      ]
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    }
+  },
+  {
+    "file": "after-release-eco.png",
+    "hash": "b8c443a63985df582719488468db23d2ae5d2d6de4ad7a4b31b3b565d3ce490c",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=eco&demo=community&inspect=1&clean=1",
+    "time": 22.3,
+    "fixed": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "CLOSE",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 0,
+      "decorativeActors": 12,
+      "batches": 15
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    }
+  },
+  {
+    "file": "community-lake-eco.png",
+    "hash": "687dee05b9c21113a97416ccde8519191508f613bb930716109c8379b81e0410",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=eco&demo=community&inspect=1&clean=1",
+    "time": 26.5,
+    "fixed": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "CLOSE",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 0,
+      "decorativeActors": 12,
+      "batches": 15
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    }
+  },
+  {
+    "file": "community-under-tree-eco.png",
+    "hash": "9d20c62054c6ff938c36e98bde75cdc442452381223af2fff6de6f9b612d4118",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=eco&demo=community&inspect=1&clean=1&look=gold",
+    "time": 34.5,
+    "fixed": {
+      "position": [
+        6,
+        2.8,
+        17
+      ],
+      "target": [
+        0,
+        7,
+        0
+      ],
+      "fov": 55
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "COMMUNITY",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 0,
+      "decorativeActors": 12,
+      "batches": 15
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        6,
+        2.8,
+        17
+      ],
+      "target": [
+        0,
+        7,
+        0
+      ],
+      "fov": 55
+    }
+  },
+  {
+    "file": "community-low-quality.png",
+    "hash": "591955d29851911b4ca8826854c4b95ad57bf7fe2442c4e426d96ae046795f1e",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=quality&demo=community&inspect=1&clean=1",
+    "time": 7.5,
+    "fixed": {
+      "position": [
+        14,
+        6,
+        38
+      ],
+      "target": [
+        0,
+        8,
+        3
+      ],
+      "fov": 51
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "CLOSE",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 0,
+      "decorativeActors": 12,
+      "batches": 15
+    },
+    "instancesInFrustum": 7,
+    "camera": {
+      "position": [
+        14,
+        6,
+        38
+      ],
+      "target": [
+        0,
+        8,
+        3
+      ],
+      "fov": 51
+    }
+  },
+  {
+    "file": "arrival-before-quality.png",
+    "hash": "0a2966736085d0e7c340063363b99524f39a6cccf6c83543677804e05d418cd8",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=quality&demo=community&inspect=1&clean=1",
+    "time": 7.9,
+    "fixed": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "CLOSE",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 0,
+      "decorativeActors": 12,
+      "batches": 15
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    }
+  },
+  {
+    "file": "arrival-seated-quality.png",
+    "hash": "8f7e6622c69e6370a3deabb1c813c6db4a976b5d7c39814130e4094be3be645d",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=quality&demo=community&inspect=1&clean=1",
+    "time": 8.45,
+    "fixed": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "CLOSE",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "viewerCount": 41,
+      "realActors": 1,
+      "decorativeActors": 11,
+      "batches": 15
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    }
+  },
+  {
+    "file": "community-aerial-quality.png",
+    "hash": "d86d01b936ea3f0fb13ba9cfec968a851695b952026a1083fe469f08130c99f9",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=quality&demo=community&inspect=1&clean=1",
+    "time": 14.5,
+    "fixed": {
+      "position": [
+        19,
+        40,
+        31
+      ],
+      "target": [
+        0,
+        12,
+        0
+      ],
+      "fov": 52
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "COMMUNITY",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 3,
+      "decorativeActors": 9,
+      "batches": 15
+    },
+    "instancesInFrustum": 7,
+    "camera": {
+      "position": [
+        19,
+        40,
+        31
+      ],
+      "target": [
+        0,
+        12,
+        0
+      ],
+      "fov": 52
+    }
+  },
+  {
+    "file": "gift-and-overflow-quality.png",
+    "hash": "ed3001228d4a625e5389971f93019d62c21a841713eb559fe7e2c6885e0f55ed",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=quality&demo=community&inspect=1&clean=1",
+    "time": 18.3,
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "AERIAL",
+    "labels": {
+      "name": "An",
+      "fx": "2 hoa hồng",
+      "fallback": "Duyên · 1 hoa hồng"
+    },
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 3,
+      "decorativeActors": 9,
+      "batches": 15
+    },
+    "focus": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "requestId": "demo-1-gift-1",
+      "name": "An",
+      "headWorld": [
+        1.9941380535564215,
+        1.098381300577894,
+        13.460431861505846
+      ],
+      "nameWorld": [
+        1.9956035401673162,
+        1.598381300577894,
+        13.470323896129385
+      ],
+      "fxWorld": [
+        1.6105469331547537,
+        1.068381300577894,
+        13.395950450626481
+      ]
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        -0.16453682873832176,
+        1.150806837283168,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.670806837283168,
+        13.480611612137865
+      ],
+      "fov": 50
+    }
+  },
+  {
+    "file": "ttl-while-reserved-quality.png",
+    "hash": "3f9aab51725811679d54fcab0923125f1551e7f90f7200f70726ffe91fd76b50",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=quality&demo=community&inspect=1&clean=1",
+    "time": 21.3,
+    "fixed": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "AERIAL",
+    "labels": {
+      "name": "An",
+      "fx": "2 hoa hồng"
+    },
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 3,
+      "decorativeActors": 9,
+      "batches": 15
+    },
+    "focus": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "requestId": "demo-1-gift-1",
+      "name": "An",
+      "headWorld": [
+        1.9941380535564215,
+        1.1076186983659864,
+        13.460431861505846
+      ],
+      "nameWorld": [
+        1.9956035401673162,
+        1.6076186983659864,
+        13.470323896129385
+      ],
+      "fxWorld": [
+        1.6105469331547537,
+        1.0776186983659863,
+        13.395950450626481
+      ]
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    }
+  },
+  {
+    "file": "after-release-quality.png",
+    "hash": "aaa82ee318dc8e2b37f2c8716b5a28af117edbb2e70755726906f06bc886c718",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=quality&demo=community&inspect=1&clean=1",
+    "time": 22.3,
+    "fixed": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "CLOSE",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 0,
+      "decorativeActors": 12,
+      "batches": 15
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    }
+  },
+  {
+    "file": "community-lake-quality.png",
+    "hash": "7484bad96addf56a37f356a0a3d6d0703f2a73203f9dede8f2bf9b8bf16acd5a",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=quality&demo=community&inspect=1&clean=1",
+    "time": 26.5,
+    "fixed": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "CLOSE",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 0,
+      "decorativeActors": 12,
+      "batches": 15
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52
+    }
+  },
+  {
+    "file": "community-under-tree-quality.png",
+    "hash": "e4f85c4643934de58755019232e1c0c06e0867a58c530e42d9af1074c195e50d",
+    "url": "http://127.0.0.1:4192/?seed=9&profile=quality&demo=community&inspect=1&clean=1&look=gold",
+    "time": 34.5,
+    "fixed": {
+      "position": [
+        6,
+        2.8,
+        17
+      ],
+      "target": [
+        0,
+        7,
+        0
+      ],
+      "fov": 55
+    },
+    "source": "99cd4c1e570bdae68ed1a874be09793f8d05db21",
+    "view": "COMMUNITY",
+    "labels": {},
+    "occupancy": {
+      "slots": [
+        {
+          "slotId": "seat-1",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-1"
+        },
+        {
+          "slotId": "seat-2",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-2"
+        },
+        {
+          "slotId": "seat-3",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-3"
+        },
+        {
+          "slotId": "visual-4",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-4"
+        },
+        {
+          "slotId": "visual-5",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-5"
+        },
+        {
+          "slotId": "visual-6",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-6"
+        },
+        {
+          "slotId": "visual-7",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-7"
+        },
+        {
+          "slotId": "visual-8",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-8"
+        },
+        {
+          "slotId": "visual-9",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-9"
+        },
+        {
+          "slotId": "visual-10",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-10"
+        },
+        {
+          "slotId": "visual-11",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-11"
+        },
+        {
+          "slotId": "visual-12",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-visual-12"
+        }
+      ],
+      "names": [],
+      "viewerCount": 41,
+      "realActors": 0,
+      "decorativeActors": 12,
+      "batches": 15
+    },
+    "instancesInFrustum": 1,
+    "camera": {
+      "position": [
+        6,
+        2.8,
+        17
+      ],
+      "target": [
+        0,
+        7,
+        0
+      ],
+      "fov": 55
+    }
+  }
+]

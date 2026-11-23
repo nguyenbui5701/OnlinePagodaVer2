@@ -1,5 +1,6 @@
 import { DemoEngine, protocolVersion, type DemoEvent, type Effect, type FocusIntent, type Snapshot } from '../../../packages/v2-events/src/engine.ts';
 import { demoScript, gift, session } from '../../../packages/v2-events/src/fixture.ts';
+import { communityConfig, communityScript } from './community-demo.ts';
 
 export const timing = { transitionMs: 1050, focusHoldMs: 4800, returnMs: 1450 };
 const names: Record<string, string> = { A: 'An', B: 'Bình', C: 'Chi', D: 'Duyên' };
@@ -33,18 +34,24 @@ function commands(capacity: boolean): DemoEvent[] {
 }
 
 type DomainLog = { atMs: number; state: Snapshot; effects: Effect[]; disposition?: string };
+export type Scenario = 'idle' | 'gifts' | 'capacity' | 'community';
+export function parseScenario(value: string | null): Scenario {
+  return value === 'gifts' || value === 'capacity' || value === 'community' ? value : 'idle';
+}
 
 export class SliceDriver {
-  private readonly engine = new DemoEngine({ ...timing, maxAvatars: 3 });
+  private readonly engine: DemoEngine;
   private readonly observer = new SceneObserver();
-  private readonly events: DemoEvent[];
+  private readonly events: (DemoEvent | ReturnType<typeof session>)[];
   private cursor = 0;
   private acknowledgements = new Map<string, Extract<Effect, { type: 'giftFx' }>>();
   private roomSessionId = '';
   readonly trace: DomainLog[] = [];
 
-  constructor(scenario: 'idle' | 'gifts' | 'capacity') {
-    this.events = scenario === 'idle' ? [] : commands(scenario === 'capacity');
+  constructor(scenario: Scenario) {
+    this.engine = new DemoEngine({ ...timing, maxAvatars: 3, ...(scenario === 'community' ? communityConfig : {}) });
+    this.events = scenario === 'community' ? communityScript()
+      : scenario === 'idle' ? [] : commands(scenario === 'capacity');
     this.engine.ingest(session());
     this.observer.accept(this.engine.snapshot());
   }
