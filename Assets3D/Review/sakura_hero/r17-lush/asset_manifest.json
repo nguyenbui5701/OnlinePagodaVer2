@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0",
+  "assetId": "sakura_hero",
+  "revision": "R17",
+  "revisionName": "P10B3C_LUSH_BLESSING_TREE",
+  "branch": "assets/sakura-hero-r17-lush",
+  "scope": "AI_VISUAL_16_ART_ONLY",
+  "cost": "0 VND",
+  "provenance": "Original project-authored procedural augmentation of frozen R16; no third-party meshes/images",
+  "workflowStatus": "AUTHORING_SCRIPT_COMMITTED_NATIVE_R17_EXPORT_PENDING",
+  "stage": "REVIEWABLE_RECIPE_ONLY_NOT_AN_ASSET_TECH_PASS",
+  "hardBlocker": "R16 GLB bytes could not be independently decoded/sha-verified through GitHub text-only connector in AI worker; owner-run authoring script MUST validate original bytes before generating anything; Blender unavailable in AI worker.",
+  "source": {
+    "pr": 1,
+    "head": "d9dbeb6a81d1e667d471b8f62910829bb1ce2bd9",
+    "branch": "assets/sakura-hero-r04-sa-review",
+    "sourceR16ManifestPath": "Assets3D/Review/sakura_hero/r16/asset_manifest.json",
+    "sourceR16ManifestKnownStaleStatus": "pending_owner_upload despite Git tree containing both GLB blobs",
+    "quality": {
+      "file": "Assets3D/Review/sakura_hero/r16/sakura_hero.glb",
+      "bytes": 5055232,
+      "declaredSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+      "gitBlobSHA": "c3ec8fc6004cb07ffaad1c7a49397d3ef5fe0aeb",
+      "triangles": 191288,
+      "materials": 11,
+      "independentSHAInWorker": "BLOCKED_BY_GITHUB_BINARY_FETCH"
+    },
+    "eco": {
+      "file": "Assets3D/Review/sakura_hero/r16/sakura_hero_eco.glb",
+      "bytes": 1393492,
+      "declaredSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+      "gitBlobSHA": "5263987434d9c39af9738cf63e7bebf982cf8a32",
+      "triangles": 44412,
+      "independentSHAInWorker": "BLOCKED_BY_GITHUB_BINARY_FETCH"
+    },
+    "blenderSources": [
+      {
+        "file": "Assets3D/Review/sakura_hero/r16/Blender_Evidence_R16/r16_final/sakura_hero_r16_quality.blend",
+        "bytes": 13316952,
+        "gitBlobSHA": "c52148f28d494cafb6b90a51d96c73957eb5f04c",
+        "ownerReportedSHA256": "d78a12de2251d43997dd98909129edd0d6c8b256cc1358911ce9a7721b228c03",
+        "openedInWorker": false
+      },
+      {
+        "file": "Assets3D/Review/sakura_hero/r16/Blender_Evidence_R16/eco_unchanged/sakura_hero_r16_eco.blend",
+        "bytes": 3936772,
+        "gitBlobSHA": "1cadfbbee8a5fcdbe263f40e8c11d0c27f6f2a26",
+        "ownerReportedSHA256": "8a46cda3cbf3491685427cc31330ff4f9e8a090cc2c69328d83e3cd5d43526",
+        "openedInWorker": false
+      }
+    ],
+    "nativeR16CyclesEvidence": "Blender_Evidence_R16/r16_final/r16_final_report.json and eco_unchanged/eco_unchanged_report.json; 10 images each, Blender 4.5.16, true Cycles. No new R17 comparison yet.",
+    "secondaryContactProxy": {
+      "original": "45 of 68 independent R16 small branches screened as crossing candidates",
+      "interpretation": "Proxy only, not exact intersections; R17 augmentation must not claim this fixed"
+    }
+  },
+  "readOnlyViewer": {
+    "pr": 17,
+    "head": "1201369e019f6ba04f7437c7dac347e56894ba2a",
+    "branch": "feature/v2-p10b3b-ambient-rings-hero",
+    "status": "OWNER_P10B3B_WORLD_VISUAL_GO_REFERENCE_READ_ONLY"
+  },
+  "world": {
+    "up": "+Y",
+    "metersPerUnit": 1,
+    "root": [
+      0,
+      0,
+      0
+    ],
+    "waterY": 0,
+    "boundsDeclaredByViewer": {
+      "qualityY": [
+        -0.518381,
+        26.480442
+      ],
+      "ecoY": [
+        -1.026049,
+        24.868639
+      ]
+    },
+    "noRootOrTrunkRewrite": true
+  },
+  "target": {
+    "quality": {
+      "filename": "sakura_hero_r17.glb",
+      "path": "Assets3D/Review/sakura_hero/r17-lush/sakura_hero_r17.glb",
+      "newFlowersDesignTarget": 1200,
+      "predictedNewFlowerTriangles": 28800,
+      "triangleHardCap": 250000,
+      "status": "PENDING_OWNER_NATIVE_BLENDER_BUILD",
+      "actualSHA256": null,
+      "actualBytes": null,
+      "actualTriangles": null
+    },
+    "eco": {
+      "filename": "sakura_hero_r17_eco.glb",
+      "path": "Assets3D/Review/sakura_hero/r17-lush/sakura_hero_r17_eco.glb",
+      "newFlowersDesignTarget": 420,
+      "predictedNewFlowerTriangles": 5040,
+      "triangleHardCap": 60000,
+      "status": "PENDING_OWNER_NATIVE_BLENDER_BUILD",
+      "actualSHA256": null,
+      "actualBytes": null,
+      "actualTriangles": null
+    }
+  },
+  "editableSource": {
+    "generator": "Assets3D/Review/sakura_hero/r17-lush/author_r17_blender.py",
+    "blenderFile": "Assets3D/Review/sakura_hero/r17-lush/sakura_hero_r17_editable.blend",
+    "status": "PENDING_OWNER_NATIVE_BLENDER_BUILD",
+    "sha256": null,
+    "bytes": null
+  },
+  "cycles": {
+    "status": "R17_NATIVE_CYCLES_NOT_RUN",
+    "renderer": "Blender 4.5.16+ Cycles CPU / AgX None / 0 EV / 3 original R16 sun lights",
+    "expectedFrames": 24,
+    "resolution": [
+      720,
+      1280
+    ],
+    "samples": 32,
+    "profileVariants": [
+      "quality",
+      "eco"
+    ],
+    "sources": [
+      "r16",
+      "r17"
+    ],
+    "cameraCases": [
+      "hero_full_9x16",
+      "hero_wide_water_9x16",
+      "hero_top_ring_9x16",
+      "under_crown_9x16",
+      "trunk_fork_9x16",
+      "crown_close_9x16"
+    ],
+    "notes": "Matched static Blender A/B evidence, not native Viewer or physical GPU benchmark; real water mirror plane is render-only and not embedded in GLB.",
+    "artClaimsPass": false
+  },
+  "licensing": "Original authored mesh augmentation, no paid service or third-party screenshots/meshes",
+  "gates": {
+    "sourceBinaryVerified": "PENDING_OWNER_CHECKSUM",
+    "glbTech": "PENDING_NATIVE_EXPORT",
+    "cycles": "PENDING_NATIVE_RENDER",
+    "saArt": "R17_SA_ART_REVIEW_REQUIRED",
+    "ownerArtGO": "PENDING",
+    "merge": "HOLD",
+    "viewerIntegration": "HOLD",
+    "physicalGPU": "OWNER_DEFERRED_NOT_PASS",
+    "provider": "P10B2_PROVIDER_ACCESS_BLOCKED"
+  }
+}
