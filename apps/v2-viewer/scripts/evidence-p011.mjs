@@ -130,7 +130,7 @@ try {
       for(const a of after) {
         const b=before.find(r=>r.key===a.key);
         for(const f of ['position','target','fov','mode','labels','confirmedGiftCount','waterAnchor','starts']) {
-          assert.deepEqual(a[f],b[f],a.key+' '+f);
+          assert.equal(JSON.stringify(a[f]),JSON.stringify(b[f]),a.key+' '+f);
         }
       }
       const metrics=await validate(base,before);
