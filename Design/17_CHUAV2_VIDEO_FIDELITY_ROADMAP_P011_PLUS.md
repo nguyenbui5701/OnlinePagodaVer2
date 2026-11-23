@@ -1,6 +1,6 @@
 # Design 17 — Chuav2 video-fidelity analysis and staged V2 scene roadmap
 
-> **SA DRAFT / OWNER DESIGN GO REQUIRED — 2026-11-23.** This is a **design and prioritization proposal**, **not** an assigned Codex/AI Visual Task, technical PR sign-off, merge, or permission to modify code. This design supplements, but does not rewrite, the immutable history in [Design/16](16_P0_APPROVAL_AND_HANDOFF.md). It is prompted by the Owner's request to rewatch the **now-available reference video** carefully and plan current and future work. The video itself and its third-party screen UI **have not been committed or redistributed**.
+> **OWNER DESIGN GO — 2026-11-23.** Owner explicitly answered **“yes, continue”** to SA's recommendation to use dark blue-purple twilight, warm pink/gold water reflection, luminous Sakura and the order **P0.11 atmosphere/water → P0.12 community/lotus → P0.13 gift blessing**, followed by P0.14 shot parity and independent RTX/LIVE gates. **Approval authorizes SA to issue the isolated P0.11 Codex task, NOT a merge or implementation by SA.** This is a **design and prioritization proposal**, **not** an assigned Codex/AI Visual Task, technical PR sign-off, merge, or permission to modify code. This design supplements, but does not rewrite, the immutable history in [Design/16](16_P0_APPROVAL_AND_HANDOFF.md). It is prompted by the Owner's request to rewatch the **now-available reference video** carefully and plan current and future work. The video itself and its third-party screen UI **have not been committed or redistributed**.
 
 ## 1. Sources, exact audited revisions, bounds
 
@@ -110,11 +110,11 @@
 
 **Control:** Any new Task must state reviewed SHA/base/new branch/PR, exact shot times, deliverables, immutable GLB hashes, objective 720×1280 comparisons, performance truth and `SA_REVIEW_REQUIRED`. No single broad task asking Codex to simultaneously do water, mountain models, avatars, gifts, LIVE and performance. Keep this design draft until Owner explicitly approves sequencing.
 
-## 6. Open Owner decisions for design sign-off
+## 6. Owner design decisions — approved for sequencing
 
 1. Confirm the overall **dark rose-gold twilight / mystic lake** reference look as the priority, rather than retaining the existing brighter lilac palette. This is the most consequential artistic choice.
 2. Confirm whether the first next phase should be the recommended **P0.11 atmospheric water/lighting** (without crowd) or start with **P0.12 scalable community**. SA recommends lighting/water first because it governs all later A/B footage.
 3. Confirm that crowd/lotus variation should be **inspired by**, not a literal commercial clone of, the reference; preserve original approved avatar designs and only make missing assets.
 4. Current P0.10 `TECH PASS` remains; **Owner Visual GO still pending**. Owner may accept the standalone FX as baseline for P0.11 while noting full-reference fidelity partial.
 
-**SA proposal:** Owner approves Design 17 → SA issues a narrow `CODEX_05_P011...` task for atmosphere/reflective pond and, later, distinct AI Visual/Code tasks for flower, crowd and gift choreography. Until design GO, this file alone grants **no runtime code/asset changes**.
+**OWNER RESOLUTION (2026-11-23):** Owner approved the proposed dark twilight/rose-gold art direction and P0.11→P0.12→P0.13 sequencing. SA may now issue a **single focused P0.11 Codex task**. P0.12, P0.13, P0.14 and P1.0 are roadmap stages only until separately authorized for execution. This approval does not retroactively mean Owner P0.10 Visual GO; current PR #7 remains SA TECH PASS / full-video visual fidelity PARTIAL. All current PRs, approved GLBs, V1 and LIVE remain unchanged. 
