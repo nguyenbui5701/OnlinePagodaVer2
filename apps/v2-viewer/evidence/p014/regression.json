@@ -1,0 +1,2408 @@
+{
+  "baseline": "0810f537a7cbffd539c8acb9b8cd6ba2715bbc9f",
+  "summary": [
+    {
+      "seed": 9,
+      "demo": "idle",
+      "end": 85,
+      "cadenceHz": 60,
+      "file": "trace-idle-9.json",
+      "moments": [
+        {
+          "time": 0,
+          "mode": "CINEMATIC"
+        }
+      ],
+      "maximum": {
+        "distance": 0.16334682971477693,
+        "target": 0.25479361302849024,
+        "fov": 0.03829703753906699,
+        "aimRadians": 0.016724660371674718,
+        "speedChange": 0.00969956461422028
+      },
+      "maximumAt": {
+        "distance": {
+          "time": 49.96666666666667,
+          "mode": "CINEMATIC",
+          "position": [
+            17.27148846120555,
+            9.509513174994241,
+            24.020586120050716
+          ]
+        },
+        "target": {
+          "time": 33.15,
+          "mode": "CINEMATIC",
+          "position": [
+            12.519928403972878,
+            4.242706443261721,
+            7.473265518334809
+          ]
+        },
+        "fov": {
+          "time": 54.31666666666667,
+          "mode": "CINEMATIC",
+          "position": [
+            27.594910172078123,
+            26.590442939021095,
+            37.19667261120312
+          ]
+        },
+        "aimRadians": {
+          "time": 34,
+          "mode": "CINEMATIC",
+          "position": [
+            7.285319553745843,
+            3.2589499999999996,
+            7.642798344197249
+          ]
+        },
+        "speedChange": {
+          "time": 49.7,
+          "mode": "CINEMATIC",
+          "position": [
+            15.809684707080695,
+            8.810991047265631,
+            22.040614122900553
+          ]
+        }
+      },
+      "seams": [
+        {
+          "time": 40,
+          "distance": 0.009103994665966534,
+          "target": 0.008234667218838861,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.00002154835688008288,
+          "speedChange": 0.00011992668186222404
+        },
+        {
+          "time": 80,
+          "distance": 0.008786018478182764,
+          "target": 0.00793889750634498,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.000021548362032322087,
+          "speedChange": 0.0006781725667128584
+        }
+      ],
+      "transitions": [],
+      "minWater": 0.9463504076417658,
+      "minPad": null,
+      "cycles": {
+        "0": {
+          "routes": [
+            "west-low"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "1": {
+          "routes": [
+            "east-low"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "2": {
+          "routes": [
+            "west-low"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE"
+          ]
+        }
+      },
+      "treeIntersections": [],
+      "treeRayIntervalHz": 10,
+      "maxCount": 0,
+      "blessings": []
+    },
+    {
+      "seed": 9,
+      "demo": "gifts",
+      "end": 66,
+      "cadenceHz": 60,
+      "file": "trace-gifts-9.json",
+      "moments": [
+        {
+          "time": 0,
+          "mode": "CINEMATIC"
+        },
+        {
+          "time": 46,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 47.05,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 51.85,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-2"
+        },
+        {
+          "time": 52.9,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-2"
+        },
+        {
+          "time": 57.7,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-3"
+        },
+        {
+          "time": 58.75,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-3"
+        },
+        {
+          "time": 63.55,
+          "mode": "CINE_RETURN"
+        },
+        {
+          "time": 65,
+          "mode": "CINEMATIC"
+        }
+      ],
+      "maximum": {
+        "distance": 0.16234029026489244,
+        "target": 0.25479361302849024,
+        "fov": 0.09738716493991717,
+        "aimRadians": 0.03827195800940768,
+        "speedChange": 0.0253465269029736
+      },
+      "maximumAt": {
+        "distance": {
+          "time": 9.95,
+          "mode": "CINEMATIC",
+          "position": [
+            -17.405224930906293,
+            9.46403901870117,
+            23.894221169878456
+          ]
+        },
+        "target": {
+          "time": 33.15,
+          "mode": "CINEMATIC",
+          "position": [
+            12.519928403972878,
+            4.242706443261721,
+            7.473265518334809
+          ]
+        },
+        "fov": {
+          "time": 46.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            1.8840298250085585,
+            1.8615447870117068,
+            8.921641239281236
+          ]
+        },
+        "aimRadians": {
+          "time": 46.46666666666667,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            2.23634952372881,
+            1.9831179934900942,
+            8.912973267918264
+          ]
+        },
+        "speedChange": {
+          "time": 46,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            3.818804347354391,
+            2.530476881065092,
+            8.874040806451568
+          ]
+        }
+      },
+      "seams": [
+        {
+          "time": 40,
+          "distance": 0.009103994665966534,
+          "target": 0.008234667218838861,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.00002154835688008288,
+          "speedChange": 0.00011992668186222404
+        }
+      ],
+      "transitions": [
+        {
+          "time": 46,
+          "before": "CINEMATIC",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.0253465269029736
+        },
+        {
+          "time": 47.05,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.00019125674847296522,
+          "target": 0.00012290250374069866,
+          "fov": 0.0001331516512763642,
+          "aimRadians": 0.000026563529831959996,
+          "speedChange": 0.0008952809230668828
+        },
+        {
+          "time": 51.85,
+          "before": "GIFT_FOCUS",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.00011329979216689878
+        },
+        {
+          "time": 52.9,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.00011737902314314406,
+          "target": 0.00015376805369353902,
+          "fov": 0,
+          "aimRadians": 0.00001059773265981792,
+          "speedChange": 0.0005652580804184671
+        },
+        {
+          "time": 57.7,
+          "before": "GIFT_FOCUS",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 1.4901161193847656e-8,
+          "speedChange": 0.00016956532529244228
+        },
+        {
+          "time": 58.75,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.0002336208134006978,
+          "target": 0.00031145996788296837,
+          "fov": 0,
+          "aimRadians": 0.00002046975393234236,
+          "speedChange": 0.0007675727442990796
+        },
+        {
+          "time": 63.55,
+          "before": "GIFT_FOCUS",
+          "after": "CINE_RETURN",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 1.4901161193847656e-8,
+          "speedChange": 0.00020001595591501165
+        },
+        {
+          "time": 65,
+          "before": "CINE_RETURN",
+          "after": "CINEMATIC",
+          "distance": 0.004544620127189049,
+          "target": 0.002617223240256584,
+          "fov": 0.00019354943831473292,
+          "aimRadians": 0.0015029117318799063,
+          "speedChange": 0.0004058742396187394
+        }
+      ],
+      "minWater": 0.9463504076417658,
+      "minPad": null,
+      "cycles": {
+        "0": {
+          "routes": [
+            "west-low"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "1": {
+          "routes": [
+            "east-low"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL"
+          ]
+        }
+      },
+      "treeIntersections": [],
+      "treeRayIntervalHz": 10,
+      "maxCount": 7,
+      "blessings": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "startedAtMs": 52900
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "startedAtMs": 58750
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "demo": "capacity",
+      "end": 66,
+      "cadenceHz": 60,
+      "file": "trace-capacity-9.json",
+      "moments": [
+        {
+          "time": 0,
+          "mode": "CINEMATIC"
+        },
+        {
+          "time": 46,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 47.05,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 51.85,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-2"
+        },
+        {
+          "time": 52.9,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-2"
+        },
+        {
+          "time": 57.7,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-3"
+        },
+        {
+          "time": 58.75,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-3"
+        },
+        {
+          "time": 63.55,
+          "mode": "CINE_RETURN"
+        },
+        {
+          "time": 65,
+          "mode": "CINEMATIC"
+        }
+      ],
+      "maximum": {
+        "distance": 0.16234029026489244,
+        "target": 0.25479361302849024,
+        "fov": 0.09738716493991717,
+        "aimRadians": 0.03827195800940768,
+        "speedChange": 0.0253465269029736
+      },
+      "maximumAt": {
+        "distance": {
+          "time": 9.95,
+          "mode": "CINEMATIC",
+          "position": [
+            -17.405224930906293,
+            9.46403901870117,
+            23.894221169878456
+          ]
+        },
+        "target": {
+          "time": 33.15,
+          "mode": "CINEMATIC",
+          "position": [
+            12.519928403972878,
+            4.242706443261721,
+            7.473265518334809
+          ]
+        },
+        "fov": {
+          "time": 46.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            1.8840298250085585,
+            1.8615447870117068,
+            8.921641239281236
+          ]
+        },
+        "aimRadians": {
+          "time": 46.46666666666667,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            2.23634952372881,
+            1.9831179934900942,
+            8.912973267918264
+          ]
+        },
+        "speedChange": {
+          "time": 46,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            3.818804347354391,
+            2.530476881065092,
+            8.874040806451568
+          ]
+        }
+      },
+      "seams": [
+        {
+          "time": 40,
+          "distance": 0.009103994665966534,
+          "target": 0.008234667218838861,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.00002154835688008288,
+          "speedChange": 0.00011992668186222404
+        }
+      ],
+      "transitions": [
+        {
+          "time": 46,
+          "before": "CINEMATIC",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.0253465269029736
+        },
+        {
+          "time": 47.05,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.00019125674847296522,
+          "target": 0.00012290250374069866,
+          "fov": 0.0001331516512763642,
+          "aimRadians": 0.000026563529831959996,
+          "speedChange": 0.0008952809230668828
+        },
+        {
+          "time": 51.85,
+          "before": "GIFT_FOCUS",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.00011329979216689878
+        },
+        {
+          "time": 52.9,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.00011737902314314406,
+          "target": 0.00015376805369353902,
+          "fov": 0,
+          "aimRadians": 0.00001059773265981792,
+          "speedChange": 0.0005652580804184671
+        },
+        {
+          "time": 57.7,
+          "before": "GIFT_FOCUS",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 1.4901161193847656e-8,
+          "speedChange": 0.00016956532529244228
+        },
+        {
+          "time": 58.75,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.0002336208134006978,
+          "target": 0.00031145996788296837,
+          "fov": 0,
+          "aimRadians": 0.00002046975393234236,
+          "speedChange": 0.0007675727442990796
+        },
+        {
+          "time": 63.55,
+          "before": "GIFT_FOCUS",
+          "after": "CINE_RETURN",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 1.4901161193847656e-8,
+          "speedChange": 0.00020001595591501165
+        },
+        {
+          "time": 65,
+          "before": "CINE_RETURN",
+          "after": "CINEMATIC",
+          "distance": 0.004544620127189049,
+          "target": 0.002617223240256584,
+          "fov": 0.00019354943831473292,
+          "aimRadians": 0.0015029117318799063,
+          "speedChange": 0.0004058742396187394
+        }
+      ],
+      "minWater": 0.9463504076417658,
+      "minPad": null,
+      "cycles": {
+        "0": {
+          "routes": [
+            "west-low"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "1": {
+          "routes": [
+            "east-low"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL"
+          ]
+        }
+      },
+      "treeIntersections": [],
+      "treeRayIntervalHz": 10,
+      "maxCount": 8,
+      "blessings": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "startedAtMs": 52900
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "startedAtMs": 58750
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "demo": "community",
+      "end": 66,
+      "cadenceHz": 60,
+      "file": "trace-community-9.json",
+      "moments": [
+        {
+          "time": 0,
+          "mode": "CINEMATIC"
+        },
+        {
+          "time": 16,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 17.05,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 21.85,
+          "mode": "CINE_RETURN"
+        },
+        {
+          "time": 23.3,
+          "mode": "CINEMATIC"
+        }
+      ],
+      "maximum": {
+        "distance": 1.495448166654162,
+        "target": 0.5546082550271294,
+        "fov": 0.12181653450675611,
+        "aimRadians": 0.14669008843003023,
+        "speedChange": 0.12400583799014875
+      },
+      "maximumAt": {
+        "distance": {
+          "time": 16.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -12.957700315079112,
+            18.518519023437886,
+            22.36767746051286
+          ]
+        },
+        "target": {
+          "time": 16.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -12.957700315079112,
+            18.518519023437886,
+            22.36767746051286
+          ]
+        },
+        "fov": {
+          "time": 16.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -12.957700315079112,
+            18.518519023437886,
+            22.36767746051286
+          ]
+        },
+        "aimRadians": {
+          "time": 16.816666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -2.0582468814259443,
+            3.726558508303871,
+            10.954932424374658
+          ]
+        },
+        "speedChange": {
+          "time": 16.733333333333334,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -4.28418016963418,
+            6.747216785004316,
+            13.28569233269592
+          ]
+        }
+      },
+      "seams": [
+        {
+          "time": 60.65,
+          "distance": 0.009103994665961092,
+          "target": 0.008234667218834875,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.000021548362032322087,
+          "speedChange": 0.00011992668185685854
+        }
+      ],
+      "transitions": [
+        {
+          "time": 16,
+          "before": "CINEMATIC",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 2.1073424255447017e-8,
+          "speedChange": 0.086924922411305
+        },
+        {
+          "time": 17.05,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.0020720315895330667,
+          "target": 0.0007854379400018513,
+          "fov": 0.00016655246852081973,
+          "aimRadians": 0.0003677858039794726,
+          "speedChange": 0.010522683234399284
+        },
+        {
+          "time": 21.85,
+          "before": "GIFT_FOCUS",
+          "after": "CINE_RETURN",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.00011329979216689878
+        },
+        {
+          "time": 23.3,
+          "before": "CINE_RETURN",
+          "after": "CINEMATIC",
+          "distance": 0.004993056797794396,
+          "target": 0.0021388014196210303,
+          "fov": 0.00019354943831473292,
+          "aimRadians": 0.0014990368119052826,
+          "speedChange": 0.00004866141073519431
+        }
+      ],
+      "minWater": 0.9463504076417657,
+      "minPad": 2.4162277981272267,
+      "cycles": {
+        "0": {
+          "routes": [
+            "west-low"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "1": {
+          "routes": [
+            "east-low"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE"
+          ]
+        }
+      },
+      "treeIntersections": [],
+      "treeRayIntervalHz": 10,
+      "maxCount": 3,
+      "blessings": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 17050
+        }
+      ]
+    },
+    {
+      "seed": 71,
+      "demo": "idle",
+      "end": 85,
+      "cadenceHz": 60,
+      "file": "trace-idle-71.json",
+      "moments": [
+        {
+          "time": 0,
+          "mode": "CINEMATIC"
+        }
+      ],
+      "maximum": {
+        "distance": 0.1624552943091765,
+        "target": 0.2522652379130601,
+        "fov": 0.03829703753906699,
+        "aimRadians": 0.016724660371681358,
+        "speedChange": 0.009644564589024268
+      },
+      "maximumAt": {
+        "distance": {
+          "time": 50,
+          "mode": "CINEMATIC",
+          "position": [
+            17.45183505578177,
+            9.223178125,
+            24.265822081975344
+          ]
+        },
+        "target": {
+          "time": 33.15,
+          "mode": "CINEMATIC",
+          "position": [
+            12.519928403972878,
+            3.8048529276367216,
+            7.473265518334809
+          ]
+        },
+        "fov": {
+          "time": 54.31666666666667,
+          "mode": "CINEMATIC",
+          "position": [
+            27.594910172078123,
+            30.181831531552344,
+            37.19667261120312
+          ]
+        },
+        "aimRadians": {
+          "time": 34,
+          "mode": "CINEMATIC",
+          "position": [
+            7.285319553745843,
+            2.8839499999999996,
+            7.642798344197249
+          ]
+        },
+        "speedChange": {
+          "time": 49.7,
+          "mode": "CINEMATIC",
+          "position": [
+            15.809684707080695,
+            8.49941292226563,
+            22.040614122900553
+          ]
+        }
+      },
+      "seams": [
+        {
+          "time": 40,
+          "distance": 0.009103994665966534,
+          "target": 0.008234667218838861,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.00002154835688008288,
+          "speedChange": 0.00011992668186222404
+        },
+        {
+          "time": 80,
+          "distance": 0.008786018478182764,
+          "target": 0.00793889750634498,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.000021548362032322087,
+          "speedChange": 0.0006781725667128584
+        }
+      ],
+      "transitions": [],
+      "minWater": 0.9463504076417658,
+      "minPad": null,
+      "cycles": {
+        "0": {
+          "routes": [
+            "west-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "1": {
+          "routes": [
+            "east-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "2": {
+          "routes": [
+            "west-low"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE"
+          ]
+        }
+      },
+      "treeIntersections": [],
+      "treeRayIntervalHz": 10,
+      "maxCount": 0,
+      "blessings": []
+    },
+    {
+      "seed": 71,
+      "demo": "gifts",
+      "end": 66,
+      "cadenceHz": 60,
+      "file": "trace-gifts-71.json",
+      "moments": [
+        {
+          "time": 0,
+          "mode": "CINEMATIC"
+        },
+        {
+          "time": 46,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 47.05,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 51.85,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-2"
+        },
+        {
+          "time": 52.9,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-2"
+        },
+        {
+          "time": 57.7,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-3"
+        },
+        {
+          "time": 58.75,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-3"
+        },
+        {
+          "time": 63.55,
+          "mode": "CINE_RETURN"
+        },
+        {
+          "time": 65,
+          "mode": "CINEMATIC"
+        }
+      ],
+      "maximum": {
+        "distance": 0.16143268546395922,
+        "target": 0.2522652379130601,
+        "fov": 0.09738716493991717,
+        "aimRadians": 0.03827195800940768,
+        "speedChange": 0.0253465269029736
+      },
+      "maximumAt": {
+        "distance": {
+          "time": 9.95,
+          "mode": "CINEMATIC",
+          "position": [
+            -17.405224930906293,
+            9.098642534326169,
+            23.894221169878456
+          ]
+        },
+        "target": {
+          "time": 33.15,
+          "mode": "CINEMATIC",
+          "position": [
+            12.519928403972878,
+            3.8048529276367216,
+            7.473265518334809
+          ]
+        },
+        "fov": {
+          "time": 46.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            1.8840298250085585,
+            1.8615447870117068,
+            8.921641239281236
+          ]
+        },
+        "aimRadians": {
+          "time": 46.46666666666667,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            2.23634952372881,
+            1.9831179934900942,
+            8.912973267918264
+          ]
+        },
+        "speedChange": {
+          "time": 46,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            3.818804347354391,
+            2.530476881065092,
+            8.874040806451568
+          ]
+        }
+      },
+      "seams": [
+        {
+          "time": 40,
+          "distance": 0.009103994665966534,
+          "target": 0.008234667218838861,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.00002154835688008288,
+          "speedChange": 0.00011992668186222404
+        }
+      ],
+      "transitions": [
+        {
+          "time": 46,
+          "before": "CINEMATIC",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.0253465269029736
+        },
+        {
+          "time": 47.05,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.00019125674847296522,
+          "target": 0.00012290250374069866,
+          "fov": 0.0001331516512763642,
+          "aimRadians": 0.000026563529831959996,
+          "speedChange": 0.0008952809230668828
+        },
+        {
+          "time": 51.85,
+          "before": "GIFT_FOCUS",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.00011329979216689878
+        },
+        {
+          "time": 52.9,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.00011737902314314406,
+          "target": 0.00015376805369353902,
+          "fov": 0,
+          "aimRadians": 0.00001059773265981792,
+          "speedChange": 0.0005652580804184671
+        },
+        {
+          "time": 57.7,
+          "before": "GIFT_FOCUS",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 1.4901161193847656e-8,
+          "speedChange": 0.00016956532529244228
+        },
+        {
+          "time": 58.75,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.0002336208134006978,
+          "target": 0.00031145996788296837,
+          "fov": 0,
+          "aimRadians": 0.00002046975393234236,
+          "speedChange": 0.0007675727442990796
+        },
+        {
+          "time": 63.55,
+          "before": "GIFT_FOCUS",
+          "after": "CINE_RETURN",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 1.4901161193847656e-8,
+          "speedChange": 0.00020001595591501165
+        },
+        {
+          "time": 65,
+          "before": "CINE_RETURN",
+          "after": "CINEMATIC",
+          "distance": 0.004544620127189049,
+          "target": 0.002617223240256584,
+          "fov": 0.00019354943831473292,
+          "aimRadians": 0.0015029117318799063,
+          "speedChange": 0.0004058742396187394
+        }
+      ],
+      "minWater": 0.9463504076417658,
+      "minPad": null,
+      "cycles": {
+        "0": {
+          "routes": [
+            "west-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "1": {
+          "routes": [
+            "east-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL"
+          ]
+        }
+      },
+      "treeIntersections": [],
+      "treeRayIntervalHz": 10,
+      "maxCount": 7,
+      "blessings": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "startedAtMs": 52900
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "startedAtMs": 58750
+        }
+      ]
+    },
+    {
+      "seed": 71,
+      "demo": "capacity",
+      "end": 66,
+      "cadenceHz": 60,
+      "file": "trace-capacity-71.json",
+      "moments": [
+        {
+          "time": 0,
+          "mode": "CINEMATIC"
+        },
+        {
+          "time": 46,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 47.05,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 51.85,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-2"
+        },
+        {
+          "time": 52.9,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-2"
+        },
+        {
+          "time": 57.7,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-3"
+        },
+        {
+          "time": 58.75,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-3"
+        },
+        {
+          "time": 63.55,
+          "mode": "CINE_RETURN"
+        },
+        {
+          "time": 65,
+          "mode": "CINEMATIC"
+        }
+      ],
+      "maximum": {
+        "distance": 0.16143268546395922,
+        "target": 0.2522652379130601,
+        "fov": 0.09738716493991717,
+        "aimRadians": 0.03827195800940768,
+        "speedChange": 0.0253465269029736
+      },
+      "maximumAt": {
+        "distance": {
+          "time": 9.95,
+          "mode": "CINEMATIC",
+          "position": [
+            -17.405224930906293,
+            9.098642534326169,
+            23.894221169878456
+          ]
+        },
+        "target": {
+          "time": 33.15,
+          "mode": "CINEMATIC",
+          "position": [
+            12.519928403972878,
+            3.8048529276367216,
+            7.473265518334809
+          ]
+        },
+        "fov": {
+          "time": 46.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            1.8840298250085585,
+            1.8615447870117068,
+            8.921641239281236
+          ]
+        },
+        "aimRadians": {
+          "time": 46.46666666666667,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            2.23634952372881,
+            1.9831179934900942,
+            8.912973267918264
+          ]
+        },
+        "speedChange": {
+          "time": 46,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            3.818804347354391,
+            2.530476881065092,
+            8.874040806451568
+          ]
+        }
+      },
+      "seams": [
+        {
+          "time": 40,
+          "distance": 0.009103994665966534,
+          "target": 0.008234667218838861,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.00002154835688008288,
+          "speedChange": 0.00011992668186222404
+        }
+      ],
+      "transitions": [
+        {
+          "time": 46,
+          "before": "CINEMATIC",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.0253465269029736
+        },
+        {
+          "time": 47.05,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.00019125674847296522,
+          "target": 0.00012290250374069866,
+          "fov": 0.0001331516512763642,
+          "aimRadians": 0.000026563529831959996,
+          "speedChange": 0.0008952809230668828
+        },
+        {
+          "time": 51.85,
+          "before": "GIFT_FOCUS",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.00011329979216689878
+        },
+        {
+          "time": 52.9,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.00011737902314314406,
+          "target": 0.00015376805369353902,
+          "fov": 0,
+          "aimRadians": 0.00001059773265981792,
+          "speedChange": 0.0005652580804184671
+        },
+        {
+          "time": 57.7,
+          "before": "GIFT_FOCUS",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 1.4901161193847656e-8,
+          "speedChange": 0.00016956532529244228
+        },
+        {
+          "time": 58.75,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.0002336208134006978,
+          "target": 0.00031145996788296837,
+          "fov": 0,
+          "aimRadians": 0.00002046975393234236,
+          "speedChange": 0.0007675727442990796
+        },
+        {
+          "time": 63.55,
+          "before": "GIFT_FOCUS",
+          "after": "CINE_RETURN",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 1.4901161193847656e-8,
+          "speedChange": 0.00020001595591501165
+        },
+        {
+          "time": 65,
+          "before": "CINE_RETURN",
+          "after": "CINEMATIC",
+          "distance": 0.004544620127189049,
+          "target": 0.002617223240256584,
+          "fov": 0.00019354943831473292,
+          "aimRadians": 0.0015029117318799063,
+          "speedChange": 0.0004058742396187394
+        }
+      ],
+      "minWater": 0.9463504076417658,
+      "minPad": null,
+      "cycles": {
+        "0": {
+          "routes": [
+            "west-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "1": {
+          "routes": [
+            "east-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL"
+          ]
+        }
+      },
+      "treeIntersections": [],
+      "treeRayIntervalHz": 10,
+      "maxCount": 8,
+      "blessings": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "startedAtMs": 52900
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "startedAtMs": 58750
+        }
+      ]
+    },
+    {
+      "seed": 71,
+      "demo": "community",
+      "end": 66,
+      "cadenceHz": 60,
+      "file": "trace-community-71.json",
+      "moments": [
+        {
+          "time": 0,
+          "mode": "CINEMATIC"
+        },
+        {
+          "time": 16,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 17.05,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 21.85,
+          "mode": "CINE_RETURN"
+        },
+        {
+          "time": 23.3,
+          "mode": "CINEMATIC"
+        }
+      ],
+      "maximum": {
+        "distance": 1.624877464011628,
+        "target": 0.5543575316617608,
+        "fov": 0.12181653450675611,
+        "aimRadians": 0.1425390394618493,
+        "speedChange": 0.13473837975767022
+      },
+      "maximumAt": {
+        "distance": {
+          "time": 16.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -12.957700315079112,
+            21.597579560531308,
+            22.36767746051286
+          ]
+        },
+        "target": {
+          "time": 16.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -12.957700315079112,
+            21.597579560531308,
+            22.36767746051286
+          ]
+        },
+        "fov": {
+          "time": 16.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -12.957700315079112,
+            21.597579560531308,
+            22.36767746051286
+          ]
+        },
+        "aimRadians": {
+          "time": 16.816666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -2.0582468814259443,
+            4.182336932315508,
+            10.954932424374658
+          ]
+        },
+        "speedChange": {
+          "time": 16.733333333333334,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -4.28418016963418,
+            7.738733171971106,
+            13.28569233269592
+          ]
+        }
+      },
+      "seams": [
+        {
+          "time": 60.65,
+          "distance": 0.009103994665961092,
+          "target": 0.008234667218834875,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.000021548362032322087,
+          "speedChange": 0.00011992668185685854
+        }
+      ],
+      "transitions": [
+        {
+          "time": 16,
+          "before": "CINEMATIC",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 2.580956827951785e-8,
+          "speedChange": 0.09801949974309179
+        },
+        {
+          "time": 17.05,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.0022512195767833416,
+          "target": 0.0007850948143113733,
+          "fov": 0.00016655246852081973,
+          "aimRadians": 0.00039625897999464216,
+          "speedChange": 0.011433461663371601
+        },
+        {
+          "time": 21.85,
+          "before": "GIFT_FOCUS",
+          "after": "CINE_RETURN",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.00011329979216689878
+        },
+        {
+          "time": 23.3,
+          "before": "CINE_RETURN",
+          "after": "CINEMATIC",
+          "distance": 0.004993056797794396,
+          "target": 0.0021388014196210303,
+          "fov": 0.00019354943831473292,
+          "aimRadians": 0.0014990368119052826,
+          "speedChange": 0.00004866141073519431
+        }
+      ],
+      "minWater": 0.9463504076417657,
+      "minPad": 2.4968227063749864,
+      "cycles": {
+        "0": {
+          "routes": [
+            "west-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "1": {
+          "routes": [
+            "east-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE"
+          ]
+        }
+      },
+      "treeIntersections": [],
+      "treeRayIntervalHz": 10,
+      "maxCount": 3,
+      "blessings": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 17050
+        }
+      ]
+    },
+    {
+      "seed": 1337,
+      "demo": "idle",
+      "end": 85,
+      "cadenceHz": 60,
+      "file": "trace-idle-1337.json",
+      "moments": [
+        {
+          "time": 0,
+          "mode": "CINEMATIC"
+        }
+      ],
+      "maximum": {
+        "distance": 0.1624552943091765,
+        "target": 0.2522652379130601,
+        "fov": 0.03829703753906699,
+        "aimRadians": 0.016724660371681358,
+        "speedChange": 0.009644564589024268
+      },
+      "maximumAt": {
+        "distance": {
+          "time": 50,
+          "mode": "CINEMATIC",
+          "position": [
+            17.45183505578177,
+            9.223178125,
+            24.265822081975344
+          ]
+        },
+        "target": {
+          "time": 33.15,
+          "mode": "CINEMATIC",
+          "position": [
+            12.519928403972878,
+            3.8048529276367216,
+            7.473265518334809
+          ]
+        },
+        "fov": {
+          "time": 54.31666666666667,
+          "mode": "CINEMATIC",
+          "position": [
+            27.594910172078123,
+            30.181831531552344,
+            37.19667261120312
+          ]
+        },
+        "aimRadians": {
+          "time": 34,
+          "mode": "CINEMATIC",
+          "position": [
+            7.285319553745843,
+            2.8839499999999996,
+            7.642798344197249
+          ]
+        },
+        "speedChange": {
+          "time": 49.7,
+          "mode": "CINEMATIC",
+          "position": [
+            15.809684707080695,
+            8.49941292226563,
+            22.040614122900553
+          ]
+        }
+      },
+      "seams": [
+        {
+          "time": 40,
+          "distance": 0.009103994665966534,
+          "target": 0.008234667218838861,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.00002154835688008288,
+          "speedChange": 0.00011992668186222404
+        },
+        {
+          "time": 80,
+          "distance": 0.008786018478182764,
+          "target": 0.00793889750634498,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.000021548362032322087,
+          "speedChange": 0.0006781725667128584
+        }
+      ],
+      "transitions": [],
+      "minWater": 0.9463504076417658,
+      "minPad": null,
+      "cycles": {
+        "0": {
+          "routes": [
+            "west-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "1": {
+          "routes": [
+            "east-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "2": {
+          "routes": [
+            "west-low"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE"
+          ]
+        }
+      },
+      "treeIntersections": [],
+      "treeRayIntervalHz": 10,
+      "maxCount": 0,
+      "blessings": []
+    },
+    {
+      "seed": 1337,
+      "demo": "gifts",
+      "end": 66,
+      "cadenceHz": 60,
+      "file": "trace-gifts-1337.json",
+      "moments": [
+        {
+          "time": 0,
+          "mode": "CINEMATIC"
+        },
+        {
+          "time": 46,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 47.05,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 51.85,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-2"
+        },
+        {
+          "time": 52.9,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-2"
+        },
+        {
+          "time": 57.7,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-3"
+        },
+        {
+          "time": 58.75,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-3"
+        },
+        {
+          "time": 63.55,
+          "mode": "CINE_RETURN"
+        },
+        {
+          "time": 65,
+          "mode": "CINEMATIC"
+        }
+      ],
+      "maximum": {
+        "distance": 0.16143268546395922,
+        "target": 0.2522652379130601,
+        "fov": 0.09738716493991717,
+        "aimRadians": 0.03827195800940768,
+        "speedChange": 0.0253465269029736
+      },
+      "maximumAt": {
+        "distance": {
+          "time": 9.95,
+          "mode": "CINEMATIC",
+          "position": [
+            -17.405224930906293,
+            9.098642534326169,
+            23.894221169878456
+          ]
+        },
+        "target": {
+          "time": 33.15,
+          "mode": "CINEMATIC",
+          "position": [
+            12.519928403972878,
+            3.8048529276367216,
+            7.473265518334809
+          ]
+        },
+        "fov": {
+          "time": 46.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            1.8840298250085585,
+            1.8615447870117068,
+            8.921641239281236
+          ]
+        },
+        "aimRadians": {
+          "time": 46.46666666666667,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            2.23634952372881,
+            1.9831179934900942,
+            8.912973267918264
+          ]
+        },
+        "speedChange": {
+          "time": 46,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            3.818804347354391,
+            2.530476881065092,
+            8.874040806451568
+          ]
+        }
+      },
+      "seams": [
+        {
+          "time": 40,
+          "distance": 0.009103994665966534,
+          "target": 0.008234667218838861,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.00002154835688008288,
+          "speedChange": 0.00011992668186222404
+        }
+      ],
+      "transitions": [
+        {
+          "time": 46,
+          "before": "CINEMATIC",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.0253465269029736
+        },
+        {
+          "time": 47.05,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.00019125674847296522,
+          "target": 0.00012290250374069866,
+          "fov": 0.0001331516512763642,
+          "aimRadians": 0.000026563529831959996,
+          "speedChange": 0.0008952809230668828
+        },
+        {
+          "time": 51.85,
+          "before": "GIFT_FOCUS",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.00011329979216689878
+        },
+        {
+          "time": 52.9,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.00011737902314314406,
+          "target": 0.00015376805369353902,
+          "fov": 0,
+          "aimRadians": 0.00001059773265981792,
+          "speedChange": 0.0005652580804184671
+        },
+        {
+          "time": 57.7,
+          "before": "GIFT_FOCUS",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 1.4901161193847656e-8,
+          "speedChange": 0.00016956532529244228
+        },
+        {
+          "time": 58.75,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.0002336208134006978,
+          "target": 0.00031145996788296837,
+          "fov": 0,
+          "aimRadians": 0.00002046975393234236,
+          "speedChange": 0.0007675727442990796
+        },
+        {
+          "time": 63.55,
+          "before": "GIFT_FOCUS",
+          "after": "CINE_RETURN",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 1.4901161193847656e-8,
+          "speedChange": 0.00020001595591501165
+        },
+        {
+          "time": 65,
+          "before": "CINE_RETURN",
+          "after": "CINEMATIC",
+          "distance": 0.004544620127189049,
+          "target": 0.002617223240256584,
+          "fov": 0.00019354943831473292,
+          "aimRadians": 0.0015029117318799063,
+          "speedChange": 0.0004058742396187394
+        }
+      ],
+      "minWater": 0.9463504076417658,
+      "minPad": null,
+      "cycles": {
+        "0": {
+          "routes": [
+            "west-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "1": {
+          "routes": [
+            "east-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL"
+          ]
+        }
+      },
+      "treeIntersections": [],
+      "treeRayIntervalHz": 10,
+      "maxCount": 7,
+      "blessings": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "startedAtMs": 52900
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "startedAtMs": 58750
+        }
+      ]
+    },
+    {
+      "seed": 1337,
+      "demo": "capacity",
+      "end": 66,
+      "cadenceHz": 60,
+      "file": "trace-capacity-1337.json",
+      "moments": [
+        {
+          "time": 0,
+          "mode": "CINEMATIC"
+        },
+        {
+          "time": 46,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 47.05,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 51.85,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-2"
+        },
+        {
+          "time": 52.9,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-2"
+        },
+        {
+          "time": 57.7,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-3"
+        },
+        {
+          "time": 58.75,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-3"
+        },
+        {
+          "time": 63.55,
+          "mode": "CINE_RETURN"
+        },
+        {
+          "time": 65,
+          "mode": "CINEMATIC"
+        }
+      ],
+      "maximum": {
+        "distance": 0.16143268546395922,
+        "target": 0.2522652379130601,
+        "fov": 0.09738716493991717,
+        "aimRadians": 0.03827195800940768,
+        "speedChange": 0.0253465269029736
+      },
+      "maximumAt": {
+        "distance": {
+          "time": 9.95,
+          "mode": "CINEMATIC",
+          "position": [
+            -17.405224930906293,
+            9.098642534326169,
+            23.894221169878456
+          ]
+        },
+        "target": {
+          "time": 33.15,
+          "mode": "CINEMATIC",
+          "position": [
+            12.519928403972878,
+            3.8048529276367216,
+            7.473265518334809
+          ]
+        },
+        "fov": {
+          "time": 46.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            1.8840298250085585,
+            1.8615447870117068,
+            8.921641239281236
+          ]
+        },
+        "aimRadians": {
+          "time": 46.46666666666667,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            2.23634952372881,
+            1.9831179934900942,
+            8.912973267918264
+          ]
+        },
+        "speedChange": {
+          "time": 46,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            3.818804347354391,
+            2.530476881065092,
+            8.874040806451568
+          ]
+        }
+      },
+      "seams": [
+        {
+          "time": 40,
+          "distance": 0.009103994665966534,
+          "target": 0.008234667218838861,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.00002154835688008288,
+          "speedChange": 0.00011992668186222404
+        }
+      ],
+      "transitions": [
+        {
+          "time": 46,
+          "before": "CINEMATIC",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.0253465269029736
+        },
+        {
+          "time": 47.05,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.00019125674847296522,
+          "target": 0.00012290250374069866,
+          "fov": 0.0001331516512763642,
+          "aimRadians": 0.000026563529831959996,
+          "speedChange": 0.0008952809230668828
+        },
+        {
+          "time": 51.85,
+          "before": "GIFT_FOCUS",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.00011329979216689878
+        },
+        {
+          "time": 52.9,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.00011737902314314406,
+          "target": 0.00015376805369353902,
+          "fov": 0,
+          "aimRadians": 0.00001059773265981792,
+          "speedChange": 0.0005652580804184671
+        },
+        {
+          "time": 57.7,
+          "before": "GIFT_FOCUS",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 1.4901161193847656e-8,
+          "speedChange": 0.00016956532529244228
+        },
+        {
+          "time": 58.75,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.0002336208134006978,
+          "target": 0.00031145996788296837,
+          "fov": 0,
+          "aimRadians": 0.00002046975393234236,
+          "speedChange": 0.0007675727442990796
+        },
+        {
+          "time": 63.55,
+          "before": "GIFT_FOCUS",
+          "after": "CINE_RETURN",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 1.4901161193847656e-8,
+          "speedChange": 0.00020001595591501165
+        },
+        {
+          "time": 65,
+          "before": "CINE_RETURN",
+          "after": "CINEMATIC",
+          "distance": 0.004544620127189049,
+          "target": 0.002617223240256584,
+          "fov": 0.00019354943831473292,
+          "aimRadians": 0.0015029117318799063,
+          "speedChange": 0.0004058742396187394
+        }
+      ],
+      "minWater": 0.9463504076417658,
+      "minPad": null,
+      "cycles": {
+        "0": {
+          "routes": [
+            "west-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "1": {
+          "routes": [
+            "east-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL"
+          ]
+        }
+      },
+      "treeIntersections": [],
+      "treeRayIntervalHz": 10,
+      "maxCount": 8,
+      "blessings": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "startedAtMs": 52900
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "startedAtMs": 58750
+        }
+      ]
+    },
+    {
+      "seed": 1337,
+      "demo": "community",
+      "end": 66,
+      "cadenceHz": 60,
+      "file": "trace-community-1337.json",
+      "moments": [
+        {
+          "time": 0,
+          "mode": "CINEMATIC"
+        },
+        {
+          "time": 16,
+          "mode": "GIFT_TRANSITION",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 17.05,
+          "mode": "GIFT_FOCUS",
+          "actor": "demo-1-actor-1"
+        },
+        {
+          "time": 21.85,
+          "mode": "CINE_RETURN"
+        },
+        {
+          "time": 23.3,
+          "mode": "CINEMATIC"
+        }
+      ],
+      "maximum": {
+        "distance": 1.624877464011628,
+        "target": 0.5543575316617608,
+        "fov": 0.12181653450675611,
+        "aimRadians": 0.1425390394618493,
+        "speedChange": 0.13473837975767022
+      },
+      "maximumAt": {
+        "distance": {
+          "time": 16.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -12.957700315079112,
+            21.597579560531308,
+            22.36767746051286
+          ]
+        },
+        "target": {
+          "time": 16.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -12.957700315079112,
+            21.597579560531308,
+            22.36767746051286
+          ]
+        },
+        "fov": {
+          "time": 16.516666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -12.957700315079112,
+            21.597579560531308,
+            22.36767746051286
+          ]
+        },
+        "aimRadians": {
+          "time": 16.816666666666666,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -2.0582468814259443,
+            4.182336932315508,
+            10.954932424374658
+          ]
+        },
+        "speedChange": {
+          "time": 16.733333333333334,
+          "mode": "GIFT_TRANSITION",
+          "position": [
+            -4.28418016963418,
+            7.738733171971106,
+            13.28569233269592
+          ]
+        }
+      },
+      "seams": [
+        {
+          "time": 60.65,
+          "distance": 0.009103994665961092,
+          "target": 0.008234667218834875,
+          "fov": 0.00003597146874767532,
+          "aimRadians": 0.000021548362032322087,
+          "speedChange": 0.00011992668185685854
+        }
+      ],
+      "transitions": [
+        {
+          "time": 16,
+          "before": "CINEMATIC",
+          "after": "GIFT_TRANSITION",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 2.580956827951785e-8,
+          "speedChange": 0.09801949974309179
+        },
+        {
+          "time": 17.05,
+          "before": "GIFT_TRANSITION",
+          "after": "GIFT_FOCUS",
+          "distance": 0.0022512195767833416,
+          "target": 0.0007850948143113733,
+          "fov": 0.00016655246852081973,
+          "aimRadians": 0.00039625897999464216,
+          "speedChange": 0.011433461663371601
+        },
+        {
+          "time": 21.85,
+          "before": "GIFT_FOCUS",
+          "after": "CINE_RETURN",
+          "distance": 0,
+          "target": 0,
+          "fov": 0,
+          "aimRadians": 0,
+          "speedChange": 0.00011329979216689878
+        },
+        {
+          "time": 23.3,
+          "before": "CINE_RETURN",
+          "after": "CINEMATIC",
+          "distance": 0.004993056797794396,
+          "target": 0.0021388014196210303,
+          "fov": 0.00019354943831473292,
+          "aimRadians": 0.0014990368119052826,
+          "speedChange": 0.00004866141073519431
+        }
+      ],
+      "minWater": 0.9463504076417657,
+      "minPad": 2.4968227063749864,
+      "cycles": {
+        "0": {
+          "routes": [
+            "west-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE",
+            "COMMUNITY",
+            "AERIAL",
+            "UNDER_TREE"
+          ]
+        },
+        "1": {
+          "routes": [
+            "east-high"
+          ],
+          "fallbacks": [],
+          "shots": [
+            "CLOSE"
+          ]
+        }
+      },
+      "treeIntersections": [],
+      "treeRayIntervalHz": 10,
+      "maxCount": 3,
+      "blessings": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 17050
+        }
+      ]
+    }
+  ]
+}
