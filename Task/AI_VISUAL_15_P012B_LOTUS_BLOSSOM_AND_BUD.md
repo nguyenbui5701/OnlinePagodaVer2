@@ -129,3 +129,16 @@ If running without Windows, adapt syntax; report actual paths and commands. Do n
 4. Return **new exact PR #10 HEAD**, corrected context original PNGs, current manifest and Cycles completion/sha log. **STOP again at `P012B_SA_ART_REVIEW_REQUIRED`** for SA re-review and separate Owner Botanical Art GO. Blossom's pale/flat appearance and bud's smooth shell are **nonblocking visual observations for Owner**, not a request for an unsolicited whole-asset rebuild.
 
 **Do not delete this task while PR #10 art gate is unresolved.**
+
+
+## 10. SA PR #10 context-only re-review — 2026-11-23
+
+**Exact reviewed delta:** `fa8e7de0409d95b197f2c6e221a0c33b34db23b3..b7427e0b8606050da933608788f9d40526906d32` on `assets/p012b-lotus-blossom-bud`; PR #10 remains DRAFT, base PR #2 `ce0db947e5e9ea4c6214bc900b0cdd9c6a83cced`. Formal [SA re-review #6017094097](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/10#pullrequestreview-6017094097) + inline comment. **The prior Context Evidence HOLD in Section 9 is RESOLVED.**
+
+**Objective results:** One commit, nine changes entirely within P012B folder: **4 real 720×1280 original Cycles context PNGs**, revised `.blend`, revised success logs and hash manifests. Four real context images independently opened by SA. All **P02 pad, distinct open bloom and closed bud** now clearly visible together in ECO/QUALITY context, low water-level QUALITY, and aerial QUALITY. All **four changed PNG SHA256/byte counts independently recomputed and match** `P012B_Cycles_Evidence/cycles_manifest.json`. Blender 4.5.16 success log exit 0 / four projected-three-subject PASS / 16 original isolated Cycles SHA preserved / total evidence 20. The original 4 ECO/QUALITY GLBs, their previously verified SHA-256, original P02 and other branches did not change. The new `.blend` is a real uploaded Git blob but its independent Blender open/hash verification was not performed by SA.
+
+**Review outcome:** `P012B_GLB_TECH_PASS`; `P012B_BLENDER_CYCLES_RUN_PASS`; **`P012B_ART_CONTEXT_EVIDENCE_PASS`**. Full `P012B_SA_ART_PASS` is **awaiting exactly one narrow metadata consistency fix**. This is **not** a request to rerender or resculpt.
+
+**Remaining action on EXISTING PR #10 branch ONLY:** `asset_manifest.json` still says `cyclesStatus=...CONTEXT_FRAMING_HOLD` and individual `cyclesEvidenceStatus=...CONTEXT_FRAMING_CORRECTION_PENDING`. `README.md`, `BINARY_HANDOFF.md` and PR #10 description also still describe those four updated context frames as unrendered. Correct those **documentation statuses only**, referencing four **actual** new PNG hashes from current Cycles manifest, Blender 4.5.16 exit 0, preserved 16 isolated shots, 20 total, and the revised editable `.blend` uploaded (not independently opened by SA). Keep `OWNER_BOTANICAL_ART_GO_PENDING`, no claim of SA GLB→Three.js integration or RTX/LIVE. No changes to source geometry, GLBs, Cycles images, `.blend`, original P02, PR #2/#9, V1, paid tools or merge.
+
+**Next:** AI Visual commit docs-only correction, provide exact new PR #10 HEAD → SA checks quickly → Owner Botanical Art GO decision → only then authorize later independent Codex viewer integration task. Until that, **STOP `P012B_SA_ART_REVIEW_REQUIRED`**, `MERGE_INTEGRATION_HOLD`. Section 9 retained as audit history.
