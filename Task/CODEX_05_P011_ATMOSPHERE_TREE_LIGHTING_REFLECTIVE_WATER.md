@@ -141,3 +141,20 @@ Browser: `http://127.0.0.1:5181/?seed=9&clean=1` (twilight ECO default after imp
 5. Commands, passed/failed tests and builds, browser/OS/GPU vendor, ECO/QUALITY wall vs virtual fps & p50/p95/p99, textures/geometries/draws/light counts, browser errors and context restore/leak checks; separate SwiftShader from Owner RTX.
 6. Cost **0 VND**, **no Blender, no LIVE, no TikTok transport, no V1, no production merge**. List genuine blockers, residual PBR vs Cycles differences and deferred P0.12/P0.13 work.
 7. **STOP at `P011_SA_REVIEW_REQUIRED`**, request SA code/visual-evidence review and then Owner P0.11 Visual GO. Do not continue into community/gift phase automatically.
+
+
+## 9. SA PR #8 review blocker — 2026-11-23
+
+**Reviewed exact PR #8 HEAD:** `e2a741c1cd45e028154fa5aefbf8e76c27390d46`. **Formal SA COMMENT review + inline evidence blocker:** https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/8#pullrequestreview-6015447164 . GitHub disallows `REQUEST_CHANGES` on the connected account's own PR, but this **SA technical HOLD is binding under Design/07**. Do not infer technical approval or Owner visual GO from 30 passing tests.
+
+**What passed and must be frozen:** Scoped V2 viewer diff, correct P0.10 stacked base, two-profile dusk/pink/gold look blending, native water A/B, original R16/P02/P07b1 SHA checks, Event Engine/actor/camera/gift FIFO regression, and reproducible prior screenshots. Golden fissure contrast improved by darkening bark; the absolute vein luminance did not improve, so Owner visual judgment is still pending.
+
+**Evidence blocker:** `apps/v2-viewer/evidence/p011/browser-report.json` contains **81 `WebGL: INVALID_OPERATION` console messages** around the intentionally induced `WEBGL_lose_context` test. `apps/v2-viewer/scripts/evidence-p011.mjs` around line 366 currently tests `/shader error|VALIDATE_STATUS false|GL_INVALID/i`, which does **not** match `INVALID_OPERATION`; therefore `errors: []` and the success assertion do not mean no GL errors.
+
+**Focused Codex rework, restricted to existing PR #8 branch:**
+1. Correct GL console classification to catch real `INVALID_OPERATION` / `INVALID_ENUM` / `INVALID_VALUE` and distinguish pre-loss, intentional-loss, restore and post-restore windows with actual timestamps and raw messages.
+2. Re-run the deliberate loss→restore with **multiple real post-restore rendered frames** on ECO and QUALITY; verify nonblank pixels, correct warm sky/gold/water, exact existing A→B→C/gift pool semantics, and zero *persistent* GL errors during normal continued rendering. Prefer same-host P0.10 control run to distinguish inherited browser/driver warnings.
+3. Fix renderer/material/GL resource lifecycle if invalid operations recur during normal post-restore rendering. If isolated to the synthetic context teardown, do not suppress the warnings: document exactly when/why they occur and demonstrate that subsequent normal rendering is clean. Ask SA to decide acceptability rather than falsely asserting no errors.
+4. Push only the minimum viewer code/test/evidence correction, preserve previous valid before/after screenshots if runtime output unchanged, rerun affected tests and builds, and provide new exact HEAD, browser details, logs, error counts by phase and screenshot/trace provenance.
+
+**Gate:** stop again at `P011_SA_REVIEW_REQUIRED` for SA re-review. **PR #8 must not merge; no P0.12 implementation, new assets, Blender, LIVE, V1 or RTX benchmark.** Owner P0.11 visual acceptance remains separate.
