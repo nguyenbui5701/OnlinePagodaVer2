@@ -113,3 +113,19 @@ If running without Windows, adapt syntax; report actual paths and commands. Do n
 **SA finding → action → native evidence → PASS/PARTIAL/BLOCKED**, exact new PR URL/branch/commit SHA, measured four GLB SHA256+bytes+triangles/axes/pivots/LOD status, original Blender source status, original uncompressed Cycles filenames and comparisons, `BINARY_HANDOFF` pending vs uploaded truth, licensing/0 VND, exact source P02 unchanged and the Owner's next art decision.
 
 **STOP at `P012B_SA_ART_REVIEW_REQUIRED` and wait for SA/Owner before any Codex runtime integration, hill models, clothing variants, performance GPU or LIVE.**
+
+
+## 9. SA PR #10 review blocker — 2026-11-23
+
+**Exact reviewed PR #10 HEAD:** `3d7d86d589f9a309d03cd9862ba0041795395ddf`, source asset baseline PR #2 remains `ce0db947e5e9ea4c6214bc900b0cdd9c6a83cced`. Formal [SA review #6016725385](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/10#pullrequestreview-6016725385), including two inline evidence findings.
+
+**Gate update:** `P012B_GLB_TECH_PASS` (all four exact GitHub GLB SHA256 and bytes independently rechecked); `P012B_BLENDER_CYCLES_EXECUTION_PASS` (native Blender 4.5.16 log, all twenty 32-sample Cycles PNGs and a real Git blob for `.blend` found); **`P012B_ART_CONTEXT_EVIDENCE_HOLD`** (no `SA_ART_PASS` or Owner Botanical Art GO yet). Historic `blender_stderr.log` AgX enum traceback is from a failed earlier attempt; later successful `blender_cycles_stderr.log` is empty with exit 0 and marker `P012B_BLENDER_CYCLES_FINISHED 20 PNG`. SA only read Github and visually inspected remote PNGs; large `.blend` could not be independently decoded/loaded through GitHub connector.
+
+**Minimum AI Visual correction on the EXISTING PR #10 branch:**
+
+1. In `blender_cycles_p012b.py` context scene, frame actual original P02, **an unobstructed open bloom AND distinct closed bud** simultaneously in at least the water-level low and aerial **720×1280** original Blender Cycles images. Current P02-context / low / aerial frames do not visibly show the bud despite context script enabling it; likely placement or crop. Solve by revising **render-only camera/positions**, not changing GLB geometry or the original P02. Keep measured scale honest. If helpful add two new targeted proof frames rather than rerender 16 already passed individual ECO+QUALITY view images. Save accurate PNG SHA metadata and describe camera/transform proof.
+2. Reconcile **stale project evidence metadata**: `asset_manifest.json` `blenderEditableSourceStatus`, `cyclesStatus`, and per-asset `sourceEditableBlenderStatus/cyclesEvidenceStatus` should reflect actual uploaded Cycles and `.blend`, not prior `pending_owner_blender_run`. Update current README/BINARY_HANDOFF/PR body while retaining earlier failed-run logs/audit history. Do not assert Owner acceptance or SA independent file-open of the large editable `.blend`. Commit exact file SHA/bytes for updated artifacts.
+3. Recheck 4 frozen GLB bytes/hashes **without re-exporting** and PR #2 unchanged baseline. Keep new commits restricted to `Assets3D/Review/lotus_botanicals/p012b/**`. No Sakura/character/pad edit, runtime integration, V1, LIVE, RTX, new mountain/rose/chibi work, paid tools or merge.
+4. Return **new exact PR #10 HEAD**, corrected context original PNGs, current manifest and Cycles completion/sha log. **STOP again at `P012B_SA_ART_REVIEW_REQUIRED`** for SA re-review and separate Owner Botanical Art GO. Blossom's pale/flat appearance and bud's smooth shell are **nonblocking visual observations for Owner**, not a request for an unsolicited whole-asset rebuild.
+
+**Do not delete this task while PR #10 art gate is unresolved.**
