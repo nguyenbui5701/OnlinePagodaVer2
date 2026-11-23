@@ -38,6 +38,14 @@ pre { white-space: pre-wrap; overflow-wrap: anywhere; }
   pointer-events: none;
   overflow-wrap: anywhere;
 }
+.has-nameplates { overflow: hidden; }
+.persistent-nameplate {
+  z-index: 3;
+  transform: translate(-50%, calc(-100% - 4px));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 #stage:has(.community-name) :is(.gift-label, #gift-fallback, #status) { z-index: 2; }
 #stage:has(.gift-token) :is(.gift-label, #gift-fallback, #status) { z-index: 2; }
 #gift-fx {
@@ -64,6 +72,7 @@ pre { white-space: pre-wrap; overflow-wrap: anywhere; }
   font-weight: 700;
   vertical-align: middle;
 }
+.avatar-badge img { display: block; width: 1.55em; height: 1.55em; border-radius: inherit; object-fit: cover; }
 .chat-bubble, .gift-token {
   position: absolute;
   z-index: 1;

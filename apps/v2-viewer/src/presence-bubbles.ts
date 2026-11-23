@@ -29,6 +29,7 @@ export function createPresenceBubbles(stage: HTMLElement, profile: 'eco' | 'qual
     return node;
   }
   const chatNode = chat ? pooled('chat-bubble') : undefined;
+  chatNode?.remove();
   const icons = gifts ? Array.from({ length: profile === 'eco' ? 3 : 5 }, () => pooled('gift-token')) : [];
   for (const node of icons) node.setAttribute('aria-hidden', 'true');
   const world = new Vector3();
@@ -55,6 +56,7 @@ export function createPresenceBubbles(stage: HTMLElement, profile: 'eco' | 'qual
         node.hidden = true;
         node.textContent = '';
       }
+      chatNode?.remove();
     },
     update(state: Snapshot, cue: ChatCue | undefined, gift: Gift | undefined, target: ActorTarget | undefined,
       seats: ReadonlyMap<string, ActorTarget['seat']>, camera: PerspectiveCamera, priority: boolean) {
@@ -66,23 +68,26 @@ export function createPresenceBubbles(stage: HTMLElement, profile: 'eco' | 'qual
         room = state.roomSessionId;
         chatKey = giftKey = '';
       }
-      if (!state.connected || document.hidden) return result;
-      if (!cue && chatKey && chatNode) {
+      if (!state.connected || document.hidden) {
+        chatNode?.remove();
+        return result;
+      }
+      if (!cue?.seatId && chatKey && chatNode) {
         chatKey = '';
         chatNode.textContent = '';
       }
-      if (chatNode && cue && cue.atMs > hiddenThrough && cue.roomSessionId === state.roomSessionId && !priority) {
+      if (chatNode && cue?.seatId && cue.actorId && cue.atMs > hiddenThrough && cue.roomSessionId === state.roomSessionId && !priority) {
         const actor = state.avatars.find(item => item.visible && item.actorId === cue.actorId && item.seatId === cue.seatId);
         const seat = actor && seats.get(actor.seatId);
-        const placement = cue.seatId ? seat?.root.visible && project(seat.name, camera, 24) : { x: 50, y: 84 };
+        const placement = seat?.root.visible && project(seat.name, camera, 24);
         const timeline = chatAnimation(state.atMs - cue.atMs, cue.graphemes);
         if (placement && timeline) {
           const floating = timeline.phase === 'float';
-          const x = cue.seatId ? Math.min(74, Math.max(26, placement.x + (placement.x <= 50 ? 25 : -25))) : 50;
-          const y = Math.min(84, Math.max(27, placement.y - (cue.seatId ? 7 : 0)));
+          const x = Math.min(74, Math.max(26, placement.x + (placement.x <= 50 ? 25 : -25)));
+          const y = Math.min(84, Math.max(27, placement.y - 7));
           if (chatKey !== cue.eventId || chatNode.dataset.phase !== timeline.phase) {
             chatKey = cue.eventId;
-            chatNode.textContent = floating ? '· · ·' : cue.seatId ? cue.sanitizedText : 'Có lời nhắn mới';
+            chatNode.textContent = floating ? '· · ·' : cue.sanitizedText;
           }
           chatNode.dataset.phase = timeline.phase;
           chatNode.style.left = `${x}%`;
@@ -90,9 +95,11 @@ export function createPresenceBubbles(stage: HTMLElement, profile: 'eco' | 'qual
           chatNode.style.opacity = String(timeline.opacity);
           chatNode.style.transform = `translate(-50%, -50%) scale(${timeline.scale})`;
           chatNode.hidden = false;
+          if (!chatNode.parentNode) stage.append(chatNode);
           result.chat = { phase: timeline.phase, eventId: cue.eventId, seatId: cue.seatId };
         }
       }
+      if (!result.chat) chatNode?.remove();
 
       if (icons.length && gift?.phase === 'confirmed' && gift.roomSessionId === state.roomSessionId &&
           gift.startedAtMs > hiddenThrough && state.focus?.requestId === gift.requestId &&

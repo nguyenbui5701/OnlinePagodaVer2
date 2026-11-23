@@ -13,7 +13,8 @@ import { measureSeatContact } from './seat-contact.ts';
 import { SliceCamera } from './slice-camera.ts';
 import { parseScenario, SliceDriver } from './slice-driver.ts';
 import { createCommunityNames, occupancy } from './community-presentation.ts';
-import { showGift } from './slice-overlay.ts';
+import { showGift, usePersistentNameplates } from './slice-overlay.ts';
+import { createNameplates } from './nameplates.ts';
 import { createWater } from './water.ts';
 import { createAmbientFx } from './ambient-fx.ts';
 import { createGiftFx } from './gift-fx.ts';
@@ -46,6 +47,7 @@ const frozenAt = Number.isFinite(requestedTime) ? requestedTime : undefined;
 const manual = query.get('inspect') === '1' && !comparison;
 const scenario = liveRequested ? 'idle' : parseScenario(query.get('demo'));
 const presence = !comparison && query.get('presence') === 'on';
+if (presence) usePersistentNameplates();
 const chatBubbles = !comparison && query.get('chatbubbles') === 'on';
 const giftIcons = !comparison && query.get('gifticons') === 'on';
 const enableBlessing = blessingEnabled(query.get('blessing'), scenario, fxEnabled);
@@ -127,6 +129,7 @@ async function boot() {
   let seats: Awaited<ReturnType<typeof createSeatScene>> | undefined;
   let botanicals: Awaited<ReturnType<typeof createBotanicalScene>> | undefined;
   let communityNames: ReturnType<typeof createCommunityNames> | undefined;
+  let nameplates: ReturnType<typeof createNameplates> | undefined;
   let routes: ReturnType<typeof createCinematicRoutes> | undefined;
   let start: number | undefined;
   let last: number | undefined;
@@ -195,11 +198,12 @@ async function boot() {
         diversity ? seats.preview.breath.position : undefined);
     }
     const labels = presentation ? showGift(camera, presentation, selected, presence) : undefined;
-    if (presentation && communityNames) {
+    if (presentation && (communityNames || nameplates)) {
       const { avatars, viewerCount } = presentation.state;
-      const names = communityNames.update(presence && (!presentation.state.connected || document.hidden) ? [] : avatars,
-        camera, Math.round(seconds * 1000),
-        labels?.name ? selected?.presentation.actorId : undefined);
+      const plates = nameplates?.update(presentation.state, camera, manual);
+      const names = plates?.names ?? communityNames?.update(avatars, camera, Math.round(seconds * 1000),
+        labels?.name ? selected?.presentation.actorId : undefined) ?? [];
+      if (plates && manual) report.nameplates = plates.projections;
       const slots = seats?.slots && occupancy(seats.slots, avatars);
       report.community = { slots, names, viewerCount, realActors: avatars.length,
         decorativeActors: slots?.filter(slot => slot.kind === 'DECORATIVE_ANONYMOUS').length ?? 0,
@@ -268,14 +272,7 @@ async function boot() {
   };
   const clearPresence = () => {
     bubbles?.clear(Math.round(Number(report.elapsedSeconds ?? 0) * 1000));
-    if (presence) {
-      communityNames?.clear();
-      const giftName = document.querySelector<HTMLElement>('#gift-name');
-      if (giftName) {
-        giftName.hidden = true;
-        giftName.textContent = '';
-      }
-    }
+    nameplates?.clear();
     if (bubbles) report.bubbles = {};
   };
   const visibility = () => { if (document.hidden) clearPresence(); };
@@ -311,6 +308,7 @@ async function boot() {
     gold?.dispose();
     botanicals?.dispose();
     communityNames?.dispose();
+    nameplates?.dispose();
     bubbles?.dispose();
     sakura?.dispose();
     seats?.dispose();
@@ -347,8 +345,9 @@ async function boot() {
       seats = pair;
       report.seatMaterialCount = pair.materialCount;
       if (pair.diversity) report.diversity = pair.diversity;
-      if (liveRequested || scenario === 'community' || presence) {
-        communityNames = createCommunityNames(canvas.parentElement!, pair.seats, presence);
+      if (presence) nameplates = createNameplates(canvas.parentElement!, pair.seats, asset.root);
+      else if (liveRequested || scenario === 'community') {
+        communityNames = createCommunityNames(canvas.parentElement!, pair.seats);
       }
       scene.add(pair.group);
       pair.preview.sample(0);
