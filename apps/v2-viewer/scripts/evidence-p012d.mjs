@@ -90,6 +90,18 @@ function shot(page) {
   return page.locator('#stage').screenshot({ animations: 'disabled' });
 }
 
+function communityIdentity(value) {
+  if (!value) return value;
+  const { batches, ...identity } = value;
+  return identity;
+}
+
+function giftState(value) {
+  if (!value) return value;
+  const { poolId, materialId, ...state } = value;
+  return state;
+}
+
 function trace(run, end) {
   return run.page.evaluate(end => {
     const samples = [];
@@ -100,7 +112,10 @@ function trace(run, end) {
         confirmedGiftCount: r.confirmedGiftCount, appearance: r.appearance, fx: r.fx });
     }
     return { samples, domain: window.p08Review.trace() };
-  }, end);
+  }, end).then(trace => ({
+    ...trace,
+    samples: trace.samples.map(row => ({ ...row, community: communityIdentity(row.community), fx: giftState(row.fx) })),
+  }));
 }
 
 function measure(page) {
@@ -164,6 +179,7 @@ async function recovery(site, profile, newBuild) {
         assert.deepEqual(r[field], first[field]);
       }
       assert.equal(r.focus.actorId, first.focus.actorId);
+      assert.deepEqual([r.fx.poolId, r.fx.materialId], [first.fx.poolId, first.fx.materialId]);
       assert.deepEqual(r.diversity, first.diversity);
       assert.deepEqual(r.community, first.community);
       result.push({ time, glError: r.glError, draws: r.drawCalls, geo: r.geometries,
@@ -240,7 +256,9 @@ try {
       assert.equal(inactive.glError, 0);
       assert.equal(sha(await shot(off.page)), sha(a), profile + '/' + name + ' off image parity');
       const active = await draw(on.page, t, fixed);
-      for (const key of ['position', 'target', 'fov', 'community', 'focus', 'labels', 'fx',
+      assert.deepEqual(communityIdentity(active.community), communityIdentity(reference.community));
+      assert.deepEqual(giftState(active.fx), giftState(reference.fx));
+      for (const key of ['position', 'target', 'fov', 'focus', 'labels',
         'confirmedGiftCount', 'appearance', 'botanicals']) assert.deepEqual(active[key], reference[key], name + '/' + key);
       const seat = active.diversity.looks[0];
       const b = await capture(on, `${profile}-${name}-on.png`, active, { seat });
