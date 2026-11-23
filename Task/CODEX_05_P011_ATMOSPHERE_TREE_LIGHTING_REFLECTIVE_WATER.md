@@ -158,3 +158,12 @@ Browser: `http://127.0.0.1:5181/?seed=9&clean=1` (twilight ECO default after imp
 4. Push only the minimum viewer code/test/evidence correction, preserve previous valid before/after screenshots if runtime output unchanged, rerun affected tests and builds, and provide new exact HEAD, browser details, logs, error counts by phase and screenshot/trace provenance.
 
 **Gate:** stop again at `P011_SA_REVIEW_REQUIRED` for SA re-review. **PR #8 must not merge; no P0.12 implementation, new assets, Blender, LIVE, V1 or RTX benchmark.** Owner P0.11 visual acceptance remains separate.
+
+
+## 10. SA PR #8 re-review — blocker resolved, Owner Visual GO pending (2026-11-23)
+
+**Reviewed new exact HEAD:** `9f15513c451eacc5f52a62c47ebd17085beea15e`, stacked on unchanged P0.10 `323955bed04e88f37cc251f8ae902e5ef7550eb5`. Formal [SA re-review #6015829891](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/8#pullrequestreview-6015829891): **`P011_SA_TECH_PASS`**; previously blocking WebGL evidence gap documented in Section 9 is **RESOLVED for this tested scope**. Do not delete Section 9; it is the audit trail.
+
+**Source/evidence:** Two follow-up commits only modify viewer evidence runner, `P011.md`, `browser-report.json` metadata and add `evidence/p011/{webgl-recovery.json,webgl-checks.txt}`. The corrected classifier catches `INVALID_OPERATION`; four native baseline comparisons P0.10/P0.11 × ECO/QUALITY show one context-loss and recovery each, zero unexpected GL messages **during normal continued rendering**, `gl.getError()=NO_ERROR`, one SHA-identical first restored frame, six subsequent good frames (seven after recovery total) with preserved gift identity/count and material/FX resource pools. 30/30 tests and both builds PASS per Codex logs. **Known teardown warnings persist**: P0.10 ECO/QUALITY 100/132, P0.11 ECO/QUALITY 105/137. Preserve them in logs and do not assert that all browser graphics warnings are gone. Windows Edge 158 SwiftShader only, not Owner GPU / LIVE Studio.
+
+**Gate update:** `P011_WEBGL_RECOVERY_EVIDENCE_HOLD` → **CLOSED**; `P011_SA_TECH_PASS` **granted**. **`OWNER_P011_VISUAL_GO_PENDING` remains**, with visual judgment needed on gold veins, water reflections and night palette. **No authorization to merge, deploy, run LIVE/Blender, edit V1, or begin P0.12 implementation.** PR #8 and its stacked dependencies remain open. Keep task until dependents and Owner decisions are clear.
