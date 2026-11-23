@@ -20,6 +20,10 @@ Get-FileHash \"$root/lotus_bloom_p012b_quality.glb\" -Algorithm SHA256
 Get-FileHash \"$root/lotus_bloom_p012b_eco.glb\" -Algorithm SHA256
 Get-FileHash \"$root/lotus_bud_p012b_quality.glb\" -Algorithm SHA256
 Get-FileHash \"$root/lotus_bud_p012b_eco.glb\" -Algorithm SHA256
+# Preferred one-command hash-gated owner runner:
+& "$root/run_p012b_blender.ps1"
+
+# Or invoke directly:
 blender --background --python \"$root/blender_cycles_p012b.py\" -- --assets \"$root\" --p02 \"Assets3D/Review/lotus_pad_chibi/p0.2/lotus_pad_01.glb\"
 ```
 
