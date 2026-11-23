@@ -88,3 +88,12 @@
 - Stage gates: **P0.12-A DEMO/code/evidence → SA review → Owner visual decision;** only then consider P0.12-B original lotus bloom/bud assets if actually missing, and later full community scaling/live integration.
 
 **No media cloning:** use entirely approved/original assets; keep actual viewers’ private identities/photos outside committed evidence; test dummy data from deterministic DEMO only.
+
+
+## 6. Owner P0.12-A Visual GO and P0.12-B art decision (2026-11-23)
+
+Owner explicitly approved the P0.12-A 12-visual-position DEMO preview at [PR #9](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/9), exact reviewed HEAD `0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf`, after [SA TECH PASS](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/9#pullrequestreview-6016205924). This records `P012A_OWNER_VISUAL_GO` for the demonstrated anonymous-to-real **DEMO-only** seat/label behavior, **not** authentic LIVE membership, 12 real seats, production GPU or merge permission.
+
+[Design 19 — exact asset inventory](19_P012B_BOTANICAL_ASSET_AUDIT_AND_SCOPE.md) now establishes that PR #2 currently contains real P05f/P05c female and P07a1/P07b1 male assets and P02 lotus pad. No new character production is justified. **A dedicated lotus flower and closed bud were not found on the audited PR #1/#2 source lists**, although independent Owner art storage may still exist. Therefore Owner's instruction to continue the proposed inventory/next task is implemented as **one isolated [AI Visual 15 P0.12-B botanical asset task](../Task/AI_VISUAL_15_P012B_LOTUS_BLOSSOM_AND_BUD.md)**: only open lotus blossom + bud, each ECO/QUALITY, real versioned GLB/Blend/Cycles and binary manifest. It targets a new art PR branched from exact PR #2 HEAD `ce0db947e5e9ea4c6214bc900b0cdd9c6a83cced` and does not alter PR #2 or PR #9.
+
+**Separate gates:** `P012B_SA_ART_REVIEW_REQUIRED` then Owner Botanical Art GO; only afterwards decide Codex P0.12-C viewer integration and reuse of existing color/female character variants on a new branch from PR #9. No mountains, P0.13 gifting choreography, LIVE/RTX or merges implicitly authorized.
