@@ -107,3 +107,10 @@ npm.cmd run dev -- --port 5184 --strictPort
 ## 8. Final Codex report / STOP
 
 Final report: exact base PR #11 and art PR #2 SHA, actual GLB hashes/bytes, new PR/commit SHA, selected looks and material IDs for seed 9/71, 12 slots vs three actual real actors, member→same-look handoff, camera/gift A→B→C, native WebGL images, test count and actual browser/CPU/GPU metrics, 0 VND and **`P012D_SA_REVIEW_REQUIRED`**. If any prerequisite is contradicted by real GLB metadata or browser screenshots, call `BLOCKED` and return the smallest source evidence, not a new art/production task without SA.
+
+
+## 9. Owner P0.12-D Visual GO and Codex 08 completion — 2026-11-23
+
+**Historical PENDING resolved:** [Formal SA Technical PASS #6018115256](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/12#pullrequestreview-6018115256) reviewed PR #12 exact HEAD `385816518987b2a0ea6ef094bb0f65bfb363e720`; Owner subsequently said **“done, continue.”** Record `OWNER_P012D_VISUAL_GO`. This ends the active CODEX 08 implementation/Owner look gate **without merging** PR #12 or altering approved assets. The PR and its tests/evidence stay available as an immutable dependency for follow-up work.
+
+**Next authorized task:** [CODEX 09 P0.13-A Gift Blessing Choreography](CODEX_09_P013A_GIFT_BLESSING_CHOREOGRAPHY.md), bounded by [Design 22](../Design/22_P013_GIFT_BLESSING_CHOREOGRAPHY_CONTRACT.md), one new stacked viewer-only PR from exact PR #12 HEAD. No new female/rose art, camera/actor/seat count changes, Event Engine/V1/LIVE/RTX or merge. `P013A_SA_REVIEW_REQUIRED` remains new stop gate.
