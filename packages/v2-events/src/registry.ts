@@ -1,6 +1,21 @@
 import type { AvatarPresentation, DemoViewer } from './protocol.ts';
 
 const segmenter = new Intl.Segmenter('vi', { granularity: 'grapheme' });
+const encoder = new TextEncoder();
+
+export function sanitizeChat(input: unknown) {
+  if (typeof input !== 'string' || input.length > 1024 || encoder.encode(input).byteLength > 2048) return;
+  const clean = input.normalize('NFC').replace(/<[^<>]*>/gu, ' ').replace(/[<>]/gu, '')
+    .replace(/\p{Bidi_Control}/gu, '').replace(/[\p{Cc}\s]+/gu, ' ').trim();
+  let text = '';
+  let graphemes = 0;
+  for (const { segment } of segmenter.segment(clean)) {
+    if (graphemes === 120) break;
+    text += segment;
+    graphemes++;
+  }
+  return { text, graphemes };
+}
 
 export function displayName(name: string): string {
   const clean = name.slice(0, 512).normalize('NFC')

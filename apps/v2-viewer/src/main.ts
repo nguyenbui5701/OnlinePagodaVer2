@@ -22,6 +22,8 @@ import { blessingEnabled } from './gift-blessing.ts';
 import { createBlessingCloud } from './blessing-cloud.ts';
 import { botanicalLayout, botanicalsEnabled } from './botanical-layout.ts';
 import { createBotanicalScene } from './botanical-scene.ts';
+import { createPresenceBubbles } from './presence-bubbles.ts';
+import { presenceDemo } from './presence-demo.ts';
 
 declare const __REPO_REVISION__: string;
 const canvas = document.querySelector<HTMLCanvasElement>('#capture')!;
@@ -43,11 +45,15 @@ const requestedTime = query.has('time') ? Number(query.get('time')) : NaN;
 const frozenAt = Number.isFinite(requestedTime) ? requestedTime : undefined;
 const manual = query.get('inspect') === '1' && !comparison;
 const scenario = liveRequested ? 'idle' : parseScenario(query.get('demo'));
+const presence = !comparison && query.get('presence') === 'on';
+const chatBubbles = !comparison && query.get('chatbubbles') === 'on';
+const giftIcons = !comparison && query.get('gifticons') === 'on';
 const enableBlessing = blessingEnabled(query.get('blessing'), scenario, fxEnabled);
 const crowd = liveRequested || (scenario === 'community' && query.get('crowd') !== 'off');
 const diversity = !comparison && diversityEnabled(crowd, query.get('diversity'));
 const enableBotanicals = !comparison && botanicalsEnabled(crowd, query.get('botanicals'));
-const driver = new SliceDriver(liveRequested ? 'offline' : scenario);
+const driver = new SliceDriver(liveRequested ? 'offline' : scenario,
+  scenario === 'community' ? presenceDemo(chatBubbles, giftIcons) : []);
 const director = new SliceCamera();
 const seed = parseCinematicSeed(query.get('seed'));
 if (query.get('clean') === '1') document.body.classList.add('clean');
@@ -101,6 +107,8 @@ async function boot() {
   };
 
   const environment = new Group();
+  const bubbles = chatBubbles || giftIcons
+    ? createPresenceBubbles(canvas.parentElement!, profile, chatBubbles, giftIcons) : undefined;
   environment.name = 'Environment';
   scene.add(environment);
   const water = comparison ? undefined : createWater(fxProfile.water, look !== 'legacy');
@@ -186,10 +194,11 @@ async function boot() {
       report.visibleDecorativeInstances = seats.batches.update(seats.preview.breath.scale, camera,
         diversity ? seats.preview.breath.position : undefined);
     }
-    const labels = presentation ? showGift(camera, presentation, selected) : undefined;
+    const labels = presentation ? showGift(camera, presentation, selected, presence) : undefined;
     if (presentation && communityNames) {
       const { avatars, viewerCount } = presentation.state;
-      const names = communityNames.update(avatars, camera, Math.round(seconds * 1000),
+      const names = communityNames.update(presence && (!presentation.state.connected || document.hidden) ? [] : avatars,
+        camera, Math.round(seconds * 1000),
         labels?.name ? selected?.presentation.actorId : undefined);
       const slots = seats?.slots && occupancy(seats.slots, avatars);
       report.community = { slots, names, viewerCount, realActors: avatars.length,
@@ -197,6 +206,10 @@ async function boot() {
         batches: seats?.batches?.count ?? 0 };
     }
     const celebration = presentation && giftFx?.update(presentation.state, presentation.active, selected);
+    if (bubbles && presentation && seats) {
+      report.bubbles = bubbles.update(presentation.state, presentation.chat, celebration?.gift, selected,
+        seats.seats, camera, presentation.state.camera.mode !== 'CINEMATIC' || !!labels?.fallback);
+    }
     if (blessing && presentation) report.blessing = blessing.update(presentation.state, celebration?.gift, selected);
     ambient?.update(seconds, celebration?.gift?.opacity ?? 0);
     water?.setRipple(celebration?.ripple);
@@ -253,9 +266,24 @@ async function boot() {
     }
     if (!comparison && !manual && frozenAt === undefined) req = requestAnimationFrame(render);
   };
+  const clearPresence = () => {
+    bubbles?.clear(Math.round(Number(report.elapsedSeconds ?? 0) * 1000));
+    if (presence) {
+      communityNames?.clear();
+      const giftName = document.querySelector<HTMLElement>('#gift-name');
+      if (giftName) {
+        giftName.hidden = true;
+        giftName.textContent = '';
+      }
+    }
+    if (bubbles) report.bubbles = {};
+  };
+  const visibility = () => { if (document.hidden) clearPresence(); };
+  if (bubbles || presence) document.addEventListener('visibilitychange', visibility);
   const contextLost = (event: Event) => {
     event.preventDefault();
     lost = true;
+    clearPresence();
     errors.push('webglcontextlost');
     cancelAnimationFrame(req);
     show('Mất ngữ cảnh WebGL. Đang chờ khôi phục…');
@@ -279,9 +307,11 @@ async function boot() {
     canvas.removeEventListener('webglcontextlost', contextLost);
     canvas.removeEventListener('webglcontextrestored', contextRestored);
     window.removeEventListener('pagehide', onPageHide);
+    document.removeEventListener('visibilitychange', visibility);
     gold?.dispose();
     botanicals?.dispose();
     communityNames?.dispose();
+    bubbles?.dispose();
     sakura?.dispose();
     seats?.dispose();
     ambient?.dispose();
@@ -317,8 +347,8 @@ async function boot() {
       seats = pair;
       report.seatMaterialCount = pair.materialCount;
       if (pair.diversity) report.diversity = pair.diversity;
-      if (liveRequested || scenario === 'community') {
-        communityNames = createCommunityNames(canvas.parentElement!, pair.seats);
+      if (liveRequested || scenario === 'community' || presence) {
+        communityNames = createCommunityNames(canvas.parentElement!, pair.seats, presence);
       }
       scene.add(pair.group);
       pair.preview.sample(0);
