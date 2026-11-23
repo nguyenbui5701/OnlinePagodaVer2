@@ -5,10 +5,10 @@ export type BotanicalKind = 'bloom' | 'bud';
 type Candidate = readonly [BotanicalKind, number, number];
 const candidates: readonly Candidate[] = [
   ['bloom', 1, 17], ['bloom', -3.55, 14.9], ['bloom', 8.5, 9.4],
-  ['bud', 2.9, 17.75], ['bud', -2.55, 15.35], ['bud', 8, 10.7],
-  ['bud', -3.46, 10.45], ['bud', 5.2, 19.3],
+  ['bud', 2.9, 17.75], ['bud', -2.2, 15.65], ['bud', 8, 10.7],
+  ['bud', -3.46, 10.45], ['bud', 6.6, 20.4],
   ['bloom', 5, 16.3], ['bloom', -7.8, 6.8],
-  ['bud', 4.85, 17.35], ['bud', -7.7, 8], ['bud', -1.9, 19.9],
+  ['bud', 6.3, 16.7], ['bud', -7.7, 8], ['bud', -1.9, 19.9],
 ];
 // Conservative radial bounds from the widest min/max box of each audited LOD.
 export const botanicalRadius = { bloom: .54, bud: .21 };

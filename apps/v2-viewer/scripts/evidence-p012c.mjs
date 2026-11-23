@@ -263,7 +263,7 @@ try {
           camera, fixed, labels: r.labels, focus: r.focus, frustum: r.botanicalFrustum ?? [], drawCalls: r.drawCalls });
       }
       const regions = { frame: [0, 0, 720, 1280] };
-      if (name === 'gift') Object.assign(regions, { face: [248, 410, 204, 195], nameplate: [318, 332, 88, 58],
+      if (name === 'gift') Object.assign(regions, { face: [260, 410, 192, 195], nameplate: [318, 332, 88, 58],
         giftLabel: [451, 509, 125, 45], fallback: [238, 1090, 258, 83] });
       if (name === 'under') regions.goldBark = [340, 290, 230, 555];
       const diff = await pixels(on.page, ...images, regions);
