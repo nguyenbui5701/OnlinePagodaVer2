@@ -28,8 +28,9 @@ const canvas = document.querySelector<HTMLCanvasElement>('#capture')!;
 const status = document.querySelector<HTMLParagraphElement>('#status')!;
 const diagnostics = document.querySelector<HTMLPreElement>('#diagnostics')!;
 const query = new URLSearchParams(location.search);
+const liveRequested = query.get('source') === 'live';
 const profile: Profile = query.get('profile') === 'quality' ? 'quality' : 'eco';
-const requestedView = query.get('view') ?? '';
+const requestedView = liveRequested ? '' : query.get('view') ?? '';
 const view = Object.hasOwn(referenceViews, requestedView) ? requestedView as keyof typeof referenceViews : undefined;
 const comparison = view ? referenceViews[view] : undefined;
 const look = parseLook(query.get('look'), !!comparison);
@@ -41,20 +42,27 @@ const captureHeight = view && view !== 'hero_full_9x16' ? 835 : capture.height;
 const requestedTime = query.has('time') ? Number(query.get('time')) : NaN;
 const frozenAt = Number.isFinite(requestedTime) ? requestedTime : undefined;
 const manual = query.get('inspect') === '1' && !comparison;
-const scenario = parseScenario(query.get('demo'));
+const scenario = liveRequested ? 'idle' : parseScenario(query.get('demo'));
 const enableBlessing = blessingEnabled(query.get('blessing'), scenario, fxEnabled);
-const crowd = scenario === 'community' && query.get('crowd') !== 'off';
+const crowd = liveRequested || (scenario === 'community' && query.get('crowd') !== 'off');
 const diversity = !comparison && diversityEnabled(crowd, query.get('diversity'));
 const enableBotanicals = !comparison && botanicalsEnabled(crowd, query.get('botanicals'));
-const driver = new SliceDriver(scenario);
+const driver = new SliceDriver(liveRequested ? 'offline' : scenario);
 const director = new SliceCamera();
 const seed = parseCinematicSeed(query.get('seed'));
 if (query.get('clean') === '1') document.body.classList.add('clean');
+if (liveRequested) {
+  document.title = 'OnlinePagoda V2 · Portrait source';
+  const operatorStatus = document.querySelector<HTMLParagraphElement>('#live-status')!;
+  operatorStatus.hidden = false;
+  operatorStatus.textContent = 'OFFLINE · Chưa có nguồn sự kiện TikTok đã xác minh. Chỉ hiển thị cảnh 3D.';
+}
 
 const errors: string[] = [];
 const report: Record<string, unknown> = {
   repoRevision: __REPO_REVISION__, profile, viewport: [captureWidth, captureHeight],
   safeMargin: capture.safeMargin, near: capture.near, far: capture.far, scenario, seed, errors, contextRestores: 0,
+  ...(liveRequested && { liveStatus: 'OFFLINE', liveReason: 'P10B2_PROVIDER_ACCESS_BLOCKED' }),
 };
 Object.assign(window, { viewerReport: report });
 
@@ -309,7 +317,9 @@ async function boot() {
       seats = pair;
       report.seatMaterialCount = pair.materialCount;
       if (pair.diversity) report.diversity = pair.diversity;
-      if (scenario === 'community') communityNames = createCommunityNames(canvas.parentElement!, pair.seats);
+      if (liveRequested || scenario === 'community') {
+        communityNames = createCommunityNames(canvas.parentElement!, pair.seats);
+      }
       scene.add(pair.group);
       pair.preview.sample(0);
       routes = createCinematicRoutes(seatPose(pair.preview, 0.16, 5.05), tree, seed);

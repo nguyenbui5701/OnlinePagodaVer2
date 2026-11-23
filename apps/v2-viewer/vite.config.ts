@@ -11,5 +11,5 @@ export default defineConfig(() => {
   } catch {
     // A source archive may have no Git metadata.
   }
-  return { base: './', define: { __REPO_REVISION__: JSON.stringify(revision) } };
+  return { base: './', preview: { cors: false }, define: { __REPO_REVISION__: JSON.stringify(revision) } };
 });

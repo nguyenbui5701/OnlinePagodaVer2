@@ -48,11 +48,11 @@ export class SliceDriver {
   private roomSessionId = '';
   readonly trace: DomainLog[] = [];
 
-  constructor(scenario: Scenario) {
+  constructor(scenario: Scenario | 'offline') {
     this.engine = new DemoEngine({ ...timing, maxAvatars: 3, ...(scenario === 'community' ? communityConfig : {}) });
     this.events = scenario === 'community' ? communityScript()
-      : scenario === 'idle' ? [] : commands(scenario === 'capacity');
-    this.engine.ingest(session());
+      : scenario === 'idle' || scenario === 'offline' ? [] : commands(scenario === 'capacity');
+    if (scenario !== 'offline') this.engine.ingest(session());
     this.observer.accept(this.engine.snapshot());
   }
 
