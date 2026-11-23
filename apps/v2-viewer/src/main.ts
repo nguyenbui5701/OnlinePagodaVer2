@@ -16,6 +16,8 @@ import { createWater } from './water.ts';
 import { createAmbientFx } from './ambient-fx.ts';
 import { createGiftFx } from './gift-fx.ts';
 import { fxProfiles } from './fx-profiles.ts';
+import { botanicalLayout, botanicalsEnabled } from './botanical-layout.ts';
+import { createBotanicalScene } from './botanical-scene.ts';
 
 declare const __REPO_REVISION__: string;
 const canvas = document.querySelector<HTMLCanvasElement>('#capture')!;
@@ -37,6 +39,7 @@ const frozenAt = Number.isFinite(requestedTime) ? requestedTime : undefined;
 const manual = query.get('inspect') === '1' && !comparison;
 const scenario = parseScenario(query.get('demo'));
 const crowd = scenario === 'community' && query.get('crowd') !== 'off';
+const enableBotanicals = !comparison && botanicalsEnabled(crowd, query.get('botanicals'));
 const driver = new SliceDriver(scenario);
 const director = new SliceCamera();
 const seed = parseCinematicSeed(query.get('seed'));
@@ -99,6 +102,7 @@ async function boot() {
   let disposed = false;
   let sakura: Awaited<ReturnType<typeof loadSakura>> | undefined;
   let seats: Awaited<ReturnType<typeof createSeatScene>> | undefined;
+  let botanicals: Awaited<ReturnType<typeof createBotanicalScene>> | undefined;
   let communityNames: ReturnType<typeof createCommunityNames> | undefined;
   let routes: ReturnType<typeof createCinematicRoutes> | undefined;
   let start: number | undefined;
@@ -198,6 +202,12 @@ async function boot() {
       routeId: cinematic?.routeId, direction: cinematic?.direction, cycle: cinematic?.cycle, routeFallback: cinematic?.fallback,
     });
     if (review && !review.draw) return;
+    if (botanicals) {
+      botanicals.group.visible = !review?.seatId;
+      if (manual || now - lastReport >= 500) {
+        report.botanicalFrustum = botanicals.group.visible ? botanicals.inFrustum(camera) : [];
+      }
+    }
     renderer.render(scene, camera);
     if (last !== undefined && now > last) {
       frameTimes.push(now - last);
@@ -252,6 +262,7 @@ async function boot() {
     canvas.removeEventListener('webglcontextrestored', contextRestored);
     window.removeEventListener('pagehide', onPageHide);
     gold?.dispose();
+    botanicals?.dispose();
     communityNames?.dispose();
     sakura?.dispose();
     seats?.dispose();
@@ -298,6 +309,14 @@ async function boot() {
       if (pair.slots) {
         report.communityLayout = pair.slots;
         report.communityPadRadius = pair.padRadius;
+        if (enableBotanicals && pair.padRadius !== undefined) {
+          const layout = botanicalLayout(profile, seed, tree.toArray(), pair.slots, pair.padRadius);
+          const plants = await createBotanicalScene(profile, layout, abort.signal);
+          if (disposed) { plants.dispose(); return; }
+          botanicals = plants;
+          environment.add(plants.group);
+          report.botanicals = plants.report;
+        }
       }
       if (routes.rejected.length) console.warn('P0.9 cinematic clearance fallback', routes.rejected);
     }

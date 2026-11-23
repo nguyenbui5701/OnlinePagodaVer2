@@ -3,9 +3,10 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 export async function importVerifiedGlb(
   directory: string, expected: { file: string; bytes: number; sha256: string }, signal: AbortSignal,
+  staging = 'assets:p08',
 ) {
   const response = await fetch(`${import.meta.env.BASE_URL}${directory}/${expected.file}`, { signal });
-  if (!response.ok) throw new Error(`Thiếu GLB ${expected.file} (${response.status}). Chạy npm run assets:p08.`);
+  if (!response.ok) throw new Error(`Thiếu GLB ${expected.file} (${response.status}). Chạy npm run ${staging}.`);
   const data = await response.arrayBuffer();
   if (data.byteLength !== expected.bytes) throw new Error(`Sai kích thước GLB ${expected.file}.`);
   const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', data)), byte =>
