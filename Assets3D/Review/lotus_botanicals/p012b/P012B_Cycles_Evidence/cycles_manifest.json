@@ -1,8 +1,8 @@
 [
   {
     "file": "aerial_quality_720x1280_cycles.png",
-    "bytes": 967375,
-    "sha256": "fda1daca31d35e800880d1d8f17ceb1e41f73581a515af448aad8ba0cea61ac6",
+    "bytes": 970605,
+    "sha256": "f638271aef2a6811603fa85a58f9fbf181c8535c1652903ebe8e369693962848",
     "renderer": "Blender Cycles",
     "samples": 32
   },
@@ -120,22 +120,22 @@
   },
   {
     "file": "p02_scale_context_eco_720x1280_cycles.png",
-    "bytes": 947836,
-    "sha256": "a25d0fd2989204a04a84a71f9fdc497553681b64b972027a0c6feffe8c780a3a",
+    "bytes": 945935,
+    "sha256": "6e26947b28f0e4656f99675b744d7319644a2a2d8e880cd0807d326f8a3873b6",
     "renderer": "Blender Cycles",
     "samples": 32
   },
   {
     "file": "p02_scale_context_quality_720x1280_cycles.png",
-    "bytes": 954631,
-    "sha256": "ceff090b4d971f694756219d16214a51e9bc2f7043802e16bc3a156a22891d9a",
+    "bytes": 946929,
+    "sha256": "c2cc46af40f3cd3a3092e3831a799865008a70475e3bab1b1c37d8870780bebc",
     "renderer": "Blender Cycles",
     "samples": 32
   },
   {
     "file": "water_level_low_quality_720x1280_cycles.png",
-    "bytes": 928086,
-    "sha256": "8d0442b365b3391f970f0c700f354b3917638269ed1654d94e04d033b8028542",
+    "bytes": 926031,
+    "sha256": "309cfdd847f3ae9c9529de0efea805a77aa87ed32d8abd74545f2fa6a73bd272",
     "renderer": "Blender Cycles",
     "samples": 32
   }
