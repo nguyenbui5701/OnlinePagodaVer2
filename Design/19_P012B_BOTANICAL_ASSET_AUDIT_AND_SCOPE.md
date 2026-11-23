@@ -43,3 +43,10 @@ Two original, low-poly and visually harmonious assets: **one open lotus blossom 
 - **Later separate Codex integration:** after art GO, hash-verify specific approved GLBs in an isolated viewer branch **stacked onto PR #9**, layout botanical scene without actor identity, check 3→12 scene and A/B/C gift/camera. Consider actual P05f and *genuine* supported material variants only after a separate compatibility and performance gate. **P0.13 rose/gift choreography** and P1.0 RTX/LIVE remain deferred; no automatic merges.
 
 **SA art priority:** inexpensive real open/bud low-poly models with strong silhouettes, not missing horizon mountains, character restyling, new technology stack or graphics postprocessing.
+
+
+## 5. Owner Botanical Art GO and final SA source decision — 2026-11-23
+
+After [P0.12-B SA Art PASS review #6017468836](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/10#pullrequestreview-6017468836) on PR #10 exact HEAD `9a01b39afde642d55dcf9bc7639f3a84ef913e4d`, the Owner explicitly wrote **“duyệt, tiếp tục triển khai phần tiếp theo theo rules”**, granting `OWNER_P012B_BOTANICAL_ART_GO` for the four exact original BLOOM/BUD ECO/QUALITY GLBs recorded in the approved `asset_manifest.json`. The four source hashes, true Blender Cycles context and artist-provenance gate are now frozen; no further Blender or geometry task is needed.
+
+This supersedes the **historical** “Owner Botanical Art GO pending” text earlier in Design 19 without deleting the audit. **Current phase:** [Design 20 — P0.12-C pinned botanical integration](20_P012C_BOTANICAL_RUNTIME_INTEGRATION_CONTRACT.md) and [CODEX 07](../Task/CODEX_07_P012C_LOTUS_BOTANICAL_VIEWER_INTEGRATION.md). Codex must stage/import approved bytes from immutable PR #10 commit in a **new** PR stacked on P0.12-A Viewer PR #9 `0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf`—no PR merging/cherry-picking, no V1/LIVE/RTX, and `P012C_SA_REVIEW_REQUIRED` remains next gate. 
