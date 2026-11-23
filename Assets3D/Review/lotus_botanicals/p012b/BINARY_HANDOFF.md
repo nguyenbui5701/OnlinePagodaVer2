@@ -28,3 +28,18 @@ blender --background --python \"$root/blender_cycles_p012b.py\" -- --assets \"$r
 ```
 
 Upload generated `.blend`, actual PNGs and Cycles log/evidence on this same branch for SA Art review; do not merge/modify baseline branches or integrate viewer.
+
+## 2026-11-23 Windows Blender stderr/traceback troubleshooting
+
+If PowerShell prints only `blender.exe : Traceback (most recent call last)` at line 29, it is due to the **previous runner** using `$ErrorActionPreference='Stop'` together with native `2>&1 | Tee-Object`. This can hide the useful last Python exception. Checkout this PR's newest runner and use the same `-Blender` parameter. The revised script calls Blender with `--python-exit-code 17`, redirects stdout/stderr into separate files, and reports the **last 120 lines of stderr** with the Python error even when Blender fails. It never labels incomplete renders PASS.
+
+```powershell
+# From checked-out assets/p012b-lotus-blossom-bud branch
+$root = '.\\Assets3D\\Review\\lotus_botanicals\\p012b'
+& \"$root/run_p012b_blender.ps1\" -Blender 'C:\\Program Files\\Blender Foundation\\Blender 4.5\\blender.exe'
+# If still failing, send these files to SA:
+Get-Content \"$root/P012B_Cycles_Evidence/blender_cycles_stderr.log\" -Tail 120
+Get-Content \"$root/P012B_Cycles_Evidence/blender_cycles_stdout.log\" -Tail 60
+```
+
+The Blender path above is an example; use your actual executable path. Do not change the GLB or P02 checksum just to bypass a Python error.
