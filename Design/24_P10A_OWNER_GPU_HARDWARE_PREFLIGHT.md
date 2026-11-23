@@ -53,3 +53,10 @@ Run **TikTok LIVE Studio concurrent capture / provider simulation and true adapt
 - **STOP A: `P10A_HARNESS_SA_REVIEW_REQUIRED`** — SA reviews instrument accuracy, scope and operational safety. Owner runs hardware tests *after harness review*.
 - **STOP B: `P10A_OWNER_GPU_EVIDENCE_REQUIRED`** — upload sanitized actual ECO/QUALITY device reports. SA assesses specific GPU profile PASS/PARTIAL, returns only *measured* bottlenecks. Hardware approval does not grant LIVE.
 - **NO MERGE, NO PRODUCTION LIVE, NO HARDWARE PASS BY INFERENCE**. `P014_FULL_REFERENCE_FIDELITY_PARTIAL`, rose icon and hills remain deferred.
+
+
+## 6. Owner deferral of P1.0-A — 2026-11-23
+
+**New, explicit Owner instruction:** “có thể bỏ qua bước kiểm tra này làm sau, tiếp tục triển khai next step.” This supersedes Design 24's *current scheduling priority* only: **P1.0-A GPU harness preparation and actual Owner RTX benchmark are DEFERRED, NOT PASS and NOT RUN**. There is no new Code PR or actual RTX log to review at this time. Do not delete or silently declare complete the requirements in Sections 2–5. The hardware acceptance requirements still apply before production/streaming readiness; P1.0-B2 true LIVE/Studio needs a separate explicit Owner decision and GPU gate reconsideration.
+
+**New current approved offline-development successor:** [Design 25 — P1.0-B1 Offline Live-Event Replay Bridge](25_P10B1_OFFLINE_LIVE_EVENT_REPLAY_BRIDGE.md), assigned to [CODEX 12](../Task/CODEX_12_P10B1_OFFLINE_LIVE_EVENT_REPLAY_BRIDGE.md). It is **synthetic, local, DEV+loopback-only**, versioned typed events to existing DemoEngine and Viewer. No TikTok account, live socket/HTTP, tokens, LIVE Studio, source scene changes, V1 or merges. The original P1.0-A / CODEX 11 gate can be resumed as a new separate Owner action, after this isolated offline work or sooner when GPU machines are available. **Next STOP `P10B1_SA_REVIEW_REQUIRED`**.
