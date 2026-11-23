@@ -226,7 +226,7 @@ async function readPair(page, files, rect) {
       if(delta>3)changed++;
       if(a[i]>110&&a[i]>1.07*a[i+1]&&a[i+1]>1.1*a[i+2]){
         goldCount++; gold0+=luma(a,i);gold1+=luma(b,i);
-      } else if(a[i+2]>a[i]&&a[i]<118){
+      } else if(a[i]<118&&a[i+1]+8<Math.min(a[i],a[i+2])){
         baseCount++;base0+=luma(a,i);base1+=luma(b,i);
       }
     }
