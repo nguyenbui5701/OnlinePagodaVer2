@@ -75,3 +75,12 @@ Only after SA re-pins actual CODEX14 head and Codex creates the new worktree:
 Actual \`?ambience=rich&seats=rings&shots=hero\` switches are **proposals, not present on PR #15 or CODEX14 baseline**; implement, prove and document them before advertising. No unverified \`evidence:p10b3b\` command until package.json contains a tested script.
 
 **Success only at new PR:** \`P10B3B_SA_REVIEW_REQUIRED\` with full SHA/pixels/seed/seat/gift/perf provenance; no merge/live assertion or new R17 artwork by Codex.
+
+
+## 7. SA Owner-video composition observations (PREPARED, NOT ACTIVE) — 2026-11-23
+
+Additional qualitative input from Owner's **18.52 s Cốc Cốc desktop recording**, reviewed in [PR #16 SA VIDEO review #6024783556](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/16#pullrequestreview-6024783556); the recording itself is **not copied into the repository**. Actual screen sequence: ~0–6s close focus on anonymous seated chibis and mostly empty sky/water with no hero tree; ~7–9s comment and first seated real name; ~9–15s reveals R16 Sakura and a distant sparse/staggered community, real actor names grow small near stage edge; ~16–18.5s back to occupied chibi gift close. No P0 CODEX14 UI defect shown. **This is not a new unconditional task order or CODEX15 activation.**
+
+When *and only when* CODEX15 becomes ACTIVE after CODEX14 SA+Owner Visual GO and SHA pin, include **camera-interest and portrait legibility checks** with the existing ring/ambience/hero track: balance empty sky/water against visible Sakura/occupied pad subjects in first ~6s without removing atmospheric breathing room; prove HERO_TOP_RING and HERO_WIDE_TREE_REFLECTION are real continuous routes and legible at 9:16; ensure real nameplate stays head-attached near stage boundary instead of screen clamping or inventing names on decorative figures. Keep current R16 source frozen and art R17 conditional. Compare original P0.14 routes against new opt-in shots in exact frames/time, with no forced global-default camera changes or unlabeled benchmark claims.
+
+**Other source path:** the **desktop capture contains browser tabs/address bar and letterboxed landscape background**, so any TikTok Studio clean 9:16 isolation/cropping is a separate P10B2 Owner capture gate. Do NOT try to fix Studio capture by resizing scene geometry or changing Event Engine.
