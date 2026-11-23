@@ -24,12 +24,12 @@
   },
   "source": "build_p012b_assets.mjs",
   "blenderEditableSource": "P012B_botanicals_editable.blend",
-  "blenderEditableSourceStatus": "GITHUB_UPLOADED_NOT_INDEPENDENTLY_OPENED_BY_SA",
+  "blenderEditableSourceStatus": "GITHUB_UPLOADED_REVISED_CONTEXT_BLEND_SA_INDEPENDENT_OPEN_PENDING",
   "license": "MIT original artist-authored procedural geometry",
   "cost": "0 VND",
   "externalMaterials": [],
   "geometryValidation": "PASS_REMOTE_GLB2_SHA256_BYTES_INDICES_FINITE_NORMALS_ZERO_DEGENERATE_FACES_AND_BLENDER_4_5_16_GLTF_IMPORT_LOG",
-  "cyclesStatus": "BLENDER_4_5_16_CYCLES_EXECUTION_PASS_20_IMAGES_EXIST_CONTEXT_FRAMING_HOLD",
+  "cyclesStatus": "BLENDER_4_5_16_CYCLES_RUN_PASS_20_IMAGES_CONTEXT_4_9X16_PASS",
   "artGate": "P012B_SA_ART_REVIEW_REQUIRED",
   "assets": [
     {
@@ -77,7 +77,7 @@
       "sha256": "63edb12d02664a44ce4484b847ef07aeffab6a22a36cf44415b141f56804f0d0",
       "githubStatus": "uploaded_sha_verified",
       "sourceEditableBlenderStatus": "GITHUB_UPLOADED_SA_INDEPENDENT_OPEN_PENDING",
-      "cyclesEvidenceStatus": "ORIGINAL_INDIVIDUAL_CYCLES_PASS_CONTEXT_FRAMING_CORRECTION_PENDING",
+      "cyclesEvidenceStatus": "INDIVIDUAL_CYCLES_PASS_AND_CORRECTED_P02_9X16_CONTEXT_PASS",
       "geometryTopology": "GITHUB_BINARY_REFETCH_SHA256_BYTES_AND_TRIANGLE_COUNT_VERIFIED; zero_deg_faces zero_invalid_indices zero_invalid_normals"
     },
     {
@@ -125,7 +125,7 @@
       "sha256": "8dce16649f0dff541601047628ad7175f0b9ec028e7803b967cf2dee5efc0bd5",
       "githubStatus": "uploaded_sha_verified",
       "sourceEditableBlenderStatus": "GITHUB_UPLOADED_SA_INDEPENDENT_OPEN_PENDING",
-      "cyclesEvidenceStatus": "ORIGINAL_INDIVIDUAL_CYCLES_PASS_CONTEXT_FRAMING_CORRECTION_PENDING",
+      "cyclesEvidenceStatus": "INDIVIDUAL_CYCLES_PASS_AND_CORRECTED_P02_9X16_CONTEXT_PASS",
       "geometryTopology": "GITHUB_BINARY_REFETCH_SHA256_BYTES_AND_TRIANGLE_COUNT_VERIFIED; zero_deg_faces zero_invalid_indices zero_invalid_normals"
     },
     {
@@ -173,7 +173,7 @@
       "sha256": "fe62a2f9aeb166d0eadf758c75eb47950a9053d8f2149d2a66ceaf5007a05f1a",
       "githubStatus": "uploaded_sha_verified",
       "sourceEditableBlenderStatus": "GITHUB_UPLOADED_SA_INDEPENDENT_OPEN_PENDING",
-      "cyclesEvidenceStatus": "ORIGINAL_INDIVIDUAL_CYCLES_PASS_CONTEXT_FRAMING_CORRECTION_PENDING",
+      "cyclesEvidenceStatus": "INDIVIDUAL_CYCLES_PASS_AND_CORRECTED_P02_9X16_CONTEXT_PASS",
       "geometryTopology": "GITHUB_BINARY_REFETCH_SHA256_BYTES_AND_TRIANGLE_COUNT_VERIFIED; zero_deg_faces zero_invalid_indices zero_invalid_normals"
     },
     {
@@ -221,7 +221,7 @@
       "sha256": "c442cc04c3b0094a920c2b86fb202233782d5076a97e1110a84b345df3f0d082",
       "githubStatus": "uploaded_sha_verified",
       "sourceEditableBlenderStatus": "GITHUB_UPLOADED_SA_INDEPENDENT_OPEN_PENDING",
-      "cyclesEvidenceStatus": "ORIGINAL_INDIVIDUAL_CYCLES_PASS_CONTEXT_FRAMING_CORRECTION_PENDING",
+      "cyclesEvidenceStatus": "INDIVIDUAL_CYCLES_PASS_AND_CORRECTED_P02_9X16_CONTEXT_PASS",
       "geometryTopology": "GITHUB_BINARY_REFETCH_SHA256_BYTES_AND_TRIANGLE_COUNT_VERIFIED; zero_deg_faces zero_invalid_indices zero_invalid_normals"
     }
   ],
@@ -236,20 +236,20 @@
     "method": "independent GitHub base64 binary refetch; glTF accessor and mesh index readback; SHA256 and float32/uint16 parse"
   },
   "blenderEditableSourceBytes": 1805896,
-  "blenderEditableSourceGitBlobSHA": "8b0ea3ee72820322fe551b94ed8f95b03e7422da",
-  "blenderEditableSourceOwnerReportedSHA256": "672f098d8a9a3d9778fa26ea4703816c62912c2de1bae34c2baefdfbc9814ddc",
-  "blenderEditableSourceVerificationLimitation": "SA confirmed Git tree blob and size; Blender source has not been independently opened or SHA-256 decoded by SA.",
+  "blenderEditableSourceGitBlobSHA": "f4e79c31d67495ad59145fc153f65295b2cce13f",
+  "blenderEditableSourceOwnerReportedSHA256": "35f74f9ce887a609afc69c73c584137ce87b35cb635a84a5c0df7dce95ac136f",
+  "blenderEditableSourceVerificationLimitation": "SA confirmed revised .blend Git blob and 1,805,896-byte size; owner reported SHA-256. SA has not independently decoded/opened this Blender file.",
   "cyclesArtifactManifestPath": "P012B_Cycles_Evidence/cycles_manifest.json",
-  "cyclesArtifactManifestGitBlobSHA": "fddc3f935329e673b42ecd19ead7b4d0ede87c38",
+  "cyclesArtifactManifestGitBlobSHA": "4b60e783ea57b88f29671f006a68549a328c32e7",
   "cyclesEvidence": {
-    "source": "GitHub existing evidence at PR10 reviewed HEAD 3d7d86d589f9a309d03cd9862ba0041795395ddf",
+    "source": "GitHub PR #10 verified native evidence at SA reviewed HEAD b7427e0b8606050da933608788f9d40526906d32",
     "renderer": "Blender 4.5.16 LTS native Cycles",
     "samples": 32,
     "totalImageCount": 20,
     "isolatedShotCount": 16,
-    "isolatedShotStatus": "PASS_UNCHANGED; SHA guarded by --context-only",
+    "isolatedShotStatus": "PASS_SHA_UNCHANGED_GIT_DIFF_AND_CONTEXT_ONLY_GUARD",
     "originalContextShotCount": 4,
-    "originalContextShotStatus": "UPLOADED_REAL_CYCLES_BUT_VISUAL_BUD_NOT_CLEAR",
+    "originalContextShotStatus": "PASS_CORRECTED_720X1280_P02_BLOOM_BUD_VISIBLE_ALL_FOUR",
     "historicalContextImages": [
       {
         "file": "p02_scale_context_quality_720x1280_cycles.png",
@@ -272,7 +272,7 @@
         "sha256": "fda1daca31d35e800880d1d8f17ceb1e41f73581a515af448aad8ba0cea61ac6"
       }
     ],
-    "contextCorrectionStatus": "NEW_RENDER_ONLY_CAMERA_AND_STAGING_COMMITTED; OWNER_NATIVE_CYCLES_RERENDER_4_PENDING; SA_VISUAL_REVIEW_PENDING",
+    "contextCorrectionStatus": "P012B_ART_CONTEXT_EVIDENCE_PASS_SA_REVIEW_6017094097; OWNER_BOTANICAL_ART_GO_PENDING",
     "contextRequiredProof": [
       "Original P02 pad fully visible",
       "open bloom visibly distinct",
@@ -280,15 +280,62 @@
       "low water-level and aerial 720x1280"
     ],
     "blenderSuccessLog": {
+      "console": "P012B_Cycles_Evidence/blender_cycles_console.log",
+      "consoleGitBlobSHA": "3858f2d0fa3bbda1ff0f6c5372b1e55f1db3c86d",
+      "consoleBytes": 24148,
       "stdout": "P012B_Cycles_Evidence/blender_cycles_stdout.log",
-      "stdoutGitBlobSHA": "d5549f1de1fa3707e390e9c60e6f666660ab3b7d",
-      "stdoutBytes": 106983,
+      "stdoutGitBlobSHA": "7509203e5191b80ebeb3ddf81a3f491909004d96",
+      "stdoutBytes": 23870,
       "stderr": "P012B_Cycles_Evidence/blender_cycles_stderr.log",
+      "stderrGitBlobSHA": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
       "stderrBytes": 0,
       "exitCode": 0,
-      "outputMarker": "P012B_BLENDER_CYCLES_FINISHED 20 PNG"
+      "validationMarkers": [
+        "P012B_ISOLATED_EVIDENCE_LOCK_PASS 16",
+        "P012B_CONTEXT_PROJECTED_THREE_SUBJECTS_PASS x4",
+        "P012B_16_ISOLATED_CYCLES_PRESERVED_SHA_PASS",
+        "P012B_CONTEXT_ONLY_FINISHED 4 PNG; TOTAL_EVIDENCE_20"
+      ]
     },
     "history": "Earlier blender_stderr.log AgX enum traceback is from a failed attempt; the later Blender 4.5.16 run completed successfully.",
-    "scope": "Only four 9:16 context shots require rerender; do not touch 16 standalone shots or GLBs."
-  }
+    "scope": "Correction of exactly four context PNGs previously finished and SA reviewed PASS at b7427e0; 16 isolated shots and 4 GLBs frozen; NO further Blender run required.",
+    "currentContextImages": [
+      {
+        "file": "p02_scale_context_quality_720x1280_cycles.png",
+        "bytes": 946929,
+        "sha256": "c2cc46af40f3cd3a3092e3831a799865008a70475e3bab1b1c37d8870780bebc",
+        "renderer": "Blender Cycles",
+        "samples": 32
+      },
+      {
+        "file": "p02_scale_context_eco_720x1280_cycles.png",
+        "bytes": 945935,
+        "sha256": "6e26947b28f0e4656f99675b744d7319644a2a2d8e880cd0807d326f8a3873b6",
+        "renderer": "Blender Cycles",
+        "samples": 32
+      },
+      {
+        "file": "water_level_low_quality_720x1280_cycles.png",
+        "bytes": 926031,
+        "sha256": "309cfdd847f3ae9c9529de0efea805a77aa87ed32d8abd74545f2fa6a73bd272",
+        "renderer": "Blender Cycles",
+        "samples": 32
+      },
+      {
+        "file": "aerial_quality_720x1280_cycles.png",
+        "bytes": 970605,
+        "sha256": "f638271aef2a6811603fa85a58f9fbf181c8535c1652903ebe8e369693962848",
+        "renderer": "Blender Cycles",
+        "samples": 32
+      }
+    ],
+    "saReview": {
+      "url": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/10#pullrequestreview-6017094097",
+      "reviewedHead": "b7427e0b8606050da933608788f9d40526906d32",
+      "status": "P012B_ART_CONTEXT_EVIDENCE_PASS",
+      "fullSaArtPass": "PENDING_METADATA_REVIEW_AT_NEXT_HEAD",
+      "ownerBotanicalArtGO": "PENDING"
+    }
+  },
+  "ownerBotanicalArtGOStatus": "PENDING"
 }
