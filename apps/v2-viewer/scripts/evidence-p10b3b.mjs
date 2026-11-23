@@ -15,7 +15,7 @@ const browser = await chromium.launch({
   args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'],
 });
 const ledger = { baseRevision, browser: browser.version(), screenshots: [], parity: [], layouts: [], regression: [],
-  benchmarks: [], recovery: [], offline: [] };
+  benchmarks: [], recovery: [], offline: [], independent: [] };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 await mkdir(output, { recursive: true });
 
@@ -274,6 +274,36 @@ async function recovery(profile) {
   await offline.page.close();
 }
 
+async function independentFlags() {
+  for (const [flag, expected] of [
+    ['', { rich: false, rings: false, hero: false }],
+    ['&ambience=rich', { rich: true, rings: false, hero: false }],
+    ['&seats=rings', { rich: false, rings: true, hero: false }],
+    ['&shots=hero', { rich: false, rings: false, hero: true }],
+  ]) {
+    const { page, pageErrors } = await open(candidate, 'eco', 9, flag);
+    const state = await step(page, 1);
+    const ring = Math.hypot(state.communityLayout[0].position[0] - state.treeTarget[0],
+      state.communityLayout[0].position[2] - state.treeTarget[2]);
+    const result = { rich: !!state.richAmbience, rings: Math.abs(ring - 13.8) < 1e-6,
+      hero: state.shot === 'HERO_WIDE_TREE_REFLECTION' };
+    assert.deepEqual(result, expected);
+    assert.deepEqual([...pageErrors, ...state.errors], []);
+    ledger.independent.push({ flag, ...result });
+    await page.close();
+  }
+}
+
+async function returnShot(profile) {
+  const { page } = await open(candidate, profile, 9, full, 'capacity');
+  for (const t of [63.5, 63.65, 64.1, 64.75]) {
+    const r = await step(page, t);
+    assert.equal(r.mode, t < 63.55 ? 'GIFT_FOCUS' : 'CINE_RETURN');
+    await shot(page, `${profile}-capacity-return-${t}.png`, r);
+  }
+  await page.close();
+}
+
 try {
   if (process.argv.includes('--scan-only')) {
     for (const seed of [9, 71, 1337]) await regression('quality', seed, 'community');
@@ -289,7 +319,9 @@ try {
     }
     await benchmarks(profile);
     await recovery(profile);
+    await returnShot(profile);
   }
+  if (ledger.benchmarks.length) await independentFlags();
   await writeFile(new URL('browser.json', output), JSON.stringify(ledger, null, 2) + '\n');
 } finally {
   await browser.close();
