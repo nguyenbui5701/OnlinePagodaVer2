@@ -1,0 +1,2856 @@
+{
+  "stills": [
+    {
+      "file": "eco-observed-baseline.png",
+      "sha256": "3de71ce92d772966403aeb2db3646db41b18ab6a335c943b538633a31e2ff551",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 46.23,
+      "position": [
+        3.525650098485513,
+        2.4288925323921093,
+        8.881253155472525
+      ],
+      "target": [
+        1.6341191281169916,
+        1.9305619461778898,
+        11.798740849055358
+      ],
+      "fov": 52.97835105763595,
+      "mode": "GIFT_TRANSITION",
+      "labels": {},
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0970656767953186,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5970656767953186,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0670656767953188,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "observed",
+        "startedAtMs": 46000,
+        "expiresAtMs": 136000,
+        "progress": 0.24210526315789474,
+        "opacity": 0.7900736131206283
+      }
+    },
+    {
+      "file": "eco-observed-on.png",
+      "sha256": "3de71ce92d772966403aeb2db3646db41b18ab6a335c943b538633a31e2ff551",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&blessing=on&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 46.23,
+      "position": [
+        3.525650098485513,
+        2.4288925323921093,
+        8.881253155472525
+      ],
+      "target": [
+        1.6341191281169916,
+        1.9305619461778898,
+        11.798740849055358
+      ],
+      "fov": 52.97835105763595,
+      "mode": "GIFT_TRANSITION",
+      "labels": {},
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0970656767953186,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5970656767953186,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0670656767953188,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "observed",
+        "startedAtMs": 46000,
+        "expiresAtMs": 136000,
+        "progress": 0.24210526315789474,
+        "opacity": 0.7900736131206283
+      },
+      "blessing": {
+        "active": false,
+        "haloCapacity": 3,
+        "sparkCapacity": 12,
+        "bufferBytes": 192,
+        "poolId": 77
+      }
+    },
+    {
+      "file": "eco-warm-baseline.png",
+      "sha256": "72de9866557147ea7ea157e2272237b08403127f6d95035d030eb2ab1e2d006f",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 47.17,
+      "position": [
+        -0.16453682873832176,
+        1.156385698154196,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.676385698154196,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.1097667309269308,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.6097667309269308,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.079766730926931,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.07272727272727272,
+        "opacity": 0.7502678739554857
+      }
+    },
+    {
+      "file": "eco-warm-on.png",
+      "sha256": "18cb63b912e8e6b6813c66c571930b7a3cbf4c45b3ec49f17a989b88bdc7b9a3",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&blessing=on&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 47.17,
+      "position": [
+        -0.16453682873832176,
+        1.156385698154196,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.676385698154196,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.1097667309269308,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.6097667309269308,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.079766730926931,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.07272727272727272,
+        "opacity": 0.7502678739554857
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        "plan": {
+          "ageMs": 120,
+          "warm": 1,
+          "halos": 0,
+          "trail": 0,
+          "fade": 1,
+          "stage": "warm"
+        },
+        "haloCapacity": 3,
+        "sparkCapacity": 12,
+        "bufferBytes": 192,
+        "poolId": 77,
+        "seatWorld": [
+          2,
+          0.26,
+          13.5
+        ],
+        "fxAnchor": [
+          1.6105469331547537,
+          1.079766730926931,
+          13.395950450626481
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "eco-ascent-baseline.png",
+      "sha256": "2b60b74d81f19f47cf9495fcbb4f8a5e2cd543396fb97da3484bf71087417556",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 47.6,
+      "position": [
+        -0.16453682873832176,
+        1.1518699044506997,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6718699044506996,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.100550825409591,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.600550825409591,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0705508254095912,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.3333333333333333,
+        "opacity": 0.7084715741045353
+      }
+    },
+    {
+      "file": "eco-ascent-on.png",
+      "sha256": "074c5be56dcd227bef59b828dc4fd1a7c93a0ec77574dc01a2fba0ad2c1e39df",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&blessing=on&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 47.6,
+      "position": [
+        -0.16453682873832176,
+        1.1518699044506997,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6718699044506996,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.100550825409591,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.600550825409591,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0705508254095912,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.3333333333333333,
+        "opacity": 0.7084715741045353
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        "plan": {
+          "ageMs": 550,
+          "warm": 0.008018661612479994,
+          "halos": 1,
+          "trail": 0,
+          "fade": 1,
+          "stage": "ascent"
+        },
+        "haloCapacity": 3,
+        "sparkCapacity": 12,
+        "bufferBytes": 192,
+        "poolId": 77,
+        "seatWorld": [
+          2,
+          0.26,
+          13.5
+        ],
+        "fxAnchor": [
+          1.6105469331547537,
+          1.0705508254095912,
+          13.395950450626481
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "eco-toward-tree-baseline.png",
+      "sha256": "d81daa5f55490ff86baa6e406070637fab788ed87fd68d73b8cadbe5d0eb569b",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 48.1,
+      "position": [
+        -0.16453682873832176,
+        1.1493887138912455,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6693887138912455,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0954871712066234,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5954871712066234,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0654871712066234,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.6363636363636364,
+        "opacity": 0.423221001191071
+      }
+    },
+    {
+      "file": "eco-toward-tree-on.png",
+      "sha256": "b75f86c9b50ddc4db344b85f245b9ac1a8cf91d18f62ea9e5c7bf2a706a298b8",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&blessing=on&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 48.1,
+      "position": [
+        -0.16453682873832176,
+        1.1493887138912455,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6693887138912455,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0954871712066234,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5954871712066234,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0654871712066234,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.6363636363636364,
+        "opacity": 0.423221001191071
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        "plan": {
+          "ageMs": 1050,
+          "warm": 0,
+          "halos": 0.7427275672173631,
+          "trail": 1,
+          "fade": 1,
+          "stage": "toward-sakura"
+        },
+        "haloCapacity": 3,
+        "sparkCapacity": 12,
+        "bufferBytes": 192,
+        "poolId": 77,
+        "seatWorld": [
+          2,
+          0.26,
+          13.5
+        ],
+        "fxAnchor": [
+          1.6105469331547537,
+          1.0654871712066234,
+          13.395950450626481
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "eco-fade-baseline.png",
+      "sha256": "73829747e564af2495a744733ae6edf04dec7dd9e164b30dd71219049090bf03",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 48.55,
+      "position": [
+        -0.16453682873832176,
+        1.153670048053935,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6736700480539352,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.1042245878651737,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.6042245878651737,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.074224587865174,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.9090909090909091,
+        "opacity": 0.13026154280665733
+      }
+    },
+    {
+      "file": "eco-fade-on.png",
+      "sha256": "4f13a3ae8199ca23ae638788db6cb85e96814890203f9d90a40c6affcf7c8ceb",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&blessing=on&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 48.55,
+      "position": [
+        -0.16453682873832176,
+        1.153670048053935,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6736700480539352,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.1042245878651737,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.6042245878651737,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.074224587865174,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.9090909090909091,
+        "opacity": 0.13026154280665733
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        "plan": {
+          "ageMs": 1500,
+          "warm": 0,
+          "halos": 0.2,
+          "trail": 0.5,
+          "fade": 0.5,
+          "stage": "fade"
+        },
+        "haloCapacity": 3,
+        "sparkCapacity": 12,
+        "bufferBytes": 192,
+        "poolId": 77,
+        "seatWorld": [
+          2,
+          0.26,
+          13.5
+        ],
+        "fxAnchor": [
+          1.6105469331547537,
+          1.074224587865174,
+          13.395950450626481
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "eco-gift-b-baseline.png",
+      "sha256": "3c673ebe52494c92c6253580e56e23a5d8389d1441792bef388747ee51d50f43",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 53.65,
+      "position": [
+        -2.327949597176647,
+        1.1513155325288884,
+        7.417805796912665
+      ],
+      "target": [
+        -1.3977922776081078,
+        0.6713155325288884,
+        12.33052473461438
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "Bình",
+        "fx": "1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-2",
+        "seatId": "seat-2",
+        "requestId": "demo-1-gift-2",
+        "name": "Bình",
+        "headWorld": [
+          -1.3954944440981791,
+          1.0994194541405886,
+          12.31025456043751
+        ],
+        "nameWorld": [
+          -1.3966208330736343,
+          1.5994194541405886,
+          12.320190920328132
+        ],
+        "fxWorld": [
+          -1.749623092345752,
+          1.0694194541405888,
+          12.149341849658196
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-2",
+        "seatId": "seat-2",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-2",
+        "phase": "confirmed",
+        "startedAtMs": 52900,
+        "expiresAtMs": 138003,
+        "progress": 0.45454545454545453,
+        "opacity": 0.5973718871162847
+      }
+    },
+    {
+      "file": "eco-gift-b-on.png",
+      "sha256": "333db8b9669c59fa4242edf308d2916411d34eb73d51f5a9c5022af6f4d193e1",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&blessing=on&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 53.65,
+      "position": [
+        -2.327949597176647,
+        1.1513155325288884,
+        7.417805796912665
+      ],
+      "target": [
+        -1.3977922776081078,
+        0.6713155325288884,
+        12.33052473461438
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "Bình",
+        "fx": "1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-2",
+        "seatId": "seat-2",
+        "requestId": "demo-1-gift-2",
+        "name": "Bình",
+        "headWorld": [
+          -1.3954944440981791,
+          1.0994194541405886,
+          12.31025456043751
+        ],
+        "nameWorld": [
+          -1.3966208330736343,
+          1.5994194541405886,
+          12.320190920328132
+        ],
+        "fxWorld": [
+          -1.749623092345752,
+          1.0694194541405888,
+          12.149341849658196
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-2",
+        "seatId": "seat-2",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-2",
+        "phase": "confirmed",
+        "startedAtMs": 52900,
+        "expiresAtMs": 138003,
+        "progress": 0.45454545454545453,
+        "opacity": 0.5973718871162847
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "startedAtMs": 52900
+        },
+        "plan": {
+          "ageMs": 750,
+          "warm": 0,
+          "halos": 1,
+          "trail": 0.5829903978052127,
+          "fade": 1,
+          "stage": "toward-sakura"
+        },
+        "haloCapacity": 3,
+        "sparkCapacity": 12,
+        "bufferBytes": 192,
+        "poolId": 77,
+        "seatWorld": [
+          -1.4,
+          0.26,
+          12.35
+        ],
+        "fxAnchor": [
+          -1.749623092345752,
+          1.0694194541405888,
+          12.149341849658196
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "eco-gift-c-baseline.png",
+      "sha256": "2461962f7d198f73464cef432801357abbdd7f81560ef9337562f529432f79e6",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 59.48,
+      "position": [
+        1.5463180526429787,
+        1.1533100190412253,
+        7.328850448188187
+      ],
+      "target": [
+        4.792249962242094,
+        0.6733100190412253,
+        11.131997308124866
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "Chi",
+        "fx": "1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-3",
+        "seatId": "seat-3",
+        "requestId": "demo-1-gift-3",
+        "name": "Chi",
+        "headWorld": [
+          4.784183596412437,
+          1.1034898347780109,
+          11.113259812499725
+        ],
+        "nameWorld": [
+          4.788137697309328,
+          1.6034898347780109,
+          11.122444859374795
+        ],
+        "fxWorld": [
+          4.396887651272209,
+          1.073489834778011,
+          11.149340983183851
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-3",
+        "seatId": "seat-3",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-3",
+        "phase": "confirmed",
+        "startedAtMs": 58750,
+        "expiresAtMs": 138108,
+        "progress": 0.44242424242424244,
+        "opacity": 0.6086369304787997
+      }
+    },
+    {
+      "file": "eco-gift-c-on.png",
+      "sha256": "7b2bfbfde3559a4040a7aa203e8c410e7e1a84c52a536cc64f52e43baf368d0a",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&blessing=on&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 59.48,
+      "position": [
+        1.5463180526429787,
+        1.1533100190412253,
+        7.328850448188187
+      ],
+      "target": [
+        4.792249962242094,
+        0.6733100190412253,
+        11.131997308124866
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "Chi",
+        "fx": "1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-3",
+        "seatId": "seat-3",
+        "requestId": "demo-1-gift-3",
+        "name": "Chi",
+        "headWorld": [
+          4.784183596412437,
+          1.1034898347780109,
+          11.113259812499725
+        ],
+        "nameWorld": [
+          4.788137697309328,
+          1.6034898347780109,
+          11.122444859374795
+        ],
+        "fxWorld": [
+          4.396887651272209,
+          1.073489834778011,
+          11.149340983183851
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-3",
+        "seatId": "seat-3",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-3",
+        "phase": "confirmed",
+        "startedAtMs": 58750,
+        "expiresAtMs": 138108,
+        "progress": 0.44242424242424244,
+        "opacity": 0.6086369304787997
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "startedAtMs": 58750
+        },
+        "plan": {
+          "ageMs": 730,
+          "warm": 0,
+          "halos": 1,
+          "trail": 0.4170096021947874,
+          "fade": 1,
+          "stage": "toward-sakura"
+        },
+        "haloCapacity": 3,
+        "sparkCapacity": 12,
+        "bufferBytes": 192,
+        "poolId": 77,
+        "seatWorld": [
+          4.8,
+          0.26,
+          11.15
+        ],
+        "fxAnchor": [
+          4.396887651272209,
+          1.073489834778011,
+          11.149340983183851
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "eco-cinematic-return-baseline.png",
+      "sha256": "c6eb71f63bd5c52ad0f59e4033d9c6228954cefc813a451bb97f7c47f5611869",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 64.85,
+      "position": [
+        0.9932811925411108,
+        0.9552626447446563,
+        8.485301389463292
+      ],
+      "target": [
+        1.6149414904975363,
+        0.376357224748872,
+        13.037464241311314
+      ],
+      "fov": 49.49213622643715,
+      "mode": "CINE_RETURN",
+      "labels": {}
+    },
+    {
+      "file": "eco-cinematic-return-on.png",
+      "sha256": "c6eb71f63bd5c52ad0f59e4033d9c6228954cefc813a451bb97f7c47f5611869",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=eco&blessing=on&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 64.85,
+      "position": [
+        0.9932811925411108,
+        0.9552626447446563,
+        8.485301389463292
+      ],
+      "target": [
+        1.6149414904975363,
+        0.376357224748872,
+        13.037464241311314
+      ],
+      "fov": 49.49213622643715,
+      "mode": "CINE_RETURN",
+      "labels": {},
+      "blessing": {
+        "active": false,
+        "haloCapacity": 3,
+        "sparkCapacity": 12,
+        "bufferBytes": 192,
+        "poolId": 77
+      }
+    },
+    {
+      "file": "eco-female-and-overflow-baseline.png",
+      "sha256": "61375eddb80aeedd29ea0feb2916d7987f8803f31f70b5743902ae75d41284a3",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 18.1,
+      "position": [
+        -0.16453682873832176,
+        1.1493887138912455,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6693887138912455,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0954871712066234,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5954871712066234,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0654871712066234,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 17050,
+        "expiresAtMs": 106000,
+        "progress": 0.6363636363636364,
+        "opacity": 0.423221001191071
+      }
+    },
+    {
+      "file": "eco-female-and-overflow-on.png",
+      "sha256": "ba77a93c04b21378484aeec1f525f47a54caacebe135b23ae93f247e942732f0",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=community&seed=9&profile=eco&blessing=on&diversity=on&botanicals=on",
+      "profile": "eco",
+      "seed": 9,
+      "time": 18.1,
+      "position": [
+        -0.16453682873832176,
+        1.1493887138912455,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6693887138912455,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0954871712066234,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5954871712066234,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0654871712066234,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 17050,
+        "expiresAtMs": 106000,
+        "progress": 0.6363636363636364,
+        "opacity": 0.423221001191071
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 17050
+        },
+        "plan": {
+          "ageMs": 1050,
+          "warm": 0,
+          "halos": 0.7427275672173631,
+          "trail": 1,
+          "fade": 1,
+          "stage": "toward-sakura"
+        },
+        "haloCapacity": 3,
+        "sparkCapacity": 12,
+        "bufferBytes": 192,
+        "poolId": 234,
+        "seatWorld": [
+          2,
+          0.26,
+          13.5
+        ],
+        "fxAnchor": [
+          1.6105469331547537,
+          1.0654871712066234,
+          13.395950450626481
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "quality-observed-baseline.png",
+      "sha256": "3338289e0086d961201332e0ebd61ec777ec4342df28fb27a136e9c04a904d66",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 46.23,
+      "position": [
+        3.525650098485513,
+        2.4288925323921093,
+        8.881253155472525
+      ],
+      "target": [
+        1.6341191281169916,
+        1.9305619461778898,
+        11.798740849055358
+      ],
+      "fov": 52.97835105763595,
+      "mode": "GIFT_TRANSITION",
+      "labels": {},
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0970656767953186,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5970656767953186,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0670656767953188,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "observed",
+        "startedAtMs": 46000,
+        "expiresAtMs": 136000,
+        "progress": 0.24210526315789474,
+        "opacity": 0.7900736131206283
+      }
+    },
+    {
+      "file": "quality-observed-on.png",
+      "sha256": "3338289e0086d961201332e0ebd61ec777ec4342df28fb27a136e9c04a904d66",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&blessing=on&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 46.23,
+      "position": [
+        3.525650098485513,
+        2.4288925323921093,
+        8.881253155472525
+      ],
+      "target": [
+        1.6341191281169916,
+        1.9305619461778898,
+        11.798740849055358
+      ],
+      "fov": 52.97835105763595,
+      "mode": "GIFT_TRANSITION",
+      "labels": {},
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0970656767953186,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5970656767953186,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0670656767953188,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "observed",
+        "startedAtMs": 46000,
+        "expiresAtMs": 136000,
+        "progress": 0.24210526315789474,
+        "opacity": 0.7900736131206283
+      },
+      "blessing": {
+        "active": false,
+        "haloCapacity": 5,
+        "sparkCapacity": 20,
+        "bufferBytes": 312,
+        "poolId": 78
+      }
+    },
+    {
+      "file": "quality-warm-baseline.png",
+      "sha256": "23176266e0a1276911161887ba0f7de007da5cac408ec35cf456a2f50f04e213",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 47.17,
+      "position": [
+        -0.16453682873832176,
+        1.156385698154196,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.676385698154196,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.1097667309269308,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.6097667309269308,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.079766730926931,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.07272727272727272,
+        "opacity": 0.7502678739554857
+      }
+    },
+    {
+      "file": "quality-warm-on.png",
+      "sha256": "7af71eac1f356d812335efa01aa0ff716f8891e071d5e094898d236554d69684",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&blessing=on&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 47.17,
+      "position": [
+        -0.16453682873832176,
+        1.156385698154196,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.676385698154196,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.1097667309269308,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.6097667309269308,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.079766730926931,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.07272727272727272,
+        "opacity": 0.7502678739554857
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        "plan": {
+          "ageMs": 120,
+          "warm": 1,
+          "halos": 0,
+          "trail": 0,
+          "fade": 1,
+          "stage": "warm"
+        },
+        "haloCapacity": 5,
+        "sparkCapacity": 20,
+        "bufferBytes": 312,
+        "poolId": 78,
+        "seatWorld": [
+          2,
+          0.26,
+          13.5
+        ],
+        "fxAnchor": [
+          1.6105469331547537,
+          1.079766730926931,
+          13.395950450626481
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "quality-ascent-baseline.png",
+      "sha256": "3eee321751af6601303f50fcc9cf58d5c7d674d8d14a655181b8e54260db08ee",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 47.6,
+      "position": [
+        -0.16453682873832176,
+        1.1518699044506997,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6718699044506996,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.100550825409591,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.600550825409591,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0705508254095912,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.3333333333333333,
+        "opacity": 0.7084715741045353
+      }
+    },
+    {
+      "file": "quality-ascent-on.png",
+      "sha256": "0b2e0e8303a31fce3790876d2ce27c363aa92f48985725f47221307d3f572a11",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&blessing=on&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 47.6,
+      "position": [
+        -0.16453682873832176,
+        1.1518699044506997,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6718699044506996,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.100550825409591,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.600550825409591,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0705508254095912,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.3333333333333333,
+        "opacity": 0.7084715741045353
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        "plan": {
+          "ageMs": 550,
+          "warm": 0.008018661612479994,
+          "halos": 1,
+          "trail": 0,
+          "fade": 1,
+          "stage": "ascent"
+        },
+        "haloCapacity": 5,
+        "sparkCapacity": 20,
+        "bufferBytes": 312,
+        "poolId": 78,
+        "seatWorld": [
+          2,
+          0.26,
+          13.5
+        ],
+        "fxAnchor": [
+          1.6105469331547537,
+          1.0705508254095912,
+          13.395950450626481
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "quality-toward-tree-baseline.png",
+      "sha256": "fea692072cd2db1e7e88bdcb3ac169d278f5a03c17ccdb34ea636ace6bd1f02e",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 48.1,
+      "position": [
+        -0.16453682873832176,
+        1.1493887138912455,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6693887138912455,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0954871712066234,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5954871712066234,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0654871712066234,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.6363636363636364,
+        "opacity": 0.423221001191071
+      }
+    },
+    {
+      "file": "quality-toward-tree-on.png",
+      "sha256": "c3947277c6463a09fd948f15432aa4d276818db9014a0ba15dbf729e4bd09481",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&blessing=on&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 48.1,
+      "position": [
+        -0.16453682873832176,
+        1.1493887138912455,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6693887138912455,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0954871712066234,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5954871712066234,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0654871712066234,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.6363636363636364,
+        "opacity": 0.423221001191071
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        "plan": {
+          "ageMs": 1050,
+          "warm": 0,
+          "halos": 0.7427275672173631,
+          "trail": 1,
+          "fade": 1,
+          "stage": "toward-sakura"
+        },
+        "haloCapacity": 5,
+        "sparkCapacity": 20,
+        "bufferBytes": 312,
+        "poolId": 78,
+        "seatWorld": [
+          2,
+          0.26,
+          13.5
+        ],
+        "fxAnchor": [
+          1.6105469331547537,
+          1.0654871712066234,
+          13.395950450626481
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "quality-fade-baseline.png",
+      "sha256": "bcea037d926ce3460aaef2331737c081c5a376fedfa2e1b95cd22136b3ffd0b9",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 48.55,
+      "position": [
+        -0.16453682873832176,
+        1.153670048053935,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6736700480539352,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.1042245878651737,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.6042245878651737,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.074224587865174,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.9090909090909091,
+        "opacity": 0.13026154280665733
+      }
+    },
+    {
+      "file": "quality-fade-on.png",
+      "sha256": "1290a12b8a206f73ac57be5fd00c271fddb8ef132ade581dc32ec25ffdaf0df0",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&blessing=on&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 48.55,
+      "position": [
+        -0.16453682873832176,
+        1.153670048053935,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6736700480539352,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.1042245878651737,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.6042245878651737,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.074224587865174,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.9090909090909091,
+        "opacity": 0.13026154280665733
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        "plan": {
+          "ageMs": 1500,
+          "warm": 0,
+          "halos": 0.2,
+          "trail": 0.5,
+          "fade": 0.5,
+          "stage": "fade"
+        },
+        "haloCapacity": 5,
+        "sparkCapacity": 20,
+        "bufferBytes": 312,
+        "poolId": 78,
+        "seatWorld": [
+          2,
+          0.26,
+          13.5
+        ],
+        "fxAnchor": [
+          1.6105469331547537,
+          1.074224587865174,
+          13.395950450626481
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "quality-gift-b-baseline.png",
+      "sha256": "ef575e3704b8205c948c8ecf84eff36fe9acddf63477aec54aa011e1eb84d139",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 53.65,
+      "position": [
+        -2.327949597176647,
+        1.1513155325288884,
+        7.417805796912665
+      ],
+      "target": [
+        -1.3977922776081078,
+        0.6713155325288884,
+        12.33052473461438
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "Bình",
+        "fx": "1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-2",
+        "seatId": "seat-2",
+        "requestId": "demo-1-gift-2",
+        "name": "Bình",
+        "headWorld": [
+          -1.3954944440981791,
+          1.0994194541405886,
+          12.31025456043751
+        ],
+        "nameWorld": [
+          -1.3966208330736343,
+          1.5994194541405886,
+          12.320190920328132
+        ],
+        "fxWorld": [
+          -1.749623092345752,
+          1.0694194541405888,
+          12.149341849658196
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-2",
+        "seatId": "seat-2",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-2",
+        "phase": "confirmed",
+        "startedAtMs": 52900,
+        "expiresAtMs": 138003,
+        "progress": 0.45454545454545453,
+        "opacity": 0.5973718871162847
+      }
+    },
+    {
+      "file": "quality-gift-b-on.png",
+      "sha256": "1564795e9d73d58d051c3b02a4c5bb6a7a1c130bc86cde832f80f8abf3e72d00",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&blessing=on&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 53.65,
+      "position": [
+        -2.327949597176647,
+        1.1513155325288884,
+        7.417805796912665
+      ],
+      "target": [
+        -1.3977922776081078,
+        0.6713155325288884,
+        12.33052473461438
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "Bình",
+        "fx": "1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-2",
+        "seatId": "seat-2",
+        "requestId": "demo-1-gift-2",
+        "name": "Bình",
+        "headWorld": [
+          -1.3954944440981791,
+          1.0994194541405886,
+          12.31025456043751
+        ],
+        "nameWorld": [
+          -1.3966208330736343,
+          1.5994194541405886,
+          12.320190920328132
+        ],
+        "fxWorld": [
+          -1.749623092345752,
+          1.0694194541405888,
+          12.149341849658196
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-2",
+        "seatId": "seat-2",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-2",
+        "phase": "confirmed",
+        "startedAtMs": 52900,
+        "expiresAtMs": 138003,
+        "progress": 0.45454545454545453,
+        "opacity": 0.5973718871162847
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "startedAtMs": 52900
+        },
+        "plan": {
+          "ageMs": 750,
+          "warm": 0,
+          "halos": 1,
+          "trail": 0.5829903978052127,
+          "fade": 1,
+          "stage": "toward-sakura"
+        },
+        "haloCapacity": 5,
+        "sparkCapacity": 20,
+        "bufferBytes": 312,
+        "poolId": 78,
+        "seatWorld": [
+          -1.4,
+          0.26,
+          12.35
+        ],
+        "fxAnchor": [
+          -1.749623092345752,
+          1.0694194541405888,
+          12.149341849658196
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "quality-gift-c-baseline.png",
+      "sha256": "2a423f6149075f71afac4139c3137ecff8e78a4f08440e7c281390cd34dd6e35",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 59.48,
+      "position": [
+        1.5463180526429787,
+        1.1533100190412253,
+        7.328850448188187
+      ],
+      "target": [
+        4.792249962242094,
+        0.6733100190412253,
+        11.131997308124866
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "Chi",
+        "fx": "1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-3",
+        "seatId": "seat-3",
+        "requestId": "demo-1-gift-3",
+        "name": "Chi",
+        "headWorld": [
+          4.784183596412437,
+          1.1034898347780109,
+          11.113259812499725
+        ],
+        "nameWorld": [
+          4.788137697309328,
+          1.6034898347780109,
+          11.122444859374795
+        ],
+        "fxWorld": [
+          4.396887651272209,
+          1.073489834778011,
+          11.149340983183851
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-3",
+        "seatId": "seat-3",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-3",
+        "phase": "confirmed",
+        "startedAtMs": 58750,
+        "expiresAtMs": 138108,
+        "progress": 0.44242424242424244,
+        "opacity": 0.6086369304787997
+      }
+    },
+    {
+      "file": "quality-gift-c-on.png",
+      "sha256": "b1a7aa6ae3aad345136cff00914e4a531e657dea855214a803edd8f7bf7d938d",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&blessing=on&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 59.48,
+      "position": [
+        1.5463180526429787,
+        1.1533100190412253,
+        7.328850448188187
+      ],
+      "target": [
+        4.792249962242094,
+        0.6733100190412253,
+        11.131997308124866
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "Chi",
+        "fx": "1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-3",
+        "seatId": "seat-3",
+        "requestId": "demo-1-gift-3",
+        "name": "Chi",
+        "headWorld": [
+          4.784183596412437,
+          1.1034898347780109,
+          11.113259812499725
+        ],
+        "nameWorld": [
+          4.788137697309328,
+          1.6034898347780109,
+          11.122444859374795
+        ],
+        "fxWorld": [
+          4.396887651272209,
+          1.073489834778011,
+          11.149340983183851
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-3",
+        "seatId": "seat-3",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-3",
+        "phase": "confirmed",
+        "startedAtMs": 58750,
+        "expiresAtMs": 138108,
+        "progress": 0.44242424242424244,
+        "opacity": 0.6086369304787997
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "startedAtMs": 58750
+        },
+        "plan": {
+          "ageMs": 730,
+          "warm": 0,
+          "halos": 1,
+          "trail": 0.4170096021947874,
+          "fade": 1,
+          "stage": "toward-sakura"
+        },
+        "haloCapacity": 5,
+        "sparkCapacity": 20,
+        "bufferBytes": 312,
+        "poolId": 78,
+        "seatWorld": [
+          4.8,
+          0.26,
+          11.15
+        ],
+        "fxAnchor": [
+          4.396887651272209,
+          1.073489834778011,
+          11.149340983183851
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "file": "quality-cinematic-return-baseline.png",
+      "sha256": "234c7c60e46d9fc4e954e5382716ad0e85659c3eacb53d773111cc179c70ffcf",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 64.85,
+      "position": [
+        0.9932811925411108,
+        0.9552626447446563,
+        8.485301389463292
+      ],
+      "target": [
+        1.6149414904975363,
+        0.376357224748872,
+        13.037464241311314
+      ],
+      "fov": 49.49213622643715,
+      "mode": "CINE_RETURN",
+      "labels": {}
+    },
+    {
+      "file": "quality-cinematic-return-on.png",
+      "sha256": "234c7c60e46d9fc4e954e5382716ad0e85659c3eacb53d773111cc179c70ffcf",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=capacity&seed=9&profile=quality&blessing=on&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 64.85,
+      "position": [
+        0.9932811925411108,
+        0.9552626447446563,
+        8.485301389463292
+      ],
+      "target": [
+        1.6149414904975363,
+        0.376357224748872,
+        13.037464241311314
+      ],
+      "fov": 49.49213622643715,
+      "mode": "CINE_RETURN",
+      "labels": {},
+      "blessing": {
+        "active": false,
+        "haloCapacity": 5,
+        "sparkCapacity": 20,
+        "bufferBytes": 312,
+        "poolId": 78
+      }
+    },
+    {
+      "file": "quality-female-and-overflow-baseline.png",
+      "sha256": "eae28d8823ad1feb70119a75799ec70829f4dccc826ec7d718dcc31776a7eb07",
+      "revision": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+      "url": "http://127.0.0.1:4221/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 18.1,
+      "position": [
+        -0.16453682873832176,
+        1.1493887138912455,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6693887138912455,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0954871712066234,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5954871712066234,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0654871712066234,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 17050,
+        "expiresAtMs": 106000,
+        "progress": 0.6363636363636364,
+        "opacity": 0.423221001191071
+      }
+    },
+    {
+      "file": "quality-female-and-overflow-on.png",
+      "sha256": "e470b13203f72b629a4f5853e324eb746f950814e15a7a27b2091250219441d1",
+      "revision": "aa7ebedf71563452211c3719cb5837675b64b84f",
+      "url": "http://127.0.0.1:4222/?inspect=1&clean=1&demo=community&seed=9&profile=quality&blessing=on&diversity=on&botanicals=on",
+      "profile": "quality",
+      "seed": 9,
+      "time": 18.1,
+      "position": [
+        -0.16453682873832176,
+        1.1493887138912455,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.6693887138912455,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "mode": "GIFT_FOCUS",
+      "labels": {
+        "name": "An",
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0954871712066234,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5954871712066234,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0654871712066234,
+          13.395950450626481
+        ]
+      },
+      "gift": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 17050,
+        "expiresAtMs": 106000,
+        "progress": 0.6363636363636364,
+        "opacity": 0.423221001191071
+      },
+      "blessing": {
+        "active": true,
+        "cue": {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 17050
+        },
+        "plan": {
+          "ageMs": 1050,
+          "warm": 0,
+          "halos": 0.7427275672173631,
+          "trail": 1,
+          "fade": 1,
+          "stage": "toward-sakura"
+        },
+        "haloCapacity": 5,
+        "sparkCapacity": 20,
+        "bufferBytes": 312,
+        "poolId": 247,
+        "seatWorld": [
+          2,
+          0.26,
+          13.5
+        ],
+        "fxAnchor": [
+          1.6105469331547537,
+          1.0654871712066234,
+          13.395950450626481
+        ],
+        "treeWorld": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "parity": [
+    {
+      "profile": "eco",
+      "name": "observed",
+      "time": 46.23,
+      "exactOffHash": "3de71ce92d772966403aeb2db3646db41b18ab6a335c943b538633a31e2ff551",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 0
+        }
+      }
+    },
+    {
+      "profile": "eco",
+      "name": "warm",
+      "time": 47.17,
+      "exactOffHash": "72de9866557147ea7ea157e2272237b08403127f6d95035d030eb2ab1e2d006f",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 4688
+        }
+      }
+    },
+    {
+      "profile": "eco",
+      "name": "ascent",
+      "time": 47.6,
+      "exactOffHash": "2b60b74d81f19f47cf9495fcbb4f8a5e2cd543396fb97da3484bf71087417556",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 1628
+        }
+      }
+    },
+    {
+      "profile": "eco",
+      "name": "toward-tree",
+      "time": 48.1,
+      "exactOffHash": "d81daa5f55490ff86baa6e406070637fab788ed87fd68d73b8cadbe5d0eb569b",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 4622
+        }
+      }
+    },
+    {
+      "profile": "eco",
+      "name": "fade",
+      "time": 48.55,
+      "exactOffHash": "73829747e564af2495a744733ae6edf04dec7dd9e164b30dd71219049090bf03",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 1694
+        }
+      }
+    },
+    {
+      "profile": "eco",
+      "name": "gift-b",
+      "time": 53.65,
+      "exactOffHash": "3c673ebe52494c92c6253580e56e23a5d8389d1441792bef388747ee51d50f43",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 2478
+        }
+      }
+    },
+    {
+      "profile": "eco",
+      "name": "gift-c",
+      "time": 59.48,
+      "exactOffHash": "2461962f7d198f73464cef432801357abbdd7f81560ef9337562f529432f79e6",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 2304
+        }
+      }
+    },
+    {
+      "profile": "eco",
+      "name": "cinematic-return",
+      "time": 64.85,
+      "exactOffHash": "c6eb71f63bd5c52ad0f59e4033d9c6228954cefc813a451bb97f7c47f5611869",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 0
+        }
+      }
+    },
+    {
+      "profile": "eco",
+      "name": "female-and-overflow",
+      "time": 18.1,
+      "exactOffHash": "61375eddb80aeedd29ea0feb2916d7987f8803f31f70b5743902ae75d41284a3",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 4622
+        },
+        "name": {
+          "region": [
+            316,
+            328,
+            92,
+            68
+          ],
+          "changed": 0
+        },
+        "face": {
+          "region": [
+            266,
+            433,
+            180,
+            160
+          ],
+          "changed": 0
+        },
+        "palms": {
+          "region": [
+            291,
+            582,
+            95,
+            88
+          ],
+          "changed": 0
+        },
+        "gift": {
+          "region": [
+            451,
+            505,
+            128,
+            52
+          ],
+          "changed": 0
+        },
+        "overflow": {
+          "region": [
+            236,
+            1090,
+            260,
+            88
+          ],
+          "changed": 0
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "name": "observed",
+      "time": 46.23,
+      "exactOffHash": "3338289e0086d961201332e0ebd61ec777ec4342df28fb27a136e9c04a904d66",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 0
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "name": "warm",
+      "time": 47.17,
+      "exactOffHash": "23176266e0a1276911161887ba0f7de007da5cac408ec35cf456a2f50f04e213",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 4805
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "name": "ascent",
+      "time": 47.6,
+      "exactOffHash": "3eee321751af6601303f50fcc9cf58d5c7d674d8d14a655181b8e54260db08ee",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 1654
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "name": "toward-tree",
+      "time": 48.1,
+      "exactOffHash": "fea692072cd2db1e7e88bdcb3ac169d278f5a03c17ccdb34ea636ace6bd1f02e",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 6495
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "name": "fade",
+      "time": 48.55,
+      "exactOffHash": "bcea037d926ce3460aaef2331737c081c5a376fedfa2e1b95cd22136b3ffd0b9",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 1910
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "name": "gift-b",
+      "time": 53.65,
+      "exactOffHash": "ef575e3704b8205c948c8ecf84eff36fe9acddf63477aec54aa011e1eb84d139",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 4347
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "name": "gift-c",
+      "time": 59.48,
+      "exactOffHash": "2a423f6149075f71afac4139c3137ecff8e78a4f08440e7c281390cd34dd6e35",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 3859
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "name": "cinematic-return",
+      "time": 64.85,
+      "exactOffHash": "234c7c60e46d9fc4e954e5382716ad0e85659c3eacb53d773111cc179c70ffcf",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 0
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "name": "female-and-overflow",
+      "time": 18.1,
+      "exactOffHash": "eae28d8823ad1feb70119a75799ec70829f4dccc826ec7d718dcc31776a7eb07",
+      "pixels": {
+        "frame": {
+          "region": [
+            0,
+            0,
+            720,
+            1280
+          ],
+          "changed": 6495
+        },
+        "name": {
+          "region": [
+            316,
+            328,
+            92,
+            68
+          ],
+          "changed": 0
+        },
+        "face": {
+          "region": [
+            266,
+            433,
+            180,
+            160
+          ],
+          "changed": 0
+        },
+        "palms": {
+          "region": [
+            291,
+            582,
+            95,
+            88
+          ],
+          "changed": 0
+        },
+        "gift": {
+          "region": [
+            451,
+            505,
+            128,
+            52
+          ],
+          "changed": 0
+        },
+        "overflow": {
+          "region": [
+            236,
+            1090,
+            260,
+            88
+          ],
+          "changed": 0
+        }
+      }
+    }
+  ]
+}
