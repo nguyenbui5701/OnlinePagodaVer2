@@ -98,3 +98,10 @@ Current PR #13 supports the named query switches; this proposed *port and P014 c
 - **P0.14 scope technical PASS:** correct stacked source, reproducible 7×2×3 true screenshots, measured shot intent and deliberate differences, unchanged Event Engine/GLB/FIFO/3 seats, no camera collision/return break, old+new tests and truthful same-host metrics.
 - **P0.14 full video parity:** remains **PARTIAL** if rose-in-ring, hills or original source frame pixel parity absent. Do not hide this as PASS.
 - **Separate final gate:** `P014_SA_REVIEW_REQUIRED` → SA Review → Owner P0.14 Visual GO or a specific bounded correction. GPU/hardware, LIVE or future art require separately authorized tasks.
+
+
+## 8. Owner P0.14 Visual GO / successor CODEX 11 — 2026-11-23
+
+**Gate closure:** [PR #14 formal SA Technical PASS #6019006145](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/14#pullrequestreview-6019006145) at exact HEAD `5101df8ee0a7e63b391c9f72be4f5c79bc88b20f`, followed by Owner **“tôi thấy oke, tiếp tục”**. Record **`OWNER_P014_VISUAL_GO`** for seven written-source shot compositions and existing fast aerial→gift camera. **No additional CodeX 10 runtime/source work needed**, because PR #14 is QA-only; keep prior test evidence and PR open/unmerged. Full original reference remains PARTIAL; absent rose icon/hills are not retroactive CodeX 10 defects.
+
+**Next phase:** [CODEX 11 — P1.0-A Owner GPU-only Harness](CODEX_11_P10A_OWNER_GPU_HARDWARE_HARNESS.md) under [Design 24](../Design/24_P10A_OWNER_GPU_HARDWARE_PREFLIGHT.md), new Viewer-only stacked PR from PR #14 HEAD. Device instrumentation and real Owner 3050 Ti ECO/3060 QUALITY measures only; no LIVE Studio, 24 fabricated actors, V1, merges or paid tools. **STOP `P10A_HARNESS_SA_REVIEW_REQUIRED`**, then physical Owner GPU evidence before hardware PASS.
