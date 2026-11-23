@@ -1,17 +1,14 @@
-import { AnimationMixer, Box3, Group, LoopOnce, Object3D, Quaternion, Vector3 } from 'three';
+import { AnimationMixer, Box3, Group, LoopOnce, Mesh, Object3D, Quaternion, Vector3 } from 'three';
 import { clone } from 'three/addons/utils/SkeletonUtils.js';
 import type { AvatarPresentation } from '../../../packages/v2-events/src/protocol.ts';
 import { importVerifiedGlb, inspectMeshes } from './verified-glb.ts';
 import manifest from './p08-assets.json' with { type: 'json' };
+import { communitySlots, heroSlots } from './community-layout.ts';
+import { createCommunityBatches } from './community-batches.ts';
 
 const expected = manifest.pair;
 const tolerance = 1e-5;
 const up = new Vector3(0, 1, 0);
-const layout = [
-  { position: [2, 0.065, 13.5], yaw: 0.14 },
-  { position: [-1.4, 0.065, 12.35], yaw: -0.19 },
-  { position: [4.8, 0.065, 11.15], yaw: 0.32 },
-];
 
 function anchor(object: Object3D, name: string) {
   const node = object.getObjectByName(name);
@@ -46,9 +43,9 @@ async function loadPairAsset(kind: keyof typeof expected, signal: AbortSignal) {
 }
 
 function makeSeat(padSource: Awaited<ReturnType<typeof loadPairAsset>>, actorSource: Awaited<ReturnType<typeof loadPairAsset>>,
-  id: string, place: typeof layout[number], tree: Vector3) {
+  place: typeof heroSlots[number], tree: Vector3, animate = true) {
   const root = new Group();
-  root.name = id;
+  root.name = place.id;
   root.position.fromArray(place.position);
   root.rotation.y = place.yaw;
   const pad = clone(padSource.gltf.scene);
@@ -73,10 +70,12 @@ function makeSeat(padSource: Awaited<ReturnType<typeof loadPairAsset>>, actorSou
       clip.tracks[0].times.length !== expected.actor.idleSamples || !clip.tracks[0].name.startsWith(breath.name + '.')) {
     throw new Error('P07b1 sit_idle không khớp manifest');
   }
-  const mixer = new AnimationMixer(actor);
-  const action = mixer.clipAction(clip).setLoop(LoopOnce, 0);
-  action.clampWhenFinished = true;
-  action.play();
+  const mixer = animate ? new AnimationMixer(actor) : undefined;
+  const action = mixer?.clipAction(clip).setLoop(LoopOnce, 0);
+  if (action) {
+    action.clampWhenFinished = true;
+    action.play();
+  }
   const fit = () => {
     const point = seatRoot.getWorldPosition(new Vector3());
     const box = new Box3().setFromObject(actor, true);
@@ -88,19 +87,20 @@ function makeSeat(padSource: Awaited<ReturnType<typeof loadPairAsset>>, actorSou
     };
   };
   return {
-    root, pad, actor, seatRoot, head, name, fx, fit, facing,
-    sample(seconds: number) { action.reset().play(); mixer.setTime(seconds); },
-    dispose() { mixer.stopAllAction(); mixer.uncacheRoot(actor); },
+    root, pad, actor, seatRoot, head, name, fx, fit, facing, breath,
+    sample(seconds: number) { action?.reset().play(); mixer?.setTime(seconds); },
+    dispose() { mixer?.stopAllAction(); mixer?.uncacheRoot(actor); },
   };
 }
 
 type Seat = ReturnType<typeof makeSeat>;
 export type ActorTarget = { presentation: AvatarPresentation; seat: Seat };
 
-export async function createSeatScene(signal: AbortSignal, tree: Vector3) {
+export async function createSeatScene(signal: AbortSignal, tree: Vector3, crowdSeed?: number) {
   const results = await Promise.allSettled([loadPairAsset('pad', signal), loadPairAsset('actor', signal)]);
   const loaded = results.flatMap(result => result.status === 'fulfilled' ? [result.value] : []);
   const seats = new Map<string, Seat>();
+  let batches: ReturnType<typeof createCommunityBatches> | undefined;
   try {
     const [pad, actor] = results.map(result => {
       if (result.status === 'rejected') throw result.reason;
@@ -109,28 +109,50 @@ export async function createSeatScene(signal: AbortSignal, tree: Vector3) {
     signal.throwIfAborted();
     const group = new Group();
     group.name = 'P08 Lotus seats';
-    for (const place of layout) {
-      const id = `seat-${seats.size + 1}`;
-      const seat = makeSeat(pad, actor, id, place, tree);
-      seats.set(id, seat);
+    for (const place of heroSlots) {
+      const seat = makeSeat(pad, actor, place, tree);
+      seats.set(place.id, seat);
       group.add(seat.root);
     }
+    const slots = crowdSeed === undefined ? undefined : communitySlots(crowdSeed, tree.x, tree.z);
+    const extra = slots?.slice(heroSlots.length).map(place => makeSeat(pad, actor, place, tree, false));
+    if (extra) {
+      batches = createCommunityBatches(extra);
+      group.add(batches.group);
+    }
     const preview = seats.get('seat-1')!;
+    let padRadius: number | undefined;
+    if (slots) {
+      preview.pad.updateWorldMatrix(true, true);
+      const point = new Vector3();
+      const origin = preview.root.position;
+      padRadius = 0;
+      preview.pad.traverse(node => {
+        if (!(node instanceof Mesh)) return;
+        const vertices = node.geometry.attributes.position;
+        for (let i = 0; i < vertices.count; i++) {
+          point.fromBufferAttribute(vertices, i).applyMatrix4(node.matrixWorld);
+          padRadius = Math.max(padRadius!, Math.hypot(point.x - origin.x, point.z - origin.z));
+        }
+      });
+    }
     return {
-      group, seats, preview, report: { pad: pad.report, actor: actor.report },
+      group, seats, preview, slots, batches, padRadius, report: { pad: pad.report, actor: actor.report },
       present(avatars: readonly AvatarPresentation[], seconds: number, idle?: number) {
         for (const [id, seat] of seats) {
-          seat.root.visible = avatars.some(avatar => avatar.visible && avatar.seatId === id) ||
+          seat.root.visible = !!slots || avatars.some(avatar => avatar.visible && avatar.seatId === id) ||
             (id === 'seat-1' && avatars.length === 0);
           if (seat.root.visible) seat.sample(idle ?? seconds % 2);
         }
       },
       dispose() {
+        batches?.dispose();
         for (const seat of seats.values()) seat.dispose();
         for (const source of loaded) source.dispose();
       },
     };
   } catch (error) {
+    batches?.dispose();
     for (const seat of seats.values()) seat.dispose();
     for (const source of loaded) source.dispose();
     throw error;

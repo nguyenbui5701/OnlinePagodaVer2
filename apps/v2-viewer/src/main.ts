@@ -9,7 +9,8 @@ import { bindGoldEmphasis, createTwilight, referenceViews, setupLighting } from 
 import { LookTimeline, lookOrder, parseLook } from './twilight.ts';
 import { createSeatScene, seatPose } from './seat-scene.ts';
 import { SliceCamera } from './slice-camera.ts';
-import { SliceDriver } from './slice-driver.ts';
+import { parseScenario, SliceDriver } from './slice-driver.ts';
+import { createCommunityNames, occupancy } from './community-presentation.ts';
 import { showGift } from './slice-overlay.ts';
 import { createWater } from './water.ts';
 import { createAmbientFx } from './ambient-fx.ts';
@@ -34,7 +35,8 @@ const captureHeight = view && view !== 'hero_full_9x16' ? 835 : capture.height;
 const requestedTime = query.has('time') ? Number(query.get('time')) : NaN;
 const frozenAt = Number.isFinite(requestedTime) ? requestedTime : undefined;
 const manual = query.get('inspect') === '1' && !comparison;
-const scenario = query.get('demo') === 'gifts' ? 'gifts' : query.get('demo') === 'capacity' ? 'capacity' : 'idle';
+const scenario = parseScenario(query.get('demo'));
+const crowd = scenario === 'community' && query.get('crowd') !== 'off';
 const driver = new SliceDriver(scenario);
 const director = new SliceCamera();
 const seed = parseCinematicSeed(query.get('seed'));
@@ -97,6 +99,7 @@ async function boot() {
   let disposed = false;
   let sakura: Awaited<ReturnType<typeof loadSakura>> | undefined;
   let seats: Awaited<ReturnType<typeof createSeatScene>> | undefined;
+  let communityNames: ReturnType<typeof createCommunityNames> | undefined;
   let routes: ReturnType<typeof createCinematicRoutes> | undefined;
   let start: number | undefined;
   let last: number | undefined;
@@ -128,6 +131,9 @@ async function boot() {
         for (const seat of seats.seats.values()) seat.root.visible = seat === reviewSeat;
         reviewSeat.sample(review.idle ?? seconds % 2);
       }
+      if (seats.batches) {
+        seats.batches.group.visible = !review?.seatId;
+      }
       const actor = presentation.actor;
       const seat = actor && seats.seats.get(actor.seatId);
       selected = seat && seat.root.visible && actor ? { seat, presentation: actor } : undefined;
@@ -157,7 +163,19 @@ async function boot() {
     }
     camera.updateProjectionMatrix();
     camera.updateMatrixWorld();
+    if (seats?.batches?.group.visible && (!review || review.draw)) {
+      report.visibleDecorativeInstances = seats.batches.update(seats.preview.breath.scale, camera);
+    }
     const labels = presentation ? showGift(camera, presentation, selected) : undefined;
+    if (presentation && communityNames) {
+      const { avatars, viewerCount } = presentation.state;
+      const names = communityNames.update(avatars, camera, Math.round(seconds * 1000),
+        labels?.name ? selected?.presentation.actorId : undefined);
+      const slots = seats?.slots && occupancy(seats.slots, avatars);
+      report.community = { slots, names, viewerCount, realActors: avatars.length,
+        decorativeActors: slots?.filter(slot => slot.kind === 'DECORATIVE_ANONYMOUS').length ?? 0,
+        batches: seats?.batches?.count ?? 0 };
+    }
     const celebration = presentation && giftFx?.update(presentation.state, presentation.active, selected);
     ambient?.update(seconds, celebration?.gift?.opacity ?? 0);
     water?.setRipple(celebration?.ripple);
@@ -234,6 +252,7 @@ async function boot() {
     canvas.removeEventListener('webglcontextrestored', contextRestored);
     window.removeEventListener('pagehide', onPageHide);
     gold?.dispose();
+    communityNames?.dispose();
     sakura?.dispose();
     seats?.dispose();
     ambient?.dispose();
@@ -263,9 +282,10 @@ async function boot() {
       // R16's imported scene pivot is the trunk base. Resolve it after scene attachment.
       const tree = asset.root.localToWorld(new Vector3());
       water?.tree.set(tree.x, tree.z);
-      const pair = await createSeatScene(abort.signal, tree);
+      const pair = await createSeatScene(abort.signal, tree, crowd ? seed : undefined);
       if (disposed) { pair.dispose(); return; }
       seats = pair;
+      if (scenario === 'community') communityNames = createCommunityNames(canvas.parentElement!, pair.seats);
       scene.add(pair.group);
       pair.preview.sample(0);
       routes = createCinematicRoutes(seatPose(pair.preview, 0.16, 5.05), tree, seed);
@@ -275,6 +295,10 @@ async function boot() {
         environment.add(ambient.points, giftFx.cloud);
       }
       Object.assign(report, { pair: pair.report, treeTarget: tree.toArray(), rejectedRoutes: routes.rejected });
+      if (pair.slots) {
+        report.communityLayout = pair.slots;
+        report.communityPadRadius = pair.padRadius;
+      }
       if (routes.rejected.length) console.warn('P0.9 cinematic clearance fallback', routes.rejected);
     }
     if (!lost) show('');
