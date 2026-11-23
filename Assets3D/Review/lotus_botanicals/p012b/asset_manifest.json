@@ -28,7 +28,7 @@
   "license": "MIT original artist-authored procedural geometry",
   "cost": "0 VND",
   "externalMaterials": [],
-  "geometryValidation": "GLB2_GENERATED; OPEN_BLOOM_DEGENERATE_PETAL_TIP_TRIANGLES_FIXED; Blender import/Cycles pending",
+  "geometryValidation": "PASS_REMOTE_GLB2_SHA256_BYTES_INDICES_FINITE_NORMALS_ZERO_DEGENERATE_FACES; Blender import pending",
   "cyclesStatus": "BLENDER_CYCLES_PENDING_OWNER_RUN",
   "artGate": "P012B_SA_ART_REVIEW_REQUIRED",
   "assets": [
@@ -75,10 +75,10 @@
       "filename": "lotus_bloom_p012b_quality.glb",
       "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bloom_p012b_quality.glb",
       "sha256": "63edb12d02664a44ce4484b847ef07aeffab6a22a36cf44415b141f56804f0d0",
-      "githubStatus": "uploaded_git_blob_pending_remote_readback",
+      "githubStatus": "uploaded_sha_verified",
       "sourceEditableBlenderStatus": "pending_owner_blender_run",
       "cyclesEvidenceStatus": "pending_owner_blender_run",
-      "geometryTopology": "NONDEGENERATE_PATCHED_PETAL_TIPS; generated and GitHub GLB re-read pending"
+      "geometryTopology": "GITHUB_BINARY_REFETCH_SHA256_BYTES_AND_TRIANGLE_COUNT_VERIFIED; zero_deg_faces zero_invalid_indices zero_invalid_normals"
     },
     {
       "assetId": "lotus_bloom_p012b",
@@ -123,10 +123,10 @@
       "filename": "lotus_bloom_p012b_eco.glb",
       "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bloom_p012b_eco.glb",
       "sha256": "8dce16649f0dff541601047628ad7175f0b9ec028e7803b967cf2dee5efc0bd5",
-      "githubStatus": "uploaded_git_blob_pending_remote_readback",
+      "githubStatus": "uploaded_sha_verified",
       "sourceEditableBlenderStatus": "pending_owner_blender_run",
       "cyclesEvidenceStatus": "pending_owner_blender_run",
-      "geometryTopology": "NONDEGENERATE_PATCHED_PETAL_TIPS; generated and GitHub GLB re-read pending"
+      "geometryTopology": "GITHUB_BINARY_REFETCH_SHA256_BYTES_AND_TRIANGLE_COUNT_VERIFIED; zero_deg_faces zero_invalid_indices zero_invalid_normals"
     },
     {
       "assetId": "lotus_bud_p012b",
@@ -171,10 +171,10 @@
       "filename": "lotus_bud_p012b_quality.glb",
       "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bud_p012b_quality.glb",
       "sha256": "fe62a2f9aeb166d0eadf758c75eb47950a9053d8f2149d2a66ceaf5007a05f1a",
-      "githubStatus": "uploaded_git_blob_pending_remote_readback",
+      "githubStatus": "uploaded_sha_verified",
       "sourceEditableBlenderStatus": "pending_owner_blender_run",
       "cyclesEvidenceStatus": "pending_owner_blender_run",
-      "geometryTopology": "NONDEGENERATE_PATCHED_PETAL_TIPS; generated and GitHub GLB re-read pending"
+      "geometryTopology": "GITHUB_BINARY_REFETCH_SHA256_BYTES_AND_TRIANGLE_COUNT_VERIFIED; zero_deg_faces zero_invalid_indices zero_invalid_normals"
     },
     {
       "assetId": "lotus_bud_p012b",
@@ -219,10 +219,20 @@
       "filename": "lotus_bud_p012b_eco.glb",
       "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bud_p012b_eco.glb",
       "sha256": "c442cc04c3b0094a920c2b86fb202233782d5076a97e1110a84b345df3f0d082",
-      "githubStatus": "uploaded_git_blob_pending_remote_readback",
+      "githubStatus": "uploaded_sha_verified",
       "sourceEditableBlenderStatus": "pending_owner_blender_run",
       "cyclesEvidenceStatus": "pending_owner_blender_run",
-      "geometryTopology": "NONDEGENERATE_PATCHED_PETAL_TIPS; generated and GitHub GLB re-read pending"
+      "geometryTopology": "GITHUB_BINARY_REFETCH_SHA256_BYTES_AND_TRIANGLE_COUNT_VERIFIED; zero_deg_faces zero_invalid_indices zero_invalid_normals"
     }
-  ]
+  ],
+  "remoteBinaryAudit": {
+    "verifiedAtCommit": "90d7d90e69ba6c857fbda2387d6754aade5dff57",
+    "checkedGLBCount": 4,
+    "shaMatchCount": 4,
+    "bytesMatchCount": 4,
+    "zeroDegenerateCount": 4,
+    "zeroInvalidIndicesCount": 4,
+    "zeroInvalidNormalsCount": 4,
+    "method": "independent GitHub base64 binary refetch; glTF accessor and mesh index readback; SHA256 and float32/uint16 parse"
+  }
 }
