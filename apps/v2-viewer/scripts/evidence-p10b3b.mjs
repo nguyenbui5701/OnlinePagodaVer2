@@ -225,7 +225,7 @@ async function regression(profile, seed, scenario) {
   }, { end: scenario === 'idle' ? 85 : 66, scenario });
   assert.deepEqual(stats.errors, []);
   assert.equal(stats.treePadHits, 0);
-  assert.deepEqual(stats.treeCameraHits, []);
+  assert.deepEqual(stats.treeCameraHits, [], `R16 path intersection ${profile}/${seed}/${scenario}`);
   assert(stats.padSeparation > .22 && stats.botanicalGap >= .219 && stats.minY > .8 && stats.maxSeats <= 3);
   assert(stats.maxCinematicStep <= .22 && stats.maxGiftStep <= 1.65,
     `camera step ${profile}/${seed}/${scenario} ${stats.maxCinematicStep} ${stats.maxGiftStep}`);
@@ -275,7 +275,9 @@ async function recovery(profile) {
 }
 
 try {
-  if (process.argv.includes('--smoke')) {
+  if (process.argv.includes('--scan-only')) {
+    for (const seed of [9, 71, 1337]) await regression('quality', seed, 'community');
+  } else if (process.argv.includes('--smoke')) {
     await gallery('eco', 9);
     await regression('eco', 9, 'community');
   } else for (const profile of ['eco', 'quality']) {

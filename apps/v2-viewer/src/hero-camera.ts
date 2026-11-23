@@ -13,7 +13,7 @@ export function createHeroRoutes(tree: Vector3, seed: number) {
       new Vector3(x + tree.x, y + tree.y, z + tree.z)), true, 'catmullrom', .5);
     const position = curve([
       [0, 10, 44], [2, 11, 47], [12 * side, 12, 52], [18 * side, 23, 42],
-      [9 * side, 42, 28], [3 * side, 55, 11], [-5 * side, 54, 10], [-17 * side, 35, 28],
+      [9 * side, 42, 28], [3 * side, 55, 11], [-7 * side, 48, 32], [-17 * side, 35, 34],
       [-14 * side, 15, 37], [-2, 9, 34],
     ]);
     const target = curve([
