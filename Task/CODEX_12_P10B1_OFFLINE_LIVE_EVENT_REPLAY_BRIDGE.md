@@ -88,3 +88,10 @@ This is **NOT** a working URL on original PR #14; do not claim replay enabled th
 | Security | prod disabled, loopback DEV only, no remote fetch/listener, no third-party credentials/user records |
 | Performance/GPUs | no RTX PASS claim, software only if available, P10A still deferred |
 | STOP | \`P10B1_SA_REVIEW_REQUIRED\` → SA → Owner offline replay visual GO; no merges or LIVE |
+
+
+## 8. Owner skips CODEX 12 and authorizes CODEX 13 — 2026-11-23
+
+**Superseding Owner direction:** “chúng ta cũng sẽ bỏ qua phần tích hợp mô phỏng này, tiến đến phần có thể Live luôn nhé. hãy đọc rules với vai trò sa và thực hiệm.” **Do not execute this offline replay task.** Its status is `P10B1_OWNER_SKIPPED_NOT_PASS`; there is no submitted implementation or production replay source. Its requirements remain only historical design reference, not a prerequisite for new real LIVE work.
+
+**Current Codex assignment:** [CODEX 13 P1.0-B2 Real LIVE Studio + Event Gateway](CODEX_13_P10B2_REAL_TIKTOK_LIVE_STUDIO_AND_EVENT_GATEWAY.md) under [Design 26](../Design/26_P10B2_REAL_LIVE_STUDIO_AND_EVENT_GATEWAY.md), pinned on approved PR #14 exact HEAD `5101df8ee0a7e63b391c9f72be4f5c79bc88b20f`. Build direct real provider feasibility + owner-operated Studio capture + authenticated local event ingress. Unit-test fixtures are still allowed *as tests*, never as false real LIVE evidence. **P1.0-A GPU remains deferred NOT PASS**, and provider license/available connection, real verified gift, Owner Studio preview and manual broadcast are separate non-automatic gates. **STOP `P10B2_SA_REVIEW_REQUIRED`**; no merges, live credentials or GPU claims.
