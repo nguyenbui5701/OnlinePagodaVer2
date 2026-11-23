@@ -89,3 +89,10 @@ For old A/B/C demo use demo=capacity or demo=gifts. Compare blessing=off with sa
 - **PASS visuals:** original native ECO/QUALITY 9:16 moving multi-stage effect, original name/gift readable, camera route preserved, OFF pixel-identical.
 - **PASS scope:** only Viewer code, no source meshes, new icon art, Event Engine, V1, LIVE, RTX claims or merges; original rose glyph explicitly deferred.
 - **STOP:** P013A_SA_REVIEW_REQUIRED → SA technical review → separate Owner visual GO.
+
+
+## 8. Owner P0.13-A Visual GO and task close — 2026-11-23
+
+**Historic pending resolved:** Formal [PR #13 SA Tech PASS #6018488791](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/13#pullrequestreview-6018488791), reviewed immutable HEAD `0810f537a7cbffd539c8acb9b8cd6ba2715bbc9f`; Owner subsequently wrote **“duyệt, tiếp tục”**. Record **`OWNER_P013A_VISUAL_GO`** for CodeX 09's abstract halo/spark gift sequence. **No additional P0.13-A code changes or Blender/AI Visual rework required**; reference rose glyph remains **`P013_ROSE_ICON_VISUAL_FIDELITY_DEFERRED`**, not a hidden technical blocker. Preserve PR #13 source and native screenshot evidence without merging.
+
+**Next authorized task:** [CODEX 10 — P0.14 Seven-Shot Parity / QA](CODEX_10_P014_SEVEN_SHOT_PARITY_QA.md) under [Design 23](../Design/23_P014_SEVEN_SHOT_PARITY_AND_QA_CONTRACT.md), new small stacked Viewer PR pinned to PR #13 HEAD, original 7 video shot intentions vs actual DEMO 9:16, no new art generation, Event Engine/V1/LIVE/RTX, or merger. **STOP `P014_SA_REVIEW_REQUIRED`**.
