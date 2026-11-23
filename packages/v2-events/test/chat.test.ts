@@ -51,3 +51,14 @@ test('capacity chat carries no other seat and does not alter gifts, focus or vie
   assert.equal(engine.snapshot().viewerCount, before.viewerCount);
   assert.equal(engine.snapshot().avatars.length, 3);
 });
+
+test('a new text-bearing chat has no seat even when the room has free seats', () => {
+  const engine = new DemoEngine();
+  engine.ingest(session());
+  const cue = engine.ingest(packet(1, 'Xin chào')).effects[0];
+  assert.equal(cue.type, 'chatCue');
+  assert.ok(!('seatId' in cue));
+  assert.deepEqual(engine.snapshot().avatars, []);
+  engine.ingest(packet(2));
+  assert.equal(engine.snapshot().avatars[0]?.seatId, 'seat-1');
+});

@@ -136,7 +136,8 @@ export class DemoEngine {
       case 'chat':
       case 'member': {
         const actor = this.registry.touch(event.viewer, this.atMs,
-          event.type === 'chat' ? this.config.spawnOnChat : this.config.spawnOnMember, this.revision);
+          event.type === 'chat' ? event.chatText === undefined && this.config.spawnOnChat : this.config.spawnOnMember,
+          this.revision);
         if (chat?.text && event.type === 'chat' && this.atMs >= this.nextChatAt &&
             this.atMs >= (this.chatBySpeaker.get(event.viewer.userKey) ?? 0)) {
           // The room cadence bounds this cooldown ledger to five recent speakers.
