@@ -5,6 +5,10 @@ import { importVerifiedGlb, inspectMeshes } from './verified-glb.ts';
 import manifest from './p08-assets.json' with { type: 'json' };
 import { communitySlots, heroSlots } from './community-layout.ts';
 import { createCommunityBatches } from './community-batches.ts';
+import { slotLooks, type AvatarLook, type AvatarModel } from './avatar-look.ts';
+import { loadOutfits } from './avatar-variants.ts';
+import type { Profile } from './asset.ts';
+import actors from './p012d-actors.json' with { type: 'json' };
 
 const expected = manifest.pair;
 const tolerance = 1e-5;
@@ -16,11 +20,13 @@ function anchor(object: Object3D, name: string) {
   return node;
 }
 
-async function loadPairAsset(kind: keyof typeof expected, signal: AbortSignal) {
-  const spec = expected[kind];
-  const { gltf, hash, bytes } = await importVerifiedGlb('p08', spec, signal);
+async function loadPairAsset(kind: keyof typeof expected | 'female', signal: AbortSignal) {
+  const spec = kind === 'female' ? actors.female : expected[kind];
+  const { gltf, hash, bytes } = await importVerifiedGlb(kind === 'female' ? 'p012d' : 'p08', spec, signal,
+    kind === 'female' ? 'assets:p012d' : 'assets:p08');
   const structure = inspectMeshes(gltf.scene);
   try {
+    signal.throwIfAborted();
     for (const name of spec.anchors) anchor(gltf.scene, name);
     if (structure.meshes !== spec.meshes || gltf.parser.json.materials.length !== spec.materials ||
         ('triangles' in spec && structure.triangles !== spec.triangles) ||
@@ -43,7 +49,8 @@ async function loadPairAsset(kind: keyof typeof expected, signal: AbortSignal) {
 }
 
 function makeSeat(padSource: Awaited<ReturnType<typeof loadPairAsset>>, actorSource: Awaited<ReturnType<typeof loadPairAsset>>,
-  place: typeof heroSlots[number], tree: Vector3, animate = true) {
+  place: typeof heroSlots[number], tree: Vector3, animate = true,
+  appearance?: { look: AvatarLook; outfits: Awaited<ReturnType<typeof loadOutfits>> }) {
   const root = new Group();
   root.name = place.id;
   root.position.fromArray(place.position);
@@ -56,6 +63,7 @@ function makeSeat(padSource: Awaited<ReturnType<typeof loadPairAsset>>, actorSou
   if (padLocal.distanceTo(translation) > tolerance) throw new Error('PadSeatAnchor không khớp P02');
 
   const actor = clone(actorSource.gltf.scene);
+  const look = appearance && { ...appearance.look, materials: appearance.outfits.apply(actor, appearance.look.variant) };
   const seatRoot = anchor(actor, 'SeatRoot');
   if (seatRoot.getWorldPosition(new Vector3()).length() > tolerance) throw new Error('SeatRoot ngoài gốc P07b1');
   padAnchor.add(actor);
@@ -87,7 +95,7 @@ function makeSeat(padSource: Awaited<ReturnType<typeof loadPairAsset>>, actorSou
     };
   };
   return {
-    root, pad, actor, seatRoot, head, name, fx, fit, facing, breath,
+    root, pad, actor, seatRoot, head, name, fx, fit, facing, breath, look,
     sample(seconds: number) { action?.reset().play(); mixer?.setTime(seconds); },
     dispose() { mixer?.stopAllAction(); mixer?.uncacheRoot(actor); },
   };
@@ -96,26 +104,47 @@ function makeSeat(padSource: Awaited<ReturnType<typeof loadPairAsset>>, actorSou
 type Seat = ReturnType<typeof makeSeat>;
 export type ActorTarget = { presentation: AvatarPresentation; seat: Seat };
 
-export async function createSeatScene(signal: AbortSignal, tree: Vector3, crowdSeed?: number) {
-  const results = await Promise.allSettled([loadPairAsset('pad', signal), loadPairAsset('actor', signal)]);
+export async function createSeatScene(signal: AbortSignal, tree: Vector3, crowdSeed?: number, diversity?: Profile) {
+  const kinds = ['pad', 'actor', ...(diversity ? ['female' as const] : [])] as const;
+  const results = await Promise.allSettled(kinds.map(kind => loadPairAsset(kind, signal)));
   const loaded = results.flatMap(result => result.status === 'fulfilled' ? [result.value] : []);
   const seats = new Map<string, Seat>();
   let batches: ReturnType<typeof createCommunityBatches> | undefined;
+  const outfits = new Map<AvatarModel, Awaited<ReturnType<typeof loadOutfits>>>();
+  const dispose = () => {
+    batches?.dispose();
+    for (const seat of seats.values()) seat.dispose();
+    for (const palette of outfits.values()) palette.dispose();
+    for (const source of loaded) source.dispose();
+  };
   try {
-    const [pad, actor] = results.map(result => {
+    const [pad, actor, female] = results.map(result => {
       if (result.status === 'rejected') throw result.reason;
       return result.value;
     });
     signal.throwIfAborted();
     const group = new Group();
     group.name = 'P08 Lotus seats';
+    const slots = crowdSeed === undefined ? undefined : communitySlots(crowdSeed, tree.x, tree.z);
+    const looks = diversity && slots ? slotLooks(slots.map(slot => slot.id), crowdSeed!, diversity) : undefined;
+    if (looks && female) {
+      verifyCompatibleRig(actor.gltf, female.gltf);
+      for (const [model, source] of [['maleP07b1', actor], ['femaleP05f', female]] as const) {
+        const colors = [...looks.values()].filter(look => look.model === model).map(look => look.variant);
+        outfits.set(model, await loadOutfits(source.gltf, colors, signal));
+      }
+    }
+    const placeSeat = (place: typeof heroSlots[number], animate: boolean) => {
+      const look = looks?.get(place.id);
+      const source = look?.model === 'femaleP05f' ? female : actor;
+      return makeSeat(pad, source, place, tree, animate, look && { look, outfits: outfits.get(look.model)! });
+    };
     for (const place of heroSlots) {
-      const seat = makeSeat(pad, actor, place, tree);
+      const seat = placeSeat(place, true);
       seats.set(place.id, seat);
       group.add(seat.root);
     }
-    const slots = crowdSeed === undefined ? undefined : communitySlots(crowdSeed, tree.x, tree.z);
-    const extra = slots?.slice(heroSlots.length).map(place => makeSeat(pad, actor, place, tree, false));
+    const extra = slots?.slice(heroSlots.length).map(place => placeSeat(place, false));
     if (extra) {
       batches = createCommunityBatches(extra);
       group.add(batches.group);
@@ -136,8 +165,17 @@ export async function createSeatScene(signal: AbortSignal, tree: Vector3, crowdS
         }
       });
     }
+    const materials = new Set();
+    group.traverse(node => {
+      if (node instanceof Mesh) {
+        for (const material of Array.isArray(node.material) ? node.material : [node.material]) materials.add(material);
+      }
+    });
     return {
-      group, seats, preview, slots, batches, padRadius, report: { pad: pad.report, actor: actor.report },
+      group, seats, preview, slots, batches, padRadius, materialCount: materials.size,
+      report: { pad: pad.report, actor: actor.report },
+      diversity: looks && { source: actors.source, female: female.report, batches: batches?.count,
+        looks: [...seats.values(), ...extra!].map(seat => ({ slotId: seat.root.name, ...seat.look })) },
       present(avatars: readonly AvatarPresentation[], seconds: number, idle?: number) {
         for (const [id, seat] of seats) {
           seat.root.visible = !!slots || avatars.some(avatar => avatar.visible && avatar.seatId === id) ||
@@ -145,17 +183,29 @@ export async function createSeatScene(signal: AbortSignal, tree: Vector3, crowdS
           if (seat.root.visible) seat.sample(idle ?? seconds % 2);
         }
       },
-      dispose() {
-        batches?.dispose();
-        for (const seat of seats.values()) seat.dispose();
-        for (const source of loaded) source.dispose();
-      },
+      dispose,
     };
   } catch (error) {
-    batches?.dispose();
-    for (const seat of seats.values()) seat.dispose();
-    for (const source of loaded) source.dispose();
+    dispose();
     throw error;
+  }
+}
+
+function verifyCompatibleRig(male: Awaited<ReturnType<typeof loadPairAsset>>['gltf'],
+  female: Awaited<ReturnType<typeof loadPairAsset>>['gltf']) {
+  for (const name of expected.actor.anchors) {
+    const a = anchor(male.scene, name), b = anchor(female.scene, name);
+    a.updateMatrix(); b.updateMatrix();
+    if (!a.matrix.equals(b.matrix) || a.parent?.name !== b.parent?.name) throw new Error(`P05f incompatible anchor ${name}`);
+  }
+  for (const [index, a] of male.animations.entries()) {
+    const b = female.animations[index], left = a.tracks[0], right = b.tracks[0];
+    if (a.name !== b.name || a.duration !== 2 || b.duration !== 2 || a.tracks.length !== 1 || b.tracks.length !== 1 ||
+      left.name !== 'UpperBodyBreath.position' || left.name !== right.name || left.times.length !== 17 ||
+      left.times.length !== right.times.length || left.values.length !== right.values.length ||
+      !left.times.every((time, i) => time === right.times[i]) || !left.values.every((value, i) => value === right.values[i])) {
+      throw new Error(`P05f incompatible animation ${a.name}`);
+    }
   }
 }
 
