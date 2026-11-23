@@ -8,6 +8,8 @@ import { capture, createCinematicRoutes, parseCinematicSeed, type CameraPose } f
 import { bindGoldEmphasis, createTwilight, referenceViews, setupLighting } from './lighting.ts';
 import { LookTimeline, lookOrder, parseLook } from './twilight.ts';
 import { createSeatScene, seatPose } from './seat-scene.ts';
+import { diversityEnabled } from './avatar-look.ts';
+import { measureSeatContact } from './seat-contact.ts';
 import { SliceCamera } from './slice-camera.ts';
 import { parseScenario, SliceDriver } from './slice-driver.ts';
 import { createCommunityNames, occupancy } from './community-presentation.ts';
@@ -39,6 +41,7 @@ const frozenAt = Number.isFinite(requestedTime) ? requestedTime : undefined;
 const manual = query.get('inspect') === '1' && !comparison;
 const scenario = parseScenario(query.get('demo'));
 const crowd = scenario === 'community' && query.get('crowd') !== 'off';
+const diversity = !comparison && diversityEnabled(crowd, query.get('diversity'));
 const enableBotanicals = !comparison && botanicalsEnabled(crowd, query.get('botanicals'));
 const driver = new SliceDriver(scenario);
 const director = new SliceCamera();
@@ -168,7 +171,8 @@ async function boot() {
     camera.updateProjectionMatrix();
     camera.updateMatrixWorld();
     if (seats?.batches?.group.visible && (!review || review.draw)) {
-      report.visibleDecorativeInstances = seats.batches.update(seats.preview.breath.scale, camera);
+      report.visibleDecorativeInstances = seats.batches.update(seats.preview.breath.scale, camera,
+        diversity ? seats.preview.breath.position : undefined);
     }
     const labels = presentation ? showGift(camera, presentation, selected) : undefined;
     if (presentation && communityNames) {
@@ -293,9 +297,11 @@ async function boot() {
       // R16's imported scene pivot is the trunk base. Resolve it after scene attachment.
       const tree = asset.root.localToWorld(new Vector3());
       water?.tree.set(tree.x, tree.z);
-      const pair = await createSeatScene(abort.signal, tree, crowd ? seed : undefined);
+      const pair = await createSeatScene(abort.signal, tree, crowd ? seed : undefined, diversity ? profile : undefined);
       if (disposed) { pair.dispose(); return; }
       seats = pair;
+      report.seatMaterialCount = pair.materialCount;
+      if (pair.diversity) report.diversity = pair.diversity;
       if (scenario === 'community') communityNames = createCommunityNames(canvas.parentElement!, pair.seats);
       scene.add(pair.group);
       pair.preview.sample(0);
@@ -334,6 +340,10 @@ async function boot() {
         fit: (seatId = 'seat-1') => {
           const seat = seats?.seats.get(seatId);
           return seat && { ...seat.fit(), facing: seat.facing, padMatrix: seat.pad.matrixWorld.toArray() };
+        },
+        contact: (seatId = 'seat-1') => {
+          const seat = seats?.seats.get(seatId);
+          return seat && measureSeatContact(seat.actor, seat.pad, seat.seatRoot);
         },
         frame: (seatId: string) => {
           const seat = seats?.seats.get(seatId);

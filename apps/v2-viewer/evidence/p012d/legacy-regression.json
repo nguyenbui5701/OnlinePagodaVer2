@@ -1,0 +1,161 @@
+{
+  "baseline": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+  "current": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+  "parity": [
+    {
+      "profile": "eco",
+      "name": "low",
+      "t": 7.5,
+      "exactOffHash": "cefb0708ef12b4937e3bdeb488176b5f2bacf03463b4189e4ba3e7aefda3438a"
+    },
+    {
+      "profile": "eco",
+      "name": "before-arrival",
+      "t": 7.95,
+      "exactOffHash": "cfddb3412bd199dadafa573d402c40d9ad35616920cbcd1796163dbac58bf03d"
+    },
+    {
+      "profile": "eco",
+      "name": "arrival",
+      "t": 8.45,
+      "exactOffHash": "2a5ffcf2bdd34602dbf65edfa1e6def03ae42a9deeedbefaabf64a06128ee663"
+    },
+    {
+      "profile": "eco",
+      "name": "aerial",
+      "t": 14.5,
+      "exactOffHash": "a7e32cc2e324aafeb17a38e43c7347340df05517f7b22d172a1778fdfd7b9d6b"
+    },
+    {
+      "profile": "eco",
+      "name": "gift",
+      "t": 18.3,
+      "exactOffHash": "06af98fae459dd0145bac05b8cfafaefe0cff8899503981440def216d7281b9d"
+    },
+    {
+      "profile": "eco",
+      "name": "lake",
+      "t": 27,
+      "exactOffHash": "2514299705d08d6e4587c96a76197a20d408415da4897fc7056385ea8ed4a344"
+    },
+    {
+      "profile": "eco",
+      "name": "under",
+      "t": 39,
+      "exactOffHash": "4485aaccb27f7f2f17119ee251d7599475310c18c9d73eba13d53f750477eba7"
+    },
+    {
+      "profile": "eco",
+      "name": "return",
+      "t": 85,
+      "exactOffHash": "471deb4c01b191b47f851af7724e11432943061e81a9d9dfe0edf5cc1beb0533"
+    },
+    {
+      "profile": "quality",
+      "name": "low",
+      "t": 7.5,
+      "exactOffHash": "4455ff37c7a1e6c1b9e633f61b092d478844b1ab313f82624cf1ff84e7ee2efe"
+    },
+    {
+      "profile": "quality",
+      "name": "before-arrival",
+      "t": 7.95,
+      "exactOffHash": "aceb6696327ae16b053134d81fc23c69db4f3e969db1a86183e7c0db1df97536"
+    },
+    {
+      "profile": "quality",
+      "name": "arrival",
+      "t": 8.45,
+      "exactOffHash": "d8db81d1b193ffed5a0929ad84314e515fa7e7e056925c2bcf21bf34d38bc308"
+    },
+    {
+      "profile": "quality",
+      "name": "aerial",
+      "t": 14.5,
+      "exactOffHash": "e3fd0462ca177eb3d4d5e63cfdb76bab85e6eee7875e70565714966511d2c72b"
+    },
+    {
+      "profile": "quality",
+      "name": "gift",
+      "t": 18.3,
+      "exactOffHash": "ae4a5d812ca4971faca9de4771f9deafc70de048352dea4752190e708d164d96"
+    },
+    {
+      "profile": "quality",
+      "name": "lake",
+      "t": 27,
+      "exactOffHash": "d3d8a2ca27aba4662fe836fa7236e3e7f32e8749d70ed3ef6634bb372c5a47c4"
+    },
+    {
+      "profile": "quality",
+      "name": "under",
+      "t": 39,
+      "exactOffHash": "e1b1f5e86d637632b4d15f72dac591d33ed473db2fdcca11f7910fb63a167354"
+    },
+    {
+      "profile": "quality",
+      "name": "return",
+      "t": 85,
+      "exactOffHash": "6c083e065348823ac18c4f4d8754fc76d763e48841c58a4ad7413f0eb7400c84"
+    }
+  ],
+  "traces": [
+    {
+      "seed": 9,
+      "demo": "idle",
+      "end": 85,
+      "samples": 341,
+      "sha256": "3255da2ad2b1b0860b6ccc65ce1b7a8bdf2000217a2b8876cbd400937e2a5df5"
+    },
+    {
+      "seed": 9,
+      "demo": "gifts",
+      "end": 66,
+      "samples": 265,
+      "sha256": "62c47df26cc952f539c742f2aee40bb3a7dd740dc58b69e51e64039f0036627d"
+    },
+    {
+      "seed": 9,
+      "demo": "capacity",
+      "end": 66,
+      "samples": 265,
+      "sha256": "d8e93b6ae6c03eb517a43953abf46918a53f261f95fb116a6ed161a99144d8de"
+    },
+    {
+      "seed": 9,
+      "demo": "community",
+      "end": 66,
+      "samples": 265,
+      "sha256": "4e347521d41b384171d7de459d5f340643690acc6d8eba5895984a3257fd1cb0"
+    },
+    {
+      "seed": 71,
+      "demo": "idle",
+      "end": 85,
+      "samples": 341,
+      "sha256": "e4d562d004ad47efacf9ecd8e650c8f7a55c0c787a2e40228d629ac1b88ae228"
+    },
+    {
+      "seed": 71,
+      "demo": "gifts",
+      "end": 66,
+      "samples": 265,
+      "sha256": "8c10b43d6dd5cbe1d586cf391edb305cd575912c5e6a481589dc37878552908e"
+    },
+    {
+      "seed": 71,
+      "demo": "capacity",
+      "end": 66,
+      "samples": 265,
+      "sha256": "e6600cdc694958d4f5f6fe91f8ab007cb1143145d7fc8480bc13182e434bc0c3"
+    },
+    {
+      "seed": 71,
+      "demo": "community",
+      "end": 66,
+      "samples": 265,
+      "sha256": "719c540abb7a7a1b3f17348d5f7f2c2451715ca942224d111a0be5c7e17c2587"
+    }
+  ],
+  "defaultFemaleRequests": []
+}
