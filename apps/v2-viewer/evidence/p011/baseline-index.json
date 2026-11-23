@@ -1,0 +1,718 @@
+{
+  "index": [
+    {
+      "key": "eco/community/7.5",
+      "file": "before-community-7.5s-eco-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=eco&look=legacy&demo=idle&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "eco",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "fa6539693c8faf592f1dcd2c9a64f0d2c7ca91ca56014ed4e694a8071010547d",
+      "actualReviewPose": true,
+      "elapsedSeconds": 7.5,
+      "position": [
+        14,
+        6,
+        38
+      ],
+      "target": [
+        1,
+        9.5,
+        3
+      ],
+      "fov": 51,
+      "shot": "CLOSE",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "labels": {},
+      "confirmedGiftCount": 0,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "drawCalls": 27,
+      "textures": 1,
+      "geometries": 27,
+      "trianglesDrawn": 72482,
+      "pointsDrawn": 91
+    },
+    {
+      "key": "eco/aerial/12.5",
+      "file": "before-aerial-12.5s-eco-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=eco&look=legacy&demo=idle&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "eco",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "4ec8439c8bc1685180d98659f0f2225d0d07bc574262d3d7c4f938366ca9826b",
+      "actualReviewPose": true,
+      "elapsedSeconds": 12.5,
+      "position": [
+        19,
+        40,
+        31
+      ],
+      "target": [
+        0,
+        12,
+        0
+      ],
+      "fov": 52,
+      "shot": "COMMUNITY",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "labels": {},
+      "confirmedGiftCount": 0,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "drawCalls": 27,
+      "textures": 1,
+      "geometries": 27,
+      "trianglesDrawn": 72482,
+      "pointsDrawn": 91
+    },
+    {
+      "key": "eco/aerial/16",
+      "file": "before-aerial-16s-eco-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=eco&look=legacy&demo=idle&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "eco",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "d2d28956861ea84ba77e18a013c81a791aa030258f981885c940f17aff3a2ad7",
+      "actualReviewPose": true,
+      "elapsedSeconds": 16,
+      "position": [
+        -16,
+        43,
+        30
+      ],
+      "target": [
+        0,
+        12,
+        0
+      ],
+      "fov": 52,
+      "shot": "AERIAL",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "labels": {},
+      "confirmedGiftCount": 0,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "drawCalls": 27,
+      "textures": 1,
+      "geometries": 27,
+      "trianglesDrawn": 72482,
+      "pointsDrawn": 91
+    },
+    {
+      "key": "eco/lake/26.5",
+      "file": "before-lake-26.5s-eco-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=eco&look=legacy&demo=idle&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "eco",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "eaf98cdf5b2c43e5a6ad822d90c40468e6083e52aceb3dac6336368912014e89",
+      "actualReviewPose": true,
+      "elapsedSeconds": 26.5,
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52,
+      "shot": "AERIAL",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "labels": {},
+      "confirmedGiftCount": 0,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "drawCalls": 27,
+      "textures": 1,
+      "geometries": 27,
+      "trianglesDrawn": 72482,
+      "pointsDrawn": 91
+    },
+    {
+      "key": "eco/under-tree/34.5",
+      "file": "before-under-tree-34.5s-eco-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=eco&look=legacy&demo=idle&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "eco",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "dc85013af2582e561d73d8cc77ea38d2ef683a63f34e6a608bbdd07920f61a02",
+      "actualReviewPose": true,
+      "elapsedSeconds": 34.5,
+      "position": [
+        6,
+        2.8,
+        17
+      ],
+      "target": [
+        0,
+        7,
+        0
+      ],
+      "fov": 55,
+      "shot": "UNDER_TREE",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "labels": {},
+      "confirmedGiftCount": 0,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "drawCalls": 14,
+      "textures": 1,
+      "geometries": 14,
+      "trianglesDrawn": 51932,
+      "pointsDrawn": 91
+    },
+    {
+      "key": "eco/return/44.5",
+      "file": "before-return-44.5s-eco-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=eco&look=legacy&demo=idle&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "eco",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "d01f1932e69fe189f5110be66e78ad3768dadfb6e981b550f98abafea83726f2",
+      "actualReviewPose": true,
+      "elapsedSeconds": 44.5,
+      "position": [
+        -14,
+        12,
+        36
+      ],
+      "target": [
+        0,
+        10,
+        0
+      ],
+      "fov": 50,
+      "shot": "CLOSE",
+      "routeId": "east-low",
+      "mode": "CINEMATIC",
+      "labels": {},
+      "confirmedGiftCount": 0,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "drawCalls": 27,
+      "textures": 1,
+      "geometries": 27,
+      "trianglesDrawn": 72482,
+      "pointsDrawn": 91
+    },
+    {
+      "key": "quality/community/7.5",
+      "file": "before-community-7.5s-quality-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=quality&look=legacy&demo=idle&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "quality",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "21181bda083c6241d783dac4848fa82d0d7efd8cbfbb1aa080af91d4822eae8e",
+      "actualReviewPose": true,
+      "elapsedSeconds": 7.5,
+      "position": [
+        14,
+        6,
+        38
+      ],
+      "target": [
+        1,
+        9.5,
+        3
+      ],
+      "fov": 51,
+      "shot": "CLOSE",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "labels": {},
+      "confirmedGiftCount": 0,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "drawCalls": 28,
+      "textures": 2,
+      "geometries": 28,
+      "trianglesDrawn": 219358,
+      "pointsDrawn": 183
+    },
+    {
+      "key": "quality/aerial/12.5",
+      "file": "before-aerial-12.5s-quality-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=quality&look=legacy&demo=idle&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "quality",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "e702d7d562a0c01d92e41d51745bad0453dfcc13130b53db087303de00bcca31",
+      "actualReviewPose": true,
+      "elapsedSeconds": 12.5,
+      "position": [
+        19,
+        40,
+        31
+      ],
+      "target": [
+        0,
+        12,
+        0
+      ],
+      "fov": 52,
+      "shot": "COMMUNITY",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "labels": {},
+      "confirmedGiftCount": 0,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "drawCalls": 28,
+      "textures": 2,
+      "geometries": 28,
+      "trianglesDrawn": 219358,
+      "pointsDrawn": 183
+    },
+    {
+      "key": "quality/aerial/16",
+      "file": "before-aerial-16s-quality-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=quality&look=legacy&demo=idle&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "quality",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "e4a9e5f5e13a31cb105fda197c50d8e54e07595b1c089c72da5b75886ce97533",
+      "actualReviewPose": true,
+      "elapsedSeconds": 16,
+      "position": [
+        -16,
+        43,
+        30
+      ],
+      "target": [
+        0,
+        12,
+        0
+      ],
+      "fov": 52,
+      "shot": "AERIAL",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "labels": {},
+      "confirmedGiftCount": 0,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "drawCalls": 28,
+      "textures": 2,
+      "geometries": 28,
+      "trianglesDrawn": 219358,
+      "pointsDrawn": 183
+    },
+    {
+      "key": "quality/lake/26.5",
+      "file": "before-lake-26.5s-quality-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=quality&look=legacy&demo=idle&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "quality",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "9b561691e51a1a5cdd337a83c6d7d636cac0515620db210e2758b84212b5fd62",
+      "actualReviewPose": true,
+      "elapsedSeconds": 26.5,
+      "position": [
+        5.4,
+        3.4,
+        23
+      ],
+      "target": [
+        0.9,
+        3.6,
+        7
+      ],
+      "fov": 52,
+      "shot": "AERIAL",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "labels": {},
+      "confirmedGiftCount": 0,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "drawCalls": 28,
+      "textures": 2,
+      "geometries": 28,
+      "trianglesDrawn": 219358,
+      "pointsDrawn": 183
+    },
+    {
+      "key": "quality/under-tree/34.5",
+      "file": "before-under-tree-34.5s-quality-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=quality&look=legacy&demo=idle&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "quality",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "d757e89c062d2d6eac65748daab8ef47d3f894617f2e61faf44381c8327cbb98",
+      "actualReviewPose": true,
+      "elapsedSeconds": 34.5,
+      "position": [
+        6,
+        2.8,
+        17
+      ],
+      "target": [
+        0,
+        7,
+        0
+      ],
+      "fov": 55,
+      "shot": "UNDER_TREE",
+      "routeId": "west-low",
+      "mode": "CINEMATIC",
+      "labels": {},
+      "confirmedGiftCount": 0,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "drawCalls": 15,
+      "textures": 2,
+      "geometries": 28,
+      "trianglesDrawn": 198808,
+      "pointsDrawn": 183
+    },
+    {
+      "key": "quality/return/44.5",
+      "file": "before-return-44.5s-quality-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=quality&look=legacy&demo=idle&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "quality",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "fa07e1462a52b793b7533a45c0c9f047916da004b99e2a98540b59a16429bfbb",
+      "actualReviewPose": true,
+      "elapsedSeconds": 44.5,
+      "position": [
+        -14,
+        12,
+        36
+      ],
+      "target": [
+        0,
+        10,
+        0
+      ],
+      "fov": 50,
+      "shot": "CLOSE",
+      "routeId": "east-low",
+      "mode": "CINEMATIC",
+      "labels": {},
+      "confirmedGiftCount": 0,
+      "starts": {
+        "observed": 0,
+        "confirmed": 0
+      },
+      "drawCalls": 28,
+      "textures": 2,
+      "geometries": 28,
+      "trianglesDrawn": 219358,
+      "pointsDrawn": 183
+    },
+    {
+      "key": "gift/A",
+      "file": "before-gift-A-47.72s-eco-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=eco&look=legacy&demo=gifts&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "eco",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "ddecad6771280923a034ef4f800636a12fdbe4af704302b47102bff32e39891d",
+      "elapsedSeconds": 47.72,
+      "position": [
+        -0.16453682873832176,
+        1.15060335816266,
+        8.972041251413165
+      ],
+      "target": [
+        1.9971276462426466,
+        0.67060335816266,
+        13.480611612137865
+      ],
+      "fov": 50,
+      "shot": "CLOSE",
+      "routeId": "east-low",
+      "mode": "GIFT_FOCUS",
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0979660370666533,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5979660370666533,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0679660370666535,
+          13.395950450626481
+        ]
+      },
+      "labels": {
+        "name": "An",
+        "fx": "5 hoa hồng"
+      },
+      "confirmedGiftCount": 5,
+      "cue": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-1",
+        "phase": "confirmed",
+        "startedAtMs": 47050,
+        "expiresAtMs": 136000,
+        "progress": 0.40606060606060607,
+        "opacity": 0.642215542315089
+      },
+      "starts": {
+        "observed": 1,
+        "confirmed": 1
+      },
+      "waterAnchor": [
+        2,
+        0,
+        13.5
+      ],
+      "drawCalls": 20,
+      "textures": 1,
+      "geometries": 20,
+      "trianglesDrawn": 34792,
+      "pointsDrawn": 110
+    },
+    {
+      "key": "gift/B",
+      "file": "before-gift-B-53.65s-eco-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=eco&look=legacy&demo=gifts&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "eco",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "6f5f86a01cdc1eb638c9a0319243ee45524de47e4bb488b1a818e07dcf88b56e",
+      "elapsedSeconds": 53.65,
+      "position": [
+        -2.327949597176647,
+        1.1513155325288884,
+        7.417805796912665
+      ],
+      "target": [
+        -1.3977922776081078,
+        0.6713155325288884,
+        12.33052473461438
+      ],
+      "fov": 50,
+      "shot": "COMMUNITY",
+      "routeId": "east-low",
+      "mode": "GIFT_FOCUS",
+      "focus": {
+        "actorId": "demo-1-actor-2",
+        "seatId": "seat-2",
+        "requestId": "demo-1-gift-2",
+        "name": "Bình",
+        "headWorld": [
+          -1.3954944440981791,
+          1.0994194541405886,
+          12.31025456043751
+        ],
+        "nameWorld": [
+          -1.3966208330736343,
+          1.5994194541405886,
+          12.320190920328132
+        ],
+        "fxWorld": [
+          -1.749623092345752,
+          1.0694194541405888,
+          12.149341849658196
+        ]
+      },
+      "labels": {
+        "name": "Bình",
+        "fx": "1 hoa hồng"
+      },
+      "confirmedGiftCount": 7,
+      "cue": {
+        "actorId": "demo-1-actor-2",
+        "seatId": "seat-2",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-2",
+        "phase": "confirmed",
+        "startedAtMs": 52900,
+        "expiresAtMs": 138003,
+        "progress": 0.45454545454545453,
+        "opacity": 0.5973718871162847
+      },
+      "starts": {
+        "observed": 1,
+        "confirmed": 2
+      },
+      "waterAnchor": [
+        -1.4,
+        0,
+        12.35
+      ],
+      "drawCalls": 25,
+      "textures": 1,
+      "geometries": 23,
+      "trianglesDrawn": 64920,
+      "pointsDrawn": 110
+    },
+    {
+      "key": "gift/C",
+      "file": "before-gift-C-59.48s-eco-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=eco&look=legacy&demo=gifts&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "eco",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "21cf4ea7b610b2550b7e51e6f09ed4f70b841f0a1b89272b21000b7fb911c368",
+      "elapsedSeconds": 59.48,
+      "position": [
+        1.5463180526429787,
+        1.1533100190412253,
+        7.328850448188187
+      ],
+      "target": [
+        4.792249962242094,
+        0.6733100190412253,
+        11.131997308124866
+      ],
+      "fov": 50,
+      "shot": "AERIAL",
+      "routeId": "east-low",
+      "mode": "GIFT_FOCUS",
+      "focus": {
+        "actorId": "demo-1-actor-3",
+        "seatId": "seat-3",
+        "requestId": "demo-1-gift-3",
+        "name": "Chi",
+        "headWorld": [
+          4.784183596412437,
+          1.1034898347780109,
+          11.113259812499725
+        ],
+        "nameWorld": [
+          4.788137697309328,
+          1.6034898347780109,
+          11.122444859374795
+        ],
+        "fxWorld": [
+          4.396887651272209,
+          1.073489834778011,
+          11.149340983183851
+        ]
+      },
+      "labels": {
+        "name": "Chi",
+        "fx": "1 hoa hồng"
+      },
+      "confirmedGiftCount": 7,
+      "cue": {
+        "actorId": "demo-1-actor-3",
+        "seatId": "seat-3",
+        "roomSessionId": "demo-1",
+        "requestId": "demo-1-gift-3",
+        "phase": "confirmed",
+        "startedAtMs": 58750,
+        "expiresAtMs": 138108,
+        "progress": 0.44242424242424244,
+        "opacity": 0.6086369304787997
+      },
+      "starts": {
+        "observed": 1,
+        "confirmed": 3
+      },
+      "waterAnchor": [
+        4.8,
+        0,
+        11.15
+      ],
+      "drawCalls": 23,
+      "textures": 1,
+      "geometries": 23,
+      "trianglesDrawn": 57402,
+      "pointsDrawn": 110
+    },
+    {
+      "key": "gift/return",
+      "file": "before-gift-return-64.32s-eco-legacy.png",
+      "url": "http://127.0.0.1:4183?seed=9&clean=1&inspect=1&profile=eco&look=legacy&demo=gifts&fx=on",
+      "source": "323955bed04e88f37cc251f8ae902e5ef7550eb5",
+      "profile": "eco",
+      "look": "legacy",
+      "seed": 9,
+      "sha256": "5190cbe195e381dd1e4c2a635e79215a6063cb030b9945a374e51f3bc2b7aaa3",
+      "elapsedSeconds": 64.32,
+      "position": [
+        1.1871132633997803,
+        1.0403878608717443,
+        7.998062072202499
+      ],
+      "target": [
+        3.087218858471781,
+        0.5236291130494324,
+        12.227188373049888
+      ],
+      "fov": 49.75957358389455,
+      "shot": "CLOSE",
+      "routeId": "east-low",
+      "mode": "CINE_RETURN",
+      "labels": {},
+      "confirmedGiftCount": 7,
+      "starts": {
+        "observed": 1,
+        "confirmed": 3
+      },
+      "drawCalls": 21,
+      "textures": 1,
+      "geometries": 18,
+      "trianglesDrawn": 44584,
+      "pointsDrawn": 91
+    }
+  ],
+  "consoleMessages": [
+    "[.WebGL-0x2af40060a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x2af40060a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x2af400607000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x2af400607000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ]
+}
