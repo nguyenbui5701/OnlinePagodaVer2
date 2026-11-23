@@ -19,7 +19,8 @@
     "evidence:p011": "node scripts/evidence-p011.mjs",
     "evidence:p012a": "node scripts/evidence-p012a.mjs",
     "evidence:p012c": "node scripts/evidence-p012c.mjs",
-    "evidence:p012d": "node scripts/evidence-p012d.mjs"
+    "evidence:p012d": "node scripts/evidence-p012d.mjs",
+    "evidence:p013a": "node scripts/evidence-p013a.mjs"
   },
   "dependencies": { "three": "0.181.2" },
   "devDependencies": {

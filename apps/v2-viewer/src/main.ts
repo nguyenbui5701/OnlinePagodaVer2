@@ -18,6 +18,8 @@ import { createWater } from './water.ts';
 import { createAmbientFx } from './ambient-fx.ts';
 import { createGiftFx } from './gift-fx.ts';
 import { fxProfiles } from './fx-profiles.ts';
+import { blessingEnabled } from './gift-blessing.ts';
+import { createBlessingCloud } from './blessing-cloud.ts';
 import { botanicalLayout, botanicalsEnabled } from './botanical-layout.ts';
 import { createBotanicalScene } from './botanical-scene.ts';
 
@@ -40,6 +42,7 @@ const requestedTime = query.has('time') ? Number(query.get('time')) : NaN;
 const frozenAt = Number.isFinite(requestedTime) ? requestedTime : undefined;
 const manual = query.get('inspect') === '1' && !comparison;
 const scenario = parseScenario(query.get('demo'));
+const enableBlessing = blessingEnabled(query.get('blessing'), scenario, fxEnabled);
 const crowd = scenario === 'community' && query.get('crowd') !== 'off';
 const diversity = !comparison && diversityEnabled(crowd, query.get('diversity'));
 const enableBotanicals = !comparison && botanicalsEnabled(crowd, query.get('botanicals'));
@@ -95,6 +98,7 @@ async function boot() {
   const water = comparison ? undefined : createWater(fxProfile.water, look !== 'legacy');
   let ambient: ReturnType<typeof createAmbientFx> | undefined;
   let giftFx: ReturnType<typeof createGiftFx> | undefined;
+  let blessing: ReturnType<typeof createBlessingCloud> | undefined;
   if (water) environment.add(water.mesh);
   const rig = setupLighting(scene, profile, !!comparison);
   const twilight = look === 'legacy' ? undefined : createTwilight(scene, rig);
@@ -185,6 +189,7 @@ async function boot() {
         batches: seats?.batches?.count ?? 0 };
     }
     const celebration = presentation && giftFx?.update(presentation.state, presentation.active, selected);
+    if (blessing && presentation) report.blessing = blessing.update(presentation.state, celebration?.gift, selected);
     ambient?.update(seconds, celebration?.gift?.opacity ?? 0);
     water?.setRipple(celebration?.ripple);
     if (!comparison) report.fx = { enabled: fxEnabled, ambient: ambient?.counts, ...celebration };
@@ -222,6 +227,7 @@ async function boot() {
     Object.assign(report, {
       drawCalls: info.render.calls, trianglesDrawn: info.render.triangles,
       textures: info.memory.textures, geometries: info.memory.geometries, pointsDrawn: info.render.points,
+      shaderPrograms: info.programs?.length,
       lights: 1 + rig.directionals.length, shadowMaps: rig.directionals.filter(light => light.shadow.map).length,
     });
     if (now - lastReport >= 500) {
@@ -272,6 +278,7 @@ async function boot() {
     seats?.dispose();
     ambient?.dispose();
     giftFx?.dispose();
+    blessing?.dispose();
     water?.dispose();
     twilight?.dispose();
     for (const light of scene.children) if (light instanceof DirectionalLight) light.dispose();
@@ -310,6 +317,10 @@ async function boot() {
         ambient = createAmbientFx(tree, seed, fxProfile.ambient);
         giftFx = createGiftFx(fxProfile.giftSparks);
         environment.add(ambient.points, giftFx.cloud);
+        if (enableBlessing) {
+          blessing = createBlessingCloud(tree, seed, fxProfile.blessing);
+          environment.add(blessing.cloud);
+        }
       }
       Object.assign(report, { pair: pair.report, treeTarget: tree.toArray(), rejectedRoutes: routes.rejected });
       if (pair.slots) {
