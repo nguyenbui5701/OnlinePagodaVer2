@@ -6,8 +6,10 @@ import { PerspectiveCamera, Vector3 } from 'three';
 
 const baseline = process.env.V2_BASELINE_ORIGIN ?? 'http://127.0.0.1:5190';
 const candidate = process.env.V2_CANDIDATE_ORIGIN ?? 'http://127.0.0.1:5192';
+const reviewed = process.env.V2_REVIEWED_ORIGIN ?? 'http://127.0.0.1:5193';
 const baseRevision = 'ee27355b2b80f847602b0f6d2a3c259e4861fc54';
-const output = new URL('../evidence/p10b3b/', import.meta.url);
+const reviewedRevision = '67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7';
+const output = new URL('../evidence/p10b3b/visual-correction/', import.meta.url);
 const full = '&ambience=rich&seats=rings&shots=hero';
 const viewport = { width: 720, height: 1280 };
 const browser = await chromium.launch({
@@ -15,7 +17,7 @@ const browser = await chromium.launch({
   args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'],
 });
 const ledger = { baseRevision, browser: browser.version(), screenshots: [], parity: [], layouts: [], regression: [],
-  benchmarks: [], recovery: [], offline: [], independent: [] };
+  benchmarks: [], recovery: [], offline: [], independent: [], ringSweeps: [], mistMotion: [] };
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 await mkdir(output, { recursive: true });
 
@@ -75,10 +77,48 @@ function projectPads(state) {
   camera.position.fromArray(state.position);
   camera.lookAt(...state.target);
   camera.updateMatrixWorld();
-  return state.communityLayout.map(slot => {
+  return state.communityLayout.map((slot, index) => {
     const p = new Vector3().fromArray(slot.position).project(camera);
-    return { id: slot.id, x: (p.x + 1) * 360, y: (1 - p.y) * 640, inPortrait: Math.abs(p.x) < 1 && Math.abs(p.y) < 1 };
+    return { id: slot.id, ring: index < 5 ? 'inner' : 'outer', position: slot.position,
+      x: (p.x + 1) * 360, y: (1 - p.y) * 640, inPortrait: Math.abs(p.x) < 1 && Math.abs(p.y) < 1 && Math.abs(p.z) <= 1 };
   });
+}
+
+async function visiblePads(page, state) {
+  const bounds = projectPads(state);
+  const hits = await page.evaluate(({ points, camera }) => points.map(point => point.inPortrait &&
+    window.p08Review.treeCollisions([camera, point.position]).length > 0), { points: bounds, camera: state.position });
+  return bounds.map(({ position, ...pad }, i) => ({ ...pad, blockedByR16: hits[i], visible: pad.inPortrait && !hits[i] }));
+}
+
+async function topSweep(page, profile, seed, before = false) {
+  const captures = before ? [17, 19, 22, 25] : [16, 17, 18.5, 20, 21.5, 22, 23, 24.5, 25.75];
+  const rows = [];
+  let reference;
+  for (let quarter = 64; quarter < 104; quarter++) {
+    const t = quarter / 4;
+    const draw = captures.includes(t);
+    const state = await step(page, t, undefined, draw);
+    assert.equal(state.shot, 'HERO_TOP_RING');
+    if (before) assert.equal(state.repoRevision, reviewedRevision);
+    const pads = await visiblePads(page, state);
+    const visible = pads.filter(pad => pad.visible);
+    const inner = visible.filter(pad => pad.ring === 'inner').length;
+    const outer = visible.length - inner;
+    rows.push({ t, position: state.position, target: state.target, inner, outer, pads });
+    if (draw) await shot(page, `${profile}-${seed}-${before ? 'reviewed-' : ''}top-${t}.png`, state);
+    if (t === 22) reference = { state, pads };
+  }
+  let current = 0;
+  let longest = 0;
+  for (const { inner, outer } of rows) {
+    current = inner >= 3 && outer >= 3 && inner + outer >= 7 ? current + .25 : 0;
+    longest = Math.max(longest, current);
+  }
+  ledger.ringSweeps.push({ profile, seed, before, longestSecondsWithBothBands: longest,
+    maxVisible: Math.max(...rows.map(row => row.inner + row.outer)), rows });
+  if (!before) assert(longest >= 3, `Two bands must stay legible in ${profile}/${seed}; got ${longest}s`);
+  return reference;
 }
 
 async function gallery(profile, seed) {
@@ -108,17 +148,10 @@ async function gallery(profile, seed) {
   const contact = await run.page.evaluate(() => [1, 2, 3].map(id => window.p08Review.contact(`seat-${id}`)));
   for (const result of contact) assert(result.matched > 0 && result.minGap > -.03);
   const idle = await open(candidate, profile, seed, full, 'idle');
-  for (const t of [17, 19, 22, 25]) {
-    const top = await step(idle.page, t);
-    assert.equal(top.shot, 'HERO_TOP_RING');
-    await shot(idle.page, `${label}-top-${t}.png`, top);
-    if (t === 22) {
-      const bounds = projectPads(top);
-      ledger.layouts.push({ profile, seed, tree: top.treeTarget, slots: top.communityLayout, radius: top.communityPadRadius,
-        plants: top.botanicals.plants, contact, actorLooks: top.diversity.looks.slice(0, 3), topPortrait: bounds,
-        rich: top.richAmbience, assets: { tree: top.asset, lotuses: top.botanicals.assets, padAndActor: top.pair } });
-    }
-  }
+  const { state: top, pads } = await topSweep(idle.page, profile, seed);
+  ledger.layouts.push({ profile, seed, tree: top.treeTarget, slots: top.communityLayout, radius: top.communityPadRadius,
+    plants: top.botanicals.plants, contact, actorLooks: top.diversity.looks.slice(0, 3), topPortrait: pads,
+    rich: top.richAmbience, assets: { tree: top.asset, lotuses: top.botanicals.assets, padAndActor: top.pair } });
   await shot(idle.page, `${label}-aerial.png`, await step(idle.page, 29));
   await shot(idle.page, `${label}-return-loop.png`, await step(idle.page, 40.4));
   assert.deepEqual([...run.pageErrors, ...idle.pageErrors], []);
@@ -127,6 +160,24 @@ async function gallery(profile, seed) {
 }
 
 const mistPose = { position: [8, 4, 24], target: [0, 5, 0], fov: 53 };
+async function mistMotion(profile) {
+  for (const [variant, origin, flags] of [
+    ['reviewed', reviewed, '&ambience=rich'],
+    ['off', candidate, ''],
+    ['corrected', candidate, '&ambience=rich'],
+  ]) {
+    const { page, pageErrors } = await open(origin, profile, 9, flags);
+    for (const t of [2, 3.5, 5.25]) {
+      const state = await step(page, t, mistPose);
+      if (variant === 'reviewed') assert.equal(state.repoRevision, reviewedRevision);
+      const filename = `${profile}-root-mist-${variant}-${t}.png`;
+      const sha256 = await shot(page, filename, state, 'mist motion at matched fixed pose');
+      ledger.mistMotion.push({ profile, variant, t, filename, sha256, points: state.richAmbience?.mistPoints ?? 0 });
+    }
+    assert.deepEqual(pageErrors, []);
+    await page.close();
+  }
+}
 async function benchmarks(profile) {
   for (const [variant, flags] of [['OFF', ''], ['RICH_ONLY', '&ambience=rich'], ['ALL_ON', full]]) {
     const { page } = await open(candidate, profile, 9, flags);
@@ -313,11 +364,15 @@ try {
   } else for (const profile of ['eco', 'quality']) {
     for (const seed of [9, 71, 1337]) {
       await parity(profile, seed);
+      const old = await open(reviewed, profile, seed, full, 'idle');
+      await topSweep(old.page, profile, seed, true);
+      await old.page.close();
       await gallery(profile, seed);
       for (const scenario of ['idle', 'gifts', 'capacity', 'community']) await regression(profile, seed, scenario);
       console.log(profile, seed, 'gallery and four routes verified');
     }
     await benchmarks(profile);
+    await mistMotion(profile);
     await recovery(profile);
     await returnShot(profile);
   }

@@ -35,9 +35,14 @@ test('hero routes move through both new shots and share a continuous 40-second s
       minY = Math.min(minY, pose.position.y);
       const delta = pose.position.distanceTo(prior.position);
       assert(delta > .001 && delta < .22, `hero speed at ${tick / 60}: ${delta}`);
+      assert(pose.target.clone().sub(pose.position).angleTo(prior.target.clone().sub(prior.position)) < .018);
+      assert(Math.abs(pose.fov - prior.fov) < .10);
       assert(pose.fov >= 50 && pose.fov <= 65);
       assert(pose.position.z > 20 || pose.position.y > 34);
       names.add(pose.shot);
+      if (pose.shot === 'HERO_TOP_RING') {
+        assert(pose.position.z >= 34 && pose.target.z >= 6);
+      }
       prior = pose;
     }
     assert(minY >= 8);

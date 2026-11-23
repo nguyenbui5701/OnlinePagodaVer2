@@ -13,14 +13,14 @@ export function createHeroRoutes(tree: Vector3, seed: number) {
       new Vector3(x + tree.x, y + tree.y, z + tree.z)), true, 'catmullrom', .5);
     const position = curve([
       [0, 10, 44], [2, 11, 47], [12 * side, 12, 52], [18 * side, 23, 42],
-      [9 * side, 42, 28], [3 * side, 55, 11], [-7 * side, 48, 32], [-17 * side, 35, 34],
+      [20 * side, 34, 40], [6 * side, 35, 40], [-12 * side, 35, 40], [-17 * side, 35, 34],
       [-14 * side, 15, 37], [-2, 9, 34],
     ]);
     const target = curve([
       [0, 9.5, 0], [0, 9.6, 0], [0, 9, 0], [0, 8, 4],
-      [0, 3, 2], [0, 0, 0], [0, 0, 0], [0, 7, 3], [0, 11, 1], [0, 10.5, 0],
+      [4 * side, 1, 13], [1 * side, 1, 11], [-2.4 * side, 1, 10], [0, 7, 3], [0, 11, 1], [0, 10.5, 0],
     ]);
-    const lens = new CatmullRomCurve3([58, 56, 55, 55, 57, 63, 63, 55, 54, 58]
+    const lens = new CatmullRomCurve3([58, 56, 55, 55, 62, 62, 62, 55, 54, 58]
       .map(fov => new Vector3(fov, 0, 0)), true);
     return { position, target, lens };
   };
