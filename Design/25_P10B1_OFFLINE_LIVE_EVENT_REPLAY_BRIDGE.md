@@ -61,3 +61,10 @@
 | TikTok LIVE Studio concurrent capture | **NOT AUTHORIZED** |
 | Original rose-ring/hills/full reference pixel parity | **DEFERRED/PARTIAL** |
 | Merges and V1 | **HOLD** |
+
+
+## 5. Owner supersedes offline replay with real LIVE phase — 2026-11-23
+
+Owner explicitly instructed **“chúng ta cũng sẽ bỏ qua phần tích hợp mô phỏng này, tiến đến phần có thể Live luôn nhé. hãy đọc rules với vai trò sa và thực hiệm.”** Therefore **P1.0-B1 standalone offline replay is `OWNER_SKIPPED_NOT_IMPLEMENTED_NOT_PASS`**, not a missing blocker for the next task and not a production-certified integration. The previously assigned CODEX 12 should **NOT be started** and no PR is assumed to have been created. This section supersedes this file's previously active task priority while keeping its technical history.
+
+**Active successor:** [Design 26 — P1.0-B2 Real LIVE Studio + Actual Event Gateway](26_P10B2_REAL_LIVE_STUDIO_AND_EVENT_GATEWAY.md) / [CODEX 13](../Task/CODEX_13_P10B2_REAL_TIKTOK_LIVE_STUDIO_AND_EVENT_GATEWAY.md), new isolated stacked Code PR from PR #14 HEAD `5101df8ee0a7e63b391c9f72be4f5c79bc88b20f`. Real provider-access/license viability, Owner Studio capture entitlement, operator consent and actual accepted LIVE gift events are separate gates. **GPU P1.0-A still deferred and NOT PASS**, previous native scene approvals unchanged; no real account access, money, artist edits, V1 or merges authorized automatically. **STOP `P10B2_SA_REVIEW_REQUIRED`.**
