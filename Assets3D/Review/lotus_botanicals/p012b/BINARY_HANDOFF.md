@@ -1,45 +1,55 @@
-# BINARY_HANDOFF — P012B (revision 2: tip topology repaired)
+# P0.12-B Binary, Blender and Cycles handoff — PR #10 (SA follow-up)
 
-GitHub branch: `assets/p012b-lotus-blossom-bud`. Stacked PR base `assets/lotus-pad-chibi-p0`, protected baseline `ce0db947e5e9ea4c6214bc900b0cdd9c6a83cced`.
+**Status as of formal SA review** at PR #10 HEAD `3d7d86d589f9a309d03cd9862ba0041795395ddf`: **4 GLB TECH PASS**, **Blender 4.5.16 Cycles execution PASS (20 real PNGs)**, **context composition HOLD**, **Owner Botanical Art GO pending**. Follow-up code prepares a new four-frame render-only composition, but it **has NOT been executed in this assistant environment**.
 
-| Real GLB | Bytes | Triangles | SHA-256 |
+## Frozen real GLB2 assets — do not re-export
+
+| Asset | Size (bytes) | Tris | SHA-256 |
 |---|---:|---:|---|
-| `lotus_bloom_p012b_quality.glb` | 50004 | 1728 | `63edb12d02664a44ce4484b847ef07aeffab6a22a36cf44415b141f56804f0d0` |
-| `lotus_bloom_p012b_eco.glb` | 20924 | 589 | `8dce16649f0dff541601047628ad7175f0b9ec028e7803b967cf2dee5efc0bd5` |
-| `lotus_bud_p012b_quality.glb` | 20940 | 648 | `fe62a2f9aeb166d0eadf758c75eb47950a9053d8f2149d2a66ceaf5007a05f1a` |
-| `lotus_bud_p012b_eco.glb` | 8552 | 192 | `c442cc04c3b0094a920c2b86fb202233782d5076a97e1110a84b345df3f0d082` |
+| `lotus_bloom_p012b_quality.glb` | 50,004 | 1,728 | `63edb12d02664a44ce4484b847ef07aeffab6a22a36cf44415b141f56804f0d0` |
+| `lotus_bloom_p012b_eco.glb` | 20,924 | 589 | `8dce16649f0dff541601047628ad7175f0b9ec028e7803b967cf2dee5efc0bd5` |
+| `lotus_bud_p012b_quality.glb` | 20,940 | 648 | `fe62a2f9aeb166d0eadf758c75eb47950a9053d8f2149d2a66ceaf5007a05f1a` |
+| `lotus_bud_p012b_eco.glb` | 8,552 | 192 | `c442cc04c3b0094a920c2b86fb202233782d5076a97e1110a84b345df3f0d082` |
 
-All four actual GLB2 files are Git blobs. Petal-tip zero-area triangles detected by independent remote binary audit were repaired (width ~5 mm across at extreme endpoints), normals recalculated and bound accessors updated. **Do not use the original first-commit checksums.** Run the committed Node generator to reproduce these revised bytes; exact SHA per file must match above.
+Independent remote GLB2 checks already PASS and the zero-area petal tip topology was repaired in historical commits. Baseline P02 GLB SHA-256 remains `80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9`, 262,108 bytes, 2.083084m span.
 
-Native editable `.blend` and true Blender Cycles PNGs remain `pending_owner_blender_run` (Blender not installed in this assistant environment). After loading the four GLBs and frozen original P02 on an Owner Blender installation, the included `blender_cycles_p012b.py` saves `P012B_botanicals_editable.blend` and matched images. No invented Blender reports.
+## Actual remote Blender / Cycles inventory (before four-frame correction)
+
+| Evidence artifact | Real bytes | Git blob SHA | Status |
+|---|---:|---|---|
+| `P012B_botanicals_editable.blend` | 1,805,896 | `8b0ea3ee72820322fe551b94ed8f95b03e7422da` | Uploaded; SA cannot independently open/decode yet |
+| `P012B_Cycles_Evidence/cycles_manifest.json` | 4,237 | `fddc3f935329e673b42ecd19ead7b4d0ede87c38` | 20 original PNG SHA256/size records |
+| `P012B_Cycles_Evidence/owner_sha256.txt` | 4,196 | `d21be1fee92850952483edadfff454d9ebde0048` | Owner records of .blend + 20 original PNG hashes |
+| `P012B_Cycles_Evidence/blender_cycles_stdout.log` | 106,983 | `d5549f1de1fa3707e390e9c60e6f666660ab3b7d` | Blender 4.5.16 native log; 20 Cycles PNG saved |
+| `P012B_Cycles_Evidence/blender_cycles_stderr.log` | 0 | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | Successful run: no stderr |
+| `P012B_Cycles_Evidence/blender_cycles_console.log` | 107,261 | `efdbe00cb80144d2d2168ddfd9ea2986b8362425` | Combined successful runner log |
+
+The .blend owner SHA-256 in `owner_sha256.txt` is `672f098d8a9a3d9778fa26ea4703816c62912c2de1bae34c2baefdfbc9814ddc`, **owner-reported only**, not independently decoded by SA. Historical `blender_stderr.log` (816 bytes, Git blob `1a1ff588f102ca64dd6aea0ca48e4586aa6784eb`) records the first failed AgX enum attempt, **not a contradiction** of the successful later Cycles render.
+
+The 16 pre-correction isolated PNGs remain frozen. Current four context-image hashes and exact sizes are recorded by filename in `cycles_manifest.json`; those are valid **old** renders, not the yet-unrendered revised composition.
+
+## Camera correction, exactly four targeted native Cycles images
+
+Scene script: `blender_cycles_p012b.py` (render-only placement/camera, original four GLB imports/sha checks unchanged).
+- Frozen P02 visual scale root at Blender XY `(0, +0.83)m` (behind subjects);
+- original bloom at `(+0.70, -0.80)m` (right/midground);
+- original bud at `(-0.58, -1.15)m` (left/foreground);
+- portrait framing: 720×1280, Blender Cycles 32 CPU samples, camera `sensor_fit='HORIZONTAL'`, lens 46mm, common P02 background/lighting unchanged.
+- Verified by proposed runtime assertions: actual object bounding-box corners within camera frame, minimum bud visible pixel extent, bud/bloom separated horizontally; native visual SA inspection **still required**.
+
+Run **in `p012b` folder** on existing PR #10 branch:
 
 ```powershell
-$root = 'Assets3D/Review/lotus_botanicals/p012b'
-node \"$root/build_p012b_assets.mjs\"
-Get-FileHash \"$root/lotus_bloom_p012b_quality.glb\" -Algorithm SHA256
-Get-FileHash \"$root/lotus_bloom_p012b_eco.glb\" -Algorithm SHA256
-Get-FileHash \"$root/lotus_bud_p012b_quality.glb\" -Algorithm SHA256
-Get-FileHash \"$root/lotus_bud_p012b_eco.glb\" -Algorithm SHA256
-# Preferred one-command hash-gated owner runner:
-& "$root/run_p012b_blender.ps1"
-
-# Or invoke directly:
-blender --background --python \"$root/blender_cycles_p012b.py\" -- --assets \"$root\" --p02 \"Assets3D/Review/lotus_pad_chibi/p0.2/lotus_pad_01.glb\"
+$BlenderExe = Get-ChildItem "C:\Program Files\Blender Foundation" -Filter blender.exe -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1 -ExpandProperty FullName
+& .\run_p012b_blender.ps1 -ContextOnly -Blender $BlenderExe
 ```
 
-Upload generated `.blend`, actual PNGs and Cycles log/evidence on this same branch for SA Art review; do not merge/modify baseline branches or integrate viewer.
+Only these four PNGs will be freshly rendered:
+1. `P012B_Cycles_Evidence/p02_scale_context_quality_720x1280_cycles.png`
+2. `P012B_Cycles_Evidence/p02_scale_context_eco_720x1280_cycles.png`
+3. `P012B_Cycles_Evidence/water_level_low_quality_720x1280_cycles.png`
+4. `P012B_Cycles_Evidence/aerial_quality_720x1280_cycles.png`
 
-## 2026-11-23 Windows Blender stderr/traceback troubleshooting
+Scripts compare SHA-256 of all 16 existing isolated images before/after; Blender saves a new editable .blend and rewrites hash records for twenty total original-plus-updated PNGs. Owner then commits/uploads only four changed context PNGs, `.blend`, updated manifests, hashes and logs to the same PR branch. The four corrected image hashes, sizes and new .blend hash **cannot be stated before running Blender**.
 
-If PowerShell prints only `blender.exe : Traceback (most recent call last)` at line 29, it is due to the **previous runner** using `$ErrorActionPreference='Stop'` together with native `2>&1 | Tee-Object`. This can hide the useful last Python exception. Checkout this PR's newest runner and use the same `-Blender` parameter. The revised script calls Blender with `--python-exit-code 17`, redirects stdout/stderr into separate files, and reports the **last 120 lines of stderr** with the Python error even when Blender fails. It never labels incomplete renders PASS.
-
-```powershell
-# From checked-out assets/p012b-lotus-blossom-bud branch
-$root = '.\\Assets3D\\Review\\lotus_botanicals\\p012b'
-& \"$root/run_p012b_blender.ps1\" -Blender 'C:\\Program Files\\Blender Foundation\\Blender 4.5\\blender.exe'
-# If still failing, send these files to SA:
-Get-Content \"$root/P012B_Cycles_Evidence/blender_cycles_stderr.log\" -Tail 120
-Get-Content \"$root/P012B_Cycles_Evidence/blender_cycles_stdout.log\" -Tail 60
-```
-
-The Blender path above is an example; use your actual executable path. Do not change the GLB or P02 checksum just to bypass a Python error.
+**Gate:** `P012B_SA_ART_REVIEW_REQUIRED`; no SA Art PASS, Owner GO, merge, runtime, or other branch edits. Project-authored art + free local Blender; 0 VND.

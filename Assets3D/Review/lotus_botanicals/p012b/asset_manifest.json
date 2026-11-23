@@ -24,12 +24,12 @@
   },
   "source": "build_p012b_assets.mjs",
   "blenderEditableSource": "P012B_botanicals_editable.blend",
-  "blenderEditableSourceStatus": "pending_owner_blender_run",
+  "blenderEditableSourceStatus": "GITHUB_UPLOADED_NOT_INDEPENDENTLY_OPENED_BY_SA",
   "license": "MIT original artist-authored procedural geometry",
   "cost": "0 VND",
   "externalMaterials": [],
-  "geometryValidation": "PASS_REMOTE_GLB2_SHA256_BYTES_INDICES_FINITE_NORMALS_ZERO_DEGENERATE_FACES; Blender import pending",
-  "cyclesStatus": "BLENDER_CYCLES_PENDING_OWNER_RUN",
+  "geometryValidation": "PASS_REMOTE_GLB2_SHA256_BYTES_INDICES_FINITE_NORMALS_ZERO_DEGENERATE_FACES_AND_BLENDER_4_5_16_GLTF_IMPORT_LOG",
+  "cyclesStatus": "BLENDER_4_5_16_CYCLES_EXECUTION_PASS_20_IMAGES_EXIST_CONTEXT_FRAMING_HOLD",
   "artGate": "P012B_SA_ART_REVIEW_REQUIRED",
   "assets": [
     {
@@ -76,8 +76,8 @@
       "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bloom_p012b_quality.glb",
       "sha256": "63edb12d02664a44ce4484b847ef07aeffab6a22a36cf44415b141f56804f0d0",
       "githubStatus": "uploaded_sha_verified",
-      "sourceEditableBlenderStatus": "pending_owner_blender_run",
-      "cyclesEvidenceStatus": "pending_owner_blender_run",
+      "sourceEditableBlenderStatus": "GITHUB_UPLOADED_SA_INDEPENDENT_OPEN_PENDING",
+      "cyclesEvidenceStatus": "ORIGINAL_INDIVIDUAL_CYCLES_PASS_CONTEXT_FRAMING_CORRECTION_PENDING",
       "geometryTopology": "GITHUB_BINARY_REFETCH_SHA256_BYTES_AND_TRIANGLE_COUNT_VERIFIED; zero_deg_faces zero_invalid_indices zero_invalid_normals"
     },
     {
@@ -124,8 +124,8 @@
       "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bloom_p012b_eco.glb",
       "sha256": "8dce16649f0dff541601047628ad7175f0b9ec028e7803b967cf2dee5efc0bd5",
       "githubStatus": "uploaded_sha_verified",
-      "sourceEditableBlenderStatus": "pending_owner_blender_run",
-      "cyclesEvidenceStatus": "pending_owner_blender_run",
+      "sourceEditableBlenderStatus": "GITHUB_UPLOADED_SA_INDEPENDENT_OPEN_PENDING",
+      "cyclesEvidenceStatus": "ORIGINAL_INDIVIDUAL_CYCLES_PASS_CONTEXT_FRAMING_CORRECTION_PENDING",
       "geometryTopology": "GITHUB_BINARY_REFETCH_SHA256_BYTES_AND_TRIANGLE_COUNT_VERIFIED; zero_deg_faces zero_invalid_indices zero_invalid_normals"
     },
     {
@@ -172,8 +172,8 @@
       "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bud_p012b_quality.glb",
       "sha256": "fe62a2f9aeb166d0eadf758c75eb47950a9053d8f2149d2a66ceaf5007a05f1a",
       "githubStatus": "uploaded_sha_verified",
-      "sourceEditableBlenderStatus": "pending_owner_blender_run",
-      "cyclesEvidenceStatus": "pending_owner_blender_run",
+      "sourceEditableBlenderStatus": "GITHUB_UPLOADED_SA_INDEPENDENT_OPEN_PENDING",
+      "cyclesEvidenceStatus": "ORIGINAL_INDIVIDUAL_CYCLES_PASS_CONTEXT_FRAMING_CORRECTION_PENDING",
       "geometryTopology": "GITHUB_BINARY_REFETCH_SHA256_BYTES_AND_TRIANGLE_COUNT_VERIFIED; zero_deg_faces zero_invalid_indices zero_invalid_normals"
     },
     {
@@ -220,8 +220,8 @@
       "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bud_p012b_eco.glb",
       "sha256": "c442cc04c3b0094a920c2b86fb202233782d5076a97e1110a84b345df3f0d082",
       "githubStatus": "uploaded_sha_verified",
-      "sourceEditableBlenderStatus": "pending_owner_blender_run",
-      "cyclesEvidenceStatus": "pending_owner_blender_run",
+      "sourceEditableBlenderStatus": "GITHUB_UPLOADED_SA_INDEPENDENT_OPEN_PENDING",
+      "cyclesEvidenceStatus": "ORIGINAL_INDIVIDUAL_CYCLES_PASS_CONTEXT_FRAMING_CORRECTION_PENDING",
       "geometryTopology": "GITHUB_BINARY_REFETCH_SHA256_BYTES_AND_TRIANGLE_COUNT_VERIFIED; zero_deg_faces zero_invalid_indices zero_invalid_normals"
     }
   ],
@@ -234,5 +234,61 @@
     "zeroInvalidIndicesCount": 4,
     "zeroInvalidNormalsCount": 4,
     "method": "independent GitHub base64 binary refetch; glTF accessor and mesh index readback; SHA256 and float32/uint16 parse"
+  },
+  "blenderEditableSourceBytes": 1805896,
+  "blenderEditableSourceGitBlobSHA": "8b0ea3ee72820322fe551b94ed8f95b03e7422da",
+  "blenderEditableSourceOwnerReportedSHA256": "672f098d8a9a3d9778fa26ea4703816c62912c2de1bae34c2baefdfbc9814ddc",
+  "blenderEditableSourceVerificationLimitation": "SA confirmed Git tree blob and size; Blender source has not been independently opened or SHA-256 decoded by SA.",
+  "cyclesArtifactManifestPath": "P012B_Cycles_Evidence/cycles_manifest.json",
+  "cyclesArtifactManifestGitBlobSHA": "fddc3f935329e673b42ecd19ead7b4d0ede87c38",
+  "cyclesEvidence": {
+    "source": "GitHub existing evidence at PR10 reviewed HEAD 3d7d86d589f9a309d03cd9862ba0041795395ddf",
+    "renderer": "Blender 4.5.16 LTS native Cycles",
+    "samples": 32,
+    "totalImageCount": 20,
+    "isolatedShotCount": 16,
+    "isolatedShotStatus": "PASS_UNCHANGED; SHA guarded by --context-only",
+    "originalContextShotCount": 4,
+    "originalContextShotStatus": "UPLOADED_REAL_CYCLES_BUT_VISUAL_BUD_NOT_CLEAR",
+    "historicalContextImages": [
+      {
+        "file": "p02_scale_context_quality_720x1280_cycles.png",
+        "bytes": 954631,
+        "sha256": "ceff090b4d971f694756219d16214a51e9bc2f7043802e16bc3a156a22891d9a"
+      },
+      {
+        "file": "p02_scale_context_eco_720x1280_cycles.png",
+        "bytes": 947836,
+        "sha256": "a25d0fd2989204a04a84a71f9fdc497553681b64b972027a0c6feffe8c780a3a"
+      },
+      {
+        "file": "water_level_low_quality_720x1280_cycles.png",
+        "bytes": 928086,
+        "sha256": "8d0442b365b3391f970f0c700f354b3917638269ed1654d94e04d033b8028542"
+      },
+      {
+        "file": "aerial_quality_720x1280_cycles.png",
+        "bytes": 967375,
+        "sha256": "fda1daca31d35e800880d1d8f17ceb1e41f73581a515af448aad8ba0cea61ac6"
+      }
+    ],
+    "contextCorrectionStatus": "NEW_RENDER_ONLY_CAMERA_AND_STAGING_COMMITTED; OWNER_NATIVE_CYCLES_RERENDER_4_PENDING; SA_VISUAL_REVIEW_PENDING",
+    "contextRequiredProof": [
+      "Original P02 pad fully visible",
+      "open bloom visibly distinct",
+      "closed bud visibly distinct",
+      "low water-level and aerial 720x1280"
+    ],
+    "blenderSuccessLog": {
+      "stdout": "P012B_Cycles_Evidence/blender_cycles_stdout.log",
+      "stdoutGitBlobSHA": "d5549f1de1fa3707e390e9c60e6f666660ab3b7d",
+      "stdoutBytes": 106983,
+      "stderr": "P012B_Cycles_Evidence/blender_cycles_stderr.log",
+      "stderrBytes": 0,
+      "exitCode": 0,
+      "outputMarker": "P012B_BLENDER_CYCLES_FINISHED 20 PNG"
+    },
+    "history": "Earlier blender_stderr.log AgX enum traceback is from a failed attempt; the later Blender 4.5.16 run completed successfully.",
+    "scope": "Only four 9:16 context shots require rerender; do not touch 16 standalone shots or GLBs."
   }
 }
