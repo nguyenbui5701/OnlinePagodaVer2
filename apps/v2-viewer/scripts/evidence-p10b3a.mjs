@@ -45,7 +45,7 @@ async function step(page, time, pose, draw = true) {
     const r = review.step(time, draw, undefined, undefined, undefined, pose);
     return { time, revision: r.repoRevision, renderer: r.graphics, mode: r.mode, focus: r.focus?.seatId,
       count: r.confirmedGiftCount, labels: r.labels, bubbles: r.bubbles, room: r.roomSessionId,
-      community: r.community && { slots: r.community.slots.length, actors: r.community.realActors },
+      community: r.community && { slots: r.community.slots?.length, actors: r.community.realActors },
       names: [...document.querySelectorAll('.community-name:not([hidden])')].map(node => node.textContent),
       remotePhotos: document.querySelectorAll('#stage img').length,
       badges: document.querySelectorAll('.community-name:not([hidden]) .avatar-badge').length,
@@ -122,6 +122,10 @@ async function gallery(profile, seed) {
   assert.match(first.labels.fallback, /Duyên/);
   await save('gift-early', first);
   if (seed === 9) {
+    const sharedFocus = await step(page, 17.43, { position: [1, 5, 25], target: [1, 1, 12.5], fov: 52 });
+    assert.equal(sharedFocus.mode, 'GIFT_FOCUS');
+    assert.equal(sharedFocus.badges, 3);
+    await save('gift-focus-three-seats-review', sharedFocus);
     await save('gift-mid', await step(page, 17.95));
     const expired = await step(page, 18.7);
     assert.equal(expired.bubbles.gift, undefined);
@@ -199,7 +203,7 @@ async function movingNameplates(profile, seed, scenario) {
   const isCommunity = scenario === 'community';
   const points = isCommunity
     ? [8.6, 9.9, 10.5, 12.22, 12.5, 13.6, 14.4, 16.35, 16.85, 17.43, 18.1, 21.87, 22.35, 23.25, 40.05, 46.42, 47.2, 53, 55.95]
-    : [47.4, 52.3, 55.75, 61.35, 63.5, 66, 67.2];
+    : [47.4, 52.3, 55.75, 58.04, 61.35, 63.65, 66, 67.2];
   const rows = [];
   for (const [i, time] of points.entries()) {
     const batch = await page.evaluate(({ previous, time }) => {
