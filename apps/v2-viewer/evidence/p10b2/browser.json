@@ -1,0 +1,182 @@
+[
+  {
+    "profile": "eco",
+    "viewport": {
+      "width": 720,
+      "height": 1280
+    },
+    "virtualOfflineSeconds": 85,
+    "shots": [
+      "CLOSE",
+      "COMMUNITY",
+      "AERIAL",
+      "UNDER_TREE"
+    ],
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "browser": "158.0.4370.33",
+    "revision": "edd7dae420a911a68814c4eb2a255097ce98665e",
+    "frames": [
+      {
+        "file": "eco-offline-3.png",
+        "time": 3,
+        "sha256": "94b1eb94fa01be53b3faaf278f711da7dc5fb6720d9783eb635e7d6c780b1c05",
+        "source": "OFFLINE_LOCAL_WEBGL",
+        "shot": "CLOSE",
+        "mode": "CINEMATIC",
+        "gifts": 0,
+        "position": [
+          2.259199669737197,
+          1.0075277343749998,
+          8.510062471172239
+        ]
+      },
+      {
+        "file": "eco-offline-14.5.png",
+        "time": 14.5,
+        "sha256": "d894961493f08f8008ff0028b7c304f3ff75fcf36c9ba3fd4a899a4bdc765831",
+        "source": "OFFLINE_LOCAL_WEBGL",
+        "shot": "COMMUNITY",
+        "mode": "CINEMATIC",
+        "gifts": 0,
+        "position": [
+          -27.455078125,
+          27.51904296875,
+          36.986328125
+        ]
+      },
+      {
+        "file": "eco-offline-gift-checkpoint.png",
+        "time": 18.1,
+        "sha256": "7738076748857b522fd4112a075f52a9870cf6746b346554842b4185d2740de7",
+        "source": "OFFLINE_LOCAL_WEBGL",
+        "shot": "AERIAL",
+        "mode": "CINEMATIC",
+        "gifts": 0,
+        "position": [
+          -16.75323437499999,
+          46.87336718750001,
+          31.018203124999992
+        ]
+      },
+      {
+        "file": "eco-offline-27.png",
+        "time": 27,
+        "sha256": "722a6f26075ef0eb3a2fdb3923300a50ed4b6716d48b1b45d81222fb18984d08",
+        "source": "OFFLINE_LOCAL_WEBGL",
+        "shot": "AERIAL",
+        "mode": "CINEMATIC",
+        "gifts": 0,
+        "position": [
+          22.8828125,
+          29.911718750000002,
+          16.80390625
+        ]
+      },
+      {
+        "file": "eco-demo-gift.png",
+        "time": 18.1,
+        "sha256": "18b2ac1bd26fa681f4bcb959627de0526c11696f49e50c489da783f6f5697ffc",
+        "source": "SYNTHETIC_TEST",
+        "shot": "AERIAL",
+        "mode": "GIFT_FOCUS",
+        "focus": "seat-1",
+        "gifts": 3,
+        "position": [
+          -0.16453682873832176,
+          1.1493887138912455,
+          8.972041251413165
+        ]
+      }
+    ]
+  },
+  {
+    "profile": "quality",
+    "viewport": {
+      "width": 720,
+      "height": 1280
+    },
+    "virtualOfflineSeconds": 85,
+    "shots": [
+      "CLOSE",
+      "COMMUNITY",
+      "AERIAL",
+      "UNDER_TREE"
+    ],
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "browser": "158.0.4370.33",
+    "revision": "edd7dae420a911a68814c4eb2a255097ce98665e",
+    "frames": [
+      {
+        "file": "quality-offline-3.png",
+        "time": 3,
+        "sha256": "cb04d300db877b61aa14ed909dbc9256058589179eca1fdc9fc31ba83c029134",
+        "source": "OFFLINE_LOCAL_WEBGL",
+        "shot": "CLOSE",
+        "mode": "CINEMATIC",
+        "gifts": 0,
+        "position": [
+          2.259199669737197,
+          1.0075277343749998,
+          8.510062471172239
+        ]
+      },
+      {
+        "file": "quality-offline-14.5.png",
+        "time": 14.5,
+        "sha256": "9676ebe58fc5286df6136939e1ee372d2949c97c47c990c8e245b5abd84f1e01",
+        "source": "OFFLINE_LOCAL_WEBGL",
+        "shot": "COMMUNITY",
+        "mode": "CINEMATIC",
+        "gifts": 0,
+        "position": [
+          -27.455078125,
+          27.51904296875,
+          36.986328125
+        ]
+      },
+      {
+        "file": "quality-offline-gift-checkpoint.png",
+        "time": 18.1,
+        "sha256": "d126ae57ae9383460e64394fb08f2e561587645b17e9e3f004ee9d26910a5585",
+        "source": "OFFLINE_LOCAL_WEBGL",
+        "shot": "AERIAL",
+        "mode": "CINEMATIC",
+        "gifts": 0,
+        "position": [
+          -16.75323437499999,
+          46.87336718750001,
+          31.018203124999992
+        ]
+      },
+      {
+        "file": "quality-offline-27.png",
+        "time": 27,
+        "sha256": "6c1bce1141e282e6c16a02a252fa68b3cbff711d921bff45f8278902d872e28e",
+        "source": "OFFLINE_LOCAL_WEBGL",
+        "shot": "AERIAL",
+        "mode": "CINEMATIC",
+        "gifts": 0,
+        "position": [
+          22.8828125,
+          29.911718750000002,
+          16.80390625
+        ]
+      },
+      {
+        "file": "quality-demo-gift.png",
+        "time": 18.1,
+        "sha256": "c3b1cd3a6a235406d55494a58e4a2937ff0cbc482792c57fe791c9c9cc188c5f",
+        "source": "SYNTHETIC_TEST",
+        "shot": "AERIAL",
+        "mode": "GIFT_FOCUS",
+        "focus": "seat-1",
+        "gifts": 3,
+        "position": [
+          -0.16453682873832176,
+          1.1493887138912455,
+          8.972041251413165
+        ]
+      }
+    ]
+  }
+]
