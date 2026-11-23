@@ -1,0 +1,1400 @@
+{
+  "baseline": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+  "current": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+  "matrix": [
+    {
+      "profile": "eco",
+      "name": "low",
+      "t": 7.5,
+      "file": "eco-low-baseline.png",
+      "sha256": "6e93e0007f4eafd1898e6a8dc301b37624feae850aeb20d97eef429e822ce938",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=off",
+      "camera": [
+        [
+          14,
+          6,
+          38
+        ],
+        [
+          0,
+          8,
+          3
+        ],
+        51
+      ],
+      "fixed": {
+        "position": [
+          14,
+          6,
+          38
+        ],
+        "target": [
+          0,
+          8,
+          3
+        ],
+        "fov": 51
+      },
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 73
+    },
+    {
+      "profile": "eco",
+      "name": "low",
+      "t": 7.5,
+      "file": "eco-low-on.png",
+      "sha256": "cefb0708ef12b4937e3bdeb488176b5f2bacf03463b4189e4ba3e7aefda3438a",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=on",
+      "camera": [
+        [
+          14,
+          6,
+          38
+        ],
+        [
+          0,
+          8,
+          3
+        ],
+        51
+      ],
+      "fixed": {
+        "position": [
+          14,
+          6,
+          38
+        ],
+        "target": [
+          0,
+          8,
+          3
+        ],
+        "fov": 51
+      },
+      "labels": {},
+      "frustum": [
+        "flower-1",
+        "flower-2",
+        "flower-3",
+        "bud-1",
+        "bud-2",
+        "bud-3",
+        "bud-4",
+        "bud-5"
+      ],
+      "drawCalls": 78
+    },
+    {
+      "profile": "eco",
+      "name": "arrival",
+      "t": 8.45,
+      "file": "eco-arrival-baseline.png",
+      "sha256": "2a5ffcf2bdd34602dbf65edfa1e6def03ae42a9deeedbefaabf64a06128ee663",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=off",
+      "camera": [
+        [
+          5.4,
+          3.4,
+          23
+        ],
+        [
+          0.9,
+          3.6,
+          7
+        ],
+        52
+      ],
+      "fixed": {
+        "position": [
+          5.4,
+          3.4,
+          23
+        ],
+        "target": [
+          0.9,
+          3.6,
+          7
+        ],
+        "fov": 52
+      },
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 68
+    },
+    {
+      "profile": "eco",
+      "name": "arrival",
+      "t": 8.45,
+      "file": "eco-arrival-on.png",
+      "sha256": "2a5ffcf2bdd34602dbf65edfa1e6def03ae42a9deeedbefaabf64a06128ee663",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=on",
+      "camera": [
+        [
+          5.4,
+          3.4,
+          23
+        ],
+        [
+          0.9,
+          3.6,
+          7
+        ],
+        52
+      ],
+      "fixed": {
+        "position": [
+          5.4,
+          3.4,
+          23
+        ],
+        "target": [
+          0.9,
+          3.6,
+          7
+        ],
+        "fov": 52
+      },
+      "labels": {},
+      "frustum": [
+        "bud-1"
+      ],
+      "drawCalls": 73
+    },
+    {
+      "profile": "eco",
+      "name": "aerial",
+      "t": 14.5,
+      "file": "eco-aerial-baseline.png",
+      "sha256": "1777fc6860aac2e1b48dcd17d7ae4ddddb9a3894c13c187daa8be62a42ed586d",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=off",
+      "camera": [
+        [
+          19,
+          40,
+          31
+        ],
+        [
+          0,
+          12,
+          0
+        ],
+        52
+      ],
+      "fixed": {
+        "position": [
+          19,
+          40,
+          31
+        ],
+        "target": [
+          0,
+          12,
+          0
+        ],
+        "fov": 52
+      },
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 73
+    },
+    {
+      "profile": "eco",
+      "name": "aerial",
+      "t": 14.5,
+      "file": "eco-aerial-on.png",
+      "sha256": "a7e32cc2e324aafeb17a38e43c7347340df05517f7b22d172a1778fdfd7b9d6b",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=on",
+      "camera": [
+        [
+          19,
+          40,
+          31
+        ],
+        [
+          0,
+          12,
+          0
+        ],
+        52
+      ],
+      "fixed": {
+        "position": [
+          19,
+          40,
+          31
+        ],
+        "target": [
+          0,
+          12,
+          0
+        ],
+        "fov": 52
+      },
+      "labels": {},
+      "frustum": [
+        "flower-1",
+        "flower-2",
+        "flower-3",
+        "bud-1",
+        "bud-2",
+        "bud-3",
+        "bud-4"
+      ],
+      "drawCalls": 78
+    },
+    {
+      "profile": "eco",
+      "name": "gift",
+      "t": 18.3,
+      "file": "eco-gift-baseline.png",
+      "sha256": "59ec9e5a75b5000d0e009e552808e17495e63f7a5b1cf93d50caf1846f536670",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=off",
+      "camera": [
+        [
+          -0.16453682873832176,
+          1.150806837283168,
+          8.972041251413165
+        ],
+        [
+          1.9971276462426466,
+          0.670806837283168,
+          13.480611612137865
+        ],
+        50
+      ],
+      "labels": {
+        "name": "An",
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.098381300577894,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.598381300577894,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.068381300577894,
+          13.395950450626481
+        ]
+      },
+      "frustum": [],
+      "drawCalls": 36
+    },
+    {
+      "profile": "eco",
+      "name": "gift",
+      "t": 18.3,
+      "file": "eco-gift-on.png",
+      "sha256": "06af98fae459dd0145bac05b8cfafaefe0cff8899503981440def216d7281b9d",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=on",
+      "camera": [
+        [
+          -0.16453682873832176,
+          1.150806837283168,
+          8.972041251413165
+        ],
+        [
+          1.9971276462426466,
+          0.670806837283168,
+          13.480611612137865
+        ],
+        50
+      ],
+      "labels": {
+        "name": "An",
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.098381300577894,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.598381300577894,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.068381300577894,
+          13.395950450626481
+        ]
+      },
+      "frustum": [
+        "flower-1",
+        "bud-1",
+        "bud-5"
+      ],
+      "drawCalls": 41
+    },
+    {
+      "profile": "eco",
+      "name": "lake",
+      "t": 27,
+      "file": "eco-lake-baseline.png",
+      "sha256": "b1b2eb580e9d46c21ee10b8bd17e565ec38b67b0bd3565b56cc1cf55f80921c2",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=off",
+      "camera": [
+        [
+          10,
+          2.25,
+          30
+        ],
+        [
+          2,
+          1.15,
+          13
+        ],
+        53
+      ],
+      "fixed": {
+        "position": [
+          10,
+          2.25,
+          30
+        ],
+        "target": [
+          2,
+          1.15,
+          13
+        ],
+        "fov": 53
+      },
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 73
+    },
+    {
+      "profile": "eco",
+      "name": "lake",
+      "t": 27,
+      "file": "eco-lake-on.png",
+      "sha256": "2514299705d08d6e4587c96a76197a20d408415da4897fc7056385ea8ed4a344",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=on",
+      "camera": [
+        [
+          10,
+          2.25,
+          30
+        ],
+        [
+          2,
+          1.15,
+          13
+        ],
+        53
+      ],
+      "fixed": {
+        "position": [
+          10,
+          2.25,
+          30
+        ],
+        "target": [
+          2,
+          1.15,
+          13
+        ],
+        "fov": 53
+      },
+      "labels": {},
+      "frustum": [
+        "flower-1",
+        "flower-2",
+        "bud-1",
+        "bud-2",
+        "bud-4",
+        "bud-5"
+      ],
+      "drawCalls": 78
+    },
+    {
+      "profile": "eco",
+      "name": "under",
+      "t": 39,
+      "file": "eco-under-baseline.png",
+      "sha256": "4485aaccb27f7f2f17119ee251d7599475310c18c9d73eba13d53f750477eba7",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=off",
+      "camera": [
+        [
+          6,
+          2.8,
+          17
+        ],
+        [
+          0,
+          7,
+          0
+        ],
+        55
+      ],
+      "fixed": {
+        "position": [
+          6,
+          2.8,
+          17
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "fov": 55
+      },
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 37
+    },
+    {
+      "profile": "eco",
+      "name": "under",
+      "t": 39,
+      "file": "eco-under-on.png",
+      "sha256": "4485aaccb27f7f2f17119ee251d7599475310c18c9d73eba13d53f750477eba7",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=on",
+      "camera": [
+        [
+          6,
+          2.8,
+          17
+        ],
+        [
+          0,
+          7,
+          0
+        ],
+        55
+      ],
+      "fixed": {
+        "position": [
+          6,
+          2.8,
+          17
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "fov": 55
+      },
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 42
+    },
+    {
+      "profile": "eco",
+      "name": "return",
+      "t": 85,
+      "file": "eco-return-baseline.png",
+      "sha256": "09a81332e201bd746285fb49622fbe83f02ca517567a3aac961819a9e131407c",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=off",
+      "camera": [
+        [
+          -15.33160644531248,
+          42.66291318359377,
+          21.460706738281257
+        ],
+        [
+          -1.1729318133487663,
+          11.822581807572032,
+          -0.11893082276234779
+        ],
+        50.9895205078125
+      ],
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 73
+    },
+    {
+      "profile": "eco",
+      "name": "return",
+      "t": 85,
+      "file": "eco-return-on.png",
+      "sha256": "471deb4c01b191b47f851af7724e11432943061e81a9d9dfe0edf5cc1beb0533",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=eco&botanicals=on",
+      "camera": [
+        [
+          -15.33160644531248,
+          42.66291318359377,
+          21.460706738281257
+        ],
+        [
+          -1.1729318133487663,
+          11.822581807572032,
+          -0.11893082276234779
+        ],
+        50.9895205078125
+      ],
+      "labels": {},
+      "frustum": [
+        "flower-1",
+        "flower-2",
+        "flower-3",
+        "bud-2",
+        "bud-4"
+      ],
+      "drawCalls": 78
+    },
+    {
+      "profile": "quality",
+      "name": "low",
+      "t": 7.5,
+      "file": "quality-low-baseline.png",
+      "sha256": "591955d29851911b4ca8826854c4b95ad57bf7fe2442c4e426d96ae046795f1e",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=off",
+      "camera": [
+        [
+          14,
+          6,
+          38
+        ],
+        [
+          0,
+          8,
+          3
+        ],
+        51
+      ],
+      "fixed": {
+        "position": [
+          14,
+          6,
+          38
+        ],
+        "target": [
+          0,
+          8,
+          3
+        ],
+        "fov": 51
+      },
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 74
+    },
+    {
+      "profile": "quality",
+      "name": "low",
+      "t": 7.5,
+      "file": "quality-low-on.png",
+      "sha256": "4455ff37c7a1e6c1b9e633f61b092d478844b1ab313f82624cf1ff84e7ee2efe",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=on",
+      "camera": [
+        [
+          14,
+          6,
+          38
+        ],
+        [
+          0,
+          8,
+          3
+        ],
+        51
+      ],
+      "fixed": {
+        "position": [
+          14,
+          6,
+          38
+        ],
+        "target": [
+          0,
+          8,
+          3
+        ],
+        "fov": 51
+      },
+      "labels": {},
+      "frustum": [
+        "flower-1",
+        "flower-2",
+        "flower-3",
+        "bud-1",
+        "bud-2",
+        "bud-3",
+        "bud-4",
+        "bud-5",
+        "flower-4",
+        "flower-5",
+        "bud-6",
+        "bud-7"
+      ],
+      "drawCalls": 79
+    },
+    {
+      "profile": "quality",
+      "name": "arrival",
+      "t": 8.45,
+      "file": "quality-arrival-baseline.png",
+      "sha256": "8f7e6622c69e6370a3deabb1c813c6db4a976b5d7c39814130e4094be3be645d",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=off",
+      "camera": [
+        [
+          5.4,
+          3.4,
+          23
+        ],
+        [
+          0.9,
+          3.6,
+          7
+        ],
+        52
+      ],
+      "fixed": {
+        "position": [
+          5.4,
+          3.4,
+          23
+        ],
+        "target": [
+          0.9,
+          3.6,
+          7
+        ],
+        "fov": 52
+      },
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 69
+    },
+    {
+      "profile": "quality",
+      "name": "arrival",
+      "t": 8.45,
+      "file": "quality-arrival-on.png",
+      "sha256": "d8db81d1b193ffed5a0929ad84314e515fa7e7e056925c2bcf21bf34d38bc308",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=on",
+      "camera": [
+        [
+          5.4,
+          3.4,
+          23
+        ],
+        [
+          0.9,
+          3.6,
+          7
+        ],
+        52
+      ],
+      "fixed": {
+        "position": [
+          5.4,
+          3.4,
+          23
+        ],
+        "target": [
+          0.9,
+          3.6,
+          7
+        ],
+        "fov": 52
+      },
+      "labels": {},
+      "frustum": [
+        "bud-1",
+        "flower-4"
+      ],
+      "drawCalls": 74
+    },
+    {
+      "profile": "quality",
+      "name": "aerial",
+      "t": 14.5,
+      "file": "quality-aerial-baseline.png",
+      "sha256": "d86d01b936ea3f0fb13ba9cfec968a851695b952026a1083fe469f08130c99f9",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=off",
+      "camera": [
+        [
+          19,
+          40,
+          31
+        ],
+        [
+          0,
+          12,
+          0
+        ],
+        52
+      ],
+      "fixed": {
+        "position": [
+          19,
+          40,
+          31
+        ],
+        "target": [
+          0,
+          12,
+          0
+        ],
+        "fov": 52
+      },
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 74
+    },
+    {
+      "profile": "quality",
+      "name": "aerial",
+      "t": 14.5,
+      "file": "quality-aerial-on.png",
+      "sha256": "e3fd0462ca177eb3d4d5e63cfdb76bab85e6eee7875e70565714966511d2c72b",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=on",
+      "camera": [
+        [
+          19,
+          40,
+          31
+        ],
+        [
+          0,
+          12,
+          0
+        ],
+        52
+      ],
+      "fixed": {
+        "position": [
+          19,
+          40,
+          31
+        ],
+        "target": [
+          0,
+          12,
+          0
+        ],
+        "fov": 52
+      },
+      "labels": {},
+      "frustum": [
+        "flower-1",
+        "flower-2",
+        "flower-3",
+        "bud-1",
+        "bud-2",
+        "bud-3",
+        "bud-4",
+        "flower-4",
+        "flower-5",
+        "bud-7"
+      ],
+      "drawCalls": 79
+    },
+    {
+      "profile": "quality",
+      "name": "gift",
+      "t": 18.3,
+      "file": "quality-gift-baseline.png",
+      "sha256": "ed3001228d4a625e5389971f93019d62c21a841713eb559fe7e2c6885e0f55ed",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=off",
+      "camera": [
+        [
+          -0.16453682873832176,
+          1.150806837283168,
+          8.972041251413165
+        ],
+        [
+          1.9971276462426466,
+          0.670806837283168,
+          13.480611612137865
+        ],
+        50
+      ],
+      "labels": {
+        "name": "An",
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.098381300577894,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.598381300577894,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.068381300577894,
+          13.395950450626481
+        ]
+      },
+      "frustum": [],
+      "drawCalls": 38
+    },
+    {
+      "profile": "quality",
+      "name": "gift",
+      "t": 18.3,
+      "file": "quality-gift-on.png",
+      "sha256": "ae4a5d812ca4971faca9de4771f9deafc70de048352dea4752190e708d164d96",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=on",
+      "camera": [
+        [
+          -0.16453682873832176,
+          1.150806837283168,
+          8.972041251413165
+        ],
+        [
+          1.9971276462426466,
+          0.670806837283168,
+          13.480611612137865
+        ],
+        50
+      ],
+      "labels": {
+        "name": "An",
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.098381300577894,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.598381300577894,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.068381300577894,
+          13.395950450626481
+        ]
+      },
+      "frustum": [
+        "flower-1",
+        "bud-1",
+        "bud-5",
+        "flower-4",
+        "bud-6"
+      ],
+      "drawCalls": 43
+    },
+    {
+      "profile": "quality",
+      "name": "lake",
+      "t": 27,
+      "file": "quality-lake-baseline.png",
+      "sha256": "17d70a9ccbba4b300d1b768ff22aea4a88db89260c4167f567cb9f328c1d6d65",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=off",
+      "camera": [
+        [
+          10,
+          2.25,
+          30
+        ],
+        [
+          2,
+          1.15,
+          13
+        ],
+        53
+      ],
+      "fixed": {
+        "position": [
+          10,
+          2.25,
+          30
+        ],
+        "target": [
+          2,
+          1.15,
+          13
+        ],
+        "fov": 53
+      },
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 74
+    },
+    {
+      "profile": "quality",
+      "name": "lake",
+      "t": 27,
+      "file": "quality-lake-on.png",
+      "sha256": "d3d8a2ca27aba4662fe836fa7236e3e7f32e8749d70ed3ef6634bb372c5a47c4",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=on",
+      "camera": [
+        [
+          10,
+          2.25,
+          30
+        ],
+        [
+          2,
+          1.15,
+          13
+        ],
+        53
+      ],
+      "fixed": {
+        "position": [
+          10,
+          2.25,
+          30
+        ],
+        "target": [
+          2,
+          1.15,
+          13
+        ],
+        "fov": 53
+      },
+      "labels": {},
+      "frustum": [
+        "flower-1",
+        "flower-2",
+        "bud-1",
+        "bud-2",
+        "bud-4",
+        "bud-5",
+        "flower-4",
+        "flower-5",
+        "bud-6",
+        "bud-7"
+      ],
+      "drawCalls": 79
+    },
+    {
+      "profile": "quality",
+      "name": "under",
+      "t": 39,
+      "file": "quality-under-baseline.png",
+      "sha256": "e1b1f5e86d637632b4d15f72dac591d33ed473db2fdcca11f7910fb63a167354",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=off",
+      "camera": [
+        [
+          6,
+          2.8,
+          17
+        ],
+        [
+          0,
+          7,
+          0
+        ],
+        55
+      ],
+      "fixed": {
+        "position": [
+          6,
+          2.8,
+          17
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "fov": 55
+      },
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 38
+    },
+    {
+      "profile": "quality",
+      "name": "under",
+      "t": 39,
+      "file": "quality-under-on.png",
+      "sha256": "e1b1f5e86d637632b4d15f72dac591d33ed473db2fdcca11f7910fb63a167354",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=on",
+      "camera": [
+        [
+          6,
+          2.8,
+          17
+        ],
+        [
+          0,
+          7,
+          0
+        ],
+        55
+      ],
+      "fixed": {
+        "position": [
+          6,
+          2.8,
+          17
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "fov": 55
+      },
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 43
+    },
+    {
+      "profile": "quality",
+      "name": "return",
+      "t": 85,
+      "file": "quality-return-baseline.png",
+      "sha256": "6e927d916937bce7bcf61d7d3728687c98cba1a3447d3d7e303d1103611fdd5e",
+      "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+      "url": "http://127.0.0.1:4201/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=off",
+      "camera": [
+        [
+          -15.33160644531248,
+          42.66291318359377,
+          21.460706738281257
+        ],
+        [
+          -1.1729318133487663,
+          11.822581807572032,
+          -0.11893082276234779
+        ],
+        50.9895205078125
+      ],
+      "labels": {},
+      "frustum": [],
+      "drawCalls": 74
+    },
+    {
+      "profile": "quality",
+      "name": "return",
+      "t": 85,
+      "file": "quality-return-on.png",
+      "sha256": "6c083e065348823ac18c4f4d8754fc76d763e48841c58a4ad7413f0eb7400c84",
+      "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+      "url": "http://127.0.0.1:4202/?inspect=1&clean=1&demo=community&seed=9&profile=quality&botanicals=on",
+      "camera": [
+        [
+          -15.33160644531248,
+          42.66291318359377,
+          21.460706738281257
+        ],
+        [
+          -1.1729318133487663,
+          11.822581807572032,
+          -0.11893082276234779
+        ],
+        50.9895205078125
+      ],
+      "labels": {},
+      "frustum": [
+        "flower-1",
+        "flower-2",
+        "flower-3",
+        "bud-2",
+        "bud-4",
+        "flower-5",
+        "bud-7"
+      ],
+      "drawCalls": 79
+    }
+  ],
+  "visualDiffs": {
+    "eco/low": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 1841
+      }
+    },
+    "eco/arrival": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 0
+      }
+    },
+    "eco/aerial": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 1061
+      }
+    },
+    "eco/gift": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 2722
+      },
+      "face": {
+        "region": [
+          260,
+          410,
+          192,
+          195
+        ],
+        "changed": 0
+      },
+      "nameplate": {
+        "region": [
+          318,
+          332,
+          88,
+          58
+        ],
+        "changed": 0
+      },
+      "giftLabel": {
+        "region": [
+          451,
+          509,
+          125,
+          45
+        ],
+        "changed": 0
+      },
+      "fallback": {
+        "region": [
+          238,
+          1090,
+          258,
+          83
+        ],
+        "changed": 0
+      }
+    },
+    "eco/lake": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 3067
+      }
+    },
+    "eco/under": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 0
+      },
+      "goldBark": {
+        "region": [
+          340,
+          290,
+          230,
+          555
+        ],
+        "changed": 0
+      }
+    },
+    "eco/return": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 504
+      }
+    },
+    "quality/low": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 3365
+      }
+    },
+    "quality/arrival": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 436
+      }
+    },
+    "quality/aerial": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 1763
+      }
+    },
+    "quality/gift": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 6658
+      },
+      "face": {
+        "region": [
+          260,
+          410,
+          192,
+          195
+        ],
+        "changed": 0
+      },
+      "nameplate": {
+        "region": [
+          318,
+          332,
+          88,
+          58
+        ],
+        "changed": 0
+      },
+      "giftLabel": {
+        "region": [
+          451,
+          509,
+          125,
+          45
+        ],
+        "changed": 0
+      },
+      "fallback": {
+        "region": [
+          238,
+          1090,
+          258,
+          83
+        ],
+        "changed": 0
+      }
+    },
+    "quality/lake": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 5562
+      }
+    },
+    "quality/under": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 0
+      },
+      "goldBark": {
+        "region": [
+          340,
+          290,
+          230,
+          555
+        ],
+        "changed": 0
+      }
+    },
+    "quality/return": {
+      "frame": {
+        "region": [
+          0,
+          0,
+          720,
+          1280
+        ],
+        "changed": 1031
+      }
+    }
+  }
+}

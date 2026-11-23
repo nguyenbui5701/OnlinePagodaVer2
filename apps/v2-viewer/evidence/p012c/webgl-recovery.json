@@ -1,0 +1,3412 @@
+[
+  {
+    "profile": "eco",
+    "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+    "lostError": 37442,
+    "restoredFrameHash": "59ec9e5a75b5000d0e009e552808e17495e63f7a5b1cf93d50caf1846f536670",
+    "frames": [
+      {
+        "time": 18.3,
+        "glError": 0,
+        "draws": 36,
+        "geo": 21,
+        "textures": 1,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3
+      },
+      {
+        "time": 18.38,
+        "glError": 0,
+        "draws": 36,
+        "geo": 21,
+        "textures": 1,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3
+      },
+      {
+        "time": 18.46,
+        "glError": 0,
+        "draws": 36,
+        "geo": 21,
+        "textures": 1,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3
+      },
+      {
+        "time": 18.54,
+        "glError": 0,
+        "draws": 36,
+        "geo": 21,
+        "textures": 1,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3
+      }
+    ],
+    "phases": [
+      {
+        "name": "before-loss",
+        "logs": []
+      },
+      {
+        "name": "during-loss",
+        "start": 75277.4282,
+        "durationMs": 13.403600000005099,
+        "logs": [
+          {
+            "atMs": 75285.3384,
+            "type": "log",
+            "message": "THREE.WebGLRenderer: Context Lost."
+          }
+        ]
+      },
+      {
+        "name": "restore-event",
+        "start": 75290.8467,
+        "durationMs": 51.931200000006356,
+        "logs": [
+          {
+            "atMs": 75336.517,
+            "type": "log",
+            "message": "THREE.WebGLRenderer: Context Restored."
+          }
+        ]
+      },
+      {
+        "name": "after-restore",
+        "start": 75342.79,
+        "durationMs": 918.1932000000088,
+        "logs": []
+      },
+      {
+        "name": "teardown",
+        "start": 76260.9929,
+        "durationMs": 202.5555000000022,
+        "logs": [
+          {
+            "atMs": 76277.5805,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76277.604,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76277.6381,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76277.652,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76277.6624,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76277.6719,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76277.6822,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76277.7133,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.2174,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.2423,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.2537,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.2655,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.2774,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.2872,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.2976,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.3088,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.3216,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.3328,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.3423,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.352,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.3626,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.374,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76281.3849,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.2158,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.2301,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.2425,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.2525,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.2634,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.2749,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.2899,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.3006,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.3106,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.3214,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.3327,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.3439,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.3555,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.3658,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76282.3759,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76283.816,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76283.8289,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76283.8717,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76283.8855,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76283.9059,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76283.9164,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76283.9263,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76283.9356,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76283.9445,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76283.9719,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.0035,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.0187,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.0299,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.0685,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.6803,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.8133,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.8463,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.8598,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.8705,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.8811,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.8926,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.9023,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.9122,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.9226,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.937,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.9467,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.9595,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76284.9993,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.0186,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.03,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.041,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.4953,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.5076,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.5193,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.5309,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.5423,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.5538,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.5654,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.577,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.5884,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.5998,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.6109,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.6223,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.6342,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.6456,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.6569,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.6677,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76285.717,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.1105,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.1279,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.1423,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.1553,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.6749,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.6875,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.6997,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.7148,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.7272,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.7395,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.7513,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.7631,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.7748,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.7869,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.7977,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.8095,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.8213,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.833,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.8446,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.8564,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.8682,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.8799,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.8916,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.903,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 76295.9141,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          }
+        ]
+      }
+    ],
+    "knownTeardownWarnings": 111
+  },
+  {
+    "profile": "eco",
+    "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+    "lostError": 37442,
+    "restoredFrameHash": "06af98fae459dd0145bac05b8cfafaefe0cff8899503981440def216d7281b9d",
+    "frames": [
+      {
+        "time": 18.3,
+        "glError": 0,
+        "draws": 41,
+        "geo": 26,
+        "textures": 1,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3,
+        "frustum": [
+          "flower-1",
+          "bud-1",
+          "bud-5"
+        ]
+      },
+      {
+        "time": 18.38,
+        "glError": 0,
+        "draws": 41,
+        "geo": 26,
+        "textures": 1,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3,
+        "frustum": [
+          "flower-1",
+          "bud-1",
+          "bud-5"
+        ]
+      },
+      {
+        "time": 18.46,
+        "glError": 0,
+        "draws": 41,
+        "geo": 26,
+        "textures": 1,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3,
+        "frustum": [
+          "flower-1",
+          "bud-1",
+          "bud-5"
+        ]
+      },
+      {
+        "time": 18.54,
+        "glError": 0,
+        "draws": 41,
+        "geo": 26,
+        "textures": 1,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3,
+        "frustum": [
+          "flower-1",
+          "bud-1",
+          "bud-5"
+        ]
+      }
+    ],
+    "phases": [
+      {
+        "name": "before-loss",
+        "logs": []
+      },
+      {
+        "name": "during-loss",
+        "start": 78178.7334,
+        "durationMs": 13.845600000000559,
+        "logs": [
+          {
+            "atMs": 78188.8529,
+            "type": "log",
+            "message": "THREE.WebGLRenderer: Context Lost."
+          }
+        ]
+      },
+      {
+        "name": "restore-event",
+        "start": 78192.5967,
+        "durationMs": 50.82880000000296,
+        "logs": [
+          {
+            "atMs": 78238.4108,
+            "type": "log",
+            "message": "THREE.WebGLRenderer: Context Restored."
+          }
+        ]
+      },
+      {
+        "name": "after-restore",
+        "start": 78243.4325,
+        "durationMs": 913.8585000000021,
+        "logs": []
+      },
+      {
+        "name": "teardown",
+        "start": 79157.3069,
+        "durationMs": 195.64070000000356,
+        "logs": [
+          {
+            "atMs": 79170.7851,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79170.8145,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79170.8591,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79170.8731,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79170.9082,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79170.924,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79170.9626,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79170.9804,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79170.9915,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.0012,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.0115,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.0223,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.0328,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.0731,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.0848,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.1249,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.139,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.1502,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.9233,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.9399,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.9528,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.9636,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.9739,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.9847,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79171.9954,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.0063,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.0167,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.0273,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.0386,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.0504,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.0623,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.3658,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.3795,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.391,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.4028,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.4146,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.4256,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.4368,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.4473,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.4598,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.4714,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79172.4825,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.4379,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.4924,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.5089,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.5521,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.5667,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.6101,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.6267,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.6664,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.6811,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.6926,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.7592,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.801,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.8139,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.8641,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.8771,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79174.9143,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79175.3332,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79175.3517,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79175.3931,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79175.4136,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79184.3981,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79184.4118,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79184.4247,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79184.4358,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79184.4478,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79184.4598,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79184.4708,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.7453,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.7602,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.7724,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.7849,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.797,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.8096,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.8218,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.838,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.8503,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.8624,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.8779,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.8902,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.9026,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.9147,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.9268,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.9392,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.9512,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.9632,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.9752,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.9873,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79191.9991,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.011,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.0229,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.0353,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.0472,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.0592,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.0712,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.0846,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.0965,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.1086,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.1206,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.1374,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.1495,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.1614,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.1734,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.187,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.199,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.2111,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.2229,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.2348,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.2466,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.2586,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.2705,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.2825,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.2946,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.3065,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.3184,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.3304,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.3423,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.3546,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.3664,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.386,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.398,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.4101,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.422,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.4342,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.4462,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.4581,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.4699,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.482,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.4938,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.5057,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.5176,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.5362,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.5933,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.6056,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.6178,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.6299,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.6424,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.6543,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.6664,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 79192.6783,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          }
+        ]
+      }
+    ],
+    "knownTeardownWarnings": 141
+  },
+  {
+    "profile": "quality",
+    "revision": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+    "lostError": 37442,
+    "restoredFrameHash": "ed3001228d4a625e5389971f93019d62c21a841713eb559fe7e2c6885e0f55ed",
+    "frames": [
+      {
+        "time": 18.3,
+        "glError": 0,
+        "draws": 38,
+        "geo": 30,
+        "textures": 2,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3
+      },
+      {
+        "time": 18.38,
+        "glError": 0,
+        "draws": 38,
+        "geo": 30,
+        "textures": 2,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3
+      },
+      {
+        "time": 18.46,
+        "glError": 0,
+        "draws": 38,
+        "geo": 30,
+        "textures": 2,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3
+      },
+      {
+        "time": 18.54,
+        "glError": 0,
+        "draws": 38,
+        "geo": 30,
+        "textures": 2,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3
+      }
+    ],
+    "phases": [
+      {
+        "name": "before-loss",
+        "logs": []
+      },
+      {
+        "name": "during-loss",
+        "start": 81913.6989,
+        "durationMs": 22.627999999996973,
+        "logs": [
+          {
+            "atMs": 81928.8603,
+            "type": "log",
+            "message": "THREE.WebGLRenderer: Context Lost."
+          }
+        ]
+      },
+      {
+        "name": "restore-event",
+        "start": 81936.3459,
+        "durationMs": 64.77150000000256,
+        "logs": [
+          {
+            "atMs": 81996.3552,
+            "type": "log",
+            "message": "THREE.WebGLRenderer: Context Restored."
+          }
+        ]
+      },
+      {
+        "name": "after-restore",
+        "start": 82001.1318,
+        "durationMs": 1678.199099999998,
+        "logs": []
+      },
+      {
+        "name": "teardown",
+        "start": 83679.3407,
+        "durationMs": 546.2381999999925,
+        "logs": [
+          {
+            "atMs": 83732.524,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.545,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.5576,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.57,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.5858,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.5973,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.6084,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.6199,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.7007,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.7333,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.7466,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.7583,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.7696,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.7805,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.792,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.8038,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.8155,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83732.8272,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83736.7052,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83736.9178,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83736.9392,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83736.9526,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83736.9647,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83736.9973,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.0105,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.0223,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.0334,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.0902,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.1043,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.1164,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.1283,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.1402,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.1521,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.164,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.1755,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.1871,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.1989,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.2106,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.2226,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.2335,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.2445,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.2558,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.2691,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.2808,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83737.3365,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.5152,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.5434,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.5562,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.5674,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.5786,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.5892,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.6051,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.8157,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.8317,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.8511,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.8619,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.8731,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.884,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83738.8948,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83739.7352,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.5849,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.612,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.6228,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.6329,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.643,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.6532,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.6644,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.6762,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.6875,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.6987,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.7101,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.7262,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.7367,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.7485,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.7603,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.7719,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.7832,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.7948,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.8103,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.8204,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.8318,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.8441,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.8553,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.8664,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.8811,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.9702,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.983,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83742.9946,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83743.0059,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83743.0166,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83743.0282,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83743.0399,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83743.0514,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.3172,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.359,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.374,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.3891,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.4052,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.4199,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.4609,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.8285,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.8753,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.8894,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.9035,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.9143,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.9294,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.9412,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.9562,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83749.9697,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.0079,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.1237,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.1524,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.1691,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.1833,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.1999,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.2148,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.2319,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.2463,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.2627,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.2768,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.3152,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.3324,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.3451,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.3581,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.3864,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.3975,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.4109,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.428,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.4488,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.4608,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.4761,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.4934,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.5052,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.516,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.5278,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.5391,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.55,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.5622,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.5739,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.5876,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.5998,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.6127,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.6237,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.6339,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.6454,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.6595,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.6719,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.6837,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.6962,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.7082,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.7204,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.7484,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.8015,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.8159,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.86,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.8949,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.9088,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.9197,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.9298,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 83750.9413,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          }
+        ]
+      }
+    ],
+    "knownTeardownWarnings": 160
+  },
+  {
+    "profile": "quality",
+    "revision": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+    "lostError": 37442,
+    "restoredFrameHash": "ae4a5d812ca4971faca9de4771f9deafc70de048352dea4752190e708d164d96",
+    "frames": [
+      {
+        "time": 18.3,
+        "glError": 0,
+        "draws": 43,
+        "geo": 35,
+        "textures": 2,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3,
+        "frustum": [
+          "flower-1",
+          "bud-1",
+          "bud-5",
+          "flower-4",
+          "bud-6"
+        ]
+      },
+      {
+        "time": 18.38,
+        "glError": 0,
+        "draws": 43,
+        "geo": 35,
+        "textures": 2,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3,
+        "frustum": [
+          "flower-1",
+          "bud-1",
+          "bud-5",
+          "flower-4",
+          "bud-6"
+        ]
+      },
+      {
+        "time": 18.46,
+        "glError": 0,
+        "draws": 43,
+        "geo": 35,
+        "textures": 2,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3,
+        "frustum": [
+          "flower-1",
+          "bud-1",
+          "bud-5",
+          "flower-4",
+          "bud-6"
+        ]
+      },
+      {
+        "time": 18.54,
+        "glError": 0,
+        "draws": 43,
+        "geo": 35,
+        "textures": 2,
+        "actor": "demo-1-actor-1",
+        "giftCount": 3,
+        "frustum": [
+          "flower-1",
+          "bud-1",
+          "bud-5",
+          "flower-4",
+          "bud-6"
+        ]
+      }
+    ],
+    "phases": [
+      {
+        "name": "before-loss",
+        "logs": []
+      },
+      {
+        "name": "during-loss",
+        "start": 86426.4693,
+        "durationMs": 21.120100000000093,
+        "logs": [
+          {
+            "atMs": 86441.3449,
+            "type": "log",
+            "message": "THREE.WebGLRenderer: Context Lost."
+          }
+        ]
+      },
+      {
+        "name": "restore-event",
+        "start": 86447.5985,
+        "durationMs": 43.115400000009686,
+        "logs": [
+          {
+            "atMs": 86484.3898,
+            "type": "log",
+            "message": "THREE.WebGLRenderer: Context Restored."
+          }
+        ]
+      },
+      {
+        "name": "after-restore",
+        "start": 86490.7208,
+        "durationMs": 1720.1215000000084,
+        "logs": []
+      },
+      {
+        "name": "teardown",
+        "start": 88210.8545,
+        "durationMs": 600.5981000000029,
+        "logs": [
+          {
+            "atMs": 88236.3608,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.3859,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.4019,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.4137,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.425,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.4373,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.4501,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.4617,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.4734,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.4851,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.496,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.5075,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.5198,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.5323,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.5446,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.5565,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.5707,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.5822,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.5935,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.6049,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.6162,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.628,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.6393,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.6507,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.666,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.6769,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.6886,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.7005,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.7121,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.7278,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.7392,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.7502,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.763,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.7749,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.7865,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.7978,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.8119,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.8224,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.834,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.8454,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.8573,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.8701,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.8821,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.8935,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.9043,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.9153,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.9274,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.9387,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.9503,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.9618,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.9731,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.984,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88236.9946,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.0056,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.0169,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.0286,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.0399,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.0539,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.065,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.076,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.0881,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.0989,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.1103,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.1219,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.1338,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.1446,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.1559,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.1677,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.1844,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.2455,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.2636,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.276,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.3039,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.3172,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.6882,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.7123,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.7336,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.8014,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.8177,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.8295,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.8413,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.8544,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.8657,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.8776,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.89,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.9022,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.9142,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.9257,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88237.9374,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.1649,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.1811,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.194,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.2063,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.2183,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.2395,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.2507,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.2619,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.2739,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.286,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.298,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.3104,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.3221,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.3327,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.3441,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.3552,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.3669,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.3788,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.3903,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.4021,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.4131,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.424,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.4349,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.4465,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.4584,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.4717,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.4841,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.495,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.5059,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.5171,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.5286,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.5404,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.552,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88239.5634,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.0094,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.0297,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.042,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.0528,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.0647,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.0751,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.0907,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.1022,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.1139,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.1253,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.1363,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.1458,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.1557,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.1656,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.1761,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.1872,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.2048,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.2168,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.2291,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.2403,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.2523,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.2637,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.2746,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.2855,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.2968,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.3077,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.319,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.3311,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.3428,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.3536,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.3642,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.376,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.3891,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.4014,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.4137,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88241.4252,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.0695,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.0866,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.103,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.1146,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.1259,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.137,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.1487,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.1601,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.1708,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.2285,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.2617,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.2744,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.2853,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.2961,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.3067,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.3173,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.6867,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.7007,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.711,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.7221,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.7331,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.7437,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.7554,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.7652,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.7748,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88242.7859,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88243.0053,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88243.0199,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: deleteVertexArray: object does not belong to this context"
+          },
+          {
+            "atMs": 88243.0319,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88249.2461,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          },
+          {
+            "atMs": 88251.6942,
+            "type": "warning",
+            "message": "WebGL: INVALID_OPERATION: delete: object does not belong to this context"
+          }
+        ]
+      }
+    ],
+    "knownTeardownWarnings": 190
+  }
+]
