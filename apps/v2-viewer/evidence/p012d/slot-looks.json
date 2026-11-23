@@ -1,0 +1,950 @@
+[
+  {
+    "seed": 9,
+    "profile": "eco",
+    "source": {
+      "commit": "ce0db947e5e9ea4c6214bc900b0cdd9c6a83cced",
+      "ref": "refs/pull/2/head"
+    },
+    "female": {
+      "assetId": "meditator_female_cross_prayer_p05f",
+      "revision": "P05f cross prayer",
+      "sha256": "3ed6946640ed057868b64a9998b1c3a4bf30f28866b3e0c1de9a9ab55c5cc1a4",
+      "bytes": 574608,
+      "meshes": 10,
+      "triangles": 17752,
+      "materials": 21,
+      "usedMaterials": 9,
+      "materialVariants": [
+        "pastel_lilac",
+        "blush_rose",
+        "sage_green",
+        "sky_blue",
+        "warm_cream",
+        "terracotta"
+      ],
+      "animations": [
+        "sit_idle",
+        "cross_prayer_idle"
+      ]
+    },
+    "batches": 33,
+    "looks": [
+      {
+        "slotId": "seat-1",
+        "model": "femaleP05f",
+        "variant": "sage_green",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 14,
+            "name": "ao_ba_ba_pants__sage_green"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 13,
+            "name": "ao_ba_ba_top__sage_green"
+          }
+        ]
+      },
+      {
+        "slotId": "seat-2",
+        "model": "maleP07b1",
+        "variant": "pastel_lilac",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 10,
+            "name": "ao_ba_ba_pants__pastel_lilac"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 9,
+            "name": "ao_ba_ba_top__pastel_lilac"
+          }
+        ]
+      },
+      {
+        "slotId": "seat-3",
+        "model": "femaleP05f",
+        "variant": "warm_cream",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 18,
+            "name": "ao_ba_ba_pants__warm_cream"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 17,
+            "name": "ao_ba_ba_top__warm_cream"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-4",
+        "model": "maleP07b1",
+        "variant": "sage_green",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 14,
+            "name": "ao_ba_ba_pants__sage_green"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 13,
+            "name": "ao_ba_ba_top__sage_green"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-5",
+        "model": "maleP07b1",
+        "variant": "warm_cream",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 18,
+            "name": "ao_ba_ba_pants__warm_cream"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 17,
+            "name": "ao_ba_ba_top__warm_cream"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-6",
+        "model": "maleP07b1",
+        "variant": "pastel_lilac",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 10,
+            "name": "ao_ba_ba_pants__pastel_lilac"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 9,
+            "name": "ao_ba_ba_top__pastel_lilac"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-7",
+        "model": "femaleP05f",
+        "variant": "pastel_lilac",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 10,
+            "name": "ao_ba_ba_pants__pastel_lilac"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 9,
+            "name": "ao_ba_ba_top__pastel_lilac"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-8",
+        "model": "maleP07b1",
+        "variant": "sage_green",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 14,
+            "name": "ao_ba_ba_pants__sage_green"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 13,
+            "name": "ao_ba_ba_top__sage_green"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-9",
+        "model": "femaleP05f",
+        "variant": "sage_green",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 14,
+            "name": "ao_ba_ba_pants__sage_green"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 13,
+            "name": "ao_ba_ba_top__sage_green"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-10",
+        "model": "femaleP05f",
+        "variant": "warm_cream",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 18,
+            "name": "ao_ba_ba_pants__warm_cream"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 17,
+            "name": "ao_ba_ba_top__warm_cream"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-11",
+        "model": "maleP07b1",
+        "variant": "warm_cream",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 18,
+            "name": "ao_ba_ba_pants__warm_cream"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 17,
+            "name": "ao_ba_ba_top__warm_cream"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-12",
+        "model": "femaleP05f",
+        "variant": "pastel_lilac",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 10,
+            "name": "ao_ba_ba_pants__pastel_lilac"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 9,
+            "name": "ao_ba_ba_top__pastel_lilac"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seed": 9,
+    "profile": "quality",
+    "source": {
+      "commit": "ce0db947e5e9ea4c6214bc900b0cdd9c6a83cced",
+      "ref": "refs/pull/2/head"
+    },
+    "female": {
+      "assetId": "meditator_female_cross_prayer_p05f",
+      "revision": "P05f cross prayer",
+      "sha256": "3ed6946640ed057868b64a9998b1c3a4bf30f28866b3e0c1de9a9ab55c5cc1a4",
+      "bytes": 574608,
+      "meshes": 10,
+      "triangles": 17752,
+      "materials": 21,
+      "usedMaterials": 9,
+      "materialVariants": [
+        "pastel_lilac",
+        "blush_rose",
+        "sage_green",
+        "sky_blue",
+        "warm_cream",
+        "terracotta"
+      ],
+      "animations": [
+        "sit_idle",
+        "cross_prayer_idle"
+      ]
+    },
+    "batches": 39,
+    "looks": [
+      {
+        "slotId": "seat-1",
+        "model": "femaleP05f",
+        "variant": "terracotta",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 20,
+            "name": "ao_ba_ba_pants__terracotta"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 19,
+            "name": "ao_ba_ba_top__terracotta"
+          }
+        ]
+      },
+      {
+        "slotId": "seat-2",
+        "model": "maleP07b1",
+        "variant": "blush_rose",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 12,
+            "name": "ao_ba_ba_pants__blush_rose"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 11,
+            "name": "ao_ba_ba_top__blush_rose"
+          }
+        ]
+      },
+      {
+        "slotId": "seat-3",
+        "model": "femaleP05f",
+        "variant": "sage_green",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 14,
+            "name": "ao_ba_ba_pants__sage_green"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 13,
+            "name": "ao_ba_ba_top__sage_green"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-4",
+        "model": "maleP07b1",
+        "variant": "terracotta",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 20,
+            "name": "ao_ba_ba_pants__terracotta"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 19,
+            "name": "ao_ba_ba_top__terracotta"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-5",
+        "model": "maleP07b1",
+        "variant": "sky_blue",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 16,
+            "name": "ao_ba_ba_pants__sky_blue"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 15,
+            "name": "ao_ba_ba_top__sky_blue"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-6",
+        "model": "maleP07b1",
+        "variant": "pastel_lilac",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 10,
+            "name": "ao_ba_ba_pants__pastel_lilac"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 9,
+            "name": "ao_ba_ba_top__pastel_lilac"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-7",
+        "model": "femaleP05f",
+        "variant": "warm_cream",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 18,
+            "name": "ao_ba_ba_pants__warm_cream"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 17,
+            "name": "ao_ba_ba_top__warm_cream"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-8",
+        "model": "maleP07b1",
+        "variant": "sage_green",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 14,
+            "name": "ao_ba_ba_pants__sage_green"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 13,
+            "name": "ao_ba_ba_top__sage_green"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-9",
+        "model": "femaleP05f",
+        "variant": "pastel_lilac",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 10,
+            "name": "ao_ba_ba_pants__pastel_lilac"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 9,
+            "name": "ao_ba_ba_top__pastel_lilac"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-10",
+        "model": "femaleP05f",
+        "variant": "blush_rose",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 12,
+            "name": "ao_ba_ba_pants__blush_rose"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 11,
+            "name": "ao_ba_ba_top__blush_rose"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-11",
+        "model": "maleP07b1",
+        "variant": "warm_cream",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 18,
+            "name": "ao_ba_ba_pants__warm_cream"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 17,
+            "name": "ao_ba_ba_top__warm_cream"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-12",
+        "model": "femaleP05f",
+        "variant": "sky_blue",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 16,
+            "name": "ao_ba_ba_pants__sky_blue"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 15,
+            "name": "ao_ba_ba_top__sky_blue"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seed": 71,
+    "profile": "eco",
+    "source": {
+      "commit": "ce0db947e5e9ea4c6214bc900b0cdd9c6a83cced",
+      "ref": "refs/pull/2/head"
+    },
+    "female": {
+      "assetId": "meditator_female_cross_prayer_p05f",
+      "revision": "P05f cross prayer",
+      "sha256": "3ed6946640ed057868b64a9998b1c3a4bf30f28866b3e0c1de9a9ab55c5cc1a4",
+      "bytes": 574608,
+      "meshes": 10,
+      "triangles": 17752,
+      "materials": 21,
+      "usedMaterials": 9,
+      "materialVariants": [
+        "pastel_lilac",
+        "blush_rose",
+        "sage_green",
+        "sky_blue",
+        "warm_cream",
+        "terracotta"
+      ],
+      "animations": [
+        "sit_idle",
+        "cross_prayer_idle"
+      ]
+    },
+    "batches": 33,
+    "looks": [
+      {
+        "slotId": "seat-1",
+        "model": "femaleP05f",
+        "variant": "sage_green",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 14,
+            "name": "ao_ba_ba_pants__sage_green"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 13,
+            "name": "ao_ba_ba_top__sage_green"
+          }
+        ]
+      },
+      {
+        "slotId": "seat-2",
+        "model": "maleP07b1",
+        "variant": "sage_green",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 14,
+            "name": "ao_ba_ba_pants__sage_green"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 13,
+            "name": "ao_ba_ba_top__sage_green"
+          }
+        ]
+      },
+      {
+        "slotId": "seat-3",
+        "model": "maleP07b1",
+        "variant": "pastel_lilac",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 10,
+            "name": "ao_ba_ba_pants__pastel_lilac"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 9,
+            "name": "ao_ba_ba_top__pastel_lilac"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-4",
+        "model": "femaleP05f",
+        "variant": "warm_cream",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 18,
+            "name": "ao_ba_ba_pants__warm_cream"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 17,
+            "name": "ao_ba_ba_top__warm_cream"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-5",
+        "model": "maleP07b1",
+        "variant": "warm_cream",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 18,
+            "name": "ao_ba_ba_pants__warm_cream"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 17,
+            "name": "ao_ba_ba_top__warm_cream"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-6",
+        "model": "maleP07b1",
+        "variant": "sage_green",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 14,
+            "name": "ao_ba_ba_pants__sage_green"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 13,
+            "name": "ao_ba_ba_top__sage_green"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-7",
+        "model": "femaleP05f",
+        "variant": "pastel_lilac",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 10,
+            "name": "ao_ba_ba_pants__pastel_lilac"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 9,
+            "name": "ao_ba_ba_top__pastel_lilac"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-8",
+        "model": "femaleP05f",
+        "variant": "sage_green",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 14,
+            "name": "ao_ba_ba_pants__sage_green"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 13,
+            "name": "ao_ba_ba_top__sage_green"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-9",
+        "model": "femaleP05f",
+        "variant": "warm_cream",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 18,
+            "name": "ao_ba_ba_pants__warm_cream"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 17,
+            "name": "ao_ba_ba_top__warm_cream"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-10",
+        "model": "maleP07b1",
+        "variant": "pastel_lilac",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 10,
+            "name": "ao_ba_ba_pants__pastel_lilac"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 9,
+            "name": "ao_ba_ba_top__pastel_lilac"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-11",
+        "model": "maleP07b1",
+        "variant": "warm_cream",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 18,
+            "name": "ao_ba_ba_pants__warm_cream"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 17,
+            "name": "ao_ba_ba_top__warm_cream"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-12",
+        "model": "femaleP05f",
+        "variant": "pastel_lilac",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 10,
+            "name": "ao_ba_ba_pants__pastel_lilac"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 9,
+            "name": "ao_ba_ba_top__pastel_lilac"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seed": 71,
+    "profile": "quality",
+    "source": {
+      "commit": "ce0db947e5e9ea4c6214bc900b0cdd9c6a83cced",
+      "ref": "refs/pull/2/head"
+    },
+    "female": {
+      "assetId": "meditator_female_cross_prayer_p05f",
+      "revision": "P05f cross prayer",
+      "sha256": "3ed6946640ed057868b64a9998b1c3a4bf30f28866b3e0c1de9a9ab55c5cc1a4",
+      "bytes": 574608,
+      "meshes": 10,
+      "triangles": 17752,
+      "materials": 21,
+      "usedMaterials": 9,
+      "materialVariants": [
+        "pastel_lilac",
+        "blush_rose",
+        "sage_green",
+        "sky_blue",
+        "warm_cream",
+        "terracotta"
+      ],
+      "animations": [
+        "sit_idle",
+        "cross_prayer_idle"
+      ]
+    },
+    "batches": 39,
+    "looks": [
+      {
+        "slotId": "seat-1",
+        "model": "femaleP05f",
+        "variant": "pastel_lilac",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 10,
+            "name": "ao_ba_ba_pants__pastel_lilac"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 9,
+            "name": "ao_ba_ba_top__pastel_lilac"
+          }
+        ]
+      },
+      {
+        "slotId": "seat-2",
+        "model": "maleP07b1",
+        "variant": "sky_blue",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 16,
+            "name": "ao_ba_ba_pants__sky_blue"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 15,
+            "name": "ao_ba_ba_top__sky_blue"
+          }
+        ]
+      },
+      {
+        "slotId": "seat-3",
+        "model": "maleP07b1",
+        "variant": "sage_green",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 14,
+            "name": "ao_ba_ba_pants__sage_green"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 13,
+            "name": "ao_ba_ba_top__sage_green"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-4",
+        "model": "femaleP05f",
+        "variant": "blush_rose",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 12,
+            "name": "ao_ba_ba_pants__blush_rose"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 11,
+            "name": "ao_ba_ba_top__blush_rose"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-5",
+        "model": "maleP07b1",
+        "variant": "terracotta",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 20,
+            "name": "ao_ba_ba_pants__terracotta"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 19,
+            "name": "ao_ba_ba_top__terracotta"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-6",
+        "model": "maleP07b1",
+        "variant": "pastel_lilac",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 10,
+            "name": "ao_ba_ba_pants__pastel_lilac"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 9,
+            "name": "ao_ba_ba_top__pastel_lilac"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-7",
+        "model": "femaleP05f",
+        "variant": "sage_green",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 14,
+            "name": "ao_ba_ba_pants__sage_green"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 13,
+            "name": "ao_ba_ba_top__sage_green"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-8",
+        "model": "femaleP05f",
+        "variant": "terracotta",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 20,
+            "name": "ao_ba_ba_pants__terracotta"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 19,
+            "name": "ao_ba_ba_top__terracotta"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-9",
+        "model": "femaleP05f",
+        "variant": "warm_cream",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 18,
+            "name": "ao_ba_ba_pants__warm_cream"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 17,
+            "name": "ao_ba_ba_top__warm_cream"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-10",
+        "model": "maleP07b1",
+        "variant": "blush_rose",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 12,
+            "name": "ao_ba_ba_pants__blush_rose"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 11,
+            "name": "ao_ba_ba_top__blush_rose"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-11",
+        "model": "maleP07b1",
+        "variant": "warm_cream",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 18,
+            "name": "ao_ba_ba_pants__warm_cream"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 17,
+            "name": "ao_ba_ba_top__warm_cream"
+          }
+        ]
+      },
+      {
+        "slotId": "visual-12",
+        "model": "femaleP05f",
+        "variant": "sky_blue",
+        "materials": [
+          {
+            "mesh": "ao_ba_ba_pants_SeatRoot_object",
+            "index": 16,
+            "name": "ao_ba_ba_pants__sky_blue"
+          },
+          {
+            "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+            "index": 15,
+            "name": "ao_ba_ba_top__sky_blue"
+          }
+        ]
+      }
+    ]
+  }
+]

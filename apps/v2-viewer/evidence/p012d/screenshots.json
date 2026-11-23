@@ -1,0 +1,1801 @@
+[
+  {
+    "file": "eco-low-baseline.png",
+    "sha256": "cefb0708ef12b4937e3bdeb488176b5f2bacf03463b4189e4ba3e7aefda3438a",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=eco",
+    "profile": "eco",
+    "seed": 9,
+    "time": 7.5,
+    "position": [
+      14,
+      6,
+      38
+    ],
+    "target": [
+      0,
+      8,
+      3
+    ],
+    "fov": 51,
+    "labels": {}
+  },
+  {
+    "file": "eco-low-on.png",
+    "sha256": "aafe6a5ac204b1b3505e75a864fdf4b7746bc1f9400ef231da8b96717883165b",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 7.5,
+    "position": [
+      14,
+      6,
+      38
+    ],
+    "target": [
+      0,
+      8,
+      3
+    ],
+    "fov": 51,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "sage_green",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 14,
+          "name": "ao_ba_ba_pants__sage_green"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 13,
+          "name": "ao_ba_ba_top__sage_green"
+        }
+      ]
+    }
+  },
+  {
+    "file": "eco-before-arrival-baseline.png",
+    "sha256": "cfddb3412bd199dadafa573d402c40d9ad35616920cbcd1796163dbac58bf03d",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=eco",
+    "profile": "eco",
+    "seed": 9,
+    "time": 7.95,
+    "position": [
+      5.4,
+      3.4,
+      23
+    ],
+    "target": [
+      0.9,
+      3.6,
+      7
+    ],
+    "fov": 52,
+    "labels": {}
+  },
+  {
+    "file": "eco-before-arrival-on.png",
+    "sha256": "d81e854b47d8833b0a60453b779125add2ec7856be18bb41ab86bea0669cb751",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 7.95,
+    "position": [
+      5.4,
+      3.4,
+      23
+    ],
+    "target": [
+      0.9,
+      3.6,
+      7
+    ],
+    "fov": 52,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "sage_green",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 14,
+          "name": "ao_ba_ba_pants__sage_green"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 13,
+          "name": "ao_ba_ba_top__sage_green"
+        }
+      ]
+    }
+  },
+  {
+    "file": "eco-arrival-baseline.png",
+    "sha256": "2a5ffcf2bdd34602dbf65edfa1e6def03ae42a9deeedbefaabf64a06128ee663",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=eco",
+    "profile": "eco",
+    "seed": 9,
+    "time": 8.45,
+    "position": [
+      5.4,
+      3.4,
+      23
+    ],
+    "target": [
+      0.9,
+      3.6,
+      7
+    ],
+    "fov": 52,
+    "labels": {}
+  },
+  {
+    "file": "eco-arrival-on.png",
+    "sha256": "ac88ad572c144448f20ea99c9c52d61f907f2a981e22a04e3106f403c3d98bdc",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 8.45,
+    "position": [
+      5.4,
+      3.4,
+      23
+    ],
+    "target": [
+      0.9,
+      3.6,
+      7
+    ],
+    "fov": 52,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "sage_green",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 14,
+          "name": "ao_ba_ba_pants__sage_green"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 13,
+          "name": "ao_ba_ba_top__sage_green"
+        }
+      ]
+    }
+  },
+  {
+    "file": "eco-aerial-baseline.png",
+    "sha256": "a7e32cc2e324aafeb17a38e43c7347340df05517f7b22d172a1778fdfd7b9d6b",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=eco",
+    "profile": "eco",
+    "seed": 9,
+    "time": 14.5,
+    "position": [
+      19,
+      40,
+      31
+    ],
+    "target": [
+      0,
+      12,
+      0
+    ],
+    "fov": 52,
+    "labels": {}
+  },
+  {
+    "file": "eco-aerial-on.png",
+    "sha256": "ed420318db87c1165d9326ea9069ebedc574d4f906cd87a93b42b90838bd1d1d",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 14.5,
+    "position": [
+      19,
+      40,
+      31
+    ],
+    "target": [
+      0,
+      12,
+      0
+    ],
+    "fov": 52,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "sage_green",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 14,
+          "name": "ao_ba_ba_pants__sage_green"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 13,
+          "name": "ao_ba_ba_top__sage_green"
+        }
+      ]
+    }
+  },
+  {
+    "file": "eco-gift-baseline.png",
+    "sha256": "06af98fae459dd0145bac05b8cfafaefe0cff8899503981440def216d7281b9d",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=eco",
+    "profile": "eco",
+    "seed": 9,
+    "time": 18.3,
+    "position": [
+      -0.16453682873832176,
+      1.150806837283168,
+      8.972041251413165
+    ],
+    "target": [
+      1.9971276462426466,
+      0.670806837283168,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {
+      "name": "An",
+      "fx": "2 hoa hồng",
+      "fallback": "Duyên · 1 hoa hồng"
+    },
+    "focus": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "requestId": "demo-1-gift-1",
+      "name": "An",
+      "headWorld": [
+        1.9941380535564215,
+        1.098381300577894,
+        13.460431861505846
+      ],
+      "nameWorld": [
+        1.9956035401673162,
+        1.598381300577894,
+        13.470323896129385
+      ],
+      "fxWorld": [
+        1.6105469331547537,
+        1.068381300577894,
+        13.395950450626481
+      ]
+    }
+  },
+  {
+    "file": "eco-gift-on.png",
+    "sha256": "d01ac552f58f5f57ff06185fa5ccff3af6b96814dfc8b6c9c5cf07de111f5645",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 18.3,
+    "position": [
+      -0.16453682873832176,
+      1.150806837283168,
+      8.972041251413165
+    ],
+    "target": [
+      1.9971276462426466,
+      0.670806837283168,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {
+      "name": "An",
+      "fx": "2 hoa hồng",
+      "fallback": "Duyên · 1 hoa hồng"
+    },
+    "focus": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "requestId": "demo-1-gift-1",
+      "name": "An",
+      "headWorld": [
+        1.9941380535564215,
+        1.098381300577894,
+        13.460431861505846
+      ],
+      "nameWorld": [
+        1.9956035401673162,
+        1.598381300577894,
+        13.470323896129385
+      ],
+      "fxWorld": [
+        1.6105469331547537,
+        1.068381300577894,
+        13.395950450626481
+      ]
+    },
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "sage_green",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 14,
+          "name": "ao_ba_ba_pants__sage_green"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 13,
+          "name": "ao_ba_ba_top__sage_green"
+        }
+      ]
+    }
+  },
+  {
+    "file": "eco-lake-baseline.png",
+    "sha256": "2514299705d08d6e4587c96a76197a20d408415da4897fc7056385ea8ed4a344",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=eco",
+    "profile": "eco",
+    "seed": 9,
+    "time": 27,
+    "position": [
+      10,
+      2.25,
+      30
+    ],
+    "target": [
+      2,
+      1.15,
+      13
+    ],
+    "fov": 53,
+    "labels": {}
+  },
+  {
+    "file": "eco-lake-on.png",
+    "sha256": "9a4c6acd934cc88bce0e1b35cddba2cf7bb2d3078c0a80562b1f85f53f906afd",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 27,
+    "position": [
+      10,
+      2.25,
+      30
+    ],
+    "target": [
+      2,
+      1.15,
+      13
+    ],
+    "fov": 53,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "sage_green",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 14,
+          "name": "ao_ba_ba_pants__sage_green"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 13,
+          "name": "ao_ba_ba_top__sage_green"
+        }
+      ]
+    }
+  },
+  {
+    "file": "eco-under-baseline.png",
+    "sha256": "4485aaccb27f7f2f17119ee251d7599475310c18c9d73eba13d53f750477eba7",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=eco",
+    "profile": "eco",
+    "seed": 9,
+    "time": 39,
+    "position": [
+      6,
+      2.8,
+      17
+    ],
+    "target": [
+      0,
+      7,
+      0
+    ],
+    "fov": 55,
+    "labels": {}
+  },
+  {
+    "file": "eco-under-on.png",
+    "sha256": "8db58b73347622e8118f2be925d3da8bb39545c5b29b4af57a6357fd0c11145a",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 39,
+    "position": [
+      6,
+      2.8,
+      17
+    ],
+    "target": [
+      0,
+      7,
+      0
+    ],
+    "fov": 55,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "sage_green",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 14,
+          "name": "ao_ba_ba_pants__sage_green"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 13,
+          "name": "ao_ba_ba_top__sage_green"
+        }
+      ]
+    }
+  },
+  {
+    "file": "eco-return-baseline.png",
+    "sha256": "471deb4c01b191b47f851af7724e11432943061e81a9d9dfe0edf5cc1beb0533",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=eco",
+    "profile": "eco",
+    "seed": 9,
+    "time": 85,
+    "position": [
+      -15.33160644531248,
+      42.66291318359377,
+      21.460706738281257
+    ],
+    "target": [
+      -1.1729318133487663,
+      11.822581807572032,
+      -0.11893082276234779
+    ],
+    "fov": 50.9895205078125,
+    "labels": {}
+  },
+  {
+    "file": "eco-return-on.png",
+    "sha256": "b9971088af6e04460aab01b8dbe6e3b5d143959e89611e733c92d934e5bb4dc0",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 85,
+    "position": [
+      -15.33160644531248,
+      42.66291318359377,
+      21.460706738281257
+    ],
+    "target": [
+      -1.1729318133487663,
+      11.822581807572032,
+      -0.11893082276234779
+    ],
+    "fov": 50.9895205078125,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "sage_green",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 14,
+          "name": "ao_ba_ba_pants__sage_green"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 13,
+          "name": "ao_ba_ba_top__sage_green"
+        }
+      ]
+    }
+  },
+  {
+    "file": "eco-female-side-0.png",
+    "sha256": "b6aac23906474e61409bd49a8fcbfcdbea63c465fd167205d103731882c0c9bd",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 0,
+    "position": [
+      -3.3477605447630108,
+      1.14915,
+      13.24679496249909
+    ],
+    "target": [
+      1.9971276462426466,
+      0.6691499999999999,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 0,
+    "angle": 1.38,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "eco-female-side-0.5.png",
+    "sha256": "10a65fd4cbb5b2f2b81d37ab2b69a2f0e3bcb024d89abde1118b45c9fceb6278",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 0.5,
+    "position": [
+      -3.3477605447630108,
+      1.15307000018619,
+      13.24679496249909
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67307000018619,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 0.5,
+    "angle": 1.38,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "eco-female-side-1.png",
+    "sha256": "b575dbc63df9e06fd86c10ddbbdd122700f32d0d35da4a44fa69448fefbcddb7",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 1,
+    "position": [
+      -3.3477605447630108,
+      1.1569900003723799,
+      13.24679496249909
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67699000037238,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 1,
+    "angle": 1.38,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "eco-female-side-1.5.png",
+    "sha256": "a2d70dd5a0b7bca2f17c74f6b15f3c84c6dfbae0a04359c54c5079e143eba1b5",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 1.5,
+    "position": [
+      -3.3477605447630108,
+      1.15307000018619,
+      13.24679496249909
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67307000018619,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 1.5,
+    "angle": 1.38,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "eco-female-side-2.png",
+    "sha256": "8ef57db739b851a5bda9836e5464d6d2c36d3f53663c4fee5491721e7994d412",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 2,
+    "position": [
+      -3.3477605447630108,
+      1.14915,
+      13.24679496249909
+    ],
+    "target": [
+      1.9971276462426466,
+      0.6691499999999999,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 2,
+    "angle": 1.38,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "eco-female-three-quarter-0.png",
+    "sha256": "8b076d9aaee328cce8c81e1907aa365a7af62ea622169d1a2eb167ae76110a82",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 2,
+    "position": [
+      -1.4374671933019572,
+      1.14915,
+      9.378653751777328
+    ],
+    "target": [
+      1.9971276462426466,
+      0.6691499999999999,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 0,
+    "angle": 0.55,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "eco-female-three-quarter-0.5.png",
+    "sha256": "2ffdac2d1382e6907df57b587e14fdf4640b830c20308b4750fe6a4a6ef692fa",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 2.5,
+    "position": [
+      -1.4374671933019572,
+      1.15307000018619,
+      9.378653751777328
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67307000018619,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 0.5,
+    "angle": 0.55,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "eco-female-three-quarter-1.png",
+    "sha256": "8bebe7ef2347b1ff29c6a233180f8486670a31a5e5249cf51b8592aa3db1e3a3",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 3,
+    "position": [
+      -1.4374671933019572,
+      1.1569900003723799,
+      9.378653751777328
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67699000037238,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 1,
+    "angle": 0.55,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "eco-female-three-quarter-1.5.png",
+    "sha256": "d0d3d4098728de51267d029afd24010e0aca26ec3bf988744ce7c0ccf1d60c6a",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 3.5,
+    "position": [
+      -1.4374671933019572,
+      1.15307000018619,
+      9.378653751777328
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67307000018619,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 1.5,
+    "angle": 0.55,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "eco-female-three-quarter-2.png",
+    "sha256": "b7016d6a7586305cfcdf2c364cf847eae9cf76cd62b9bf420d48741ea9869aa6",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 4,
+    "position": [
+      -1.4374671933019572,
+      1.14915,
+      9.378653751777328
+    ],
+    "target": [
+      1.9971276462426466,
+      0.6691499999999999,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 2,
+    "angle": 0.55,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "quality-low-baseline.png",
+    "sha256": "4455ff37c7a1e6c1b9e633f61b092d478844b1ab313f82624cf1ff84e7ee2efe",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=quality",
+    "profile": "quality",
+    "seed": 9,
+    "time": 7.5,
+    "position": [
+      14,
+      6,
+      38
+    ],
+    "target": [
+      0,
+      8,
+      3
+    ],
+    "fov": 51,
+    "labels": {}
+  },
+  {
+    "file": "quality-low-on.png",
+    "sha256": "dd9a217e62cd5fd0e6f8a1e757eb3cc454e351bf288c741ed421b8cfe543d184",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 7.5,
+    "position": [
+      14,
+      6,
+      38
+    ],
+    "target": [
+      0,
+      8,
+      3
+    ],
+    "fov": 51,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "terracotta",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 20,
+          "name": "ao_ba_ba_pants__terracotta"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 19,
+          "name": "ao_ba_ba_top__terracotta"
+        }
+      ]
+    }
+  },
+  {
+    "file": "quality-before-arrival-baseline.png",
+    "sha256": "aceb6696327ae16b053134d81fc23c69db4f3e969db1a86183e7c0db1df97536",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=quality",
+    "profile": "quality",
+    "seed": 9,
+    "time": 7.95,
+    "position": [
+      5.4,
+      3.4,
+      23
+    ],
+    "target": [
+      0.9,
+      3.6,
+      7
+    ],
+    "fov": 52,
+    "labels": {}
+  },
+  {
+    "file": "quality-before-arrival-on.png",
+    "sha256": "8f37554d7da06526d92b16a5154522783587ef6f5e6364b3f06cd5f396111bd2",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 7.95,
+    "position": [
+      5.4,
+      3.4,
+      23
+    ],
+    "target": [
+      0.9,
+      3.6,
+      7
+    ],
+    "fov": 52,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "terracotta",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 20,
+          "name": "ao_ba_ba_pants__terracotta"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 19,
+          "name": "ao_ba_ba_top__terracotta"
+        }
+      ]
+    }
+  },
+  {
+    "file": "quality-arrival-baseline.png",
+    "sha256": "d8db81d1b193ffed5a0929ad84314e515fa7e7e056925c2bcf21bf34d38bc308",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=quality",
+    "profile": "quality",
+    "seed": 9,
+    "time": 8.45,
+    "position": [
+      5.4,
+      3.4,
+      23
+    ],
+    "target": [
+      0.9,
+      3.6,
+      7
+    ],
+    "fov": 52,
+    "labels": {}
+  },
+  {
+    "file": "quality-arrival-on.png",
+    "sha256": "6ec29f779c7b3bbcb61cd1df1593bf37ef3dcfa0539d42d6978dca754180e8fd",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 8.45,
+    "position": [
+      5.4,
+      3.4,
+      23
+    ],
+    "target": [
+      0.9,
+      3.6,
+      7
+    ],
+    "fov": 52,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "terracotta",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 20,
+          "name": "ao_ba_ba_pants__terracotta"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 19,
+          "name": "ao_ba_ba_top__terracotta"
+        }
+      ]
+    }
+  },
+  {
+    "file": "quality-aerial-baseline.png",
+    "sha256": "e3fd0462ca177eb3d4d5e63cfdb76bab85e6eee7875e70565714966511d2c72b",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=quality",
+    "profile": "quality",
+    "seed": 9,
+    "time": 14.5,
+    "position": [
+      19,
+      40,
+      31
+    ],
+    "target": [
+      0,
+      12,
+      0
+    ],
+    "fov": 52,
+    "labels": {}
+  },
+  {
+    "file": "quality-aerial-on.png",
+    "sha256": "931c44d9da55a8cbed704ae26dfb1e48f1d35ca268e3ac9bb6ba6ac9d81c52aa",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 14.5,
+    "position": [
+      19,
+      40,
+      31
+    ],
+    "target": [
+      0,
+      12,
+      0
+    ],
+    "fov": 52,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "terracotta",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 20,
+          "name": "ao_ba_ba_pants__terracotta"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 19,
+          "name": "ao_ba_ba_top__terracotta"
+        }
+      ]
+    }
+  },
+  {
+    "file": "quality-gift-baseline.png",
+    "sha256": "ae4a5d812ca4971faca9de4771f9deafc70de048352dea4752190e708d164d96",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=quality",
+    "profile": "quality",
+    "seed": 9,
+    "time": 18.3,
+    "position": [
+      -0.16453682873832176,
+      1.150806837283168,
+      8.972041251413165
+    ],
+    "target": [
+      1.9971276462426466,
+      0.670806837283168,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {
+      "name": "An",
+      "fx": "2 hoa hồng",
+      "fallback": "Duyên · 1 hoa hồng"
+    },
+    "focus": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "requestId": "demo-1-gift-1",
+      "name": "An",
+      "headWorld": [
+        1.9941380535564215,
+        1.098381300577894,
+        13.460431861505846
+      ],
+      "nameWorld": [
+        1.9956035401673162,
+        1.598381300577894,
+        13.470323896129385
+      ],
+      "fxWorld": [
+        1.6105469331547537,
+        1.068381300577894,
+        13.395950450626481
+      ]
+    }
+  },
+  {
+    "file": "quality-gift-on.png",
+    "sha256": "06683f3b2261edfe351d2f8d99f3f7cb8201d8d805ad11baf5ed158ec4f36800",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 18.3,
+    "position": [
+      -0.16453682873832176,
+      1.150806837283168,
+      8.972041251413165
+    ],
+    "target": [
+      1.9971276462426466,
+      0.670806837283168,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {
+      "name": "An",
+      "fx": "2 hoa hồng",
+      "fallback": "Duyên · 1 hoa hồng"
+    },
+    "focus": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "requestId": "demo-1-gift-1",
+      "name": "An",
+      "headWorld": [
+        1.9941380535564215,
+        1.098381300577894,
+        13.460431861505846
+      ],
+      "nameWorld": [
+        1.9956035401673162,
+        1.598381300577894,
+        13.470323896129385
+      ],
+      "fxWorld": [
+        1.6105469331547537,
+        1.068381300577894,
+        13.395950450626481
+      ]
+    },
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "terracotta",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 20,
+          "name": "ao_ba_ba_pants__terracotta"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 19,
+          "name": "ao_ba_ba_top__terracotta"
+        }
+      ]
+    }
+  },
+  {
+    "file": "quality-lake-baseline.png",
+    "sha256": "d3d8a2ca27aba4662fe836fa7236e3e7f32e8749d70ed3ef6634bb372c5a47c4",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=quality",
+    "profile": "quality",
+    "seed": 9,
+    "time": 27,
+    "position": [
+      10,
+      2.25,
+      30
+    ],
+    "target": [
+      2,
+      1.15,
+      13
+    ],
+    "fov": 53,
+    "labels": {}
+  },
+  {
+    "file": "quality-lake-on.png",
+    "sha256": "192f61cc5ca5a674613aec66a1f36cde8ab579c4a70cc7d87c4979ea292974bc",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 27,
+    "position": [
+      10,
+      2.25,
+      30
+    ],
+    "target": [
+      2,
+      1.15,
+      13
+    ],
+    "fov": 53,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "terracotta",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 20,
+          "name": "ao_ba_ba_pants__terracotta"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 19,
+          "name": "ao_ba_ba_top__terracotta"
+        }
+      ]
+    }
+  },
+  {
+    "file": "quality-under-baseline.png",
+    "sha256": "e1b1f5e86d637632b4d15f72dac591d33ed473db2fdcca11f7910fb63a167354",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=quality",
+    "profile": "quality",
+    "seed": 9,
+    "time": 39,
+    "position": [
+      6,
+      2.8,
+      17
+    ],
+    "target": [
+      0,
+      7,
+      0
+    ],
+    "fov": 55,
+    "labels": {}
+  },
+  {
+    "file": "quality-under-on.png",
+    "sha256": "e4b0e2e9cb4bf151c822f179b3383002572dc35c5646b20a4f4e9bd7dab9a077",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 39,
+    "position": [
+      6,
+      2.8,
+      17
+    ],
+    "target": [
+      0,
+      7,
+      0
+    ],
+    "fov": 55,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "terracotta",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 20,
+          "name": "ao_ba_ba_pants__terracotta"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 19,
+          "name": "ao_ba_ba_top__terracotta"
+        }
+      ]
+    }
+  },
+  {
+    "file": "quality-return-baseline.png",
+    "sha256": "6c083e065348823ac18c4f4d8754fc76d763e48841c58a4ad7413f0eb7400c84",
+    "revision": "5aadf1e603aa0c82369aa1abc60c807c6ce1748c",
+    "url": "http://127.0.0.1:4211/?inspect=1&clean=1&demo=community&seed=9&profile=quality",
+    "profile": "quality",
+    "seed": 9,
+    "time": 85,
+    "position": [
+      -15.33160644531248,
+      42.66291318359377,
+      21.460706738281257
+    ],
+    "target": [
+      -1.1729318133487663,
+      11.822581807572032,
+      -0.11893082276234779
+    ],
+    "fov": 50.9895205078125,
+    "labels": {}
+  },
+  {
+    "file": "quality-return-on.png",
+    "sha256": "d2ad47092e796edfc734598d3b73876e7a76be7b7e7b8013272e45f3d280a73a",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 85,
+    "position": [
+      -15.33160644531248,
+      42.66291318359377,
+      21.460706738281257
+    ],
+    "target": [
+      -1.1729318133487663,
+      11.822581807572032,
+      -0.11893082276234779
+    ],
+    "fov": 50.9895205078125,
+    "labels": {},
+    "seat": {
+      "slotId": "seat-1",
+      "model": "femaleP05f",
+      "variant": "terracotta",
+      "materials": [
+        {
+          "mesh": "ao_ba_ba_pants_SeatRoot_object",
+          "index": 20,
+          "name": "ao_ba_ba_pants__terracotta"
+        },
+        {
+          "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+          "index": 19,
+          "name": "ao_ba_ba_top__terracotta"
+        }
+      ]
+    }
+  },
+  {
+    "file": "quality-female-side-0.png",
+    "sha256": "afd672889e84163a0bc36714b8fc8771ec84a50c67e4affaf9b4dda92d64c49e",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 0,
+    "position": [
+      -3.3477605447630108,
+      1.14915,
+      13.24679496249909
+    ],
+    "target": [
+      1.9971276462426466,
+      0.6691499999999999,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 0,
+    "angle": 1.38,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "quality-female-side-0.5.png",
+    "sha256": "6820b3ef71a16c82c7a4848c5df68966a67b9cdf0f512f94da3e273d50599b27",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 0.5,
+    "position": [
+      -3.3477605447630108,
+      1.15307000018619,
+      13.24679496249909
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67307000018619,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 0.5,
+    "angle": 1.38,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "quality-female-side-1.png",
+    "sha256": "9da5a3bfc73d0a8c5c3a49f5f43d035eeacfa7665bdd9dc39013e83ea2ab27c2",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 1,
+    "position": [
+      -3.3477605447630108,
+      1.1569900003723799,
+      13.24679496249909
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67699000037238,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 1,
+    "angle": 1.38,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "quality-female-side-1.5.png",
+    "sha256": "d4d8afcb7e64d9f6239133b843796c6c35801e05c6e200ba2d6760e70c4b6683",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 1.5,
+    "position": [
+      -3.3477605447630108,
+      1.15307000018619,
+      13.24679496249909
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67307000018619,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 1.5,
+    "angle": 1.38,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "quality-female-side-2.png",
+    "sha256": "bb3b2b274855af3f231c561c623be8865fd1684d36f59237f60129a9149d652d",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 2,
+    "position": [
+      -3.3477605447630108,
+      1.14915,
+      13.24679496249909
+    ],
+    "target": [
+      1.9971276462426466,
+      0.6691499999999999,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 2,
+    "angle": 1.38,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "quality-female-three-quarter-0.png",
+    "sha256": "ca27505a2ab2fcdb78b14067f2a1c2e4237923a049c141219427a49fdfde71a0",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 2,
+    "position": [
+      -1.4374671933019572,
+      1.14915,
+      9.378653751777328
+    ],
+    "target": [
+      1.9971276462426466,
+      0.6691499999999999,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 0,
+    "angle": 0.55,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "quality-female-three-quarter-0.5.png",
+    "sha256": "ad6d90e83b10ed1753c5b9230bf671fd191f46ffa25faa8aefa586f528d182c1",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 2.5,
+    "position": [
+      -1.4374671933019572,
+      1.15307000018619,
+      9.378653751777328
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67307000018619,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 0.5,
+    "angle": 0.55,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "quality-female-three-quarter-1.png",
+    "sha256": "57cd7ae77daa0f503e2cfb85350036eaa64437fc76aba23cd302499e6f619453",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 3,
+    "position": [
+      -1.4374671933019572,
+      1.1569900003723799,
+      9.378653751777328
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67699000037238,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 1,
+    "angle": 0.55,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "quality-female-three-quarter-1.5.png",
+    "sha256": "8ca48598272e02bc787bd6afeb49f8a75b4c0239c33cecd42346956013c36de8",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 3.5,
+    "position": [
+      -1.4374671933019572,
+      1.15307000018619,
+      9.378653751777328
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67307000018619,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 1.5,
+    "angle": 0.55,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "quality-female-three-quarter-2.png",
+    "sha256": "e4a1a341c0c4aaa1185ae2e9c54bf9aab0b251fbc3a6a02d357b34ee20f7988e",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=community&seed=9&profile=quality&diversity=on",
+    "profile": "quality",
+    "seed": 9,
+    "time": 4,
+    "position": [
+      -1.4374671933019572,
+      1.14915,
+      9.378653751777328
+    ],
+    "target": [
+      1.9971276462426466,
+      0.6691499999999999,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {},
+    "idlePhase": 2,
+    "angle": 0.55,
+    "contact": {
+      "surface": "leaf_satin_green_SeatRoot_object",
+      "sampled": 799,
+      "matched": 798,
+      "minGap": 0.00032394186691614424,
+      "maxGap": 0.08381379244551973,
+      "penetrationsOver5mm": 0
+    }
+  },
+  {
+    "file": "eco-original-gift-A.png",
+    "sha256": "cc8254cc15e27b30c2f09db82574a32619495b8dd7125b051e64928a3656a45f",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=gifts&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 47.72,
+    "position": [
+      -0.16453682873832176,
+      1.15060335816266,
+      8.972041251413165
+    ],
+    "target": [
+      1.9971276462426466,
+      0.67060335816266,
+      13.480611612137865
+    ],
+    "fov": 50,
+    "labels": {
+      "name": "An",
+      "fx": "5 hoa hồng"
+    },
+    "focus": {
+      "actorId": "demo-1-actor-1",
+      "seatId": "seat-1",
+      "requestId": "demo-1-gift-1",
+      "name": "An",
+      "headWorld": [
+        1.9941380535564215,
+        1.0979660370666533,
+        13.460431861505846
+      ],
+      "nameWorld": [
+        1.9956035401673162,
+        1.5979660370666533,
+        13.470323896129385
+      ],
+      "fxWorld": [
+        1.6105469331547537,
+        1.0679660370666535,
+        13.395950450626481
+      ]
+    }
+  },
+  {
+    "file": "eco-original-gift-B.png",
+    "sha256": "c04886a970a4d02000cd306b34e563e7fe198daa976f1183904a6031ca0db136",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=gifts&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 53.65,
+    "position": [
+      -2.327949597176647,
+      1.1513155325288884,
+      7.417805796912665
+    ],
+    "target": [
+      -1.3977922776081078,
+      0.6713155325288884,
+      12.33052473461438
+    ],
+    "fov": 50,
+    "labels": {
+      "name": "Bình",
+      "fx": "1 hoa hồng"
+    },
+    "focus": {
+      "actorId": "demo-1-actor-2",
+      "seatId": "seat-2",
+      "requestId": "demo-1-gift-2",
+      "name": "Bình",
+      "headWorld": [
+        -1.3954944440981791,
+        1.0994194541405886,
+        12.31025456043751
+      ],
+      "nameWorld": [
+        -1.3966208330736343,
+        1.5994194541405886,
+        12.320190920328132
+      ],
+      "fxWorld": [
+        -1.749623092345752,
+        1.0694194541405888,
+        12.149341849658196
+      ]
+    }
+  },
+  {
+    "file": "eco-original-gift-C.png",
+    "sha256": "ebb107873ea74a8ef69ff34a505bbc7f53bf412c938218abcc118c31f5071828",
+    "revision": "383066e1e8cb9e5e43613b59f84e619d7b2a0a95",
+    "url": "http://127.0.0.1:4212/?inspect=1&clean=1&demo=gifts&seed=9&profile=eco&diversity=on",
+    "profile": "eco",
+    "seed": 9,
+    "time": 59.48,
+    "position": [
+      1.5463180526429787,
+      1.1533100190412253,
+      7.328850448188187
+    ],
+    "target": [
+      4.792249962242094,
+      0.6733100190412253,
+      11.131997308124866
+    ],
+    "fov": 50,
+    "labels": {
+      "name": "Chi",
+      "fx": "1 hoa hồng"
+    },
+    "focus": {
+      "actorId": "demo-1-actor-3",
+      "seatId": "seat-3",
+      "requestId": "demo-1-gift-3",
+      "name": "Chi",
+      "headWorld": [
+        4.784183596412437,
+        1.1034898347780109,
+        11.113259812499725
+      ],
+      "nameWorld": [
+        4.788137697309328,
+        1.6034898347780109,
+        11.122444859374795
+      ],
+      "fxWorld": [
+        4.396887651272209,
+        1.073489834778011,
+        11.149340983183851
+      ]
+    }
+  }
+]

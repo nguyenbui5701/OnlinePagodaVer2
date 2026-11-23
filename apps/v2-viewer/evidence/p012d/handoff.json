@@ -1,0 +1,454 @@
+[
+  {
+    "profile": "eco",
+    "arrivals": [
+      {
+        "t": 7.95,
+        "seat": {
+          "slotId": "seat-1",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-1"
+        },
+        "names": [],
+        "look": {
+          "slotId": "seat-1",
+          "model": "femaleP05f",
+          "variant": "sage_green",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 14,
+              "name": "ao_ba_ba_pants__sage_green"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 13,
+              "name": "ao_ba_ba_top__sage_green"
+            }
+          ]
+        },
+        "fit": {
+          "seatWorld": [
+            2,
+            0.26,
+            13.5
+          ],
+          "padAnchorWorld": [
+            2,
+            0.26,
+            13.5
+          ],
+          "contactError": 0,
+          "lowestActorOffset": -0.005700200330466032,
+          "headWorld": [
+            1.9941380535564215,
+            1.0952435854170472,
+            13.460431861505846
+          ],
+          "nameWorld": [
+            1.9956035401673162,
+            1.5952435854170472,
+            13.470323896129385
+          ],
+          "fxWorld": [
+            1.6105469331547537,
+            1.0652435854170472,
+            13.395950450626481
+          ],
+          "breathScale": [
+            1,
+            1,
+            1
+          ],
+          "facing": {
+            "seat": [
+              2,
+              0.26,
+              13.5
+            ],
+            "tree": [
+              0,
+              0,
+              0
+            ],
+            "desired": [
+              -0.14654866108946232,
+              0,
+              -0.9892034623538707
+            ],
+            "before": [
+              0.13954311464423655,
+              0,
+              0.9902159962126373
+            ],
+            "after": [
+              -0.1465486610894621,
+              0,
+              -0.9892034623538708
+            ],
+            "beforeErrorDeg": -179.59444011035086,
+            "afterErrorDeg": 1.272221872585407e-14
+          },
+          "padMatrix": [
+            0.9902159962126371,
+            0,
+            -0.1395431146442365,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.1395431146442365,
+            0,
+            0.9902159962126371,
+            0,
+            2,
+            0.065,
+            13.5,
+            1
+          ]
+        }
+      },
+      {
+        "t": 8.45,
+        "seat": {
+          "slotId": "seat-1",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1"
+        },
+        "names": [
+          {
+            "seatId": "seat-1",
+            "actorId": "demo-1-actor-1",
+            "name": "An"
+          }
+        ],
+        "look": {
+          "slotId": "seat-1",
+          "model": "femaleP05f",
+          "variant": "sage_green",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 14,
+              "name": "ao_ba_ba_pants__sage_green"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 13,
+              "name": "ao_ba_ba_top__sage_green"
+            }
+          ]
+        },
+        "fit": {
+          "seatWorld": [
+            2,
+            0.26,
+            13.5
+          ],
+          "padAnchorWorld": [
+            2,
+            0.26,
+            13.5
+          ],
+          "contactError": 0,
+          "lowestActorOffset": -0.005700200330466032,
+          "headWorld": [
+            1.9941380535564215,
+            1.1017754132673143,
+            13.460431861505846
+          ],
+          "nameWorld": [
+            1.9956035401673162,
+            1.6017754132673143,
+            13.470323896129385
+          ],
+          "fxWorld": [
+            1.6105469331547537,
+            1.0717754132673145,
+            13.395950450626481
+          ],
+          "breathScale": [
+            1,
+            1,
+            1
+          ],
+          "facing": {
+            "seat": [
+              2,
+              0.26,
+              13.5
+            ],
+            "tree": [
+              0,
+              0,
+              0
+            ],
+            "desired": [
+              -0.14654866108946232,
+              0,
+              -0.9892034623538707
+            ],
+            "before": [
+              0.13954311464423655,
+              0,
+              0.9902159962126373
+            ],
+            "after": [
+              -0.1465486610894621,
+              0,
+              -0.9892034623538708
+            ],
+            "beforeErrorDeg": -179.59444011035086,
+            "afterErrorDeg": 1.272221872585407e-14
+          },
+          "padMatrix": [
+            0.9902159962126371,
+            0,
+            -0.1395431146442365,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.1395431146442365,
+            0,
+            0.9902159962126371,
+            0,
+            2,
+            0.065,
+            13.5,
+            1
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "profile": "quality",
+    "arrivals": [
+      {
+        "t": 7.95,
+        "seat": {
+          "slotId": "seat-1",
+          "kind": "DECORATIVE_ANONYMOUS",
+          "decorId": "decor-seat-1"
+        },
+        "names": [],
+        "look": {
+          "slotId": "seat-1",
+          "model": "femaleP05f",
+          "variant": "terracotta",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 20,
+              "name": "ao_ba_ba_pants__terracotta"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 19,
+              "name": "ao_ba_ba_top__terracotta"
+            }
+          ]
+        },
+        "fit": {
+          "seatWorld": [
+            2,
+            0.26,
+            13.5
+          ],
+          "padAnchorWorld": [
+            2,
+            0.26,
+            13.5
+          ],
+          "contactError": 0,
+          "lowestActorOffset": -0.005700200330466032,
+          "headWorld": [
+            1.9941380535564215,
+            1.0952435854170472,
+            13.460431861505846
+          ],
+          "nameWorld": [
+            1.9956035401673162,
+            1.5952435854170472,
+            13.470323896129385
+          ],
+          "fxWorld": [
+            1.6105469331547537,
+            1.0652435854170472,
+            13.395950450626481
+          ],
+          "breathScale": [
+            1,
+            1,
+            1
+          ],
+          "facing": {
+            "seat": [
+              2,
+              0.26,
+              13.5
+            ],
+            "tree": [
+              0,
+              0,
+              0
+            ],
+            "desired": [
+              -0.14654866108946232,
+              0,
+              -0.9892034623538707
+            ],
+            "before": [
+              0.13954311464423655,
+              0,
+              0.9902159962126373
+            ],
+            "after": [
+              -0.1465486610894621,
+              0,
+              -0.9892034623538708
+            ],
+            "beforeErrorDeg": -179.59444011035086,
+            "afterErrorDeg": 1.272221872585407e-14
+          },
+          "padMatrix": [
+            0.9902159962126371,
+            0,
+            -0.1395431146442365,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.1395431146442365,
+            0,
+            0.9902159962126371,
+            0,
+            2,
+            0.065,
+            13.5,
+            1
+          ]
+        }
+      },
+      {
+        "t": 8.45,
+        "seat": {
+          "slotId": "seat-1",
+          "kind": "REAL_OCCUPIED",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1"
+        },
+        "names": [
+          {
+            "seatId": "seat-1",
+            "actorId": "demo-1-actor-1",
+            "name": "An"
+          }
+        ],
+        "look": {
+          "slotId": "seat-1",
+          "model": "femaleP05f",
+          "variant": "terracotta",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 20,
+              "name": "ao_ba_ba_pants__terracotta"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 19,
+              "name": "ao_ba_ba_top__terracotta"
+            }
+          ]
+        },
+        "fit": {
+          "seatWorld": [
+            2,
+            0.26,
+            13.5
+          ],
+          "padAnchorWorld": [
+            2,
+            0.26,
+            13.5
+          ],
+          "contactError": 0,
+          "lowestActorOffset": -0.005700200330466032,
+          "headWorld": [
+            1.9941380535564215,
+            1.1017754132673143,
+            13.460431861505846
+          ],
+          "nameWorld": [
+            1.9956035401673162,
+            1.6017754132673143,
+            13.470323896129385
+          ],
+          "fxWorld": [
+            1.6105469331547537,
+            1.0717754132673145,
+            13.395950450626481
+          ],
+          "breathScale": [
+            1,
+            1,
+            1
+          ],
+          "facing": {
+            "seat": [
+              2,
+              0.26,
+              13.5
+            ],
+            "tree": [
+              0,
+              0,
+              0
+            ],
+            "desired": [
+              -0.14654866108946232,
+              0,
+              -0.9892034623538707
+            ],
+            "before": [
+              0.13954311464423655,
+              0,
+              0.9902159962126373
+            ],
+            "after": [
+              -0.1465486610894621,
+              0,
+              -0.9892034623538708
+            ],
+            "beforeErrorDeg": -179.59444011035086,
+            "afterErrorDeg": 1.272221872585407e-14
+          },
+          "padMatrix": [
+            0.9902159962126371,
+            0,
+            -0.1395431146442365,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.1395431146442365,
+            0,
+            0.9902159962126371,
+            0,
+            2,
+            0.065,
+            13.5,
+            1
+          ]
+        }
+      }
+    ]
+  }
+]
