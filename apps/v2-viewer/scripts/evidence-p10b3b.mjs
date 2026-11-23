@@ -178,11 +178,15 @@ async function mistMotion(profile) {
     await page.close();
   }
 }
-async function benchmarks(profile) {
-  for (const [variant, flags] of [['OFF', ''], ['RICH_ONLY', '&ambience=rich'], ['ALL_ON', full]]) {
-    const { page } = await open(candidate, profile, 9, flags);
+async function benchmarks(profile, mistPair = false) {
+  const cases = mistPair
+    ? [['REVIEWED_MIST', '&ambience=rich', reviewed], ['CORRECTED_MIST', '&ambience=rich', candidate]]
+    : [['OFF', '', candidate], ['RICH_ONLY', '&ambience=rich', candidate], ['ALL_ON', full, candidate]];
+  for (const [variant, flags, origin] of cases) {
+    const { page } = await open(origin, profile, 9, flags);
     const r = await step(page, 2, mistPose);
-    await shot(page, `${profile}-mist-${variant.toLowerCase()}.png`, r, 'fixed matched mist pose');
+    if (origin === reviewed) assert.equal(r.repoRevision, reviewedRevision);
+    if (!mistPair) await shot(page, `${profile}-mist-${variant.toLowerCase()}.png`, r, 'fixed matched mist pose');
     const sample = await page.evaluate(pose => new Promise((resolve, reject) => {
       const intervals = [];
       const cpu = [];
@@ -206,7 +210,7 @@ async function benchmarks(profile) {
       requestAnimationFrame(tick);
     }), mistPose);
     assert.deepEqual(sample.errors, []);
-    ledger.benchmarks.push({ profile, variant, ...sample,
+    ledger.benchmarks.push({ profile, variant, revision: r.repoRevision, ...sample,
       mistSquarePixelUpperBound: (sample.rich?.mistPoints ?? 0) * (sample.rich?.mistPixelCap ?? 0) ** 2 });
     await page.close();
   }
@@ -355,7 +359,7 @@ async function returnShot(profile) {
   await page.close();
 }
 
-try {
+async function verify() {
   if (process.argv.includes('--scan-only')) {
     for (const seed of [9, 71, 1337]) await regression('quality', seed, 'community');
   } else if (process.argv.includes('--smoke')) {
@@ -378,6 +382,15 @@ try {
   }
   if (ledger.benchmarks.length) await independentFlags();
   await writeFile(new URL('browser.json', output), JSON.stringify(ledger, null, 2) + '\n');
+}
+
+try {
+  if (process.argv.includes('--mist-benchmark')) {
+    for (const profile of ['eco', 'quality']) await benchmarks(profile, true);
+    await writeFile(new URL('mist-pair.json', output), JSON.stringify(ledger.benchmarks, null, 2) + '\n');
+  } else {
+    await verify();
+  }
 } finally {
   await browser.close();
 }
