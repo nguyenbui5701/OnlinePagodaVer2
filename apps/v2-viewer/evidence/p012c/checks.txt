@@ -1,0 +1,91 @@
+Node v24.16.0
+Source 06838580246ed6147ea0aae23d51b4a0cf9fc1bf
+
+packages/v2-events > npm.cmd run test
+
+> @online-pagoda/v2-events@0.1.0 test
+> node --test
+
+✔ seeded 45s idle then A → B → C with real actor / seat bindings and cinematic return (5.9897ms)
+✔ one FIFO slot per giver, one capped active extension and a shared pending request ID (0.8245ms)
+✔ reconnect preserves identity, duplicate ledgers and revision; room change cancels old intents (0.5067ms)
+✔ bounded focus and no-seat outcomes acknowledge the correct giver; TTL releases seat (0.4976ms)
+✔ 120 viewers, 500 likes and room viewer total keep capacity and FX bounded (1.4589ms)
+✔ session ledger stays bounded and preserves idempotency at the limit (2.7129ms)
+✔ safe display text, graphemes, photo validation and private packet IDs (0.9825ms)
+✔ expired provisional focus adds zero spend; late final acknowledges without replaying the shot (0.2555ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 195.3274
+
+packages/v2-events > npm.cmd run build
+
+> @online-pagoda/v2-events@0.1.0 build
+> tsc --noEmit
+
+
+apps/v2-viewer > npm.cmd run test
+
+> @online-pagoda/v2-viewer@0.1.0 test
+> node --test
+
+✔ runtime manifest and pinned binary structure match the approved PR #10 art handoff (414.741ms)
+✔ botanical switch only applies to an enabled 12-slot scene (0.2447ms)
+✔ seeded botanical layers are repeatable, bounded and clear the original slots and tree (4.0486ms)
+✔ 85s cinematic at 60Hz covers all shots per loop and changes actual route with fixed bounds (276.4713ms)
+✔ cross-variant closure uses the same pose and matching position, target and FOV tangents (11.143ms)
+✔ seed query is a stable uint32 with a documented fallback (0.4068ms)
+✔ rejecting a route reports which candidate failed and retains an accepted path (9.2071ms)
+✔ twelve seeded visual slots keep original seats and clear the root and each other (5.4934ms)
+✔ community binds actual members by seat and keeps visual density out of the room count (5.7884ms)
+✔ gift reserves a real member past TTL, excess gift is text-only, room change drops old identity (39.5085ms)
+✔ existing queue plays a provisional A halo, then exactly one confirmed A/B/C celebration (43.6901ms)
+✔ observed and confirmed phases follow typed ack, mode and exact actor/seat identity (0.8672ms)
+✔ missing seat, expired request and overlay never receive spatial FX (0.3622ms)
+✔ return shortens a live fade and the next actor owns the only cue (0.6642ms)
+✔ disconnect clears visuals, reconnect avoids replay and room epoch rejects old revision (0.5545ms)
+✔ visual ledger is bounded and has no eviction replay (2.7537ms)
+✔ profile pools have fixed capacity and deterministic seed attributes (17.1369ms)
+✔ turn all three actor pivots through their pad parents without moving pad or contact (9.8641ms)
+✔ coincident X/Z leaves existing facing unchanged (0.7526ms)
+✔ v0.1.0 serialized snapshots resolve exact actor/seat and reject stale room/revision (7.4421ms)
+✔ integrated controller counts final gifts once, focuses A/B/C, and reports D fallback (17.7517ms)
+✔ renderer camera starts each handoff at the prior pose and reaches the current cinematic on return (47.0827ms)
+✔ shot boundaries and 40s closure keep normalized deterministic weights (27.1088ms)
+✔ gift and route-clock reset ease from the current output and reuse weight storage (0.9303ms)
+✔ legacy pins P0.10 and comparison cameras, while lookup allows three review holds (0.4102ms)
+✔ twilight reuses light and sky resources, with bounded exposure and fog (6.7907ms)
+✔ gold runtime clone stays scoped, shares across meshes and restores originals before disposing (3.9129ms)
+✔ water atmosphere leaves the exact P0.10 gift ripple inputs independent (2.1197ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 772.6255
+
+apps/v2-viewer > npm.cmd run build
+
+> @online-pagoda/v2-viewer@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v7.2.2 building client environment for production...
+transforming...
+✓ 36 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.26 kB │ gzip:   0.61 kB
+dist/assets/index-IWEw6gYx.css    1.66 kB │ gzip:   0.80 kB
+dist/assets/index-CILiWqGO.js   669.10 kB │ gzip: 183.29 kB
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.90s

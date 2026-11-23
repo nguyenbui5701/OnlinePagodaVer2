@@ -7,6 +7,7 @@
   "scripts": {
     "assets": "node scripts/prepare-assets.mjs",
     "assets:p08": "node scripts/stage-p08.mjs",
+    "assets:p012b": "node scripts/stage-p012b.mjs",
     "dev": "vite --host 127.0.0.1",
     "test": "node --test",
     "build": "tsc --noEmit && vite build",
@@ -15,7 +16,8 @@
     "evidence:p09": "node scripts/evidence-p09.mjs",
     "evidence:p010": "node scripts/evidence-p010.mjs",
     "evidence:p011": "node scripts/evidence-p011.mjs",
-    "evidence:p012a": "node scripts/evidence-p012a.mjs"
+    "evidence:p012a": "node scripts/evidence-p012a.mjs",
+    "evidence:p012c": "node scripts/evidence-p012c.mjs"
   },
   "dependencies": { "three": "0.181.2" },
   "devDependencies": {

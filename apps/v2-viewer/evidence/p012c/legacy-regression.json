@@ -1,0 +1,88 @@
+{
+  "baseline": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+  "current": "06838580246ed6147ea0aae23d51b4a0cf9fc1bf",
+  "traces": [
+    {
+      "seed": 9,
+      "demo": "idle",
+      "end": 85,
+      "samples": 341,
+      "sha256": "8c88cdc81a2157130977ec5e226789577f9a6d6223c638b9294407db0d984e30",
+      "minimumCameraClearance": null
+    },
+    {
+      "seed": 9,
+      "demo": "gifts",
+      "end": 66,
+      "samples": 265,
+      "sha256": "49f6d4387bdf190ab8aca8250b778d7b8acd6c7e6cded9a535e4a0c1da520c2f",
+      "minimumCameraClearance": null
+    },
+    {
+      "seed": 9,
+      "demo": "capacity",
+      "end": 66,
+      "samples": 265,
+      "sha256": "60545b6e31ada194209c6245c42e9d1d88c9fbfc46ad7c492414922c58c74b0d",
+      "minimumCameraClearance": null
+    },
+    {
+      "seed": 9,
+      "demo": "community",
+      "end": 66,
+      "samples": 265,
+      "sha256": "4c3eaddaee17403e551b0e4e6ed59a6ba172efd104b8ffe95e1f5de729b0ff59",
+      "minimumCameraClearance": 2.0105109939061827
+    },
+    {
+      "seed": 71,
+      "demo": "idle",
+      "end": 85,
+      "samples": 341,
+      "sha256": "cc0f6cd950ce01991bb7578360e3f3c33ff64525205aab5267a4dbad078abc5e",
+      "minimumCameraClearance": null
+    },
+    {
+      "seed": 71,
+      "demo": "gifts",
+      "end": 66,
+      "samples": 265,
+      "sha256": "af667572408222fb9c40c31ce81365b49e9af025a33d7d15e1cd613192874f4c",
+      "minimumCameraClearance": null
+    },
+    {
+      "seed": 71,
+      "demo": "capacity",
+      "end": 66,
+      "samples": 265,
+      "sha256": "23530618a1462dd8d63119b113eed0619a15c857ce62fb24856289e0a4b2693d",
+      "minimumCameraClearance": null
+    },
+    {
+      "seed": 71,
+      "demo": "community",
+      "end": 66,
+      "samples": 265,
+      "sha256": "7b99aa1cae7cbb346b9b71a4eb979b5e6208304b365478dc37d596d1ea65b705",
+      "minimumCameraClearance": 1.9397695813341862
+    }
+  ],
+  "legacyFrames": [
+    {
+      "demo": "idle",
+      "time": 7.5,
+      "hash": "a07a12c40a103a3d4a8900014c07dbc70b5fd3cecd3d8ffd978212bee7a5dda6"
+    },
+    {
+      "demo": "gifts",
+      "time": 47.72,
+      "hash": "cc8254cc15e27b30c2f09db82574a32619495b8dd7125b051e64928a3656a45f"
+    },
+    {
+      "demo": "capacity",
+      "time": 48.9,
+      "hash": "57f6f8c9f48efa4a9136e7103cbef3e2f98bb54dd4f08dfdc3faac4ca5807d4d"
+    }
+  ],
+  "crowdOffRequests": []
+}

@@ -1,0 +1,106 @@
+{
+  "source": {
+    "commit": "9a01b39afde642d55dcf9bc7639f3a84ef913e4d",
+    "ref": "refs/pull/10/head",
+    "canonicalDirectory": "Assets3D/Review/lotus_botanicals/p012b"
+  },
+  "world": {
+    "up": "+Y",
+    "metersPerUnit": 1,
+    "waterY": 0
+  },
+  "profiles": {
+    "eco": {
+      "bloom": {
+        "file": "lotus_bloom_p012b_eco.glb",
+        "bytes": 20924,
+        "sha256": "8dce16649f0dff541601047628ad7175f0b9ec028e7803b967cf2dee5efc0bd5",
+        "triangles": 589,
+        "meshCount": 1,
+        "primitiveCount": 3,
+        "materials": 3,
+        "textureCount": 0,
+        "bounds": [
+          [
+            -0.3683744966983795,
+            0,
+            -0.35377100110054016
+          ],
+          [
+            0.3649047017097473,
+            0.27900001406669617,
+            0.3719247579574585
+          ]
+        ]
+      },
+      "bud": {
+        "file": "lotus_bud_p012b_eco.glb",
+        "bytes": 8552,
+        "sha256": "c442cc04c3b0094a920c2b86fb202233782d5076a97e1110a84b345df3f0d082",
+        "triangles": 192,
+        "meshCount": 1,
+        "primitiveCount": 2,
+        "materials": 2,
+        "textureCount": 0,
+        "bounds": [
+          [
+            -0.14499245584011078,
+            0,
+            -0.14168626070022583
+          ],
+          [
+            0.14499999582767487,
+            0.6340000033378601,
+            0.14168626070022583
+          ]
+        ]
+      }
+    },
+    "quality": {
+      "bloom": {
+        "file": "lotus_bloom_p012b_quality.glb",
+        "bytes": 50004,
+        "sha256": "63edb12d02664a44ce4484b847ef07aeffab6a22a36cf44415b141f56804f0d0",
+        "triangles": 1728,
+        "meshCount": 1,
+        "primitiveCount": 3,
+        "materials": 3,
+        "textureCount": 0,
+        "bounds": [
+          [
+            -0.3662933111190796,
+            0,
+            -0.3752657175064087
+          ],
+          [
+            0.3767985999584198,
+            0.29899999499320984,
+            0.3711741864681244
+          ]
+        ]
+      },
+      "bud": {
+        "file": "lotus_bud_p012b_quality.glb",
+        "bytes": 20940,
+        "sha256": "fe62a2f9aeb166d0eadf758c75eb47950a9053d8f2149d2a66ceaf5007a05f1a",
+        "triangles": 648,
+        "meshCount": 1,
+        "primitiveCount": 2,
+        "materials": 2,
+        "textureCount": 0,
+        "bounds": [
+          [
+            -0.14484304189682007,
+            0,
+            -0.14486804604530334
+          ],
+          [
+            0.14374113082885742,
+            0.6340000033378601,
+            0.14486804604530334
+          ]
+        ]
+      }
+    }
+  }
+}
