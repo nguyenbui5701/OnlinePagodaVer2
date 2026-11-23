@@ -1,9 +1,9 @@
-# AI VISUAL 16 — P1.0-B3C Sakura R17 Lush Radiant Blessing Tree (PREPARED / ART GATE HOLD)
+# AI VISUAL 16 — P1.0-B3C Sakura R17 Lush Radiant Blessing Tree (ACTIVE / SA ART REVIEW GATE)
 
 > **ACTIVE ORDER / 2026-11-24:** Owner replied **“duyệt, next step”** after [PR #17 SA R2](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/17#pullrequestreview-6025845313). `OWNER_P10B3B_WORLD_VISUAL_GO` is recorded for PR #17 exact HEAD `1201369e019f6ba04f7437c7dac347e56894ba2a`; Owner authorizes the next independent R17 art workstream as **`OWNER_R17_ART_SCOPE_GO`**. The earlier PREPARED/HOLD language below is historical and **superseded by this activation**. This is NOT final R17 art GO or an instruction to merge, use paid tools or modify runtime.
 
 
-> **SA PREPARED, NOT AN ACTIVE PRODUCTION ORDER — 2026-11-23.** Owner's screenshot #6 requests a fuller, more radiant Sakura tree. Independent AI 3D may prepare a real versioned **R17** replacement ONLY after [CODEX 15 Track B](CODEX_15_P10B3B_AMBIENCE_CIRCULAR_SEATS_HERO_SHOTS.md) provides actual 720×1280 A/B proof that original R16 cannot meet the richer canopy/hero-wide requirement by safe lighting, ambience and framing alone **and Owner explicitly confirms R17 art scope**. The user authorized creating this complete SA planning package, not replacing R16 or starting a paid art process now. **STATUS \`R17_ART_NOT_STARTED / OWNER_ART_SCOPE_GO_PENDING\`.** STOP at \`R17_SA_ART_REVIEW_REQUIRED\` when/if commissioned; no merge.
+> **HISTORICAL PREPARATION NOTE — 2026-11-23, superseded by activation above.** Owner's screenshot #6 requests a fuller, more radiant Sakura tree. Independent AI 3D may prepare a real versioned **R17** replacement ONLY after [CODEX 15 Track B](CODEX_15_P10B3B_AMBIENCE_CIRCULAR_SEATS_HERO_SHOTS.md) provides actual 720×1280 A/B proof that original R16 cannot meet the richer canopy/hero-wide requirement by safe lighting, ambience and framing alone **and Owner explicitly confirms R17 art scope**. The user authorized creating this complete SA planning package, not replacing R16 or starting a paid art process now. **STATUS \`R17_ART_NOT_STARTED / OWNER_ART_SCOPE_GO_PENDING\`.** STOP at \`R17_SA_ART_REVIEW_REQUIRED\` when/if commissioned; no merge.
 
 ## 1. Role, scope/objective, STOP
 
