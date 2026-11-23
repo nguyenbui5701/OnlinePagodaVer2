@@ -22,3 +22,18 @@ export function communitySlots(seed: number, treeX: number, treeZ: number) {
     yaw: jitter() * .8,
   }))].map(slot => ({ ...slot, decorId: `decor-${slot.id}` }));
 }
+
+export const ringRadii = [13.8, 20.2] as const;
+
+export function ringSlots(seed: number, treeX: number, treeZ: number): ReturnType<typeof communitySlots> {
+  const turn = ((seed % 101) / 100 - .5) * .18;
+  const inner = [0, -.85, .85, -2.25, 2.25];
+  const outer = Array.from({ length: 7 }, (_, i) => (i + .5) * Math.PI * 2 / 7);
+  return [...inner, ...outer].map((angle, i) => {
+    const radius = ringRadii[i < inner.length ? 0 : 1];
+    const a = angle + turn;
+    const id = i < heroSlots.length ? heroSlots[i].id : `visual-${i + 1}`;
+    return { id, decorId: `decor-${id}`, position: [treeX + Math.sin(a) * radius, .065, treeZ + Math.cos(a) * radius],
+      yaw: a };
+  });
+}

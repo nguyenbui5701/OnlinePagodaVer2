@@ -15,3 +15,7 @@ export const fxProfiles = {
 
 export const giftTiming = { observedMs: 950, observedSparks: 4, confirmedMs: 1650, exitFadeMs: 260, rippleRadius: 2.25 };
 export type FxProfile = typeof fxProfiles[keyof typeof fxProfiles];
+export const richAmbientProfiles = {
+  eco: { tree: { motes: 51, petals: 38, leaves: 8 }, perPad: 2, mist: 6, mistPixelCap: 108 },
+  quality: { tree: { motes: 112, petals: 87, leaves: 21 }, perPad: 7, mist: 10, mistPixelCap: 152 },
+} as const;

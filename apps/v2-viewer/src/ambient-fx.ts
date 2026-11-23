@@ -1,7 +1,8 @@
 import { BufferGeometry, Float32BufferAttribute, Points, ShaderMaterial, type Vector3 } from 'three';
-import type { FxProfile } from './fx-profiles.ts';
+export type AmbientCounts = Readonly<{ motes: number; petals: number; leaves: number }>;
 
-export function createAmbientFx(origin: Vector3, seed: number, counts: FxProfile['ambient']) {
+export function createAmbientFx(origin: Vector3, seed: number, counts: AmbientCounts,
+  local?: { pads: readonly (readonly number[])[]; each: number }) {
   const positions: number[] = [];
   const details: number[] = [];
   let randomState = (seed ^ 0x51a73d19) >>> 0;
@@ -19,22 +20,36 @@ export function createAmbientFx(origin: Vector3, seed: number, counts: FxProfile
       details.push(kind, random(), random(), random());
     }
   }
+  for (const [index, pad] of (local?.pads ?? []).entries()) {
+    for (let i = 0; i < local!.each; i++) {
+      const angle = (i / local!.each + random() * .2) * Math.PI * 2;
+      const kind = i === 0 ? 0 : (index + i) % 4 === 0 ? 2 : i % 2;
+      const radius = 1.85 + random() * 1.35;
+      positions.push(pad[0] - origin.x + Math.cos(angle) * radius,
+        kind === 0 ? .42 + random() * 1.1 : 1.35 + random() * 1.9,
+        pad[2] - origin.z + Math.sin(angle) * radius);
+      details.push(3 + kind, random(), random(), random());
+    }
+  }
   const geometry = new BufferGeometry();
   geometry.setAttribute('position', new Float32BufferAttribute(positions, 3));
   geometry.setAttribute('detail', new Float32BufferAttribute(details, 4));
-  const uniforms = { elapsed: { value: 0 }, density: { value: 1 } };
+  const uniforms = { elapsed: { value: 0 }, density: { value: 1 }, localDensity: { value: 1 } };
   const material = new ShaderMaterial({
     transparent: true, depthWrite: false, uniforms,
     vertexShader: `
       attribute vec4 detail;
       uniform float elapsed;
       uniform float density;
+      uniform float localDensity;
       varying float kind;
       varying float opacity;
       varying float spin;
       varying float cheek;
       void main() {
         kind = detail.x;
+        bool nearPad = kind >= 3.0;
+        if (nearPad) kind -= 3.0;
         float phase = detail.y * 6.283185;
         float t = elapsed;
         vec3 p = position;
@@ -59,6 +74,12 @@ export function createAmbientFx(origin: Vector3, seed: number, counts: FxProfile
           diameter = (kind < 1.5 ? 0.30 : 0.39) + detail.z * 0.19;
           spin = phase + t * mix(-1.0, 1.0, detail.w) * 0.48;
           cheek = 0.51 + 0.49 * abs(cos(t * 0.76 + phase));
+        }
+        if (nearPad) {
+          p.xz = position.xz + 0.37 * vec2(sin(t * .47 + phase), cos(t * .34 + phase));
+          if (kind > 0.5) p.y = mix(position.y, .24, fract(t / 9.0 + detail.y));
+          diameter *= .73;
+          visibility *= localDensity * .83;
         }
         vec4 view = modelViewMatrix * vec4(p, 1.0);
         float depth = -view.z;
@@ -111,10 +132,11 @@ export function createAmbientFx(origin: Vector3, seed: number, counts: FxProfile
   points.position.copy(origin);
   points.frustumCulled = false;
   return {
-    points, counts,
-    update(seconds: number, giftOpacity: number) {
+    points, counts, localCount: (local?.pads.length ?? 0) * (local?.each ?? 0),
+    update(seconds: number, giftOpacity: number, foreground = false) {
       uniforms.elapsed.value = seconds;
       uniforms.density.value = 1 - giftOpacity * 0.28;
+      uniforms.localDensity.value = foreground ? .06 : 1;
     },
     dispose() {
       points.removeFromParent();

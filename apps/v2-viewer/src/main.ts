@@ -17,8 +17,10 @@ import { showGift, usePersistentNameplates } from './slice-overlay.ts';
 import { createNameplates } from './nameplates.ts';
 import { createWater } from './water.ts';
 import { createAmbientFx } from './ambient-fx.ts';
+import { createTrunkMist } from './trunk-mist.ts';
+import { createHeroRoutes } from './hero-camera.ts';
 import { createGiftFx } from './gift-fx.ts';
-import { fxProfiles } from './fx-profiles.ts';
+import { fxProfiles, richAmbientProfiles } from './fx-profiles.ts';
 import { blessingEnabled } from './gift-blessing.ts';
 import { createBlessingCloud } from './blessing-cloud.ts';
 import { botanicalLayout, botanicalsEnabled } from './botanical-layout.ts';
@@ -51,7 +53,10 @@ if (presence) usePersistentNameplates();
 const chatBubbles = !comparison && query.get('chatbubbles') === 'on';
 const giftIcons = !comparison && query.get('gifticons') === 'on';
 const enableBlessing = blessingEnabled(query.get('blessing'), scenario, fxEnabled);
-const crowd = liveRequested || (scenario === 'community' && query.get('crowd') !== 'off');
+const rings = !comparison && query.get('seats') === 'rings';
+const rich = !comparison && query.get('ambience') === 'rich';
+const hero = !comparison && query.get('shots') === 'hero';
+const crowd = rings || liveRequested || (scenario === 'community' && query.get('crowd') !== 'off');
 const diversity = !comparison && diversityEnabled(crowd, query.get('diversity'));
 const enableBotanicals = !comparison && botanicalsEnabled(crowd, query.get('botanicals'));
 const driver = new SliceDriver(liveRequested ? 'offline' : scenario,
@@ -115,6 +120,7 @@ async function boot() {
   scene.add(environment);
   const water = comparison ? undefined : createWater(fxProfile.water, look !== 'legacy');
   let ambient: ReturnType<typeof createAmbientFx> | undefined;
+  let mist: ReturnType<typeof createTrunkMist> | undefined;
   let giftFx: ReturnType<typeof createGiftFx> | undefined;
   let blessing: ReturnType<typeof createBlessingCloud> | undefined;
   if (water) environment.add(water.mesh);
@@ -130,7 +136,7 @@ async function boot() {
   let botanicals: Awaited<ReturnType<typeof createBotanicalScene>> | undefined;
   let communityNames: ReturnType<typeof createCommunityNames> | undefined;
   let nameplates: ReturnType<typeof createNameplates> | undefined;
-  let routes: ReturnType<typeof createCinematicRoutes> | undefined;
+  let routes: ReturnType<typeof createCinematicRoutes> | ReturnType<typeof createHeroRoutes> | undefined;
   let start: number | undefined;
   let last: number | undefined;
   const frameTimes: number[] = [];
@@ -198,7 +204,7 @@ async function boot() {
         diversity ? seats.preview.breath.position : undefined);
     }
     const labels = presentation ? showGift(camera, presentation, selected, presence) : undefined;
-    if (presentation && (communityNames || nameplates)) {
+    if (presentation && (communityNames || nameplates || rings)) {
       const { avatars, viewerCount } = presentation.state;
       const plates = nameplates?.update(presentation.state, camera, manual);
       const names = plates?.names ?? communityNames?.update(avatars, camera, Math.round(seconds * 1000),
@@ -210,12 +216,16 @@ async function boot() {
         batches: seats?.batches?.count ?? 0 };
     }
     const celebration = presentation && giftFx?.update(presentation.state, presentation.active, selected);
-    if (bubbles && presentation && seats) {
-      report.bubbles = bubbles.update(presentation.state, presentation.chat, celebration?.gift, selected,
-        seats.seats, camera, presentation.state.camera.mode !== 'CINEMATIC' || !!labels?.fallback);
-    }
+    const bubbleState = bubbles && presentation && seats && bubbles.update(presentation.state, presentation.chat,
+      celebration?.gift, selected, seats.seats, camera, presentation.state.camera.mode !== 'CINEMATIC' || !!labels?.fallback);
+    if (bubbleState) report.bubbles = bubbleState;
     if (blessing && presentation) report.blessing = blessing.update(presentation.state, celebration?.gift, selected);
-    ambient?.update(seconds, celebration?.gift?.opacity ?? 0);
+    ambient?.update(seconds, celebration?.gift?.opacity ?? 0, !!bubbleState?.chat || !!presentation?.state.focus);
+    mist?.update(seconds);
+    if (rich && ambient && mist) report.richAmbience = {
+      localPoints: ambient.localCount, totalPoints: ambient.points.geometry.getAttribute('position').count,
+      mistPoints: mist.count, mistPixelCap: mist.pixelCap, mistCenterY: [mist.minCenterY, mist.maxCenterY],
+    };
     water?.setRipple(celebration?.ripple);
     if (!comparison) report.fx = { enabled: fxEnabled, ambient: ambient?.counts, ...celebration };
     let focus;
@@ -313,6 +323,7 @@ async function boot() {
     sakura?.dispose();
     seats?.dispose();
     ambient?.dispose();
+    mist?.dispose();
     giftFx?.dispose();
     blessing?.dispose();
     water?.dispose();
@@ -340,7 +351,7 @@ async function boot() {
       // R16's imported scene pivot is the trunk base. Resolve it after scene attachment.
       const tree = asset.root.localToWorld(new Vector3());
       water?.tree.set(tree.x, tree.z);
-      const pair = await createSeatScene(abort.signal, tree, crowd ? seed : undefined, diversity ? profile : undefined);
+      const pair = await createSeatScene(abort.signal, tree, crowd ? seed : undefined, diversity ? profile : undefined, rings);
       if (disposed) { pair.dispose(); return; }
       seats = pair;
       report.seatMaterialCount = pair.materialCount;
@@ -351,9 +362,17 @@ async function boot() {
       }
       scene.add(pair.group);
       pair.preview.sample(0);
-      routes = createCinematicRoutes(seatPose(pair.preview, 0.16, 5.05), tree, seed);
+      routes = hero ? createHeroRoutes(tree, seed) : createCinematicRoutes(seatPose(pair.preview, 0.16, 5.05), tree, seed);
       if (fxEnabled) {
-        ambient = createAmbientFx(tree, seed, fxProfile.ambient);
+        const budget = richAmbientProfiles[profile];
+        const pads = rich ? pair.slots?.map(slot => slot.position) ??
+          [...pair.seats.values()].map(seat => seat.root.position.toArray()) : [];
+        ambient = createAmbientFx(tree, seed, rich ? budget.tree : fxProfile.ambient,
+          rich ? { pads, each: budget.perPad } : undefined);
+        if (rich) {
+          mist = createTrunkMist(tree, profile);
+          environment.add(mist.points);
+        }
         giftFx = createGiftFx(fxProfile.giftSparks);
         environment.add(ambient.points, giftFx.cloud);
         if (enableBlessing) {
