@@ -88,3 +88,10 @@ Existing PR #14 supports the DEMO query settings, e.g. `http://127.0.0.1:5187/?d
 | Viewer actor/camera truth | source-approved 12/3, original P05f/P07b1, gift A→B→C and no-seat D | HOLD if altered |
 | Optional higher crowd | no unsupported 24/100 fake performers, only new separately approved density task | DEFER |
 | TikTok LIVE/Studio | **NOT AUTHORIZED in P1.0-A** | HOLD |
+
+
+## 7. Owner defers CODEX 11 and starts CODEX 12 — 2026-11-23
+
+Owner instruction **“có thể bỏ qua bước kiểm tra này làm sau, tiếp tục triển khai next step”** explicitly defers this assignment. **CODEX 11 implementation NOT STARTED / NOT PASS / no Owner GPU evidence yet**; do not open or assume its harness PR, do not run RTX 3050 Ti/3060, and do not claim that the older SwiftShader evidence is physical GPU qualification. This is an audit-preserving **schedule HOLD**, not task deletion or loss of hardware acceptance criteria.
+
+**Active successor:** [Design 25](../Design/25_P10B1_OFFLINE_LIVE_EVENT_REPLAY_BRIDGE.md) and [CODEX 12 — Offline Live-Event Replay Bridge](CODEX_12_P10B1_OFFLINE_LIVE_EVENT_REPLAY_BRIDGE.md), independent new Code PR from exact [PR #14](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/14) reviewed HEAD `5101df8ee0a7e63b391c9f72be4f5c79bc88b20f`. All input strictly local synthetic data and a DEV+loopback Viewer switch; **no real TikTok provider/LIVE Studio/credentials, no production acceptance or merges**. **STOP `P10B1_SA_REVIEW_REQUIRED`**, later SA and Owner offline replay gate. Return to CODEX 11 only when Owner explicitly resumes hardware testing.
