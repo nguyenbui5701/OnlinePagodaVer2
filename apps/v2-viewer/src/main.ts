@@ -5,7 +5,8 @@ import {
 } from 'three';
 import { loadSakura, type Profile } from './asset.ts';
 import { capture, createCinematicRoutes, parseCinematicSeed, type CameraPose } from './camera.ts';
-import { referenceViews, setupLighting } from './lighting.ts';
+import { bindGoldEmphasis, createTwilight, referenceViews, setupLighting } from './lighting.ts';
+import { LookTimeline, lookOrder, parseLook } from './twilight.ts';
 import { createSeatScene, seatPose } from './seat-scene.ts';
 import { SliceCamera } from './slice-camera.ts';
 import { SliceDriver } from './slice-driver.ts';
@@ -24,6 +25,8 @@ const profile: Profile = query.get('profile') === 'quality' ? 'quality' : 'eco';
 const requestedView = query.get('view') ?? '';
 const view = Object.hasOwn(referenceViews, requestedView) ? requestedView as keyof typeof referenceViews : undefined;
 const comparison = view ? referenceViews[view] : undefined;
+const look = parseLook(query.get('look'), !!comparison);
+const timeline = new LookTimeline();
 const fxEnabled = !comparison && query.get('fx') !== 'off';
 const fxProfile = fxProfiles[profile];
 const captureWidth = view && view !== 'hero_full_9x16' ? 720 : capture.width;
@@ -81,11 +84,13 @@ async function boot() {
   const environment = new Group();
   environment.name = 'Environment';
   scene.add(environment);
-  const water = comparison ? undefined : createWater(fxProfile.water);
+  const water = comparison ? undefined : createWater(fxProfile.water, look !== 'legacy');
   let ambient: ReturnType<typeof createAmbientFx> | undefined;
   let giftFx: ReturnType<typeof createGiftFx> | undefined;
   if (water) environment.add(water.mesh);
-  setupLighting(scene, profile, !!comparison);
+  const rig = setupLighting(scene, profile, !!comparison);
+  const twilight = look === 'legacy' ? undefined : createTwilight(scene, rig);
+  let gold: ReturnType<typeof bindGoldEmphasis> | undefined;
 
   let req = 0;
   let lost = false;
@@ -131,6 +136,17 @@ async function boot() {
       };
       const routeTime = director.routeSeconds(atMs, focus?.requestId);
       cinematic = routes.sample(routeTime);
+      if (twilight && look !== 'legacy') {
+        const mode = presentation.state.camera.mode;
+        const weights = timeline.update(atMs, routeTime, mode === 'GIFT_TRANSITION' || mode === 'GIFT_FOCUS', look);
+        const appearance = twilight.update(weights);
+        renderer.toneMappingExposure = appearance.exposure;
+        gold?.update(appearance.veinEmissive);
+        water?.setAppearance(twilight.deepWater, twilight.horizon, twilight.reflection);
+        report.appearance = { look, weights: [...weights], order: lookOrder,
+          exposure: renderer.toneMappingExposure, fog: rig.fog?.color.toArray(), fogDensity: rig.fog?.density,
+          reflection: { ...twilight.reflection }, veinEmissive: appearance.veinEmissive };
+      }
       const live = director.move(atMs, cinematic, focus);
       pose = review?.fixed ?? (review?.angle !== undefined && reviewSeat ? seatPose(reviewSeat, review.angle, 5.35) : live);
       camera.position.copy(pose.position);
@@ -174,6 +190,7 @@ async function boot() {
     Object.assign(report, {
       drawCalls: info.render.calls, trianglesDrawn: info.render.triangles,
       textures: info.memory.textures, geometries: info.memory.geometries, pointsDrawn: info.render.points,
+      lights: 1 + rig.directionals.length, shadowMaps: rig.directionals.filter(light => light.shadow.map).length,
     });
     if (now - lastReport >= 500) {
       lastReport = now;
@@ -216,11 +233,13 @@ async function boot() {
     canvas.removeEventListener('webglcontextlost', contextLost);
     canvas.removeEventListener('webglcontextrestored', contextRestored);
     window.removeEventListener('pagehide', onPageHide);
+    gold?.dispose();
     sakura?.dispose();
     seats?.dispose();
     ambient?.dispose();
     giftFx?.dispose();
     water?.dispose();
+    twilight?.dispose();
     for (const light of scene.children) if (light instanceof DirectionalLight) light.dispose();
     renderer.dispose();
     renderer.forceContextLoss();
@@ -235,6 +254,10 @@ async function boot() {
     sakura = asset;
     environment.add(sakura.root);
     Object.assign(report, { asset: sakura.report });
+    if (twilight) {
+      gold = bindGoldEmphasis(asset.root);
+      report.goldMaterial = gold.report;
+    }
     console.info('Verified Sakura R16', sakura.report.sha256, __REPO_REVISION__);
     if (!comparison) {
       // R16's imported scene pivot is the trunk base. Resolve it after scene attachment.
