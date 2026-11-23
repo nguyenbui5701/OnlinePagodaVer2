@@ -70,3 +70,10 @@ All deviations must be recorded as **finding → minimal diff → before/after e
 - No automatic merge of stacked PRs #2, #9, #10, #11, #12 or #13. No paid tools or third-party content licensing assumptions.
 - No unauthorized source mesh, camera route overhaul, event schema change, V1 production or TikTok connector.
 - **Current approval:** `P013A_SA_TECH_PASS` + `OWNER_P013A_VISUAL_GO`. **Next:** `P014_SA_REVIEW_REQUIRED`; Owner P0.14 Visual GO remains pending.
+
+
+## 5. Owner P0.14 Visual GO and P1.0-A hardware preflight — 2026-11-23
+
+**Historical Owner P0.14 Visual GO pending resolved:** After [formal SA Tech PASS #6019006145](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/14#pullrequestreview-6019006145) at exact PR #14 HEAD `5101df8ee0a7e63b391c9f72be4f5c79bc88b20f`, Owner responded **“tôi thấy oke, tiếp tục”**. Record **`OWNER_P014_VISUAL_GO`** for reviewed seven-shot Viewer scene and acknowledged P1 fast aerial→gift motion; no further camera correction is authorized. PR #14 adds only QA/evidence and does not move the approved runtime camera. Original rose-in-ring and hills are **deferred**, and full original-video-pixel parity is still **`P014_FULL_REFERENCE_FIDELITY_PARTIAL`**.
+
+**Successor:** [Design 24 — P1.0-A Owner GPU-only Preflight](24_P10A_OWNER_GPU_HARDWARE_PREFLIGHT.md), [CODEX 11](../Task/CODEX_11_P10A_OWNER_GPU_HARDWARE_HARNESS.md). Begin with safe instrumented *hardware-only* ECO RTX 3050 Ti 4GB / QUALITY RTX 3060 8GB at 720×1280 after SA harness review; actual GPU results remain pending. No concurrent LIVE Studio/real TikTok, 24 extra seats or people, V1, art source changes or PR merge. **STOP `P10A_HARNESS_SA_REVIEW_REQUIRED`**, then Owner hardware evidence.
