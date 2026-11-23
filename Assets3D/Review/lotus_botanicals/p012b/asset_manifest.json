@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "1.0",
+  "revision": "P0.12-B",
+  "baseline": {
+    "repo": "nguyenbui5701/OnlinePagodaVer2",
+    "sourcePR": 2,
+    "sourceHead": "ce0db947e5e9ea4c6214bc900b0cdd9c6a83cced",
+    "sourceBranch": "assets/lotus-pad-chibi-p0",
+    "viewerPR": 9,
+    "viewerHead": "0a5d060d0ec4eeda19d62cfcd4a58a29f58c38bf",
+    "p02PadWidthMeters": 2.083084,
+    "p02PadSHA256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+  },
+  "coordinateSystem": {
+    "up": "+Y",
+    "units": "meters",
+    "metersPerUnit": 1,
+    "waterlineWorldY": 0,
+    "root": [
+      0,
+      0,
+      0
+    ]
+  },
+  "source": "build_p012b_assets.mjs",
+  "blenderEditableSource": "P012B_botanicals_editable.blend",
+  "blenderEditableSourceStatus": "pending_owner_blender_run",
+  "license": "MIT original artist-authored procedural geometry",
+  "cost": "0 VND",
+  "externalMaterials": [],
+  "geometryValidation": "GLB2_GENERATED_TRIANGLES_AND_BOUNDS_MEASURED; independent Blender import pending",
+  "cyclesStatus": "BLENDER_CYCLES_PENDING_OWNER_RUN",
+  "artGate": "P012B_SA_ART_REVIEW_REQUIRED",
+  "assets": [
+    {
+      "assetId": "lotus_bloom_p012b",
+      "kind": "bloom",
+      "lod": "quality",
+      "bytes": 50008,
+      "triangles": 1728,
+      "vertices": 1303,
+      "meshCount": 1,
+      "primitiveCount": 3,
+      "materials": 3,
+      "textureCount": 0,
+      "boundsMinMaxMeters": [
+        [
+          -0.36568543314933777,
+          0,
+          -0.37500911951065063
+        ],
+        [
+          0.37669867277145386,
+          0.29899999499320984,
+          0.3707197606563568
+        ]
+      ],
+      "boundsMeters": [
+        0.7423841059207916,
+        0.29899999499320984,
+        0.7457288801670074
+      ],
+      "originMeters": [
+        0,
+        0,
+        0
+      ],
+      "upAxis": "+Y",
+      "waterlineY": 0,
+      "doubleSided": true,
+      "hasVertexColor": true,
+      "animations": [],
+      "cameras": 0,
+      "lights": 0,
+      "filename": "lotus_bloom_p012b_quality.glb",
+      "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bloom_p012b_quality.glb",
+      "sha256": "45065e8390db50474d3d02d6a0512998eff84dbb78de6b56543905a9a2294a2b",
+      "githubStatus": "uploaded_git_blob_pending_remote_readback",
+      "sourceEditableBlenderStatus": "pending_owner_blender_run",
+      "cyclesEvidenceStatus": "pending_owner_blender_run"
+    },
+    {
+      "assetId": "lotus_bloom_p012b",
+      "kind": "bloom",
+      "lod": "eco",
+      "bytes": 20924,
+      "triangles": 589,
+      "vertices": 509,
+      "meshCount": 1,
+      "primitiveCount": 3,
+      "materials": 3,
+      "textureCount": 0,
+      "boundsMinMaxMeters": [
+        [
+          -0.3680092990398407,
+          0,
+          -0.3529818654060364
+        ],
+        [
+          0.36440199613571167,
+          0.27900001406669617,
+          0.3718549609184265
+        ]
+      ],
+      "boundsMeters": [
+        0.7324112951755524,
+        0.27900001406669617,
+        0.7248368263244629
+      ],
+      "originMeters": [
+        0,
+        0,
+        0
+      ],
+      "upAxis": "+Y",
+      "waterlineY": 0,
+      "doubleSided": true,
+      "hasVertexColor": true,
+      "animations": [],
+      "cameras": 0,
+      "lights": 0,
+      "filename": "lotus_bloom_p012b_eco.glb",
+      "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bloom_p012b_eco.glb",
+      "sha256": "8767ef08ccb054fefa3b85e0553d0cfde88bdd6800563a7f7398cf84f9219307",
+      "githubStatus": "uploaded_git_blob_pending_remote_readback",
+      "sourceEditableBlenderStatus": "pending_owner_blender_run",
+      "cyclesEvidenceStatus": "pending_owner_blender_run"
+    },
+    {
+      "assetId": "lotus_bud_p012b",
+      "kind": "bud",
+      "lod": "quality",
+      "bytes": 20940,
+      "triangles": 648,
+      "vertices": 529,
+      "meshCount": 1,
+      "primitiveCount": 2,
+      "materials": 2,
+      "textureCount": 0,
+      "boundsMinMaxMeters": [
+        [
+          -0.14484304189682007,
+          0,
+          -0.14486804604530334
+        ],
+        [
+          0.14374113082885742,
+          0.6340000033378601,
+          0.14486804604530334
+        ]
+      ],
+      "boundsMeters": [
+        0.2885841727256775,
+        0.6340000033378601,
+        0.2897360920906067
+      ],
+      "originMeters": [
+        0,
+        0,
+        0
+      ],
+      "upAxis": "+Y",
+      "waterlineY": 0,
+      "doubleSided": true,
+      "hasVertexColor": true,
+      "animations": [],
+      "cameras": 0,
+      "lights": 0,
+      "filename": "lotus_bud_p012b_quality.glb",
+      "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bud_p012b_quality.glb",
+      "sha256": "fe62a2f9aeb166d0eadf758c75eb47950a9053d8f2149d2a66ceaf5007a05f1a",
+      "githubStatus": "uploaded_git_blob_pending_remote_readback",
+      "sourceEditableBlenderStatus": "pending_owner_blender_run",
+      "cyclesEvidenceStatus": "pending_owner_blender_run"
+    },
+    {
+      "assetId": "lotus_bud_p012b",
+      "kind": "bud",
+      "lod": "eco",
+      "bytes": 8552,
+      "triangles": 192,
+      "vertices": 185,
+      "meshCount": 1,
+      "primitiveCount": 2,
+      "materials": 2,
+      "textureCount": 0,
+      "boundsMinMaxMeters": [
+        [
+          -0.14499245584011078,
+          0,
+          -0.14168626070022583
+        ],
+        [
+          0.14499999582767487,
+          0.6340000033378601,
+          0.14168626070022583
+        ]
+      ],
+      "boundsMeters": [
+        0.28999245166778564,
+        0.6340000033378601,
+        0.28337252140045166
+      ],
+      "originMeters": [
+        0,
+        0,
+        0
+      ],
+      "upAxis": "+Y",
+      "waterlineY": 0,
+      "doubleSided": true,
+      "hasVertexColor": true,
+      "animations": [],
+      "cameras": 0,
+      "lights": 0,
+      "filename": "lotus_bud_p012b_eco.glb",
+      "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bud_p012b_eco.glb",
+      "sha256": "c442cc04c3b0094a920c2b86fb202233782d5076a97e1110a84b345df3f0d082",
+      "githubStatus": "uploaded_git_blob_pending_remote_readback",
+      "sourceEditableBlenderStatus": "pending_owner_blender_run",
+      "cyclesEvidenceStatus": "pending_owner_blender_run"
+    }
+  ]
+}
