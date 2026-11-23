@@ -1,0 +1,267 @@
+{
+  "case": "r10_palette_only",
+  "source": "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r11\\r10_palette_only.glb",
+  "sourceBytes": 5096532,
+  "sourceSha256": "a9f178d1a4d6c4e0b5b969ab25a7fe0462d1284a06ac3a89abd761094420dd41",
+  "engine": "Blender Cycles CPU physical Principled glTF import",
+  "blenderVersion": "4.5.16 LTS",
+  "samples": 32,
+  "renderResolution": [
+    520,
+    603
+  ],
+  "viewTransform": "AgX",
+  "exposureEV": 0.0,
+  "worldStrength": 0.6499999761581421,
+  "lights": [
+    {
+      "name": "R10_Key",
+      "energy": 2.0999999046325684,
+      "color": [
+        1.0,
+        0.8399999737739563,
+        0.8199999928474426
+      ]
+    },
+    {
+      "name": "R10_Rim",
+      "energy": 1.0499999523162842,
+      "color": [
+        1.0,
+        0.7599999904632568,
+        0.8899999856948853
+      ]
+    },
+    {
+      "name": "R10_LowerFill",
+      "energy": 0.7200000286102295,
+      "color": [
+        1.0,
+        0.7400000095367432,
+        0.8299999833106995
+      ]
+    }
+  ],
+  "meshCount": 11,
+  "triangleCount": 188782,
+  "materials": {
+    "Sakura_petal_cream": {
+      "Base Color": [
+        0.9607843160629272,
+        0.800000011920929,
+        0.729411780834198,
+        1.0
+      ],
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Sakura_petal_pink": {
+      "Base Color": [
+        0.9058823585510254,
+        0.5647059082984924,
+        0.6549019813537598,
+        1.0
+      ],
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Sakura_petal_blush": {
+      "Base Color": [
+        0.929411768913269,
+        0.6823529601097107,
+        0.7137255072593689,
+        1.0
+      ],
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Sakura_flower_gold": {
+      "Base Color": [
+        1.0,
+        0.8156862854957581,
+        0.5176470875740051,
+        1.0
+      ],
+      "Emission Color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Sakura_petal_warm_rose": {
+      "Base Color": [
+        0.8941176533699036,
+        0.49803921580314636,
+        0.6000000238418579,
+        1.0
+      ],
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Canopy_rose": {
+      "Base Color": [
+        0.8784313797950745,
+        0.5215686559677124,
+        0.6274510025978088,
+        1.0
+      ],
+      "Emission Color": [
+        0.02500000037252903,
+        0.009999999776482582,
+        0.014000000432133675,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Canopy_peach": {
+      "Base Color": [
+        0.95686274766922,
+        0.6549019813537598,
+        0.6274510025978088,
+        1.0
+      ],
+      "Emission Color": [
+        0.02500000037252903,
+        0.009999999776482582,
+        0.014000000432133675,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Canopy_depth_rose": {
+      "Base Color": [
+        0.7607843279838562,
+        0.43921568989753723,
+        0.5803921818733215,
+        1.0
+      ],
+      "Emission Color": [
+        0.02500000037252903,
+        0.009999999776482582,
+        0.014000000432133675,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Branches_plum": {
+      "Base Color": [
+        0.16470588743686676,
+        0.07450980693101883,
+        0.1882352977991104,
+        1.0
+      ],
+      "Emission Color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Golden_bark_veins": {
+      "Base Color": [
+        0.9686274528503418,
+        0.6784313917160034,
+        0.3960784375667572,
+        1.0
+      ],
+      "Emission Color": [
+        0.3499999940395355,
+        0.12999999523162842,
+        0.03500000014901161,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.7300000190734863
+    },
+    "Trunk_bark_plumblack": {
+      "Base Color": [
+        0.11372549086809158,
+        0.0470588244497776,
+        0.13333334028720856,
+        1.0
+      ],
+      "Emission Color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    }
+  },
+  "axes": "GLB +Y to Blender +Z: (x,y,z)->(x,-z,y)",
+  "boundsBlenderZup": {
+    "min": [
+      -12.894033432006836,
+      -13.751632690429688,
+      -1.022316575050354
+    ],
+    "max": [
+      14.082527160644531,
+      12.722424507141113,
+      26.170320510864258
+    ]
+  },
+  "cameras": [
+    "top",
+    "under"
+  ],
+  "images": [
+    {
+      "name": "r10_palette_only_top_cycles.png",
+      "bytes": 483023,
+      "sha256": "7b5c3387e3802bbc6090fcc5d93b31d0291c42f7f403ba0f32c8c7d0efd5e943"
+    },
+    {
+      "name": "r10_palette_only_under_cycles.png",
+      "bytes": 455498,
+      "sha256": "2ace190f3992713db4b7ae27ad1b521f8f23ebc3e3d5ac4abf2e256b40be673c"
+    }
+  ],
+  "blend": null,
+  "status": "OWNER_CYCLES_RENDERED_NOT_PRODUCTION_APPROVED"
+}

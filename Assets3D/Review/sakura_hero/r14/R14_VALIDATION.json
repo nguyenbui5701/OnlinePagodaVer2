@@ -1,0 +1,134 @@
+{
+  "revision": "R14",
+  "quality": {
+    "bytes": 4877460,
+    "sha256": "ba3183c7b738dbd814b2b23cedc1f6da0470b13121882c116e1775154bda44f5",
+    "triangles": 181314,
+    "vertices": 224395,
+    "meshes": 11,
+    "materials": 11,
+    "explicitNORMALPrimitives": 0,
+    "doubleSidedPetals": true
+  },
+  "eco": {
+    "bytes": 1393492,
+    "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+    "triangles": 44412,
+    "vertices": 71032,
+    "meshes": 10,
+    "materials": 10,
+    "exactR13CarryForward": true
+  },
+  "glTF2": true,
+  "paletteIdenticalR13": true,
+  "degenerateTriangles": 0,
+  "nonfiniteCoordinates": 0,
+  "independentCleanRebuild": {
+    "qualityGlb": "BYTE_IDENTICAL",
+    "ecoGlb": "BYTE_IDENTICAL",
+    "qualityOBJ": "BYTE_IDENTICAL"
+  },
+  "nativeVTKPBR": {
+    "status": "EXECUTED_REAL_GLB",
+    "IBL": true,
+    "sceneLights": 3,
+    "PhongOverride": false,
+    "cameras": [
+      "top",
+      "under",
+      "three_quarter",
+      "trunk_33s",
+      "hero_full_9x16",
+      "hero_medium_9x16",
+      "hero_close_9x16"
+    ],
+    "matchedR13R14": true
+  },
+  "blenderR13": {
+    "status": "OWNER_EXECUTED_SA_VERIFIED",
+    "cases": 3,
+    "images": 18,
+    "archiveHashes": 29
+  },
+  "blenderR14": "OWNER_EXECUTED_SA_AUDITED_PASS",
+  "cameraProjection": {
+    "R13": {
+      "full": {
+        "ndcX": [
+          -0.803,
+          0.8598
+        ],
+        "ndcY": [
+          -0.4546,
+          0.48
+        ],
+        "outOfFramePercent": 0
+      },
+      "medium": {
+        "ndcX": [
+          -1.1214,
+          1.2005
+        ],
+        "ndcY": [
+          -0.6089,
+          0.664
+        ],
+        "outOfFramePercent": 1.23
+      }
+    },
+    "R14": {
+      "full": {
+        "ndcX": [
+          -0.8045,
+          0.8624
+        ],
+        "ndcY": [
+          -0.4465,
+          0.4807
+        ],
+        "outOfFramePercent": 0
+      },
+      "medium": {
+        "ndcX": [
+          -1.1235,
+          1.205
+        ],
+        "ndcY": [
+          -0.597,
+          0.6657
+        ],
+        "outOfFramePercent": 1.235
+      }
+    }
+  },
+  "nativeThreeJs": "NOT_RUN",
+  "GPU_LIVE_STUDIO": "NOT_RUN",
+  "art": "PARTIAL",
+  "productionApproved": false,
+  "ownerBlenderCyclesR14": {
+    "status": "OWNER_EXECUTED_SA_AUDITED_TECHNICAL_PASS",
+    "zipBytes": 17157620,
+    "zipSha256": "1a8664296e5d8e35b9d213e91d0fa15c3532d8f542aba5ccbd54482ef2127336",
+    "filesVerified": 32,
+    "imagesVerified": 21,
+    "casesCompleted": 3,
+    "blenderVersion": "4.5.16 LTS",
+    "renderer": "Cycles CPU",
+    "samples": 32,
+    "agx": true,
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "qualityBlend": {
+      "bytes": 12796204,
+      "sha256": "ff4d23d72c9c88e3b9da3427d8d00cfdc4ac8fcc6b3d8ea33b533a3fbf56c6fd"
+    },
+    "ecoBlend": {
+      "bytes": 3936772,
+      "sha256": "a140b87bcad1cdf275eee289fecf75616eb6180cdb70aa1063fb4717710e20b7"
+    },
+    "art": "PARTIAL",
+    "productionApproved": false,
+    "githubBinaryStatus": "pending_owner_upload",
+    "audit": "R14_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  }
+}

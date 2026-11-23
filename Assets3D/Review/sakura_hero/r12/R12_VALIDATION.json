@@ -1,0 +1,114 @@
+{
+  "revision": 12,
+  "quality": {
+    "bytes": 4916248,
+    "sha256": "0e1f656c74a3f7860cb640395d95cebdb852d7e1269f1463e04408aa6bc8bb25",
+    "triangles": 182674,
+    "vertices": 226267,
+    "meshCount": 11,
+    "materialCount": 11,
+    "explicitNormals": 0,
+    "pbr": true,
+    "doubleSidedPetals": true,
+    "uploadStatus": "pending_owner_upload"
+  },
+  "eco": {
+    "bytes": 1393492,
+    "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+    "triangles": 44412,
+    "vertices": 71032,
+    "meshCount": 10,
+    "materialCount": 10,
+    "explicitNormals": 0,
+    "pbr": true,
+    "doubleSidedPetals": true,
+    "exactR10R11CarryForward": true,
+    "uploadStatus": "pending_owner_upload"
+  },
+  "degenerateTriangles": 0,
+  "nonfiniteVertices": 0,
+  "petalMaterialsAllDoubleSided": true,
+  "explicitNormalPrimitiveCountQuality": 0,
+  "originalR11NormalsSizeCostBytes": 2503832,
+  "nativeVTKImporterPBR": {
+    "status": "PASS_UNDER_DOCUMENTED_RIG",
+    "sameCameraFov": true,
+    "IBL": true,
+    "lights": 3,
+    "PhongOverride": false,
+    "angles": [
+      "top 50deg",
+      "under 44deg",
+      "three_quarter 44deg",
+      "trunk_33s 56deg"
+    ]
+  },
+  "blenderCyclesR11": {
+    "status": "OWNER_AND_SA_VERIFIED",
+    "cases": 9,
+    "PNGs": 22,
+    "viewTransform": "AgX",
+    "exposure": 0
+  },
+  "blenderCyclesR12": {
+    "status": "OWNER_CYCLES_PASS_INDEPENDENT_SA_REVIEWED",
+    "script": "run_sakura_R12_blender.ps1",
+    "cases": [
+      "r10_palette_only",
+      "r11_final",
+      "r12_final",
+      "eco"
+    ],
+    "cameras": [
+      "top",
+      "under",
+      "three_quarter",
+      "trunk_33s",
+      "top_9x16"
+    ],
+    "checkedCases": 4,
+    "checkedImages": 20
+  },
+  "threeJsGLTFLoader": "NOT_RUN",
+  "ownerGPU_FPS_VRAM": "NOT_RUN",
+  "art": "PARTIAL_NOT_APPROVED",
+  "binaryUpload": "PENDING_OWNER_UPLOAD",
+  "qualityVsR11": {
+    "triangles": -6108,
+    "vertices": -8875,
+    "bytes": -2683636
+  },
+  "ecoSameSHA": true,
+  "ownerBlenderCyclesR12": {
+    "status": "OWNER_CYCLES_PASS_INDEPENDENT_SA_REVIEWED",
+    "blenderVersion": "4.5.16 LTS",
+    "renderer": "Cycles CPU",
+    "cases": 4,
+    "imagesVerified": 20,
+    "shaListVerified": "34/34",
+    "samples": 32,
+    "look": "AgX",
+    "exposureEV": 0,
+    "worldStrength": 0.65,
+    "lightEnergies": [
+      2.1,
+      1.05,
+      0.72
+    ],
+    "zipBytes": 16152983,
+    "zipSHA256": "006984dd319f75389c73bfa92b63fb51366603eb43833af33044dc450f117647",
+    "qualityBlend": {
+      "bytes": 12890180,
+      "sha256": "c74f9f9d5a0b7722c080f0bdd33eeca3d36f513dba7b9739ee9ac33a8ac7da83"
+    },
+    "ecoBlend": {
+      "bytes": 3936772,
+      "sha256": "8a4c73638aeab834fd1a1432b85960f0f04b2f09cf1730889318373a3985a7c7"
+    },
+    "art": "PARTIAL",
+    "githubBinaryStatus": "pending_owner_upload",
+    "threeJsNative": "NOT_RUN",
+    "gpuLiveStudio": "NOT_RUN",
+    "source": "R12_BLENDER_CYCLES_OWNER_EVIDENCE_AUDIT.md"
+  }
+}

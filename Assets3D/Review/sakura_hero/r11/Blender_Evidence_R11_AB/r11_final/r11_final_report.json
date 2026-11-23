@@ -1,0 +1,283 @@
+{
+  "case": "r11_final",
+  "source": "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r11\\sakura_hero.glb",
+  "sourceBytes": 7599884,
+  "sourceSha256": "584d95eb9467c8342d018a4a0331f8205b20f042325ef82b56d1bd8daddab375",
+  "engine": "Blender Cycles CPU physical Principled glTF import",
+  "blenderVersion": "4.5.16 LTS",
+  "samples": 32,
+  "renderResolution": [
+    520,
+    603
+  ],
+  "viewTransform": "AgX",
+  "exposureEV": 0.0,
+  "worldStrength": 0.6499999761581421,
+  "lights": [
+    {
+      "name": "R10_Key",
+      "energy": 2.0999999046325684,
+      "color": [
+        1.0,
+        0.8399999737739563,
+        0.8199999928474426
+      ]
+    },
+    {
+      "name": "R10_Rim",
+      "energy": 1.0499999523162842,
+      "color": [
+        1.0,
+        0.7599999904632568,
+        0.8899999856948853
+      ]
+    },
+    {
+      "name": "R10_LowerFill",
+      "energy": 0.7200000286102295,
+      "color": [
+        1.0,
+        0.7400000095367432,
+        0.8299999833106995
+      ]
+    }
+  ],
+  "meshCount": 11,
+  "triangleCount": 188782,
+  "materials": {
+    "Trunk_bark_plumblack": {
+      "Base Color": [
+        0.11372549086809158,
+        0.0470588244497776,
+        0.13333334028720856,
+        1.0
+      ],
+      "Emission Color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Golden_bark_veins": {
+      "Base Color": [
+        0.9686274528503418,
+        0.6784313917160034,
+        0.3960784375667572,
+        1.0
+      ],
+      "Emission Color": [
+        0.3499999940395355,
+        0.12999999523162842,
+        0.03500000014901161,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.7300000190734863
+    },
+    "Branches_plum": {
+      "Base Color": [
+        0.16470588743686676,
+        0.07450980693101883,
+        0.1882352977991104,
+        1.0
+      ],
+      "Emission Color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Canopy_depth_rose": {
+      "Base Color": [
+        0.7607843279838562,
+        0.43921568989753723,
+        0.5803921818733215,
+        1.0
+      ],
+      "Emission Color": [
+        0.02500000037252903,
+        0.009999999776482582,
+        0.014000000432133675,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Canopy_peach": {
+      "Base Color": [
+        0.95686274766922,
+        0.6549019813537598,
+        0.6274510025978088,
+        1.0
+      ],
+      "Emission Color": [
+        0.02500000037252903,
+        0.009999999776482582,
+        0.014000000432133675,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Canopy_rose": {
+      "Base Color": [
+        0.8784313797950745,
+        0.5215686559677124,
+        0.6274510025978088,
+        1.0
+      ],
+      "Emission Color": [
+        0.02500000037252903,
+        0.009999999776482582,
+        0.014000000432133675,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Sakura_petal_warm_rose": {
+      "Base Color": [
+        0.8941176533699036,
+        0.49803921580314636,
+        0.6000000238418579,
+        1.0
+      ],
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Sakura_flower_gold": {
+      "Base Color": [
+        1.0,
+        0.8156862854957581,
+        0.5176470875740051,
+        1.0
+      ],
+      "Emission Color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Emission Strength": 0.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Sakura_petal_blush": {
+      "Base Color": [
+        0.929411768913269,
+        0.6823529601097107,
+        0.7137255072593689,
+        1.0
+      ],
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Sakura_petal_pink": {
+      "Base Color": [
+        0.9058823585510254,
+        0.5647059082984924,
+        0.6549019813537598,
+        1.0
+      ],
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    },
+    "Sakura_petal_cream": {
+      "Base Color": [
+        0.9607843160629272,
+        0.800000011920929,
+        0.729411780834198,
+        1.0
+      ],
+      "Emission Color": [
+        0.04500000178813934,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "Emission Strength": 1.0,
+      "Metallic": 0.0,
+      "Roughness": 0.8799999952316284
+    }
+  },
+  "axes": "GLB +Y to Blender +Z: (x,y,z)->(x,-z,y)",
+  "boundsBlenderZup": {
+    "min": [
+      -12.678421020507812,
+      -13.402039527893066,
+      -1.0270181894302368
+    ],
+    "max": [
+      13.963828086853027,
+      12.607933044433594,
+      26.114761352539062
+    ]
+  },
+  "cameras": [
+    "top",
+    "under",
+    "three_quarter",
+    "trunk_33s"
+  ],
+  "images": [
+    {
+      "name": "r11_final_top_cycles.png",
+      "bytes": 457739,
+      "sha256": "9407ac94186ec68e84ea10c5daf32ed2bcd929b8528e7bde7022540413e72b84"
+    },
+    {
+      "name": "r11_final_under_cycles.png",
+      "bytes": 437709,
+      "sha256": "1bb64bf3496a2e0f4fca8218d3f9ee92c3ae5f641a3534ec36e995ccd577ebee"
+    },
+    {
+      "name": "r11_final_three_quarter_cycles.png",
+      "bytes": 407381,
+      "sha256": "8febb849d14845a73b41d5eb0aec9e820bf3bd5cda60552343765fef1990b749"
+    },
+    {
+      "name": "r11_final_trunk_33s_cycles.png",
+      "bytes": 372859,
+      "sha256": "7b00d08e3ed6fbf81598a47066618878711e5c8c755976266c8f12d6985ec674"
+    }
+  ],
+  "blend": {
+    "path": "D:\\Vibecode\\onlPagodaV2\\OnlinePagodaVer2\\Assets3D\\Review\\sakura_hero\\r11\\Blender_Evidence_R11_AB\\r11_final\\sakura_hero_r11_quality.blend",
+    "bytes": 15303787,
+    "sha256": "f5f871d1c2b6c8cab7d687f844c3eed021c60d66f0e94fe497a5c9ad839451ea"
+  },
+  "status": "OWNER_CYCLES_RENDERED_NOT_PRODUCTION_APPROVED"
+}
