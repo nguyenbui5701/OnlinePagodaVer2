@@ -1,0 +1,196 @@
+{
+  "baseline": "385816518987b2a0ea6ef094bb0f65bfb363e720",
+  "current": "aa7ebedf71563452211c3719cb5837675b64b84f",
+  "traces": [
+    {
+      "demo": "idle",
+      "seed": 9,
+      "end": 85,
+      "samples": 341,
+      "confirmed": [],
+      "paritySha": "66d9b05725991f798017c16eccb7aaabad41bf8072f795a97a2731ab89de1152"
+    },
+    {
+      "demo": "gifts",
+      "seed": 9,
+      "end": 66,
+      "samples": 265,
+      "confirmed": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "startedAtMs": 52900
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "startedAtMs": 58750
+        }
+      ],
+      "paritySha": "181780064225e1026aa7a219ba35774ae75389317d4fb6a527fb4efdb4ef7301"
+    },
+    {
+      "demo": "capacity",
+      "seed": 9,
+      "end": 66,
+      "samples": 265,
+      "confirmed": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "startedAtMs": 52900
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "startedAtMs": 58750
+        }
+      ],
+      "paritySha": "c82b1ddafd72ccd1de44a6cab4184a0fe4250e58955307fd33125370b1a7de5b"
+    },
+    {
+      "demo": "community",
+      "seed": 9,
+      "end": 66,
+      "samples": 265,
+      "confirmed": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 17050
+        }
+      ],
+      "paritySha": "84045c2377fdca904ff6e6c6b16a08959fe2d2ab1d5cabca9751a5e0eab41b61"
+    },
+    {
+      "demo": "idle",
+      "seed": 71,
+      "end": 85,
+      "samples": 341,
+      "confirmed": [],
+      "paritySha": "76fbfd6ece5e39a0584286a99f642c49fa2e4dd4412e2461cade77c4c72842fb"
+    },
+    {
+      "demo": "gifts",
+      "seed": 71,
+      "end": 66,
+      "samples": 265,
+      "confirmed": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "startedAtMs": 52900
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "startedAtMs": 58750
+        }
+      ],
+      "paritySha": "02f119c6e7860180ad84d024605ff45f938175d30453649573e2c86ce1d1d18f"
+    },
+    {
+      "demo": "capacity",
+      "seed": 71,
+      "end": 66,
+      "samples": 265,
+      "confirmed": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 47050
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-2",
+          "actorId": "demo-1-actor-2",
+          "seatId": "seat-2",
+          "startedAtMs": 52900
+        },
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-3",
+          "actorId": "demo-1-actor-3",
+          "seatId": "seat-3",
+          "startedAtMs": 58750
+        }
+      ],
+      "paritySha": "bf310961acb65a374b583e10efd1b0fb23b837d54d47de21a71474bbdd9ef56c"
+    },
+    {
+      "demo": "community",
+      "seed": 71,
+      "end": 66,
+      "samples": 265,
+      "confirmed": [
+        {
+          "roomSessionId": "demo-1",
+          "requestId": "demo-1-gift-1",
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "startedAtMs": 17050
+        }
+      ],
+      "paritySha": "64ed022aff64ad9b29e4de1acefca089b8480839cb522b2baa139dc73e49b2b0"
+    }
+  ],
+  "switches": [
+    {
+      "demo": "community",
+      "extra": "&fx=off",
+      "option": "on",
+      "time": 18.1,
+      "hash": "5be3a248edfe827d62d0a26904b0648560e455cd1e80118d378f0bb81560bfec"
+    },
+    {
+      "demo": "idle",
+      "extra": "",
+      "option": "on",
+      "time": 44.5,
+      "hash": "c38c0d81f3fe0b86be4a26ee77648dbe38ddc30fa20d9f00390c8d6bf0848615"
+    },
+    {
+      "demo": "community",
+      "extra": "",
+      "time": 18.1,
+      "hash": "61375eddb80aeedd29ea0feb2916d7987f8803f31f70b5743902ae75d41284a3"
+    }
+  ]
+}
