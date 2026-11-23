@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "D:\Vibecode\onlPagodaV2\OnlinePagodaVer2\Assets3D\Review\lotus_botanicals\p012b\blender_cycles_p012b.py", line 28, in <module>
+    scene.view_settings.view_transform='AgX';scene.view_settings.look='Medium High Contrast';scene.view_settings.exposure=0
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: bpy_struct: item.attr = val: enum "Medium High Contrast" not found in ('None', 'AgX - Punchy', 'AgX - Greyscale', 'AgX - Very High Contrast', 'AgX - High Contrast', 'AgX - Medium High Contrast', 'AgX - Base Contrast', 'AgX - Medium Low Contrast', 'AgX - Low Contrast', 'AgX - Very Low Contrast')
+
+Error: script failed, file: 'D:\Vibecode\onlPagodaV2\OnlinePagodaVer2\Assets3D\Review\lotus_botanicals\p012b\blender_cycles_p012b.py', exiting.
