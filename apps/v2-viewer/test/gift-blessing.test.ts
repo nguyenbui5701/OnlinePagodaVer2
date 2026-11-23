@@ -8,7 +8,7 @@ import { createBlessingCloud } from '../src/blessing-cloud.ts';
 import { SliceDriver } from '../src/slice-driver.ts';
 
 const binding = { roomSessionId: 'demo-1', requestId: 'demo-gift-1', actorId: 'actor-a', seatId: 'seat-1' };
-const confirmed = { ...binding, phase: 'confirmed' as const, startedAtMs: 4000, expiresAtMs: 9000, progress: 0, opacity: 1 };
+const confirmed = { ...binding, giftId: 'rose', phase: 'confirmed' as const, startedAtMs: 4000, expiresAtMs: 9000, progress: 0, opacity: 1 };
 
 test('blessing is explicitly enabled for gift DEMOs with FX only', () => {
   for (const scenario of ['gifts', 'capacity', 'community'] as const) {

@@ -7,7 +7,7 @@ import type { WaterRipple } from './water.ts';
 type Phase = 'observed' | 'confirmed';
 type Ack = Extract<Effect, { type: 'giftFx' }>;
 type Binding = { actorId: string; seatId: string };
-type Cue = Binding & { roomSessionId: string; requestId: string; phase: Phase; startedAtMs: number; expiresAtMs: number };
+type Cue = Binding & { roomSessionId: string; requestId: string; giftId: string; phase: Phase; startedAtMs: number; expiresAtMs: number };
 const ledgerCapacity = 256;
 
 export class GiftFxLifecycle {
@@ -48,7 +48,7 @@ export class GiftFxLifecycle {
       }
       if (this.cue && (this.cue.requestId !== intent.requestId || this.cue.actorId !== binding.actorId ||
         this.cue.seatId !== binding.seatId)) this.cue = undefined;
-      if (phase) this.begin(state, binding, intent.requestId, intent.expiresAtMs, phase);
+      if (phase) this.begin(state, binding, intent.requestId, ack.giftId, intent.expiresAtMs, phase);
     } else if (state.connected && mode === 'CINE_RETURN' && !intent && this.cue) {
       this.exitAt ??= state.atMs;
     } else {
@@ -69,7 +69,7 @@ export class GiftFxLifecycle {
     return { ...this.cue, progress, opacity };
   }
 
-  private begin(state: Snapshot, binding: Binding, requestId: string, expiresAtMs: number, phase: Phase) {
+  private begin(state: Snapshot, binding: Binding, requestId: string, giftId: string, expiresAtMs: number, phase: Phase) {
     const key = JSON.stringify([state.roomSessionId, requestId, binding.actorId, binding.seatId]);
     const existing = this.played.get(key);
     const mask = phase === 'observed' ? 1 : 2;
@@ -81,7 +81,7 @@ export class GiftFxLifecycle {
     }
     this.played.set(key, (existing ?? 0) | mask);
     this.starts[phase]++;
-    this.cue = { ...binding, roomSessionId: state.roomSessionId, requestId, phase, startedAtMs: state.atMs, expiresAtMs };
+    this.cue = { ...binding, roomSessionId: state.roomSessionId, requestId, giftId, phase, startedAtMs: state.atMs, expiresAtMs };
   }
 }
 

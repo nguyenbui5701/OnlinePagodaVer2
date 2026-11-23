@@ -1,5 +1,5 @@
 import { GiftFocusScheduler, demoDefaults, type DemoConfig } from './focus.ts';
-import { AvatarRegistry, displayName } from './registry.ts';
+import { AvatarRegistry, displayName, sanitizeChat } from './registry.ts';
 import { protocolVersion, type DemoEvent, type DemoViewer, type Effect, type SessionEvent, type Snapshot } from './protocol.ts';
 export * from './protocol.ts';
 export { demoDefaults, type DemoConfig } from './focus.ts';
@@ -31,6 +31,8 @@ export class DemoEngine {
   private nextRippleAt = 0;
   private readonly seen = new Set<string>();
   private readonly gifts = new Map<string, 'observed' | 'confirmed'>();
+  private readonly chatBySpeaker = new Map<string, number>();
+  private nextChatAt = 0;
 
   constructor(options: Partial<DemoConfig> = {}) {
     this.config = { ...demoDefaults, ...options };
@@ -98,6 +100,8 @@ export class DemoEngine {
           event.action === 'disconnect' && this.connected) {
         this.connected = false;
       } else return result('stale');
+      this.chatBySpeaker.clear();
+      this.nextChatAt = 0;
       effects.push(...this.advance(event.atMs));
       this.revision++;
       return result('accepted');
@@ -106,6 +110,8 @@ export class DemoEngine {
     if (!this.connected || event.roomEpoch !== this.epoch || event.connection !== this.connection) return result('stale');
     if (!validKey(event.eventId)) return result('invalid');
     if (this.seen.has(event.eventId)) return result('duplicate');
+    const chat = event.type === 'chat' && event.chatText !== undefined ? sanitizeChat(event.chatText) : undefined;
+    if (event.type === 'chat' && event.chatText !== undefined && !chat) return result('invalid');
     let giftKey: string | undefined;
     if (event.type === 'gift') {
       if (!validViewer(event.viewer) || !validKey(event.giftId) || !natural(event.count) ||
@@ -128,10 +134,25 @@ export class DemoEngine {
 
     switch (event.type) {
       case 'chat':
-      case 'member':
-        this.registry.touch(event.viewer, this.atMs,
-          event.type === 'chat' ? this.config.spawnOnChat : this.config.spawnOnMember, this.revision);
+      case 'member': {
+        const actor = this.registry.touch(event.viewer, this.atMs,
+          event.type === 'chat' ? event.chatText === undefined && this.config.spawnOnChat : this.config.spawnOnMember,
+          this.revision);
+        if (chat?.text && event.type === 'chat' && this.atMs >= this.nextChatAt &&
+            this.atMs >= (this.chatBySpeaker.get(event.viewer.userKey) ?? 0)) {
+          // The room cadence bounds this cooldown ledger to five recent speakers.
+          for (const [key, until] of this.chatBySpeaker) {
+            if (until <= this.atMs) this.chatBySpeaker.delete(key);
+          }
+          this.chatBySpeaker.set(event.viewer.userKey, this.atMs + 3000);
+          this.nextChatAt = this.atMs + 650;
+          const cue = { type: 'chatCue' as const, roomSessionId: this.roomSessionId, eventId: event.eventId, atMs: this.atMs,
+            displayName: actor?.displayName ?? displayName(event.viewer.name), sanitizedText: chat.text,
+            graphemes: chat.graphemes };
+          effects.push(actor ? { ...cue, actorId: actor.actorId, seatId: actor.seatId } : cue);
+        }
         break;
+      }
       case 'room':
         this.viewerCount = event.count;
         break;

@@ -1,4 +1,4 @@
-export const protocolVersion = '0.1.0';
+export const protocolVersion = '0.2.0';
 
 export type AvatarPresentation = {
   actorId: string;
@@ -33,7 +33,8 @@ export type DemoViewer = { userKey: string; name: string; avatarUrl?: string };
 export type Scope = { roomEpoch: number; connection: number };
 type Packet = Scope & { eventId: string; atMs: number };
 export type DemoEvent =
-  | (Packet & { type: 'chat' | 'member'; viewer: DemoViewer })
+  | (Packet & { type: 'chat'; viewer: DemoViewer; chatText?: string })
+  | (Packet & { type: 'member'; viewer: DemoViewer })
   | (Packet & { type: 'like' | 'room'; count: number })
   | (Packet & {
       type: 'gift';
@@ -46,7 +47,13 @@ export type DemoEvent =
 export type SessionEvent = Scope & { type: 'session'; action: 'open' | 'disconnect' | 'reconnect'; atMs: number };
 
 export type SkipReason = 'no-seat' | 'queue-full' | 'expired' | 'actor-missing' | 'room-changed';
+export type ChatCue = {
+  type: 'chatCue'; roomSessionId: string; eventId: string; atMs: number;
+  displayName: string; sanitizedText: string; graphemes: number;
+} & ({ actorId: string; seatId: string } | { actorId?: never; seatId?: never });
+
 export type Effect =
+  | ChatCue
   | { type: 'focusStarted' | 'focusEnded'; atMs: number; intent: FocusIntent }
   | { type: 'focusSkipped'; atMs: number; reason: SkipReason; requestId: string; actorId?: string }
   | { type: 'giftFx'; atMs: number; requestId: string; actorId?: string; displayName: string; giftId: string;

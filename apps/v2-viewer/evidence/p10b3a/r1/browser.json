@@ -1,0 +1,6340 @@
+{
+  "browser": "158.0.4370.33",
+  "classification": "SYNTHETIC_DEMO_NATIVE_WEBGL",
+  "frames": [
+    {
+      "file": "eco-9-presence-off.png",
+      "sha256": "9be9558c0f4c12a8b7c28a13a1179032cf1409a9e23a608075fd2f3fe8b53899",
+      "time": 8.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "An"
+      ],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-gift-off.png",
+      "sha256": "35638233a55362340bb27e71e054052475275ea12987fa172b94fad69e440e3f",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "name": "An",
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-chat-0.2s.png",
+      "sha256": "5ae7ab455836b194f7c2cff1dea18e3b97fc2fd91166be02f94a677ce3a14ecb",
+      "time": 8.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 448.8125,
+          "y": 320.84375,
+          "width": 167.96875,
+          "height": 49.5,
+          "alpha": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-chat-1.0s.png",
+      "sha256": "97ab793033343fbf2842c1c73d33cfd3e8147bc9f5e7d68e96442b2db00bf480",
+      "time": 9.4,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 448.8125,
+          "y": 320.84375,
+          "width": 167.96875,
+          "height": 49.5,
+          "alpha": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-chat-1.5s.png",
+      "sha256": "2d8f006d7595cbfa0ffe0e4660cc1400fdfaea99eace7ce800eeed22403e798d",
+      "time": 9.9,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 514.9635620117188,
+          "y": 318.0885314941406,
+          "width": 35.66668701171875,
+          "height": 35.666656494140625,
+          "alpha": 0.833333
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-chat-2.1s.png",
+      "sha256": "f98841b5d814badbc77c1fe54031b823ec9288265700e2106732bfab92d95b7a",
+      "time": 10.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 523.6301879882812,
+          "y": 288.0989685058594,
+          "width": 18.33331298828125,
+          "height": 18.333343505859375,
+          "alpha": 0.166667
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-chat-2.8s.png",
+      "sha256": "55976b70694c3325f8a43693a544ad78240cfcaa71df9fafad419287cd9c5da7",
+      "time": 11.2,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-long-chat.png",
+      "sha256": "414c869536862a537e36e94f6a2ea9ab175ccfa4f3f941d6a20e22eac635eadd",
+      "time": 13.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-long",
+          "seatId": "seat-2"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "BBình"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 71.9921875,
+          "y": 263.84375,
+          "width": 230.390625,
+          "height": 163.5,
+          "alpha": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-no-seat-chat.png",
+      "sha256": "b24992992e9dd4deb979cfc67cc09daf74d50952e34db038d5a339f3dec56666",
+      "time": 14.4,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "BBình"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-gift-early.png",
+      "sha256": "420dd03ca4b1bb9106d8a43debe3d4043dc2e64e0eae182baa398166889049e4",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.09375,
+          "y": 607.65625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 117.5,
+          "y": 597.203125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 156.78125,
+          "y": 545.546875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-gift-focus-three-seats-review.png",
+      "sha256": "84ccc09c080e727f54b583cf12e183b1f3fcb947c153b471d2b28369be56e31b",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [
+        {
+          "x": 287.875,
+          "y": 738.015625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 226.296875,
+          "y": 727.5625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 265.578125,
+          "y": 675.90625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-gift-mid.png",
+      "sha256": "2bbadf94826ef4d417180f551ed59b9a25343a11500384fdbc65682ece0f2e8e",
+      "time": 17.95,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 149.578125,
+          "y": 581.921875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.37931
+        },
+        {
+          "x": 120.75,
+          "y": 522.953125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.37931
+        },
+        {
+          "x": 183.046875,
+          "y": 525.8125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.37931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-gift-expired.png",
+      "sha256": "53cba6237d9050df7af570461700878dece998d045178106c897811811b044da",
+      "time": 18.7,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-gift-lantern.png",
+      "sha256": "36b516f4625f8742e1222a946ab143036daf5644330407e94abd9a47610e0df6",
+      "time": 46.42,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.484375,
+          "y": 608.453125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 117.75,
+          "y": 599.1875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 156.140625,
+          "y": 546.78125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-gift-neutral.png",
+      "sha256": "6c37376d2a8da0f30fa52cefa9b1d5fc741a633e7e6c0abf77e3c9cc7e63be48",
+      "time": 55.95,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "neutral",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 178.25,
+          "y": 608.515625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 117.0625,
+          "y": 595.71875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 158.046875,
+          "y": 545.59375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-8.60.png",
+      "sha256": "a85ae5c126454867cadd580eabb286c5a492f8d4e9994ad72cb616b47d171297",
+      "time": 8.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 224.796875,
+          "y": 869.640625,
+          "width": 167.96875,
+          "height": 49.5,
+          "alpha": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-9.90.png",
+      "sha256": "cf6dba638744908a6ca309b3e6527fc2ee1d1abfbba6fae42a1d2f4ebb7c8451",
+      "time": 9.9,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 371.3697814941406,
+          "y": 804.1354370117188,
+          "width": 35.666656494140625,
+          "height": 35.66668701171875,
+          "alpha": 0.833333
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-10.50.png",
+      "sha256": "7a482b21b74c129705e0cf3eeecfb0959e01282239ecf3303d1c34e6914c1a3a",
+      "time": 10.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-12.22.png",
+      "sha256": "25f04c55b407ff67cf1822b69d3d9264c51a77b1fb880c486dfde9ea21c8c74f",
+      "time": 12.22,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-12.50.png",
+      "sha256": "b93c3119666c27edf9d0a5b5730d085af06a5f0c0aca838310af9a0e2ad76108",
+      "time": 12.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-13.60.png",
+      "sha256": "8fd224cfd34412519219a38a38a7ed22bd38e3e543719312def889a6915dbcbf",
+      "time": 13.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-14.40.png",
+      "sha256": "6e7e55adf1106722caec6e13f8cb04869995f95fd267db4f02c794c4345eb287",
+      "time": 14.4,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-16.35.png",
+      "sha256": "3b617a03f833a5dfd1b6826270a15834d16f966ac3f081fef637d034f2b48bf0",
+      "time": 16.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-16.85.png",
+      "sha256": "71550642150feb658af3cf13202f8dccca24f8ccd774b4c1cff0bea7866eb40f",
+      "time": 16.85,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-17.43.png",
+      "sha256": "420dd03ca4b1bb9106d8a43debe3d4043dc2e64e0eae182baa398166889049e4",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.09375,
+          "y": 607.65625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 117.5,
+          "y": 597.203125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 156.78125,
+          "y": 545.546875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-18.10.png",
+      "sha256": "bd471014ca336b6b2f5b178d768a9b847b5f882ea4376f7e0b0e51fcc423a3ae",
+      "time": 18.1,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 140.078125,
+          "y": 568.15625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 126.984375,
+          "y": 503.125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 186.328125,
+          "y": 523.53125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-21.87.png",
+      "sha256": "048a36746f3a79bb318c65bc6324400c6d0e96d2c285c723d9e43a7981ee6cbc",
+      "time": 21.87,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-22.35.png",
+      "sha256": "03061f9401a20a6773082b39ac04e9763a4067a485f23b0fee885b8a76588472",
+      "time": 22.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-23.25.png",
+      "sha256": "c4ca0b75bf82ffa1be6c73493870a7bb39b437dd9599c1770a580f38ab2c3b1a",
+      "time": 23.25,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-40.05.png",
+      "sha256": "3d60aa9762ae9cac44c98be2a7ffc8043e951d19f25e7e73ae4df51f9438c95b",
+      "time": 40.05,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-46.42.png",
+      "sha256": "36b516f4625f8742e1222a946ab143036daf5644330407e94abd9a47610e0df6",
+      "time": 46.42,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.484375,
+          "y": 608.453125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 117.75,
+          "y": 599.1875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 156.140625,
+          "y": 546.78125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-47.20.png",
+      "sha256": "8af158eb5478d269c20cb183c893eed9199a39dddbbba84ac16680078ff017ba",
+      "time": 47.2,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 2
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 134.140625,
+          "y": 555.46875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 132.125,
+          "y": 488.984375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 187.109375,
+          "y": 520.359375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-53.00.png",
+      "sha256": "f068d400d1c5d40538ab6cff6f7d3350b15f29da9c8a2e5a62d15f56af02c409",
+      "time": 53,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 1,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-community-motion-55.95.png",
+      "sha256": "6c37376d2a8da0f30fa52cefa9b1d5fc741a633e7e6c0abf77e3c9cc7e63be48",
+      "time": 55.95,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "neutral",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 178.25,
+          "y": 608.515625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 117.0625,
+          "y": 595.71875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 158.046875,
+          "y": 545.59375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-capacity-motion-47.40.png",
+      "sha256": "aaca6276f0214a9371232e80402f281541834fed38c8dcf3c8bf1042e2a06b9b",
+      "time": 47.4,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 5,
+      "labels": {
+        "fx": "5 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 180.265625,
+          "y": 608.296875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.758621
+        },
+        {
+          "x": 118.25,
+          "y": 601.390625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.758621
+        },
+        {
+          "x": 154.859375,
+          "y": 547.546875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.758621
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-9-capacity-motion-52.30.png",
+      "sha256": "983aa16decb0568a1711a3c4feb573aba9aeeb5d41874096e76dc3a961357256",
+      "time": 52.3,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-2",
+      "count": 8,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-capacity-motion-55.75.png",
+      "sha256": "6b7e04c194cac7bfcbafb6e86b0bbb3a6cc27b1f0f1d07dea11b2642efd09aa5",
+      "time": 55.75,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-2",
+      "count": 8,
+      "labels": {
+        "fx": "1 hoa hồng"
+      },
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "BBình"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-capacity-motion-58.04.png",
+      "sha256": "e894660ad6be75c0cf3fca3fa396b6933f6dacf557ebb205d712ff200b50b564",
+      "time": 58.04,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-3",
+      "count": 8,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 2,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-capacity-motion-61.35.png",
+      "sha256": "f8458e5904f1c5ac7115ef69d7f4aba6371f648fa79e43dfcd421d100b948c4b",
+      "time": 61.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-3",
+      "count": 8,
+      "labels": {
+        "fx": "1 hoa hồng"
+      },
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "CChi"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-capacity-motion-63.65.png",
+      "sha256": "2d4d166fef04699433755a017dd92c864b7b2fbbce9b33f7b86f86c435b3665a",
+      "time": 63.65,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 8,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "CChi"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-capacity-motion-66.00.png",
+      "sha256": "fbf1b9143ac4479f5c86b9f9a40275a4c6469acf8d31bef3ebc0e8911ea84704",
+      "time": 66,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 8,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-9-capacity-motion-67.20.png",
+      "sha256": "89af2f0e87f21ce25e0f842ef5b920a9bc218ed49bf44b349d2997824f7e25b9",
+      "time": 67.2,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 8,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-gift-early.png",
+      "sha256": "25868cbde1b2f162c8befbebc70689bd05aa528fef682a89d6b37c102fc80608",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.09375,
+          "y": 607.65625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 117.5,
+          "y": 597.203125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 156.78125,
+          "y": 545.546875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-8.60.png",
+      "sha256": "f957ce44abb96c53a97a23020e15e0f03d71445dcf0e199fc8d96337466006ae",
+      "time": 8.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 224.71875,
+          "y": 864.484375,
+          "width": 167.96875,
+          "height": 49.5,
+          "alpha": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-9.90.png",
+      "sha256": "4bad57b7b07345bc10db2d097627bfc94392e3369241ed5c494b2724f7963502",
+      "time": 9.9,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 371.1197814941406,
+          "y": 786.7135620117188,
+          "width": 35.666656494140625,
+          "height": 35.66668701171875,
+          "alpha": 0.833333
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-10.50.png",
+      "sha256": "b1a8b95165e4ae2e3130e54575fd6c2fe2cf44c3e3cbbbe35f4fb656688bca5b",
+      "time": 10.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-12.22.png",
+      "sha256": "2f15aec67a41be3453ee29c9c3fd6de2a137e5ee9906cc05e9ce4bfae13cc0d8",
+      "time": 12.22,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-12.50.png",
+      "sha256": "df3206efa4e25da8ddf9dfd88d202f830ee06ae4f7a12547df4da39263a77157",
+      "time": 12.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-13.60.png",
+      "sha256": "d9796ec1853670ff6cfed0f5c2e3f580f3ccc6ad4569d2a7b6068b5898fd8d20",
+      "time": 13.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-14.40.png",
+      "sha256": "81d5a13df3f9abb2a52ce4963699b386fe04cb41ac4fc8e72f72e2ff71301fa5",
+      "time": 14.4,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-16.35.png",
+      "sha256": "aa65b34b065933775f8ebb5f2458857f1e86501b7f84bbce6050255aab4e51d9",
+      "time": 16.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-16.85.png",
+      "sha256": "1f1c06c94d74c111cd59c3794002fcf676210afee4f30ee96d3189f724fd160e",
+      "time": 16.85,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-17.43.png",
+      "sha256": "25868cbde1b2f162c8befbebc70689bd05aa528fef682a89d6b37c102fc80608",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.09375,
+          "y": 607.65625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 117.5,
+          "y": 597.203125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 156.78125,
+          "y": 545.546875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-18.10.png",
+      "sha256": "313e60877bbf8f3b6e98e65ef810f45883f3b7db9f76d462929f81b67a0b54ae",
+      "time": 18.1,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 140.078125,
+          "y": 568.15625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 126.984375,
+          "y": 503.125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 186.328125,
+          "y": 523.53125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-21.87.png",
+      "sha256": "6ade1e2612c87719645f46346d755f6d75399389926817f4cbc442b41cc31935",
+      "time": 21.87,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-22.35.png",
+      "sha256": "81639c321b746a109078393b9b22c1c9f18bcd8f955654bddcf6c7b1b7022a1f",
+      "time": 22.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-23.25.png",
+      "sha256": "93bff6830e6d4a476aa0afe1b554d21cd1d21cbd4cbb63558a26f8a798dadc01",
+      "time": 23.25,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-40.05.png",
+      "sha256": "40321f4d2e3e3e35d60786735ce0f974e9c2efaa9ab83060897c85d13276dfeb",
+      "time": 40.05,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-46.42.png",
+      "sha256": "4cce0de4a2ddecbac9a6b17d3bbac47d0ebe42e80974ef2578a3e2d4464f8a53",
+      "time": 46.42,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.484375,
+          "y": 608.453125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 117.75,
+          "y": 599.1875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 156.140625,
+          "y": 546.78125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-47.20.png",
+      "sha256": "eba24c062ecebbcd8c1cb6e52cc597b64a7d3529a6c5af2c5098a8babd79cdb2",
+      "time": 47.2,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 2
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 134.140625,
+          "y": 555.46875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 132.125,
+          "y": 488.984375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 187.109375,
+          "y": 520.359375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-53.00.png",
+      "sha256": "522ee864bebaef7a591da2e449c15feadd10432658557d157a1e060187202b57",
+      "time": 53,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 1,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-71-community-motion-55.95.png",
+      "sha256": "3800b646642d4cec9bf4a8f3f30804031b0d23c7b2e2545a5ad51b3a77d5da14",
+      "time": 55.95,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "neutral",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 178.25,
+          "y": 608.515625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 117.0625,
+          "y": 595.71875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 158.046875,
+          "y": 545.59375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-gift-early.png",
+      "sha256": "ca71296405617ec3d6dfcfee8cf5f278a85ade07695fcddf7f939fbcb7ee6a48",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.09375,
+          "y": 607.65625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 117.5,
+          "y": 597.203125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 156.78125,
+          "y": 545.546875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-8.60.png",
+      "sha256": "fc5827911e4f71f79210d77739174e06587b02ca5df846b508a9a842dbd600ea",
+      "time": 8.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 224.71875,
+          "y": 864.484375,
+          "width": 167.96875,
+          "height": 49.5,
+          "alpha": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-9.90.png",
+      "sha256": "c4c3e5258314ac54994feb52f0ba0f83d7f0309736202fc2ce4116d2459f028d",
+      "time": 9.9,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 371.1197814941406,
+          "y": 786.7135620117188,
+          "width": 35.666656494140625,
+          "height": 35.66668701171875,
+          "alpha": 0.833333
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-10.50.png",
+      "sha256": "3a188eacdfcf5a5afd1a0d9377f20ebf51906edca64e8b6ee4a71a088d1719c5",
+      "time": 10.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-12.22.png",
+      "sha256": "11eb4af1cf12a61cac9f75b2821328474c429a6486b7a897506256187d96f834",
+      "time": 12.22,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-12.50.png",
+      "sha256": "7263d2926c76a5fe7aa9b81a4cecb2c4e76161df3b269dd298380c2f5df79e66",
+      "time": 12.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-13.60.png",
+      "sha256": "dc5abc4afa42d6c9da50c050d7105288d78e1ca4e47edeb1f93429c05c6516fe",
+      "time": 13.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-14.40.png",
+      "sha256": "a673cb6c02d6393b1ba79e8ac29183a4f89cfcdce70a3196844a4ab456e2d0aa",
+      "time": 14.4,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-16.35.png",
+      "sha256": "f4374a46d642deab9a4cca5fafcfa0e7b1e2407b2259d04caaff0f931e0fb464",
+      "time": 16.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-16.85.png",
+      "sha256": "095131a39e7dcc3e4ec2763487599c80804d775f28aaa6484edf05613344801a",
+      "time": 16.85,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-17.43.png",
+      "sha256": "ca71296405617ec3d6dfcfee8cf5f278a85ade07695fcddf7f939fbcb7ee6a48",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.09375,
+          "y": 607.65625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 117.5,
+          "y": 597.203125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 156.78125,
+          "y": 545.546875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-18.10.png",
+      "sha256": "e34609e97173ae708b010d402c3d45c43dc83d768fc67b04d1306be4dc7913b9",
+      "time": 18.1,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 140.078125,
+          "y": 568.15625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 126.984375,
+          "y": 503.125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 186.328125,
+          "y": 523.53125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-21.87.png",
+      "sha256": "e4681dc20d0f5b2040d0aa2602612b161ba7b9466121c83f7e88ae1dd2baba2e",
+      "time": 21.87,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-22.35.png",
+      "sha256": "7636aa43dc80059c02b584995df8ffc3439cbc8c05142e893a25840ef764e954",
+      "time": 22.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-23.25.png",
+      "sha256": "d891cea3f40530d9597ae4e6805f03b271f9726c47530e29ee2c22c40d8d5a14",
+      "time": 23.25,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-40.05.png",
+      "sha256": "e56f25204f1820d3522c93b9f2149f55ead37be6fadd1595d7443f66fc699ee3",
+      "time": 40.05,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-46.42.png",
+      "sha256": "8f592ae5d497e0302db3b4cacf6a22ee77b0051b351d29651cec21272d34ae61",
+      "time": 46.42,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.484375,
+          "y": 608.453125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 117.75,
+          "y": 599.1875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 156.140625,
+          "y": 546.78125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-47.20.png",
+      "sha256": "3a5c15a29a2dff1ed418c9bd2d9c12b4e3a50dc307c1abaa9d218e1f3eb866d7",
+      "time": 47.2,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 2
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 134.140625,
+          "y": 555.46875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 132.125,
+          "y": 488.984375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 187.109375,
+          "y": 520.359375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-53.00.png",
+      "sha256": "033f160a1072bf889854b9274e525d64b7e409b509a0055f9dd45ddade506d04",
+      "time": 53,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 1,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "eco-1337-community-motion-55.95.png",
+      "sha256": "7351e63b498cb1d46041e1f2ffe61819b670b549937617e3e0f44ed76f8d0e02",
+      "time": 55.95,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "neutral",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 178.25,
+          "y": 608.515625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 117.0625,
+          "y": 595.71875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 158.046875,
+          "y": 545.59375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-presence-off.png",
+      "sha256": "5d870e853f71f646922ce7a1831dde7afaa1d25e6ac8dfd1507527390fea497c",
+      "time": 8.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "An"
+      ],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-gift-off.png",
+      "sha256": "b2570c66f6737996b83f965eebe9214315d85cc85a033c2cc666f3d56c1f8ca3",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "name": "An",
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-chat-0.2s.png",
+      "sha256": "a15798251cf2156401f0400739e6ab73d1c291ad50bc4e196661ee4be279b600",
+      "time": 8.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 448.8125,
+          "y": 320.84375,
+          "width": 167.96875,
+          "height": 49.5,
+          "alpha": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-chat-1.0s.png",
+      "sha256": "924af2a6bf21d4d2e06a7bfc322e3d19a7b3537b35dc6f8d4de0b99ebe2c25c3",
+      "time": 9.4,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 448.8125,
+          "y": 320.84375,
+          "width": 167.96875,
+          "height": 49.5,
+          "alpha": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-chat-1.5s.png",
+      "sha256": "4c1782b4b77e0f3bbbb571e765774fc9b23744291e518a3024a5cad4ce70ba2d",
+      "time": 9.9,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 514.9635620117188,
+          "y": 318.0885314941406,
+          "width": 35.66668701171875,
+          "height": 35.666656494140625,
+          "alpha": 0.833333
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-chat-2.1s.png",
+      "sha256": "fa41d7946aaa7ebeeeb315014641374298b9f14acf0436ca6c81c72561836e19",
+      "time": 10.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 523.6301879882812,
+          "y": 288.0989685058594,
+          "width": 18.33331298828125,
+          "height": 18.333343505859375,
+          "alpha": 0.166667
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-chat-2.8s.png",
+      "sha256": "ad8d21b6bdb074afa714bf6df157f6400dcfa2d66db8f2b36eced94c2cd7273e",
+      "time": 11.2,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-long-chat.png",
+      "sha256": "7ff454c3c2d4e3db53d0aa8ad73b60e3364309edd60062d2571c324fa0f1ed97",
+      "time": 13.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-long",
+          "seatId": "seat-2"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "BBình"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 71.9921875,
+          "y": 263.84375,
+          "width": 230.390625,
+          "height": 163.5,
+          "alpha": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-no-seat-chat.png",
+      "sha256": "a28cac1e8315efc87f9417973131ec4a2e29a5c3069a00a30275a4046db2d5b9",
+      "time": 14.4,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "BBình"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-gift-early.png",
+      "sha256": "46d7dd80b4cfce65737abe019bb2a39002f6d46fb28349dd2313427cac2f8aa7",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.09375,
+          "y": 607.65625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 138.203125,
+          "y": 619.3125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 115.171875,
+          "y": 581.4375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 141.828125,
+          "y": 546.375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 181.328125,
+          "y": 562.578125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-gift-focus-three-seats-review.png",
+      "sha256": "0667516cae36b2f59d83d731143e912ba409d403a8d8e320d22b4b6c9a8f9cee",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [
+        {
+          "x": 287.875,
+          "y": 738.015625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 246.984375,
+          "y": 749.671875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 223.96875,
+          "y": 711.796875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 250.625,
+          "y": 676.734375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 290.125,
+          "y": 692.9375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-gift-mid.png",
+      "sha256": "117a0e2af6bd41e582ebeba071d566d4533cfed0ca9cd670ee140a3f54482cbd",
+      "time": 17.95,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 149.578125,
+          "y": 581.921875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.37931
+        },
+        {
+          "x": 116.4375,
+          "y": 553.84375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.37931
+        },
+        {
+          "x": 131.234375,
+          "y": 511.546875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.37931
+        },
+        {
+          "x": 173.515625,
+          "y": 513.484375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.37931
+        },
+        {
+          "x": 184.859375,
+          "y": 556.984375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.37931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-gift-expired.png",
+      "sha256": "8ff860634766a05bef6f78df2389de590bcaa1688dd717af8179f4702b3e4c82",
+      "time": 18.7,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-gift-lantern.png",
+      "sha256": "1d586895cef28f9aa13e54f1ce1992579ba4724ad7999476052ab10aae101cdf",
+      "time": 46.42,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.484375,
+          "y": 608.453125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 138.796875,
+          "y": 620.890625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 115.140625,
+          "y": 583.453125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 141.203125,
+          "y": 547.890625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 180.96875,
+          "y": 563.34375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-gift-neutral.png",
+      "sha256": "c9bf97ce3a1b8430c8abe6245f466fa010bccc856cec0a3460bd56338293dd26",
+      "time": 55.95,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "neutral",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 178.25,
+          "y": 608.515625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 137,
+          "y": 618.609375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 115.265625,
+          "y": 579.875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 143.078125,
+          "y": 545.859375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 182.015625,
+          "y": 563.5625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-8.60.png",
+      "sha256": "ece26a8117d2e978c08c2daac2248c4850b3a1a995c7a43040ea62b139f94217",
+      "time": 8.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 224.796875,
+          "y": 869.640625,
+          "width": 167.96875,
+          "height": 49.5,
+          "alpha": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-9.90.png",
+      "sha256": "0a1f265a1213af1e64b7fe33883913beca6a695bcb04d0cced30692b991d3e75",
+      "time": 9.9,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 371.3697814941406,
+          "y": 804.1354370117188,
+          "width": 35.666656494140625,
+          "height": 35.66668701171875,
+          "alpha": 0.833333
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-10.50.png",
+      "sha256": "41bc76a59654d53c3a9a600f2d538072d0f746dd1be8b4910e0af9087271f57d",
+      "time": 10.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-12.22.png",
+      "sha256": "295d206c81b9c3a559ebf2f5eb2211aa883216a2e5309adeb0fed322e69a9859",
+      "time": 12.22,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-12.50.png",
+      "sha256": "8ec2852238b54eca6c65969acf3b2156fc092ebaacf390009f436f0501e29a17",
+      "time": 12.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-13.60.png",
+      "sha256": "655016a95bc87caa16b5754d3c28ba2d97ba28e590801d123c75c4d46e5f3647",
+      "time": 13.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-14.40.png",
+      "sha256": "2853cd5f5fc0512555fe6b7127ed87fe5785bd135f778969904abe321639e319",
+      "time": 14.4,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-16.35.png",
+      "sha256": "cb055572ce622968238c84642bb72cd7ed4029a1170b735c990cb73786522502",
+      "time": 16.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-16.85.png",
+      "sha256": "419ac83788d77b657ac4d6b90e8b5eb4c0dbe2c9dc555a780fa5a8cf5fbdec2a",
+      "time": 16.85,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-17.43.png",
+      "sha256": "46d7dd80b4cfce65737abe019bb2a39002f6d46fb28349dd2313427cac2f8aa7",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.09375,
+          "y": 607.65625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 138.203125,
+          "y": 619.3125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 115.171875,
+          "y": 581.4375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 141.828125,
+          "y": 546.375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 181.328125,
+          "y": 562.578125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-18.10.png",
+      "sha256": "31153554ef16ae30180e2331245a2d6be212d8456bc2f0cffb7d125741717dcf",
+      "time": 18.1,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 140.078125,
+          "y": 568.15625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 115.125,
+          "y": 531.6875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 139.921875,
+          "y": 495.109375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 180.203125,
+          "y": 508.96875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 180.296875,
+          "y": 554.109375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-21.87.png",
+      "sha256": "3ca178a7fea2a0af4e081ca0b9fb67e26ca00f876e1a8510678167fb35b8730e",
+      "time": 21.87,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-22.35.png",
+      "sha256": "5f3c1018cd0cd92f0a29e81931c6062d57c7afc0f5ba15ded6574523e78463ec",
+      "time": 22.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-23.25.png",
+      "sha256": "b1739e5b05e31383b1464e861343bd3dd20cce1f827dd656f325101a25a5aae3",
+      "time": 23.25,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-40.05.png",
+      "sha256": "9489e51ece391bcabebd185bc45e523f7a4474d509eff76e5b6a17f9c14b6721",
+      "time": 40.05,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-46.42.png",
+      "sha256": "1d586895cef28f9aa13e54f1ce1992579ba4724ad7999476052ab10aae101cdf",
+      "time": 46.42,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.484375,
+          "y": 608.453125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 138.796875,
+          "y": 620.890625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 115.140625,
+          "y": 583.453125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 141.203125,
+          "y": 547.890625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 180.96875,
+          "y": 563.34375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-47.20.png",
+      "sha256": "9c63ea39e85f0ef1b0f843b926a3485e6ac798274ac486eb6c9f9783c182a18f",
+      "time": 47.2,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 2
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 134.140625,
+          "y": 555.46875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 115.6875,
+          "y": 514.84375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 146.203125,
+          "y": 483.5625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 183.515625,
+          "y": 504.859375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 176.0625,
+          "y": 549.296875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-53.00.png",
+      "sha256": "422575c94686f12dc0371e3090c946631c6d64e65c7b0ffc0abf1134c7309e85",
+      "time": 53,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 1,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-community-motion-55.95.png",
+      "sha256": "c9bf97ce3a1b8430c8abe6245f466fa010bccc856cec0a3460bd56338293dd26",
+      "time": 55.95,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "neutral",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 178.25,
+          "y": 608.515625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 137,
+          "y": 618.609375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 115.265625,
+          "y": 579.875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 143.078125,
+          "y": 545.859375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 182.015625,
+          "y": 563.5625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-capacity-motion-47.40.png",
+      "sha256": "5988aa3af634a8a76e67faf67a21259d9bb7a6873f43306a7d4cd04d82a0124c",
+      "time": 47.4,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 5,
+      "labels": {
+        "fx": "5 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 180.265625,
+          "y": 608.296875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.758621
+        },
+        {
+          "x": 140.03125,
+          "y": 622.265625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.758621
+        },
+        {
+          "x": 115.125,
+          "y": 585.765625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.758621
+        },
+        {
+          "x": 139.96875,
+          "y": 549.234375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.758621
+        },
+        {
+          "x": 180.234375,
+          "y": 563.15625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.758621
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-9-capacity-motion-52.30.png",
+      "sha256": "c05adc7dbcbef5f707e3e6b772690ff7cb43d31cb61cf221effa5f8c03a1acc5",
+      "time": 52.3,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-2",
+      "count": 8,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-capacity-motion-55.75.png",
+      "sha256": "8b284941def66d47e8a70949cd51e97fba5df297f6e7fa98359c953893378d5e",
+      "time": 55.75,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-2",
+      "count": 8,
+      "labels": {
+        "fx": "1 hoa hồng"
+      },
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "BBình"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-capacity-motion-58.04.png",
+      "sha256": "2f438def569d4b69976dcbe7e042fd18d574993f20a81d016029de6b5296f159",
+      "time": 58.04,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-3",
+      "count": 8,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 2,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-capacity-motion-61.35.png",
+      "sha256": "47425b625c7d27705d6b41453ffd930454c8f686028dfe55ebc2b7ccc4709ba2",
+      "time": 61.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-3",
+      "count": 8,
+      "labels": {
+        "fx": "1 hoa hồng"
+      },
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "CChi"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-capacity-motion-63.65.png",
+      "sha256": "090dd8640196aa105d8ea47b149d9791c3019075743bca7f9bf1c5032d24d91c",
+      "time": 63.65,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 8,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "CChi"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-capacity-motion-66.00.png",
+      "sha256": "902c651141bd676ebcbd846cfcdc84627907c1574ccf27dd22162d7771cfd6ed",
+      "time": 66,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 8,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-9-capacity-motion-67.20.png",
+      "sha256": "376e2ab94125b9b4b6591284c6eb69e7bade3907dffcde4b0cb58c51523073c6",
+      "time": 67.2,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 8,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-gift-early.png",
+      "sha256": "667c23f06ad6e92f05543f1cc58b3a62743ad4a80ae9efc97a04fb615abf68c8",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.09375,
+          "y": 607.65625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 138.203125,
+          "y": 619.3125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 115.171875,
+          "y": 581.4375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 141.828125,
+          "y": 546.375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 181.328125,
+          "y": 562.578125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-8.60.png",
+      "sha256": "60f0f7bb9d798b1bd13542b4e705f8e93a30afa69b3bb2f402cd845781b1fb8c",
+      "time": 8.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 224.71875,
+          "y": 864.484375,
+          "width": 167.96875,
+          "height": 49.5,
+          "alpha": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-9.90.png",
+      "sha256": "39a6fb9809a76f4e9290cb3eb8041f998b3eda439cb84a7aa647e49874f80bb5",
+      "time": 9.9,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 371.1197814941406,
+          "y": 786.7135620117188,
+          "width": 35.666656494140625,
+          "height": 35.66668701171875,
+          "alpha": 0.833333
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-10.50.png",
+      "sha256": "327ba91748c6eff644e3fc440622f21c6b748487fc953cf436363fa8b50e2169",
+      "time": 10.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-12.22.png",
+      "sha256": "1e8889bce67bab28fe4aa1d22d553946e4cff89e6ae1b85e65781b1d15046f71",
+      "time": 12.22,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-12.50.png",
+      "sha256": "289a29eae984e892ec58a562abad3cf4f8fd36fd21e676fcde6802f99c7b5cbe",
+      "time": 12.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-13.60.png",
+      "sha256": "fafe847cacb109f2b5734ddbb2a4f801492dc9db469c4fe481fd34b5fc560de1",
+      "time": 13.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-14.40.png",
+      "sha256": "74b46181ff321917d8b7061be8ceb89acc6001cf6bd918b865056c1231b76bd6",
+      "time": 14.4,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-16.35.png",
+      "sha256": "4e56667b2c39ebdb0df199698654c30dc6340c36475e4c77a6dea3329018938e",
+      "time": 16.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-16.85.png",
+      "sha256": "c3be2f8f0b7129d669fa18c0fcd1a49d9df82115fe032806da73f0921126ef49",
+      "time": 16.85,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-17.43.png",
+      "sha256": "667c23f06ad6e92f05543f1cc58b3a62743ad4a80ae9efc97a04fb615abf68c8",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.09375,
+          "y": 607.65625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 138.203125,
+          "y": 619.3125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 115.171875,
+          "y": 581.4375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 141.828125,
+          "y": 546.375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 181.328125,
+          "y": 562.578125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-18.10.png",
+      "sha256": "150124459c96a337be0b8e0d4b62ae82631d44ff07d83e3751c1e9becde0e7f1",
+      "time": 18.1,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 140.078125,
+          "y": 568.15625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 115.125,
+          "y": 531.6875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 139.921875,
+          "y": 495.109375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 180.203125,
+          "y": 508.96875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 180.296875,
+          "y": 554.109375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-21.87.png",
+      "sha256": "a6cc9a82b2947c58c8f7fde0fe43fd20edf43e9ce61437e8eb41f54c9409836d",
+      "time": 21.87,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-22.35.png",
+      "sha256": "1d7708de6a5bcd8f89ae2b65e40859f0a8033f1cd9ce81b16287cddff783e225",
+      "time": 22.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-23.25.png",
+      "sha256": "28b7940bf927a1e01293bd597f36419e3bf9867aa03be138ac723ae33df57dd0",
+      "time": 23.25,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-40.05.png",
+      "sha256": "3cd838e80c2185c8ba2cfd9a75f676205fe9468e806a4856df7c46b6c9ddaa12",
+      "time": 40.05,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-46.42.png",
+      "sha256": "44218ea9046213ebcff35badc48fdfb8b1e523f9e3bf05396c42183529ecf528",
+      "time": 46.42,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.484375,
+          "y": 608.453125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 138.796875,
+          "y": 620.890625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 115.140625,
+          "y": 583.453125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 141.203125,
+          "y": 547.890625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 180.96875,
+          "y": 563.34375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-47.20.png",
+      "sha256": "aab72dc08312901c4ee6093d0aec472aa3de3d18af5cc1f162770dd56a00237b",
+      "time": 47.2,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 2
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 134.140625,
+          "y": 555.46875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 115.6875,
+          "y": 514.84375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 146.203125,
+          "y": 483.5625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 183.515625,
+          "y": 504.859375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 176.0625,
+          "y": 549.296875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-53.00.png",
+      "sha256": "4ee13a68a722e583f3020f746258bf7edeaf005062d1af26840951b27c47561c",
+      "time": 53,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 1,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-71-community-motion-55.95.png",
+      "sha256": "fdaefb05811edb40f1d0f21ad86740789d29c927193785bf9f8d49bf87adff66",
+      "time": 55.95,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "neutral",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 178.25,
+          "y": 608.515625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 137,
+          "y": 618.609375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 115.265625,
+          "y": 579.875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 143.078125,
+          "y": 545.859375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 182.015625,
+          "y": 563.5625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-gift-early.png",
+      "sha256": "339951c7e429353123d669faeb832258b48a09ae5742421d6ef5b64d505783f3",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.09375,
+          "y": 607.65625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 138.203125,
+          "y": 619.3125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 115.171875,
+          "y": 581.4375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 141.828125,
+          "y": 546.375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 181.328125,
+          "y": 562.578125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-8.60.png",
+      "sha256": "e7a8190d2a634d43925c65f107c4cd8dc766e869beef5d47143e45db9747e1a3",
+      "time": 8.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 224.71875,
+          "y": 864.484375,
+          "width": 167.96875,
+          "height": 49.5,
+          "alpha": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-9.90.png",
+      "sha256": "065a5e8bd1c341447dbc070874f5eff362de016b779a1f683f633b8b7c7f2991",
+      "time": 9.9,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 371.1197814941406,
+          "y": 786.7135620117188,
+          "width": 35.666656494140625,
+          "height": 35.66668701171875,
+          "alpha": 0.833333
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-10.50.png",
+      "sha256": "fa5b6ccde4eadf13ae7afe53eac3aecb5aaba895aa762be87278098af625e793",
+      "time": 10.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-12.22.png",
+      "sha256": "0e2da75cd28e0d54ebc0afbc75b45feeab88dd0fe30c692284c5e636db735eea",
+      "time": 12.22,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-12.50.png",
+      "sha256": "7b5c19bdc135350b22fe31ef4ac5b3d136b3713db47b168be4ab026f93ebc1f3",
+      "time": 12.5,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-13.60.png",
+      "sha256": "7c9cc90a9cde8607800b536585a7e8a9725ebc5268c6f823d1be24ab502ff822",
+      "time": 13.6,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-14.40.png",
+      "sha256": "a76a364eae62f9f345c3a604411d10dccf2522cd3bd2be60e5a3ae5f04fea6d5",
+      "time": 14.4,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-16.35.png",
+      "sha256": "cd67b1f154a4d28d44da287981e0167ef02ff029209c635aaa74a98122e5209a",
+      "time": 16.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "CChi",
+        "BBình",
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 3,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-16.85.png",
+      "sha256": "9872716ecb487d72ebcdaafd1545672b685e7cb9b09f4b1245a3475e37fe4095",
+      "time": 16.85,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_TRANSITION",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-17.43.png",
+      "sha256": "339951c7e429353123d669faeb832258b48a09ae5742421d6ef5b64d505783f3",
+      "time": 17.43,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.09375,
+          "y": 607.65625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 138.203125,
+          "y": 619.3125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 115.171875,
+          "y": 581.4375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 141.828125,
+          "y": 546.375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        },
+        {
+          "x": 181.328125,
+          "y": 562.578125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.737931
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-18.10.png",
+      "sha256": "ce955589f3d6aa18a722b968f844d915e727ef7d1a4f34d42cf1e5f6aef01670",
+      "time": 18.1,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 3,
+      "labels": {
+        "fx": "2 hoa hồng",
+        "fallback": "Duyên · 1 hoa hồng"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 3
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 140.078125,
+          "y": 568.15625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 115.125,
+          "y": 531.6875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 139.921875,
+          "y": 495.109375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 180.203125,
+          "y": 508.96875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        },
+        {
+          "x": 180.296875,
+          "y": 554.109375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.275862
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-21.87.png",
+      "sha256": "0371c1fbb242ec25f269b6862a1a3ac4a0abf8f388b80c07be76e9edc42a51f3",
+      "time": 21.87,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-22.35.png",
+      "sha256": "b3a242ad186bf18b1d5a23f1a5eb0c1e8a957d39a7c3092e5a6395c007a45896",
+      "time": 22.35,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-23.25.png",
+      "sha256": "641ed31ba50639ece8fe3f20b05523b2f9673bbed7a36639fdbd6c974131bea2",
+      "time": 23.25,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINE_RETURN",
+      "count": 3,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-1",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-40.05.png",
+      "sha256": "fec5287b927fcab169d096bd5fbdb715cbe19780dd5867b0ee34059514088045",
+      "time": 40.05,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-46.42.png",
+      "sha256": "43ff35db986b2e96be446d36a2161704833eaefd7c536f03ea2267c8634ed5b2",
+      "time": 46.42,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 179.484375,
+          "y": 608.453125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 138.796875,
+          "y": 620.890625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 115.140625,
+          "y": 583.453125,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 141.203125,
+          "y": 547.890625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        },
+        {
+          "x": 180.96875,
+          "y": 563.34375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.744828
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-47.20.png",
+      "sha256": "325706989e1a05187dff1624d21482de454b06e03008d00f46265795dfda6482",
+      "time": 47.2,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 1,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "lantern",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 2
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 134.140625,
+          "y": 555.46875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 115.6875,
+          "y": 514.84375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 146.203125,
+          "y": 483.5625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 183.515625,
+          "y": 504.859375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        },
+        {
+          "x": 176.0625,
+          "y": 549.296875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.206897
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-53.00.png",
+      "sha256": "bb28377b7935ea21e4d2a49501a6cf9fcf17b48954b87205a90808c7da7f73d4",
+      "time": 53,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 1,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "file": "quality-1337-community-motion-55.95.png",
+      "sha256": "9f3e5adb4c6461db88230e76f2e344453e22864b230e9029db471d604a4c5307",
+      "time": 55.95,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "GIFT_FOCUS",
+      "focus": "seat-1",
+      "count": 2,
+      "labels": {
+        "fx": "1 quà"
+      },
+      "bubbles": {
+        "gift": {
+          "type": "neutral",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "room": "demo-2",
+      "community": {
+        "slots": 12,
+        "actors": 1
+      },
+      "names": [
+        "AAn"
+      ],
+      "remotePhotos": 0,
+      "badges": 1,
+      "bubbleBoxes": [
+        {
+          "x": 178.25,
+          "y": 608.515625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 137,
+          "y": 618.609375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 115.265625,
+          "y": 579.875,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 143.078125,
+          "y": 545.859375,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        },
+        {
+          "x": 182.015625,
+          "y": 563.5625,
+          "width": 40,
+          "height": 40,
+          "alpha": 0.724138
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "pixelParity": [
+    {
+      "profile": "eco",
+      "seed": 9,
+      "name": "presence",
+      "before": "f22033b5a6f9bc7e34208d0ddcdf40ce2c0c1282",
+      "after": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "sha256": "9be9558c0f4c12a8b7c28a13a1179032cf1409a9e23a608075fd2f3fe8b53899"
+    },
+    {
+      "profile": "eco",
+      "seed": 9,
+      "name": "gift",
+      "before": "f22033b5a6f9bc7e34208d0ddcdf40ce2c0c1282",
+      "after": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "sha256": "35638233a55362340bb27e71e054052475275ea12987fa172b94fad69e440e3f"
+    },
+    {
+      "profile": "eco",
+      "seed": 71,
+      "name": "presence",
+      "before": "f22033b5a6f9bc7e34208d0ddcdf40ce2c0c1282",
+      "after": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "sha256": "cc9cb35f47439be83df2a2bf02ffcd71b20755564f5b9037625d94805abb6d6c"
+    },
+    {
+      "profile": "eco",
+      "seed": 71,
+      "name": "gift",
+      "before": "f22033b5a6f9bc7e34208d0ddcdf40ce2c0c1282",
+      "after": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "sha256": "804907ab43e2836a34e2159099da1c38d8733807d2b2a7982ab5c57dcaf5b4af"
+    },
+    {
+      "profile": "eco",
+      "seed": 1337,
+      "name": "presence",
+      "before": "f22033b5a6f9bc7e34208d0ddcdf40ce2c0c1282",
+      "after": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "sha256": "190045780a1d7455594fe950335271203d8b60ed3d448bdb59eb95fa5c4ce2f9"
+    },
+    {
+      "profile": "eco",
+      "seed": 1337,
+      "name": "gift",
+      "before": "f22033b5a6f9bc7e34208d0ddcdf40ce2c0c1282",
+      "after": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "sha256": "2906823c006866096355b1ccbbd79276008411c97befd6c2c3a4fb1264f1559a"
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "name": "presence",
+      "before": "f22033b5a6f9bc7e34208d0ddcdf40ce2c0c1282",
+      "after": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "sha256": "5d870e853f71f646922ce7a1831dde7afaa1d25e6ac8dfd1507527390fea497c"
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "name": "gift",
+      "before": "f22033b5a6f9bc7e34208d0ddcdf40ce2c0c1282",
+      "after": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "sha256": "b2570c66f6737996b83f965eebe9214315d85cc85a033c2cc666f3d56c1f8ca3"
+    },
+    {
+      "profile": "quality",
+      "seed": 71,
+      "name": "presence",
+      "before": "f22033b5a6f9bc7e34208d0ddcdf40ce2c0c1282",
+      "after": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "sha256": "28dcd164cf49c6e9263492ab75e8b2f60e911d7f541e754d3671e89372642350"
+    },
+    {
+      "profile": "quality",
+      "seed": 71,
+      "name": "gift",
+      "before": "f22033b5a6f9bc7e34208d0ddcdf40ce2c0c1282",
+      "after": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "sha256": "330795a426d7b6c42993afc395bba8bedecc7506f496a99d7e9bc70393134fd7"
+    },
+    {
+      "profile": "quality",
+      "seed": 1337,
+      "name": "presence",
+      "before": "f22033b5a6f9bc7e34208d0ddcdf40ce2c0c1282",
+      "after": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "sha256": "ab245a1419654f1bd0cac440045dbdcbd9e8cbc3e0ae349c4fa4beb1a29faad3"
+    },
+    {
+      "profile": "quality",
+      "seed": 1337,
+      "name": "gift",
+      "before": "f22033b5a6f9bc7e34208d0ddcdf40ce2c0c1282",
+      "after": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "sha256": "121e18de133377f8f3991005d565c103dae2e5a2fce17d304a5ae742573fcd7c"
+    }
+  ],
+  "performance": [
+    {
+      "profile": "eco",
+      "on": false,
+      "samples": 12,
+      "cpuMs": [
+        1.200000001117587,
+        12.300000000745058,
+        12.300000000745058
+      ],
+      "frameMs": [
+        118,
+        125.10000000000014,
+        125.10000000000014
+      ],
+      "draws": 27,
+      "triangles": 60233,
+      "points": 91,
+      "overlayNodes": 0,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "errors": [],
+      "cpu": [
+        1.599999999627471,
+        1.5,
+        1.800000000745058,
+        1.200000001117587,
+        12.300000000745058,
+        1.199999999254942,
+        7.5,
+        1.099999999627471,
+        1,
+        1.300000000745058,
+        1.200000001117587,
+        1.099999999627471
+      ],
+      "frames": [
+        118,
+        125.10000000000014,
+        118,
+        111.09999999999991,
+        118,
+        111.20000000000005,
+        118.09999999999991,
+        111.00000000000023,
+        111.19999999999982,
+        118,
+        118.09999999999991,
+        111.09999999999991
+      ]
+    },
+    {
+      "profile": "eco",
+      "on": true,
+      "samples": 12,
+      "cpuMs": [
+        2.200000001117587,
+        12.5,
+        12.5
+      ],
+      "frameMs": [
+        118,
+        138.79999999999995,
+        138.79999999999995
+      ],
+      "draws": 27,
+      "triangles": 60233,
+      "points": 91,
+      "overlayNodes": 5,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "errors": [],
+      "cpu": [
+        2.200000001117587,
+        2.899999998509884,
+        2.5,
+        3.5,
+        2.599999999627471,
+        1.900000000372529,
+        1.699999999254942,
+        1.799999998882413,
+        12.5,
+        2.099999999627471,
+        3,
+        1.900000000372529
+      ],
+      "frames": [
+        138.79999999999995,
+        125,
+        118,
+        125,
+        111.09999999999991,
+        111.10000000000014,
+        125.09999999999991,
+        125,
+        118,
+        111.09999999999991,
+        118.09999999999991,
+        111.10000000000036
+      ]
+    },
+    {
+      "profile": "quality",
+      "on": false,
+      "samples": 12,
+      "cpuMs": [
+        3.400000000372529,
+        7.300000000745058,
+        7.300000000745058
+      ],
+      "frameMs": [
+        333.2999999999997,
+        340.3000000000002,
+        340.3000000000002
+      ],
+      "draws": 27,
+      "triangles": 162210,
+      "points": 183,
+      "overlayNodes": 0,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "errors": [],
+      "cpu": [
+        4,
+        3.699999999254942,
+        3.299999998882413,
+        7.300000000745058,
+        3.400000000372529,
+        3.5,
+        3.300000000745058,
+        4.099999999627471,
+        2.599999999627471,
+        1.800000000745058,
+        3.599999999627471,
+        2.199999999254942
+      ],
+      "frames": [
+        326.2999999999997,
+        326.5,
+        326.4000000000001,
+        326.3000000000002,
+        333.2999999999997,
+        340.3000000000002,
+        333.3000000000002,
+        340.3000000000002,
+        340.2999999999993,
+        326.3000000000002,
+        333.5,
+        333.3000000000002
+      ]
+    },
+    {
+      "profile": "quality",
+      "on": true,
+      "samples": 12,
+      "cpuMs": [
+        3.099999999627471,
+        5.5,
+        5.5
+      ],
+      "frameMs": [
+        326.2999999999997,
+        347.29999999999995,
+        347.29999999999995
+      ],
+      "draws": 27,
+      "triangles": 162210,
+      "points": 183,
+      "overlayNodes": 7,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "errors": [],
+      "cpu": [
+        3.699999999254942,
+        5.5,
+        3.400000000372529,
+        3.400000000372529,
+        3.5,
+        3.099999999627471,
+        1.800000000745058,
+        2,
+        1.5,
+        2.5,
+        1.800000000745058,
+        3.199999999254942
+      ],
+      "frames": [
+        347.29999999999995,
+        326.4000000000001,
+        333.2999999999997,
+        319.4000000000001,
+        326.4000000000001,
+        319.5999999999999,
+        326.2999999999997,
+        319.3000000000002,
+        312.60000000000036,
+        326.3000000000002,
+        333.5,
+        319.39999999999964
+      ]
+    }
+  ],
+  "recovery": [
+    {
+      "profile": "eco",
+      "glError": 0,
+      "before": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "after": {},
+      "canvasLostEvent": true
+    },
+    {
+      "profile": "quality",
+      "glError": 0,
+      "before": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "after": {},
+      "canvasLostEvent": true
+    }
+  ],
+  "offline": [
+    {
+      "profile": "eco",
+      "time": 18.1,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-0",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "time": 18.1,
+      "revision": "a8256768fc5524b9fe967e684b4c0f880e307694-working-tree",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "mode": "CINEMATIC",
+      "count": 0,
+      "labels": {},
+      "bubbles": {},
+      "room": "demo-0",
+      "community": {
+        "slots": 12,
+        "actors": 0
+      },
+      "names": [],
+      "remotePhotos": 0,
+      "badges": 0,
+      "bubbleBoxes": [],
+      "errors": []
+    }
+  ],
+  "motion": [
+    {
+      "profile": "eco",
+      "seed": 9,
+      "scenario": "community",
+      "file": "eco-9-community-motion.json",
+      "samples": 3361,
+      "maxLabels": 3,
+      "modesWithNames": {
+        "CINEMATIC": 463,
+        "GIFT_TRANSITION": 187,
+        "GIFT_FOCUS": 603,
+        "CINE_RETURN": 0
+      }
+    },
+    {
+      "profile": "eco",
+      "seed": 9,
+      "scenario": "capacity",
+      "file": "eco-9-capacity-motion.json",
+      "samples": 4033,
+      "maxLabels": 2,
+      "modesWithNames": {
+        "CINEMATIC": 133,
+        "GIFT_TRANSITION": 176,
+        "GIFT_FOCUS": 864,
+        "CINE_RETURN": 75
+      }
+    },
+    {
+      "profile": "eco",
+      "seed": 71,
+      "scenario": "community",
+      "file": "eco-71-community-motion.json",
+      "samples": 3361,
+      "maxLabels": 3,
+      "modesWithNames": {
+        "CINEMATIC": 463,
+        "GIFT_TRANSITION": 187,
+        "GIFT_FOCUS": 603,
+        "CINE_RETURN": 0
+      }
+    },
+    {
+      "profile": "eco",
+      "seed": 1337,
+      "scenario": "community",
+      "file": "eco-1337-community-motion.json",
+      "samples": 3361,
+      "maxLabels": 3,
+      "modesWithNames": {
+        "CINEMATIC": 463,
+        "GIFT_TRANSITION": 187,
+        "GIFT_FOCUS": 603,
+        "CINE_RETURN": 0
+      }
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "scenario": "community",
+      "file": "quality-9-community-motion.json",
+      "samples": 3361,
+      "maxLabels": 3,
+      "modesWithNames": {
+        "CINEMATIC": 463,
+        "GIFT_TRANSITION": 187,
+        "GIFT_FOCUS": 603,
+        "CINE_RETURN": 0
+      }
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "scenario": "capacity",
+      "file": "quality-9-capacity-motion.json",
+      "samples": 4033,
+      "maxLabels": 2,
+      "modesWithNames": {
+        "CINEMATIC": 133,
+        "GIFT_TRANSITION": 176,
+        "GIFT_FOCUS": 864,
+        "CINE_RETURN": 75
+      }
+    },
+    {
+      "profile": "quality",
+      "seed": 71,
+      "scenario": "community",
+      "file": "quality-71-community-motion.json",
+      "samples": 3361,
+      "maxLabels": 3,
+      "modesWithNames": {
+        "CINEMATIC": 463,
+        "GIFT_TRANSITION": 187,
+        "GIFT_FOCUS": 603,
+        "CINE_RETURN": 0
+      }
+    },
+    {
+      "profile": "quality",
+      "seed": 1337,
+      "scenario": "community",
+      "file": "quality-1337-community-motion.json",
+      "samples": 3361,
+      "maxLabels": 3,
+      "modesWithNames": {
+        "CINEMATIC": 463,
+        "GIFT_TRANSITION": 187,
+        "GIFT_FOCUS": 603,
+        "CINE_RETURN": 0
+      }
+    }
+  ]
+}

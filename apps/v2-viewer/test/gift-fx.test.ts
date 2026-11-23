@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { Vector3 } from 'three';
-import type { Effect, Snapshot } from '../../../packages/v2-events/src/protocol.ts';
+import { protocolVersion, type Effect, type Snapshot } from '../../../packages/v2-events/src/protocol.ts';
 import { createAmbientFx } from '../src/ambient-fx.ts';
 import { fxProfiles, giftTiming } from '../src/fx-profiles.ts';
 import { createGiftFx, GiftFxLifecycle } from '../src/gift-fx.ts';
@@ -13,7 +13,7 @@ function event(atMs: number, options: {
   const { room = 'demo-1', revision = atMs, phase = 'confirmed', actorId = 'actor-1', requestId = 'req-1' } = options;
   const binding = { actorId, seatId: 'seat-1' };
   const state: Snapshot = {
-    atMs, revision, version: '0.1.0', connected: true, roomSessionId: room,
+    atMs, revision, version: protocolVersion, connected: true, roomSessionId: room,
     viewerCount: 0, confirmedGiftCount: 1,
     avatars: [{ ...binding, displayName: 'An', visible: true, revision, appearanceVariant: 'meditator_base' }],
     camera: { mode: 'GIFT_FOCUS', activeActorId: actorId, activeRequestId: requestId, pendingGivers: 0 },

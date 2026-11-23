@@ -7,14 +7,15 @@ import { createCinematicRoutes } from '../src/camera.ts';
 import { SliceCamera } from '../src/slice-camera.ts';
 import { SceneObserver, SliceDriver } from '../src/slice-driver.ts';
 
-test('v0.1.0 serialized snapshots resolve exact actor/seat and reject stale room/revision', () => {
+test('v0.2.0 serialized snapshots resolve exact actor/seat and reject stale protocol/revision', () => {
   const engine = new DemoEngine();
   const observer = new SceneObserver();
   engine.ingest(session());
   engine.ingest(gift('A', 1));
   const initial = engine.snapshot();
   const serialized = JSON.parse(JSON.stringify(initial));
-  assert.equal(serialized.version, '0.1.0');
+  assert.equal(serialized.version, '0.2.0');
+  assert.equal(observer.accept({ ...serialized, version: '0.1.0' }), false);
   assert.equal(observer.accept(serialized), true);
   assert.equal(observer.target(initial.focus)?.seatId, 'seat-1');
   assert.equal(observer.target({ ...initial.focus!, actorId: 'other' }), undefined);
