@@ -1,0 +1,90 @@
+Node v24.16.0
+Source cf5c69772d95ef39c12164042159cdc3c7c70264
+
+packages/v2-events > npm.cmd run test
+
+> @online-pagoda/v2-events@0.1.0 test
+> node --test
+
+✔ seeded 45s idle then A → B → C with real actor / seat bindings and cinematic return (4.9654ms)
+✔ one FIFO slot per giver, one capped active extension and a shared pending request ID (0.6239ms)
+✔ reconnect preserves identity, duplicate ledgers and revision; room change cancels old intents (0.3812ms)
+✔ bounded focus and no-seat outcomes acknowledge the correct giver; TTL releases seat (0.3728ms)
+✔ 120 viewers, 500 likes and room viewer total keep capacity and FX bounded (0.9752ms)
+✔ session ledger stays bounded and preserves idempotency at the limit (2.1396ms)
+✔ safe display text, graphemes, photo validation and private packet IDs (0.8323ms)
+✔ expired provisional focus adds zero spend; late final acknowledges without replaying the shot (0.2464ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 161.969
+
+packages/v2-events > npm.cmd run build
+
+> @online-pagoda/v2-events@0.1.0 build
+> tsc --noEmit
+
+
+apps/v2-viewer > npm.cmd run test
+
+> @online-pagoda/v2-viewer@0.1.0 test
+> node --test
+
+✔ 85s cinematic at 60Hz covers all shots per loop and changes actual route with fixed bounds (290.4352ms)
+✔ cross-variant closure uses the same pose and matching position, target and FOV tangents (7.5398ms)
+✔ seed query is a stable uint32 with a documented fallback (0.422ms)
+✔ rejecting a route reports which candidate failed and retains an accepted path (13.0399ms)
+✔ existing queue plays a provisional A halo, then exactly one confirmed A/B/C celebration (28.5589ms)
+✔ observed and confirmed phases follow typed ack, mode and exact actor/seat identity (0.5919ms)
+✔ missing seat, expired request and overlay never receive spatial FX (2.8443ms)
+✔ return shortens a live fade and the next actor owns the only cue (0.3225ms)
+✔ disconnect clears visuals, reconnect avoids replay and room epoch rejects old revision (0.2255ms)
+✔ visual ledger is bounded and has no eviction replay (0.8001ms)
+✔ profile pools have fixed capacity and deterministic seed attributes (2.6334ms)
+✔ turn all three actor pivots through their pad parents without moving pad or contact (11.2334ms)
+✔ coincident X/Z leaves existing facing unchanged (0.4638ms)
+✔ v0.1.0 serialized snapshots resolve exact actor/seat and reject stale room/revision (2.461ms)
+✔ integrated controller counts final gifts once, focuses A/B/C, and reports D fallback (9.0376ms)
+✔ renderer camera starts each handoff at the prior pose and reaches the current cinematic on return (36.2411ms)
+✔ shot boundaries and 40s closure keep normalized deterministic weights (54.5175ms)
+✔ gift and route-clock reset ease from the current output and reuse weight storage (0.7857ms)
+✔ legacy pins P0.10 and comparison cameras, while lookup allows three review holds (0.3519ms)
+✔ twilight reuses light and sky resources, with bounded exposure and fog (4.7493ms)
+✔ gold runtime clone stays scoped, shares across meshes and restores originals before disposing (2.2001ms)
+✔ water atmosphere leaves the exact P0.10 gift ripple inputs independent (1.9163ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 699.8067
+
+apps/v2-viewer > npm.cmd run build
+
+> @online-pagoda/v2-viewer@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v7.2.2 building client environment for production...
+transforming...
+✓ 29 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.26 kB │ gzip:   0.60 kB
+dist/assets/index-CRdGpTTR.css    1.35 kB │ gzip:   0.72 kB
+dist/assets/index-Dtcll1ry.js   659.00 kB │ gzip: 178.99 kB
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.78s
+
+apps/v2-viewer > npm.cmd run evidence:p011 -- --context-only
+Edge 158.0.4370.33 / ANGLE swiftshader, 720x1280
+p010/eco 7 post-restore frames, 100 known teardown warnings, pixel-identical first restored frame p010/quality 7 post-restore frames, 132 known teardown warnings, pixel-identical first restored frame p011/eco 7 post-restore frames, 105 known teardown warnings, pixel-identical first restored frame p011/quality 7 post-restore frames, 137 known teardown warnings, pixel-identical first restored frame
+Exit 0. No unexpected graphics diagnostics, page exceptions or HTTP failures in the recovery rerun.
