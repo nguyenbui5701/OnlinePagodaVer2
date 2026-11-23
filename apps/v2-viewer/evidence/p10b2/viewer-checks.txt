@@ -1,0 +1,65 @@
+v24.16.0
+
+> @online-pagoda/v2-viewer@0.1.0 test
+> node --test
+
+✔ approved female and male Git blobs have the exact garment mappings and shared rig samples (232.1545ms)
+✔ invalid, duplicate, or incomplete KHR primitive mappings fail closed (45.2462ms)
+✔ seeded real seat and anonymous looks are purely cosmetic and palette limits are deterministic (1.466ms)
+✔ runtime manifest and pinned binary structure match the approved PR #10 art handoff (381.5014ms)
+✔ botanical switch only applies to an enabled 12-slot scene (0.2257ms)
+✔ seeded botanical layers are repeatable, bounded and clear the original slots and tree (3.6555ms)
+✔ 85s cinematic at 60Hz covers all shots per loop and changes actual route with fixed bounds (219.6798ms)
+✔ cross-variant closure uses the same pose and matching position, target and FOV tangents (9.9334ms)
+✔ seed query is a stable uint32 with a documented fallback (0.4985ms)
+✔ rejecting a route reports which candidate failed and retains an accepted path (6.7582ms)
+✔ twelve seeded visual slots keep original seats and clear the root and each other (10.237ms)
+✔ community binds actual members by seat and keeps visual density out of the room count (4.2897ms)
+✔ gift reserves a real member past TTL, excess gift is text-only, room change drops old identity (27.529ms)
+✔ blessing is explicitly enabled for gift DEMOs with FX only (1.2356ms)
+✔ the warm, rising, tree-directed and fade envelopes are deterministic on the original cue clock (1.5323ms)
+✔ observed, expired and foreign room/request/seat/actor cues never plan a spatial blessing (0.2116ms)
+✔ fixture observed and duplicate receipts share the engine-owned FIFO and launch only three confirmed cues (14.0164ms)
+✔ profiles reuse one seeded fixed buffer and release the geometry and shader once (1.9781ms)
+✔ existing queue plays a provisional A halo, then exactly one confirmed A/B/C celebration (25.3691ms)
+✔ observed and confirmed phases follow typed ack, mode and exact actor/seat identity (8.7823ms)
+✔ missing seat, expired request and overlay never receive spatial FX (0.7431ms)
+✔ return shortens a live fade and the next actor owns the only cue (0.6853ms)
+✔ disconnect clears visuals, reconnect avoids replay and room epoch rejects old revision (0.4734ms)
+✔ visual ledger is bounded and has no eviction replay (2.6507ms)
+✔ profile pools have fixed capacity and deterministic seed attributes (3.1622ms)
+✔ P0.14 maps all seven reference intentions to distinct, deterministic review cases (3.5366ms)
+✔ the QA-only under-tree framing preserves lens and adds distance from the trunk (0.5309ms)
+✔ third-seed route selection remains deterministic and continuous through two exact cycle seams (125.7435ms)
+✔ turn all three actor pivots through their pad parents without moving pad or contact (6.3124ms)
+✔ coincident X/Z leaves existing facing unchanged (0.5834ms)
+✔ v0.1.0 serialized snapshots resolve exact actor/seat and reject stale room/revision (3.13ms)
+✔ integrated controller counts final gifts once, focuses A/B/C, and reports D fallback (10.6259ms)
+✔ renderer camera starts each handoff at the prior pose and reaches the current cinematic on return (34.2486ms)
+✔ shot boundaries and 40s closure keep normalized deterministic weights (22.4936ms)
+✔ gift and route-clock reset ease from the current output and reuse weight storage (0.7809ms)
+✔ legacy pins P0.10 and comparison cameras, while lookup allows three review holds (0.3406ms)
+✔ twilight reuses light and sky resources, with bounded exposure and fog (5.3929ms)
+✔ gold runtime clone stays scoped, shares across meshes and restores originals before disposing (2.7549ms)
+✔ water atmosphere leaves the exact P0.10 gift ripple inputs independent (1.4105ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 690.759
+
+> @online-pagoda/v2-viewer@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v7.2.2 building client environment for production...
+transforming...
+✓ 42 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.32 kB │ gzip:   0.62 kB
+dist/assets/index-IWEw6gYx.css    1.66 kB │ gzip:   0.80 kB
+dist/assets/index-B488G02s.js   682.37 kB │ gzip: 187.78 kB
+✓ built in 1.28s

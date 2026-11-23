@@ -1,0 +1,24 @@
+v24.16.0
+
+> @online-pagoda/v2-events@0.1.0 test
+> node --test
+
+✔ seeded 45s idle then A → B → C with real actor / seat bindings and cinematic return (7.3972ms)
+✔ one FIFO slot per giver, one capped active extension and a shared pending request ID (1.2365ms)
+✔ reconnect preserves identity, duplicate ledgers and revision; room change cancels old intents (0.6744ms)
+✔ bounded focus and no-seat outcomes acknowledge the correct giver; TTL releases seat (0.6517ms)
+✔ 120 viewers, 500 likes and room viewer total keep capacity and FX bounded (1.8681ms)
+✔ session ledger stays bounded and preserves idempotency at the limit (3.7574ms)
+✔ safe display text, graphemes, photo validation and private packet IDs (1.2876ms)
+✔ expired provisional focus adds zero spend; late final acknowledges without replaying the shot (0.4418ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 194.71
+
+> @online-pagoda/v2-events@0.1.0 build
+> tsc --noEmit

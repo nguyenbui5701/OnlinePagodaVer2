@@ -10,6 +10,7 @@
     "assets:p012b": "node scripts/stage-p012b.mjs",
     "assets:p012d": "node scripts/stage-p012d.mjs",
     "dev": "vite --host 127.0.0.1",
+    "capture:p10b2": "vite preview --host 127.0.0.1 --port 5189 --strictPort",
     "test": "node --test",
     "build": "tsc --noEmit && vite build",
     "evidence": "node scripts/evidence.mjs",
