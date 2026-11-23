@@ -49,3 +49,10 @@ At PR #11, `seat-scene.ts` imports one verified P07b1 GLB through `src/p08-asset
 - `P012C_SA_TECH_PASS` + **`OWNER_P012C_VISUAL_GO`** for PR #11 current browser look only.
 - `OWNER_P05F_FEMALE_ART_GO` already explicitly recorded in AI Visual 09 after Owner final female approval; **no AI Visual rework** needed.
 - **Authorized next:** P0.12-D design/code demo to mix approved female P05f, male P07b1 and real color variants while keeping true actor authority. This does not imply automatic final appearance/style approval.
+
+
+## 6. Owner P0.12-D Visual GO / successor P0.13-A — 2026-11-23
+
+**Closure of previous pending gate:** Following [SA P0.12-D Tech PASS on PR #12 #6018115256](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/12#pullrequestreview-6018115256) at exact immutable HEAD `385816518987b2a0ea6ef094bb0f65bfb363e720`, Owner replied **“done, continue”**. Record **`OWNER_P012D_VISUAL_GO`** for the original 12-slot female P05f + male P07b1 genuine clothing palette DEMO scene. This approval concerns existing visuals, not merge, production user-specific appearance, RTX/GPU or LIVE operation.
+
+**New bounded phase:** [Design 22 — P0.13-A Gift Blessing Choreography](22_P013_GIFT_BLESSING_CHOREOGRAPHY_CONTRACT.md) and [CODEX 09](../Task/CODEX_09_P013A_GIFT_BLESSING_CHOREOGRAPHY.md). Start a new viewer Code branch from frozen PR #12 HEAD; effects use existing typed gift focus and original shader pools only. The true original rose icon is not yet commissioned: `P013_ROSE_ICON_VISUAL_FIDELITY_DEFERRED`. Preserve all source asset hashes, 12 visual/3 real slots, original camera/lighting and FIFO. No changes to this P0.12-D code branch; no merges/V1/GPU/LIVE. Next gate `P013A_SA_REVIEW_REQUIRED` → SA → Owner Visual GO.
