@@ -28,6 +28,8 @@ const poses = [
 ];
 const giftTimes = [['A',47.72],['B',53.65],['C',59.48],['return',64.32]];
 const write = (path, value) => writeFile(join(output,path), JSON.stringify(value,null,2)+'\n');
+const graphicsError = /\b(?:GL_)?(?:INVALID_[A-Z_]+|OUT_OF_MEMORY|STACK_UNDERFLOW|STACK_OVERFLOW)\b|shader error|VALIDATE_STATUS false/i;
+const staleDelete = /^WebGL: INVALID_OPERATION: delete(?:VertexArray)?: object does not belong to this context$/;
 let browser;
 
 async function serve(root, port, callback) {
@@ -53,11 +55,15 @@ async function ready(page, base, profile, look, seed=9, demo='idle', fx='on') {
   return {query,report};
 }
 
-const render = (page,t,fixed) => page.evaluate(({t,fixed}) => {
+const render = (page,t,fixed,checkGL=false) => page.evaluate(({t,fixed,checkGL}) => {
   const start=Math.floor((window.viewerReport.elapsedSeconds??0)*60)+1;
   for(let i=start;i/60<t;i++)window.p08Review.step(i/60,false);
-  return window.p08Review.step(t,true,undefined,undefined,undefined,fixed);
-},{t,fixed});
+  const report=window.p08Review.step(t,true,undefined,undefined,undefined,fixed);
+  if(!checkGL)return report;
+  const gl=document.querySelector('canvas').getContext('webgl2');
+  gl.finish();
+  return {...report,glError:gl.getError()};
+},{t,fixed,checkGL});
 
 async function shot(page, name) {
   const png = await page.locator('#stage').screenshot({animations:'disabled',path:join(output,name+'.png')});
@@ -110,14 +116,16 @@ async function referenceFrames(base, kind) {
       index.push({key:'gift/'+name,file:file+'.png',url:base+query,source:report.repoRevision,profile:'eco',look,seed:9,sha256,...point(r)});
     }
     assert.deepEqual(failures,[]);
-    assert.ok(!issues.some(message=>/shader error|VALIDATE_STATUS false|GL_INVALID/i.test(message)),issues.join('\n'));
+    assert.ok(!issues.some(message=>graphicsError.test(message)),issues.join('\n'));
     return {index,consoleMessages:issues};
   } finally{await page.close();}
 }
 
 try {
   browser=await chromium.launch({executablePath,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader','--disable-background-timer-throttling']});
-  if(process.argv.includes('--baseline')) {
+  if(process.argv.includes('--context-only')) {
+    await verifyContexts();
+  } else if(process.argv.includes('--baseline')) {
     const before=await serve(oldApp,4183,base=>referenceFrames(base,'before'));
     await write('baseline-index.json',before);
     console.log(`Captured ${before.index.length} clean P0.10 reference frames at ${baseline}`);
@@ -135,10 +143,12 @@ try {
       }
       const metrics=await validate(base,before);
       await write('screenshot-index.json',[...before,...after,...metrics.extra]);
-      await write('browser-report.json',{...metrics.report, screenshotConsole:{before:prior.consoleMessages,after:next.consoleMessages}});
+      await write('browser-report.json',{...metrics.report,webglRecovery:'webgl-recovery.json',
+        screenshotConsole:{before:prior.consoleMessages,after:next.consoleMessages}});
       await grids(before,after);
     });
     await writeFile(join(output,'asset-verification.jsonl'),execFileSync(process.execPath,['scripts/stage-p08.mjs']));
+    await verifyContexts();
     console.log('P0.11 native comparisons, transitions, resources and context recovery passed.');
   }
 } finally { await browser?.close(); }
@@ -149,6 +159,192 @@ function matchedResources(report) {
     textures: report.textures, geometries: report.geometries, lights: report.lights, shadowMaps: report.shadowMaps,
     gold: report.goldMaterial, heap: report.heap,
   };
+}
+
+async function verifyContexts() {
+  const runs=[];
+  for(const [kind,root,port] of [['p010',oldApp,4183],['p011',cwd,4184]]) {
+    await serve(root,port,async base=>{
+      for(const profile of profiles) {
+        const run=await exerciseContext(base,kind,profile);
+        runs.push(run);
+        console.log(kind,profile,'WebGL diagnostics by phase:',JSON.stringify(run.graphicsByPhase));
+      }
+    });
+  }
+  for(const run of runs) {
+    const prior=runs.find(candidate=>candidate.build==='p010'&&candidate.profile===run.profile);
+    const baselineTeardown=new Set(prior.console.filter(entry=>entry.phase==='teardown').map(entry=>entry.message));
+    for(const entry of run.console) {
+      if(entry.category==='graphics-error' && entry.phase==='teardown'
+        && staleDelete.test(entry.message) && baselineTeardown.has(entry.message)) {
+        entry.category='known-teardown-warning';
+      }
+    }
+    run.knownTeardownWarnings=run.console.filter(entry=>entry.category==='known-teardown-warning').length;
+  }
+  const issues=runs.flatMap(run=>run.console.filter(entry=>entry.category==='graphics-error')
+    .map(entry=>({build:run.build,profile:run.profile,...entry})));
+  const pageFailures=runs.flatMap(run=>[...run.pageExceptions,...run.httpFailures]);
+  const failedChecks=runs.filter(run=>run.failure).map(({build,profile,failure})=>({build,profile,failure}));
+  await write('webgl-recovery.json',{baseline,clock:'Host milliseconds since page setup and DOM event times since document start',
+    viewport:vp,browser:browser.version(),angle:'swiftshader',runs,unexpectedGraphicsDiagnostics:issues,pageFailures,failedChecks});
+  assert.deepEqual(failedChecks,[]);
+  assert.deepEqual(pageFailures,[]);
+  assert.deepEqual(issues,[]);
+}
+
+async function exerciseContext(base,build,profile) {
+  const page=await browser.newPage({viewport:vp});
+  const start=performance.now();
+  const elapsed=()=>Math.round((performance.now()-start)*100)/100;
+  const phases=[],console=[],pageExceptions=[],httpFailures=[],frames=[];
+  let phase;
+  const mark=name=>{phase=name;phases.push({name,ms:elapsed()});};
+  mark('before-loss');
+  page.on('console',message=>{
+    const type=message.type(),body=message.text();
+    if(type==='warning'||type==='error'||/WebGLRenderer: Context (Lost|Restored)/i.test(body)) {
+      const category=graphicsError.test(body)?'graphics-error'
+        : /Context (Lost|Restored)|CONTEXT_LOST_WEBGL/i.test(body)?'context-event'
+        : /ReadPixels/i.test(body)?'readback-warning':'other';
+      console.push({phase,ms:elapsed(),type,category,message:body});
+    }
+  });
+  page.on('pageerror',error=>pageExceptions.push({phase,ms:elapsed(),message:error.message}));
+  page.on('response',response=>{
+    if(response.status()>=400)httpFailures.push({phase,ms:elapsed(),status:response.status(),url:response.url()});
+  });
+  await page.route('**/favicon.ico',route=>route.fulfill({status:204}));
+  const coast=poses[3];
+  const fixed={position:coast[3],target:coast[4],fov:coast[5]};
+  let source,renderer,loss,restored,failure;
+  const frame=async(t,pose)=>{
+    const {glError,...r}=await render(page,t,pose,true);
+    const png=await page.locator('#stage').screenshot({animations:'disabled'});
+    const pixels=await inspectPixels(page,png,Boolean(pose));
+    const record={phase,t,ms:elapsed(),sha256:createHash('sha256').update(png).digest('hex'),pixels,glError,
+      events:r.errors,restores:r.contextRestores,...point(r),resources:matchedResources(r),pool:r.fx.poolId};
+    frames.push(record);
+    assert.equal(glError,0,phase+' '+t);
+    assert.ok(pixels.canvas.meanLuma>10 && pixels.canvas.spread>10,JSON.stringify(pixels));
+    if(pose) {
+      assert.ok(Object.values(pixels).every(region=>region.meanLuma>10),JSON.stringify(pixels));
+      assert.ok(pixels.tree.spread>10&&pixels.water.spread>3,JSON.stringify(pixels));
+    }
+    return record;
+  };
+  try {
+    const {report}=await ready(page,base,profile,build==='p010'?'legacy':'twilight',9,'gifts');
+    source=report.repoRevision;
+    renderer=report.graphics;
+    if(build==='p010')assert.equal(report.repoRevision,baseline);
+    const before=await frame(47.72,fixed);
+    assert.deepEqual(before.events,[]);
+    assert.equal(before.cue?.seatId,'seat-1');
+    assert.equal(before.cue?.phase,'confirmed');
+    assert.deepEqual(before.starts,{observed:1,confirmed:1});
+
+    mark('during-loss');
+    const dimensions=await page.evaluate(()=>{
+      const canvas=document.querySelector('canvas');
+      const gl=canvas.getContext('webgl2');
+      const ext=gl.getExtension('WEBGL_lose_context');
+      if(!ext)throw new Error('WEBGL_lose_context unavailable');
+      const events=[];
+      for(const type of ['webglcontextlost','webglcontextrestored']) {
+        canvas.addEventListener(type,event=>events.push({type,ms:event.timeStamp,lost:gl.isContextLost()}),{once:true});
+      }
+      window.evidenceContext={gl,ext,events};
+      const dimensions=[gl.drawingBufferWidth,gl.drawingBufferHeight];
+      ext.loseContext();
+      return dimensions;
+    });
+    assert.deepEqual(dimensions,[vp.width,vp.height]);
+    await page.waitForFunction(()=>window.viewerReport.errors.includes('webglcontextlost'));
+    loss=await page.evaluate(()=>{
+      const {gl,events}=window.evidenceContext;
+      return {lost:gl.isContextLost(),glError:gl.getError(),expected:gl.CONTEXT_LOST_WEBGL,events};
+    });
+    assert.equal(loss.lost,true);
+    assert.equal(loss.glError,loss.expected);
+
+    mark('restore-event');
+    await page.evaluate(()=>window.evidenceContext.ext.restoreContext());
+    await page.waitForFunction(()=>window.viewerReport.contextRestores===1);
+    restored=await page.evaluate(()=>{
+      const {gl,events}=window.evidenceContext;
+      return {lost:gl.isContextLost(),glError:gl.getError(),events};
+    });
+    assert.equal(restored.lost,false);
+    assert.equal(restored.glError,0);
+    assert.deepEqual(restored.events.map(({type,lost})=>[type,lost]),[
+      ['webglcontextlost',true],['webglcontextrestored',false]]);
+
+    mark('first-restored-frame');
+    const after=await frame(before.t,fixed);
+    assert.equal(after.sha256,before.sha256,'Recovered camera frame should match before loss');
+    assert.deepEqual(after.resources,before.resources);
+    mark('post-restore-frames');
+    for(const t of [47.78,47.9,48.04])await frame(t,fixed);
+    for(const [t,seatId,count] of [[53.65,'seat-2',2],[59.48,'seat-3',3],[66,undefined,3]]) {
+      const sample=await frame(t);
+      assert.equal(sample.starts.confirmed,count);
+      assert.equal(sample.cue?.seatId,seatId);
+    }
+    const end=frames.at(-1);
+    assert.equal(end.mode,'CINEMATIC');
+    assert.equal(end.confirmedGiftCount,7);
+    for(const sample of frames.slice(1)) {
+      assert.deepEqual(sample.events,['webglcontextlost']);
+      assert.equal(sample.restores,1);
+      assert.equal(sample.pool,before.pool);
+      assert.equal(sample.starts.observed,1);
+      for(const key of ['textures','geometries','lights','shadowMaps','gold']) {
+        assert.deepEqual(sample.resources[key],before.resources[key],phase+' '+key);
+      }
+    }
+
+  } catch(error) {
+    failure={phase,message:error.message};
+  } finally {
+    if(!page.isClosed()) {
+      mark('teardown');
+      // Navigate so pagehide disposal runs while the console listener is still attached.
+      try {await page.goto('about:blank');}
+      catch(error) {failure??={phase,message:error.message};}
+      finally {await page.close();}
+    }
+  }
+  const graphicsByPhase=Object.fromEntries(phases.map(({name})=>[
+    name,console.filter(entry=>entry.phase===name&&entry.category==='graphics-error').length]));
+  return {build,profile,source,renderer,phases,loss,restored,frames,
+    console,graphicsByPhase,pageExceptions,httpFailures,failure};
+}
+
+function inspectPixels(page,png,coast) {
+  return page.evaluate(async ({source,coast})=>{
+    const image=new Image();
+    image.src=source;
+    await image.decode();
+    const ctx=document.createElement('canvas').getContext('2d',{willReadFrequently:true});
+    ctx.canvas.width=image.width;
+    ctx.canvas.height=image.height;
+    ctx.drawImage(image,0,0);
+    const regions={canvas:[0,0,720,1280]};
+    if(coast)Object.assign(regions,{sky:[30,220,130,370],tree:[400,300,160,420],water:[60,1135,600,110]});
+    return Object.fromEntries(Object.entries(regions).map(([key,rect])=>{
+      const pixels=ctx.getImageData(...rect).data;
+      let min=255,max=0,total=0;
+      for(let i=0;i<pixels.length;i+=4) {
+        const luma=.2126*pixels[i]+.7152*pixels[i+1]+.0722*pixels[i+2];
+        min=Math.min(min,luma);
+        max=Math.max(max,luma);
+        total+=luma;
+      }
+      return [key,{rect,meanLuma:total/(pixels.length/4),spread:max-min}];
+    }));
+  },{source:'data:image/png;base64,'+png.toString('base64'),coast});
 }
 
 async function grids(before,after) {
@@ -237,11 +433,12 @@ async function readPair(page, files, rect) {
 
 async function validate(base,before) {
   const page=await browser.newPage({viewport:vp});
-  const errors=[];
+  const pageExceptions=[];
   const consoleMessages=[];
   const extra=[];
-  page.on('pageerror',error=>errors.push(error.message));
+  page.on('pageerror',error=>pageExceptions.push(error.message));
   page.on('console',message=>{if(message.type()==='warning'||message.type()==='error')consoleMessages.push(message.text());});
+  await page.route('**/favicon.ico',route=>route.fulfill({status:204}));
   const capture=async(file,t,fixed)=>{
     const r=await render(page,t,fixed);
     assert.deepEqual(r.errors,[]);
@@ -328,23 +525,6 @@ async function validate(base,before) {
     assert.equal(fallback.fx.waterAnchor,undefined);
     const gifted=await ready(page,base,'eco','twilight',9,'gifts');
     assert.deepEqual(gifted.report.goldMaterial,{name:'Golden_bark_veins',clones:1,meshes:1});
-    const initial=await render(page,47.72);
-    await page.evaluate(()=>{
-      const ext=document.querySelector('canvas').getContext('webgl2').getExtension('WEBGL_lose_context');
-      if(!ext)throw new Error('WEBGL_lose_context unavailable');
-      window.restoreTestContext=()=>ext.restoreContext();
-      ext.loseContext();
-    });
-    await page.waitForFunction(()=>window.viewerReport.errors.includes('webglcontextlost'));
-    await page.evaluate(()=>window.restoreTestContext());
-    await page.waitForFunction(()=>window.viewerReport.contextRestores===1);
-    const restored=await render(page,47.78);
-    assert.deepEqual(restored.errors,['webglcontextlost']);
-    assert.deepEqual(restored.goldMaterial,initial.goldMaterial);
-    assert.deepEqual(restored.fx.starts,initial.fx.starts);
-    assert.equal(restored.fx.waterAnchor[1],0);
-    assert.equal(restored.fx.poolId,initial.fx.poolId);
-    assert.equal(restored.drawCalls,initial.drawCalls);
 
     const timings={};
     let details;
@@ -362,12 +542,10 @@ async function validate(base,before) {
       assert.equal(b.triangles,a.triangles+2);
       for(const key of ['textures','points','lights','shadowMaps'])assert.equal(b[key],a[key]);
     }
-    assert.deepEqual(errors,[]);
-    assert.ok(!consoleMessages.some(message=>/shader error|VALIDATE_STATUS false|GL_INVALID/i.test(message)));
+    assert.deepEqual(pageExceptions,[]);
+    assert.ok(!consoleMessages.some(message=>graphicsError.test(message)),consoleMessages.join('\n'));
     return {extra,report:{baseline,source:details.repoRevision,node:process.version,os:release(),cpu:cpus()[0]?.model,
       vendor:details.graphics,browser:details.browser,viewport:vp,liveStudio:false,timings,traces,motion,contrast,
-      context:{restores:restored.contextRestores,starts:restored.fx.starts,gold:restored.goldMaterial,
-        graphicsErrors:restored.errors,before:matchedResources(initial),after:matchedResources(restored)},
-      errors,consoleMessages,reference:'REFERENCE_VIDEO_NOT_AVAILABLE_TO_CODEX'}};
+      pageExceptions,consoleMessages,reference:'REFERENCE_VIDEO_NOT_AVAILABLE_TO_CODEX'}};
   } finally{await page.close();}
 }

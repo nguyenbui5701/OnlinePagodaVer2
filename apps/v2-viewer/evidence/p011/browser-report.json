@@ -269,6 +269,8 @@
       43.44985452393037
     ]
   },
+  "webglRecovery": "webgl-recovery.json",
+  "historicalContextNote": "The original recovery probe missed INVALID_OPERATION in the console. Its consoleMessages below include 81 unphased invalid deletes and one unidentified 404. Use webgl-recovery.json for the phased ECO/QUALITY recovery and baseline comparison.",
   "context": {
     "restores": 1,
     "starts": {
@@ -280,7 +282,7 @@
       "clones": 1,
       "meshes": 1
     },
-    "graphicsErrors": [
+    "viewerContextEvents": [
       "webglcontextlost"
     ],
     "before": {
@@ -312,7 +314,7 @@
       }
     }
   },
-  "errors": [],
+  "pageExceptions": [],
   "consoleMessages": [
     "Failed to load resource: the server responded with a status of 404 (Not Found)",
     "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
