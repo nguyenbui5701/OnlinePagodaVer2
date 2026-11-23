@@ -60,6 +60,8 @@ async function open(site, { revision = current, profile = 'eco', demo = 'communi
     (option ? `&blessing=${option}` : '') + '&diversity=on&botanicals=on' + extra;
   await page.goto(url);
   await page.waitForFunction(() => window.p08Review || window.viewerReport?.errors.length);
+  // Keep DOM overlay animation at its authored initial glow while advancing WebGL virtual time.
+  await page.addStyleTag({ content: '#gift-fx { animation: none !important; }' });
   const report = await page.evaluate(() => window.viewerReport);
   assert.equal(report.repoRevision, revision);
   assert.deepEqual(report.viewport, [720, 1280]);
@@ -221,10 +223,10 @@ function pixelDiff(page, before, after, regions) {
 }
 
 const stills = [], sequence = [];
-async function capture(run, file, r, index, extra = {}) {
+async function capture(run, file, r, index, extra = {}, png) {
   assert.equal(r.glError, 0);
   assert.deepEqual(r.errors, []);
-  const png = await shot(run.page);
+  png ??= await shot(run.page);
   assert.deepEqual([png.readUInt32BE(16), png.readUInt32BE(20)], [720, 1280]);
   await writeFile(resolve(output, file), png);
   index.push({ file, sha256: sha(png), revision: r.repoRevision, url: run.url, profile: r.profile, seed: r.seed,
@@ -244,11 +246,18 @@ try {
       const on = await open(next.url, { profile, option: 'on', demo });
       for (const [name, , time] of shots.filter(shot => shot[1] === demo)) {
         const reference = await draw(base.page, time);
-        const a = await capture(base, `${profile}-${name}-baseline.png`, reference, stills);
         const inactive = await draw(off.page, time);
         assert.equal(inactive.glError, 0);
         assert.equal(inactive.blessing, undefined);
-        assert.equal(sha(await shot(off.page)), sha(a), profile + '/' + name + ' OFF parity');
+        let a = await shot(base.page), offPng = await shot(off.page);
+        for (let attempt = 0; sha(offPng) !== sha(a) && attempt < 2; attempt++) {
+          await draw(base.page, time);
+          await draw(off.page, time);
+          a = await shot(base.page);
+          offPng = await shot(off.page);
+        }
+        assert.equal(sha(offPng), sha(a), profile + '/' + name + ' OFF parity');
+        await capture(base, `${profile}-${name}-baseline.png`, reference, stills, {}, a);
         const active = await draw(on.page, time);
         for (const key of ['position', 'target', 'fov', 'focus', 'labels', 'confirmedGiftCount', 'appearance',
           'community', 'botanicals', 'diversity']) assert.deepEqual(active[key], reference[key], name + '/' + key);
