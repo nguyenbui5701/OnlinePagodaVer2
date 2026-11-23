@@ -3,7 +3,7 @@ import { clone } from 'three/addons/utils/SkeletonUtils.js';
 import type { AvatarPresentation } from '../../../packages/v2-events/src/protocol.ts';
 import { importVerifiedGlb, inspectMeshes } from './verified-glb.ts';
 import manifest from './p08-assets.json' with { type: 'json' };
-import { communitySlots, heroSlots } from './community-layout.ts';
+import { communitySlots, heroSlots, ringSlots } from './community-layout.ts';
 import { createCommunityBatches } from './community-batches.ts';
 import { slotLooks, type AvatarLook, type AvatarModel } from './avatar-look.ts';
 import { loadOutfits } from './avatar-variants.ts';
@@ -104,7 +104,7 @@ function makeSeat(padSource: Awaited<ReturnType<typeof loadPairAsset>>, actorSou
 type Seat = ReturnType<typeof makeSeat>;
 export type ActorTarget = { presentation: AvatarPresentation; seat: Seat };
 
-export async function createSeatScene(signal: AbortSignal, tree: Vector3, crowdSeed?: number, diversity?: Profile) {
+export async function createSeatScene(signal: AbortSignal, tree: Vector3, crowdSeed?: number, diversity?: Profile, rings = false) {
   const kinds = ['pad', 'actor', ...(diversity ? ['female' as const] : [])] as const;
   const results = await Promise.allSettled(kinds.map(kind => loadPairAsset(kind, signal)));
   const loaded = results.flatMap(result => result.status === 'fulfilled' ? [result.value] : []);
@@ -125,7 +125,7 @@ export async function createSeatScene(signal: AbortSignal, tree: Vector3, crowdS
     signal.throwIfAborted();
     const group = new Group();
     group.name = 'P08 Lotus seats';
-    const slots = crowdSeed === undefined ? undefined : communitySlots(crowdSeed, tree.x, tree.z);
+    const slots = crowdSeed === undefined ? undefined : (rings ? ringSlots : communitySlots)(crowdSeed, tree.x, tree.z);
     const looks = diversity && slots ? slotLooks(slots.map(slot => slot.id), crowdSeed!, diversity) : undefined;
     if (looks && female) {
       verifyCompatibleRig(actor.gltf, female.gltf);
@@ -139,7 +139,7 @@ export async function createSeatScene(signal: AbortSignal, tree: Vector3, crowdS
       const source = look?.model === 'femaleP05f' ? female : actor;
       return makeSeat(pad, source, place, tree, animate, look && { look, outfits: outfits.get(look.model)! });
     };
-    for (const place of heroSlots) {
+    for (const place of rings && slots ? slots.slice(0, heroSlots.length) : heroSlots) {
       const seat = placeSeat(place, true);
       seats.set(place.id, seat);
       group.add(seat.root);

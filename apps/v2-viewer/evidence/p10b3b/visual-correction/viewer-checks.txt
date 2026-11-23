@@ -1,0 +1,75 @@
+v24.16.0
+
+> @online-pagoda/v2-viewer@0.1.0 test
+> node --test
+
+✔ approved female and male Git blobs have the exact garment mappings and shared rig samples (563.5654ms)
+✔ invalid, duplicate, or incomplete KHR primitive mappings fail closed (114.507ms)
+✔ seeded real seat and anonymous looks are purely cosmetic and palette limits are deterministic (2.4197ms)
+✔ runtime manifest and pinned binary structure match the approved PR #10 art handoff (904.6503ms)
+✔ botanical switch only applies to an enabled 12-slot scene (0.3531ms)
+✔ seeded botanical layers are repeatable, bounded and clear the original slots and tree (6.0893ms)
+✔ 85s cinematic at 60Hz covers all shots per loop and changes actual route with fixed bounds (547.8068ms)
+✔ cross-variant closure uses the same pose and matching position, target and FOV tangents (37.6505ms)
+✔ seed query is a stable uint32 with a documented fallback (0.8752ms)
+✔ rejecting a route reports which candidate failed and retains an accepted path (19.7571ms)
+✔ twelve seeded visual slots keep original seats and clear the root and each other (6.1174ms)
+✔ community binds actual members by seat and keeps visual density out of the room count (18.4788ms)
+✔ gift reserves a real member past TTL, excess gift is text-only, room change drops old identity (43.4775ms)
+✔ blessing is explicitly enabled for gift DEMOs with FX only (3.3824ms)
+✔ the warm, rising, tree-directed and fade envelopes are deterministic on the original cue clock (4.3188ms)
+✔ observed, expired and foreign room/request/seat/actor cues never plan a spatial blessing (1.8822ms)
+✔ fixture observed and duplicate receipts share the engine-owned FIFO and launch only three confirmed cues (35.594ms)
+✔ profiles reuse one seeded fixed buffer and release the geometry and shader once (3.6955ms)
+✔ existing queue plays a provisional A halo, then exactly one confirmed A/B/C celebration (80.9109ms)
+✔ observed and confirmed phases follow typed ack, mode and exact actor/seat identity (1.2447ms)
+✔ missing seat, expired request and overlay never receive spatial FX (0.674ms)
+✔ return shortens a live fade and the next actor owns the only cue (1.0658ms)
+✔ disconnect clears visuals, reconnect avoids replay and room epoch rejects old revision (0.6799ms)
+✔ visual ledger is bounded and has no eviction replay (9.0913ms)
+✔ profile pools have fixed capacity and deterministic seed attributes (45.2341ms)
+✔ avatar binding holds for equal display names, profile updates, reconnect, TTL and reused seats (28.8764ms)
+✔ resolver refuses malformed, unapproved and only-origin-matching avatar URLs (2.3637ms)
+✔ approved synthetic photo load enforces fetch isolation, caps, decode and fallback (92.2478ms)
+✔ nameplate follows one head-relative projection during pan and zoom (5.3027ms)
+✔ P0.14 maps all seven reference intentions to distinct, deterministic review cases (8.6715ms)
+✔ the QA-only under-tree framing preserves lens and adds distance from the trunk (0.9502ms)
+✔ third-seed route selection remains deterministic and continuous through two exact cycle seams (325.7609ms)
+✔ two concentric rings preserve the three actor seats and nine anonymous IDs (6.7276ms)
+✔ hero routes move through both new shots and share a continuous 40-second seam (96.164ms)
+✔ rich particles stay deterministic in one batch and mist caps are separate by profile (6.7368ms)
+✔ chat has a bounded readable dwell followed by rising and fading (7.4337ms)
+✔ initials and gift type mapping use local fallback only (7.3177ms)
+✔ driver relays accepted chat and clears it at disconnect, TTL and room changes (9.273ms)
+✔ turn all three actor pivots through their pad parents without moving pad or contact (10.5239ms)
+✔ coincident X/Z leaves existing facing unchanged (0.8723ms)
+✔ v0.2.0 serialized snapshots resolve exact actor/seat and reject stale protocol/revision (4.844ms)
+✔ integrated controller counts final gifts once, focuses A/B/C, and reports D fallback (9.8967ms)
+✔ renderer camera starts each handoff at the prior pose and reaches the current cinematic on return (38.7392ms)
+✔ shot boundaries and 40s closure keep normalized deterministic weights (15.2386ms)
+✔ gift and route-clock reset ease from the current output and reuse weight storage (0.6599ms)
+✔ legacy pins P0.10 and comparison cameras, while lookup allows three review holds (0.3091ms)
+✔ twilight reuses light and sky resources, with bounded exposure and fog (4.7009ms)
+✔ gold runtime clone stays scoped, shares across meshes and restores originals before disposing (3.0839ms)
+✔ water atmosphere leaves the exact P0.10 gift ripple inputs independent (2.173ms)
+ℹ tests 49
+ℹ suites 0
+ℹ pass 49
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2085.0156
+
+> @online-pagoda/v2-viewer@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v7.2.2 building client environment for production...
+transforming...
+✓ 48 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.32 kB │ gzip:   0.62 kB
+dist/assets/index-BVCK_YU7.css    2.88 kB │ gzip:   1.18 kB
+dist/assets/index-YOkvu5hE.js   697.25 kB │ gzip: 193.45 kB
+✓ built in 1.62s

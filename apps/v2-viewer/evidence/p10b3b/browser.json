@@ -1,0 +1,7794 @@
+{
+  "baseRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54",
+  "browser": "158.0.4370.33",
+  "screenshots": [
+    {
+      "filename": "eco-9-legacy-1.png",
+      "sha256": "b14a7696edfaedeb331e8310e397d7d8da5396083c7b0153ce7c401e91698e4d",
+      "time": 1,
+      "view": "native-route",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          1.160575961573524,
+          1.0375675781249998,
+          8.631460282653748
+        ],
+        [
+          2.427973365308534,
+          0.5450695274980255,
+          13.26969540638995
+        ],
+        49.8359375
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "eco-9-legacy-18.1.png",
+      "sha256": "a4e3596936643e520dfd520cb5e1ffc39547aeee5c3251aeeb9d01c8f52234ad",
+      "time": 18.1,
+      "view": "native-route",
+      "shot": "AERIAL",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          -0.16453682873832176,
+          1.1493887138912455,
+          8.972041251413165
+        ],
+        [
+          1.9971276462426466,
+          0.6693887138912455,
+          13.480611612137865
+        ],
+        50
+      ],
+      "focus": "seat-1",
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "eco-9-legacy-29.png",
+      "sha256": "fad123289bded921705bce76e95f6a4cf745dc8383e84001f5362df72b693bcb",
+      "time": 29,
+      "view": "native-route",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -9.341585108033946,
+          5.765749626513671,
+          13.431548220686347
+        ],
+        [
+          -0.2244491788562204,
+          5.099858897257713,
+          14.769965854063184
+        ],
+        57.4977109375
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "eco-9-wide-opening.png",
+      "sha256": "da18421162c14415ec61098ad8e6d371adb0516a91a367dcac305e1efb4cc743",
+      "time": 1,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        [
+          0,
+          9.464062499999999,
+          0
+        ],
+        57.62454004294496
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-9-wide-motion.png",
+      "sha256": "20fc829667f56da07b0fef963cd84dc4ad5bd4e3ef20b7a1687edd6164793ecd",
+      "time": 5,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.5625,
+          11.015625,
+          48.4609375
+        ],
+        [
+          0,
+          9.50859375,
+          -0.09375
+        ],
+        55.70243506441743
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-9-chat-close.png",
+      "sha256": "7e8e82be0cb38c73e4ba20597a4c7bb18a79a0f80f17b03ecc3305bcc7ce294c",
+      "time": 8.6,
+      "view": "fixed QA seat close",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        43
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-9-chat-float.png",
+      "sha256": "8f202a9f9907eb993e73c66cd6a1fb82fb09164de1126922cd6de6a3d95708f1",
+      "time": 10,
+      "view": "fixed QA seat close",
+      "shot": "COMMUNITY",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        43
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-9-gift.png",
+      "sha256": "d3ba22cdd3c173ae4581960ea0afbba102826f617cfcc4955259f715dc499815",
+      "time": 17.43,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          -2.1374503763825166,
+          1.1539100661788135,
+          8.870261580192393
+        ],
+        [
+          -1.016070605667886,
+          0.6739100661788135,
+          13.742889968427228
+        ],
+        50
+      ],
+      "focus": "seat-1",
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-9-top-17.png",
+      "sha256": "dd085622f3dd0b27916bd1502fd5f0b54118a72b81ac64f08e522c4a9c6fbc1c",
+      "time": 17,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -7.3828125,
+          46.140625,
+          23.0703125
+        ],
+        [
+          0,
+          2.0390625,
+          1.453125
+        ],
+        58.41454286888624
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-9-top-19.png",
+      "sha256": "5a8ab5a94a3007d2dbec546b8164ae407b74d0cf61f59d15efe4686ede08269c",
+      "time": 19,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -4.7109375,
+          53.296875,
+          12.6484375
+        ],
+        [
+          0,
+          0.4921875,
+          0.359375
+        ],
+        61.84651428962874
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-9-top-22.png",
+      "sha256": "7f921ffde98638a6708192a88ae7891c8e452799e09d3d3849d8df14a1d49c81",
+      "time": 22,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          1.75,
+          53.125,
+          20.3125
+        ],
+        [
+          0,
+          -0.625,
+          -0.3125
+        ],
+        63.181112272059956
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-9-top-25.png",
+      "sha256": "c68f681b81697260ed73245cc46da9c576c0831e7bad4a4aa827b2936457e59e",
+      "time": 25,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          9.8046875,
+          45.3359375,
+          33.8125
+        ],
+        [
+          0,
+          1.328125,
+          0.65625
+        ],
+        61.383402906222805
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-9-aerial.png",
+      "sha256": "1b469818b8ae0633f14a528da9f4a242792d8a37577a15596ee1a85f464a70c5",
+      "time": 29,
+      "view": "native-route",
+      "shot": "AERIAL",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          17.46875,
+          30.1640625,
+          34.8203125
+        ],
+        [
+          0,
+          8.31640625,
+          2.828125
+        ],
+        54.63596358983355
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-9-return-loop.png",
+      "sha256": "6f9472ed5c98da79eb5404f9b73f242fdc2da5c57640fc4e3569efe862002810",
+      "time": 40.4,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.16399999999999954,
+          10.1,
+          44.5745
+        ],
+        [
+          0,
+          9.4686,
+          0
+        ],
+        57.87791168824543
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-71-legacy-1.png",
+      "sha256": "18e9776c6c6dc61856ac7a33031b7d82685282454efe477f90a98b9153b2c4aa",
+      "time": 1,
+      "view": "native-route",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          1.160575961573524,
+          1.0375675781249998,
+          8.631460282653748
+        ],
+        [
+          2.427973365308534,
+          0.5450695274980255,
+          13.26969540638995
+        ],
+        49.8359375
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "eco-71-legacy-18.1.png",
+      "sha256": "5492c1e5e32b3ff8f53f230dadc963f5d8857a811b1083a30a1041ab3dab79ff",
+      "time": 18.1,
+      "view": "native-route",
+      "shot": "AERIAL",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          -0.16453682873832176,
+          1.1493887138912455,
+          8.972041251413165
+        ],
+        [
+          1.9971276462426466,
+          0.6693887138912455,
+          13.480611612137865
+        ],
+        50
+      ],
+      "focus": "seat-1",
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "eco-71-legacy-29.png",
+      "sha256": "ae6710d78307cd0194c255d5ba0b20d7b579e34cca7baab4441637604df73245",
+      "time": 29,
+      "view": "native-route",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -9.341585108033946,
+          5.744790642138671,
+          13.431548220686347
+        ],
+        [
+          -0.2348285654471578,
+          5.079657994955851,
+          14.768442134975867
+        ],
+        57.4977109375
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "eco-71-wide-opening.png",
+      "sha256": "8bce2dcbdee5a7b2c338b3b90792a2ec745f5681629f585d7308b434e884d4c4",
+      "time": 1,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        [
+          0,
+          9.464062499999999,
+          0
+        ],
+        57.62454004294496
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-71-wide-motion.png",
+      "sha256": "cc1d99d127c3cecfdfdbaaca5d3cad4c96f3306ae5f5a150b2d1ef711a0ae069",
+      "time": 5,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.5625,
+          11.015625,
+          48.4609375
+        ],
+        [
+          0,
+          9.50859375,
+          -0.09375
+        ],
+        55.70243506441743
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-71-chat-close.png",
+      "sha256": "b58bf7c6ad4edcdd58a3098f17fac32f79954cfbb8eeb69974078b7186f980b0",
+      "time": 8.6,
+      "view": "fixed QA seat close",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.34011899055969297,
+          1.5,
+          8.993570985557442
+        ],
+        [
+          0.5215157855248626,
+          0.86,
+          13.790142177854744
+        ],
+        43
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-71-chat-float.png",
+      "sha256": "6a837638be44e6b8b19b75f3b52b32c26c29b31c726877acb667da76c5704cea",
+      "time": 10,
+      "view": "fixed QA seat close",
+      "shot": "COMMUNITY",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.34011899055969297,
+          1.5,
+          8.993570985557442
+        ],
+        [
+          0.5215157855248626,
+          0.86,
+          13.790142177854744
+        ],
+        43
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-71-gift.png",
+      "sha256": "016bd3f156695a2f1a08d57a4c0fe02455d0f2a58e13b0cbb380b991e6ca9fb6",
+      "time": 17.43,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          -1.1362860506110266,
+          1.1539100661788135,
+          9.053125903450242
+        ],
+        [
+          0.5207750819454214,
+          0.6739100661788135,
+          13.770556178819529
+        ],
+        50
+      ],
+      "focus": "seat-1",
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-71-top-17.png",
+      "sha256": "6b566370b50892487c2669543d1efa6e84a4051f926f44fb7d511624870a5931",
+      "time": 17,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -7.3828125,
+          46.140625,
+          23.0703125
+        ],
+        [
+          0,
+          2.0390625,
+          1.453125
+        ],
+        58.41454286888624
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-71-top-19.png",
+      "sha256": "3d40e753db3614c2d27b0a56abee1cc9129b40897033175a2caa32fe6f95f67d",
+      "time": 19,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -4.7109375,
+          53.296875,
+          12.6484375
+        ],
+        [
+          0,
+          0.4921875,
+          0.359375
+        ],
+        61.84651428962874
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-71-top-22.png",
+      "sha256": "be2178ad910ac499bb6e77bd8a510b1368e770daebb1a79a0416e76aada257d4",
+      "time": 22,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          1.75,
+          53.125,
+          20.3125
+        ],
+        [
+          0,
+          -0.625,
+          -0.3125
+        ],
+        63.181112272059956
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-71-top-25.png",
+      "sha256": "87e5c8198ed75f69c8b45a2c39894f29be41aecf40272d1d4fc6c1a5fce5b750",
+      "time": 25,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          9.8046875,
+          45.3359375,
+          33.8125
+        ],
+        [
+          0,
+          1.328125,
+          0.65625
+        ],
+        61.383402906222805
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-71-aerial.png",
+      "sha256": "d91f9fd5268fb7cb82095bf41f942bc7adc9e8c187128c18a89c1698baa6a536",
+      "time": 29,
+      "view": "native-route",
+      "shot": "AERIAL",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          17.46875,
+          30.1640625,
+          34.8203125
+        ],
+        [
+          0,
+          8.31640625,
+          2.828125
+        ],
+        54.63596358983355
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-71-return-loop.png",
+      "sha256": "9e42f4bea8e05c3633027bcdd47f30ac50617bfda0ffabe0ed1faa69c460352d",
+      "time": 40.4,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.16399999999999954,
+          10.1,
+          44.5745
+        ],
+        [
+          0,
+          9.4686,
+          0
+        ],
+        57.87791168824543
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-1337-legacy-1.png",
+      "sha256": "3d281dd7aa9f36d400f492487df2da053f48278864115a043823a30a6014cc50",
+      "time": 1,
+      "view": "native-route",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          1.160575961573524,
+          1.0375675781249998,
+          8.631460282653748
+        ],
+        [
+          2.427973365308534,
+          0.5450695274980255,
+          13.26969540638995
+        ],
+        49.8359375
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "eco-1337-legacy-18.1.png",
+      "sha256": "e0500e7d299aa8eadffd2c686daa4c771f236ab53a77cd7a7e92ed02169fa1c2",
+      "time": 18.1,
+      "view": "native-route",
+      "shot": "AERIAL",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          -0.16453682873832176,
+          1.1493887138912455,
+          8.972041251413165
+        ],
+        [
+          1.9971276462426466,
+          0.6693887138912455,
+          13.480611612137865
+        ],
+        50
+      ],
+      "focus": "seat-1",
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "eco-1337-legacy-29.png",
+      "sha256": "2fdfc437ba00048d715dce24f9aa98a9b9e14646c66ab2340909ac204152df6e",
+      "time": 29,
+      "view": "native-route",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -9.341585108033946,
+          5.744790642138671,
+          13.431548220686347
+        ],
+        [
+          -0.2348285654471578,
+          5.079657994955851,
+          14.768442134975867
+        ],
+        57.4977109375
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "eco-1337-wide-opening.png",
+      "sha256": "5164fe65ad587dc0fd798e81e5cc7914e2fa12d18bd2fd5126aad65da0c470fc",
+      "time": 1,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        [
+          0,
+          9.464062499999999,
+          0
+        ],
+        57.62454004294496
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-1337-wide-motion.png",
+      "sha256": "f99cc87a60de110d1bc2d251b5be88d73a86cdca337b468001cb34ee7189658d",
+      "time": 5,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.5625,
+          11.015625,
+          48.4609375
+        ],
+        [
+          0,
+          9.50859375,
+          -0.09375
+        ],
+        55.70243506441743
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-1337-chat-close.png",
+      "sha256": "00353702bc1f2017d753b6f08ceac0bd4d84802eee3132e98631eb3dc69b8172",
+      "time": 8.6,
+      "view": "fixed QA seat close",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.42104626198912287,
+          1.5,
+          8.990145718800392
+        ],
+        [
+          -0.6456042683833217,
+          0.86,
+          13.784890102160599
+        ],
+        43
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-1337-chat-float.png",
+      "sha256": "8027d680a2a608af37bdef351f3fdb8eaf4f4a6bcee162b4eae8a611277e9273",
+      "time": 10,
+      "view": "fixed QA seat close",
+      "shot": "COMMUNITY",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.42104626198912287,
+          1.5,
+          8.990145718800392
+        ],
+        [
+          -0.6456042683833217,
+          0.86,
+          13.784890102160599
+        ],
+        43
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-1337-gift.png",
+      "sha256": "62ac9213115f5188aa0a43bf4e40895219de2928c948d4dcec70932cb83b9cf7",
+      "time": 17.43,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          -1.8972033582168233,
+          1.1539100661788135,
+          8.924732714771114
+        ],
+        [
+          -0.6446873231905454,
+          0.6739100661788135,
+          13.765311562595212
+        ],
+        50
+      ],
+      "focus": "seat-1",
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 3,
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-1337-top-17.png",
+      "sha256": "a32776698d466e5b6bad5cb1179a8f370711c2d4455ebf0c0eb7c3bcce77db0a",
+      "time": 17,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -7.3828125,
+          46.140625,
+          23.0703125
+        ],
+        [
+          0,
+          2.0390625,
+          1.453125
+        ],
+        58.41454286888624
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-1337-top-19.png",
+      "sha256": "9cca49432ae20a0335f8c86bbfbe30e44259121ec12cd4a8824ff1a59c9d5c07",
+      "time": 19,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -4.7109375,
+          53.296875,
+          12.6484375
+        ],
+        [
+          0,
+          0.4921875,
+          0.359375
+        ],
+        61.84651428962874
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-1337-top-22.png",
+      "sha256": "dca6d3b287b8155813ad6eae3bdb8e008f90962eb877d08b03cf9ddc46f4a131",
+      "time": 22,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          1.75,
+          53.125,
+          20.3125
+        ],
+        [
+          0,
+          -0.625,
+          -0.3125
+        ],
+        63.181112272059956
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-1337-top-25.png",
+      "sha256": "26df6c6b4e955109ba76a6045fc5f8a214b5bd58a02cf0a634b15e6516244d0a",
+      "time": 25,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          9.8046875,
+          45.3359375,
+          33.8125
+        ],
+        [
+          0,
+          1.328125,
+          0.65625
+        ],
+        61.383402906222805
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-1337-aerial.png",
+      "sha256": "7d10fbeac0ab8cccb19e5339323cda3acac9db6474517992a1b7f0e43eb42dc4",
+      "time": 29,
+      "view": "native-route",
+      "shot": "AERIAL",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          17.46875,
+          30.1640625,
+          34.8203125
+        ],
+        [
+          0,
+          8.31640625,
+          2.828125
+        ],
+        54.63596358983355
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-1337-return-loop.png",
+      "sha256": "80c03dbcfb41731c251cc173c1f6c5ed59f3b16fb3c41ae5cff98f78fb987e75",
+      "time": 40.4,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.16399999999999954,
+          10.1,
+          44.5745
+        ],
+        [
+          0,
+          9.4686,
+          0
+        ],
+        57.87791168824543
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-mist-off.png",
+      "sha256": "cdf1917a699a6c8a07478c2e4ecede62bf29a96e68a5a0ac8c4b412709539e44",
+      "time": 2,
+      "view": "fixed matched mist pose",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          8,
+          4,
+          24
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        53
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-mist-rich_only.png",
+      "sha256": "721bb3921b6a87ed86908f31b6ccd1e982b5ef4ba77e7973c42cec8c819174f9",
+      "time": 2,
+      "view": "fixed matched mist pose",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          8,
+          4,
+          24
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        53
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-mist-all_on.png",
+      "sha256": "6b9ccb77627c27f908376657a04d98f2bde187dc98f5e3a8c1829f8e1ce4c07a",
+      "time": 2,
+      "view": "fixed matched mist pose",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          8,
+          4,
+          24
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        53
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-capacity-return-63.5.png",
+      "sha256": "2ed742ffd7011a625f85c3ce734e9c02a0fe87aa916618dca73a988cf7006d1d",
+      "time": 63.5,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          5.253372490089341,
+          1.15307000018619,
+          7.460047727253996
+        ],
+        [
+          9.65417446850852,
+          0.67307000018619,
+          9.833429691191078
+        ],
+        50
+      ],
+      "focus": "seat-3",
+      "names": [
+        {
+          "seatId": "seat-3",
+          "actorId": "demo-1-actor-3",
+          "name": "Chi"
+        }
+      ],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-capacity-return-63.65.png",
+      "sha256": "07862f280611bdf7e7bbb35e9d36458d893b337993dd6270abef76a5a524c6e3",
+      "time": 63.65,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINE_RETURN",
+      "camera": [
+        [
+          5.238950258447404,
+          1.1797301800099278,
+          7.572043024917643
+        ],
+        [
+          9.625692719122448,
+          0.6986415883298616,
+          9.804419102975208
+        ],
+        50.02204865578845
+      ],
+      "names": [
+        {
+          "seatId": "seat-3",
+          "actorId": "demo-1-actor-3",
+          "name": "Chi"
+        }
+      ],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-capacity-return-64.1.png",
+      "sha256": "7abbf61554c96324757017de0a201ba0cb3c4ab639b33e60327996d9837f88cc",
+      "time": 64.1,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINE_RETURN",
+      "camera": [
+        [
+          3.895574294012618,
+          3.774177484404193,
+          18.253821359801332
+        ],
+        [
+          6.9283851062104045,
+          3.166501336656915,
+          7.057028857066104
+        ],
+        52.04034736045601
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "eco-capacity-return-64.75.png",
+      "sha256": "ec5316bb655626e594f95e05da2cbbe886257947bf45476a9e52b7b5370b9fd9",
+      "time": 64.75,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINE_RETURN",
+      "camera": [
+        [
+          0.804137052227186,
+          10.232387718427136,
+          44.49265374652169
+        ],
+        [
+          0.375660963590013,
+          9.211871694795303,
+          0.38263610060469233
+        ],
+        56.58017423032729
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        },
+        {
+          "seatId": "seat-3",
+          "actorId": "demo-1-actor-3",
+          "name": "Chi"
+        }
+      ],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-9-legacy-1.png",
+      "sha256": "23265a589c2e6ce11324237dafc958b8d514528e4dc0cc7258bd2a0af4e80394",
+      "time": 1,
+      "view": "native-route",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          1.160575961573524,
+          1.0375675781249998,
+          8.631460282653748
+        ],
+        [
+          2.427973365308534,
+          0.5450695274980255,
+          13.26969540638995
+        ],
+        49.8359375
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "quality-9-legacy-18.1.png",
+      "sha256": "0b165e3cb5ef93ac954758f7007356555f74af8fa8455d475baff5cde037cdad",
+      "time": 18.1,
+      "view": "native-route",
+      "shot": "AERIAL",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          -0.16453682873832176,
+          1.1493887138912455,
+          8.972041251413165
+        ],
+        [
+          1.9971276462426466,
+          0.6693887138912455,
+          13.480611612137865
+        ],
+        50
+      ],
+      "focus": "seat-1",
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "quality-9-legacy-29.png",
+      "sha256": "3ff689f26dfe00fb29560108c3382798ffeb4a5821c500992f586431c4fda1fd",
+      "time": 29,
+      "view": "native-route",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -9.341585108033946,
+          5.765749626513671,
+          13.431548220686347
+        ],
+        [
+          -0.2244491788562204,
+          5.099858897257713,
+          14.769965854063184
+        ],
+        57.4977109375
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "quality-9-wide-opening.png",
+      "sha256": "d6742007fb2a5cfaa2290caf56074c43352f8cf8b7b49bf95df726cdbd068750",
+      "time": 1,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        [
+          0,
+          9.464062499999999,
+          0
+        ],
+        57.62454004294496
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-9-wide-motion.png",
+      "sha256": "88b063f494324d09ea06044774137e56df90b250fd36e0b14843a19a7a0b3c23",
+      "time": 5,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.5625,
+          11.015625,
+          48.4609375
+        ],
+        [
+          0,
+          9.50859375,
+          -0.09375
+        ],
+        55.70243506441743
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-9-chat-close.png",
+      "sha256": "660e40f93aa354c5806a77af4c7889e4caa9b6749711509e1f35ed28ed8de178",
+      "time": 8.6,
+      "view": "fixed QA seat close",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        43
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-9-chat-float.png",
+      "sha256": "13070b9179149f2626d2474778be333c9547b8b05212f9e2bdeead926069676a",
+      "time": 10,
+      "view": "fixed QA seat close",
+      "shot": "COMMUNITY",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        43
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-9-gift.png",
+      "sha256": "40990ec20d6aaaf6454f5432e43ed06563882b9fa657bdfa057fffde1745f86f",
+      "time": 17.43,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          -2.1374503763825166,
+          1.1539100661788135,
+          8.870261580192393
+        ],
+        [
+          -1.016070605667886,
+          0.6739100661788135,
+          13.742889968427228
+        ],
+        50
+      ],
+      "focus": "seat-1",
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-9-top-17.png",
+      "sha256": "4bdb6f338417b4933b3f3f2af2b0e781d8a6c54b40e54ee885e2998e8f47126e",
+      "time": 17,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -7.3828125,
+          46.140625,
+          23.0703125
+        ],
+        [
+          0,
+          2.0390625,
+          1.453125
+        ],
+        58.41454286888624
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-9-top-19.png",
+      "sha256": "4a8576c1997252f4ca94031999237c54effc6678c2883d778b0a62e0e49ae843",
+      "time": 19,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -4.7109375,
+          53.296875,
+          12.6484375
+        ],
+        [
+          0,
+          0.4921875,
+          0.359375
+        ],
+        61.84651428962874
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-9-top-22.png",
+      "sha256": "f7958d03d9aa12256a771ae2b45ee93f556481a809719bdbe6e5d827fba007ba",
+      "time": 22,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          1.75,
+          53.125,
+          20.3125
+        ],
+        [
+          0,
+          -0.625,
+          -0.3125
+        ],
+        63.181112272059956
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-9-top-25.png",
+      "sha256": "4c852db897598d99f255c1c3fa421025cd131c282bc6e7e400fbd8e24d234c57",
+      "time": 25,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          9.8046875,
+          45.3359375,
+          33.8125
+        ],
+        [
+          0,
+          1.328125,
+          0.65625
+        ],
+        61.383402906222805
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-9-aerial.png",
+      "sha256": "96345c926b5b1f95b91023892ad46f02862b661339e21c15c90e65d620867ec8",
+      "time": 29,
+      "view": "native-route",
+      "shot": "AERIAL",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          17.46875,
+          30.1640625,
+          34.8203125
+        ],
+        [
+          0,
+          8.31640625,
+          2.828125
+        ],
+        54.63596358983355
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-9-return-loop.png",
+      "sha256": "40fe977c099a6d8f8b46e0560ab42c6f32c1511354bd4235978a0fb8760f5a38",
+      "time": 40.4,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.16399999999999954,
+          10.1,
+          44.5745
+        ],
+        [
+          0,
+          9.4686,
+          0
+        ],
+        57.87791168824543
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-71-legacy-1.png",
+      "sha256": "f064a4b9710df26012e37df9a972e2f4e30c636dbda68d488ff28f1307a0965e",
+      "time": 1,
+      "view": "native-route",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          1.160575961573524,
+          1.0375675781249998,
+          8.631460282653748
+        ],
+        [
+          2.427973365308534,
+          0.5450695274980255,
+          13.26969540638995
+        ],
+        49.8359375
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "quality-71-legacy-18.1.png",
+      "sha256": "19f57c3c1061e5a694860adf36e8d34f1a19db6a197dad20c67de3f5278c20d7",
+      "time": 18.1,
+      "view": "native-route",
+      "shot": "AERIAL",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          -0.16453682873832176,
+          1.1493887138912455,
+          8.972041251413165
+        ],
+        [
+          1.9971276462426466,
+          0.6693887138912455,
+          13.480611612137865
+        ],
+        50
+      ],
+      "focus": "seat-1",
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "quality-71-legacy-29.png",
+      "sha256": "ce1d70fea8f521cd0962c8be31b8d29e14f06362e0905fd5c1e6e32a657536c6",
+      "time": 29,
+      "view": "native-route",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -9.341585108033946,
+          5.744790642138671,
+          13.431548220686347
+        ],
+        [
+          -0.2348285654471578,
+          5.079657994955851,
+          14.768442134975867
+        ],
+        57.4977109375
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "quality-71-wide-opening.png",
+      "sha256": "dc9644623deeb99c4a9288e6113381c48c20dce8039818fefc42d419fb0b7949",
+      "time": 1,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        [
+          0,
+          9.464062499999999,
+          0
+        ],
+        57.62454004294496
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-71-wide-motion.png",
+      "sha256": "2cb46c58608d10fd22f0d315169a4ed15d60e4b6b60a146264680cf497382538",
+      "time": 5,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.5625,
+          11.015625,
+          48.4609375
+        ],
+        [
+          0,
+          9.50859375,
+          -0.09375
+        ],
+        55.70243506441743
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-71-chat-close.png",
+      "sha256": "031a536a67098e8bd87295c416602c007ae4f10a5de17f3facfab5c8af23935a",
+      "time": 8.6,
+      "view": "fixed QA seat close",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.34011899055969297,
+          1.5,
+          8.993570985557442
+        ],
+        [
+          0.5215157855248626,
+          0.86,
+          13.790142177854744
+        ],
+        43
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-71-chat-float.png",
+      "sha256": "477ca5b86429154abf71ebad13ead820664cde645608e6a833e49d5756ce3fd6",
+      "time": 10,
+      "view": "fixed QA seat close",
+      "shot": "COMMUNITY",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.34011899055969297,
+          1.5,
+          8.993570985557442
+        ],
+        [
+          0.5215157855248626,
+          0.86,
+          13.790142177854744
+        ],
+        43
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-71-gift.png",
+      "sha256": "ee85cfbb62e0358961df37568bdae317315c2e03f9f51c2aefe0b9e00baf962c",
+      "time": 17.43,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          -1.1362860506110266,
+          1.1539100661788135,
+          9.053125903450242
+        ],
+        [
+          0.5207750819454214,
+          0.6739100661788135,
+          13.770556178819529
+        ],
+        50
+      ],
+      "focus": "seat-1",
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-71-top-17.png",
+      "sha256": "f56b94279e70d7cdbfcdf7aaff0ba6f4ac2c0d052032f30dfd34be10248b2aeb",
+      "time": 17,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -7.3828125,
+          46.140625,
+          23.0703125
+        ],
+        [
+          0,
+          2.0390625,
+          1.453125
+        ],
+        58.41454286888624
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-71-top-19.png",
+      "sha256": "c5ced2e7ee000766ec1dc65bd0e2d4c813296d2e137cf3135d75b0a2a388f6e8",
+      "time": 19,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -4.7109375,
+          53.296875,
+          12.6484375
+        ],
+        [
+          0,
+          0.4921875,
+          0.359375
+        ],
+        61.84651428962874
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-71-top-22.png",
+      "sha256": "0edaf10b5b13ff5e2899da22354d28be1f5e63c5848340fbe9cf6582560170e8",
+      "time": 22,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          1.75,
+          53.125,
+          20.3125
+        ],
+        [
+          0,
+          -0.625,
+          -0.3125
+        ],
+        63.181112272059956
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-71-top-25.png",
+      "sha256": "78811164690cb4aecea91416e08ae327fbced5c0dfcab0c92d8363290aaa1853",
+      "time": 25,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          9.8046875,
+          45.3359375,
+          33.8125
+        ],
+        [
+          0,
+          1.328125,
+          0.65625
+        ],
+        61.383402906222805
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-71-aerial.png",
+      "sha256": "66d835e9e36570a024e896a5c1089a5cec7b24cec51e76009a7bcf55b0ca46f0",
+      "time": 29,
+      "view": "native-route",
+      "shot": "AERIAL",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          17.46875,
+          30.1640625,
+          34.8203125
+        ],
+        [
+          0,
+          8.31640625,
+          2.828125
+        ],
+        54.63596358983355
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-71-return-loop.png",
+      "sha256": "803d2d914e4f8c0e4c7f40b09d265f03d8406ee759f4d24f3d5343f2ac10e250",
+      "time": 40.4,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.16399999999999954,
+          10.1,
+          44.5745
+        ],
+        [
+          0,
+          9.4686,
+          0
+        ],
+        57.87791168824543
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-1337-legacy-1.png",
+      "sha256": "99400311aac64a6b83ab8af3d9104bc990f521cc4c7ac0464c3d526f59692f91",
+      "time": 1,
+      "view": "native-route",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          1.160575961573524,
+          1.0375675781249998,
+          8.631460282653748
+        ],
+        [
+          2.427973365308534,
+          0.5450695274980255,
+          13.26969540638995
+        ],
+        49.8359375
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "quality-1337-legacy-18.1.png",
+      "sha256": "344a02040e1164903398f3f02cde91b6b0c213cd60a987f1f43016f046e81fb8",
+      "time": 18.1,
+      "view": "native-route",
+      "shot": "AERIAL",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          -0.16453682873832176,
+          1.1493887138912455,
+          8.972041251413165
+        ],
+        [
+          1.9971276462426466,
+          0.6693887138912455,
+          13.480611612137865
+        ],
+        50
+      ],
+      "focus": "seat-1",
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "quality-1337-legacy-29.png",
+      "sha256": "7c5a07b45ae6fae2d66226c0e7777a01ff7baa2115273dd53604113d130e2b34",
+      "time": 29,
+      "view": "native-route",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -9.341585108033946,
+          5.744790642138671,
+          13.431548220686347
+        ],
+        [
+          -0.2348285654471578,
+          5.079657994955851,
+          14.768442134975867
+        ],
+        57.4977109375
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "ee27355b2b80f847602b0f6d2a3c259e4861fc54"
+    },
+    {
+      "filename": "quality-1337-wide-opening.png",
+      "sha256": "b38348afa7b57137c1ac3f8303d6b5e82509a7be2d456ac1121f09eb70934e39",
+      "time": 1,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        [
+          0,
+          9.464062499999999,
+          0
+        ],
+        57.62454004294496
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-1337-wide-motion.png",
+      "sha256": "72d939b904d3eb5ee71ea6ecc88c3810d54eff1ad94c91a86b98b8bf0392aa79",
+      "time": 5,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.5625,
+          11.015625,
+          48.4609375
+        ],
+        [
+          0,
+          9.50859375,
+          -0.09375
+        ],
+        55.70243506441743
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-1337-chat-close.png",
+      "sha256": "8c02cf28e0066c20951d7a00daaa00f84d5694037e15119cbb663496b55b4419",
+      "time": 8.6,
+      "view": "fixed QA seat close",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.42104626198912287,
+          1.5,
+          8.990145718800392
+        ],
+        [
+          -0.6456042683833217,
+          0.86,
+          13.784890102160599
+        ],
+        43
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "chat": {
+          "phase": "read",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-1337-chat-float.png",
+      "sha256": "805ec29867a2a63de6c6c1f35b691a29b14efe0fc8aaf1a4db0626944211d372",
+      "time": 10,
+      "view": "fixed QA seat close",
+      "shot": "COMMUNITY",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -0.42104626198912287,
+          1.5,
+          8.990145718800392
+        ],
+        [
+          -0.6456042683833217,
+          0.86,
+          13.784890102160599
+        ],
+        43
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "chat": {
+          "phase": "float",
+          "eventId": "bubble-short",
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-1337-gift.png",
+      "sha256": "eedca9f922ffc3411ad03eee6e935d18adba772f36aae2768b7762965b30184b",
+      "time": 17.43,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          -1.8972033582168233,
+          1.1539100661788135,
+          8.924732714771114
+        ],
+        [
+          -0.6446873231905454,
+          0.6739100661788135,
+          13.765311562595212
+        ],
+        50
+      ],
+      "focus": "seat-1",
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        }
+      ],
+      "bubbles": {
+        "gift": {
+          "type": "rosette",
+          "count": 5,
+          "seatId": "seat-1"
+        }
+      },
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-1337-top-17.png",
+      "sha256": "25dc3d8ed5c2c606e3f99240cdee151af82584b40eb285e62315cdecd27f5336",
+      "time": 17,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -7.3828125,
+          46.140625,
+          23.0703125
+        ],
+        [
+          0,
+          2.0390625,
+          1.453125
+        ],
+        58.41454286888624
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-1337-top-19.png",
+      "sha256": "c8c4e0c1a331a264dc40520716c6b94a7673d8843867ac87372666f769e8dfd4",
+      "time": 19,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          -4.7109375,
+          53.296875,
+          12.6484375
+        ],
+        [
+          0,
+          0.4921875,
+          0.359375
+        ],
+        61.84651428962874
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-1337-top-22.png",
+      "sha256": "26575d0a2ce53eedcfabbf7bbe84817fb812e1536489e06af8a72a3a7651e327",
+      "time": 22,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          1.75,
+          53.125,
+          20.3125
+        ],
+        [
+          0,
+          -0.625,
+          -0.3125
+        ],
+        63.181112272059956
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-1337-top-25.png",
+      "sha256": "31452810cb3d3a1f6f929271f4fe3a35cf23b6d7184dbbdde255d2a7c6fde40d",
+      "time": 25,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          9.8046875,
+          45.3359375,
+          33.8125
+        ],
+        [
+          0,
+          1.328125,
+          0.65625
+        ],
+        61.383402906222805
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-1337-aerial.png",
+      "sha256": "9d4a8e8a7a984451147e6395428fd804c3ff9c0581ec855d9909f79e1db64bac",
+      "time": 29,
+      "view": "native-route",
+      "shot": "AERIAL",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          17.46875,
+          30.1640625,
+          34.8203125
+        ],
+        [
+          0,
+          8.31640625,
+          2.828125
+        ],
+        54.63596358983355
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-1337-return-loop.png",
+      "sha256": "0ffd6ed2479b505babaa04d25bb082bd002e115b97a836a4bc3ffe0a08fe7e51",
+      "time": 40.4,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          0.16399999999999954,
+          10.1,
+          44.5745
+        ],
+        [
+          0,
+          9.4686,
+          0
+        ],
+        57.87791168824543
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-mist-off.png",
+      "sha256": "4fdba3eab511e7ec4aacb32e3e75eb1b60f89a4a126787ec586475968c6209d2",
+      "time": 2,
+      "view": "fixed matched mist pose",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          8,
+          4,
+          24
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        53
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-mist-rich_only.png",
+      "sha256": "d260c746574204284816e8e606b13dfc6cc0a1b15da6e7cdd235d6fa37c24a87",
+      "time": 2,
+      "view": "fixed matched mist pose",
+      "shot": "CLOSE",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          8,
+          4,
+          24
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        53
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-mist-all_on.png",
+      "sha256": "ded4a160c0b3930d5a957ce48c7863ebbf4cbd607a39f0e40f0c5d159d8f6745",
+      "time": 2,
+      "view": "fixed matched mist pose",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINEMATIC",
+      "camera": [
+        [
+          8,
+          4,
+          24
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        53
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-capacity-return-63.5.png",
+      "sha256": "8e19a154dbbb76a80332e162daa3844bf2d84c5ef0dd58713390d097f6243916",
+      "time": 63.5,
+      "view": "native-route",
+      "shot": "HERO_TOP_RING",
+      "mode": "GIFT_FOCUS",
+      "camera": [
+        [
+          5.253372490089341,
+          1.15307000018619,
+          7.460047727253996
+        ],
+        [
+          9.65417446850852,
+          0.67307000018619,
+          9.833429691191078
+        ],
+        50
+      ],
+      "focus": "seat-3",
+      "names": [
+        {
+          "seatId": "seat-3",
+          "actorId": "demo-1-actor-3",
+          "name": "Chi"
+        }
+      ],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-capacity-return-63.65.png",
+      "sha256": "f007f645072d2a2605761dfb875859f862ecdb10f4bbea867550c7c6ad249873",
+      "time": 63.65,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINE_RETURN",
+      "camera": [
+        [
+          5.238950258447404,
+          1.1797301800099278,
+          7.572043024917643
+        ],
+        [
+          9.625692719122448,
+          0.6986415883298616,
+          9.804419102975208
+        ],
+        50.02204865578845
+      ],
+      "names": [
+        {
+          "seatId": "seat-3",
+          "actorId": "demo-1-actor-3",
+          "name": "Chi"
+        }
+      ],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-capacity-return-64.1.png",
+      "sha256": "3d986938c6ff3ec634246cf05b4f7f548d8e721481cbc81a11bd9224131cf269",
+      "time": 64.1,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINE_RETURN",
+      "camera": [
+        [
+          3.895574294012618,
+          3.774177484404193,
+          18.253821359801332
+        ],
+        [
+          6.9283851062104045,
+          3.166501336656915,
+          7.057028857066104
+        ],
+        52.04034736045601
+      ],
+      "names": [],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "filename": "quality-capacity-return-64.75.png",
+      "sha256": "c57c21f5f3db9b4abeb44618786d3dc449c966443760f359428e41f7c6ccbf4e",
+      "time": 64.75,
+      "view": "native-route",
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "mode": "CINE_RETURN",
+      "camera": [
+        [
+          0.804137052227186,
+          10.232387718427136,
+          44.49265374652169
+        ],
+        [
+          0.375660963590013,
+          9.211871694795303,
+          0.38263610060469233
+        ],
+        56.58017423032729
+      ],
+      "names": [
+        {
+          "seatId": "seat-1",
+          "actorId": "demo-1-actor-1",
+          "name": "An"
+        },
+        {
+          "seatId": "seat-3",
+          "actorId": "demo-1-actor-3",
+          "name": "Chi"
+        }
+      ],
+      "bubbles": {},
+      "reportRevision": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    }
+  ],
+  "parity": [
+    {
+      "profile": "eco",
+      "seed": 9,
+      "t": 1,
+      "sha256": "b14a7696edfaedeb331e8310e397d7d8da5396083c7b0153ce7c401e91698e4d",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "eco",
+      "seed": 9,
+      "t": 18.1,
+      "sha256": "a4e3596936643e520dfd520cb5e1ffc39547aeee5c3251aeeb9d01c8f52234ad",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "eco",
+      "seed": 9,
+      "t": 29,
+      "sha256": "fad123289bded921705bce76e95f6a4cf745dc8383e84001f5362df72b693bcb",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "eco",
+      "seed": 71,
+      "t": 1,
+      "sha256": "18e9776c6c6dc61856ac7a33031b7d82685282454efe477f90a98b9153b2c4aa",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "eco",
+      "seed": 71,
+      "t": 18.1,
+      "sha256": "5492c1e5e32b3ff8f53f230dadc963f5d8857a811b1083a30a1041ab3dab79ff",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "eco",
+      "seed": 71,
+      "t": 29,
+      "sha256": "ae6710d78307cd0194c255d5ba0b20d7b579e34cca7baab4441637604df73245",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "eco",
+      "seed": 1337,
+      "t": 1,
+      "sha256": "3d281dd7aa9f36d400f492487df2da053f48278864115a043823a30a6014cc50",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "eco",
+      "seed": 1337,
+      "t": 18.1,
+      "sha256": "e0500e7d299aa8eadffd2c686daa4c771f236ab53a77cd7a7e92ed02169fa1c2",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "eco",
+      "seed": 1337,
+      "t": 29,
+      "sha256": "2fdfc437ba00048d715dce24f9aa98a9b9e14646c66ab2340909ac204152df6e",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "t": 1,
+      "sha256": "23265a589c2e6ce11324237dafc958b8d514528e4dc0cc7258bd2a0af4e80394",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "t": 18.1,
+      "sha256": "0b165e3cb5ef93ac954758f7007356555f74af8fa8455d475baff5cde037cdad",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "t": 29,
+      "sha256": "3ff689f26dfe00fb29560108c3382798ffeb4a5821c500992f586431c4fda1fd",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "quality",
+      "seed": 71,
+      "t": 1,
+      "sha256": "f064a4b9710df26012e37df9a972e2f4e30c636dbda68d488ff28f1307a0965e",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "quality",
+      "seed": 71,
+      "t": 18.1,
+      "sha256": "19f57c3c1061e5a694860adf36e8d34f1a19db6a197dad20c67de3f5278c20d7",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "quality",
+      "seed": 71,
+      "t": 29,
+      "sha256": "ce1d70fea8f521cd0962c8be31b8d29e14f06362e0905fd5c1e6e32a657536c6",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "quality",
+      "seed": 1337,
+      "t": 1,
+      "sha256": "99400311aac64a6b83ab8af3d9104bc990f521cc4c7ac0464c3d526f59692f91",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "quality",
+      "seed": 1337,
+      "t": 18.1,
+      "sha256": "344a02040e1164903398f3f02cde91b6b0c213cd60a987f1f43016f046e81fb8",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    },
+    {
+      "profile": "quality",
+      "seed": 1337,
+      "t": 29,
+      "sha256": "7c5a07b45ae6fae2d66226c0e7777a01ff7baa2115273dd53604113d130e2b34",
+      "candidate": "67f1e3dbfe5098a5cd9b83c49a40139c8ed77ba7"
+    }
+  ],
+  "layouts": [
+    {
+      "profile": "eco",
+      "seed": 9,
+      "tree": [
+        0,
+        0,
+        0
+      ],
+      "slots": [
+        {
+          "id": "seat-1",
+          "decorId": "decor-seat-1",
+          "position": [
+            -1.017515772997651,
+            0.065,
+            13.762436617536192
+          ],
+          "yaw": -0.0738
+        },
+        {
+          "id": "seat-2",
+          "decorId": "decor-seat-2",
+          "position": [
+            -11.010992218590768,
+            0.065,
+            8.318536551709897
+          ],
+          "yaw": -0.9238
+        },
+        {
+          "id": "seat-3",
+          "decorId": "decor-seat-3",
+          "position": [
+            9.66790569688961,
+            0.065,
+            9.847415876058523
+          ],
+          "yaw": 0.7762
+        },
+        {
+          "id": "visual-4",
+          "decorId": "decor-visual-4",
+          "position": [
+            -10.069006486672313,
+            0.065,
+            -9.436901417909954
+          ],
+          "yaw": -2.3238
+        },
+        {
+          "id": "visual-5",
+          "decorId": "decor-visual-5",
+          "position": [
+            11.347359625275237,
+            0.065,
+            -7.853497917149625
+          ],
+          "yaw": 2.1762
+        },
+        {
+          "id": "visual-6",
+          "decorId": "decor-visual-6",
+          "position": [
+            7.398685361106663,
+            0.065,
+            18.79626172746448
+          ],
+          "yaw": 0.3749989505128276
+        },
+        {
+          "id": "visual-7",
+          "decorId": "decor-visual-7",
+          "position": [
+            19.30851404105215,
+            0.065,
+            5.9347523559531945
+          ],
+          "yaw": 1.2725968515384827
+        },
+        {
+          "id": "visual-8",
+          "decorId": "decor-visual-8",
+          "position": [
+            16.678637826177695,
+            0.065,
+            -11.395746586476664
+          ],
+          "yaw": 2.170194752564138
+        },
+        {
+          "id": "visual-9",
+          "decorId": "decor-visual-9",
+          "position": [
+            1.4894071459820686,
+            0.065,
+            -20.14501591842254
+          ],
+          "yaw": 3.0677926535897933
+        },
+        {
+          "id": "visual-10",
+          "decorId": "decor-visual-10",
+          "position": [
+            -14.821377493507011,
+            0.065,
+            -13.72467738035994
+          ],
+          "yaw": 3.9653905546154484
+        },
+        {
+          "id": "visual-11",
+          "decorId": "decor-visual-11",
+          "position": [
+            -19.971362579382433,
+            0.065,
+            3.0306231575111897
+          ],
+          "yaw": 4.862988455641102
+        },
+        {
+          "id": "visual-12",
+          "decorId": "decor-visual-12",
+          "position": [
+            -10.082504301429132,
+            0.065,
+            17.50380264433026
+          ],
+          "yaw": 5.760586356666759
+        }
+      ],
+      "radius": 1.0671411931185832,
+      "plants": [
+        {
+          "id": "flower-1",
+          "kind": "bloom",
+          "position": [
+            1.0623785916203632,
+            0,
+            17.017151839239524
+          ],
+          "yaw": 5.916050814005731
+        },
+        {
+          "id": "flower-2",
+          "kind": "bloom",
+          "position": [
+            -3.4559669528342782,
+            0,
+            14.989768476863391
+          ],
+          "yaw": 0.453702844601741
+        },
+        {
+          "id": "bud-1",
+          "kind": "bud",
+          "position": [
+            2.8312930161412804,
+            0,
+            17.669627519003114
+          ],
+          "yaw": 4.51257269234282
+        },
+        {
+          "id": "bud-2",
+          "kind": "bud",
+          "position": [
+            -2.2707896439312028,
+            0,
+            15.689870369033889
+          ],
+          "yaw": 5.367870475728584
+        },
+        {
+          "id": "bud-3",
+          "kind": "bud",
+          "position": [
+            7.9840575961768625,
+            0,
+            10.622211246439255
+          ],
+          "yaw": 1.625467357251331
+        },
+        {
+          "id": "bud-4",
+          "kind": "bud",
+          "position": [
+            -3.3956921078125015,
+            0,
+            10.496178349982946
+          ],
+          "yaw": 1.14069284508706
+        },
+        {
+          "id": "bud-5",
+          "kind": "bud",
+          "position": [
+            6.621528180995956,
+            0,
+            20.387407247791998
+          ],
+          "yaw": 4.314432861606413
+        }
+      ],
+      "contact": [
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        },
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        },
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        }
+      ],
+      "actorLooks": [
+        {
+          "slotId": "seat-1",
+          "model": "femaleP05f",
+          "variant": "sage_green",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 14,
+              "name": "ao_ba_ba_pants__sage_green"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 13,
+              "name": "ao_ba_ba_top__sage_green"
+            }
+          ]
+        },
+        {
+          "slotId": "seat-2",
+          "model": "maleP07b1",
+          "variant": "pastel_lilac",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 10,
+              "name": "ao_ba_ba_pants__pastel_lilac"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 9,
+              "name": "ao_ba_ba_top__pastel_lilac"
+            }
+          ]
+        },
+        {
+          "slotId": "seat-3",
+          "model": "femaleP05f",
+          "variant": "warm_cream",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 18,
+              "name": "ao_ba_ba_pants__warm_cream"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 17,
+              "name": "ao_ba_ba_top__warm_cream"
+            }
+          ]
+        }
+      ],
+      "topPortrait": [
+        {
+          "id": "seat-1",
+          "x": 315.84727170942983,
+          "y": 895.6278005281275,
+          "inPortrait": true
+        },
+        {
+          "id": "seat-2",
+          "x": 135.31594918906282,
+          "y": 772.6623590688214,
+          "inPortrait": true
+        },
+        {
+          "id": "seat-3",
+          "x": 532.2177256181543,
+          "y": 835.5292862271049,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-4",
+          "x": 200.75953034932132,
+          "y": 476.199871364111,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-5",
+          "x": 569.5833448547651,
+          "y": 528.319891032324,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-6",
+          "x": 480.09009466133455,
+          "y": 1017.6715547345268,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-7",
+          "x": 719.7351557095153,
+          "y": 776.2028560926739,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-8",
+          "x": 662.4083067181789,
+          "y": 480.874016066992,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-9",
+          "x": 411.3887856806902,
+          "y": 338.05787237419736,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-10",
+          "x": 131.90416227007827,
+          "y": 407.6499815248011,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-11",
+          "x": -12.646575645627358,
+          "y": 663.7255386139348,
+          "inPortrait": false
+        },
+        {
+          "id": "visual-12",
+          "x": 123.70628692995075,
+          "y": 957.50302209221,
+          "inPortrait": true
+        }
+      ],
+      "rich": {
+        "localPoints": 24,
+        "totalPoints": 121,
+        "mistPoints": 6,
+        "mistPixelCap": 108,
+        "mistCenterY": [
+          0.66,
+          2.26
+        ]
+      },
+      "assets": {
+        "tree": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R16",
+          "baselineCommit": "fcc6ede4cb7a96ba09cb94d2088fbf9e09481766",
+          "profile": "eco",
+          "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "bytes": 1393492,
+          "triangles": 44412,
+          "meshes": 10,
+          "bounds": [
+            [
+              -12.786479949951172,
+              -1.026049256324768,
+              -12.026215553283691
+            ],
+            [
+              13.287308692932129,
+              24.86863899230957,
+              10.933910369873047
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "gltfTextures": 0
+        },
+        "lotuses": [
+          {
+            "file": "lotus_bloom_p012b_eco.glb",
+            "sha256": "8dce16649f0dff541601047628ad7175f0b9ec028e7803b967cf2dee5efc0bd5",
+            "bytes": 20924,
+            "triangles": 589,
+            "bounds": [
+              [
+                -0.3683744966983795,
+                0,
+                -0.35377100110054016
+              ],
+              [
+                0.3649047017097473,
+                0.27900001406669617,
+                0.3719247579574585
+              ]
+            ],
+            "meshes": 1,
+            "primitives": 3,
+            "materials": 3,
+            "textures": 0
+          },
+          {
+            "file": "lotus_bud_p012b_eco.glb",
+            "sha256": "c442cc04c3b0094a920c2b86fb202233782d5076a97e1110a84b345df3f0d082",
+            "bytes": 8552,
+            "triangles": 192,
+            "bounds": [
+              [
+                -0.14499245584011078,
+                0,
+                -0.14168626070022583
+              ],
+              [
+                0.14499999582767487,
+                0.6340000033378601,
+                0.14168626070022583
+              ]
+            ],
+            "meshes": 1,
+            "primitives": 2,
+            "materials": 2,
+            "textures": 0
+          }
+        ],
+        "padAndActor": {
+          "pad": {
+            "assetId": "lotus_pad_01",
+            "revision": "P02",
+            "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+            "bytes": 262108,
+            "meshes": 5,
+            "triangles": 10648,
+            "materials": 5,
+            "usedMaterials": 5,
+            "materialVariants": [],
+            "animations": []
+          },
+          "actor": {
+            "assetId": "meditator_base",
+            "revision": "P07b1 cross prayer Side Part 7/3",
+            "sha256": "4e8c8d082352d67d0eaf637df7973931442c724a0f7db598ea8fde8de3873097",
+            "bytes": 589932,
+            "meshes": 10,
+            "triangles": 17420,
+            "materials": 21,
+            "usedMaterials": 9,
+            "materialVariants": [
+              "pastel_lilac",
+              "blush_rose",
+              "sage_green",
+              "sky_blue",
+              "warm_cream",
+              "terracotta"
+            ],
+            "animations": [
+              "sit_idle",
+              "cross_prayer_idle"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "profile": "eco",
+      "seed": 71,
+      "tree": [
+        0,
+        0,
+        0
+      ],
+      "slots": [
+        {
+          "id": "seat-1",
+          "decorId": "decor-seat-1",
+          "position": [
+            0.5215157855248626,
+            0.065,
+            13.790142177854744
+          ],
+          "yaw": 0.03779999999999999
+        },
+        {
+          "id": "seat-2",
+          "decorId": "decor-seat-2",
+          "position": [
+            -10.016071973561575,
+            0.065,
+            9.493066007377932
+          ],
+          "yaw": -0.8122
+        },
+        {
+          "id": "seat-3",
+          "decorId": "decor-seat-3",
+          "position": [
+            10.704455231080328,
+            0.065,
+            8.709456826105578
+          ],
+          "yaw": 0.8877999999999999
+        },
+        {
+          "id": "visual-4",
+          "decorId": "decor-visual-4",
+          "position": [
+            -11.057342470162649,
+            0.065,
+            -8.256826115253814
+          ],
+          "yaw": -2.2122
+        },
+        {
+          "id": "visual-5",
+          "decorId": "decor-visual-5",
+          "position": [
+            10.402137549562156,
+            0.065,
+            -9.068381024195501
+          ],
+          "yaw": 2.2878
+        },
+        {
+          "id": "visual-6",
+          "decorId": "decor-visual-6",
+          "position": [
+            9.445970749779155,
+            0.065,
+            17.855353163528203
+          ],
+          "yaw": 0.4865989505128276
+        },
+        {
+          "id": "visual-7",
+          "decorId": "decor-visual-7",
+          "position": [
+            19.84934366497468,
+            0.065,
+            3.7474732913964246
+          ],
+          "yaw": 1.3841968515384828
+        },
+        {
+          "id": "visual-8",
+          "decorId": "decor-visual-8",
+          "position": [
+            15.305755947622787,
+            0.065,
+            -13.182330403680892
+          ],
+          "yaw": 2.2817947525641378
+        },
+        {
+          "id": "visual-9",
+          "decorId": "decor-visual-9",
+          "position": [
+            -0.7633781788117496,
+            0.065,
+            -20.185570434251147
+          ],
+          "yaw": 3.179392653589793
+        },
+        {
+          "id": "visual-10",
+          "decorId": "decor-visual-10",
+          "position": [
+            -16.257672966524023,
+            0.065,
+            -11.988664217232623
+          ],
+          "yaw": 4.076990554615448
+        },
+        {
+          "id": "visual-11",
+          "decorId": "decor-visual-11",
+          "position": [
+            -19.50960841435256,
+            0.065,
+            5.235950679544615
+          ],
+          "yaw": 4.974588455641102
+        },
+        {
+          "id": "visual-12",
+          "decorId": "decor-visual-12",
+          "position": [
+            -8.070410802688272,
+            0.065,
+            18.517787920695397
+          ],
+          "yaw": 5.872186356666759
+        }
+      ],
+      "radius": 1.067141193118584,
+      "plants": [
+        {
+          "id": "flower-1",
+          "kind": "bloom",
+          "position": [
+            1.0581155149219557,
+            0,
+            16.899410422444344
+          ],
+          "yaw": 4.436903434631651
+        },
+        {
+          "id": "flower-2",
+          "kind": "bloom",
+          "position": [
+            -3.6431469778437164,
+            0,
+            14.918639641418123
+          ],
+          "yaw": 4.314447812629183
+        },
+        {
+          "id": "flower-3",
+          "kind": "bloom",
+          "position": [
+            8.489848193679936,
+            0,
+            9.496520049879328
+          ],
+          "yaw": 3.9401381393002737
+        },
+        {
+          "id": "bud-1",
+          "kind": "bud",
+          "position": [
+            2.859359587095678,
+            0,
+            17.738645387203434
+          ],
+          "yaw": 3.000784977367747
+        },
+        {
+          "id": "bud-2",
+          "kind": "bud",
+          "position": [
+            -2.2362632595235485,
+            0,
+            15.559876519981772
+          ],
+          "yaw": 2.7519669799108493
+        },
+        {
+          "id": "bud-3",
+          "kind": "bud",
+          "position": [
+            7.917010129364208,
+            0,
+            10.697514911326579
+          ],
+          "yaw": 3.1333339543818215
+        },
+        {
+          "id": "bud-4",
+          "kind": "bud",
+          "position": [
+            -3.380118448412977,
+            0,
+            10.421590343220158
+          ],
+          "yaw": 3.9407992553869837
+        },
+        {
+          "id": "bud-5",
+          "kind": "bud",
+          "position": [
+            6.590410971846431,
+            0,
+            20.49484763540793
+          ],
+          "yaw": 0.6358110066862283
+        }
+      ],
+      "contact": [
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        },
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.0003453035384269887,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        },
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        }
+      ],
+      "actorLooks": [
+        {
+          "slotId": "seat-1",
+          "model": "femaleP05f",
+          "variant": "sage_green",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 14,
+              "name": "ao_ba_ba_pants__sage_green"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 13,
+              "name": "ao_ba_ba_top__sage_green"
+            }
+          ]
+        },
+        {
+          "slotId": "seat-2",
+          "model": "maleP07b1",
+          "variant": "sage_green",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 14,
+              "name": "ao_ba_ba_pants__sage_green"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 13,
+              "name": "ao_ba_ba_top__sage_green"
+            }
+          ]
+        },
+        {
+          "slotId": "seat-3",
+          "model": "maleP07b1",
+          "variant": "pastel_lilac",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 10,
+              "name": "ao_ba_ba_pants__pastel_lilac"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 9,
+              "name": "ao_ba_ba_top__pastel_lilac"
+            }
+          ]
+        }
+      ],
+      "topPortrait": [
+        {
+          "id": "seat-1",
+          "x": 346.5089662794236,
+          "y": 898.8590722945701,
+          "inPortrait": true
+        },
+        {
+          "id": "seat-2",
+          "x": 150.7040495610127,
+          "y": 796.4417779015043,
+          "inPortrait": true
+        },
+        {
+          "id": "seat-3",
+          "x": 553.0093683899819,
+          "y": 815.1240768543431,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-4",
+          "x": 180.95057575129707,
+          "y": 492.77096817211003,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-5",
+          "x": 553.3475945620378,
+          "y": 508.219850754287,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-6",
+          "x": 523.4054253782692,
+          "y": 1000.8026782510956,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-7",
+          "x": 728.4318333557828,
+          "y": 736.5534014306746,
+          "inPortrait": false
+        },
+        {
+          "id": "visual-8",
+          "x": 638.3071962231131,
+          "y": 452.50719074404356,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-9",
+          "x": 374.93027131023047,
+          "y": 334.9505091063305,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-10",
+          "x": 103.11952117957391,
+          "y": 430.81586998820336,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-11",
+          "x": -12.911497526200968,
+          "y": 703.1613709208259,
+          "inPortrait": false
+        },
+        {
+          "id": "visual-12",
+          "x": 161.30336288447342,
+          "y": 982.8937358486098,
+          "inPortrait": true
+        }
+      ],
+      "rich": {
+        "localPoints": 24,
+        "totalPoints": 121,
+        "mistPoints": 6,
+        "mistPixelCap": 108,
+        "mistCenterY": [
+          0.66,
+          2.26
+        ]
+      },
+      "assets": {
+        "tree": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R16",
+          "baselineCommit": "fcc6ede4cb7a96ba09cb94d2088fbf9e09481766",
+          "profile": "eco",
+          "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "bytes": 1393492,
+          "triangles": 44412,
+          "meshes": 10,
+          "bounds": [
+            [
+              -12.786479949951172,
+              -1.026049256324768,
+              -12.026215553283691
+            ],
+            [
+              13.287308692932129,
+              24.86863899230957,
+              10.933910369873047
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "gltfTextures": 0
+        },
+        "lotuses": [
+          {
+            "file": "lotus_bloom_p012b_eco.glb",
+            "sha256": "8dce16649f0dff541601047628ad7175f0b9ec028e7803b967cf2dee5efc0bd5",
+            "bytes": 20924,
+            "triangles": 589,
+            "bounds": [
+              [
+                -0.3683744966983795,
+                0,
+                -0.35377100110054016
+              ],
+              [
+                0.3649047017097473,
+                0.27900001406669617,
+                0.3719247579574585
+              ]
+            ],
+            "meshes": 1,
+            "primitives": 3,
+            "materials": 3,
+            "textures": 0
+          },
+          {
+            "file": "lotus_bud_p012b_eco.glb",
+            "sha256": "c442cc04c3b0094a920c2b86fb202233782d5076a97e1110a84b345df3f0d082",
+            "bytes": 8552,
+            "triangles": 192,
+            "bounds": [
+              [
+                -0.14499245584011078,
+                0,
+                -0.14168626070022583
+              ],
+              [
+                0.14499999582767487,
+                0.6340000033378601,
+                0.14168626070022583
+              ]
+            ],
+            "meshes": 1,
+            "primitives": 2,
+            "materials": 2,
+            "textures": 0
+          }
+        ],
+        "padAndActor": {
+          "pad": {
+            "assetId": "lotus_pad_01",
+            "revision": "P02",
+            "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+            "bytes": 262108,
+            "meshes": 5,
+            "triangles": 10648,
+            "materials": 5,
+            "usedMaterials": 5,
+            "materialVariants": [],
+            "animations": []
+          },
+          "actor": {
+            "assetId": "meditator_base",
+            "revision": "P07b1 cross prayer Side Part 7/3",
+            "sha256": "4e8c8d082352d67d0eaf637df7973931442c724a0f7db598ea8fde8de3873097",
+            "bytes": 589932,
+            "meshes": 10,
+            "triangles": 17420,
+            "materials": 21,
+            "usedMaterials": 9,
+            "materialVariants": [
+              "pastel_lilac",
+              "blush_rose",
+              "sage_green",
+              "sky_blue",
+              "warm_cream",
+              "terracotta"
+            ],
+            "animations": [
+              "sit_idle",
+              "cross_prayer_idle"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "profile": "eco",
+      "seed": 1337,
+      "tree": [
+        0,
+        0,
+        0
+      ],
+      "slots": [
+        {
+          "id": "seat-1",
+          "decorId": "decor-seat-1",
+          "position": [
+            -0.6456042683833217,
+            0.065,
+            13.784890102160599
+          ],
+          "yaw": -0.0468
+        },
+        {
+          "id": "seat-2",
+          "decorId": "decor-seat-2",
+          "position": [
+            -10.782405756810023,
+            0.065,
+            8.612765298991382
+          ],
+          "yaw": -0.8967999999999999
+        },
+        {
+          "id": "seat-3",
+          "decorId": "decor-seat-3",
+          "position": [
+            9.93022988472123,
+            0.065,
+            9.582824971614029
+          ],
+          "yaw": 0.8032
+        },
+        {
+          "id": "visual-4",
+          "decorId": "decor-visual-4",
+          "position": [
+            -10.320101938421145,
+            0.065,
+            -9.161631731334554
+          ],
+          "yaw": -2.2968
+        },
+        {
+          "id": "visual-5",
+          "decorId": "decor-visual-5",
+          "position": [
+            11.131205082652377,
+            0.065,
+            -8.156976977283552
+          ],
+          "yaw": 2.2032
+        },
+        {
+          "id": "visual-6",
+          "decorId": "decor-visual-6",
+          "position": [
+            7.903426111872876,
+            0.065,
+            18.589670672020144
+          ],
+          "yaw": 0.4019989505128276
+        },
+        {
+          "id": "visual-7",
+          "decorId": "decor-visual-7",
+          "position": [
+            19.461695360594728,
+            0.065,
+            5.411322730294843
+          ],
+          "yaw": 1.2995968515384828
+        },
+        {
+          "id": "visual-8",
+          "decorId": "decor-visual-8",
+          "position": [
+            16.364911056551605,
+            0.065,
+            -11.841861598209757
+          ],
+          "yaw": 2.1971947525641378
+        },
+        {
+          "id": "visual-9",
+          "decorId": "decor-visual-9",
+          "position": [
+            0.9450149435755928,
+            0.065,
+            -20.177882613307542
+          ],
+          "yaw": 3.094792653589793
+        },
+        {
+          "id": "visual-10",
+          "decorId": "decor-visual-10",
+          "position": [
+            -15.186496696704628,
+            0.065,
+            -13.319546466790053
+          ],
+          "yaw": 3.992390554615448
+        },
+        {
+          "id": "visual-11",
+          "decorId": "decor-visual-11",
+          "position": [
+            -19.88226657628896,
+            0.065,
+            3.5686798384532765
+          ],
+          "yaw": 4.889988455641102
+        },
+        {
+          "id": "visual-12",
+          "decorId": "decor-visual-12",
+          "position": [
+            -9.606284199601198,
+            0.065,
+            17.769617437539065
+          ],
+          "yaw": 5.787586356666759
+        }
+      ],
+      "radius": 1.0671411931185832,
+      "plants": [
+        {
+          "id": "flower-1",
+          "kind": "bloom",
+          "position": [
+            0.998261918076314,
+            0,
+            16.971120930640026
+          ],
+          "yaw": 0.25728343917366736
+        },
+        {
+          "id": "flower-2",
+          "kind": "bloom",
+          "position": [
+            -3.6399545289762316,
+            0,
+            14.949590791766532
+          ],
+          "yaw": 4.986568346564392
+        },
+        {
+          "id": "bud-1",
+          "kind": "bud",
+          "position": [
+            3.007014243295416,
+            0,
+            17.845256256735883
+          ],
+          "yaw": 4.646079977251408
+        },
+        {
+          "id": "bud-2",
+          "kind": "bud",
+          "position": [
+            -2.1827128224400805,
+            0,
+            15.74116287929006
+          ],
+          "yaw": 0.959192206548367
+        },
+        {
+          "id": "bud-3",
+          "kind": "bud",
+          "position": [
+            8.093263695314526,
+            0,
+            10.804378366344608
+          ],
+          "yaw": 5.202897644267967
+        },
+        {
+          "id": "bud-4",
+          "kind": "bud",
+          "position": [
+            -3.5134642704436554,
+            0,
+            10.52717472827062
+          ],
+          "yaw": 3.0419072900485595
+        },
+        {
+          "id": "bud-5",
+          "kind": "bud",
+          "position": [
+            6.567125355387106,
+            0,
+            20.384110677535645
+          ],
+          "yaw": 4.782645691361563
+        }
+      ],
+      "contact": [
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        },
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        },
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        }
+      ],
+      "actorLooks": [
+        {
+          "slotId": "seat-1",
+          "model": "femaleP05f",
+          "variant": "sage_green",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 14,
+              "name": "ao_ba_ba_pants__sage_green"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 13,
+              "name": "ao_ba_ba_top__sage_green"
+            }
+          ]
+        },
+        {
+          "slotId": "seat-2",
+          "model": "maleP07b1",
+          "variant": "pastel_lilac",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 10,
+              "name": "ao_ba_ba_pants__pastel_lilac"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 9,
+              "name": "ao_ba_ba_top__pastel_lilac"
+            }
+          ]
+        },
+        {
+          "slotId": "seat-3",
+          "model": "femaleP05f",
+          "variant": "pastel_lilac",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 10,
+              "name": "ao_ba_ba_pants__pastel_lilac"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 9,
+              "name": "ao_ba_ba_top__pastel_lilac"
+            }
+          ]
+        }
+      ],
+      "topPortrait": [
+        {
+          "id": "seat-1",
+          "x": 323.21993222435844,
+          "y": 896.7295389221766,
+          "inPortrait": true
+        },
+        {
+          "id": "seat-2",
+          "x": 138.75337579357415,
+          "y": 778.5491196871076,
+          "inPortrait": true
+        },
+        {
+          "id": "seat-3",
+          "x": 537.4966198163546,
+          "y": 830.7942943108861,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-4",
+          "x": 195.81088257036726,
+          "y": 480.01980156647244,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-5",
+          "x": 565.8543441994107,
+          "y": 523.2958758188082,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-6",
+          "x": 490.79246170796563,
+          "y": 1014.0551864163203,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-7",
+          "x": 722.297069184242,
+          "y": 766.6501898791613,
+          "inPortrait": false
+        },
+        {
+          "id": "visual-8",
+          "x": 656.8415500359278,
+          "y": 473.7679550701409,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-9",
+          "x": 402.5960221805003,
+          "y": 336.9967145514667,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-10",
+          "x": 124.73807857511353,
+          "y": 412.98131044116786,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-11",
+          "x": -13.14077470965442,
+          "y": 673.208152181312,
+          "inPortrait": false
+        },
+        {
+          "id": "visual-12",
+          "x": 132.46179135978434,
+          "y": 964.025305714743,
+          "inPortrait": true
+        }
+      ],
+      "rich": {
+        "localPoints": 24,
+        "totalPoints": 121,
+        "mistPoints": 6,
+        "mistPixelCap": 108,
+        "mistCenterY": [
+          0.66,
+          2.26
+        ]
+      },
+      "assets": {
+        "tree": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R16",
+          "baselineCommit": "fcc6ede4cb7a96ba09cb94d2088fbf9e09481766",
+          "profile": "eco",
+          "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "bytes": 1393492,
+          "triangles": 44412,
+          "meshes": 10,
+          "bounds": [
+            [
+              -12.786479949951172,
+              -1.026049256324768,
+              -12.026215553283691
+            ],
+            [
+              13.287308692932129,
+              24.86863899230957,
+              10.933910369873047
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "gltfTextures": 0
+        },
+        "lotuses": [
+          {
+            "file": "lotus_bloom_p012b_eco.glb",
+            "sha256": "8dce16649f0dff541601047628ad7175f0b9ec028e7803b967cf2dee5efc0bd5",
+            "bytes": 20924,
+            "triangles": 589,
+            "bounds": [
+              [
+                -0.3683744966983795,
+                0,
+                -0.35377100110054016
+              ],
+              [
+                0.3649047017097473,
+                0.27900001406669617,
+                0.3719247579574585
+              ]
+            ],
+            "meshes": 1,
+            "primitives": 3,
+            "materials": 3,
+            "textures": 0
+          },
+          {
+            "file": "lotus_bud_p012b_eco.glb",
+            "sha256": "c442cc04c3b0094a920c2b86fb202233782d5076a97e1110a84b345df3f0d082",
+            "bytes": 8552,
+            "triangles": 192,
+            "bounds": [
+              [
+                -0.14499245584011078,
+                0,
+                -0.14168626070022583
+              ],
+              [
+                0.14499999582767487,
+                0.6340000033378601,
+                0.14168626070022583
+              ]
+            ],
+            "meshes": 1,
+            "primitives": 2,
+            "materials": 2,
+            "textures": 0
+          }
+        ],
+        "padAndActor": {
+          "pad": {
+            "assetId": "lotus_pad_01",
+            "revision": "P02",
+            "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+            "bytes": 262108,
+            "meshes": 5,
+            "triangles": 10648,
+            "materials": 5,
+            "usedMaterials": 5,
+            "materialVariants": [],
+            "animations": []
+          },
+          "actor": {
+            "assetId": "meditator_base",
+            "revision": "P07b1 cross prayer Side Part 7/3",
+            "sha256": "4e8c8d082352d67d0eaf637df7973931442c724a0f7db598ea8fde8de3873097",
+            "bytes": 589932,
+            "meshes": 10,
+            "triangles": 17420,
+            "materials": 21,
+            "usedMaterials": 9,
+            "materialVariants": [
+              "pastel_lilac",
+              "blush_rose",
+              "sage_green",
+              "sky_blue",
+              "warm_cream",
+              "terracotta"
+            ],
+            "animations": [
+              "sit_idle",
+              "cross_prayer_idle"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "tree": [
+        0,
+        0,
+        0
+      ],
+      "slots": [
+        {
+          "id": "seat-1",
+          "decorId": "decor-seat-1",
+          "position": [
+            -1.017515772997651,
+            0.065,
+            13.762436617536192
+          ],
+          "yaw": -0.0738
+        },
+        {
+          "id": "seat-2",
+          "decorId": "decor-seat-2",
+          "position": [
+            -11.010992218590768,
+            0.065,
+            8.318536551709897
+          ],
+          "yaw": -0.9238
+        },
+        {
+          "id": "seat-3",
+          "decorId": "decor-seat-3",
+          "position": [
+            9.66790569688961,
+            0.065,
+            9.847415876058523
+          ],
+          "yaw": 0.7762
+        },
+        {
+          "id": "visual-4",
+          "decorId": "decor-visual-4",
+          "position": [
+            -10.069006486672313,
+            0.065,
+            -9.436901417909954
+          ],
+          "yaw": -2.3238
+        },
+        {
+          "id": "visual-5",
+          "decorId": "decor-visual-5",
+          "position": [
+            11.347359625275237,
+            0.065,
+            -7.853497917149625
+          ],
+          "yaw": 2.1762
+        },
+        {
+          "id": "visual-6",
+          "decorId": "decor-visual-6",
+          "position": [
+            7.398685361106663,
+            0.065,
+            18.79626172746448
+          ],
+          "yaw": 0.3749989505128276
+        },
+        {
+          "id": "visual-7",
+          "decorId": "decor-visual-7",
+          "position": [
+            19.30851404105215,
+            0.065,
+            5.9347523559531945
+          ],
+          "yaw": 1.2725968515384827
+        },
+        {
+          "id": "visual-8",
+          "decorId": "decor-visual-8",
+          "position": [
+            16.678637826177695,
+            0.065,
+            -11.395746586476664
+          ],
+          "yaw": 2.170194752564138
+        },
+        {
+          "id": "visual-9",
+          "decorId": "decor-visual-9",
+          "position": [
+            1.4894071459820686,
+            0.065,
+            -20.14501591842254
+          ],
+          "yaw": 3.0677926535897933
+        },
+        {
+          "id": "visual-10",
+          "decorId": "decor-visual-10",
+          "position": [
+            -14.821377493507011,
+            0.065,
+            -13.72467738035994
+          ],
+          "yaw": 3.9653905546154484
+        },
+        {
+          "id": "visual-11",
+          "decorId": "decor-visual-11",
+          "position": [
+            -19.971362579382433,
+            0.065,
+            3.0306231575111897
+          ],
+          "yaw": 4.862988455641102
+        },
+        {
+          "id": "visual-12",
+          "decorId": "decor-visual-12",
+          "position": [
+            -10.082504301429132,
+            0.065,
+            17.50380264433026
+          ],
+          "yaw": 5.760586356666759
+        }
+      ],
+      "radius": 1.0671411931185832,
+      "plants": [
+        {
+          "id": "flower-1",
+          "kind": "bloom",
+          "position": [
+            1.0623785916203632,
+            0,
+            17.017151839239524
+          ],
+          "yaw": 5.916050814005731
+        },
+        {
+          "id": "flower-2",
+          "kind": "bloom",
+          "position": [
+            -3.4559669528342782,
+            0,
+            14.989768476863391
+          ],
+          "yaw": 0.453702844601741
+        },
+        {
+          "id": "bud-1",
+          "kind": "bud",
+          "position": [
+            2.8312930161412804,
+            0,
+            17.669627519003114
+          ],
+          "yaw": 4.51257269234282
+        },
+        {
+          "id": "bud-2",
+          "kind": "bud",
+          "position": [
+            -2.2707896439312028,
+            0,
+            15.689870369033889
+          ],
+          "yaw": 5.367870475728584
+        },
+        {
+          "id": "bud-3",
+          "kind": "bud",
+          "position": [
+            7.9840575961768625,
+            0,
+            10.622211246439255
+          ],
+          "yaw": 1.625467357251331
+        },
+        {
+          "id": "bud-4",
+          "kind": "bud",
+          "position": [
+            -3.3956921078125015,
+            0,
+            10.496178349982946
+          ],
+          "yaw": 1.14069284508706
+        },
+        {
+          "id": "bud-5",
+          "kind": "bud",
+          "position": [
+            6.621528180995956,
+            0,
+            20.387407247791998
+          ],
+          "yaw": 4.314432861606413
+        },
+        {
+          "id": "flower-4",
+          "kind": "bloom",
+          "position": [
+            4.998475316525437,
+            0,
+            16.39817445694469
+          ],
+          "yaw": 5.708582662730187
+        },
+        {
+          "id": "flower-5",
+          "kind": "bloom",
+          "position": [
+            -7.90823752483353,
+            0,
+            6.725911422190256
+          ],
+          "yaw": 5.482255983292677
+        },
+        {
+          "id": "bud-6",
+          "kind": "bud",
+          "position": [
+            6.220073366048745,
+            0,
+            16.59155724264681
+          ],
+          "yaw": 2.3205414430426803
+        },
+        {
+          "id": "bud-7",
+          "kind": "bud",
+          "position": [
+            -7.59018276755698,
+            0,
+            7.9807671714713795
+          ],
+          "yaw": 4.513279188148349
+        },
+        {
+          "id": "bud-8",
+          "kind": "bud",
+          "position": [
+            -1.9349254754884169,
+            0,
+            19.96484759696759
+          ],
+          "yaw": 0.8076016976352007
+        }
+      ],
+      "contact": [
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        },
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        },
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        }
+      ],
+      "actorLooks": [
+        {
+          "slotId": "seat-1",
+          "model": "femaleP05f",
+          "variant": "terracotta",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 20,
+              "name": "ao_ba_ba_pants__terracotta"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 19,
+              "name": "ao_ba_ba_top__terracotta"
+            }
+          ]
+        },
+        {
+          "slotId": "seat-2",
+          "model": "maleP07b1",
+          "variant": "blush_rose",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 12,
+              "name": "ao_ba_ba_pants__blush_rose"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 11,
+              "name": "ao_ba_ba_top__blush_rose"
+            }
+          ]
+        },
+        {
+          "slotId": "seat-3",
+          "model": "femaleP05f",
+          "variant": "sage_green",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 14,
+              "name": "ao_ba_ba_pants__sage_green"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 13,
+              "name": "ao_ba_ba_top__sage_green"
+            }
+          ]
+        }
+      ],
+      "topPortrait": [
+        {
+          "id": "seat-1",
+          "x": 315.84727170942983,
+          "y": 895.6278005281275,
+          "inPortrait": true
+        },
+        {
+          "id": "seat-2",
+          "x": 135.31594918906282,
+          "y": 772.6623590688214,
+          "inPortrait": true
+        },
+        {
+          "id": "seat-3",
+          "x": 532.2177256181543,
+          "y": 835.5292862271049,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-4",
+          "x": 200.75953034932132,
+          "y": 476.199871364111,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-5",
+          "x": 569.5833448547651,
+          "y": 528.319891032324,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-6",
+          "x": 480.09009466133455,
+          "y": 1017.6715547345268,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-7",
+          "x": 719.7351557095153,
+          "y": 776.2028560926739,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-8",
+          "x": 662.4083067181789,
+          "y": 480.874016066992,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-9",
+          "x": 411.3887856806902,
+          "y": 338.05787237419736,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-10",
+          "x": 131.90416227007827,
+          "y": 407.6499815248011,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-11",
+          "x": -12.646575645627358,
+          "y": 663.7255386139348,
+          "inPortrait": false
+        },
+        {
+          "id": "visual-12",
+          "x": 123.70628692995075,
+          "y": 957.50302209221,
+          "inPortrait": true
+        }
+      ],
+      "rich": {
+        "localPoints": 84,
+        "totalPoints": 304,
+        "mistPoints": 10,
+        "mistPixelCap": 152,
+        "mistCenterY": [
+          0.66,
+          2.26
+        ]
+      },
+      "assets": {
+        "tree": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R16",
+          "baselineCommit": "fcc6ede4cb7a96ba09cb94d2088fbf9e09481766",
+          "profile": "quality",
+          "sha256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "bytes": 5055232,
+          "triangles": 191288,
+          "meshes": 11,
+          "bounds": [
+            [
+              -12.705632209777832,
+              -0.5183812975883484,
+              -12.642970085144043
+            ],
+            [
+              13.742024421691895,
+              26.48044204711914,
+              13.2966947555542
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_flower_gold",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "gltfTextures": 0
+        },
+        "lotuses": [
+          {
+            "file": "lotus_bloom_p012b_quality.glb",
+            "sha256": "63edb12d02664a44ce4484b847ef07aeffab6a22a36cf44415b141f56804f0d0",
+            "bytes": 50004,
+            "triangles": 1728,
+            "bounds": [
+              [
+                -0.3662933111190796,
+                0,
+                -0.3752657175064087
+              ],
+              [
+                0.3767985999584198,
+                0.29899999499320984,
+                0.3711741864681244
+              ]
+            ],
+            "meshes": 1,
+            "primitives": 3,
+            "materials": 3,
+            "textures": 0
+          },
+          {
+            "file": "lotus_bud_p012b_quality.glb",
+            "sha256": "fe62a2f9aeb166d0eadf758c75eb47950a9053d8f2149d2a66ceaf5007a05f1a",
+            "bytes": 20940,
+            "triangles": 648,
+            "bounds": [
+              [
+                -0.14484304189682007,
+                0,
+                -0.14486804604530334
+              ],
+              [
+                0.14374113082885742,
+                0.6340000033378601,
+                0.14486804604530334
+              ]
+            ],
+            "meshes": 1,
+            "primitives": 2,
+            "materials": 2,
+            "textures": 0
+          }
+        ],
+        "padAndActor": {
+          "pad": {
+            "assetId": "lotus_pad_01",
+            "revision": "P02",
+            "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+            "bytes": 262108,
+            "meshes": 5,
+            "triangles": 10648,
+            "materials": 5,
+            "usedMaterials": 5,
+            "materialVariants": [],
+            "animations": []
+          },
+          "actor": {
+            "assetId": "meditator_base",
+            "revision": "P07b1 cross prayer Side Part 7/3",
+            "sha256": "4e8c8d082352d67d0eaf637df7973931442c724a0f7db598ea8fde8de3873097",
+            "bytes": 589932,
+            "meshes": 10,
+            "triangles": 17420,
+            "materials": 21,
+            "usedMaterials": 9,
+            "materialVariants": [
+              "pastel_lilac",
+              "blush_rose",
+              "sage_green",
+              "sky_blue",
+              "warm_cream",
+              "terracotta"
+            ],
+            "animations": [
+              "sit_idle",
+              "cross_prayer_idle"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "seed": 71,
+      "tree": [
+        0,
+        0,
+        0
+      ],
+      "slots": [
+        {
+          "id": "seat-1",
+          "decorId": "decor-seat-1",
+          "position": [
+            0.5215157855248626,
+            0.065,
+            13.790142177854744
+          ],
+          "yaw": 0.03779999999999999
+        },
+        {
+          "id": "seat-2",
+          "decorId": "decor-seat-2",
+          "position": [
+            -10.016071973561575,
+            0.065,
+            9.493066007377932
+          ],
+          "yaw": -0.8122
+        },
+        {
+          "id": "seat-3",
+          "decorId": "decor-seat-3",
+          "position": [
+            10.704455231080328,
+            0.065,
+            8.709456826105578
+          ],
+          "yaw": 0.8877999999999999
+        },
+        {
+          "id": "visual-4",
+          "decorId": "decor-visual-4",
+          "position": [
+            -11.057342470162649,
+            0.065,
+            -8.256826115253814
+          ],
+          "yaw": -2.2122
+        },
+        {
+          "id": "visual-5",
+          "decorId": "decor-visual-5",
+          "position": [
+            10.402137549562156,
+            0.065,
+            -9.068381024195501
+          ],
+          "yaw": 2.2878
+        },
+        {
+          "id": "visual-6",
+          "decorId": "decor-visual-6",
+          "position": [
+            9.445970749779155,
+            0.065,
+            17.855353163528203
+          ],
+          "yaw": 0.4865989505128276
+        },
+        {
+          "id": "visual-7",
+          "decorId": "decor-visual-7",
+          "position": [
+            19.84934366497468,
+            0.065,
+            3.7474732913964246
+          ],
+          "yaw": 1.3841968515384828
+        },
+        {
+          "id": "visual-8",
+          "decorId": "decor-visual-8",
+          "position": [
+            15.305755947622787,
+            0.065,
+            -13.182330403680892
+          ],
+          "yaw": 2.2817947525641378
+        },
+        {
+          "id": "visual-9",
+          "decorId": "decor-visual-9",
+          "position": [
+            -0.7633781788117496,
+            0.065,
+            -20.185570434251147
+          ],
+          "yaw": 3.179392653589793
+        },
+        {
+          "id": "visual-10",
+          "decorId": "decor-visual-10",
+          "position": [
+            -16.257672966524023,
+            0.065,
+            -11.988664217232623
+          ],
+          "yaw": 4.076990554615448
+        },
+        {
+          "id": "visual-11",
+          "decorId": "decor-visual-11",
+          "position": [
+            -19.50960841435256,
+            0.065,
+            5.235950679544615
+          ],
+          "yaw": 4.974588455641102
+        },
+        {
+          "id": "visual-12",
+          "decorId": "decor-visual-12",
+          "position": [
+            -8.070410802688272,
+            0.065,
+            18.517787920695397
+          ],
+          "yaw": 5.872186356666759
+        }
+      ],
+      "radius": 1.067141193118584,
+      "plants": [
+        {
+          "id": "flower-1",
+          "kind": "bloom",
+          "position": [
+            1.0581155149219557,
+            0,
+            16.899410422444344
+          ],
+          "yaw": 4.436903434631651
+        },
+        {
+          "id": "flower-2",
+          "kind": "bloom",
+          "position": [
+            -3.6431469778437164,
+            0,
+            14.918639641418123
+          ],
+          "yaw": 4.314447812629183
+        },
+        {
+          "id": "flower-3",
+          "kind": "bloom",
+          "position": [
+            8.489848193679936,
+            0,
+            9.496520049879328
+          ],
+          "yaw": 3.9401381393002737
+        },
+        {
+          "id": "bud-1",
+          "kind": "bud",
+          "position": [
+            2.859359587095678,
+            0,
+            17.738645387203434
+          ],
+          "yaw": 3.000784977367747
+        },
+        {
+          "id": "bud-2",
+          "kind": "bud",
+          "position": [
+            -2.2362632595235485,
+            0,
+            15.559876519981772
+          ],
+          "yaw": 2.7519669799108493
+        },
+        {
+          "id": "bud-3",
+          "kind": "bud",
+          "position": [
+            7.917010129364208,
+            0,
+            10.697514911326579
+          ],
+          "yaw": 3.1333339543818215
+        },
+        {
+          "id": "bud-4",
+          "kind": "bud",
+          "position": [
+            -3.380118448412977,
+            0,
+            10.421590343220158
+          ],
+          "yaw": 3.9407992553869837
+        },
+        {
+          "id": "bud-5",
+          "kind": "bud",
+          "position": [
+            6.590410971846431,
+            0,
+            20.49484763540793
+          ],
+          "yaw": 0.6358110066862283
+        },
+        {
+          "id": "flower-4",
+          "kind": "bloom",
+          "position": [
+            5.027100383783691,
+            0,
+            16.378252501673998
+          ],
+          "yaw": 5.920013282692742
+        },
+        {
+          "id": "flower-5",
+          "kind": "bloom",
+          "position": [
+            -7.766064477497712,
+            0,
+            6.837528075329028
+          ],
+          "yaw": 0.04346834612823694
+        },
+        {
+          "id": "bud-6",
+          "kind": "bud",
+          "position": [
+            6.356431963038631,
+            0,
+            16.645211830930783
+          ],
+          "yaw": 1.2799139164320732
+        },
+        {
+          "id": "bud-7",
+          "kind": "bud",
+          "position": [
+            -7.660499747544527,
+            0,
+            8.009653400131501
+          ],
+          "yaw": 3.6496407689759134
+        },
+        {
+          "id": "bud-8",
+          "kind": "bud",
+          "position": [
+            -1.8972393740573896,
+            0,
+            19.94283207727596
+          ],
+          "yaw": 1.2955563698773322
+        }
+      ],
+      "contact": [
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        },
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.0003453035384269887,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        },
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        }
+      ],
+      "actorLooks": [
+        {
+          "slotId": "seat-1",
+          "model": "femaleP05f",
+          "variant": "pastel_lilac",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 10,
+              "name": "ao_ba_ba_pants__pastel_lilac"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 9,
+              "name": "ao_ba_ba_top__pastel_lilac"
+            }
+          ]
+        },
+        {
+          "slotId": "seat-2",
+          "model": "maleP07b1",
+          "variant": "sky_blue",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 16,
+              "name": "ao_ba_ba_pants__sky_blue"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 15,
+              "name": "ao_ba_ba_top__sky_blue"
+            }
+          ]
+        },
+        {
+          "slotId": "seat-3",
+          "model": "maleP07b1",
+          "variant": "sage_green",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 14,
+              "name": "ao_ba_ba_pants__sage_green"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 13,
+              "name": "ao_ba_ba_top__sage_green"
+            }
+          ]
+        }
+      ],
+      "topPortrait": [
+        {
+          "id": "seat-1",
+          "x": 346.5089662794236,
+          "y": 898.8590722945701,
+          "inPortrait": true
+        },
+        {
+          "id": "seat-2",
+          "x": 150.7040495610127,
+          "y": 796.4417779015043,
+          "inPortrait": true
+        },
+        {
+          "id": "seat-3",
+          "x": 553.0093683899819,
+          "y": 815.1240768543431,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-4",
+          "x": 180.95057575129707,
+          "y": 492.77096817211003,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-5",
+          "x": 553.3475945620378,
+          "y": 508.219850754287,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-6",
+          "x": 523.4054253782692,
+          "y": 1000.8026782510956,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-7",
+          "x": 728.4318333557828,
+          "y": 736.5534014306746,
+          "inPortrait": false
+        },
+        {
+          "id": "visual-8",
+          "x": 638.3071962231131,
+          "y": 452.50719074404356,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-9",
+          "x": 374.93027131023047,
+          "y": 334.9505091063305,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-10",
+          "x": 103.11952117957391,
+          "y": 430.81586998820336,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-11",
+          "x": -12.911497526200968,
+          "y": 703.1613709208259,
+          "inPortrait": false
+        },
+        {
+          "id": "visual-12",
+          "x": 161.30336288447342,
+          "y": 982.8937358486098,
+          "inPortrait": true
+        }
+      ],
+      "rich": {
+        "localPoints": 84,
+        "totalPoints": 304,
+        "mistPoints": 10,
+        "mistPixelCap": 152,
+        "mistCenterY": [
+          0.66,
+          2.26
+        ]
+      },
+      "assets": {
+        "tree": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R16",
+          "baselineCommit": "fcc6ede4cb7a96ba09cb94d2088fbf9e09481766",
+          "profile": "quality",
+          "sha256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "bytes": 5055232,
+          "triangles": 191288,
+          "meshes": 11,
+          "bounds": [
+            [
+              -12.705632209777832,
+              -0.5183812975883484,
+              -12.642970085144043
+            ],
+            [
+              13.742024421691895,
+              26.48044204711914,
+              13.2966947555542
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_flower_gold",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "gltfTextures": 0
+        },
+        "lotuses": [
+          {
+            "file": "lotus_bloom_p012b_quality.glb",
+            "sha256": "63edb12d02664a44ce4484b847ef07aeffab6a22a36cf44415b141f56804f0d0",
+            "bytes": 50004,
+            "triangles": 1728,
+            "bounds": [
+              [
+                -0.3662933111190796,
+                0,
+                -0.3752657175064087
+              ],
+              [
+                0.3767985999584198,
+                0.29899999499320984,
+                0.3711741864681244
+              ]
+            ],
+            "meshes": 1,
+            "primitives": 3,
+            "materials": 3,
+            "textures": 0
+          },
+          {
+            "file": "lotus_bud_p012b_quality.glb",
+            "sha256": "fe62a2f9aeb166d0eadf758c75eb47950a9053d8f2149d2a66ceaf5007a05f1a",
+            "bytes": 20940,
+            "triangles": 648,
+            "bounds": [
+              [
+                -0.14484304189682007,
+                0,
+                -0.14486804604530334
+              ],
+              [
+                0.14374113082885742,
+                0.6340000033378601,
+                0.14486804604530334
+              ]
+            ],
+            "meshes": 1,
+            "primitives": 2,
+            "materials": 2,
+            "textures": 0
+          }
+        ],
+        "padAndActor": {
+          "pad": {
+            "assetId": "lotus_pad_01",
+            "revision": "P02",
+            "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+            "bytes": 262108,
+            "meshes": 5,
+            "triangles": 10648,
+            "materials": 5,
+            "usedMaterials": 5,
+            "materialVariants": [],
+            "animations": []
+          },
+          "actor": {
+            "assetId": "meditator_base",
+            "revision": "P07b1 cross prayer Side Part 7/3",
+            "sha256": "4e8c8d082352d67d0eaf637df7973931442c724a0f7db598ea8fde8de3873097",
+            "bytes": 589932,
+            "meshes": 10,
+            "triangles": 17420,
+            "materials": 21,
+            "usedMaterials": 9,
+            "materialVariants": [
+              "pastel_lilac",
+              "blush_rose",
+              "sage_green",
+              "sky_blue",
+              "warm_cream",
+              "terracotta"
+            ],
+            "animations": [
+              "sit_idle",
+              "cross_prayer_idle"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "seed": 1337,
+      "tree": [
+        0,
+        0,
+        0
+      ],
+      "slots": [
+        {
+          "id": "seat-1",
+          "decorId": "decor-seat-1",
+          "position": [
+            -0.6456042683833217,
+            0.065,
+            13.784890102160599
+          ],
+          "yaw": -0.0468
+        },
+        {
+          "id": "seat-2",
+          "decorId": "decor-seat-2",
+          "position": [
+            -10.782405756810023,
+            0.065,
+            8.612765298991382
+          ],
+          "yaw": -0.8967999999999999
+        },
+        {
+          "id": "seat-3",
+          "decorId": "decor-seat-3",
+          "position": [
+            9.93022988472123,
+            0.065,
+            9.582824971614029
+          ],
+          "yaw": 0.8032
+        },
+        {
+          "id": "visual-4",
+          "decorId": "decor-visual-4",
+          "position": [
+            -10.320101938421145,
+            0.065,
+            -9.161631731334554
+          ],
+          "yaw": -2.2968
+        },
+        {
+          "id": "visual-5",
+          "decorId": "decor-visual-5",
+          "position": [
+            11.131205082652377,
+            0.065,
+            -8.156976977283552
+          ],
+          "yaw": 2.2032
+        },
+        {
+          "id": "visual-6",
+          "decorId": "decor-visual-6",
+          "position": [
+            7.903426111872876,
+            0.065,
+            18.589670672020144
+          ],
+          "yaw": 0.4019989505128276
+        },
+        {
+          "id": "visual-7",
+          "decorId": "decor-visual-7",
+          "position": [
+            19.461695360594728,
+            0.065,
+            5.411322730294843
+          ],
+          "yaw": 1.2995968515384828
+        },
+        {
+          "id": "visual-8",
+          "decorId": "decor-visual-8",
+          "position": [
+            16.364911056551605,
+            0.065,
+            -11.841861598209757
+          ],
+          "yaw": 2.1971947525641378
+        },
+        {
+          "id": "visual-9",
+          "decorId": "decor-visual-9",
+          "position": [
+            0.9450149435755928,
+            0.065,
+            -20.177882613307542
+          ],
+          "yaw": 3.094792653589793
+        },
+        {
+          "id": "visual-10",
+          "decorId": "decor-visual-10",
+          "position": [
+            -15.186496696704628,
+            0.065,
+            -13.319546466790053
+          ],
+          "yaw": 3.992390554615448
+        },
+        {
+          "id": "visual-11",
+          "decorId": "decor-visual-11",
+          "position": [
+            -19.88226657628896,
+            0.065,
+            3.5686798384532765
+          ],
+          "yaw": 4.889988455641102
+        },
+        {
+          "id": "visual-12",
+          "decorId": "decor-visual-12",
+          "position": [
+            -9.606284199601198,
+            0.065,
+            17.769617437539065
+          ],
+          "yaw": 5.787586356666759
+        }
+      ],
+      "radius": 1.0671411931185832,
+      "plants": [
+        {
+          "id": "flower-1",
+          "kind": "bloom",
+          "position": [
+            0.998261918076314,
+            0,
+            16.971120930640026
+          ],
+          "yaw": 0.25728343917366736
+        },
+        {
+          "id": "flower-2",
+          "kind": "bloom",
+          "position": [
+            -3.6399545289762316,
+            0,
+            14.949590791766532
+          ],
+          "yaw": 4.986568346564392
+        },
+        {
+          "id": "bud-1",
+          "kind": "bud",
+          "position": [
+            3.007014243295416,
+            0,
+            17.845256256735883
+          ],
+          "yaw": 4.646079977251408
+        },
+        {
+          "id": "bud-2",
+          "kind": "bud",
+          "position": [
+            -2.1827128224400805,
+            0,
+            15.74116287929006
+          ],
+          "yaw": 0.959192206548367
+        },
+        {
+          "id": "bud-3",
+          "kind": "bud",
+          "position": [
+            8.093263695314526,
+            0,
+            10.804378366344608
+          ],
+          "yaw": 5.202897644267967
+        },
+        {
+          "id": "bud-4",
+          "kind": "bud",
+          "position": [
+            -3.5134642704436554,
+            0,
+            10.52717472827062
+          ],
+          "yaw": 3.0419072900485595
+        },
+        {
+          "id": "bud-5",
+          "kind": "bud",
+          "position": [
+            6.567125355387106,
+            0,
+            20.384110677535645
+          ],
+          "yaw": 4.782645691361563
+        },
+        {
+          "id": "flower-4",
+          "kind": "bloom",
+          "position": [
+            4.936196328089572,
+            0,
+            16.34494824967347
+          ],
+          "yaw": 1.3486768183515174
+        },
+        {
+          "id": "flower-5",
+          "kind": "bloom",
+          "position": [
+            -7.8731548929028214,
+            0,
+            6.723825885397382
+          ],
+          "yaw": 4.107661852238199
+        },
+        {
+          "id": "bud-6",
+          "kind": "bud",
+          "position": [
+            6.246906664776616,
+            0,
+            16.668122250437737
+          ],
+          "yaw": 6.021714188932276
+        },
+        {
+          "id": "bud-7",
+          "kind": "bud",
+          "position": [
+            -7.591750146569685,
+            0,
+            8.019216050519608
+          ],
+          "yaw": 5.095837627302818
+        },
+        {
+          "id": "bud-8",
+          "kind": "bud",
+          "position": [
+            -1.9665265099657698,
+            0,
+            19.932934180805457
+          ],
+          "yaw": 3.1198917224131897
+        }
+      ],
+      "contact": [
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        },
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        },
+        {
+          "surface": "leaf_satin_green_SeatRoot_object",
+          "sampled": 799,
+          "matched": 798,
+          "minGap": 0.00034530353842687767,
+          "maxGap": 0.08384099083873092,
+          "penetrationsOver5mm": 0
+        }
+      ],
+      "actorLooks": [
+        {
+          "slotId": "seat-1",
+          "model": "femaleP05f",
+          "variant": "pastel_lilac",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 10,
+              "name": "ao_ba_ba_pants__pastel_lilac"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 9,
+              "name": "ao_ba_ba_top__pastel_lilac"
+            }
+          ]
+        },
+        {
+          "slotId": "seat-2",
+          "model": "maleP07b1",
+          "variant": "pastel_lilac",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 10,
+              "name": "ao_ba_ba_pants__pastel_lilac"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 9,
+              "name": "ao_ba_ba_top__pastel_lilac"
+            }
+          ]
+        },
+        {
+          "slotId": "seat-3",
+          "model": "femaleP05f",
+          "variant": "sage_green",
+          "materials": [
+            {
+              "mesh": "ao_ba_ba_pants_SeatRoot_object",
+              "index": 14,
+              "name": "ao_ba_ba_pants__sage_green"
+            },
+            {
+              "mesh": "ao_ba_ba_top_UpperBodyBreath_object",
+              "index": 13,
+              "name": "ao_ba_ba_top__sage_green"
+            }
+          ]
+        }
+      ],
+      "topPortrait": [
+        {
+          "id": "seat-1",
+          "x": 323.21993222435844,
+          "y": 896.7295389221766,
+          "inPortrait": true
+        },
+        {
+          "id": "seat-2",
+          "x": 138.75337579357415,
+          "y": 778.5491196871076,
+          "inPortrait": true
+        },
+        {
+          "id": "seat-3",
+          "x": 537.4966198163546,
+          "y": 830.7942943108861,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-4",
+          "x": 195.81088257036726,
+          "y": 480.01980156647244,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-5",
+          "x": 565.8543441994107,
+          "y": 523.2958758188082,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-6",
+          "x": 490.79246170796563,
+          "y": 1014.0551864163203,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-7",
+          "x": 722.297069184242,
+          "y": 766.6501898791613,
+          "inPortrait": false
+        },
+        {
+          "id": "visual-8",
+          "x": 656.8415500359278,
+          "y": 473.7679550701409,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-9",
+          "x": 402.5960221805003,
+          "y": 336.9967145514667,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-10",
+          "x": 124.73807857511353,
+          "y": 412.98131044116786,
+          "inPortrait": true
+        },
+        {
+          "id": "visual-11",
+          "x": -13.14077470965442,
+          "y": 673.208152181312,
+          "inPortrait": false
+        },
+        {
+          "id": "visual-12",
+          "x": 132.46179135978434,
+          "y": 964.025305714743,
+          "inPortrait": true
+        }
+      ],
+      "rich": {
+        "localPoints": 84,
+        "totalPoints": 304,
+        "mistPoints": 10,
+        "mistPixelCap": 152,
+        "mistCenterY": [
+          0.66,
+          2.26
+        ]
+      },
+      "assets": {
+        "tree": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R16",
+          "baselineCommit": "fcc6ede4cb7a96ba09cb94d2088fbf9e09481766",
+          "profile": "quality",
+          "sha256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "bytes": 5055232,
+          "triangles": 191288,
+          "meshes": 11,
+          "bounds": [
+            [
+              -12.705632209777832,
+              -0.5183812975883484,
+              -12.642970085144043
+            ],
+            [
+              13.742024421691895,
+              26.48044204711914,
+              13.2966947555542
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_flower_gold",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "gltfTextures": 0
+        },
+        "lotuses": [
+          {
+            "file": "lotus_bloom_p012b_quality.glb",
+            "sha256": "63edb12d02664a44ce4484b847ef07aeffab6a22a36cf44415b141f56804f0d0",
+            "bytes": 50004,
+            "triangles": 1728,
+            "bounds": [
+              [
+                -0.3662933111190796,
+                0,
+                -0.3752657175064087
+              ],
+              [
+                0.3767985999584198,
+                0.29899999499320984,
+                0.3711741864681244
+              ]
+            ],
+            "meshes": 1,
+            "primitives": 3,
+            "materials": 3,
+            "textures": 0
+          },
+          {
+            "file": "lotus_bud_p012b_quality.glb",
+            "sha256": "fe62a2f9aeb166d0eadf758c75eb47950a9053d8f2149d2a66ceaf5007a05f1a",
+            "bytes": 20940,
+            "triangles": 648,
+            "bounds": [
+              [
+                -0.14484304189682007,
+                0,
+                -0.14486804604530334
+              ],
+              [
+                0.14374113082885742,
+                0.6340000033378601,
+                0.14486804604530334
+              ]
+            ],
+            "meshes": 1,
+            "primitives": 2,
+            "materials": 2,
+            "textures": 0
+          }
+        ],
+        "padAndActor": {
+          "pad": {
+            "assetId": "lotus_pad_01",
+            "revision": "P02",
+            "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9",
+            "bytes": 262108,
+            "meshes": 5,
+            "triangles": 10648,
+            "materials": 5,
+            "usedMaterials": 5,
+            "materialVariants": [],
+            "animations": []
+          },
+          "actor": {
+            "assetId": "meditator_base",
+            "revision": "P07b1 cross prayer Side Part 7/3",
+            "sha256": "4e8c8d082352d67d0eaf637df7973931442c724a0f7db598ea8fde8de3873097",
+            "bytes": 589932,
+            "meshes": 10,
+            "triangles": 17420,
+            "materials": 21,
+            "usedMaterials": 9,
+            "materialVariants": [
+              "pastel_lilac",
+              "blush_rose",
+              "sage_green",
+              "sky_blue",
+              "warm_cream",
+              "terracotta"
+            ],
+            "animations": [
+              "sit_idle",
+              "cross_prayer_idle"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "regression": [
+    {
+      "profile": "eco",
+      "seed": 9,
+      "scenario": "idle",
+      "trace": "eco-9-idle-trace.json",
+      "end": 85,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [],
+      "seamTimes": [
+        [
+          40,
+          0.02950015632591761
+        ],
+        [
+          80,
+          0.029427206853854672
+        ]
+      ],
+      "minY": 8.751258789062499,
+      "maxCinematicStep": 0.13500763271811228,
+      "maxGiftStep": 0,
+      "maxHandoff": 0,
+      "maxSeats": 0,
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.4936544894648023,
+      "minLowCameraPadGap": null,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "eco",
+      "seed": 9,
+      "scenario": "gifts",
+      "trace": "eco-9-gifts-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 47.05
+        },
+        {
+          "name": "Bình",
+          "seat": "seat-2",
+          "request": "demo-1-gift-2",
+          "time": 52.9
+        },
+        {
+          "name": "Chi",
+          "seat": "seat-3",
+          "request": "demo-1-gift-3",
+          "time": 58.75
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.3160576684344267,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.4936544894648023,
+      "minLowCameraPadGap": 3.9090715986017393,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "eco",
+      "seed": 9,
+      "scenario": "capacity",
+      "trace": "eco-9-capacity-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 47.05
+        },
+        {
+          "name": "Bình",
+          "seat": "seat-2",
+          "request": "demo-1-gift-2",
+          "time": 52.9
+        },
+        {
+          "name": "Chi",
+          "seat": "seat-3",
+          "request": "demo-1-gift-3",
+          "time": 58.75
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.3160576684344267,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "overflow": "Duyên · 1 hoa hồng",
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.4936544894648023,
+      "minLowCameraPadGap": 3.9090715986017393,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "eco",
+      "seed": 9,
+      "scenario": "community",
+      "trace": "eco-9-community-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL"
+      ],
+      "routeIds": [
+        "hero-west"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 17.05
+        },
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-2-gift-1",
+          "time": 46.05
+        },
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-2-gift-2",
+          "time": 55.55
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.6001107234065728,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "overflow": "Duyên · 1 hoa hồng",
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.4936544894648023,
+      "minLowCameraPadGap": 3.912648703859371,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "eco",
+      "seed": 71,
+      "scenario": "idle",
+      "trace": "eco-71-idle-trace.json",
+      "end": 85,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [],
+      "seamTimes": [
+        [
+          40,
+          0.02950015632591761
+        ],
+        [
+          80,
+          0.029427206853854672
+        ]
+      ],
+      "minY": 8.751258789062499,
+      "maxCinematicStep": 0.13500763271811228,
+      "maxGiftStep": 0,
+      "maxHandoff": 0,
+      "maxSeats": 0,
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.7431679032175695,
+      "minLowCameraPadGap": null,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "eco",
+      "seed": 71,
+      "scenario": "gifts",
+      "trace": "eco-71-gifts-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 47.05
+        },
+        {
+          "name": "Bình",
+          "seat": "seat-2",
+          "request": "demo-1-gift-2",
+          "time": 52.9
+        },
+        {
+          "name": "Chi",
+          "seat": "seat-3",
+          "request": "demo-1-gift-3",
+          "time": 58.75
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.3049219166850103,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.7431679032175695,
+      "minLowCameraPadGap": 3.909915286106446,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "eco",
+      "seed": 71,
+      "scenario": "capacity",
+      "trace": "eco-71-capacity-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 47.05
+        },
+        {
+          "name": "Bình",
+          "seat": "seat-2",
+          "request": "demo-1-gift-2",
+          "time": 52.9
+        },
+        {
+          "name": "Chi",
+          "seat": "seat-3",
+          "request": "demo-1-gift-3",
+          "time": 58.75
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.3049219166850103,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "overflow": "Duyên · 1 hoa hồng",
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.7431679032175695,
+      "minLowCameraPadGap": 3.909915286106446,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "eco",
+      "seed": 71,
+      "scenario": "community",
+      "trace": "eco-71-community-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL"
+      ],
+      "routeIds": [
+        "hero-west"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 17.05
+        },
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-2-gift-1",
+          "time": 46.05
+        },
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-2-gift-2",
+          "time": 55.55
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.592127719413906,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "overflow": "Duyên · 1 hoa hồng",
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.7431679032175695,
+      "minLowCameraPadGap": 3.914154635486656,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "eco",
+      "seed": 1337,
+      "scenario": "idle",
+      "trace": "eco-1337-idle-trace.json",
+      "end": 85,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [],
+      "seamTimes": [
+        [
+          40,
+          0.02950015632591761
+        ],
+        [
+          80,
+          0.029427206853854672
+        ]
+      ],
+      "minY": 8.751258789062499,
+      "maxCinematicStep": 0.13500763271811228,
+      "maxGiftStep": 0,
+      "maxHandoff": 0,
+      "maxSeats": 0,
+      "padSeparation": 4.266502947670458,
+      "botanicalGap": 0.9289044721388673,
+      "minLowCameraPadGap": null,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "eco",
+      "seed": 1337,
+      "scenario": "gifts",
+      "trace": "eco-1337-gifts-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 47.05
+        },
+        {
+          "name": "Bình",
+          "seat": "seat-2",
+          "request": "demo-1-gift-2",
+          "time": 52.9
+        },
+        {
+          "name": "Chi",
+          "seat": "seat-3",
+          "request": "demo-1-gift-3",
+          "time": 58.75
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.3130219975876514,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "padSeparation": 4.266502947670458,
+      "botanicalGap": 0.9289044721388673,
+      "minLowCameraPadGap": 3.909217538726891,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "eco",
+      "seed": 1337,
+      "scenario": "capacity",
+      "trace": "eco-1337-capacity-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 47.05
+        },
+        {
+          "name": "Bình",
+          "seat": "seat-2",
+          "request": "demo-1-gift-2",
+          "time": 52.9
+        },
+        {
+          "name": "Chi",
+          "seat": "seat-3",
+          "request": "demo-1-gift-3",
+          "time": 58.75
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.3130219975876514,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "overflow": "Duyên · 1 hoa hồng",
+      "padSeparation": 4.266502947670458,
+      "botanicalGap": 0.9289044721388673,
+      "minLowCameraPadGap": 3.909217538726891,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "eco",
+      "seed": 1337,
+      "scenario": "community",
+      "trace": "eco-1337-community-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL"
+      ],
+      "routeIds": [
+        "hero-west"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 17.05
+        },
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-2-gift-1",
+          "time": 46.05
+        },
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-2-gift-2",
+          "time": 55.55
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.5979990908323678,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "overflow": "Duyên · 1 hoa hồng",
+      "padSeparation": 4.266502947670458,
+      "botanicalGap": 0.9289044721388673,
+      "minLowCameraPadGap": 3.912959368549633,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "scenario": "idle",
+      "trace": "quality-9-idle-trace.json",
+      "end": 85,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [],
+      "seamTimes": [
+        [
+          40,
+          0.02950015632591761
+        ],
+        [
+          80,
+          0.029427206853854672
+        ]
+      ],
+      "minY": 8.751258789062499,
+      "maxCinematicStep": 0.13500763271811228,
+      "maxGiftStep": 0,
+      "maxHandoff": 0,
+      "maxSeats": 0,
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.4936544894648023,
+      "minLowCameraPadGap": null,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "scenario": "gifts",
+      "trace": "quality-9-gifts-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 47.05
+        },
+        {
+          "name": "Bình",
+          "seat": "seat-2",
+          "request": "demo-1-gift-2",
+          "time": 52.9
+        },
+        {
+          "name": "Chi",
+          "seat": "seat-3",
+          "request": "demo-1-gift-3",
+          "time": 58.75
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.3160576684344267,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.4936544894648023,
+      "minLowCameraPadGap": 3.9090715986017393,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "scenario": "capacity",
+      "trace": "quality-9-capacity-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 47.05
+        },
+        {
+          "name": "Bình",
+          "seat": "seat-2",
+          "request": "demo-1-gift-2",
+          "time": 52.9
+        },
+        {
+          "name": "Chi",
+          "seat": "seat-3",
+          "request": "demo-1-gift-3",
+          "time": 58.75
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.3160576684344267,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "overflow": "Duyên · 1 hoa hồng",
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.4936544894648023,
+      "minLowCameraPadGap": 3.9090715986017393,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "scenario": "community",
+      "trace": "quality-9-community-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL"
+      ],
+      "routeIds": [
+        "hero-west"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 17.05
+        },
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-2-gift-1",
+          "time": 46.05
+        },
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-2-gift-2",
+          "time": 55.55
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.6001107234065728,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "overflow": "Duyên · 1 hoa hồng",
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.4936544894648023,
+      "minLowCameraPadGap": 3.912648703859371,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "seed": 71,
+      "scenario": "idle",
+      "trace": "quality-71-idle-trace.json",
+      "end": 85,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [],
+      "seamTimes": [
+        [
+          40,
+          0.02950015632591761
+        ],
+        [
+          80,
+          0.029427206853854672
+        ]
+      ],
+      "minY": 8.751258789062499,
+      "maxCinematicStep": 0.13500763271811228,
+      "maxGiftStep": 0,
+      "maxHandoff": 0,
+      "maxSeats": 0,
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.7431679032175695,
+      "minLowCameraPadGap": null,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "seed": 71,
+      "scenario": "gifts",
+      "trace": "quality-71-gifts-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 47.05
+        },
+        {
+          "name": "Bình",
+          "seat": "seat-2",
+          "request": "demo-1-gift-2",
+          "time": 52.9
+        },
+        {
+          "name": "Chi",
+          "seat": "seat-3",
+          "request": "demo-1-gift-3",
+          "time": 58.75
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.3049219166850103,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.7431679032175695,
+      "minLowCameraPadGap": 3.909915286106446,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "seed": 71,
+      "scenario": "capacity",
+      "trace": "quality-71-capacity-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 47.05
+        },
+        {
+          "name": "Bình",
+          "seat": "seat-2",
+          "request": "demo-1-gift-2",
+          "time": 52.9
+        },
+        {
+          "name": "Chi",
+          "seat": "seat-3",
+          "request": "demo-1-gift-3",
+          "time": 58.75
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.3049219166850103,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "overflow": "Duyên · 1 hoa hồng",
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.7431679032175695,
+      "minLowCameraPadGap": 3.909915286106446,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "seed": 71,
+      "scenario": "community",
+      "trace": "quality-71-community-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL"
+      ],
+      "routeIds": [
+        "hero-west"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 17.05
+        },
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-2-gift-1",
+          "time": 46.05
+        },
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-2-gift-2",
+          "time": 55.55
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.592127719413906,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "overflow": "Duyên · 1 hoa hồng",
+      "padSeparation": 4.266502947670457,
+      "botanicalGap": 0.7431679032175695,
+      "minLowCameraPadGap": 3.914154635486656,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "seed": 1337,
+      "scenario": "idle",
+      "trace": "quality-1337-idle-trace.json",
+      "end": 85,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [],
+      "seamTimes": [
+        [
+          40,
+          0.02950015632591761
+        ],
+        [
+          80,
+          0.029427206853854672
+        ]
+      ],
+      "minY": 8.751258789062499,
+      "maxCinematicStep": 0.13500763271811228,
+      "maxGiftStep": 0,
+      "maxHandoff": 0,
+      "maxSeats": 0,
+      "padSeparation": 4.266502947670458,
+      "botanicalGap": 0.9289044721388673,
+      "minLowCameraPadGap": null,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "seed": 1337,
+      "scenario": "gifts",
+      "trace": "quality-1337-gifts-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 47.05
+        },
+        {
+          "name": "Bình",
+          "seat": "seat-2",
+          "request": "demo-1-gift-2",
+          "time": 52.9
+        },
+        {
+          "name": "Chi",
+          "seat": "seat-3",
+          "request": "demo-1-gift-3",
+          "time": 58.75
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.3130219975876514,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "padSeparation": 4.266502947670458,
+      "botanicalGap": 0.9289044721388673,
+      "minLowCameraPadGap": 3.909217538726891,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "seed": 1337,
+      "scenario": "capacity",
+      "trace": "quality-1337-capacity-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL",
+        "UNDER_TREE"
+      ],
+      "routeIds": [
+        "hero-west",
+        "hero-east"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 47.05
+        },
+        {
+          "name": "Bình",
+          "seat": "seat-2",
+          "request": "demo-1-gift-2",
+          "time": 52.9
+        },
+        {
+          "name": "Chi",
+          "seat": "seat-3",
+          "request": "demo-1-gift-3",
+          "time": 58.75
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.3130219975876514,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "overflow": "Duyên · 1 hoa hồng",
+      "padSeparation": 4.266502947670458,
+      "botanicalGap": 0.9289044721388673,
+      "minLowCameraPadGap": 3.909217538726891,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    },
+    {
+      "profile": "quality",
+      "seed": 1337,
+      "scenario": "community",
+      "trace": "quality-1337-community-trace.json",
+      "end": 66,
+      "shots": [
+        "HERO_WIDE_TREE_REFLECTION",
+        "COMMUNITY",
+        "HERO_TOP_RING",
+        "AERIAL"
+      ],
+      "routeIds": [
+        "hero-west"
+      ],
+      "fifo": [
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-1-gift-1",
+          "time": 17.05
+        },
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-2-gift-1",
+          "time": 46.05
+        },
+        {
+          "name": "An",
+          "seat": "seat-1",
+          "request": "demo-2-gift-2",
+          "time": 55.55
+        }
+      ],
+      "seamTimes": [],
+      "minY": 1.14915,
+      "maxCinematicStep": 0.1350076327180848,
+      "maxGiftStep": 1.5979990908323678,
+      "maxHandoff": 0,
+      "maxSeats": 3,
+      "overflow": "Duyên · 1 hoa hồng",
+      "padSeparation": 4.266502947670458,
+      "botanicalGap": 0.9289044721388673,
+      "minLowCameraPadGap": 3.912959368549633,
+      "treePadHits": 0,
+      "treeCameraHits": [],
+      "errors": []
+    }
+  ],
+  "benchmarks": [
+    {
+      "profile": "eco",
+      "variant": "OFF",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "intervals": [
+        270.8000000000002,
+        277.7999999999997,
+        291.60000000000036,
+        284.6999999999998,
+        270.9000000000001,
+        284.6999999999998,
+        270.9000000000001,
+        277.60000000000036,
+        277.89999999999964,
+        284.60000000000036,
+        270.7999999999993,
+        271
+      ],
+      "cpu": [
+        9.799999998882413,
+        2.600000001490116,
+        2.299999998882413,
+        10,
+        4.599999999627471,
+        9.099999999627471,
+        1.699999999254942,
+        1.599999999627471,
+        1.800000000745058,
+        1.599999999627471,
+        1.900000000372529,
+        2.200000001117587
+      ],
+      "frameMs": [
+        277.60000000000036,
+        291.60000000000036,
+        291.60000000000036
+      ],
+      "stallsOver100Ms": 12,
+      "draws": 75,
+      "triangles": 167929,
+      "points": 91,
+      "geometries": 43,
+      "seatMaterials": 31,
+      "textures": 1,
+      "programs": 9,
+      "jsHeap": 16465196,
+      "errors": [],
+      "mistSquarePixelUpperBound": 0
+    },
+    {
+      "profile": "eco",
+      "variant": "RICH_ONLY",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "intervals": [
+        298.5999999999999,
+        284.7000000000003,
+        291.6999999999998,
+        270.8000000000002,
+        284.6999999999998,
+        277.8000000000002,
+        284.7999999999997,
+        277.7000000000003,
+        291.6999999999998,
+        277.6999999999998,
+        284.8000000000002,
+        277.6999999999998
+      ],
+      "cpu": [
+        3.700000001117587,
+        12.599999999627471,
+        2.400000000372529,
+        1.900000000372529,
+        3.100000001490116,
+        1.800000000745058,
+        1.900000000372529,
+        1.599999999627471,
+        1.800000000745058,
+        1.900000000372529,
+        2.199999999254942,
+        1.599999999627471
+      ],
+      "frameMs": [
+        284.6999999999998,
+        298.5999999999999,
+        298.5999999999999
+      ],
+      "stallsOver100Ms": 12,
+      "draws": 76,
+      "triangles": 167929,
+      "points": 127,
+      "geometries": 44,
+      "seatMaterials": 31,
+      "textures": 1,
+      "programs": 10,
+      "rich": {
+        "localPoints": 24,
+        "totalPoints": 121,
+        "mistPoints": 6,
+        "mistPixelCap": 108,
+        "mistCenterY": [
+          0.66,
+          2.26
+        ]
+      },
+      "jsHeap": 17778617,
+      "errors": [],
+      "mistSquarePixelUpperBound": 69984
+    },
+    {
+      "profile": "eco",
+      "variant": "ALL_ON",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "intervals": [
+        277.70000000000005,
+        284.6999999999998,
+        270.9000000000001,
+        284.5999999999999,
+        264,
+        263.8000000000002,
+        263.8000000000002,
+        277.89999999999964,
+        270.8000000000002,
+        263.89999999999964,
+        270.90000000000055,
+        277.6999999999998
+      ],
+      "cpu": [
+        1.700000001117587,
+        13.699999999254942,
+        1.400000000372529,
+        9.199999999254942,
+        2,
+        1.300000000745058,
+        1.6000000014901161,
+        1.6000000014901161,
+        1.5,
+        1.300000000745058,
+        1.099999999627471,
+        1.200000001117587
+      ],
+      "frameMs": [
+        270.9000000000001,
+        284.6999999999998,
+        284.6999999999998
+      ],
+      "stallsOver100Ms": 12,
+      "draws": 45,
+      "triangles": 158312,
+      "points": 127,
+      "geometries": 41,
+      "seatMaterials": 31,
+      "textures": 1,
+      "programs": 9,
+      "rich": {
+        "localPoints": 24,
+        "totalPoints": 121,
+        "mistPoints": 6,
+        "mistPixelCap": 108,
+        "mistCenterY": [
+          0.66,
+          2.26
+        ]
+      },
+      "jsHeap": 17536576,
+      "errors": [],
+      "mistSquarePixelUpperBound": 69984
+    },
+    {
+      "profile": "quality",
+      "variant": "OFF",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "intervals": [
+        694.2999999999997,
+        680.5999999999999,
+        694.4000000000005,
+        694.5,
+        659.6999999999998,
+        687.5,
+        680.5,
+        666.6999999999998,
+        666.6000000000004,
+        673.6000000000004,
+        659.6999999999989,
+        680.6000000000004
+      ],
+      "cpu": [
+        3.700000001117587,
+        6.900000000372529,
+        2.599999999627471,
+        3.600000001490116,
+        3.599999999627471,
+        2.199999999254942,
+        2.800000000745058,
+        3,
+        2.300000000745058,
+        1.900000000372529,
+        2.599999999627471,
+        2.599999999627471
+      ],
+      "frameMs": [
+        680.5,
+        694.5,
+        694.5
+      ],
+      "stallsOver100Ms": 12,
+      "draws": 76,
+      "triangles": 325902,
+      "points": 183,
+      "geometries": 44,
+      "seatMaterials": 43,
+      "textures": 2,
+      "programs": 10,
+      "jsHeap": 22983157,
+      "errors": [],
+      "mistSquarePixelUpperBound": 0
+    },
+    {
+      "profile": "quality",
+      "variant": "RICH_ONLY",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "intervals": [
+        680.4000000000001,
+        701.4999999999995,
+        701.3000000000002,
+        701.5,
+        701.3000000000002,
+        715.3000000000002,
+        715.1999999999998,
+        694.3999999999996,
+        673.6000000000004,
+        687.5,
+        673.6000000000004,
+        750.1000000000004
+      ],
+      "cpu": [
+        5.599999999627471,
+        4.400000000372529,
+        3.900000000372529,
+        4.099999999627471,
+        4.5,
+        4.900000000372529,
+        3.900000000372529,
+        2.700000001117587,
+        3.900000000372529,
+        3.899999998509884,
+        3,
+        4.900000000372529
+      ],
+      "frameMs": [
+        701.3000000000002,
+        750.1000000000004,
+        750.1000000000004
+      ],
+      "stallsOver100Ms": 12,
+      "draws": 77,
+      "triangles": 325902,
+      "points": 314,
+      "geometries": 45,
+      "seatMaterials": 43,
+      "textures": 2,
+      "programs": 11,
+      "rich": {
+        "localPoints": 84,
+        "totalPoints": 304,
+        "mistPoints": 10,
+        "mistPixelCap": 152,
+        "mistCenterY": [
+          0.66,
+          2.26
+        ]
+      },
+      "jsHeap": 23475958,
+      "errors": [],
+      "mistSquarePixelUpperBound": 231040
+    },
+    {
+      "profile": "quality",
+      "variant": "ALL_ON",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "intervals": [
+        673.5,
+        680.7000000000003,
+        680.5,
+        666.5999999999995,
+        694.5,
+        708.3000000000002,
+        666.6000000000004,
+        708.2999999999993,
+        666.7000000000007,
+        645.6999999999989,
+        666.7000000000007,
+        666.6000000000004
+      ],
+      "cpu": [
+        3.899999998509884,
+        4.300000000745058,
+        3.199999999254942,
+        2.700000001117587,
+        3.699999999254942,
+        2,
+        3.5,
+        2.5,
+        2.099999999627471,
+        1.3999999985098839,
+        1.799999998882413,
+        2.300000000745058
+      ],
+      "frameMs": [
+        666.7000000000007,
+        708.3000000000002,
+        708.3000000000002
+      ],
+      "stallsOver100Ms": 12,
+      "draws": 49,
+      "triangles": 316324,
+      "points": 314,
+      "geometries": 45,
+      "seatMaterials": 43,
+      "textures": 2,
+      "programs": 10,
+      "rich": {
+        "localPoints": 84,
+        "totalPoints": 304,
+        "mistPoints": 10,
+        "mistPixelCap": 152,
+        "mistCenterY": [
+          0.66,
+          2.26
+        ]
+      },
+      "jsHeap": 23085897,
+      "errors": [],
+      "mistSquarePixelUpperBound": 231040
+    }
+  ],
+  "recovery": [
+    {
+      "profile": "eco",
+      "glError": 0,
+      "seat": "seat-1",
+      "rich": {
+        "localPoints": 24,
+        "totalPoints": 121,
+        "mistPoints": 6,
+        "mistPixelCap": 108,
+        "mistCenterY": [
+          0.66,
+          2.26
+        ]
+      }
+    },
+    {
+      "profile": "quality",
+      "glError": 0,
+      "seat": "seat-1",
+      "rich": {
+        "localPoints": 84,
+        "totalPoints": 304,
+        "mistPoints": 10,
+        "mistPixelCap": 152,
+        "mistCenterY": [
+          0.66,
+          2.26
+        ]
+      }
+    }
+  ],
+  "offline": [
+    {
+      "profile": "eco",
+      "status": "OFFLINE",
+      "actors": 0
+    },
+    {
+      "profile": "quality",
+      "status": "OFFLINE",
+      "actors": 0
+    }
+  ],
+  "independent": [
+    {
+      "flag": "",
+      "rich": false,
+      "rings": false,
+      "hero": false
+    },
+    {
+      "flag": "&ambience=rich",
+      "rich": true,
+      "rings": false,
+      "hero": false
+    },
+    {
+      "flag": "&seats=rings",
+      "rich": false,
+      "rings": true,
+      "hero": false
+    },
+    {
+      "flag": "&shots=hero",
+      "rich": false,
+      "rings": false,
+      "hero": true
+    }
+  ]
+}
