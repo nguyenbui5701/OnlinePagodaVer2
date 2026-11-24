@@ -7,9 +7,9 @@
   "scope": "AI_VISUAL_16_ART_ONLY",
   "cost": "0 VND",
   "provenance": "Original project-authored procedural augmentation of frozen R16; no third-party meshes/images",
-  "workflowStatus": "R17_REVIEWED_BASELINE_PRESERVED_R17B_PREVIEW_AUTHORING_READY",
-  "stage": "R17_LUSH_ART_CORRECTION_REQUIRED_R17B_NATIVE_PREVIEW_PENDING",
-  "hardBlocker": "R17b source authored, native preview pending owner run. Independent SA access to large GLB/.blend bytes still blocked. Do not call R17b art/tech PASS before execution and review.",
+  "workflowStatus": "R17B_SA_PREVIEW_GO_FROZEN_FINAL_EVIDENCE_RUNNER_READY",
+  "stage": "R17B_FINAL_EVIDENCE_REQUIRED_NATIVE_OWNER_RUN_PENDING",
+  "hardBlocker": "Final editable .blend and final-grade Cycles evidence not yet generated in AI worker (Blender unavailable). Independent SA SHA256/Blender open of large binary still pending. No geometry/material changes authorized.",
   "source": {
     "pr": 1,
     "head": "d9dbeb6a81d1e667d471b8f62910829bb1ce2bd9",
@@ -748,7 +748,7 @@
   "licensing": "Original authored mesh augmentation, no paid service or third-party screenshots/meshes",
   "gates": {
     "sourceBinaryVerified": "OWNER_NATIVE_SHA_PASS_SA_INDEPENDENT_PENDING",
-    "glbTech": "R17_OWNER_READ_ONLY_AUDIT_PASS_WITH_STATED_LIMITATIONS; R17_BINARY_SA_VERIFICATION_PENDING",
+    "glbTech": "R17B_OWNER_NATIVE_PREVIEW_AUDIT_PASS_SAME_BYTES; R17_BINARY_SA_VERIFICATION_PENDING",
     "cycles": "R17_NATIVE_BUILD_EVIDENCE_PASS",
     "saArt": "R17_SA_ART_REVIEW_REQUIRED",
     "ownerArtGO": "PENDING",
@@ -757,13 +757,16 @@
     "physicalGPU": "OWNER_DEFERRED_NOT_PASS",
     "provider": "P10B2_PROVIDER_ACCESS_BLOCKED",
     "handoff": "METADATA_RECONCILED",
-    "art": "R17_LUSH_ART_CORRECTION_REQUIRED",
-    "resource": "R17_RESOURCE_CAUSE_IDENTIFIED",
-    "abEvidence": "R17_AB_ART_EVIDENCE_PASS"
+    "art": "R17B_SA_PREVIEW_GO",
+    "resource": "R17B_COMPACT_EXPORT_EVIDENCE_PASS",
+    "abEvidence": "R17_AB_ART_EVIDENCE_PASS",
+    "preview": "R17B_NATIVE_PREVIEW_EVIDENCE_PASS",
+    "finalEvidence": "R17B_FINAL_EVIDENCE_REQUIRED"
   },
   "review": {
-    "url": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6032915176",
-    "reviewedHead": "8381da2c19da01e8270f0f41283eabd5c4d16a46",
+    "url": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6033131258",
+    "reviewedHead": "29790122d2aae80b9be6fd6852a881be21a7fc10",
+    "decision": "R17B_SA_PREVIEW_GO",
     "gate": "R17_SA_ART_REVIEW_REQUIRED",
     "ownerArtGO": "PENDING"
   },
@@ -778,14 +781,14 @@
         "Logical accessor totals may overlap; BIN bytes are physical. No export, render or runtime GPU test."
       ]
     },
-    "results": "Prior audit and six A/B sheets complete; do not repeat unchanged tests.",
-    "resourceAnalysis": "Original R17 size growth explained by measured vertex records and added NORMAL arrays. Candidate preserves original R16 primitive/attribute bytes; actual reduction pending preview.",
-    "binaryAccess": "Independent SA needs exact new GLBs and .blend plus two original R16 GLBs when final candidate is approved; connector binary payload inaccessible."
+    "results": "SA R3 accepted preview. Reuse prior successful audits; final SHA guard, editable reopen, render and final visual review only.",
+    "resourceAnalysis": "Measured R17b file reduction 60.89% QUALITY /44.23% ECO and vertex records reduction 54.86% /33.21% vs reviewed R17; no performance claim.",
+    "binaryAccess": "Independent SA requires exact frozen two R17b GLBs, final editable .blend and two R16 GLBs via attachment/ZIP if connector remains blocked."
   },
   "r17b": {
     "path": "Assets3D/Review/sakura_hero/r17-lush/r17b/",
     "reviewedBaselineHead": "8381da2c19da01e8270f0f41283eabd5c4d16a46",
-    "status": "PREVIEW_AUTHORING_SOURCE_COMMITTED_NATIVE_RUN_PENDING",
+    "status": "SA_PREVIEW_GO_GEOMETRY_MATERIALS_FROZEN_FINAL_EVIDENCE_PENDING",
     "layout": {
       "outerShoulders": 16,
       "bridges": 8,
@@ -797,7 +800,7 @@
       "qualityTriangleCap": 250000,
       "ecoTriangleCap": 60000
     },
-    "export": "Append indexed new petals with area-weighted normals, original R16 BIN prefix/accessor/mesh/node arrays exact; only seven original ECO floral material factors changed. No normal deletion or wood edits. Measured final sizes pending.",
+    "export": "Measured compact append-only export already completed at approved preview HEAD. Retain both original preview paths as canonical exact binary files; no copy or export necessary.",
     "preview": {
       "resolution": [
         360,
@@ -820,14 +823,4842 @@
       ],
       "expectedNativeFrames": 18,
       "expectedSheets": 3,
-      "status": "PENDING_OWNER_NATIVE_RUN",
+      "status": "R17B_NATIVE_PREVIEW_EVIDENCE_PASS",
       "report": "r17b/preview/preview_manifest.json",
-      "actualAssets": null
+      "actualAssets": {
+        "quality": {
+          "file": "sakura_hero_r17b.glb",
+          "sha256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "bytes": 6981312,
+          "triangles": 236888,
+          "meshes": 14,
+          "materials": 15,
+          "textures": 0,
+          "images": 0,
+          "animations": 0,
+          "cameras": 0,
+          "boundsYUpMeters": [
+            [
+              -14.178767204284668,
+              -0.5183812975883484,
+              -13.425017356872559
+            ],
+            [
+              14.489616394042969,
+              26.48044204711914,
+              14.410984992980957
+            ]
+          ],
+          "rootNodes": [
+            {
+              "name": "world",
+              "worldMatrix": [
+                [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              ]
+            },
+            {
+              "name": "R17b_outer_quality",
+              "worldMatrix": [
+                [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              ]
+            },
+            {
+              "name": "R17b_bridge_quality",
+              "worldMatrix": [
+                [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              ]
+            },
+            {
+              "name": "R17b_skirt_quality",
+              "worldMatrix": [
+                [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "sourceCoreCount": 94,
+          "clusters": [
+            {
+              "layer": "outer",
+              "sector": 0,
+              "center": [
+                11.847284603118897,
+                19.819035148620607,
+                3.0789593112704665
+              ],
+              "axes": [
+                1.7899928265051726,
+                1.2308250467713613,
+                2.0323035600945185
+              ],
+              "anchor": [
+                10.797284603118896,
+                20.469035148620605,
+                2.9297308921813965
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 1,
+              "center": [
+                11.990350581858735,
+                20.869035148620604,
+                3.7077911271556006
+              ],
+              "axes": [
+                1.8649681821460602,
+                1.5593937800134037,
+                1.9547099148961862
+              ],
+              "anchor": [
+                10.797284603118896,
+                20.469035148620605,
+                2.9297308921813965
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 2,
+              "center": [
+                11.959169350545212,
+                21.519035148620606,
+                4.242719878907997
+              ],
+              "axes": [
+                1.9817623246606124,
+                1.4728313233117594,
+                1.9358833429266906
+              ],
+              "anchor": [
+                10.797284603118896,
+                20.469035148620605,
+                2.9297308921813965
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 3,
+              "center": [
+                2.5059845007917794,
+                19.001970481872558,
+                10.183943714928327
+              ],
+              "axes": [
+                2.0576039760571208,
+                1.3603510404416812,
+                2.258023976516238
+              ],
+              "anchor": [
+                2.336365669965744,
+                19.30197048187256,
+                9.117690324783325
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 4,
+              "center": [
+                -0.7014485517552331,
+                19.908414459228517,
+                11.313019180297852
+              ],
+              "axes": [
+                2.0268642167032294,
+                1.2475928940272416,
+                2.025609064312415
+              ],
+              "anchor": [
+                -0.8424005098640919,
+                20.558414459228516,
+                9.913019180297852
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 5,
+              "center": [
+                -1.4987855927290368,
+                20.958414459228514,
+                11.535321927347493
+              ],
+              "axes": [
+                2.0330506935870916,
+                1.4538907786857738,
+                2.1297753131530417
+              ],
+              "anchor": [
+                -0.8424005098640919,
+                20.558414459228516,
+                9.913019180297852
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 6,
+              "center": [
+                -10.350764162682736,
+                23.3,
+                3.8974640729414602
+              ],
+              "axes": [
+                1.7746652023644167,
+                1.3453113652710833,
+                2.0519074378969835
+              ],
+              "anchor": [
+                -9.653051376342773,
+                22.656408309936523,
+                3.110252618789673
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 7,
+              "center": [
+                -11.058435241585764,
+                22.356408309936523,
+                3.3757321326335767
+              ],
+              "axes": [
+                1.8472017824227571,
+                1.531351982249812,
+                1.9340243595569113
+              ],
+              "anchor": [
+                -9.653051376342773,
+                22.656408309936523,
+                3.110252618789673
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 8,
+              "center": [
+                -11.86842393875122,
+                16.21969041824341,
+                1.4239755429475327
+              ],
+              "axes": [
+                1.7356404273594825,
+                1.4468504632642258,
+                2.0746994018516793
+              ],
+              "anchor": [
+                -10.11842393875122,
+                16.869690418243408,
+                1.3668056279420853
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 9,
+              "center": [
+                -11.218007327997055,
+                16,
+                0.4711870079331556
+              ],
+              "axes": [
+                1.9211776267568512,
+                1.4605853254699994,
+                2.092872743621342
+              ],
+              "anchor": [
+                -10.297015190124512,
+                15.218738555908203,
+                0.9914975240826607
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 10,
+              "center": [
+                -8.968546282365443,
+                18.699828910827637,
+                -5.2948544492272145
+              ],
+              "axes": [
+                1.8385767976609122,
+                1.3371816602194424,
+                2.045992694239961
+              ],
+              "anchor": [
+                -8.189306735992432,
+                17.649828910827637,
+                -4.094195008277893
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 11,
+              "center": [
+                -4.998860086381664,
+                16.653611373901366,
+                -10.213632989007415
+              ],
+              "axes": [
+                1.807188920586909,
+                1.650877817116758,
+                1.967655890570733
+              ],
+              "anchor": [
+                -4.05237352848053,
+                16.953611373901367,
+                -8.711494207382202
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 12,
+              "center": [
+                3.1629320634431863,
+                16.96809539794922,
+                -10.297436046600343
+              ],
+              "axes": [
+                2.0435919266973963,
+                1.34562060940317,
+                2.344380824893132
+              ],
+              "anchor": [
+                3.1708845496177673,
+                17.61809539794922,
+                -9.247436046600342
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 13,
+              "center": [
+                3.850294696466146,
+                18.018095397949217,
+                -10.481364229771199
+              ],
+              "axes": [
+                2.011882793597448,
+                1.4576074503100704,
+                2.3637509931290763
+              ],
+              "anchor": [
+                3.1708845496177673,
+                17.61809539794922,
+                -9.247436046600342
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 14,
+              "center": [
+                10.659060782643435,
+                20.533546257019044,
+                -4.833388096277242
+              ],
+              "axes": [
+                1.9724352449163858,
+                1.4751937251676515,
+                2.3716688136443205
+              ],
+              "anchor": [
+                9.254406690597534,
+                19.483546257019043,
+                -3.763168454170227
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 15,
+              "center": [
+                10.126343098924698,
+                19.183546257019042,
+                -4.401909977900292
+              ],
+              "axes": [
+                1.7701619649962652,
+                1.5814528609489773,
+                1.9568403508559038
+              ],
+              "anchor": [
+                9.254406690597534,
+                19.483546257019043,
+                -3.763168454170227
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 0,
+              "center": [
+                11.336716507340673,
+                21.019035148620606,
+                3.037030569290267
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                10.797284603118896,
+                20.469035148620605,
+                2.9297308921813965
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 2,
+              "center": [
+                6.872388764703102,
+                19.33550281524658,
+                6.481018895248761
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                6.56682513654232,
+                19.885502815246582,
+                6.023710608482361
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 4,
+              "center": [
+                -0.9497001869729624,
+                21.108414459228516,
+                10.452451084519629
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                -0.8424005098640919,
+                20.558414459228516,
+                9.913019180297852
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 6,
+              "center": [
+                -10.110359663109174,
+                22.106408309936523,
+                3.4158162469504543
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                -9.653051376342773,
+                22.656408309936523,
+                3.110252618789673
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 8,
+              "center": [
+                -10.747151468659643,
+                16.594214487075806,
+                1.0718518989035024
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                -10.207719564437866,
+                16.044214487075806,
+                1.179151576012373
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 10,
+              "center": [
+                -6.426403760397262,
+                16.7517201423645,
+                -6.860152894596448
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                -6.120840132236481,
+                17.301720142364502,
+                -6.402844607830048
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 12,
+              "center": [
+                3.278184226726638,
+                18.16809539794922,
+                -9.786867950822119
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                3.1708845496177673,
+                17.61809539794922,
+                -9.247436046600342
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 14,
+              "center": [
+                9.711714977363934,
+                18.933546257019042,
+                -4.0687320823310085
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                9.254406690597534,
+                19.483546257019043,
+                -3.763168454170227
+              ]
+            },
+            {
+              "layer": "skirt",
+              "sector": 1,
+              "center": [
+                11.213030392748976,
+                18.419035148620605,
+                3.101938436745687
+              ],
+              "axes": [
+                1.52,
+                1.12,
+                1.85
+              ],
+              "anchor": [
+                10.797284603118896,
+                20.469035148620605,
+                2.9297308921813965
+              ]
+            },
+            {
+              "layer": "skirt",
+              "sector": 3,
+              "center": [
+                2.5085732145300343,
+                17.251970481872558,
+                9.533436114413405
+              ],
+              "axes": [
+                1.52,
+                1.12,
+                1.85
+              ],
+              "anchor": [
+                2.336365669965744,
+                19.30197048187256,
+                9.117690324783325
+              ]
+            },
+            {
+              "layer": "skirt",
+              "sector": 6,
+              "center": [
+                -9.97124942787672,
+                18.6,
+                3.4284506703236195
+              ],
+              "axes": [
+                1.52,
+                1.12,
+                1.85
+              ],
+              "anchor": [
+                -9.653051376342773,
+                22.656408309936523,
+                3.110252618789673
+              ]
+            },
+            {
+              "layer": "skirt",
+              "sector": 9,
+              "center": [
+                -10.712760979754592,
+                15.1,
+                0.8192899795183703
+              ],
+              "axes": [
+                1.52,
+                1.12,
+                1.85
+              ],
+              "anchor": [
+                -10.297015190124512,
+                15.218738555908203,
+                0.9914975240826607
+              ]
+            },
+            {
+              "layer": "skirt",
+              "sector": 11,
+              "center": [
+                -4.224581073044821,
+                15.1,
+                -9.127239997012282
+              ],
+              "axes": [
+                1.52,
+                1.12,
+                1.85
+              ],
+              "anchor": [
+                -4.05237352848053,
+                16.953611373901367,
+                -8.711494207382202
+              ]
+            },
+            {
+              "layer": "skirt",
+              "sector": 14,
+              "center": [
+                9.57260474213148,
+                17.433546257019042,
+                -4.081366505704174
+              ],
+              "axes": [
+                1.52,
+                1.12,
+                1.85
+              ],
+              "anchor": [
+                9.254406690597534,
+                19.483546257019043,
+                -3.763168454170227
+              ]
+            }
+          ],
+          "addedFlowers": 2280,
+          "addedTriangles": 45600,
+          "preservation": {
+            "sourceBinPrefixSHA256": "4e4605af05b95f831f222ff27e82abaf32c138928508d9079c38e9203bba34d1",
+            "candidateBinPrefixSHA256": "4e4605af05b95f831f222ff27e82abaf32c138928508d9079c38e9203bba34d1",
+            "originalPrimitivesAccessorsNodesExact": true,
+            "originalNonCanopyMaterialsExact": true,
+            "protectedImportedPBRExact": true,
+            "protectedTriangleCountsExact": true,
+            "note": "Original triangle winding, indices, transforms and attributes preserved byte-for-byte in original prefix; no new trunk, roots or gold. R16 45/68 proxy not repaired."
+          },
+          "ecoMaterialChanges": [],
+          "primitiveStats": [
+            {
+              "layer": "outer",
+              "tone": "ShadowRose",
+              "vertices": 8490,
+              "triangles": 5660,
+              "positionBytes": 101880,
+              "normalBytes": 101880,
+              "indexBytes": 33960
+            },
+            {
+              "layer": "outer",
+              "tone": "WarmRose",
+              "vertices": 12150,
+              "triangles": 8100,
+              "positionBytes": 145800,
+              "normalBytes": 145800,
+              "indexBytes": 48600
+            },
+            {
+              "layer": "outer",
+              "tone": "PetalPink",
+              "vertices": 11190,
+              "triangles": 7460,
+              "positionBytes": 134280,
+              "normalBytes": 134280,
+              "indexBytes": 44760
+            },
+            {
+              "layer": "outer",
+              "tone": "PeachBlush",
+              "vertices": 4650,
+              "triangles": 3100,
+              "positionBytes": 55800,
+              "normalBytes": 55800,
+              "indexBytes": 18600
+            },
+            {
+              "layer": "bridge",
+              "tone": "ShadowRose",
+              "vertices": 3540,
+              "triangles": 2360,
+              "positionBytes": 42480,
+              "normalBytes": 42480,
+              "indexBytes": 14160
+            },
+            {
+              "layer": "bridge",
+              "tone": "WarmRose",
+              "vertices": 6360,
+              "triangles": 4240,
+              "positionBytes": 76320,
+              "normalBytes": 76320,
+              "indexBytes": 25440
+            },
+            {
+              "layer": "bridge",
+              "tone": "PetalPink",
+              "vertices": 6090,
+              "triangles": 4060,
+              "positionBytes": 73080,
+              "normalBytes": 73080,
+              "indexBytes": 24360
+            },
+            {
+              "layer": "bridge",
+              "tone": "PeachBlush",
+              "vertices": 2250,
+              "triangles": 1500,
+              "positionBytes": 27000,
+              "normalBytes": 27000,
+              "indexBytes": 9000
+            },
+            {
+              "layer": "skirt",
+              "tone": "ShadowRose",
+              "vertices": 2940,
+              "triangles": 1960,
+              "positionBytes": 35280,
+              "normalBytes": 35280,
+              "indexBytes": 11760
+            },
+            {
+              "layer": "skirt",
+              "tone": "WarmRose",
+              "vertices": 4650,
+              "triangles": 3100,
+              "positionBytes": 55800,
+              "normalBytes": 55800,
+              "indexBytes": 18600
+            },
+            {
+              "layer": "skirt",
+              "tone": "PetalPink",
+              "vertices": 4350,
+              "triangles": 2900,
+              "positionBytes": 52200,
+              "normalBytes": 52200,
+              "indexBytes": 17400
+            },
+            {
+              "layer": "skirt",
+              "tone": "PeachBlush",
+              "vertices": 1740,
+              "triangles": 1160,
+              "positionBytes": 20880,
+              "normalBytes": 20880,
+              "indexBytes": 6960
+            }
+          ],
+          "attributeLogicalBytes": {
+            "POSITION": 3571620,
+            "INDEX": 2569056,
+            "NORMAL": 820800
+          },
+          "binChunkBytes": 6961476,
+          "jsonChunkBytes": 19808,
+          "vertexRecordsAcrossPrimitives": 297635,
+          "priorR17Bytes": 17851064,
+          "priorR17VertexRecords": 659295,
+          "degenerateTriangles": 0,
+          "path": "r17b/preview/sakura_hero_r17b.glb",
+          "gitBlobSHA": "cfcbaa2ed71bedafae959541487c91f6de42ab74",
+          "status": "SA_PREVIEW_GO_FROZEN_CANONICAL_GLB_ALREADY_UPLOADED",
+          "shaVerification": "OWNER_NATIVE_SHA_PASS_SA_INDEPENDENT_PENDING"
+        },
+        "eco": {
+          "file": "sakura_hero_r17b_eco.glb",
+          "sha256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "bytes": 2149264,
+          "triangles": 58212,
+          "meshes": 13,
+          "materials": 14,
+          "textures": 0,
+          "images": 0,
+          "animations": 0,
+          "cameras": 0,
+          "boundsYUpMeters": [
+            [
+              -14.275399208068848,
+              -1.026049256324768,
+              -13.268314361572266
+            ],
+            [
+              13.287308692932129,
+              24.86863899230957,
+              11.898303031921387
+            ]
+          ],
+          "rootNodes": [
+            {
+              "name": "world",
+              "worldMatrix": [
+                [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              ]
+            },
+            {
+              "name": "R17b_outer_eco",
+              "worldMatrix": [
+                [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              ]
+            },
+            {
+              "name": "R17b_bridge_eco",
+              "worldMatrix": [
+                [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              ]
+            },
+            {
+              "name": "R17b_skirt_eco",
+              "worldMatrix": [
+                [
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              ]
+            }
+          ],
+          "sourceCoreCount": 65,
+          "clusters": [
+            {
+              "layer": "outer",
+              "sector": 0,
+              "center": [
+                9.26273136138916,
+                20.50256977081299,
+                0.7722065522280388
+              ],
+              "axes": [
+                1.8413829336935492,
+                1.2137766371389895,
+                2.044498686616157
+              ],
+              "anchor": [
+                8.21273136138916,
+                21.15256977081299,
+                0.6082848608493805
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 1,
+              "center": [
+                9.540882472641755,
+                21.552569770812987,
+                1.0602207368363203
+              ],
+              "axes": [
+                2.0024698274320367,
+                1.3792639798838147,
+                2.2505638353703716
+              ],
+              "anchor": [
+                8.21273136138916,
+                21.15256977081299,
+                0.6082848608493805
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 2,
+              "center": [
+                6.530840392424174,
+                22.679286766052247,
+                4.3813191226354204
+              ],
+              "axes": [
+                1.8496848420033687,
+                1.3763557419300898,
+                2.2753525083076926
+              ],
+              "anchor": [
+                5.217920780181885,
+                21.629286766052246,
+                3.2193650007247925
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 3,
+              "center": [
+                2.163158187196655,
+                21.103493881225585,
+                5.623989489866335
+              ],
+              "axes": [
+                2.013540763478261,
+                1.2270283262665507,
+                2.243674232564478
+              ],
+              "anchor": [
+                1.6757705211639404,
+                21.403493881225586,
+                4.68936026096344
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 4,
+              "center": [
+                -3.702738478412004,
+                20.14123878479004,
+                9.28923454284668
+              ],
+              "axes": [
+                1.8820767157331053,
+                1.6592859154518271,
+                2.2083559874480905
+              ],
+              "anchor": [
+                -3.686800718307495,
+                20.79123878479004,
+                7.88923454284668
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 5,
+              "center": [
+                -6.734880145785504,
+                20.51415100097656,
+                8.998774173701113
+              ],
+              "axes": [
+                1.9096587514521226,
+                1.4302121477521827,
+                2.047142139229984
+              ],
+              "anchor": [
+                -6.097316741943359,
+                20.114151000976562,
+                7.368675231933594
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 6,
+              "center": [
+                -7.043624657939183,
+                21.164151000976563,
+                7.907291556429522
+              ],
+              "axes": [
+                1.9596677799730458,
+                1.5862062742586789,
+                2.264314604125465
+              ],
+              "anchor": [
+                -6.097316741943359,
+                20.114151000976562,
+                7.368675231933594
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 7,
+              "center": [
+                -11.304168622223695,
+                17.075022888183593,
+                1.3861634649972117
+              ],
+              "axes": [
+                1.931238047465447,
+                1.6479294226286867,
+                1.9377131318314376
+              ],
+              "anchor": [
+                -10.027856349945068,
+                17.375022888183594,
+                0.8090775609016418
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 8,
+              "center": [
+                -11.777856349945068,
+                16.725022888183595,
+                0.8034917794614767
+              ],
+              "axes": [
+                1.9957840179622246,
+                1.2702164663437818,
+                2.2787576090585784
+              ],
+              "anchor": [
+                -10.027856349945068,
+                17.375022888183594,
+                0.8090775609016418
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 9,
+              "center": [
+                -11.066807422497067,
+                17.775022888183592,
+                0.573545104658361
+              ],
+              "axes": [
+                1.776925397420004,
+                1.2700381008126596,
+                2.168578907864558
+              ],
+              "anchor": [
+                -10.027856349945068,
+                17.375022888183594,
+                0.8090775609016418
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 10,
+              "center": [
+                -5.791321329195263,
+                18.21034984588623,
+                -9.907130366752863
+              ],
+              "axes": [
+                1.8062317831019572,
+                1.244966244026308,
+                2.1194924204937213
+              ],
+              "anchor": [
+                -4.985251069068909,
+                17.16034984588623,
+                -8.733301639556885
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 11,
+              "center": [
+                -5.48998263237299,
+                16.86034984588623,
+                -10.41842133119025
+              ],
+              "axes": [
+                1.7413359895328624,
+                1.3024270874665986,
+                1.9341197749094423
+              ],
+              "anchor": [
+                -4.985251069068909,
+                17.16034984588623,
+                -8.733301639556885
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 12,
+              "center": [
+                -5.226707925541195,
+                16.510349845886232,
+                -9.783301639556885
+              ],
+              "axes": [
+                1.9548005504911148,
+                1.513600913224805,
+                2.1606490065255897
+              ],
+              "anchor": [
+                -4.985251069068909,
+                17.16034984588623,
+                -8.733301639556885
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 13,
+              "center": [
+                4.7158616734379555,
+                19.119746589660643,
+                -10.461870917349389
+              ],
+              "axes": [
+                1.9524465675798122,
+                1.6288421889070441,
+                1.9088259295744485
+              ],
+              "anchor": [
+                4.027612209320068,
+                18.719746589660645,
+                -9.231604099273682
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 14,
+              "center": [
+                5.279300582895032,
+                19.769746589660645,
+                -10.454789459851632
+              ],
+              "axes": [
+                1.6832879025667025,
+                1.2814342476384484,
+                2.113243041193779
+              ],
+              "anchor": [
+                4.027612209320068,
+                18.719746589660645,
+                -9.231604099273682
+              ]
+            },
+            {
+              "layer": "outer",
+              "sector": 15,
+              "center": [
+                8.420632823778293,
+                18.471132469177245,
+                -6.326718601949036
+              ],
+              "axes": [
+                1.7296125624196834,
+                1.20810419149764,
+                1.9222581429465455
+              ],
+              "anchor": [
+                7.472736597061157,
+                18.771132469177246,
+                -5.8713603019714355
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 0,
+              "center": [
+                8.752163265610937,
+                21.70256977081299,
+                0.715584537958251
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                8.21273136138916,
+                21.15256977081299,
+                0.6082848608493805
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 2,
+              "center": [
+                3.752409278833694,
+                20.966390323638915,
+                4.411670917610516
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                3.4468456506729126,
+                21.516390323638916,
+                3.954362630844116
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 4,
+              "center": [
+                -4.999358407234298,
+                21.0026948928833,
+                8.168386791611914
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                -4.892058730125427,
+                20.4526948928833,
+                7.628954887390137
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 6,
+              "center": [
+                -8.519894832710614,
+                18.194586944580077,
+                4.394440024578399
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                -8.062586545944214,
+                18.744586944580078,
+                4.088876396417618
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 8,
+              "center": [
+                -10.567288254166845,
+                17.925022888183594,
+                0.7017778837927713
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                -10.027856349945068,
+                17.375022888183594,
+                0.8090775609016418
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 10,
+              "center": [
+                -5.29081469722969,
+                16.61034984588623,
+                -9.190609926323285
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                -4.985251069068909,
+                17.16034984588623,
+                -8.733301639556885
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 12,
+              "center": [
+                -0.3715197527655496,
+                18.490048217773438,
+                -9.52188477363706
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                -0.47881942987442017,
+                17.940048217773438,
+                -8.982452869415283
+              ]
+            },
+            {
+              "layer": "bridge",
+              "sector": 14,
+              "center": [
+                6.207482689957013,
+                18.195439529418945,
+                -7.85704582878334
+              ],
+              "axes": [
+                1.62,
+                1.3,
+                2.16
+              ],
+              "anchor": [
+                5.750174403190613,
+                18.745439529418945,
+                -7.551482200622559
+              ]
+            },
+            {
+              "layer": "skirt",
+              "sector": 1,
+              "center": [
+                8.62847715101924,
+                18.6,
+                0.7804924054136709
+              ],
+              "axes": [
+                1.52,
+                1.12,
+                1.85
+              ],
+              "anchor": [
+                8.21273136138916,
+                21.15256977081299,
+                0.6082848608493805
+              ]
+            },
+            {
+              "layer": "skirt",
+              "sector": 3,
+              "center": [
+                1.8479780657282308,
+                18.6,
+                5.105106050593519
+              ],
+              "axes": [
+                1.52,
+                1.12,
+                1.85
+              ],
+              "anchor": [
+                1.6757705211639404,
+                21.403493881225586,
+                4.68936026096344
+              ]
+            },
+            {
+              "layer": "skirt",
+              "sector": 6,
+              "center": [
+                -6.415514793477306,
+                18.064151000976562,
+                7.68687328346754
+              ],
+              "axes": [
+                1.52,
+                1.12,
+                1.85
+              ],
+              "anchor": [
+                -6.097316741943359,
+                20.114151000976562,
+                7.368675231933594
+              ]
+            },
+            {
+              "layer": "skirt",
+              "sector": 9,
+              "center": [
+                -10.443602139575148,
+                15.325022888183593,
+                0.6368700163373515
+              ],
+              "axes": [
+                1.52,
+                1.12,
+                1.85
+              ],
+              "anchor": [
+                -10.027856349945068,
+                17.375022888183594,
+                0.8090775609016418
+              ]
+            },
+            {
+              "layer": "skirt",
+              "sector": 11,
+              "center": [
+                -5.1574586136331995,
+                15.11034984588623,
+                -9.149047429186965
+              ],
+              "axes": [
+                1.52,
+                1.12,
+                1.85
+              ],
+              "anchor": [
+                -4.985251069068909,
+                17.16034984588623,
+                -8.733301639556885
+              ]
+            },
+            {
+              "layer": "skirt",
+              "sector": 14,
+              "center": [
+                4.345810260854015,
+                16.669746589660644,
+                -9.549802150807627
+              ],
+              "axes": [
+                1.52,
+                1.12,
+                1.85
+              ],
+              "anchor": [
+                4.027612209320068,
+                18.719746589660645,
+                -9.231604099273682
+              ]
+            }
+          ],
+          "addedFlowers": 1380,
+          "addedTriangles": 13800,
+          "preservation": {
+            "sourceBinPrefixSHA256": "f5e80dec66ffbe83feeb57e1b6e5a996838611b58911b113b9c5d942bfd5bc7d",
+            "candidateBinPrefixSHA256": "f5e80dec66ffbe83feeb57e1b6e5a996838611b58911b113b9c5d942bfd5bc7d",
+            "originalPrimitivesAccessorsNodesExact": true,
+            "originalNonCanopyMaterialsExact": true,
+            "protectedImportedPBRExact": true,
+            "protectedTriangleCountsExact": true,
+            "note": "Original triangle winding, indices, transforms and attributes preserved byte-for-byte in original prefix; no new trunk, roots or gold. R16 45/68 proxy not repaired."
+          },
+          "ecoMaterialChanges": [
+            {
+              "name": "Canopy_depth_rose",
+              "before": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.8274509803921568,
+                    0.5019607843137255,
+                    0.611764705882353,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.2,
+                  0.09,
+                  0.12
+                ],
+                "name": "Canopy_depth_rose",
+                "doubleSided": false
+              },
+              "after": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.45,
+                    0.19,
+                    0.3,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.012,
+                  0.004,
+                  0.007
+                ],
+                "name": "Canopy_depth_rose",
+                "doubleSided": false
+              }
+            },
+            {
+              "name": "Canopy_peach",
+              "before": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.9647058823529412,
+                    0.6901960784313725,
+                    0.6745098039215687,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.2,
+                  0.09,
+                  0.12
+                ],
+                "name": "Canopy_peach",
+                "doubleSided": false
+              },
+              "after": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.73,
+                    0.4,
+                    0.46,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.012,
+                  0.004,
+                  0.007
+                ],
+                "name": "Canopy_peach",
+                "doubleSided": false
+              }
+            },
+            {
+              "name": "Canopy_rose",
+              "before": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.9333333333333333,
+                    0.5803921568627451,
+                    0.6784313725490196,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.2,
+                  0.09,
+                  0.12
+                ],
+                "name": "Canopy_rose",
+                "doubleSided": false
+              },
+              "after": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.62,
+                    0.3,
+                    0.42,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.012,
+                  0.004,
+                  0.007
+                ],
+                "name": "Canopy_rose",
+                "doubleSided": false
+              }
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "before": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.984313725490196,
+                    0.8117647058823529,
+                    0.8156862745098039,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.3,
+                  0.17,
+                  0.18
+                ],
+                "name": "Sakura_petal_blush",
+                "doubleSided": true
+              },
+              "after": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.92,
+                    0.61,
+                    0.66,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.027,
+                  0.009,
+                  0.014
+                ],
+                "name": "Sakura_petal_blush",
+                "doubleSided": true
+              }
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "before": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.9725490196078431,
+                    0.8431372549019608,
+                    0.7764705882352941,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.3,
+                  0.17,
+                  0.18
+                ],
+                "name": "Sakura_petal_cream",
+                "doubleSided": true
+              },
+              "after": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.95,
+                    0.72,
+                    0.66,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.027,
+                  0.009,
+                  0.014
+                ],
+                "name": "Sakura_petal_cream",
+                "doubleSided": true
+              }
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "before": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.9764705882352941,
+                    0.7176470588235294,
+                    0.7725490196078432,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.3,
+                  0.17,
+                  0.18
+                ],
+                "name": "Sakura_petal_pink",
+                "doubleSided": true
+              },
+              "after": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.87,
+                    0.49,
+                    0.6,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.027,
+                  0.009,
+                  0.014
+                ],
+                "name": "Sakura_petal_pink",
+                "doubleSided": true
+              }
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "before": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.9725490196078431,
+                    0.6196078431372549,
+                    0.6784313725490196,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.3,
+                  0.17,
+                  0.18
+                ],
+                "name": "Sakura_petal_warm_rose",
+                "doubleSided": true
+              },
+              "after": {
+                "pbrMetallicRoughness": {
+                  "baseColorFactor": [
+                    0.73,
+                    0.31,
+                    0.43,
+                    1
+                  ],
+                  "roughnessFactor": 0.88,
+                  "metallicFactor": 0
+                },
+                "emissiveFactor": [
+                  0.027,
+                  0.009,
+                  0.014
+                ],
+                "name": "Sakura_petal_warm_rose",
+                "doubleSided": true
+              }
+            }
+          ],
+          "primitiveStats": [
+            {
+              "layer": "outer",
+              "tone": "ShadowRose",
+              "vertices": 3420,
+              "triangles": 1710,
+              "positionBytes": 41040,
+              "normalBytes": 41040,
+              "indexBytes": 10260
+            },
+            {
+              "layer": "outer",
+              "tone": "WarmRose",
+              "vertices": 4780,
+              "triangles": 2390,
+              "positionBytes": 57360,
+              "normalBytes": 57360,
+              "indexBytes": 14340
+            },
+            {
+              "layer": "outer",
+              "tone": "PetalPink",
+              "vertices": 4660,
+              "triangles": 2330,
+              "positionBytes": 55920,
+              "normalBytes": 55920,
+              "indexBytes": 13980
+            },
+            {
+              "layer": "outer",
+              "tone": "PeachBlush",
+              "vertices": 1860,
+              "triangles": 930,
+              "positionBytes": 22320,
+              "normalBytes": 22320,
+              "indexBytes": 5580
+            },
+            {
+              "layer": "bridge",
+              "tone": "ShadowRose",
+              "vertices": 1480,
+              "triangles": 740,
+              "positionBytes": 17760,
+              "normalBytes": 17760,
+              "indexBytes": 4440
+            },
+            {
+              "layer": "bridge",
+              "tone": "WarmRose",
+              "vertices": 2900,
+              "triangles": 1450,
+              "positionBytes": 34800,
+              "normalBytes": 34800,
+              "indexBytes": 8700
+            },
+            {
+              "layer": "bridge",
+              "tone": "PetalPink",
+              "vertices": 1920,
+              "triangles": 960,
+              "positionBytes": 23040,
+              "normalBytes": 23040,
+              "indexBytes": 5760
+            },
+            {
+              "layer": "bridge",
+              "tone": "PeachBlush",
+              "vertices": 1060,
+              "triangles": 530,
+              "positionBytes": 12720,
+              "normalBytes": 12720,
+              "indexBytes": 3180
+            },
+            {
+              "layer": "skirt",
+              "tone": "ShadowRose",
+              "vertices": 1380,
+              "triangles": 690,
+              "positionBytes": 16560,
+              "normalBytes": 16560,
+              "indexBytes": 4140
+            },
+            {
+              "layer": "skirt",
+              "tone": "WarmRose",
+              "vertices": 1820,
+              "triangles": 910,
+              "positionBytes": 21840,
+              "normalBytes": 21840,
+              "indexBytes": 5460
+            },
+            {
+              "layer": "skirt",
+              "tone": "PetalPink",
+              "vertices": 1620,
+              "triangles": 810,
+              "positionBytes": 19440,
+              "normalBytes": 19440,
+              "indexBytes": 4860
+            },
+            {
+              "layer": "skirt",
+              "tone": "PeachBlush",
+              "vertices": 700,
+              "triangles": 350,
+              "positionBytes": 8400,
+              "normalBytes": 8400,
+              "indexBytes": 2100
+            }
+          ],
+          "attributeLogicalBytes": {
+            "POSITION": 1183584,
+            "INDEX": 615744,
+            "NORMAL": 331200
+          },
+          "binChunkBytes": 2130528,
+          "jsonChunkBytes": 18708,
+          "vertexRecordsAcrossPrimitives": 98632,
+          "priorR17Bytes": 3854076,
+          "priorR17VertexRecords": 147667,
+          "degenerateTriangles": 0,
+          "path": "r17b/preview/sakura_hero_r17b_eco.glb",
+          "gitBlobSHA": "d5554055ab689680ca17744653cfc49197b1e773",
+          "status": "SA_PREVIEW_GO_FROZEN_CANONICAL_GLB_ALREADY_UPLOADED",
+          "shaVerification": "OWNER_NATIVE_SHA_PASS_SA_INDEPENDENT_PENDING"
+        }
+      },
+      "actualNativeFrames": 18,
+      "actualSheets": 3,
+      "reportGitBlobSHA": "34691961e5aa9678b99821ce5351e58f94637e31",
+      "sheetManifest": "r17b/preview/preview_sheet_manifest.json",
+      "sheetManifestGitBlobSHA": "78255e8c2bcc3fbf93c92c6045cb971c34da95ac",
+      "sourceHashes": {
+        "quality": {
+          "r16": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "r17": "4115ba647eaa960e5fd2e9949462b52a2010231bf84ac25b574447bd36c5a73f",
+          "r17b": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267"
+        },
+        "eco": {
+          "r16": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "r17": "cc07824bef901d30ce833880ab835027d027f15ab26eb327e6b6d6bb46d2d679",
+          "r17b": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770"
+        }
+      },
+      "frames": [
+        {
+          "file": "quality_r16_hero_full_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r16",
+          "view": "hero_full_9x16",
+          "bytes": 255892,
+          "sha256": "e25fd41cdb6ad2c3be0b537cfe5568303a250a4209039c38b02dbb49f7821c65",
+          "modelSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-8,
+              0.9267789125442505,
+              0.37560737133026123,
+              50
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "quality_r16_hero_wide_water_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r16",
+          "view": "hero_wide_water_9x16",
+          "bytes": 260601,
+          "sha256": "6eb26b6fb66cca683f022b0804f244ba3ee46866ea5badaef349b1b931551cb6",
+          "modelSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70
+            ],
+            [
+              0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "quality_r16_under_crown_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r16",
+          "view": "under_crown_9x16",
+          "bytes": 323469,
+          "sha256": "1e3dab12e83a09c3994c97b90e0f668fcdffda6e5d6b1fc58b53cd62341be1c9",
+          "modelSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-9,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "quality_r17_hero_full_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r17",
+          "view": "hero_full_9x16",
+          "bytes": 257011,
+          "sha256": "0ced55ac8473a4f84e10d95794d2d6707794f5cb493cca6e983007a7047018e8",
+          "modelSHA256": "4115ba647eaa960e5fd2e9949462b52a2010231bf84ac25b574447bd36c5a73f",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-8,
+              0.9267789125442505,
+              0.37560737133026123,
+              50
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "quality_r17_hero_wide_water_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r17",
+          "view": "hero_wide_water_9x16",
+          "bytes": 262879,
+          "sha256": "7f8a7c860d05a509d5bd1c26686d03b4aa35b827b7f0f2d4435f1ddf859b18a9",
+          "modelSHA256": "4115ba647eaa960e5fd2e9949462b52a2010231bf84ac25b574447bd36c5a73f",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70
+            ],
+            [
+              0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "quality_r17_under_crown_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r17",
+          "view": "under_crown_9x16",
+          "bytes": 323011,
+          "sha256": "10f6e1d64074741195a2d37849888845c36f5d40b7a32b03d40ba269b2a7b021",
+          "modelSHA256": "4115ba647eaa960e5fd2e9949462b52a2010231bf84ac25b574447bd36c5a73f",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-9,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "quality_r17b_hero_full_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r17b",
+          "view": "hero_full_9x16",
+          "bytes": 257012,
+          "sha256": "51f6567e981b67900cea7f0924138c23abc5f03fe82a9f463b8b8d2e42c043cf",
+          "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-8,
+              0.9267789125442505,
+              0.37560737133026123,
+              50
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "quality_r17b_hero_wide_water_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r17b",
+          "view": "hero_wide_water_9x16",
+          "bytes": 265613,
+          "sha256": "e18e3d34f56836d683a029edf96b03f32da1a25f63f64cf51851d2e5c101a80a",
+          "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70
+            ],
+            [
+              0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "quality_r17b_under_crown_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r17b",
+          "view": "under_crown_9x16",
+          "bytes": 326326,
+          "sha256": "df2871d852b401614803ccc1f1e76e02066b132ebbf3e2f4921aa720897b853f",
+          "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-9,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "eco_r16_hero_full_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r16",
+          "view": "hero_full_9x16",
+          "bytes": 248929,
+          "sha256": "ddaa27840e1b1e4fe89362691d65666409b540e00743689a739bea8342f87e5f",
+          "modelSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-8,
+              0.9267789125442505,
+              0.37560737133026123,
+              50
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "eco_r16_hero_wide_water_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r16",
+          "view": "hero_wide_water_9x16",
+          "bytes": 251039,
+          "sha256": "3662fa699e18844bb8453ee19b0c77d0a9fc46b895c7113b954927f2df908f8b",
+          "modelSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70
+            ],
+            [
+              0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "eco_r16_under_crown_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r16",
+          "view": "under_crown_9x16",
+          "bytes": 317212,
+          "sha256": "95f23a13f1dc9022814a017ba794818417809e5d9669ccbb4551d8da776065ab",
+          "modelSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-9,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "eco_r17_hero_full_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r17",
+          "view": "hero_full_9x16",
+          "bytes": 250240,
+          "sha256": "bcc36df15c7fc7fe30a35e6de9535804f094bf64c6e3daea448beb601d635caa",
+          "modelSHA256": "cc07824bef901d30ce833880ab835027d027f15ab26eb327e6b6d6bb46d2d679",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-8,
+              0.9267789125442505,
+              0.37560737133026123,
+              50
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "eco_r17_hero_wide_water_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r17",
+          "view": "hero_wide_water_9x16",
+          "bytes": 251819,
+          "sha256": "40777e1061850cb96bd24d3e31c24076159ec7cda206983378be120dc3ea1a2e",
+          "modelSHA256": "cc07824bef901d30ce833880ab835027d027f15ab26eb327e6b6d6bb46d2d679",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70
+            ],
+            [
+              0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "eco_r17_under_crown_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r17",
+          "view": "under_crown_9x16",
+          "bytes": 318599,
+          "sha256": "12b0bed94c158285448cf77e6b9facab9a7a008bd54b706cb955ec7e0c03cbfd",
+          "modelSHA256": "cc07824bef901d30ce833880ab835027d027f15ab26eb327e6b6d6bb46d2d679",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-9,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "eco_r17b_hero_full_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r17b",
+          "view": "hero_full_9x16",
+          "bytes": 254727,
+          "sha256": "36c02d80a51d893d7a52660cfbe095340b9635c7179f22bc59ff891ead5a50e4",
+          "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-8,
+              0.9267789125442505,
+              0.37560737133026123,
+              50
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "eco_r17b_hero_wide_water_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r17b",
+          "view": "hero_wide_water_9x16",
+          "bytes": 260471,
+          "sha256": "9ae0cbccf6f2bdf93a02d42c16d73b8882c6a2b60fe0f1804d8c9413115e6127",
+          "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70
+            ],
+            [
+              0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "file": "eco_r17b_under_crown_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r17b",
+          "view": "under_crown_9x16",
+          "bytes": 323172,
+          "sha256": "03902c153beb18597eb2424ac13271e1dc68d92e36e810e8c7695b91d6c6e195",
+          "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-9,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "sheets": [
+        {
+          "file": "hero_full_9x16_ABC.jpg",
+          "bytes": 109468,
+          "sha256": "1ddd4fbba76ce1b9f9966ee52c84fb86ea6667b3e38c4a8475f4a677dc3a2b33"
+        },
+        {
+          "file": "hero_wide_water_9x16_ABC.jpg",
+          "bytes": 117538,
+          "sha256": "923c25e7898d41ba8ec227e8cb5575ad42738a83860b9ac6c647c566b23c5f98"
+        },
+        {
+          "file": "under_crown_9x16_ABC.jpg",
+          "bytes": 228420,
+          "sha256": "f80bc2b12feac3630a8e5ce2ca222aca79d758b0e7440c0e700ff5ef34bfcb54"
+        }
+      ],
+      "fixedCameras": {
+        "hero_full_9x16": {
+          "poseBlender": [
+            [
+              45,
+              -80.00000762939453,
+              50
+            ],
+            [
+              0,
+              0,
+              12.800000190734863
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            50
+          ],
+          "unionProjectedBounds": [
+            0.0809960812330246,
+            0.8730550408363342,
+            0.24817511439323425,
+            0.689928412437439
+          ]
+        },
+        "hero_wide_water_9x16": {
+          "poseBlender": [
+            [
+              0,
+              -70,
+              12
+            ],
+            [
+              0,
+              0,
+              11.600000381469727
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            58
+          ],
+          "unionProjectedBounds": [
+            0.08757138252258301,
+            0.9186175465583801,
+            0.29406073689460754,
+            0.7404813766479492
+          ]
+        }
+      },
+      "unionBoundsYUp": [
+        [
+          -14.275399208068848,
+          -1.026049256324768,
+          -13.425017356872559
+        ],
+        [
+          14.489616394042969,
+          26.48044204711914,
+          14.410984992980957
+        ]
+      ],
+      "stdoutGitBlobSHA": "3453b980789daca2910c42b328bcb83f525b0efc",
+      "stderrBytes": 0
     },
     "final": {
-      "status": "HOLD_PREVIEW_VISUAL_ACCEPTANCE",
-      "note": "No final GLB promotion, .blend or full six-view 720x1280 Cycles until preview accepted. Freeze candidate SHA; re-use prior valid same-rig reference images where appropriate."
+      "status": "PENDING_OWNER_NATIVE_FINAL_RUN_NO_GEOMETRY_EXPORT",
+      "canonicalGLBs": "r17b.canonicalGLBs (original preview paths frozen)",
+      "runner": "r17b/run_r17b_final.ps1",
+      "editable": {
+        "path": "r17b/final/sakura_hero_r17b_editable.blend",
+        "status": "PENDING_OWNER_NATIVE_CREATE_REOPEN_UPLOAD",
+        "sha256": null,
+        "bytes": null
+      },
+      "resolution": [
+        720,
+        1280
+      ],
+      "samples": 32,
+      "views": [
+        "hero_full_9x16",
+        "hero_wide_water_9x16",
+        "true_aerial_9x16",
+        "under_crown_9x16",
+        "crown_close_9x16",
+        "trunk_fork_9x16"
+      ],
+      "expectedR17bNativeFrames": 12,
+      "expectedNewR16Frames": 6,
+      "expectedReusedR16Frames": 6,
+      "expectedMatchedLedgerRows": 24,
+      "expectedSheets": 6,
+      "report": "r17b/final/R17B_FINAL_RESULT.json",
+      "manifest": "r17b/final/final_manifest.json",
+      "shaLedger": "r17b/final/owner_sha256.txt",
+      "actual": null,
+      "independentSAHash": "PENDING",
+      "note": "Same camera/light/exposure pair; preserve old final-grade same-rig R16 under/close/trunk via original ledger and SHA. Full/wide uses preview fit; true overhead fit new. No full geometry rerun."
     },
-    "gate": "R17_SA_ART_REVIEW_REQUIRED"
-  }
+    "gate": "R17_SA_ART_REVIEW_REQUIRED",
+    "reviewedPreviewHead": "29790122d2aae80b9be6fd6852a881be21a7fc10",
+    "canonicalGLBs": {
+      "quality": {
+        "file": "sakura_hero_r17b.glb",
+        "sha256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "bytes": 6981312,
+        "triangles": 236888,
+        "meshes": 14,
+        "materials": 15,
+        "textures": 0,
+        "images": 0,
+        "animations": 0,
+        "cameras": 0,
+        "boundsYUpMeters": [
+          [
+            -14.178767204284668,
+            -0.5183812975883484,
+            -13.425017356872559
+          ],
+          [
+            14.489616394042969,
+            26.48044204711914,
+            14.410984992980957
+          ]
+        ],
+        "rootNodes": [
+          {
+            "name": "world",
+            "worldMatrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "R17b_outer_quality",
+            "worldMatrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "R17b_bridge_quality",
+            "worldMatrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "R17b_skirt_quality",
+            "worldMatrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        ],
+        "sourceCoreCount": 94,
+        "clusters": [
+          {
+            "layer": "outer",
+            "sector": 0,
+            "center": [
+              11.847284603118897,
+              19.819035148620607,
+              3.0789593112704665
+            ],
+            "axes": [
+              1.7899928265051726,
+              1.2308250467713613,
+              2.0323035600945185
+            ],
+            "anchor": [
+              10.797284603118896,
+              20.469035148620605,
+              2.9297308921813965
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 1,
+            "center": [
+              11.990350581858735,
+              20.869035148620604,
+              3.7077911271556006
+            ],
+            "axes": [
+              1.8649681821460602,
+              1.5593937800134037,
+              1.9547099148961862
+            ],
+            "anchor": [
+              10.797284603118896,
+              20.469035148620605,
+              2.9297308921813965
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 2,
+            "center": [
+              11.959169350545212,
+              21.519035148620606,
+              4.242719878907997
+            ],
+            "axes": [
+              1.9817623246606124,
+              1.4728313233117594,
+              1.9358833429266906
+            ],
+            "anchor": [
+              10.797284603118896,
+              20.469035148620605,
+              2.9297308921813965
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 3,
+            "center": [
+              2.5059845007917794,
+              19.001970481872558,
+              10.183943714928327
+            ],
+            "axes": [
+              2.0576039760571208,
+              1.3603510404416812,
+              2.258023976516238
+            ],
+            "anchor": [
+              2.336365669965744,
+              19.30197048187256,
+              9.117690324783325
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 4,
+            "center": [
+              -0.7014485517552331,
+              19.908414459228517,
+              11.313019180297852
+            ],
+            "axes": [
+              2.0268642167032294,
+              1.2475928940272416,
+              2.025609064312415
+            ],
+            "anchor": [
+              -0.8424005098640919,
+              20.558414459228516,
+              9.913019180297852
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 5,
+            "center": [
+              -1.4987855927290368,
+              20.958414459228514,
+              11.535321927347493
+            ],
+            "axes": [
+              2.0330506935870916,
+              1.4538907786857738,
+              2.1297753131530417
+            ],
+            "anchor": [
+              -0.8424005098640919,
+              20.558414459228516,
+              9.913019180297852
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 6,
+            "center": [
+              -10.350764162682736,
+              23.3,
+              3.8974640729414602
+            ],
+            "axes": [
+              1.7746652023644167,
+              1.3453113652710833,
+              2.0519074378969835
+            ],
+            "anchor": [
+              -9.653051376342773,
+              22.656408309936523,
+              3.110252618789673
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 7,
+            "center": [
+              -11.058435241585764,
+              22.356408309936523,
+              3.3757321326335767
+            ],
+            "axes": [
+              1.8472017824227571,
+              1.531351982249812,
+              1.9340243595569113
+            ],
+            "anchor": [
+              -9.653051376342773,
+              22.656408309936523,
+              3.110252618789673
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 8,
+            "center": [
+              -11.86842393875122,
+              16.21969041824341,
+              1.4239755429475327
+            ],
+            "axes": [
+              1.7356404273594825,
+              1.4468504632642258,
+              2.0746994018516793
+            ],
+            "anchor": [
+              -10.11842393875122,
+              16.869690418243408,
+              1.3668056279420853
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 9,
+            "center": [
+              -11.218007327997055,
+              16,
+              0.4711870079331556
+            ],
+            "axes": [
+              1.9211776267568512,
+              1.4605853254699994,
+              2.092872743621342
+            ],
+            "anchor": [
+              -10.297015190124512,
+              15.218738555908203,
+              0.9914975240826607
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 10,
+            "center": [
+              -8.968546282365443,
+              18.699828910827637,
+              -5.2948544492272145
+            ],
+            "axes": [
+              1.8385767976609122,
+              1.3371816602194424,
+              2.045992694239961
+            ],
+            "anchor": [
+              -8.189306735992432,
+              17.649828910827637,
+              -4.094195008277893
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 11,
+            "center": [
+              -4.998860086381664,
+              16.653611373901366,
+              -10.213632989007415
+            ],
+            "axes": [
+              1.807188920586909,
+              1.650877817116758,
+              1.967655890570733
+            ],
+            "anchor": [
+              -4.05237352848053,
+              16.953611373901367,
+              -8.711494207382202
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 12,
+            "center": [
+              3.1629320634431863,
+              16.96809539794922,
+              -10.297436046600343
+            ],
+            "axes": [
+              2.0435919266973963,
+              1.34562060940317,
+              2.344380824893132
+            ],
+            "anchor": [
+              3.1708845496177673,
+              17.61809539794922,
+              -9.247436046600342
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 13,
+            "center": [
+              3.850294696466146,
+              18.018095397949217,
+              -10.481364229771199
+            ],
+            "axes": [
+              2.011882793597448,
+              1.4576074503100704,
+              2.3637509931290763
+            ],
+            "anchor": [
+              3.1708845496177673,
+              17.61809539794922,
+              -9.247436046600342
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 14,
+            "center": [
+              10.659060782643435,
+              20.533546257019044,
+              -4.833388096277242
+            ],
+            "axes": [
+              1.9724352449163858,
+              1.4751937251676515,
+              2.3716688136443205
+            ],
+            "anchor": [
+              9.254406690597534,
+              19.483546257019043,
+              -3.763168454170227
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 15,
+            "center": [
+              10.126343098924698,
+              19.183546257019042,
+              -4.401909977900292
+            ],
+            "axes": [
+              1.7701619649962652,
+              1.5814528609489773,
+              1.9568403508559038
+            ],
+            "anchor": [
+              9.254406690597534,
+              19.483546257019043,
+              -3.763168454170227
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 0,
+            "center": [
+              11.336716507340673,
+              21.019035148620606,
+              3.037030569290267
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              10.797284603118896,
+              20.469035148620605,
+              2.9297308921813965
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 2,
+            "center": [
+              6.872388764703102,
+              19.33550281524658,
+              6.481018895248761
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              6.56682513654232,
+              19.885502815246582,
+              6.023710608482361
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 4,
+            "center": [
+              -0.9497001869729624,
+              21.108414459228516,
+              10.452451084519629
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              -0.8424005098640919,
+              20.558414459228516,
+              9.913019180297852
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 6,
+            "center": [
+              -10.110359663109174,
+              22.106408309936523,
+              3.4158162469504543
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              -9.653051376342773,
+              22.656408309936523,
+              3.110252618789673
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 8,
+            "center": [
+              -10.747151468659643,
+              16.594214487075806,
+              1.0718518989035024
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              -10.207719564437866,
+              16.044214487075806,
+              1.179151576012373
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 10,
+            "center": [
+              -6.426403760397262,
+              16.7517201423645,
+              -6.860152894596448
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              -6.120840132236481,
+              17.301720142364502,
+              -6.402844607830048
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 12,
+            "center": [
+              3.278184226726638,
+              18.16809539794922,
+              -9.786867950822119
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              3.1708845496177673,
+              17.61809539794922,
+              -9.247436046600342
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 14,
+            "center": [
+              9.711714977363934,
+              18.933546257019042,
+              -4.0687320823310085
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              9.254406690597534,
+              19.483546257019043,
+              -3.763168454170227
+            ]
+          },
+          {
+            "layer": "skirt",
+            "sector": 1,
+            "center": [
+              11.213030392748976,
+              18.419035148620605,
+              3.101938436745687
+            ],
+            "axes": [
+              1.52,
+              1.12,
+              1.85
+            ],
+            "anchor": [
+              10.797284603118896,
+              20.469035148620605,
+              2.9297308921813965
+            ]
+          },
+          {
+            "layer": "skirt",
+            "sector": 3,
+            "center": [
+              2.5085732145300343,
+              17.251970481872558,
+              9.533436114413405
+            ],
+            "axes": [
+              1.52,
+              1.12,
+              1.85
+            ],
+            "anchor": [
+              2.336365669965744,
+              19.30197048187256,
+              9.117690324783325
+            ]
+          },
+          {
+            "layer": "skirt",
+            "sector": 6,
+            "center": [
+              -9.97124942787672,
+              18.6,
+              3.4284506703236195
+            ],
+            "axes": [
+              1.52,
+              1.12,
+              1.85
+            ],
+            "anchor": [
+              -9.653051376342773,
+              22.656408309936523,
+              3.110252618789673
+            ]
+          },
+          {
+            "layer": "skirt",
+            "sector": 9,
+            "center": [
+              -10.712760979754592,
+              15.1,
+              0.8192899795183703
+            ],
+            "axes": [
+              1.52,
+              1.12,
+              1.85
+            ],
+            "anchor": [
+              -10.297015190124512,
+              15.218738555908203,
+              0.9914975240826607
+            ]
+          },
+          {
+            "layer": "skirt",
+            "sector": 11,
+            "center": [
+              -4.224581073044821,
+              15.1,
+              -9.127239997012282
+            ],
+            "axes": [
+              1.52,
+              1.12,
+              1.85
+            ],
+            "anchor": [
+              -4.05237352848053,
+              16.953611373901367,
+              -8.711494207382202
+            ]
+          },
+          {
+            "layer": "skirt",
+            "sector": 14,
+            "center": [
+              9.57260474213148,
+              17.433546257019042,
+              -4.081366505704174
+            ],
+            "axes": [
+              1.52,
+              1.12,
+              1.85
+            ],
+            "anchor": [
+              9.254406690597534,
+              19.483546257019043,
+              -3.763168454170227
+            ]
+          }
+        ],
+        "addedFlowers": 2280,
+        "addedTriangles": 45600,
+        "preservation": {
+          "sourceBinPrefixSHA256": "4e4605af05b95f831f222ff27e82abaf32c138928508d9079c38e9203bba34d1",
+          "candidateBinPrefixSHA256": "4e4605af05b95f831f222ff27e82abaf32c138928508d9079c38e9203bba34d1",
+          "originalPrimitivesAccessorsNodesExact": true,
+          "originalNonCanopyMaterialsExact": true,
+          "protectedImportedPBRExact": true,
+          "protectedTriangleCountsExact": true,
+          "note": "Original triangle winding, indices, transforms and attributes preserved byte-for-byte in original prefix; no new trunk, roots or gold. R16 45/68 proxy not repaired."
+        },
+        "ecoMaterialChanges": [],
+        "primitiveStats": [
+          {
+            "layer": "outer",
+            "tone": "ShadowRose",
+            "vertices": 8490,
+            "triangles": 5660,
+            "positionBytes": 101880,
+            "normalBytes": 101880,
+            "indexBytes": 33960
+          },
+          {
+            "layer": "outer",
+            "tone": "WarmRose",
+            "vertices": 12150,
+            "triangles": 8100,
+            "positionBytes": 145800,
+            "normalBytes": 145800,
+            "indexBytes": 48600
+          },
+          {
+            "layer": "outer",
+            "tone": "PetalPink",
+            "vertices": 11190,
+            "triangles": 7460,
+            "positionBytes": 134280,
+            "normalBytes": 134280,
+            "indexBytes": 44760
+          },
+          {
+            "layer": "outer",
+            "tone": "PeachBlush",
+            "vertices": 4650,
+            "triangles": 3100,
+            "positionBytes": 55800,
+            "normalBytes": 55800,
+            "indexBytes": 18600
+          },
+          {
+            "layer": "bridge",
+            "tone": "ShadowRose",
+            "vertices": 3540,
+            "triangles": 2360,
+            "positionBytes": 42480,
+            "normalBytes": 42480,
+            "indexBytes": 14160
+          },
+          {
+            "layer": "bridge",
+            "tone": "WarmRose",
+            "vertices": 6360,
+            "triangles": 4240,
+            "positionBytes": 76320,
+            "normalBytes": 76320,
+            "indexBytes": 25440
+          },
+          {
+            "layer": "bridge",
+            "tone": "PetalPink",
+            "vertices": 6090,
+            "triangles": 4060,
+            "positionBytes": 73080,
+            "normalBytes": 73080,
+            "indexBytes": 24360
+          },
+          {
+            "layer": "bridge",
+            "tone": "PeachBlush",
+            "vertices": 2250,
+            "triangles": 1500,
+            "positionBytes": 27000,
+            "normalBytes": 27000,
+            "indexBytes": 9000
+          },
+          {
+            "layer": "skirt",
+            "tone": "ShadowRose",
+            "vertices": 2940,
+            "triangles": 1960,
+            "positionBytes": 35280,
+            "normalBytes": 35280,
+            "indexBytes": 11760
+          },
+          {
+            "layer": "skirt",
+            "tone": "WarmRose",
+            "vertices": 4650,
+            "triangles": 3100,
+            "positionBytes": 55800,
+            "normalBytes": 55800,
+            "indexBytes": 18600
+          },
+          {
+            "layer": "skirt",
+            "tone": "PetalPink",
+            "vertices": 4350,
+            "triangles": 2900,
+            "positionBytes": 52200,
+            "normalBytes": 52200,
+            "indexBytes": 17400
+          },
+          {
+            "layer": "skirt",
+            "tone": "PeachBlush",
+            "vertices": 1740,
+            "triangles": 1160,
+            "positionBytes": 20880,
+            "normalBytes": 20880,
+            "indexBytes": 6960
+          }
+        ],
+        "attributeLogicalBytes": {
+          "POSITION": 3571620,
+          "INDEX": 2569056,
+          "NORMAL": 820800
+        },
+        "binChunkBytes": 6961476,
+        "jsonChunkBytes": 19808,
+        "vertexRecordsAcrossPrimitives": 297635,
+        "priorR17Bytes": 17851064,
+        "priorR17VertexRecords": 659295,
+        "degenerateTriangles": 0,
+        "path": "r17b/preview/sakura_hero_r17b.glb",
+        "gitBlobSHA": "cfcbaa2ed71bedafae959541487c91f6de42ab74",
+        "status": "SA_PREVIEW_GO_FROZEN_CANONICAL_GLB_ALREADY_UPLOADED",
+        "shaVerification": "OWNER_NATIVE_SHA_PASS_SA_INDEPENDENT_PENDING"
+      },
+      "eco": {
+        "file": "sakura_hero_r17b_eco.glb",
+        "sha256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "bytes": 2149264,
+        "triangles": 58212,
+        "meshes": 13,
+        "materials": 14,
+        "textures": 0,
+        "images": 0,
+        "animations": 0,
+        "cameras": 0,
+        "boundsYUpMeters": [
+          [
+            -14.275399208068848,
+            -1.026049256324768,
+            -13.268314361572266
+          ],
+          [
+            13.287308692932129,
+            24.86863899230957,
+            11.898303031921387
+          ]
+        ],
+        "rootNodes": [
+          {
+            "name": "world",
+            "worldMatrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "R17b_outer_eco",
+            "worldMatrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "R17b_bridge_eco",
+            "worldMatrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "R17b_skirt_eco",
+            "worldMatrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        ],
+        "sourceCoreCount": 65,
+        "clusters": [
+          {
+            "layer": "outer",
+            "sector": 0,
+            "center": [
+              9.26273136138916,
+              20.50256977081299,
+              0.7722065522280388
+            ],
+            "axes": [
+              1.8413829336935492,
+              1.2137766371389895,
+              2.044498686616157
+            ],
+            "anchor": [
+              8.21273136138916,
+              21.15256977081299,
+              0.6082848608493805
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 1,
+            "center": [
+              9.540882472641755,
+              21.552569770812987,
+              1.0602207368363203
+            ],
+            "axes": [
+              2.0024698274320367,
+              1.3792639798838147,
+              2.2505638353703716
+            ],
+            "anchor": [
+              8.21273136138916,
+              21.15256977081299,
+              0.6082848608493805
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 2,
+            "center": [
+              6.530840392424174,
+              22.679286766052247,
+              4.3813191226354204
+            ],
+            "axes": [
+              1.8496848420033687,
+              1.3763557419300898,
+              2.2753525083076926
+            ],
+            "anchor": [
+              5.217920780181885,
+              21.629286766052246,
+              3.2193650007247925
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 3,
+            "center": [
+              2.163158187196655,
+              21.103493881225585,
+              5.623989489866335
+            ],
+            "axes": [
+              2.013540763478261,
+              1.2270283262665507,
+              2.243674232564478
+            ],
+            "anchor": [
+              1.6757705211639404,
+              21.403493881225586,
+              4.68936026096344
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 4,
+            "center": [
+              -3.702738478412004,
+              20.14123878479004,
+              9.28923454284668
+            ],
+            "axes": [
+              1.8820767157331053,
+              1.6592859154518271,
+              2.2083559874480905
+            ],
+            "anchor": [
+              -3.686800718307495,
+              20.79123878479004,
+              7.88923454284668
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 5,
+            "center": [
+              -6.734880145785504,
+              20.51415100097656,
+              8.998774173701113
+            ],
+            "axes": [
+              1.9096587514521226,
+              1.4302121477521827,
+              2.047142139229984
+            ],
+            "anchor": [
+              -6.097316741943359,
+              20.114151000976562,
+              7.368675231933594
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 6,
+            "center": [
+              -7.043624657939183,
+              21.164151000976563,
+              7.907291556429522
+            ],
+            "axes": [
+              1.9596677799730458,
+              1.5862062742586789,
+              2.264314604125465
+            ],
+            "anchor": [
+              -6.097316741943359,
+              20.114151000976562,
+              7.368675231933594
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 7,
+            "center": [
+              -11.304168622223695,
+              17.075022888183593,
+              1.3861634649972117
+            ],
+            "axes": [
+              1.931238047465447,
+              1.6479294226286867,
+              1.9377131318314376
+            ],
+            "anchor": [
+              -10.027856349945068,
+              17.375022888183594,
+              0.8090775609016418
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 8,
+            "center": [
+              -11.777856349945068,
+              16.725022888183595,
+              0.8034917794614767
+            ],
+            "axes": [
+              1.9957840179622246,
+              1.2702164663437818,
+              2.2787576090585784
+            ],
+            "anchor": [
+              -10.027856349945068,
+              17.375022888183594,
+              0.8090775609016418
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 9,
+            "center": [
+              -11.066807422497067,
+              17.775022888183592,
+              0.573545104658361
+            ],
+            "axes": [
+              1.776925397420004,
+              1.2700381008126596,
+              2.168578907864558
+            ],
+            "anchor": [
+              -10.027856349945068,
+              17.375022888183594,
+              0.8090775609016418
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 10,
+            "center": [
+              -5.791321329195263,
+              18.21034984588623,
+              -9.907130366752863
+            ],
+            "axes": [
+              1.8062317831019572,
+              1.244966244026308,
+              2.1194924204937213
+            ],
+            "anchor": [
+              -4.985251069068909,
+              17.16034984588623,
+              -8.733301639556885
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 11,
+            "center": [
+              -5.48998263237299,
+              16.86034984588623,
+              -10.41842133119025
+            ],
+            "axes": [
+              1.7413359895328624,
+              1.3024270874665986,
+              1.9341197749094423
+            ],
+            "anchor": [
+              -4.985251069068909,
+              17.16034984588623,
+              -8.733301639556885
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 12,
+            "center": [
+              -5.226707925541195,
+              16.510349845886232,
+              -9.783301639556885
+            ],
+            "axes": [
+              1.9548005504911148,
+              1.513600913224805,
+              2.1606490065255897
+            ],
+            "anchor": [
+              -4.985251069068909,
+              17.16034984588623,
+              -8.733301639556885
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 13,
+            "center": [
+              4.7158616734379555,
+              19.119746589660643,
+              -10.461870917349389
+            ],
+            "axes": [
+              1.9524465675798122,
+              1.6288421889070441,
+              1.9088259295744485
+            ],
+            "anchor": [
+              4.027612209320068,
+              18.719746589660645,
+              -9.231604099273682
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 14,
+            "center": [
+              5.279300582895032,
+              19.769746589660645,
+              -10.454789459851632
+            ],
+            "axes": [
+              1.6832879025667025,
+              1.2814342476384484,
+              2.113243041193779
+            ],
+            "anchor": [
+              4.027612209320068,
+              18.719746589660645,
+              -9.231604099273682
+            ]
+          },
+          {
+            "layer": "outer",
+            "sector": 15,
+            "center": [
+              8.420632823778293,
+              18.471132469177245,
+              -6.326718601949036
+            ],
+            "axes": [
+              1.7296125624196834,
+              1.20810419149764,
+              1.9222581429465455
+            ],
+            "anchor": [
+              7.472736597061157,
+              18.771132469177246,
+              -5.8713603019714355
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 0,
+            "center": [
+              8.752163265610937,
+              21.70256977081299,
+              0.715584537958251
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              8.21273136138916,
+              21.15256977081299,
+              0.6082848608493805
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 2,
+            "center": [
+              3.752409278833694,
+              20.966390323638915,
+              4.411670917610516
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              3.4468456506729126,
+              21.516390323638916,
+              3.954362630844116
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 4,
+            "center": [
+              -4.999358407234298,
+              21.0026948928833,
+              8.168386791611914
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              -4.892058730125427,
+              20.4526948928833,
+              7.628954887390137
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 6,
+            "center": [
+              -8.519894832710614,
+              18.194586944580077,
+              4.394440024578399
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              -8.062586545944214,
+              18.744586944580078,
+              4.088876396417618
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 8,
+            "center": [
+              -10.567288254166845,
+              17.925022888183594,
+              0.7017778837927713
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              -10.027856349945068,
+              17.375022888183594,
+              0.8090775609016418
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 10,
+            "center": [
+              -5.29081469722969,
+              16.61034984588623,
+              -9.190609926323285
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              -4.985251069068909,
+              17.16034984588623,
+              -8.733301639556885
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 12,
+            "center": [
+              -0.3715197527655496,
+              18.490048217773438,
+              -9.52188477363706
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              -0.47881942987442017,
+              17.940048217773438,
+              -8.982452869415283
+            ]
+          },
+          {
+            "layer": "bridge",
+            "sector": 14,
+            "center": [
+              6.207482689957013,
+              18.195439529418945,
+              -7.85704582878334
+            ],
+            "axes": [
+              1.62,
+              1.3,
+              2.16
+            ],
+            "anchor": [
+              5.750174403190613,
+              18.745439529418945,
+              -7.551482200622559
+            ]
+          },
+          {
+            "layer": "skirt",
+            "sector": 1,
+            "center": [
+              8.62847715101924,
+              18.6,
+              0.7804924054136709
+            ],
+            "axes": [
+              1.52,
+              1.12,
+              1.85
+            ],
+            "anchor": [
+              8.21273136138916,
+              21.15256977081299,
+              0.6082848608493805
+            ]
+          },
+          {
+            "layer": "skirt",
+            "sector": 3,
+            "center": [
+              1.8479780657282308,
+              18.6,
+              5.105106050593519
+            ],
+            "axes": [
+              1.52,
+              1.12,
+              1.85
+            ],
+            "anchor": [
+              1.6757705211639404,
+              21.403493881225586,
+              4.68936026096344
+            ]
+          },
+          {
+            "layer": "skirt",
+            "sector": 6,
+            "center": [
+              -6.415514793477306,
+              18.064151000976562,
+              7.68687328346754
+            ],
+            "axes": [
+              1.52,
+              1.12,
+              1.85
+            ],
+            "anchor": [
+              -6.097316741943359,
+              20.114151000976562,
+              7.368675231933594
+            ]
+          },
+          {
+            "layer": "skirt",
+            "sector": 9,
+            "center": [
+              -10.443602139575148,
+              15.325022888183593,
+              0.6368700163373515
+            ],
+            "axes": [
+              1.52,
+              1.12,
+              1.85
+            ],
+            "anchor": [
+              -10.027856349945068,
+              17.375022888183594,
+              0.8090775609016418
+            ]
+          },
+          {
+            "layer": "skirt",
+            "sector": 11,
+            "center": [
+              -5.1574586136331995,
+              15.11034984588623,
+              -9.149047429186965
+            ],
+            "axes": [
+              1.52,
+              1.12,
+              1.85
+            ],
+            "anchor": [
+              -4.985251069068909,
+              17.16034984588623,
+              -8.733301639556885
+            ]
+          },
+          {
+            "layer": "skirt",
+            "sector": 14,
+            "center": [
+              4.345810260854015,
+              16.669746589660644,
+              -9.549802150807627
+            ],
+            "axes": [
+              1.52,
+              1.12,
+              1.85
+            ],
+            "anchor": [
+              4.027612209320068,
+              18.719746589660645,
+              -9.231604099273682
+            ]
+          }
+        ],
+        "addedFlowers": 1380,
+        "addedTriangles": 13800,
+        "preservation": {
+          "sourceBinPrefixSHA256": "f5e80dec66ffbe83feeb57e1b6e5a996838611b58911b113b9c5d942bfd5bc7d",
+          "candidateBinPrefixSHA256": "f5e80dec66ffbe83feeb57e1b6e5a996838611b58911b113b9c5d942bfd5bc7d",
+          "originalPrimitivesAccessorsNodesExact": true,
+          "originalNonCanopyMaterialsExact": true,
+          "protectedImportedPBRExact": true,
+          "protectedTriangleCountsExact": true,
+          "note": "Original triangle winding, indices, transforms and attributes preserved byte-for-byte in original prefix; no new trunk, roots or gold. R16 45/68 proxy not repaired."
+        },
+        "ecoMaterialChanges": [
+          {
+            "name": "Canopy_depth_rose",
+            "before": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.8274509803921568,
+                  0.5019607843137255,
+                  0.611764705882353,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.2,
+                0.09,
+                0.12
+              ],
+              "name": "Canopy_depth_rose",
+              "doubleSided": false
+            },
+            "after": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.45,
+                  0.19,
+                  0.3,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.012,
+                0.004,
+                0.007
+              ],
+              "name": "Canopy_depth_rose",
+              "doubleSided": false
+            }
+          },
+          {
+            "name": "Canopy_peach",
+            "before": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.9647058823529412,
+                  0.6901960784313725,
+                  0.6745098039215687,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.2,
+                0.09,
+                0.12
+              ],
+              "name": "Canopy_peach",
+              "doubleSided": false
+            },
+            "after": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.73,
+                  0.4,
+                  0.46,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.012,
+                0.004,
+                0.007
+              ],
+              "name": "Canopy_peach",
+              "doubleSided": false
+            }
+          },
+          {
+            "name": "Canopy_rose",
+            "before": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.9333333333333333,
+                  0.5803921568627451,
+                  0.6784313725490196,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.2,
+                0.09,
+                0.12
+              ],
+              "name": "Canopy_rose",
+              "doubleSided": false
+            },
+            "after": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.62,
+                  0.3,
+                  0.42,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.012,
+                0.004,
+                0.007
+              ],
+              "name": "Canopy_rose",
+              "doubleSided": false
+            }
+          },
+          {
+            "name": "Sakura_petal_blush",
+            "before": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.984313725490196,
+                  0.8117647058823529,
+                  0.8156862745098039,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.3,
+                0.17,
+                0.18
+              ],
+              "name": "Sakura_petal_blush",
+              "doubleSided": true
+            },
+            "after": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.92,
+                  0.61,
+                  0.66,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.027,
+                0.009,
+                0.014
+              ],
+              "name": "Sakura_petal_blush",
+              "doubleSided": true
+            }
+          },
+          {
+            "name": "Sakura_petal_cream",
+            "before": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.9725490196078431,
+                  0.8431372549019608,
+                  0.7764705882352941,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.3,
+                0.17,
+                0.18
+              ],
+              "name": "Sakura_petal_cream",
+              "doubleSided": true
+            },
+            "after": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.95,
+                  0.72,
+                  0.66,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.027,
+                0.009,
+                0.014
+              ],
+              "name": "Sakura_petal_cream",
+              "doubleSided": true
+            }
+          },
+          {
+            "name": "Sakura_petal_pink",
+            "before": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.9764705882352941,
+                  0.7176470588235294,
+                  0.7725490196078432,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.3,
+                0.17,
+                0.18
+              ],
+              "name": "Sakura_petal_pink",
+              "doubleSided": true
+            },
+            "after": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.87,
+                  0.49,
+                  0.6,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.027,
+                0.009,
+                0.014
+              ],
+              "name": "Sakura_petal_pink",
+              "doubleSided": true
+            }
+          },
+          {
+            "name": "Sakura_petal_warm_rose",
+            "before": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.9725490196078431,
+                  0.6196078431372549,
+                  0.6784313725490196,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.3,
+                0.17,
+                0.18
+              ],
+              "name": "Sakura_petal_warm_rose",
+              "doubleSided": true
+            },
+            "after": {
+              "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                  0.73,
+                  0.31,
+                  0.43,
+                  1
+                ],
+                "roughnessFactor": 0.88,
+                "metallicFactor": 0
+              },
+              "emissiveFactor": [
+                0.027,
+                0.009,
+                0.014
+              ],
+              "name": "Sakura_petal_warm_rose",
+              "doubleSided": true
+            }
+          }
+        ],
+        "primitiveStats": [
+          {
+            "layer": "outer",
+            "tone": "ShadowRose",
+            "vertices": 3420,
+            "triangles": 1710,
+            "positionBytes": 41040,
+            "normalBytes": 41040,
+            "indexBytes": 10260
+          },
+          {
+            "layer": "outer",
+            "tone": "WarmRose",
+            "vertices": 4780,
+            "triangles": 2390,
+            "positionBytes": 57360,
+            "normalBytes": 57360,
+            "indexBytes": 14340
+          },
+          {
+            "layer": "outer",
+            "tone": "PetalPink",
+            "vertices": 4660,
+            "triangles": 2330,
+            "positionBytes": 55920,
+            "normalBytes": 55920,
+            "indexBytes": 13980
+          },
+          {
+            "layer": "outer",
+            "tone": "PeachBlush",
+            "vertices": 1860,
+            "triangles": 930,
+            "positionBytes": 22320,
+            "normalBytes": 22320,
+            "indexBytes": 5580
+          },
+          {
+            "layer": "bridge",
+            "tone": "ShadowRose",
+            "vertices": 1480,
+            "triangles": 740,
+            "positionBytes": 17760,
+            "normalBytes": 17760,
+            "indexBytes": 4440
+          },
+          {
+            "layer": "bridge",
+            "tone": "WarmRose",
+            "vertices": 2900,
+            "triangles": 1450,
+            "positionBytes": 34800,
+            "normalBytes": 34800,
+            "indexBytes": 8700
+          },
+          {
+            "layer": "bridge",
+            "tone": "PetalPink",
+            "vertices": 1920,
+            "triangles": 960,
+            "positionBytes": 23040,
+            "normalBytes": 23040,
+            "indexBytes": 5760
+          },
+          {
+            "layer": "bridge",
+            "tone": "PeachBlush",
+            "vertices": 1060,
+            "triangles": 530,
+            "positionBytes": 12720,
+            "normalBytes": 12720,
+            "indexBytes": 3180
+          },
+          {
+            "layer": "skirt",
+            "tone": "ShadowRose",
+            "vertices": 1380,
+            "triangles": 690,
+            "positionBytes": 16560,
+            "normalBytes": 16560,
+            "indexBytes": 4140
+          },
+          {
+            "layer": "skirt",
+            "tone": "WarmRose",
+            "vertices": 1820,
+            "triangles": 910,
+            "positionBytes": 21840,
+            "normalBytes": 21840,
+            "indexBytes": 5460
+          },
+          {
+            "layer": "skirt",
+            "tone": "PetalPink",
+            "vertices": 1620,
+            "triangles": 810,
+            "positionBytes": 19440,
+            "normalBytes": 19440,
+            "indexBytes": 4860
+          },
+          {
+            "layer": "skirt",
+            "tone": "PeachBlush",
+            "vertices": 700,
+            "triangles": 350,
+            "positionBytes": 8400,
+            "normalBytes": 8400,
+            "indexBytes": 2100
+          }
+        ],
+        "attributeLogicalBytes": {
+          "POSITION": 1183584,
+          "INDEX": 615744,
+          "NORMAL": 331200
+        },
+        "binChunkBytes": 2130528,
+        "jsonChunkBytes": 18708,
+        "vertexRecordsAcrossPrimitives": 98632,
+        "priorR17Bytes": 3854076,
+        "priorR17VertexRecords": 147667,
+        "degenerateTriangles": 0,
+        "path": "r17b/preview/sakura_hero_r17b_eco.glb",
+        "gitBlobSHA": "d5554055ab689680ca17744653cfc49197b1e773",
+        "status": "SA_PREVIEW_GO_FROZEN_CANONICAL_GLB_ALREADY_UPLOADED",
+        "shaVerification": "OWNER_NATIVE_SHA_PASS_SA_INDEPENDENT_PENDING"
+      }
+    }
+  },
+  "targetRole": "Historical R17 comparison only; canonical R17b delivery is r17b.canonicalGLBs",
+  "editableSourceRole": "Historical R17 .blend only, not R17b",
+  "cyclesRole": "Historical R16/R17 24-frame baseline only, not R17b final evidence"
 }
