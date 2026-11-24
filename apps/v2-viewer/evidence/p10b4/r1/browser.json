@@ -1,0 +1,1829 @@
+{
+  "reviewed": "0f158bf9e5b79c56c3a5cc8c18dadf97a99eea03",
+  "source": "f3b719323324a9a85b48ce7c1f75a86e89f974b0",
+  "browser": "158.0.4370.33",
+  "viewport": {
+    "width": 720,
+    "height": 1280
+  },
+  "session": {
+    "community": {
+      "samples": [
+        {
+          "sceneMs": 12236,
+          "wallMs": 13089.099999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.00893402099609375
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13096.599999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.005050241947174072
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13113,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.010234832763671875
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13128,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.010129094123840332
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13144.099999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.005318760871887207
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13160.699999999255,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.007606327533721924
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13176.900000000373,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.012104272842407227
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13192,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.011185646057128906
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13208.199999999255,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.009514033794403076
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13225,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.007622361183166504
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13240.400000000373,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.007840991020202637
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13256.599999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.012783825397491455
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13273,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.013119876384735107
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13288.300000000745,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.00966334342956543
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13305.099999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.009062409400939941
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13320.300000000745,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.014698028564453125
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13336.599999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.01138007640838623
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13352.800000000745,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.014513611793518066
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13368.099999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.015419721603393555
+        },
+        {
+          "sceneMs": 12236,
+          "wallMs": 13384.400000000373,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.012516498565673828
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13405.599999999627,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0.014458060264587402
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13417.699999999255,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13432.400000000373,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13449.199999999255,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13464.699999999255,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13481,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13496.699999999255,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13512.599999999627,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13529,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13544.800000000745,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13560.199999999255,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13576.800000000745,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13592.199999999255,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13608.199999999255,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13624.699999999255,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13640.400000000373,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13656.400000000373,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13673.199999999255,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13688.900000000373,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12548,
+          "wallMs": 13704.800000000745,
+          "connected": false,
+          "status": "DISCONNECTED",
+          "enabled": false,
+          "ambience": false,
+          "testDisabled": true,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13721,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13736.099999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0011055469512939453
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13753,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0017497539520263672
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13768.599999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0014623403549194336
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13816,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0015786290168762207
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13832.5,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0028862953186035156
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13849.599999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0019812583923339844
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13865.199999999255,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0016241073608398438
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13880.699999999255,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0019631385803222656
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13897,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0021840333938598633
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13912.599999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0024576783180236816
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13929.199999999255,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0028865933418273926
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13944.300000000745,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0019987821578979492
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13960.900000000373,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.002911210060119629
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13976.5,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0022656917572021484
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 13993.199999999255,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0035523176193237305
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 14009.199999999255,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0035687685012817383
+        },
+        {
+          "sceneMs": 12868,
+          "wallMs": 14025.099999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0039864182472229
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14040.300000000745,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.00427854061126709
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14056.300000000745,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0028451085090637207
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14072.400000000373,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.003740668296813965
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14088.800000000745,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0035663843154907227
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14104.599999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.004757285118103027
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14120.800000000745,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.003593921661376953
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14137.599999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.005905032157897949
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14153,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.004532456398010254
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14168.5,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.004950821399688721
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14184.699999999255,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0047609806060791016
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14200.800000000745,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.004931449890136719
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14216.599999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.0050337910652160645
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14233.300000000745,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.004555463790893555
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14248.699999999255,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.00439608097076416
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14265.900000000373,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.006162166595458984
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14280.5,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.006600379943847656
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14296.5,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.005882859230041504
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14312.800000000745,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.007454395294189453
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14328.800000000745,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.00893402099609375
+        },
+        {
+          "sceneMs": 13194,
+          "wallMs": 14344.599999999627,
+          "connected": true,
+          "status": "READY",
+          "enabled": true,
+          "ambience": true,
+          "testDisabled": false,
+          "peak": 0.005050241947174072
+        }
+      ],
+      "requests": 4
+    },
+    "sustained": {
+      "started": {
+        "connected": true,
+        "atMs": 11900,
+        "roomSessionId": "demo-1",
+        "camera": {
+          "mode": "GIFT_FOCUS",
+          "pendingGivers": 0,
+          "activeActorId": "demo-1-actor-1",
+          "activeRequestId": "demo-1-gift-1"
+        },
+        "confirmedGiftCount": 1,
+        "epoch": 0,
+        "audio": {
+          "status": "PLAYING",
+          "connected": true,
+          "outputEnabled": true,
+          "sfxAvailable": true,
+          "ambience": true,
+          "queue": 0,
+          "marks": [
+            {
+              "event": "sfx-start",
+              "wallMs": 341.7999999988824,
+              "sceneMs": 11900,
+              "contextSec": 0.152,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 0.75,
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "voice-start",
+              "wallMs": 342,
+              "sceneMs": 11900,
+              "contextSec": 0.152,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 2.1,
+              "ambienceGain": 0.05600000000000001,
+              "sfxGain": 0.216
+            }
+          ],
+          "suppressed": {},
+          "voice": {
+            "ready": 4,
+            "waiting": 0,
+            "playing": true,
+            "status": "READY"
+          },
+          "dynamic": "DYNAMIC_TTS_BLOCKED"
+        },
+        "testDisabled": false
+      },
+      "activePeak": 0.025896549224853516,
+      "sustained": {
+        "disconnected": {
+          "connected": false,
+          "atMs": 12550,
+          "roomSessionId": "demo-1",
+          "camera": {
+            "mode": "GIFT_FOCUS",
+            "pendingGivers": 0,
+            "activeActorId": "demo-1-actor-1",
+            "activeRequestId": "demo-1-gift-1"
+          },
+          "confirmedGiftCount": 1,
+          "epoch": 1,
+          "audio": {
+            "status": "DISCONNECTED",
+            "connected": false,
+            "outputEnabled": false,
+            "sfxAvailable": false,
+            "ambience": false,
+            "queue": 0,
+            "marks": [
+              {
+                "event": "sfx-start",
+                "wallMs": 341.7999999988824,
+                "sceneMs": 11900,
+                "contextSec": 0.152,
+                "room": "demo-1",
+                "request": "demo-1-gift-1",
+                "actor": "demo-1-actor-1",
+                "seat": "seat-1",
+                "effectSequence": 1,
+                "variant": "rose",
+                "seconds": 0.75,
+                "ambienceGain": 0.2,
+                "sfxGain": 0.45
+              },
+              {
+                "event": "voice-start",
+                "wallMs": 342,
+                "sceneMs": 11900,
+                "contextSec": 0.152,
+                "room": "demo-1",
+                "request": "demo-1-gift-1",
+                "actor": "demo-1-actor-1",
+                "seat": "seat-1",
+                "effectSequence": 1,
+                "variant": "rose",
+                "seconds": 2.1,
+                "ambienceGain": 0.05600000000000001,
+                "sfxGain": 0.216
+              },
+              {
+                "event": "voice-cut",
+                "wallMs": 364.7999999988824,
+                "sceneMs": 12550,
+                "contextSec": 0.17066666666666666,
+                "room": "demo-1",
+                "request": "demo-1-gift-1",
+                "actor": "demo-1-actor-1",
+                "seat": "seat-1",
+                "effectSequence": 1,
+                "variant": "rose",
+                "reason": "disconnect",
+                "ambienceGain": 0.2,
+                "sfxGain": 0.45
+              }
+            ],
+            "suppressed": {},
+            "voice": {
+              "ready": 4,
+              "waiting": 0,
+              "playing": false,
+              "status": "READY"
+            },
+            "dynamic": "DYNAMIC_TTS_BLOCKED"
+          },
+          "testDisabled": true
+        },
+        "peaks": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wallMs": 775
+      },
+      "rejoined": {
+        "connected": true,
+        "atMs": 13005,
+        "roomSessionId": "demo-1",
+        "camera": {
+          "mode": "GIFT_FOCUS",
+          "pendingGivers": 0,
+          "activeActorId": "demo-1-actor-1",
+          "activeRequestId": "demo-1-gift-1"
+        },
+        "confirmedGiftCount": 2,
+        "epoch": 2,
+        "audio": {
+          "status": "MUTED",
+          "connected": true,
+          "outputEnabled": false,
+          "sfxAvailable": false,
+          "ambience": false,
+          "queue": 0,
+          "marks": [
+            {
+              "event": "sfx-start",
+              "wallMs": 341.7999999988824,
+              "sceneMs": 11900,
+              "contextSec": 0.152,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 0.75,
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "voice-start",
+              "wallMs": 342,
+              "sceneMs": 11900,
+              "contextSec": 0.152,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 2.1,
+              "ambienceGain": 0.05600000000000001,
+              "sfxGain": 0.216
+            },
+            {
+              "event": "voice-cut",
+              "wallMs": 364.7999999988824,
+              "sceneMs": 12550,
+              "contextSec": 0.17066666666666666,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "reason": "disconnect",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "sfx-end",
+              "wallMs": 366,
+              "sceneMs": 12550,
+              "contextSec": 0.18133333333333335,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            }
+          ],
+          "suppressed": {
+            "disabled": 1
+          },
+          "voice": {
+            "ready": 4,
+            "waiting": 0,
+            "playing": false,
+            "status": "READY"
+          },
+          "dynamic": "DYNAMIC_TTS_BLOCKED"
+        },
+        "testDisabled": true
+      },
+      "restored": {
+        "connected": true,
+        "atMs": 13500,
+        "roomSessionId": "demo-1",
+        "camera": {
+          "mode": "GIFT_FOCUS",
+          "pendingGivers": 0,
+          "activeActorId": "demo-1-actor-1",
+          "activeRequestId": "demo-1-gift-1"
+        },
+        "confirmedGiftCount": 2,
+        "epoch": 2,
+        "audio": {
+          "status": "READY",
+          "connected": true,
+          "outputEnabled": true,
+          "sfxAvailable": true,
+          "ambience": true,
+          "queue": 0,
+          "marks": [
+            {
+              "event": "sfx-start",
+              "wallMs": 341.7999999988824,
+              "sceneMs": 11900,
+              "contextSec": 0.152,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 0.75,
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "voice-start",
+              "wallMs": 342,
+              "sceneMs": 11900,
+              "contextSec": 0.152,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 2.1,
+              "ambienceGain": 0.05600000000000001,
+              "sfxGain": 0.216
+            },
+            {
+              "event": "voice-cut",
+              "wallMs": 364.7999999988824,
+              "sceneMs": 12550,
+              "contextSec": 0.17066666666666666,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "reason": "disconnect",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "sfx-end",
+              "wallMs": 366,
+              "sceneMs": 12550,
+              "contextSec": 0.18133333333333335,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            }
+          ],
+          "suppressed": {
+            "disabled": 1
+          },
+          "voice": {
+            "ready": 4,
+            "waiting": 0,
+            "playing": false,
+            "status": "READY"
+          },
+          "dynamic": "DYNAMIC_TTS_BLOCKED"
+        },
+        "testDisabled": false
+      },
+      "reset": {
+        "connected": true,
+        "atMs": 40000,
+        "roomSessionId": "demo-2",
+        "camera": {
+          "mode": "CINEMATIC",
+          "pendingGivers": 0
+        },
+        "confirmedGiftCount": 0,
+        "epoch": 3,
+        "audio": {
+          "status": "READY",
+          "connected": true,
+          "outputEnabled": true,
+          "sfxAvailable": true,
+          "ambience": true,
+          "queue": 0,
+          "marks": [
+            {
+              "event": "sfx-start",
+              "wallMs": 341.7999999988824,
+              "sceneMs": 11900,
+              "contextSec": 0.152,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 0.75,
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "voice-start",
+              "wallMs": 342,
+              "sceneMs": 11900,
+              "contextSec": 0.152,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 2.1,
+              "ambienceGain": 0.05600000000000001,
+              "sfxGain": 0.216
+            },
+            {
+              "event": "voice-cut",
+              "wallMs": 364.7999999988824,
+              "sceneMs": 12550,
+              "contextSec": 0.17066666666666666,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "reason": "disconnect",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "sfx-end",
+              "wallMs": 366,
+              "sceneMs": 12550,
+              "contextSec": 0.18133333333333335,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            }
+          ],
+          "suppressed": {
+            "disabled": 1
+          },
+          "voice": {
+            "ready": 4,
+            "waiting": 0,
+            "playing": false,
+            "status": "READY"
+          },
+          "dynamic": "DYNAMIC_TTS_BLOCKED"
+        },
+        "testDisabled": false
+      }
+    },
+    "sameFrame": {
+      "started": {
+        "connected": true,
+        "atMs": 11900,
+        "roomSessionId": "demo-1",
+        "camera": {
+          "mode": "GIFT_FOCUS",
+          "pendingGivers": 0,
+          "activeActorId": "demo-1-actor-1",
+          "activeRequestId": "demo-1-gift-1"
+        },
+        "confirmedGiftCount": 1,
+        "epoch": 0,
+        "audio": {
+          "status": "PLAYING",
+          "connected": true,
+          "outputEnabled": true,
+          "sfxAvailable": true,
+          "ambience": true,
+          "queue": 0,
+          "marks": [
+            {
+              "event": "sfx-start",
+              "wallMs": 555.5999999996275,
+              "sceneMs": 11900,
+              "contextSec": 0.24,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 0.75,
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "voice-start",
+              "wallMs": 555.7999999988824,
+              "sceneMs": 11900,
+              "contextSec": 0.24,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 2.1,
+              "ambienceGain": 0.05600000000000001,
+              "sfxGain": 0.216
+            }
+          ],
+          "suppressed": {},
+          "voice": {
+            "ready": 4,
+            "waiting": 0,
+            "playing": true,
+            "status": "READY"
+          },
+          "dynamic": "DYNAMIC_TTS_BLOCKED"
+        },
+        "testDisabled": false
+      },
+      "activePeak": 0.010291218757629395,
+      "rejoined": {
+        "connected": true,
+        "atMs": 13005,
+        "roomSessionId": "demo-1",
+        "camera": {
+          "mode": "GIFT_FOCUS",
+          "pendingGivers": 0,
+          "activeActorId": "demo-1-actor-1",
+          "activeRequestId": "demo-1-gift-1"
+        },
+        "confirmedGiftCount": 2,
+        "epoch": 2,
+        "audio": {
+          "status": "READY",
+          "connected": true,
+          "outputEnabled": true,
+          "sfxAvailable": true,
+          "ambience": true,
+          "queue": 0,
+          "marks": [
+            {
+              "event": "sfx-start",
+              "wallMs": 555.5999999996275,
+              "sceneMs": 11900,
+              "contextSec": 0.24,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 0.75,
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "voice-start",
+              "wallMs": 555.7999999988824,
+              "sceneMs": 11900,
+              "contextSec": 0.24,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 2.1,
+              "ambienceGain": 0.05600000000000001,
+              "sfxGain": 0.216
+            },
+            {
+              "event": "voice-cut",
+              "wallMs": 574.0999999996275,
+              "sceneMs": 13005,
+              "contextSec": 0.2613333333333333,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "reason": "session-change",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            }
+          ],
+          "suppressed": {
+            "before-enable": 1
+          },
+          "voice": {
+            "ready": 4,
+            "waiting": 0,
+            "playing": false,
+            "status": "READY"
+          },
+          "dynamic": "DYNAMIC_TTS_BLOCKED"
+        },
+        "testDisabled": false
+      },
+      "restored": {
+        "connected": true,
+        "atMs": 13500,
+        "roomSessionId": "demo-1",
+        "camera": {
+          "mode": "GIFT_FOCUS",
+          "pendingGivers": 0,
+          "activeActorId": "demo-1-actor-1",
+          "activeRequestId": "demo-1-gift-1"
+        },
+        "confirmedGiftCount": 2,
+        "epoch": 2,
+        "audio": {
+          "status": "READY",
+          "connected": true,
+          "outputEnabled": true,
+          "sfxAvailable": true,
+          "ambience": true,
+          "queue": 0,
+          "marks": [
+            {
+              "event": "sfx-start",
+              "wallMs": 555.5999999996275,
+              "sceneMs": 11900,
+              "contextSec": 0.24,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 0.75,
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "voice-start",
+              "wallMs": 555.7999999988824,
+              "sceneMs": 11900,
+              "contextSec": 0.24,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 2.1,
+              "ambienceGain": 0.05600000000000001,
+              "sfxGain": 0.216
+            },
+            {
+              "event": "voice-cut",
+              "wallMs": 574.0999999996275,
+              "sceneMs": 13005,
+              "contextSec": 0.2613333333333333,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "reason": "session-change",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "sfx-end",
+              "wallMs": 582.9000000003725,
+              "sceneMs": 13005,
+              "contextSec": 0.272,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            }
+          ],
+          "suppressed": {
+            "before-enable": 1
+          },
+          "voice": {
+            "ready": 4,
+            "waiting": 0,
+            "playing": false,
+            "status": "READY"
+          },
+          "dynamic": "DYNAMIC_TTS_BLOCKED"
+        },
+        "testDisabled": false
+      },
+      "reset": {
+        "connected": true,
+        "atMs": 40000,
+        "roomSessionId": "demo-2",
+        "camera": {
+          "mode": "CINEMATIC",
+          "pendingGivers": 0
+        },
+        "confirmedGiftCount": 0,
+        "epoch": 3,
+        "audio": {
+          "status": "READY",
+          "connected": true,
+          "outputEnabled": true,
+          "sfxAvailable": true,
+          "ambience": true,
+          "queue": 0,
+          "marks": [
+            {
+              "event": "sfx-start",
+              "wallMs": 555.5999999996275,
+              "sceneMs": 11900,
+              "contextSec": 0.24,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 0.75,
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "voice-start",
+              "wallMs": 555.7999999988824,
+              "sceneMs": 11900,
+              "contextSec": 0.24,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 2.1,
+              "ambienceGain": 0.05600000000000001,
+              "sfxGain": 0.216
+            },
+            {
+              "event": "voice-cut",
+              "wallMs": 574.0999999996275,
+              "sceneMs": 13005,
+              "contextSec": 0.2613333333333333,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "reason": "session-change",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "sfx-end",
+              "wallMs": 582.9000000003725,
+              "sceneMs": 13005,
+              "contextSec": 0.272,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            }
+          ],
+          "suppressed": {
+            "before-enable": 1
+          },
+          "voice": {
+            "ready": 4,
+            "waiting": 0,
+            "playing": false,
+            "status": "READY"
+          },
+          "dynamic": "DYNAMIC_TTS_BLOCKED"
+        },
+        "testDisabled": false
+      }
+    }
+  },
+  "failures": {
+    "partial": {
+      "r": {
+        "connected": true,
+        "atMs": 11900,
+        "roomSessionId": "demo-1",
+        "camera": {
+          "mode": "GIFT_FOCUS",
+          "pendingGivers": 0,
+          "activeActorId": "demo-1-actor-1",
+          "activeRequestId": "demo-1-gift-1"
+        },
+        "confirmedGiftCount": 1,
+        "epoch": 0,
+        "audio": {
+          "status": "PLAYING",
+          "connected": true,
+          "outputEnabled": true,
+          "sfxAvailable": true,
+          "ambience": true,
+          "queue": 0,
+          "marks": [
+            {
+              "event": "voice-asset-unavailable",
+              "wallMs": 853,
+              "sceneMs": 0,
+              "contextSec": 0.552,
+              "variant": "rose",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "voice-asset-unavailable",
+              "wallMs": 891.9000000003725,
+              "sceneMs": 0,
+              "contextSec": 0.592,
+              "variant": "lantern",
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "sfx-start",
+              "wallMs": 972.6000000014901,
+              "sceneMs": 11900,
+              "contextSec": 0.672,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "rose",
+              "seconds": 0.75,
+              "ambienceGain": 0.2,
+              "sfxGain": 0.45
+            },
+            {
+              "event": "voice-start",
+              "wallMs": 972.8000000007451,
+              "sceneMs": 11900,
+              "contextSec": 0.672,
+              "room": "demo-1",
+              "request": "demo-1-gift-1",
+              "actor": "demo-1-actor-1",
+              "seat": "seat-1",
+              "effectSequence": 1,
+              "variant": "generic",
+              "seconds": 2.1,
+              "ambienceGain": 0.05600000000000001,
+              "sfxGain": 0.216
+            }
+          ],
+          "suppressed": {},
+          "voice": {
+            "ready": 2,
+            "waiting": 0,
+            "playing": true,
+            "status": "VOICE_DEGRADED"
+          },
+          "dynamic": "DYNAMIC_TTS_BLOCKED"
+        },
+        "testDisabled": false
+      },
+      "requests": [
+        "/audio/vi-v1-approved/rose.voice.json",
+        "/audio/vi-v1-approved/lantern.voice.json",
+        "/audio/vi-v1-approved/generic.voice.json",
+        "/audio/vi-v1-approved/generic-short.voice.json"
+      ]
+    },
+    "all": {
+      "loading": "Âm thanh đã bật. Đang tải giọng đọc",
+      "message": "Giọng đọc không khả dụng. Chuông và âm nền vẫn dùng được",
+      "requests": [
+        "/audio/vi-v1-approved/rose.voice.json",
+        "/audio/vi-v1-approved/lantern.voice.json",
+        "/audio/vi-v1-approved/generic.voice.json",
+        "/audio/vi-v1-approved/generic-short.voice.json"
+      ],
+      "sceneMs": 18062,
+      "mode": "GIFT_FOCUS",
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          1.9941380535564215,
+          1.0953020461481064,
+          13.460431861505846
+        ],
+        "nameWorld": [
+          1.9956035401673162,
+          1.5953020461481064,
+          13.470323896129385
+        ],
+        "fxWorld": [
+          1.6105469331547537,
+          1.0653020461481066,
+          13.395950450626481
+        ]
+      },
+      "confirmedGiftCount": 3,
+      "audio": {
+        "status": "VOICE_UNAVAILABLE",
+        "connected": true,
+        "outputEnabled": true,
+        "sfxAvailable": true,
+        "ambience": true,
+        "queue": 1,
+        "marks": [
+          {
+            "event": "voice-asset-unavailable",
+            "wallMs": 3905.699999999255,
+            "sceneMs": 3132,
+            "contextSec": 0.632,
+            "variant": "rose",
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "voice-asset-unavailable",
+            "wallMs": 3915.4000000003725,
+            "sceneMs": 3132,
+            "contextSec": 0.64,
+            "variant": "generic",
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "voice-asset-unavailable",
+            "wallMs": 3915.5,
+            "sceneMs": 3132,
+            "contextSec": 0.64,
+            "variant": "generic-short",
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "voice-asset-unavailable",
+            "wallMs": 3959.4000000003725,
+            "sceneMs": 3132,
+            "contextSec": 0.68,
+            "variant": "lantern",
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "test-start",
+            "wallMs": 7797.699999999255,
+            "sceneMs": 7146,
+            "contextSec": 4.52,
+            "variant": "generic",
+            "seconds": 0.655,
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "test-end",
+            "wallMs": 8452.900000000373,
+            "sceneMs": 7715,
+            "contextSec": 5.181333333333333,
+            "variant": "generic",
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "sfx-start",
+            "wallMs": 17629.599999999627,
+            "sceneMs": 17145,
+            "contextSec": 14.352,
+            "room": "demo-1",
+            "request": "demo-1-gift-1",
+            "actor": "demo-1-actor-1",
+            "seat": "seat-1",
+            "effectSequence": 1,
+            "variant": "rose",
+            "seconds": 0.75,
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "sfx-end",
+            "wallMs": 18383.099999999627,
+            "sceneMs": 17875,
+            "contextSec": 15.112,
+            "room": "demo-1",
+            "request": "demo-1-gift-1",
+            "actor": "demo-1-actor-1",
+            "seat": "seat-1",
+            "effectSequence": 1,
+            "variant": "rose",
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          }
+        ],
+        "suppressed": {
+          "unavailable": 1
+        },
+        "voice": {
+          "ready": 0,
+          "waiting": 0,
+          "playing": false,
+          "status": "VOICE_UNAVAILABLE"
+        },
+        "dynamic": "DYNAMIC_TTS_BLOCKED"
+      }
+    }
+  },
+  "parity": [
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "time": 1,
+      "entries": [
+        {
+          "revision": "0f158bf9e5b79c56c3a5cc8c18dadf97a99eea03",
+          "file": "eco-r16-reviewed.png",
+          "sha256": "9684c022e3745bd280da16f45fb55a7edd7e51ee16445bc52904389b6a19d219",
+          "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "shot": "HERO_WIDE_TREE_REFLECTION",
+          "mode": "CINEMATIC"
+        },
+        {
+          "revision": "f3b719323324a9a85b48ce7c1f75a86e89f974b0",
+          "file": "eco-r16-corrected.png",
+          "sha256": "9684c022e3745bd280da16f45fb55a7edd7e51ee16445bc52904389b6a19d219",
+          "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "shot": "HERO_WIDE_TREE_REFLECTION",
+          "mode": "CINEMATIC"
+        }
+      ]
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "time": 17.43,
+      "entries": [
+        {
+          "revision": "0f158bf9e5b79c56c3a5cc8c18dadf97a99eea03",
+          "file": "quality-r17b-reviewed.png",
+          "sha256": "8c7d68880f88766112e4b9815c2d5608042e41299824b3abd18b63309431a4d1",
+          "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "shot": "HERO_TOP_RING",
+          "mode": "GIFT_FOCUS"
+        },
+        {
+          "revision": "f3b719323324a9a85b48ce7c1f75a86e89f974b0",
+          "file": "quality-r17b-corrected.png",
+          "sha256": "8c7d68880f88766112e4b9815c2d5608042e41299824b3abd18b63309431a4d1",
+          "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "shot": "HERO_TOP_RING",
+          "mode": "GIFT_FOCUS"
+        }
+      ]
+    }
+  ]
+}
