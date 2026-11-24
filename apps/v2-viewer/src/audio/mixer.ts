@@ -217,7 +217,7 @@ export class Mixer {
     if (!idle || (idle.stopping && !immediate)) return;
     idle.stopping = true;
     const now = this.context.currentTime;
-    const fade = immediate || idle.kind === 'speech' ? 0 : .030;
+    const fade = immediate ? 0 : .030;
     idle.envelope.gain.cancelAndHoldAtTime(now);
     idle.envelope.gain.linearRampToValueAtTime(0, now + fade);
     idle.source.stop(now + fade);
