@@ -162,16 +162,21 @@ export class Mixer {
 
   private async load(key: VoiceKey) {
     try {
-      const url = new URL(`audio/vi-v1-approved/${key}.wav`, document.baseURI);
+      const url = new URL(`audio/vi-v1-approved/${key}.voice.json`, document.baseURI);
       const response = await fetch(url, { mode: 'same-origin', redirect: 'error', signal: this.abort.signal });
       if (!response.ok) throw new Error('audio-fetch');
-      const bytes = await response.arrayBuffer();
       const expected = voicePins.profiles[key];
+      const text = await response.text();
+      const encodedLength = Math.ceil(expected.bytes / 3) * 4;
+      if (text.length > encodedLength + 30) throw new Error('audio-size');
+      const payload: unknown = JSON.parse(text).wavBase64;
+      if (typeof payload !== 'string' || payload.length !== encodedLength) throw new Error('audio-size');
+      const bytes = Uint8Array.from(atob(payload), character => character.charCodeAt(0));
       if (bytes.byteLength !== expected.bytes) throw new Error('audio-size');
       const digest = await crypto.subtle.digest('SHA-256', bytes);
       const sha = Array.from(new Uint8Array(digest), value => value.toString(16).padStart(2, '0')).join('');
       if (sha !== expected.sha256) throw new Error('audio-integrity');
-      const buffer = await this.context.decodeAudioData(bytes);
+      const buffer = await this.context.decodeAudioData(bytes.buffer);
       if (buffer.duration > 6 || buffer.numberOfChannels !== 1) throw new Error('audio-format');
       if (this.abort.signal.aborted) return;
       const samples = buffer.getChannelData(0);
