@@ -99,7 +99,7 @@ try {
   const legacyQuery = overlayQuery(liveDefaults);
   legacyQuery.set('time', '0');
   await before.goto(origin + '/?' + legacyQuery);
-  await scene(before, () => window.viewerReport.elapsedSeconds === 0);
+  await scene(before, () => window.viewerReport?.elapsedSeconds === 0);
   const baselineSource = await before.evaluate(() => window.viewerReport.repoRevision);
   assert.equal(baselineSource, 'f8773cd35476924e0f68204b0d0e82b7e0e87d26');
   const reference = await capture(before, 'baseline-offline.png');
@@ -118,7 +118,7 @@ try {
     window.requestAnimationFrame = callback => frame(() => callback(1000));
   });
   await parity.goto(origin + '/overlay/');
-  await scene(parity, () => window.viewerReport.elapsedSeconds === 0);
+  await scene(parity, () => window.viewerReport?.elapsedSeconds === 0);
   await wait(() => gateway.receiver === 'overlay');
   const defaultFrame = await capture(parity, 'overlay-offline.png');
   assert.equal(defaultFrame, reference);
@@ -137,7 +137,7 @@ try {
   await dashboard.getByRole('link', { name: 'Mở Overlay' }).click();
   const overlay = await opened;
   await overlay.setViewportSize(sceneSize);
-  await scene(overlay, () => window.viewerReport.appliedSettingsRevision === 2 && window.viewerReport.elapsedSeconds > 0);
+  await scene(overlay, () => window.viewerReport?.appliedSettingsRevision === 2 && window.viewerReport.elapsedSeconds > 0);
   await dashboard.getByText('Overlay sẵn sàng', { exact: true }).waitFor();
   assert.equal(await overlay.locator('aside, form, #diagnostics, #live-controls, #audio-controls').count(), 0);
   assert.equal(await overlay.locator('#status').isVisible(), false);
@@ -190,7 +190,7 @@ try {
   await returned.getByRole('button', { name: 'Ngắt kết nối' }).click();
   const apply = returned.getByRole('button', { name: 'Áp dụng vào Overlay' });
   await apply.click();
-  await scene(overlay, () => window.viewerReport.appliedSettingsRevision === 3 && window.viewerReport.seed === 1337);
+  await scene(overlay, () => window.viewerReport?.appliedSettingsRevision === 3 && window.viewerReport.seed === 1337);
   await returned.getByText(/Đã lưu r3 .*Overlay r3/).waitFor();
   assert.equal(stops, 1);
   assert.equal(launches, 1);
@@ -212,7 +212,7 @@ try {
 
   const demo = await live.newPage();
   await demo.goto(origin + '/?demo=gifts&clean=1');
-  await scene(demo, () => window.viewerReport.scenario === 'gifts' && window.viewerReport.confirmedGiftCount === 0);
+  await scene(demo, () => window.viewerReport?.scenario === 'gifts' && window.viewerReport.confirmedGiftCount === 0);
   steps.demo = 'root route rendered with gifts scenario';
   assert(!requests.some(r => r.page === '/dashboard/' && ['/poll', '/disconnect', '/attach'].includes(r.route)));
   assert.deepEqual(errors, []);

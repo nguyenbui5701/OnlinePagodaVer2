@@ -1,12 +1,49 @@
-# P1.0-B2 — TikTok LIVE Gateway
+# P1.0-B5 — Dashboard và Overlay TikTok LIVE
 
-`P10B2_REAL_GATEWAY_SA_REVIEW_REQUIRED`
+`P10B5_DASHBOARD_OVERLAY_SA_REVIEW_REQUIRED`
 
-Base PR #22 `b529010956420946447e652b1bcf922d7f8dbd16`. Gateway dùng `tiktok-live-connector@2.5.0`, lockfile ghim chính xác tarball của V1. Worker riêng giữ các tùy chọn V1: không batch lịch sử, không xác thực WebSocket bằng phiên TikTok, không mobile, timeout kết nối hữu hạn. Tiến trình worker chỉ nhận tên kênh đã kiểm tra từ gateway. Nó gọi TikTok và dịch vụ ký mặc định của connector. [V1 được tham chiếu](https://github.com/nguyenbui5701/OnlinePagoda/tree/9ffa2718723b11284dccdf35595c759576672f93/apps/server/src/tiktok) · [LICENSE Connector 2.5.0](https://github.com/zerodytrash/TikTok-Live-Connector/blob/v2.5.0/LICENSE)
+Base PR #23 `f8773cd35476924e0f68204b0d0e82b7e0e87d26`. Gateway dùng `tiktok-live-connector@2.5.0`, lockfile ghim chính xác tarball của V1. Worker riêng giữ các tùy chọn V1: không batch lịch sử, không xác thực WebSocket bằng phiên TikTok, không mobile, timeout kết nối hữu hạn. Tiến trình worker chỉ nhận tên kênh đã kiểm tra từ gateway. Nó gọi TikTok và dịch vụ ký mặc định của connector. [V1 được tham chiếu](https://github.com/nguyenbui5701/OnlinePagoda/tree/9ffa2718723b11284dccdf35595c759576672f93/apps/server/src/tiktok) · [LICENSE Connector 2.5.0](https://github.com/zerodytrash/TikTok-Live-Connector/blob/v2.5.0/LICENSE)
+
+## Luồng Dashboard và Overlay
+
+- [Dashboard điều khiển](http://127.0.0.1:5189/dashboard/) để lưu cấu hình, kết nối và theo dõi sự kiện.
+- [Overlay 720×1280](http://127.0.0.1:5189/overlay/) dành cho cảnh 3D trong Studio.
+
+Từ Dashboard, chọn và lưu cấu hình, mở Overlay bằng nút **Mở Overlay** rồi chờ **Overlay sẵn sàng**. Dùng cửa sổ Overlay trong Studio để xem preview. Khi phòng được phép đang LIVE, nhập username ở Dashboard và bấm **Kết nối**. Có thể tải lại hoặc đóng Dashboard trong lúc nhận sự kiện. Giữ cửa sổ Overlay mở và hoạt động. Đóng Overlay hoặc để lease hết hạn sẽ dừng nguồn. Mở lại Overlay và kết nối thủ công sau khi lease cũ kết thúc. Cảnh báo gift final chưa có ACK được giữ trong tiến trình Gateway.
+
+Cấu hình nằm trong `packages/v2-live-gateway/data/settings.json`. Gateway ghi nguyên tử. Tệp thiếu hoặc lỗi sẽ hiện cảnh báo và dùng mặc định Full Option ECO. Dashboard hiển thị số revision đã lưu và revision Overlay đang áp dụng. Mọi tùy chọn hiện có hiệu lực lúc khởi tạo cảnh. Có thể lưu trong LIVE; để áp dụng, ngắt kết nối, đợi xử lý hết hàng đợi rồi bấm **Áp dụng vào Overlay**. Thao tác này tải lại Overlay một lần. LIVE tiếp tục tắt tiếng. Gói gift final/progress là số gói nhận, tách biệt số lượng quà do Event Engine xác nhận.
+
+Chỉ dùng trên máy cục bộ tin cậy. Hai trang dùng đúng `127.0.0.1:5189` và Gateway `127.0.0.1:5203`. Client ID tự sinh để theo dõi phiên nhận và ACK.
+
+### Cập nhật worktree detached đã có dependency và asset
+
+Dừng hai tiến trình cũ của worktree đó, giữ các thay đổi cục bộ của bạn, rồi chạy từ root của worktree sạch.
+
+```powershell
+git fetch origin feature/v2-p10b5-dashboard-overlay
+git switch --detach FETCH_HEAD
+Set-Location apps/v2-viewer
+npm.cmd run build
+npm.cmd run capture:p10b2
+```
+
+Trong terminal thứ hai tại root worktree:
+
+```powershell
+Set-Location packages/v2-live-gateway
+npm.cmd start
+```
 
 ## Cài đặt và build lần đầu trên Windows
 
-Từ root branch `feature/v2-p10b2-real-event-gateway`, với Node 24 và Git:
+Với Node 24 và Git, clone theo branch CODEX 21 cùng toàn bộ lịch sử để stage tài sản đã khóa.
+
+```powershell
+git clone --branch feature/v2-p10b5-dashboard-overlay https://github.com/nguyenbui5701/OnlinePagodaVer2.git
+Set-Location OnlinePagodaVer2
+```
+
+Chạy từ root worktree:
 
 ```powershell
 Set-Location packages/v2-events
@@ -31,9 +68,9 @@ npm.cmd ci --ignore-scripts --no-fund --no-audit
 npm.cmd start
 ```
 
-## Worktree đã cài
+## Viewer LIVE cũ
 
-Dừng hai tiến trình cũ rồi chạy `git pull --ff-only` từ root worktree đang ở branch `feature/v2-p10b2-real-event-gateway`. Trong `apps/v2-viewer`, chạy `npm.cmd run build` rồi `npm.cmd run capture:p10b2`. Trong tab PowerShell thứ hai, chạy `npm.cmd start` từ `packages/v2-live-gateway`. Có thể dùng lại các dependency và asset đã stage từ PR #23.
+Có thể mở đường dẫn cũ để vận hành với một Viewer. Đóng phiên Overlay trước khi kết nối bằng Viewer cũ.
 
 [Mở Viewer LIVE ECO 720×1280](http://127.0.0.1:5189/?source=live&profile=eco&clean=1&seed=9&look=twilight&tree=r17b&botanicals=on&diversity=on&presence=on&chatbubbles=on&gifticons=on&ambience=rich&seats=rings&shots=hero&blessing=on).
 
@@ -68,3 +105,11 @@ Chạy lại từ Viewer đã build bằng `node scripts/evidence-live-gateway.m
 113 tests và hai build PASS. Lệnh npm.cmd start khởi động gateway tại 127.0.0.1:5203, preflight hợp lệ trả 204. Test HTTP xác nhận từ chối Host/Origin sai, giới hạn một tab và chấp nhận poll sau khi đồng hồ mô phỏng vượt mốc tám giờ.
 
 Bản build Viewer trong Edge kết nối fixture chỉ với username. Ba poll lúc dừng render giữ ACK ở 5. Sau một poll bị ngắt và render tiếp tục, ACK lên 10, Engine ghi đúng bốn quà. Đóng Viewer khi gói 11 còn chờ giữ cảnh báo giao nhận chưa xác minh. Runner dùng preview tĩnh riêng ở cổng 5191 và giữ Origin của Viewer ở cổng 5189 trong trình duyệt. [Biên bản token-free](evidence/token-free.json)
+
+## Bằng chứng CODEX 21
+
+**116 tests PASS** (83 Viewer, 12 Engine, 8 voice worker, 13 Gateway); hai build Viewer và Engine PASS. Fixture Edge xác nhận Dashboard reload/đóng với một lần kết nối provider fixture, không lần ngắt và ACK đủ bốn quà. Bản lưu r3 chờ bên cạnh Overlay r2 khi đang LIVE. Sau Disconnect và khi hàng đợi đã xử lý xong, Overlay nạp r3 mà không tự kết nối. Đóng Overlay khi render dừng và còn final giữ cảnh báo giao nhận chưa xác minh.
+
+Ảnh Full Option ECO 720×1280 ở seed 9, thời điểm 0 giây, khớp từng byte với PR #23. [Dashboard](evidence/p10b5/dashboard.png) · [Overlay offline](evidence/p10b5/overlay-offline.png) · [Overlay gift focus](evidence/p10b5/overlay-gift-focus.png) · [Biên bản và SHA-256](evidence/p10b5/receipt.json)
+
+Để chạy lại đối chiếu, build branch này và baseline PR #23 trong hai worktree. Chạy Vite preview ở 5191 cho bản mới và 5192 cho baseline với lệnh npm.cmd exec --offline -- vite preview --host 127.0.0.1 --port 5191 --strictPort (đổi cổng cho baseline). Từ apps/v2-viewer trên branch này chạy node scripts/evidence-dashboard-overlay.mjs. Runner khởi động Gateway fixture trên cổng loopback tạm, chuyển tiếp trong trình duyệt và giữ URL vận hành của hai trang. Kết quả là thử nghiệm 0 VND, chưa kết nối room TikTok thật hoặc Studio.

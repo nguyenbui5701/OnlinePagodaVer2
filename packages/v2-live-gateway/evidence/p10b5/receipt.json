@@ -1,0 +1,55 @@
+{
+  "method": "Built Edge pages and isolated loopback Gateway with provider fixture. Browser test routes forward to temporary local listeners.",
+  "browser": "158.0.4370.33",
+  "captures": {
+    "baseline-offline.png": "25eee43d8c2da175fe05073fcd505b0a384fb76de250741d9f30c7fe5b3ac5c6",
+    "overlay-offline.png": "25eee43d8c2da175fe05073fcd505b0a384fb76de250741d9f30c7fe5b3ac5c6",
+    "dashboard.png": "f2d977a8f27c50f034f4972723582bff7fae1a84da90180415e081ac2a86103a",
+    "overlay-gift-focus.png": "629d18b03220a19fcfa2a725c28d0689bfbeaf77b874f8f4a829d0e800ff919b"
+  },
+  "steps": {
+    "parity": {
+      "baselineSource": "f8773cd35476924e0f68204b0d0e82b7e0e87d26",
+      "before": "25eee43d8c2da175fe05073fcd505b0a384fb76de250741d9f30c7fe5b3ac5c6",
+      "after": "25eee43d8c2da175fe05073fcd505b0a384fb76de250741d9f30c7fe5b3ac5c6",
+      "timeSec": 0,
+      "seed": 9,
+      "pixels": [
+        720,
+        1280
+      ]
+    },
+    "dashboardContinuity": {
+      "launches": 1,
+      "stops": 0,
+      "connection": 1,
+      "acknowledged": 5,
+      "phase": "EVENTS_VERIFIED",
+      "counters": {
+        "chat": 0,
+        "member": 0,
+        "like": 0,
+        "giftProgress": 0,
+        "giftFinal": 4,
+        "room": 0
+      },
+      "focusHash": "629d18b03220a19fcfa2a725c28d0689bfbeaf77b874f8f4a829d0e800ff919b",
+      "source": "e417ba9c8d97e3bcfc27081b39badc3172c96d09",
+      "confirmed": 4,
+      "seat": "seat-1",
+      "graphics": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+    },
+    "applied": {
+      "revision": 3,
+      "uncertainty": false,
+      "automaticConnects": 0
+    },
+    "closedOverlay": {
+      "offered": 2,
+      "ack": 1,
+      "uncertain": true
+    },
+    "demo": "root route rendered with gifts scenario"
+  },
+  "errors": []
+}
