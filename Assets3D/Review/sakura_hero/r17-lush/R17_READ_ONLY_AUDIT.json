@@ -1,0 +1,2411 @@
+{
+  "reviewedHead": "36c9e327c37441a7c5406068f9aecd291e52d437",
+  "status": "OWNER_READ_ONLY_AUDIT_NOT_INDEPENDENT_SA",
+  "blender": "4.5.16 LTS",
+  "profiles": {
+    "quality": {
+      "r16": {
+        "sha256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "bytes": 5055232,
+        "triangles": 191288,
+        "degenerateTriangles": 0,
+        "jsonChunkBytes": 8928,
+        "binChunkBytes": 5046276,
+        "attributeLogicalBytes": {
+          "POSITION": 2750820,
+          "INDEX": 2295456
+        },
+        "uniqueReferencedAccessorBytes": 5046276,
+        "primitiveCount": 11,
+        "vertexRecordsAcrossPrimitives": 229235,
+        "primitives": [
+          {
+            "mesh": "Trunk_bark_plumblack",
+            "material": "Trunk_bark_plumblack",
+            "triangles": 23100,
+            "vertexRecords": 11584,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Golden_bark_veins",
+            "material": "Golden_bark_veins",
+            "triangles": 246,
+            "vertexRecords": 286,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Branches_plum",
+            "material": "Branches_plum",
+            "triangles": 4462,
+            "vertexRecords": 2367,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Canopy_depth_rose",
+            "material": "Canopy_depth_rose",
+            "triangles": 3520,
+            "vertexRecords": 1782,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Canopy_peach",
+            "material": "Canopy_peach",
+            "triangles": 19840,
+            "vertexRecords": 10044,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Canopy_rose",
+            "material": "Canopy_rose",
+            "triangles": 6720,
+            "vertexRecords": 3402,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_warm_rose",
+            "material": "Sakura_petal_warm_rose",
+            "triangles": 21400,
+            "vertexRecords": 32100,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_flower_gold",
+            "material": "Sakura_flower_gold",
+            "triangles": 1320,
+            "vertexRecords": 1650,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_blush",
+            "material": "Sakura_petal_blush",
+            "triangles": 45200,
+            "vertexRecords": 67800,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_pink",
+            "material": "Sakura_petal_pink",
+            "triangles": 47220,
+            "vertexRecords": 70830,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_cream",
+            "material": "Sakura_petal_cream",
+            "triangles": 18260,
+            "vertexRecords": 27390,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          }
+        ],
+        "materials": [
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.11372549019607843,
+                0.047058823529411764,
+                0.13333333333333333,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "name": "Trunk_bark_plumblack",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9686274509803922,
+                0.6784313725490196,
+                0.396078431372549,
+                1.0
+              ],
+              "roughnessFactor": 0.73,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.35,
+              0.13,
+              0.035
+            ],
+            "name": "Golden_bark_veins",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.16470588235294117,
+                0.07450980392156863,
+                0.18823529411764706,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "name": "Branches_plum",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.7607843137254902,
+                0.4392156862745098,
+                0.5803921568627451,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.025,
+              0.01,
+              0.014
+            ],
+            "name": "Canopy_depth_rose",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9568627450980393,
+                0.6549019607843137,
+                0.6274509803921569,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.025,
+              0.01,
+              0.014
+            ],
+            "name": "Canopy_peach",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.8784313725490196,
+                0.5215686274509804,
+                0.6274509803921569,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.025,
+              0.01,
+              0.014
+            ],
+            "name": "Canopy_rose",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.8941176470588236,
+                0.4980392156862745,
+                0.6,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.045,
+              0.018,
+              0.024
+            ],
+            "name": "Sakura_petal_warm_rose",
+            "doubleSided": true
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                1.0,
+                0.8156862745098039,
+                0.5176470588235295,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "name": "Sakura_flower_gold",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9294117647058824,
+                0.6823529411764706,
+                0.7137254901960784,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.045,
+              0.018,
+              0.024
+            ],
+            "name": "Sakura_petal_blush",
+            "doubleSided": true
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9058823529411765,
+                0.5647058823529412,
+                0.6549019607843137,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.045,
+              0.018,
+              0.024
+            ],
+            "name": "Sakura_petal_pink",
+            "doubleSided": true
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9607843137254902,
+                0.8,
+                0.7294117647058823,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.045,
+              0.018,
+              0.024
+            ],
+            "name": "Sakura_petal_cream",
+            "doubleSided": true
+          }
+        ],
+        "textures": 0,
+        "nodes": [
+          {
+            "name": "world",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Trunk_bark_plumblack",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Golden_bark_veins",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Branches_plum",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Canopy_depth_rose",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Canopy_peach",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Canopy_rose",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_warm_rose",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_flower_gold",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_blush",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_pink",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_cream",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          }
+        ],
+        "boundsYUpMeters": [
+          [
+            -12.705632209777832,
+            -0.5183812975883484,
+            -12.642970085144043
+          ],
+          [
+            13.742024421691895,
+            26.48044204711914,
+            13.2966947555542
+          ]
+        ],
+        "protectedMaterialFactors": {
+          "Trunk_bark_plumblack": {
+            "Base Color": [
+              0.11372549086809158,
+              0.0470588244497776,
+              0.13333334028720856,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0
+          },
+          "Golden_bark_veins": {
+            "Base Color": [
+              0.9686274528503418,
+              0.6784313917160034,
+              0.3960784375667572,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.7300000190734863,
+            "Emission Color": [
+              0.3499999940395355,
+              0.12999999523162842,
+              0.03500000014901161,
+              1.0
+            ],
+            "Emission Strength": 1.0
+          },
+          "Branches_plum": {
+            "Base Color": [
+              0.16470588743686676,
+              0.07450980693101883,
+              0.1882352977991104,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0
+          }
+        },
+        "rootNodes": [
+          {
+            "name": "world",
+            "worldMatrix": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ]
+      },
+      "r17": {
+        "sha256": "4115ba647eaa960e5fd2e9949462b52a2010231bf84ac25b574447bd36c5a73f",
+        "bytes": 17851064,
+        "triangles": 220088,
+        "degenerateTriangles": 0,
+        "jsonChunkBytes": 14308,
+        "binChunkBytes": 17836728,
+        "attributeLogicalBytes": {
+          "POSITION": 7911540,
+          "NORMAL": 7911540,
+          "INDEX": 2013648
+        },
+        "uniqueReferencedAccessorBytes": 17836728,
+        "primitiveCount": 15,
+        "vertexRecordsAcrossPrimitives": 659295,
+        "primitives": [
+          {
+            "mesh": "Branches_plum",
+            "material": "Branches_plum",
+            "triangles": 4462,
+            "vertexRecords": 12813,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Canopy_depth_rose",
+            "material": "Canopy_depth_rose",
+            "triangles": 3520,
+            "vertexRecords": 10560,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Canopy_peach",
+            "material": "Canopy_peach",
+            "triangles": 19840,
+            "vertexRecords": 59512,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Canopy_rose",
+            "material": "Canopy_rose",
+            "triangles": 6720,
+            "vertexRecords": 20158,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Golden_bark_veins",
+            "material": "Golden_bark_veins",
+            "triangles": 246,
+            "vertexRecords": 714,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_flower_gold",
+            "material": "Sakura_flower_gold",
+            "triangles": 1320,
+            "vertexRecords": 3960,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_blush",
+            "material": "Sakura_petal_blush",
+            "triangles": 45200,
+            "vertexRecords": 135598,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_cream",
+            "material": "Sakura_petal_cream",
+            "triangles": 18260,
+            "vertexRecords": 54778,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_pink",
+            "material": "Sakura_petal_pink",
+            "triangles": 47220,
+            "vertexRecords": 141660,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_warm_rose",
+            "material": "Sakura_petal_warm_rose",
+            "triangles": 21400,
+            "vertexRecords": 64200,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Trunk_bark_plumblack",
+            "material": "Trunk_bark_plumblack",
+            "triangles": 23100,
+            "vertexRecords": 68942,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "R17_Lush_Cupped_Flower_Mesh_quality",
+            "material": "R17_Lush_DeepRose",
+            "triangles": 8060,
+            "vertexRecords": 24180,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "R17_Lush_Cupped_Flower_Mesh_quality",
+            "material": "R17_Lush_Blush",
+            "triangles": 7980,
+            "vertexRecords": 23940,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "R17_Lush_Cupped_Flower_Mesh_quality",
+            "material": "R17_Lush_Peach",
+            "triangles": 7960,
+            "vertexRecords": 23880,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "R17_Lush_Cupped_Flower_Mesh_quality",
+            "material": "R17_Lush_Gold",
+            "triangles": 4800,
+            "vertexRecords": 14400,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          }
+        ],
+        "materials": [
+          {
+            "name": "Branches_plum",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.16470588743686676,
+                0.07450980693101883,
+                0.1882352977991104,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "emissiveFactor": [
+              0.02500000037252903,
+              0.009999999776482582,
+              0.014000000432133675
+            ],
+            "name": "Canopy_depth_rose",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.7607843279838562,
+                0.43921568989753723,
+                0.5803921818733215,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "emissiveFactor": [
+              0.02500000037252903,
+              0.009999999776482582,
+              0.014000000432133675
+            ],
+            "name": "Canopy_peach",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.95686274766922,
+                0.6549019813537598,
+                0.6274510025978088,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "emissiveFactor": [
+              0.02500000037252903,
+              0.009999999776482582,
+              0.014000000432133675
+            ],
+            "name": "Canopy_rose",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.8784313797950745,
+                0.5215686559677124,
+                0.6274510025978088,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "emissiveFactor": [
+              0.3499999940395355,
+              0.12999999523162842,
+              0.03500000014901161
+            ],
+            "name": "Golden_bark_veins",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9686274528503418,
+                0.6784313917160034,
+                0.3960784375667572,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.7300000190734863
+            }
+          },
+          {
+            "name": "Sakura_flower_gold",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                1,
+                0.8156862854957581,
+                0.5176470875740051,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.04500000178813934,
+              0.017999999225139618,
+              0.024000000208616257
+            ],
+            "name": "Sakura_petal_blush",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.929411768913269,
+                0.6823529601097107,
+                0.7137255072593689,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.04500000178813934,
+              0.017999999225139618,
+              0.024000000208616257
+            ],
+            "name": "Sakura_petal_cream",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9607843160629272,
+                0.800000011920929,
+                0.729411780834198,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.04500000178813934,
+              0.017999999225139618,
+              0.024000000208616257
+            ],
+            "name": "Sakura_petal_pink",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9058823585510254,
+                0.5647059082984924,
+                0.6549019813537598,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.04500000178813934,
+              0.017999999225139618,
+              0.024000000208616257
+            ],
+            "name": "Sakura_petal_warm_rose",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.8941176533699036,
+                0.49803921580314636,
+                0.6000000238418579,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "name": "Trunk_bark_plumblack",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.11372549086809158,
+                0.0470588244497776,
+                0.13333334028720856,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.019750000830739745,
+              0.008500000216066839,
+              0.012500000186264515
+            ],
+            "name": "R17_Lush_DeepRose",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.7900000214576721,
+                0.3400000035762787,
+                0.5,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8600000143051147
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.023000000759959227,
+              0.013249999482184638,
+              0.015000000819563875
+            ],
+            "name": "R17_Lush_Blush",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9200000166893005,
+                0.5299999713897705,
+                0.6000000238418579,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8700000047683716
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.015980000827908514,
+              0.01105000019520519,
+              0.0093500007107854
+            ],
+            "name": "R17_Lush_Peach",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9399999976158142,
+                0.6499999761581421,
+                0.550000011920929,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8899999856948853
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.05639999859631062,
+              0.041399998931586746,
+              0.022799999204278
+            ],
+            "name": "R17_Lush_Gold",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9399999976158142,
+                0.6899999976158142,
+                0.3799999952316284,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.7699999809265137
+            }
+          }
+        ],
+        "textures": 0,
+        "nodes": [
+          {
+            "name": "Branches_plum",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Canopy_depth_rose",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Canopy_peach",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Canopy_rose",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Golden_bark_veins",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_flower_gold",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_blush",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_cream",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_pink",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_warm_rose",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Trunk_bark_plumblack",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "world",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "R17_Lush_Additional_Crown_quality",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          }
+        ],
+        "boundsYUpMeters": [
+          [
+            -12.845271110534668,
+            -0.5183812975883484,
+            -12.69640827178955
+          ],
+          [
+            13.742024421691895,
+            26.48044204711914,
+            13.2966947555542
+          ]
+        ],
+        "protectedMaterialFactors": {
+          "Branches_plum": {
+            "Base Color": [
+              0.16470588743686676,
+              0.07450980693101883,
+              0.1882352977991104,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0
+          },
+          "Golden_bark_veins": {
+            "Base Color": [
+              0.9686274528503418,
+              0.6784313917160034,
+              0.3960784375667572,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.7300000190734863,
+            "Emission Color": [
+              0.3499999940395355,
+              0.12999999523162842,
+              0.03500000014901161,
+              1.0
+            ],
+            "Emission Strength": 1.0
+          },
+          "Trunk_bark_plumblack": {
+            "Base Color": [
+              0.11372549086809158,
+              0.0470588244497776,
+              0.13333334028720856,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0
+          }
+        },
+        "rootNodes": [
+          {
+            "name": "world",
+            "worldMatrix": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R17_Lush_Additional_Crown_quality",
+            "worldMatrix": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ]
+      },
+      "protectedGeometryComparison": {
+        "Branches_plum": {
+          "r16Triangles": 4462,
+          "r17Triangles": 4462,
+          "missingTriangles": 0,
+          "addedTriangles": 0,
+          "importedPBRExact": true
+        },
+        "Golden_bark_veins": {
+          "r16Triangles": 246,
+          "r17Triangles": 246,
+          "missingTriangles": 0,
+          "addedTriangles": 0,
+          "importedPBRExact": true
+        },
+        "Trunk_bark_plumblack": {
+          "r16Triangles": 23100,
+          "r17Triangles": 23100,
+          "missingTriangles": 0,
+          "addedTriangles": 0,
+          "importedPBRExact": true
+        }
+      }
+    },
+    "eco": {
+      "r16": {
+        "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "bytes": 1393492,
+        "triangles": 44412,
+        "degenerateTriangles": 0,
+        "jsonChunkBytes": 8136,
+        "binChunkBytes": 1385328,
+        "attributeLogicalBytes": {
+          "POSITION": 852384,
+          "INDEX": 532944
+        },
+        "uniqueReferencedAccessorBytes": 1385328,
+        "primitiveCount": 10,
+        "vertexRecordsAcrossPrimitives": 71032,
+        "primitives": [
+          {
+            "mesh": "Trunk_bark_plumblack",
+            "material": "Trunk_bark_plumblack",
+            "triangles": 2990,
+            "vertexRecords": 1542,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Golden_bark_veins",
+            "material": "Golden_bark_veins",
+            "triangles": 230,
+            "vertexRecords": 276,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Branches_plum",
+            "material": "Branches_plum",
+            "triangles": 3732,
+            "vertexRecords": 1964,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Canopy_depth_rose",
+            "material": "Canopy_depth_rose",
+            "triangles": 480,
+            "vertexRecords": 252,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Canopy_peach",
+            "material": "Canopy_peach",
+            "triangles": 3680,
+            "vertexRecords": 1932,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Canopy_rose",
+            "material": "Canopy_rose",
+            "triangles": 1040,
+            "vertexRecords": 546,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_blush",
+            "material": "Sakura_petal_blush",
+            "triangles": 11350,
+            "vertexRecords": 22700,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_cream",
+            "material": "Sakura_petal_cream",
+            "triangles": 4560,
+            "vertexRecords": 9120,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_pink",
+            "material": "Sakura_petal_pink",
+            "triangles": 11030,
+            "vertexRecords": 22060,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_warm_rose",
+            "material": "Sakura_petal_warm_rose",
+            "triangles": 5320,
+            "vertexRecords": 10640,
+            "attributes": [
+              "POSITION"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          }
+        ],
+        "materials": [
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.11372549019607843,
+                0.047058823529411764,
+                0.13333333333333333,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "name": "Trunk_bark_plumblack",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9686274509803922,
+                0.6784313725490196,
+                0.396078431372549,
+                1.0
+              ],
+              "roughnessFactor": 0.73,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.35,
+              0.13,
+              0.035
+            ],
+            "name": "Golden_bark_veins",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.16470588235294117,
+                0.07450980392156863,
+                0.18823529411764706,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "name": "Branches_plum",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.8274509803921568,
+                0.5019607843137255,
+                0.611764705882353,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.2,
+              0.09,
+              0.12
+            ],
+            "name": "Canopy_depth_rose",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9647058823529412,
+                0.6901960784313725,
+                0.6745098039215687,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.2,
+              0.09,
+              0.12
+            ],
+            "name": "Canopy_peach",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9333333333333333,
+                0.5803921568627451,
+                0.6784313725490196,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.2,
+              0.09,
+              0.12
+            ],
+            "name": "Canopy_rose",
+            "doubleSided": false
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.984313725490196,
+                0.8117647058823529,
+                0.8156862745098039,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.3,
+              0.17,
+              0.18
+            ],
+            "name": "Sakura_petal_blush",
+            "doubleSided": true
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9725490196078431,
+                0.8431372549019608,
+                0.7764705882352941,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.3,
+              0.17,
+              0.18
+            ],
+            "name": "Sakura_petal_cream",
+            "doubleSided": true
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9764705882352941,
+                0.7176470588235294,
+                0.7725490196078432,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.3,
+              0.17,
+              0.18
+            ],
+            "name": "Sakura_petal_pink",
+            "doubleSided": true
+          },
+          {
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9725490196078431,
+                0.6196078431372549,
+                0.6784313725490196,
+                1.0
+              ],
+              "roughnessFactor": 0.88,
+              "metallicFactor": 0.0
+            },
+            "emissiveFactor": [
+              0.3,
+              0.17,
+              0.18
+            ],
+            "name": "Sakura_petal_warm_rose",
+            "doubleSided": true
+          }
+        ],
+        "textures": 0,
+        "nodes": [
+          {
+            "name": "world",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Trunk_bark_plumblack",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Golden_bark_veins",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Branches_plum",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Canopy_depth_rose",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Canopy_peach",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Canopy_rose",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_blush",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_cream",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_pink",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_warm_rose",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          }
+        ],
+        "boundsYUpMeters": [
+          [
+            -12.786479949951172,
+            -1.026049256324768,
+            -12.026215553283691
+          ],
+          [
+            13.287308692932129,
+            24.86863899230957,
+            10.933910369873047
+          ]
+        ],
+        "protectedMaterialFactors": {
+          "Trunk_bark_plumblack": {
+            "Base Color": [
+              0.11372549086809158,
+              0.0470588244497776,
+              0.13333334028720856,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0
+          },
+          "Golden_bark_veins": {
+            "Base Color": [
+              0.9686274528503418,
+              0.6784313917160034,
+              0.3960784375667572,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.7300000190734863,
+            "Emission Color": [
+              0.3499999940395355,
+              0.12999999523162842,
+              0.03500000014901161,
+              1.0
+            ],
+            "Emission Strength": 1.0
+          },
+          "Branches_plum": {
+            "Base Color": [
+              0.16470588743686676,
+              0.07450980693101883,
+              0.1882352977991104,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0
+          }
+        },
+        "rootNodes": [
+          {
+            "name": "world",
+            "worldMatrix": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ]
+      },
+      "r17": {
+        "sha256": "cc07824bef901d30ce833880ab835027d027f15ab26eb327e6b6d6bb46d2d679",
+        "bytes": 3854076,
+        "triangles": 49452,
+        "degenerateTriangles": 0,
+        "jsonChunkBytes": 13328,
+        "binChunkBytes": 3840720,
+        "attributeLogicalBytes": {
+          "POSITION": 1772004,
+          "NORMAL": 1772004,
+          "INDEX": 296712
+        },
+        "uniqueReferencedAccessorBytes": 3840720,
+        "primitiveCount": 14,
+        "vertexRecordsAcrossPrimitives": 147667,
+        "primitives": [
+          {
+            "mesh": "Branches_plum",
+            "material": "Branches_plum",
+            "triangles": 3732,
+            "vertexRecords": 10704,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Canopy_depth_rose",
+            "material": "Canopy_depth_rose",
+            "triangles": 480,
+            "vertexRecords": 1440,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Canopy_peach",
+            "material": "Canopy_peach",
+            "triangles": 3680,
+            "vertexRecords": 11040,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Canopy_rose",
+            "material": "Canopy_rose",
+            "triangles": 1040,
+            "vertexRecords": 3120,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Golden_bark_veins",
+            "material": "Golden_bark_veins",
+            "triangles": 230,
+            "vertexRecords": 688,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_blush",
+            "material": "Sakura_petal_blush",
+            "triangles": 11350,
+            "vertexRecords": 34050,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_cream",
+            "material": "Sakura_petal_cream",
+            "triangles": 4560,
+            "vertexRecords": 13680,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_pink",
+            "material": "Sakura_petal_pink",
+            "triangles": 11030,
+            "vertexRecords": 33090,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Sakura_petal_warm_rose",
+            "material": "Sakura_petal_warm_rose",
+            "triangles": 5320,
+            "vertexRecords": 15960,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "Trunk_bark_plumblack",
+            "material": "Trunk_bark_plumblack",
+            "triangles": 2990,
+            "vertexRecords": 8775,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": false,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "R17_Lush_Cupped_Flower_Mesh_eco",
+            "material": "R17_Lush_DeepRose",
+            "triangles": 1216,
+            "vertexRecords": 3648,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "R17_Lush_Cupped_Flower_Mesh_eco",
+            "material": "R17_Lush_Blush",
+            "triangles": 1104,
+            "vertexRecords": 3312,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "R17_Lush_Cupped_Flower_Mesh_eco",
+            "material": "R17_Lush_Peach",
+            "triangles": 1040,
+            "vertexRecords": 3120,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          },
+          {
+            "mesh": "R17_Lush_Cupped_Flower_Mesh_eco",
+            "material": "R17_Lush_Gold",
+            "triangles": 1680,
+            "vertexRecords": 5040,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "doubleSided": true,
+            "alphaMode": "OPAQUE"
+          }
+        ],
+        "materials": [
+          {
+            "name": "Branches_plum",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.16470588743686676,
+                0.07450980693101883,
+                0.1882352977991104,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "emissiveFactor": [
+              0.20000000298023224,
+              0.09000000357627869,
+              0.11999999731779099
+            ],
+            "name": "Canopy_depth_rose",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.8274509906768799,
+                0.501960813999176,
+                0.6117647290229797,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "emissiveFactor": [
+              0.20000000298023224,
+              0.09000000357627869,
+              0.11999999731779099
+            ],
+            "name": "Canopy_peach",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9647058844566345,
+                0.6901960968971252,
+                0.6745098233222961,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "emissiveFactor": [
+              0.20000000298023224,
+              0.09000000357627869,
+              0.11999999731779099
+            ],
+            "name": "Canopy_rose",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9333333373069763,
+                0.5803921818733215,
+                0.6784313917160034,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "emissiveFactor": [
+              0.3499999940395355,
+              0.12999999523162842,
+              0.03500000014901161
+            ],
+            "name": "Golden_bark_veins",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9686274528503418,
+                0.6784313917160034,
+                0.3960784375667572,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.7300000190734863
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.30000001192092896,
+              0.17000000178813934,
+              0.18000000715255737
+            ],
+            "name": "Sakura_petal_blush",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9843137264251709,
+                0.8117647171020508,
+                0.8156862854957581,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.30000001192092896,
+              0.17000000178813934,
+              0.18000000715255737
+            ],
+            "name": "Sakura_petal_cream",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9725490212440491,
+                0.843137264251709,
+                0.7764706015586853,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.30000001192092896,
+              0.17000000178813934,
+              0.18000000715255737
+            ],
+            "name": "Sakura_petal_pink",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9764705896377563,
+                0.7176470756530762,
+                0.772549033164978,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.30000001192092896,
+              0.17000000178813934,
+              0.18000000715255737
+            ],
+            "name": "Sakura_petal_warm_rose",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9725490212440491,
+                0.6196078658103943,
+                0.6784313917160034,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "name": "Trunk_bark_plumblack",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.11372549086809158,
+                0.0470588244497776,
+                0.13333334028720856,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8799999952316284
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.019750000830739745,
+              0.008500000216066839,
+              0.012500000186264515
+            ],
+            "name": "R17_Lush_DeepRose",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.7900000214576721,
+                0.3400000035762787,
+                0.5,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8600000143051147
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.023000000759959227,
+              0.013249999482184638,
+              0.015000000819563875
+            ],
+            "name": "R17_Lush_Blush",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9200000166893005,
+                0.5299999713897705,
+                0.6000000238418579,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8700000047683716
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.015980000827908514,
+              0.01105000019520519,
+              0.0093500007107854
+            ],
+            "name": "R17_Lush_Peach",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9399999976158142,
+                0.6499999761581421,
+                0.550000011920929,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.8899999856948853
+            }
+          },
+          {
+            "doubleSided": true,
+            "emissiveFactor": [
+              0.05639999859631062,
+              0.041399998931586746,
+              0.022799999204278
+            ],
+            "name": "R17_Lush_Gold",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                0.9399999976158142,
+                0.6899999976158142,
+                0.3799999952316284,
+                1
+              ],
+              "metallicFactor": 0,
+              "roughnessFactor": 0.7699999809265137
+            }
+          }
+        ],
+        "textures": 0,
+        "nodes": [
+          {
+            "name": "Branches_plum",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Canopy_depth_rose",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Canopy_peach",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Canopy_rose",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Golden_bark_veins",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_blush",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_cream",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_pink",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Sakura_petal_warm_rose",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "Trunk_bark_plumblack",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "world",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          },
+          {
+            "name": "R17_Lush_Additional_Crown_eco",
+            "translation": null,
+            "rotation": null,
+            "scale": null,
+            "matrix": null
+          }
+        ],
+        "boundsYUpMeters": [
+          [
+            -12.92000675201416,
+            -1.026049256324768,
+            -12.026215553283691
+          ],
+          [
+            13.287308692932129,
+            24.86863899230957,
+            10.933910369873047
+          ]
+        ],
+        "protectedMaterialFactors": {
+          "Branches_plum": {
+            "Base Color": [
+              0.16470588743686676,
+              0.07450980693101883,
+              0.1882352977991104,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0
+          },
+          "Golden_bark_veins": {
+            "Base Color": [
+              0.9686274528503418,
+              0.6784313917160034,
+              0.3960784375667572,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.7300000190734863,
+            "Emission Color": [
+              0.3499999940395355,
+              0.12999999523162842,
+              0.03500000014901161,
+              1.0
+            ],
+            "Emission Strength": 1.0
+          },
+          "Trunk_bark_plumblack": {
+            "Base Color": [
+              0.11372549086809158,
+              0.0470588244497776,
+              0.13333334028720856,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0
+          }
+        },
+        "rootNodes": [
+          {
+            "name": "world",
+            "worldMatrix": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R17_Lush_Additional_Crown_eco",
+            "worldMatrix": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ]
+      },
+      "protectedGeometryComparison": {
+        "Branches_plum": {
+          "r16Triangles": 3732,
+          "r17Triangles": 3732,
+          "missingTriangles": 0,
+          "addedTriangles": 0,
+          "importedPBRExact": true
+        },
+        "Golden_bark_veins": {
+          "r16Triangles": 230,
+          "r17Triangles": 230,
+          "missingTriangles": 0,
+          "addedTriangles": 0,
+          "importedPBRExact": true
+        },
+        "Trunk_bark_plumblack": {
+          "r16Triangles": 2990,
+          "r17Triangles": 2990,
+          "missingTriangles": 0,
+          "addedTriangles": 0,
+          "importedPBRExact": true
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Triangle comparison ignores winding and uses quantized world coordinates; mismatch requires review.",
+    "Secondary contact proxy 45/68 not repaired or re-tested.",
+    "Logical accessor totals may overlap; BIN bytes are physical. No export, render or runtime GPU test."
+  ],
+  "editableSource": {
+    "sha256": "8fadb16d1458f21fe95e63e00c2dc6a1feaba8aaa19e0d861b7fb2a44076beb9",
+    "opened": true,
+    "collections": {
+      "QUALITY": {
+        "meshes": 12,
+        "triangles": 220088
+      },
+      "ECO": {
+        "meshes": 11,
+        "triangles": 49452
+      }
+    }
+  },
+  "protectedGeometryExactAtQuantization": true
+}
