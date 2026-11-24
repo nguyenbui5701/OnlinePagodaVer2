@@ -1,13 +1,14 @@
 import { createServer } from 'node:http';
 import { timingSafeEqual } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
-import { synthesize } from './process.mjs';
+import { demoEnabled, synthesize } from './process.mjs';
 
 export const maxBytes = 192000;
 const allowedNames = new Set(['an', 'binh', 'chi', 'duyen']);
 const allowedGifts = new Set(['rose', 'lantern']);
 const ttl = 15 * 60 * 1000;
-export const servicePermissionVerified = false;
+const stopOnFailure = new Set(['service-unreachable', 'service-http-failure',
+  'python-unavailable', 'dependency-unavailable', 'disabled']);
 
 function templateOf(json) {
   if (!json || typeof json !== 'object' || Object.keys(json).length !== 3 ||
@@ -82,11 +83,23 @@ class SynthesisQueue {
   }
 }
 
-export function createVoiceServer({ token, run, clock = Date.now, origin = 'http://127.0.0.1:5189' }) {
+export function createVoiceServer({ token, run, diagnostic = () => {}, clock = Date.now, origin = 'http://127.0.0.1:5189' }) {
   if (!/^[0-9a-f]{64}$/.test(token ?? '')) throw new Error('An ephemeral 32-byte hexadecimal token is required.');
   const auth = Buffer.from('Bearer ' + token);
   if (!/^http:\/\/127\.0\.0\.1:[1-9][0-9]{0,4}$/.test(origin)) throw new Error('Viewer origin must be IPv4 loopback.');
-  const queue = run && new SynthesisQueue(run, clock);
+  let stopped = false;
+  const queue = run && new SynthesisQueue(async (template, signal) => {
+    if (stopped) throw new Error('service-stopped');
+    try {
+      return await run(template, signal);
+    } catch (error) {
+      if (stopOnFailure.has(error.message)) {
+        stopped = true;
+        diagnostic(error.message);
+      }
+      throw error;
+    }
+  }, clock);
   let windowStart = clock();
   let requests = 0;
   return createServer({ headersTimeout: 4000, requestTimeout: 4000, connectionsCheckingInterval: 1000 }, async (req, res) => {
@@ -126,6 +139,7 @@ export function createVoiceServer({ token, run, clock = Date.now, origin = 'http
     try { if (size === expected) template = templateOf(JSON.parse(Buffer.concat(body))); } catch {}
     if (!template) return reply(400);
     if (!queue) return reply(503);
+    if (stopped) return reply(502);
     const controller = new AbortController();
     res.once('close', () => controller.abort());
     try {
@@ -141,6 +155,8 @@ export function createVoiceServer({ token, run, clock = Date.now, origin = 'http
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  createVoiceServer({ token: process.env.V2_TTS_TOKEN, run: servicePermissionVerified ? synthesize : undefined })
-    .listen(5202, '127.0.0.1', () => console.log('Local DEMO voice worker. DYNAMIC_TTS_BLOCKED.'));
+  const enabled = demoEnabled();
+  createVoiceServer({ token: process.env.V2_TTS_TOKEN, run: enabled ? synthesize : undefined,
+    diagnostic: code => console.error('Local DEMO voice stopped:', code) })
+    .listen(5202, '127.0.0.1', () => console.log('Local DEMO voice worker:', enabled ? 'GTTS_ENABLED' : 'GTTS_OFF'));
 }

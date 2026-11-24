@@ -12,6 +12,7 @@ type AudioOptions = {
   dynamic?: boolean;
   namedProvider?: NamedProvider;
   idleSpeech?: ReadonlyMap<string, Float32Array>;
+  loadIdleSpeech?: (signal: AbortSignal) => Promise<ReadonlyMap<string, Float32Array>>;
 };
 
 const bells: IdleCue[] = [0, 1, 2, 3].map(i => ({ id: 'lotus-bell-' + i, kind: 'bell' }));
@@ -20,7 +21,12 @@ export class AudioManager {
   private named?: NamedVoice;
   private dynamic = 'DYNAMIC_TTS_BLOCKED';
   private readonly idle?: IdleBlessingDirector;
-  private readonly speech?: ReadonlyMap<string, Float32Array>;
+  private speech?: ReadonlyMap<string, Float32Array>;
+  private speechState = 'IDLE_SPEECH_LIBRARY_PENDING';
+  private speechControl?: HTMLInputElement;
+  private speechLabel?: Text;
+  private readonly loadIdleSpeech?: AudioOptions['loadIdleSpeech'];
+  private speechRequest?: AbortController;
   private playBell = true;
   private playSpeech = false;
   private idlePool: IdleCue[] = bells;
@@ -56,6 +62,7 @@ export class AudioManager {
     this.clock = clock;
     this.idle = options.idle && new IdleBlessingDirector(options.idle.seed, options.idle.gap);
     this.speech = options.idleSpeech;
+    this.loadIdleSpeech = options.loadIdleSpeech;
     if (options.namedProvider) {
       this.named = new NamedVoice(options.namedProvider);
       this.dynamic = 'DYNAMIC_TTS_FIXTURE';
@@ -113,7 +120,7 @@ export class AudioManager {
       queue: this.director.queued, marks: this.marks, suppressed: this.director.suppressed,
       voice: this.mixer?.availability, dynamic: this.dynamic,
       ...(this.idle ? { idle: { playing: this.mixer?.idlePlaying ?? false, bell: this.playBell,
-        speech: this.speech?.size ? this.playSpeech : 'IDLE_SPEECH_LIBRARY_PENDING' } } : {}) };
+        speech: this.speech?.size ? this.playSpeech : this.speechState } } : {}) };
   }
 
   suspend(reason: string) {
@@ -125,6 +132,7 @@ export class AudioManager {
 
   dispose() {
     this.disposed = true;
+    this.speechRequest?.abort();
     this.suspend('dispose');
     this.release?.();
     if (this.opening) void this.opening.close().catch(() => {});
@@ -194,6 +202,22 @@ export class AudioManager {
   private activate() {
     this.muted = false;
     this.syncOutput(this.clock());
+    if (this.idle && this.loadIdleSpeech && !this.speechRequest) {
+      const request = new AbortController();
+      this.speechRequest = request;
+      this.speechState = 'IDLE_SPEECH_LOADING';
+      void this.loadIdleSpeech(AbortSignal.any([request.signal, AbortSignal.timeout(10_000)]))
+        .then(speech => {
+          if (request.signal.aborted) return;
+          this.speech = speech;
+          this.speechControl!.disabled = false;
+          this.speechLabel!.data = ' L\u1eddi ch\u00fac l\u00fac r\u1ea3nh';
+        }).catch(() => {
+          if (request.signal.aborted) return;
+          this.speechState = 'IDLE_SPEECH_LIBRARY_UNAVAILABLE';
+          this.speechLabel!.data = ' L\u1eddi ch\u00fac l\u00fac r\u1ea3nh (thi\u1ebfu th\u01b0 vi\u1ec7n h\u1ee3p l\u1ec7)';
+        });
+    }
     this.refreshStatus();
   }
 
@@ -254,14 +278,15 @@ export class AudioManager {
         this.idle?.reset();
         this.mixer?.stopIdle('idle-options', true);
       });
-      label.append(input, text);
+      label.append(input, document.createTextNode(text));
       this.panel.append(label);
       return input;
     };
     checkbox(' Chu\u00f4ng l\u00fac r\u1ea3nh', true, value => { this.playBell = value; });
-    checkbox(this.speech?.size ? ' L\u1eddi ch\u00fac l\u00fac r\u1ea3nh' :
-      ' L\u1eddi ch\u00fac l\u00fac r\u1ea3nh (ch\u1edd duy\u1ec7t b\u1ea3n thu)', false,
-      value => { this.playSpeech = value; }).disabled = !this.speech?.size;
+    this.speechControl = checkbox(this.speech?.size ? ' L\u1eddi ch\u00fac l\u00fac r\u1ea3nh' :
+      ' L\u1eddi ch\u00fac l\u00fac r\u1ea3nh (ch\u01b0a t\u1ea3i)', false, value => { this.playSpeech = value; });
+    this.speechControl.disabled = !this.speech?.size;
+    this.speechLabel = this.speechControl.nextSibling as Text;
     const label = document.createElement('label');
     const interval = document.createElement('input');
     interval.type = 'number';

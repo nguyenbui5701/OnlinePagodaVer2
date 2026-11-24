@@ -11,8 +11,8 @@ export type NamedProvider = (template: VoiceTemplate, signal: AbortSignal) => Pr
 export const sampleRate = 24_000;
 export const maxPcmBytes = 4 * sampleRate * 2;
 
-export function decodeNamedPcm(bytes: Uint8Array): Float32Array {
-  if (bytes.length < 4800 || bytes.length > maxPcmBytes || bytes.length % 2) throw new Error('invalid-pcm');
+export function decodeNamedPcm(bytes: Uint8Array, limit = maxPcmBytes): Float32Array {
+  if (bytes.length < 4800 || bytes.length > limit || bytes.length % 2) throw new Error('invalid-pcm');
   const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
   const samples = new Float32Array(bytes.length / 2);
   let peak = 0;

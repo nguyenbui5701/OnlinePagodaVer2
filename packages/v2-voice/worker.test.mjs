@@ -1,9 +1,10 @@
-﻿import test from 'node:test';
+import test from 'node:test';
 import assert from 'node:assert/strict';
 import { randomBytes } from 'node:crypto';
 import { request } from 'node:http';
-import { createVoiceServer, maxBytes, servicePermissionVerified } from './worker.mjs';
-import { boundedProcess } from './process.mjs';
+import { fileURLToPath } from 'node:url';
+import { createVoiceServer, maxBytes } from './worker.mjs';
+import { boundedProcess, demoEnabled } from './process.mjs';
 
 const origin = 'http://127.0.0.1:5189';
 const template = { nameId: 'an', gift: 'rose', count: 1 };
@@ -31,8 +32,10 @@ async function fixture(t, run, clock) {
   });
 }
 
-test('worker is hard blocked for outbound synthesis and rejects malformed local boundary requests', async t => {
-  assert.equal(servicePermissionVerified, false);
+test('worker defaults to OFF and rejects malformed local boundary requests', async t => {
+  assert.equal(demoEnabled({}), false);
+  assert.equal(demoEnabled({ V2_GTTS_DEMO_ENABLED: 'true' }), false);
+  assert.equal(demoEnabled({ V2_GTTS_DEMO_ENABLED: '1' }), true);
   const send = await fixture(t);
   const valid = await send();
   assert.equal(valid.status, 503);
@@ -133,4 +136,25 @@ test('authenticated request rate limit is bounded', async t => {
 test('local bounded child handles timeout and oversized output', async () => {
   await assert.rejects(boundedProcess(process.execPath, ['-e', 'setInterval(()=>{},1000)'], '', AbortSignal.timeout(250)), /synthesis-failed/);
   await assert.rejects(boundedProcess(process.execPath, ['-e', 'process.stdout.write(Buffer.alloc(193000))'], '', AbortSignal.timeout(1500)), /synthesis-failed/);
+});
+
+test('Python opt-in is forwarded explicitly and absent dependencies fail locally', async () => {
+  const disabled = { ...process.env, V2_GTTS_DEMO_ENABLED: '0' };
+  const enabled = { ...disabled, V2_GTTS_DEMO_ENABLED: '1', FFMPEG_PATH: 'missing-test-ffmpeg' };
+  const python = process.env.TTS_PYTHON || 'python';
+  const args = [new URL('./synthesize.py', import.meta.url)].map(fileURLToPath);
+  await assert.rejects(boundedProcess(python, args, 'invalid', AbortSignal.timeout(2500), disabled), /disabled/);
+  await assert.rejects(boundedProcess(python, args, JSON.stringify(template), AbortSignal.timeout(2500), enabled),
+    /dependency-unavailable/);
+});
+
+test('an upstream refusal preserves fallback and prevents subsequent upstream calls', async t => {
+  let calls = 0;
+  const send = await fixture(t, async () => {
+    calls++;
+    throw new Error('service-http-failure');
+  });
+  assert.equal((await send()).status, 502);
+  assert.equal((await send({ ...template, count: 2 })).status, 502);
+  assert.equal(calls, 1);
 });

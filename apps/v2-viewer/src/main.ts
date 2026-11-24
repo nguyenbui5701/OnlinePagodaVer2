@@ -14,6 +14,7 @@ import { SliceCamera } from './slice-camera.ts';
 import { parseScenario, SliceDriver, timing } from './slice-driver.ts';
 import { AudioManager } from './audio/manager.ts';
 import { idleGap } from './audio/idle-blessing.ts';
+import { loadIdleCorpus } from './audio/idle-corpus.ts';
 import { createCommunityNames, occupancy } from './community-presentation.ts';
 import { showGift, usePersistentNameplates } from './slice-overlay.ts';
 import { createNameplates } from './nameplates.ts';
@@ -148,6 +149,7 @@ async function boot() {
     ? new AudioManager(timing.focusHoldMs, () => start === undefined ? -1 : Math.floor(performance.now() - start), {
       idle: query.get('idlevoice') === 'on' ? { seed, gap: idleGap(query.get('idlegap')) } : undefined,
       dynamic: query.get('dynamicvoice') === 'on',
+      loadIdleSpeech: query.get('idlevoice') === 'on' ? loadIdleCorpus : undefined,
     })
     : undefined;
   let last: number | undefined;
