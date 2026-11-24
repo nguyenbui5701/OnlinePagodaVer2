@@ -18,10 +18,16 @@ BASE=R17/'r17b'
 sys.dont_write_bytecode=True
 sys.path.insert(0,str(R17))
 sys.path.insert(0,str(BASE))
+# Blender --python does not guarantee the script directory is on sys.path.
+# Put our own directory first so the sibling repair module resolves locally.
+sys.path.insert(0,str(ROOT))
 import author_r17_blender as rig
 import author_r17b_preview as compact
 import audit_r17_read_only as audit
 import repair_r18_groups as repair
+if Path(repair.__file__).resolve() != ROOT/'repair_r18_groups.py':
+    raise RuntimeError('R18_REPAIR_MODULE_ORIGIN_MISMATCH '+str(repair.__file__))
+print('R18_REPAIR_MODULE_IMPORT_PASS', str(repair.__file__), flush=True)
 HEAD='07f57cb35ba3ec68184abbd2c173e29a3fcc4788'
 PIN={
  'quality':('preview/sakura_hero_r17b.glb',6981312,'1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267',236888,250000),

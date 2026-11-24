@@ -19,6 +19,7 @@ function Invoke-Native([string]$Script,[string]$Mode,[string]$Label) {
 }
 if ($Phase -eq 'Audit') { throw 'R18_AUDIT_ALREADY_PASS_DO_NOT_REPEAT' }
 if ($Phase -eq 'Final') { throw 'R18_FINAL_HOLD_PENDING_SA_PREVIEW_REVIEW' }
+if (!(Test-Path -LiteralPath .\repair_r18_groups.py -PathType Leaf)) { throw 'R18_REPAIR_MODULE_MISSING: pull the corrected branch first' }
 switch ($Phase) {
     'Build' {
         if (!(Test-Path .\attachment_audit.json)) { throw 'R18_AUDIT_MISSING' }
