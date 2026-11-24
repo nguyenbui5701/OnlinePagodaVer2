@@ -1,0 +1,112 @@
+{
+  "revision": "R18",
+  "assetId": "sakura_hero",
+  "parent": "07f57cb35ba3ec68184abbd2c173e29a3fcc4788",
+  "branch": "assets/sakura-hero-r18-polish",
+  "target": "assets/sakura-hero-r17-lush",
+  "status": "SOURCE_READY_NATIVE_AUDIT_BLOCKED_IN_AI_WORKER",
+  "source": {
+    "acceptedReview": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6033463655",
+    "quality": {
+      "path": "../r17-lush/r17b/preview/sakura_hero_r17b.glb",
+      "sha256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+      "bytes": 6981312,
+      "triangles": 236888,
+      "gitBlobSHA": "cfcbaa2ed71bedafae959541487c91f6de42ab74"
+    },
+    "eco": {
+      "path": "../r17-lush/r17b/preview/sakura_hero_r17b_eco.glb",
+      "sha256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+      "bytes": 2149264,
+      "triangles": 58212,
+      "gitBlobSHA": "d5554055ab689680ca17744653cfc49197b1e773"
+    },
+    "editable": {
+      "path": "../r17-lush/r17b/final/sakura_hero_r17b_editable.blend",
+      "bytes": 22191226,
+      "sha256": "9043df77297e82051dbdc6da2c9bbe5ac38895fa1155d9661fd9ef8cca3d63e2",
+      "gitBlobSHA": "b97cc9208dc000d8838c91b26f2a18b2cbaae910"
+    },
+    "verification": "Historical SA R5 independent binary PASS; current GitHub tree metadata verified; large binary reads empty, no current Blender import."
+  },
+  "coordinateSystem": {
+    "up": "+Y",
+    "metersPerUnit": 1,
+    "waterY": 0,
+    "pivot": "preserve baseline"
+  },
+  "outputs": {
+    "quality": {
+      "path": "sakura_hero_r18.glb",
+      "status": "pending_owner_upload",
+      "sha256": null,
+      "bytes": null,
+      "triangles": null,
+      "cap": 250000
+    },
+    "eco": {
+      "path": "sakura_hero_r18_eco.glb",
+      "status": "pending_owner_upload",
+      "sha256": null,
+      "bytes": null,
+      "triangles": null,
+      "cap": 60000
+    },
+    "editable": {
+      "path": "sakura_hero_r18_editable.blend",
+      "status": "pending_owner_upload",
+      "sha256": null,
+      "bytes": null
+    }
+  },
+  "budget": {
+    "preferred": "R17B bytes/triangles or less; any increase must be justified and reviewed",
+    "guard": "<=5% bytes increase; absolute previous profile caps; no approval implied"
+  },
+  "audit": {
+    "status": "PENDING_NATIVE",
+    "report": "attachment_audit.json",
+    "views": "R18_Attachment_Audit/",
+    "repair": "attachment_diagnostics.json",
+    "validation": "validation.json"
+  },
+  "cycles": {
+    "status": "pending_owner_upload",
+    "resolution": [
+      720,
+      1280
+    ],
+    "samples": 32,
+    "views": [
+      "aerial",
+      "wide",
+      "under_tree",
+      "branch_close",
+      "low_water",
+      "seat_gift_composition"
+    ],
+    "expectedPairs": 12,
+    "plannedNewFrames": 18,
+    "plannedReusedFrames": 6,
+    "lookOnlyNew": 2,
+    "ledger": "cycles_manifest.json",
+    "sheets": "sheet_manifest.json"
+  },
+  "nativeManifest": "native_manifest.json",
+  "shaLedger": "owner_sha256.txt",
+  "reference": {
+    "video": "chuav2.mp4 unavailable in this session; need Owner reattach",
+    "screenshot": "2026-11-24 red-circled Owner screenshot unavailable in this session; no direct fidelity claim"
+  },
+  "provenance": "Original R17B derivative; local Blender Python/NumPy, Pillow; software/license cost 0 VND; no paid services or third-party geometry",
+  "gates": {
+    "saArt": "P10B8_ART_SA_REVIEW_REQUIRED",
+    "native": "BLOCKED_IN_AI_WORKER",
+    "independentBinary": "PENDING_R18_OUTPUT",
+    "ownerArtGO": "PENDING",
+    "integration": "HOLD",
+    "merge": "HOLD",
+    "B9": "HOLD",
+    "C0": "HOLD"
+  }
+}

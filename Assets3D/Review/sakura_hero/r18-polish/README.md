@@ -1,0 +1,21 @@
+# R18 — AI Visual17 P10B8 tree polish (source review only)
+
+[Task AI Visual17](https://github.com/nguyenbui5701/OnlinePagodaVer2/blob/main/Task/AI_VISUAL_17_P10B8_R18_TREE_POLISH.md), [Design32](https://github.com/nguyenbui5701/OnlinePagodaVer2/blob/main/Design/32_P10B8_TREE_AND_LOTUS_WORLD_DENSITY.md), Rules07/14; [SA R5](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6033463655) and Owner final GO in AI Visual16 §12. Frozen parent `07f57cb35ba3ec68184abbd2c173e29a3fcc4788`; PR26 R2 read-only. No changes outside this directory.
+
+**Native production blocked in AI worker:** no Blender/bpy, git DNS unavailable, all three large baseline binary content reads returned zero bytes; previously supplied ZIP not accessible in current session. Prior SA R5 verification remains valid, not a new local import. Original reference video `chuav2.mp4` (15s/33s) and red-circled screenshot not accessible; please reattach. No recreated baseline or invented output SHA. This is a reviewable source recipe, not an accepted R18 asset.
+
+## Finding → planned action → evidence
+- Original R16 draped twig source (inherited by R17B) generates 5 QUALITY /10 ECO short capped stems at low elevations, without a parent-connection segment in that loop. Actual R17B under-tree/close sheets show apparently hanging groups. Need native component/attachment audit, not assume all petals disconnected by error.
+- Identify coordinate-welded wood components, triangle intersection graph to trunk, draped stems (30 triangles each), low original flower fan components. Report actual component IDs, bounds, distance and parent surface. Add tapered indexed bridge only to a rooted wood parent; require BVH overlap at both ends. Small ornamental bark relief and ordinary detached petal cards are not indiscriminately welded. Unattributed low groups, long gaps or nonintersecting endpoints stop for manual inspection. Triangle intersection is a contact proxy, not proof of manifold union or all occluded geometry.
+- Preserve existing R17B geometry bytes; append compact indexed wood supports/limited branch gold ribbons using original named materials. Increase Golden_bark_veins emissive factor .35/.13/.035 → .85/.38/.085, roughness .73 → .65; subtle canopy and shadow-rose emission only. No global exposure increase or yellow canopy. Gold accents follow actual support surfaces. Actual material ledger on build. Candidate triangle cap 250k/60k and byte guard +5%; preferred original budgets, any increase requires explicit SA review. Preserve bounds within 1mm, origin/waterline, no runtime changes.
+
+## Native execution, phase 1 only first
+From the new worktree in this directory:
+```powershell
+& .\run_r18.ps1 -Phase Audit
+```
+Use Blender 4.5.16 LTS from prior R17B run. Script checks all three baseline SHA/size pins, opens both GLBs and the existing editable .blend, inventories actual attachment findings and renders six diagnostic baseline PNGs (underside/front/side per profile). **Send attachment_audit.json and diagnostic images/logs for review before Build.** No asset creation in Audit. Source not yet native tested. If error, stop and send logs; no retry of historical R17B renders.
+
+After native audit findings are reviewed and bounded repair is suitable, `& .\run_r18.ps1 -Phase Build` generates two actual R18 GLBs, reimports and checks extents/geometry/index/degeneracy, records attachment diagnostics and material/budget changes. If any unresolved gap, stop; no final render or art PASS. The proposed repair is conditional, not an already verified fix. `& .\run_r18.ps1 -Phase Final` only after valid build and inspection of attachment report: create one editable source with separate LOD collections, reopen/switch check, 24 matched 720×1280/32-sample Cycles records (12 R18 +6 newly framed R17B +6 exact previous same-rig R17B references), 2 additional controlled warm-fill images, 7 sheets, checksums. Seat/gift view camera-only; no new seat/lotus props. Offline camera poses are evidence, never runtime camera changes. No GPU/LIVE proof.
+
+Upload actual outputs to same branch as specified in BINARY_HANDOFF. No merge. **STOP P10B8_ART_SA_REVIEW_REQUIRED**, initial PR source review only; final SA art/binary decision and separate Owner GO pending. Cost 0 VND.
