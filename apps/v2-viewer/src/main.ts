@@ -75,7 +75,7 @@ if (liveRequested) {
 
 const errors: string[] = [];
 const report: Record<string, unknown> = {
-  repoRevision: __REPO_REVISION__, profile, viewport: [captureWidth, captureHeight],
+  repoRevision: __REPO_REVISION__, requestedTreeRevision: requestedTree, profile, viewport: [captureWidth, captureHeight],
   safeMargin: capture.safeMargin, near: capture.near, far: capture.far, scenario, seed, errors, contextRestores: 0,
   ...(liveRequested && { liveStatus: 'OFFLINE', liveReason: 'P10B2_PROVIDER_ACCESS_BLOCKED' }),
 };
@@ -350,6 +350,11 @@ async function boot() {
       report.goldMaterial = gold.report;
     }
     console.info(`Verified Sakura ${sakura.report.assetRevision}`, sakura.report.sha256, __REPO_REVISION__);
+    if (requestedTree === 'R17B') {
+      const heading = document.querySelector('aside h1');
+      if (heading) heading.textContent = `Sakura ${sakura.report.assetRevision}`;
+      canvas.setAttribute('aria-label', `C?nh 3D Sakura ${sakura.report.assetRevision}`);
+    }
     if (sakura.report.fallbackReason) {
       const notice = document.createElement('p');
       notice.setAttribute('role', 'status');

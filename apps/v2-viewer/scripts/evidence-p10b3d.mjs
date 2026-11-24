@@ -32,6 +32,8 @@ async function open(origin, profile, seed, flags = '', scenario = 'community', t
   const pin = tree === 'r17b' ? r17b : r16;
   assert.equal(loaded.assetRevision, pin.revision, loaded.fallbackReason);
   assert.equal(loaded.sha256, pin.profiles[profile].sha256);
+  assert.equal(await page.locator('aside h1').textContent(), `Sakura ${pin.revision}`);
+  assert.ok((await page.locator('#capture').getAttribute('aria-label')).endsWith(pin.revision));
   await page.addStyleTag({ content: '#gift-fx { animation: none }' });
   return { page, pageErrors };
 }
@@ -411,6 +413,8 @@ async function fallback(profile) {
       assert.equal(r.asset.sha256, r16.profiles[profile].sha256);
       assert.equal(r.asset.profile, profile);
       assert.match(await page.title(), /R16 fallback/);
+      assert.equal(await page.locator('aside h1').textContent(), 'Sakura R16');
+      assert.ok((await page.locator('#capture').getAttribute('aria-label')).endsWith('R16'));
       assert.match(r.asset.fallbackReason, mode === 'wrong-sha' ? /SHA-256/ : /404/);
       assert.deepEqual(requests, ['/r17b/' + pin.file, '/r16/' + r16.profiles[profile].file]);
       assert.equal(await shot(page, `${profile}-fallback-${mode}.png`, r), expectedPixels);
