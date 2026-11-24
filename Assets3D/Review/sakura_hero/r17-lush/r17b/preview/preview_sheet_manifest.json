@@ -1,0 +1,868 @@
+{
+  "previewManifestSHA256": "59bff84a646b00c577203f0d028d5a164cc92d896bb54c5361c63eac25e26103",
+  "sheets": [
+    {
+      "file": "hero_full_9x16_ABC.jpg",
+      "sha256": "1ddd4fbba76ce1b9f9966ee52c84fb86ea6667b3e38c4a8475f4a677dc3a2b33",
+      "bytes": 109468,
+      "metrics": [
+        {
+          "profile": "quality",
+          "baseline": "r16",
+          "meanRGBDelta": [
+            1.1938020833333334,
+            1.3086067708333333,
+            1.2121397569444445
+          ],
+          "lumaDeltaOver16Pct": 1.9427083333333333,
+          "note": "Noise-inclusive image difference proxy, not segmented silhouette or art acceptance."
+        },
+        {
+          "profile": "quality",
+          "baseline": "r17",
+          "meanRGBDelta": [
+            1.2964496527777778,
+            1.4675,
+            1.3188411458333333
+          ],
+          "lumaDeltaOver16Pct": 2.2495659722222223,
+          "note": "Noise-inclusive image difference proxy, not segmented silhouette or art acceptance."
+        },
+        {
+          "profile": "eco",
+          "baseline": "r16",
+          "meanRGBDelta": [
+            3.977052951388889,
+            4.1598046875,
+            3.7597786458333333
+          ],
+          "lumaDeltaOver16Pct": 7.839409722222222,
+          "note": "Noise-inclusive image difference proxy, not segmented silhouette or art acceptance."
+        },
+        {
+          "profile": "eco",
+          "baseline": "r17",
+          "meanRGBDelta": [
+            3.9276258680555554,
+            4.0856293402777775,
+            3.6849652777777777
+          ],
+          "lumaDeltaOver16Pct": 7.654947916666667,
+          "note": "Noise-inclusive image difference proxy, not segmented silhouette or art acceptance."
+        }
+      ],
+      "sourceFrames": [
+        {
+          "file": "quality_r16_hero_full_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r16",
+          "view": "hero_full_9x16",
+          "bytes": 255892,
+          "sha256": "e25fd41cdb6ad2c3be0b537cfe5568303a250a4209039c38b02dbb49f7821c65",
+          "modelSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45.0
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-08,
+              0.9267789125442505,
+              0.37560737133026123,
+              50.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "quality_r17_hero_full_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r17",
+          "view": "hero_full_9x16",
+          "bytes": 257011,
+          "sha256": "0ced55ac8473a4f84e10d95794d2d6707794f5cb493cca6e983007a7047018e8",
+          "modelSHA256": "4115ba647eaa960e5fd2e9949462b52a2010231bf84ac25b574447bd36c5a73f",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45.0
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-08,
+              0.9267789125442505,
+              0.37560737133026123,
+              50.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "quality_r17b_hero_full_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r17b",
+          "view": "hero_full_9x16",
+          "bytes": 257012,
+          "sha256": "51f6567e981b67900cea7f0924138c23abc5f03fe82a9f463b8b8d2e42c043cf",
+          "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45.0
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-08,
+              0.9267789125442505,
+              0.37560737133026123,
+              50.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "eco_r16_hero_full_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r16",
+          "view": "hero_full_9x16",
+          "bytes": 248929,
+          "sha256": "ddaa27840e1b1e4fe89362691d65666409b540e00743689a739bea8342f87e5f",
+          "modelSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45.0
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-08,
+              0.9267789125442505,
+              0.37560737133026123,
+              50.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "eco_r17_hero_full_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r17",
+          "view": "hero_full_9x16",
+          "bytes": 250240,
+          "sha256": "bcc36df15c7fc7fe30a35e6de9535804f094bf64c6e3daea448beb601d635caa",
+          "modelSHA256": "cc07824bef901d30ce833880ab835027d027f15ab26eb327e6b6d6bb46d2d679",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45.0
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-08,
+              0.9267789125442505,
+              0.37560737133026123,
+              50.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "eco_r17b_hero_full_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r17b",
+          "view": "hero_full_9x16",
+          "bytes": 254727,
+          "sha256": "36c02d80a51d893d7a52660cfbe095340b9635c7179f22bc59ff891ead5a50e4",
+          "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45.0
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-08,
+              0.9267789125442505,
+              0.37560737133026123,
+              50.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "file": "hero_wide_water_9x16_ABC.jpg",
+      "sha256": "923c25e7898d41ba8ec227e8cb5575ad42738a83860b9ac6c647c566b23c5f98",
+      "bytes": 117538,
+      "metrics": [
+        {
+          "profile": "quality",
+          "baseline": "r16",
+          "meanRGBDelta": [
+            2.2843532986111112,
+            2.659348958333333,
+            2.366150173611111
+          ],
+          "lumaDeltaOver16Pct": 3.8394097222222223,
+          "note": "Noise-inclusive image difference proxy, not segmented silhouette or art acceptance."
+        },
+        {
+          "profile": "quality",
+          "baseline": "r17",
+          "meanRGBDelta": [
+            2.2627430555555557,
+            2.6624826388888887,
+            2.3236979166666667
+          ],
+          "lumaDeltaOver16Pct": 3.9227430555555554,
+          "note": "Noise-inclusive image difference proxy, not segmented silhouette or art acceptance."
+        },
+        {
+          "profile": "eco",
+          "baseline": "r16",
+          "meanRGBDelta": [
+            7.833485243055556,
+            7.807369791666667,
+            6.851844618055556
+          ],
+          "lumaDeltaOver16Pct": 14.481770833333334,
+          "note": "Noise-inclusive image difference proxy, not segmented silhouette or art acceptance."
+        },
+        {
+          "profile": "eco",
+          "baseline": "r17",
+          "meanRGBDelta": [
+            7.766944444444444,
+            7.713263888888889,
+            6.761666666666667
+          ],
+          "lumaDeltaOver16Pct": 14.319444444444445,
+          "note": "Noise-inclusive image difference proxy, not segmented silhouette or art acceptance."
+        }
+      ],
+      "sourceFrames": [
+        {
+          "file": "quality_r16_hero_wide_water_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r16",
+          "view": "hero_wide_water_9x16",
+          "bytes": 260601,
+          "sha256": "6eb26b6fb66cca683f022b0804f244ba3ee46866ea5badaef349b1b931551cb6",
+          "modelSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "quality_r17_hero_wide_water_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r17",
+          "view": "hero_wide_water_9x16",
+          "bytes": 262879,
+          "sha256": "7f8a7c860d05a509d5bd1c26686d03b4aa35b827b7f0f2d4435f1ddf859b18a9",
+          "modelSHA256": "4115ba647eaa960e5fd2e9949462b52a2010231bf84ac25b574447bd36c5a73f",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "quality_r17b_hero_wide_water_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r17b",
+          "view": "hero_wide_water_9x16",
+          "bytes": 265613,
+          "sha256": "e18e3d34f56836d683a029edf96b03f32da1a25f63f64cf51851d2e5c101a80a",
+          "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "eco_r16_hero_wide_water_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r16",
+          "view": "hero_wide_water_9x16",
+          "bytes": 251039,
+          "sha256": "3662fa699e18844bb8453ee19b0c77d0a9fc46b895c7113b954927f2df908f8b",
+          "modelSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "eco_r17_hero_wide_water_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r17",
+          "view": "hero_wide_water_9x16",
+          "bytes": 251819,
+          "sha256": "40777e1061850cb96bd24d3e31c24076159ec7cda206983378be120dc3ea1a2e",
+          "modelSHA256": "cc07824bef901d30ce833880ab835027d027f15ab26eb327e6b6d6bb46d2d679",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "eco_r17b_hero_wide_water_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r17b",
+          "view": "hero_wide_water_9x16",
+          "bytes": 260471,
+          "sha256": "9ae0cbccf6f2bdf93a02d42c16d73b8882c6a2b60fe0f1804d8c9413115e6127",
+          "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "file": "under_crown_9x16_ABC.jpg",
+      "sha256": "f80bc2b12feac3630a8e5ce2ca222aca79d758b0e7440c0e700ff5ef34bfcb54",
+      "bytes": 228420,
+      "metrics": [
+        {
+          "profile": "quality",
+          "baseline": "r16",
+          "meanRGBDelta": [
+            3.5744921875,
+            3.9558289930555555,
+            3.951801215277778
+          ],
+          "lumaDeltaOver16Pct": 3.5247395833333335,
+          "note": "Noise-inclusive image difference proxy, not segmented silhouette or art acceptance."
+        },
+        {
+          "profile": "quality",
+          "baseline": "r17",
+          "meanRGBDelta": [
+            3.493771701388889,
+            3.8676605902777776,
+            3.827560763888889
+          ],
+          "lumaDeltaOver16Pct": 3.490451388888889,
+          "note": "Noise-inclusive image difference proxy, not segmented silhouette or art acceptance."
+        },
+        {
+          "profile": "eco",
+          "baseline": "r16",
+          "meanRGBDelta": [
+            34.69724392361111,
+            37.40976128472222,
+            34.03448784722222
+          ],
+          "lumaDeltaOver16Pct": 37.7265625,
+          "note": "Noise-inclusive image difference proxy, not segmented silhouette or art acceptance."
+        },
+        {
+          "profile": "eco",
+          "baseline": "r17",
+          "meanRGBDelta": [
+            34.52926649305556,
+            37.128671875,
+            33.77793836805556
+          ],
+          "lumaDeltaOver16Pct": 37.68272569444444,
+          "note": "Noise-inclusive image difference proxy, not segmented silhouette or art acceptance."
+        }
+      ],
+      "sourceFrames": [
+        {
+          "file": "quality_r16_under_crown_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r16",
+          "view": "under_crown_9x16",
+          "bytes": 323469,
+          "sha256": "1e3dab12e83a09c3994c97b90e0f668fcdffda6e5d6b1fc58b53cd62341be1c9",
+          "modelSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "quality_r17_under_crown_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r17",
+          "view": "under_crown_9x16",
+          "bytes": 323011,
+          "sha256": "10f6e1d64074741195a2d37849888845c36f5d40b7a32b03d40ba269b2a7b021",
+          "modelSHA256": "4115ba647eaa960e5fd2e9949462b52a2010231bf84ac25b574447bd36c5a73f",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "quality_r17b_under_crown_9x16_preview.png",
+          "profile": "quality",
+          "revision": "r17b",
+          "view": "under_crown_9x16",
+          "bytes": 326326,
+          "sha256": "df2871d852b401614803ccc1f1e76e02066b132ebbf3e2f4921aa720897b853f",
+          "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "eco_r16_under_crown_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r16",
+          "view": "under_crown_9x16",
+          "bytes": 317212,
+          "sha256": "95f23a13f1dc9022814a017ba794818417809e5d9669ccbb4551d8da776065ab",
+          "modelSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "eco_r17_under_crown_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r17",
+          "view": "under_crown_9x16",
+          "bytes": 318599,
+          "sha256": "12b0bed94c158285448cf77e6b9facab9a7a008bd54b706cb955ec7e0c03cbfd",
+          "modelSHA256": "cc07824bef901d30ce833880ab835027d027f15ab26eb327e6b6d6bb46d2d679",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "file": "eco_r17b_under_crown_9x16_preview.png",
+          "profile": "eco",
+          "revision": "r17b",
+          "view": "under_crown_9x16",
+          "bytes": 323172,
+          "sha256": "03902c153beb18597eb2424ac13271e1dc68d92e36e810e8c7695b91d6c6e195",
+          "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "width": 360,
+          "height": 640,
+          "samples": 8,
+          "renderer": "Blender Cycles CPU",
+          "cameraMatrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "gate": "R17_SA_ART_REVIEW_REQUIRED",
+  "ownerArtGO": "PENDING"
+}
