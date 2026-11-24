@@ -102,3 +102,9 @@ pre { white-space: pre-wrap; overflow-wrap: anywhere; }
 .gift-token[data-token="lantern"] { border-color: #ffce88; color: #ffe7b2; }
 .gift-token[data-token="neutral"] { border-color: #d9d0f5; color: #eee5ff; }
 @media (max-width: 760px) { main { align-items: center; flex-direction: column; } }
+
+#audio-controls { width: min(100%, 36rem); margin: 16px auto; padding: 16px; background: #292239; }
+#audio-controls p { margin-top: 0; }
+#audio-controls label { display: block; margin-top: 8px; }
+#audio-controls button, #audio-controls input { font: inherit; }
+body.clean:has(#audio-controls) { scrollbar-width: none; }

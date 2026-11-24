@@ -1,0 +1,33 @@
+{
+  "sourceCommit": "9ffa2718723b11284dccdf35595c759576672f93",
+  "sourcePath": "apps/overlay/public/audio/vi-v2/",
+  "provenance": "Owner-authorized V1 fixed phrase reuse for the V2 DEMO. Google Translate Vietnamese via gTTS 2.5.4. No broader third-party or commercial redistribution grant verified.",
+  "format": "WAV PCM signed 16-bit little-endian mono 24000 Hz",
+  "profiles": {
+    "generic-short": {
+      "bytes": 67482,
+      "sha256": "c1e50190f0760a89f948c73d94aa7ad6b4d8ef5730376a883c37fd1f2e9bea8f",
+      "durationSec": 1.40425,
+      "derivedFrom": "generic.wav",
+      "ffmpegFilter": "atrim=end=2.10,atempo=1.5,afade=t=out:st=1.29:d=0.10"
+    },
+    "generic": {
+      "bytes": 186702,
+      "sha256": "621a0bb74227b701461ff4dc98b33c9795e46e26c02acbe6a89f0b7b5bfde410",
+      "durationSec": 3.888,
+      "gitBlob": "2378019c51dcce85d53c6b700d1b91e269667751"
+    },
+    "lantern": {
+      "bytes": 240846,
+      "sha256": "16c19a6dac5702a722ec02407388592298474fa4e4cd6b7e1df997e5b9e8c2c2",
+      "durationSec": 5.016,
+      "gitBlob": "93acb4271a753301a8787cd727cf211d0bda5f98"
+    },
+    "rose": {
+      "bytes": 205134,
+      "sha256": "6c4476d1fb6cf99c85cfe4424d49f354bacb754a74db6b694fd7c6824b9d8e51",
+      "durationSec": 4.272,
+      "gitBlob": "505490a8d0b518268581bc942d0e6f83ec4f39fa"
+    }
+  }
+}
