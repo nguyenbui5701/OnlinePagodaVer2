@@ -7,9 +7,9 @@
   "scope": "AI_VISUAL_16_ART_ONLY",
   "cost": "0 VND",
   "provenance": "Original project-authored procedural augmentation of frozen R16; no third-party meshes/images",
-  "workflowStatus": "R17_NATIVE_BUILD_EVIDENCE_PASS_HANDOFF_RECONCILED",
-  "stage": "R17_ART_PARTIAL_BINARY_SA_VERIFICATION_PENDING",
-  "hardBlocker": "Independent SHA256/GLB geometry/PBR and editable source open not yet performed by SA: GitHub binary transport inaccessible and local git DNS failure; owner read-only audit and exact files needed. Full visual comparison pending.",
+  "workflowStatus": "R17_REVIEWED_BASELINE_PRESERVED_R17B_PREVIEW_AUTHORING_READY",
+  "stage": "R17_LUSH_ART_CORRECTION_REQUIRED_R17B_NATIVE_PREVIEW_PENDING",
+  "hardBlocker": "R17b source authored, native preview pending owner run. Independent SA access to large GLB/.blend bytes still blocked. Do not call R17b art/tech PASS before execution and review.",
   "source": {
     "pr": 1,
     "head": "d9dbeb6a81d1e667d471b8f62910829bb1ce2bd9",
@@ -91,7 +91,7 @@
       "newFlowersDesignTarget": 1200,
       "predictedNewFlowerTriangles": 28800,
       "triangleHardCap": 250000,
-      "status": "UPLOADED_GIT_TREE_BYTES_MATCH_OWNER_SHA_SA_BINARY_PENDING",
+      "status": "REVIEWED_R17_BASELINE_PRESERVED_NOT_FINAL_ART",
       "actualSHA256": "4115ba647eaa960e5fd2e9949462b52a2010231bf84ac25b574447bd36c5a73f",
       "actualBytes": 17851064,
       "actualTriangles": 220088,
@@ -104,12 +104,124 @@
       "actualAddedFlowers": 1200,
       "actualAddedMeshVertices": 42000,
       "originalBottomYupMeters": -0.5183812975883484,
-      "worldXYZBounds": null,
-      "boundsStatus": "PENDING_READ_ONLY_IMPORT_AUDIT; original bottom only recorded, not full output bounds",
+      "worldXYZBounds": [
+        [
+          -12.845271110534668,
+          -0.5183812975883484,
+          -12.69640827178955
+        ],
+        [
+          13.742024421691895,
+          26.48044204711914,
+          13.2966947555542
+        ]
+      ],
+      "boundsStatus": "OWNER_NATIVE_READ_ONLY_AUDIT_MEASURED_Y_UP_METERS_SA_INDEPENDENT_PENDING",
       "gitBlobSHA": "8d9e45711d2677ab400436a459e8630ed8428a32",
       "byteRatioVsR16": 3.5312056894718187,
       "triangleDelta": 28800,
-      "shaVerification": "OWNER_REPORTED_FROM_NATIVE_BUILD_NOT_SA_RECOMPUTED"
+      "shaVerification": "OWNER_NATIVE_READ_ONLY_SHA_PASS_SA_INDEPENDENT_PENDING",
+      "ownerAudit": {
+        "degenerateTriangles": 0,
+        "vertexRecords": 659295,
+        "attributeLogicalBytes": {
+          "POSITION": 7911540,
+          "NORMAL": 7911540,
+          "INDEX": 2013648
+        },
+        "binChunkBytes": 17836728,
+        "protectedGeometryComparison": {
+          "Branches_plum": {
+            "r16Triangles": 4462,
+            "r17Triangles": 4462,
+            "missingTriangles": 0,
+            "addedTriangles": 0,
+            "importedPBRExact": true
+          },
+          "Golden_bark_veins": {
+            "r16Triangles": 246,
+            "r17Triangles": 246,
+            "missingTriangles": 0,
+            "addedTriangles": 0,
+            "importedPBRExact": true
+          },
+          "Trunk_bark_plumblack": {
+            "r16Triangles": 23100,
+            "r17Triangles": 23100,
+            "missingTriangles": 0,
+            "addedTriangles": 0,
+            "importedPBRExact": true
+          }
+        },
+        "rootNodes": [
+          {
+            "name": "world",
+            "worldMatrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "R17_Lush_Additional_Crown_quality",
+            "worldMatrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        ]
+      },
+      "r16ResourceBaseline": {
+        "vertexRecords": 229235,
+        "attributeLogicalBytes": {
+          "POSITION": 2750820,
+          "INDEX": 2295456
+        },
+        "binChunkBytes": 5046276
+      }
     },
     "eco": {
       "filename": "sakura_hero_r17_eco.glb",
@@ -117,7 +229,7 @@
       "newFlowersDesignTarget": 420,
       "predictedNewFlowerTriangles": 5040,
       "triangleHardCap": 60000,
-      "status": "UPLOADED_GIT_TREE_BYTES_MATCH_OWNER_SHA_SA_BINARY_PENDING",
+      "status": "REVIEWED_R17_BASELINE_PRESERVED_NOT_FINAL_ART",
       "actualSHA256": "cc07824bef901d30ce833880ab835027d027f15ab26eb327e6b6d6bb46d2d679",
       "actualBytes": 3854076,
       "actualTriangles": 49452,
@@ -130,12 +242,124 @@
       "actualAddedFlowers": 420,
       "actualAddedMeshVertices": 8820,
       "originalBottomYupMeters": -1.026049256324768,
-      "worldXYZBounds": null,
-      "boundsStatus": "PENDING_READ_ONLY_IMPORT_AUDIT; original bottom only recorded, not full output bounds",
+      "worldXYZBounds": [
+        [
+          -12.92000675201416,
+          -1.026049256324768,
+          -12.026215553283691
+        ],
+        [
+          13.287308692932129,
+          24.86863899230957,
+          10.933910369873047
+        ]
+      ],
+      "boundsStatus": "OWNER_NATIVE_READ_ONLY_AUDIT_MEASURED_Y_UP_METERS_SA_INDEPENDENT_PENDING",
       "gitBlobSHA": "e2de5ae499e9f369e3f3becc728d08fc13552cde",
       "byteRatioVsR16": 2.765768300069179,
       "triangleDelta": 5040,
-      "shaVerification": "OWNER_REPORTED_FROM_NATIVE_BUILD_NOT_SA_RECOMPUTED"
+      "shaVerification": "OWNER_NATIVE_READ_ONLY_SHA_PASS_SA_INDEPENDENT_PENDING",
+      "ownerAudit": {
+        "degenerateTriangles": 0,
+        "vertexRecords": 147667,
+        "attributeLogicalBytes": {
+          "POSITION": 1772004,
+          "NORMAL": 1772004,
+          "INDEX": 296712
+        },
+        "binChunkBytes": 3840720,
+        "protectedGeometryComparison": {
+          "Branches_plum": {
+            "r16Triangles": 3732,
+            "r17Triangles": 3732,
+            "missingTriangles": 0,
+            "addedTriangles": 0,
+            "importedPBRExact": true
+          },
+          "Golden_bark_veins": {
+            "r16Triangles": 230,
+            "r17Triangles": 230,
+            "missingTriangles": 0,
+            "addedTriangles": 0,
+            "importedPBRExact": true
+          },
+          "Trunk_bark_plumblack": {
+            "r16Triangles": 2990,
+            "r17Triangles": 2990,
+            "missingTriangles": 0,
+            "addedTriangles": 0,
+            "importedPBRExact": true
+          }
+        },
+        "rootNodes": [
+          {
+            "name": "world",
+            "worldMatrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "name": "R17_Lush_Additional_Crown_eco",
+            "worldMatrix": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        ]
+      },
+      "r16ResourceBaseline": {
+        "vertexRecords": 71032,
+        "attributeLogicalBytes": {
+          "POSITION": 852384,
+          "INDEX": 532944
+        },
+        "binChunkBytes": 1385328
+      }
     }
   },
   "editableSource": {
@@ -146,7 +370,21 @@
     "bytes": 31319198,
     "gitBlobSHA": "4f931ac7cff55393ab17cb48d5f152c01cc93787",
     "independentOpen": "PENDING_SA",
-    "ownerSource": "Build script saved both collections; actual reopen pending read-only check"
+    "ownerSource": "Reopened by owner read-only native audit; independent SA open pending",
+    "ownerReopen": {
+      "sha256": "8fadb16d1458f21fe95e63e00c2dc6a1feaba8aaa19e0d861b7fb2a44076beb9",
+      "opened": true,
+      "collections": {
+        "QUALITY": {
+          "meshes": 12,
+          "triangles": 220088
+        },
+        "ECO": {
+          "meshes": 11,
+          "triangles": 49452
+        }
+      }
+    }
   },
   "cycles": {
     "status": "R17_NATIVE_BUILD_EVIDENCE_PASS_24_UPLOADED",
@@ -502,13 +740,15 @@
       "gitBlobSHA": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
       "bytes": 0
     },
-    "visualStatus": "R17_ART_PARTIAL; SA directly viewed ECO full/trunk only; other views pending accessible contact sheets",
-    "reviewSheets": "PENDING_OWNER_GENERATION_FROM_ORIGINAL_PNGS_NO_RERENDER"
+    "visualStatus": "R17_AB_ART_EVIDENCE_PASS_ALL_SIX_SHEETS_VIEWED; ART_OBJECTIVE_NOT_MET",
+    "reviewSheets": "6 uploaded verified accessible A/B sheets",
+    "reviewSheetManifest": "R17_Review_Sheets/sheet_manifest.json",
+    "reviewSheetManifestGitBlobSHA": "8c186ac4563b88f46ba67d457aa7bb47a74cdaae"
   },
   "licensing": "Original authored mesh augmentation, no paid service or third-party screenshots/meshes",
   "gates": {
     "sourceBinaryVerified": "OWNER_NATIVE_SHA_PASS_SA_INDEPENDENT_PENDING",
-    "glbTech": "OWNER_NATIVE_EXPORT_PASS_SA_BINARY_VERIFICATION_PENDING",
+    "glbTech": "R17_OWNER_READ_ONLY_AUDIT_PASS_WITH_STATED_LIMITATIONS; R17_BINARY_SA_VERIFICATION_PENDING",
     "cycles": "R17_NATIVE_BUILD_EVIDENCE_PASS",
     "saArt": "R17_SA_ART_REVIEW_REQUIRED",
     "ownerArtGO": "PENDING",
@@ -517,19 +757,77 @@
     "physicalGPU": "OWNER_DEFERRED_NOT_PASS",
     "provider": "P10B2_PROVIDER_ACCESS_BLOCKED",
     "handoff": "METADATA_RECONCILED",
-    "art": "R17_ART_PARTIAL"
+    "art": "R17_LUSH_ART_CORRECTION_REQUIRED",
+    "resource": "R17_RESOURCE_CAUSE_IDENTIFIED",
+    "abEvidence": "R17_AB_ART_EVIDENCE_PASS"
   },
   "review": {
-    "url": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6032823643",
-    "reviewedHead": "36c9e327c37441a7c5406068f9aecd291e52d437",
+    "url": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6032915176",
+    "reviewedHead": "8381da2c19da01e8270f0f41283eabd5c4d16a46",
     "gate": "R17_SA_ART_REVIEW_REQUIRED",
     "ownerArtGO": "PENDING"
   },
   "followup": {
-    "auditScript": "audit_r17_read_only.py",
-    "contactSheetScript": "make_r17_review_sheets.py",
-    "results": "PENDING_OWNER_EXECUTION; no native re-render/export required",
-    "resourceAnalysis": "Actual sizes 3.53x QUALITY / 2.77x ECO; accessor/primitive byte accounting pending, no optimization until measured.",
-    "binaryAccess": "SA requires original R16/R17 GLBs and R17 editable .blend (ZIP acceptable), exact bytes; not independently fetched."
+    "previousAudit": {
+      "path": "R17_READ_ONLY_AUDIT.json",
+      "gitBlobSHA": "b101cd798514f04bdf40ac3f4c424a6420209260",
+      "status": "OWNER_READ_ONLY_AUDIT_PASS_WITH_STATED_LIMITATIONS",
+      "limitations": [
+        "Triangle comparison ignores winding and uses quantized world coordinates; mismatch requires review.",
+        "Secondary contact proxy 45/68 not repaired or re-tested.",
+        "Logical accessor totals may overlap; BIN bytes are physical. No export, render or runtime GPU test."
+      ]
+    },
+    "results": "Prior audit and six A/B sheets complete; do not repeat unchanged tests.",
+    "resourceAnalysis": "Original R17 size growth explained by measured vertex records and added NORMAL arrays. Candidate preserves original R16 primitive/attribute bytes; actual reduction pending preview.",
+    "binaryAccess": "Independent SA needs exact new GLBs and .blend plus two original R16 GLBs when final candidate is approved; connector binary payload inaccessible."
+  },
+  "r17b": {
+    "path": "Assets3D/Review/sakura_hero/r17-lush/r17b/",
+    "reviewedBaselineHead": "8381da2c19da01e8270f0f41283eabd5c4d16a46",
+    "status": "PREVIEW_AUTHORING_SOURCE_COMMITTED_NATIVE_RUN_PENDING",
+    "layout": {
+      "outerShoulders": 16,
+      "bridges": 8,
+      "lowerSkirts": 6,
+      "qualityFlowersDesign": 2280,
+      "ecoFlowersDesign": 1380,
+      "qualityTriangleDesign": 236888,
+      "ecoTriangleDesign": 58212,
+      "qualityTriangleCap": 250000,
+      "ecoTriangleCap": 60000
+    },
+    "export": "Append indexed new petals with area-weighted normals, original R16 BIN prefix/accessor/mesh/node arrays exact; only seven original ECO floral material factors changed. No normal deletion or wood edits. Measured final sizes pending.",
+    "preview": {
+      "resolution": [
+        360,
+        640
+      ],
+      "samples": 8,
+      "views": [
+        "hero_full_9x16",
+        "hero_wide_water_9x16",
+        "under_crown_9x16"
+      ],
+      "revisions": [
+        "r16",
+        "r17",
+        "r17b"
+      ],
+      "profiles": [
+        "quality",
+        "eco"
+      ],
+      "expectedNativeFrames": 18,
+      "expectedSheets": 3,
+      "status": "PENDING_OWNER_NATIVE_RUN",
+      "report": "r17b/preview/preview_manifest.json",
+      "actualAssets": null
+    },
+    "final": {
+      "status": "HOLD_PREVIEW_VISUAL_ACCEPTANCE",
+      "note": "No final GLB promotion, .blend or full six-view 720x1280 Cycles until preview accepted. Freeze candidate SHA; re-use prior valid same-rig reference images where appropriate."
+    },
+    "gate": "R17_SA_ART_REVIEW_REQUIRED"
   }
 }
