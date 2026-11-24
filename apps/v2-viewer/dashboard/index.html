@@ -27,7 +27,22 @@
         </form>
         <p id="delivery-warning" class="warning" role="status" hidden>Có gift final chưa xác minh giao nhận.</p>
         <dl id="counters"></dl>
-        <p class="muted">Gift final và progress là số gói nhận. Âm thanh LIVE đang tắt.</p>
+        <p class="muted">Gift final và progress là số gói nhận.</p>
+      </section>
+      <section class="card" aria-labelledby="audio-title">
+        <h2 id="audio-title">Âm thanh LIVE</h2>
+        <p id="audio-state" role="status"></p>
+        <p id="audio-warning" class="warning" hidden></p>
+        <p class="muted">Bật âm thanh tổng rồi bấm một lần vào cảnh 3D trong cửa sổ Overlay để mở tiếng.
+          Khi mở lại hoặc chuyển Overlay về cửa sổ đang thấy, bấm vào cảnh nếu âm thanh đang tắt.</p>
+        <fieldset disabled id="audio-fields" aria-label="Kênh âm thanh"></fieldset>
+        <label class="idle-gap">Khoảng nghỉ giữa các lời chúc và tiếng chuông (10–120 giây)
+          <input disabled id="audio-idle-seconds" type="number" min="10" max="120" step="1" placeholder="Tự động" />
+        </label>
+        <p id="audio-clips" class="muted" role="status"></p>
+        <p class="muted">Chỉ bật giọng cảm ơn và lời chúc nếu có quyền dùng clip. Hiện chưa hỗ trợ đọc tên người xem LIVE.</p>
+        <p id="audio-operation" role="status"></p>
+        <button id="audio-reload" type="button" hidden>Nạp bản âm thanh đã lưu</button>
       </section>
       <section class="card settings" aria-labelledby="settings-title">
         <h2 id="settings-title">Cấu hình Overlay</h2>

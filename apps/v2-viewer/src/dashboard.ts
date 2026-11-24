@@ -1,4 +1,6 @@
 import './dashboard.css';
+import { dashboardAudio } from './dashboard-audio.ts';
+import { readAudioSnapshot, validAudioApplied, type AudioApplied, type AudioSnapshot } from './live-audio-settings.ts';
 import { GatewayError, postGateway, readSettings } from './live-api.ts';
 import { choices, type LiveSettings, type SettingsSnapshot } from './live-settings.ts';
 import { reasons, type LiveCounters } from './live-receiver.ts';
@@ -7,7 +9,7 @@ type Status = {
   status: string; reason: string; viewerCount: number; counters: LiveCounters; dropped: number;
   deliveryUncertain: boolean; receiver: 'overlay' | 'legacy' | null;
   appliedRevision: number | null; overlayReady: boolean; applyPending: boolean; canApply: boolean; canConnect: boolean; canDisconnect: boolean;
-  desired: SettingsSnapshot;
+  desired: SettingsSnapshot; audioDesired?: AudioSnapshot; audioApplied?: AudioApplied | null;
 };
 
 const element = <T extends HTMLElement>(id: string) => document.getElementById(id)! as T;
@@ -73,6 +75,7 @@ const save = element<HTMLButtonElement>('save');
 const apply = element<HTMLButtonElement>('apply');
 const reload = element<HTMLButtonElement>('reload-settings');
 const operation = element('operation');
+const renderAudio = dashboardAudio();
 let current: Status | undefined;
 let draftRevision = 0;
 let dirty = false;
@@ -87,6 +90,7 @@ function loadDraft(snapshot: SettingsSnapshot) {
 
 function render(state?: Status) {
   current = state;
+  renderAudio(state?.audioDesired, state?.audioApplied);
   const code = state?.status ?? 'GATEWAY_UNAVAILABLE';
   const titles: Record<string, string> = {
     OFFLINE: 'Chưa kết nối LIVE', CONNECTING: 'Đang kết nối', RECONNECTING: 'Đang kết nối lại',
@@ -132,6 +136,8 @@ async function refresh() {
   try {
     const state = await (await postGateway('/status')).json() as Status;
     state.desired = readSettings(state.desired);
+    state.audioDesired = readAudioSnapshot(state.audioDesired);
+    if (!validAudioApplied(state.audioApplied, state.audioDesired?.revision ?? 0)) state.audioApplied = null;
     if (statusGeneration === generation) render(state);
   } catch {
     if (statusGeneration === generation) render();

@@ -1,4 +1,5 @@
 import type { DemoEvent, SessionEvent } from '../../../packages/v2-events/src/protocol.ts';
+import type { AudioApplied } from './live-audio-settings.ts';
 import { GatewayError, postGateway } from './live-api.ts';
 
 export type LivePacket = DemoEvent | SessionEvent;
@@ -20,7 +21,7 @@ export const reasons: Record<string, string> = {
 };
 export const counterKeys = ['chat', 'member', 'like', 'giftProgress', 'giftFinal', 'room'] as const;
 export type LiveCounters = Record<typeof counterKeys[number], number>;
-type Poll = { status: string; reason: string; entries: LiveEntry[]; deliveryUncertain: boolean; applyPending?: boolean;
+type Poll = { status: string; reason: string; entries: LiveEntry[]; deliveryUncertain: boolean; applyPending?: boolean; audioDesired?: unknown;
   counters: LiveCounters; viewerCount: number; dropped: number };
 const natural = (n: unknown) => typeof n === 'number' && Number.isSafeInteger(n) && n >= 0;
 
@@ -47,9 +48,10 @@ type Options = {
   sourceLost: () => void;
   receipt: () => { ack: number; failed: boolean };
   status: (state: ReceiverStatus) => void;
+  audioStatus?: () => AudioApplied | undefined;
 };
 
-export function createLiveReceiver({ feed, sourceLost, receipt, status }: Options) {
+export function createLiveReceiver({ feed, sourceLost, receipt, status, audioStatus }: Options) {
   const client = Array.from(crypto.getRandomValues(new Uint8Array(16)), value => value.toString(16).padStart(2, '0')).join('');
   const abort = new AbortController();
   let timer: ReturnType<typeof setTimeout>;
@@ -80,7 +82,7 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status }: Option
       }
       const { ack } = receipt();
       sentReady = rendererReady;
-      const data = decodeLivePoll(await (await request('/poll', overlay ? { ack, ready: sentReady } : { ack })).json(), ack);
+      const data = decodeLivePoll(await (await request('/poll', overlay ? { ack, ready: sentReady, audio: audioStatus?.() } : { ack })).json(), ack);
       if (closed) return;
       uncertain ||= data.deliveryUncertain;
       if (!feed(data.entries)) {

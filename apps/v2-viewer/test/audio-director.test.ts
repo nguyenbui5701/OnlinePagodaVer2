@@ -1,10 +1,10 @@
-﻿import assert from 'node:assert/strict';
+import assert from 'node:assert/strict';
 import test from 'node:test';
 import type { Snapshot } from '../../../packages/v2-events/src/protocol.ts';
 import { giftSound, AudioDirector, maxPending, type AudioSink, type Binding, type Cue, type CueRecord } from '../src/audio/director.ts';
 import { SliceDriver, timing } from '../src/slice-driver.ts';
 
-function harness() {
+function harness(live = false) {
   const starts: Cue[] = [];
   const sounds: Cue[] = [];
   const cuts: string[] = [];
@@ -18,7 +18,7 @@ function harness() {
       return outcome;
     },
     cut: reason => cuts.push(reason),
-  });
+  }, live);
   return { director, starts, sounds, cuts, deadlines, wait: () => { outcome = 'waiting'; },
     finish: () => { outcome = 'started'; } };
 }
@@ -156,4 +156,31 @@ test('pending and dedup limits fail closed and unknown gift uses neutral audio',
   director.frame(state(3000), 0, []);
   director.frame(state(3010), 0, [final('request-0', 3010)]);
   assert.equal(starts.length, 0);
+});
+
+test('LIVE rolls past 256 unique requests and rejects old and recent replays with new cue sequences', () => {
+  const { director, starts } = harness(true);
+  const { state, final } = fixtures();
+  director.enable(true);
+  for (let i = 1; i <= 320; i++) {
+    director.frame(state(i * 3000), 0, [final('demo-room-gift-' + i, i * 3000)]);
+  }
+  assert.equal(starts.length, 320);
+  director.frame(state(970_000), 0, [final('demo-room-gift-1', 970_000), final('demo-room-gift-319', 970_000)]);
+  assert.equal(starts.length, 320);
+  assert.equal(director.suppressed['already-played'], 2);
+});
+
+test('an accepted LIVE gift never exposes a DEMO name identity to the voice path', () => {
+  const { director, starts } = harness(true);
+  const { state, record, focus } = fixtures();
+  director.enable(true);
+  const id = 'demo-room-gift-1';
+  director.frame(state(100, 'GIFT_TRANSITION', id), 0, [record({ type: 'giftFx', atMs: 99, requestId: id,
+    displayName: 'An', actorId: first.actorId, giftId: '5678', confirmation: 'confirmed',
+    giftCount: 1, anchor: 'giftFx', dedicatedFocus: true })], first);
+  director.frame(state(1100, 'GIFT_FOCUS', id), 0, [focus(id, 1100)], first);
+  assert.equal(starts.length, 1);
+  assert.equal(starts[0].identity, undefined);
+  assert.equal(starts[0].sound, 'generic');
 });

@@ -2,15 +2,16 @@ import { createServer } from 'node:http';
 import { pathToFileURL } from 'node:url';
 import { Gateway } from './gateway.mjs';
 import { normalizeUsername } from './mapper.mjs';
-import { SettingsStore } from './settings.mjs';
+import { AudioSettingsStore, SettingsStore } from './settings.mjs';
+import { validAudioApplied } from '../../apps/v2-viewer/src/live-audio-settings.ts';
 
 const viewerOrigin = 'http://127.0.0.1:5189';
 const hex = value => typeof value === 'string' && /^[a-f0-9]{32}$/.test(value);
 const natural = n => Number.isSafeInteger(n) && n >= 0;
 const receiverRoutes = new Set(['/attach', '/connect', '/poll', '/disconnect', '/degraded']);
-const operatorRoutes = new Set(['/status', '/settings', '/save-settings', '/operate', '/apply']);
+const operatorRoutes = new Set(['/status', '/settings', '/save-settings', '/save-audio', '/operate', '/apply']);
 
-export function createGatewayServer({ gateway = new Gateway(), settings = new SettingsStore(), clock = Date.now } = {}) {
+export function createGatewayServer({ gateway = new Gateway(), settings = new SettingsStore(), audio = new AudioSettingsStore(), clock = Date.now } = {}) {
   let starts = 0;
   let windowStart = clock();
   let requests = 0;
@@ -39,7 +40,7 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
 
       if (req.headers['content-type'] !== 'application/json') return reply(415);
       const size = Number(req.headers['content-length']);
-      if (!Number.isInteger(size) || size < 2 || size > (req.url === '/save-settings' ? 1024 : 256)) return reply(413);
+      if (!Number.isInteger(size) || size < 2 || size > (['/save-settings', '/save-audio'].includes(req.url) ? 1024 : 256)) return reply(413);
       const rateLimit = () => reply(429, { reason: 'LOCAL_RATE_LIMITED' });
       if (clock() - windowStart >= 60_000) { starts = requests = operatorRequests = 0; windowStart = clock(); }
       if (operator ? ++operatorRequests > 75 : ++requests > 275) return rateLimit();
@@ -59,13 +60,16 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
       const fields = Object.keys(data).length;
       const conflict = reason => reply(409, { reason });
       if (operator) {
-        if (req.url === '/status' && fields === 0) return reply(200, { ...gateway.statusSnapshot(), desired: settings.snapshot });
+        if (req.url === '/status' && fields === 0) return reply(200, {
+          ...gateway.statusSnapshot(), desired: settings.snapshot, audioDesired: audio.snapshot, audioApplied: gateway.audioApplied ?? null,
+        });
         if (req.url === '/settings' && fields === 0) return reply(200, settings.snapshot);
-        if (req.url === '/save-settings' && fields === 2 && natural(data.revision)) {
-          const error = settings.save(data.revision, data.settings);
+        if (['/save-settings', '/save-audio'].includes(req.url) && fields === 2 && natural(data.revision)) {
+          const store = req.url === '/save-audio' ? audio : settings;
+          const error = store.save(data.revision, data.settings);
           if (error === 'SETTINGS_CONFLICT') return conflict(error);
           if (error) return reply(error === 'INVALID_SETTINGS' ? 400 : 500, { reason: error });
-          return reply(200, settings.snapshot);
+          return reply(200, store.snapshot);
         }
         if (req.url === '/apply' && fields === 1 && natural(data.revision)) {
           if (gateway.receiver !== 'overlay') return conflict('OVERLAY_NOT_READY');
@@ -103,10 +107,15 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
       }
       if (req.url === '/poll') {
         const hasReadiness = typeof data.ready === 'boolean';
-        if (!natural(data.ack) || fields !== (hasReadiness ? 3 : 2)) return reply(400);
+        const hasAudio = Object.hasOwn(data, 'audio');
+        if (!natural(data.ack) || fields !== (hasReadiness ? 3 : 2) + Number(hasAudio) ||
+            (hasAudio && (!hasReadiness || !validAudioApplied(data.audio, audio.snapshot.revision)))) return reply(400);
         if (gateway.owner === data.client && (gateway.receiver === 'overlay') !== hasReadiness) return reply(400);
         const state = gateway.poll(data.client, data.ack, data.ready);
-        return state ? reply(200, state) : reply(409);
+        if (!state) return reply(409);
+        if (!hasReadiness) return reply(200, state);
+        gateway.audioApplied = data.audio;
+        return reply(200, { ...state, audioDesired: audio.snapshot });
       }
       if (req.url === '/disconnect' && data.closing === true) {
         if (!natural(data.ack) || Object.keys(data).length !== 3) return reply(400);

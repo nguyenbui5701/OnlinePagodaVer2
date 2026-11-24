@@ -51,11 +51,15 @@ export class AudioDirector {
   private watermark = -1;
   private pending = new Map<string, Cue>();
   private consumed = new Set<string>();
+  private liveConsumed = new Set<number>();
+  private retiredThrough = 0;
+  private readonly live: boolean;
   private focus?: { request: string; actor: string; deadline: number };
   private active?: { cue: Cue; waitUntil: number };
   private sfxStarted = false;
 
-  constructor(holdMs: number, sink: AudioSink) {
+  constructor(holdMs: number, sink: AudioSink, live = false) {
+    this.live = live;
     this.holdMs = holdMs;
     this.sink = sink;
   }
@@ -77,7 +81,11 @@ export class AudioDirector {
     if (state.revision < this.revision) return;
     this.revision = state.revision;
     if (this.room !== state.roomSessionId || this.epoch !== epoch) {
-      if (this.room !== state.roomSessionId) this.consumed.clear();
+      if (this.room !== state.roomSessionId) {
+        this.consumed.clear();
+        this.liveConsumed.clear();
+        this.retiredThrough = 0;
+      }
       this.room = state.roomSessionId;
       this.epoch = epoch;
       this.focus = undefined;
@@ -173,7 +181,7 @@ export class AudioDirector {
     const binding = effect.dedicatedFocus && effect.actorId && record.seatId
       ? { actorId: effect.actorId, seatId: record.seatId } : undefined;
     if (effect.dedicatedFocus && !binding) { this.count('binding-missing'); return; }
-    const label = demoName(effect.displayName);
+    const label = this.live ? undefined : demoName(effect.displayName);
     const sound = giftSound(effect.giftId);
     const identity = label && binding && effect.giftCount >= 1 && effect.giftCount <= 8
       ? { epoch: record.epoch, nameId: label, count: effect.giftCount, displayName: effect.displayName } : undefined;
@@ -189,14 +197,36 @@ export class AudioDirector {
       this.count('coalesced');
       return;
     }
-    if (this.consumed.has(request)) { this.count('already-played'); return; }
-    if (this.consumed.size >= maxPlayed) { this.count('ledger-capacity'); return; }
-    this.consumed.add(request);
+    if (!this.consume(record.room, request)) return;
     if (this.pending.size >= maxPending) { this.count('queue-capacity'); return; }
     const cue: Cue = { room: record.room, request, binding, sequence: record.sequence, identity,
       count: effect.giftCount, sound, expires: effect.atMs + (binding ? pendingTTL : overlayTTL) };
     this.pending.set(request, cue);
     this.sink.prepare?.(cue);
+  }
+
+  private consume(room: string, request: string) {
+    if (!this.live) {
+      if (this.consumed.has(request)) { this.count('already-played'); return false; }
+      if (this.consumed.size >= maxPlayed) { this.count('ledger-capacity'); return false; }
+      this.consumed.add(request);
+      return true;
+    }
+    // Engine allocates increasing request numbers per room. Advance a permanent floor
+    // on eviction so even a replay arriving with a new cue sequence stays suppressed.
+    const prefix = room + '-gift-';
+    const ordinal = request.startsWith(prefix) ? Number(request.slice(prefix.length)) : NaN;
+    if (!Number.isSafeInteger(ordinal) || ordinal <= this.retiredThrough ||
+        request !== prefix + ordinal || this.liveConsumed.has(ordinal)) {
+      this.count('already-played');
+      return false;
+    }
+    this.liveConsumed.add(ordinal);
+    if (this.liveConsumed.size > maxPlayed) {
+      this.retiredThrough = Math.min(...this.liveConsumed);
+      this.liveConsumed.delete(this.retiredThrough);
+    }
+    return true;
   }
 
   private drop(key: string, reason?: string) {

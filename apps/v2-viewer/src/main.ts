@@ -13,6 +13,7 @@ import { measureSeatContact } from './seat-contact.ts';
 import { SliceCamera } from './slice-camera.ts';
 import { parseScenario, SliceDriver, timing } from './slice-driver.ts';
 import { AudioManager } from './audio/manager.ts';
+import { readAudioSnapshot } from './live-audio-settings.ts';
 import { createLiveControls, updateLiveReport } from './live-controls.ts';
 import { createLiveReceiver } from './live-receiver.ts';
 import { overlayContext } from './overlay-context.ts';
@@ -70,7 +71,8 @@ const crowd = rings || liveRequested || (scenario === 'community' && query.get('
 const diversity = !comparison && diversityEnabled(crowd, query.get('diversity'));
 const enableBotanicals = !comparison && botanicalsEnabled(crowd, query.get('botanicals'));
 const liveOperator = liveRequested && !manual && frozenAt === undefined;
-const audioRequested = query.get('audio') === 'on' && !manual && !comparison && !liveRequested && frozenAt === undefined;
+const liveAudio = !!overlaySettings && liveOperator;
+const audioRequested = liveAudio || (query.get('audio') === 'on' && !manual && !comparison && !liveRequested && frozenAt === undefined);
 const driver = new SliceDriver(liveOperator ? 'live' : liveRequested ? 'offline' : scenario,
   scenario === 'community' ? presenceDemo(chatBubbles, giftIcons) : [], audioRequested);
 const director = new SliceCamera();
@@ -169,11 +171,25 @@ async function boot() {
   }
   const audio = audioRequested
     ? new AudioManager(timing.focusHoldMs, () => start === undefined ? -1 : Math.floor(performance.now() - start), {
-      idle: query.get('idlevoice') === 'on' ? { seed, gap: idleGap(query.get('idlegap')) } : undefined,
-      dynamic: query.get('dynamicvoice') === 'on',
-      loadIdleSpeech: query.get('idlevoice') === 'on' ? loadIdleCorpus : undefined,
+      live: liveAudio,
+      idle: liveAudio ? { seed } : query.get('idlevoice') === 'on' ? { seed, gap: idleGap(query.get('idlegap')) } : undefined,
+      dynamic: !liveAudio && query.get('dynamicvoice') === 'on',
+      loadIdleSpeech: liveAudio || query.get('idlevoice') === 'on' ? loadIdleCorpus : undefined,
     })
     : undefined;
+  const audioAction = (action: (manager: AudioManager) => void) => {
+    if (!audio) return;
+    try { action(audio); }
+    catch (error) {
+      if (!liveAudio) throw error;
+      audio.fail();
+    }
+  };
+  const unlockAudio = (event: MouseEvent) => {
+    if (!event.isTrusted || !navigator.userActivation?.isActive) return;
+    if (!lost && !disposed && !shaderFailed && !gl.isContextLost()) audioAction(manager => manager.unlock());
+  };
+  if (liveAudio) canvas.addEventListener('click', unlockAudio);
   let last: number | undefined;
   const frameTimes: number[] = [];
   const visited = new Set<string>();
@@ -253,7 +269,9 @@ async function boot() {
     }
     const celebration = presentation && giftFx?.update(presentation.state, presentation.active, selected);
     if (audio && presentation?.audio) {
-      audio.frame(presentation.state, presentation.audio, selected?.presentation);
+      const { state, audio: cues } = presentation;
+      const binding = selected?.presentation;
+      audioAction(manager => manager.frame(state, cues, binding));
       report.audio = audio.report;
     }
     const bubbleState = bubbles && presentation && seats && bubbles.update(presentation.state, presentation.chat,
@@ -337,7 +355,7 @@ async function boot() {
     event.preventDefault();
     lost = true;
     reportRendererReady(false);
-    audio?.suspend('webgl-context');
+    audioAction(manager => manager.suspend('webgl-context'));
     clearPresence();
     errors.push('webglcontextlost');
     cancelAnimationFrame(req);
@@ -360,6 +378,7 @@ async function boot() {
     disposed = true;
     abort.abort();
     disposeLive?.();
+    canvas.removeEventListener('click', unlockAudio);
     audio?.dispose();
     cancelAnimationFrame(req);
     canvas.removeEventListener('webglcontextlost', contextLost);
@@ -468,7 +487,15 @@ async function boot() {
     if (overlaySettings) {
       overlayReceiver = createLiveReceiver({
         feed: entries => driver.enqueueLive(entries), sourceLost: () => driver.loseLiveSource(),
-        receipt: () => driver.liveReceipt, status: state => updateLiveReport(report, state),
+        receipt: () => driver.liveReceipt,
+        audioStatus: () => audio?.applied,
+        status: state => {
+          updateLiveReport(report, state);
+          audioAction(manager => {
+            manager.liveLink(!!state.poll, state.status === 'CONNECTED_NO_EVENTS' || state.status === 'EVENTS_VERIFIED');
+            if (state.poll) manager.configure(readAudioSnapshot(state.poll.audioDesired));
+          });
+        },
       });
       disposeLive = overlayReceiver.dispose;
     } else if (liveOperator) {
