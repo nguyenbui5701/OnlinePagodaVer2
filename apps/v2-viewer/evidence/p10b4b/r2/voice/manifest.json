@@ -1,0 +1,142 @@
+{
+  "scope": "Separately labelled offline eSpeak NG listening candidate; original DEMO text; no gTTS or product voice replacement.",
+  "generator": "espeak-ng npm 1.0.2 (GPL-3.0-or-later), Emscripten Vietnamese vi, speed 155",
+  "format": "WAV PCM16 LE mono 24000 Hz",
+  "files": [
+    {
+      "id": "an",
+      "phrase": "Cảm ơn An đã gửi năm hoa hồng.",
+      "bytes": 102580,
+      "seconds": 2.1361666666666665,
+      "peak": 24517,
+      "clipped": 0,
+      "sha256": "ccddf015faf49fd0342e2d5254abab4e7fe08be064f9910eabf19cbd17129fff"
+    },
+    {
+      "id": "binh",
+      "phrase": "Cảm ơn Bình đã gửi hoa hồng.",
+      "bytes": 95246,
+      "seconds": 1.983375,
+      "peak": 24431,
+      "clipped": 0,
+      "sha256": "b38ad4bda7a3460e7ecb5bffdc958b8b867e3a92f80410656182379bdb8ea790"
+    },
+    {
+      "id": "chi",
+      "phrase": "Cảm ơn Chi đã gửi hoa hồng.",
+      "bytes": 99452,
+      "seconds": 2.071,
+      "peak": 24612,
+      "clipped": 0,
+      "sha256": "725633c9d1770214a062565695afdc81414235e2cd2c37d873c1cbbce5a81aff"
+    },
+    {
+      "id": "wish-01",
+      "phrase": "Chúc bạn một ngày bình an.",
+      "bytes": 80536,
+      "seconds": 1.6769166666666666,
+      "peak": 24497,
+      "clipped": 0,
+      "sha256": "752833e76536e6a75d6e97d13f896780165abbd5066a28b4009eae7087d3f949"
+    },
+    {
+      "id": "wish-02",
+      "phrase": "Chúc mọi người thân tâm an lạc.",
+      "bytes": 95826,
+      "seconds": 1.9954583333333333,
+      "peak": 24691,
+      "clipped": 0,
+      "sha256": "b42456376c8649faf4dee75c1505a5b7ef9f1787c0245dcfe7f4ba91eb7139e4"
+    },
+    {
+      "id": "wish-03",
+      "phrase": "Chúc gia đình bạn luôn mạnh khỏe.",
+      "bytes": 105456,
+      "seconds": 2.196083333333333,
+      "peak": 24547,
+      "clipped": 0,
+      "sha256": "1635a2a3cb87d9ef27088b85af390e7855b978adf5229f5741f7947e1e498d98"
+    },
+    {
+      "id": "wish-04",
+      "phrase": "Chúc bạn có một buổi tối nhẹ nhàng.",
+      "bytes": 125562,
+      "seconds": 2.6149583333333335,
+      "peak": 24497,
+      "clipped": 0,
+      "sha256": "a773eb4d2861b73cf68ca473535490c6a202760ebb6e06448dbf49c2df62d946"
+    },
+    {
+      "id": "wish-05",
+      "phrase": "Mong bạn tìm thấy phút giây tĩnh lặng.",
+      "bytes": 108828,
+      "seconds": 2.2663333333333333,
+      "peak": 24530,
+      "clipped": 0,
+      "sha256": "2d0a6d105de96b9f389564cf47348eb6dbfba7ec8fccff337b61890dfee302fd"
+    },
+    {
+      "id": "wish-06",
+      "phrase": "Chúc nụ cười luôn nở trên môi bạn.",
+      "bytes": 115620,
+      "seconds": 2.4078333333333335,
+      "peak": 22486,
+      "clipped": 0,
+      "sha256": "ff3ff6d1edded9e834656fc9c2af775e16cc6e4150e13bcbce9ac7e4f5092bbb"
+    },
+    {
+      "id": "wish-07",
+      "phrase": "Mong ngày mai mang đến niềm vui.",
+      "bytes": 97680,
+      "seconds": 2.0340833333333332,
+      "peak": 24424,
+      "clipped": 0,
+      "sha256": "c6ff6b9a1e1597f6bea2609b1a00c6a2b5c6948cc0865ef17622a3db40d91cde"
+    },
+    {
+      "id": "wish-08",
+      "phrase": "Chúc bạn an nhiên trong từng nhịp thở.",
+      "bytes": 117688,
+      "seconds": 2.4509166666666666,
+      "peak": 24497,
+      "clipped": 0,
+      "sha256": "0d538ec9f9eb7d7663ee6e32eb2cfdcf99d3b24bb157b439020b95712fc2a0e2"
+    },
+    {
+      "id": "wish-09",
+      "phrase": "Mong những điều tử tế đến với mọi người.",
+      "bytes": 117118,
+      "seconds": 2.4390416666666668,
+      "peak": 20981,
+      "clipped": 0,
+      "sha256": "6acbe78da2c4c0422e57e5edc1747d8c52b5f909eed149369ff12a9753d881ba"
+    },
+    {
+      "id": "wish-10",
+      "phrase": "Chúc bạn và người thân nhiều bình an.",
+      "bytes": 107876,
+      "seconds": 2.2465,
+      "peak": 24544,
+      "clipped": 0,
+      "sha256": "f54b7c080edd9b9917e2fa794f5eb11a1b66713c247bae07cf3185834b1cd068"
+    },
+    {
+      "id": "wish-11",
+      "phrase": "Chúc bạn nghỉ ngơi và ngủ thật ngon.",
+      "bytes": 107150,
+      "seconds": 2.231375,
+      "peak": 24497,
+      "clipped": 0,
+      "sha256": "b9c7488268f7e668ad613424845800c6efa1b35070bae371b6778042e1964d75"
+    },
+    {
+      "id": "wish-12",
+      "phrase": "Chúc lòng bạn nhẹ như gió trên hồ.",
+      "bytes": 124100,
+      "seconds": 2.5845,
+      "peak": 24527,
+      "clipped": 0,
+      "sha256": "5d529f215e2f3c4b04f2163bbd0e77c3037a1e8100eb68b2170090f6d05156ad"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { demoName, type NameId } from './named-voice.ts';
 import type { Effect, Snapshot } from '../../../../packages/v2-events/src/protocol.ts';
 
 export type CueEffect = Extract<Effect, { type: 'giftFx' | 'focusStarted' | 'focusEnded' | 'focusSkipped' }>;
@@ -23,12 +24,15 @@ export type Cue = {
   sound: GiftSound;
   sequence: number;
   count: number;
+  identity?: Readonly<{ epoch: number; nameId: NameId; count: number; displayName: string }>;
 };
 
 export type AudioSink = {
   sfx(cue: Cue): void;
-  voice(cue: Cue, availableMs: number): 'started' | 'waiting' | 'unavailable' | 'too-long';
+  voice(cue: Cue, availableMs: number, waitUntil: number): 'started' | 'waiting' | 'unavailable' | 'too-long';
   cut(reason: string): void;
+  prepare?(cue: Cue): void;
+  discard?(request: string): void;
 };
 
 export const maxPending = 20;
@@ -36,6 +40,7 @@ const maxPlayed = 256;
 const overlayTTL = 2200;
 const pendingTTL = 90_000;
 const margin = 140;
+const maxNamedWaitMs = 350;
 
 export class AudioDirector {
   private room?: string;
@@ -47,7 +52,7 @@ export class AudioDirector {
   private pending = new Map<string, Cue>();
   private consumed = new Set<string>();
   private focus?: { request: string; actor: string; deadline: number };
-  private active?: Cue;
+  private active?: { cue: Cue; waitUntil: number };
   private sfxStarted = false;
 
   constructor(holdMs: number, sink: AudioSink) {
@@ -64,7 +69,7 @@ export class AudioDirector {
     if (this.enabled === on) return;
     this.enabled = on;
     if (on) this.watermark = watermark;
-    this.pending.clear();
+    this.clearPending();
     this.cut(reason);
   }
 
@@ -76,7 +81,7 @@ export class AudioDirector {
       this.room = state.roomSessionId;
       this.epoch = epoch;
       this.focus = undefined;
-      this.pending.clear();
+      this.clearPending();
       this.cut('session-change');
     }
     for (const record of records) {
@@ -88,24 +93,37 @@ export class AudioDirector {
 
     const at = state.atMs;
     const intent = state.focus;
+    const avatar = binding && state.avatars.find(value => value.visible &&
+      value.actorId === binding.actorId && value.seatId === binding.seatId);
     const eligible = binding && intent && state.camera.mode === 'GIFT_FOCUS' && intent.confirmation === 'confirmed' &&
       this.focus?.request === intent.requestId && this.focus.actor === binding.actorId &&
       intent.actorId === binding.actorId && intent.roomSessionId === state.roomSessionId &&
       state.camera.activeRequestId === intent.requestId && state.camera.activeActorId === binding.actorId &&
-      state.avatars.some(avatar => avatar.visible && avatar.actorId === binding.actorId && avatar.seatId === binding.seatId)
+      avatar
       ? intent : undefined;
     const idle = state.camera.mode === 'CINEMATIC' && !intent && state.camera.pendingGivers === 0;
 
-    if (this.active && (this.active.binding
-      ? eligible?.requestId !== this.active.request || binding?.seatId !== this.active.binding.seatId ||
+    const active = this.active?.cue;
+    if (active && (active.binding
+      ? eligible?.requestId !== active.request || binding?.seatId !== active.binding.seatId ||
         at >= Math.min(this.focus?.deadline ?? 0, eligible.expiresAtMs)
-      : !idle || at >= this.active.expires)) this.cut('focus-exit');
+      : !idle || at >= active.expires)) this.cut('focus-exit');
 
     for (const [key, cue] of this.pending) {
-      if (at >= cue.expires) this.drop(key, 'expired');
+      if (at >= cue.expires) {
+        this.drop(key, 'expired');
+        continue;
+      }
+      if (cue.identity && cue.binding && !state.avatars.some(value => value.visible &&
+          value.actorId === cue.binding?.actorId && value.seatId === cue.binding.seatId &&
+          value.displayName === cue.identity?.displayName)) {
+        this.sink.discard?.(key);
+        this.pending.set(key, { ...cue, identity: undefined });
+        this.count('name-changed');
+      }
     }
     const cue = eligible ? this.pending.get(eligible.requestId) :
-      idle ? (this.active ? this.pending.get(this.active.request) :
+      idle ? (this.active ? this.pending.get(this.active.cue.request) :
         [...this.pending.values()].find(item => !item.binding)) : undefined;
     if (!cue) return;
     if (cue.binding && (cue.binding.actorId !== binding?.actorId || cue.binding.seatId !== binding.seatId)) {
@@ -117,13 +135,18 @@ export class AudioDirector {
       this.drop(cue.request, 'insufficient-hold');
       return;
     }
-    this.active = cue;
+    this.active ??= { cue, waitUntil: at + maxNamedWaitMs };
     if (cue.binding && !this.sfxStarted) {
       this.sfxStarted = true;
       this.sink.sfx(cue);
     }
-    const status = this.sink.voice(cue, deadline - at - margin);
+    const status = this.sink.voice(cue, deadline - at - margin, this.active.waitUntil);
     if (status !== 'waiting') this.drop(cue.request, status === 'started' ? undefined : status);
+  }
+
+  private clearPending() {
+    for (const request of this.pending.keys()) this.sink.discard?.(request);
+    this.pending.clear();
   }
 
   private accept(record: CueRecord) {
@@ -138,7 +161,7 @@ export class AudioDirector {
       const request = 'intent' in effect ? effect.intent.requestId : effect.requestId;
       if (this.focus?.request === request) this.focus = undefined;
       if (this.pending.has(request)) this.drop(request, 'focus-ended');
-      if (this.active?.request === request) this.cut('focus-ended');
+      if (this.active?.cue.request === request) this.cut('focus-ended');
       return;
     }
     if (effect.type !== 'giftFx' || record.disposition !== 'accepted' || effect.confirmation !== 'confirmed') return;
@@ -150,14 +173,19 @@ export class AudioDirector {
     const binding = effect.dedicatedFocus && effect.actorId && record.seatId
       ? { actorId: effect.actorId, seatId: record.seatId } : undefined;
     if (effect.dedicatedFocus && !binding) { this.count('binding-missing'); return; }
+    const label = demoName(effect.displayName);
+    const sound = giftSound(effect.giftId);
+    const identity = label && binding && effect.giftCount >= 1 && effect.giftCount <= 8
+      ? { epoch: record.epoch, nameId: label, count: effect.giftCount, displayName: effect.displayName } : undefined;
     if (previous) {
       if (previous.binding?.actorId !== binding?.actorId || previous.binding?.seatId !== binding?.seatId) {
         this.drop(request, 'binding-mismatch');
         return;
       }
-      previous.count += effect.giftCount;
-      // Keep the sound already aligned to the first final once focus playback has begun.
-      if (this.active?.request !== request) previous.sound = giftSound(effect.giftId);
+      // Pending survives only while voice is waiting. Supersede it without rearming the chime or wait deadline.
+      const next = { ...previous, sound, identity, sequence: record.sequence, count: previous.count + effect.giftCount };
+      this.pending.set(request, next);
+      this.sink.prepare?.(next);
       this.count('coalesced');
       return;
     }
@@ -165,12 +193,15 @@ export class AudioDirector {
     if (this.consumed.size >= maxPlayed) { this.count('ledger-capacity'); return; }
     this.consumed.add(request);
     if (this.pending.size >= maxPending) { this.count('queue-capacity'); return; }
-    this.pending.set(request, { room: record.room, request, binding, sequence: record.sequence,
-      count: effect.giftCount, sound: giftSound(effect.giftId), expires: effect.atMs + (binding ? pendingTTL : overlayTTL) });
+    const cue: Cue = { room: record.room, request, binding, sequence: record.sequence, identity,
+      count: effect.giftCount, sound, expires: effect.atMs + (binding ? pendingTTL : overlayTTL) };
+    this.pending.set(request, cue);
+    this.sink.prepare?.(cue);
   }
 
   private drop(key: string, reason?: string) {
     this.pending.delete(key);
+    this.sink.discard?.(key);
     if (reason) this.count(reason);
   }
 

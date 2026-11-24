@@ -1,0 +1,16 @@
+﻿Source: 20b181315e8b42cc70eef763c48945838bb56f1f
+✔ worker is hard blocked for outbound synthesis and rejects malformed local boundary requests (99.8856ms)
+✔ static fixture cache keeps exact synthetic template and count, expires and evicts at 32 (134.4276ms)
+✔ one active job, at most four queued, aborted work releases the slot (108.1283ms)
+✔ oversized, silent and malformed PCM are not returned (20.6681ms)
+✔ authenticated request rate limit is bounded (29.0478ms)
+✔ local bounded child handles timeout and oversized output (1758.3907ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3727.9477
+Python adapter exited 78 before import or outbound request.

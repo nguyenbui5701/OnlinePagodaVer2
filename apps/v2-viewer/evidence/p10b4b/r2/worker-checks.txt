@@ -1,0 +1,14 @@
+✔ worker is hard blocked for outbound synthesis and rejects malformed local boundary requests (36.6156ms)
+✔ static fixture cache keeps exact synthetic template and count, expires and evicts at 32 (45.5619ms)
+✔ one active job, at most four queued, aborted work releases the slot (78.185ms)
+✔ oversized, silent and malformed PCM are not returned (4.8505ms)
+✔ authenticated request rate limit is bounded (24.0971ms)
+✔ local bounded child handles timeout and oversized output (423.7297ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 804.9899

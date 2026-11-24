@@ -1,0 +1,564 @@
+{
+  "source": "20b181315e8b42cc70eef763c48945838bb56f1f",
+  "base": "3f16a7dc607716f9cc3a05e232775745d5394de1",
+  "browser": "158.0.4370.33",
+  "viewport": {
+    "width": 720,
+    "height": 1280
+  },
+  "parity": [
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "t": 1,
+      "pair": [
+        {
+          "name": "eco-r16-baseline.png",
+          "revision": "3f16a7dc607716f9cc3a05e232775745d5394de1",
+          "hash": "f6e33d563411c3469d3a86376fb6d7e801167dd2d186bafffdd169203485fdbd",
+          "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              0.875,
+              10.25,
+              45.1953125
+            ],
+            [
+              0,
+              9.464062499999999,
+              0
+            ],
+            57.62454004294496
+          ]
+        },
+        {
+          "name": "eco-r16-candidate.png",
+          "revision": "20b181315e8b42cc70eef763c48945838bb56f1f",
+          "hash": "f6e33d563411c3469d3a86376fb6d7e801167dd2d186bafffdd169203485fdbd",
+          "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              0.875,
+              10.25,
+              45.1953125
+            ],
+            [
+              0,
+              9.464062499999999,
+              0
+            ],
+            57.62454004294496
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "eco",
+      "tree": "r17b",
+      "t": 47.3,
+      "pair": [
+        {
+          "name": "eco-r17b-baseline.png",
+          "revision": "3f16a7dc607716f9cc3a05e232775745d5394de1",
+          "hash": "b81f58f039bdbb439e2f2f94a4250c1907b4c8c0f2b121c854686100e3c8c63f",
+          "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "mode": "GIFT_FOCUS",
+          "camera": [
+            [
+              -2.1374503763825166,
+              1.1553331621993332,
+              8.870261580192393
+            ],
+            [
+              -1.016070605667886,
+              0.6753331621993333,
+              13.742889968427228
+            ],
+            50
+          ]
+        },
+        {
+          "name": "eco-r17b-candidate.png",
+          "revision": "20b181315e8b42cc70eef763c48945838bb56f1f",
+          "hash": "b81f58f039bdbb439e2f2f94a4250c1907b4c8c0f2b121c854686100e3c8c63f",
+          "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "mode": "GIFT_FOCUS",
+          "camera": [
+            [
+              -2.1374503763825166,
+              1.1553331621993332,
+              8.870261580192393
+            ],
+            [
+              -1.016070605667886,
+              0.6753331621993333,
+              13.742889968427228
+            ],
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "quality",
+      "tree": "r16",
+      "t": 22,
+      "pair": [
+        {
+          "name": "quality-r16-baseline.png",
+          "revision": "3f16a7dc607716f9cc3a05e232775745d5394de1",
+          "hash": "1878188b9ba327f884c2aa0afea756aa2bbb1a5d532698cc83e47c4618fe07f5",
+          "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              3.5625,
+              35.0625,
+              40.375
+            ],
+            [
+              1.0374999999999999,
+              0.625,
+              10.8125
+            ],
+            62.09071351435282
+          ]
+        },
+        {
+          "name": "quality-r16-candidate.png",
+          "revision": "20b181315e8b42cc70eef763c48945838bb56f1f",
+          "hash": "1878188b9ba327f884c2aa0afea756aa2bbb1a5d532698cc83e47c4618fe07f5",
+          "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              3.5625,
+              35.0625,
+              40.375
+            ],
+            [
+              1.0374999999999999,
+              0.625,
+              10.8125
+            ],
+            62.09071351435282
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "t": 64.1,
+      "pair": [
+        {
+          "name": "quality-r17b-baseline.png",
+          "revision": "3f16a7dc607716f9cc3a05e232775745d5394de1",
+          "hash": "196ee563fcb5cac213009a8ea2201a7f5b5dbbef7aed52db79a2ffe8748376b2",
+          "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "mode": "CINE_RETURN",
+          "camera": [
+            [
+              3.895574294012618,
+              3.774177484404193,
+              18.253821359801332
+            ],
+            [
+              6.9283851062104045,
+              3.166501336656915,
+              7.057028857066104
+            ],
+            52.04034736045601
+          ]
+        },
+        {
+          "name": "quality-r17b-candidate.png",
+          "revision": "20b181315e8b42cc70eef763c48945838bb56f1f",
+          "hash": "196ee563fcb5cac213009a8ea2201a7f5b5dbbef7aed52db79a2ffe8748376b2",
+          "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "mode": "CINE_RETURN",
+          "camera": [
+            [
+              3.895574294012618,
+              3.774177484404193,
+              18.253821359801332
+            ],
+            [
+              6.9283851062104045,
+              3.166501336656915,
+              7.057028857066104
+            ],
+            52.04034736045601
+          ]
+        }
+      ]
+    }
+  ],
+  "guards": [
+    {
+      "mode": "off",
+      "contexts": 0,
+      "voiceRequests": 0
+    },
+    {
+      "mode": "inspect",
+      "contexts": 0,
+      "voiceRequests": 0
+    },
+    {
+      "mode": "frozen",
+      "contexts": 0,
+      "voiceRequests": 0
+    },
+    {
+      "mode": "offline",
+      "contexts": 0,
+      "voiceRequests": 0
+    }
+  ],
+  "fixture": {
+    "method": "Edge Web Audio with injected non-speech PCM and existing DEMO SliceDriver stepped on a synthetic clock",
+    "idle": {
+      "now": 10000,
+      "requests": 0,
+      "mode": "CINEMATIC",
+      "giftCount": 0,
+      "audio": {
+        "status": "READY",
+        "connected": true,
+        "outputEnabled": true,
+        "sfxAvailable": true,
+        "ambience": false,
+        "queue": 0,
+        "marks": [
+          {
+            "event": "idle-start",
+            "wallMs": 4224.699999999255,
+            "sceneMs": 10000,
+            "contextSec": 0,
+            "variant": "fixture-idle-speech",
+            "seconds": 2,
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          }
+        ],
+        "suppressed": {},
+        "voice": {
+          "ready": 4,
+          "waiting": 0,
+          "playing": false,
+          "status": "READY"
+        },
+        "dynamic": "DYNAMIC_TTS_FIXTURE",
+        "idle": {
+          "playing": true,
+          "bell": false,
+          "speech": true
+        }
+      }
+    },
+    "progress": {
+      "now": 46000,
+      "requests": 0,
+      "mode": "GIFT_TRANSITION",
+      "giftCount": 0,
+      "seat": "seat-1",
+      "audio": {
+        "status": "READY",
+        "connected": true,
+        "outputEnabled": true,
+        "sfxAvailable": true,
+        "ambience": false,
+        "queue": 0,
+        "marks": [
+          {
+            "event": "idle-start",
+            "wallMs": 4224.699999999255,
+            "sceneMs": 10000,
+            "contextSec": 0,
+            "variant": "fixture-idle-speech",
+            "seconds": 2,
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "idle-cut",
+            "wallMs": 4285.300000000745,
+            "sceneMs": 46000,
+            "contextSec": 0,
+            "variant": "fixture-idle-speech",
+            "seconds": 0.03,
+            "reason": "gift-activity",
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          }
+        ],
+        "suppressed": {},
+        "voice": {
+          "ready": 4,
+          "waiting": 0,
+          "playing": false,
+          "status": "READY"
+        },
+        "dynamic": "DYNAMIC_TTS_FIXTURE",
+        "idle": {
+          "playing": true,
+          "bell": false,
+          "speech": true
+        }
+      }
+    },
+    "checkpoints": [
+      {
+        "now": 47050,
+        "mode": "GIFT_FOCUS",
+        "seat": "seat-1"
+      },
+      {
+        "now": 52900,
+        "mode": "GIFT_FOCUS",
+        "seat": "seat-2"
+      },
+      {
+        "now": 58750,
+        "mode": "GIFT_FOCUS",
+        "seat": "seat-3"
+      }
+    ],
+    "final": {
+      "now": 65000,
+      "requests": 3,
+      "mode": "CINEMATIC",
+      "giftCount": 8,
+      "audio": {
+        "status": "READY",
+        "connected": true,
+        "outputEnabled": true,
+        "sfxAvailable": true,
+        "ambience": false,
+        "queue": 0,
+        "marks": [
+          {
+            "event": "idle-start",
+            "wallMs": 4224.699999999255,
+            "sceneMs": 10000,
+            "contextSec": 0,
+            "variant": "fixture-idle-speech",
+            "seconds": 2,
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "idle-cut",
+            "wallMs": 4285.300000000745,
+            "sceneMs": 46000,
+            "contextSec": 0,
+            "variant": "fixture-idle-speech",
+            "seconds": 0.03,
+            "reason": "gift-activity",
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "idle-cut",
+            "wallMs": 4524.099999997765,
+            "sceneMs": 47050,
+            "contextSec": 0,
+            "variant": "fixture-idle-speech",
+            "seconds": 0,
+            "reason": "gift-sfx",
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "sfx-start",
+            "wallMs": 4527.699999999255,
+            "sceneMs": 47050,
+            "contextSec": 0,
+            "room": "demo-1",
+            "request": "demo-1-gift-1",
+            "actor": "demo-1-actor-1",
+            "seat": "seat-1",
+            "effectSequence": 2,
+            "variant": "rose",
+            "seconds": 0.75,
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "voice-start",
+            "wallMs": 4532.199999999255,
+            "sceneMs": 47050,
+            "contextSec": 0,
+            "room": "demo-1",
+            "request": "demo-1-gift-1",
+            "actor": "demo-1-actor-1",
+            "seat": "seat-1",
+            "effectSequence": 2,
+            "variant": "named",
+            "seconds": 0.3,
+            "ambienceGain": 0.05600000000000001,
+            "sfxGain": 0.216
+          },
+          {
+            "event": "idle-cut-end",
+            "wallMs": 4634.099999997765,
+            "sceneMs": 47050,
+            "contextSec": 0.010666666666666666,
+            "variant": "fixture-idle-speech",
+            "reason": "gift-activity",
+            "ambienceGain": 0.05600000000000001,
+            "sfxGain": 0.216
+          },
+          {
+            "event": "voice-end",
+            "wallMs": 4921.800000000745,
+            "sceneMs": 47050,
+            "contextSec": 0.30133333333333334,
+            "room": "demo-1",
+            "request": "demo-1-gift-1",
+            "actor": "demo-1-actor-1",
+            "seat": "seat-1",
+            "effectSequence": 2,
+            "variant": "named",
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "sfx-start",
+            "wallMs": 5206.099999997765,
+            "sceneMs": 52900,
+            "contextSec": 0.5813333333333334,
+            "room": "demo-1",
+            "request": "demo-1-gift-2",
+            "actor": "demo-1-actor-2",
+            "seat": "seat-2",
+            "effectSequence": 4,
+            "variant": "rose",
+            "seconds": 0.75,
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "voice-start",
+            "wallMs": 5206.300000000745,
+            "sceneMs": 52900,
+            "contextSec": 0.5813333333333334,
+            "room": "demo-1",
+            "request": "demo-1-gift-2",
+            "actor": "demo-1-actor-2",
+            "seat": "seat-2",
+            "effectSequence": 4,
+            "variant": "named",
+            "seconds": 0.3,
+            "ambienceGain": 0.05600000000000001,
+            "sfxGain": 0.216
+          },
+          {
+            "event": "sfx-end",
+            "wallMs": 5212.89999999851,
+            "sceneMs": 52900,
+            "contextSec": 0.592,
+            "room": "demo-1",
+            "request": "demo-1-gift-1",
+            "actor": "demo-1-actor-1",
+            "seat": "seat-1",
+            "effectSequence": 2,
+            "variant": "rose",
+            "ambienceGain": 0.05600000000000001,
+            "sfxGain": 0.216
+          },
+          {
+            "event": "voice-end",
+            "wallMs": 5512,
+            "sceneMs": 52900,
+            "contextSec": 0.8906666666666667,
+            "room": "demo-1",
+            "request": "demo-1-gift-2",
+            "actor": "demo-1-actor-2",
+            "seat": "seat-2",
+            "effectSequence": 4,
+            "variant": "named",
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "sfx-start",
+            "wallMs": 5681.800000000745,
+            "sceneMs": 58750,
+            "contextSec": 1.0506666666666666,
+            "room": "demo-1",
+            "request": "demo-1-gift-3",
+            "actor": "demo-1-actor-3",
+            "seat": "seat-3",
+            "effectSequence": 5,
+            "variant": "rose",
+            "seconds": 0.75,
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          },
+          {
+            "event": "voice-start",
+            "wallMs": 5682.300000000745,
+            "sceneMs": 58750,
+            "contextSec": 1.0506666666666666,
+            "room": "demo-1",
+            "request": "demo-1-gift-3",
+            "actor": "demo-1-actor-3",
+            "seat": "seat-3",
+            "effectSequence": 5,
+            "variant": "named",
+            "seconds": 0.3,
+            "ambienceGain": 0.05600000000000001,
+            "sfxGain": 0.216
+          },
+          {
+            "event": "sfx-end",
+            "wallMs": 5685.599999997765,
+            "sceneMs": 58750,
+            "contextSec": 1.0613333333333332,
+            "room": "demo-1",
+            "request": "demo-1-gift-2",
+            "actor": "demo-1-actor-2",
+            "seat": "seat-2",
+            "effectSequence": 4,
+            "variant": "rose",
+            "ambienceGain": 0.05600000000000001,
+            "sfxGain": 0.216
+          },
+          {
+            "event": "voice-end",
+            "wallMs": 5980.89999999851,
+            "sceneMs": 58750,
+            "contextSec": 1.36,
+            "room": "demo-1",
+            "request": "demo-1-gift-3",
+            "actor": "demo-1-actor-3",
+            "seat": "seat-3",
+            "effectSequence": 5,
+            "variant": "named",
+            "ambienceGain": 0.2,
+            "sfxGain": 0.45
+          }
+        ],
+        "suppressed": {
+          "expired": 1
+        },
+        "voice": {
+          "ready": 4,
+          "waiting": 0,
+          "playing": false,
+          "status": "READY"
+        },
+        "dynamic": "DYNAMIC_TTS_FIXTURE",
+        "idle": {
+          "playing": false,
+          "bell": false,
+          "speech": true
+        }
+      }
+    }
+  }
+}

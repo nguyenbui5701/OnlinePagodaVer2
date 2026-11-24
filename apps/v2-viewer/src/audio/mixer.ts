@@ -25,8 +25,9 @@ export class Mixer {
   private readonly loading = new Set<VoiceKey>();
   private readonly abort = new AbortController();
   private readonly effects = new Set<AudioScheduledSourceNode>();
-  private voice?: { source: AudioBufferSourceNode; cue: Cue; key: VoiceKey };
+  private voice?: { source: AudioBufferSourceNode; cue: Cue; key: VoiceKey | 'named' };
   private bed?: AudioBufferSourceNode;
+  private idle?: { source: AudioScheduledSourceNode; envelope: GainNode; id: string; kind: 'bell' | 'speech'; stopping?: boolean };
   private enabled = false;
   private ambience = false;
   private readonly volume = { ...levels };
@@ -80,7 +81,7 @@ export class Mixer {
   enable(enabled: boolean) {
     this.enabled = enabled;
     this.master.gain.setTargetAtTime(enabled ? .56 : 0, this.context.currentTime, .012);
-    if (!enabled) this.cut('muted');
+    if (!enabled) { this.cut('muted'); this.stopIdle('output-off', true); }
     this.updateBed();
   }
 
@@ -94,11 +95,14 @@ export class Mixer {
     this.updateBed();
   }
 
+  get busy() { return !!this.voice || this.effects.size > 0; }
+
   sfx(cue?: Cue) {
     if (!this.enabled || this.context.state !== 'running' || (!cue && (this.voice || this.effects.size))) return;
     const sound = cue?.sound ?? 'generic';
     const notes = notePitches[sound];
     if (this.effects.size + notes.length > 24) return;
+    this.stopIdle(cue ? 'gift-sfx' : 'operator-test', true);
     const now = this.context.currentTime;
     let remaining = notes.length;
     notes.forEach((pitch, i) => {
@@ -124,35 +128,113 @@ export class Mixer {
     this.log(cue ? 'sfx-start' : 'test-start', cue, sound, .56 + (notes.length - 1) * .095);
   }
 
-  voiceCue(cue: Cue, availableMs: number): 'started' | 'waiting' | 'unavailable' | 'too-long' {
+  fallbackFits(cue: Cue, availableMs: number) {
+    return this.voiceChoices(cue).some(key => (this.buffers.get(key)?.seconds ?? Infinity) * 1000 <= availableMs);
+  }
+
+  voiceCue(cue: Cue, availableMs: number, named?: Float32Array): 'started' | 'waiting' | 'unavailable' | 'too-long' {
     if (!this.enabled || this.context.state !== 'running' || this.voice) return 'unavailable';
-    const choices: VoiceKey[] = !cue.binding ? ['generic-short'] :
-      cue.sound === 'generic' ? ['generic', 'generic-short'] : [cue.sound, 'generic', 'generic-short'];
+    if (named) {
+      const buffer = this.pcmBuffer(named);
+      return this.playVoice(cue, 'named', { buffer, seconds: buffer.duration });
+    }
+    const choices = this.voiceChoices(cue);
     let decoded = false;
     for (const key of choices) {
       const clip = this.buffers.get(key);
       if (!clip) continue;
       decoded = true;
-      if (clip.seconds * 1000 > availableMs) continue;
-      const source = this.context.createBufferSource();
-      source.buffer = clip.buffer;
-      source.connect(this.voiceGain);
-      this.voice = { source, cue, key };
-      this.applyLevels();
-      this.log('voice-start', cue, key, clip.seconds);
-      source.onended = () => {
-        source.disconnect();
-        if (this.voice?.source !== source) return;
-        this.voice = undefined;
-        this.applyLevels();
-        this.log('voice-end', cue, key);
-      };
-      source.start(0, 0, clip.seconds);
-      return 'started';
+      if (clip.seconds * 1000 <= availableMs) return this.playVoice(cue, key, clip);
     }
     if (choices.some(key => this.loading.has(key))) return 'waiting';
     return decoded ? 'too-long' : 'unavailable';
   }
+
+  private voiceChoices(cue: Cue): VoiceKey[] {
+    return !cue.binding ? ['generic-short'] :
+      cue.sound === 'generic' ? ['generic', 'generic-short'] : [cue.sound, 'generic', 'generic-short'];
+  }
+
+  private pcmBuffer(samples: Float32Array) {
+    const buffer = this.context.createBuffer(1, samples.length, 24_000);
+    buffer.getChannelData(0).set(samples);
+    return buffer;
+  }
+
+  private playVoice(cue: Cue, key: VoiceKey | 'named', clip: Loaded) {
+    this.stopIdle('gift-voice', true);
+    const source = this.context.createBufferSource();
+    source.buffer = clip.buffer;
+    source.connect(this.voiceGain);
+    this.voice = { source, cue, key };
+    this.applyLevels();
+    this.log('voice-start', cue, key, clip.seconds);
+    source.onended = () => {
+      source.disconnect();
+      if (this.voice?.source !== source) return;
+      this.voice = undefined;
+      this.applyLevels();
+      this.log('voice-end', cue, key);
+    };
+    source.start(0, 0, clip.seconds);
+    return 'started' as const;
+  }
+
+  startIdle(id: string, samples?: Float32Array) {
+    if (!this.enabled || this.context.state !== 'running' || this.busy || this.idle) return;
+    if (samples && (!samples.length || samples.length > 144_000)) return;
+    const now = this.context.currentTime;
+    const envelope = this.context.createGain();
+    const kind = samples ? 'speech' : 'bell';
+    const source = samples ? this.context.createBufferSource() : this.context.createOscillator();
+    if (source instanceof AudioBufferSourceNode && samples) source.buffer = this.pcmBuffer(samples);
+    if (source instanceof OscillatorNode) {
+      source.type = 'sine';
+      source.frequency.value = [392, 440, 493.88, 523.25][Number(id.slice(-1)) % 4] ?? 440;
+    }
+    const duration = samples ? samples.length / 24_000 : 1.4;
+    envelope.gain.setValueAtTime(0, now);
+    envelope.gain.linearRampToValueAtTime(samples ? 1 : .24, now + .035);
+    if (!samples) envelope.gain.exponentialRampToValueAtTime(.0001, now + duration);
+    source.connect(envelope).connect(samples ? this.voiceGain : this.sfxGain);
+    this.idle = { source, envelope, id, kind };
+    this.applyLevels();
+    this.log('idle-start', undefined, id, duration);
+    source.onended = () => {
+      source.disconnect();
+      envelope.disconnect();
+      if (this.idle?.source !== source) return;
+      this.idle = undefined;
+      this.applyLevels();
+      this.log('idle-end', undefined, id);
+    };
+    source.start(now);
+    source.stop(now + duration);
+  }
+
+  stopIdle(reason: string, immediate = false) {
+    const idle = this.idle;
+    if (!idle || (idle.stopping && !immediate)) return;
+    idle.stopping = true;
+    const now = this.context.currentTime;
+    const fade = immediate ? 0 : .030;
+    idle.envelope.gain.cancelAndHoldAtTime(now);
+    idle.envelope.gain.linearRampToValueAtTime(0, now + fade);
+    idle.source.stop(now + fade);
+    // Retain the source until its stop so an immediate gift cue can also stop any release tail.
+    if (fade) idle.source.onended = () => {
+      idle.source.disconnect();
+      idle.envelope.disconnect();
+      if (this.idle === idle) this.idle = undefined;
+      this.applyLevels();
+      this.log('idle-cut-end', undefined, idle.id, undefined, reason);
+    };
+    else this.idle = undefined;
+    this.applyLevels();
+    this.log('idle-cut', undefined, idle.id, fade, reason);
+  }
+
+  get idlePlaying() { return !!this.idle; }
 
   cut(reason: string) {
     const voice = this.voice;
@@ -208,9 +290,10 @@ export class Mixer {
 
   private applyLevels() {
     const now = this.context.currentTime;
+    const duck = this.voice || this.idle?.kind === 'speech';
     this.voiceGain.gain.setTargetAtTime(this.volume.voice, now, .025);
-    this.sfxGain.gain.setTargetAtTime(this.volume.sfx * (this.voice ? .48 : 1), now, this.voice ? .020 : .10);
-    this.ambienceGain.gain.setTargetAtTime(this.volume.ambience * (this.voice ? .28 : 1), now, this.voice ? .020 : .10);
+    this.sfxGain.gain.setTargetAtTime(this.volume.sfx * (duck ? .48 : 1), now, duck ? .020 : .10);
+    this.ambienceGain.gain.setTargetAtTime(this.volume.ambience * (duck ? .28 : 1), now, duck ? .020 : .10);
   }
 
   private updateBed() {

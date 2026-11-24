@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "source": "gTTS 2.5.4 / vi",
+  "format": "pcm_s16le",
+  "sampleRate": 24000,
+  "channels": 1,
+  "python": "3.10.5",
+  "ffmpeg": "ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+  "clips": [
+    {
+      "id": "wish-01",
+      "text": "Chúc bạn và gia đình luôn bình an.",
+      "bytes": 88050,
+      "sha256": "70df99bcd27c5df54807e36b124e41c295c4621ea219da4947229131c897f7b8",
+      "durationSec": 1.834375,
+      "peakPcm16": 13793,
+      "latencyMs": 546
+    },
+    {
+      "id": "wish-02",
+      "text": "Chúc bạn hôm nay có nhiều niềm vui.",
+      "bytes": 86192,
+      "sha256": "844a934c03c85672f51e403c6b0363e0338a0cbbed3ae8453e32195609c0b509",
+      "durationSec": 1.7956666666666667,
+      "peakPcm16": 15352,
+      "latencyMs": 422
+    },
+    {
+      "id": "wish-03",
+      "text": "Mong lòng bạn luôn nhẹ nhàng và an yên.",
+      "bytes": 101624,
+      "sha256": "cd897c7f01dbf4151e2074d961309bd4832af8f71be30e50bf660945eed466c5",
+      "durationSec": 2.117166666666667,
+      "peakPcm16": 15661,
+      "latencyMs": 453
+    },
+    {
+      "id": "wish-04",
+      "text": "Chúc những điều tốt lành đến với bạn.",
+      "bytes": 86210,
+      "sha256": "a3c73a7f1ce6a7e4d9c9fe89c0924a86d7cbf63a5b745bd31b6d8ae7edcdb707",
+      "durationSec": 1.7960416666666668,
+      "peakPcm16": 13427,
+      "latencyMs": 406
+    },
+    {
+      "id": "wish-05",
+      "text": "Mong bạn có một buổi tối thật thư thái.",
+      "bytes": 98542,
+      "sha256": "a06dab20ac3a0502df4f2b996a8feb349a2175e5eb0dac0a8e4fd7a2dec85589",
+      "durationSec": 2.052958333333333,
+      "peakPcm16": 14299,
+      "latencyMs": 375
+    },
+    {
+      "id": "wish-06",
+      "text": "Chúc những người bạn thương luôn mạnh khỏe.",
+      "bytes": 89196,
+      "sha256": "0786f4ec0aeee667e886c77cc87c276d436e7ddc8310e0e8e8cfffb8f46d2129",
+      "durationSec": 1.85825,
+      "peakPcm16": 14527,
+      "latencyMs": 421
+    },
+    {
+      "id": "wish-07",
+      "text": "Mong mỗi ngày đều có một điều đáng mỉm cười.",
+      "bytes": 110074,
+      "sha256": "b86f9ebdfaab164dc844587ca18e3c7629e466da6116f3ccf5dde679617f7604",
+      "durationSec": 2.2932083333333333,
+      "peakPcm16": 12643,
+      "latencyMs": 547
+    },
+    {
+      "id": "wish-08",
+      "text": "Chúc bạn tìm được chút bình yên trong ngày.",
+      "bytes": 100316,
+      "sha256": "3c3f71fa1376add0870b683e520a1e710e9f026ab3bdc9b6dc3dcb6820101633",
+      "durationSec": 2.089916666666667,
+      "peakPcm16": 15287,
+      "latencyMs": 375
+    },
+    {
+      "id": "wish-09",
+      "text": "Mong bạn có thêm thời gian cho những điều mình yêu.",
+      "bytes": 108240,
+      "sha256": "8072bb252ce00a32ba46cb7bb18cb04a04dd42629cdbb81714d70e9a3b7b8175",
+      "durationSec": 2.255,
+      "peakPcm16": 14949,
+      "latencyMs": 422
+    },
+    {
+      "id": "wish-10",
+      "text": "Chúc bạn đủ kiên nhẫn với chính mình.",
+      "bytes": 90940,
+      "sha256": "548837dc3db22510009ad66b753a112bffcbdcabc7c028c05210e535824d87a1",
+      "durationSec": 1.8945833333333333,
+      "peakPcm16": 15535,
+      "latencyMs": 422
+    },
+    {
+      "id": "wish-11",
+      "text": "Mong ngày mai của bạn bắt đầu thật dịu dàng.",
+      "bytes": 109202,
+      "sha256": "16dd80b015822035581fe3e4a58dea712a07f0c1923ece80d7c94a21bd61e887",
+      "durationSec": 2.2750416666666666,
+      "peakPcm16": 16204,
+      "latencyMs": 453
+    },
+    {
+      "id": "wish-12",
+      "text": "Chúc bạn luôn gặp được sự tử tế.",
+      "bytes": 88586,
+      "sha256": "199b1aa1a2c4d6352f198488c0b1f9a55f5259f31a208ea853775eb2eaaaaefb",
+      "durationSec": 1.8455416666666666,
+      "peakPcm16": 15274,
+      "latencyMs": 515
+    }
+  ]
+}
