@@ -88,8 +88,11 @@ test('Overlay audio piggybacks a consumed ACK without changing visual revision o
   assert.equal(first.status, 200);
   assert.equal((await first.json()).audioDesired.settings.master.enabled, false);
   assert.equal((await poll(other, off)).status, 409);
-  assert.equal((await poll(receiver, { ...off, revision: 2 })).status, 400);
-  assert.equal((await poll(receiver, { ...off, state: 'invented' })).status, 400);
+  assert.equal((await poll(receiver, { ...off, revision: 2 })).status, 200);
+  assert.equal(gateway.audioApplied, undefined);
+  assert.equal((await poll(receiver, { ...off, state: 'invented' })).status, 200);
+  assert.equal(gateway.audioApplied, undefined);
+  await poll(receiver, off);
   assert.equal((await post('/poll', { client: receiver, ack: 0, audio: off })).status, 400);
   const hot = { ...audioDefaults, master: { ...audioDefaults.master, enabled: true } };
   assert.equal((await post('/save-audio', { revision: 1, settings: hot })).status, 200);

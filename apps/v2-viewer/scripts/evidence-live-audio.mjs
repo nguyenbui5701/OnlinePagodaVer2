@@ -25,6 +25,7 @@ let stops = 0;
 let failLink = false;
 let saves = 0;
 const audioPaths = new Set();
+const withoutIdle = process.argv.includes('--without-idle-library');
 const gateway = new Gateway((username, deliver) => {
   assert.equal(username, 'audio_fixture');
   launches++;
@@ -55,6 +56,7 @@ async function browserContext(viewerPort) {
     const url = new URL(route.request().url());
     url.port = String(viewerPort);
     if (url.pathname.includes('/audio/')) audioPaths.add(url.pathname);
+    if (withoutIdle && url.pathname === '/audio/vi-gtts-demo-v1/manifest.json') return route.fulfill({ status: 404, body: '' });
     const response = await fetch(url, { redirect: 'error' });
     await route.fulfill({ status: response.status, contentType: response.headers.get('content-type') ?? undefined,
       body: Buffer.from(await response.arrayBuffer()) });
@@ -243,6 +245,7 @@ try {
   result.clips = { thanks: gateway.audioApplied.thanks, wishes: gateway.audioApplied.wishes };
   assert.equal(result.clips.thanks, 'AVAILABLE');
   const wishAvailable = result.clips.wishes === 'AVAILABLE';
+  if (withoutIdle) assert.equal(wishAvailable, false);
   if (!wishAvailable) await apply({ idleBell: true }, 'READY');
   const idle = await waitPage(overlay, () => window.viewerReport?.audio?.marks.findLast(mark => mark.event === 'idle-start'));
   result.idleStarted = await idle.jsonValue();
@@ -308,6 +311,35 @@ try {
   result.continuity = { launches, stops, connection: gateway.connection, appliedVisual: gateway.appliedRevision,
     acknowledged: gateway.acknowledged, counters: { ...gateway.counters }, contexts: 1 };
 
+  // Hidden-document behavior is triggered explicitly because headless Edge need not hide background tabs.
+  await overlay.evaluate(() => {
+    Object.defineProperty(document, 'hidden', { value: true, configurable: true });
+    document.dispatchEvent(new Event('visibilitychange'));
+  });
+  await wait(() => gateway.audioApplied?.state === 'MUTED', 'hidden Overlay mutes');
+  await overlay.waitForTimeout(150);
+  result.segments.hidden = await interval(overlay, 160);
+  await overlay.evaluate(() => { delete document.hidden; });
+  await apply({ 'water-volume': 50 }, 'MUTED');
+  await overlay.locator('#capture').click();
+  await wait(() => gateway.audioApplied?.state === 'READY', 'gesture after visibility mute');
+
+  await overlay.evaluate(() => {
+    window.gpuLoss = document.querySelector('#capture').getContext('webgl2').getExtension('WEBGL_lose_context');
+    window.gpuLoss.loseContext();
+  });
+  await wait(() => !gateway.overlayReady && gateway.audioApplied?.state === 'MUTED', 'WebGL loss silences but retains session');
+  await overlay.waitForTimeout(180);
+  result.segments.webglLost = await interval(overlay, 160);
+  await overlay.evaluate(() => window.gpuLoss.restoreContext());
+  await wait(() => gateway.overlayReady, 'actual rendered recovery');
+  assert.equal(gateway.audioApplied?.state, 'MUTED');
+  assert.equal(gateway.owner, owner);
+  assert.equal(launches, 1);
+  assert.equal(stops, 0);
+  await overlay.locator('#capture').click();
+  await wait(() => gateway.audioApplied?.state === 'READY', 'gesture after WebGL recovery');
+
   failLink = true;
   await waitPage(overlay, () => window.viewerReport?.liveReason === 'LOCAL_LINK_LOST');
   await overlay.waitForTimeout(65);
@@ -331,11 +363,12 @@ try {
   assert(result.segments.waterLow.rms > 5);
   assert(result.segments.windOnly.rms > 5);
   assert(result.segments.resumed.rms > 5);
-  for (const name of ['bothBedsOff', 'masterOff', 'linkLost', 'disconnected']) {
+  for (const name of ['bothBedsOff', 'masterOff', 'hidden', 'webglLost', 'linkLost', 'disconnected']) {
     assert.equal(result.segments[name].peak, 0, name);
   }
+  const recordingName = withoutIdle ? 'live-audio-fallback.wav' : 'live-audio.wav';
   result.recording = { ...metrics(pcm), seconds: pcm.length / 2 / packed.rate, rate: packed.rate, sha256: sha(recording),
-    pcmSha256: sha(pcm), file: 'apps/v2-viewer/evidence/p10b6-local/live-audio.wav' };
+    pcmSha256: sha(pcm), file: 'apps/v2-viewer/evidence/p10b6-local/' + recordingName };
   assert(result.recording.peakDbFS <= -1 && result.recording.clipping === 0);
   result.source = packed.source;
   result.graphics = packed.graphics;
@@ -344,14 +377,40 @@ try {
   result.audioPaths = [...audioPaths];
   assert(result.audioPaths.every(path => path.startsWith('/audio/')));
   assert(result.audioPaths.some(path => path === '/audio/vi-v1-approved/generic.voice.json'));
+  // Verify failure of Web Audio initialization cannot block an otherwise healthy receiver.
+  await overlay.evaluate(() => window.dispatchEvent(new PageTransitionEvent('pagehide')));
+  await wait(() => !gateway.owner, 'first Overlay releases lease');
+  await overlay.close();
+  const broken = await live.newPage();
+  await broken.addInitScript(() => {
+    window.AudioContext = class {
+      constructor() { throw new Error('evidence: audio device unavailable'); }
+    };
+  });
+  await broken.goto(origin + '/overlay/');
+  await wait(() => gateway.overlayReady && gateway.audioApplied?.state === 'LOCKED', 'readiness independent of audio');
+  await broken.locator('#capture').click();
+  await wait(() => gateway.audioApplied?.state === 'UNAVAILABLE', 'unavailable audio reported from real entrypoint');
+  await finalControl.locator('#username').fill('audio_fixture');
+  await finalControl.locator('#connect').click();
+  await wait(() => launches === 2, 'Connect after audio failure');
+  receive({ type: 'connected', room });
+  gift(503);
+  await waitPage(broken, () => window.viewerReport?.confirmedGiftCount === 1);
+  await wait(() => gateway.acknowledged === 2, 'consumed ACK after audio failure');
+  assert.equal(await broken.evaluate(() => !!window.audioTap), false);
+  result.audioFailure = { state: gateway.audioApplied.state, acknowledged: gateway.acknowledged,
+    confirmed: await broken.evaluate(() => window.viewerReport.confirmedGiftCount) };
   assert.deepEqual(errors, []);
 
   await mkdir(local, { recursive: true });
   await mkdir(evidence, { recursive: true });
-  await writeFile(new URL('live-audio.wav', local), recording);
-  await writeFile(new URL('dashboard.png', evidence), dashboardPng);
-  await writeFile(new URL('overlay.png', evidence), focusPng);
-  result.captures = { dashboard: sha(dashboardPng), overlay: sha(focusPng) };
+  await writeFile(new URL(recordingName, local), recording);
+  if (!withoutIdle) {
+    await writeFile(new URL('dashboard.png', evidence), dashboardPng);
+    await writeFile(new URL('overlay.png', evidence), focusPng);
+    result.captures = { dashboard: sha(dashboardPng), overlay: sha(focusPng) };
+  }
   if (process.env.V2_FIXTURE_BASELINE_PORT) {
     const [oldContext, newContext] = await Promise.all([
       browserContext(Number(process.env.V2_FIXTURE_BASELINE_PORT)), browserContext(port),
@@ -374,7 +433,7 @@ try {
     await oldContext.close();
     await newContext.close();
   }
-  await writeFile(new URL('receipt.json', evidence), JSON.stringify({
+  await writeFile(new URL(withoutIdle ? 'fallback.json' : 'receipt.json', evidence), JSON.stringify({
     method: 'Built Edge Dashboard/Overlay, isolated loopback Gateway and synthetic provider fixture; PCM tapped after the actual Web Audio compressor and peak ceiling.',
     ...result,
   }, null, 2) + '\n');

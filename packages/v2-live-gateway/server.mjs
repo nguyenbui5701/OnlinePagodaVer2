@@ -109,12 +109,13 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
         const hasReadiness = typeof data.ready === 'boolean';
         const hasAudio = Object.hasOwn(data, 'audio');
         if (!natural(data.ack) || fields !== (hasReadiness ? 3 : 2) + Number(hasAudio) ||
-            (hasAudio && (!hasReadiness || !validAudioApplied(data.audio, audio.snapshot.revision)))) return reply(400);
+            (hasAudio && !hasReadiness)) return reply(400);
         if (gateway.owner === data.client && (gateway.receiver === 'overlay') !== hasReadiness) return reply(400);
         const state = gateway.poll(data.client, data.ack, data.ready);
         if (!state) return reply(409);
         if (!hasReadiness) return reply(200, state);
-        gateway.audioApplied = data.audio;
+        // An invalid or stale audio report must not interfere with delivery or its ACK.
+        gateway.audioApplied = validAudioApplied(data.audio, audio.snapshot.revision) ? data.audio : undefined;
         return reply(200, { ...state, audioDesired: audio.snapshot });
       }
       if (req.url === '/disconnect' && data.closing === true) {
