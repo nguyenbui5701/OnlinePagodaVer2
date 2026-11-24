@@ -11,7 +11,8 @@ import { createSeatScene, seatPose } from './seat-scene.ts';
 import { diversityEnabled } from './avatar-look.ts';
 import { measureSeatContact } from './seat-contact.ts';
 import { SliceCamera } from './slice-camera.ts';
-import { parseScenario, SliceDriver } from './slice-driver.ts';
+import { parseScenario, SliceDriver, timing } from './slice-driver.ts';
+import { AudioManager } from './audio/manager.ts';
 import { createCommunityNames, occupancy } from './community-presentation.ts';
 import { showGift, usePersistentNameplates } from './slice-overlay.ts';
 import { createNameplates } from './nameplates.ts';
@@ -61,8 +62,9 @@ const hero = !comparison && query.get('shots') === 'hero';
 const crowd = rings || liveRequested || (scenario === 'community' && query.get('crowd') !== 'off');
 const diversity = !comparison && diversityEnabled(crowd, query.get('diversity'));
 const enableBotanicals = !comparison && botanicalsEnabled(crowd, query.get('botanicals'));
+const audioRequested = query.get('audio') === 'on' && !manual && !comparison && !liveRequested && frozenAt === undefined;
 const driver = new SliceDriver(liveRequested ? 'offline' : scenario,
-  scenario === 'community' ? presenceDemo(chatBubbles, giftIcons) : []);
+  scenario === 'community' ? presenceDemo(chatBubbles, giftIcons) : [], audioRequested);
 const director = new SliceCamera();
 const seed = parseCinematicSeed(query.get('seed'));
 if (query.get('clean') === '1') document.body.classList.add('clean');
@@ -141,6 +143,9 @@ async function boot() {
   let nameplates: ReturnType<typeof createNameplates> | undefined;
   let routes: ReturnType<typeof createCinematicRoutes> | ReturnType<typeof createHeroRoutes> | undefined;
   let start: number | undefined;
+  const audio = audioRequested
+    ? new AudioManager(timing.focusHoldMs, () => start === undefined ? -1 : Math.floor(performance.now() - start))
+    : undefined;
   let last: number | undefined;
   const frameTimes: number[] = [];
   const visited = new Set<string>();
@@ -219,6 +224,10 @@ async function boot() {
         batches: seats?.batches?.count ?? 0 };
     }
     const celebration = presentation && giftFx?.update(presentation.state, presentation.active, selected);
+    if (audio && presentation?.audio) {
+      audio.frame(presentation.state, presentation.audio, selected?.presentation);
+      report.audio = audio.report;
+    }
     const bubbleState = bubbles && presentation && seats && bubbles.update(presentation.state, presentation.chat,
       celebration?.gift, selected, seats.seats, camera, presentation.state.camera.mode !== 'CINEMATIC' || !!labels?.fallback);
     if (bubbleState) report.bubbles = bubbleState;
@@ -293,6 +302,7 @@ async function boot() {
   const contextLost = (event: Event) => {
     event.preventDefault();
     lost = true;
+    audio?.suspend('webgl-context');
     clearPresence();
     errors.push('webglcontextlost');
     cancelAnimationFrame(req);
@@ -313,6 +323,7 @@ async function boot() {
     if (disposed) return;
     disposed = true;
     abort.abort();
+    audio?.dispose();
     cancelAnimationFrame(req);
     canvas.removeEventListener('webglcontextlost', contextLost);
     canvas.removeEventListener('webglcontextrestored', contextRestored);
@@ -335,7 +346,10 @@ async function boot() {
     renderer.dispose();
     renderer.forceContextLoss();
   };
-  const onPageHide = (event: PageTransitionEvent) => { if (!event.persisted) dispose(); };
+  const onPageHide = (event: PageTransitionEvent) => {
+    if (event.persisted) audio?.suspend('pagehide');
+    else dispose();
+  };
   window.addEventListener('pagehide', onPageHide);
   import.meta.hot?.dispose(dispose);
 

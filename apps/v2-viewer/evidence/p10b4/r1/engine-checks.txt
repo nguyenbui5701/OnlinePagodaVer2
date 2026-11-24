@@ -1,0 +1,30 @@
+Source: f3b719323324a9a85b48ce7c1f75a86e89f974b0
+npm test
+
+> @online-pagoda/v2-events@0.1.0 test
+> node --test
+
+✔ chat bounds bytes and graphemes while preserving Vietnamese and joined emoji (3.5903ms)
+✔ legacy, invalid, duplicate, throttled and stale chat never emit a cue (2.406ms)
+✔ capacity chat carries no other seat and does not alter gifts, focus or viewer count (1.6239ms)
+✔ a new text-bearing chat has no seat even when the room has free seats (0.4398ms)
+✔ seeded 45s idle then A → B → C with real actor / seat bindings and cinematic return (5.8326ms)
+✔ one FIFO slot per giver, one capped active extension and a shared pending request ID (1.4489ms)
+✔ reconnect preserves identity, duplicate ledgers and revision; room change cancels old intents (0.8753ms)
+✔ bounded focus and no-seat outcomes acknowledge the correct giver; TTL releases seat (0.545ms)
+✔ 120 viewers, 500 likes and room viewer total keep capacity and FX bounded (1.2467ms)
+✔ session ledger stays bounded and preserves idempotency at the limit (3.3777ms)
+✔ safe display text, graphemes, photo validation and private packet IDs (0.7802ms)
+✔ expired provisional focus adds zero spend; late final acknowledges without replaying the shot (0.4011ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 231.2853
+npm run build
+
+> @online-pagoda/v2-events@0.1.0 build
+> tsc --noEmit
