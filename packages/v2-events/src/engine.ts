@@ -1,3 +1,5 @@
+import { LiveSeating } from './live-seating.ts';
+import { validPresenceSettings, type PresenceSettings } from './presence.ts';
 import { GiftFocusScheduler, demoDefaults, type DemoConfig } from './focus.ts';
 import { AvatarRegistry, displayName, sanitizeChat } from './registry.ts';
 import { protocolVersion, type DemoEvent, type DemoViewer, type Effect, type SessionEvent, type Snapshot } from './protocol.ts';
@@ -19,6 +21,8 @@ type Result = {
 export class DemoEngine {
   private readonly config: DemoConfig;
   private readonly scheduler: GiftFocusScheduler;
+  private readonly seating?: LiveSeating;
+  private seatingChanged = false;
   private registry = new AvatarRegistry('demo-0', 0);
   private epoch = 0;
   private connection = 0;
@@ -30,11 +34,12 @@ export class DemoEngine {
   private requestSequence = 0;
   private nextRippleAt = 0;
   private readonly seen = new Set<string>();
-  private readonly gifts = new Map<string, 'observed' | 'confirmed'>();
+  private readonly gifts = new Map<string, 'observed' | 'unseated' | 'confirmed'>();
   private readonly chatBySpeaker = new Map<string, number>();
   private nextChatAt = 0;
 
-  constructor(options: Partial<DemoConfig> = {}) {
+  constructor(options: Partial<DemoConfig> = {}, liveSeating = false) {
+    if (liveSeating) this.seating = new LiveSeating();
     this.config = { ...demoDefaults, ...options };
     for (const [key, value] of Object.entries(this.config)) {
       if (typeof value !== typeof demoDefaults[key as keyof DemoConfig] ||
@@ -63,14 +68,31 @@ export class DemoEngine {
     if (revision !== this.revision) return this.snapshot();
   }
 
-  advance(atMs: number): Effect[] {
+  configurePresence(settings: PresenceSettings) {
+    if (!this.seating || !validPresenceSettings(settings)) return;
+    this.seating.configure(settings);
+    this.seatingChanged = true;
+  }
+
+  get presenceCounts() {
+    if (this.seating) return { occupied: this.registry.size, ...this.seating.counts };
+  }
+
+  advance(atMs: number): Effect[] { return this.advanceTo(atMs, true); }
+
+  private advanceTo(atMs: number, refill: boolean): Effect[] {
     if (!natural(atMs) || atMs < this.atMs) throw new RangeError('Clock must be monotonic');
-    if (atMs === this.atMs) return [];
+    if (atMs === this.atMs && !this.seatingChanged) return [];
+    this.seatingChanged = false;
     this.atMs = atMs;
     this.revision++;
     const effects: Effect[] = [];
     this.scheduler.advance(atMs, id => this.registry.contains(id), effects);
-    this.registry.expire(atMs, this.config.avatarTTLms, this.scheduler.reserved());
+    if (this.seating) {
+      const ttl = this.seating.ttl;
+      if (ttl !== undefined) this.registry.expire(atMs, ttl, this.scheduler.reserved());
+      if (refill && this.connected) this.seating.refill(this.registry, atMs, this.revision);
+    } else this.registry.expire(atMs, this.config.avatarTTLms, this.scheduler.reserved());
     return effects;
   }
 
@@ -100,6 +122,7 @@ export class DemoEngine {
           event.action === 'disconnect' && this.connected) {
         this.connected = false;
       } else return result('stale');
+      this.seating?.clear();
       this.chatBySpeaker.clear();
       this.nextChatAt = 0;
       effects.push(...this.advance(event.atMs));
@@ -129,15 +152,19 @@ export class DemoEngine {
 
     if (this.seen.size >= this.config.maxSessionKeys) return result('session-limit');
     this.seen.add(event.eventId);
-    effects.push(...this.advance(event.atMs));
+    effects.push(...this.advanceTo(event.atMs, event.type !== 'gift'));
     this.revision++;
 
     switch (event.type) {
       case 'chat':
       case 'member': {
-        const actor = this.registry.touch(event.viewer, this.atMs,
-          event.type === 'chat' ? event.chatText === undefined && this.config.spawnOnChat : this.config.spawnOnMember,
-          this.revision);
+        const actor = this.seating
+          ? (event.type === 'member' || chat?.text
+            ? this.seating.join(this.registry, event.viewer, event.type === 'chat' ? 'autoJoinChat' : 'autoJoinMember', this.atMs, this.revision)
+            : this.registry.touch(event.viewer, this.atMs, false, this.revision))
+          : this.registry.touch(event.viewer, this.atMs,
+            event.type === 'chat' ? event.chatText === undefined && this.config.spawnOnChat : this.config.spawnOnMember,
+            this.revision);
         if (chat?.text && event.type === 'chat' && this.atMs >= this.nextChatAt &&
             this.atMs >= (this.chatBySpeaker.get(event.viewer.userKey) ?? 0)) {
           // The room cadence bounds this cooldown ledger to five recent speakers.
@@ -164,29 +191,37 @@ export class DemoEngine {
         break;
       case 'gift':
         if (giftKey) this.onGift(event, giftKey, effects);
+        this.seating?.refill(this.registry, this.atMs, this.revision);
         break;
     }
     return result('accepted');
   }
 
   private onGift(event: Extract<DemoEvent, { type: 'gift' }>, key: string, effects: Effect[]): void {
-    const alreadyObserved = this.gifts.has(key);
-    if (event.phase === 'progress' && (alreadyObserved || !this.config.focusOnObservedGift)) return;
+    const prior = this.gifts.get(key);
+    if (event.phase === 'progress' && (prior || !this.config.focusOnObservedGift)) {
+      if (this.seating) this.registry.touch(event.viewer, this.atMs, false, this.revision);
+      return;
+    }
+    const freshGift = !prior || prior === 'unseated';
 
     const confirmation = event.phase === 'final' ? 'confirmed' : 'observed';
     const giftCount = confirmation === 'confirmed' ? event.count : 0;
-    this.gifts.set(key, confirmation);
     this.confirmed += giftCount;
-    const actor = this.registry.touch(event.viewer, this.atMs, this.config.spawnOnGift, this.revision);
+    const actor = this.seating
+      ? this.seating.gift(this.registry, event.viewer, this.atMs, this.config.spawnOnGift, this.revision,
+        confirmation === 'confirmed', this.scheduler.reserved())
+      : this.registry.touch(event.viewer, this.atMs, this.config.spawnOnGift, this.revision);
+    this.gifts.set(key, this.seating && !actor && confirmation === 'observed' ? 'unseated' : confirmation);
     const requestId = (actor && this.scheduler.requestIdFor(actor.actorId))
       ?? `${this.roomSessionId}-gift-${++this.requestSequence}`;
     const dedicatedFocus = !!actor && this.scheduler.offer({
       requestId, actorId: actor.actorId, roomSessionId: this.roomSessionId,
       giftId: event.giftId, giftCount, confirmation, firstSeenAtMs: this.atMs,
       expiresAtMs: this.atMs + this.config.requestTTLms,
-    }, this.atMs, !alreadyObserved);
+    }, this.atMs, freshGift);
 
-    if (!dedicatedFocus && !alreadyObserved) {
+    if (!dedicatedFocus && !prior) {
       effects.push({ type: 'focusSkipped', atMs: this.atMs, requestId, actorId: actor?.actorId,
         reason: actor ? 'queue-full' : 'no-seat' });
     }

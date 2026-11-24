@@ -1,4 +1,6 @@
 import './dashboard.css';
+import { readPresenceSnapshot, validPresenceApplied, type PresenceApplied, type PresenceSnapshot } from '../../../packages/v2-events/src/presence.ts';
+import { dashboardPresence } from './dashboard-presence.ts';
 import { dashboardAudio } from './dashboard-audio.ts';
 import { readAudioSnapshot, validAudioApplied, type AudioApplied, type AudioSnapshot } from './live-audio-settings.ts';
 import { GatewayError, postGateway, readSettings } from './live-api.ts';
@@ -9,6 +11,7 @@ type Status = {
   status: string; reason: string; viewerCount: number; counters: LiveCounters; dropped: number;
   deliveryUncertain: boolean; receiver: 'overlay' | 'legacy' | null;
   appliedRevision: number | null; overlayReady: boolean; applyPending: boolean; canApply: boolean; canConnect: boolean; canDisconnect: boolean;
+  presenceDesired?: PresenceSnapshot; presenceApplied?: PresenceApplied;
   desired: SettingsSnapshot; audioDesired?: AudioSnapshot; audioApplied?: AudioApplied | null; namedProvider?: string;
 };
 
@@ -76,6 +79,7 @@ const apply = element<HTMLButtonElement>('apply');
 const reload = element<HTMLButtonElement>('reload-settings');
 const operation = element('operation');
 const renderAudio = dashboardAudio();
+const renderPresence = dashboardPresence();
 let current: Status | undefined;
 let draftRevision = 0;
 let dirty = false;
@@ -90,6 +94,7 @@ function loadDraft(snapshot: SettingsSnapshot) {
 
 function render(state?: Status) {
   current = state;
+  renderPresence(state?.presenceDesired, state?.presenceApplied);
   renderAudio(state?.audioDesired, state?.audioApplied, state?.namedProvider);
   const code = state?.status ?? 'GATEWAY_UNAVAILABLE';
   const titles: Record<string, string> = {
@@ -136,6 +141,8 @@ async function refresh() {
   try {
     const state = await (await postGateway('/status')).json() as Status;
     state.desired = readSettings(state.desired);
+    state.presenceDesired = readPresenceSnapshot(state.presenceDesired);
+    if (!validPresenceApplied(state.presenceApplied, state.presenceDesired?.revision ?? 0)) state.presenceApplied = undefined;
     state.audioDesired = readAudioSnapshot(state.audioDesired);
     if (!validAudioApplied(state.audioApplied, state.audioDesired?.revision ?? 0)) state.audioApplied = null;
     if (statusGeneration === generation) render(state);

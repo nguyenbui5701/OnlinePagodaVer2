@@ -3,16 +3,17 @@ import { createServer } from 'node:http';
 import { pathToFileURL } from 'node:url';
 import { Gateway } from './gateway.mjs';
 import { normalizeUsername } from './mapper.mjs';
-import { AudioSettingsStore, SettingsStore } from './settings.mjs';
+import { validPresenceApplied } from '../v2-events/src/presence.ts';
+import { AudioSettingsStore, PresenceSettingsStore, SettingsStore } from './settings.mjs';
 import { validAudioApplied } from '../../apps/v2-viewer/src/live-audio-settings.ts';
 
 const viewerOrigin = 'http://127.0.0.1:5189';
 const hex = value => typeof value === 'string' && /^[a-f0-9]{32}$/.test(value);
 const natural = n => Number.isSafeInteger(n) && n >= 0;
 const receiverRoutes = new Set(['/attach', '/connect', '/poll', '/disconnect', '/degraded', '/named-voice']);
-const operatorRoutes = new Set(['/status', '/settings', '/save-settings', '/save-audio', '/patch-audio', '/mute-audio', '/operate', '/apply']);
+const operatorRoutes = new Set(['/status', '/settings', '/save-settings', '/save-audio', '/patch-audio', '/mute-audio', '/patch-presence', '/operate', '/apply']);
 
-export function createGatewayServer({ gateway = new Gateway(), settings = new SettingsStore(), audio = new AudioSettingsStore(), voice = createLiveVoice(), clock = Date.now } = {}) {
+export function createGatewayServer({ gateway = new Gateway(), settings = new SettingsStore(), audio = new AudioSettingsStore(), presence = new PresenceSettingsStore(), voice = createLiveVoice(), clock = Date.now } = {}) {
   gateway.onVoiceGift = entry => voice.remember(entry, audio.snapshot.settings);
   gateway.onVoiceReset = () => voice.reset();
   let starts = 0;
@@ -46,7 +47,7 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
 
       if (req.headers['content-type'] !== 'application/json') return reply(415);
       const size = Number(req.headers['content-length']);
-      if (!Number.isInteger(size) || size < 2 || size > (['/save-settings', '/save-audio', '/patch-audio'].includes(req.url) ? 1024 : 256)) return reply(413);
+      if (!Number.isInteger(size) || size < 2 || size > (['/save-settings', '/save-audio', '/patch-audio'].includes(req.url) ? 1024 : req.url === '/poll' ? 384 : 256)) return reply(413);
       const rateLimit = () => reply(429, { reason: 'LOCAL_RATE_LIMITED' });
       if (clock() - windowStart >= 60_000) { starts = requests = operatorRequests = audioWrites = muteRequests = voiceRequests = 0; windowStart = clock(); }
       if (req.url === '/named-voice') {
@@ -75,6 +76,7 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
         if (req.url === '/status' && fields === 0) return reply(200, {
           ...gateway.statusSnapshot(), desired: settings.snapshot, audioDesired: audio.desired, audioApplied: gateway.audioApplied ?? null,
           namedProvider: voice.status(audio.snapshot.settings),
+          presenceDesired: presence.snapshot, presenceApplied: gateway.presenceApplied ?? null,
         });
         if (req.url === '/mute-audio' && fields === 0) {
           const muted = audio.mute();
@@ -87,6 +89,12 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
           if (error) return reply(error === 'INVALID_SETTINGS' ? 400 : 500, { reason: error });
           voice.update(audio.snapshot.settings);
           return reply(200, audio.desired);
+        }
+        if (req.url === '/patch-presence' && fields === 2 && natural(data.revision)) {
+          const error = presence.patch(data.revision, data.patch);
+          if (error === 'SETTINGS_CONFLICT') return reply(409, { reason: error, presence: presence.snapshot });
+          if (error) return reply(error === 'INVALID_SETTINGS' ? 400 : 500, { reason: error });
+          return reply(200, presence.snapshot);
         }
         if (req.url === '/settings' && fields === 0) return reply(200, settings.snapshot);
         if (['/save-settings', '/save-audio'].includes(req.url) && fields === 2 && natural(data.revision)) {
@@ -157,8 +165,9 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
       if (req.url === '/poll') {
         const hasReadiness = typeof data.ready === 'boolean';
         const hasAudio = Object.hasOwn(data, 'audio');
-        if (!natural(data.ack) || fields !== (hasReadiness ? 3 : 2) + Number(hasAudio) ||
-            (hasAudio && !hasReadiness)) return reply(400);
+        const hasPresence = Object.hasOwn(data, 'presence');
+        if (!natural(data.ack) || fields !== (hasReadiness ? 3 : 2) + Number(hasAudio) + Number(hasPresence) ||
+            ((hasAudio || hasPresence) && !hasReadiness)) return reply(400);
         if (gateway.owner === data.client && (gateway.receiver === 'overlay') !== hasReadiness) return reply(400);
         const state = gateway.poll(data.client, data.ack, data.ready);
         if (!state) return reply(409);
@@ -169,7 +178,8 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
           const settings = audio.snapshot.settings;
           if (['READY', 'PLAYING'].includes(gateway.audioApplied?.state)) voice.update(settings);
         }
-        return reply(200, { ...state, audioDesired: audio.desired });
+        gateway.presenceApplied = validPresenceApplied(data.presence, presence.snapshot.revision) ? data.presence : undefined;
+        return reply(200, { ...state, audioDesired: audio.desired, presenceDesired: presence.snapshot });
       }
       if (req.url === '/disconnect' && data.closing === true) {
         if (!natural(data.ack) || Object.keys(data).length !== 3) return reply(400);

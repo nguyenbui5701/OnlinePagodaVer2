@@ -1,6 +1,7 @@
 import type { DemoEvent, SessionEvent } from '../../../packages/v2-events/src/protocol.ts';
 import type { LiveVoiceIdentity } from './audio/live-alias.ts';
 import { readVoicePcm } from './audio/named-voice.ts';
+import type { PresenceApplied } from '../../../packages/v2-events/src/presence.ts';
 import type { AudioApplied } from './live-audio-settings.ts';
 import { GatewayError, postGateway } from './live-api.ts';
 
@@ -23,7 +24,7 @@ export const reasons: Record<string, string> = {
 };
 export const counterKeys = ['chat', 'member', 'like', 'giftProgress', 'giftFinal', 'room'] as const;
 export type LiveCounters = Record<typeof counterKeys[number], number>;
-type Poll = { status: string; reason: string; entries: LiveEntry[]; deliveryUncertain: boolean; applyPending?: boolean; audioDesired?: unknown;
+type Poll = { status: string; reason: string; entries: LiveEntry[]; deliveryUncertain: boolean; applyPending?: boolean; audioDesired?: unknown; presenceDesired?: unknown;
   counters: LiveCounters; viewerCount: number; dropped: number };
 const natural = (n: unknown) => typeof n === 'number' && Number.isSafeInteger(n) && n >= 0;
 
@@ -51,9 +52,10 @@ type Options = {
   receipt: () => { ack: number; failed: boolean };
   status: (state: ReceiverStatus) => void;
   audioStatus?: () => AudioApplied | undefined;
+  presenceStatus?: () => PresenceApplied | undefined;
 };
 
-export function createLiveReceiver({ feed, sourceLost, receipt, status, audioStatus }: Options) {
+export function createLiveReceiver({ feed, sourceLost, receipt, status, audioStatus, presenceStatus }: Options) {
   const client = Array.from(crypto.getRandomValues(new Uint8Array(16)), value => value.toString(16).padStart(2, '0')).join('');
   const abort = new AbortController();
   let timer: ReturnType<typeof setTimeout>;
@@ -84,7 +86,7 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status, audioSta
       }
       const { ack } = receipt();
       sentReady = rendererReady;
-      const data = decodeLivePoll(await (await request('/poll', overlay ? { ack, ready: sentReady, audio: audioStatus?.() } : { ack })).json(), ack);
+      const data = decodeLivePoll(await (await request('/poll', overlay ? { ack, ready: sentReady, audio: audioStatus?.(), presence: presenceStatus?.() } : { ack })).json(), ack);
       if (closed) return;
       uncertain ||= data.deliveryUncertain;
       if (!feed(data.entries)) {
