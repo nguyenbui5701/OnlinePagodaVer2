@@ -1,7 +1,14 @@
-# R17b R3 — preview assessment and final evidence plan
+# R17b R3 — final visual evidence assessment
 
-SA R2 required one focused correction. [SA R3](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6033131258) reviewed actual native three A/B/C sheets (18 preview images) at `29790122d2aae80b9be6fd6852a881be21a7fc10` and accepted preview art direction. R17b ECO warmer/more layered than pale R16/R17; QUALITY moderate expansion, rounded outside lobes and lower skirts visible, trunk/root/gold still recognizable. Darker ECO underside and rounded lobe integration to inspect in true aerial/close. Full/wide preview fits whole tree. No claim of reference video re-review. Luma delta proxy vs R17: QUALITY 2.25/3.92/3.49%, ECO 7.65/14.32/37.68% full/wide/under; noise, lighting, material and coverage, not measured segmentation or volume.
+[SA R3](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6033131258) froze candidate; final native evidence at `5e8a324ea39acc3d8ac56e99f02fead312f3ef41`. AI Visual directly examined all six final A/B sheets, 24 panels. Both LODs maintain trunk/root/gold identity and show fuller layered crowns. ECO improved more than QUALITY; dark underside and polygonal petals remain; some added QUALITY shoulders look rounded, particularly wide/overhead/close. Full/wide framed; actual vertical overhead provided. No new substantive defect identified; recommend SA Final Review, not final approval. No re-export or rerender.
 
-Measured GLB reduction vs R17: QUALITY 60.89% (6981312 bytes, 236888 triangles, 297635 vertices), ECO 44.23% (2149264 bytes, 58212 triangles, 98632 vertices). Original R16 BIN, accessors/nodes/meshes/indices and protected PBR preserved according to owner-native audit; zero degenerates. No repeated audit, no further geometry or material correction. See root manifest for actual stats, SHA pins and prior R16/R17 evidence; independent SHA pending. Historical secondary contact proxy 45/68 unresolved.
+| Final A/B view | QUALITY / ECO luma delta >16 (%) | AI Visual observation |
+|---|---:|---|
+| [crown_close_9x16](r17b/final/crown_close_9x16_AB.jpg) | 6.94 / 54.66 | ECO much less pale; distinct low-poly petals, QUALITY has rounded additions. |
+| [hero_full_9x16](r17b/final/hero_full_9x16_AB.jpg) | 2.08 / 7.72 | Whole tree framed, warmer/full crown. |
+| [hero_wide_water_9x16](r17b/final/hero_wide_water_9x16_AB.jpg) | 3.81 / 14.45 | Layered silhouette, rounded QUALITY shoulders remain. |
+| [true_aerial_9x16](r17b/final/true_aerial_9x16_AB.jpg) | 4.77 / 18.23 | True overhead shows larger spread, more distinct ECO layers; some lobes visibly rounded. |
+| [trunk_fork_9x16](r17b/final/trunk_fork_9x16_AB.jpg) | 2.05 / 12.38 | Bark and gold identity retained; foliage affects surrounding shading. |
+| [under_crown_9x16](r17b/final/under_crown_9x16_AB.jpg) | 3.41 / 37.30 | Skirts and branch openings visible; ECO underside darker and polygonal. |
 
-Final-only runner imports locked GLBs, creates and reopens editable source and renders 12 R17b + six newly framed R16, references six already final-grade matching R16 frames. Same camera, lights and exposure within each A/B. True overhead, full/wide fit, under, close, trunk. Final native evidence pending local execution, no fabricated PASS. 0 VND; no viewer/RTX/LIVE claims. STOP R17_SA_ART_REVIEW_REQUIRED.
+Pixel differences are not geometry segmentation, volume or an acceptance threshold. Original R16 secondary-contact proxy unresolved. No source-reference video re-review, runtime water/ring/seat, RTX or LIVE proof. 0 VND. Geometry/materials frozen; independent SA SHA pending; STOP R17_SA_ART_REVIEW_REQUIRED.
