@@ -1,0 +1,6715 @@
+{
+  "source": "c7b79c89e0f4904bdae5b3589885f92147fa0d99",
+  "base": "fd5dc6655ad6b600c1fe9a3220a1bca193f1d4de",
+  "browser": "158.0.4370.33",
+  "matches": [
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "label": "wide",
+      "t": 1,
+      "sides": [
+        {
+          "name": "eco-r16-wide-base.png",
+          "sha256": "f6e33d563411c3469d3a86376fb6d7e801167dd2d186bafffdd169203485fdbd",
+          "revision": "fd5dc6655ad6b600c1fe9a3220a1bca193f1d4de",
+          "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "shot": "HERO_WIDE_TREE_REFLECTION",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              0.875,
+              10.25,
+              45.1953125
+            ],
+            [
+              0,
+              9.464062499999999,
+              0
+            ],
+            57.62454004294496
+          ]
+        },
+        {
+          "name": "eco-r16-wide-audio-off.png",
+          "sha256": "f6e33d563411c3469d3a86376fb6d7e801167dd2d186bafffdd169203485fdbd",
+          "revision": "c7b79c89e0f4904bdae5b3589885f92147fa0d99",
+          "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "shot": "HERO_WIDE_TREE_REFLECTION",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              0.875,
+              10.25,
+              45.1953125
+            ],
+            [
+              0,
+              9.464062499999999,
+              0
+            ],
+            57.62454004294496
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "label": "under",
+      "t": 35,
+      "sides": [
+        {
+          "name": "eco-r16-under-base.png",
+          "sha256": "4a2a5f1b1194d1813f4ba768d81dfd8f819481dc773204226995d4943a0429b7",
+          "revision": "fd5dc6655ad6b600c1fe9a3220a1bca193f1d4de",
+          "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "shot": "UNDER_TREE",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              1.0390625,
+              9.6796875,
+              33.9765625
+            ],
+            [
+              0,
+              10.765625,
+              0.15625
+            ],
+            57.09375
+          ]
+        },
+        {
+          "name": "eco-r16-under-audio-off.png",
+          "sha256": "4a2a5f1b1194d1813f4ba768d81dfd8f819481dc773204226995d4943a0429b7",
+          "revision": "c7b79c89e0f4904bdae5b3589885f92147fa0d99",
+          "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+          "shot": "UNDER_TREE",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              1.0390625,
+              9.6796875,
+              33.9765625
+            ],
+            [
+              0,
+              10.765625,
+              0.15625
+            ],
+            57.09375
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "quality",
+      "tree": "r16",
+      "label": "top",
+      "t": 22,
+      "sides": [
+        {
+          "name": "quality-r16-top-base.png",
+          "sha256": "1878188b9ba327f884c2aa0afea756aa2bbb1a5d532698cc83e47c4618fe07f5",
+          "revision": "fd5dc6655ad6b600c1fe9a3220a1bca193f1d4de",
+          "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "shot": "HERO_TOP_RING",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              3.5625,
+              35.0625,
+              40.375
+            ],
+            [
+              1.0374999999999999,
+              0.625,
+              10.8125
+            ],
+            62.09071351435282
+          ]
+        },
+        {
+          "name": "quality-r16-top-audio-off.png",
+          "sha256": "1878188b9ba327f884c2aa0afea756aa2bbb1a5d532698cc83e47c4618fe07f5",
+          "revision": "c7b79c89e0f4904bdae5b3589885f92147fa0d99",
+          "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "shot": "HERO_TOP_RING",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              3.5625,
+              35.0625,
+              40.375
+            ],
+            [
+              1.0374999999999999,
+              0.625,
+              10.8125
+            ],
+            62.09071351435282
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "quality",
+      "tree": "r16",
+      "label": "return",
+      "t": 64.1,
+      "sides": [
+        {
+          "name": "quality-r16-return-base.png",
+          "sha256": "8fea9b875faf4d4d7e72a15e25f4a6fb28f070525e2abea8f2744b84cded5437",
+          "revision": "fd5dc6655ad6b600c1fe9a3220a1bca193f1d4de",
+          "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "shot": "HERO_WIDE_TREE_REFLECTION",
+          "mode": "CINE_RETURN",
+          "camera": [
+            [
+              3.895574294012618,
+              3.774177484404193,
+              18.253821359801332
+            ],
+            [
+              6.9283851062104045,
+              3.166501336656915,
+              7.057028857066104
+            ],
+            52.04034736045601
+          ]
+        },
+        {
+          "name": "quality-r16-return-audio-off.png",
+          "sha256": "8fea9b875faf4d4d7e72a15e25f4a6fb28f070525e2abea8f2744b84cded5437",
+          "revision": "c7b79c89e0f4904bdae5b3589885f92147fa0d99",
+          "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+          "shot": "HERO_WIDE_TREE_REFLECTION",
+          "mode": "CINE_RETURN",
+          "camera": [
+            [
+              3.895574294012618,
+              3.774177484404193,
+              18.253821359801332
+            ],
+            [
+              6.9283851062104045,
+              3.166501336656915,
+              7.057028857066104
+            ],
+            52.04034736045601
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "eco",
+      "tree": "r17b",
+      "label": "actor",
+      "t": 8.6,
+      "sides": [
+        {
+          "name": "eco-r17b-actor-base.png",
+          "sha256": "7e8e82be0cb38c73e4ba20597a4c7bb18a79a0f80f17b03ecc3305bcc7ce294c",
+          "revision": "fd5dc6655ad6b600c1fe9a3220a1bca193f1d4de",
+          "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "shot": "HERO_WIDE_TREE_REFLECTION",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              -0.6635972432593376,
+              1.5,
+              8.97550214187143
+            ],
+            [
+              -1.017515772997651,
+              0.86,
+              13.762436617536192
+            ],
+            43
+          ]
+        },
+        {
+          "name": "eco-r17b-actor-audio-off.png",
+          "sha256": "7e8e82be0cb38c73e4ba20597a4c7bb18a79a0f80f17b03ecc3305bcc7ce294c",
+          "revision": "c7b79c89e0f4904bdae5b3589885f92147fa0d99",
+          "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "shot": "HERO_WIDE_TREE_REFLECTION",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              -0.6635972432593376,
+              1.5,
+              8.97550214187143
+            ],
+            [
+              -1.017515772997651,
+              0.86,
+              13.762436617536192
+            ],
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "eco",
+      "tree": "r17b",
+      "label": "gift",
+      "t": 63.5,
+      "sides": [
+        {
+          "name": "eco-r17b-gift-base.png",
+          "sha256": "2ed742ffd7011a625f85c3ce734e9c02a0fe87aa916618dca73a988cf7006d1d",
+          "revision": "fd5dc6655ad6b600c1fe9a3220a1bca193f1d4de",
+          "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "shot": "HERO_TOP_RING",
+          "mode": "GIFT_FOCUS",
+          "camera": [
+            [
+              5.253372490089341,
+              1.15307000018619,
+              7.460047727253996
+            ],
+            [
+              9.65417446850852,
+              0.67307000018619,
+              9.833429691191078
+            ],
+            50
+          ]
+        },
+        {
+          "name": "eco-r17b-gift-audio-off.png",
+          "sha256": "2ed742ffd7011a625f85c3ce734e9c02a0fe87aa916618dca73a988cf7006d1d",
+          "revision": "c7b79c89e0f4904bdae5b3589885f92147fa0d99",
+          "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "shot": "HERO_TOP_RING",
+          "mode": "GIFT_FOCUS",
+          "camera": [
+            [
+              5.253372490089341,
+              1.15307000018619,
+              7.460047727253996
+            ],
+            [
+              9.65417446850852,
+              0.67307000018619,
+              9.833429691191078
+            ],
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "label": "wide",
+      "t": 1,
+      "sides": [
+        {
+          "name": "quality-r17b-wide-base.png",
+          "sha256": "73b67484b48df5bb7c7767480f22d5af3aea651f87e1a1500e3d62b271cbd93c",
+          "revision": "fd5dc6655ad6b600c1fe9a3220a1bca193f1d4de",
+          "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "shot": "HERO_WIDE_TREE_REFLECTION",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              0.875,
+              10.25,
+              45.1953125
+            ],
+            [
+              0,
+              9.464062499999999,
+              0
+            ],
+            57.62454004294496
+          ]
+        },
+        {
+          "name": "quality-r17b-wide-audio-off.png",
+          "sha256": "73b67484b48df5bb7c7767480f22d5af3aea651f87e1a1500e3d62b271cbd93c",
+          "revision": "c7b79c89e0f4904bdae5b3589885f92147fa0d99",
+          "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "shot": "HERO_WIDE_TREE_REFLECTION",
+          "mode": "CINEMATIC",
+          "camera": [
+            [
+              0.875,
+              10.25,
+              45.1953125
+            ],
+            [
+              0,
+              9.464062499999999,
+              0
+            ],
+            57.62454004294496
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "label": "return",
+      "t": 64.1,
+      "sides": [
+        {
+          "name": "quality-r17b-return-base.png",
+          "sha256": "196ee563fcb5cac213009a8ea2201a7f5b5dbbef7aed52db79a2ffe8748376b2",
+          "revision": "fd5dc6655ad6b600c1fe9a3220a1bca193f1d4de",
+          "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "shot": "HERO_WIDE_TREE_REFLECTION",
+          "mode": "CINE_RETURN",
+          "camera": [
+            [
+              3.895574294012618,
+              3.774177484404193,
+              18.253821359801332
+            ],
+            [
+              6.9283851062104045,
+              3.166501336656915,
+              7.057028857066104
+            ],
+            52.04034736045601
+          ]
+        },
+        {
+          "name": "quality-r17b-return-audio-off.png",
+          "sha256": "196ee563fcb5cac213009a8ea2201a7f5b5dbbef7aed52db79a2ffe8748376b2",
+          "revision": "c7b79c89e0f4904bdae5b3589885f92147fa0d99",
+          "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "shot": "HERO_WIDE_TREE_REFLECTION",
+          "mode": "CINE_RETURN",
+          "camera": [
+            [
+              3.895574294012618,
+              3.774177484404193,
+              18.253821359801332
+            ],
+            [
+              6.9283851062104045,
+              3.166501336656915,
+              7.057028857066104
+            ],
+            52.04034736045601
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "lifecycle": {
+      "first": [
+        "READY",
+        "MUTED",
+        "READY"
+      ],
+      "second": [
+        "BLOCKED",
+        "READY"
+      ],
+      "marksOnUnmute": 0,
+      "secondAudioRequestsWhileBlocked": 0,
+      "syntheticBfcacheHide": "MUTED",
+      "syntheticHidden": "MUTED"
+    },
+    "assets": {
+      "profile": "quality",
+      "fx": "off",
+      "missing": "rose",
+      "corrupt": "lantern",
+      "used": "generic",
+      "seat": "seat-1",
+      "restoreCount": 1,
+      "marks": [
+        {
+          "event": "voice-asset-unavailable",
+          "wallMs": 460.30000000074506,
+          "sceneMs": 0,
+          "contextSec": 0.072,
+          "variant": "rose",
+          "ambienceGain": 0.2,
+          "sfxGain": 0.45
+        },
+        {
+          "event": "voice-asset-unavailable",
+          "wallMs": 491.30000000074506,
+          "sceneMs": 0,
+          "contextSec": 0.10133333333333333,
+          "variant": "lantern",
+          "ambienceGain": 0.2,
+          "sfxGain": 0.45
+        },
+        {
+          "event": "sfx-start",
+          "wallMs": 18642.5,
+          "sceneMs": 18166,
+          "contextSec": 18.250666666666667,
+          "room": "demo-1",
+          "request": "demo-1-gift-1",
+          "actor": "demo-1-actor-1",
+          "seat": "seat-1",
+          "effectSequence": 1,
+          "variant": "rose",
+          "seconds": 0.75,
+          "ambienceGain": 0.2,
+          "sfxGain": 0.45
+        },
+        {
+          "event": "voice-start",
+          "wallMs": 18642.900000000373,
+          "sceneMs": 18166,
+          "contextSec": 18.250666666666667,
+          "room": "demo-1",
+          "request": "demo-1-gift-1",
+          "actor": "demo-1-actor-1",
+          "seat": "seat-1",
+          "effectSequence": 1,
+          "variant": "generic",
+          "seconds": 2.1,
+          "ambienceGain": 0.05600000000000001,
+          "sfxGain": 0.216
+        },
+        {
+          "event": "sfx-end",
+          "wallMs": 19758.400000000373,
+          "sceneMs": 19277,
+          "contextSec": 19.370666666666665,
+          "room": "demo-1",
+          "request": "demo-1-gift-1",
+          "actor": "demo-1-actor-1",
+          "seat": "seat-1",
+          "effectSequence": 1,
+          "variant": "rose",
+          "ambienceGain": 0.05600000000000001,
+          "sfxGain": 0.216
+        },
+        {
+          "event": "voice-cut",
+          "wallMs": 19758.699999999255,
+          "sceneMs": 19277,
+          "contextSec": 19.370666666666665,
+          "room": "demo-1",
+          "request": "demo-1-gift-1",
+          "actor": "demo-1-actor-1",
+          "seat": "seat-1",
+          "effectSequence": 1,
+          "variant": "generic",
+          "reason": "webgl-context",
+          "ambienceGain": 0.2,
+          "sfxGain": 0.45
+        }
+      ]
+    },
+    "audioGuards": [
+      "inspect=1",
+      "time=5",
+      "source=live"
+    ],
+    "clock": {
+      "checkpoints": [
+        {
+          "ms": 45999,
+          "mode": "CINEMATIC",
+          "position": [
+            6.747125062593756,
+            10.875062656171876,
+            50.310718547007816
+          ],
+          "target": [
+            0,
+            9.368909357810157,
+            -0.2498749375312503
+          ],
+          "fov": 55.41632393827009,
+          "count": 0
+        },
+        {
+          "ms": 46000,
+          "mode": "GIFT_TRANSITION",
+          "request": "demo-1-gift-1",
+          "seat": "seat-1",
+          "position": [
+            6.747125062593756,
+            10.875062656171876,
+            50.310718547007816
+          ],
+          "target": [
+            0,
+            9.368909357810157,
+            -0.2498749375312503
+          ],
+          "fov": 55.41632393827009,
+          "count": 0
+        },
+        {
+          "ms": 47049,
+          "mode": "GIFT_TRANSITION",
+          "request": "demo-1-gift-1",
+          "seat": "seat-1",
+          "position": [
+            -2.1374502997438203,
+            1.1568731144175164,
+            8.8702619376594
+          ],
+          "target": [
+            -1.016070596903221,
+            0.6768731055658783,
+            13.742889847725088
+          ],
+          "fov": 50.000000046721425,
+          "count": 5
+        },
+        {
+          "ms": 47050,
+          "mode": "GIFT_FOCUS",
+          "request": "demo-1-gift-1",
+          "seat": "seat-1",
+          "position": [
+            -2.1374503763825166,
+            1.1568706434495746,
+            8.870261580192393
+          ],
+          "target": [
+            -1.016070605667886,
+            0.6768706434495747,
+            13.742889968427228
+          ],
+          "fov": 50,
+          "count": 5
+        },
+        {
+          "ms": 51849,
+          "mode": "GIFT_FOCUS",
+          "request": "demo-1-gift-1",
+          "seat": "seat-1",
+          "position": [
+            -2.1374503763825166,
+            1.149625139811663,
+            8.870261580192393
+          ],
+          "target": [
+            -1.016070605667886,
+            0.669625139811663,
+            13.742889968427228
+          ],
+          "fov": 50,
+          "count": 8
+        },
+        {
+          "ms": 51850,
+          "mode": "GIFT_TRANSITION",
+          "request": "demo-1-gift-2",
+          "seat": "seat-2",
+          "position": [
+            -2.1374503763825166,
+            1.149625139811663,
+            8.870261580192393
+          ],
+          "target": [
+            -1.016070605667886,
+            0.669625139811663,
+            13.742889968427228
+          ],
+          "fov": 50,
+          "count": 8
+        },
+        {
+          "ms": 52899,
+          "mode": "GIFT_TRANSITION",
+          "request": "demo-1-gift-2",
+          "seat": "seat-2",
+          "position": [
+            -8.074734886030036,
+            1.1567488996955928,
+            4.248398597650515
+          ],
+          "target": [
+            -10.995353331966736,
+            0.6767488996955927,
+            8.306721865529054
+          ],
+          "fov": 50,
+          "count": 8
+        },
+        {
+          "ms": 52900,
+          "mode": "GIFT_FOCUS",
+          "request": "demo-1-gift-2",
+          "seat": "seat-2",
+          "position": [
+            -8.074734937245285,
+            1.156751286891848,
+            4.248398557782142
+          ],
+          "target": [
+            -10.995353418048422,
+            0.6767512868918478,
+            8.306721818636454
+          ],
+          "fov": 50,
+          "count": 8
+        },
+        {
+          "ms": 57699,
+          "mode": "GIFT_FOCUS",
+          "request": "demo-1-gift-2",
+          "seat": "seat-2",
+          "position": [
+            -8.074734937245285,
+            1.1508170104725286,
+            4.248398557782142
+          ],
+          "target": [
+            -10.995353418048422,
+            0.6708170104725286,
+            8.306721818636454
+          ],
+          "fov": 50,
+          "count": 8
+        },
+        {
+          "ms": 57700,
+          "mode": "GIFT_TRANSITION",
+          "request": "demo-1-gift-3",
+          "seat": "seat-3",
+          "position": [
+            -8.074734937245285,
+            1.1508170104725286,
+            4.248398557782142
+          ],
+          "target": [
+            -10.995353418048422,
+            0.6708170104725286,
+            8.306721818636454
+          ],
+          "fov": 50,
+          "count": 8
+        },
+        {
+          "ms": 58749,
+          "mode": "GIFT_TRANSITION",
+          "request": "demo-1-gift-3",
+          "seat": "seat-3",
+          "position": [
+            5.253372375120561,
+            1.1558316852666004,
+            7.460047699550184
+          ],
+          "target": [
+            9.654174290384882,
+            0.6758316852666004,
+            9.833429678021636
+          ],
+          "fov": 50,
+          "count": 8
+        },
+        {
+          "ms": 58750,
+          "mode": "GIFT_FOCUS",
+          "request": "demo-1-gift-3",
+          "seat": "seat-3",
+          "position": [
+            5.253372490089341,
+            1.1558418592248112,
+            7.460047727253996
+          ],
+          "target": [
+            9.65417446850852,
+            0.6758418592248112,
+            9.833429691191078
+          ],
+          "fov": 50,
+          "count": 8
+        },
+        {
+          "ms": 63549,
+          "mode": "GIFT_FOCUS",
+          "request": "demo-1-gift-3",
+          "seat": "seat-3",
+          "position": [
+            5.253372490089341,
+            1.1524819532757997,
+            7.460047727253996
+          ],
+          "target": [
+            9.65417446850852,
+            0.6724819532757997,
+            9.833429691191078
+          ],
+          "fov": 50,
+          "count": 8
+        },
+        {
+          "ms": 63550,
+          "mode": "CINE_RETURN",
+          "position": [
+            5.253372490089341,
+            1.1524819532757997,
+            7.460047727253996
+          ],
+          "target": [
+            9.65417446850852,
+            0.6724819532757997,
+            9.833429691191078
+          ],
+          "fov": 50,
+          "count": 8
+        },
+        {
+          "ms": 64999,
+          "mode": "CINE_RETURN",
+          "position": [
+            0.7319851053780679,
+            10.662249968838635,
+            46.10303288150846
+          ],
+          "target": [
+            3.163455275512206e-8,
+            9.576519609821911,
+            3.222193178942234e-8
+          ],
+          "fov": 56.70021644486406,
+          "count": 8
+        },
+        {
+          "ms": 65000,
+          "mode": "CINEMATIC",
+          "position": [
+            0.7324765625000027,
+            10.662500000000001,
+            46.1034892578125
+          ],
+          "target": [
+            0,
+            9.576591210937499,
+            0
+          ],
+          "fov": 56.69963241571142,
+          "count": 8
+        }
+      ],
+      "match": true
+    }
+  },
+  "recording": {
+    "source": "c7b79c89e0f4904bdae5b3589885f92147fa0d99",
+    "graphics": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+    "scope": "synthetic DEMO",
+    "method": "Real-time Chromium Web Audio destination graph simultaneously tapped to MediaStreamAudioDestinationNode. Opus via MediaRecorder, decoded to mono PCM16 24000 Hz by FFmpeg.",
+    "startWallMs": 2433.0999999996275,
+    "durationSec": 64.2,
+    "peakDbfs": -4.049381464726767,
+    "rmsDbfs": -28.33641582906997,
+    "clippedSamples": 0,
+    "ambienceGain": {
+      "idle": 0.20000000298023224,
+      "duringVoice": 0.0560000017285347,
+      "releaseTo95PercentMs": [
+        333.19999999925494,
+        281.5,
+        334.2999999988824
+      ]
+    },
+    "sfxGainDuringVoice": 0.2160000056028366,
+    "windows": [
+      {
+        "seat": "seat-1",
+        "beginSec": 45.718,
+        "rmsDbfs": -18.976209711319637
+      },
+      {
+        "seat": "seat-2",
+        "beginSec": 51.54840000000037,
+        "rmsDbfs": -19.079490333719363
+      },
+      {
+        "seat": "seat-3",
+        "beginSec": 57.41720000000112,
+        "rmsDbfs": -19.037180953342663
+      }
+    ],
+    "marks": [
+      {
+        "event": "sfx-start",
+        "wallMs": 48150.800000000745,
+        "sceneMs": 47124,
+        "contextSec": 45.26133333333333,
+        "room": "demo-1",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "effectSequence": 2,
+        "variant": "rose",
+        "seconds": 0.75,
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "voice-start",
+        "wallMs": 48151.09999999963,
+        "sceneMs": 47124,
+        "contextSec": 45.272,
+        "room": "demo-1",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "effectSequence": 2,
+        "variant": "rose",
+        "seconds": 2.1,
+        "ambienceGain": 0.05600000000000001,
+        "sfxGain": 0.216
+      },
+      {
+        "event": "sfx-end",
+        "wallMs": 48905.5,
+        "sceneMs": 47873,
+        "contextSec": 46.02133333333333,
+        "room": "demo-1",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "effectSequence": 2,
+        "variant": "rose",
+        "ambienceGain": 0.05600000000000001,
+        "sfxGain": 0.216
+      },
+      {
+        "event": "voice-end",
+        "wallMs": 50261,
+        "sceneMs": 49221,
+        "contextSec": 47.38133333333333,
+        "room": "demo-1",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "effectSequence": 2,
+        "variant": "rose",
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "sfx-start",
+        "wallMs": 53981.40000000037,
+        "sceneMs": 52956,
+        "contextSec": 51.090666666666664,
+        "room": "demo-1",
+        "request": "demo-1-gift-2",
+        "actor": "demo-1-actor-2",
+        "seat": "seat-2",
+        "effectSequence": 4,
+        "variant": "rose",
+        "seconds": 0.75,
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "voice-start",
+        "wallMs": 53981.5,
+        "sceneMs": 52956,
+        "contextSec": 51.090666666666664,
+        "room": "demo-1",
+        "request": "demo-1-gift-2",
+        "actor": "demo-1-actor-2",
+        "seat": "seat-2",
+        "effectSequence": 4,
+        "variant": "rose",
+        "seconds": 2.1,
+        "ambienceGain": 0.05600000000000001,
+        "sfxGain": 0.216
+      },
+      {
+        "event": "sfx-end",
+        "wallMs": 54732.40000000037,
+        "sceneMs": 53672,
+        "contextSec": 51.85066666666667,
+        "room": "demo-1",
+        "request": "demo-1-gift-2",
+        "actor": "demo-1-actor-2",
+        "seat": "seat-2",
+        "effectSequence": 4,
+        "variant": "rose",
+        "ambienceGain": 0.05600000000000001,
+        "sfxGain": 0.216
+      },
+      {
+        "event": "voice-end",
+        "wallMs": 56072.699999999255,
+        "sceneMs": 55012,
+        "contextSec": 53.192,
+        "room": "demo-1",
+        "request": "demo-1-gift-2",
+        "actor": "demo-1-actor-2",
+        "seat": "seat-2",
+        "effectSequence": 4,
+        "variant": "rose",
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "sfx-start",
+        "wallMs": 59850.199999999255,
+        "sceneMs": 58824,
+        "contextSec": 56.96,
+        "room": "demo-1",
+        "request": "demo-1-gift-3",
+        "actor": "demo-1-actor-3",
+        "seat": "seat-3",
+        "effectSequence": 5,
+        "variant": "rose",
+        "seconds": 0.75,
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "voice-start",
+        "wallMs": 59850.300000000745,
+        "sceneMs": 58824,
+        "contextSec": 56.96,
+        "room": "demo-1",
+        "request": "demo-1-gift-3",
+        "actor": "demo-1-actor-3",
+        "seat": "seat-3",
+        "effectSequence": 5,
+        "variant": "rose",
+        "seconds": 2.1,
+        "ambienceGain": 0.05600000000000001,
+        "sfxGain": 0.216
+      },
+      {
+        "event": "sfx-end",
+        "wallMs": 60591.09999999963,
+        "sceneMs": 59539,
+        "contextSec": 57.712,
+        "room": "demo-1",
+        "request": "demo-1-gift-3",
+        "actor": "demo-1-actor-3",
+        "seat": "seat-3",
+        "effectSequence": 5,
+        "variant": "rose",
+        "ambienceGain": 0.05600000000000001,
+        "sfxGain": 0.216
+      },
+      {
+        "event": "voice-end",
+        "wallMs": 61942.40000000037,
+        "sceneMs": 60893,
+        "contextSec": 59.06133333333333,
+        "room": "demo-1",
+        "request": "demo-1-gift-3",
+        "actor": "demo-1-actor-3",
+        "seat": "seat-3",
+        "effectSequence": 5,
+        "variant": "rose",
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      }
+    ],
+    "timeline": [
+      {
+        "wallMs": 2775.4000000003725,
+        "sceneMs": 1472.1000000000001,
+        "mode": "CINEMATIC",
+        "count": 0,
+        "overflow": false,
+        "seats": 0
+      },
+      {
+        "wallMs": 48169.5,
+        "sceneMs": 47123.5,
+        "mode": "GIFT_FOCUS",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "count": 5,
+        "overflow": false,
+        "seats": 1
+      },
+      {
+        "wallMs": 49153.40000000037,
+        "sceneMs": 48053.9,
+        "mode": "GIFT_FOCUS",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "count": 6,
+        "overflow": false,
+        "seats": 2
+      },
+      {
+        "wallMs": 49234.40000000037,
+        "sceneMs": 48137.3,
+        "mode": "GIFT_FOCUS",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "count": 7,
+        "overflow": false,
+        "seats": 3
+      },
+      {
+        "wallMs": 49634.300000000745,
+        "sceneMs": 48560.8,
+        "mode": "GIFT_FOCUS",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "count": 8,
+        "overflow": true,
+        "seats": 3
+      },
+      {
+        "wallMs": 51633.699999999255,
+        "sceneMs": 50574.600000000006,
+        "mode": "GIFT_FOCUS",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "count": 8,
+        "overflow": false,
+        "seats": 3
+      },
+      {
+        "wallMs": 52913.59999999963,
+        "sceneMs": 51887.100000000006,
+        "mode": "GIFT_TRANSITION",
+        "request": "demo-1-gift-2",
+        "actor": "demo-1-actor-2",
+        "seat": "seat-2",
+        "count": 8,
+        "overflow": false,
+        "seats": 3
+      },
+      {
+        "wallMs": 54035.09999999963,
+        "sceneMs": 52956.4,
+        "mode": "GIFT_FOCUS",
+        "request": "demo-1-gift-2",
+        "actor": "demo-1-actor-2",
+        "seat": "seat-2",
+        "count": 8,
+        "overflow": false,
+        "seats": 3
+      },
+      {
+        "wallMs": 58834.09999999963,
+        "sceneMs": 57747.8,
+        "mode": "GIFT_TRANSITION",
+        "request": "demo-1-gift-3",
+        "actor": "demo-1-actor-3",
+        "seat": "seat-3",
+        "count": 8,
+        "overflow": false,
+        "seats": 3
+      },
+      {
+        "wallMs": 59873.800000000745,
+        "sceneMs": 58824.100000000006,
+        "mode": "GIFT_FOCUS",
+        "request": "demo-1-gift-3",
+        "actor": "demo-1-actor-3",
+        "seat": "seat-3",
+        "count": 8,
+        "overflow": false,
+        "seats": 3
+      },
+      {
+        "wallMs": 64602.699999999255,
+        "sceneMs": 63566.8,
+        "mode": "CINE_RETURN",
+        "count": 8,
+        "overflow": false,
+        "seats": 3
+      },
+      {
+        "wallMs": 66194.69999999925,
+        "sceneMs": 65150.100000000006,
+        "mode": "CINEMATIC",
+        "count": 8,
+        "overflow": false,
+        "seats": 3
+      }
+    ],
+    "gains": [
+      {
+        "wallMs": 2775.4000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 2919.0999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3023.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3074,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3153.9000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3233.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3314.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3393.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3473.9000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3554.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3633.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3713.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3793.9000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3876.0999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 3955.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4033.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4114.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4195.5999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4274.0999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4354.4000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4434.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4513.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4594.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4675,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4753.9000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4835.0999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4913.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 4993.4000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 5075.4000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 5159.9000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 5234.9000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 5314.0999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 5394.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 5474.0999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 5554.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 5633.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 5714.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 5794.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 5874,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 5953.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6034,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6114.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6194,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6274.4000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6354.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6433.5999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6521.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6593.5999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6674,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6754.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6833.9000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6913.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 6994.4000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 7073.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 7154.0999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 7234.0999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 7317.9000000003725,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 7393.5999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 7475,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 7553.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 7635,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 7714.0999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 7794.5999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 7873.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 7955.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8034.0999999996275,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8115,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8194,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8274.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8354.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8433.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8514.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8594.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8673.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8753.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8833.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8914.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 8993.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 9074.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 9153.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 9234.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 9313.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 9393.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 9474.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 9554.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 9633.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 9714.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 9794.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 9875,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 9954,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10036.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10114.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10194.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10273.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10354.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10434,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10514,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10593.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10675.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10753.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10834.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10914,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 10994.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 11074.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 11154.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 11234.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 11314.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 11395.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 11473.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 11556.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 11635.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 11714.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 11793.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 11874.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 11955.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12034.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12113.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12194.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12274.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12355.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12433.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12513.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12594,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12674,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12755.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12834,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12913.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 12995.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 13074.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 13154.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 13235,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 13315.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 13394.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 13474.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 13554.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 13633.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 13714.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 13794,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 13874,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 13954.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14034.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14114.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14194.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14275.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14354.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14433.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14520.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14604.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14675.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14753.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14834.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14914.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 14994.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 15074.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 15154.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 15234,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 15313.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 15393.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 15474,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 15555.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 15633.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 15713.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 15794.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 15874.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 15954.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16034.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16114.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16195.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16273.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16354.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16434.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16514.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16595.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16673.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16753.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16834.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16914.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 16994.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 17073.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 17154.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 17234.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 17313.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 17408.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 17473.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 17553.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 17690.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 17715.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 17793.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 17874.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 17954.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18034.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18114.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18193.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18273.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18353.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18434.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18514.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18594.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18674.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18754.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18834.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18915,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 18993.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 19081.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 19154.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 19235.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 19314.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 19394.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 19474.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 19554.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 19633.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 19713.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 19794.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 19875.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 19953.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20034.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20113.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20193.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20283.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20355.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20434.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20513.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20594.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20674.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20754.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20852.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20914.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 20994.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 21074.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 21153.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 21234.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 21314.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 21394.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 21474.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 21558.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 21634.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 21714.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 21794.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 21874.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 21953.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22033.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22114.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22194.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22275.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22353.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22433.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22513.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22594.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22674.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22759.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22834.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22914.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 22993.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 23073.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 23155.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 23233.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 23313.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 23393.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 23474.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 23553.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 23634,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 23715,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 23794.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 23873.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 23953.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24035.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24115,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24193.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24275.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24354.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24435,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24513.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24597,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24674.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24754.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24841.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24914.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 24994.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 25074.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 25154,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 25234.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 25315.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 25394.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 25474.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 25554.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 25633.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 25713.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 25794.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 25873.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 25954,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26046.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26114,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26194.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26273.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26354.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26434.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26513.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26594.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26674.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26754.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26834.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26914.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 26994.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 27074.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 27155.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 27233.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 27314.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 27393.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 27474.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 27555,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 27634.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 27714.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 27794.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 27874.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 27956.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28035,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28114.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28195.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28276,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28354.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28434.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28514.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28593.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28674.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28753.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28833.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28914.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 28993.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 29074.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 29154.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 29233.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 29316.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 29393.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 29474.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 29554.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 29634.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 29714.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 29793.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 29873.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 29954.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30034.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30115,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30194.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30274.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30353.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30433.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30514.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30594.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30675.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30755.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30834.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30914.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 30994.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 31074.900000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 31160.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 31238.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 31316.400000000373,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 31394.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 31473.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 31554.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 31634.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 31714.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 31794.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 31874.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 31954.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32035.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32115.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32193.599999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32274.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32353.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32434.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32514.099999999627,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32594.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32673.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32754.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32834.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32914.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 32993.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 33075.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 33153.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 33234.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 33314.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 33393.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 33475.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 33553.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 33634,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 33714.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 33793.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 33875.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 33955,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34034.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34115,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34193.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34274.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34353.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34434.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34513.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34594.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34692,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34753.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34834.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34914.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 34993.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 35077.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 35154.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 35233.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 35314.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 35394.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 35474.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 35554.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 35634.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 35714.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 35799.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 35874.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 35955.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36033.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36115.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36194.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36277.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36354.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36433.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36513.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36594.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36675.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36754.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36833.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36915.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 36994.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 37075,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 37154.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 37234.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 37316.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 37394.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 37473.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 37555.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 37635.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 37714.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 37796.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 37873.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 37964.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38035.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38113.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38194,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38273.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38353.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38434.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38513.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38593.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38673.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38756.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38834.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38915.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 38994.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 39073.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 39154.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 39235.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 39313.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 39394.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 39475.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 39553.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 39634.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 39717.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 39793.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 39875.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 39954.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40034.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40114.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40194.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40273.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40353.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40434.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40514.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40594.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40673.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40754.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40834.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40913.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 40995,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 41074.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 41157.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 41234.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 41314.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 41395.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 41525.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 41557.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 41633.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 41762.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 41795.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 41874.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 41953.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42034,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42115,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42197.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42274,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42354.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42433.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42513.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42595.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42674.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42756.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42834.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42913.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 42994.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 43073.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 43154.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 43234.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 43313.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 43394.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 43474,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 43553.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 43634.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 43714.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 43793.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 43873.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 43954.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44034.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44113.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44203.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44273.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44354.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44434,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44515,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44595,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44674.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44754.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44833.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44938.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 44994.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 45073.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 45154.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 45233.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 45313.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 45395.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 45473.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 45554.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 45634.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 45714.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 45793.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 45874.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 45954.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46033.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46115.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46194.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46275.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46353.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46434.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46513.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46594.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46674.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46763.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46834.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46916,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 46993.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 47073.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 47154.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 47234.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.44999998807907104,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 48169.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.3730183243751526,
+        "ambience": 0.15262669324874878,
+        "playing": true
+      },
+      {
+        "wallMs": 48195.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2477015256881714,
+        "ambience": 0.07550857216119766,
+        "playing": true
+      },
+      {
+        "wallMs": 48396.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 48439.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 48514,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 48595,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 48674.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 48754.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 48834.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 48913.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 48993.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 49074,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 49153.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 49234.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 49316.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 49394.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 49474.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 49554,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 49634.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 49714.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 49799.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 49874.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 49953.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 50034.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 50114.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 50194.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 50274.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.07054221630096436,
+        "playing": true
+      },
+      {
+        "wallMs": 50354.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.14183084666728973,
+        "playing": false
+      },
+      {
+        "wallMs": 50433.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.17386293411254883,
+        "playing": false
+      },
+      {
+        "wallMs": 50514.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.18825572729110718,
+        "playing": false
+      },
+      {
+        "wallMs": 50594.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19472292065620422,
+        "playing": false
+      },
+      {
+        "wallMs": 50674.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19762885570526123,
+        "playing": false
+      },
+      {
+        "wallMs": 50753.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19893455505371094,
+        "playing": false
+      },
+      {
+        "wallMs": 50834.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19952121376991272,
+        "playing": false
+      },
+      {
+        "wallMs": 50914,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.1997847557067871,
+        "playing": false
+      },
+      {
+        "wallMs": 50994.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19990332424640656,
+        "playing": false
+      },
+      {
+        "wallMs": 51073.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19995661079883575,
+        "playing": false
+      },
+      {
+        "wallMs": 51153.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19997918605804443,
+        "playing": false
+      },
+      {
+        "wallMs": 51234.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 51314.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 51395,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 51474.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 51554.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 51633.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 51719.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 51794.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 51874,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 51954.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52033.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52114,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52194.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52276.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52356.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52435.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52515,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52594.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52674.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52753.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52835.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52913.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 52997.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 53073.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 53153.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 53233.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 53314.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 53394,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 53474.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 53562.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 53634.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 53724.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 53793.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 53874.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 53954,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 54035.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.06271392852067947,
+        "playing": true
+      },
+      {
+        "wallMs": 54113.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.05612294748425484,
+        "playing": true
+      },
+      {
+        "wallMs": 54194.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 54274.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 54354.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 54434.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 54513.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 54595.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 54673.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 54754.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 54834.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 54915.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 54994.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 55075,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 55155.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 55233.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 55313.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 55394.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 55474.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 55554,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 55633.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 55714.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 55794.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 55873.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 55955.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 56035.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 56120.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.1034538522362709,
+        "playing": false
+      },
+      {
+        "wallMs": 56194,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.15661907196044922,
+        "playing": false
+      },
+      {
+        "wallMs": 56273.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.1805075854063034,
+        "playing": false
+      },
+      {
+        "wallMs": 56354.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19124136865139008,
+        "playing": false
+      },
+      {
+        "wallMs": 56434.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.1960645318031311,
+        "playing": false
+      },
+      {
+        "wallMs": 56513.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19823165237903595,
+        "playing": false
+      },
+      {
+        "wallMs": 56593.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.1992053985595703,
+        "playing": false
+      },
+      {
+        "wallMs": 56676.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19964289665222168,
+        "playing": false
+      },
+      {
+        "wallMs": 56754.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19983941316604614,
+        "playing": false
+      },
+      {
+        "wallMs": 56833.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19992753863334656,
+        "playing": false
+      },
+      {
+        "wallMs": 56913.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.199967160820961,
+        "playing": false
+      },
+      {
+        "wallMs": 56993.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19998443126678467,
+        "playing": false
+      },
+      {
+        "wallMs": 57074.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 57155.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 57239.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 57314.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 57394.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 57473.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 57554.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 57634.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 57713.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 57795.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 57875.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 57954,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58033.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58114.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58197.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58273.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58353.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58434.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58513.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58596.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58674.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58753.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58834.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58914.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 58994,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 59075,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 59155.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 59237.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 59314.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 59393.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 59474.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 59554.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 59639.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 59714.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 59794,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 59873.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.08510340750217438,
+        "playing": true
+      },
+      {
+        "wallMs": 59954.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.05653304234147072,
+        "playing": true
+      },
+      {
+        "wallMs": 60033.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.05600976198911667,
+        "playing": true
+      },
+      {
+        "wallMs": 60113.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 60194.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 60274.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 60354.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 60433.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 60514.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 60594.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 60674.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 60756,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 60834.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 60914.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 60994.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 61074.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 61153.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 61235,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 61314.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 61394.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 61475.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 61553.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 61633.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 61714.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 61794.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 61874.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.0560000017285347,
+        "playing": true
+      },
+      {
+        "wallMs": 61958.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.07054221630096436,
+        "playing": true
+      },
+      {
+        "wallMs": 62036.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.14183084666728973,
+        "playing": false
+      },
+      {
+        "wallMs": 62114.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.17386293411254883,
+        "playing": false
+      },
+      {
+        "wallMs": 62194.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.18825572729110718,
+        "playing": false
+      },
+      {
+        "wallMs": 62276.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19472292065620422,
+        "playing": false
+      },
+      {
+        "wallMs": 62355,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19762885570526123,
+        "playing": false
+      },
+      {
+        "wallMs": 62434.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19893455505371094,
+        "playing": false
+      },
+      {
+        "wallMs": 62515.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19952121376991272,
+        "playing": false
+      },
+      {
+        "wallMs": 62594.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.1997847557067871,
+        "playing": false
+      },
+      {
+        "wallMs": 62674.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19990332424640656,
+        "playing": false
+      },
+      {
+        "wallMs": 62761.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19995951652526855,
+        "playing": false
+      },
+      {
+        "wallMs": 62834.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.19997918605804443,
+        "playing": false
+      },
+      {
+        "wallMs": 62914.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 62995.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 63074.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 63154.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 63234.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 63315,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 63395.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 63474.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 63553.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 63635.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 63713.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 63794.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 63873.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 63955.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64036,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64113.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64195.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64273.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64354,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64434.199999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64523.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64602.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64673.699999999255,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64755.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64834.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64914.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 64994.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 65074.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 65153.800000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 65234.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 65314.300000000745,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 65394.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 65474.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 65554.30000000075,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 65634.30000000075,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 65715.19999999925,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 65793.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 65874.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 65953.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66033.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66114.90000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66194.69999999925,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66274.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66366.69999999925,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66435.09999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66513.80000000075,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66594.30000000075,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66674.5,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66754,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66834.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66913.40000000037,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 66993.59999999963,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      },
+      {
+        "wallMs": 67073.80000000075,
+        "voice": 0.8500000238418579,
+        "sfx": 0.2160000056028366,
+        "ambience": 0.20000000298023224,
+        "playing": false
+      }
+    ],
+    "suppressions": {
+      "expired": 1
+    },
+    "finalCameraMode": "CINEMATIC",
+    "audioFiles": [
+      {
+        "name": "demo-capacity-mix.wav",
+        "bytes": 3081644,
+        "sha256": "7b553128701bb141ea9c86f31acee3677fb98148e32a605844fbffe98e1424ce",
+        "durationSec": 64.2,
+        "format": "WAV signed PCM16 mono 24000 Hz"
+      },
+      {
+        "name": "listen-first-gift.wav",
+        "bytes": 192044,
+        "sha256": "70501a5e4797f086f494410b1aba3ec4fef37000b58d95e381da3e15b20d596b",
+        "durationSec": 4,
+        "format": "WAV signed PCM16 mono 24000 Hz"
+      }
+    ]
+  }
+}
