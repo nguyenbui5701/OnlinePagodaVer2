@@ -1,5 +1,6 @@
 import type { CueRecord } from './audio/director.ts';
-import { DemoEngine, protocolVersion, type ChatCue, type DemoEvent, type Effect, type FocusIntent, type Snapshot } from '../../../packages/v2-events/src/engine.ts';
+import { liveBatchLimit, type LiveEntry } from './live-controls.ts';
+import { DemoEngine, protocolVersion, type ChatCue, type DemoEvent, type Effect, type FocusIntent, type SessionEvent, type Snapshot } from '../../../packages/v2-events/src/engine.ts';
 import { demoScript, gift, session } from '../../../packages/v2-events/src/fixture.ts';
 import { communityConfig, communityScript } from './community-demo.ts';
 
@@ -45,6 +46,13 @@ export class SliceDriver {
   private readonly observer = new SceneObserver();
   private readonly events: (DemoEvent | ReturnType<typeof session>)[];
   private cursor = 0;
+  private readonly live: boolean;
+  private readonly liveQueue: LiveEntry[] = [];
+  private liveReceived = 0;
+  private liveAck = 0;
+  private liveScope?: { roomEpoch: number; connection: number };
+  private liveDeliveryFailed = false;
+  private liveSourceLost = false;
   private acknowledgements = new Map<string, Extract<Effect, { type: 'giftFx' }>>();
   private roomSessionId = '';
   private chat?: ChatCue;
@@ -54,29 +62,51 @@ export class SliceDriver {
   readonly trace: DomainLog[] = [];
   private readonly observeAudio: boolean;
 
-  constructor(scenario: Scenario | 'offline', demoEvents: readonly DemoEvent[] = [], observeAudio = false) {
+  constructor(scenario: Scenario | 'live' | 'offline', demoEvents: readonly DemoEvent[] = [], observeAudio = false) {
     this.observeAudio = observeAudio;
+    this.live = scenario === 'live';
     this.engine = new DemoEngine({ ...timing, maxAvatars: 3, ...(scenario === 'community' ? communityConfig : {}) });
     this.events = scenario === 'community' ? communityScript()
-      : scenario === 'idle' || scenario === 'offline' ? [] : commands(scenario === 'capacity');
+      : scenario === 'idle' || scenario === 'offline' || this.live ? [] : commands(scenario === 'capacity');
     if (scenario === 'community' && demoEvents.length) {
       this.events.push(...demoEvents);
       this.events.sort((a, b) => a.atMs - b.atMs);
     }
-    if (scenario !== 'offline') this.engine.ingest(session());
+    if (scenario !== 'offline' && !this.live) this.engine.ingest(session());
     this.observer.accept(this.engine.snapshot());
+  }
+
+  get liveReceipt() {
+    return { ack: this.liveAck, failed: this.liveDeliveryFailed };
+  }
+
+  enqueueLive(entries: LiveEntry[]) {
+    if (!this.live) return false;
+    const newEntries = entries.filter(entry => entry.seq > this.liveReceived);
+    if (this.liveQueue.length + newEntries.length > liveBatchLimit ||
+        newEntries.some((entry, index) => entry.seq !== this.liveReceived + index + 1)) return false;
+    this.liveQueue.push(...newEntries);
+    this.liveReceived += newEntries.length;
+    return true;
+  }
+
+  loseLiveSource() {
+    this.liveSourceLost = true;
   }
 
   update(atMs: number) {
     if (this.observeAudio) this.audioRecords = [];
+    for (const { seq, event } of this.liveQueue.splice(0)) {
+      this.ingest({ ...event, atMs });
+      // A rejected final or session-limit cannot be acknowledged or skipped by a later sequence.
+      if (!this.liveDeliveryFailed) this.liveAck = seq;
+    }
+    if (this.liveSourceLost) {
+      this.liveSourceLost = false;
+      if (this.liveScope) this.ingest({ ...this.liveScope, type: 'session', action: 'disconnect', atMs });
+    }
     while (this.cursor < this.events.length && this.events[this.cursor].atMs <= atMs) {
-      const event = this.events[this.cursor++];
-      const result = this.engine.ingest(event);
-      if (event.type === 'session' && result.disposition === 'accepted') {
-        this.chat = undefined;
-        this.audioEpoch++;
-      }
-      this.record(event.atMs, result.effects, result.disposition);
+      this.ingest(this.events[this.cursor++]);
     }
     const effects = this.engine.advance(atMs);
     if (effects.length) this.record(atMs, effects);
@@ -91,6 +121,24 @@ export class SliceDriver {
           avatar.actorId === this.chat?.actorId && avatar.seatId === this.chat?.seatId)))) this.chat = undefined;
     return { state, actor, active, overlay, chat: this.chat,
       audio: this.observeAudio ? { epoch: this.audioEpoch, records: this.audioRecords } : undefined };
+  }
+
+  private ingest(event: DemoEvent | SessionEvent) {
+    const result = this.engine.ingest(event);
+    if (event.type === 'session' && result.disposition === 'accepted') {
+      this.chat = undefined;
+      this.audioEpoch++;
+      if (this.live) {
+        this.liveScope = event.action === 'disconnect' ? undefined : {
+          roomEpoch: event.roomEpoch, connection: event.connection,
+        };
+      }
+    }
+    if (this.live && (result.disposition === 'session-limit' ||
+        (event.type === 'gift' && event.phase === 'final' && ['stale', 'invalid'].includes(result.disposition)))) {
+      this.liveDeliveryFailed = true;
+    }
+    this.record(event.atMs, result.effects, result.disposition);
   }
 
   private record(atMs: number, effects: Effect[], disposition?: string) {
@@ -112,7 +160,7 @@ export class SliceDriver {
           revision: state.revision, room: state.roomSessionId, disposition: disposition ?? 'advance' });
       }
     }
-    this.trace.push({ atMs, state, effects, disposition });
+    if (!this.live) this.trace.push({ atMs, state, effects, disposition });
   }
 }
 
