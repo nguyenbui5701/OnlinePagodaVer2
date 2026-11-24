@@ -4,7 +4,7 @@
   "parent": "07f57cb35ba3ec68184abbd2c173e29a3fcc4788",
   "branch": "assets/sakura-hero-r18-polish",
   "target": "assets/sakura-hero-r17-lush",
-  "status": "R18_AUDIT_PASS_FOCUSED_REPAIR_SOURCE_READY_NATIVE_BUILD_PENDING",
+  "status": "R18_NATIVE_FOCUSED_BUILD_PREVIEW_PASS_OWNER_UPLOAD_PENDING",
   "source": {
     "acceptedReview": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6033463655",
     "quality": {
@@ -39,22 +39,100 @@
     "quality": {
       "path": "sakura_hero_r18.glb",
       "status": "pending_owner_upload",
-      "sha256": null,
-      "bytes": null,
-      "triangles": null,
-      "cap": 250000
+      "sha256": "656cfaf7302dc49ff24c8643f4946536b9d1e77e71a5be7d18538aae01e54f29",
+      "bytes": 6995332,
+      "triangles": 237433,
+      "cap": 250000,
+      "meshes": 16,
+      "materials": 15,
+      "textures": 0,
+      "vertexRecords": 298010,
+      "primitiveCount": 25,
+      "degenerateTriangles": 0,
+      "deltaTriangles": 545,
+      "deltaBytes": 14020,
+      "deltaVertexRecords": 375,
+      "boundsYUpMeters": [
+        [
+          -14.178767204284668,
+          -0.5183812975883484,
+          -13.425017356872559
+        ],
+        [
+          14.489616394042969,
+          26.48044204711914,
+          14.410984992980957
+        ]
+      ],
+      "attributeLogicalBytes": {
+        "POSITION": 3576120,
+        "INDEX": 2572326,
+        "NORMAL": 825300
+      },
+      "rootedStructural": 52,
+      "structural": 52,
+      "drapedStems": 5,
+      "flowers": 40,
+      "relocatedComponents": 45,
+      "contactEdgesVerified": 45,
+      "supportComponentsVerified": 45,
+      "ornamentsPreserved": 31,
+      "isolatedOrnamentsPreserved": 13,
+      "minCenterSpacingM": 4.1037794519842405,
+      "maxRelocationM": 4.8899059709967725,
+      "gitBlobSHA": null,
+      "shaVerification": "OWNER_NATIVE_REPORT_MATCH_PREVIEW_LEDGER_INDEPENDENT_BINARY_SHA_PENDING"
     },
     "eco": {
       "path": "sakura_hero_r18_eco.glb",
       "status": "pending_owner_upload",
-      "sha256": null,
-      "bytes": null,
-      "triangles": null,
-      "cap": 60000
+      "sha256": "ad6f84f1c04468bba376e5ab7040993870b676cc0ec31b5911b782747750ff9b",
+      "bytes": 2165220,
+      "triangles": 58782,
+      "cap": 60000,
+      "meshes": 15,
+      "materials": 14,
+      "textures": 0,
+      "vertexRecords": 99082,
+      "primitiveCount": 24,
+      "degenerateTriangles": 0,
+      "deltaTriangles": 570,
+      "deltaBytes": 15956,
+      "deltaVertexRecords": 450,
+      "boundsYUpMeters": [
+        [
+          -14.275399208068848,
+          -1.026049256324768,
+          -13.268314361572266
+        ],
+        [
+          13.287308692932129,
+          24.86863899230957,
+          11.898303031921387
+        ]
+      ],
+      "attributeLogicalBytes": {
+        "POSITION": 1188984,
+        "INDEX": 619164,
+        "NORMAL": 336600
+      },
+      "rootedStructural": 49,
+      "structural": 49,
+      "drapedStems": 10,
+      "flowers": 60,
+      "relocatedComponents": 70,
+      "contactEdgesVerified": 70,
+      "supportComponentsVerified": 70,
+      "ornamentsPreserved": 12,
+      "isolatedOrnamentsPreserved": 2,
+      "minCenterSpacingM": 1.829288133774694,
+      "maxRelocationM": 6.212781292736804,
+      "gitBlobSHA": null,
+      "shaVerification": "OWNER_NATIVE_REPORT_MATCH_PREVIEW_LEDGER_INDEPENDENT_BINARY_SHA_PENDING"
     },
     "editable": {
       "path": "sakura_hero_r18_editable.blend",
-      "status": "pending_owner_upload",
+      "status": "NOT_CREATED_FINAL_HOLD",
       "sha256": null,
       "bytes": null
     }
@@ -71,7 +149,17 @@
       "quality": 237433,
       "eco": 58782
     },
-    "note": "Calculated maxima for 45/70 connectors plus at most 5/10 tiny gold triangles, not measured output. Existing 250k/60k and +5% byte guard unchanged."
+    "note": "Actual measured +545/+570 triangles and +14020/+15956 bytes (QUALITY/ECO); within original absolute caps, 600 added guard and +5% bytes guard. Explicit SA budget acceptance pending.",
+    "actual": {
+      "quality": {
+        "deltaTriangles": 545,
+        "deltaBytes": 14020
+      },
+      "eco": {
+        "deltaTriangles": 570,
+        "deltaBytes": 15956
+      }
+    }
   },
   "audit": {
     "status": "OWNER_NATIVE_AUDIT_PASS_AI_VISUAL_PRE_SA_REVIEWED",
@@ -151,10 +239,11 @@
         "Source classification and corrected native reimport must be verified on Owner's Blender."
       ]
     },
-    "sourceCorrection": "Relocate verified entire draped groups; classify 40-triangle ornamental bark knots; deduplicate parent anchors; short indexed connectors; verify reimport BVH; no rerun of full audit."
+    "sourceCorrection": "Relocate verified entire draped groups; classify 40-triangle ornamental bark knots; deduplicate parent anchors; short indexed connectors; verify reimport BVH; no rerun of full audit.",
+    "repairStatus": "NATIVE_REIMPORT_CONTACT_PROXY_PASS_OWNER_REPORT"
   },
   "cycles": {
-    "status": "pending_owner_upload",
+    "status": "FINAL_NOT_RUN_HOLD_PENDING_SA_FOCUSED_PREVIEW",
     "resolution": [
       720,
       1280
@@ -184,18 +273,21 @@
   "provenance": "Original R17B derivative; local Blender Python/NumPy, Pillow; software/license cost 0 VND; no paid services or third-party geometry",
   "gates": {
     "saArt": "P10B8_ART_SA_REVIEW_REQUIRED",
-    "native": "OWNER_NATIVE_AUDIT_PASS_R18_BUILD_PENDING",
-    "independentBinary": "PENDING_R18_OUTPUT",
+    "native": "OWNER_NATIVE_BUILD_AND_PREVIEW_PASS",
+    "independentBinary": "PENDING_R18_RAW_GLB_BYTES",
     "ownerArtGO": "PENDING",
     "integration": "HOLD",
     "merge": "HOLD",
     "B9": "HOLD",
     "C0": "HOLD",
-    "repair": "SOURCE_CORRECTED_NATIVE_REIMPORT_PENDING",
-    "finalCycles": "HOLD_PENDING_SA_FOCUSED_PREVIEW"
+    "repair": "NATIVE_REIMPORT_CONTACT_PROXY_PASS",
+    "finalCycles": "HOLD_PENDING_SA_FOCUSED_PREVIEW",
+    "budget": "SA_DELTA_ACCEPTANCE_PENDING",
+    "preview": "AI_VISUAL_PRE_SA_VALIDATION_PASS_OWNER_UPLOAD_PENDING",
+    "goldArt": "PARTIAL_SA_REVIEW_REQUIRED"
   },
   "preview": {
-    "status": "PENDING_OWNER_NATIVE_FOCUSED_BUILD_AND_PREVIEW",
+    "status": "NATIVE_FOCUSED_PREVIEW_PASS_PENDING_OWNER_UPLOAD_SA_REVIEW",
     "path": "R18_Repair_Preview/preview_manifest.json",
     "resolution": [
       720,
@@ -208,6 +300,101 @@
       "under_tree",
       "repair_side"
     ],
-    "finalHold": "Explicit SA preview decision required before enabling Final"
+    "finalHold": "Explicit SA preview decision required before enabling Final",
+    "actual": {
+      "resolution": [
+        720,
+        1280
+      ],
+      "samples": 32,
+      "newNativeFrames": 6,
+      "reusedBaselineFrames": 2,
+      "pairedCameraRecords": 4,
+      "zipCRC": "PASS",
+      "pngSHA": "6/6 independently matched",
+      "baselineReuse": "2 records match frozen R17B ledger; no new raw binary hash",
+      "candidateSHA": "validation matches preview manifest; not independent raw GLB verification"
+    },
+    "frames": [
+      {
+        "path": "R18_Repair_Preview/quality_r17b_repair_side.png",
+        "bytes": 1225720,
+        "sha256": "ed878ebc64558b1c62cdcd7b0dc78caf09a56f92ed84e91ff1c62a115e25e481",
+        "status": "pending_owner_upload",
+        "shaVerification": "AI_VISUAL_INDEPENDENT_ZIP_MEMBER_SHA_PASS"
+      },
+      {
+        "path": "R18_Repair_Preview/quality_r18_under_tree.png",
+        "bytes": 1170139,
+        "sha256": "807a9304da9b831b18f861c8e62b1e3b344b8229c67d96093e19e7ca450565c3",
+        "status": "pending_owner_upload",
+        "shaVerification": "AI_VISUAL_INDEPENDENT_ZIP_MEMBER_SHA_PASS"
+      },
+      {
+        "path": "R18_Repair_Preview/quality_r18_repair_side.png",
+        "bytes": 1215543,
+        "sha256": "601ad1483079af2a16e7094a2a7b4bd849c4f566607bdac2af18d155c63c4dc7",
+        "status": "pending_owner_upload",
+        "shaVerification": "AI_VISUAL_INDEPENDENT_ZIP_MEMBER_SHA_PASS"
+      },
+      {
+        "path": "R18_Repair_Preview/eco_r17b_repair_side.png",
+        "bytes": 1215991,
+        "sha256": "fe9e61cf0e39aba731f75f9cfacbefa13a31cec7eccc6a97a519a709f207a802",
+        "status": "pending_owner_upload",
+        "shaVerification": "AI_VISUAL_INDEPENDENT_ZIP_MEMBER_SHA_PASS"
+      },
+      {
+        "path": "R18_Repair_Preview/eco_r18_under_tree.png",
+        "bytes": 1134519,
+        "sha256": "e77c9038aa393031dc9ab00e220870a855e80f492b72c25f2b1fd8864d21ccbc",
+        "status": "pending_owner_upload",
+        "shaVerification": "AI_VISUAL_INDEPENDENT_ZIP_MEMBER_SHA_PASS"
+      },
+      {
+        "path": "R18_Repair_Preview/eco_r18_repair_side.png",
+        "bytes": 1221075,
+        "sha256": "4d9ec04f861451372a18053df78a8c6fe6c21aed4b9e6836366ca535a8ce39b0",
+        "status": "pending_owner_upload",
+        "shaVerification": "AI_VISUAL_INDEPENDENT_ZIP_MEMBER_SHA_PASS"
+      }
+    ],
+    "reportFiles": [
+      {
+        "path": "attachment_diagnostics.json",
+        "bytes": 49998,
+        "sha256": "d883c2330696a0ad9494f93cce13bca1154ecb5f75fa59761f545ea0b3249bc0",
+        "status": "pending_owner_upload"
+      },
+      {
+        "path": "validation.json",
+        "bytes": 21953,
+        "sha256": "0121fb56481dc4b185cf1cdbaf2334eea9e9cc1a97e06b9f73efb5f67f5edd18",
+        "status": "pending_owner_upload"
+      },
+      {
+        "path": "R18_build_stdout.log",
+        "bytes": 2756,
+        "sha256": "d0367f81c1ad99daef10e949057046c1e0b95f03c090be8975d8bacbdbe14a1f",
+        "status": "pending_owner_upload"
+      },
+      {
+        "path": "R18_preview_stdout.log",
+        "bytes": 43369,
+        "sha256": "b5a78c9b89c1cede4524601043f8055e83d6a566e0e606f35bf647df1d55582b",
+        "status": "pending_owner_upload"
+      },
+      {
+        "path": "R18_Repair_Preview/preview_manifest.json",
+        "bytes": 12648,
+        "sha256": "467d105c4f099f2e09de41473dc71651c86090fb337d4456a0870b42ab5b83cc",
+        "status": "pending_owner_upload"
+      }
+    ],
+    "reviewReceipt": "PRE_SA_PREVIEW_REVIEW.json",
+    "candidateHashes": {
+      "quality": "656cfaf7302dc49ff24c8643f4946536b9d1e77e71a5be7d18538aae01e54f29",
+      "eco": "ad6f84f1c04468bba376e5ab7040993870b676cc0ec31b5911b782747750ff9b"
+    }
   }
 }

@@ -1,32 +1,18 @@
-# R18 — focused repair following actual Phase 1 audit
+# R18 — AI Visual17 focused preview
 
-AI Visual17 / Design32 / Rules07/14. Same draft PR #27, exact baseline PR18 `07f57cb35ba3ec68184abbd2c173e29a3fcc4788`; PR26 read-only aecc8e5399cb869fe3de95d5a7b3f15972397216. Owner supplied native audit JSON, two logs, ZIP and red-circled screenshot. [Pre-SA evidence receipt](PRE_SA_AUDIT_REVIEW.json) pins uploaded bytes and review findings. **Audit PASS; corrected Build/preview pending native run; Final HOLD.** No repeat of baseline audit or six original diagnostic renders. Original chuav2.mp4 still unavailable, no reference-video fidelity claim.
+## Actual focused Build and Preview — Owner native PASS, upload pending
 
-## Finding → repair
-| Finding | Correction |
-|---|---|
-| QUALITY 5/5 and ECO 10/10 draped stems without rooted BVH contact; gaps 2.736–4.951 / 1.296–6.011 m | Relocate whole source-verified stem+flower groups to nearby real rooted branch surfaces; no long artificial connecting rods. Choose distinct anchors and >=1.8m center spacing. |
-| 40 QUALITY /60 ECO flowers; prior nearest-surface grouping mixed 9/8/8/8/7 QUALITY | Center-to-low-end envelope regrouped offline from actual audit: 8/6 per stem, 4+4/3+3 pink/blush. Native code asserts exact source counts, bounds and attribution. |
-| 13 QUALITY /2 ECO isolated 40-triangle wood relief candidates | R16 bark_knots() signature 5 rings x4 sides with centered caps yields 40 triangles, total 31/12. Validate source count and preserve relief, exclude from structural graph; if other unrooted structural components remain, stop. |
-| ECO old per-flower supports 36 triangles each | 3-sided/2-ring capped indexed support, 8 triangles ECO; 4-sided/2-ring, 12 QUALITY; only if direct contact absent. Max 600 additional tris each, unchanged 250k/60k caps and +5% byte guard. |
-| QUALITY side image nearly black (mean RGB ~0.08) | Preserve old evidence, new exterior matched side camera framing both moved and original groups; inspect actual new images. |
+Source run HEAD `986bbc52694044b3797ac13d09d42c0b601a6423`, immutable R17B parent `07f57cb35ba3ec68184abbd2c173e29a3fcc4788`. [PRE_SA_PREVIEW_REVIEW.json](PRE_SA_PREVIEW_REVIEW.json) is the AI Visual receipt for chat-supplied reports, logs and ZIP; not a replacement for originals. Both native build and preview completed, six PNG checksums independently verified, four matched camera pairs, two existing baseline references. No native rerun required.
 
-No changes to original R17B files. R18 copy patches only POSITION records for selected moved components and updates matching accessor min/max; preserves all other original binary bytes, indices, normals and node/mesh structure; alias/coverage guard and actual Blender reimport contact verification required. Original gold material name retained; restrained emission and tiny gold accents follow short supports; existing planned material tuning retained. No global exposure or runtime change. Reimport must show relocated components and actual contact at both ends; not a manifold weld or complete art PASS. Source-only correction; native Blender unavailable here, no claimed Python/native compile or GLB output.
+| Profile | Canonical GLB | Bytes | Triangles | Vertex records | SHA256 (Owner report) |
+|---|---|---:|---:|---:|---|
+| QUALITY | `sakura_hero_r18.glb` | 6995332 | 237433 | 298010 | `656cfaf7302dc49ff24c8643f4946536b9d1e77e71a5be7d18538aae01e54f29` |
+| ECO | `sakura_hero_r18_eco.glb` | 2165220 | 58782 | 99082 | `ad6f84f1c04468bba376e5ab7040993870b676cc0ec31b5911b782747750ff9b` |
 
-## Run next in existing r18-polish worktree
+All 15 stems and 100 flowers match original audit IDs; 45/45 QUALITY and 70/70 ECO actual reimport contact edges verified by Owner report; no unresolved focused repairs. 52/52 and 49/49 structural wood components rooted per repair report, excluding preserved ornamental relief. Minimum new center separation 4.104/1.829m. 31/12 reliefs retained, including 13/2 previously isolated ornaments. BVH is a contact proxy, not manifold weld proof. Original position records changed only for targeted groups (Owner report); other original bytes unchanged, bounds exactly match original audit, all root transforms identity, zero degenerates, no textures. Added 545/570 triangles (+0.23%/+0.98%) and 14020/15956 bytes (+0.20%/+0.74%) vs R17B: within technical guards, explicit SA delta acceptance pending.
 
-```powershell
-git status --short
-git pull --ff-only origin assets/sakura-hero-r18-polish
-& .\run_r18.ps1 -Phase Build
-```
+Gold emissive .35/.13/.035 → .85/.38/.085; roughness .73 → .65, three canopy and one shadow rose emissive changes per profile. Six preview images show improved attached blossom appearance, preserved pink canopy; sparse gold and dark underside remain visual limitations. Gold art objective partial, no new runtime lighting or FPS proof. No reference video available. Request focused SA review, not final art approval.
 
-Keep the existing exact `attachment_audit.json` (SHA pinned above) and `R18_Attachment_Audit/` untouched. Build opens approved editable, verifies focused component identities and group assignment, relocates selected components, builds both real GLBs and reimports, validates budget and BVH proxy. If a guard fails, **STOP**, send `attachment_diagnostics.json` and `R18_build_stdout.log` / `R18_build_stderr.log`; do not widen limits or run final.
+Both GLB SHA values are consistent across Owner validation and preview ledger; raw GLB bytes not supplied to AI Visual. Original reports/GLBs/PNGs are still pending_owner_upload. No final editable .blend, full Cycles set, or final art approval. Keep candidate bytes unchanged pending SA decision. Final CLI remains disabled; no rerun Audit/Build/Preview. No merge/Codex/runtime/B9/C0; Owner Art GO pending. 0 VND. STOP P10B8_ART_SA_REVIEW_REQUIRED.
 
-Only after actual Build PASS:
-
-```powershell
-& .\run_r18.ps1 -Phase Preview
-```
-
-6 new native 720x1280/32-sample frames (2 R18 under-tree +4 matched side) and 2 SHA-pinned historical R17B under-tree frames, 8 ledger rows. Inspect all images and report rounded/clipping/occlusion, group shape, gold warmth and bark detail; frame projection is not art acceptance. **Final is disabled in PowerShell and Python CLI**, awaiting explicit SA preview decision; Audit is frozen. No new .blend or full final evidence in this step. Send/upload existing audit and new GLBs, reports, logs and preview folder on this same branch. See BINARY_HANDOFF. No paid tools. **STOP P10B8_ART_SA_REVIEW_REQUIRED.** No runtime, merge, Codex, B9/C0.
+See [BINARY_HANDOFF.md](BINARY_HANDOFF.md) for exact upload inventory. Historical reproducibility: run_r18.ps1 Build then Preview, already completed; do not rerun. Final intentionally locked.
