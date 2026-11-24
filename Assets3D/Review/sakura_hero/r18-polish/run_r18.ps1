@@ -1,4 +1,4 @@
-param([ValidateSet('Audit','Build','Final')][string]$Phase='Audit',[string]$Blender='')
+param([ValidateSet('Audit','Build','Preview','Final')][string]$Phase='Build',[string]$Blender='')
 $ErrorActionPreference='Stop'
 Set-Location -LiteralPath (Split-Path -Parent $MyInvocation.MyCommand.Path)
 if ((git branch --show-current).Trim() -ne 'assets/sakura-hero-r18-polish') { throw 'R18_WRONG_BRANCH' }
@@ -17,25 +17,19 @@ function Invoke-Native([string]$Script,[string]$Mode,[string]$Label) {
     if ($p.ExitCode -ne 0) { Get-Content -LiteralPath $stderr -Tail 100; Get-Content -LiteralPath $stdout -Tail 30; throw "R18_NATIVE_FAILED $Label $($p.ExitCode)" }
     Write-Output "R18_NATIVE_EXIT_0 $Label"
 }
+if ($Phase -eq 'Audit') { throw 'R18_AUDIT_ALREADY_PASS_DO_NOT_REPEAT' }
+if ($Phase -eq 'Final') { throw 'R18_FINAL_HOLD_PENDING_SA_PREVIEW_REVIEW' }
 switch ($Phase) {
-    'Audit' {
-        Invoke-Native '.\author_r18.py' 'audit' 'R18_audit'
-        Invoke-Native '.\render_r18.py' 'audit' 'R18_audit_views'
-        Write-Output 'R18_AUDIT_READY_REVIEW_FINDINGS_BEFORE_BUILD'
-    }
     'Build' {
         if (!(Test-Path .\attachment_audit.json)) { throw 'R18_AUDIT_MISSING' }
+        $auditHash=(Get-FileHash -LiteralPath .\attachment_audit.json -Algorithm SHA256).Hash.ToLowerInvariant()
+        if ($auditHash -ne 'd1bd1bc8d914893e6c98b96b00553191b0497dd548e982c44979af7a42c20baa') { throw 'R18_REVIEWED_AUDIT_SHA_MISMATCH' }
         Invoke-Native '.\author_r18.py' 'build' 'R18_build'
-        Write-Output 'R18_BUILD_READY_CHECK_ATTACHMENT_REPORT_BEFORE_FINAL'
+        Write-Output 'R18_BUILD_READY_RUN_FOCUSED_PREVIEW_ONLY'
     }
-    'Final' {
+    'Preview' {
         if (!(Test-Path .\validation.json)) { throw 'R18_VALIDATION_MISSING' }
-        $python=Get-Command py -ErrorAction Stop
-        & $python.Source -c 'from PIL import Image'
-        if ($LASTEXITCODE -ne 0) { throw 'Pillow required; use existing Pillow installation' }
-        Invoke-Native '.\render_r18.py' 'final' 'R18_final'
-        & $python.Source .\make_r18_sheets.py
-        if ($LASTEXITCODE -ne 0) { throw 'R18_SHEETS_FAILED' }
+        Invoke-Native '.\render_r18.py' 'preview' 'R18_preview'
         Write-Output 'P10B8_ART_SA_REVIEW_REQUIRED'
     }
 }

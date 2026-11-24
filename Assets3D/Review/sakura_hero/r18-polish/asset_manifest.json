@@ -4,7 +4,7 @@
   "parent": "07f57cb35ba3ec68184abbd2c173e29a3fcc4788",
   "branch": "assets/sakura-hero-r18-polish",
   "target": "assets/sakura-hero-r17-lush",
-  "status": "SOURCE_READY_NATIVE_AUDIT_BLOCKED_IN_AI_WORKER",
+  "status": "R18_AUDIT_PASS_FOCUSED_REPAIR_SOURCE_READY_NATIVE_BUILD_PENDING",
   "source": {
     "acceptedReview": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6033463655",
     "quality": {
@@ -27,7 +27,7 @@
       "sha256": "9043df77297e82051dbdc6da2c9bbe5ac38895fa1155d9661fd9ef8cca3d63e2",
       "gitBlobSHA": "b97cc9208dc000d8838c91b26f2a18b2cbaae910"
     },
-    "verification": "Historical SA R5 independent binary PASS; current GitHub tree metadata verified; large binary reads empty, no current Blender import."
+    "verification": "Historical SA R5 independent baseline PASS; Owner native Phase1 checksum/import/editable reopen verified in supplied logs. No new independent baseline binary read here."
   },
   "coordinateSystem": {
     "up": "+Y",
@@ -61,14 +61,97 @@
   },
   "budget": {
     "preferred": "R17B bytes/triangles or less; any increase must be justified and reviewed",
-    "guard": "<=5% bytes increase; absolute previous profile caps; no approval implied"
+    "guard": "<=5% bytes increase; absolute previous profile caps; no approval implied",
+    "focusedAddedTriangleCap": 600,
+    "designMaxAdded": {
+      "quality": 545,
+      "eco": 570
+    },
+    "designMaxTotal": {
+      "quality": 237433,
+      "eco": 58782
+    },
+    "note": "Calculated maxima for 45/70 connectors plus at most 5/10 tiny gold triangles, not measured output. Existing 250k/60k and +5% byte guard unchanged."
   },
   "audit": {
-    "status": "PENDING_NATIVE",
+    "status": "OWNER_NATIVE_AUDIT_PASS_AI_VISUAL_PRE_SA_REVIEWED",
     "report": "attachment_audit.json",
     "views": "R18_Attachment_Audit/",
     "repair": "attachment_diagnostics.json",
-    "validation": "validation.json"
+    "validation": "validation.json",
+    "review": "PRE_SA_AUDIT_REVIEW.json",
+    "sourceAuditSHA256": "d1bd1bc8d914893e6c98b96b00553191b0497dd548e982c44979af7a42c20baa",
+    "actual": {
+      "baseline": "07f57cb35ba3ec68184abbd2c173e29a3fcc4788",
+      "reviewedSourceHead": "ed3ec810117c523fa8c3b79dfc5a1e418a7a7909",
+      "status": "AI_VISUAL_PRE_SA_AUDIT_EVIDENCE_VERIFIED_BUILD_CORRECTION_REQUIRED",
+      "files": [
+        {
+          "path": "attachment_audit.json",
+          "bytes": 84475,
+          "sha256": "d1bd1bc8d914893e6c98b96b00553191b0497dd548e982c44979af7a42c20baa"
+        },
+        {
+          "path": "R18_audit_stdout.log",
+          "bytes": 2279,
+          "sha256": "618d930bdc549000adf797b46930ae50cd62e252f05275cbae900bc5b6ba2345"
+        },
+        {
+          "path": "R18_audit_views_stdout.log",
+          "bytes": 37527,
+          "sha256": "7e874a10b29e39b5a1377612ab42c115a47d8566c51222aeeb4c7db12659d28f"
+        },
+        {
+          "path": "R18_Attachment_Audit.zip",
+          "bytes": 5541409,
+          "sha256": "23fb3ed75d5c86625936bd1690500e420292d9e9a3d06fb35a6278b567b72f50"
+        },
+        {
+          "path": "Owner screenshot (20261124-170120).png",
+          "bytes": 241931,
+          "sha256": "020cd40eede9d2b75389a72b622a11a62adff5b16ebd5e8d1344add70e4d2ce6"
+        }
+      ],
+      "profiles": {
+        "quality": {
+          "woodComponents": 83,
+          "rootedBVH": 65,
+          "unconfirmed": 18,
+          "drapedStems": 5,
+          "lowFlowers": 40,
+          "flowersPerStem": 8,
+          "isolatedOrnamentalCandidates": 13,
+          "minStemGapM": 2.7357780933380127,
+          "maxStemGapM": 4.95056676864624
+        },
+        "eco": {
+          "woodComponents": 61,
+          "rootedBVH": 49,
+          "unconfirmed": 12,
+          "drapedStems": 10,
+          "lowFlowers": 60,
+          "flowersPerStem": 6,
+          "isolatedOrnamentalCandidates": 2,
+          "minStemGapM": 1.296,
+          "maxStemGapM": 6.011
+        }
+      },
+      "evidence": {
+        "zipCRC": "PASS",
+        "imageHashes": "6/6 independently matched archive ledger",
+        "dimensions": "6/6 720x1280",
+        "nativeSamples": 32,
+        "usableViews": "5/6; quality_side_baseline near black, RGB mean 0.08",
+        "actualBytesNotUploaded": "Audit files supplied in chat; this report pins their bytes; Owner will upload original files without modification."
+      },
+      "limitations": [
+        "BVH intersection is contact proxy, not manifold or physical load proof.",
+        "No current R18 binary/Blender execution.",
+        "Original reference video chuav2.mp4 still unavailable.",
+        "Source classification and corrected native reimport must be verified on Owner's Blender."
+      ]
+    },
+    "sourceCorrection": "Relocate verified entire draped groups; classify 40-triangle ornamental bark knots; deduplicate parent anchors; short indexed connectors; verify reimport BVH; no rerun of full audit."
   },
   "cycles": {
     "status": "pending_owner_upload",
@@ -96,17 +179,35 @@
   "shaLedger": "owner_sha256.txt",
   "reference": {
     "video": "chuav2.mp4 unavailable in this session; need Owner reattach",
-    "screenshot": "2026-11-24 red-circled Owner screenshot unavailable in this session; no direct fidelity claim"
+    "screenshot": "Owner screenshot supplied and reviewed; apparent low hanging flower clumps consistent with native attachment audit."
   },
   "provenance": "Original R17B derivative; local Blender Python/NumPy, Pillow; software/license cost 0 VND; no paid services or third-party geometry",
   "gates": {
     "saArt": "P10B8_ART_SA_REVIEW_REQUIRED",
-    "native": "BLOCKED_IN_AI_WORKER",
+    "native": "OWNER_NATIVE_AUDIT_PASS_R18_BUILD_PENDING",
     "independentBinary": "PENDING_R18_OUTPUT",
     "ownerArtGO": "PENDING",
     "integration": "HOLD",
     "merge": "HOLD",
     "B9": "HOLD",
-    "C0": "HOLD"
+    "C0": "HOLD",
+    "repair": "SOURCE_CORRECTED_NATIVE_REIMPORT_PENDING",
+    "finalCycles": "HOLD_PENDING_SA_FOCUSED_PREVIEW"
+  },
+  "preview": {
+    "status": "PENDING_OWNER_NATIVE_FOCUSED_BUILD_AND_PREVIEW",
+    "path": "R18_Repair_Preview/preview_manifest.json",
+    "resolution": [
+      720,
+      1280
+    ],
+    "samples": 32,
+    "newNativeFrames": 6,
+    "reusedBaselineFrames": 2,
+    "views": [
+      "under_tree",
+      "repair_side"
+    ],
+    "finalHold": "Explicit SA preview decision required before enabling Final"
   }
 }

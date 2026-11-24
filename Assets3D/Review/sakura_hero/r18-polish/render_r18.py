@@ -5,6 +5,7 @@ import sys, math, json, hashlib, struct
 from pathlib import Path
 import bpy
 from mathutils import Vector,Matrix
+from bpy_extras.object_utils import world_to_camera_view
 ROOT=Path(__file__).resolve().parent
 sys.dont_write_bytecode=True
 sys.path.insert(0,str(ROOT))
@@ -28,7 +29,7 @@ def shot(view,lod,diagnostics,old):
     if view=='branch_close':
         gaps=diagnostics['profiles'][lod]['attachmentFindings']
         if gaps:
-            gap=max(gaps,key=lambda x:x['gapMetersVertexToSurface'])
+            gap=max(gaps,key=lambda x:x.get('oldGapMeters',x.get('gapMetersVertexToSurface',0)))
             target=(Vector(gap['childPoint'])+Vector(gap['parentPoint']))*.5
         else:
             stem=diagnostics['profiles'][lod]['drapedStems'][0]['boundsBlenderMeters']
@@ -95,8 +96,69 @@ def audit_views():
     a.write(out/'audit_views.json',rows)
     print('R18_NATIVE_ATTACHMENT_AUDIT_VIEWS_COMPLETE 6',flush=True)
 
-def main():
-    if '--' in sys.argv and sys.argv[sys.argv.index('--')+1]=='audit':return audit_views()
+def preview():
+    a.pins()
+    out=ROOT/'R18_Repair_Preview';out.mkdir(exist_ok=True)
+    marker=out/'preview_manifest.json'
+    if marker.exists():marker.unlink()
+    val=a.read(ROOT/'validation.json');diag=a.read(ROOT/'attachment_diagnostics.json')
+    a.require(val['status']=='NATIVE_GLB_VALIDATION_PASS_EDITABLE_RENDER_PENDING' and diag['status']=='NATIVE_REPAIR_PROXY_PASS_VISUAL_REVIEW_REQUIRED','focused build not passed')
+    a.require(diag['sourceAuditSHA256']==a.repair.AUDIT_SHA,'audit drift')
+    old={(r['lod'],r['view']):r for r in a.read(a.BASE/'final/cycles_manifest.json') if r['revision']=='r17b'}
+    rows=[];poses={}
+    for lod in a.LODS:
+        candidate=ROOT/a.NAMES[lod];model=val['profiles'][lod]
+        a.require(a.sha(candidate)==model['sha256'] and candidate.stat().st_size==model['bytes'],'candidate SHA drift')
+        # Focus on largest original gap and include both original and moved stem
+        # bounds, using an exterior side camera (not a camera inside the canopy).
+        gap=max(diag['profiles'][lod]['attachmentFindings'],key=lambda x:x['oldGapMeters'])
+        oldstem=next(x for x in diag['profiles'][lod]['drapedStems'] if x['id']==gap['id'])
+        pts=[Vector((x,y,z)) for low,hi in (oldstem['boundsBlenderMeters'],gap['newBoundsBlenderMeters']) for x in (low[0]-.8,hi[0]+.8) for y in (low[1]-.8,hi[1]+.8) for z in (low[2]-.8,hi[2]+.8)]
+        target=sum(pts,Vector((0,0,0)))/len(pts)
+        radial=Vector((target.x,target.y,0))
+        if radial.length<.1:radial=Vector((1,0,0))
+        radial.normalize()
+        rig.render_setup(a.BASE/a.PIN[lod][0])
+        for distance in (18,22,26,32,40):
+            eye=target+radial*distance+Vector((0,0,-4.5))
+            ob=make_camera('repair_side',(list(eye),list(target),[0,0,1],48))
+            bpy.context.view_layer.update()
+            uv=[world_to_camera_view(bpy.context.scene,ob,x) for x in pts]
+            if all(v.z>0 and .05<=v.x<=.95 and .05<=v.y<=.95 for v in uv):break
+        else:raise RuntimeError('R18 focused side framing failed '+lod)
+        info=camera_info(ob);poses[lod]=info
+        for rev in ('r17b','r18'):
+            path=a.BASE/a.PIN[lod][0] if rev=='r17b' else candidate
+            rig.render_setup(path)
+            # Under-tree historical R17B image reused with exact SHA and camera;
+            # render just R18 counterpart and a matched exterior side pair.
+            for view in ('under_tree','repair_side'):
+                if view=='under_tree':
+                    ref=old[(lod,'under_crown_9x16')]
+                    ob=camera_from_record(ref['camera'])
+                    if rev=='r17b':
+                        prior=a.BASE/'final'/ref['path']
+                        a.require(a.sha(prior)==ref['sha256'] and prior.stat().st_size==ref['bytes'],'baseline under-tree SHA mismatch')
+                        im={'path':'../r17-lush/r17b/final/'+ref['path'],'sha256':ref['sha256'],'bytes':ref['bytes']}
+                        origin='REUSED_R17B_FROZEN_RIG'
+                    else:im=render_image(out/f'{lod}_{rev}_{view}.png');origin='NATIVE_CYCLES'
+                else:
+                    ob=camera_from_record(info)
+                    im=render_image(out/f'{lod}_{rev}_{view}.png');origin='NATIVE_CYCLES'
+                rows.append({**im,'lod':lod,'revision':rev,'view':view,'origin':origin,'camera':camera_info(ob),'modelSHA256':a.sha(path),'width':720,'height':1280,'samples':32})
+                print('R18_FOCUSED_PREVIEW_FRAME',lod,rev,view,origin,flush=True)
+    a.require(len(rows)==8 and sum(x['origin']=='NATIVE_CYCLES' for x in rows)==6,'preview frame count')
+    for lod in a.LODS:
+        for view in ('under_tree','repair_side'):
+            pair=[x for x in rows if x['lod']==lod and x['view']==view]
+            a.require(len(pair)==2 and pair[0]['camera']==pair[1]['camera'],'preview camera mismatch')
+    a.write(marker,{'status':'R18_FOCUSED_PREVIEW_READY_SA_REVIEW_PENDING','baseline':a.HEAD,'sourceAuditSHA256':a.repair.AUDIT_SHA,
+        'frames':rows,'sideCameraPoses':poses,'candidateHashes':{k:v['sha256'] for k,v in val['profiles'].items()},
+        'notes':'Six new native images plus two SHA-reused baseline under-tree images. New exterior side pair replaces unusable old QUALITY side for review; old audit remains immutable. Offline evidence only.',
+        'finalCycles':'HOLD','ownerArtGO':'PENDING','gate':'P10B8_ART_SA_REVIEW_REQUIRED'})
+    print('R18_FOCUSED_PREVIEW_COMPLETE 6 NEW + 2 REUSED; FINAL_HOLD',flush=True)
+
+def final_after_future_sa_go():
     a.pins();E.mkdir(exist_ok=True)
     val=a.read(ROOT/'validation.json');diag=a.read(ROOT/'attachment_diagnostics.json')
     a.require(val['status']=='NATIVE_GLB_VALIDATION_PASS_EDITABLE_RENDER_PENDING' and diag['status']=='NATIVE_REPAIR_PROXY_PASS_VISUAL_REVIEW_REQUIRED','build not passed')
@@ -143,4 +205,8 @@ def main():
     val['status']='R18_NATIVE_EVIDENCE_READY_VISUAL_SA_REVIEW_PENDING';val['cycles']={'count':24,'nativeNew':18,'reused':6,'lookOnlyNew':2};val['blenderVersion']=bpy.app.version_string
     for lod,m in models.items():a.require(a.sha(ROOT/a.NAMES[lod])==m['sha256'],'candidate changed after render')
     a.pins();a.write(ROOT/'validation.json',val);print('R18_FINAL_COMPLETE 24 matched + 2 look-only; SA REVIEW REQUIRED',flush=True)
+def main():
+    phase=sys.argv[sys.argv.index('--')+1] if '--' in sys.argv else 'preview'
+    a.require(phase=='preview','R18 Final Cycles HOLD until explicit SA preview decision; audit already complete')
+    preview()
 if __name__=='__main__':main()
