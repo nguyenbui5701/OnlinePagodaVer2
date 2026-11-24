@@ -184,3 +184,29 @@ test('an accepted LIVE gift never exposes a DEMO name identity to the voice path
   assert.equal(starts[0].identity, undefined);
   assert.equal(starts[0].sound, 'generic');
 });
+
+test('R2 accepted final carries exact provenance and rename during the wait cancels the alias without replaying the chime', () => {
+  const { director, starts, sounds, wait, finish } = harness(true);
+  const { state, record, focus } = fixtures();
+  director.enable(true);
+  const id = 'demo-room-gift-1';
+  const accepted = record({ type: 'giftFx', atMs: 99, requestId: id, displayName: 'An Lam', actorId: first.actorId,
+    giftId: '5655', confirmation: 'confirmed', giftCount: 2, anchor: 'giftFx', dedicatedFocus: true });
+  const receipt = { seq: 3, roomEpoch: 61, connection: 4 };
+  accepted.liveGift = receipt;
+  const scene = (at: number, mode: 'GIFT_TRANSITION' | 'GIFT_FOCUS', name: string) => {
+    const frame = state(at, mode, id, first);
+    const actor = frame.avatars.find(value => value.actorId === first.actorId)!;
+    actor.displayName = name;
+    return frame;
+  };
+  director.frame(scene(100, 'GIFT_TRANSITION', 'An Lam'), 0, [accepted], first);
+  wait();
+  director.frame(scene(1100, 'GIFT_FOCUS', 'An Lam'), 0, [focus(id, 1100)], first);
+  assert.deepEqual(sounds[0].liveIdentity, { ...receipt, alias: 'An Lam', count: 2 });
+  finish();
+  director.frame(scene(1140, 'GIFT_FOCUS', 'An Mây'), 0, [], first);
+  assert.equal(sounds.length, 1);
+  assert.equal(starts.length, 1);
+  assert.equal(starts[0].liveIdentity, undefined);
+});

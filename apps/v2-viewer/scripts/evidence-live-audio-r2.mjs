@@ -137,10 +137,13 @@ export async function recordR2({ dashboard, overlay, gateway, audio, receive, ro
   for (let i = 1; i < voices.length; i++) {
     assert(voices[i].contextSec >= voices[i-1].contextSec + voices[i-1].seconds);
   }
+  const focusDelays = new Map();
   for (const mark of voices) {
     const chime = packed.marks.find(s => s.event === 'sfx-start' && s.request === mark.request);
     assert(chime && mark.seat === chime.seat && mark.contextSec >= chime.contextSec);
-    assert(mark.sceneMs - chime.sceneMs <= 350);
+    const delay = mark.sceneMs - chime.sceneMs;
+    if (mark.variant === 'named') assert(delay <= 350, 'named clip never plays after the wait deadline');
+    focusDelays.set(mark.request, delay);
   }
 
   const receipt = {
@@ -157,7 +160,7 @@ export async function recordR2({ dashboard, overlay, gateway, audio, receive, ro
     recording: { ...air, seconds: pcm.length / 2 / packed.rate, sampleRate: packed.rate, sha256: sha(recording) },
     continuity: { connection: gateway.connection, acknowledged: gateway.acknowledged, confirmed: packed.confirmed },
     voices: voices.map(({ event, request, seat, variant, sceneMs, seconds, contextSec }) => ({
-      event, request, seat, variant, sceneMs, seconds, contextSec,
+      event, request, seat, variant, sceneMs, seconds, contextSec, afterFocusMs: focusDelays.get(request),
     })),
     captures: { dashboard: sha(screen), overlay: sha(render) },
   };

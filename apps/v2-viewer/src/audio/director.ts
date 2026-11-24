@@ -112,7 +112,8 @@ export class AudioDirector {
       state.camera.activeRequestId === intent.requestId && state.camera.activeActorId === binding.actorId &&
       avatar
       ? intent : undefined;
-    if (this.active?.cue.liveIdentity && spokenAlias(avatar?.displayName) !== this.active.cue.liveIdentity.alias) {
+    if (this.active?.cue.liveIdentity && !this.pending.has(this.active.cue.request) &&
+        spokenAlias(avatar?.displayName) !== this.active.cue.liveIdentity.alias) {
       this.cut('name-changed');
     }
     const idle = state.camera.mode === 'CINEMATIC' && !intent && state.camera.pendingGivers === 0;
