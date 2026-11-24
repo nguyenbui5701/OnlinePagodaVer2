@@ -1,0 +1,1364 @@
+[
+  {
+    "path": "crown_close_9x16_AB.jpg",
+    "bytes": 341600,
+    "sha256": "caf818def237e0b9cf6a5d51a242a594cf389d0b3d1edc68763ddbc90125ea7c",
+    "view": "crown_close_9x16",
+    "comparisons": [
+      {
+        "profile": "quality",
+        "meanAbsoluteRGBDifference": [
+          6.354968532986111,
+          4.607032335069444,
+          4.177965494791667
+        ],
+        "pixelsLumaDifferenceOver16Pct": 6.936089409722222,
+        "limitation": "Noise-inclusive image delta proxy only; not silhouette segmentation, volume, or art PASS."
+      },
+      {
+        "profile": "eco",
+        "meanAbsoluteRGBDifference": [
+          24.357953559027777,
+          32.75323567708333,
+          28.38215603298611
+        ],
+        "pixelsLumaDifferenceOver16Pct": 54.65733506944444,
+        "limitation": "Noise-inclusive image delta proxy only; not silhouette segmentation, volume, or art PASS."
+      }
+    ],
+    "sourceFrames": [
+      {
+        "file": "quality_r16_crown_close_9x16_cycles.png",
+        "lod": "quality",
+        "revision": "r16",
+        "view": "crown_close_9x16",
+        "modelSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.9972677826881409,
+              0.017662499099969864,
+              0.07172910124063492,
+              3.0
+            ],
+            [
+              -1.740297767005572e-10,
+              0.9709957242012024,
+              -0.2390969693660736,
+              -10.0
+            ],
+            [
+              -0.07387169450521469,
+              0.23844368755817413,
+              0.9683427214622498,
+              54.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1460035,
+        "sha256": "60ff579c7a690adf75953f0e042e01b5a544d0eb2f56a9eb0b6b223e8850c75e",
+        "path": "../../R17_Cycles_Evidence/quality_r16_crown_close_9x16_cycles.png",
+        "origin": "REUSED_R16_FINAL_GRADE_FROZEN_RIG_AND_SHA",
+        "provenance": "Original pinned rig and camera source, original native build/ledger, same Blender version; no rerender."
+      },
+      {
+        "file": "quality_r17b_crown_close_9x16_cycles.png",
+        "lod": "quality",
+        "revision": "r17b",
+        "view": "crown_close_9x16",
+        "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.9972677826881409,
+              0.017662499099969864,
+              0.07172910124063492,
+              3.0
+            ],
+            [
+              -1.740297767005572e-10,
+              0.9709957242012024,
+              -0.2390969693660736,
+              -10.0
+            ],
+            [
+              -0.07387169450521469,
+              0.23844368755817413,
+              0.9683427214622498,
+              54.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1511625,
+        "sha256": "c4faa45f738e12fd508e105cb6ba1a2570c462ecb6e71455391f071fc331f593",
+        "path": "quality_r17b_crown_close_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      },
+      {
+        "file": "eco_r16_crown_close_9x16_cycles.png",
+        "lod": "eco",
+        "revision": "r16",
+        "view": "crown_close_9x16",
+        "modelSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.9972677826881409,
+              0.017662499099969864,
+              0.07172910124063492,
+              3.0
+            ],
+            [
+              -1.740297767005572e-10,
+              0.9709957242012024,
+              -0.2390969693660736,
+              -10.0
+            ],
+            [
+              -0.07387169450521469,
+              0.23844368755817413,
+              0.9683427214622498,
+              54.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1191822,
+        "sha256": "d58c67b3b8b51d38e48ec6008df0eef16675b354444537524cc170f5d30e40d7",
+        "path": "../../R17_Cycles_Evidence/eco_r16_crown_close_9x16_cycles.png",
+        "origin": "REUSED_R16_FINAL_GRADE_FROZEN_RIG_AND_SHA",
+        "provenance": "Original pinned rig and camera source, original native build/ledger, same Blender version; no rerender."
+      },
+      {
+        "file": "eco_r17b_crown_close_9x16_cycles.png",
+        "lod": "eco",
+        "revision": "r17b",
+        "view": "crown_close_9x16",
+        "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.9972677826881409,
+              0.017662499099969864,
+              0.07172910124063492,
+              3.0
+            ],
+            [
+              -1.740297767005572e-10,
+              0.9709957242012024,
+              -0.2390969693660736,
+              -10.0
+            ],
+            [
+              -0.07387169450521469,
+              0.23844368755817413,
+              0.9683427214622498,
+              54.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1452838,
+        "sha256": "ae0966f256f129c5e1f2a6dc19d992ee96a3d52fc8b5532df87c963a59a65eaf",
+        "path": "eco_r17b_crown_close_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "hero_full_9x16_AB.jpg",
+    "bytes": 113340,
+    "sha256": "c2a30bb5a069ca9fcc887116926053a3cd6940ec6d8fa23a8de9f27e8389eb8a",
+    "view": "hero_full_9x16",
+    "comparisons": [
+      {
+        "profile": "quality",
+        "meanAbsoluteRGBDifference": [
+          1.2593391927083333,
+          1.4011903211805556,
+          1.303330078125
+        ],
+        "pixelsLumaDifferenceOver16Pct": 2.0758463541666665,
+        "limitation": "Noise-inclusive image delta proxy only; not silhouette segmentation, volume, or art PASS."
+      },
+      {
+        "profile": "eco",
+        "meanAbsoluteRGBDifference": [
+          3.968273654513889,
+          4.190922309027778,
+          3.8041764322916665
+        ],
+        "pixelsLumaDifferenceOver16Pct": 7.721354166666667,
+        "limitation": "Noise-inclusive image delta proxy only; not silhouette segmentation, volume, or art PASS."
+      }
+    ],
+    "sourceFrames": [
+      {
+        "file": "quality_r16_hero_full_9x16_cycles.png",
+        "lod": "quality",
+        "revision": "r16",
+        "view": "hero_full_9x16",
+        "modelSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45.0
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-08,
+              0.9267789125442505,
+              0.37560737133026123,
+              50.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 975893,
+        "sha256": "f1ad6a6e81bcca6685d9e610690b6061c954db9fb54918bde13b5da0c2c5cb81",
+        "path": "quality_r16_hero_full_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      },
+      {
+        "file": "quality_r17b_hero_full_9x16_cycles.png",
+        "lod": "quality",
+        "revision": "r17b",
+        "view": "hero_full_9x16",
+        "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45.0
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-08,
+              0.9267789125442505,
+              0.37560737133026123,
+              50.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 981221,
+        "sha256": "b2ba3d469c55fd1351ea351ef3a07ac64054d9df92a7fa3dd7ec8fbeafdd42cf",
+        "path": "quality_r17b_hero_full_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      },
+      {
+        "file": "eco_r16_hero_full_9x16_cycles.png",
+        "lod": "eco",
+        "revision": "r16",
+        "view": "hero_full_9x16",
+        "modelSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45.0
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-08,
+              0.9267789125442505,
+              0.37560737133026123,
+              50.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 945949,
+        "sha256": "e0a8a3775a16985f8872bcba88d7a1423d0cf1a7068cb2702e0dcb5a70323503",
+        "path": "eco_r16_hero_full_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      },
+      {
+        "file": "eco_r17b_hero_full_9x16_cycles.png",
+        "lod": "eco",
+        "revision": "r17b",
+        "view": "hero_full_9x16",
+        "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.8715755343437195,
+              -0.1841457486152649,
+              0.45436376333236694,
+              45.0
+            ],
+            [
+              0.4902612566947937,
+              0.32737019658088684,
+              -0.8077577948570251,
+              -80.00000762939453
+            ],
+            [
+              1.4310792550986662e-08,
+              0.9267789125442505,
+              0.37560737133026123,
+              50.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 967316,
+        "sha256": "24378d457abd1c9634d98b1d17956248165007aadb516e7f05a40611947f9fa7",
+        "path": "eco_r17b_hero_full_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "hero_wide_water_9x16_AB.jpg",
+    "bytes": 122861,
+    "sha256": "d73d170a56c36fcd2eb001cbcbc4716890702e16f8da6f346ccaeade0d9e666a",
+    "view": "hero_wide_water_9x16",
+    "comparisons": [
+      {
+        "profile": "quality",
+        "meanAbsoluteRGBDifference": [
+          2.3108311631944445,
+          2.7127170138888888,
+          2.4260948350694442
+        ],
+        "pixelsLumaDifferenceOver16Pct": 3.8055555555555554,
+        "limitation": "Noise-inclusive image delta proxy only; not silhouette segmentation, volume, or art PASS."
+      },
+      {
+        "profile": "eco",
+        "meanAbsoluteRGBDifference": [
+          7.82130859375,
+          7.833358289930556,
+          6.904871961805555
+        ],
+        "pixelsLumaDifferenceOver16Pct": 14.45290798611111,
+        "limitation": "Noise-inclusive image delta proxy only; not silhouette segmentation, volume, or art PASS."
+      }
+    ],
+    "sourceFrames": [
+      {
+        "file": "quality_r16_hero_wide_water_9x16_cycles.png",
+        "lod": "quality",
+        "revision": "r16",
+        "view": "hero_wide_water_9x16",
+        "modelSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 21.64857292175293,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 983238,
+        "sha256": "45df9ff430ebf5f7c9c64751465a3ae639be293be47a51d588d255bef12ac5a9",
+        "path": "quality_r16_hero_wide_water_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      },
+      {
+        "file": "quality_r17b_hero_wide_water_9x16_cycles.png",
+        "lod": "quality",
+        "revision": "r17b",
+        "view": "hero_wide_water_9x16",
+        "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 21.64857292175293,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 999544,
+        "sha256": "49be575c6ae7e3fdeb1f9a7974e2c7c6a12468d5951689e04ffc02f3826eb022",
+        "path": "quality_r17b_hero_wide_water_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      },
+      {
+        "file": "eco_r16_hero_wide_water_9x16_cycles.png",
+        "lod": "eco",
+        "revision": "r16",
+        "view": "hero_wide_water_9x16",
+        "modelSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 21.64857292175293,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 944690,
+        "sha256": "7d7947db04e969fc8d625b609e688ec783eab5228de122c9a256b6b13087b939",
+        "path": "eco_r16_hero_wide_water_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      },
+      {
+        "file": "eco_r17b_hero_wide_water_9x16_cycles.png",
+        "lod": "eco",
+        "revision": "r17b",
+        "view": "hero_wide_water_9x16",
+        "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.005713983904570341,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.005713983904570341,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 21.64857292175293,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 974975,
+        "sha256": "7a907396dafa1a4640af776f51605cae7e49b40d21c2251646792cb4814f8fc1",
+        "path": "eco_r17b_hero_wide_water_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "true_aerial_9x16_AB.jpg",
+    "bytes": 165429,
+    "sha256": "8acbb5b67a14779adbec96a2847673839e32dfd2ecaf9d8981e981b2823064d3",
+    "view": "true_aerial_9x16",
+    "comparisons": [
+      {
+        "profile": "quality",
+        "meanAbsoluteRGBDifference": [
+          4.135251736111111,
+          3.1524620225694444,
+          2.885336371527778
+        ],
+        "pixelsLumaDifferenceOver16Pct": 4.771484375,
+        "limitation": "Noise-inclusive image delta proxy only; not silhouette segmentation, volume, or art PASS."
+      },
+      {
+        "profile": "eco",
+        "meanAbsoluteRGBDifference": [
+          9.195341796875,
+          11.353850911458334,
+          9.98603515625
+        ],
+        "pixelsLumaDifferenceOver16Pct": 18.23394097222222,
+        "limitation": "Noise-inclusive image delta proxy only; not silhouette segmentation, volume, or art PASS."
+      }
+    ],
+    "sourceFrames": [
+      {
+        "file": "quality_r16_true_aerial_9x16_cycles.png",
+        "lod": "quality",
+        "revision": "r16",
+        "view": "true_aerial_9x16",
+        "modelSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.10710859298706055
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.4929838180541992
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              87.97264099121094
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1156430,
+        "sha256": "b804863fd27e43bde86caffb712c2c11b905bfe93d20153c6d6b82fe04e58b22",
+        "path": "quality_r16_true_aerial_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      },
+      {
+        "file": "quality_r17b_true_aerial_9x16_cycles.png",
+        "lod": "quality",
+        "revision": "r17b",
+        "view": "true_aerial_9x16",
+        "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.10710859298706055
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.4929838180541992
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              87.97264099121094
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1190123,
+        "sha256": "69fe8f410494e084ad6c95dc15e47f88d7719821f2bde6f586de2ff7677810ff",
+        "path": "quality_r17b_true_aerial_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      },
+      {
+        "file": "eco_r16_true_aerial_9x16_cycles.png",
+        "lod": "eco",
+        "revision": "r16",
+        "view": "true_aerial_9x16",
+        "modelSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.10710859298706055
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.4929838180541992
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              87.97264099121094
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1012338,
+        "sha256": "c09e8372f4476d89803d76e9a22a073235f15f7fc5a6abe28b9f0ac3ce45f398",
+        "path": "eco_r16_true_aerial_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      },
+      {
+        "file": "eco_r17b_true_aerial_9x16_cycles.png",
+        "lod": "eco",
+        "revision": "r17b",
+        "view": "true_aerial_9x16",
+        "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.10710859298706055
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.4929838180541992
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              87.97264099121094
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1151467,
+        "sha256": "fd8ec70bee14be3ae700ab9d4584e0d2b9934d2af42b10286ab392a7bbcd2391",
+        "path": "eco_r17b_true_aerial_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "trunk_fork_9x16_AB.jpg",
+    "bytes": 170097,
+    "sha256": "80f28c9344eb452c73a8eba519963668b8096020241c44ab1cd66287dc5071dd",
+    "view": "trunk_fork_9x16",
+    "comparisons": [
+      {
+        "profile": "quality",
+        "meanAbsoluteRGBDifference": [
+          2.061001519097222,
+          2.14921875,
+          2.1997450086805554
+        ],
+        "pixelsLumaDifferenceOver16Pct": 2.0465494791666665,
+        "limitation": "Noise-inclusive image delta proxy only; not silhouette segmentation, volume, or art PASS."
+      },
+      {
+        "profile": "eco",
+        "meanAbsoluteRGBDifference": [
+          13.211419270833334,
+          13.352817925347223,
+          12.483361545138889
+        ],
+        "pixelsLumaDifferenceOver16Pct": 12.384657118055555,
+        "limitation": "Noise-inclusive image delta proxy only; not silhouette segmentation, volume, or art PASS."
+      }
+    ],
+    "sourceFrames": [
+      {
+        "file": "quality_r16_trunk_fork_9x16_cycles.png",
+        "lod": "quality",
+        "revision": "r16",
+        "view": "trunk_fork_9x16",
+        "modelSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.9228392839431763,
+              0.07867170870304108,
+              0.377065509557724,
+              4.800000190734863
+            ],
+            [
+              0.385185182094574,
+              -0.18848417699337006,
+              -0.9033858776092529,
+              -11.5
+            ],
+            [
+              -3.687539518182348e-08,
+              0.978920042514801,
+              -0.20424377918243408,
+              4.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 22.56871795654297,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1076252,
+        "sha256": "44cf007a5c3fdbf1b434079d8a7e5b7b8ebed6f435982dc6a7f8133df0ac2f71",
+        "path": "../../R17_Cycles_Evidence/quality_r16_trunk_fork_9x16_cycles.png",
+        "origin": "REUSED_R16_FINAL_GRADE_FROZEN_RIG_AND_SHA",
+        "provenance": "Original pinned rig and camera source, original native build/ledger, same Blender version; no rerender."
+      },
+      {
+        "file": "quality_r17b_trunk_fork_9x16_cycles.png",
+        "lod": "quality",
+        "revision": "r17b",
+        "view": "trunk_fork_9x16",
+        "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.9228392839431763,
+              0.07867170870304108,
+              0.377065509557724,
+              4.800000190734863
+            ],
+            [
+              0.385185182094574,
+              -0.18848417699337006,
+              -0.9033858776092529,
+              -11.5
+            ],
+            [
+              -3.687539518182348e-08,
+              0.978920042514801,
+              -0.20424377918243408,
+              4.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 22.56871795654297,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1077758,
+        "sha256": "2ec03645d3d5b22002a62d923e4196a3aad5429da61b0230c7f321f99c63789c",
+        "path": "quality_r17b_trunk_fork_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      },
+      {
+        "file": "eco_r16_trunk_fork_9x16_cycles.png",
+        "lod": "eco",
+        "revision": "r16",
+        "view": "trunk_fork_9x16",
+        "modelSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.9228392839431763,
+              0.07867170870304108,
+              0.377065509557724,
+              4.800000190734863
+            ],
+            [
+              0.385185182094574,
+              -0.18848417699337006,
+              -0.9033858776092529,
+              -11.5
+            ],
+            [
+              -3.687539518182348e-08,
+              0.978920042514801,
+              -0.20424377918243408,
+              4.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 22.56871795654297,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1016467,
+        "sha256": "846b3332b827b9447169ce15fdb86b7ec66ae9f36e6df54b654ddef0c0a0b0ed",
+        "path": "../../R17_Cycles_Evidence/eco_r16_trunk_fork_9x16_cycles.png",
+        "origin": "REUSED_R16_FINAL_GRADE_FROZEN_RIG_AND_SHA",
+        "provenance": "Original pinned rig and camera source, original native build/ledger, same Blender version; no rerender."
+      },
+      {
+        "file": "eco_r17b_trunk_fork_9x16_cycles.png",
+        "lod": "eco",
+        "revision": "r17b",
+        "view": "trunk_fork_9x16",
+        "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.9228392839431763,
+              0.07867170870304108,
+              0.377065509557724,
+              4.800000190734863
+            ],
+            [
+              0.385185182094574,
+              -0.18848417699337006,
+              -0.9033858776092529,
+              -11.5
+            ],
+            [
+              -3.687539518182348e-08,
+              0.978920042514801,
+              -0.20424377918243408,
+              4.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 22.56871795654297,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1023220,
+        "sha256": "51f81b8446aa15a8788e23df6de42561b66949b6e736276310a2287aa13ba67b",
+        "path": "eco_r17b_trunk_fork_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "under_crown_9x16_AB.jpg",
+    "bytes": 224457,
+    "sha256": "98dd32a6b2fd9982aed4bc140201b04ee68a5922a7800c9623f77b1ff13dc473",
+    "view": "under_crown_9x16",
+    "comparisons": [
+      {
+        "profile": "quality",
+        "meanAbsoluteRGBDifference": [
+          3.5633832465277777,
+          3.9312858072916668,
+          3.9302137586805554
+        ],
+        "pixelsLumaDifferenceOver16Pct": 3.4104817708333335,
+        "limitation": "Noise-inclusive image delta proxy only; not silhouette segmentation, volume, or art PASS."
+      },
+      {
+        "profile": "eco",
+        "meanAbsoluteRGBDifference": [
+          34.59673068576389,
+          37.307698567708336,
+          33.97359700520833
+        ],
+        "pixelsLumaDifferenceOver16Pct": 37.298502604166664,
+        "limitation": "Noise-inclusive image delta proxy only; not silhouette segmentation, volume, or art PASS."
+      }
+    ],
+    "sourceFrames": [
+      {
+        "file": "quality_r16_under_crown_9x16_cycles.png",
+        "lod": "quality",
+        "revision": "r16",
+        "view": "under_crown_9x16",
+        "modelSHA256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1148636,
+        "sha256": "7493080e53b29b51a4643324b700aa8dadaccece1f0f2a941e784b41d71abcbc",
+        "path": "../../R17_Cycles_Evidence/quality_r16_under_crown_9x16_cycles.png",
+        "origin": "REUSED_R16_FINAL_GRADE_FROZEN_RIG_AND_SHA",
+        "provenance": "Original pinned rig and camera source, original native build/ledger, same Blender version; no rerender."
+      },
+      {
+        "file": "quality_r17b_under_crown_9x16_cycles.png",
+        "lod": "quality",
+        "revision": "r17b",
+        "view": "under_crown_9x16",
+        "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1157669,
+        "sha256": "c925024118c41950ddbf2fa7ffe943bbee22470388eb73716175ecae73cbce04",
+        "path": "quality_r17b_under_crown_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      },
+      {
+        "file": "eco_r16_under_crown_9x16_cycles.png",
+        "lod": "eco",
+        "revision": "r16",
+        "view": "under_crown_9x16",
+        "modelSHA256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1109843,
+        "sha256": "7237e8b4fac992c65011b81434f0bfd112b97fdf1cfbfc1d666213422af53adb",
+        "path": "../../R17_Cycles_Evidence/eco_r16_under_crown_9x16_cycles.png",
+        "origin": "REUSED_R16_FINAL_GRADE_FROZEN_RIG_AND_SHA",
+        "provenance": "Original pinned rig and camera source, original native build/ledger, same Blender version; no rerender."
+      },
+      {
+        "file": "eco_r17b_under_crown_9x16_cycles.png",
+        "lod": "eco",
+        "revision": "r17b",
+        "view": "under_crown_9x16",
+        "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -9.969825853772818e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "bytes": 1137455,
+        "sha256": "1959e4f2369ab384eed970c3b52bd35e14bf3af7bcdbdac3f8fe76e57b583c2c",
+        "path": "eco_r17b_under_crown_9x16_cycles.png",
+        "origin": "NATIVE_FINAL_CYCLES"
+      }
+    ]
+  }
+]
