@@ -1,0 +1,85 @@
+{
+  "status": "R17_LOCAL_BUILD_WITH_NATIVE_CYCLES",
+  "sourceArtCommit": "d9dbeb6a81d1e667d471b8f62910829bb1ce2bd9",
+  "r16SourceVerified": {
+    "quality": {
+      "sha256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+      "bytes": 5055232,
+      "triangles": 191288,
+      "meshes": 11,
+      "materials": 11,
+      "textures": 0,
+      "images": 0,
+      "animations": 0,
+      "cameras": 0
+    },
+    "eco": {
+      "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+      "bytes": 1393492,
+      "triangles": 44412,
+      "meshes": 10,
+      "materials": 10,
+      "textures": 0,
+      "images": 0,
+      "animations": 0,
+      "cameras": 0
+    }
+  },
+  "r17": {
+    "quality": {
+      "output": "sakura_hero_r17.glb",
+      "sourceR16": "sakura_hero.glb",
+      "addedFlowers": 1200,
+      "addedMeshTriangles": 28800,
+      "addedMeshVertices": 42000,
+      "sourceCrownCandidateFaces": 156644,
+      "originalBottomZ": -0.5183812975883484,
+      "sha256": "4115ba647eaa960e5fd2e9949462b52a2010231bf84ac25b574447bd36c5a73f",
+      "bytes": 17851064,
+      "triangles": 220088,
+      "meshes": 12,
+      "materials": 15,
+      "textures": 0,
+      "images": 0,
+      "animations": 0,
+      "cameras": 0
+    },
+    "eco": {
+      "output": "sakura_hero_r17_eco.glb",
+      "sourceR16": "sakura_hero_eco.glb",
+      "addedFlowers": 420,
+      "addedMeshTriangles": 5040,
+      "addedMeshVertices": 8820,
+      "sourceCrownCandidateFaces": 35483,
+      "originalBottomZ": -1.026049256324768,
+      "sha256": "cc07824bef901d30ce833880ab835027d027f15ab26eb327e6b6d6bb46d2d679",
+      "bytes": 3854076,
+      "triangles": 49452,
+      "meshes": 11,
+      "materials": 14,
+      "textures": 0,
+      "images": 0,
+      "animations": 0,
+      "cameras": 0
+    }
+  },
+  "editableSource": {
+    "name": "sakura_hero_r17_editable.blend",
+    "bytes": 31319198,
+    "sha256": "8fadb16d1458f21fe95e63e00c2dc6a1feaba8aaa19e0d861b7fb2a44076beb9"
+  },
+  "blenderVersion": "4.5.16 LTS",
+  "cycles": {
+    "count": 24,
+    "samples": 32,
+    "originalGlbImport": true,
+    "manifest": "R17_Cycles_Evidence/cycles_manifest.json"
+  },
+  "ownerArtGO": "PENDING",
+  "gate": "R17_SA_ART_REVIEW_REQUIRED",
+  "notProven": [
+    "Native Viewer R17 9:16 rings",
+    "RTX physical FPS",
+    "TikTok LIVE"
+  ]
+}
