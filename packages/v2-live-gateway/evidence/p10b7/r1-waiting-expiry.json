@@ -1,0 +1,22 @@
+{
+  "method": "Built Edge Dashboard and Overlay with an isolated loopback Gateway and synthetic packets.",
+  "browser": "158.0.4370.33",
+  "source": "5faeb35a0c0279ca9dc0ad0ee6733435b7641008",
+  "afterExpiryEnabled": {
+    "revision": 6,
+    "occupied": 1,
+    "waiting": 1,
+    "dropped": 0
+  },
+  "overdueNameplateBindingsBeforeNewActivity": 0,
+  "afterFreshChat": {
+    "revision": 6,
+    "occupied": 2,
+    "waiting": 0,
+    "dropped": 0
+  },
+  "connection": 1,
+  "launches": 1,
+  "stops": 0,
+  "acknowledged": 10
+}

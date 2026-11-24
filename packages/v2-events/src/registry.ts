@@ -58,7 +58,7 @@ export class SeatRegistry {
   }
 }
 
-type Actor = { view: AvatarPresentation; lastSeen: number };
+type Actor = { view: AvatarPresentation; lastSeen: number; donor?: boolean };
 
 export class AvatarRegistry {
   private readonly actors = new Map<string, Actor>();
@@ -93,11 +93,34 @@ export class AvatarRegistry {
     return { ...actor.view };
   }
 
+  get size() { return this.actors.size; }
+
+  markDonor(userKey: string) {
+    const actor = this.actors.get(userKey);
+    if (actor) actor.donor = true;
+  }
+
+  evictPassive(reserved: Set<string>): boolean {
+    let victim: { key: string; actor: Actor } | undefined;
+    for (const [key, actor] of this.actors) {
+      if (!actor.donor && !reserved.has(actor.view.actorId) && (!victim || actor.lastSeen < victim.actor.lastSeen)) {
+        victim = { key, actor };
+      }
+    }
+    if (!victim) return false;
+    this.remove(victim.key, victim.actor.view.seatId);
+    return true;
+  }
+
+  private remove(key: string, seatId: string) {
+    this.actors.delete(key);
+    this.seats.release(seatId);
+  }
+
   expire(now: number, ttl: number, reserved: Set<string>): void {
     for (const [user, { view, lastSeen }] of this.actors) {
       if (lastSeen + ttl > now || reserved.has(view.actorId)) continue;
-      this.actors.delete(user);
-      this.seats.release(view.seatId);
+      this.remove(user, view.seatId);
     }
   }
 

@@ -1,0 +1,62 @@
+{
+  "method": "Built Edge Overlay and Dashboard, loopback Gateway with mapped synthetic Member, Chat and Gift packets.",
+  "browser": "158.0.4370.33",
+  "member": {
+    "boundMs": 266,
+    "visibleMs": 273,
+    "shot": "HERO_WIDE_TREE_REFLECTION",
+    "goalMet": true
+  },
+  "waiting": {
+    "full": 2,
+    "refilled": 2,
+    "clearedOnDisconnect": true
+  },
+  "focus": [
+    {
+      "actorId": "demo-1795535692994-actor-4",
+      "requestId": "demo-1795535692994-gift-1",
+      "seatId": "seat-1"
+    },
+    {
+      "actorId": "demo-1795535692994-actor-5",
+      "requestId": "demo-1795535692994-gift-2",
+      "seatId": "seat-2"
+    },
+    {
+      "actorId": "demo-1795535692994-actor-7",
+      "requestId": "demo-1795535692994-gift-4",
+      "seatId": "seat-3"
+    }
+  ],
+  "final": {
+    "source": "a2a8f37378f3dcd5746e4d34001d8913329656a2",
+    "confirmedGiftCount": 8,
+    "graphics": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "visual": 1,
+    "audio": 1,
+    "launches": 1,
+    "stops": 0,
+    "connection": 1,
+    "acknowledged": 18,
+    "counters": {
+      "chat": 2,
+      "member": 8,
+      "like": 0,
+      "giftProgress": 3,
+      "giftFinal": 4,
+      "room": 0
+    },
+    "presence": {
+      "revision": 7,
+      "occupied": 3,
+      "waiting": 0,
+      "dropped": 0
+    }
+  },
+  "captures": {
+    "member.png": "b11d58dc4615a77fa820ec6f71debd7b10b75bfbcfe77da1c5731797192641c1",
+    "gift-focus.png": "951b4aae94694dfdf74cf95a9341fd235e8d222ad47e3086464571be6db6e63b",
+    "dashboard.png": "2dc9b42013618cb9c9566068ae3ac35b2b56d47b1ae1bcf0c6ead548b711875a"
+  }
+}

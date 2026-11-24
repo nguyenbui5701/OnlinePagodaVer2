@@ -6,6 +6,9 @@ import { liveDefaults, validSettings } from '../../apps/v2-viewer/src/live-setti
 
 import { audioDefaults, patchAudio, validAudioSettings } from '../../apps/v2-viewer/src/live-audio-settings.ts';
 
+import { patchPresence, presenceDefaults, validPresenceSettings } from '../v2-events/src/presence.ts';
+
+const presencePath = fileURLToPath(new URL('./data/presence-settings.json', import.meta.url));
 const audioPath = fileURLToPath(new URL('./data/audio-settings.json', import.meta.url));
 const settingsPath = fileURLToPath(new URL('./data/settings.json', import.meta.url));
 
@@ -39,6 +42,15 @@ export class SettingsStore {
       return 'SETTINGS_WRITE_FAILED';
     }
     this.snapshot = next;
+  }
+}
+
+export class PresenceSettingsStore extends SettingsStore {
+  constructor(path = presencePath) { super(path, presenceDefaults, validPresenceSettings); }
+
+  patch(revision, fields) {
+    const settings = patchPresence(this.snapshot.settings, fields);
+    return settings ? this.save(revision, settings) : 'INVALID_SETTINGS';
   }
 }
 

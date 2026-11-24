@@ -1,3 +1,4 @@
+import type { PresenceApplied, PresenceSnapshot } from '../../../packages/v2-events/src/presence.ts';
 import type { CueRecord } from './audio/director.ts';
 import { liveBatchLimit, type LiveEntry } from './live-receiver.ts';
 import { DemoEngine, protocolVersion, type ChatCue, type DemoEvent, type Effect, type FocusIntent, type SessionEvent, type Snapshot } from '../../../packages/v2-events/src/engine.ts';
@@ -43,6 +44,8 @@ export function parseScenario(value: string | null): Scenario {
 
 export class SliceDriver {
   private readonly engine: DemoEngine;
+  private presenceRevision = 0;
+  private pendingPresence?: PresenceSnapshot;
   private readonly observer = new SceneObserver();
   private readonly events: (DemoEvent | ReturnType<typeof session>)[];
   private cursor = 0;
@@ -62,10 +65,10 @@ export class SliceDriver {
   readonly trace: DomainLog[] = [];
   private readonly observeAudio: boolean;
 
-  constructor(scenario: Scenario | 'live' | 'offline', demoEvents: readonly DemoEvent[] = [], observeAudio = false) {
+  constructor(scenario: Scenario | 'live' | 'offline', demoEvents: readonly DemoEvent[] = [], observeAudio = false, liveSeating = false) {
     this.observeAudio = observeAudio;
     this.live = scenario === 'live';
-    this.engine = new DemoEngine({ ...timing, maxAvatars: 3, ...(scenario === 'community' ? communityConfig : {}) });
+    this.engine = new DemoEngine({ ...timing, maxAvatars: 3, ...(scenario === 'community' ? communityConfig : {}) }, this.live && liveSeating);
     this.events = scenario === 'community' ? communityScript()
       : scenario === 'idle' || scenario === 'offline' || this.live ? [] : commands(scenario === 'capacity');
     if (scenario === 'community' && demoEvents.length) {
@@ -94,7 +97,21 @@ export class SliceDriver {
     this.liveSourceLost = true;
   }
 
+  stagePresence(snapshot: PresenceSnapshot) {
+    if (snapshot.revision > Math.max(this.presenceRevision, this.pendingPresence?.revision ?? 0)) this.pendingPresence = snapshot;
+  }
+
+  get presenceApplied(): PresenceApplied | undefined {
+    const counts = this.engine.presenceCounts;
+    if (counts && this.presenceRevision) return { revision: this.presenceRevision, ...counts };
+  }
+
   update(atMs: number) {
+    if (this.pendingPresence) {
+      this.engine.configurePresence(this.pendingPresence.settings);
+      this.presenceRevision = this.pendingPresence.revision;
+      this.pendingPresence = undefined;
+    }
     if (this.observeAudio) this.audioRecords = [];
     for (const { seq, event } of this.liveQueue.splice(0)) {
       this.ingest({ ...event, atMs }, seq);

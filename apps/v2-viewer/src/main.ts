@@ -13,6 +13,7 @@ import { measureSeatContact } from './seat-contact.ts';
 import { SliceCamera } from './slice-camera.ts';
 import { parseScenario, SliceDriver, timing } from './slice-driver.ts';
 import { AudioManager } from './audio/manager.ts';
+import { readPresenceSnapshot } from '../../../packages/v2-events/src/presence.ts';
 import { readAudioSnapshot } from './live-audio-settings.ts';
 import { createLiveControls, updateLiveReport } from './live-controls.ts';
 import { createLiveReceiver } from './live-receiver.ts';
@@ -74,7 +75,7 @@ const liveOperator = liveRequested && !manual && frozenAt === undefined;
 const liveAudio = !!overlaySettings && liveOperator;
 const audioRequested = liveAudio || (query.get('audio') === 'on' && !manual && !comparison && !liveRequested && frozenAt === undefined);
 const driver = new SliceDriver(liveOperator ? 'live' : liveRequested ? 'offline' : scenario,
-  scenario === 'community' ? presenceDemo(chatBubbles, giftIcons) : [], audioRequested);
+  scenario === 'community' ? presenceDemo(chatBubbles, giftIcons) : [], audioRequested, !!overlaySettings);
 const director = new SliceCamera();
 const seed = parseCinematicSeed(query.get('seed'));
 if (query.get('clean') === '1') document.body.classList.add('clean');
@@ -268,6 +269,7 @@ async function boot() {
         diversity ? seats.preview.breath.position : undefined);
     }
     const labels = presentation ? showGift(camera, presentation, selected, presence) : undefined;
+    if (overlaySettings) report.seating = driver.presenceApplied;
     if (presentation && (communityNames || nameplates || rings)) {
       const { avatars, viewerCount } = presentation.state;
       const plates = nameplates?.update(presentation.state, camera, manual);
@@ -502,8 +504,11 @@ async function boot() {
         feed: entries => driver.enqueueLive(entries), sourceLost: () => driver.loseLiveSource(),
         receipt: () => driver.liveReceipt,
         audioStatus: () => audio?.applied,
+        presenceStatus: () => driver.presenceApplied,
         status: state => {
           updateLiveReport(report, state);
+          const presenceSettings = readPresenceSnapshot(state.poll?.presenceDesired);
+          if (presenceSettings) driver.stagePresence(presenceSettings);
           audioAction(manager => {
             manager.liveLink(!!state.poll, state.status === 'CONNECTED_NO_EVENTS' || state.status === 'EVENTS_VERIFIED');
             if (state.poll) manager.configure(readAudioSnapshot(state.poll.audioDesired));

@@ -244,6 +244,7 @@ export class Gateway {
     this.owner = this.room = this.receiver = undefined;
     this.appliedRevision = null;
     this.audioApplied = undefined;
+    this.presenceApplied = undefined;
     this.overlayReady = false;
     this.applyPending = false;
     this.deliveryUncertain ||= this.queue.some(({ event }) => event.type === 'gift' && event.phase === 'final');
