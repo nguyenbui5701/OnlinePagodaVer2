@@ -87,6 +87,62 @@ test('waiting FIFO is bounded, source-aware, deduplicated, expires independently
   assert.deepEqual(names(engine), ['Tên mới', 'second', 'again']);
 });
 
+test('re-enabled seat expiry skips an overdue queue head, and fresh interaction restores its eligibility', () => {
+  const engine = setup();
+  const shortStay = { ...presenceDefaults, idleSeconds: 6 };
+  engine.configurePresence({ ...shortStay, seatExpiryEnabled: false });
+  for (const key of ['a', 'b', 'c']) join(engine, key, 0);
+  join(engine, 'overdue', 1000);
+  join(engine, 'fresh', 9000);
+
+  engine.configurePresence(shortStay);
+  engine.advance(10_000);
+  assert.deepEqual(names(engine), ['fresh']);
+  assert.equal(engine.snapshot().avatars[0].seatId, 'seat-1');
+  assert.deepEqual(engine.presenceCounts, { occupied: 1, waiting: 1, dropped: 0 });
+  engine.advance(10_001);
+  assert.deepEqual(names(engine), ['fresh']);
+
+  const chat = join(engine, 'overdue', 10_002, 'chat', 'Active again').effects.find(effect => effect.type === 'chatCue');
+  assert.equal(chat?.seatId, 'seat-2');
+  assert.equal(engine.presenceCounts?.waiting, 0);
+  engine.advance(15_000);
+  assert.deepEqual(names(engine), ['Active again'], 'refill preserves the original lastSeen');
+  engine.advance(16_002);
+  assert.deepEqual(names(engine), []);
+});
+
+test('shortened duration skips entries at the expiry boundary; switching expiry off restores FIFO eligibility', () => {
+  const engine = setup();
+  for (const key of ['a', 'b', 'c']) join(engine, key, 0);
+  join(engine, 'first-overdue', 1000);
+  join(engine, 'second-overdue', 4000);
+  join(engine, 'eligible', 4001);
+
+  engine.configurePresence({ ...presenceDefaults, idleSeconds: 6 });
+  engine.advance(10_000);
+  assert.deepEqual(names(engine), ['eligible']);
+  assert.equal(engine.presenceCounts?.waiting, 2);
+
+  engine.configurePresence({ ...presenceDefaults, idleSeconds: 6, seatExpiryEnabled: false });
+  engine.advance(10_000);
+  assert.deepEqual(names(engine), ['eligible', 'first-overdue', 'second-overdue']);
+  assert.equal(engine.presenceCounts?.waiting, 0);
+});
+
+test('skipped entries keep the independent 60-second queue expiry', () => {
+  const engine = setup();
+  for (const key of ['a', 'b', 'c']) join(engine, key, 0);
+  join(engine, 'overdue', 1000);
+  engine.configurePresence({ ...presenceDefaults, idleSeconds: 6 });
+  engine.advance(60_999);
+  assert.deepEqual(engine.presenceCounts, { occupied: 0, waiting: 1, dropped: 0 });
+
+  engine.configurePresence({ ...presenceDefaults, idleSeconds: 6, seatExpiryEnabled: false });
+  engine.advance(61_000);
+  assert.deepEqual(engine.presenceCounts, { occupied: 0, waiting: 0, dropped: 0 });
+});
+
 test('confirmed streak seats the donor after unseated progress, protects active/pending and counts fallback once', () => {
   const engine = setup();
   engine.configurePresence({ ...presenceDefaults, seatExpiryEnabled: false });

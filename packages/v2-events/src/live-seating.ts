@@ -48,7 +48,10 @@ export class LiveSeating {
     for (const [key, entry] of this.queue) {
       if (now - entry.lastSeen >= waitTTLms) this.queue.delete(key);
     }
+    const ttl = this.ttl;
     for (const [key, entry] of this.queue) {
+      // Keep overdue viewers queued until fresh activity or the independent wait deadline.
+      if (ttl !== undefined && now - entry.lastSeen >= ttl) continue;
       if (!registry.touch(entry.viewer, entry.lastSeen, true, revision)) break;
       this.queue.delete(key);
     }

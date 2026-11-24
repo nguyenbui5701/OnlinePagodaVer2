@@ -47,7 +47,7 @@ let browser;
 let viewer;
 let overlay;
 
-try {
+async function run() {
   viewer = await preview({ preview: { port } });
   browser = await chromium.launch({ executablePath: process.env.V2_BROWSER ||
     'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe' });
@@ -170,6 +170,50 @@ try {
   assert.equal(await dashboard.locator('#presence-seatExpiryEnabled').isChecked(), false);
   await overlay.waitForTimeout(6200);
   await counts(3, 2);
+  if (process.argv.includes('--waiting-expiry')) {
+    await overlay.evaluate(() => {
+      window.overdueBindings = [];
+      const stage = document.querySelector('#stage');
+      const observer = new MutationObserver(() => {
+        for (const node of stage.querySelectorAll('.persistent-nameplate[data-actor]')) {
+          if (node.textContent.includes('Dương Mây')) window.overdueBindings.push(node.dataset.seat);
+        }
+      });
+      observer.observe(stage, { subtree: true, childList: true, attributes: true });
+      window.stopExpiryObserver = () => { observer.disconnect(); return window.overdueBindings; };
+    });
+    // Refresh only the follower, leaving the FIFO head overdue under the new six-second limit.
+    packet('member', 109, 15, 'Em Mây');
+    await consumed();
+    await edit('seatExpiryEnabled', true);
+    await counts(1, 1);
+    await scene(overlay, () => document.querySelector('.persistent-nameplate[data-seat="seat-1"][data-actor]')
+      ?.textContent.includes('Em Mây'));
+    assert.deepEqual(await overlay.evaluate(() => window.stopExpiryObserver()), []);
+    const before = { ...gateway.presenceApplied };
+    packet('chat', 110, 14, 'Dương Mây', { content: 'Xin chào lần nữa' });
+    await consumed();
+    await counts(2, 0);
+    await scene(overlay, () => document.querySelector('.persistent-nameplate[data-seat="seat-2"][data-actor]')
+      ?.textContent.includes('Dương Mây'));
+    assert.equal(gateway.owner, owner);
+    assert.equal(gateway.connection, 1);
+    assert.equal(launches, 1);
+    assert.equal(stops, 0);
+    assert.deepEqual(errors, []);
+    const receipt = {
+      method: 'Built Edge Dashboard and Overlay with an isolated loopback Gateway and synthetic packets.',
+      browser: browser.version(),
+      source: await overlay.evaluate(() => window.viewerReport.repoRevision),
+      afterExpiryEnabled: before, overdueNameplateBindingsBeforeNewActivity: 0,
+      afterFreshChat: { ...gateway.presenceApplied },
+      connection: gateway.connection, launches, stops, acknowledged: gateway.acknowledged,
+    };
+    await mkdir(out, { recursive: true });
+    await writeFile(new URL('r1-waiting-expiry.json', out), JSON.stringify(receipt, null, 2) + '\n');
+    console.log(JSON.stringify(receipt, null, 2));
+    return;
+  }
   packet('member', 108, 14, 'Dương Mây');
   packet('member', 109, 15, 'Em Mây');
   await consumed();
@@ -245,6 +289,10 @@ try {
   for (const [key, png] of Object.entries(photos)) await writeFile(new URL(key, out), png);
   await writeFile(new URL('receipt.json', out), JSON.stringify(receipt, null, 2) + '\n');
   console.log(JSON.stringify(receipt, null, 2));
+}
+
+try {
+  await run();
 } catch (error) {
   const report = await overlay?.evaluate(() => ({
     status: document.querySelector('#status')?.textContent,
