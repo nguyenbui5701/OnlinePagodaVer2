@@ -353,7 +353,7 @@ async function boot() {
     if (requestedTree === 'R17B') {
       const heading = document.querySelector('aside h1');
       if (heading) heading.textContent = `Sakura ${sakura.report.assetRevision}`;
-      canvas.setAttribute('aria-label', `C?nh 3D Sakura ${sakura.report.assetRevision}`);
+      canvas.setAttribute('aria-label', `Cảnh 3D Sakura ${sakura.report.assetRevision}`);
     }
     if (sakura.report.fallbackReason) {
       const notice = document.createElement('p');
