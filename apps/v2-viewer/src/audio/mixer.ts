@@ -40,6 +40,9 @@ export class Mixer {
     this.sfxGain = context.createGain();
     this.ambienceGain = context.createGain();
     this.master = context.createGain();
+    this.voiceGain.gain.value = levels.voice;
+    this.sfxGain.gain.value = levels.sfx;
+    this.ambienceGain.gain.value = levels.ambience;
     this.master.gain.value = 0;
     for (const bus of [this.voiceGain, this.sfxGain, this.ambienceGain]) bus.connect(this.master);
     const compressor = context.createDynamicsCompressor();
