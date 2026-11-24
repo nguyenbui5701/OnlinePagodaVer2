@@ -4,9 +4,10 @@ import { createHash, randomBytes } from 'node:crypto';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { chromium } from 'playwright-core';
 import { createVoiceServer } from '../../../packages/v2-voice/worker.mjs';
-import { demoEnabled, synthesize } from '../../../packages/v2-voice/process.mjs';
+import { createSynthesizer } from '../../../packages/v2-voice/process.mjs';
 
-assert(demoEnabled(), 'Set V2_GTTS_DEMO_ENABLED=1 for actual synthetic DEMO synthesis.');
+const synthesis = createSynthesizer();
+assert(synthesis, 'Set V2_GTTS_DEMO_ENABLED=1 for actual synthetic DEMO synthesis.');
 const origin = 'http://127.0.0.1:5189';
 const serviceOrigin = 'http://127.0.0.1:5202';
 const output = new URL('../evidence/p10b4b/gtts-local/', import.meta.url);
@@ -15,10 +16,10 @@ const source = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).
 const token = randomBytes(32).toString('hex');
 const receipts = [];
 const diagnostics = [];
-const service = createVoiceServer({ token, origin, diagnostic: code => diagnostics.push(code),
+const service = createVoiceServer({ token, origin, diagnostic: code => { diagnostics.push(code); synthesis.close(); },
   run: async (template, signal) => {
     const start = performance.now();
-    const audio = await synthesize(template, signal);
+    const audio = await synthesis.run(template, signal);
     const receipt = { template, latencyMs: Math.round(performance.now() - start), size: audio.length,
       durationSec: audio.length / 48000, sha256: hash(audio) };
     receipts.push(receipt);
@@ -29,7 +30,7 @@ const service = createVoiceServer({ token, origin, diagnostic: code => diagnosti
 
 const browser = await chromium.launch({
   executablePath: process.env.V2_BROWSER ?? 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
-  args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'],
+  args: process.env.V2_CAPTURE_SOFTWARE === '1' ? ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'] : [],
   ignoreDefaultArgs: ['--mute-audio'],
 });
 await mkdir(output, { recursive: true });
@@ -53,7 +54,7 @@ try {
     if (new URL(response.url()).origin === serviceOrigin) statuses.push(response.status());
   });
   await page.addInitScript(tap);
-  await page.goto(origin + '/?demo=capacity&profile=eco&tree=r17b&audio=on&idlevoice=on&idlegap=13.6' +
+  await page.goto(origin + '/?demo=capacity&profile=eco&tree=r17b&audio=on&idlevoice=on&idlegap=11.5' +
     '&dynamicvoice=on&clean=1&seed=9&look=twilight&botanicals=on&diversity=on&blessing=on&presence=on' +
     '&chatbubbles=on&gifticons=on&ambience=rich&seats=rings&shots=hero');
   await page.waitForFunction(() => window.viewerReport.elapsedSeconds > 0);
@@ -115,7 +116,7 @@ try {
   await writeFile(new URL('recording.json', output), JSON.stringify(receipt, null, 2) + '\n');
 
   assert.deepEqual(receipt.provider.map(({ template }) => template), [
-    { nameId: 'an', gift: 'rose', count: 5 }, { nameId: 'binh', gift: 'lantern', count: 1 },
+    { nameId: 'an', gift: 'rose', count: 5 }, { nameId: 'binh', gift: 'rose', count: 1 },
     { nameId: 'chi', gift: 'rose', count: 1 },
   ]);
   assert.deepEqual(statuses.filter(status => status !== 204), [200, 200, 200]);
@@ -147,6 +148,7 @@ try {
   assert(peakDbfs <= -1 && peak > 3000 && clipped === 0);
   console.log('Actual named gifts and idle speech recorded:', new URL('gtts-demo.wav', output).pathname);
 } finally {
+  synthesis.close();
   await browser.close();
   if (service.listening) {
     service.closeAllConnections();

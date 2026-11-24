@@ -1,7 +1,7 @@
 import { createServer } from 'node:http';
 import { timingSafeEqual } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
-import { demoEnabled, synthesize } from './process.mjs';
+import { createSynthesizer } from './process.mjs';
 
 export const maxBytes = 192000;
 const allowedNames = new Set(['an', 'binh', 'chi', 'duyen']);
@@ -155,8 +155,13 @@ export function createVoiceServer({ token, run, diagnostic = () => {}, clock = D
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const enabled = demoEnabled();
-  createVoiceServer({ token: process.env.V2_TTS_TOKEN, run: enabled ? synthesize : undefined,
-    diagnostic: code => console.error('Local DEMO voice stopped:', code) })
-    .listen(5202, '127.0.0.1', () => console.log('Local DEMO voice worker:', enabled ? 'GTTS_ENABLED' : 'GTTS_OFF'));
+  const synthesis = createSynthesizer();
+  const server = createVoiceServer({ token: process.env.V2_TTS_TOKEN, run: synthesis?.run,
+    diagnostic: code => {
+      synthesis?.close();
+      console.error('Local DEMO voice stopped:', code);
+    } });
+  server.on('close', () => synthesis?.close());
+  server.listen(5202, '127.0.0.1',
+    () => console.log('Local DEMO voice worker:', synthesis ? 'GTTS_ENABLED' : 'GTTS_OFF'));
 }

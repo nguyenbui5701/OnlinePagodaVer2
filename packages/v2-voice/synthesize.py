@@ -64,11 +64,15 @@ def speak(message, ffmpeg, max_bytes):
 def main():
     if not enabled():
         return 77
+    ffmpeg = dependencies()
+    from gtts import gTTS  # Preload the pinned module before awaiting the verified stdin template.
     raw = sys.stdin.buffer.read(257)
+    if not raw:
+        return 0
     if len(raw) > 256:
         return 65
     message = phrase(json.loads(raw.decode("utf-8")))
-    pcm = speak(message, dependencies(), 192000)
+    pcm = speak(message, ffmpeg, 192000)
     sys.stdout.buffer.write(pcm)
     return 0
 
