@@ -10,6 +10,8 @@ import { createGatewayServer } from '../../../packages/v2-live-gateway/server.mj
 const origin = 'http://127.0.0.1:5189';
 const output = new URL('../../../packages/v2-live-gateway/evidence/', import.meta.url);
 const deliveryCheck = process.argv.includes('--delivery-r1');
+const previewPort = process.env.V2_LIVE_FIXTURE_PREVIEW_PORT;
+if (previewPort !== undefined) assert(/^[1-9][0-9]{0,4}$/.test(previewPort) && Number(previewPort) <= 65535);
 const room = '12345';
 let transport;
 const gateway = new Gateway((name, receive) => {
@@ -26,6 +28,21 @@ try {
     executablePath: process.env.V2_BROWSER || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
   });
   const page = await browser.newPage({ viewport: { width: 720, height: 1280 } });
+  if (previewPort) {
+    // An intercepted document lacks loopback address-space metadata. Grant only this fixture origin.
+    const cdp = await page.context().newCDPSession(page);
+    const { targetInfo } = await cdp.send('Target.getTargetInfo');
+    await cdp.send('Browser.setPermission', { permission: { name: 'loopback-network' },
+      setting: 'granted', origin, browserContextId: targetInfo.browserContextId });
+    // Preserve the browser's exact Viewer Origin while using an isolated static preview.
+    await page.route(origin + '/**', async route => {
+      const url = new URL(route.request().url());
+      url.port = previewPort;
+      const response = await fetch(url, { redirect: 'error' });
+      await route.fulfill({ status: response.status, contentType: response.headers.get('content-type') ?? undefined,
+        body: Buffer.from(await response.arrayBuffer()) });
+    });
+  }
   const requests = [];
   const errors = [];
   const polls = [];
@@ -131,7 +148,8 @@ try {
     await mkdir(output, { recursive: true });
     await writeFile(new URL('delivery-r1.json', output), JSON.stringify({
       method: 'Built Viewer and loopback HTTP gateway with provider fixture, simulated WebGL pause and one aborted HTTP poll.',
-      browser: browser.version(), source: report.focus.revision, paused: report.pausedDelivery,
+      browser: browser.version(), source: report.focus.revision, operatorInputs: ['username'],
+      isolatedPreviewPort: previewPort ? Number(previewPort) : undefined, paused: report.pausedDelivery,
       resumed: report.resumedDelivery, closed: report.closedDelivery, errors,
     }, null, 2) + '\n');
     console.log('Delivery R1 pause, HTTP reconnect, exactly-once and close uncertainty passed');

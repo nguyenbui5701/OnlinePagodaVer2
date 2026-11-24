@@ -1,0 +1,30 @@
+{
+  "method": "Built Viewer and loopback HTTP gateway with provider fixture, simulated WebGL pause and one aborted HTTP poll.",
+  "browser": "158.0.4370.33",
+  "source": "da298f5a5699503f1848965a76b76e7c2b9c7b25",
+  "operatorInputs": [
+    "username"
+  ],
+  "isolatedPreviewPort": 5191,
+  "paused": {
+    "pausedAcks": [
+      5,
+      5,
+      5
+    ],
+    "offered": 10,
+    "processedWhilePaused": 0,
+    "localPollAborts": 1
+  },
+  "resumed": {
+    "ack": 10,
+    "confirmed": 4,
+    "uncertain": false
+  },
+  "closed": {
+    "offered": 11,
+    "lastAck": 10,
+    "uncertain": true
+  },
+  "errors": []
+}

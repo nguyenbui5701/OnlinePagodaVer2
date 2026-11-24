@@ -63,3 +63,8 @@ Viewer gửi ACK theo sequence liên tục đã được Engine xử lý. Poll l
 **113 tests PASS** (83 Viewer, 12 Event Engine, 8 voice worker, 10 gateway). Viewer và Engine build PASS. Fixture trên Edge ghi ACK 5 trong ba poll khi render dừng; sau một poll bị ngắt và render tiếp tục, ACK lên 10, Engine xác nhận đúng 4 quà. Khi đóng Viewer với sequence 11 còn chờ, ACK giữ ở 10 và gateway ghi nhận giao nhận chưa xác minh. [Biên bản R1](evidence/delivery-r1.json)
 
 Chạy lại từ Viewer đã build bằng `node scripts/evidence-live-gateway.mjs --delivery-r1` khi preview 5189 đang chạy và cổng 5203 còn trống. Bằng chứng PR23 ban đầu giữ nguyên.
+## Kiểm chứng luồng chỉ nhập username
+
+113 tests và hai build PASS. Lệnh npm.cmd start khởi động gateway tại 127.0.0.1:5203, preflight hợp lệ trả 204. Test HTTP xác nhận từ chối Host/Origin sai, giới hạn một tab và chấp nhận poll sau khi đồng hồ mô phỏng vượt mốc tám giờ.
+
+Bản build Viewer trong Edge kết nối fixture chỉ với username. Ba poll lúc dừng render giữ ACK ở 5. Sau một poll bị ngắt và render tiếp tục, ACK lên 10, Engine ghi đúng bốn quà. Đóng Viewer khi gói 11 còn chờ giữ cảnh báo giao nhận chưa xác minh. Runner dùng preview tĩnh riêng ở cổng 5191 và giữ Origin của Viewer ở cổng 5189 trong trình duyệt. [Biên bản token-free](evidence/token-free.json)

@@ -128,7 +128,8 @@ test('provider denial and rate limits stop attempts with allowlisted reasons', (
 
 test('HTTP accepts token-free JSON only from the expected loopback Host and Viewer Origin', async t => {
   const { gateway } = localGateway();
-  const server = createGatewayServer({ gateway });
+  let now = 0;
+  const server = createGatewayServer({ gateway, clock: () => now });
   server.listen(0, '127.0.0.1');
   await once(server, 'listening');
   t.after(() => { server.closeAllConnections(); return new Promise(done => server.close(done)); });
@@ -161,6 +162,8 @@ test('HTTP accepts token-free JSON only from the expected loopback Host and View
   assert.equal((await post('/connect', { ...input, client: 'c'.repeat(32) })).status, 409);
   assert.equal((await post('/poll', { client: 'c'.repeat(32), ack: 0 })).status, 409);
   assert.equal((await post('/poll', { client, ack: 9 })).status, 409);
+  assert.equal((await post('/poll', { client, ack: 0 })).status, 200);
+  now += 8 * 60 * 60 * 1000 + 1;
   assert.equal((await post('/poll', { client, ack: 0 })).status, 200);
 });
 
