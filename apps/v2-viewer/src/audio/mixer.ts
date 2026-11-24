@@ -2,6 +2,7 @@ import type { Cue, GiftSound } from './director.ts';
 import voicePins from './voice-pins.json' with { type: 'json' };
 
 export type VoiceKey = GiftSound | 'generic-short';
+const voiceKeys = ['rose', 'lantern', 'generic', 'generic-short'] as const;
 const clipSeconds: Record<VoiceKey, number> = { rose: 2.10, lantern: 2.10, generic: 2.10, 'generic-short': Infinity };
 const notePitches = { rose: [523.25, 659.25, 783.99], lantern: [392, 587.33], generic: [440, 659.25] };
 const levels = { voice: .85, sfx: .45, ambience: .20 };
@@ -19,6 +20,7 @@ export class Mixer {
   private readonly sfxGain: GainNode;
   private readonly ambienceGain: GainNode;
   private readonly master: GainNode;
+  private prewarmed = false;
   private readonly buffers = new Map<VoiceKey, Loaded>();
   private readonly loading = new Set<VoiceKey>();
   private readonly abort = new AbortController();
@@ -59,14 +61,21 @@ export class Mixer {
   }
 
   prewarm() {
-    for (const key of ['rose', 'lantern', 'generic', 'generic-short'] as const) {
-      if (this.loading.has(key) || this.buffers.has(key)) continue;
+    if (this.prewarmed) return;
+    this.prewarmed = true;
+    for (const key of voiceKeys) {
       this.loading.add(key);
       void this.load(key);
     }
   }
 
-  get availability() { return { ready: this.buffers.size, waiting: this.loading.size, playing: !!this.voice }; }
+  get availability() {
+    const ready = this.buffers.size;
+    const waiting = this.loading.size;
+    const status: 'VOICE_LOADING' | 'READY' | 'VOICE_DEGRADED' | 'VOICE_UNAVAILABLE' = waiting ? 'VOICE_LOADING' : ready === voiceKeys.length ? 'READY' :
+      ready > 0 ? 'VOICE_DEGRADED' : 'VOICE_UNAVAILABLE';
+    return { ready, waiting, playing: !!this.voice, status };
+  }
 
   enable(enabled: boolean) {
     this.enabled = enabled;

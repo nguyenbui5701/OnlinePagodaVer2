@@ -2,7 +2,8 @@ import type { Snapshot } from '../../../../packages/v2-events/src/protocol.ts';
 import { AudioDirector, type Binding, type CueRecord } from './director.ts';
 import { Mixer, type AudioMark, type MixLevels } from './mixer.ts';
 
-type Status = 'LOCKED' | 'STARTING' | 'READY' | 'PLAYING' | 'MUTED' | 'BLOCKED' | 'UNAVAILABLE';
+type Status = 'LOCKED' | 'STARTING' | 'READY' | 'PLAYING' | 'MUTED' | 'BLOCKED' | 'UNAVAILABLE' |
+  'DISCONNECTED' | 'VOICE_LOADING' | 'VOICE_DEGRADED' | 'VOICE_UNAVAILABLE';
 
 export class AudioManager {
   private readonly director: AudioDirector;
@@ -12,6 +13,8 @@ export class AudioManager {
   private release?: () => void;
   private disposed = false;
   private muted = true;
+  private session?: { room: string; epoch: number; connected: boolean };
+  private outputEnabled = false;
   private generation = 0;
   private readonly clock: () => number;
   private ambience = false;
@@ -23,6 +26,10 @@ export class AudioManager {
   private readonly statusText: Record<Status, string> = {
     LOCKED: 'Chờ thao tác bật âm thanh', STARTING: 'Đang mở âm thanh',
     READY: 'Sẵn sàng', PLAYING: 'Đang phát lời cảm ơn', MUTED: 'Đang tắt tiếng',
+    DISCONNECTED: 'M\u1ea5t k\u1ebft n\u1ed1i ph\u00f2ng. \u00c2m thanh \u0111ang t\u1ea1m d\u1eebng',
+    VOICE_LOADING: '\u00c2m thanh \u0111\u00e3 b\u1eadt. \u0110ang t\u1ea3i gi\u1ecdng \u0111\u1ecdc',
+    VOICE_DEGRADED: '\u00c2m thanh \u0111\u00e3 b\u1eadt. Ch\u1ec9 c\u00f3 m\u1ed9t s\u1ed1 gi\u1ecdng \u0111\u1ecdc',
+    VOICE_UNAVAILABLE: 'Gi\u1ecdng \u0111\u1ecdc kh\u00f4ng kh\u1ea3 d\u1ee5ng. Chu\u00f4ng v\u00e0 \u00e2m n\u1ec1n v\u1eabn d\u00f9ng \u0111\u01b0\u1ee3c',
     BLOCKED: 'Âm thanh đang được dùng ở tab khác', UNAVAILABLE: 'Âm thanh không khả dụng',
   };
   private status: Status = 'LOCKED';
@@ -50,14 +57,20 @@ export class AudioManager {
 
   frame(state: Snapshot, delivery: { epoch: number; records: readonly CueRecord[] }, binding?: Binding) {
     if (this.mixer) this.mixer.sceneMs = state.atMs;
+    const previous = this.session;
+    const changed = previous && (previous.room !== state.roomSessionId || previous.epoch !== delivery.epoch ||
+      previous.connected !== state.connected);
+    this.session = { room: state.roomSessionId, epoch: delivery.epoch, connected: state.connected };
+    if (changed) this.setOutput(false, state.connected ? 'session-change' : 'disconnect');
+    // A frame spanning a session boundary may carry earlier cues. Resume past that entire batch.
+    this.syncOutput(changed ? state.atMs : this.clock());
     this.director.frame(state, delivery.epoch, delivery.records, binding);
-    if (!this.muted && this.mixer?.context.state === 'running') {
-      this.show(this.mixer.availability.playing ? 'PLAYING' : 'READY');
-    }
+    this.refreshStatus();
   }
 
   get report() {
-    return { status: this.status, ambience: this.ambience && !this.muted,
+    return { status: this.status, connected: this.session?.connected, outputEnabled: this.outputEnabled,
+      sfxAvailable: this.outputEnabled, ambience: this.ambience && this.outputEnabled,
       queue: this.director.queued, marks: this.marks, suppressed: this.director.suppressed,
       voice: this.mixer?.availability, dynamic: 'DYNAMIC_TTS_BLOCKED' };
   }
@@ -65,9 +78,8 @@ export class AudioManager {
   suspend(reason: string) {
     this.generation++;
     this.muted = true;
-    this.director.enable(false, reason);
-    this.mixer?.enable(false);
-    if (this.mixer) this.show('MUTED');
+    this.setOutput(false, reason);
+    this.refreshStatus();
   }
 
   dispose() {
@@ -140,9 +152,28 @@ export class AudioManager {
 
   private activate() {
     this.muted = false;
-    this.director.enable(true, 'enable', this.clock());
-    this.mixer?.enable(true);
-    this.show('READY');
+    this.syncOutput(this.clock());
+    this.refreshStatus();
+  }
+
+  private syncOutput(watermark: number) {
+    this.setOutput(!this.disposed && !this.muted && !document.hidden && this.session?.connected === true &&
+      this.mixer?.context.state === 'running', 'enable', watermark);
+  }
+
+  private setOutput(enabled: boolean, reason: string, watermark?: number) {
+    if (this.outputEnabled === enabled) return;
+    this.outputEnabled = enabled;
+    this.director.enable(enabled, reason, watermark);
+    this.mixer?.enable(enabled);
+  }
+
+  private refreshStatus() {
+    if (!this.mixer) return;
+    if (this.session?.connected === false) { this.show('DISCONNECTED'); return; }
+    if (!this.outputEnabled) { this.show(this.muted ? 'MUTED' : 'STARTING'); return; }
+    const voice = this.mixer.availability;
+    this.show(voice.playing ? 'PLAYING' : voice.status);
   }
 
   private show(status: Status) {
@@ -151,7 +182,7 @@ export class AudioManager {
     if (this.message.textContent !== line) this.message.textContent = line;
     this.action.disabled = status === 'STARTING';
     this.action.textContent = this.muted ? 'Bật âm thanh' : 'Tắt tiếng';
-    this.test.disabled = this.muted;
+    this.test.disabled = !this.outputEnabled;
   }
 
   private addLevels() {
