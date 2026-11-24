@@ -4,6 +4,8 @@
 
 Base PR #23 `f8773cd35476924e0f68204b0d0e82b7e0e87d26`. Gateway dùng `tiktok-live-connector@2.5.0`, lockfile ghim chính xác tarball của V1. Worker riêng giữ các tùy chọn V1: không batch lịch sử, không xác thực WebSocket bằng phiên TikTok, không mobile, timeout kết nối hữu hạn. Tiến trình worker chỉ nhận tên kênh đã kiểm tra từ gateway. Nó gọi TikTok và dịch vụ ký mặc định của connector. [V1 được tham chiếu](https://github.com/nguyenbui5701/OnlinePagoda/tree/9ffa2718723b11284dccdf35595c759576672f93/apps/server/src/tiktok) · [LICENSE Connector 2.5.0](https://github.com/zerodytrash/TikTok-Live-Connector/blob/v2.5.0/LICENSE)
 
+[P1.0-B6 · Cập nhật trên hai máy, mở tiếng và kiểm thử Web Audio](P10B6.md)
+
 ## Luồng Dashboard và Overlay
 
 - [Dashboard điều khiển](http://127.0.0.1:5189/dashboard/) để lưu cấu hình, kết nối và theo dõi sự kiện.
@@ -11,7 +13,7 @@ Base PR #23 `f8773cd35476924e0f68204b0d0e82b7e0e87d26`. Gateway dùng `tiktok-li
 
 Từ Dashboard, chọn và lưu cấu hình, mở Overlay bằng nút **Mở Overlay** rồi chờ **Overlay sẵn sàng**. Dùng cửa sổ Overlay trong Studio để xem preview. Khi phòng được phép đang LIVE, nhập username ở Dashboard và bấm **Kết nối**. Có thể tải lại hoặc đóng Dashboard trong lúc nhận sự kiện. Giữ cửa sổ Overlay mở và hoạt động. Đóng Overlay hoặc để lease hết hạn sẽ dừng nguồn. Mở lại Overlay và kết nối thủ công sau khi lease cũ kết thúc. Cảnh báo gift final chưa có ACK được giữ trong tiến trình Gateway.
 
-Cấu hình nằm trong `packages/v2-live-gateway/data/settings.json`. Gateway ghi nguyên tử. Tệp thiếu hoặc lỗi sẽ hiện cảnh báo và dùng mặc định Full Option ECO. Dashboard hiển thị số revision đã lưu và revision Overlay đang áp dụng. Mọi tùy chọn hiện có hiệu lực lúc khởi tạo cảnh. Có thể lưu trong LIVE; để áp dụng, ngắt kết nối, đợi xử lý hết hàng đợi rồi bấm **Áp dụng vào Overlay**. Thao tác này tải lại Overlay một lần. LIVE tiếp tục tắt tiếng. Gói gift final/progress là số gói nhận, tách biệt số lượng quà do Event Engine xác nhận.
+Cấu hình nằm trong `packages/v2-live-gateway/data/settings.json`. Gateway ghi nguyên tử. Tệp thiếu hoặc lỗi sẽ hiện cảnh báo và dùng mặc định Full Option ECO. Dashboard hiển thị số revision đã lưu và revision Overlay đang áp dụng. Các tùy chọn hình ảnh có hiệu lực lúc khởi tạo cảnh. Có thể lưu trong LIVE; để áp dụng, ngắt kết nối, đợi xử lý hết hàng đợi rồi bấm **Áp dụng vào Overlay**. Thao tác này tải lại Overlay một lần. Âm thanh LIVE mặc định tắt và có nhóm cấu hình áp dụng ngay riêng ở Dashboard. Gói gift final/progress là số gói nhận, tách biệt số lượng quà do Event Engine xác nhận.
 
 Chỉ dùng trên máy cục bộ tin cậy. Hai trang dùng đúng `127.0.0.1:5189` và Gateway `127.0.0.1:5203`. Client ID tự sinh để theo dõi phiên nhận và ACK.
 
@@ -79,7 +81,7 @@ Có thể mở đường dẫn cũ để vận hành với một Viewer. Đóng 
 3. Bấm **Disconnect** để dừng nhận. Trong pilot, giữ một tab điều khiển và một receiver cho phòng. Gateway đóng worker khi mất poll từ tab điều khiển quá 15 giây. Nếu liên kết cục bộ đã mất, tải lại trang sau khi phiên cũ kết thúc. Nếu cổng đã được dùng, dừng tiến trình cũ do bạn khởi động hoặc dùng lại đúng preview.
 4. `ROOM_OFFLINE`, `ACCESS_DENIED`, `PAID_ROUTE`, `RATE_LIMITED` và `SIGNING_FAILED` được báo riêng. Rate limit dừng các lần kết nối trong tiến trình hiện tại. Chờ hết giới hạn của provider trước khi khởi động lại. Lỗi mạng tạm thời thử lại tối đa hai lần. `DEGRADED` báo khi gateway không thể ánh xạ hoặc giao một gift final. Cảnh vẫn do Engine điều khiển.
 
-Gateway chỉ lắng nghe tại 127.0.0.1:5203 và chỉ chấp nhận đúng Host cùng Origin http://127.0.0.1:5189. Dùng trên máy cục bộ tin cậy. Tiến trình khác trên cùng máy có thể giả mạo yêu cầu cục bộ. Viewer tự tạo client ID để giữ quyền điều khiển một tab và theo dõi ACK theo phiên. Backend chỉ giữ bộ đệm hữu hạn trong RAM, ưu tiên gift final và kết thúc phiên với trạng thái lỗi khi hết dung lượng cho final. Event Engine 0.2.0 tiếp tục sở hữu 3 ghế thật, gift FIFO và camera focus. Chat không cấp ghế, member mặc định OFF. Provider gift ID giữ nguyên dạng số, dùng hiển thị quà trung tính của Viewer. Pilot LIVE tắt AudioManager cho nguồn này. DEMO giữ đường âm thanh riêng ở baseline.
+Gateway chỉ lắng nghe tại 127.0.0.1:5203 và chỉ chấp nhận đúng Host cùng Origin http://127.0.0.1:5189. Dùng trên máy cục bộ tin cậy. Tiến trình khác trên cùng máy có thể giả mạo yêu cầu cục bộ. Viewer tự tạo client ID để giữ quyền điều khiển một tab và theo dõi ACK theo phiên. Backend chỉ giữ bộ đệm hữu hạn trong RAM, ưu tiên gift final và kết thúc phiên với trạng thái lỗi khi hết dung lượng cho final. Event Engine 0.2.0 tiếp tục sở hữu 3 ghế thật, gift FIFO và camera focus. Chat không cấp ghế, member mặc định OFF. Provider gift ID giữ nguyên dạng số, dùng hiển thị quà trung tính của Viewer. Viewer LIVE cũ mở từ đường dẫn gốc vẫn tắt AudioManager. DEMO giữ đường âm thanh riêng ở baseline.
 
 ## Kiểm thử
 
