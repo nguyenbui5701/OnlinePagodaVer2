@@ -86,6 +86,10 @@ export function createLiveControls(report: Record<string, unknown>, feed: (packe
       headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' },
       body: JSON.stringify({ client, ...data }),
     });
+    if (response.status === 429) {
+      const body = await response.json();
+      throw new Error(body?.reason === 'RATE_LIMITED' ? 'RATE_LIMITED' : 'LOCAL_RATE_LIMITED');
+    }
     if (!response.ok) throw new Error('HTTP_' + response.status);
     return response;
   }
@@ -160,7 +164,9 @@ export function createLiveControls(report: Record<string, unknown>, feed: (packe
       busy = false;
       show('ERROR', code, code === 'HTTP_401' ? 'Mã gateway sai hoặc đã hết hạn.' :
         code === 'HTTP_409' ? 'Gateway đang có phiên khác hoặc đang giao nốt sự kiện.' :
-        code === 'HTTP_429' ? reasons.RATE_LIMITED : 'Kiểm tra gateway cục bộ tại cổng 5203.');
+        code === 'RATE_LIMITED' ? reasons.RATE_LIMITED :
+          code === 'LOCAL_RATE_LIMITED' ? 'Gateway cục bộ đang giới hạn số lần yêu cầu. Thử lại sau một phút.' :
+            'Kiểm tra gateway cục bộ tại cổng 5203.');
     } finally {
       busy = false;
     }

@@ -43,7 +43,7 @@ export function createGatewayServer({ token, gateway = new Gateway(), clock = Da
       const size = Number(req.headers['content-length']);
       if (!Number.isInteger(size) || size < 2 || size > 256) return reply(413);
       if (clock() - windowStart >= 60_000) { starts = requests = 0; windowStart = clock(); }
-      if (++requests > 350 || (req.url === '/connect' && ++starts > 4)) return reply(429);
+      if (++requests > 350 || (req.url === '/connect' && ++starts > 4)) return reply(429, { reason: 'LOCAL_RATE_LIMITED' });
       let data;
       try {
         const chunks = [];

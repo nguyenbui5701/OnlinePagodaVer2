@@ -37,6 +37,7 @@ try {
     '&audio=on&dynamicvoice=on');
   const panel = page.locator('#live-controls');
   await panel.waitFor();
+  await page.waitForFunction(() => Number.isFinite(window.viewerReport.confirmedGiftCount));
   assert.deepEqual([...new Set(requests)], [origin]);
   assert.equal(await page.locator('#audio-controls').count(), 0);
   const snapshot = () => page.evaluate(() => {
