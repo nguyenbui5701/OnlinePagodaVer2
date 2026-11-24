@@ -57,3 +57,10 @@ Chưa có username phòng đang hoạt động được chỉ định để Code
 106 tests PASS gồm 79 Viewer, 12 Event Engine, 8 voice worker và 7 gateway. Cả hai build Viewer và Engine PASS. CLI gateway đã khởi động. Preflight loopback trả 204, sai mã trả 401 và poll trước khi có phiên trả 409. Test worker riêng xác nhận connector đã nạp và gửi thông báo IPC sẵn sàng.
 
 Bản build Viewer chạy trong Edge, với gateway HTTP cục bộ và fixture được tiêm từ runner. Các checkpoint xác nhận OFFLINE, CONNECTED_NO_EVENTS, EVENTS_VERIFIED, focus đúng seat-1 và Disconnect. Fixture có chat, member, like, room, gift progress, bốn gift final và một final lặp. Engine ghi bốn quà, ba ghế, và số người xem 16. [Biên bản browser](evidence/browser.json) · [Ảnh WebGL 720×1280](evidence/fixture-focus.png)
+## SA R1 — P1-01
+
+Viewer gửi ACK theo sequence liên tục đã được Engine xử lý. Poll lặp trong lúc render tạm dừng chỉ thấy lại batch đang chờ (tối đa 48 gói). Reconnect giữ cursor và cờ lỗi của cùng phiên giao nhận. Gift final bị từ chối hoặc Engine chạm giới hạn phiên chặn ACK tại sequence lỗi và được báo cho gateway. Khi đóng Viewer hoặc lease hết hạn, gateway đánh dấu gift final chưa có ACK là chưa xác minh giao nhận. Cảnh báo được giữ trong tiến trình gateway để hiển thị ở lần kết nối sau.
+
+**113 tests PASS** (83 Viewer, 12 Event Engine, 8 voice worker, 10 gateway). Viewer và Engine build PASS. Fixture trên Edge ghi ACK 5 trong ba poll khi render dừng; sau một poll bị ngắt và render tiếp tục, ACK lên 10, Engine xác nhận đúng 4 quà. Khi đóng Viewer với sequence 11 còn chờ, ACK giữ ở 10 và gateway ghi nhận giao nhận chưa xác minh. [Biên bản R1](evidence/delivery-r1.json)
+
+Chạy lại từ Viewer đã build bằng `node scripts/evidence-live-gateway.mjs --delivery-r1` khi preview 5189 đang chạy và cổng 5203 còn trống. Bằng chứng PR23 ban đầu giữ nguyên.
