@@ -1,7 +1,9 @@
 import { execFileSync } from 'node:child_process';
-import { defineConfig } from 'vite';
+import { fileURLToPath } from 'node:url';
+import { defineConfig, type UserConfig } from 'vite';
+import { localCaptureBoundary, loopback } from './local-capture-boundary.ts';
 
-export default defineConfig(() => {
+export default defineConfig((): UserConfig => {
   let revision = process.env.V2_REPO_REVISION ?? 'unknown';
   try {
     revision = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
@@ -11,5 +13,24 @@ export default defineConfig(() => {
   } catch {
     // A source archive may have no Git metadata.
   }
-  return { base: './', preview: { cors: false }, define: { __REPO_REVISION__: JSON.stringify(revision) } };
+
+  const local = { host: loopback, cors: false, strictPort: true, allowedHosts: [] };
+  return {
+    base: './',
+    plugins: [localCaptureBoundary()],
+    server: {
+      ...local,
+      ws: false,
+      hmr: false,
+      fs: {
+        strict: true,
+        allow: [
+          fileURLToPath(new URL('./', import.meta.url)),
+          fileURLToPath(new URL('../../packages/v2-events/src/', import.meta.url)),
+        ],
+      },
+    },
+    preview: { ...local, port: 5189 },
+    define: { __REPO_REVISION__: JSON.stringify(revision) },
+  };
 });
