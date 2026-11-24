@@ -11,6 +11,7 @@ import { createGatewayServer } from '../../../packages/v2-live-gateway/server.mj
 const origin = 'http://127.0.0.1:5189';
 const output = new URL('../../../packages/v2-live-gateway/evidence/', import.meta.url);
 const token = randomBytes(32).toString('hex');
+const deliveryCheck = process.argv.includes('--delivery-r1');
 const room = '12345';
 let transport;
 const gateway = new Gateway((name, receive) => {
@@ -29,8 +30,15 @@ try {
   const page = await browser.newPage({ viewport: { width: 720, height: 1280 } });
   const requests = [];
   const errors = [];
+  const polls = [];
   const report = {};
-  page.on('request', request => requests.push(new URL(request.url()).origin));
+  page.on('request', request => {
+    const url = new URL(request.url());
+    requests.push(url.origin);
+    if (deliveryCheck && url.port === '5203' && url.pathname === '/poll' && request.method() === 'POST') {
+      polls.push(request.postDataJSON().ack);
+    }
+  });
   page.on('pageerror', error => errors.push(error.message));
   await page.goto(origin + '/?source=live&clean=1&profile=eco&seed=9&look=twilight&tree=r17b' +
     '&botanicals=on&diversity=on&presence=on&chatbubbles=on&gifticons=on&ambience=rich&seats=rings&shots=hero&blessing=on' +
@@ -69,30 +77,84 @@ try {
   report.ingress = await snapshot();
   assert.equal(report.ingress.community.realActors, 0);
   const rose = (id, phase) => raw(id, { giftId: '5655', groupId: String(200 + id), repeatEnd: phase, repeatCount: 1, gift: { type: 1 } });
+  const waitFor = async predicate => {
+    for (let step = 0; step < 100; step++) {
+      if (predicate()) return;
+      await new Promise(resolve => setTimeout(resolve, 30));
+    }
+    throw new Error('Gateway did not reach the expected delivery state.');
+  };
+  const webglEvent = type => page.locator('#capture').dispatchEvent(type, { cancelable: true });
+  let pausedCursor;
+  let delivered;
+  if (deliveryCheck) {
+    await waitFor(() => gateway.queue.length === 0);
+    pausedCursor = gateway.acknowledged;
+    await webglEvent('webglcontextlost');
+  }
   send('gift', rose(1, 0));
   send('gift', rose(1, 1));
   send('gift', rose(1, 1));
   for (const id of [2, 3, 4]) send('gift', rose(id, 1));
+  if (deliveryCheck) {
+    delivered = gateway.sequence;
+    const start = polls.length;
+    await waitFor(() => polls.length >= start + 3 && gateway.offered === delivered);
+    const pausedAcks = polls.slice(start);
+    assert(pausedAcks.every(ack => ack === pausedCursor));
+    assert.equal((await snapshot()).confirmed, 0);
+    assert.equal(gateway.queue.length, 5);
+
+    // Drop one HTTP poll, keeping the same page and provider lease.
+    await page.route('http://127.0.0.1:5203/poll', route => route.abort('failed'), { times: 1 });
+    await page.waitForFunction(() => window.viewerReport.liveReason === 'LOCAL_LINK_LOST');
+    await waitFor(() => polls.length >= start + 5);
+    await webglEvent('webglcontextrestored');
+    report.pausedDelivery = { pausedAcks, offered: delivered, processedWhilePaused: 0, localPollAborts: 1 };
+  }
   await page.waitForFunction(() => window.viewerReport.confirmedGiftCount === 4 && window.viewerReport.mode === 'GIFT_FOCUS');
   report.focus = await snapshot();
   assert.equal(report.focus.focus.seatId, 'seat-1');
   assert.equal(report.focus.community.realActors, 3);
   assert.equal(report.focus.counters.giftFinal, 4);
-  const png = await page.locator('#stage').screenshot();
-  assert.deepEqual([png.readUInt32BE(16), png.readUInt32BE(20)], [720, 1280]);
-  await panel.getByRole('button', { name: 'Disconnect', exact: true }).click();
-  await page.waitForFunction(() => window.viewerReport.liveStatus === 'OFFLINE');
-  report.disconnected = await snapshot();
-  assert.equal(report.disconnected.confirmed, 4);
-  assert.deepEqual(errors, []);
-  assert.deepEqual([...new Set(requests)].sort(), [origin, 'http://127.0.0.1:5203'].sort());
-  await mkdir(output, { recursive: true });
-  await writeFile(new URL('fixture-focus.png', output), png);
-  await writeFile(new URL('browser.json', output), JSON.stringify({
-    method: 'Built Viewer and real loopback HTTP gateway with isolated provider fixture; no LIVE room or real gifts.',
-    browser: browser.version(), checkpoints: report, errors, origins: [...new Set(requests)],
-  }, null, 2) + '\n');
-  console.log('Built Viewer LIVE input and WebGL fixture passed');
+  if (deliveryCheck) {
+    await waitFor(() => gateway.acknowledged === delivered && gateway.queue.length === 0);
+    report.resumedDelivery = { ack: gateway.acknowledged, confirmed: report.focus.confirmed, uncertain: gateway.deliveryUncertain };
+    await webglEvent('webglcontextlost');
+    send('gift', rose(5, 1));
+    const closingSequence = gateway.sequence;
+    await waitFor(() => gateway.offered === closingSequence);
+    assert.equal(gateway.acknowledged, delivered);
+    await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent('pagehide')));
+    await waitFor(() => !gateway.owner);
+    assert.equal(gateway.acknowledged, delivered);
+    assert(gateway.deliveryUncertain);
+    report.closedDelivery = { offered: closingSequence, lastAck: gateway.acknowledged, uncertain: gateway.deliveryUncertain };
+    assert.deepEqual(errors, []);
+    await mkdir(output, { recursive: true });
+    await writeFile(new URL('delivery-r1.json', output), JSON.stringify({
+      method: 'Built Viewer and loopback HTTP gateway with provider fixture, simulated WebGL pause and one aborted HTTP poll.',
+      browser: browser.version(), source: report.focus.revision, paused: report.pausedDelivery,
+      resumed: report.resumedDelivery, closed: report.closedDelivery, errors,
+    }, null, 2) + '\n');
+    console.log('Delivery R1 pause, HTTP reconnect, exactly-once and close uncertainty passed');
+  } else {
+    const png = await page.locator('#stage').screenshot();
+    assert.deepEqual([png.readUInt32BE(16), png.readUInt32BE(20)], [720, 1280]);
+    await panel.getByRole('button', { name: 'Disconnect', exact: true }).click();
+    await page.waitForFunction(() => window.viewerReport.liveStatus === 'OFFLINE');
+    report.disconnected = await snapshot();
+    assert.equal(report.disconnected.confirmed, 4);
+    assert.deepEqual(errors, []);
+    assert.deepEqual([...new Set(requests)].sort(), [origin, 'http://127.0.0.1:5203'].sort());
+    await mkdir(output, { recursive: true });
+    await writeFile(new URL('fixture-focus.png', output), png);
+    await writeFile(new URL('browser.json', output), JSON.stringify({
+      method: 'Built Viewer and real loopback HTTP gateway with isolated provider fixture; no LIVE room or real gifts.',
+      browser: browser.version(), checkpoints: report, errors, origins: [...new Set(requests)],
+    }, null, 2) + '\n');
+    console.log('Built Viewer LIVE input and WebGL fixture passed');
+  }
 } finally {
   await browser?.close();
   server.closeAllConnections();

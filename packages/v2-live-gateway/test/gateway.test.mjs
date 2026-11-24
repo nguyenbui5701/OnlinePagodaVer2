@@ -161,3 +161,56 @@ test('actual pinned connector loads in a real isolated worker without opening a 
   const [message] = await once(child, 'message', { signal: AbortSignal.timeout(5000) });
   assert.deepEqual(message, { type: 'ready' });
 });
+test('unacknowledged finals persist across repeated polls and closing with only the consumed prefix reports uncertainty', () => {
+  const { gateway, receive } = localGateway();
+  const other = 'd'.repeat(32);
+  try {
+    assert(gateway.connect(client, 'allowed'));
+    receive({ type: 'connected', room });
+    receive({ type: 'event', event: mapEvent('gift', gift('102', 1, 5), room, Date.now()) });
+    const offered = gateway.poll(client, 0);
+    assert.equal(offered.entries.length, 2);
+    assert.deepEqual(gateway.poll(client, 0).entries, offered.entries);
+    assert.equal(gateway.queue.length, 2);
+    assert(gateway.closeViewer(client, 1));
+    assert.equal(gateway.queue.length, 0);
+    assert(gateway.connect(other, 'allowed'));
+    const next = gateway.poll(other, 0);
+    assert(next.deliveryUncertain);
+    assert.deepEqual(next.entries, []);
+  } finally { gateway.release(); }
+});
+
+test('a confirmed closing ACK drains the final; lease expiry still marks a pending final never offered', () => {
+  const { gateway, receive } = localGateway();
+  const other = 'd'.repeat(32);
+  try {
+    assert(gateway.connect(client, 'allowed'));
+    receive({ type: 'connected', room });
+    receive({ type: 'event', event: mapEvent('gift', gift('102', 1, 5), room, Date.now()) });
+    const entries = gateway.poll(client, 0).entries;
+    assert(gateway.closeViewer(client, entries.at(-1).seq));
+    assert.equal(gateway.deliveryUncertain, false);
+    assert(gateway.connect(other, 'allowed'));
+    receive({ type: 'connected', room });
+    receive({ type: 'event', event: mapEvent('gift', gift('103', 1, 5), room, Date.now()) });
+    gateway.release();
+    assert.equal(gateway.deliveryUncertain, true);
+  } finally { gateway.release(); }
+});
+
+test('normal disconnect preserves degradation and keeps pending entries available for drain', () => {
+  const { gateway, receive } = localGateway();
+  try {
+    assert(gateway.connect(client, 'allowed'));
+    receive({ type: 'connected', room });
+    receive({ type: 'event', event: mapEvent('gift', gift('102', 1, 5), room, Date.now()) });
+    assert(gateway.disconnect(client, true));
+    assert(gateway.disconnect(client));
+    const state = gateway.poll(client, 0);
+    assert.equal(state.status, 'DEGRADED');
+    assert.equal(state.reason, 'GIFT_DELIVERY_FAILED');
+    assert(state.deliveryUncertain);
+    assert(state.entries.some(({ event }) => event.type === 'gift' && event.phase === 'final'));
+  } finally { gateway.release(); }
+});

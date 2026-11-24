@@ -1,4 +1,5 @@
 import type { CueRecord } from './audio/director.ts';
+import { liveBatchLimit, type LiveEntry } from './live-controls.ts';
 import { DemoEngine, protocolVersion, type ChatCue, type DemoEvent, type Effect, type FocusIntent, type SessionEvent, type Snapshot } from '../../../packages/v2-events/src/engine.ts';
 import { demoScript, gift, session } from '../../../packages/v2-events/src/fixture.ts';
 import { communityConfig, communityScript } from './community-demo.ts';
@@ -46,9 +47,11 @@ export class SliceDriver {
   private readonly events: (DemoEvent | ReturnType<typeof session>)[];
   private cursor = 0;
   private readonly live: boolean;
-  private liveQueue: (DemoEvent | SessionEvent)[] = [];
+  private readonly liveQueue: LiveEntry[] = [];
+  private liveReceived = 0;
+  private liveAck = 0;
   private liveScope?: { roomEpoch: number; connection: number };
-  liveDeliveryFailed = false;
+  private liveDeliveryFailed = false;
   private liveSourceLost = false;
   private acknowledgements = new Map<string, Extract<Effect, { type: 'giftFx' }>>();
   private roomSessionId = '';
@@ -73,9 +76,17 @@ export class SliceDriver {
     this.observer.accept(this.engine.snapshot());
   }
 
-  enqueueLive(packets: (DemoEvent | SessionEvent)[]) {
-    if (!this.live || this.liveQueue.length + packets.length > 256) return false;
-    this.liveQueue.push(...packets);
+  get liveReceipt() {
+    return { ack: this.liveAck, failed: this.liveDeliveryFailed };
+  }
+
+  enqueueLive(entries: LiveEntry[]) {
+    if (!this.live) return false;
+    const newEntries = entries.filter(entry => entry.seq > this.liveReceived);
+    if (this.liveQueue.length + newEntries.length > liveBatchLimit ||
+        newEntries.some((entry, index) => entry.seq !== this.liveReceived + index + 1)) return false;
+    this.liveQueue.push(...newEntries);
+    this.liveReceived += newEntries.length;
     return true;
   }
 
@@ -85,7 +96,11 @@ export class SliceDriver {
 
   update(atMs: number) {
     if (this.observeAudio) this.audioRecords = [];
-    for (const event of this.liveQueue.splice(0)) this.ingest({ ...event, atMs });
+    for (const { seq, event } of this.liveQueue.splice(0)) {
+      this.ingest({ ...event, atMs });
+      // A rejected final or session-limit cannot be acknowledged or skipped by a later sequence.
+      if (!this.liveDeliveryFailed) this.liveAck = seq;
+    }
     if (this.liveSourceLost) {
       this.liveSourceLost = false;
       if (this.liveScope) this.ingest({ ...this.liveScope, type: 'session', action: 'disconnect', atMs });
@@ -117,7 +132,6 @@ export class SliceDriver {
         this.liveScope = event.action === 'disconnect' ? undefined : {
           roomEpoch: event.roomEpoch, connection: event.connection,
         };
-        if (event.action !== 'disconnect') this.liveDeliveryFailed = false;
       }
     }
     if (this.live && (result.disposition === 'session-limit' ||

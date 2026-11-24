@@ -11,6 +11,7 @@ export class Gateway {
   owner;
   status = 'OFFLINE';
   reason = '';
+  deliveryUncertain = false;
   counters = counts();
   viewerCount = 0;
   dropped = 0;
@@ -150,27 +151,45 @@ export class Gateway {
       return;
     }
     if (code === 'RATE_LIMITED') this.limited = true;
-    this.status = code === 'ROOM_OFFLINE' ? 'OFFLINE' :
-      code === 'GIFT_DELIVERY_FAILED' || code === 'GIFT_UNMAPPED' ? 'DEGRADED' : 'ERROR';
+    const deliveryFailure = code === 'GIFT_DELIVERY_FAILED' || code === 'GIFT_UNMAPPED';
+    this.deliveryUncertain ||= deliveryFailure;
+    this.status = code === 'ROOM_OFFLINE' ? 'OFFLINE' : deliveryFailure ? 'DEGRADED' : 'ERROR';
   }
 
   disconnect(client, degraded = false) {
     if (this.owner !== client) return false;
     this.stop();
-    this.status = degraded ? 'DEGRADED' : 'OFFLINE';
-    this.reason = degraded ? 'GIFT_DELIVERY_FAILED' : '';
+    if (degraded) {
+      this.status = 'DEGRADED';
+      this.reason = 'GIFT_DELIVERY_FAILED';
+      this.deliveryUncertain = true;
+    } else if (this.status !== 'DEGRADED') {
+      this.status = 'OFFLINE';
+      this.reason = '';
+    }
+    return true;
+  }
+
+  acknowledge(client, ack) {
+    if (this.owner !== client || !Number.isSafeInteger(ack) || ack < this.acknowledged || ack > this.offered) return false;
+    this.acknowledged = ack;
+    while (this.queue.length && this.queue[0].seq <= ack) this.queue.shift();
+    return true;
+  }
+
+  closeViewer(client, ack) {
+    if (!this.acknowledge(client, ack)) return false;
+    this.release();
     return true;
   }
 
   poll(client, ack) {
-    if (this.owner !== client || ack < this.acknowledged || ack > this.offered) return;
+    if (!this.acknowledge(client, ack)) return;
     this.refreshLease();
-    this.acknowledged = ack;
-    while (this.queue.length && this.queue[0].seq <= ack) this.queue.shift();
     const entries = this.queue.slice(0, 48);
     this.offered = Math.max(this.offered, entries.at(-1)?.seq ?? ack);
     return { version: '0.2.0', entries, status: this.status, reason: this.reason, counters: this.counters,
-      viewerCount: this.viewerCount, dropped: this.dropped };
+      viewerCount: this.viewerCount, dropped: this.dropped, deliveryUncertain: this.deliveryUncertain };
   }
 
   refreshLease() {
@@ -183,6 +202,7 @@ export class Gateway {
     clearTimeout(this.lease);
     this.stop();
     this.owner = this.room = undefined;
+    this.deliveryUncertain ||= this.queue.some(({ event }) => event.type === 'gift' && event.phase === 'final');
     this.queue.length = 0;
     this.counters = counts();
     this.viewerCount = this.dropped = 0;

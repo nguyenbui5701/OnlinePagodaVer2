@@ -1,6 +1,8 @@
 import type { DemoEvent, SessionEvent } from '../../../packages/v2-events/src/protocol.ts';
 
 export type LivePacket = DemoEvent | SessionEvent;
+export type LiveEntry = { seq: number; event: LivePacket };
+export const liveBatchLimit = 48;
 const endpoint = 'http://127.0.0.1:5203';
 const statuses = new Set(['OFFLINE', 'CONNECTING', 'RECONNECTING', 'CONNECTED_NO_EVENTS', 'EVENTS_VERIFIED', 'ERROR', 'DEGRADED']);
 const reasons: Record<string, string> = {
@@ -16,7 +18,7 @@ const reasons: Record<string, string> = {
   GIFT_DELIVERY_FAILED: 'Có gift final không thể chuyển tới Viewer.',
 };
 const counterKeys = ['chat', 'member', 'like', 'giftProgress', 'giftFinal', 'room'] as const;
-type Result = { status: string; reason: string; entries: { seq: number; event: LivePacket }[];
+type Result = { status: string; reason: string; entries: LiveEntry[]; deliveryUncertain: boolean;
   counters: Record<typeof counterKeys[number], number>; viewerCount: number; dropped: number };
 const natural = (n: unknown) => typeof n === 'number' && Number.isSafeInteger(n) && n >= 0;
 
@@ -24,8 +26,8 @@ export function decodeLivePoll(value: unknown, ack: number): Result {
   const data = value as Result & { version?: string };
   if (!data || data.version !== '0.2.0' || !statuses.has(data.status) ||
       typeof data.reason !== 'string' || (data.reason && !Object.hasOwn(reasons, data.reason)) ||
-      !natural(data.viewerCount) || !natural(data.dropped) || !data.counters ||
-      !counterKeys.every(key => natural(data.counters[key])) || !Array.isArray(data.entries) || data.entries.length > 48) {
+      typeof data.deliveryUncertain !== 'boolean' || !natural(data.viewerCount) || !natural(data.dropped) || !data.counters ||
+      !counterKeys.every(key => natural(data.counters[key])) || !Array.isArray(data.entries) || data.entries.length > liveBatchLimit) {
     throw new Error('LIVE_PROTOCOL');
   }
   for (const [index, entry] of data.entries.entries()) {
@@ -36,8 +38,8 @@ export function decodeLivePoll(value: unknown, ack: number): Result {
   return data;
 }
 
-export function createLiveControls(report: Record<string, unknown>, feed: (packets: LivePacket[]) => boolean,
-    sourceLost: () => void, deliveryFailed: () => boolean) {
+export function createLiveControls(report: Record<string, unknown>, feed: (entries: LiveEntry[]) => boolean,
+    sourceLost: () => void, receipt: () => { ack: number; failed: boolean }) {
   const client = Array.from(crypto.getRandomValues(new Uint8Array(16)), value => value.toString(16).padStart(2, '0')).join('');
   const panel = document.createElement('section');
   panel.id = 'live-controls';
@@ -71,13 +73,14 @@ export function createLiveControls(report: Record<string, unknown>, feed: (packe
   document.querySelector('main')!.after(panel);
 
   let token = '';
-  let ack = 0;
   let timer: ReturnType<typeof setTimeout>;
   let watching = false;
   let faulted = false;
   let busy = false;
   let closed = false;
-  let retryDelivery = false;
+  let reportedFailure = false;
+  let linkRetries = 0;
+  let deliveryUncertain = false;
   const abort = new AbortController();
   async function request(path: string, data = {}, keepalive = false) {
     const response = await fetch(endpoint + path, {
@@ -98,7 +101,9 @@ export function createLiveControls(report: Record<string, unknown>, feed: (packe
     report.liveStatus = state;
     report.liveReason = reason;
     const text = description || (Object.hasOwn(reasons, reason) ? reasons[reason] : '');
-    status.textContent = state + (text ? ' · ' + text : '');
+    report.liveDeliveryUncertain = deliveryUncertain;
+    status.textContent = state + (text ? ' · ' + text : '') +
+      (deliveryUncertain ? ' · Có gift final chưa xác minh giao nhận trong phiên gateway này.' : '');
     const active = ['CONNECTING', 'RECONNECTING', 'CONNECTED_NO_EVENTS', 'EVENTS_VERIFIED'].includes(state);
     connect.disabled = busy || faulted || active;
     disconnect.disabled = busy || !active;
@@ -107,17 +112,22 @@ export function createLiveControls(report: Record<string, unknown>, feed: (packe
   async function poll() {
     if (!watching || closed) return;
     try {
-      if (deliveryFailed() && !retryDelivery) {
-        retryDelivery = true;
+      if (receipt().failed && !reportedFailure) {
+        deliveryUncertain = true;
         await request('/degraded');
+        reportedFailure = true;
       }
+      const { ack } = receipt();
       const response = await request('/poll', { ack });
       const data = decodeLivePoll(await response.json(), ack);
-      if (!feed(data.entries.map(item => item.event))) {
+      if (closed) return;
+      deliveryUncertain ||= data.deliveryUncertain;
+      if (!feed(data.entries)) {
+        deliveryUncertain = true;
         await request('/degraded');
         throw new Error('DELIVERY_FAILED');
       }
-      ack = data.entries.at(-1)?.seq ?? ack;
+      linkRetries = 0;
       report.liveCounters = data.counters;
       report.liveDropped = data.dropped;
       counts.textContent = 'Chat ' + data.counters.chat + ' · Member ' + data.counters.member + ' · Like ' +
@@ -128,10 +138,16 @@ export function createLiveControls(report: Record<string, unknown>, feed: (packe
     } catch (error) {
       if (closed) return;
       const code = error instanceof Error ? error.message : '';
-      // The poll cursor is ambiguous after an interrupted local session. Lease expiry closes it.
+      const transient = error instanceof TypeError || (error instanceof DOMException && error.name === 'TimeoutError');
+      if (transient && linkRetries < 2) {
+        show('RECONNECTING', 'LOCAL_LINK_LOST', 'Đang nối lại gateway cục bộ.');
+        timer = setTimeout(poll, 250 * 2 ** linkRetries++);
+        return;
+      }
       watching = false;
       faulted = true;
-      void request('/disconnect').catch(() => {});
+      deliveryUncertain = true;
+      void request('/disconnect', { ack: receipt().ack, closing: true }).catch(() => {});
       sourceLost();
       show('DEGRADED', code === 'DELIVERY_FAILED' ? 'GIFT_DELIVERY_FAILED' : 'LOCAL_LINK_LOST',
         code === 'DELIVERY_FAILED' ? reasons.GIFT_DELIVERY_FAILED :
@@ -154,7 +170,6 @@ export function createLiveControls(report: Record<string, unknown>, feed: (packe
     show('CONNECTING');
     try {
       await request('/connect', { username: name });
-      retryDelivery = false;
       if (!watching) {
         watching = true;
         void poll();
@@ -176,14 +191,14 @@ export function createLiveControls(report: Record<string, unknown>, feed: (packe
     if (busy || closed || faulted) return;
     busy = true;
     try { await request('/disconnect'); }
-    catch { sourceLost(); show('DEGRADED', 'LOCAL_LINK_LOST', 'Không gửi được lệnh ngắt kết nối.'); }
+    catch { show('ERROR', 'LOCAL_LINK_LOST', 'Không gửi được lệnh ngắt kết nối. Viewer vẫn kiểm tra gateway.'); }
     finally { busy = false; }
   });
 
   const leave = () => {
     if (closed) return;
     closed = true;
-    if (watching) void request('/disconnect', {}, true).catch(() => {});
+    if (watching || busy) void request('/disconnect', { ack: receipt().ack, closing: true }, true).catch(() => {});
     watching = false;
     clearTimeout(timer);
     abort.abort();

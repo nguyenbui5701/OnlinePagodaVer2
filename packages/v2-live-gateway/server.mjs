@@ -68,6 +68,10 @@ export function createGatewayServer({ token, gateway = new Gateway(), clock = Da
         const state = gateway.poll(data.client, data.ack);
         return state ? reply(200, state) : reply(409);
       }
+      if (req.url === '/disconnect' && data.closing === true) {
+        if (!natural(data.ack) || Object.keys(data).length !== 3) return reply(400);
+        return reply(gateway.closeViewer(data.client, data.ack) ? 204 : 409);
+      }
       if (Object.keys(data).length !== 1) return reply(400);
       return reply(gateway.disconnect(data.client, req.url === '/degraded') ? 204 : 409);
     }).on('close', () => gateway.release());
@@ -76,7 +80,11 @@ export function createGatewayServer({ token, gateway = new Gateway(), clock = Da
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const token = process.env.V2_LIVE_TOKEN;
   delete process.env.V2_LIVE_TOKEN;
-  const server = createGatewayServer({ token });
+  const gateway = new Gateway();
+  const server = createGatewayServer({ token, gateway });
+  server.on('close', () => {
+    if (gateway.deliveryUncertain) console.warn('GIFT_DELIVERY_UNCERTAIN: some final gifts were not confirmed by the Viewer.');
+  });
   server.listen(5203, '127.0.0.1', () => console.log('LIVE gateway ready at 127.0.0.1:5203'));
   process.once('SIGINT', () => server.close());
   process.once('SIGTERM', () => server.close());

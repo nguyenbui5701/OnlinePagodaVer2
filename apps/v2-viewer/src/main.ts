@@ -439,7 +439,7 @@ async function boot() {
     }
     if (!lost) show('');
     if (liveOperator) disposeLive = createLiveControls(report, packets => driver.enqueueLive(packets),
-      () => driver.loseLiveSource(), () => driver.liveDeliveryFailed);
+      () => driver.loseLiveSource(), () => driver.liveReceipt);
     if (manual) {
       Object.assign(window, { p08Review: {
         step: (seconds: number, draw = true, angle?: number, idle?: number, seatId?: string,
