@@ -1,0 +1,520 @@
+{
+  "source": "20b181315e8b42cc70eef763c48945838bb56f1f",
+  "base": "3f16a7dc607716f9cc3a05e232775745d5394de1",
+  "browser": "158.0.4370.33",
+  "viewport": {
+    "width": 720,
+    "height": 1280
+  },
+  "parity": [],
+  "guards": [],
+  "capture": {
+    "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+    "graphics": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "start": {
+      "wallMs": 2936.599999997765,
+      "contextSec": 0
+    },
+    "method": "Real-time Edge native Web Audio destination tap, Recorder Opus to PCM16 via FFmpeg, no microphone.",
+    "files": [
+      {
+        "name": "idle-and-gifts-demo.wav",
+        "bytes": 3847724,
+        "sha256": "192746f973b1bfa2b0649772727a870f02047c911bf2d040dff35906284028df",
+        "durationSec": 80.16,
+        "format": "WAV PCM16 LE mono 24000 Hz"
+      },
+      {
+        "name": "listen-idle-bell.wav",
+        "bytes": 105644,
+        "sha256": "3b5b2ac844e976e4913886134ea0024355d04510e3d2db10aaa7fd8e4d8b10b4",
+        "durationSec": 2.2,
+        "format": "WAV PCM16 LE mono 24000 Hz"
+      }
+    ],
+    "peakDbfs": -4.136003295566669,
+    "rmsDbfs": -29.316924454253623,
+    "clipped": 0,
+    "marks": [
+      {
+        "event": "idle-start",
+        "wallMs": 16622.39999999851,
+        "sceneMs": 15895,
+        "contextSec": 13.04,
+        "variant": "lotus-bell-3",
+        "seconds": 1.4,
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "idle-end",
+        "wallMs": 18015.89999999851,
+        "sceneMs": 17104,
+        "contextSec": 14.44,
+        "variant": "lotus-bell-3",
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "idle-start",
+        "wallMs": 31945.89999999851,
+        "sceneMs": 31222,
+        "contextSec": 28.370666666666665,
+        "variant": "lotus-bell-0",
+        "seconds": 1.4,
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "idle-end",
+        "wallMs": 33345.699999999255,
+        "sceneMs": 32326,
+        "contextSec": 29.770666666666667,
+        "variant": "lotus-bell-0",
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "idle-start",
+        "wallMs": 46300.099999997765,
+        "sceneMs": 45575,
+        "contextSec": 42.72,
+        "variant": "lotus-bell-2",
+        "seconds": 1.4,
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "idle-cut",
+        "wallMs": 46878.79999999702,
+        "sceneMs": 46152,
+        "contextSec": 43.30133333333333,
+        "variant": "lotus-bell-2",
+        "seconds": 0.03,
+        "reason": "gift-activity",
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "idle-cut-end",
+        "wallMs": 47766.099999997765,
+        "sceneMs": 46152,
+        "contextSec": 44.192,
+        "variant": "lotus-bell-2",
+        "reason": "gift-activity",
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "sfx-start",
+        "wallMs": 47820.29999999702,
+        "sceneMs": 47089,
+        "contextSec": 44.24,
+        "room": "demo-1",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "effectSequence": 2,
+        "variant": "rose",
+        "seconds": 0.75,
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "voice-start",
+        "wallMs": 47820.5,
+        "sceneMs": 47089,
+        "contextSec": 44.24,
+        "room": "demo-1",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "effectSequence": 2,
+        "variant": "rose",
+        "seconds": 2.1,
+        "ambienceGain": 0.05600000000000001,
+        "sfxGain": 0.216
+      },
+      {
+        "event": "sfx-end",
+        "wallMs": 48566.5,
+        "sceneMs": 47818,
+        "contextSec": 44.992,
+        "room": "demo-1",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "effectSequence": 2,
+        "variant": "rose",
+        "ambienceGain": 0.05600000000000001,
+        "sfxGain": 0.216
+      },
+      {
+        "event": "voice-end",
+        "wallMs": 49917.29999999702,
+        "sceneMs": 49110,
+        "contextSec": 46.34133333333333,
+        "room": "demo-1",
+        "request": "demo-1-gift-1",
+        "actor": "demo-1-actor-1",
+        "seat": "seat-1",
+        "effectSequence": 2,
+        "variant": "rose",
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "sfx-start",
+        "wallMs": 53670.099999997765,
+        "sceneMs": 52943,
+        "contextSec": 50.090666666666664,
+        "room": "demo-1",
+        "request": "demo-1-gift-2",
+        "actor": "demo-1-actor-2",
+        "seat": "seat-2",
+        "effectSequence": 4,
+        "variant": "rose",
+        "seconds": 0.75,
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "voice-start",
+        "wallMs": 53670.099999997765,
+        "sceneMs": 52943,
+        "contextSec": 50.090666666666664,
+        "room": "demo-1",
+        "request": "demo-1-gift-2",
+        "actor": "demo-1-actor-2",
+        "seat": "seat-2",
+        "effectSequence": 4,
+        "variant": "rose",
+        "seconds": 2.1,
+        "ambienceGain": 0.05600000000000001,
+        "sfxGain": 0.216
+      },
+      {
+        "event": "sfx-end",
+        "wallMs": 54425.79999999702,
+        "sceneMs": 53631,
+        "contextSec": 50.848,
+        "room": "demo-1",
+        "request": "demo-1-gift-2",
+        "actor": "demo-1-actor-2",
+        "seat": "seat-2",
+        "effectSequence": 4,
+        "variant": "rose",
+        "ambienceGain": 0.05600000000000001,
+        "sfxGain": 0.216
+      },
+      {
+        "event": "voice-end",
+        "wallMs": 55765.699999999255,
+        "sceneMs": 54978,
+        "contextSec": 52.192,
+        "room": "demo-1",
+        "request": "demo-1-gift-2",
+        "actor": "demo-1-actor-2",
+        "seat": "seat-2",
+        "effectSequence": 4,
+        "variant": "rose",
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "sfx-start",
+        "wallMs": 59514.099999997765,
+        "sceneMs": 58783,
+        "contextSec": 55.93066666666667,
+        "room": "demo-1",
+        "request": "demo-1-gift-3",
+        "actor": "demo-1-actor-3",
+        "seat": "seat-3",
+        "effectSequence": 5,
+        "variant": "rose",
+        "seconds": 0.75,
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "voice-start",
+        "wallMs": 59514.199999999255,
+        "sceneMs": 58783,
+        "contextSec": 55.93066666666667,
+        "room": "demo-1",
+        "request": "demo-1-gift-3",
+        "actor": "demo-1-actor-3",
+        "seat": "seat-3",
+        "effectSequence": 5,
+        "variant": "rose",
+        "seconds": 2.1,
+        "ambienceGain": 0.05600000000000001,
+        "sfxGain": 0.216
+      },
+      {
+        "event": "sfx-end",
+        "wallMs": 60265.599999997765,
+        "sceneMs": 59471,
+        "contextSec": 56.688,
+        "room": "demo-1",
+        "request": "demo-1-gift-3",
+        "actor": "demo-1-actor-3",
+        "seat": "seat-3",
+        "effectSequence": 5,
+        "variant": "rose",
+        "ambienceGain": 0.05600000000000001,
+        "sfxGain": 0.216
+      },
+      {
+        "event": "voice-end",
+        "wallMs": 61605.79999999702,
+        "sceneMs": 60839,
+        "contextSec": 58.032,
+        "room": "demo-1",
+        "request": "demo-1-gift-3",
+        "actor": "demo-1-actor-3",
+        "seat": "seat-3",
+        "effectSequence": 5,
+        "variant": "rose",
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "idle-start",
+        "wallMs": 78562.69999999925,
+        "sceneMs": 77839,
+        "contextSec": 74.98133333333334,
+        "variant": "lotus-bell-1",
+        "seconds": 1.4,
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      },
+      {
+        "event": "idle-end",
+        "wallMs": 79958.19999999925,
+        "sceneMs": 79123,
+        "contextSec": 76.38133333333333,
+        "variant": "lotus-bell-1",
+        "ambienceGain": 0.2,
+        "sfxGain": 0.45
+      }
+    ],
+    "timeline": [
+      {
+        "wallMs": 2973.7999999970198,
+        "sceneMs": 2222,
+        "mode": "CINEMATIC",
+        "giftCount": 0,
+        "overlay": false
+      },
+      {
+        "wallMs": 47777.199999999255,
+        "sceneMs": 47041,
+        "mode": "GIFT_TRANSITION",
+        "seat": "seat-1",
+        "giftCount": 5,
+        "overlay": false
+      },
+      {
+        "wallMs": 47848.5,
+        "sceneMs": 47089,
+        "mode": "GIFT_FOCUS",
+        "seat": "seat-1",
+        "giftCount": 5,
+        "overlay": false
+      },
+      {
+        "wallMs": 48822.5,
+        "sceneMs": 48075,
+        "mode": "GIFT_FOCUS",
+        "seat": "seat-1",
+        "giftCount": 6,
+        "overlay": false
+      },
+      {
+        "wallMs": 48893.79999999702,
+        "sceneMs": 48159,
+        "mode": "GIFT_FOCUS",
+        "seat": "seat-1",
+        "giftCount": 7,
+        "overlay": false
+      },
+      {
+        "wallMs": 49241.89999999851,
+        "sceneMs": 48506,
+        "mode": "GIFT_FOCUS",
+        "seat": "seat-1",
+        "giftCount": 8,
+        "overlay": true
+      },
+      {
+        "wallMs": 51274.89999999851,
+        "sceneMs": 50541,
+        "mode": "GIFT_FOCUS",
+        "seat": "seat-1",
+        "giftCount": 8,
+        "overlay": false
+      },
+      {
+        "wallMs": 52605.099999997765,
+        "sceneMs": 51874,
+        "mode": "GIFT_TRANSITION",
+        "seat": "seat-2",
+        "giftCount": 8,
+        "overlay": false
+      },
+      {
+        "wallMs": 53687,
+        "sceneMs": 52943,
+        "mode": "GIFT_FOCUS",
+        "seat": "seat-2",
+        "giftCount": 8,
+        "overlay": false
+      },
+      {
+        "wallMs": 58517.79999999702,
+        "sceneMs": 57770,
+        "mode": "GIFT_TRANSITION",
+        "seat": "seat-3",
+        "giftCount": 8,
+        "overlay": false
+      },
+      {
+        "wallMs": 59531.699999999255,
+        "sceneMs": 58783,
+        "mode": "GIFT_FOCUS",
+        "seat": "seat-3",
+        "giftCount": 8,
+        "overlay": false
+      },
+      {
+        "wallMs": 64327.29999999702,
+        "sceneMs": 63582,
+        "mode": "CINE_RETURN",
+        "giftCount": 8,
+        "overlay": false
+      },
+      {
+        "wallMs": 66014.89999999851,
+        "sceneMs": 65283,
+        "mode": "CINEMATIC",
+        "giftCount": 8,
+        "overlay": false
+      }
+    ],
+    "quiet": [
+      {
+        "ms": 100,
+        "peak": 0
+      },
+      {
+        "ms": 120,
+        "peak": 0
+      },
+      {
+        "ms": 140,
+        "peak": 0
+      },
+      {
+        "ms": 160,
+        "peak": 0
+      },
+      {
+        "ms": 180,
+        "peak": 0
+      },
+      {
+        "ms": 200,
+        "peak": 0
+      },
+      {
+        "ms": 220,
+        "peak": 0
+      },
+      {
+        "ms": 240,
+        "peak": 0
+      }
+    ],
+    "reconfiguredGapSec": 12.506300000000003,
+    "voiceAfterSfxMs": [
+      0,
+      0,
+      0
+    ],
+    "cutScheduledMs": 30,
+    "cutObservedCallbackMs": 890.6666666666681,
+    "dynamic": "DYNAMIC_TTS_BLOCKED",
+    "workerStatuses": [
+      503
+    ],
+    "attempts": [
+      {
+        "method": "POST",
+        "path": "/demo-voice"
+      }
+    ],
+    "gifters": 3,
+    "confirmedGiftCount": 8,
+    "waveformCut": {
+      "alignment": "AudioContext clock relative to its MediaRecorder tap start",
+      "windowMs": 10,
+      "thresholdPcm16": 32,
+      "firstSustainedQuietMs": 40,
+      "rows": [
+        {
+          "ms": -30,
+          "peak": 180
+        },
+        {
+          "ms": -20,
+          "peak": 171
+        },
+        {
+          "ms": -10,
+          "peak": 161
+        },
+        {
+          "ms": 0,
+          "peak": 151
+        },
+        {
+          "ms": 10,
+          "peak": 141
+        },
+        {
+          "ms": 20,
+          "peak": 101
+        },
+        {
+          "ms": 30,
+          "peak": 58
+        },
+        {
+          "ms": 40,
+          "peak": 11
+        },
+        {
+          "ms": 50,
+          "peak": 0
+        },
+        {
+          "ms": 60,
+          "peak": 0
+        },
+        {
+          "ms": 70,
+          "peak": 0
+        },
+        {
+          "ms": 80,
+          "peak": 0
+        },
+        {
+          "ms": 90,
+          "peak": 0
+        }
+      ]
+    }
+  }
+}
