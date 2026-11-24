@@ -106,7 +106,7 @@ async function visiblePads(page, state) {
   const bounds = projectPads(state);
   const hits = await page.evaluate(({ points, camera }) => points.map(point => point.inPortrait &&
     window.p08Review.treeCollisions([camera, point.position]).length > 0), { points: bounds, camera: state.position });
-  return bounds.map(({ position, ...pad }, i) => ({ ...pad, blockedByR16: hits[i], visible: pad.inPortrait && !hits[i] }));
+  return bounds.map(({ position, ...pad }, i) => ({ ...pad, blockedByTree: hits[i], visible: pad.inPortrait && !hits[i] }));
 }
 
 async function topSweep(page, profile, seed, before = false) {
