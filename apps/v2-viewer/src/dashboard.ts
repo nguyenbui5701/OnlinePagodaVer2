@@ -6,7 +6,7 @@ import { reasons, type LiveCounters } from './live-receiver.ts';
 type Status = {
   status: string; reason: string; viewerCount: number; counters: LiveCounters; dropped: number;
   deliveryUncertain: boolean; receiver: 'overlay' | 'legacy' | null;
-  appliedRevision: number | null; applyPending: boolean; canApply: boolean; canConnect: boolean; canDisconnect: boolean;
+  appliedRevision: number | null; overlayReady: boolean; applyPending: boolean; canApply: boolean; canConnect: boolean; canDisconnect: boolean;
   desired: SettingsSnapshot;
 };
 
@@ -96,7 +96,8 @@ function render(state?: Status) {
   element('live-state').textContent = titles[code] ?? code;
   element('live-state').dataset.state = code;
   element('overlay-state').textContent = !state ? 'Đang chờ Gateway cục bộ.' :
-    state.receiver === 'overlay' ? (state.applyPending ? 'Overlay đang nạp lại cấu hình…' : 'Overlay sẵn sàng') :
+    state.receiver === 'overlay' ? (state.applyPending ? 'Overlay đang nạp lại cấu hình…' :
+      state.overlayReady ? 'Overlay sẵn sàng' : 'Overlay chưa sẵn sàng. Đang chờ khung hình WebGL.') :
     state.receiver === 'legacy' ? 'Viewer LIVE cũ đang giữ phiên nhận. Đóng Viewer cũ để dùng Overlay.' : 'Chưa có Overlay sẵn sàng.';
   const reason = state?.reason;
   element('source-reason').hidden = !reason;

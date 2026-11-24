@@ -60,13 +60,18 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status }: Option
   let linkRetries = 0;
   let uncertain = false;
   let overlay = false;
+  let rendererReady = false;
+  let polling = false;
 
   const request = (path: string, data = {}, keepalive = false) =>
     postGateway(path, { client, ...data }, abort.signal, keepalive);
   const closing = () => ({ ack: receipt().ack, closing: true });
 
   async function poll() {
-    if (!watching || closed) return;
+    if (!watching || closed || polling) return;
+    polling = true;
+    let delay = 250;
+    let sentReady = rendererReady;
     try {
       if (receipt().failed && !reportedFailure) {
         uncertain = true;
@@ -74,7 +79,8 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status }: Option
         reportedFailure = true;
       }
       const { ack } = receipt();
-      const data = decodeLivePoll(await (await request('/poll', { ack })).json(), ack);
+      sentReady = rendererReady;
+      const data = decodeLivePoll(await (await request('/poll', overlay ? { ack, ready: sentReady } : { ack })).json(), ack);
       if (closed) return;
       uncertain ||= data.deliveryUncertain;
       if (!feed(data.entries)) {
@@ -93,13 +99,12 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status }: Option
         location.reload();
         return;
       }
-      timer = setTimeout(poll, 250);
     } catch (error) {
       if (closed) return;
       const transient = error instanceof TypeError || (error instanceof DOMException && error.name === 'TimeoutError');
       if (transient && linkRetries < 2) {
         status({ status: 'RECONNECTING', reason: 'LOCAL_LINK_LOST', uncertain });
-        timer = setTimeout(poll, 250 * 2 ** linkRetries++);
+        delay = 250 * 2 ** linkRetries++;
         return;
       }
       watching = false;
@@ -108,6 +113,18 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status }: Option
       sourceLost();
       status({ status: 'DEGRADED', reason: error instanceof Error && error.message === 'GIFT_DELIVERY_FAILED' ?
         'GIFT_DELIVERY_FAILED' : 'LOCAL_LINK_LOST', uncertain, terminal: true });
+    } finally {
+      polling = false;
+      if (watching && !closed) timer = setTimeout(poll, overlay && !linkRetries && sentReady !== rendererReady ? 0 : delay);
+    }
+  }
+
+  function setRendererReady(ready: boolean) {
+    if (rendererReady === ready) return;
+    rendererReady = ready;
+    if (watching && !polling && !closed) {
+      clearTimeout(timer);
+      timer = setTimeout(poll, 0);
     }
   }
 
@@ -146,6 +163,6 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status }: Option
 
   window.addEventListener('pagehide', dispose, { once: true });
   window.addEventListener('pageshow', event => { if (event.persisted && closed) location.reload(); }, { once: true });
-  return { attach, connect: (username: string) => claim('/connect', { username }),
+  return { attach, setRendererReady, connect: (username: string) => claim('/connect', { username }),
     disconnect: () => request('/disconnect'), dispose };
 }

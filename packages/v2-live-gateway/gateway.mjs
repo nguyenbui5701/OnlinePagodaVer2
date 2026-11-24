@@ -11,6 +11,7 @@ export class Gateway {
   owner;
   receiver;
   appliedRevision = null;
+  overlayReady = false;
   applyPending = false;
   status = 'OFFLINE';
   reason = '';
@@ -46,6 +47,7 @@ export class Gateway {
   }
 
   attach(client, revision) {
+    if (!Number.isSafeInteger(revision) || revision < 1) return false;
     if (this.owner) {
       if (this.receiver !== 'overlay' || this.owner !== client || this.appliedRevision !== revision) return false;
     } else {
@@ -66,7 +68,7 @@ export class Gateway {
       status: this.status, reason: this.reason, counters: this.counters, viewerCount: this.viewerCount,
       dropped: this.dropped, deliveryUncertain: this.deliveryUncertain,
       receiver: this.receiver ?? null, appliedRevision: this.appliedRevision, applyPending: this.applyPending,
-      canApply: this.canApply, canConnect: this.canApply && !this.limited,
+      overlayReady: this.overlayReady, canApply: this.canApply, canConnect: this.overlayReady && this.canApply && !this.limited,
       canDisconnect: !!(this.online || this.stopWorker || this.retry),
     };
   }
@@ -74,7 +76,7 @@ export class Gateway {
   connect(client, username, receiver = 'legacy') {
     if (this.limited || this.stopWorker || this.stopping || this.retry || this.applyPending ||
         (this.owner && (this.owner !== client || this.receiver !== receiver)) || this.queue.length ||
-        (receiver === 'overlay' && !this.owner)) return false;
+        (receiver === 'overlay' && (!this.owner || !this.overlayReady))) return false;
     if (!this.owner) this.claim(client, receiver);
     this.attempts = 0;
     this.refreshLease();
@@ -217,8 +219,9 @@ export class Gateway {
     return true;
   }
 
-  poll(client, ack) {
+  poll(client, ack, ready) {
     if (!this.acknowledge(client, ack)) return;
+    if (this.receiver === 'overlay') this.overlayReady = ready === true;
     this.refreshLease();
     const entries = this.queue.slice(0, 48);
     this.offered = Math.max(this.offered, entries.at(-1)?.seq ?? ack);
@@ -237,6 +240,7 @@ export class Gateway {
     this.stop();
     this.owner = this.room = this.receiver = undefined;
     this.appliedRevision = null;
+    this.overlayReady = false;
     this.applyPending = false;
     this.deliveryUncertain ||= this.queue.some(({ event }) => event.type === 'gift' && event.phase === 'final');
     this.queue.length = 0;

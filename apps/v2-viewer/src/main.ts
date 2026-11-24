@@ -39,7 +39,8 @@ const canvas = document.querySelector<HTMLCanvasElement>('#capture')!;
 const status = document.querySelector<HTMLParagraphElement>('#status')!;
 const diagnostics = document.querySelector<HTMLPreElement>('#diagnostics');
 const overlayMode = document.body.hasAttribute('data-overlay');
-const query = overlayMode ? overlayContext.query : new URLSearchParams(location.search);
+const overlaySettings = overlayMode ? overlayContext.settings : undefined;
+const query = overlaySettings?.query ?? new URLSearchParams(location.search);
 const requestedTree = parseTreeRevision(query.get('tree'));
 const treeLoading = `Đang tải Sakura ${requestedTree}…`;
 const liveRequested = query.get('source') === 'live';
@@ -87,7 +88,7 @@ const report: Record<string, unknown> = {
   repoRevision: __REPO_REVISION__, requestedTreeRevision: requestedTree, profile, viewport: [captureWidth, captureHeight],
   safeMargin: capture.safeMargin, near: capture.near, far: capture.far, scenario, seed, errors, contextRestores: 0,
   ...(liveRequested && { liveStatus: 'OFFLINE', liveReason: '' }),
-  ...(overlayMode && { appliedSettingsRevision: overlayContext.revision }),
+  ...(overlayMode && { overlayRendererReady: false }),
 };
 Object.assign(window, { viewerReport: report });
 
@@ -119,7 +120,9 @@ async function boot() {
   const gpu = gl.getExtension('WEBGL_debug_renderer_info');
   report.graphics = gpu ? gl.getParameter(gpu.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER);
   report.browser = navigator.userAgent;
+  let shaderFailed = false;
   renderer.debug.onShaderError = (context, program, vertex, fragment) => {
+    shaderFailed = true;
     const message = [context.getProgramInfoLog(program), context.getShaderInfoLog(vertex),
       context.getShaderInfoLog(fragment)].filter(Boolean).join('\n');
     errors.push(message || 'Shader compilation failed');
@@ -152,6 +155,18 @@ async function boot() {
   let routes: ReturnType<typeof createCinematicRoutes> | ReturnType<typeof createHeroRoutes> | undefined;
   let start: number | undefined;
   let disposeLive: (() => void) | undefined;
+  let overlayReceiver: ReturnType<typeof createLiveReceiver> | undefined;
+  let overlayAttached = false;
+  function reportRendererReady(ready: boolean) {
+    if (!overlayReceiver || !overlaySettings) return;
+    report.overlayRendererReady = ready;
+    overlayReceiver.setRendererReady(ready);
+    if (ready && !overlayAttached) {
+      overlayAttached = true;
+      report.appliedSettingsRevision = overlaySettings.revision;
+      void overlayReceiver.attach(overlaySettings.revision);
+    }
+  }
   const audio = audioRequested
     ? new AudioManager(timing.focusHoldMs, () => start === undefined ? -1 : Math.floor(performance.now() - start), {
       idle: query.get('idlevoice') === 'on' ? { seed, gap: idleGap(query.get('idlegap')) } : undefined,
@@ -277,7 +292,13 @@ async function boot() {
         report.botanicalFrustum = botanicals.group.visible ? botanicals.inFrustum(camera) : [];
       }
     }
-    renderer.render(scene, camera);
+    try {
+      renderer.render(scene, camera);
+    } catch (error) {
+      reportRendererReady(false);
+      throw error;
+    }
+    if (overlayReceiver) reportRendererReady(!lost && !shaderFailed && !gl.isContextLost() && renderer.info.render.calls > 0);
     if (last !== undefined && now > last) {
       frameTimes.push(now - last);
       if (frameTimes.length > 120) frameTimes.shift();
@@ -315,6 +336,7 @@ async function boot() {
   const contextLost = (event: Event) => {
     event.preventDefault();
     lost = true;
+    reportRendererReady(false);
     audio?.suspend('webgl-context');
     clearPresence();
     errors.push('webglcontextlost');
@@ -323,6 +345,7 @@ async function boot() {
   };
   const contextRestored = () => {
     lost = false;
+    shaderFailed = false;
     report.contextRestores = Number(report.contextRestores) + 1;
     last = undefined;
     frameTimes.length = 0;
@@ -442,13 +465,12 @@ async function boot() {
       if (routes.rejected.length) console.warn('P0.9 cinematic clearance fallback', routes.rejected);
     }
     if (!lost) show('');
-    if (overlayMode) {
-      const receiver = createLiveReceiver({
+    if (overlaySettings) {
+      overlayReceiver = createLiveReceiver({
         feed: entries => driver.enqueueLive(entries), sourceLost: () => driver.loseLiveSource(),
         receipt: () => driver.liveReceipt, status: state => updateLiveReport(report, state),
       });
-      disposeLive = receiver.dispose;
-      void receiver.attach(overlayContext.revision);
+      disposeLive = overlayReceiver.dispose;
     } else if (liveOperator) {
       disposeLive = createLiveControls(report, entries => driver.enqueueLive(entries),
         () => driver.loseLiveSource(), () => driver.liveReceipt);

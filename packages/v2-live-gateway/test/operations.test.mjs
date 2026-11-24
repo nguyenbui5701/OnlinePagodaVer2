@@ -65,7 +65,14 @@ test('operator stays separate from receiver, and saved settings wait through LIV
 
   const settings = { ...liveDefaults, seed: 71 };
   assert.equal((await post('/save-settings', { revision: 1, settings })).status, 200);
+  assert.equal((await post('/attach', { client: receiver, revision: 0 })).status, 400);
+  assert.equal((await post('/attach', { client: receiver, revision: 3 })).status, 400);
   assert.equal((await post('/attach', { client: receiver, revision: 2 })).status, 204);
+  assert.equal((await post('/operate', connect)).status, 409, 'attach alone is not READY');
+  assert.equal((await post('/poll', { client: receiver, ack: 0, ready: false })).status, 200);
+  assert.equal((await post('/operate', connect)).status, 409);
+  assert.equal(worker.launches, 0);
+  assert.equal((await post('/poll', { client: receiver, ack: 0, ready: true })).status, 200);
   assert.equal((await post('/attach', { client: other, revision: 2 })).status, 409);
   assert.equal((await post('/connect', { client: other, username: 'authorized' })).status, 409);
   assert.equal((await post('/operate', connect)).status, 204);
@@ -85,19 +92,20 @@ test('operator stays separate from receiver, and saved settings wait through LIV
   assert.equal((await result.json()).reason, 'APPLY_BLOCKED');
 
   assert.equal((await post('/operate', { action: 'disconnect' })).status, 204);
-  const firstPoll = await (await post('/poll', { client: receiver, ack: 0 })).json();
+  const firstPoll = await (await post('/poll', { client: receiver, ack: 0, ready: false })).json();
   assert.equal(firstPoll.entries[1].event.phase, 'final');
   result = await post('/apply', { revision: 3 });
   assert.equal((await result.json()).reason, 'APPLY_BLOCKED');
-  assert.equal((await post('/poll', { client: receiver, ack: firstPoll.entries.at(-1).seq })).status, 200);
+  assert.equal((await post('/poll', { client: receiver, ack: firstPoll.entries.at(-1).seq, ready: true })).status, 200);
   assert.equal((await post('/apply', { revision: 3 })).status, 204);
   assert.equal((await post('/operate', connect)).status, 409);
-  assert.equal((await (await post('/poll', { client: receiver, ack: firstPoll.entries.at(-1).seq })).json()).applyPending, true);
+  assert.equal((await (await post('/poll', { client: receiver, ack: firstPoll.entries.at(-1).seq, ready: true })).json()).applyPending, true);
   assert.equal((await post('/disconnect', { client: receiver, ack: firstPoll.entries.at(-1).seq, closing: true })).status, 204);
   assert.equal((await post('/attach', { client: other, revision: 3 })).status, 204);
   const final = await (await post('/status')).json();
   assert.equal(final.appliedRevision, 3);
   assert.equal(final.applyPending, false);
+  assert.equal(final.overlayReady, false);
   assert.equal(final.deliveryUncertain, false);
 });
 

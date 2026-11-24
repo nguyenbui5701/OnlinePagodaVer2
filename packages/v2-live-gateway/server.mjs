@@ -81,7 +81,7 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
           }
           const username = normalizeUsername(data.username);
           if (data.action === 'connect' && fields === 2 && username) {
-            if (gateway.receiver !== 'overlay') return conflict('OVERLAY_NOT_READY');
+            if (!gateway.overlayReady) return conflict('OVERLAY_NOT_READY');
             if (++starts > 4) return rateLimit();
             if (gateway.limited) return reply(429, { reason: 'RATE_LIMITED' });
             return gateway.connect(gateway.owner, username, 'overlay') ? reply(204) : conflict('SOURCE_BUSY');
@@ -91,7 +91,7 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
       }
       if (!hex(data.client)) return reply(400);
       if (req.url === '/attach') {
-        if (fields !== 2 || !natural(data.revision) || data.revision > settings.snapshot.revision) return reply(400);
+        if (fields !== 2 || !natural(data.revision) || data.revision < 1 || data.revision > settings.snapshot.revision) return reply(400);
         return gateway.attach(data.client, data.revision) ? reply(204) : conflict('RECEIVER_BUSY');
       }
       if (req.url === '/connect') {
@@ -102,8 +102,10 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
         return reply(gateway.connect(data.client, username) ? 204 : 409);
       }
       if (req.url === '/poll') {
-        if (!natural(data.ack) || Object.keys(data).length !== 2) return reply(400);
-        const state = gateway.poll(data.client, data.ack);
+        const hasReadiness = typeof data.ready === 'boolean';
+        if (!natural(data.ack) || fields !== (hasReadiness ? 3 : 2)) return reply(400);
+        if (gateway.owner === data.client && (gateway.receiver === 'overlay') !== hasReadiness) return reply(400);
+        const state = gateway.poll(data.client, data.ack, data.ready);
         return state ? reply(200, state) : reply(409);
       }
       if (req.url === '/disconnect' && data.closing === true) {
