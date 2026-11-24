@@ -1,0 +1,588 @@
+{
+  "source": "0e684c40eb9a15a55292c4518e8f224978c47341",
+  "browser": "158.0.4370.33",
+  "graphics": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+  "costVnd": 0,
+  "method": "Normal built Viewer on Edge in real time, native postmix Web Audio tap and Opus/FFmpeg capture.",
+  "confirmedGiftCount": 8,
+  "finalMode": "CINEMATIC",
+  "start": {
+    "wallMs": 2678.099999997765,
+    "contextSec": 0
+  },
+  "wav": {
+    "bytes": 3876524,
+    "sha256": "30f72296ffa5e4c38c3c2391bbe19124ac9c52df493a3926bbe9f8583c4a601d",
+    "durationSec": 80.76,
+    "peakDbfs": -8.820716102371644,
+    "clipped": 0
+  },
+  "provider": [
+    {
+      "template": {
+        "nameId": "an",
+        "gift": "rose",
+        "count": 5
+      },
+      "latencyMs": 726,
+      "size": 90838,
+      "durationSec": 1.8924583333333334,
+      "sha256": "4b1560cd858a23053a628040cd3204e0286c6666005fd4ccafed37cede4971dc"
+    },
+    {
+      "template": {
+        "nameId": "binh",
+        "gift": "rose",
+        "count": 1
+      },
+      "latencyMs": 807,
+      "size": 80098,
+      "durationSec": 1.6687083333333332,
+      "sha256": "9948cae7d52642f6478293ca200730e36ca3008b3a95bfb9bfeb70900ec16f4f"
+    },
+    {
+      "template": {
+        "nameId": "chi",
+        "gift": "rose",
+        "count": 1
+      },
+      "latencyMs": 1284,
+      "size": 80122,
+      "durationSec": 1.6692083333333334,
+      "sha256": "c6ddaa7ec7ccc2cc05871d2e005e18ce84631f30373ce0da896c80b9eb705ce6"
+    }
+  ],
+  "diagnostics": [],
+  "statuses": [
+    200,
+    200,
+    200
+  ],
+  "idleLoads": [
+    "/audio/vi-gtts-demo-v1/manifest.json",
+    "/audio/vi-gtts-demo-v1/wish-01.pcm",
+    "/audio/vi-gtts-demo-v1/wish-02.pcm",
+    "/audio/vi-gtts-demo-v1/wish-03.pcm",
+    "/audio/vi-gtts-demo-v1/wish-04.pcm",
+    "/audio/vi-gtts-demo-v1/wish-05.pcm",
+    "/audio/vi-gtts-demo-v1/wish-06.pcm",
+    "/audio/vi-gtts-demo-v1/wish-07.pcm",
+    "/audio/vi-gtts-demo-v1/wish-08.pcm",
+    "/audio/vi-gtts-demo-v1/wish-09.pcm",
+    "/audio/vi-gtts-demo-v1/wish-10.pcm",
+    "/audio/vi-gtts-demo-v1/wish-11.pcm",
+    "/audio/vi-gtts-demo-v1/wish-12.pcm"
+  ],
+  "idleGapAfterCutSec": 15.549299999999999,
+  "cutObservedMs": 69.3333333333328,
+  "dynamic": "DYNAMIC_TTS_READY",
+  "timeline": [
+    {
+      "wallMs": 2717.699999999255,
+      "sceneMs": 1861,
+      "mode": "CINEMATIC",
+      "giftCount": 0,
+      "overlay": false
+    },
+    {
+      "wallMs": 46929.29999999702,
+      "sceneMs": 46006,
+      "mode": "GIFT_TRANSITION",
+      "seat": "seat-1",
+      "giftCount": 0,
+      "overlay": false
+    },
+    {
+      "wallMs": 47163.89999999851,
+      "sceneMs": 46312,
+      "mode": "GIFT_TRANSITION",
+      "seat": "seat-1",
+      "giftCount": 5,
+      "overlay": false
+    },
+    {
+      "wallMs": 48097.89999999851,
+      "sceneMs": 47096,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-1",
+      "giftCount": 5,
+      "overlay": false
+    },
+    {
+      "wallMs": 48880.099999997765,
+      "sceneMs": 48034,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-1",
+      "giftCount": 6,
+      "overlay": false
+    },
+    {
+      "wallMs": 48983.79999999702,
+      "sceneMs": 48138,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-1",
+      "giftCount": 7,
+      "overlay": false
+    },
+    {
+      "wallMs": 49371.29999999702,
+      "sceneMs": 48527,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-1",
+      "giftCount": 8,
+      "overlay": true
+    },
+    {
+      "wallMs": 51363.89999999851,
+      "sceneMs": 50520,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-1",
+      "giftCount": 8,
+      "overlay": false
+    },
+    {
+      "wallMs": 52699.89999999851,
+      "sceneMs": 51853,
+      "mode": "GIFT_TRANSITION",
+      "seat": "seat-2",
+      "giftCount": 8,
+      "overlay": false
+    },
+    {
+      "wallMs": 53759.199999999255,
+      "sceneMs": 52909,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-2",
+      "giftCount": 8,
+      "overlay": false
+    },
+    {
+      "wallMs": 58588.79999999702,
+      "sceneMs": 57735,
+      "mode": "GIFT_TRANSITION",
+      "seat": "seat-3",
+      "giftCount": 8,
+      "overlay": false
+    },
+    {
+      "wallMs": 59624,
+      "sceneMs": 58776,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-3",
+      "giftCount": 8,
+      "overlay": false
+    },
+    {
+      "wallMs": 64418.599999997765,
+      "sceneMs": 63575,
+      "mode": "CINE_RETURN",
+      "giftCount": 8,
+      "overlay": false
+    },
+    {
+      "wallMs": 65889.29999999702,
+      "sceneMs": 65040,
+      "mode": "CINEMATIC",
+      "giftCount": 8,
+      "overlay": false
+    }
+  ],
+  "marks": [
+    {
+      "event": "idle-start",
+      "wallMs": 14965,
+      "sceneMs": 14118,
+      "contextSec": 11.861333333333333,
+      "variant": "wish-11",
+      "seconds": 2.2750416666666666,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 17245.599999997765,
+      "sceneMs": 16389,
+      "contextSec": 14.141333333333334,
+      "variant": "wish-11",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 28751.39999999851,
+      "sceneMs": 27909,
+      "contextSec": 25.64,
+      "variant": "wish-02",
+      "seconds": 1.7956666666666667,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 30542.89999999851,
+      "sceneMs": 29694,
+      "contextSec": 27.44,
+      "variant": "wish-02",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 46119.79999999702,
+      "sceneMs": 45277,
+      "contextSec": 43.010666666666665,
+      "variant": "wish-08",
+      "seconds": 2.089916666666667,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-cut",
+      "wallMs": 46862.599999997765,
+      "sceneMs": 46006,
+      "contextSec": 43.752,
+      "variant": "wish-08",
+      "seconds": 0.03,
+      "reason": "gift-activity",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-cut-end",
+      "wallMs": 46929.599999997765,
+      "sceneMs": 46006,
+      "contextSec": 43.821333333333335,
+      "variant": "wish-08",
+      "reason": "gift-activity",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 47904.89999999851,
+      "sceneMs": 47055,
+      "contextSec": 44.8,
+      "room": "demo-1",
+      "request": "demo-1-gift-1",
+      "actor": "demo-1-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 2,
+      "variant": "rose",
+      "seconds": 0.75,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "voice-start",
+      "wallMs": 48104.29999999702,
+      "sceneMs": 47249,
+      "contextSec": 45,
+      "room": "demo-1",
+      "request": "demo-1-gift-1",
+      "actor": "demo-1-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 2,
+      "variant": "named",
+      "seconds": 1.8924583333333334,
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 48655.599999997765,
+      "sceneMs": 47805,
+      "contextSec": 45.552,
+      "room": "demo-1",
+      "request": "demo-1-gift-1",
+      "actor": "demo-1-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 2,
+      "variant": "rose",
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "voice-end",
+      "wallMs": 50004.199999999255,
+      "sceneMs": 49159,
+      "contextSec": 46.90133333333333,
+      "room": "demo-1",
+      "request": "demo-1-gift-1",
+      "actor": "demo-1-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 2,
+      "variant": "named",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 53754.29999999702,
+      "sceneMs": 52909,
+      "contextSec": 50.650666666666666,
+      "room": "demo-1",
+      "request": "demo-1-gift-2",
+      "actor": "demo-1-actor-2",
+      "seat": "seat-2",
+      "effectSequence": 4,
+      "variant": "rose",
+      "seconds": 0.75,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "voice-start",
+      "wallMs": 53754.699999999255,
+      "sceneMs": 52909,
+      "contextSec": 50.650666666666666,
+      "room": "demo-1",
+      "request": "demo-1-gift-2",
+      "actor": "demo-1-actor-2",
+      "seat": "seat-2",
+      "effectSequence": 4,
+      "variant": "named",
+      "seconds": 1.6687083333333332,
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 54513.5,
+      "sceneMs": 53665,
+      "contextSec": 51.4,
+      "room": "demo-1",
+      "request": "demo-1-gift-2",
+      "actor": "demo-1-actor-2",
+      "seat": "seat-2",
+      "effectSequence": 4,
+      "variant": "rose",
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "voice-end",
+      "wallMs": 55422.5,
+      "sceneMs": 54575,
+      "contextSec": 52.32,
+      "room": "demo-1",
+      "request": "demo-1-gift-2",
+      "actor": "demo-1-actor-2",
+      "seat": "seat-2",
+      "effectSequence": 4,
+      "variant": "named",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 59598.699999999255,
+      "sceneMs": 58756,
+      "contextSec": 56.49066666666667,
+      "room": "demo-1",
+      "request": "demo-1-gift-3",
+      "actor": "demo-1-actor-3",
+      "seat": "seat-3",
+      "effectSequence": 5,
+      "variant": "rose",
+      "seconds": 0.75,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "voice-start",
+      "wallMs": 59599.199999999255,
+      "sceneMs": 58756,
+      "contextSec": 56.49066666666667,
+      "room": "demo-1",
+      "request": "demo-1-gift-3",
+      "actor": "demo-1-actor-3",
+      "seat": "seat-3",
+      "effectSequence": 5,
+      "variant": "named",
+      "seconds": 1.6692083333333334,
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 60352.699999999255,
+      "sceneMs": 59506,
+      "contextSec": 57.245333333333335,
+      "room": "demo-1",
+      "request": "demo-1-gift-3",
+      "actor": "demo-1-actor-3",
+      "seat": "seat-3",
+      "effectSequence": 5,
+      "variant": "rose",
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "voice-end",
+      "wallMs": 61262.29999999702,
+      "sceneMs": 60415,
+      "contextSec": 58.16,
+      "room": "demo-1",
+      "request": "demo-1-gift-3",
+      "actor": "demo-1-actor-3",
+      "seat": "seat-3",
+      "effectSequence": 5,
+      "variant": "named",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 81413,
+      "sceneMs": 80568,
+      "contextSec": 78.30133333333333,
+      "variant": "wish-12",
+      "seconds": 1.8455416666666666,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 83256,
+      "sceneMs": 82408,
+      "contextSec": 80.152,
+      "variant": "wish-12",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    }
+  ],
+  "unexpected": [],
+  "errors": [],
+  "independentWav": {
+    "format": "WAV PCM16 LE mono 24000 Hz",
+    "peakPcm16": 11869,
+    "rmsDbfs": -31.97793690676398,
+    "cutRelativeToAudioContextTap": [
+      {
+        "offsetMs": -40,
+        "peakPcm16": 8528
+      },
+      {
+        "offsetMs": -30,
+        "peakPcm16": 6773
+      },
+      {
+        "offsetMs": -20,
+        "peakPcm16": 5469
+      },
+      {
+        "offsetMs": -10,
+        "peakPcm16": 4550
+      },
+      {
+        "offsetMs": 0,
+        "peakPcm16": 2186
+      },
+      {
+        "offsetMs": 10,
+        "peakPcm16": 153
+      },
+      {
+        "offsetMs": 20,
+        "peakPcm16": 4
+      },
+      {
+        "offsetMs": 30,
+        "peakPcm16": 1
+      },
+      {
+        "offsetMs": 40,
+        "peakPcm16": 1
+      },
+      {
+        "offsetMs": 50,
+        "peakPcm16": 0
+      },
+      {
+        "offsetMs": 60,
+        "peakPcm16": 0
+      },
+      {
+        "offsetMs": 70,
+        "peakPcm16": 0
+      },
+      {
+        "offsetMs": 80,
+        "peakPcm16": 0
+      },
+      {
+        "offsetMs": 90,
+        "peakPcm16": 0
+      },
+      {
+        "offsetMs": 100,
+        "peakPcm16": 0
+      },
+      {
+        "offsetMs": 110,
+        "peakPcm16": 0
+      },
+      {
+        "offsetMs": 120,
+        "peakPcm16": 0
+      },
+      {
+        "offsetMs": 130,
+        "peakPcm16": 0
+      },
+      {
+        "offsetMs": 140,
+        "peakPcm16": 0
+      },
+      {
+        "offsetMs": 150,
+        "peakPcm16": 0
+      }
+    ],
+    "firstSustainedBelow32Pcm16Ms": 20
+  },
+  "focusToVoiceMs": [
+    194,
+    0,
+    0
+  ],
+  "fallbackTrial": {
+    "source": "305d26f3ae9e72dd5a6aa48f6485b6fc51c5b4ba",
+    "reason": "Earlier cold-process sweep: An's request missed the focus deadline.",
+    "starts": [
+      {
+        "seat": "seat-1",
+        "sceneMs": 47402,
+        "variant": "rose"
+      },
+      {
+        "seat": "seat-2",
+        "sceneMs": 52902,
+        "variant": "named"
+      },
+      {
+        "seat": "seat-3",
+        "sceneMs": 58763,
+        "variant": "named"
+      }
+    ],
+    "confirmedGiftCount": 8,
+    "finalMode": "CINEMATIC",
+    "wav": {
+      "bytes": 3911084,
+      "sha256": "721627cae5278fb89791d3cbde14b3cbd1ab38f8111828c636975e6593e5027b",
+      "durationSec": 81.48,
+      "peakDbfs": -4.136003295566669,
+      "clipped": 0
+    }
+  },
+  "testBuild": {
+    "viewerTests": 76,
+    "eventEngineTests": 12,
+    "workerTests": 8,
+    "viewerBuild": "PASS",
+    "eventEngineBuild": "PASS",
+    "node": "24.16.0"
+  }
+}
