@@ -3,7 +3,7 @@ import {
   AgXToneMapping, DirectionalLight, Group, PCFShadowMap, PerspectiveCamera, Scene, SRGBColorSpace,
   Mesh, Raycaster, Vector3, WebGLRenderer,
 } from 'three';
-import { loadSakura, type Profile } from './asset.ts';
+import { loadSakura, parseTreeRevision, type Profile } from './asset.ts';
 import { capture, createCinematicRoutes, parseCinematicSeed, type CameraPose } from './camera.ts';
 import { bindGoldEmphasis, createTwilight, referenceViews, setupLighting } from './lighting.ts';
 import { LookTimeline, lookOrder, parseLook } from './twilight.ts';
@@ -33,6 +33,8 @@ const canvas = document.querySelector<HTMLCanvasElement>('#capture')!;
 const status = document.querySelector<HTMLParagraphElement>('#status')!;
 const diagnostics = document.querySelector<HTMLPreElement>('#diagnostics')!;
 const query = new URLSearchParams(location.search);
+const requestedTree = parseTreeRevision(query.get('tree'));
+const treeLoading = `Đang tải Sakura ${requestedTree}…`;
 const liveRequested = query.get('source') === 'live';
 const profile: Profile = query.get('profile') === 'quality' ? 'quality' : 'eco';
 const requestedView = liveRequested ? '' : query.get('view') ?? '';
@@ -85,6 +87,7 @@ function show(message: string) {
 }
 
 async function boot() {
+  show(treeLoading);
   let renderer: WebGLRenderer;
   try {
     renderer = new WebGLRenderer({ canvas, antialias: profile === 'quality' });
@@ -300,7 +303,7 @@ async function boot() {
     report.contextRestores = Number(report.contextRestores) + 1;
     last = undefined;
     frameTimes.length = 0;
-    show(sakura ? '' : 'Đang tải Sakura R16…');
+    show(sakura ? '' : treeLoading);
     if (!manual) req = requestAnimationFrame(render);
   };
   canvas.addEventListener('webglcontextlost', contextLost);
@@ -337,7 +340,7 @@ async function boot() {
   import.meta.hot?.dispose(dispose);
 
   try {
-    const asset = await loadSakura(profile, abort.signal);
+    const asset = await loadSakura(profile, abort.signal, requestedTree);
     if (disposed) { asset.dispose(); return; }
     sakura = asset;
     environment.add(sakura.root);
@@ -346,9 +349,19 @@ async function boot() {
       gold = bindGoldEmphasis(asset.root);
       report.goldMaterial = gold.report;
     }
-    console.info('Verified Sakura R16', sakura.report.sha256, __REPO_REVISION__);
+    console.info(`Verified Sakura ${sakura.report.assetRevision}`, sakura.report.sha256, __REPO_REVISION__);
+    if (sakura.report.fallbackReason) {
+      const notice = document.createElement('p');
+      notice.setAttribute('role', 'status');
+      notice.textContent = `Sakura R16 (${profile}) · thay thế R17B: ${sakura.report.fallbackReason}`;
+      diagnostics.before(notice);
+      document.title = 'OnlinePagoda V2 · Sakura R16 fallback';
+      console.warn(notice.textContent);
+    } else if (requestedTree === 'R17B') {
+      document.title = 'OnlinePagoda V2 · Sakura R17B';
+    }
     if (!comparison) {
-      // R16's imported scene pivot is the trunk base. Resolve it after scene attachment.
+      // Resolve the loaded tree's trunk pivot after scene attachment.
       const tree = asset.root.localToWorld(new Vector3());
       water?.tree.set(tree.x, tree.z);
       const pair = await createSeatScene(abort.signal, tree, crowd ? seed : undefined, diversity ? profile : undefined, rings);

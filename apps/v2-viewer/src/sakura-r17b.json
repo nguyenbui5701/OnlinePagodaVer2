@@ -1,0 +1,27 @@
+{
+  "version": "0.1.0",
+  "assetId": "sakura_hero",
+  "revision": "R17B",
+  "baselineCommit": "07f57cb35ba3ec68184abbd2c173e29a3fcc4788",
+  "sourceRef": "refs/heads/assets/sakura-hero-r17-lush",
+  "canonicalDirectory": "Assets3D/Review/sakura_hero/r17-lush/r17b/preview",
+  "coordinateSystem": { "up": "+Y", "actorForward": "+Z", "metersPerUnit": 1, "waterY": 0 },
+  "profiles": {
+    "quality": {
+      "file": "sakura_hero_r17b.glb", "bytes": 6981312, "triangles": 236888, "vertices": 297635,
+      "gltfMeshes": 14, "primitives": 23, "materials": 15,
+      "sha256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+      "gitBlob": "cfcbaa2ed71bedafae959541487c91f6de42ab74",
+      "bounds": [[-14.178767204284668, -0.5183812975883484, -13.425017356872559],
+        [14.489616394042969, 26.48044204711914, 14.410984992980957]]
+    },
+    "eco": {
+      "file": "sakura_hero_r17b_eco.glb", "bytes": 2149264, "triangles": 58212, "vertices": 98632,
+      "gltfMeshes": 13, "primitives": 22, "materials": 14,
+      "sha256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+      "gitBlob": "d5554055ab689680ca17744653cfc49197b1e773",
+      "bounds": [[-14.275399208068848, -1.026049256324768, -13.268314361572266],
+        [13.287308692932129, 24.86863899230957, 11.898303031921387]]
+    }
+  }
+}

@@ -1,6 +1,8 @@
 node_modules/
 dist/
 public/r16/
+public/r17b/
+public/.r17b-*/
 public/p08/
 public/p012b/
 public/p012d/
