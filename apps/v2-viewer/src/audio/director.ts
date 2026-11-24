@@ -1,3 +1,4 @@
+import { spokenAlias, type LiveVoiceIdentity } from './live-alias.ts';
 import { demoName, type NameId } from './named-voice.ts';
 import type { Effect, Snapshot } from '../../../../packages/v2-events/src/protocol.ts';
 
@@ -10,6 +11,7 @@ export type CueRecord = {
   revision: number;
   disposition: string;
   seatId?: string;
+  liveGift?: { seq: number; roomEpoch: number; connection: number };
 };
 
 export type Binding = { actorId: string; seatId: string };
@@ -24,6 +26,7 @@ export type Cue = {
   sound: GiftSound;
   sequence: number;
   count: number;
+  liveIdentity?: LiveVoiceIdentity;
   identity?: Readonly<{ epoch: number; nameId: NameId; count: number; displayName: string }>;
 };
 
@@ -109,6 +112,9 @@ export class AudioDirector {
       state.camera.activeRequestId === intent.requestId && state.camera.activeActorId === binding.actorId &&
       avatar
       ? intent : undefined;
+    if (this.active?.cue.liveIdentity && spokenAlias(avatar?.displayName) !== this.active.cue.liveIdentity.alias) {
+      this.cut('name-changed');
+    }
     const idle = state.camera.mode === 'CINEMATIC' && !intent && state.camera.pendingGivers === 0;
 
     const active = this.active?.cue;
@@ -122,11 +128,11 @@ export class AudioDirector {
         this.drop(key, 'expired');
         continue;
       }
-      if (cue.identity && cue.binding && !state.avatars.some(value => value.visible &&
+      if ((cue.identity || cue.liveIdentity) && cue.binding && !state.avatars.some(value => value.visible &&
           value.actorId === cue.binding?.actorId && value.seatId === cue.binding.seatId &&
-          value.displayName === cue.identity?.displayName)) {
+          (cue.liveIdentity ? spokenAlias(value.displayName) === cue.liveIdentity.alias : value.displayName === cue.identity?.displayName))) {
         this.sink.discard?.(key);
-        this.pending.set(key, { ...cue, identity: undefined });
+        this.pending.set(key, { ...cue, identity: undefined, liveIdentity: undefined });
         this.count('name-changed');
       }
     }
@@ -182,6 +188,8 @@ export class AudioDirector {
       ? { actorId: effect.actorId, seatId: record.seatId } : undefined;
     if (effect.dedicatedFocus && !binding) { this.count('binding-missing'); return; }
     const label = this.live ? undefined : demoName(effect.displayName);
+    const alias = this.live && binding && record.liveGift ? spokenAlias(effect.displayName) : undefined;
+    const liveIdentity = alias && record.liveGift ? { ...record.liveGift, alias, count: effect.giftCount } : undefined;
     const sound = giftSound(effect.giftId);
     const identity = label && binding && effect.giftCount >= 1 && effect.giftCount <= 8
       ? { epoch: record.epoch, nameId: label, count: effect.giftCount, displayName: effect.displayName } : undefined;
@@ -191,7 +199,7 @@ export class AudioDirector {
         return;
       }
       // Pending survives only while voice is waiting. Supersede it without rearming the chime or wait deadline.
-      const next = { ...previous, sound, identity, sequence: record.sequence, count: previous.count + effect.giftCount };
+      const next = { ...previous, sound, identity, liveIdentity: undefined, sequence: record.sequence, count: previous.count + effect.giftCount };
       this.pending.set(request, next);
       this.sink.prepare?.(next);
       this.count('coalesced');
@@ -200,7 +208,7 @@ export class AudioDirector {
     if (!this.consume(record.room, request)) return;
     if (this.pending.size >= maxPending) { this.count('queue-capacity'); return; }
     const cue: Cue = { room: record.room, request, binding, sequence: record.sequence, identity,
-      count: effect.giftCount, sound, expires: effect.atMs + (binding ? pendingTTL : overlayTTL) };
+      count: effect.giftCount, sound, liveIdentity, expires: effect.atMs + (binding ? pendingTTL : overlayTTL) };
     this.pending.set(request, cue);
     this.sink.prepare?.(cue);
   }

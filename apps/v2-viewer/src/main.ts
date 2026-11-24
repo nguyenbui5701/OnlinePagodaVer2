@@ -172,6 +172,10 @@ async function boot() {
   const audio = audioRequested
     ? new AudioManager(timing.focusHoldMs, () => start === undefined ? -1 : Math.floor(performance.now() - start), {
       live: liveAudio,
+      prepareLive: liveAudio ? (identity, signal) => {
+        if (!overlayReceiver) throw new Error('voice-session');
+        return overlayReceiver.voice(identity, signal);
+      } : undefined,
       idle: liveAudio ? { seed } : query.get('idlevoice') === 'on' ? { seed, gap: idleGap(query.get('idlegap')) } : undefined,
       dynamic: !liveAudio && query.get('dynamicvoice') === 'on',
       loadIdleSpeech: liveAudio || query.get('idlevoice') === 'on' ? loadIdleCorpus : undefined,
@@ -189,7 +193,15 @@ async function boot() {
     if (!event.isTrusted || !navigator.userActivation?.isActive) return;
     if (!lost && !disposed && !shaderFailed && !gl.isContextLost()) audioAction(manager => manager.unlock());
   };
-  if (liveAudio) canvas.addEventListener('click', unlockAudio);
+  const emergencyMute = (event: KeyboardEvent) => {
+    if (event.isTrusted && event.key.toLowerCase() === 'm' && !event.ctrlKey && !event.altKey && !event.metaKey) {
+      audioAction(manager => manager.suspend('operator-key'));
+    }
+  };
+  if (liveAudio) {
+    canvas.addEventListener('click', unlockAudio);
+    window.addEventListener('keydown', emergencyMute);
+  }
   let last: number | undefined;
   const frameTimes: number[] = [];
   const visited = new Set<string>();
@@ -379,6 +391,7 @@ async function boot() {
     abort.abort();
     disposeLive?.();
     canvas.removeEventListener('click', unlockAudio);
+    window.removeEventListener('keydown', emergencyMute);
     audio?.dispose();
     cancelAnimationFrame(req);
     canvas.removeEventListener('webglcontextlost', contextLost);

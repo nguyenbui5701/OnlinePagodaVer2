@@ -1,4 +1,6 @@
 import type { DemoEvent, SessionEvent } from '../../../packages/v2-events/src/protocol.ts';
+import type { LiveVoiceIdentity } from './audio/live-alias.ts';
+import { readVoicePcm } from './audio/named-voice.ts';
 import type { AudioApplied } from './live-audio-settings.ts';
 import { GatewayError, postGateway } from './live-api.ts';
 
@@ -166,5 +168,10 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status, audioSta
   window.addEventListener('pagehide', dispose, { once: true });
   window.addEventListener('pageshow', event => { if (event.persisted && closed) location.reload(); }, { once: true });
   return { attach, setRendererReady, connect: (username: string) => claim('/connect', { username }),
-    disconnect: () => request('/disconnect'), dispose };
+    disconnect: () => request('/disconnect'),
+    async voice(identity: LiveVoiceIdentity, signal: AbortSignal) {
+      if (!overlay || !watching || closed || !rendererReady) throw new Error('voice-session');
+      return readVoicePcm(await postGateway('/named-voice', { client, ...identity },
+        AbortSignal.any([abort.signal, signal]), false, 8500));
+    }, dispose };
 }

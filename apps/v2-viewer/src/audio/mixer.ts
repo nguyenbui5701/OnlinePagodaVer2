@@ -14,6 +14,7 @@ export type AudioMark = {
   event: string; wallMs: number; sceneMs: number; contextSec: number;
   room?: string; request?: string; actor?: string; seat?: string; effectSequence?: number;
   variant?: string; seconds?: number; reason?: string; ambienceGain?: number; sfxGain?: number;
+  channelGains?: Record<string, number>;
 };
 
 export class Mixer {
@@ -277,6 +278,10 @@ export class Mixer {
 
   get idlePlaying() { return !!this.idle; }
 
+  stopNamed() {
+    if (this.voice?.key === 'named') this.stopVoice('named-off');
+  }
+
   cut(reason: string) {
     this.stopVoice(reason);
     this.stopEffects();
@@ -409,7 +414,10 @@ export class Mixer {
     this.mark({ event, wallMs: performance.now(), sceneMs: this.sceneMs, contextSec: this.context.currentTime,
       room: cue?.room, request: cue?.request, actor: cue?.binding?.actorId, seat: cue?.binding?.seatId,
       effectSequence: cue?.sequence, variant, seconds, reason,
-      ambienceGain: this.volume.ambience * (this.voice ? .28 : 1),
-      sfxGain: this.volume.sfx * (this.voice ? .48 : 1) });
+      ambienceGain: this.live ? this.ambienceGain.gain.value : this.volume.ambience * (this.voice ? .28 : 1),
+      sfxGain: this.live ? this.sfxGain.gain.value : this.volume.sfx * (this.voice ? .48 : 1),
+      ...(this.live ? { channelGains: { master: this.master.gain.value, water: this.waterGain.gain.value,
+        wind: this.windGain.gain.value, thanks: this.voiceGain.gain.value, idleBell: this.bellGain.gain.value,
+        idleWish: this.wishGain.gain.value } } : {}) });
   }
 }

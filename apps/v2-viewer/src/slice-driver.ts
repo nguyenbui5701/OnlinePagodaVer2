@@ -97,7 +97,7 @@ export class SliceDriver {
   update(atMs: number) {
     if (this.observeAudio) this.audioRecords = [];
     for (const { seq, event } of this.liveQueue.splice(0)) {
-      this.ingest({ ...event, atMs });
+      this.ingest({ ...event, atMs }, seq);
       // A rejected final or session-limit cannot be acknowledged or skipped by a later sequence.
       if (!this.liveDeliveryFailed) this.liveAck = seq;
     }
@@ -123,7 +123,7 @@ export class SliceDriver {
       audio: this.observeAudio ? { epoch: this.audioEpoch, records: this.audioRecords } : undefined };
   }
 
-  private ingest(event: DemoEvent | SessionEvent) {
+  private ingest(event: DemoEvent | SessionEvent, seq?: number) {
     const result = this.engine.ingest(event);
     if (event.type === 'session' && result.disposition === 'accepted') {
       this.chat = undefined;
@@ -138,10 +138,12 @@ export class SliceDriver {
         (event.type === 'gift' && event.phase === 'final' && ['stale', 'invalid'].includes(result.disposition)))) {
       this.liveDeliveryFailed = true;
     }
-    this.record(event.atMs, result.effects, result.disposition);
+    const liveGift = seq !== undefined && event.type === 'gift' && event.phase === 'final' && result.disposition === 'accepted'
+      ? { seq, roomEpoch: event.roomEpoch, connection: event.connection } : undefined;
+    this.record(event.atMs, result.effects, result.disposition, liveGift);
   }
 
-  private record(atMs: number, effects: Effect[], disposition?: string) {
+  private record(atMs: number, effects: Effect[], disposition?: string, liveGift?: CueRecord['liveGift']) {
     const state = this.engine.snapshot();
     if (state.roomSessionId !== this.roomSessionId) {
       this.acknowledgements.clear();
@@ -156,7 +158,7 @@ export class SliceDriver {
       if (this.observeAudio && effect.type !== 'chatCue' && effect.type !== 'likeRipple') {
         const seatId = effect.type === 'giftFx' && effect.actorId
           ? state.avatars.find(avatar => avatar.actorId === effect.actorId && avatar.visible)?.seatId : undefined;
-        this.audioRecords.push({ effect, seatId, sequence: ++this.audioSequence, epoch: this.audioEpoch,
+        this.audioRecords.push({ effect, seatId, liveGift, sequence: ++this.audioSequence, epoch: this.audioEpoch,
           revision: state.revision, room: state.roomSessionId, disposition: disposition ?? 'advance' });
       }
     }

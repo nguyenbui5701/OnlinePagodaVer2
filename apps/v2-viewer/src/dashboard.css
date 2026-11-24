@@ -34,6 +34,8 @@ dd { margin: 3px 0 0; font-weight: 650; font-variant-numeric: tabular-nums; }
 .settings-group h3 { margin-bottom: 7px; }
 .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
 .settings-group:last-child .fields { grid-template-columns: 1fr; }
+#audio-mute { float: right; margin-left: 8px; color: #ffe2dc; background: #5d283c; border-color: #99536a; }
+.audio-option input { width: auto; min-height: 0; margin: 7px 4px 0 0; accent-color: #cdb6ff; }
 #audio-state { color: #dfd0f6; }
 #audio-fields { border: 0; padding: 0; min-width: 0; margin: 16px 0 10px; display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }

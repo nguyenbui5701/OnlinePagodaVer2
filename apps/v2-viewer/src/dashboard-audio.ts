@@ -1,6 +1,6 @@
 import { GatewayError, postGateway } from './live-api.ts';
 import { audioChannels, readAudioSnapshot, type AudioApplied, type AudioChannel, type AudioSnapshot,
-  type LiveAudioSettings } from './live-audio-settings.ts';
+  type AudioPatch } from './live-audio-settings.ts';
 
 const labels: Record<AudioChannel, string> = {
   master: 'Âm thanh tổng', water: 'Tiếng nước', wind: 'Tiếng gió', giftChime: 'Chuông nhận quà',
@@ -44,88 +44,179 @@ export function dashboardAudio() {
     inputs.set(key, { enabled, volume, value });
   }
 
+  const mute = element<HTMLButtonElement>('audio-mute');
+  const named = element<HTMLInputElement>('audio-named');
+  const variety = element<HTMLInputElement>('audio-variety');
+  const intervalError = element('audio-idle-error');
   let desired: AudioSnapshot | undefined;
-  let revision = 0;
-  let queued: LiveAudioSettings | undefined;
+  let available = false;
+  let invalidDraft = false;
   let sending = false;
-  let timer: ReturnType<typeof setTimeout>;
-  let nextSaveAt = 0;
-  let failed = false;
+  let muting = false;
+  let unconfirmedMute = false;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  let backoffUntil = 0;
+  const pending = new Map<string, { value: AudioPatch[string]; fence?: string }>();
 
-  function load(snapshot: AudioSnapshot) {
-    revision = snapshot.revision;
+  function use(snapshot: unknown, fromPoll = false) {
+    const next = readAudioSnapshot(snapshot);
+    if (!next?.muteFence || !next.instance || retiredInstances.has(next.instance)) return;
+    if (desired && desired.instance !== next.instance) {
+      if (!fromPoll) return;
+      if (desired.instance) retiredInstances.add(desired.instance);
+      if (retiredInstances.size > 16) retiredInstances.delete(retiredInstances.values().next().value!);
+      pending.clear();
+    } else if (desired && next.revision < desired.revision) return;
+    if (desired?.muteFence !== next.muteFence) pending.delete('master.enabled');
+    desired = next;
+    syncInputs();
+  }
+  const retiredInstances = new Set<string>();
+
+  function syncInputs() {
+    if (!desired) return;
+    const s = desired.settings;
     for (const [key, { enabled, volume, value }] of inputs) {
-      enabled.checked = snapshot.settings[key].enabled;
-      volume.value = String(snapshot.settings[key].volume);
-      value.value = volume.value + '%';
+      if (!pending.has(key + '.enabled')) enabled.checked = key === 'master' && (muting || unconfirmedMute) ? false : s[key].enabled;
+      if (!pending.has(key + '.volume') && document.activeElement !== volume) {
+        volume.value = String(s[key].volume);
+        value.value = volume.value + '%';
+      }
     }
-    interval.value = snapshot.settings.idleSeconds === null ? '' : String(snapshot.settings.idleSeconds);
+    if (!pending.has('idleSeconds') && !invalidDraft && document.activeElement !== interval) interval.value = s.idleSeconds?.toString() ?? '';
+    if (!pending.has('namedEnabled')) named.checked = !!s.namedEnabled;
+    if (!pending.has('namedVariety')) variety.checked = s.namedVariety !== false;
+    inputs.get('master')!.enabled.disabled = muting || unconfirmedMute;
+  }
+
+  function schedule(delay = 120) {
+    clearTimeout(timer);
+    timer = undefined;
+    if (!sending && available && pending.size) {
+      timer = setTimeout(() => { timer = undefined; void save(); }, Math.max(delay, backoffUntil - performance.now()));
+    }
   }
 
   async function save() {
-    if (!queued || sending || failed || !desired) return;
-    const settings = queued;
-    queued = undefined;
+    if (sending || !desired || !available || !pending.size) return;
     sending = true;
-    nextSaveAt = performance.now() + 1500;
+    const batch = new Map(pending);
     try {
-      const saved = readAudioSnapshot(await (await postGateway('/save-audio', { revision, settings })).json());
-      if (!saved) throw new Error('audio-settings');
-      revision = saved.revision;
-      if (!desired || desired.revision <= revision) desired = saved;
-      message.textContent = queued ? 'Đang chờ lưu thay đổi mới…' : 'Đã lưu cài đặt âm thanh.';
-    } catch (error) {
-      failed = true;
+      for (let attempt = 0; attempt < 3; attempt++) {
+        const current: AudioSnapshot = desired;
+        const entries = [...batch].filter(([key, intent]) => pending.get(key) === intent &&
+          (key !== 'master.enabled' || (!muting && intent.fence === current.muteFence)));
+        if (!entries.length) break;
+        const patch = Object.fromEntries(entries.map(([key, intent]) => [key, intent.value]));
+        try {
+          const saved = await (await postGateway('/patch-audio', { revision: current.revision, fence: current.muteFence, patch })).json();
+          for (const [key, intent] of entries) if (pending.get(key) === intent) pending.delete(key);
+          use(saved);
+          if (!muting && !unconfirmedMute) message.textContent = 'Đã lưu cài đặt âm thanh.';
+          return;
+        } catch (error) {
+          if (error instanceof GatewayError && error.status === 409) {
+            use((error.body as { audio?: unknown })?.audio);
+            continue;
+          }
+          if (error instanceof GatewayError && error.status === 429) {
+            backoffUntil = performance.now() + 2200;
+            if (!muting && !unconfirmedMute) message.textContent = 'Gateway đang giới hạn lượt lưu. Đang chờ thử lại.';
+            return;
+          }
+          throw error;
+        }
+      }
+      backoffUntil = performance.now() + 250;
+    } catch {
+      backoffUntil = performance.now() + 2200;
+      for (const [key, intent] of batch) if (pending.get(key) === intent) pending.delete(key);
+      if (!muting && !unconfirmedMute) message.textContent = 'Chưa xác nhận lưu được thay đổi. Kiểm tra Gateway rồi chỉnh lại.';
       reload.hidden = false;
-      message.textContent = error instanceof GatewayError && error.reason === 'SETTINGS_CONFLICT'
-        ? 'Một Dashboard khác đã lưu thay đổi. Nạp bản đã lưu trước khi chỉnh tiếp.'
-        : 'Chưa xác nhận lưu được âm thanh. Nạp bản đã lưu để kiểm tra, rồi chỉnh lại nếu cần.';
+      syncInputs();
     } finally {
       sending = false;
       schedule();
     }
   }
 
-  function schedule() {
-    clearTimeout(timer);
-    if (!sending && queued && desired && !failed) {
-      timer = setTimeout(() => void save(), Math.max(300, nextSaveAt - performance.now()));
+  function change(key: string, value: AudioPatch[string], delay = 0) {
+    if (!desired || !available) return;
+    pending.set(key, { value, fence: desired.muteFence });
+    schedule(delay);
+  }
+
+  async function muteAll() {
+    if (muting) return;
+    muting = true;
+    pending.delete('master.enabled');
+    syncInputs();
+    message.textContent = 'Đang gửi yêu cầu tắt tiếng ưu tiên…';
+    try {
+      const snapshot = readAudioSnapshot(await (await postGateway('/mute-audio')).json());
+      if (!snapshot || snapshot.settings.master.enabled) throw new Error('mute');
+      use(snapshot);
+      unconfirmedMute = false;
+      message.textContent = snapshot.warning === 'UNSAVED' ? 'Gateway đã tắt tiếng. Chưa ghi được xuống đĩa.'
+        : 'Đã lưu lệnh tắt âm thanh. Đang chờ Overlay phản hồi.';
+    } catch {
+      unconfirmedMute = true;
+      message.textContent = 'Chưa xác nhận tắt tiếng. Thử lại hoặc nhấn M ngay trên Overlay.';
+    } finally {
+      muting = false;
+      syncInputs();
+      schedule();
     }
   }
 
-  function change() {
-    if (!desired || failed || !interval.reportValidity()) return;
-    const channels = Object.fromEntries([...inputs].map(([key, { enabled, volume }]) =>
-      [key, { enabled: enabled.checked, volume: volume.valueAsNumber }])) as Record<AudioChannel, { enabled: boolean; volume: number }>;
-    queued = { ...channels, idleSeconds: interval.value === '' ? null : interval.valueAsNumber };
-    message.textContent = 'Đang chờ lưu…';
-    schedule();
+  mute.addEventListener('click', () => void muteAll());
+  for (const [key, { enabled, volume }] of inputs) {
+    enabled.addEventListener('change', () => {
+      if (key === 'master' && !enabled.checked) void muteAll();
+      else change(key + '.enabled', enabled.checked);
+    });
+    volume.addEventListener('change', () => change(key + '.volume', volume.valueAsNumber, 125));
+    volume.addEventListener('blur', syncInputs);
   }
-  fields.addEventListener('change', change);
-  interval.addEventListener('change', change);
+  named.addEventListener('change', () => change('namedEnabled', named.checked));
+  variety.addEventListener('change', () => change('namedVariety', variety.checked));
+  interval.addEventListener('change', () => {
+    const value = interval.valueAsNumber;
+    invalidDraft = interval.validity.badInput || (interval.value !== '' && (!Number.isInteger(value) || value < 10 || value > 120));
+    intervalError.hidden = !invalidDraft;
+    interval.setAttribute('aria-invalid', String(invalidDraft));
+    if (!invalidDraft) change('idleSeconds', interval.value === '' ? null : value);
+  });
   reload.addEventListener('click', () => {
-    if (!desired) return;
-    queued = undefined;
-    failed = false;
+    invalidDraft = false;
+    intervalError.hidden = true;
+    interval.setAttribute('aria-invalid', 'false');
     reload.hidden = true;
-    load(desired);
-    message.textContent = 'Đã nạp bản lưu.';
+    syncInputs();
   });
 
-  return (snapshot?: AudioSnapshot, applied?: AudioApplied | null) => {
-    desired = snapshot;
-    fields.disabled = interval.disabled = !snapshot;
-    reload.disabled = !snapshot;
-    if (snapshot && !sending && !queued && !failed && snapshot.revision >= revision && snapshot.revision !== revision) load(snapshot);
-    schedule();
-    element('audio-state').textContent = snapshot
-      ? 'Đã lưu r' + snapshot.revision + ' · Overlay ' + (applied ? 'r' + applied.revision + ' · ' + states[applied.state] : 'chưa báo trạng thái')
+  return (snapshot?: AudioSnapshot, applied?: AudioApplied | null, provider?: string) => {
+    available = !!snapshot;
+    if (snapshot) use(snapshot, true);
+    fields.disabled = interval.disabled = named.disabled = variety.disabled = !available;
+    const state = desired;
+    element('audio-state').textContent = snapshot && state
+      ? (state.warning === 'UNSAVED' ? 'Gateway r' : 'Đã lưu r') + state.revision + ' · Overlay ' +
+        (applied ? 'r' + applied.revision + ' · ' + states[applied.state] : 'chưa báo trạng thái')
       : 'Chưa đọc được cấu hình âm thanh từ Gateway.';
     element('audio-clips').textContent = applied
       ? 'Giọng cảm ơn · ' + clipStates[applied.thanks] + ' / Lời chúc · ' + clipStates[applied.wishes] : '';
+    element('audio-provider').textContent = ({
+      OFF: 'gTTS đọc tên đang tắt.', READY: 'gTTS có thể nhận yêu cầu. Dùng câu cảm ơn chung nếu trễ.',
+      UNAVAILABLE: 'gTTS đang không khả dụng. Dùng câu cảm ơn chung.',
+      STANDBY: 'Đã cấu hình gTTS. Chờ bật kênh cảm ơn và đọc tên.',
+      PENDING: 'gTTS chưa tổng hợp clip trong phiên này.',
+    } as Record<string, string>)[provider ?? 'OFF'] ?? '';
     const warning = element('audio-warning');
     warning.hidden = !snapshot?.warning;
-    warning.textContent = snapshot?.warning === 'INVALID' ? 'Tệp âm thanh không hợp lệ. Đang dùng mặc định tắt.'
+    warning.textContent = snapshot?.warning === 'UNSAVED' ? 'Đã tắt trong Gateway. Kiểm tra quyền ghi và lưu lại trước khi khởi động lại.'
+      : snapshot?.warning === 'INVALID' ? 'Tệp âm thanh không hợp lệ. Đang dùng mặc định tắt.'
       : 'Chưa lưu âm thanh. Mặc định đang tắt.';
+    if (!sending && !timer) schedule();
   };
 }

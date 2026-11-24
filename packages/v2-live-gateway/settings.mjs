@@ -4,7 +4,7 @@ import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { liveDefaults, validSettings } from '../../apps/v2-viewer/src/live-settings.ts';
 
-import { audioDefaults, validAudioSettings } from '../../apps/v2-viewer/src/live-audio-settings.ts';
+import { audioDefaults, patchAudio, validAudioSettings } from '../../apps/v2-viewer/src/live-audio-settings.ts';
 
 const audioPath = fileURLToPath(new URL('./data/audio-settings.json', import.meta.url));
 const settingsPath = fileURLToPath(new URL('./data/settings.json', import.meta.url));
@@ -43,5 +43,27 @@ export class SettingsStore {
 }
 
 export class AudioSettingsStore extends SettingsStore {
+  muteFence = randomUUID();
+  instance = randomUUID();
+  priorityUsed = false;
   constructor(path = audioPath) { super(path, audioDefaults, validAudioSettings); }
+  get desired() { return { ...this.snapshot, muteFence: this.muteFence, instance: this.instance }; }
+
+  patch(revision, fence, values) {
+    const settings = patchAudio(this.snapshot.settings, values);
+    if (!settings) return 'INVALID_SETTINGS';
+    if (values['master.enabled'] === true && fence !== this.muteFence) return 'STALE_ENABLE';
+    return this.save(revision, settings);
+  }
+
+  mute() {
+    const current = this.snapshot;
+    const settings = { ...current.settings, master: { ...current.settings.master, enabled: false } };
+    this.muteFence = randomUUID();
+    this.priorityUsed = true;
+    if (this.save(current.revision, settings)) {
+      this.snapshot = { revision: current.revision + 1, settings, warning: 'UNSAVED' };
+    }
+    return this.desired;
+  }
 }

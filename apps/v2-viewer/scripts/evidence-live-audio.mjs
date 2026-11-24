@@ -10,6 +10,7 @@ import { Gateway } from '../../../packages/v2-live-gateway/gateway.mjs';
 import { createGatewayServer } from '../../../packages/v2-live-gateway/server.mjs';
 import { AudioSettingsStore, SettingsStore } from '../../../packages/v2-live-gateway/settings.mjs';
 import { mapEvent } from '../../../packages/v2-live-gateway/mapper.mjs';
+import { recordR2 } from './evidence-live-audio-r2.mjs';
 import { liveDefaults } from '../src/live-settings.ts';
 
 const origin = 'http://127.0.0.1:5189';
@@ -25,6 +26,8 @@ let stops = 0;
 let failLink = false;
 let saves = 0;
 const audioPaths = new Set();
+const r2 = process.argv.includes('--r2');
+const voiceTiming = [];
 const withoutIdle = process.argv.includes('--without-idle-library');
 const gateway = new Gateway((username, deliver) => {
   assert.equal(username, 'audio_fixture');
@@ -66,11 +69,18 @@ async function browserContext(viewerPort) {
     const url = new URL(request.url());
     url.port = String(server.address().port);
     if (failLink && url.pathname === '/poll' && request.method() === 'POST') return route.abort('connectionrefused');
-    if (url.pathname === '/save-audio' && request.method() === 'POST') saves++;
+    if (['/save-audio', '/patch-audio'].includes(url.pathname) && request.method() === 'POST') saves++;
     const headers = await request.allHeaders();
     delete headers.host;
     delete headers['content-length'];
+    const started = performance.now();
     const response = await fetch(url, { method: request.method(), headers, body: request.postData() ?? undefined });
+    if (r2 && url.pathname === '/named-voice' && request.method() === 'POST') {
+      const timing = response.headers.get('server-timing')?.match(/^(cold|warm|cache);dur=([\d.]+), template;desc="(\d+)"$/);
+      const reason = response.ok ? undefined : (await response.clone().json()).reason;
+      voiceTiming.push({ status: response.status, mode: timing?.[1], ms: performance.now() - started,
+        serviceMs: timing ? Number(timing[2]) : undefined, template: timing ? Number(timing[3]) : undefined, reason });
+    }
     const forwarded = Object.fromEntries(response.headers);
     delete forwarded['content-encoding'];
     delete forwarded['content-length'];
@@ -93,10 +103,17 @@ function installCapture() {
     const ctx = this.context;
     if (target !== ctx.destination || window.audioTap) return result;
     const pcm = [];
+    const blocks = [];
     const node = ctx.createScriptProcessor(1024, 1, 1);
     node.onaudioprocess = event => {
       const data = event.inputBuffer.getChannelData(0);
-      for (const sample of data) pcm.push(Math.max(-32768, Math.min(32767, Math.round(sample * 32768))));
+      let peak = 0;
+      for (const sample of data) {
+        const n = Math.max(-32768, Math.min(32767, Math.round(sample * 32768)));
+        pcm.push(n);
+        peak = Math.max(peak, Math.abs(n));
+      }
+      blocks.push({ wall: performance.timeOrigin + performance.now(), peak });
     };
     connect.call(this, node);
     const silent = ctx.createGain();
@@ -105,6 +122,7 @@ function installCapture() {
     connect.call(silent, target);
     window.audioTap = {
       rate: ctx.sampleRate,
+      blocks,
       sample: () => pcm.length,
       encode: () => {
         const bytes = new Uint8Array(Int16Array.from(pcm).buffer);
@@ -188,6 +206,11 @@ try {
     if (expected) await wait(() => gateway.audioApplied?.state === expected, 'audio state ' + expected);
   }
 
+  if (r2) {
+    await recordR2({ dashboard, overlay, gateway, audio, receive: value => receive(value), room, wait, waitPage,
+      apply, voiceTiming, sha, wav, metrics, browser });
+    assert.deepEqual(errors, []);
+  } else {
   await apply({ master: true, wind: false, idleBell: false, 'water-volume': 75 }, 'LOCKED');
   await overlay.evaluate(() => document.querySelector('#capture').click());
   assert.equal(await overlay.evaluate(() => window.createdContexts), 0, 'synthetic click cannot unlock');
@@ -448,6 +471,7 @@ try {
     ...result,
   }, null, 2) + '\n');
   console.log('Live audio fixture passed', result.recording, result.clips);
+  }
 } finally {
   await browser?.close();
   await built?.close();

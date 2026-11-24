@@ -2,7 +2,8 @@ import { execFile, spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const script = fileURLToPath(new URL('./synthesize.py', import.meta.url));
-const failures = { 69: 'service-unreachable', 75: 'service-http-failure', 77: 'disabled', 78: 'dependency-unavailable' };
+const failures = { 69: 'service-unreachable', 75: 'service-http-failure', 77: 'disabled', 78: 'dependency-unavailable',
+  79: 'service-rate-limited', 80: 'service-forbidden' };
 
 function launch(executable, args, env) {
   const detached = process.platform !== 'win32';
@@ -57,14 +58,17 @@ export function demoEnabled(env = process.env) {
 
 export function createSynthesizer() {
   if (!demoEnabled()) return undefined;
-  const env = { ...process.env, V2_GTTS_DEMO_ENABLED: '1' };
+  return warmSynthesizer(script, { ...process.env, V2_GTTS_DEMO_ENABLED: '1' });
+}
+
+export function warmSynthesizer(entry, env) {
   delete env.V2_TTS_TOKEN;
   let ready;
   let idle;
   let closed = false;
   const warm = () => {
     // Import dependencies while idle. Python cannot synthesize until a validated template is sent.
-    ready = launch(env.TTS_PYTHON || 'python', [script], env);
+    ready = launch(env.TTS_PYTHON || 'python', [entry], env);
     void ready.result.catch(() => {});
     idle = setTimeout(() => { ready.stop(); ready = undefined; }, 120_000);
     idle.unref();

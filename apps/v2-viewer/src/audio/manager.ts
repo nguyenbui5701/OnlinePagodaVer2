@@ -2,7 +2,7 @@ import type { AudioApplied, AudioSnapshot } from '../live-audio-settings.ts';
 import type { Snapshot } from '../../../../packages/v2-events/src/protocol.ts';
 import { AudioDirector, type Binding, type Cue, type CueRecord } from './director.ts';
 import { IdleBlessingDirector, idleGap, type IdleCue } from './idle-blessing.ts';
-import { loopbackVoice, NamedVoice, type NamedProvider } from './named-voice.ts';
+import { loopbackVoice, NamedVoice, type LiveNamedProvider, type NamedProvider } from './named-voice.ts';
 import { Mixer, type AudioMark, type MixLevels } from './mixer.ts';
 
 type Status = 'LOCKED' | 'STARTING' | 'READY' | 'PLAYING' | 'MUTED' | 'BLOCKED' | 'UNAVAILABLE' |
@@ -10,6 +10,7 @@ type Status = 'LOCKED' | 'STARTING' | 'READY' | 'PLAYING' | 'MUTED' | 'BLOCKED' 
 
 type AudioOptions = {
   live?: boolean;
+  prepareLive?: LiveNamedProvider;
   idle?: { seed: number; gap?: number };
   dynamic?: boolean;
   namedProvider?: NamedProvider;
@@ -75,10 +76,11 @@ export class AudioManager {
       this.named = new NamedVoice(options.namedProvider);
       this.dynamic = 'DYNAMIC_TTS_FIXTURE';
     }
+    if (this.live && options.prepareLive) this.named = new NamedVoice(undefined, options.prepareLive);
     this.director = new AudioDirector(holdMs, {
       sfx: cue => this.mixer?.sfx(cue),
       voice: (cue, available, waitUntil) => this.playGiftVoice(cue, available, waitUntil),
-      prepare: cue => this.named?.prefetch(cue),
+      prepare: cue => { if (!this.live || this.namedEnabled) this.named?.prefetch(cue); },
       discard: request => this.named?.cancel(request),
       cut: reason => this.mixer?.cut(reason),
     }, this.live);
@@ -108,6 +110,10 @@ export class AudioManager {
       this.generation++;
       this.setOutput(false, 'master-off');
     }
+    if (!this.namedEnabled && this.live) {
+      this.named?.clear();
+      this.mixer?.stopNamed();
+    }
     if (!current || this.failed) return;
     this.playBell = current.idleBell.enabled;
     this.playSpeech = current.idleWish.enabled;
@@ -118,6 +124,11 @@ export class AudioManager {
     }
     this.mixer?.configure(current);
     this.prepareSpeech();
+  }
+
+  private get namedEnabled() {
+    const settings = this.settings?.settings;
+    return !!(settings?.master.enabled && settings.giftThanks.enabled && settings.namedEnabled);
   }
 
   liveLink(attached: boolean, online: boolean) {
@@ -183,7 +194,7 @@ export class AudioManager {
   }
 
   get report() {
-    return { status: this.status, connected: this.session?.connected, outputEnabled: this.outputEnabled,
+    return { status: this.status, ...(this.live ? { applied: this.applied } : {}), connected: this.session?.connected, outputEnabled: this.outputEnabled,
       sfxAvailable: this.outputEnabled, ambience: this.ambience && this.outputEnabled,
       queue: this.director.queued, marks: this.marks, suppressed: this.director.suppressed,
       voice: this.mixer?.availability, dynamic: this.dynamic,
@@ -353,7 +364,9 @@ export class AudioManager {
     const mixer = this.mixer;
     if (!mixer) return 'unavailable';
     const now = this.clock();
-    const picked = this.named?.pick(cue, now, available, mixer.fallbackFits(cue, available - Math.max(0, waitUntil - now)), waitUntil);
+    const picked = !this.live || this.namedEnabled
+      ? this.named?.pick(cue, now, available, mixer.fallbackFits(cue, available - Math.max(0, waitUntil - now)), waitUntil)
+      : undefined;
     if (picked === 'waiting') return 'waiting';
     return mixer.voiceCue(cue, available, picked);
   }

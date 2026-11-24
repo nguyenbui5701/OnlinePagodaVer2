@@ -9,7 +9,7 @@ type Status = {
   status: string; reason: string; viewerCount: number; counters: LiveCounters; dropped: number;
   deliveryUncertain: boolean; receiver: 'overlay' | 'legacy' | null;
   appliedRevision: number | null; overlayReady: boolean; applyPending: boolean; canApply: boolean; canConnect: boolean; canDisconnect: boolean;
-  desired: SettingsSnapshot; audioDesired?: AudioSnapshot; audioApplied?: AudioApplied | null;
+  desired: SettingsSnapshot; audioDesired?: AudioSnapshot; audioApplied?: AudioApplied | null; namedProvider?: string;
 };
 
 const element = <T extends HTMLElement>(id: string) => document.getElementById(id)! as T;
@@ -90,7 +90,7 @@ function loadDraft(snapshot: SettingsSnapshot) {
 
 function render(state?: Status) {
   current = state;
-  renderAudio(state?.audioDesired, state?.audioApplied);
+  renderAudio(state?.audioDesired, state?.audioApplied, state?.namedProvider);
   const code = state?.status ?? 'GATEWAY_UNAVAILABLE';
   const titles: Record<string, string> = {
     OFFLINE: 'Chưa kết nối LIVE', CONNECTING: 'Đang kết nối', RECONNECTING: 'Đang kết nối lại',
