@@ -1,11 +1,29 @@
 import type { Snapshot } from '../../../../packages/v2-events/src/protocol.ts';
-import { AudioDirector, type Binding, type CueRecord } from './director.ts';
+import { AudioDirector, type Binding, type Cue, type CueRecord } from './director.ts';
+import { IdleBlessingDirector, idleGap, type IdleCue } from './idle-blessing.ts';
+import { loopbackVoice, NamedVoice, type NamedProvider } from './named-voice.ts';
 import { Mixer, type AudioMark, type MixLevels } from './mixer.ts';
 
 type Status = 'LOCKED' | 'STARTING' | 'READY' | 'PLAYING' | 'MUTED' | 'BLOCKED' | 'UNAVAILABLE' |
   'DISCONNECTED' | 'VOICE_LOADING' | 'VOICE_DEGRADED' | 'VOICE_UNAVAILABLE';
 
+type AudioOptions = {
+  idle?: { seed: number; gap?: number };
+  dynamic?: boolean;
+  namedProvider?: NamedProvider;
+  idleSpeech?: ReadonlyMap<string, Float32Array>;
+};
+
+const bells: IdleCue[] = [0, 1, 2, 3].map(i => ({ id: 'lotus-bell-' + i, kind: 'bell' }));
+
 export class AudioManager {
+  private named?: NamedVoice;
+  private dynamic = 'DYNAMIC_TTS_BLOCKED';
+  private readonly idle?: IdleBlessingDirector;
+  private readonly speech?: ReadonlyMap<string, Float32Array>;
+  private playBell = true;
+  private playSpeech = false;
+  private idlePool: IdleCue[] = bells;
   private readonly director: AudioDirector;
   private readonly marks: AudioMark[] = [];
   private mixer?: Mixer;
@@ -34,11 +52,19 @@ export class AudioManager {
   };
   private status: Status = 'LOCKED';
 
-  constructor(holdMs: number, clock: () => number) {
+  constructor(holdMs: number, clock: () => number, options: AudioOptions = {}) {
     this.clock = clock;
+    this.idle = options.idle && new IdleBlessingDirector(options.idle.seed, options.idle.gap);
+    this.speech = options.idleSpeech;
+    if (options.namedProvider) {
+      this.named = new NamedVoice(options.namedProvider);
+      this.dynamic = 'DYNAMIC_TTS_FIXTURE';
+    }
     this.director = new AudioDirector(holdMs, {
       sfx: cue => this.mixer?.sfx(cue),
-      voice: (cue, available) => this.mixer?.voiceCue(cue, available) ?? 'unavailable',
+      voice: (cue, available) => this.playGiftVoice(cue, available),
+      prepare: cue => this.named?.prefetch(cue),
+      discard: request => this.named?.cancel(request),
       cut: reason => this.mixer?.cut(reason),
     });
     this.panel.id = 'audio-controls';
@@ -50,6 +76,8 @@ export class AudioManager {
     this.test.addEventListener('click', () => this.mixer?.sfx());
     this.panel.append(this.message, this.action, ' ', this.test);
     this.addLevels();
+    if (options.idle) this.addIdleControls(options.idle.gap);
+    if (options.dynamic) this.addDynamicControl();
     document.querySelector('main')!.after(this.panel);
     document.addEventListener('visibilitychange', this.visibility);
     this.show('LOCKED');
@@ -64,7 +92,18 @@ export class AudioManager {
     if (changed) this.setOutput(false, state.connected ? 'session-change' : 'disconnect');
     // A frame spanning a session boundary may carry earlier cues. Resume past that entire batch.
     this.syncOutput(changed ? state.atMs : this.clock());
+    const gift = this.idle && delivery.records.some(record => record.effect.type === 'giftFx' &&
+      record.disposition === 'accepted' && record.room === state.roomSessionId);
+    const idleAllowed = this.outputEnabled && !gift && state.camera.mode === 'CINEMATIC' && !state.focus &&
+      state.camera.pendingGivers === 0 && this.director.queued === 0 && !this.named?.pending && !this.mixer?.busy;
+    if (this.idle && (!idleAllowed || changed)) {
+      this.idle.reset();
+      this.mixer?.stopIdle(gift ? 'gift-activity' : 'idle-ineligible');
+    }
     this.director.frame(state, delivery.epoch, delivery.records, binding);
+    const idleCue = this.idle?.update(state.atMs, idleAllowed && !changed &&
+      !this.mixer?.idlePlaying && !this.mixer?.busy && this.director.queued === 0, this.idlePool);
+    if (idleCue) this.mixer?.startIdle(idleCue.id, this.speech?.get(idleCue.id));
     this.refreshStatus();
   }
 
@@ -72,7 +111,9 @@ export class AudioManager {
     return { status: this.status, connected: this.session?.connected, outputEnabled: this.outputEnabled,
       sfxAvailable: this.outputEnabled, ambience: this.ambience && this.outputEnabled,
       queue: this.director.queued, marks: this.marks, suppressed: this.director.suppressed,
-      voice: this.mixer?.availability, dynamic: 'DYNAMIC_TTS_BLOCKED' };
+      voice: this.mixer?.availability, dynamic: this.dynamic,
+      ...(this.idle ? { idle: { playing: this.mixer?.idlePlaying ?? false, bell: this.playBell,
+        speech: this.speech?.size ? this.playSpeech : 'IDLE_SPEECH_LIBRARY_PENDING' } } : {}) };
   }
 
   suspend(reason: string) {
@@ -165,6 +206,10 @@ export class AudioManager {
     if (this.outputEnabled === enabled) return;
     this.outputEnabled = enabled;
     this.director.enable(enabled, reason, watermark);
+    if (!enabled) {
+      this.idle?.reset();
+      this.named?.clear();
+    }
     this.mixer?.enable(enabled);
   }
 
@@ -183,6 +228,80 @@ export class AudioManager {
     this.action.disabled = status === 'STARTING';
     this.action.textContent = this.muted ? 'Bật âm thanh' : 'Tắt tiếng';
     this.test.disabled = !this.outputEnabled;
+  }
+
+  private playGiftVoice(cue: Cue, available: number) {
+    const mixer = this.mixer;
+    if (!mixer) return 'unavailable';
+    const picked = this.named?.pick(cue, this.clock(), available, mixer.fallbackFits(cue, available - 350));
+    if (picked === 'waiting') return 'waiting';
+    return mixer.voiceCue(cue, available, picked);
+  }
+
+  private addIdleControls(gap?: number) {
+    const checkbox = (text: string, checked: boolean, change: (value: boolean) => void) => {
+      const label = document.createElement('label');
+      const input = document.createElement('input');
+      input.type = 'checkbox';
+      input.checked = checked;
+      input.addEventListener('change', () => {
+        change(input.checked);
+        this.idlePool = this.playBell ? [...bells] : [];
+        if (this.playSpeech && this.speech) {
+          for (const id of this.speech.keys()) this.idlePool.push({ id, kind: 'speech' });
+        }
+        this.idle?.reset();
+        this.mixer?.stopIdle('idle-options', true);
+      });
+      label.append(input, text);
+      this.panel.append(label);
+      return input;
+    };
+    checkbox(' Chu\u00f4ng l\u00fac r\u1ea3nh', true, value => { this.playBell = value; });
+    checkbox(this.speech?.size ? ' L\u1eddi ch\u00fac l\u00fac r\u1ea3nh' :
+      ' L\u1eddi ch\u00fac l\u00fac r\u1ea3nh (ch\u1edd duy\u1ec7t b\u1ea3n thu)', false,
+      value => { this.playSpeech = value; }).disabled = !this.speech?.size;
+    const label = document.createElement('label');
+    const interval = document.createElement('input');
+    interval.type = 'number';
+    interval.min = '10';
+    interval.max = '120';
+    interval.placeholder = '20?40 / 25?45';
+    if (gap !== undefined) interval.value = String(gap / 1000);
+    interval.addEventListener('change', () => {
+      const value = idleGap(interval.value);
+      interval.value = value === undefined ? '' : String(value / 1000);
+      this.idle?.setGap(value);
+    });
+    label.append(' Kho\u1ea3ng ch\u1edd l\u00fac r\u1ea3nh (gi\u00e2y) ', interval);
+    this.panel.append(label);
+  }
+
+  private addDynamicControl() {
+    const label = document.createElement('label');
+    const password = document.createElement('input');
+    const connect = document.createElement('button');
+    const status = document.createElement('output');
+    password.type = 'password';
+    password.autocomplete = 'off';
+    password.maxLength = 64;
+    connect.type = 'button';
+    connect.textContent = 'K\u1ebft n\u1ed1i gi\u1ecdng DEMO';
+    status.textContent = this.dynamic;
+    connect.addEventListener('click', () => {
+      const token = password.value;
+      password.value = '';
+      this.named?.clear();
+      this.named = undefined;
+      if (!/^[a-f0-9]{64}$/.test(token)) {
+        status.textContent = this.dynamic = 'DYNAMIC_TTS_BLOCKED';
+        return;
+      }
+      status.textContent = this.dynamic = 'DYNAMIC_TTS_AWAITING_GIFT';
+      this.named = new NamedVoice(loopbackVoice(token, state => { status.textContent = this.dynamic = state; }));
+    });
+    label.append('M\u00e3 phi\u00ean gi\u1ecdng DEMO ', password);
+    this.panel.append(label, connect, status);
   }
 
   private addLevels() {
