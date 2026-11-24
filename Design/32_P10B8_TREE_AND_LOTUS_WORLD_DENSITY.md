@@ -27,3 +27,7 @@ A: audit actual R17B and Owner screenshot; same-camera A/B baseline, identify at
 
 ## 6. Out of scope
 Fish, distant landscape, ambient particle upgrades belong B9; automated camera route redesign C0; real-seat expansion, provider, audio offline preview, gTTS changes, event schema/Engine/queue and business logic unchanged. No user names from screenshots baked into art.
+
+## Owner scope decision — 2026-11-24
+
+Owner replied “tiếp tục theo đề xuất và rules” after the three-design roadmap and recommendation to activate only Design32 art first. **OWNER_P10B8_SCOPE_GO / AI_VISUAL17_ACTIVE / P10B8_CODE_INTEGRATION_HOLD.** Activate only the R18 tree art phase from exact accepted PR18 HEAD `07f57cb35ba3ec68184abbd2c173e29a3fcc4788`, branch assets/sakura-hero-r18-polish targeting assets/sakura-hero-r17-lush. The accepted editable and two GLBs are input, immutable. See [AI Visual17](../Task/AI_VISUAL_17_P10B8_R18_TREE_POLISH.md) when issued. No Codex until SA art/binary PASS and explicit Owner art GO; lotus layout and runtime lighting follow in the integration task. This supersedes the initial design-proposed/implementation-hold wording only for B8 art. No merge or production-default switch. Existing PR26 Owner LIVE/Studio/listening and physical GPU evidence remain pending; scope GO is not final art/runtime acceptance.
