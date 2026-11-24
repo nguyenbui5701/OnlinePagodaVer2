@@ -1,39 +1,44 @@
-# AI Visual 16 — Sakura R17 Lush Radiant Blessing Tree
+# Sakura R17 — SA follow-up / PR #18
 
-**Separate artist branch:** `assets/sakura-hero-r17-lush` from **exact immutable PR #1 R16 HEAD** `d9dbeb6a81d1e667d471b8f62910829bb1ce2bd9`. Draft PR stacked on `assets/sakura-hero-r04-sa-review`. Read-only [Viewer PR #17](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/17) at `1201369e019f6ba04f7437c7dac347e56894ba2a`. See [Task AI Visual 16 §6](https://github.com/nguyenbui5701/OnlinePagodaVer2/blob/main/Task/AI_VISUAL_16_P10B3C_R17_LUSH_BLESSING_TREE.md).
+Authoritative [SA review #6032823643](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6032823643) at `36c9e327c37441a7c5406068f9aecd291e52d437`; task AI Visual 16 §7. Frozen PR #1 base `d9dbeb6a81d1e667d471b8f62910829bb1ce2bd9`; read-only PR #17 `1201369e019f6ba04f7437c7dac347e56894ba2a`. Same artist branch only, cost 0 VND.
 
-## Current truth and hard blocker
+**R17_NATIVE_BUILD_EVIDENCE_PASS / R17_ART_PARTIAL / R17_BINARY_SA_VERIFICATION_PENDING / MERGE_HOLD.** Owner final R17 Art GO PENDING. Git tree contains both GLBs, editable Blender and 24 native Cycles PNGs. Sizes match the owner build/PNG ledger; the SHA-256 values below are owner-reported, not independently decoded by SA. Metadata-only reconciliation and read-only evidence scripts; no geometry, renderer or original evidence changes.
 
-This GitHub commit contains a reproducible R17 **original procedural Blender authoring script and QA recipe**, plus verified **R16 repository metadata and historical native Cycles evidence**. **It DOES NOT contain real R17 GLBs, new .blend or R17 Cycles yet**; no invented hash, geometry result, image, import test or SA Art PASS.
+## Actual inventory and measurements
 
-**Why:** The original R16 GLBs are real Git blobs with correct metadata in PR #1, and two genuine R16 editable .blend sources plus R16 Cycles were located in `Blender_Evidence_R16`. However this AI Visual runtime has no Blender and its connected GitHub binary transport returned **empty/undecodable payload for the 5.05MB/1.39MB GLBs**. Consequently **independent R16 bytes/SHA audit could not finish**. Per Task §6 hard hold, **model production is blocked until the Owner runs the exact original-source SHA gate**; do not guess R16 geometry or claim the scripted outputs already exist. The old R16 manifest's `pending_owner_upload` descriptions are historical/stale, not proof of absent GLBs.
+| Artifact | Bytes | Owner SHA-256 | Git blob SHA |
+|---|---:|---|---|
+| `sakura_hero_r17.glb` | 17851064 | `4115ba647eaa960e5fd2e9949462b52a2010231bf84ac25b574447bd36c5a73f` | `8d9e45711d2677ab400436a459e8630ed8428a32` |
+| `sakura_hero_r17_eco.glb` | 3854076 | `cc07824bef901d30ce833880ab835027d027f15ab26eb327e6b6d6bb46d2d679` | `e2de5ae499e9f369e3f3becc728d08fc13552cde` |
+| `sakura_hero_r17_editable.blend` | 31319198 | `8fadb16d1458f21fe95e63e00c2dc6a1feaba8aaa19e0d861b7fb2a44076beb9` | `4f931ac7cff55393ab17cb48d5f152c01cc93787` |
 
-## R17 bounded design (to be validated in real Blender)
+| Profile | R16 triangles | R17 triangles | Added flowers | R17 meshes/materials | File size ratio |
+|---|---:|---:|---:|---:|---:|
+| QUALITY | 191288 | 220088 | 1200 | 12/15 | 3.53x |
+| ECO | 44412 | 49452 | 420 | 11/14 | 2.77x |
 
-Rather than rebuilding trunk and roots, the generator imports **both original SHA-gated R16 GLBs**, samples **actual imported canopy mesh faces** (`Canopy_*` and `Sakura_petal_*`), and places deterministic original 3D cupped, double-sided blossom florets with three restrained rose/blush/peach materials and muted gold centers, with 3-D spacing and variable depth. Open gaps remain around the inner branches. Original R16 meshes and their PBR materials are not rewritten intentionally, while the resulting GLB exporter may restructure scene metadata and therefore the **R17 hashes are newly generated, not R16 hashes**.
+Original R16 native checksum gate and R17 export/import reported PASS by owner; 24 matched 720×1280 CPU Cycles frames (32 samples, 6 views × 2 profiles × 2 revisions) are indexed in [cycles_manifest.json](R17_Cycles_Evidence/cycles_manifest.json). All 24 Git sizes match. Stdout 146982 bytes, empty stderr, final marker `R17_NATIVE_BUILD_COMPLETE R17_LOCAL_BUILD_WITH_NATIVE_CYCLES 24 PNG`. Source: [R17_BUILD_RESULT.json](R17_BUILD_RESULT.json). No textures/images/animations/cameras reported. Full world XYZ bounds not reported; original bottom only QUALITY -0.518381 m / ECO -1.026049 m. Do not treat these as full bounds or verified root invariant.
 
-| Profile | Frozen R16 tris | Added florets (design) | Target additional tris | R17 strict cap |
-|---|---:|---:|---:|---:|
-| QUALITY | 191,288 | 1,200 | ~28,800 | 250,000 |
-| ECO | 44,412 | 420 | ~5,040 | 60,000 |
+## SA blockers and next actions (no rerender)
 
-These are **design/algorithm targets, not executed R17 measurements**. A true geometry delta, mesh counts, output bounds, origin, GLB2 SHA256 and actual file lengths are collected by the real Blender script. Root/worldline `(0,0,0)`, +Y meters, aged dark bark, gold ribbon materials and major branches remain from pinned R16. Secondary interface candidates 45/68 remain a known **proxy risk**, not quietly marked repaired.
+1. **P0 handoff:** this README, manifest, BINARY_HANDOFF and PR description now reflect existing artifacts, not pending generation.
+2. **P0 binary/compatibility:** SA cannot retrieve large binary payloads and container git DNS is blocked. Run the new read-only Blender audit: verifies exact R16/R17 SHA, GLB2 chunks/accessors/indices/finite coordinates, triangle degeneracy count, full world XYZ bounds, transforms, protected wood/branch/gold triangle multisets (0.1 mm quantization) and imported PBR, reopens existing .blend with separate ECO/QUALITY collections. No export/save/render. These are proposed checks; results pending. Original R16 .blend not independently opened; 45/68 secondary contact proxy remains unresolved.
+3. **P1 bytes/art:** reported file sizes grow much more than triangles. Audit provides actual logical POSITION/NORMAL/INDEX/other accessor sizes, primitive vertex records and BIN chunk totals. Hypotheses include flat/split normals, material seams and index width; do not assert cause before measurement. No arbitrary byte cap, no destructive optimization. SA saw ECO full/trunk pairs: original bark silhouette looks preserved; darker new flowers but canopy masses still similar. QUALITY/other views need accessible evidence. Six JPEG contact sheets (one per view, both profiles, matched R16/R17), each below 1 MiB, will be derived from original SHA-checked PNGs. Pixel differences are a proxy, not true canopy coverage or depth proof. No change to originals.
 
-## Owner native production on a separate R17 worktree (0 VND)
+## Run only the follow-up checks
 
-Checkout only the dedicated new R17 branch/worktree. From the repository root, for a local branch not already checked out:
+From the existing clean R17 artist worktree, inside the r17-lush directory:
 
 ```powershell
-git fetch origin assets/sakura-hero-r17-lush
-git worktree add -b assets/sakura-hero-r17-lush .\ReviewPR\R17_Artist origin/assets/sakura-hero-r17-lush
-Set-Location .\ReviewPR\R17_Artist\Assets3D\Review\sakura_hero\r17-lush
-& .\run_r17_blender.ps1
+git pull --ff-only origin assets/sakura-hero-r17-lush
+$Blender = Get-ChildItem "C:\Program Files\Blender Foundation" -Filter blender.exe -Recurse | Select-Object -First 1 -ExpandProperty FullName
+$script = (Resolve-Path .\audit_r17_read_only.py).Path
+$p = Start-Process -FilePath $Blender -ArgumentList @('--background','--python-exit-code','17','--python',('"{0}"' -f $script)) -Wait -PassThru -NoNewWindow -RedirectStandardOutput ".\R17_audit_stdout.log" -RedirectStandardError ".\R17_audit_stderr.log"
+if ($p.ExitCode -ne 0) { Get-Content .\R17_audit_stderr.log -Tail 100; throw "R17 audit failed" }
+py -m pip install Pillow
+py .\make_r17_review_sheets.py
 ```
 
-If PowerShell cannot locate Blender, use `& .\run_r17_blender.ps1 -Blender 'C:\Program Files\Blender Foundation\Blender 4.5\blender.exe'` with the **actual** installed location. `-SkipRender` may be used for an isolated build smoke, but **does not satisfy the Cycles gate**.
+Review `R17_READ_ONLY_AUDIT.json` for bounds/degeneracy/mismatch counts, `R17_Review_Sheets/sheet_manifest.json` and six JPEGs. A successful script execution does not equal compatibility or art PASS. If any mismatch, report it and stop, no source re-export. Commit only those new reports, audit logs and sheets on this branch. Send SA the exact R17 two GLBs and .blend plus both baseline R16 GLBs (ZIP acceptable) if remote binary retrieval remains blocked. Independent SHA/open checks remain pending until SA can inspect actual bytes.
 
-The runner verifies the **source R16 QUALITY/ECO bytes and SHA-256 before creating R17**, then invokes `author_r17_blender.py`, creates `sakura_hero_r17.glb`, `sakura_hero_r17_eco.glb`, `sakura_hero_r17_editable.blend`, and `R17_BUILD_RESULT.json`. On a full run, it renders **24 authentic 720×1280 Cycles** (6 matched cameras × R16/R17 × ECO/QUALITY) and writes `R17_Cycles_Evidence/cycles_manifest.json`, plus native stdout/stderr. The A/B rig uses the same fixed R16 three-SUN setup, AgX/None, exposure 0, 32 samples; its illustrative water plane is **render-only** and no reflection code is added to the app. The full 12-pad ring runtime cannot be claimed from Blender portraits.
-
-**Upload only actual generated R17 files and logs** to the same new artist branch after local checksum verification. Update `asset_manifest.json` with actual bytes/SHA/triangles and mark `uploaded` only after remote binary re-fetch/verification. Contact SA with actual tree/petal-close, under-crown, ring-style aerial and wide/water-facing Cycles screenshots. Do not overwrite any R16 tree or other asset source; no source branch force-push or merge.
-
-**STOP: `R17_SA_ART_REVIEW_REQUIRED`**; `R17_BOTANICAL_HERO_ART_GO` remains PENDING, native Viewer integration/RTX/LIVE remain on separate holds.
+**STOP `R17_SA_ART_REVIEW_REQUIRED`**. No merge/Codex import, no runtime shader or reflection/seat claim, no physical RTX/LIVE PASS, no R16 overwrite.
