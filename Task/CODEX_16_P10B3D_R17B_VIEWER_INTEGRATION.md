@@ -1,0 +1,74 @@
+# CODEX 16 — P1.0-B3D R17B Viewer Integration (ACTIVE)
+
+## 1. Role / scope / STOP
+You are AI Code (Codex), not AI Visual or SA. Product Owner explicitly approved final R17B and its disclosed limitations on 2026-11-24. Implement only integration of the immutable, SA-approved R17B ECO/QUALITY assets into the existing Viewer. R16 remains the default and verified same-profile fallback until separate runtime visual acceptance. No art modification/re-export, AI-generated production mesh, new water reflection algorithm, Event Engine changes, capacity changes, provider access, V1 edits, paid tools, PR merges or public LIVE. Only `apps/v2-viewer/**` allowed. STOP `P10B3D_SA_INTEGRATION_REVIEW_REQUIRED`. No automatic next phase.
+
+## 2. Immutable sources and branch
+- Repo https://github.com/nguyenbui5701/OnlinePagodaVer2
+- Start a **new isolated worktree and new branch** `feature/v2-p10b3d-r17b-integration` at [PR #17](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/17) exact HEAD `1201369e019f6ba04f7437c7dac347e56894ba2a`, stacked target branch `feature/v2-p10b3b-ambient-rings-hero`. Check current target HEAD before starting and before PR; if changed, STOP and notify SA. Do not amend PR17. PR16 parent `ee27355b2b80f847602b0f6d2a3c259e4861fc54`.
+- Read-only art [PR #18](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18) HEAD `07f57cb35ba3ec68184abbd2c173e29a3fcc4788`, branch `assets/sakura-hero-r17-lush`, source base PR1 `d9dbeb6a81d1e667d471b8f62910829bb1ce2bd9`. No merge/cherry-pick of art PR history; stage exact blobs from immutable commit. Canonical folder `Assets3D/Review/sakura_hero/r17-lush/r17b/preview/` (folder name preview does not change final approval).
+- [SA R5](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6033463655) and [SA R4](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6033394468) are the independent binary/final art evidence. Owner Art GO is recorded in Design27 §12/Design16. No need to redo Blender or artist audit.
+- New manifest `src/sakura-r17b.json` should include source commit/ref/folder, revision R17B, coordinate contract +Y up, +Z actor-forward, 1m/unit, waterY=0, per-profile exact pinned facts below. Existing R16 manifest unchanged.
+
+| Profile | File | Bytes | Triangles | Vertex records | glTF meshes / primitives / materials | SHA256 | Git blob |
+|---|---|---:|---:|---:|---|---|---|
+| QUALITY | sakura_hero_r17b.glb | 6981312 | 236888 | 297635 | 14 / 23 / 15 | 1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267 | cfcbaa2ed71bedafae959541487c91f6de42ab74 |
+| ECO | sakura_hero_r17b_eco.glb | 2149264 | 58212 | 98632 | 13 / 22 / 14 | 3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770 | d5554055ab689680ca17744653cfc49197b1e773 |
+
+Full world bounds, +Y-up:
+- QUALITY min [-14.178767204284668,-0.5183812975883484,-13.425017356872559], max [14.489616394042969,26.48044204711914,14.410984992980957].
+- ECO min [-14.275399208068848,-1.026049256324768,-13.268314361572266], max [13.287308692932129,24.86863899230957,11.898303031921387].
+- R16 SHA256 QUALITY `c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c` /5055232 bytes /191288 tris, ECO `accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173` /1393492 bytes /44412 tris. Preserve existing `src/sakura-r16.json` and staging semantics, including older immutable runtime source pin. No edits to artist source/binaries.
+
+## 3. Required reading order
+1. All main `Design/**`, especially 07, 10, 13, 14, 16, 20, 23, 24, 25, 26, 27 §6/11/12. Read this task from main before branching (design/task docs are not necessarily present on frozen runtime branch).
+2. [SA PR17 R2](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/17#pullrequestreview-6025845313), PR18 R4/R5 above, main Task AI_VISUAL_16 §§9–11 (completed reference only), CODEX15 prior acceptance evidence.
+3. At frozen runtime HEAD: `apps/v2-viewer/src/{asset.ts,verified-glb.ts,sakura-r16.json,p08-assets.json,main.ts,hero-camera.ts,camera.ts,slice-camera.ts,slice-driver.ts,community-layout.ts,seat-scene.ts,lighting.ts,water.ts,trunk-mist.ts,nameplates.ts,presence-bubbles.ts}`, existing package scripts, `scripts/stage-p08.mjs`, `scripts/evidence-p10b3b.mjs`, `P10B3B.md`, and evidence/p10b3b/visual-correction/browser.json. At art pin read asset_manifest.json, R17b final result and final native images. Read owner video/screenshots if actually available; do not invent reference access or redistribute pixels.
+
+## 4. SA assessment and acceptance constraints
+- SA binary PASS, Owner Art GO: exact GLBs accepted, zero reported degenerate triangles, original geometry/wood/gold preserved and seven approved ECO flower materials changed; no further art loop.
+- Larger R17b canopy expands X/Z. Camera and pad clearance, after-occlusion ring coverage, depth-tested mist, nameplate visibility and whole-scene costs need **native runtime** verification. Existing R16 camera thresholds are not proof for R17b. Do not hide/scale tree to evade tests.
+- R17b near triangle caps 60k ECO/250k QUALITY; actual scene triangles/draws may differ from asset counts. Do not add geometry or assume GPU performance. Known rounded lobes, darker/faceted ECO under-crown and historical R16 contact proxy accepted as art limitations. Existing water reflection is illustrative; actual Viewer reflection gap remains open, no mirror-reflection promise.
+- Preserve 12 visible pad positions (5 inner /7 outer, radii 13.8/20.2 m), only 3 Engine-authoritative seats and 9 anonymous/decorative pads, original identity/seat TTL/nameplates/chat/gift/FIFO/return semantics. All independent default-OFF B3A/B3B features remain unchanged.
+
+## 5. Phased implementation
+### Phase A — stage and verify immutable bytes
+- Add `src/sakura-r17b.json`, `scripts/stage-r17b.mjs`, `assets:r17b` script and ignored `public/r17b/` directory. Pattern existing stage-p08. Fetch art branch only if immutable source object absent, then require pinned commit/path, exact Git blob, length, SHA256, GLB2 header/chunk length. Verify **both** assets before writing; fail loudly on missing/mismatch and prevent partially staged pair/false success (use temp/atomic promotion or documented safe equivalent). No runtime GitHub downloads, no LFS/remote paid dependency, no binary commit into code PR, no merge art history. Keep `assets:p08`, `assets:p012b`, `assets:p012d` unchanged.
+- Add staging negative tests for bad bytes, wrong hash, missing object/file and pair integrity. Never replace a corrupt asset with fake geometry.
+
+### Phase B — selector, verified import and fallback
+- `tree=r17b` explicitly selects candidate for requested profile, absent/`tree=r16`/unknown values use R16. No live provider connection changes or hot-swap required. R17b uses `importVerifiedGlb`/existing Three.js GLTFLoader and existing verification path, with full XYZ bounds within documented 1mm tolerance, finite transforms, triangle/material checks and source material double-sided/PBR consistency (new flower materials double-sided). Distinguish glTF mesh count vs Three.js Mesh instances per primitive. Preserve original R16 no-option behavior exactly, including existing inspect views and look transforms.
+- Only attach loaded verified asset to environment; same-profile R16 fallback on R17b missing/fetch/hash/parse/structure failure. No fallback on AbortSignal or disposed scene. Dispose rejected imported geometry/materials, never attach two trees or leak resources, no endless retries. R16 failure surfaces explicit existing boot error; neither asset failing may be called success.
+- Diagnostics/console/status report actual loaded revision/hash/bytes/triangles/bounds, requested revision/profile and fallback reason separately; never label R16 fallback R17b. Keep current report fields compatible, including loaded asset report. UI/clean capture must not pretend a requested asset loaded. No forced noisy overlay in normal successful clean capture. Update old hardcoded R16 diagnostics as needed.
+- Use same world pivot, waterline and scale, bind gold/mist/water/seat/camera to actual loaded scene. No silent source-material changes. Any runtime lighting already applied to R16 must remain existing policy; report material verification before existing lighting bindings.
+
+### Phase C — bounded native runtime integration checks
+- Start unchanged camera, rings and mist; use `p08Review.treeCollisions` and native active-mesh raycasts, not R16-only assumptions. Both profiles and seeds 9/71/1337; actual 40s routes, idle/community/gifts/capacity, moving wide and top shots, gift interruption and return. Reuse existing runner logic and accepted PR17 thresholds: 0 sampled camera segment/vertical pad intersections, maxCinematicStep <=.22 m/60Hz, maxGiftStep <=1.65 m/60Hz, maxHandoff <.3 m (aim to preserve zero), minY>.8, pad gap>.22, botanical gap>=.219, <=3 real seats; preserve seat-contact assertions. Ring top sweep every .25s in 16–26s: >=3 unoccluded centers in each band and >=7 total for >=3 consecutive seconds, compare per-case to accepted PR17 5.5–10s ranges; report any regression, investigate actual silhouette in frames. A center ray is not full pad visibility. No lowering gates to force pass.
+- If camera clearance/coverage fails, first isolate exact case. Only bounded R17b-specific camera framing/route correction permitted, with unchanged R16 behavior and gift director. Do not move rings, alter approved tree, or change Event Engine. If bounded change cannot preserve composition, STOP with measured blocker and ask SA rather than expanding scope.
+- Maintain existing root mist caps/point counts, compare matched mist ON/OFF, name anchor consistency, gift focus/return FIFO and user seat identity. Preserve offline `source=live` status and zero fake actors. Native context-loss/restore per profile, actual loaded revision and no GL errors after restore. Test teardown/abort, failure fallback and both-fail paths. Do not introduce unnecessary asset reloading per gift/frame.
+
+### Phase D — regression, evidence and handoff
+- Viewer and Event tests/build from verified package scripts (baseline reported 49 Viewer +12 Event tests). Add focused tests for new behavior; no Event source changes. Test default/no tree flag, explicit R16, unknown flag and candidate R16 fallback against exact PR17 baseline. With fixed deterministic browser/viewport/time/seed/flags verify pixel parity when R17b OFF (18 comparable frames, both profiles ×3 seeds ×3 checkpoints, and all-on representative R16 cases); avoid differences caused by diagnostics in clean frames. R16 flags must still work independently. 
+- New `scripts/evidence-p10b3d.mjs` and `evidence:p10b3d` script; separate output `evidence/p10b3d/`, do not overwrite prior evidence. Native 720×1280 actual WebGL PNGs, minimum six meaningful matched R16/R17b views per profile (full, wide, moving top/true aerial, under-crown/root mist, community/name/chat, gift/return; include gift return sequence/checkpoint separately as necessary). Use actual moving sequences at multiple times and seeds, not static fake concept images; record exact per-case loaded SHA, repo HEAD, camera/shot/viewport, screenshot SHA256, trace/occlusion counts and errors. Capture native wide-water appearance and disclose remaining mirror limitation. Compact contact sheets optional alongside native PNGs for SA. Prefer targeted tests/evidence; do not rerun artist Cycles or unrelated historical suites beyond current regression need.
+- Compare resource counters and measured p50/p95/p99 intervals, draw calls, triangles, points, geometry/material/texture counts, load timings, memory proxy in matched R16/R17b same-pose and same-profile tests with warmup, actual browser/renderer/hardware and raw sample sizes; disclose variance and degradation. SwiftShader is not real RTX acceptance. Hardware `P10A_GPU_OWNER_DEFERRED_NOT_PASS`, provider `P10B2_PROVIDER_ACCESS_BLOCKED` remain. No invented FPS/VRAM or physical GPU PASS.
+- Add `P10B3D.md` Windows PowerShell runbook, exact immutable pins, feature/fallback semantics, all actual results/limitations and how to reproduce. Include commands matching actual scripts:
+```powershell
+Set-Location packages/v2-events
+npm.cmd ci
+npm.cmd test
+npm.cmd run build
+Set-Location ../../apps/v2-viewer
+npm.cmd ci
+npm.cmd run assets:p08
+npm.cmd run assets:p012b
+npm.cmd run assets:p012d
+npm.cmd run assets:r17b
+npm.cmd test
+npm.cmd run build
+npm.cmd exec --offline -- vite preview --host 127.0.0.1 --port 5194 --strictPort
+```
+Document separate exact PR17 baseline build/origin and actual runner arguments; stage baseline using existing scripts. Example candidate demo: `http://127.0.0.1:5194/?demo=community&seed=9&profile=eco&look=twilight&clean=1&botanicals=on&diversity=on&blessing=on&presence=on&chatbubbles=on&gifticons=on&ambience=rich&seats=rings&shots=hero&tree=r17b`; change profile to quality or tree=r16 for comparison. Only claim results actually run; if local Git/browser/hardware unavailable, give precise blocker and runnable instructions.
+
+## 6. Git handoff and STOP
+Commit focused changes to new branch; create separate PR targeting frozen PR17 branch, not main, title `[P1.0-B3D][SA REVIEW] R17B verified Viewer integration + R16 fallback`. Keep PR18 and old asset files untouched. Provide exact HEAD and base SHA, scope diff, accepted GLB hashes and staging logs, tests/build counts, native evidence paths, measured camera/ring nonregression and fallback cases, resource metrics, zero VND, outstanding limits. If QA-only follow-up commit, pin runtime SHA used for captures and prove runtime unchanged. Do not merge or mark Owner runtime GO. 
+**STOP `P10B3D_SA_INTEGRATION_REVIEW_REQUIRED`** → SA review → separate Owner runtime visual GO. No further task until SA decision.
