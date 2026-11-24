@@ -1,4 +1,4 @@
-﻿import test from 'node:test';
+import test from 'node:test';
 import assert from 'node:assert/strict';
 import { IdleBlessingDirector, idleGap } from '../src/audio/idle-blessing.ts';
 import { NamedVoice, decodeNamedPcm, demoName, maxPcmBytes, type NamedProvider, type VoiceTemplate } from '../src/audio/named-voice.ts';
@@ -8,7 +8,7 @@ const pcm = new Uint8Array(48000);
 new DataView(pcm.buffer).setInt16(102, 12000, true);
 const cue = (sequence: number, actorId = 'demo-actor-1', request = 'gift-1'): Cue => ({
   room: 'demo-1', request, sequence, sound: 'rose', count: 2, expires: 5000,
-  binding: { actorId, seatId: 'seat-1' }, identity: { epoch: 2, count: 2, nameId: 'an' },
+  binding: { actorId, seatId: 'seat-1' }, identity: { epoch: 2, count: 2, nameId: 'an', displayName: 'An' },
 });
 const flush = () => new Promise(resolve => setImmediate(resolve));
 
@@ -65,14 +65,14 @@ test('same-name different actor and coalesced sequence cannot borrow stale audio
   jobs[0].done(pcm);
   jobs[1].done(pcm);
   await flush();
-  assert.equal(voice.pick(first, 100, 2000, true), undefined);
-  assert(voice.pick(second, 100, 2000, true) instanceof Float32Array);
-  assert.equal(voice.pick(differentActor, 100, 2000, true), 'waiting');
+  assert.equal(voice.pick(first, 100, 2000, true, 350), undefined);
+  assert(voice.pick(second, 100, 2000, true, 350) instanceof Float32Array);
+  assert.equal(voice.pick(differentActor, 100, 2000, true, 350), 'waiting');
   voice.clear();
   assert(jobs[2].signal.aborted);
   jobs[2].done(pcm);
   await flush();
-  assert.equal(voice.pick(differentActor, 101, 2000, true), undefined);
+  assert.equal(voice.pick(differentActor, 101, 2000, true, 350), undefined);
 });
 
 test('slow, busy, corrupt, oversized and insufficient-hold voice choose fixed fallback', async () => {
@@ -81,13 +81,13 @@ test('slow, busy, corrupt, oversized and insufficient-hold voice choose fixed fa
   const source = cue(1);
   slow.prefetch(source);
   await flush();
-  assert.equal(slow.pick(source, 1000, 1000, false), undefined);
-  assert.equal(slow.pick(source, 1001, 4500, true), 'waiting');
-  assert.equal(slow.pick(source, 1349, 4200, true), 'waiting');
-  assert.equal(slow.pick(source, 1350, 4200, true), undefined);
+  assert.equal(slow.pick(source, 1000, 1000, false, 1350), undefined);
+  assert.equal(slow.pick(source, 1001, 4500, true, 1350), 'waiting');
+  assert.equal(slow.pick(source, 1349, 4200, true, 1350), 'waiting');
+  assert.equal(slow.pick(source, 1350, 4200, true, 1350), undefined);
   reply(pcm);
   await flush();
-  assert.equal(slow.pick(source, 1351, 4200, true), undefined);
+  assert.equal(slow.pick(source, 1351, 4200, true, 1350), undefined);
   for (const service of [
     async () => { throw new Error('busy'); },
     async () => new Uint8Array(48000),
@@ -96,12 +96,12 @@ test('slow, busy, corrupt, oversized and insufficient-hold voice choose fixed fa
     const failed = new NamedVoice(service);
     failed.prefetch(source);
     await flush();
-    assert.equal(failed.pick(source, 1000, 4500, true), undefined);
+    assert.equal(failed.pick(source, 1000, 4500, true, 1350), undefined);
   }
   const valid = new NamedVoice(async () => pcm);
   valid.prefetch(source);
   await flush();
-  assert.equal(valid.pick(source, 1000, 900, true), undefined);
+  assert.equal(valid.pick(source, 1000, 900, true, 1350), undefined);
   assert.throws(() => decodeNamedPcm(pcm.subarray(0, 4801)), /invalid-pcm/);
   assert.equal(demoName('User <test>'), undefined);
   assert.equal(demoName('B\u00ecnh'), 'binh');
@@ -126,9 +126,9 @@ test('preload timeout aborts the provider and leaves fixed fallback eligible', a
   const source = cue(1);
   service.prefetch(source);
   await Promise.resolve();
-  assert.equal(service.pick(source, 0, 4500, true), 'waiting');
+  assert.equal(service.pick(source, 0, 4500, true, 350), 'waiting');
   t.mock.timers.tick(8000);
   assert(signal?.aborted);
   assert.equal(service.pending, false);
-  assert.equal(service.pick(source, 8000, 4500, true), undefined);
+  assert.equal(service.pick(source, 8000, 4500, true, 350), undefined);
 });

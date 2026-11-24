@@ -62,7 +62,7 @@ export class AudioManager {
     }
     this.director = new AudioDirector(holdMs, {
       sfx: cue => this.mixer?.sfx(cue),
-      voice: (cue, available) => this.playGiftVoice(cue, available),
+      voice: (cue, available, waitUntil) => this.playGiftVoice(cue, available, waitUntil),
       prepare: cue => this.named?.prefetch(cue),
       discard: request => this.named?.cancel(request),
       cut: reason => this.mixer?.cut(reason),
@@ -230,10 +230,11 @@ export class AudioManager {
     this.test.disabled = !this.outputEnabled;
   }
 
-  private playGiftVoice(cue: Cue, available: number) {
+  private playGiftVoice(cue: Cue, available: number, waitUntil: number) {
     const mixer = this.mixer;
     if (!mixer) return 'unavailable';
-    const picked = this.named?.pick(cue, this.clock(), available, mixer.fallbackFits(cue, available - 350));
+    const now = this.clock();
+    const picked = this.named?.pick(cue, now, available, mixer.fallbackFits(cue, available - Math.max(0, waitUntil - now)), waitUntil);
     if (picked === 'waiting') return 'waiting';
     return mixer.voiceCue(cue, available, picked);
   }

@@ -30,7 +30,6 @@ type Entry = {
   request: AbortController;
   state: 'pending' | 'ready' | 'failed';
   samples?: Float32Array;
-  focusAt?: number;
 };
 
 export class NamedVoice {
@@ -63,11 +62,10 @@ export class NamedVoice {
     request.signal.addEventListener('abort', () => clearTimeout(timeout), { once: true });
   }
 
-  pick(cue: Cue, now: number, availableMs: number, fallbackFitsAfterWait: boolean): Float32Array | 'waiting' | undefined {
+  pick(cue: Cue, now: number, availableMs: number, fallbackFitsAfterWait: boolean, waitUntil: number): Float32Array | 'waiting' | undefined {
     const entry = this.entries.get(cue.request);
     if (!entry || entry.cue !== cue || entry.state === 'failed') return;
-    entry.focusAt ??= now;
-    if (now - entry.focusAt >= 350) return;
+    if (now >= waitUntil) return;
     if (entry.samples && entry.samples.length / sampleRate * 1000 <= availableMs) return entry.samples;
     if (entry.state === 'pending' && fallbackFitsAfterWait) return 'waiting';
   }
