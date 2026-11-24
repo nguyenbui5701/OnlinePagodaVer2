@@ -341,6 +341,7 @@ export class AudioManager {
 
   private show(status: Status) {
     this.status = status;
+    if (this.live) return;
     const line = this.statusText[status];
     if (this.message.textContent !== line) this.message.textContent = line;
     this.action.disabled = status === 'STARTING';

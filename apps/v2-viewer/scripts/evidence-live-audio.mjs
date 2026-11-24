@@ -10,7 +10,7 @@ import { Gateway } from '../../../packages/v2-live-gateway/gateway.mjs';
 import { createGatewayServer } from '../../../packages/v2-live-gateway/server.mjs';
 import { AudioSettingsStore, SettingsStore } from '../../../packages/v2-live-gateway/settings.mjs';
 import { mapEvent } from '../../../packages/v2-live-gateway/mapper.mjs';
-import { liveDefaults, overlayQuery } from '../src/live-settings.ts';
+import { liveDefaults } from '../src/live-settings.ts';
 
 const origin = 'http://127.0.0.1:5189';
 const api = 'http://127.0.0.1:5203';
@@ -155,7 +155,7 @@ try {
   browser = await chromium.launch({ executablePath: process.env.V2_BROWSER ||
     'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe' });
   const live = await browserContext(port);
-  const dashboard = await live.newPage();
+  let dashboard = await live.newPage();
   await dashboard.setViewportSize({ width: 1240, height: 1000 });
   await dashboard.goto(origin + '/dashboard/');
   const overlay = await live.newPage();
@@ -196,7 +196,7 @@ try {
   assert.equal(await overlay.evaluate(() => window.createdContexts), 1);
   assert.equal(await dashboard.evaluate(() => window.createdContexts), 0);
   await overlay.waitForTimeout(400);
-  result.segments.waterHigh = await interval(overlay);
+  result.segments.waterHigh = await interval(overlay, 3200);
 
   const before = saves;
   const revision = audio.snapshot.revision;
@@ -212,7 +212,7 @@ try {
   assert.equal(saves - before, 1);
   assert.equal(audio.snapshot.settings.water.volume, 15);
   await overlay.waitForTimeout(350);
-  result.segments.waterLow = await interval(overlay);
+  result.segments.waterLow = await interval(overlay, 3200);
   await apply({ water: false, wind: true, 'wind-volume': 80 }, 'READY');
   await overlay.waitForTimeout(350);
   result.segments.windOnly = await interval(overlay);
@@ -320,7 +320,12 @@ try {
   await overlay.waitForTimeout(150);
   result.segments.hidden = await interval(overlay, 160);
   await overlay.evaluate(() => { delete document.hidden; });
+  dashboard = await live.newPage();
+  await dashboard.goto(origin + '/dashboard/');
+  await dashboard.locator('#audio-master').waitFor();
+  await waitPage(dashboard, () => !document.getElementById('audio-fields').disabled);
   await apply({ 'water-volume': 50 }, 'MUTED');
+  await dashboard.close();
   await overlay.locator('#capture').click();
   await wait(() => gateway.audioApplied?.state === 'READY', 'gesture after visibility mute');
 
@@ -419,11 +424,16 @@ try {
     gateway.release();
     const before = await oldContext.newPage();
     const after = await newContext.newPage();
-    // Step both WebGL renders at frame zero, with the same offline profile and scene seed.
+    assert.equal(audio.save(audio.snapshot.revision, {
+      ...audio.snapshot.settings, master: { ...audio.snapshot.settings.master, enabled: false },
+    }), undefined);
+    // Step the actual capture entries at frame zero with the same offline settings.
     const frames = await Promise.all([before, after].map(async page => {
-      const query = overlayQuery(liveDefaults);
-      query.set('time', '0');
-      await page.goto(origin + '/?' + query);
+      await page.addInitScript(() => {
+        const frame = window.requestAnimationFrame.bind(window);
+        window.requestAnimationFrame = callback => frame(() => callback(1000));
+      });
+      await page.goto(origin + '/overlay/');
       await waitPage(page, () => window.viewerReport?.elapsedSeconds === 0);
       const png = await page.locator('#stage').screenshot();
       return { sha256: sha(png), source: await page.evaluate(() => window.viewerReport.repoRevision) };
