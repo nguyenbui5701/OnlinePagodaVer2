@@ -1,0 +1,53 @@
+[
+  {
+    "mode": "preview",
+    "profile": "quality",
+    "path": "/r16/sakura_hero.glb",
+    "status": 200,
+    "bytes": 5055232,
+    "sha256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+    "corsHeader": false
+  },
+  {
+    "mode": "preview",
+    "profile": "eco",
+    "path": "/r16/sakura_hero_eco.glb",
+    "status": 200,
+    "bytes": 1393492,
+    "sha256": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+    "corsHeader": false
+  },
+  {
+    "mode": "preview",
+    "profile": "quality",
+    "path": "/r17b/sakura_hero_r17b.glb",
+    "status": 200,
+    "bytes": 6981312,
+    "sha256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+    "corsHeader": false
+  },
+  {
+    "mode": "preview",
+    "profile": "eco",
+    "path": "/r17b/sakura_hero_r17b_eco.glb",
+    "status": 200,
+    "bytes": 2149264,
+    "sha256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+    "corsHeader": false
+  },
+  {
+    "mode": "dev",
+    "path": "/",
+    "status": 200
+  },
+  {
+    "mode": "dev",
+    "path": "/src/main.ts",
+    "status": 200
+  },
+  {
+    "mode": "dev",
+    "path": "/src/slice-driver.ts",
+    "status": 200
+  }
+]

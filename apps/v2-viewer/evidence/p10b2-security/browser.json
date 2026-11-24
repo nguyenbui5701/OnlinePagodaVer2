@@ -1,0 +1,1573 @@
+{
+  "base": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+  "capture": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+  "browser": "158.0.4370.33",
+  "viewport": {
+    "width": 720,
+    "height": 1280
+  },
+  "matches": [
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "label": "wide",
+      "baseline": {
+        "label": "eco-r16-wide-baseline.png",
+        "sha256": "f6e33d563411c3469d3a86376fb6d7e801167dd2d186bafffdd169203485fdbd",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 1,
+        "mode": "CINEMATIC",
+        "position": [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        "target": [
+          0,
+          9.464062499999999,
+          0
+        ],
+        "fov": 57.62454004294496
+      },
+      "candidate": {
+        "label": "eco-r16-wide-candidate.png",
+        "sha256": "f6e33d563411c3469d3a86376fb6d7e801167dd2d186bafffdd169203485fdbd",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 1,
+        "mode": "CINEMATIC",
+        "position": [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        "target": [
+          0,
+          9.464062499999999,
+          0
+        ],
+        "fov": 57.62454004294496
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "label": "top",
+      "baseline": {
+        "label": "eco-r16-top-baseline.png",
+        "sha256": "b66678bdd3f9eb305141e1b0997b3c2c51b8f14ea35514caf34585b41e3217a5",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "HERO_TOP_RING",
+        "time": 22,
+        "mode": "CINEMATIC",
+        "position": [
+          3.5625,
+          35.0625,
+          40.375
+        ],
+        "target": [
+          1.0374999999999999,
+          0.625,
+          10.8125
+        ],
+        "fov": 62.09071351435282
+      },
+      "candidate": {
+        "label": "eco-r16-top-candidate.png",
+        "sha256": "b66678bdd3f9eb305141e1b0997b3c2c51b8f14ea35514caf34585b41e3217a5",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "HERO_TOP_RING",
+        "time": 22,
+        "mode": "CINEMATIC",
+        "position": [
+          3.5625,
+          35.0625,
+          40.375
+        ],
+        "target": [
+          1.0374999999999999,
+          0.625,
+          10.8125
+        ],
+        "fov": 62.09071351435282
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "label": "under",
+      "baseline": {
+        "label": "eco-r16-under-baseline.png",
+        "sha256": "4a2a5f1b1194d1813f4ba768d81dfd8f819481dc773204226995d4943a0429b7",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "UNDER_TREE",
+        "time": 35,
+        "mode": "CINEMATIC",
+        "position": [
+          1.0390625,
+          9.6796875,
+          33.9765625
+        ],
+        "target": [
+          0,
+          10.765625,
+          0.15625
+        ],
+        "fov": 57.09375
+      },
+      "candidate": {
+        "label": "eco-r16-under-candidate.png",
+        "sha256": "4a2a5f1b1194d1813f4ba768d81dfd8f819481dc773204226995d4943a0429b7",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "UNDER_TREE",
+        "time": 35,
+        "mode": "CINEMATIC",
+        "position": [
+          1.0390625,
+          9.6796875,
+          33.9765625
+        ],
+        "target": [
+          0,
+          10.765625,
+          0.15625
+        ],
+        "fov": 57.09375
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "label": "actor-chat",
+      "baseline": {
+        "label": "eco-r16-actor-chat-baseline.png",
+        "sha256": "7e8e82be0cb38c73e4ba20597a4c7bb18a79a0f80f17b03ecc3305bcc7ce294c",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 8.6,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      },
+      "candidate": {
+        "label": "eco-r16-actor-chat-candidate.png",
+        "sha256": "7e8e82be0cb38c73e4ba20597a4c7bb18a79a0f80f17b03ecc3305bcc7ce294c",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 8.6,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "label": "chat-float",
+      "baseline": {
+        "label": "eco-r16-chat-float-baseline.png",
+        "sha256": "8f202a9f9907eb993e73c66cd6a1fb82fb09164de1126922cd6de6a3d95708f1",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "COMMUNITY",
+        "time": 10,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      },
+      "candidate": {
+        "label": "eco-r16-chat-float-candidate.png",
+        "sha256": "8f202a9f9907eb993e73c66cd6a1fb82fb09164de1126922cd6de6a3d95708f1",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "COMMUNITY",
+        "time": 10,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "label": "gift",
+      "baseline": {
+        "label": "eco-r16-gift-baseline.png",
+        "sha256": "2ed742ffd7011a625f85c3ce734e9c02a0fe87aa916618dca73a988cf7006d1d",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "HERO_TOP_RING",
+        "time": 63.5,
+        "mode": "GIFT_FOCUS",
+        "position": [
+          5.253372490089341,
+          1.15307000018619,
+          7.460047727253996
+        ],
+        "target": [
+          9.65417446850852,
+          0.67307000018619,
+          9.833429691191078
+        ],
+        "fov": 50
+      },
+      "candidate": {
+        "label": "eco-r16-gift-candidate.png",
+        "sha256": "2ed742ffd7011a625f85c3ce734e9c02a0fe87aa916618dca73a988cf7006d1d",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "HERO_TOP_RING",
+        "time": 63.5,
+        "mode": "GIFT_FOCUS",
+        "position": [
+          5.253372490089341,
+          1.15307000018619,
+          7.460047727253996
+        ],
+        "target": [
+          9.65417446850852,
+          0.67307000018619,
+          9.833429691191078
+        ],
+        "fov": 50
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "label": "return",
+      "baseline": {
+        "label": "eco-r16-return-baseline.png",
+        "sha256": "6f9db3c916ffe7fbc3596f8edf3f68976118fb63a7e0d6037250ffea787f0f64",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 64.1,
+        "mode": "CINE_RETURN",
+        "position": [
+          3.895574294012618,
+          3.774177484404193,
+          18.253821359801332
+        ],
+        "target": [
+          6.9283851062104045,
+          3.166501336656915,
+          7.057028857066104
+        ],
+        "fov": 52.04034736045601
+      },
+      "candidate": {
+        "label": "eco-r16-return-candidate.png",
+        "sha256": "6f9db3c916ffe7fbc3596f8edf3f68976118fb63a7e0d6037250ffea787f0f64",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 64.1,
+        "mode": "CINE_RETURN",
+        "position": [
+          3.895574294012618,
+          3.774177484404193,
+          18.253821359801332
+        ],
+        "target": [
+          6.9283851062104045,
+          3.166501336656915,
+          7.057028857066104
+        ],
+        "fov": 52.04034736045601
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r17b",
+      "label": "wide",
+      "baseline": {
+        "label": "eco-r17b-wide-baseline.png",
+        "sha256": "a0ad9d63013a4b66f692a41384a842e82c151867b16a4222d35811b29c833cfb",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 1,
+        "mode": "CINEMATIC",
+        "position": [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        "target": [
+          0,
+          9.464062499999999,
+          0
+        ],
+        "fov": 57.62454004294496
+      },
+      "candidate": {
+        "label": "eco-r17b-wide-candidate.png",
+        "sha256": "a0ad9d63013a4b66f692a41384a842e82c151867b16a4222d35811b29c833cfb",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 1,
+        "mode": "CINEMATIC",
+        "position": [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        "target": [
+          0,
+          9.464062499999999,
+          0
+        ],
+        "fov": 57.62454004294496
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r17b",
+      "label": "top",
+      "baseline": {
+        "label": "eco-r17b-top-baseline.png",
+        "sha256": "2b8010eb3f9ef96cb26b53b75421e591a1288b8a56b3b605ea1fd583f793e48b",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "HERO_TOP_RING",
+        "time": 22,
+        "mode": "CINEMATIC",
+        "position": [
+          3.5625,
+          35.0625,
+          40.375
+        ],
+        "target": [
+          1.0374999999999999,
+          0.625,
+          10.8125
+        ],
+        "fov": 62.09071351435282
+      },
+      "candidate": {
+        "label": "eco-r17b-top-candidate.png",
+        "sha256": "2b8010eb3f9ef96cb26b53b75421e591a1288b8a56b3b605ea1fd583f793e48b",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "HERO_TOP_RING",
+        "time": 22,
+        "mode": "CINEMATIC",
+        "position": [
+          3.5625,
+          35.0625,
+          40.375
+        ],
+        "target": [
+          1.0374999999999999,
+          0.625,
+          10.8125
+        ],
+        "fov": 62.09071351435282
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r17b",
+      "label": "under",
+      "baseline": {
+        "label": "eco-r17b-under-baseline.png",
+        "sha256": "6de73e6cf517a3d41cbf4a1cbc58f939e4491d102289c9a7ec135912f0cd782b",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "UNDER_TREE",
+        "time": 35,
+        "mode": "CINEMATIC",
+        "position": [
+          1.0390625,
+          9.6796875,
+          33.9765625
+        ],
+        "target": [
+          0,
+          10.765625,
+          0.15625
+        ],
+        "fov": 57.09375
+      },
+      "candidate": {
+        "label": "eco-r17b-under-candidate.png",
+        "sha256": "6de73e6cf517a3d41cbf4a1cbc58f939e4491d102289c9a7ec135912f0cd782b",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "UNDER_TREE",
+        "time": 35,
+        "mode": "CINEMATIC",
+        "position": [
+          1.0390625,
+          9.6796875,
+          33.9765625
+        ],
+        "target": [
+          0,
+          10.765625,
+          0.15625
+        ],
+        "fov": 57.09375
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r17b",
+      "label": "actor-chat",
+      "baseline": {
+        "label": "eco-r17b-actor-chat-baseline.png",
+        "sha256": "7e8e82be0cb38c73e4ba20597a4c7bb18a79a0f80f17b03ecc3305bcc7ce294c",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 8.6,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      },
+      "candidate": {
+        "label": "eco-r17b-actor-chat-candidate.png",
+        "sha256": "7e8e82be0cb38c73e4ba20597a4c7bb18a79a0f80f17b03ecc3305bcc7ce294c",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 8.6,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r17b",
+      "label": "chat-float",
+      "baseline": {
+        "label": "eco-r17b-chat-float-baseline.png",
+        "sha256": "8f202a9f9907eb993e73c66cd6a1fb82fb09164de1126922cd6de6a3d95708f1",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "COMMUNITY",
+        "time": 10,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      },
+      "candidate": {
+        "label": "eco-r17b-chat-float-candidate.png",
+        "sha256": "8f202a9f9907eb993e73c66cd6a1fb82fb09164de1126922cd6de6a3d95708f1",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "COMMUNITY",
+        "time": 10,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r17b",
+      "label": "gift",
+      "baseline": {
+        "label": "eco-r17b-gift-baseline.png",
+        "sha256": "2ed742ffd7011a625f85c3ce734e9c02a0fe87aa916618dca73a988cf7006d1d",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "HERO_TOP_RING",
+        "time": 63.5,
+        "mode": "GIFT_FOCUS",
+        "position": [
+          5.253372490089341,
+          1.15307000018619,
+          7.460047727253996
+        ],
+        "target": [
+          9.65417446850852,
+          0.67307000018619,
+          9.833429691191078
+        ],
+        "fov": 50
+      },
+      "candidate": {
+        "label": "eco-r17b-gift-candidate.png",
+        "sha256": "2ed742ffd7011a625f85c3ce734e9c02a0fe87aa916618dca73a988cf7006d1d",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "HERO_TOP_RING",
+        "time": 63.5,
+        "mode": "GIFT_FOCUS",
+        "position": [
+          5.253372490089341,
+          1.15307000018619,
+          7.460047727253996
+        ],
+        "target": [
+          9.65417446850852,
+          0.67307000018619,
+          9.833429691191078
+        ],
+        "fov": 50
+      }
+    },
+    {
+      "profile": "eco",
+      "tree": "r17b",
+      "label": "return",
+      "baseline": {
+        "label": "eco-r17b-return-baseline.png",
+        "sha256": "e8819d3c3d64d75b796ecec89d4d9c95a3783df2e8d8f94775ca87e5bb5ccbb8",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 64.1,
+        "mode": "CINE_RETURN",
+        "position": [
+          3.895574294012618,
+          3.774177484404193,
+          18.253821359801332
+        ],
+        "target": [
+          6.9283851062104045,
+          3.166501336656915,
+          7.057028857066104
+        ],
+        "fov": 52.04034736045601
+      },
+      "candidate": {
+        "label": "eco-r17b-return-candidate.png",
+        "sha256": "e8819d3c3d64d75b796ecec89d4d9c95a3783df2e8d8f94775ca87e5bb5ccbb8",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 64.1,
+        "mode": "CINE_RETURN",
+        "position": [
+          3.895574294012618,
+          3.774177484404193,
+          18.253821359801332
+        ],
+        "target": [
+          6.9283851062104045,
+          3.166501336656915,
+          7.057028857066104
+        ],
+        "fov": 52.04034736045601
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r16",
+      "label": "wide",
+      "baseline": {
+        "label": "quality-r16-wide-baseline.png",
+        "sha256": "e38dadd6f4b45c33cbe39c1c62a7465dae1effcaeee1fa160a04f07018534359",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 1,
+        "mode": "CINEMATIC",
+        "position": [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        "target": [
+          0,
+          9.464062499999999,
+          0
+        ],
+        "fov": 57.62454004294496
+      },
+      "candidate": {
+        "label": "quality-r16-wide-candidate.png",
+        "sha256": "e38dadd6f4b45c33cbe39c1c62a7465dae1effcaeee1fa160a04f07018534359",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 1,
+        "mode": "CINEMATIC",
+        "position": [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        "target": [
+          0,
+          9.464062499999999,
+          0
+        ],
+        "fov": 57.62454004294496
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r16",
+      "label": "top",
+      "baseline": {
+        "label": "quality-r16-top-baseline.png",
+        "sha256": "1878188b9ba327f884c2aa0afea756aa2bbb1a5d532698cc83e47c4618fe07f5",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "HERO_TOP_RING",
+        "time": 22,
+        "mode": "CINEMATIC",
+        "position": [
+          3.5625,
+          35.0625,
+          40.375
+        ],
+        "target": [
+          1.0374999999999999,
+          0.625,
+          10.8125
+        ],
+        "fov": 62.09071351435282
+      },
+      "candidate": {
+        "label": "quality-r16-top-candidate.png",
+        "sha256": "1878188b9ba327f884c2aa0afea756aa2bbb1a5d532698cc83e47c4618fe07f5",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "HERO_TOP_RING",
+        "time": 22,
+        "mode": "CINEMATIC",
+        "position": [
+          3.5625,
+          35.0625,
+          40.375
+        ],
+        "target": [
+          1.0374999999999999,
+          0.625,
+          10.8125
+        ],
+        "fov": 62.09071351435282
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r16",
+      "label": "under",
+      "baseline": {
+        "label": "quality-r16-under-baseline.png",
+        "sha256": "bfff7f8817eaa7347056f01a6a5f60e2bd6bdd3d3390cb7059cf9a12d7573fc9",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "UNDER_TREE",
+        "time": 35,
+        "mode": "CINEMATIC",
+        "position": [
+          1.0390625,
+          9.6796875,
+          33.9765625
+        ],
+        "target": [
+          0,
+          10.765625,
+          0.15625
+        ],
+        "fov": 57.09375
+      },
+      "candidate": {
+        "label": "quality-r16-under-candidate.png",
+        "sha256": "bfff7f8817eaa7347056f01a6a5f60e2bd6bdd3d3390cb7059cf9a12d7573fc9",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "UNDER_TREE",
+        "time": 35,
+        "mode": "CINEMATIC",
+        "position": [
+          1.0390625,
+          9.6796875,
+          33.9765625
+        ],
+        "target": [
+          0,
+          10.765625,
+          0.15625
+        ],
+        "fov": 57.09375
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r16",
+      "label": "actor-chat",
+      "baseline": {
+        "label": "quality-r16-actor-chat-baseline.png",
+        "sha256": "660e40f93aa354c5806a77af4c7889e4caa9b6749711509e1f35ed28ed8de178",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 8.6,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      },
+      "candidate": {
+        "label": "quality-r16-actor-chat-candidate.png",
+        "sha256": "660e40f93aa354c5806a77af4c7889e4caa9b6749711509e1f35ed28ed8de178",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 8.6,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r16",
+      "label": "chat-float",
+      "baseline": {
+        "label": "quality-r16-chat-float-baseline.png",
+        "sha256": "13070b9179149f2626d2474778be333c9547b8b05212f9e2bdeead926069676a",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "COMMUNITY",
+        "time": 10,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      },
+      "candidate": {
+        "label": "quality-r16-chat-float-candidate.png",
+        "sha256": "13070b9179149f2626d2474778be333c9547b8b05212f9e2bdeead926069676a",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "COMMUNITY",
+        "time": 10,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r16",
+      "label": "gift",
+      "baseline": {
+        "label": "quality-r16-gift-baseline.png",
+        "sha256": "8e19a154dbbb76a80332e162daa3844bf2d84c5ef0dd58713390d097f6243916",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "HERO_TOP_RING",
+        "time": 63.5,
+        "mode": "GIFT_FOCUS",
+        "position": [
+          5.253372490089341,
+          1.15307000018619,
+          7.460047727253996
+        ],
+        "target": [
+          9.65417446850852,
+          0.67307000018619,
+          9.833429691191078
+        ],
+        "fov": 50
+      },
+      "candidate": {
+        "label": "quality-r16-gift-candidate.png",
+        "sha256": "8e19a154dbbb76a80332e162daa3844bf2d84c5ef0dd58713390d097f6243916",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "HERO_TOP_RING",
+        "time": 63.5,
+        "mode": "GIFT_FOCUS",
+        "position": [
+          5.253372490089341,
+          1.15307000018619,
+          7.460047727253996
+        ],
+        "target": [
+          9.65417446850852,
+          0.67307000018619,
+          9.833429691191078
+        ],
+        "fov": 50
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r16",
+      "label": "return",
+      "baseline": {
+        "label": "quality-r16-return-baseline.png",
+        "sha256": "8fea9b875faf4d4d7e72a15e25f4a6fb28f070525e2abea8f2744b84cded5437",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 64.1,
+        "mode": "CINE_RETURN",
+        "position": [
+          3.895574294012618,
+          3.774177484404193,
+          18.253821359801332
+        ],
+        "target": [
+          6.9283851062104045,
+          3.166501336656915,
+          7.057028857066104
+        ],
+        "fov": 52.04034736045601
+      },
+      "candidate": {
+        "label": "quality-r16-return-candidate.png",
+        "sha256": "8fea9b875faf4d4d7e72a15e25f4a6fb28f070525e2abea8f2744b84cded5437",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 64.1,
+        "mode": "CINE_RETURN",
+        "position": [
+          3.895574294012618,
+          3.774177484404193,
+          18.253821359801332
+        ],
+        "target": [
+          6.9283851062104045,
+          3.166501336656915,
+          7.057028857066104
+        ],
+        "fov": 52.04034736045601
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "label": "wide",
+      "baseline": {
+        "label": "quality-r17b-wide-baseline.png",
+        "sha256": "73b67484b48df5bb7c7767480f22d5af3aea651f87e1a1500e3d62b271cbd93c",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 1,
+        "mode": "CINEMATIC",
+        "position": [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        "target": [
+          0,
+          9.464062499999999,
+          0
+        ],
+        "fov": 57.62454004294496
+      },
+      "candidate": {
+        "label": "quality-r17b-wide-candidate.png",
+        "sha256": "73b67484b48df5bb7c7767480f22d5af3aea651f87e1a1500e3d62b271cbd93c",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 1,
+        "mode": "CINEMATIC",
+        "position": [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        "target": [
+          0,
+          9.464062499999999,
+          0
+        ],
+        "fov": 57.62454004294496
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "label": "top",
+      "baseline": {
+        "label": "quality-r17b-top-baseline.png",
+        "sha256": "d2e6dbdb26c9e289a6b8a9aa26d7de058acfd03b4f2a7d084ac8a4d730c64dbd",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "HERO_TOP_RING",
+        "time": 22,
+        "mode": "CINEMATIC",
+        "position": [
+          3.5625,
+          35.0625,
+          40.375
+        ],
+        "target": [
+          1.0374999999999999,
+          0.625,
+          10.8125
+        ],
+        "fov": 62.09071351435282
+      },
+      "candidate": {
+        "label": "quality-r17b-top-candidate.png",
+        "sha256": "d2e6dbdb26c9e289a6b8a9aa26d7de058acfd03b4f2a7d084ac8a4d730c64dbd",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "HERO_TOP_RING",
+        "time": 22,
+        "mode": "CINEMATIC",
+        "position": [
+          3.5625,
+          35.0625,
+          40.375
+        ],
+        "target": [
+          1.0374999999999999,
+          0.625,
+          10.8125
+        ],
+        "fov": 62.09071351435282
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "label": "under",
+      "baseline": {
+        "label": "quality-r17b-under-baseline.png",
+        "sha256": "a87b2ca19e1bfd9e0c27f37f0085809c4321eb132687dccfb211d55cce38f651",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "UNDER_TREE",
+        "time": 35,
+        "mode": "CINEMATIC",
+        "position": [
+          1.0390625,
+          9.6796875,
+          33.9765625
+        ],
+        "target": [
+          0,
+          10.765625,
+          0.15625
+        ],
+        "fov": 57.09375
+      },
+      "candidate": {
+        "label": "quality-r17b-under-candidate.png",
+        "sha256": "a87b2ca19e1bfd9e0c27f37f0085809c4321eb132687dccfb211d55cce38f651",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "UNDER_TREE",
+        "time": 35,
+        "mode": "CINEMATIC",
+        "position": [
+          1.0390625,
+          9.6796875,
+          33.9765625
+        ],
+        "target": [
+          0,
+          10.765625,
+          0.15625
+        ],
+        "fov": 57.09375
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "label": "actor-chat",
+      "baseline": {
+        "label": "quality-r17b-actor-chat-baseline.png",
+        "sha256": "660e40f93aa354c5806a77af4c7889e4caa9b6749711509e1f35ed28ed8de178",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 8.6,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      },
+      "candidate": {
+        "label": "quality-r17b-actor-chat-candidate.png",
+        "sha256": "660e40f93aa354c5806a77af4c7889e4caa9b6749711509e1f35ed28ed8de178",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 8.6,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "label": "chat-float",
+      "baseline": {
+        "label": "quality-r17b-chat-float-baseline.png",
+        "sha256": "13070b9179149f2626d2474778be333c9547b8b05212f9e2bdeead926069676a",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "COMMUNITY",
+        "time": 10,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      },
+      "candidate": {
+        "label": "quality-r17b-chat-float-candidate.png",
+        "sha256": "13070b9179149f2626d2474778be333c9547b8b05212f9e2bdeead926069676a",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "COMMUNITY",
+        "time": 10,
+        "mode": "CINEMATIC",
+        "position": [
+          -0.6635972432593376,
+          1.5,
+          8.97550214187143
+        ],
+        "target": [
+          -1.017515772997651,
+          0.86,
+          13.762436617536192
+        ],
+        "fov": 43
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "label": "gift",
+      "baseline": {
+        "label": "quality-r17b-gift-baseline.png",
+        "sha256": "8e19a154dbbb76a80332e162daa3844bf2d84c5ef0dd58713390d097f6243916",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "HERO_TOP_RING",
+        "time": 63.5,
+        "mode": "GIFT_FOCUS",
+        "position": [
+          5.253372490089341,
+          1.15307000018619,
+          7.460047727253996
+        ],
+        "target": [
+          9.65417446850852,
+          0.67307000018619,
+          9.833429691191078
+        ],
+        "fov": 50
+      },
+      "candidate": {
+        "label": "quality-r17b-gift-candidate.png",
+        "sha256": "8e19a154dbbb76a80332e162daa3844bf2d84c5ef0dd58713390d097f6243916",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "HERO_TOP_RING",
+        "time": 63.5,
+        "mode": "GIFT_FOCUS",
+        "position": [
+          5.253372490089341,
+          1.15307000018619,
+          7.460047727253996
+        ],
+        "target": [
+          9.65417446850852,
+          0.67307000018619,
+          9.833429691191078
+        ],
+        "fov": 50
+      }
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "label": "return",
+      "baseline": {
+        "label": "quality-r17b-return-baseline.png",
+        "sha256": "196ee563fcb5cac213009a8ea2201a7f5b5dbbef7aed52db79a2ffe8748376b2",
+        "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 64.1,
+        "mode": "CINE_RETURN",
+        "position": [
+          3.895574294012618,
+          3.774177484404193,
+          18.253821359801332
+        ],
+        "target": [
+          6.9283851062104045,
+          3.166501336656915,
+          7.057028857066104
+        ],
+        "fov": 52.04034736045601
+      },
+      "candidate": {
+        "label": "quality-r17b-return-candidate.png",
+        "sha256": "196ee563fcb5cac213009a8ea2201a7f5b5dbbef7aed52db79a2ffe8748376b2",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 64.1,
+        "mode": "CINE_RETURN",
+        "position": [
+          3.895574294012618,
+          3.774177484404193,
+          18.253821359801332
+        ],
+        "target": [
+          6.9283851062104045,
+          3.166501336656915,
+          7.057028857066104
+        ],
+        "fov": 52.04034736045601
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+      "scenario": "capacity",
+      "externalRequests": 0,
+      "fifo": [
+        {
+          "request": "demo-1-gift-1",
+          "seat": "seat-1",
+          "at": 47.05
+        },
+        {
+          "request": "demo-1-gift-2",
+          "seat": "seat-2",
+          "at": 52.9
+        },
+        {
+          "request": "demo-1-gift-3",
+          "seat": "seat-3",
+          "at": 58.75
+        }
+      ],
+      "maxSeats": 3,
+      "decorativeAtCapacity": 9
+    },
+    {
+      "profile": "eco",
+      "tree": "r16",
+      "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+      "scenario": "capacity",
+      "externalRequests": 0,
+      "fifo": [
+        {
+          "request": "demo-1-gift-1",
+          "seat": "seat-1",
+          "at": 47.05
+        },
+        {
+          "request": "demo-1-gift-2",
+          "seat": "seat-2",
+          "at": 52.9
+        },
+        {
+          "request": "demo-1-gift-3",
+          "seat": "seat-3",
+          "at": 58.75
+        }
+      ],
+      "maxSeats": 3,
+      "decorativeAtCapacity": 9
+    },
+    {
+      "profile": "eco",
+      "tree": "r17b",
+      "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+      "scenario": "capacity",
+      "externalRequests": 0,
+      "fifo": [
+        {
+          "request": "demo-1-gift-1",
+          "seat": "seat-1",
+          "at": 47.05
+        },
+        {
+          "request": "demo-1-gift-2",
+          "seat": "seat-2",
+          "at": 52.9
+        },
+        {
+          "request": "demo-1-gift-3",
+          "seat": "seat-3",
+          "at": 58.75
+        }
+      ],
+      "maxSeats": 3,
+      "decorativeAtCapacity": 9
+    },
+    {
+      "profile": "eco",
+      "tree": "r17b",
+      "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+      "scenario": "capacity",
+      "externalRequests": 0,
+      "fifo": [
+        {
+          "request": "demo-1-gift-1",
+          "seat": "seat-1",
+          "at": 47.05
+        },
+        {
+          "request": "demo-1-gift-2",
+          "seat": "seat-2",
+          "at": 52.9
+        },
+        {
+          "request": "demo-1-gift-3",
+          "seat": "seat-3",
+          "at": 58.75
+        }
+      ],
+      "maxSeats": 3,
+      "decorativeAtCapacity": 9
+    },
+    {
+      "profile": "eco",
+      "mode": "missing",
+      "requests": [
+        "/r17b/sakura_hero_r17b_eco.glb",
+        "/r16/sakura_hero_eco.glb"
+      ],
+      "frame": {
+        "label": "eco-fallback.png",
+        "sha256": "f6e33d563411c3469d3a86376fb6d7e801167dd2d186bafffdd169203485fdbd",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 1,
+        "mode": "CINEMATIC",
+        "position": [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        "target": [
+          0,
+          9.464062499999999,
+          0
+        ],
+        "fov": 57.62454004294496
+      },
+      "externalRequests": 0
+    },
+    {
+      "profile": "eco",
+      "mode": "abort",
+      "requests": [
+        "/r17b/sakura_hero_r17b_eco.glb"
+      ],
+      "assetAttached": false,
+      "externalRequests": 0
+    },
+    {
+      "profile": "eco",
+      "mode": "offline",
+      "status": "OFFLINE",
+      "realActors": 0,
+      "confirmedGifts": 0,
+      "externalRequests": 0
+    },
+    {
+      "profile": "quality",
+      "tree": "r16",
+      "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+      "scenario": "capacity",
+      "externalRequests": 0,
+      "fifo": [
+        {
+          "request": "demo-1-gift-1",
+          "seat": "seat-1",
+          "at": 47.05
+        },
+        {
+          "request": "demo-1-gift-2",
+          "seat": "seat-2",
+          "at": 52.9
+        },
+        {
+          "request": "demo-1-gift-3",
+          "seat": "seat-3",
+          "at": 58.75
+        }
+      ],
+      "maxSeats": 3,
+      "decorativeAtCapacity": 9
+    },
+    {
+      "profile": "quality",
+      "tree": "r16",
+      "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+      "scenario": "capacity",
+      "externalRequests": 0,
+      "fifo": [
+        {
+          "request": "demo-1-gift-1",
+          "seat": "seat-1",
+          "at": 47.05
+        },
+        {
+          "request": "demo-1-gift-2",
+          "seat": "seat-2",
+          "at": 52.9
+        },
+        {
+          "request": "demo-1-gift-3",
+          "seat": "seat-3",
+          "at": 58.75
+        }
+      ],
+      "maxSeats": 3,
+      "decorativeAtCapacity": 9
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "source": "2f08d17d58f6bcd6093ca30ba3bad8f103219335",
+      "scenario": "capacity",
+      "externalRequests": 0,
+      "fifo": [
+        {
+          "request": "demo-1-gift-1",
+          "seat": "seat-1",
+          "at": 47.05
+        },
+        {
+          "request": "demo-1-gift-2",
+          "seat": "seat-2",
+          "at": 52.9
+        },
+        {
+          "request": "demo-1-gift-3",
+          "seat": "seat-3",
+          "at": 58.75
+        }
+      ],
+      "maxSeats": 3,
+      "decorativeAtCapacity": 9
+    },
+    {
+      "profile": "quality",
+      "tree": "r17b",
+      "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+      "scenario": "capacity",
+      "externalRequests": 0,
+      "fifo": [
+        {
+          "request": "demo-1-gift-1",
+          "seat": "seat-1",
+          "at": 47.05
+        },
+        {
+          "request": "demo-1-gift-2",
+          "seat": "seat-2",
+          "at": 52.9
+        },
+        {
+          "request": "demo-1-gift-3",
+          "seat": "seat-3",
+          "at": 58.75
+        }
+      ],
+      "maxSeats": 3,
+      "decorativeAtCapacity": 9
+    },
+    {
+      "profile": "quality",
+      "mode": "missing",
+      "requests": [
+        "/r17b/sakura_hero_r17b.glb",
+        "/r16/sakura_hero.glb"
+      ],
+      "frame": {
+        "label": "quality-fallback.png",
+        "sha256": "e38dadd6f4b45c33cbe39c1c62a7465dae1effcaeee1fa160a04f07018534359",
+        "source": "ad91d0b12d0e11e78e9ecbac0717b68ac55c15b8",
+        "asset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "time": 1,
+        "mode": "CINEMATIC",
+        "position": [
+          0.875,
+          10.25,
+          45.1953125
+        ],
+        "target": [
+          0,
+          9.464062499999999,
+          0
+        ],
+        "fov": 57.62454004294496
+      },
+      "externalRequests": 0
+    },
+    {
+      "profile": "quality",
+      "mode": "abort",
+      "requests": [
+        "/r17b/sakura_hero_r17b.glb"
+      ],
+      "assetAttached": false,
+      "externalRequests": 0
+    },
+    {
+      "profile": "quality",
+      "mode": "offline",
+      "status": "OFFLINE",
+      "realActors": 0,
+      "confirmedGifts": 0,
+      "externalRequests": 0
+    }
+  ]
+}
