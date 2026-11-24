@@ -1,0 +1,361 @@
+{
+  "source": "3141e6e24e290642389f536302411f32a3a8d742",
+  "browser": "158.0.4370.33",
+  "provider": "offline eSpeak NG 1.0.2, separately labeled",
+  "externalRequests": 0,
+  "scenario": "real-time existing capacity DEMO via SliceDriver and native AudioManager; harness captures the audio graph",
+  "recording": {
+    "sha256": "435c10c32c3b9509b380932fa46747bd3e30e7a347dd9bd26c9ddb68f89182e5",
+    "bytes": 3761358,
+    "seconds": 78.36,
+    "peakDbfs": -4.676061541844071,
+    "clipped": 0,
+    "startContextSec": 0
+  },
+  "expectedFocusStarts": [
+    47050,
+    52900,
+    58750
+  ],
+  "marks": [
+    {
+      "event": "idle-start",
+      "wallMs": 10696.39999999851,
+      "sceneMs": 10415,
+      "contextSec": 9.8,
+      "variant": "wish-11",
+      "seconds": 2.231375,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 12922.29999999702,
+      "sceneMs": 12637,
+      "contextSec": 12.032,
+      "variant": "wish-11",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 22924.79999999702,
+      "sceneMs": 22644,
+      "contextSec": 22.032,
+      "variant": "wish-02",
+      "seconds": 1.9954583333333333,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 24921,
+      "sceneMs": 24637,
+      "contextSec": 24.032,
+      "variant": "wish-02",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 45493.79999999702,
+      "sceneMs": 45213,
+      "contextSec": 44.6,
+      "variant": "wish-08",
+      "seconds": 2.4509166666666666,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-cut",
+      "wallMs": 46286.39999999851,
+      "sceneMs": 46004,
+      "contextSec": 45.392,
+      "variant": "wish-08",
+      "seconds": 0.03,
+      "reason": "gift-activity",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-cut-end",
+      "wallMs": 46321.29999999702,
+      "sceneMs": 46039,
+      "contextSec": 45.432,
+      "variant": "wish-08",
+      "reason": "gift-activity",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 47339.099999997765,
+      "sceneMs": 47053,
+      "contextSec": 46.44,
+      "room": "demo-1",
+      "request": "demo-1-gift-1",
+      "actor": "demo-1-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 2,
+      "variant": "rose",
+      "seconds": 0.75,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "voice-start",
+      "wallMs": 47339.5,
+      "sceneMs": 47053,
+      "contextSec": 46.44,
+      "room": "demo-1",
+      "request": "demo-1-gift-1",
+      "actor": "demo-1-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 2,
+      "variant": "named",
+      "seconds": 2.1361666666666665,
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 48082.199999999255,
+      "sceneMs": 47796,
+      "contextSec": 47.192,
+      "room": "demo-1",
+      "request": "demo-1-gift-1",
+      "actor": "demo-1-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 2,
+      "variant": "rose",
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "voice-end",
+      "wallMs": 49471.89999999851,
+      "sceneMs": 49185,
+      "contextSec": 48.58133333333333,
+      "room": "demo-1",
+      "request": "demo-1-gift-1",
+      "actor": "demo-1-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 2,
+      "variant": "named",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 53181,
+      "sceneMs": 52900,
+      "contextSec": 52.28,
+      "room": "demo-1",
+      "request": "demo-1-gift-2",
+      "actor": "demo-1-actor-2",
+      "seat": "seat-2",
+      "effectSequence": 4,
+      "variant": "rose",
+      "seconds": 0.75,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "voice-start",
+      "wallMs": 53181.39999999851,
+      "sceneMs": 52900,
+      "contextSec": 52.28,
+      "room": "demo-1",
+      "request": "demo-1-gift-2",
+      "actor": "demo-1-actor-2",
+      "seat": "seat-2",
+      "effectSequence": 4,
+      "variant": "named",
+      "seconds": 1.983375,
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 53921.5,
+      "sceneMs": 53636,
+      "contextSec": 53.032,
+      "room": "demo-1",
+      "request": "demo-1-gift-2",
+      "actor": "demo-1-actor-2",
+      "seat": "seat-2",
+      "effectSequence": 4,
+      "variant": "rose",
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "voice-end",
+      "wallMs": 55162.199999999255,
+      "sceneMs": 54879,
+      "contextSec": 54.266666666666666,
+      "room": "demo-1",
+      "request": "demo-1-gift-2",
+      "actor": "demo-1-actor-2",
+      "seat": "seat-2",
+      "effectSequence": 4,
+      "variant": "named",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 59035,
+      "sceneMs": 58754,
+      "contextSec": 58.141333333333336,
+      "room": "demo-1",
+      "request": "demo-1-gift-3",
+      "actor": "demo-1-actor-3",
+      "seat": "seat-3",
+      "effectSequence": 5,
+      "variant": "rose",
+      "seconds": 0.75,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "voice-start",
+      "wallMs": 59035.199999999255,
+      "sceneMs": 58754,
+      "contextSec": 58.141333333333336,
+      "room": "demo-1",
+      "request": "demo-1-gift-3",
+      "actor": "demo-1-actor-3",
+      "seat": "seat-3",
+      "effectSequence": 5,
+      "variant": "named",
+      "seconds": 2.071,
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 59792.39999999851,
+      "sceneMs": 59511,
+      "contextSec": 58.90133333333333,
+      "room": "demo-1",
+      "request": "demo-1-gift-3",
+      "actor": "demo-1-actor-3",
+      "seat": "seat-3",
+      "effectSequence": 5,
+      "variant": "rose",
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "voice-end",
+      "wallMs": 61112,
+      "sceneMs": 60831,
+      "contextSec": 60.216,
+      "room": "demo-1",
+      "request": "demo-1-gift-3",
+      "actor": "demo-1-actor-3",
+      "seat": "seat-3",
+      "effectSequence": 5,
+      "variant": "named",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 75347.19999999925,
+      "sceneMs": 75066,
+      "contextSec": 74.45066666666666,
+      "variant": "wish-12",
+      "seconds": 2.5845,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 77931.39999999851,
+      "sceneMs": 77650,
+      "contextSec": 77.04,
+      "variant": "wish-12",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    }
+  ],
+  "camera": [
+    {
+      "at": 0,
+      "mode": "CINEMATIC",
+      "count": 0
+    },
+    {
+      "at": 46004,
+      "mode": "GIFT_TRANSITION",
+      "seat": "seat-1",
+      "count": 0
+    },
+    {
+      "at": 46303,
+      "mode": "GIFT_TRANSITION",
+      "seat": "seat-1",
+      "count": 5
+    },
+    {
+      "at": 47053,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-1",
+      "count": 5
+    },
+    {
+      "at": 48004,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-1",
+      "count": 6
+    },
+    {
+      "at": 48109,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-1",
+      "count": 7
+    },
+    {
+      "at": 48504,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-1",
+      "count": 8
+    },
+    {
+      "at": 51852,
+      "mode": "GIFT_TRANSITION",
+      "seat": "seat-2",
+      "count": 8
+    },
+    {
+      "at": 52900,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-2",
+      "count": 8
+    },
+    {
+      "at": 57706,
+      "mode": "GIFT_TRANSITION",
+      "seat": "seat-3",
+      "count": 8
+    },
+    {
+      "at": 58754,
+      "mode": "GIFT_FOCUS",
+      "seat": "seat-3",
+      "count": 8
+    },
+    {
+      "at": 63553,
+      "mode": "CINE_RETURN",
+      "count": 8
+    },
+    {
+      "at": 65004,
+      "mode": "CINEMATIC",
+      "count": 8
+    }
+  ]
+}
