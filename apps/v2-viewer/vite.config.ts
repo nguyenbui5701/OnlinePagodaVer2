@@ -16,7 +16,13 @@ export default defineConfig((): UserConfig => {
 
   const local = { host: loopback, cors: false, strictPort: true, allowedHosts: [] };
   return {
-    base: './',
+    base: '/',
+    build: {
+      rollupOptions: {
+        input: ['index.html', 'dashboard/index.html', 'overlay/index.html']
+          .map(path => fileURLToPath(new URL(path, import.meta.url))),
+      },
+    },
     plugins: [localCaptureBoundary()],
     server: {
       ...local,

@@ -13,7 +13,9 @@ import { measureSeatContact } from './seat-contact.ts';
 import { SliceCamera } from './slice-camera.ts';
 import { parseScenario, SliceDriver, timing } from './slice-driver.ts';
 import { AudioManager } from './audio/manager.ts';
-import { createLiveControls } from './live-controls.ts';
+import { createLiveControls, updateLiveReport } from './live-controls.ts';
+import { createLiveReceiver } from './live-receiver.ts';
+import { overlayContext } from './overlay-context.ts';
 import { idleGap } from './audio/idle-blessing.ts';
 import { loadIdleCorpus } from './audio/idle-corpus.ts';
 import { createCommunityNames, occupancy } from './community-presentation.ts';
@@ -35,8 +37,10 @@ import { presenceDemo } from './presence-demo.ts';
 declare const __REPO_REVISION__: string;
 const canvas = document.querySelector<HTMLCanvasElement>('#capture')!;
 const status = document.querySelector<HTMLParagraphElement>('#status')!;
-const diagnostics = document.querySelector<HTMLPreElement>('#diagnostics')!;
-const query = new URLSearchParams(location.search);
+const diagnostics = document.querySelector<HTMLPreElement>('#diagnostics');
+const overlayMode = document.body.hasAttribute('data-overlay');
+const overlaySettings = overlayMode ? overlayContext.settings : undefined;
+const query = overlaySettings?.query ?? new URLSearchParams(location.search);
 const requestedTree = parseTreeRevision(query.get('tree'));
 const treeLoading = `Đang tải Sakura ${requestedTree}…`;
 const liveRequested = query.get('source') === 'live';
@@ -72,7 +76,7 @@ const driver = new SliceDriver(liveOperator ? 'live' : liveRequested ? 'offline'
 const director = new SliceCamera();
 const seed = parseCinematicSeed(query.get('seed'));
 if (query.get('clean') === '1') document.body.classList.add('clean');
-if (liveRequested) {
+if (liveRequested && !overlayMode) {
   document.title = 'OnlinePagoda V2 · Portrait source';
   const operatorStatus = document.querySelector<HTMLParagraphElement>('#live-status')!;
   operatorStatus.hidden = liveOperator;
@@ -84,6 +88,7 @@ const report: Record<string, unknown> = {
   repoRevision: __REPO_REVISION__, requestedTreeRevision: requestedTree, profile, viewport: [captureWidth, captureHeight],
   safeMargin: capture.safeMargin, near: capture.near, far: capture.far, scenario, seed, errors, contextRestores: 0,
   ...(liveRequested && { liveStatus: 'OFFLINE', liveReason: '' }),
+  ...(overlayMode && { overlayRendererReady: false }),
 };
 Object.assign(window, { viewerReport: report });
 
@@ -115,7 +120,9 @@ async function boot() {
   const gpu = gl.getExtension('WEBGL_debug_renderer_info');
   report.graphics = gpu ? gl.getParameter(gpu.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER);
   report.browser = navigator.userAgent;
+  let shaderFailed = false;
   renderer.debug.onShaderError = (context, program, vertex, fragment) => {
+    shaderFailed = true;
     const message = [context.getProgramInfoLog(program), context.getShaderInfoLog(vertex),
       context.getShaderInfoLog(fragment)].filter(Boolean).join('\n');
     errors.push(message || 'Shader compilation failed');
@@ -148,6 +155,18 @@ async function boot() {
   let routes: ReturnType<typeof createCinematicRoutes> | ReturnType<typeof createHeroRoutes> | undefined;
   let start: number | undefined;
   let disposeLive: (() => void) | undefined;
+  let overlayReceiver: ReturnType<typeof createLiveReceiver> | undefined;
+  let overlayAttached = false;
+  function reportRendererReady(ready: boolean) {
+    if (!overlayReceiver || !overlaySettings) return;
+    report.overlayRendererReady = ready;
+    overlayReceiver.setRendererReady(ready);
+    if (ready && !overlayAttached) {
+      overlayAttached = true;
+      report.appliedSettingsRevision = overlaySettings.revision;
+      void overlayReceiver.attach(overlaySettings.revision);
+    }
+  }
   const audio = audioRequested
     ? new AudioManager(timing.focusHoldMs, () => start === undefined ? -1 : Math.floor(performance.now() - start), {
       idle: query.get('idlevoice') === 'on' ? { seed, gap: idleGap(query.get('idlegap')) } : undefined,
@@ -273,7 +292,13 @@ async function boot() {
         report.botanicalFrustum = botanicals.group.visible ? botanicals.inFrustum(camera) : [];
       }
     }
-    renderer.render(scene, camera);
+    try {
+      renderer.render(scene, camera);
+    } catch (error) {
+      reportRendererReady(false);
+      throw error;
+    }
+    if (overlayReceiver) reportRendererReady(!lost && !shaderFailed && !gl.isContextLost() && renderer.info.render.calls > 0);
     if (last !== undefined && now > last) {
       frameTimes.push(now - last);
       if (frameTimes.length > 120) frameTimes.shift();
@@ -297,7 +322,7 @@ async function boot() {
           p99ms: times[Math.floor((times.length - 1) * 0.99)],
         };
       }
-      diagnostics.textContent = JSON.stringify(report, null, 2);
+      if (diagnostics) diagnostics.textContent = JSON.stringify(report, null, 2);
     }
     if (!comparison && !manual && frozenAt === undefined) req = requestAnimationFrame(render);
   };
@@ -311,6 +336,7 @@ async function boot() {
   const contextLost = (event: Event) => {
     event.preventDefault();
     lost = true;
+    reportRendererReady(false);
     audio?.suspend('webgl-context');
     clearPresence();
     errors.push('webglcontextlost');
@@ -319,6 +345,7 @@ async function boot() {
   };
   const contextRestored = () => {
     lost = false;
+    shaderFailed = false;
     report.contextRestores = Number(report.contextRestores) + 1;
     last = undefined;
     frameTimes.length = 0;
@@ -383,7 +410,7 @@ async function boot() {
       const notice = document.createElement('p');
       notice.setAttribute('role', 'status');
       notice.textContent = `Sakura R16 (${profile}) · thay thế R17B: ${sakura.report.fallbackReason}`;
-      diagnostics.before(notice);
+      diagnostics?.before(notice);
       document.title = 'OnlinePagoda V2 · Sakura R16 fallback';
       console.warn(notice.textContent);
     } else if (requestedTree === 'R17B') {
@@ -438,8 +465,16 @@ async function boot() {
       if (routes.rejected.length) console.warn('P0.9 cinematic clearance fallback', routes.rejected);
     }
     if (!lost) show('');
-    if (liveOperator) disposeLive = createLiveControls(report, packets => driver.enqueueLive(packets),
-      () => driver.loseLiveSource(), () => driver.liveReceipt);
+    if (overlaySettings) {
+      overlayReceiver = createLiveReceiver({
+        feed: entries => driver.enqueueLive(entries), sourceLost: () => driver.loseLiveSource(),
+        receipt: () => driver.liveReceipt, status: state => updateLiveReport(report, state),
+      });
+      disposeLive = overlayReceiver.dispose;
+    } else if (liveOperator) {
+      disposeLive = createLiveControls(report, entries => driver.enqueueLive(entries),
+        () => driver.loseLiveSource(), () => driver.liveReceipt);
+    }
     if (manual) {
       Object.assign(window, { p08Review: {
         step: (seconds: number, draw = true, angle?: number, idle?: number, seatId?: string,
@@ -506,5 +541,5 @@ boot().catch((error: unknown) => {
   const message = error instanceof Error ? error.message : String(error);
   errors.push(message);
   show(message);
-  diagnostics.textContent = JSON.stringify(report, null, 2);
+  if (diagnostics) diagnostics.textContent = JSON.stringify(report, null, 2);
 });
