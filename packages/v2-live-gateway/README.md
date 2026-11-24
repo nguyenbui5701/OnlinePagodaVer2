@@ -6,6 +6,8 @@ Base PR #23 `f8773cd35476924e0f68204b0d0e82b7e0e87d26`. Gateway dùng `tiktok-li
 
 [P1.0-B6 · Cập nhật trên hai máy, mở tiếng và kiểm thử Web Audio](P10B6.md)
 
+[P1.0-B7 · Ghế sen LIVE, thời gian ngồi và hướng dẫn cập nhật](P10B7.md)
+
 ## Luồng Dashboard và Overlay
 
 - [Dashboard điều khiển](http://127.0.0.1:5189/dashboard/) để lưu cấu hình, kết nối và theo dõi sự kiện.

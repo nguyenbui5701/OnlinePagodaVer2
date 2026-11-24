@@ -45,6 +45,7 @@ const scene = (page, predicate, input = null) => page.waitForFunction(predicate,
 const errors = [];
 let browser;
 let viewer;
+let overlay;
 
 try {
   viewer = await preview({ preview: { port } });
@@ -56,6 +57,11 @@ try {
       const request = route.request();
       const url = new URL(request.url());
       url.port = String(target);
+      if (base === origin) {
+        const response = await fetch(url, { redirect: 'error' });
+        return route.fulfill({ status: response.status, contentType: response.headers.get('content-type') ?? undefined,
+          body: Buffer.from(await response.arrayBuffer()) });
+      }
       const headers = await request.allHeaders();
       delete headers.host;
       delete headers['content-length'];
@@ -70,7 +76,7 @@ try {
   const dashboard = await context.newPage();
   await dashboard.setViewportSize({ width: 1240, height: 1000 });
   await dashboard.goto(origin + '/dashboard/');
-  const overlay = await context.newPage();
+  overlay = await context.newPage();
   await overlay.goto(origin + '/overlay/');
   await wait(() => gateway.overlayReady && gateway.presenceApplied?.revision === 1, 'Overlay applies defaults');
   assert(await dashboard.locator('#presence-autoJoinMember').isChecked());
@@ -239,6 +245,13 @@ try {
   for (const [key, png] of Object.entries(photos)) await writeFile(new URL(key, out), png);
   await writeFile(new URL('receipt.json', out), JSON.stringify(receipt, null, 2) + '\n');
   console.log(JSON.stringify(receipt, null, 2));
+} catch (error) {
+  const report = await overlay?.evaluate(() => ({
+    status: document.querySelector('#status')?.textContent,
+    receiver: window.viewerReport?.liveStatus, seating: window.viewerReport?.seating, camera: window.viewerReport?.mode,
+  })).catch(() => undefined);
+  console.error('Fixture diagnostics', { report, errors, ready: gateway.overlayReady, applied: gateway.presenceApplied });
+  throw error;
 } finally {
   await browser?.close();
   await viewer?.close();

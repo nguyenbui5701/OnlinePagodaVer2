@@ -112,7 +112,7 @@ test('confirmed streak seats the donor after unseated progress, protects active/
   assert.equal(fallback.effects.find(e => e.type === 'giftFx')?.anchor, 'overlay');
   assert.deepEqual(names(engine), ['a', 'b', 'd']);
   assert.equal(engine.snapshot().confirmedGiftCount, 9);
-  const focus = engine.advance(25_000).filter(e => e.type === 'focusStarted').map(e => e.intent.actorId);
+  const focus = engine.advance(25_000).flatMap(e => e.type === 'focusStarted' ? [e.intent.actorId] : []);
   assert.deepEqual(focus, seated.map(a => a.actorId));
 });
 
