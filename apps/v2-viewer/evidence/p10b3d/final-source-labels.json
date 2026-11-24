@@ -1,0 +1,56 @@
+[
+  {
+    "profile": "eco",
+    "tree": "r17b",
+    "label": "Cảnh 3D Sakura R17B",
+    "pixelHash": "a0ad9d63013a4b66f692a41384a842e82c151867b16a4222d35811b29c833cfb",
+    "file": "eco-9-r17b-wide-opening.png",
+    "captureSource": "afa9a8b6aed760634b920e964d897147a6bcd2d0",
+    "loadedAsset": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770"
+  },
+  {
+    "profile": "eco",
+    "tree": "r16",
+    "label": "Cảnh 3D Sakura R16",
+    "pixelHash": "f6e33d563411c3469d3a86376fb6d7e801167dd2d186bafffdd169203485fdbd",
+    "file": "eco-9-r16-wide-opening.png",
+    "captureSource": "afa9a8b6aed760634b920e964d897147a6bcd2d0",
+    "loadedAsset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173"
+  },
+  {
+    "profile": "eco",
+    "tree": "fallback",
+    "label": "Cảnh 3D Sakura R16",
+    "pixelHash": "f6e33d563411c3469d3a86376fb6d7e801167dd2d186bafffdd169203485fdbd",
+    "file": "eco-fallback-missing.png",
+    "captureSource": "afa9a8b6aed760634b920e964d897147a6bcd2d0",
+    "loadedAsset": "accd47de97af2af2bada3d8008abf2c16100edbc8045b306e6c2fac3ef0e8173"
+  },
+  {
+    "profile": "quality",
+    "tree": "r17b",
+    "label": "Cảnh 3D Sakura R17B",
+    "pixelHash": "73b67484b48df5bb7c7767480f22d5af3aea651f87e1a1500e3d62b271cbd93c",
+    "file": "quality-9-r17b-wide-opening.png",
+    "captureSource": "afa9a8b6aed760634b920e964d897147a6bcd2d0",
+    "loadedAsset": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267"
+  },
+  {
+    "profile": "quality",
+    "tree": "r16",
+    "label": "Cảnh 3D Sakura R16",
+    "pixelHash": "e38dadd6f4b45c33cbe39c1c62a7465dae1effcaeee1fa160a04f07018534359",
+    "file": "quality-9-r16-wide-opening.png",
+    "captureSource": "afa9a8b6aed760634b920e964d897147a6bcd2d0",
+    "loadedAsset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c"
+  },
+  {
+    "profile": "quality",
+    "tree": "fallback",
+    "label": "Cảnh 3D Sakura R16",
+    "pixelHash": "e38dadd6f4b45c33cbe39c1c62a7465dae1effcaeee1fa160a04f07018534359",
+    "file": "quality-fallback-missing.png",
+    "captureSource": "afa9a8b6aed760634b920e964d897147a6bcd2d0",
+    "loadedAsset": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c"
+  }
+]
