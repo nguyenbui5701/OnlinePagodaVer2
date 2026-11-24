@@ -52,3 +52,8 @@ Gateway xác thực mã phiên qua header, kiểm tra Host/Origin chính xác v�
 - Với Viewer đang chạy tại cổng 5189 và cổng 5203 còn trống, chạy `node scripts/evidence-live-gateway.mjs` từ `apps/v2-viewer`. Runner dùng browser Edge, gateway HTTP thật và provider fixture chỉ trong test. Chỉ số và ảnh WebGL 720×1280 lưu tại `evidence/` của package này. Test worker riêng nạp đúng connector đã cài và kiểm tra IPC khởi động.
 
 Chưa có username phòng đang hoạt động được chỉ định để Codex kiểm thử. Bằng chứng hiện tại kiểm tra đường truyền cục bộ và fixture qua Viewer, chưa có lần gọi provider, entitlement thực tế, sự kiện LIVE thật hoặc Studio capture. Kiểm tra đoạn này trên phòng được phép theo bước Connect ở trên. Không cần phát công khai để kiểm thử giao diện hoặc mua quà để kiểm thử.
+## Kết quả SA
+
+106 tests PASS gồm 79 Viewer, 12 Event Engine, 8 voice worker và 7 gateway. Cả hai build Viewer và Engine PASS. CLI gateway đã khởi động với connector được nạp riêng trong worker, preflight loopback trả 204, sai mã trả 401 và poll trước khi có phiên trả 409.
+
+Bản build Viewer chạy trong Edge, với gateway HTTP cục bộ và fixture được tiêm từ runner. Các checkpoint xác nhận OFFLINE, CONNECTED_NO_EVENTS, EVENTS_VERIFIED, focus đúng seat-1 và Disconnect. Fixture có chat, member, like, room, gift progress, bốn gift final và một final lặp. Engine ghi bốn quà, ba ghế, và số người xem 16. [Biên bản browser](evidence/browser.json) · [Ảnh WebGL 720×1280](evidence/fixture-focus.png)
