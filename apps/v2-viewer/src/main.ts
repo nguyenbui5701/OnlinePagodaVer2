@@ -13,6 +13,7 @@ import { measureSeatContact } from './seat-contact.ts';
 import { SliceCamera } from './slice-camera.ts';
 import { parseScenario, SliceDriver, timing } from './slice-driver.ts';
 import { AudioManager } from './audio/manager.ts';
+import { createLiveControls } from './live-controls.ts';
 import { idleGap } from './audio/idle-blessing.ts';
 import { loadIdleCorpus } from './audio/idle-corpus.ts';
 import { createCommunityNames, occupancy } from './community-presentation.ts';
@@ -57,15 +58,16 @@ const presence = !comparison && query.get('presence') === 'on';
 if (presence) usePersistentNameplates();
 const chatBubbles = !comparison && query.get('chatbubbles') === 'on';
 const giftIcons = !comparison && query.get('gifticons') === 'on';
-const enableBlessing = blessingEnabled(query.get('blessing'), scenario, fxEnabled);
+const enableBlessing = blessingEnabled(query.get('blessing'), liveRequested ? 'gifts' : scenario, fxEnabled);
 const rings = !comparison && query.get('seats') === 'rings';
 const rich = !comparison && query.get('ambience') === 'rich';
 const hero = !comparison && query.get('shots') === 'hero';
 const crowd = rings || liveRequested || (scenario === 'community' && query.get('crowd') !== 'off');
 const diversity = !comparison && diversityEnabled(crowd, query.get('diversity'));
 const enableBotanicals = !comparison && botanicalsEnabled(crowd, query.get('botanicals'));
+const liveOperator = liveRequested && !manual && frozenAt === undefined;
 const audioRequested = query.get('audio') === 'on' && !manual && !comparison && !liveRequested && frozenAt === undefined;
-const driver = new SliceDriver(liveRequested ? 'offline' : scenario,
+const driver = new SliceDriver(liveOperator ? 'live' : liveRequested ? 'offline' : scenario,
   scenario === 'community' ? presenceDemo(chatBubbles, giftIcons) : [], audioRequested);
 const director = new SliceCamera();
 const seed = parseCinematicSeed(query.get('seed'));
@@ -73,7 +75,7 @@ if (query.get('clean') === '1') document.body.classList.add('clean');
 if (liveRequested) {
   document.title = 'OnlinePagoda V2 · Portrait source';
   const operatorStatus = document.querySelector<HTMLParagraphElement>('#live-status')!;
-  operatorStatus.hidden = false;
+  operatorStatus.hidden = liveOperator;
   operatorStatus.textContent = 'OFFLINE · Chưa có nguồn sự kiện TikTok đã xác minh. Chỉ hiển thị cảnh 3D.';
 }
 
@@ -81,7 +83,7 @@ const errors: string[] = [];
 const report: Record<string, unknown> = {
   repoRevision: __REPO_REVISION__, requestedTreeRevision: requestedTree, profile, viewport: [captureWidth, captureHeight],
   safeMargin: capture.safeMargin, near: capture.near, far: capture.far, scenario, seed, errors, contextRestores: 0,
-  ...(liveRequested && { liveStatus: 'OFFLINE', liveReason: 'P10B2_PROVIDER_ACCESS_BLOCKED' }),
+  ...(liveRequested && { liveStatus: 'OFFLINE', liveReason: '' }),
 };
 Object.assign(window, { viewerReport: report });
 
@@ -145,6 +147,7 @@ async function boot() {
   let nameplates: ReturnType<typeof createNameplates> | undefined;
   let routes: ReturnType<typeof createCinematicRoutes> | ReturnType<typeof createHeroRoutes> | undefined;
   let start: number | undefined;
+  let disposeLive: (() => void) | undefined;
   const audio = audioRequested
     ? new AudioManager(timing.focusHoldMs, () => start === undefined ? -1 : Math.floor(performance.now() - start), {
       idle: query.get('idlevoice') === 'on' ? { seed, gap: idleGap(query.get('idlegap')) } : undefined,
@@ -329,6 +332,7 @@ async function boot() {
     if (disposed) return;
     disposed = true;
     abort.abort();
+    disposeLive?.();
     audio?.dispose();
     cancelAnimationFrame(req);
     canvas.removeEventListener('webglcontextlost', contextLost);
@@ -434,6 +438,8 @@ async function boot() {
       if (routes.rejected.length) console.warn('P0.9 cinematic clearance fallback', routes.rejected);
     }
     if (!lost) show('');
+    if (liveOperator) disposeLive = createLiveControls(report, packets => driver.enqueueLive(packets),
+      () => driver.loseLiveSource(), () => driver.liveDeliveryFailed);
     if (manual) {
       Object.assign(window, { p08Review: {
         step: (seconds: number, draw = true, angle?: number, idle?: number, seatId?: string,
