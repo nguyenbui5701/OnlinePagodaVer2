@@ -37,3 +37,7 @@ A: reproduce Owner issue on actual production routes /dashboard/ and /overlay/ (
 
 ## 7. Out of scope
 Real-seat capacity extension, new artwork beyond accepted B8/B9, audio offline preview, gTTS provider changes, TikTok connector and ACK/Engine redesign. Final art/code acceptance not equivalent to production LIVE authorization.
+
+## Owner scope decision — 2026-11-24
+
+Owner replied “tiếp tục theo đề xuất và rules” after the three-design roadmap and recommendation to activate only Design32 art first. **OWNER_P10C0_SCOPE_GO / P10C0_DEPENDENCY_HOLD.** Design scope approved; no code task active. Await B9 SA integration PASS + Owner visual GO, then pin actual input and issue Codex task; do not diagnose or edit camera runtime in B8 art. Existing PR26 Owner LIVE/Studio/listening and physical GPU evidence remain pending; scope GO is not final art/runtime acceptance.
