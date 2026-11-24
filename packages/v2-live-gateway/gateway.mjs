@@ -9,6 +9,9 @@ const faults = new Set(['ROOM_OFFLINE', 'ACCESS_DENIED', 'PAID_ROUTE', 'SIGNING_
 
 export class Gateway {
   owner;
+  receiver;
+  appliedRevision = null;
+  applyPending = false;
   status = 'OFFLINE';
   reason = '';
   deliveryUncertain = false;
@@ -36,12 +39,43 @@ export class Gateway {
 
   constructor(launch = launchWorker) { this.launch = launch; }
 
-  connect(client, username) {
-    if (this.limited || this.stopWorker || this.stopping || this.retry || (this.owner && this.owner !== client) || this.queue.length) return false;
-    if (!this.owner) {
-      this.owner = client;
-      this.sequence = this.acknowledged = this.offered = 0;
+  claim(client, receiver) {
+    this.owner = client;
+    this.receiver = receiver;
+    this.sequence = this.acknowledged = this.offered = 0;
+  }
+
+  attach(client, revision) {
+    if (this.owner) {
+      if (this.receiver !== 'overlay' || this.owner !== client || this.appliedRevision !== revision) return false;
+    } else {
+      this.claim(client, 'overlay');
+      this.appliedRevision = revision;
     }
+    this.refreshLease();
+    return true;
+  }
+
+  get canApply() {
+    return this.receiver === 'overlay' && !this.online && !this.stopWorker && !this.stopping &&
+      !this.retry && !this.queue.length && !this.applyPending;
+  }
+
+  statusSnapshot() {
+    return {
+      status: this.status, reason: this.reason, counters: this.counters, viewerCount: this.viewerCount,
+      dropped: this.dropped, deliveryUncertain: this.deliveryUncertain,
+      receiver: this.receiver ?? null, appliedRevision: this.appliedRevision, applyPending: this.applyPending,
+      canApply: this.canApply, canConnect: this.canApply && !this.limited,
+      canDisconnect: !!(this.online || this.stopWorker || this.retry),
+    };
+  }
+
+  connect(client, username, receiver = 'legacy') {
+    if (this.limited || this.stopWorker || this.stopping || this.retry || this.applyPending ||
+        (this.owner && (this.owner !== client || this.receiver !== receiver)) || this.queue.length ||
+        (receiver === 'overlay' && !this.owner)) return false;
+    if (!this.owner) this.claim(client, receiver);
     this.attempts = 0;
     this.refreshLease();
     this.open(username);
@@ -189,7 +223,7 @@ export class Gateway {
     const entries = this.queue.slice(0, 48);
     this.offered = Math.max(this.offered, entries.at(-1)?.seq ?? ack);
     return { version: '0.2.0', entries, status: this.status, reason: this.reason, counters: this.counters,
-      viewerCount: this.viewerCount, dropped: this.dropped, deliveryUncertain: this.deliveryUncertain };
+      viewerCount: this.viewerCount, dropped: this.dropped, deliveryUncertain: this.deliveryUncertain, applyPending: this.applyPending };
   }
 
   refreshLease() {
@@ -201,7 +235,9 @@ export class Gateway {
   release() {
     clearTimeout(this.lease);
     this.stop();
-    this.owner = this.room = undefined;
+    this.owner = this.room = this.receiver = undefined;
+    this.appliedRevision = null;
+    this.applyPending = false;
     this.deliveryUncertain ||= this.queue.some(({ event }) => event.type === 'gift' && event.phase === 'final');
     this.queue.length = 0;
     this.counters = counts();

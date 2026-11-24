@@ -13,7 +13,9 @@ import { measureSeatContact } from './seat-contact.ts';
 import { SliceCamera } from './slice-camera.ts';
 import { parseScenario, SliceDriver, timing } from './slice-driver.ts';
 import { AudioManager } from './audio/manager.ts';
-import { createLiveControls } from './live-controls.ts';
+import { createLiveControls, updateLiveReport } from './live-controls.ts';
+import { createLiveReceiver } from './live-receiver.ts';
+import { overlayContext } from './overlay-context.ts';
 import { idleGap } from './audio/idle-blessing.ts';
 import { loadIdleCorpus } from './audio/idle-corpus.ts';
 import { createCommunityNames, occupancy } from './community-presentation.ts';
@@ -35,8 +37,9 @@ import { presenceDemo } from './presence-demo.ts';
 declare const __REPO_REVISION__: string;
 const canvas = document.querySelector<HTMLCanvasElement>('#capture')!;
 const status = document.querySelector<HTMLParagraphElement>('#status')!;
-const diagnostics = document.querySelector<HTMLPreElement>('#diagnostics')!;
-const query = new URLSearchParams(location.search);
+const diagnostics = document.querySelector<HTMLPreElement>('#diagnostics');
+const overlayMode = document.body.hasAttribute('data-overlay');
+const query = overlayMode ? overlayContext.query : new URLSearchParams(location.search);
 const requestedTree = parseTreeRevision(query.get('tree'));
 const treeLoading = `Đang tải Sakura ${requestedTree}…`;
 const liveRequested = query.get('source') === 'live';
@@ -72,7 +75,7 @@ const driver = new SliceDriver(liveOperator ? 'live' : liveRequested ? 'offline'
 const director = new SliceCamera();
 const seed = parseCinematicSeed(query.get('seed'));
 if (query.get('clean') === '1') document.body.classList.add('clean');
-if (liveRequested) {
+if (liveRequested && !overlayMode) {
   document.title = 'OnlinePagoda V2 · Portrait source';
   const operatorStatus = document.querySelector<HTMLParagraphElement>('#live-status')!;
   operatorStatus.hidden = liveOperator;
@@ -84,6 +87,7 @@ const report: Record<string, unknown> = {
   repoRevision: __REPO_REVISION__, requestedTreeRevision: requestedTree, profile, viewport: [captureWidth, captureHeight],
   safeMargin: capture.safeMargin, near: capture.near, far: capture.far, scenario, seed, errors, contextRestores: 0,
   ...(liveRequested && { liveStatus: 'OFFLINE', liveReason: '' }),
+  ...(overlayMode && { appliedSettingsRevision: overlayContext.revision }),
 };
 Object.assign(window, { viewerReport: report });
 
@@ -297,7 +301,7 @@ async function boot() {
           p99ms: times[Math.floor((times.length - 1) * 0.99)],
         };
       }
-      diagnostics.textContent = JSON.stringify(report, null, 2);
+      if (diagnostics) diagnostics.textContent = JSON.stringify(report, null, 2);
     }
     if (!comparison && !manual && frozenAt === undefined) req = requestAnimationFrame(render);
   };
@@ -383,7 +387,7 @@ async function boot() {
       const notice = document.createElement('p');
       notice.setAttribute('role', 'status');
       notice.textContent = `Sakura R16 (${profile}) · thay thế R17B: ${sakura.report.fallbackReason}`;
-      diagnostics.before(notice);
+      diagnostics?.before(notice);
       document.title = 'OnlinePagoda V2 · Sakura R16 fallback';
       console.warn(notice.textContent);
     } else if (requestedTree === 'R17B') {
@@ -438,8 +442,17 @@ async function boot() {
       if (routes.rejected.length) console.warn('P0.9 cinematic clearance fallback', routes.rejected);
     }
     if (!lost) show('');
-    if (liveOperator) disposeLive = createLiveControls(report, packets => driver.enqueueLive(packets),
-      () => driver.loseLiveSource(), () => driver.liveReceipt);
+    if (overlayMode) {
+      const receiver = createLiveReceiver({
+        feed: entries => driver.enqueueLive(entries), sourceLost: () => driver.loseLiveSource(),
+        receipt: () => driver.liveReceipt, status: state => updateLiveReport(report, state),
+      });
+      disposeLive = receiver.dispose;
+      void receiver.attach(overlayContext.revision);
+    } else if (liveOperator) {
+      disposeLive = createLiveControls(report, entries => driver.enqueueLive(entries),
+        () => driver.loseLiveSource(), () => driver.liveReceipt);
+    }
     if (manual) {
       Object.assign(window, { p08Review: {
         step: (seconds: number, draw = true, angle?: number, idle?: number, seatId?: string,
@@ -506,5 +519,5 @@ boot().catch((error: unknown) => {
   const message = error instanceof Error ? error.message : String(error);
   errors.push(message);
   show(message);
-  diagnostics.textContent = JSON.stringify(report, null, 2);
+  if (diagnostics) diagnostics.textContent = JSON.stringify(report, null, 2);
 });

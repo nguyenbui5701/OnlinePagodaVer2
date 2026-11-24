@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OnlinePagoda V2 · Overlay</title>
+  </head>
+  <body class="clean" data-overlay>
+    <main>
+      <div id="stage">
+        <canvas id="capture" width="720" height="1280" aria-label="Cảnh 3D cây phúc lành"></canvas>
+        <div id="gift-name" class="gift-label" hidden></div>
+        <div id="gift-fx" class="gift-label" hidden></div>
+        <div id="gift-fallback" role="status" hidden></div>
+        <p id="status" role="status" aria-live="polite">Đang tải cảnh 3D…</p>
+      </div>
+    </main>
+    <script type="module" src="/src/overlay-entry.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OnlinePagoda V2 · Dashboard LIVE</title>
+  </head>
+  <body>
+    <main>
+      <header class="page-header">
+        <h1>Điều khiển LIVE</h1>
+        <a class="button primary" href="/overlay/" target="_blank" rel="noopener">Mở Overlay</a>
+      </header>
+      <section class="card connection" aria-label="Kết nối TikTok LIVE">
+        <div class="connection-head">
+          <h2>Kết nối TikTok</h2>
+          <span id="live-state" data-state="OFFLINE">Chưa nối Gateway</span>
+        </div>
+        <p id="overlay-state" role="status">Đang kiểm tra Overlay…</p>
+        <p id="source-reason" hidden></p>
+        <form id="source-form">
+          <label>Tên kênh TikTok
+            <input id="username" required maxlength="25" autocomplete="off" placeholder="@username" />
+          </label>
+          <button id="connect" class="primary" disabled>Kết nối</button>
+          <button id="disconnect" type="button" disabled>Ngắt kết nối</button>
+        </form>
+        <p id="delivery-warning" class="warning" role="status" hidden>Có gift final chưa xác minh giao nhận.</p>
+        <dl id="counters"></dl>
+        <p class="muted">Gift final và progress là số gói nhận. Âm thanh LIVE đang tắt.</p>
+      </section>
+      <section class="card settings" aria-labelledby="settings-title">
+        <h2 id="settings-title">Cấu hình Overlay</h2>
+        <p id="settings-state" role="status">Đang đọc cấu hình…</p>
+        <p id="settings-warning" class="warning" hidden></p>
+        <form id="settings-form">
+          <fieldset disabled id="settings-fields"></fieldset>
+          <div class="actions">
+            <button id="save" class="primary" disabled>Lưu cấu hình</button>
+            <button id="apply" type="button" disabled>Áp dụng vào Overlay</button>
+            <button id="reload-settings" type="button" disabled>Nạp bản đã lưu</button>
+          </div>
+        </form>
+        <p class="muted">Có thể lưu bất cứ lúc nào. Áp dụng cần ngắt LIVE và xử lý xong hàng đợi.</p>
+      </section>
+      <p id="operation" role="status" aria-live="polite"></p>
+    </main>
+    <script type="module" src="/src/dashboard.ts"></script>
+  </body>
+</html>

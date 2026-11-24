@@ -1,5 +1,5 @@
 import type { CueRecord } from './audio/director.ts';
-import { liveBatchLimit, type LiveEntry } from './live-controls.ts';
+import { liveBatchLimit, type LiveEntry } from './live-receiver.ts';
 import { DemoEngine, protocolVersion, type ChatCue, type DemoEvent, type Effect, type FocusIntent, type SessionEvent, type Snapshot } from '../../../packages/v2-events/src/engine.ts';
 import { demoScript, gift, session } from '../../../packages/v2-events/src/fixture.ts';
 import { communityConfig, communityScript } from './community-demo.ts';
