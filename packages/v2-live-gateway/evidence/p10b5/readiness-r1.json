@@ -1,0 +1,41 @@
+{
+  "source": "4397958a728b439f6f207611942ec8c5585244cf",
+  "method": "Built two-page Edge fixture, persisted seed 71 and native WEBGL_lose_context. Loopback interception only.",
+  "browser": "158.0.4370.33",
+  "steps": {
+    "beforeGateway": {
+      "rendererStarted": false,
+      "launches": 0
+    },
+    "beforeFirstFrame": {
+      "zeroRevisionStatus": 400,
+      "requestedSeed": 71,
+      "launches": 0
+    },
+    "beforeConnectLoss": {
+      "connectStatus": 409,
+      "launches": 0,
+      "readyAfterRestoreEventWithoutFrame": false
+    },
+    "activeRecovery": {
+      "revision": 2,
+      "launches": 1,
+      "stops": 0,
+      "connection": 1,
+      "ackPaused": 1,
+      "ackRecovered": 2,
+      "confirmed": 1
+    },
+    "transientGatewayLoss": {
+      "ack": 2,
+      "launches": 1,
+      "stops": 0
+    },
+    "gatewayRestart": {
+      "automaticLaunches": 0,
+      "stops": 1,
+      "appliedRevision": 2
+    }
+  },
+  "errors": []
+}

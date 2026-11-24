@@ -158,7 +158,6 @@ try {
     await control.getByText('Overlay sẵn sàng', { exact: true }).waitFor();
     const revision = await overlay.evaluate(() => window.viewerReport.appliedSettingsRevision);
     assert.equal(revision, 2);
-    const canvas = overlay.locator('#capture');
     async function lose() {
       await overlay.evaluate(() => {
         const canvas = document.querySelector('#capture');

@@ -113,3 +113,10 @@ Bản build Viewer trong Edge kết nối fixture chỉ với username. Ba poll 
 Ảnh Full Option ECO 720×1280 ở seed 9, thời điểm 0 giây, khớp từng byte với PR #23. [Dashboard](evidence/p10b5/dashboard.png) · [Overlay offline](evidence/p10b5/overlay-offline.png) · [Overlay gift focus](evidence/p10b5/overlay-gift-focus.png) · [Biên bản và SHA-256](evidence/p10b5/receipt.json)
 
 Để chạy lại đối chiếu, build branch này và baseline PR #23 trong hai worktree. Chạy Vite preview ở 5191 cho bản mới và 5192 cho baseline với lệnh npm.cmd exec --offline -- vite preview --host 127.0.0.1 --port 5191 --strictPort (đổi cổng cho baseline). Từ apps/v2-viewer trên branch này chạy node scripts/evidence-dashboard-overlay.mjs. Runner khởi động Gateway fixture trên cổng loopback tạm, chuyển tiếp trong trình duyệt và giữ URL vận hành của hai trang. Kết quả là thử nghiệm 0 VND, chưa kết nối room TikTok thật hoặc Studio.
+## SA R1 — điều kiện Overlay sẵn sàng
+
+Overlay mở trước Gateway sẽ chờ và thử lại việc đọc cấu hình. Sau khi nạp cấu hình hợp lệ, Gateway chỉ cho phép Connect sau khi Overlay đã vẽ khung WebGL. Khi mất ngữ cảnh WebGL, Dashboard tạm khóa Connect mới. Phiên đang chạy vẫn giữ lease và hàng đợi. Sau khi Gateway tắt hẳn và khởi động lại, hãy tải lại Overlay rồi kết nối thủ công.
+
+116 tests và hai build PASS. Fixture Edge với WebGL loss/recovery xác nhận revision 0 trả 400, Connect khi Overlay mất WebGL trả 409 và không khởi chạy worker. Phiên đang chạy giữ cùng kết nối, ACK 1 trong lúc mất WebGL và lên 2 sau khung hồi phục, xác nhận đúng một quà. Ngắt poll tạm thời giữ nguyên ACK, còn khởi động lại Gateway không tự kết nối. [Biên bản P1-01](evidence/p10b5/readiness-r1.json)
+
+Chạy lại bằng lệnh node scripts/evidence-dashboard-overlay.mjs --readiness-r1 từ apps/v2-viewer với preview ứng viên trên cổng 5191. Chế độ này không yêu cầu preview baseline.
