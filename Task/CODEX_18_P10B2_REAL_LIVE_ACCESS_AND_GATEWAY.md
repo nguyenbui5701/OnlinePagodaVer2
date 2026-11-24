@@ -1,0 +1,42 @@
+# CODEX 18 — P1.0-B2 Real LIVE access and gateway (PREFLIGHT ACTIVE / IMPLEMENTATION HOLD)
+
+## 1. Role and STOP
+Owner has approved PR20 and requested next step toward actual TikTok LIVE. SA has scoped Design26 §6. Owner operates Studio/account locally. Codex performs read-only provider feasibility now; no runtime edits, install, network connection to a room or implementation PR until SA records Studio evidence and explicit provider permission/license/terms and actual access verification. Do not create another offline replay or synthetic pilot. No new art, V1 writes, paid service, secret sharing, automatic public LIVE or merge. Current STOP `P10B2_OWNER_STUDIO_PROVIDER_PREFLIGHT_REQUIRED`.
+
+## 2. Immutable sources
+- [PR20](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/20) HEAD `fd5dc6655ad6b600c1fe9a3220a1bca193f1d4de`, branch `feature/v2-p10b2-prelive-security`, frozen PR19 base `2f08d17d58f6bcd6093ca30ba3bad8f103219335`. [SA R1](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/20#pullrequestreview-6034046235). Security owner GO recorded. R17B art PR18 `07f57cb35ba3ec68184abbd2c173e29a3fcc4788` unchanged; R16 default/fallback.
+- V1 read-only [source](https://github.com/nguyenbui5701/OnlinePagoda/tree/9ffa2718723b11284dccdf35595c759576672f93/apps/server/src/tiktok) exact SHA `9ffa2718723b11284dccdf35595c759576672f93`. SA independently read worker/options/mapper/provider/transport.ts; no live connection tested.
+- Read main Design07, 10, 13, 14, 16, 24 §6, 26 §6, 27 §13, CODEX13 §10, completed CODEX17. At PR20 read apps/v2-viewer/P10B2_SECURITY.md, P10B2.md, package.json, local-capture-boundary.ts, src/main.ts, src/slice-driver.ts and packages/v2-events/src/protocol.ts/engine.ts. Current protocol **0.2.0**; old 0.1.0 references are historical. Prior visual limits accepted; no source-video reevaluation needed.
+
+## 3. Phase A — Owner Studio preview (ACTIVE; no code required)
+Use existing local hardened built preview. From local repo root, keep current working branch intact:
+```powershell
+git fetch origin feature/v2-p10b2-prelive-security
+git worktree add --detach ../OnlinePagodaV2-LivePreview fd5dc6655ad6b600c1fe9a3220a1bca193f1d4de
+Set-Location ../OnlinePagodaV2-LivePreview
+Set-Location packages/v2-events
+npm.cmd ci
+npm.cmd run build
+Set-Location ../../apps/v2-viewer
+npm.cmd ci
+npm.cmd run assets:p08
+npm.cmd run assets:p012b
+npm.cmd run assets:p012d
+npm.cmd run assets:r17b
+npm.cmd run build
+npm.cmd run capture:p10b2
+```
+Requires Git, Node 24+, immutable asset source objects (existing staging scripts handle/describe fetch); if branch/asset fetch or build fails report exact error, no overwrite. If port 5189 occupied, stop only your known prior preview. No need to repeat 70 tests, 58 screenshots or Blender for unchanged source. On second terminal, dedicated Edge window:
+```powershell
+$edge = 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
+$url = 'http://127.0.0.1:5189/?demo=community&profile=eco&seed=9&look=twilight&clean=1&botanicals=on&diversity=on&blessing=on&presence=on&chatbubbles=on&gifticons=on&ambience=rich&seats=rings&shots=hero&tree=r17b'
+& $edge "--app=$url"
+```
+If Edge path differs choose actual installed executable. Open LIVE Studio manually on eligible account, add Window Capture of Viewer, 9:16 720x1280, fit canvas and remove window border; verify motion and DEMO gift transition. DEMO is private preview only, not real viewer/gift proof. Verify source=live separately by replacing demo query; expected OFFLINE zero real actors/gifts. Do not click Go LIVE. Keep source window open/unminimized; if capture black follow approved runbook, no disable security or expose server. Submit sanitized screenshot (scene/output size only, no account/UI personal data) and short result: eligibility, capture works/black/error, profile and source SHA, optional 20–30s local preview recording. This is Studio preview evidence not hardware qualification. Owner may stop after evidence; close known browser and Ctrl+C server.
+
+## 4. Phase B — Provider decision (read-only ACTIVE)
+Preferred candidate: V1's existing connector pattern; source has 2.5.0 documented, unsigned account auth disabled, worker, room filtering, gift streak group/order IDs. Independently check exact dependency lock/tarball/license (including additional clauses), versioned schema and upstream changes, actual applicable TikTok/platform terms, authorized source/room eligibility, Euler signing/metadata/privacy, quota/route costs and commercial use/distribution constraints. Public TikTok webhook catalog does not establish own-room LIVE feed; do not claim partner access. Euler advertised free limits 1500 req/day, 100 rooms/day, 25 WebSockets as of 2026-11-24, not actual entitlement. Sources: https://developers.tiktok.com/doc/webhooks-events ; https://www.npmjs.com/package/tiktok-live-connector/v/2.5.0 ; https://www.eulerstream.com/pricing ; https://www.eulerstream.com/terms. Produce a concise read-only decision matrix and exact reproducible local preflight plan, list data sent to external provider and unresolved permissions. No copying V1 production or contacting room, installing provider, creating accounts, accepting terms on Owner behalf, paid routes, sign/captcha/access bypass, cookies or tokens in chat. If license/permission/zero-cost unresolved, report BLOCKED. If appropriate candidate exists, ask Owner to explicitly approve its use/terms and designate an authorized already-active room locally. Do not request payment or gifts, no automatic public stream. Only after SA/Owner provider preflight permission may an isolated bounded local connection check run on approved source, no auth-cookie forwarding, no raw payload log, verify room/connect + actual member/chat or room events with redacted metadata, stop on unavailable/rate-limit; gift if genuinely received, otherwise pending. Owner Studio screenshot and acceptable provider-access evidence must reach SA before implementation.
+
+## 5. Phase C — Real gateway (PREPARED, NOT AUTHORIZED YET)
+After SA records both prerequisites and explicit activation, new isolated branch `feature/v2-p10b2-real-event-gateway` from exact PR20 HEAD, target `feature/v2-p10b2-prelive-security`, verify base before branch. Allowed packages/v2-live-gateway/** and minimal apps/v2-viewer input/status integration only; Engine read-only unless separately approved. Provider adapter reads actual approved source, separate worker + validated bounded IPC and local authenticated transport, loopback, strict origin, expiring local auth never in URL/log, no cross-origin wildcard. Keep existing capture boundary; don't enable Vite HMR/WS or broaden host; separate reviewed worker endpoint if required. Normalize protocol 0.2.0, stable roomEpoch/connection/eventId/streakId, strict counts/timestamps/name/chat/identity, no arbitrary avatar URL or source payload storage. Preserve Engine authority, 3 real seats+9 decorative, gift progress vs final exactly once, FIFO and no-seat fallback; no auto-seat chat. Provider reconnect/backpressure bounded, reject stale and duplicate data, confirmed gifts not silently dropped, honest degraded state, no fake DEMO fallback. OFFLINE until authenticated actual connection; distinction CONNECTED_NO_EVENTS vs EVENTS_VERIFIED. New actual gateway code tests, existing 70 tests/builds, six+ real native runtime checkpoints, targeted R16/R17B regression, local transport/auth negative cases, real source receipt and sanitized traces. No claims of real gift PASS without actual completed gift. Owner manual broadcast and physical GPU stability separately gated. No public go-live or new PR until authorized; no repeated historical art/security evidence.
+STOP `P10B2_REAL_GATEWAY_SA_REVIEW_REQUIRED` after activated real gateway PR. For now return preflight matrix, Studio result or pending owner action, no implementation commit, no new code PR. SA determines next activation. `P10B2_PROVIDER_ACCESS_BLOCKED / P10B2_STUDIO_CAPTURE_OWNER_EVIDENCE_REQUIRED / P10A_GPU_OWNER_DEFERRED_NOT_PASS / MERGE_HOLD` remain until actual evidence and explicit decision.
