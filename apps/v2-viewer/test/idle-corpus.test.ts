@@ -10,15 +10,16 @@ const manifest = () => ({
   clips: Array.from({ length: 12 }, (_, i) => ({ id: 'wish-' + String(i + 1).padStart(2, '0'),
     bytes: pcm.length, durationSec: .1, sha256: createHash('sha256').update(pcm).digest('hex') })),
 });
-const base = 'http://127.0.0.1:5189/';
+const base = 'http://127.0.0.1:5189/overlay/';
 const signal = AbortSignal.timeout(5000);
 
-test('local corpus loads and checks every clip with same-origin relative paths', async () => {
+test('local corpus loads and checks every clip with same-origin root paths from /overlay/', async () => {
   const paths: string[] = [];
   const result = await loadIdleCorpus(signal, base, async (input, options) => {
     const url = new URL(String(input));
     assert.equal(url.origin, new URL(base).origin);
     assert.equal(options?.redirect, 'error');
+    assert(url.pathname.startsWith('/audio/vi-gtts-demo-v1/'));
     paths.push(url.pathname);
     return url.pathname.endsWith('/manifest.json') ? Response.json(manifest()) : new Response(pcm);
   });

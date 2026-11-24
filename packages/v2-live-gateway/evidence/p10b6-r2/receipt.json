@@ -1,0 +1,286 @@
+{
+  "method": "Built Edge Dashboard and LIVE Overlay, synthetic final gifts via isolated Gateway, actual opt-in gTTS/FFmpeg. No real viewer names.",
+  "source": "c3bdecd0ebc531fb74149cf55bfc914e7a902ffc",
+  "browser": "158.0.4370.33",
+  "gpu": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "timing": {
+    "priority": {
+      "n": 4,
+      "p50": 133.2,
+      "p95": 267.1,
+      "max": 267.1,
+      "valuesMs": [
+        267.10009765625,
+        86.000244140625,
+        133.199951171875,
+        210.800048828125
+      ]
+    },
+    "channel": {
+      "n": 4,
+      "p50": 161.3,
+      "p95": 294.3,
+      "max": 294.3,
+      "valuesMs": [
+        226.5,
+        294.300048828125,
+        109.900146484375,
+        161.300048828125
+      ]
+    },
+    "volume": {
+      "n": 4,
+      "p50": 222.5,
+      "p95": 223,
+      "max": 223,
+      "valuesMs": [
+        223,
+        221.5,
+        222.699951171875,
+        222.500244140625
+      ]
+    }
+  },
+  "localTargetsMet": {
+    "priority": true,
+    "channel": true,
+    "volume": true
+  },
+  "provider": {
+    "variedTemplateIds": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "actualSynthesis": true,
+    "hits": 10,
+    "fallback": 1,
+    "cold": {
+      "n": 1,
+      "p50": 567.6,
+      "p95": 567.6,
+      "max": 567.6
+    },
+    "warm": {
+      "n": 8,
+      "p50": 1531.1,
+      "p95": 2845,
+      "max": 2845
+    },
+    "cache": {
+      "n": 1,
+      "p50": 2.5,
+      "p95": 2.5,
+      "max": 2.5
+    },
+    "requests": [
+      {
+        "status": 200,
+        "mode": "cold",
+        "ms": 567.5720000000001,
+        "serviceMs": 565.4,
+        "template": 3
+      },
+      {
+        "status": 200,
+        "mode": "warm",
+        "ms": 1531.141099999997,
+        "serviceMs": 1523,
+        "template": 5
+      },
+      {
+        "status": 200,
+        "mode": "warm",
+        "ms": 2549.894400000001,
+        "serviceMs": 2543.9,
+        "template": 7
+      },
+      {
+        "status": 200,
+        "mode": "warm",
+        "ms": 551.0014999999985,
+        "serviceMs": 548.8,
+        "template": 9
+      },
+      {
+        "status": 200,
+        "mode": "warm",
+        "ms": 1628.1840999999986,
+        "serviceMs": 1622.9,
+        "template": 1
+      },
+      {
+        "status": 200,
+        "mode": "warm",
+        "ms": 2760.9577999999965,
+        "serviceMs": 2756.3,
+        "template": 6
+      },
+      {
+        "status": 200,
+        "mode": "warm",
+        "ms": 671.2295000000013,
+        "serviceMs": 653,
+        "template": 8
+      },
+      {
+        "status": 200,
+        "mode": "warm",
+        "ms": 2844.9892000000036,
+        "serviceMs": 2841.7,
+        "template": 0
+      },
+      {
+        "status": 200,
+        "mode": "warm",
+        "ms": 616.5757999999914,
+        "serviceMs": 612.9,
+        "template": 0
+      },
+      {
+        "status": 200,
+        "mode": "cache",
+        "ms": 2.5213999999978114,
+        "serviceMs": 0.3,
+        "template": 0
+      }
+    ]
+  },
+  "recording": {
+    "from": 0,
+    "to": 4371456,
+    "rms": 1100.8393580273444,
+    "peak": 19451,
+    "peakDbFS": -4.53,
+    "clipping": 0,
+    "seconds": 91.072,
+    "sampleRate": 48000,
+    "sha256": "abbadbeffdff6bc2151ec0254115de6f5c2782cdc1eec87b6fb3199acbf8cb36"
+  },
+  "continuity": {
+    "connection": 1,
+    "acknowledged": 13,
+    "confirmed": 22
+  },
+  "voices": [
+    {
+      "event": "voice-start",
+      "request": "demo-1795532736415-gift-1",
+      "seat": "seat-1",
+      "variant": "named",
+      "sceneMs": 21777,
+      "seconds": 1.796875,
+      "contextSec": 19.141333333333332,
+      "afterFocusMs": 138
+    },
+    {
+      "event": "voice-start",
+      "request": "demo-1795532736415-gift-2",
+      "seat": "seat-2",
+      "variant": "named",
+      "sceneMs": 27486,
+      "seconds": 1.700125,
+      "contextSec": 24.84,
+      "afterFocusMs": 0
+    },
+    {
+      "event": "voice-start",
+      "request": "demo-1795532736415-gift-3",
+      "seat": "seat-3",
+      "variant": "named",
+      "sceneMs": 33333,
+      "seconds": 1.8926666666666667,
+      "contextSec": 30.690666666666665,
+      "afterFocusMs": 0
+    },
+    {
+      "event": "voice-start",
+      "request": "demo-1795532736415-gift-4",
+      "seat": "seat-1",
+      "variant": "named",
+      "sceneMs": 40819,
+      "seconds": 2.0591666666666666,
+      "contextSec": 38.176,
+      "afterFocusMs": 0
+    },
+    {
+      "event": "voice-start",
+      "request": "demo-1795532736415-gift-5",
+      "seat": "seat-2",
+      "variant": "named",
+      "sceneMs": 46666,
+      "seconds": 1.4112083333333334,
+      "contextSec": 44.02133333333333,
+      "afterFocusMs": 0
+    },
+    {
+      "event": "voice-start",
+      "request": "demo-1795532736415-gift-6",
+      "seat": "seat-3",
+      "variant": "named",
+      "sceneMs": 52513,
+      "seconds": 2.1545,
+      "contextSec": 49.872,
+      "afterFocusMs": 0
+    },
+    {
+      "event": "voice-start",
+      "request": "demo-1795532736415-gift-7",
+      "seat": "seat-1",
+      "variant": "named",
+      "sceneMs": 60027,
+      "seconds": 1.87775,
+      "contextSec": 57.38133333333333,
+      "afterFocusMs": 0
+    },
+    {
+      "event": "voice-start",
+      "request": "demo-1795532736415-gift-8",
+      "seat": "seat-2",
+      "variant": "named",
+      "sceneMs": 65874,
+      "seconds": 1.7,
+      "contextSec": 63.232,
+      "afterFocusMs": 0
+    },
+    {
+      "event": "voice-start",
+      "request": "demo-1795532736415-gift-9",
+      "seat": "seat-3",
+      "variant": "generic",
+      "sceneMs": 71721,
+      "seconds": 2.1,
+      "contextSec": 69.08,
+      "afterFocusMs": 0
+    },
+    {
+      "event": "voice-start",
+      "request": "demo-1795532736415-gift-10",
+      "seat": "seat-1",
+      "variant": "named",
+      "sceneMs": 80616,
+      "seconds": 1.6681666666666666,
+      "contextSec": 77.97066666666667,
+      "afterFocusMs": 0
+    },
+    {
+      "event": "voice-start",
+      "request": "demo-1795532736415-gift-11",
+      "seat": "seat-1",
+      "variant": "named",
+      "sceneMs": 88095,
+      "seconds": 1.6681666666666666,
+      "contextSec": 85.46133333333333,
+      "afterFocusMs": 0
+    }
+  ],
+  "captures": {
+    "dashboard": "20c3866534c3098654d2223af1d7e9296b02fcbffb68ecf050b6712c8b3c2a53",
+    "overlay": "43c1a156033f3ff40f7cf4c6c8a3b7f132aee891e03d6537f53032042735ff19"
+  }
+}

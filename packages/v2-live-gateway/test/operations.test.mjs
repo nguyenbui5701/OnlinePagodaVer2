@@ -6,7 +6,8 @@ import { join } from 'node:path';
 import test from 'node:test';
 import { Gateway } from '../gateway.mjs';
 import { createGatewayServer } from '../server.mjs';
-import { SettingsStore } from '../settings.mjs';
+import { AudioSettingsStore, SettingsStore } from '../settings.mjs';
+import { audioDefaults } from '../../../apps/v2-viewer/src/live-audio-settings.ts';
 import { liveDefaults } from '../../../apps/v2-viewer/src/live-settings.ts';
 
 async function tempSettings(t) {
@@ -34,17 +35,40 @@ test('settings allowlist, atomic save, conflict, reload and corrupt-file fallbac
   assert.equal(blocked.snapshot.revision, 1);
 });
 
+test('audio settings persist independently and corrupt data is muted', async t => {
+  const { directory, path } = await tempSettings(t);
+  const store = new AudioSettingsStore(path);
+  assert.deepEqual(store.snapshot, { revision: 1, settings: audioDefaults, warning: 'MISSING' });
+  for (const invalid of [
+    { ...audioDefaults, idleSeconds: 9 }, { ...audioDefaults, idleSeconds: 121 },
+    { ...audioDefaults, water: { enabled: 1, volume: 1 } },
+    { ...audioDefaults, water: { enabled: true, volume: 20.5 } },
+    { ...audioDefaults, water: { enabled: true, volume: Infinity } },
+    { ...audioDefaults, water: { enabled: true, volume: 6, extra: true } },
+    { ...audioDefaults, wind: undefined },
+  ]) assert.equal(store.save(1, invalid), 'INVALID_SETTINGS');
+  const edited = { ...audioDefaults, idleSeconds: 120, master: { enabled: true, volume: 90 } };
+  assert.equal(store.save(1, edited), undefined);
+  assert.deepEqual(await readdir(directory), ['settings.json']);
+  assert.equal(store.save(1, audioDefaults), 'SETTINGS_CONFLICT');
+  assert.deepEqual(new AudioSettingsStore(path).snapshot, { revision: 2, settings: edited, warning: '' });
+  await writeFile(path, '{"version":2}');
+  assert.equal(new AudioSettingsStore(path).snapshot.warning, 'INVALID');
+  assert.equal(new AudioSettingsStore(path).snapshot.settings.master.enabled, false);
+});
+
 const receiver = 'a'.repeat(32);
 const other = 'b'.repeat(32);
 async function loopback(t) {
-  const { path } = await tempSettings(t);
+  const { directory, path } = await tempSettings(t);
+  const audio = new AudioSettingsStore(join(directory, 'audio-settings.json'));
   const worker = { launches: 0, stops: 0 };
   const gateway = new Gateway((_username, receive) => {
     worker.launches++;
     worker.receive = receive;
     return () => { worker.stops++; };
   });
-  const server = createGatewayServer({ gateway, settings: new SettingsStore(path) });
+  const server = createGatewayServer({ gateway, settings: new SettingsStore(path), audio });
   server.listen(0, '127.0.0.1');
   await once(server, 'listening');
   t.after(() => { server.closeAllConnections(); return new Promise(done => server.close(done)); });
@@ -52,8 +76,37 @@ async function loopback(t) {
     method: 'POST', headers: { Origin: 'http://127.0.0.1:5189', 'Content-Type': 'application/json' },
     body: JSON.stringify(data),
   });
-  return { post, gateway, worker };
+  return { post, gateway, worker, audio };
 }
+
+test('Overlay audio piggybacks a consumed ACK without changing visual revision or accepting a second receiver', async t => {
+  const { post, gateway } = await loopback(t);
+  const off = { revision: 1, state: 'MUTED', thanks: 'OFF', wishes: 'OFF' };
+  const poll = (client, audio) => post('/poll', { client, ack: 0, ready: true, audio });
+  await post('/attach', { client: receiver, revision: 1 });
+  const first = await poll(receiver, off);
+  assert.equal(first.status, 200);
+  assert.equal((await first.json()).audioDesired.settings.master.enabled, false);
+  assert.equal((await poll(other, off)).status, 409);
+  assert.equal((await poll(receiver, { ...off, revision: 2 })).status, 200);
+  assert.equal(gateway.audioApplied, undefined);
+  assert.equal((await poll(receiver, { ...off, state: 'invented' })).status, 200);
+  assert.equal(gateway.audioApplied, undefined);
+  await poll(receiver, off);
+  assert.equal((await post('/poll', { client: receiver, ack: 0, audio: off })).status, 400);
+  const hot = { ...audioDefaults, master: { ...audioDefaults.master, enabled: true } };
+  assert.equal((await post('/save-audio', { revision: 1, settings: hot })).status, 200);
+  assert.equal((await post('/save-audio', { revision: 1, settings: hot })).status, 409);
+  const status = await (await post('/status')).json();
+  assert.equal(status.desired.revision, 1);
+  assert.equal(status.appliedRevision, 1);
+  assert.equal(status.audioDesired.revision, 2);
+  assert.deepEqual(status.audioApplied, off);
+  assert.equal((await poll(receiver, { ...off, revision: 2, state: 'LOCKED' })).status, 200);
+  assert.equal(gateway.acknowledged, 0);
+  gateway.release();
+  assert.equal((await (await post('/status')).json()).audioApplied, null);
+});
 
 test('operator stays separate from receiver, and saved settings wait through LIVE and ACK drain', async t => {
   const { post, gateway, worker } = await loopback(t);

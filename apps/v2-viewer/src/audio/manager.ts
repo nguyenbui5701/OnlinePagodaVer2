@@ -1,13 +1,16 @@
+import type { AudioApplied, AudioSnapshot } from '../live-audio-settings.ts';
 import type { Snapshot } from '../../../../packages/v2-events/src/protocol.ts';
 import { AudioDirector, type Binding, type Cue, type CueRecord } from './director.ts';
 import { IdleBlessingDirector, idleGap, type IdleCue } from './idle-blessing.ts';
-import { loopbackVoice, NamedVoice, type NamedProvider } from './named-voice.ts';
+import { loopbackVoice, NamedVoice, type LiveNamedProvider, type NamedProvider } from './named-voice.ts';
 import { Mixer, type AudioMark, type MixLevels } from './mixer.ts';
 
 type Status = 'LOCKED' | 'STARTING' | 'READY' | 'PLAYING' | 'MUTED' | 'BLOCKED' | 'UNAVAILABLE' |
   'DISCONNECTED' | 'VOICE_LOADING' | 'VOICE_DEGRADED' | 'VOICE_UNAVAILABLE';
 
 type AudioOptions = {
+  live?: boolean;
+  prepareLive?: LiveNamedProvider;
   idle?: { seed: number; gap?: number };
   dynamic?: boolean;
   namedProvider?: NamedProvider;
@@ -18,6 +21,11 @@ type AudioOptions = {
 const bells: IdleCue[] = [0, 1, 2, 3].map(i => ({ id: 'lotus-bell-' + i, kind: 'bell' }));
 
 export class AudioManager {
+  private readonly live: boolean;
+  private attached = false;
+  private sourceOnline = false;
+  private settings?: AudioSnapshot;
+  private failed = false;
   private named?: NamedVoice;
   private dynamic = 'DYNAMIC_TTS_BLOCKED';
   private readonly idle?: IdleBlessingDirector;
@@ -60,20 +68,24 @@ export class AudioManager {
 
   constructor(holdMs: number, clock: () => number, options: AudioOptions = {}) {
     this.clock = clock;
+    this.live = options.live === true;
     this.idle = options.idle && new IdleBlessingDirector(options.idle.seed, options.idle.gap);
     this.speech = options.idleSpeech;
     this.loadIdleSpeech = options.loadIdleSpeech;
-    if (options.namedProvider) {
+    if (!this.live && options.namedProvider) {
       this.named = new NamedVoice(options.namedProvider);
       this.dynamic = 'DYNAMIC_TTS_FIXTURE';
     }
+    if (this.live && options.prepareLive) this.named = new NamedVoice(undefined, options.prepareLive);
     this.director = new AudioDirector(holdMs, {
       sfx: cue => this.mixer?.sfx(cue),
       voice: (cue, available, waitUntil) => this.playGiftVoice(cue, available, waitUntil),
-      prepare: cue => this.named?.prefetch(cue),
+      prepare: cue => { if (!this.live || this.namedEnabled) this.named?.prefetch(cue); },
       discard: request => this.named?.cancel(request),
       cut: reason => this.mixer?.cut(reason),
-    });
+    }, this.live);
+    document.addEventListener('visibilitychange', this.visibility);
+    if (this.live) return;
     this.panel.id = 'audio-controls';
     this.panel.setAttribute('aria-label', 'Điều khiển âm thanh DEMO');
     this.message.setAttribute('role', 'status');
@@ -86,11 +98,78 @@ export class AudioManager {
     if (options.idle) this.addIdleControls(options.idle.gap);
     if (options.dynamic) this.addDynamicControl();
     document.querySelector('main')!.after(this.panel);
-    document.addEventListener('visibilitychange', this.visibility);
     this.show('LOCKED');
   }
 
+  configure(snapshot: AudioSnapshot | undefined) {
+    if (this.settings?.revision === snapshot?.revision) return;
+    const previous = this.settings?.settings;
+    this.settings = snapshot;
+    const current = snapshot?.settings;
+    if (!current?.master.enabled) {
+      this.generation++;
+      this.setOutput(false, 'master-off');
+    }
+    if (!this.namedEnabled && this.live) {
+      this.named?.clear();
+      this.mixer?.stopNamed();
+    }
+    if (!current || this.failed) return;
+    this.playBell = current.idleBell.enabled;
+    this.playSpeech = current.idleWish.enabled;
+    if (previous?.idleSeconds !== current.idleSeconds) this.idle?.setGap(current.idleSeconds === null ? undefined : current.idleSeconds * 1000);
+    if (previous?.idleBell.enabled !== this.playBell || previous?.idleWish.enabled !== this.playSpeech) {
+      this.updateIdlePool();
+      this.idle?.reset();
+    }
+    this.mixer?.configure(current);
+    this.prepareSpeech();
+  }
+
+  private get namedEnabled() {
+    const settings = this.settings?.settings;
+    return !!(settings?.master.enabled && settings.giftThanks.enabled && settings.namedEnabled);
+  }
+
+  liveLink(attached: boolean, online: boolean) {
+    if (this.attached && !attached) this.generation++;
+    this.attached = attached;
+    this.sourceOnline = online;
+    if (!online) this.setOutput(false, 'source-link');
+  }
+
+  unlock() {
+    if (!this.live || this.failed || !this.attached || !this.settings?.settings.master.enabled || !this.muted) return;
+    void this.toggle();
+  }
+
+  fail() {
+    if (this.failed) return;
+    this.failed = true;
+    try { this.dispose(); }
+    catch { void this.mixer?.context.close().catch(() => {}); }
+  }
+
+  get applied(): AudioApplied | undefined {
+    const snapshot = this.settings;
+    if (!snapshot) return;
+    const voice = this.mixer?.availability;
+    const settings = snapshot.settings;
+    const thanks = !settings.giftThanks.enabled ? 'OFF' : !voice ? 'PENDING' : voice.ready ?
+      'AVAILABLE' : voice.waiting ? 'LOADING' : 'UNAVAILABLE';
+    const wishes = !settings.idleWish.enabled ? 'OFF' : this.speech?.size ? 'AVAILABLE' :
+      this.speechState === 'IDLE_SPEECH_LIBRARY_UNAVAILABLE' ? 'UNAVAILABLE' :
+      this.speechState === 'IDLE_SPEECH_LOADING' ? 'LOADING' : 'PENDING';
+    const state = this.failed ? 'UNAVAILABLE' : !settings.master.enabled || document.hidden ? 'MUTED' :
+      this.status === 'BLOCKED' || this.status === 'UNAVAILABLE' ? this.status :
+      this.muted ? (this.status === 'STARTING' ? 'STARTING' : this.mixer ? 'MUTED' : 'LOCKED') :
+      !this.sourceOnline || !this.session?.connected ? 'DISCONNECTED' :
+      this.outputEnabled ? (voice?.playing ? 'PLAYING' : 'READY') : 'MUTED';
+    return { revision: snapshot.revision, state, thanks, wishes };
+  }
+
   frame(state: Snapshot, delivery: { epoch: number; records: readonly CueRecord[] }, binding?: Binding) {
+    if (this.disposed) return;
     if (this.mixer) this.mixer.sceneMs = state.atMs;
     const previous = this.session;
     const changed = previous && (previous.room !== state.roomSessionId || previous.epoch !== delivery.epoch ||
@@ -98,7 +177,7 @@ export class AudioManager {
     this.session = { room: state.roomSessionId, epoch: delivery.epoch, connected: state.connected };
     if (changed) this.setOutput(false, state.connected ? 'session-change' : 'disconnect');
     // A frame spanning a session boundary may carry earlier cues. Resume past that entire batch.
-    this.syncOutput(changed ? state.atMs : this.clock());
+    this.syncOutput(changed || this.live ? state.atMs : this.clock());
     const gift = this.idle && delivery.records.some(record => record.effect.type === 'giftFx' &&
       record.disposition === 'accepted' && record.room === state.roomSessionId);
     const idleAllowed = this.outputEnabled && !gift && state.camera.mode === 'CINEMATIC' && !state.focus &&
@@ -115,7 +194,7 @@ export class AudioManager {
   }
 
   get report() {
-    return { status: this.status, connected: this.session?.connected, outputEnabled: this.outputEnabled,
+    return { status: this.status, ...(this.live ? { applied: this.applied } : {}), connected: this.session?.connected, outputEnabled: this.outputEnabled,
       sfxAvailable: this.outputEnabled, ambience: this.ambience && this.outputEnabled,
       queue: this.director.queued, marks: this.marks, suppressed: this.director.suppressed,
       voice: this.mixer?.availability, dynamic: this.dynamic,
@@ -131,17 +210,26 @@ export class AudioManager {
   }
 
   dispose() {
+    if (this.disposed) return;
     this.disposed = true;
     this.speechRequest?.abort();
-    this.suspend('dispose');
-    this.release?.();
-    if (this.opening) void this.opening.close().catch(() => {});
-    this.mixer?.dispose();
-    this.panel.remove();
-    document.removeEventListener('visibilitychange', this.visibility);
+    try { this.suspend('dispose'); }
+    finally {
+      this.release?.();
+      if (this.opening) void this.opening.close().catch(() => {});
+      try { this.mixer?.dispose(); }
+      finally {
+        this.panel.remove();
+        document.removeEventListener('visibilitychange', this.visibility);
+      }
+    }
   }
 
-  private visibility = () => { if (document.hidden) this.suspend('hidden'); };
+  private visibility = () => {
+    if (!document.hidden) return;
+    try { this.suspend('hidden'); }
+    catch (error) { if (this.live) this.fail(); else throw error; }
+  };
 
   private async toggle() {
     if (this.disposed || this.opening) return;
@@ -178,19 +266,25 @@ export class AudioManager {
         this.mixer = new Mixer(context, mark => {
           if (this.marks.length >= 128) this.marks.shift();
           this.marks.push(mark);
-        });
+        }, this.live);
         this.opening = undefined;
         context.addEventListener('statechange', () => {
-          if (!this.disposed && context.state !== 'running') this.suspend('audio-context');
+          if (!this.disposed && context.state !== 'running') {
+            try { this.suspend('audio-context'); }
+            catch (error) { if (this.live) this.fail(); else throw error; }
+          }
         });
         for (const bus of ['voice', 'sfx', 'ambience'] as const) this.mixer.setLevel(bus, this.levels[bus]);
         this.mixer.setAmbience(this.ambience);
-        this.mixer.prewarm();
+        if (this.live) {
+          if (this.settings) this.mixer.configure(this.settings.settings);
+        } else this.mixer.prewarm();
         this.activate();
         await hold;
       });
     } catch {
-      if (!this.disposed) this.show('UNAVAILABLE');
+      if (this.live) this.fail();
+      else if (!this.disposed) this.show('UNAVAILABLE');
     } finally {
       if (this.opening === context) this.opening = undefined;
       if (!this.owns(context) && context.state !== 'closed') void context.close().catch(() => {});
@@ -201,7 +295,13 @@ export class AudioManager {
 
   private activate() {
     this.muted = false;
-    this.syncOutput(this.clock());
+    if (!this.live) this.syncOutput(this.clock());
+    this.prepareSpeech();
+    this.refreshStatus();
+  }
+
+  private prepareSpeech() {
+    if (this.live && (!this.mixer || !this.settings?.settings.master.enabled || !this.playSpeech || this.muted)) return;
     if (this.idle && this.loadIdleSpeech && !this.speechRequest) {
       const request = new AbortController();
       this.speechRequest = request;
@@ -210,19 +310,24 @@ export class AudioManager {
         .then(speech => {
           if (request.signal.aborted) return;
           this.speech = speech;
+          if (this.live) {
+            this.updateIdlePool();
+            this.idle?.reset();
+            return;
+          }
           this.speechControl!.disabled = false;
           this.speechLabel!.data = ' L\u1eddi ch\u00fac l\u00fac r\u1ea3nh';
         }).catch(() => {
           if (request.signal.aborted) return;
           this.speechState = 'IDLE_SPEECH_LIBRARY_UNAVAILABLE';
-          this.speechLabel!.data = ' L\u1eddi ch\u00fac l\u00fac r\u1ea3nh (thi\u1ebfu th\u01b0 vi\u1ec7n h\u1ee3p l\u1ec7)';
+          if (this.speechLabel) this.speechLabel.data = ' Lời chúc lúc rảnh (thiếu thư viện hợp lệ)';
         });
     }
-    this.refreshStatus();
   }
 
   private syncOutput(watermark: number) {
     this.setOutput(!this.disposed && !this.muted && !document.hidden && this.session?.connected === true &&
+      (!this.live || (this.attached && this.sourceOnline && this.settings?.settings.master.enabled === true)) &&
       this.mixer?.context.state === 'running', 'enable', watermark);
   }
 
@@ -247,6 +352,7 @@ export class AudioManager {
 
   private show(status: Status) {
     this.status = status;
+    if (this.live) return;
     const line = this.statusText[status];
     if (this.message.textContent !== line) this.message.textContent = line;
     this.action.disabled = status === 'STARTING';
@@ -258,9 +364,18 @@ export class AudioManager {
     const mixer = this.mixer;
     if (!mixer) return 'unavailable';
     const now = this.clock();
-    const picked = this.named?.pick(cue, now, available, mixer.fallbackFits(cue, available - Math.max(0, waitUntil - now)), waitUntil);
+    const picked = !this.live || this.namedEnabled
+      ? this.named?.pick(cue, now, available, mixer.fallbackFits(cue, available - Math.max(0, waitUntil - now)), waitUntil)
+      : undefined;
     if (picked === 'waiting') return 'waiting';
     return mixer.voiceCue(cue, available, picked);
+  }
+
+  private updateIdlePool() {
+    this.idlePool = this.playBell ? [...bells] : [];
+    if (this.playSpeech && this.speech) {
+      for (const id of this.speech.keys()) this.idlePool.push({ id, kind: 'speech' });
+    }
   }
 
   private addIdleControls(gap?: number) {
@@ -271,10 +386,7 @@ export class AudioManager {
       input.checked = checked;
       input.addEventListener('change', () => {
         change(input.checked);
-        this.idlePool = this.playBell ? [...bells] : [];
-        if (this.playSpeech && this.speech) {
-          for (const id of this.speech.keys()) this.idlePool.push({ id, kind: 'speech' });
-        }
+        this.updateIdlePool();
         this.idle?.reset();
         this.mixer?.stopIdle('idle-options', true);
       });

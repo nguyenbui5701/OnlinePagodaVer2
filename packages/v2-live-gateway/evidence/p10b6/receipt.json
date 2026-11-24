@@ -1,0 +1,343 @@
+{
+  "method": "Built Edge Dashboard/Overlay, isolated loopback Gateway and synthetic provider fixture; PCM tapped after the actual Web Audio compressor and peak ceiling.",
+  "segments": {
+    "waterHigh": {
+      "from": 18432,
+      "to": 171008,
+      "rms": 436.8311321976713,
+      "peak": 2344,
+      "peakDbFS": -22.91,
+      "clipping": 0
+    },
+    "waterLow": {
+      "from": 226304,
+      "to": 377856,
+      "rms": 91.61783334034772,
+      "peak": 469,
+      "peakDbFS": -36.89,
+      "clipping": 0
+    },
+    "windOnly": {
+      "from": 427008,
+      "to": 451584,
+      "rms": 194.35399481643483,
+      "peak": 872,
+      "peakDbFS": -31.5,
+      "clipping": 0
+    },
+    "bothBedsOff": {
+      "from": 494592,
+      "to": 518144,
+      "rms": 0,
+      "peak": 0,
+      "peakDbFS": null,
+      "clipping": 0
+    },
+    "masterOff": {
+      "from": 1475584,
+      "to": 1500160,
+      "rms": 0,
+      "peak": 0,
+      "peakDbFS": null,
+      "clipping": 0
+    },
+    "resumed": {
+      "from": 1543168,
+      "to": 1567744,
+      "rms": 85.97403129792849,
+      "peak": 336,
+      "peakDbFS": -39.78,
+      "clipping": 0
+    },
+    "hidden": {
+      "from": 1589248,
+      "to": 1596416,
+      "rms": 0,
+      "peak": 0,
+      "peakDbFS": null,
+      "clipping": 0
+    },
+    "webglLost": {
+      "from": 1684480,
+      "to": 1691648,
+      "rms": 0,
+      "peak": 0,
+      "peakDbFS": null,
+      "clipping": 0
+    },
+    "linkLost": {
+      "from": 1736704,
+      "to": 1743872,
+      "rms": 0,
+      "peak": 0,
+      "peakDbFS": null,
+      "clipping": 0
+    },
+    "disconnected": {
+      "from": 1782784,
+      "to": 1806336,
+      "rms": 0,
+      "peak": 0,
+      "peakDbFS": null,
+      "clipping": 0
+    }
+  },
+  "clips": {
+    "thanks": "AVAILABLE",
+    "wishes": "AVAILABLE"
+  },
+  "idleStarted": {
+    "event": "idle-start",
+    "wallMs": 27073.20000000298,
+    "sceneMs": 26423,
+    "contextSec": 23.461333333333332,
+    "variant": "wish-11",
+    "seconds": 2.2750416666666666,
+    "ambienceGain": 0.2,
+    "sfxGain": 0.45
+  },
+  "gift": {
+    "focus": {
+      "mode": "GIFT_FOCUS",
+      "focus": {
+        "actorId": "demo-1795531080297-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1795531080297-gift-1",
+        "name": "An",
+        "headWorld": [
+          -1.0145664519164983,
+          1.0981944327354431,
+          13.722545496905653
+        ],
+        "nameWorld": [
+          -1.0153037821867865,
+          1.5981944327354431,
+          13.732518277063287
+        ],
+        "fxWorld": [
+          -1.3747113545055325,
+          1.0681944327354431,
+          13.575590915013372
+        ]
+      },
+      "confirmed": 1
+    },
+    "cutLatencyMs": 38,
+    "cut": {
+      "event": "idle-cut",
+      "wallMs": 27720.79999999702,
+      "sceneMs": 27069,
+      "contextSec": 24.112,
+      "variant": "wish-11",
+      "seconds": 0.03,
+      "reason": "gift-activity",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    "cutEnd": {
+      "event": "idle-cut-end",
+      "wallMs": 27758.79999999702,
+      "sceneMs": 27104,
+      "contextSec": 24.152,
+      "variant": "wish-11",
+      "reason": "gift-activity",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    "voice": {
+      "event": "voice-start",
+      "wallMs": 28771,
+      "sceneMs": 28124,
+      "contextSec": 25.16,
+      "room": "demo-1795531080297",
+      "request": "demo-1795531080297-gift-1",
+      "actor": "demo-1795531080297-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "seconds": 2.1,
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    "chime": {
+      "event": "sfx-start",
+      "wallMs": 28770.70000000298,
+      "sceneMs": 28124,
+      "contextSec": 25.16,
+      "room": "demo-1795531080297",
+      "request": "demo-1795531080297-gift-1",
+      "actor": "demo-1795531080297-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    }
+  },
+  "continuity": {
+    "launches": 1,
+    "stops": 0,
+    "connection": 1,
+    "appliedVisual": 1,
+    "acknowledged": 3,
+    "counters": {
+      "chat": 0,
+      "member": 0,
+      "like": 0,
+      "giftProgress": 0,
+      "giftFinal": 2,
+      "room": 0
+    },
+    "contexts": 1
+  },
+  "recording": {
+    "from": 0,
+    "to": 1806336,
+    "rms": 941.9265087076416,
+    "peak": 19451,
+    "peakDbFS": -4.53,
+    "clipping": 0,
+    "seconds": 37.632,
+    "rate": 48000,
+    "sha256": "8755248d6a821997d12a7ed8d099de0943aa2246c9a770c21e695e68bc815d5e",
+    "pcmSha256": "1d152314b4218799f4a9143143c4bce9cc86d9ecc0306e9381fd04b644223ca8",
+    "file": "apps/v2-viewer/evidence/p10b6-local/live-audio.wav"
+  },
+  "source": "545cdd51c1d972ef62633548234fb866bd0c9855",
+  "graphics": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "timeline": [
+    {
+      "event": "idle-start",
+      "wallMs": 27073.20000000298,
+      "sceneMs": 26423,
+      "contextSec": 23.461333333333332,
+      "variant": "wish-11",
+      "seconds": 2.2750416666666666,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-cut",
+      "wallMs": 27720.79999999702,
+      "sceneMs": 27069,
+      "contextSec": 24.112,
+      "variant": "wish-11",
+      "seconds": 0.03,
+      "reason": "gift-activity",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-cut-end",
+      "wallMs": 27758.79999999702,
+      "sceneMs": 27104,
+      "contextSec": 24.152,
+      "variant": "wish-11",
+      "reason": "gift-activity",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 28770.70000000298,
+      "sceneMs": 28124,
+      "contextSec": 25.16,
+      "room": "demo-1795531080297",
+      "request": "demo-1795531080297-gift-1",
+      "actor": "demo-1795531080297-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "voice-start",
+      "wallMs": 28771,
+      "sceneMs": 28124,
+      "contextSec": 25.16,
+      "room": "demo-1795531080297",
+      "request": "demo-1795531080297-gift-1",
+      "actor": "demo-1795531080297-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "seconds": 2.1,
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 29427.70000000298,
+      "sceneMs": 28777,
+      "contextSec": 25.82133333333333,
+      "room": "demo-1795531080297",
+      "request": "demo-1795531080297-gift-1",
+      "actor": "demo-1795531080297-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "voice-end",
+      "wallMs": 30871.89999999851,
+      "sceneMs": 30222,
+      "contextSec": 27.261333333333333,
+      "room": "demo-1795531080297",
+      "request": "demo-1795531080297-gift-1",
+      "actor": "demo-1795531080297-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    }
+  ],
+  "browser": "158.0.4370.33",
+  "audioPaths": [
+    "/audio/vi-v1-approved/generic.voice.json",
+    "/audio/vi-v1-approved/generic-short.voice.json",
+    "/audio/vi-gtts-demo-v1/manifest.json",
+    "/audio/vi-gtts-demo-v1/wish-01.pcm",
+    "/audio/vi-gtts-demo-v1/wish-02.pcm",
+    "/audio/vi-gtts-demo-v1/wish-03.pcm",
+    "/audio/vi-gtts-demo-v1/wish-04.pcm",
+    "/audio/vi-gtts-demo-v1/wish-05.pcm",
+    "/audio/vi-gtts-demo-v1/wish-06.pcm",
+    "/audio/vi-gtts-demo-v1/wish-07.pcm",
+    "/audio/vi-gtts-demo-v1/wish-08.pcm",
+    "/audio/vi-gtts-demo-v1/wish-09.pcm",
+    "/audio/vi-gtts-demo-v1/wish-10.pcm",
+    "/audio/vi-gtts-demo-v1/wish-11.pcm",
+    "/audio/vi-gtts-demo-v1/wish-12.pcm"
+  ],
+  "audioFailure": {
+    "state": "UNAVAILABLE",
+    "acknowledged": 2,
+    "confirmed": 1
+  },
+  "captures": {
+    "dashboard": "137b099620734b0063991159dd35f64d0a970adceecb3650f971c2e1fb732e28",
+    "overlay": "067d730234a0eccc0e875b0b66b7a2077e0b7bc2ce31ea773de3859a34d55308"
+  },
+  "parity": {
+    "seed": 9,
+    "seconds": 0,
+    "pixels": [
+      720,
+      1280
+    ],
+    "before": {
+      "sha256": "25eee43d8c2da175fe05073fcd505b0a384fb76de250741d9f30c7fe5b3ac5c6",
+      "source": "574e6b45b9d0db275305b0466b7761cff939b268"
+    },
+    "after": {
+      "sha256": "25eee43d8c2da175fe05073fcd505b0a384fb76de250741d9f30c7fe5b3ac5c6",
+      "source": "545cdd51c1d972ef62633548234fb866bd0c9855"
+    }
+  }
+}

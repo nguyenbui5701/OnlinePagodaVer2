@@ -159,10 +159,13 @@ export class Gateway {
   }
 
   push(event) {
-    this.queue.push({ seq: ++this.sequence, event: { ...event, atMs: Date.now(), roomEpoch: this.roomEpoch, connection: this.connection } });
+    const entry = { seq: ++this.sequence, event: { ...event, atMs: Date.now(), roomEpoch: this.roomEpoch, connection: this.connection } };
+    this.queue.push(entry);
+    if (event.type === 'gift' && event.phase === 'final') this.onVoiceGift?.(entry);
   }
 
   stop() {
+    this.onVoiceReset?.();
     this.generation++;
     clearTimeout(this.deadline);
     clearTimeout(this.retry);
@@ -240,6 +243,7 @@ export class Gateway {
     this.stop();
     this.owner = this.room = this.receiver = undefined;
     this.appliedRevision = null;
+    this.audioApplied = undefined;
     this.overlayReady = false;
     this.applyPending = false;
     this.deliveryUncertain ||= this.queue.some(({ event }) => event.type === 'gift' && event.phase === 'final');

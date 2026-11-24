@@ -1,4 +1,5 @@
 import type { Cue, GiftSound } from './director.ts';
+import type { LiveAudioSettings } from '../live-audio-settings.ts';
 import voicePins from './voice-pins.json' with { type: 'json' };
 
 export type VoiceKey = GiftSound | 'generic-short';
@@ -13,6 +14,7 @@ export type AudioMark = {
   event: string; wallMs: number; sceneMs: number; contextSec: number;
   room?: string; request?: string; actor?: string; seat?: string; effectSequence?: number;
   variant?: string; seconds?: number; reason?: string; ambienceGain?: number; sfxGain?: number;
+  channelGains?: Record<string, number>;
 };
 
 export class Mixer {
@@ -20,6 +22,13 @@ export class Mixer {
   private readonly sfxGain: GainNode;
   private readonly ambienceGain: GainNode;
   private readonly master: GainNode;
+  private readonly live: boolean;
+  private liveSettings?: LiveAudioSettings;
+  private readonly bellGain: GainNode;
+  private readonly wishGain: GainNode;
+  private readonly waterGain: GainNode;
+  private readonly windGain: GainNode;
+  private liveBeds = new Map<'water' | 'wind', AudioBufferSourceNode>();
   private prewarmed = false;
   private readonly buffers = new Map<VoiceKey, Loaded>();
   private readonly loading = new Set<VoiceKey>();
@@ -36,13 +45,22 @@ export class Mixer {
   readonly context: AudioContext;
   private readonly mark: (mark: AudioMark) => void;
 
-  constructor(context: AudioContext, mark: (mark: AudioMark) => void) {
+  constructor(context: AudioContext, mark: (mark: AudioMark) => void, live = false) {
+    this.live = live;
     this.context = context;
     this.mark = mark;
     this.voiceGain = context.createGain();
     this.sfxGain = context.createGain();
     this.ambienceGain = context.createGain();
     this.master = context.createGain();
+    this.bellGain = context.createGain();
+    this.wishGain = context.createGain();
+    this.waterGain = context.createGain();
+    this.windGain = context.createGain();
+    this.bellGain.connect(this.master);
+    this.wishGain.connect(this.master);
+    this.waterGain.connect(this.ambienceGain);
+    this.windGain.connect(this.ambienceGain);
     this.voiceGain.gain.value = levels.voice;
     this.sfxGain.gain.value = levels.sfx;
     this.ambienceGain.gain.value = levels.ambience;
@@ -64,7 +82,7 @@ export class Mixer {
   prewarm() {
     if (this.prewarmed) return;
     this.prewarmed = true;
-    for (const key of voiceKeys) {
+    for (const key of this.live ? ['generic', 'generic-short'] as const : voiceKeys) {
       this.loading.add(key);
       void this.load(key);
     }
@@ -73,16 +91,37 @@ export class Mixer {
   get availability() {
     const ready = this.buffers.size;
     const waiting = this.loading.size;
-    const status: 'VOICE_LOADING' | 'READY' | 'VOICE_DEGRADED' | 'VOICE_UNAVAILABLE' = waiting ? 'VOICE_LOADING' : ready === voiceKeys.length ? 'READY' :
+    const status: 'VOICE_LOADING' | 'READY' | 'VOICE_DEGRADED' | 'VOICE_UNAVAILABLE' = waiting ? 'VOICE_LOADING' : ready === (this.live ? 2 : voiceKeys.length) ? 'READY' :
       ready > 0 ? 'VOICE_DEGRADED' : 'VOICE_UNAVAILABLE';
     return { ready, waiting, playing: !!this.voice, status };
   }
 
   enable(enabled: boolean) {
     this.enabled = enabled;
-    this.master.gain.setTargetAtTime(enabled ? .56 : 0, this.context.currentTime, .012);
+    this.applyMaster();
     if (!enabled) { this.cut('muted'); this.stopIdle('output-off', true); }
     this.updateBed();
+  }
+
+  private applyMaster() {
+    const now = this.context.currentTime;
+    this.master.gain.cancelScheduledValues(now);
+    if (this.enabled) this.master.gain.setTargetAtTime(.56 * (this.liveSettings?.master.volume ?? 100) / 100, now, .012);
+    else if (this.live) this.master.gain.setValueAtTime(0, now);
+    else this.master.gain.setTargetAtTime(0, now, .012);
+  }
+
+  configure(settings: LiveAudioSettings) {
+    const previous = this.liveSettings;
+    this.liveSettings = settings;
+    if (previous?.giftChime.enabled && !settings.giftChime.enabled) this.stopEffects();
+    if (previous?.giftThanks.enabled && !settings.giftThanks.enabled) this.stopVoice('channel-off');
+    const idle = this.idle;
+    if (idle && !settings[idle.kind === 'bell' ? 'idleBell' : 'idleWish'].enabled) this.stopIdle('channel-off', true);
+    if (previous?.master.volume !== settings.master.volume) this.applyMaster();
+    this.applyLevels();
+    this.updateBed();
+    if (settings.giftThanks.enabled) this.prewarm();
   }
 
   setLevel(bus: keyof MixLevels, value: number) {
@@ -98,7 +137,7 @@ export class Mixer {
   get busy() { return !!this.voice || this.effects.size > 0; }
 
   sfx(cue?: Cue) {
-    if (!this.enabled || this.context.state !== 'running' || (!cue && (this.voice || this.effects.size))) return;
+    if (!this.enabled || (this.live && !this.liveSettings?.giftChime.enabled) || this.context.state !== 'running' || (!cue && (this.voice || this.effects.size))) return;
     const sound = cue?.sound ?? 'generic';
     const notes = notePitches[sound];
     if (this.effects.size + notes.length > 24) return;
@@ -133,7 +172,7 @@ export class Mixer {
   }
 
   voiceCue(cue: Cue, availableMs: number, named?: Float32Array): 'started' | 'waiting' | 'unavailable' | 'too-long' {
-    if (!this.enabled || this.context.state !== 'running' || this.voice) return 'unavailable';
+    if (!this.enabled || (this.live && !this.liveSettings?.giftThanks.enabled) || this.context.state !== 'running' || this.voice) return 'unavailable';
     if (named) {
       const buffer = this.pcmBuffer(named);
       return this.playVoice(cue, 'named', { buffer, seconds: buffer.duration });
@@ -152,6 +191,7 @@ export class Mixer {
 
   private voiceChoices(cue: Cue): VoiceKey[] {
     return !cue.binding ? ['generic-short'] :
+      this.live ? ['generic', 'generic-short'] :
       cue.sound === 'generic' ? ['generic', 'generic-short'] : [cue.sound, 'generic', 'generic-short'];
   }
 
@@ -196,7 +236,9 @@ export class Mixer {
     envelope.gain.setValueAtTime(0, now);
     envelope.gain.linearRampToValueAtTime(samples ? 1 : .24, now + .035);
     if (!samples) envelope.gain.exponentialRampToValueAtTime(.0001, now + duration);
-    source.connect(envelope).connect(samples ? this.voiceGain : this.sfxGain);
+    source.connect(envelope).connect(this.live
+      ? (samples ? this.wishGain : this.bellGain)
+      : (samples ? this.voiceGain : this.sfxGain));
     this.idle = { source, envelope, id, kind };
     this.applyLevels();
     this.log('idle-start', undefined, id, duration);
@@ -236,7 +278,16 @@ export class Mixer {
 
   get idlePlaying() { return !!this.idle; }
 
+  stopNamed() {
+    if (this.voice?.key === 'named') this.stopVoice('named-off');
+  }
+
   cut(reason: string) {
+    this.stopVoice(reason);
+    this.stopEffects();
+  }
+
+  private stopVoice(reason: string) {
     const voice = this.voice;
     if (voice) {
       this.voice = undefined;
@@ -244,6 +295,9 @@ export class Mixer {
       this.applyLevels();
       this.log('voice-cut', voice.cue, voice.key, undefined, reason);
     }
+  }
+
+  private stopEffects() {
     for (const source of this.effects) source.stop();
   }
 
@@ -256,7 +310,7 @@ export class Mixer {
 
   private async load(key: VoiceKey) {
     try {
-      const url = new URL(`audio/vi-v1-approved/${key}.voice.json`, document.baseURI);
+      const url = new URL(`/audio/vi-v1-approved/${key}.voice.json`, location.origin);
       const response = await fetch(url, { mode: 'same-origin', redirect: 'error', signal: this.abort.signal });
       if (!response.ok) throw new Error('audio-fetch');
       const expected = voicePins.profiles[key];
@@ -291,12 +345,36 @@ export class Mixer {
   private applyLevels() {
     const now = this.context.currentTime;
     const duck = this.voice || this.idle?.kind === 'speech';
+    if (this.liveSettings) {
+      const cfg = this.liveSettings;
+      this.voiceGain.gain.setTargetAtTime(cfg.giftThanks.volume / 100, now, .025);
+      this.sfxGain.gain.setTargetAtTime(cfg.giftChime.volume / 100 * (duck ? .48 : 1), now, duck ? .020 : .10);
+      this.ambienceGain.gain.setTargetAtTime(duck ? .28 : 1, now, duck ? .020 : .10);
+      this.bellGain.gain.setTargetAtTime(cfg.idleBell.volume / 100, now, .025);
+      this.wishGain.gain.setTargetAtTime(cfg.idleWish.volume / 100, now, .025);
+      this.waterGain.gain.setTargetAtTime(cfg.water.volume / 100, now, .025);
+      this.windGain.gain.setTargetAtTime(cfg.wind.volume / 100, now, .025);
+      return;
+    }
     this.voiceGain.gain.setTargetAtTime(this.volume.voice, now, .025);
     this.sfxGain.gain.setTargetAtTime(this.volume.sfx * (duck ? .48 : 1), now, duck ? .020 : .10);
     this.ambienceGain.gain.setTargetAtTime(this.volume.ambience * (duck ? .28 : 1), now, duck ? .020 : .10);
   }
 
   private updateBed() {
+    if (this.live) {
+      for (const channel of ['water', 'wind'] as const) {
+        const bed = this.liveBeds.get(channel);
+        if (this.enabled && this.liveSettings?.[channel].enabled) {
+          if (!bed) this.liveBeds.set(channel, this.startBed(channel === 'water' ? this.waterGain : this.windGain, channel));
+        } else if (bed) {
+          bed.stop();
+          bed.disconnect();
+          this.liveBeds.delete(channel);
+        }
+      }
+      return;
+    }
     if (!this.enabled || !this.ambience) {
       const bed = this.bed;
       this.bed = undefined;
@@ -306,7 +384,10 @@ export class Mixer {
       }
       return;
     }
-    if (this.bed) return;
+    this.bed ??= this.startBed(this.ambienceGain);
+  }
+
+  private startBed(output: GainNode, channel?: 'water' | 'wind') {
     const rate = this.context.sampleRate;
     const buffer = this.context.createBuffer(1, rate * 3, rate);
     const samples = buffer.getChannelData(0);
@@ -319,21 +400,24 @@ export class Mixer {
       water += (noise - water) * .052;
       air += (water - air) * .018;
       const phase = i / samples.length * Math.PI * 2;
-      samples[i] = (.34 * water + .26 * air) * (.55 - .45 * Math.cos(phase));
+      samples[i] = ((channel === 'wind' ? 0 : .34 * water) + (channel === 'water' ? 0 : .26 * air)) * (.55 - .45 * Math.cos(phase));
     }
     const bed = this.context.createBufferSource();
     bed.buffer = buffer;
     bed.loop = true;
-    bed.connect(this.ambienceGain);
+    bed.connect(output);
     bed.start();
-    this.bed = bed;
+    return bed;
   }
 
   private log(event: string, cue?: Cue, variant?: string, seconds?: number, reason?: string) {
     this.mark({ event, wallMs: performance.now(), sceneMs: this.sceneMs, contextSec: this.context.currentTime,
       room: cue?.room, request: cue?.request, actor: cue?.binding?.actorId, seat: cue?.binding?.seatId,
       effectSequence: cue?.sequence, variant, seconds, reason,
-      ambienceGain: this.volume.ambience * (this.voice ? .28 : 1),
-      sfxGain: this.volume.sfx * (this.voice ? .48 : 1) });
+      ambienceGain: this.live ? this.ambienceGain.gain.value : this.volume.ambience * (this.voice ? .28 : 1),
+      sfxGain: this.live ? this.sfxGain.gain.value : this.volume.sfx * (this.voice ? .48 : 1),
+      ...(this.live ? { channelGains: { master: this.master.gain.value, water: this.waterGain.gain.value,
+        wind: this.windGain.gain.value, thanks: this.voiceGain.gain.value, idleBell: this.bellGain.gain.value,
+        idleWish: this.wishGain.gain.value } } : {}) });
   }
 }

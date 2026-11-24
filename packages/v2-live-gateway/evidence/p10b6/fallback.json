@@ -1,0 +1,311 @@
+{
+  "method": "Built Edge Dashboard/Overlay, isolated loopback Gateway and synthetic provider fixture; PCM tapped after the actual Web Audio compressor and peak ceiling.",
+  "segments": {
+    "waterHigh": {
+      "from": 17408,
+      "to": 169984,
+      "rms": 436.6475741230231,
+      "peak": 2344,
+      "peakDbFS": -22.91,
+      "clipping": 0
+    },
+    "waterLow": {
+      "from": 225280,
+      "to": 378880,
+      "rms": 91.67676924680129,
+      "peak": 469,
+      "peakDbFS": -36.89,
+      "clipping": 0
+    },
+    "windOnly": {
+      "from": 427008,
+      "to": 450560,
+      "rms": 202.2960580441542,
+      "peak": 872,
+      "peakDbFS": -31.5,
+      "clipping": 0
+    },
+    "bothBedsOff": {
+      "from": 494592,
+      "to": 518144,
+      "rms": 0,
+      "peak": 0,
+      "peakDbFS": null,
+      "clipping": 0
+    },
+    "masterOff": {
+      "from": 1544192,
+      "to": 1568768,
+      "rms": 0,
+      "peak": 0,
+      "peakDbFS": null,
+      "clipping": 0
+    },
+    "resumed": {
+      "from": 1623040,
+      "to": 1647616,
+      "rms": 84.65543120720373,
+      "peak": 336,
+      "peakDbFS": -39.78,
+      "clipping": 0
+    },
+    "hidden": {
+      "from": 1665024,
+      "to": 1673216,
+      "rms": 0,
+      "peak": 0,
+      "peakDbFS": null,
+      "clipping": 0
+    },
+    "webglLost": {
+      "from": 1742848,
+      "to": 1751040,
+      "rms": 0,
+      "peak": 0,
+      "peakDbFS": null,
+      "clipping": 0
+    },
+    "linkLost": {
+      "from": 1796096,
+      "to": 1803264,
+      "rms": 0,
+      "peak": 0,
+      "peakDbFS": null,
+      "clipping": 0
+    },
+    "disconnected": {
+      "from": 1838080,
+      "to": 1861632,
+      "rms": 0,
+      "peak": 0,
+      "peakDbFS": null,
+      "clipping": 0
+    }
+  },
+  "clips": {
+    "thanks": "AVAILABLE",
+    "wishes": "UNAVAILABLE"
+  },
+  "idleStarted": {
+    "event": "idle-start",
+    "wallMs": 28086,
+    "sceneMs": 27347,
+    "contextSec": 24.632,
+    "variant": "lotus-bell-3",
+    "seconds": 1.4,
+    "ambienceGain": 0.2,
+    "sfxGain": 0.45
+  },
+  "gift": {
+    "focus": {
+      "mode": "GIFT_FOCUS",
+      "focus": {
+        "actorId": "demo-1795531129951-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1795531129951-gift-1",
+        "name": "An",
+        "headWorld": [
+          -1.0145664519164983,
+          1.1104611895084382,
+          13.722545496905653
+        ],
+        "nameWorld": [
+          -1.0153037821867865,
+          1.6104611895084382,
+          13.732518277063287
+        ],
+        "fxWorld": [
+          -1.3747113545055325,
+          1.0804611895084382,
+          13.575590915013372
+        ]
+      },
+      "confirmed": 1
+    },
+    "cutLatencyMs": 27.100000001490116,
+    "cut": {
+      "event": "idle-cut",
+      "wallMs": 28615.79999999702,
+      "sceneMs": 27874,
+      "contextSec": 25.16,
+      "variant": "lotus-bell-3",
+      "seconds": 0.03,
+      "reason": "gift-activity",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    "cutEnd": {
+      "event": "idle-cut-end",
+      "wallMs": 28642.89999999851,
+      "sceneMs": 27895,
+      "contextSec": 25.192,
+      "variant": "lotus-bell-3",
+      "reason": "gift-activity",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    "voice": {
+      "event": "voice-start",
+      "wallMs": 29671.89999999851,
+      "sceneMs": 28930,
+      "contextSec": 26.221333333333334,
+      "room": "demo-1795531129951",
+      "request": "demo-1795531129951-gift-1",
+      "actor": "demo-1795531129951-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "seconds": 2.1,
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    "chime": {
+      "event": "sfx-start",
+      "wallMs": 29671.19999999553,
+      "sceneMs": 28930,
+      "contextSec": 26.221333333333334,
+      "room": "demo-1795531129951",
+      "request": "demo-1795531129951-gift-1",
+      "actor": "demo-1795531129951-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    }
+  },
+  "continuity": {
+    "launches": 1,
+    "stops": 0,
+    "connection": 1,
+    "appliedVisual": 1,
+    "acknowledged": 3,
+    "counters": {
+      "chat": 0,
+      "member": 0,
+      "like": 0,
+      "giftProgress": 0,
+      "giftFinal": 2,
+      "room": 0
+    },
+    "contexts": 1
+  },
+  "recording": {
+    "from": 0,
+    "to": 1861632,
+    "rms": 888.1993220957229,
+    "peak": 19451,
+    "peakDbFS": -4.53,
+    "clipping": 0,
+    "seconds": 38.784,
+    "rate": 48000,
+    "sha256": "f3d86440c82952a64fe16ea3d44ddf75a6df965c588504e3908e4a7686868359",
+    "pcmSha256": "385777ff21e359a1957946bb3b30712549c56d1f93d16ce6b62f711953b46c7d",
+    "file": "apps/v2-viewer/evidence/p10b6-local/live-audio-fallback.wav"
+  },
+  "source": "545cdd51c1d972ef62633548234fb866bd0c9855",
+  "graphics": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "timeline": [
+    {
+      "event": "idle-start",
+      "wallMs": 28086,
+      "sceneMs": 27347,
+      "contextSec": 24.632,
+      "variant": "lotus-bell-3",
+      "seconds": 1.4,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-cut",
+      "wallMs": 28615.79999999702,
+      "sceneMs": 27874,
+      "contextSec": 25.16,
+      "variant": "lotus-bell-3",
+      "seconds": 0.03,
+      "reason": "gift-activity",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "idle-cut-end",
+      "wallMs": 28642.89999999851,
+      "sceneMs": 27895,
+      "contextSec": 25.192,
+      "variant": "lotus-bell-3",
+      "reason": "gift-activity",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 29671.19999999553,
+      "sceneMs": 28930,
+      "contextSec": 26.221333333333334,
+      "room": "demo-1795531129951",
+      "request": "demo-1795531129951-gift-1",
+      "actor": "demo-1795531129951-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    },
+    {
+      "event": "voice-start",
+      "wallMs": 29671.89999999851,
+      "sceneMs": 28930,
+      "contextSec": 26.221333333333334,
+      "room": "demo-1795531129951",
+      "request": "demo-1795531129951-gift-1",
+      "actor": "demo-1795531129951-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "seconds": 2.1,
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 30336.29999999702,
+      "sceneMs": 29590,
+      "contextSec": 26.88,
+      "room": "demo-1795531129951",
+      "request": "demo-1795531129951-gift-1",
+      "actor": "demo-1795531129951-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "ambienceGain": 0.05600000000000001,
+      "sfxGain": 0.216
+    },
+    {
+      "event": "voice-end",
+      "wallMs": 31778.60000000149,
+      "sceneMs": 31034,
+      "contextSec": 28.330666666666666,
+      "room": "demo-1795531129951",
+      "request": "demo-1795531129951-gift-1",
+      "actor": "demo-1795531129951-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "ambienceGain": 0.2,
+      "sfxGain": 0.45
+    }
+  ],
+  "browser": "158.0.4370.33",
+  "audioPaths": [
+    "/audio/vi-v1-approved/generic.voice.json",
+    "/audio/vi-v1-approved/generic-short.voice.json",
+    "/audio/vi-gtts-demo-v1/manifest.json"
+  ],
+  "audioFailure": {
+    "state": "UNAVAILABLE",
+    "acknowledged": 2,
+    "confirmed": 1
+  }
+}

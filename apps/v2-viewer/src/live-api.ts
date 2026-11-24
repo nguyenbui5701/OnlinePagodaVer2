@@ -4,22 +4,24 @@ export const gatewayUrl = 'http://127.0.0.1:5203';
 export class GatewayError extends Error {
   readonly status: number;
   readonly reason: string;
-  constructor(status: number, reason: string) {
+  readonly body: unknown;
+  constructor(status: number, reason: string, body?: unknown) {
     super(reason || 'HTTP_' + status);
     this.status = status;
     this.reason = reason;
+    this.body = body;
   }
 }
 
-export async function postGateway(path: string, data: object = {}, signal?: AbortSignal, keepalive = false) {
+export async function postGateway(path: string, data: object = {}, signal?: AbortSignal, keepalive = false, timeout = 3000) {
   const response = await fetch(gatewayUrl + path, {
     method: 'POST', credentials: 'omit', cache: 'no-store', redirect: 'error', keepalive,
-    signal: keepalive ? undefined : signal ? AbortSignal.any([signal, AbortSignal.timeout(3000)]) : AbortSignal.timeout(3000),
+    signal: keepalive ? undefined : signal ? AbortSignal.any([signal, AbortSignal.timeout(timeout)]) : AbortSignal.timeout(timeout),
     headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data),
   });
   if (!response.ok) {
     const body = await response.json().catch(() => undefined);
-    throw new GatewayError(response.status, typeof body?.reason === 'string' ? body.reason : '');
+    throw new GatewayError(response.status, typeof body?.reason === 'string' ? body.reason : '', body);
   }
   return response;
 }

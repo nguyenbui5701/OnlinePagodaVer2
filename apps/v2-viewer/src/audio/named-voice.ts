@@ -1,3 +1,4 @@
+import type { LiveVoiceIdentity } from './live-alias.ts';
 import type { Cue, GiftSound } from './director.ts';
 
 const names = new Map([['An', 'an'], ['B\u00ecnh', 'binh'], ['Chi', 'chi'], ['Duy\u00ean', 'duyen']] as const);
@@ -7,6 +8,7 @@ export function demoName(value: string): NameId | undefined {
 }
 
 export type VoiceTemplate = { nameId: NameId; gift: Exclude<GiftSound, 'generic'>; count: number };
+export type LiveNamedProvider = (identity: LiveVoiceIdentity, signal: AbortSignal) => Promise<Uint8Array>;
 export type NamedProvider = (template: VoiceTemplate, signal: AbortSignal) => Promise<Uint8Array>;
 export const sampleRate = 24_000;
 export const maxPcmBytes = 4 * sampleRate * 2;
@@ -34,26 +36,31 @@ type Entry = {
 
 export class NamedVoice {
   private readonly entries = new Map<string, Entry>();
-  readonly prepare: NamedProvider;
+  private readonly prepare?: NamedProvider;
+  private readonly prepareLive?: LiveNamedProvider;
 
-  constructor(prepare: NamedProvider) { this.prepare = prepare; }
+  constructor(prepare?: NamedProvider, prepareLive?: LiveNamedProvider) {
+    this.prepare = prepare;
+    this.prepareLive = prepareLive;
+  }
 
   get pending() { return [...this.entries.values()].some(entry => entry.state === 'pending'); }
 
   prefetch(cue: Cue) {
     this.cancel(cue.request);
-    if (!cue.binding || !cue.identity?.nameId || cue.sound === 'generic' || this.entries.size >= 20) return;
+    const live = cue.liveIdentity;
+    const demo = cue.identity && cue.sound !== 'generic' ? { nameId: cue.identity.nameId, gift: cue.sound, count: cue.identity.count } : undefined;
+    if (!cue.binding || this.entries.size >= 20 || (live ? !this.prepareLive : !demo || !this.prepare)) return;
     const request = new AbortController();
     const entry: Entry = { cue, request, state: 'pending' };
     this.entries.set(cue.request, entry);
-    const template = { nameId: cue.identity.nameId, gift: cue.sound, count: cue.identity.count };
     const timeout = setTimeout(() => {
       entry.state = 'failed';
       request.abort();
     }, 8000);
     void Promise.resolve().then(() => {
       request.signal.throwIfAborted();
-      return this.prepare(template, request.signal);
+      return live ? this.prepareLive!(live, request.signal) : this.prepare!(demo!, request.signal);
     }).then(bytes => {
       if (request.signal.aborted || this.entries.get(cue.request) !== entry) return;
       entry.samples = decodeNamedPcm(bytes);
@@ -93,6 +100,17 @@ export function loopbackVoice(token: string, report: (status: string) => void): 
         report(blocked ? 'DYNAMIC_TTS_BLOCKED' : 'DYNAMIC_TTS_UNAVAILABLE');
         throw new Error('voice-response');
       }
+      const bytes = await readVoicePcm(response);
+      report('DYNAMIC_TTS_READY');
+      return bytes;
+    } catch (error) {
+      if (!signal.aborted && !(error instanceof Error && error.message === 'voice-response')) report('DYNAMIC_TTS_UNAVAILABLE');
+      throw error;
+    }
+  };
+}
+
+export async function readVoicePcm(response: Response) {
       const length = Number(response.headers.get('Content-Length'));
       if (response.headers.get('Content-Type') !== 'application/octet-stream' ||
           !Number.isInteger(length) || length < 4800 || length > maxPcmBytes || !response.body) throw new Error('voice-format');
@@ -108,11 +126,5 @@ export function loopbackVoice(token: string, report: (status: string) => void): 
       }
       if (offset !== length) throw new Error('voice-size');
       decodeNamedPcm(bytes);
-      report('DYNAMIC_TTS_READY');
       return bytes;
-    } catch (error) {
-      if (!signal.aborted && !(error instanceof Error && error.message === 'voice-response')) report('DYNAMIC_TTS_UNAVAILABLE');
-      throw error;
-    }
-  };
 }

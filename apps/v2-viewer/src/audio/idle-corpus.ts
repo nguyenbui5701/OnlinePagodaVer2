@@ -24,8 +24,8 @@ async function readBounded(url: URL, limit: number, signal: AbortSignal, fetcher
 
 type Clip = { id: string; bytes: number; sha256: string; durationSec: number };
 
-export async function loadIdleCorpus(signal: AbortSignal, base = document.baseURI, fetcher = fetch) {
-  const root = new URL('audio/vi-gtts-demo-v1/', base);
+export async function loadIdleCorpus(signal: AbortSignal, base = location.origin, fetcher = fetch) {
+  const root = new URL('/audio/vi-gtts-demo-v1/', base);
   const manifest = JSON.parse(new TextDecoder().decode(
     await readBounded(new URL('manifest.json', root), manifestLimit, signal, fetcher)
   ));
