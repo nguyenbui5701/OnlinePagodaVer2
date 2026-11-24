@@ -1,6 +1,5 @@
 // Local integration evidence only. The injected provider does not contact TikTok.
 import assert from 'node:assert/strict';
-import { randomBytes } from 'node:crypto';
 import { once } from 'node:events';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { chromium } from 'playwright-core';
@@ -10,7 +9,6 @@ import { createGatewayServer } from '../../../packages/v2-live-gateway/server.mj
 
 const origin = 'http://127.0.0.1:5189';
 const output = new URL('../../../packages/v2-live-gateway/evidence/', import.meta.url);
-const token = randomBytes(32).toString('hex');
 const deliveryCheck = process.argv.includes('--delivery-r1');
 const room = '12345';
 let transport;
@@ -19,7 +17,7 @@ const gateway = new Gateway((name, receive) => {
   transport = receive;
   return () => {};
 });
-const server = createGatewayServer({ token, gateway });
+const server = createGatewayServer({ gateway });
 server.listen(5203, '127.0.0.1');
 await once(server, 'listening');
 let browser;
@@ -57,10 +55,9 @@ try {
   assert.equal(report.offline.status, 'OFFLINE');
   assert.equal(report.offline.confirmed, 0);
   await panel.getByLabel('Tên kênh TikTok').fill('gateway_fixture');
-  await panel.getByLabel('Mã gateway cục bộ').fill(token);
+  assert.equal(await panel.locator('input').count(), 1);
   await panel.getByRole('button', { name: 'Connect', exact: true }).click();
   await page.waitForFunction(() => window.viewerReport.liveStatus === 'CONNECTING');
-  assert.equal(await panel.getByLabel('Mã gateway cục bộ').inputValue(), '');
   transport({ type: 'connected', room });
   await page.waitForFunction(() => window.viewerReport.liveStatus === 'CONNECTED_NO_EVENTS');
   report.connected = await snapshot();

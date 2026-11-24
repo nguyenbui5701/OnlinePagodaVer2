@@ -126,19 +126,29 @@ test('provider denial and rate limits stop attempts with allowlisted reasons', (
   } finally { gateway.release(); }
 });
 
-test('HTTP accepts only authenticated, bounded requests from the Viewer origin', async t => {
-  const token = 'b'.repeat(64);
+test('HTTP accepts token-free JSON only from the expected loopback Host and Viewer Origin', async t => {
   const { gateway } = localGateway();
-  const server = createGatewayServer({ token, gateway });
+  const server = createGatewayServer({ gateway });
   server.listen(0, '127.0.0.1');
   await once(server, 'listening');
   t.after(() => { server.closeAllConnections(); return new Promise(done => server.close(done)); });
   const url = 'http://127.0.0.1:' + server.address().port;
   const post = (path, data, extra = {}) => fetch(url + path, { method: 'POST', body: JSON.stringify(data),
-    headers: { Origin: 'http://127.0.0.1:5189', Authorization: 'Bearer ' + token,
+    headers: { Origin: 'http://127.0.0.1:5189',
       'Content-Type': 'application/json', ...extra } });
   const input = { client, username: 'authorized' };
-  assert.equal((await post('/connect', input, { Authorization: 'Bearer wrong' })).status, 401);
+  const preflight = headers => fetch(url + '/connect', { method: 'OPTIONS', headers: {
+    Origin: 'http://127.0.0.1:5189', 'Access-Control-Request-Method': 'POST',
+    'Access-Control-Request-Headers': 'content-type', ...headers,
+  } });
+  const allowed = await preflight();
+  assert.equal(allowed.status, 204);
+  assert.equal(allowed.headers.get('Access-Control-Allow-Origin'), 'http://127.0.0.1:5189');
+  assert.equal(allowed.headers.get('Access-Control-Allow-Headers'), 'Content-Type');
+  assert.equal((await preflight({ Origin: 'http://other.invalid' })).status, 403);
+  assert.equal((await preflight({ 'Access-Control-Request-Headers': 'content-type, authorization' })).status, 403);
+  assert.equal((await fetch(url + '/poll')).status, 403);
+  assert.equal((await post('/connect', input, { 'Content-Type': 'text/plain' })).status, 415);
   assert.equal((await post('/connect', input, { Origin: 'http://other.invalid' })).status, 403);
   const foreignHost = await new Promise((resolve, reject) => {
     request(url + '/connect', { headers: { Host: 'other.invalid', Origin: 'http://127.0.0.1:5189' } },
@@ -149,6 +159,7 @@ test('HTTP accepts only authenticated, bounded requests from the Viewer origin',
   assert.equal((await post('/connect', { ...input, value: 'x'.repeat(300) })).status, 413);
   assert.equal((await post('/connect', input)).status, 204);
   assert.equal((await post('/connect', { ...input, client: 'c'.repeat(32) })).status, 409);
+  assert.equal((await post('/poll', { client: 'c'.repeat(32), ack: 0 })).status, 409);
   assert.equal((await post('/poll', { client, ack: 9 })).status, 409);
   assert.equal((await post('/poll', { client, ack: 0 })).status, 200);
 });

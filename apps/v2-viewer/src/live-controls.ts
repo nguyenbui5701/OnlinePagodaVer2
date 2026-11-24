@@ -48,10 +48,7 @@ export function createLiveControls(report: Record<string, unknown>, feed: (entri
   username.required = true;
   username.maxLength = 25;
   username.autocomplete = 'off';
-  const secret = document.createElement('input');
-  secret.type = 'password';
-  secret.maxLength = 64;
-  secret.autocomplete = 'off';
+
   const connect = document.createElement('button');
   connect.type = 'submit';
   connect.textContent = 'Connect';
@@ -63,16 +60,12 @@ export function createLiveControls(report: Record<string, unknown>, feed: (entri
   status.setAttribute('role', 'status');
   status.textContent = 'OFFLINE · Chưa kết nối.';
   const counts = document.createElement('p');
-  for (const [text, input] of [['Tên kênh TikTok', username], ['Mã gateway cục bộ', secret]] as const) {
-    const label = document.createElement('label');
-    label.append(text, ' ', input);
-    form.append(label);
-  }
-  form.append(connect, ' ', disconnect);
+  const label = document.createElement('label');
+  label.append('Tên kênh TikTok', ' ', username);
+  form.append(label, connect, ' ', disconnect);
   panel.append(form, status, counts);
   document.querySelector('main')!.after(panel);
 
-  let token = '';
   let timer: ReturnType<typeof setTimeout>;
   let watching = false;
   let faulted = false;
@@ -86,7 +79,7 @@ export function createLiveControls(report: Record<string, unknown>, feed: (entri
     const response = await fetch(endpoint + path, {
       method: 'POST', credentials: 'omit', cache: 'no-store', redirect: 'error', keepalive,
       signal: keepalive ? undefined : AbortSignal.any([abort.signal, AbortSignal.timeout(3000)]),
-      headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ client, ...data }),
     });
     if (response.status === 429) {
@@ -159,13 +152,10 @@ export function createLiveControls(report: Record<string, unknown>, feed: (entri
     event.preventDefault();
     if (busy || closed || faulted) return;
     const name = username.value.trim();
-    const key = secret.value.trim();
-    secret.value = '';
-    if (!/^@?[a-zA-Z0-9_.]{1,24}$/.test(name) || (key && !/^[a-f0-9]{64}$/.test(key)) || (!key && !token)) {
-      show('OFFLINE', 'INVALID_INPUT', 'Nhập tên kênh và mã gateway hợp lệ.');
+    if (!/^@?[a-zA-Z0-9_.]{1,24}$/.test(name)) {
+      show('OFFLINE', 'INVALID_INPUT', 'Nhập tên kênh TikTok hợp lệ.');
       return;
     }
-    token = key || token;
     busy = true;
     show('CONNECTING');
     try {
@@ -177,8 +167,7 @@ export function createLiveControls(report: Record<string, unknown>, feed: (entri
     } catch (error) {
       const code = error instanceof Error ? error.message : '';
       busy = false;
-      show('ERROR', code, code === 'HTTP_401' ? 'Mã gateway sai hoặc đã hết hạn.' :
-        code === 'HTTP_409' ? 'Gateway đang có phiên khác hoặc đang giao nốt sự kiện.' :
+      show('ERROR', code, code === 'HTTP_409' ? 'Gateway đang có phiên khác hoặc đang giao nốt sự kiện.' :
         code === 'RATE_LIMITED' ? reasons.RATE_LIMITED :
           code === 'LOCAL_RATE_LIMITED' ? 'Gateway cục bộ đang giới hạn số lần yêu cầu. Thử lại sau một phút.' :
             'Kiểm tra gateway cục bộ tại cổng 5203.');

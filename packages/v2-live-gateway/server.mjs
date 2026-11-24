@@ -1,19 +1,14 @@
-import { timingSafeEqual } from 'node:crypto';
 import { createServer } from 'node:http';
 import { pathToFileURL } from 'node:url';
 import { Gateway } from './gateway.mjs';
 import { normalizeUsername } from './mapper.mjs';
 
 const viewerOrigin = 'http://127.0.0.1:5189';
-const allowedHeaders = new Set(['authorization', 'content-type']);
 const hex = value => typeof value === 'string' && /^[a-f0-9]{32}$/.test(value);
 const natural = n => Number.isSafeInteger(n) && n >= 0;
 const routes = new Set(['/connect', '/poll', '/disconnect', '/degraded']);
 
-export function createGatewayServer({ token, gateway = new Gateway(), clock = Date.now }) {
-  if (!/^[a-f0-9]{64}$/.test(token ?? '')) throw new Error('Invalid local gateway token');
-  const auth = Buffer.from('Bearer ' + token);
-  const expires = clock() + 8 * 60 * 60 * 1000;
+export function createGatewayServer({ gateway = new Gateway(), clock = Date.now } = {}) {
   let starts = 0;
   let windowStart = clock();
   let requests = 0;
@@ -31,14 +26,13 @@ export function createGatewayServer({ token, gateway = new Gateway(), clock = Da
       res.setHeader('Vary', 'Origin');
       if (req.method === 'OPTIONS') {
         const headers = String(req.headers['access-control-request-headers'] ?? '').toLowerCase().split(',').map(x => x.trim());
-        if (req.headers['access-control-request-method'] !== 'POST' || headers.some(x => !allowedHeaders.has(x))) return reply(403);
+        if (req.headers['access-control-request-method'] !== 'POST' || headers.some(x => x !== 'content-type')) return reply(403);
         res.setHeader('Access-Control-Allow-Methods', 'POST');
-        res.setHeader('Access-Control-Allow-Headers', 'Authorization, Content-Type');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
         return reply(204);
       }
       if (req.method !== 'POST') return reply(405);
-      const supplied = Buffer.from(req.headers.authorization ?? '');
-      if (clock() >= expires || supplied.length !== auth.length || !timingSafeEqual(supplied, auth)) return reply(401);
+
       if (req.headers['content-type'] !== 'application/json') return reply(415);
       const size = Number(req.headers['content-length']);
       if (!Number.isInteger(size) || size < 2 || size > 256) return reply(413);
@@ -78,10 +72,8 @@ export function createGatewayServer({ token, gateway = new Gateway(), clock = Da
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const token = process.env.V2_LIVE_TOKEN;
-  delete process.env.V2_LIVE_TOKEN;
   const gateway = new Gateway();
-  const server = createGatewayServer({ token, gateway });
+  const server = createGatewayServer({ gateway });
   server.on('close', () => {
     if (gateway.deliveryUncertain) console.warn('GIFT_DELIVERY_UNCERTAIN: some final gifts were not confirmed by the Viewer.');
   });
