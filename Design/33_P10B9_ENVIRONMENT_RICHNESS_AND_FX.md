@@ -32,3 +32,7 @@ A: audit B8 native world/FX counts; concept/placement map only as design guide. 
 ## Owner scope decision — 2026-11-24
 
 Owner replied “tiếp tục theo đề xuất và rules” after the three-design roadmap and recommendation to activate only Design32 art first. **OWNER_P10B9_SCOPE_GO / P10B9_DEPENDENCY_HOLD.** Design scope approved; no art or code task active. Await B8 SA integration PASS + Owner World Visual GO, then pin exact accepted input and issue separate AI Visual task. No early koi/terrain/FX implementation. Existing PR26 Owner LIVE/Studio/listening and physical GPU evidence remain pending; scope GO is not final art/runtime acceptance.
+
+## Owner-approved HIGH QUALITY / Art First amendment (2026-11-25)
+
+Follow [Design10 latest policy](10_GRAPHICS_PROFILES.md). Extend future HIGH QUALITY art direction to koi, botanical clusters, distant terrain, rocks/islands and all atmosphere assets; preserve master with appropriate rig/texture/LOD, derive runtime assets. §6 koi/terrain triangle caps and §3–4 density/FX counts are initial planning references only; not art rejection ceilings. Runtime pools still explicitly bounded per tested preset; profile instance-weighted geometry, skinning, transparency, water/reflection and GPU cost. Future HIGH QUALITY may use richer density, animation, materials, reflections and fog if measured, no mandatory extra current gallery or runtime activation. B9 dependency HOLD unchanged.
