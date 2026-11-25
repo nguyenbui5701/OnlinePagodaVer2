@@ -518,7 +518,7 @@ async function boot() {
             .filter(point => point.y < 2.3).map(point => point.toArray());
           const layout = lushLotus(profile, seed, tree.toArray(), pair.slots, pair.padRadius, lowCameraSamples, enableBotanicals);
           lotus = createLotusBatches();
-          lotus.addPad(pair.preview.pad, layout);
+          lotus.addPad(pair.preview.pad, pair.preview.actor, layout);
           environment.add(lotus.group);
           if (enableBotanicals) {
             const plants = await createBotanicalScene(profile, layout.filter(item => item.kind === 'bloom' || item.kind === 'bud'), abort.signal, lotus);

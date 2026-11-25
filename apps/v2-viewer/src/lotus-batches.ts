@@ -32,16 +32,24 @@ export function createLotusBatches() {
 
   return {
     group, add,
-    addPad(root: Object3D, items: LotusInstance[]) {
+    addPad(root: Object3D, actor: Object3D, items: LotusInstance[]) {
       root.updateWorldMatrix(true, true);
       const inverse = root.matrixWorld.clone().invert();
-      const bounds = new Box3().setFromObject(root, true);
-      const y = root.getWorldPosition(position).y;
-      const height = Math.max(bounds.max.y - y, y - bounds.min.y) * 2;
+      const bounds = new Box3();
       const sources: Source[] = [];
-      root.traverse(mesh => {
-        if (mesh instanceof Mesh) sources.push({ mesh, local: new Matrix4().multiplyMatrices(inverse, mesh.matrixWorld) });
-      });
+      const inspectPad = (node: Object3D) => {
+        // SeatScene parents the meditator under PadSeatAnchor inside the pad GLB.
+        if (node === actor) return;
+        if (node instanceof Mesh) {
+          const local = new Matrix4().multiplyMatrices(inverse, node.matrixWorld);
+          sources.push({ mesh: node, local });
+          node.geometry.computeBoundingBox();
+          bounds.union(node.geometry.boundingBox!.clone().applyMatrix4(local));
+        }
+        for (const child of node.children) inspectPad(child);
+      };
+      inspectPad(root);
+      const height = Math.max(bounds.max.y, -bounds.min.y) * 2;
       for (const kind of ['pad', 'leaf'] as const) add(kind, items.filter(item => item.kind === kind), sources, height);
     },
     get batchCount() { return pools.reduce((count, pool) => count + pool.batches.length, 0); },

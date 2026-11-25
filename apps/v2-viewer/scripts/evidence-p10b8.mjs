@@ -9,6 +9,7 @@ import tree from '../src/sakura-r18a.json' with { type: 'json' };
 
 const output = resolve(process.env.V2_EVIDENCE_DIR ?? '../../packages/v2-live-gateway/evidence/p10b8');
 const baseline = process.env.V2_P10B7_APP;
+const benchOnly = process.argv.includes('--bench-only');
 const url = 'http://127.0.0.1:5197';
 const oldUrl = 'http://127.0.0.1:5198';
 const viewport = { width: 720, height: 1280 };
@@ -61,7 +62,7 @@ async function goto(run, inspect = true) {
   return report;
 }
 
-async function capture(run, pose, time, filename) {
+async function capture(run, pose, time, filename, contextRestored = false) {
   const summary = await run.page.evaluate(({ pose, time }) => {
     const begin = Math.floor((window.viewerReport.elapsedSeconds ?? 0) * 60) + 1;
     for (let i = begin; i / 60 < time; i++) window.p08Review.step(i / 60, false);
@@ -84,7 +85,7 @@ async function capture(run, pose, time, filename) {
       calls: r.drawCalls, triangles: r.trianglesDrawn, errors: r.errors, glError: gl.getError() };
   }, { pose, time });
   assert.equal(summary.glError, 0);
-  assert.deepEqual(summary.errors, []);
+  assert.deepEqual(summary.errors, contextRestored ? ['webglcontextlost'] : []);
   const png = await run.page.locator('#stage').screenshot();
   assert.deepEqual([png.readUInt32BE(16), png.readUInt32BE(20)], [720, 1280]);
   if (filename) await writeFile(resolve(output, filename), png);
@@ -131,10 +132,11 @@ try {
   servers.push(await preview({ preview: { port: 5197 } }));
   if (baseline) servers.push(await preview({ root: resolve(baseline), preview: { port: 5198 } }));
   const executablePath = process.env.V2_BROWSER || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
-  browser = await chromium.launch({ executablePath, headless: process.env.V2_HEADED !== '1' });
+  browser = await chromium.launch({ executablePath, headless: process.env.V2_HEADED !== '1',
+    args: process.env.V2_GPU_HIGH === '1' ? ['--force-high-performance-gpu'] : [] });
   for (const profile of ['eco', 'quality']) {
     shotsByProfile[profile] = {};
-    for (const [variant, option] of Object.entries(variants)) {
+    for (const [variant, option] of benchOnly ? [] : Object.entries(variants)) {
       const run = await open(profile, option);
       const scene = await goto(run);
       runtimeSource ??= scene.repoRevision;
@@ -155,14 +157,14 @@ try {
         await run.page.waitForFunction(() => window.viewerReport.errors.includes('webglcontextlost'));
         await run.page.evaluate(() => window.loss.restoreContext());
         await run.page.waitForFunction(() => window.viewerReport.contextRestores === 1);
-        const restored = await capture(run, shots[1][1], 18.2);
+        const restored = await capture(run, shots[1][1], 18.2, undefined, true);
         assert.equal(restored.glError, 0);
         data.contextRecovery = { restores: 1, glError: restored.glError, visible: restored.visible };
       }
       await run.page.close();
     }
 
-    if (baseline) {
+    if (baseline && !benchOnly) {
       const old = await open(profile, variants.baseline, oldUrl);
       const oldScene = await goto(old);
       const frame = await capture(old, shots[2][1], 18.1);
@@ -178,7 +180,7 @@ try {
     console.log(profile, measured[profile]);
   }
 
-  for (const disableR17 of [false, true]) {
+  for (const disableR17 of benchOnly ? [] : [false, true]) {
     const run = await open('eco', variants.lush);
     await run.page.route('**/r18a/*.glb', route => route.fulfill({ status: 200, body: 'wrong profile' }));
     if (disableR17) await run.page.route('**/r17b/*.glb', route => route.fulfill({ status: 404 }));
@@ -189,14 +191,15 @@ try {
     await run.page.close();
   }
   assert.deepEqual(httpErrors, []);
+  runtimeSource ??= measured.eco.lush.repoRevision;
   const result = {
     runtimeSource, browser: browser.version(), host: { cpu: cpus()[0]?.model, parallelism: availableParallelism(), ram: totalmem() },
-    config: { resolution: [720,1280], seed: 9, fps: 'native rAF over 6.5s, scene animation warmup 1s',
+    config: { highGpuRequested: process.env.V2_GPU_HIGH === '1', headed: process.env.V2_HEADED === '1', resolution: [720,1280], seed: 9, fps: 'native rAF over 6.5s, scene animation warmup 1s',
       drawCounts: 'renderer.info frame counters, Three.js main render (shadow pass not separately instrumented)',
       visibleCounts: 'static frustum acceptance before depth occlusion' },
     fallback, parity, measured, shotsByProfile,
   };
-  await writeFile(resolve(output, 'world.json'), JSON.stringify(result, null, 2) + '\n');
+  await writeFile(resolve(output, benchOnly ? 'benchmark.json' : 'world.json'), JSON.stringify(result, null, 2) + '\n');
 } finally {
   await browser?.close();
   await Promise.all(servers.map(server => server.close()));

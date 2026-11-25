@@ -256,6 +256,7 @@ async function run() {
     };
     recorder.start();
   });
+  if (r18) await overlay.waitForTimeout(1400);
   gift(211, 14, 'Dương Mây', 0);
   gift(212, 15, 'Em Mây', 0);
   gift(213, 16, 'Lam Mây', 0);

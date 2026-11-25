@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { BoxGeometry, Mesh, MeshBasicMaterial, PerspectiveCamera, Matrix4 } from 'three';
+import { BoxGeometry, Group, Mesh, MeshBasicMaterial, PerspectiveCamera, Matrix4 } from 'three';
 import { parseTreeRevision, resolveTree } from '../src/asset.ts';
 import { createCommunityBatches } from '../src/community-batches.ts';
 import { ringSlots } from '../src/community-layout.ts';
@@ -62,6 +62,25 @@ test('density is deterministic with clearance and full budgets across seeds and 
     assert.equal(lushLotus(profile, seed, [0,0,0], slots, 1.45, low, false)
       .some(item => item.kind === 'bloom' || item.kind === 'bud'), false);
   }
+});
+
+test('static pads and leaves omit the nested seated actor and share the P02 mesh', () => {
+  const root = new Group();
+  const anchor = new Group();
+  const actor = new Group();
+  const pad = new Mesh(new BoxGeometry(2, .2, 2), new MeshBasicMaterial());
+  const figure = new Mesh(new BoxGeometry(), new MeshBasicMaterial());
+  root.add(pad, anchor);
+  anchor.add(actor);
+  actor.add(figure);
+  const batches = createLotusBatches();
+  batches.addPad(root, actor, ['pad', 'leaf'].map((kind, i) => ({
+    id: kind, kind: kind as 'pad' | 'leaf', position: [i,0,0], radius: 1, yaw: 0, scale: 1,
+  })));
+  assert.equal(batches.batchCount, 2);
+  for (const batch of batches.group.children) assert.equal((batch as Mesh).geometry, pad.geometry);
+  batches.dispose();
+  pad.geometry.dispose(); pad.material.dispose(); figure.geometry.dispose(); figure.material.dispose();
 });
 
 test('independent static pools keep index 32 distinct from index zero and free only their matrices', () => {
