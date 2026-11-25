@@ -83,6 +83,28 @@ test('static pads and leaves omit the nested seated actor and share the P02 mesh
   pad.geometry.dispose(); pad.material.dispose(); figure.geometry.dispose(); figure.material.dispose();
 });
 
+test('animated mask initializes all 32 bits without treating them as a cached mask', () => {
+  const geometry = new BoxGeometry(.1, .1, .1);
+  const material = new MeshBasicMaterial();
+  const camera = new PerspectiveCamera(60, 1, .1, 100);
+  camera.updateMatrixWorld();
+  const figures = Array.from({ length: 32 }, (_, i) => {
+    const root = new Group();
+    root.position.set(i / 32, 0, -5);
+    const breath = new Group();
+    root.add(new Mesh(geometry, material), breath);
+    return { root, breath };
+  });
+  const batches = createCommunityBatches(figures);
+  assert.equal(batches.update(figures[0].breath.scale, camera), 32);
+  const matrix = new Matrix4();
+  (batches.group.children[0] as import('three').InstancedMesh).getMatrixAt(16, matrix);
+  assert.equal(matrix.elements[12], .5);
+  batches.dispose();
+  geometry.dispose();
+  material.dispose();
+});
+
 test('independent static pools keep index 32 distinct from index zero and free only their matrices', () => {
   const batch = createLotusBatches();
   const mesh = new Mesh(new BoxGeometry(), new MeshBasicMaterial());

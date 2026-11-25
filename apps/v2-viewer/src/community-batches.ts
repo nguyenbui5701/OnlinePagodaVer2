@@ -40,7 +40,7 @@ export function createCommunityBatches(figures: Figure[]) {
   const frustum = new Frustum();
   const lastBreath = new Vector3();
   const lastPosition = new Vector3();
-  let lastMask = -1;
+  let lastMask: number | undefined;
   return {
     group, count: batches.length,
     update(scale: Vector3, camera: PerspectiveCamera, position?: Vector3) {
