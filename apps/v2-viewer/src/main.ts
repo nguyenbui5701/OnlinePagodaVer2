@@ -5,7 +5,7 @@ import {
 } from 'three';
 import { loadSakura, parseTreeRevision, type Profile } from './asset.ts';
 import { capture, createCinematicRoutes, parseCinematicSeed, type CameraPose } from './camera.ts';
-import { addR18WarmFill, bindGoldEmphasis, createTwilight, referenceViews, setupLighting } from './lighting.ts';
+import { addR18WarmFill, bindGoldEmphasis, createTwilight, liftR18Canopy, referenceViews, setupLighting } from './lighting.ts';
 import { LookTimeline, lookOrder, parseLook } from './twilight.ts';
 import { createSeatScene, seatPose } from './seat-scene.ts';
 import { diversityEnabled } from './avatar-look.ts';
@@ -149,6 +149,7 @@ async function boot() {
   const rig = setupLighting(scene, profile, !!comparison);
   const twilight = look === 'legacy' ? undefined : createTwilight(scene, rig);
   let gold: ReturnType<typeof bindGoldEmphasis> | undefined;
+  let canopy: ReturnType<typeof liftR18Canopy> | undefined;
   let lotus: ReturnType<typeof createLotusBatches> | undefined;
   const warmRim = new Color('#ffd297');
   let r18Fill: ReturnType<typeof addR18WarmFill> | undefined;
@@ -274,7 +275,11 @@ async function boot() {
       camera.position.copy(pose.position);
       camera.lookAt(pose.target);
       camera.fov = pose.fov;
-      if (water) water.time.value = seconds;
+      water?.setTime(seconds);
+      if (manual && canopy && water) {
+        const lobes = water.mesh.material.uniforms.goldLobes.value as Vector3[];
+        report.driftingGold = lobes.map(lobe => lobe.toArray());
+      }
       visited.add(cinematic.shot);
     }
     camera.updateProjectionMatrix();
@@ -336,6 +341,7 @@ async function boot() {
     if (lotus) {
       lotus.group.visible = !review?.seatId;
       report.lotusVisible = lotus.group.visible ? lotus.update(camera) : { pad: 0, leaf: 0, bloom: 0, bud: 0 };
+      if (manual) report.lotusVisibleTones = lotus.group.visible ? lotus.visiblePetalTones() : undefined;
     }
     if (botanicals) {
       botanicals.group.visible = !review?.seatId;
@@ -419,6 +425,7 @@ async function boot() {
     canvas.removeEventListener('webglcontextrestored', contextRestored);
     window.removeEventListener('pagehide', onPageHide);
     document.removeEventListener('visibilitychange', visibility);
+    canopy?.dispose();
     gold?.dispose();
     lotus?.dispose();
     r18Fill?.removeFromParent();
@@ -451,6 +458,7 @@ async function boot() {
     if (disposed) { asset.dispose(); return; }
     sakura = asset;
     environment.add(sakura.root);
+    const qualityR18Lush = profile === 'quality' && asset.report.assetRevision === 'R18A' && requestedDensity === 'lush';
     Object.assign(report, { asset: sakura.report });
     if (twilight) {
       gold = bindGoldEmphasis(asset.root);
@@ -458,6 +466,11 @@ async function boot() {
       if (asset.report.assetRevision === 'R18A' && query.get('r18light') !== 'off') {
         r18Fill = addR18WarmFill(asset.root, profile);
         report.r18Accent = { fill: r18Fill.intensity, emissive: 1.32, waterGold: 1.58, postprocess: false };
+        if (qualityR18Lush && !comparison) {
+          canopy = liftR18Canopy(asset.root);
+          water?.enableDriftingGold();
+          report.r18Canopy = canopy.report;
+        }
       }
     }
     console.info(`Verified Sakura ${sakura.report.assetRevision}`, sakura.report.sha256, __REPO_REVISION__);
@@ -516,7 +529,8 @@ async function boot() {
         if (requestedDensity === 'lush' && pair.padRadius !== undefined) {
           const lowCameraSamples = Array.from({ length: 534 }, (_, i) => routes!.sample(i * .3).position)
             .filter(point => point.y < 2.3).map(point => point.toArray());
-          const layout = lushLotus(profile, seed, tree.toArray(), pair.slots, pair.padRadius, lowCameraSamples, enableBotanicals);
+          const layout = lushLotus(profile, seed, tree.toArray(), pair.slots, pair.padRadius, lowCameraSamples, enableBotanicals,
+            qualityR18Lush && look !== 'legacy');
           lotus = createLotusBatches();
           lotus.addPad(pair.preview.pad, pair.preview.actor, layout);
           environment.add(lotus.group);

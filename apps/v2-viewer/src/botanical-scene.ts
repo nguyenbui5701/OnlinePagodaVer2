@@ -70,7 +70,8 @@ export async function createBotanicalScene(profile: Profile, plants: (Plant | Lo
       if (lush) {
         const spec = manifest.profiles[profile][source.kind];
         lush.add(source.kind, instances as LotusInstance[],
-          source.primitives.map(mesh => ({ mesh, local: mesh.matrixWorld })), spec.bounds[1][1]);
+          source.primitives.map(mesh => ({ mesh, local: mesh.matrixWorld,
+            tintPetals: !Array.isArray(mesh.material) && mesh.material.name === 'P012B_Petals_Ivory_Blush' })), spec.bounds[1][1]);
         continue;
       }
       for (const primitive of source.primitives) {

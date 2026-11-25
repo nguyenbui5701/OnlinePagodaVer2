@@ -1,17 +1,20 @@
-import { Box3, Frustum, Group, InstancedMesh, Matrix4, Mesh, Sphere, Vector3, type Object3D, type PerspectiveCamera } from 'three';
-import type { LotusInstance, LotusKind } from './lotus-density.ts';
+import { Box3, Color, Frustum, Group, InstancedMesh, Matrix4, Mesh, Sphere, Vector3, type Object3D, type PerspectiveCamera } from 'three';
+import { petalColors, type LotusInstance, type LotusKind } from './lotus-density.ts';
 
-type Instance = Pick<LotusInstance, 'kind' | 'position' | 'yaw' | 'scale' | 'radius'>;
-type Source = { mesh: Mesh; local: Matrix4 };
-type Batch = { mesh: InstancedMesh; transforms: Matrix4[] };
+type Instance = Pick<LotusInstance, 'kind' | 'position' | 'yaw' | 'scale' | 'radius' | 'petalTone'>;
+type Source = { mesh: Mesh; local: Matrix4; tintPetals?: boolean };
+type Batch = { mesh: InstancedMesh; transforms: Matrix4[]; colors?: Color[] };
 
 export function createLotusBatches() {
   const group = new Group();
   group.name = 'Lush static lotus clusters';
-  const pools: { kind: LotusKind; bounds: Sphere[]; indices: number[]; batches: Batch[] }[] = [];
+  const pools: { kind: LotusKind; bounds: Sphere[]; indices: number[]; batches: Batch[]; instances: readonly Instance[] }[] = [];
   const frustum = new Frustum();
   const projection = new Matrix4();
   const position = new Vector3();
+  const tones = Object.fromEntries(Object.entries(petalColors).map(([tone, rgb]) =>
+    [tone, new Color().fromArray(rgb)]));
+  const white = new Color(1, 1, 1);
 
   function add(kind: LotusKind, instances: readonly Instance[], sources: Source[], height: number) {
     if (!instances.length) return;
@@ -19,15 +22,17 @@ export function createLotusBatches() {
       new Sphere(new Vector3(x, y + height * scale / 2, z), Math.hypot(radius, height * scale / 2)));
     const matrices = instances.map(item =>
       new Matrix4().makeRotationY(item.yaw).scale(position.setScalar(item.scale)).setPosition(position.fromArray(item.position)));
-    const batches = sources.map(({ mesh, local }) => {
+    const batches = sources.map(({ mesh, local, tintPetals }) => {
       const batch = new InstancedMesh(mesh.geometry, mesh.material, instances.length);
       batch.name = kind + ' · ' + mesh.name;
       batch.frustumCulled = false;
       batch.receiveShadow = true;
       group.add(batch);
-      return { mesh: batch, transforms: matrices.map(matrix => new Matrix4().multiplyMatrices(matrix, local)) };
+      const colors = tintPetals && instances.some(item => item.petalTone)
+        ? instances.map(item => item.petalTone ? tones[item.petalTone] : white) : undefined;
+      return { mesh: batch, colors, transforms: matrices.map(matrix => new Matrix4().multiplyMatrices(matrix, local)) };
     });
-    pools.push({ kind, bounds, indices: [], batches });
+    pools.push({ kind, bounds, indices: [], batches, instances });
   }
 
   return {
@@ -62,13 +67,30 @@ export function createLotusBatches() {
         counts[pool.kind] += visible.length;
         if (visible.length === pool.indices.length && visible.every((id, i) => pool.indices[i] === id) &&
             pool.batches.every(batch => batch.mesh.count === visible.length)) continue;
-        for (const { mesh, transforms } of pool.batches) {
-          for (let i = 0; i < visible.length; i++) mesh.setMatrixAt(i, transforms[visible[i]]);
+        for (const { mesh, transforms, colors } of pool.batches) {
+          for (let i = 0; i < visible.length; i++) {
+            const source = visible[i];
+            mesh.setMatrixAt(i, transforms[source]);
+            if (colors) mesh.setColorAt(i, colors[source]);
+          }
+          if (mesh.instanceColor) mesh.instanceColor.needsUpdate = visible.length > 0;
           mesh.count = visible.length;
           mesh.visible = visible.length > 0;
           mesh.instanceMatrix.needsUpdate = visible.length > 0;
         }
         pool.indices = visible;
+      }
+      return counts;
+    },
+    visiblePetalTones() {
+      const counts = { bloom: { palePink: 0, deepPink: 0, ivoryPink: 0, warmPink: 0 },
+        bud: { palePink: 0, deepPink: 0, ivoryPink: 0, warmPink: 0 } };
+      for (const { kind, indices, instances } of pools) {
+        if (kind !== 'bloom' && kind !== 'bud') continue;
+        for (const index of indices) {
+          const tone = instances[index].petalTone;
+          if (tone) counts[kind][tone]++;
+        }
       }
       return counts;
     },
