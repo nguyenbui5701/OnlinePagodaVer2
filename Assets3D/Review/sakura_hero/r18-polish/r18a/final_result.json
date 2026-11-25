@@ -1,0 +1,2427 @@
+{
+  "status": "R18A_NATIVE_FINAL_EVIDENCE_READY_SA_REVIEW_PENDING",
+  "reviewedHead": "631273440469b789bf7f1688bff30a35309de601",
+  "review": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/27#pullrequestreview-6058176405",
+  "policyTaskBlob": "06eabf3c96b5a205d94f93e4b4ef197e63923d53",
+  "validationSHA256": "f52eab086b0da1d218d251ae6da6537aa1bd5433b090070b50c465418fcbaf52",
+  "profiles": {
+    "quality": {
+      "sha256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+      "bytes": 7152368,
+      "triangles": 242954,
+      "meshes": 17,
+      "materials": 15,
+      "textures": 0,
+      "images": 0,
+      "animations": 0,
+      "cameras": 0,
+      "path": "sakura_hero_r18a.glb",
+      "vertexRecords": 303136,
+      "primitiveCount": 26,
+      "attributeLogicalBytes": {
+        "POSITION": 3637632,
+        "INDEX": 2605452,
+        "NORMAL": 886812
+      },
+      "degenerateTriangles": 0,
+      "boundsYUpMeters": [
+        [
+          -14.178767204284668,
+          -0.5183812975883484,
+          -13.425017356872559
+        ],
+        [
+          14.489616394042969,
+          26.48044204711914,
+          14.410984992980957
+        ]
+      ],
+      "rootNodes": [
+        {
+          "name": "world",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "R17b_outer_quality",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "R17b_bridge_quality",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "R17b_skirt_quality",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "R18_Connected_Branch_Supports_quality",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "R18_Branch_Gold_Accents_quality",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "R18a_Surface_Gold_Inlays_quality",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "originalBinPrefixExact": true,
+      "originalAccessorsMeshesNodesExact": true,
+      "nonGoldMaterialsExact": true,
+      "attachmentEvidence": "REUSE_SA_ACCEPTED_R18_NON_GOLD_BYTES_IDENTICAL",
+      "priorContactEdges": 45,
+      "goldMaterialChange": {
+        "before": {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.9686274509803922,
+              0.6784313725490196,
+              0.396078431372549,
+              1.0
+            ],
+            "roughnessFactor": 0.65,
+            "metallicFactor": 0.0
+          },
+          "emissiveFactor": [
+            0.85,
+            0.38,
+            0.085
+          ],
+          "name": "Golden_bark_veins",
+          "doubleSided": false
+        },
+        "after": {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.9686274509803922,
+              0.6784313725490196,
+              0.396078431372549,
+              1.0
+            ],
+            "roughnessFactor": 0.58,
+            "metallicFactor": 0.0
+          },
+          "emissiveFactor": [
+            0.95,
+            0.49,
+            0.12
+          ],
+          "name": "Golden_bark_veins",
+          "doubleSided": false
+        }
+      },
+      "goldOnlyDeltaTriangles": 5521,
+      "deltaBytes": 157036,
+      "softReferenceTriangles": 500000,
+      "goldSurfaceProof": {
+        "samples": 10647,
+        "maxDistanceM": 0.01200008299201727,
+        "toleranceM": 0.025,
+        "status": "NATIVE_SURFACE_DISTANCE_PASS"
+      },
+      "inlays": [
+        {
+          "component": "Trunk_bark_plumblack:0",
+          "kind": "trunk",
+          "axialSpanM": 16.529352758079767,
+          "designedPaths": 15,
+          "pathsWithSurfaceFaces": 15,
+          "triangles": 5244,
+          "goldAreaApproxM2": 24.436833628963765,
+          "barkAreaM2": 371.05998428582126,
+          "approxCoveragePct": 6.585682817832623
+        },
+        {
+          "component": "Branches_plum:34",
+          "kind": "main_branch",
+          "axialSpanM": 6.731553000922403,
+          "designedPaths": 5,
+          "pathsWithSurfaceFaces": 5,
+          "triangles": 141,
+          "goldAreaApproxM2": 0.3263076057191352,
+          "barkAreaM2": 5.703197813533651,
+          "approxCoveragePct": 5.721484970147965
+        },
+        {
+          "component": "Branches_plum:60",
+          "kind": "main_branch",
+          "axialSpanM": 5.483154109321811,
+          "designedPaths": 5,
+          "pathsWithSurfaceFaces": 5,
+          "triangles": 82,
+          "goldAreaApproxM2": 0.18711927550333057,
+          "barkAreaM2": 5.511346177846373,
+          "approxCoveragePct": 3.3951646197708047
+        },
+        {
+          "component": "Branches_plum:51",
+          "kind": "main_branch",
+          "axialSpanM": 5.038028340375337,
+          "designedPaths": 5,
+          "pathsWithSurfaceFaces": 5,
+          "triangles": 54,
+          "goldAreaApproxM2": 0.1288632867459582,
+          "barkAreaM2": 3.4628628624163533,
+          "approxCoveragePct": 3.7212933883277897
+        }
+      ],
+      "budgetPolicy": "ART_FIRST_SOFT_REFERENCE_REPORT_ACTUAL_NO_POLYGON_OR_BYTE_REJECTION"
+    },
+    "eco": {
+      "sha256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+      "bytes": 2229632,
+      "triangles": 60931,
+      "meshes": 16,
+      "materials": 14,
+      "textures": 0,
+      "images": 0,
+      "animations": 0,
+      "cameras": 0,
+      "path": "sakura_hero_r18a_eco.glb",
+      "vertexRecords": 101192,
+      "primitiveCount": 25,
+      "attributeLogicalBytes": {
+        "POSITION": 1214304,
+        "INDEX": 632058,
+        "NORMAL": 361920
+      },
+      "degenerateTriangles": 0,
+      "boundsYUpMeters": [
+        [
+          -14.275399208068848,
+          -1.026049256324768,
+          -13.268314361572266
+        ],
+        [
+          13.287308692932129,
+          24.86863899230957,
+          11.898303031921387
+        ]
+      ],
+      "rootNodes": [
+        {
+          "name": "world",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "R17b_outer_eco",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "R17b_bridge_eco",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "R17b_skirt_eco",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "R18_Connected_Branch_Supports_eco",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "R18_Branch_Gold_Accents_eco",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "R18a_Surface_Gold_Inlays_eco",
+          "worldMatrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "originalBinPrefixExact": true,
+      "originalAccessorsMeshesNodesExact": true,
+      "nonGoldMaterialsExact": true,
+      "attachmentEvidence": "REUSE_SA_ACCEPTED_R18_NON_GOLD_BYTES_IDENTICAL",
+      "priorContactEdges": 70,
+      "goldMaterialChange": {
+        "before": {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.9686274509803922,
+              0.6784313725490196,
+              0.396078431372549,
+              1.0
+            ],
+            "roughnessFactor": 0.65,
+            "metallicFactor": 0.0
+          },
+          "emissiveFactor": [
+            0.85,
+            0.38,
+            0.085
+          ],
+          "name": "Golden_bark_veins",
+          "doubleSided": false
+        },
+        "after": {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.9686274509803922,
+              0.6784313725490196,
+              0.396078431372549,
+              1.0
+            ],
+            "roughnessFactor": 0.58,
+            "metallicFactor": 0.0
+          },
+          "emissiveFactor": [
+            0.95,
+            0.49,
+            0.12
+          ],
+          "name": "Golden_bark_veins",
+          "doubleSided": false
+        }
+      },
+      "goldOnlyDeltaTriangles": 2149,
+      "deltaBytes": 64412,
+      "softReferenceTriangles": 120000,
+      "goldSurfaceProof": {
+        "samples": 4259,
+        "maxDistanceM": 0.012000074610114098,
+        "toleranceM": 0.025,
+        "status": "NATIVE_SURFACE_DISTANCE_PASS"
+      },
+      "inlays": [
+        {
+          "component": "Trunk_bark_plumblack:0",
+          "kind": "trunk",
+          "axialSpanM": 14.447924256324768,
+          "designedPaths": 11,
+          "pathsWithSurfaceFaces": 11,
+          "triangles": 1315,
+          "goldAreaApproxM2": 11.657035918361851,
+          "barkAreaM2": 137.82917559356738,
+          "approxCoveragePct": 8.4575967810591
+        },
+        {
+          "component": "Branches_plum:27",
+          "kind": "main_branch",
+          "axialSpanM": 15.281883897249653,
+          "designedPaths": 3,
+          "pathsWithSurfaceFaces": 3,
+          "triangles": 92,
+          "goldAreaApproxM2": 0.961559018659463,
+          "barkAreaM2": 33.97833745006105,
+          "approxCoveragePct": 2.8299177971043883
+        },
+        {
+          "component": "Branches_plum:15",
+          "kind": "main_branch",
+          "axialSpanM": 13.97173417520533,
+          "designedPaths": 3,
+          "pathsWithSurfaceFaces": 3,
+          "triangles": 90,
+          "goldAreaApproxM2": 1.0788331774824205,
+          "barkAreaM2": 39.3391536377291,
+          "approxCoveragePct": 2.742390411896766
+        },
+        {
+          "component": "Branches_plum:18",
+          "kind": "main_branch",
+          "axialSpanM": 12.422616679470298,
+          "designedPaths": 3,
+          "pathsWithSurfaceFaces": 3,
+          "triangles": 102,
+          "goldAreaApproxM2": 0.9357952940659726,
+          "barkAreaM2": 33.23361452702449,
+          "approxCoveragePct": 2.815809557233127
+        },
+        {
+          "component": "Branches_plum:12",
+          "kind": "main_branch",
+          "axialSpanM": 12.50568670706727,
+          "designedPaths": 3,
+          "pathsWithSurfaceFaces": 3,
+          "triangles": 98,
+          "goldAreaApproxM2": 0.9806194998658785,
+          "barkAreaM2": 31.284748354837028,
+          "approxCoveragePct": 3.1344970039187228
+        },
+        {
+          "component": "Branches_plum:30",
+          "kind": "main_branch",
+          "axialSpanM": 12.304495487926413,
+          "designedPaths": 3,
+          "pathsWithSurfaceFaces": 3,
+          "triangles": 90,
+          "goldAreaApproxM2": 0.983568486389065,
+          "barkAreaM2": 34.58284928210501,
+          "approxCoveragePct": 2.8440932624311417
+        },
+        {
+          "component": "Branches_plum:24",
+          "kind": "main_branch",
+          "axialSpanM": 12.619730590574358,
+          "designedPaths": 3,
+          "pathsWithSurfaceFaces": 3,
+          "triangles": 78,
+          "goldAreaApproxM2": 0.6628262812941204,
+          "barkAreaM2": 24.53511509023524,
+          "approxCoveragePct": 2.7015413575863736
+        },
+        {
+          "component": "Branches_plum:21",
+          "kind": "main_branch",
+          "axialSpanM": 11.542755376203285,
+          "designedPaths": 3,
+          "pathsWithSurfaceFaces": 3,
+          "triangles": 84,
+          "goldAreaApproxM2": 0.6868813755848533,
+          "barkAreaM2": 24.046496425097523,
+          "approxCoveragePct": 2.856471743084991
+        },
+        {
+          "component": "Branches_plum:36",
+          "kind": "main_branch",
+          "axialSpanM": 9.904340919100868,
+          "designedPaths": 3,
+          "pathsWithSurfaceFaces": 3,
+          "triangles": 94,
+          "goldAreaApproxM2": 0.7307570158167211,
+          "barkAreaM2": 24.682529007118845,
+          "approxCoveragePct": 2.960624560011492
+        },
+        {
+          "component": "Branches_plum:33",
+          "kind": "main_branch",
+          "axialSpanM": 8.778064167155573,
+          "designedPaths": 3,
+          "pathsWithSurfaceFaces": 3,
+          "triangles": 106,
+          "goldAreaApproxM2": 0.8652199513957142,
+          "barkAreaM2": 27.090801216078535,
+          "approxCoveragePct": 3.193777638744038
+        }
+      ],
+      "budgetPolicy": "ART_FIRST_SOFT_REFERENCE_REPORT_ACTUAL_NO_POLYGON_OR_BYTE_REJECTION"
+    }
+  },
+  "editable": {
+    "path": "sakura_hero_r18a_editable.blend",
+    "bytes": 22877219,
+    "sha256": "07c5859ca2a6a9dec33c7999cabd7d2a45873285e09d04e0ea3771577a83266c",
+    "sourceHashes": {
+      "quality": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+      "eco": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847"
+    },
+    "collections": {
+      "quality": {
+        "meshCount": 17,
+        "triangles": 242954,
+        "materialCount": 15,
+        "materials": {
+          "Branches_plum": {
+            "Base Color": [
+              0.16470588743686676,
+              0.07450980693101883,
+              0.1882352977991104,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Alpha": 1.0
+          },
+          "Canopy_depth_rose": {
+            "Base Color": [
+              0.7607843279838562,
+              0.43921568989753723,
+              0.5803921818733215,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.03500000014901161,
+              0.014000000432133675,
+              0.020999999716877937,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Canopy_peach": {
+            "Base Color": [
+              0.95686274766922,
+              0.6549019813537598,
+              0.6274510025978088,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.03500000014901161,
+              0.014000000432133675,
+              0.020999999716877937,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Canopy_rose": {
+            "Base Color": [
+              0.8784313797950745,
+              0.5215686559677124,
+              0.6274510025978088,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.03500000014901161,
+              0.014000000432133675,
+              0.020999999716877937,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Golden_bark_veins": {
+            "Base Color": [
+              0.9686274528503418,
+              0.6784313917160034,
+              0.3960784375667572,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.5799999833106995,
+            "Emission Color": [
+              0.949999988079071,
+              0.49000000953674316,
+              0.11999999731779099,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "R17b_ShadowRose": {
+            "Base Color": [
+              0.46000000834465027,
+              0.1599999964237213,
+              0.27000001072883606,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8600000143051147,
+            "Emission Color": [
+              0.03500000014901161,
+              0.012000000104308128,
+              0.019999999552965164,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "R17b_WarmRose": {
+            "Base Color": [
+              0.7300000190734863,
+              0.30000001192092896,
+              0.4300000071525574,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8600000143051147,
+            "Emission Color": [
+              0.017999999225139618,
+              0.004999999888241291,
+              0.008999999612569809,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "R17b_PetalPink": {
+            "Base Color": [
+              0.8899999856948853,
+              0.47999998927116394,
+              0.5899999737739563,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8600000143051147,
+            "Emission Color": [
+              0.02500000037252903,
+              0.008999999612569809,
+              0.014000000432133675,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "R17b_PeachBlush": {
+            "Base Color": [
+              0.9599999785423279,
+              0.6600000262260437,
+              0.6100000143051147,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8600000143051147,
+            "Emission Color": [
+              0.028999999165534973,
+              0.012000000104308128,
+              0.014000000432133675,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Sakura_flower_gold": {
+            "Base Color": [
+              1.0,
+              0.8156862854957581,
+              0.5176470875740051,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Alpha": 1.0
+          },
+          "Sakura_petal_blush": {
+            "Base Color": [
+              0.929411768913269,
+              0.6823529601097107,
+              0.7137255072593689,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.04500000178813934,
+              0.017999999225139618,
+              0.024000000208616257,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Sakura_petal_cream": {
+            "Base Color": [
+              0.9607843160629272,
+              0.800000011920929,
+              0.729411780834198,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.04500000178813934,
+              0.017999999225139618,
+              0.024000000208616257,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Sakura_petal_pink": {
+            "Base Color": [
+              0.9058823585510254,
+              0.5647059082984924,
+              0.6549019813537598,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.04500000178813934,
+              0.017999999225139618,
+              0.024000000208616257,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Sakura_petal_warm_rose": {
+            "Base Color": [
+              0.8941176533699036,
+              0.49803921580314636,
+              0.6000000238418579,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.04500000178813934,
+              0.017999999225139618,
+              0.024000000208616257,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Trunk_bark_plumblack": {
+            "Base Color": [
+              0.11372549086809158,
+              0.0470588244497776,
+              0.13333334028720856,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Alpha": 1.0
+          }
+        },
+        "objects": [
+          {
+            "name": "Branches_plum",
+            "triangles": 4462,
+            "materials": {
+              "Branches_plum": 4462
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Canopy_depth_rose",
+            "triangles": 3520,
+            "materials": {
+              "Canopy_depth_rose": 3520
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Canopy_peach",
+            "triangles": 19840,
+            "materials": {
+              "Canopy_peach": 19840
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Canopy_rose",
+            "triangles": 6720,
+            "materials": {
+              "Canopy_rose": 6720
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Golden_bark_veins",
+            "triangles": 246,
+            "materials": {
+              "Golden_bark_veins": 246
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R17b_bridge_quality",
+            "triangles": 12160,
+            "materials": {
+              "R17b_ShadowRose": 2360,
+              "R17b_WarmRose": 4240,
+              "R17b_PetalPink": 4060,
+              "R17b_PeachBlush": 1500
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R17b_outer_quality",
+            "triangles": 24320,
+            "materials": {
+              "R17b_ShadowRose": 5660,
+              "R17b_WarmRose": 8100,
+              "R17b_PetalPink": 7460,
+              "R17b_PeachBlush": 3100
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R17b_skirt_quality",
+            "triangles": 9120,
+            "materials": {
+              "R17b_ShadowRose": 1960,
+              "R17b_WarmRose": 3100,
+              "R17b_PetalPink": 2900,
+              "R17b_PeachBlush": 1160
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R18_Branch_Gold_Accents_quality",
+            "triangles": 5,
+            "materials": {
+              "Golden_bark_veins": 5
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R18_Connected_Branch_Supports_quality",
+            "triangles": 540,
+            "materials": {
+              "Branches_plum": 540
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R18a_Surface_Gold_Inlays_quality",
+            "triangles": 5521,
+            "materials": {
+              "Golden_bark_veins": 5521
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Sakura_flower_gold",
+            "triangles": 1320,
+            "materials": {
+              "Sakura_flower_gold": 1320
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Sakura_petal_blush",
+            "triangles": 45200,
+            "materials": {
+              "Sakura_petal_blush": 45200
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Sakura_petal_cream",
+            "triangles": 18260,
+            "materials": {
+              "Sakura_petal_cream": 18260
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Sakura_petal_pink",
+            "triangles": 47220,
+            "materials": {
+              "Sakura_petal_pink": 47220
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Sakura_petal_warm_rose",
+            "triangles": 21400,
+            "materials": {
+              "Sakura_petal_warm_rose": 21400
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Trunk_bark_plumblack",
+            "triangles": 23100,
+            "materials": {
+              "Trunk_bark_plumblack": 23100
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "hideRender": false,
+        "hideViewport": false
+      },
+      "eco": {
+        "meshCount": 16,
+        "triangles": 60931,
+        "materialCount": 14,
+        "materials": {
+          "Branches_plum.001": {
+            "Base Color": [
+              0.16470588743686676,
+              0.07450980693101883,
+              0.1882352977991104,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Alpha": 1.0
+          },
+          "Canopy_depth_rose.001": {
+            "Base Color": [
+              0.44999998807907104,
+              0.1899999976158142,
+              0.30000001192092896,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.03500000014901161,
+              0.014000000432133675,
+              0.020999999716877937,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Canopy_peach.001": {
+            "Base Color": [
+              0.7300000190734863,
+              0.4000000059604645,
+              0.46000000834465027,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.03500000014901161,
+              0.014000000432133675,
+              0.020999999716877937,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Canopy_rose.001": {
+            "Base Color": [
+              0.6200000047683716,
+              0.30000001192092896,
+              0.41999998688697815,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.03500000014901161,
+              0.014000000432133675,
+              0.020999999716877937,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Golden_bark_veins.001": {
+            "Base Color": [
+              0.9686274528503418,
+              0.6784313917160034,
+              0.3960784375667572,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.5799999833106995,
+            "Emission Color": [
+              0.949999988079071,
+              0.49000000953674316,
+              0.11999999731779099,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "R17b_ShadowRose.001": {
+            "Base Color": [
+              0.46000000834465027,
+              0.1599999964237213,
+              0.27000001072883606,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8600000143051147,
+            "Emission Color": [
+              0.03500000014901161,
+              0.012000000104308128,
+              0.019999999552965164,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "R17b_WarmRose.001": {
+            "Base Color": [
+              0.7300000190734863,
+              0.30000001192092896,
+              0.4300000071525574,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8600000143051147,
+            "Emission Color": [
+              0.017999999225139618,
+              0.004999999888241291,
+              0.008999999612569809,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "R17b_PetalPink.001": {
+            "Base Color": [
+              0.8899999856948853,
+              0.47999998927116394,
+              0.5899999737739563,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8600000143051147,
+            "Emission Color": [
+              0.02500000037252903,
+              0.008999999612569809,
+              0.014000000432133675,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "R17b_PeachBlush.001": {
+            "Base Color": [
+              0.9599999785423279,
+              0.6600000262260437,
+              0.6100000143051147,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8600000143051147,
+            "Emission Color": [
+              0.028999999165534973,
+              0.012000000104308128,
+              0.014000000432133675,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Sakura_petal_blush.001": {
+            "Base Color": [
+              0.9200000166893005,
+              0.6100000143051147,
+              0.6600000262260437,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.027000000700354576,
+              0.008999999612569809,
+              0.014000000432133675,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Sakura_petal_cream.001": {
+            "Base Color": [
+              0.949999988079071,
+              0.7200000286102295,
+              0.6600000262260437,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.027000000700354576,
+              0.008999999612569809,
+              0.014000000432133675,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Sakura_petal_pink.001": {
+            "Base Color": [
+              0.8700000047683716,
+              0.49000000953674316,
+              0.6000000238418579,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.027000000700354576,
+              0.008999999612569809,
+              0.014000000432133675,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Sakura_petal_warm_rose.001": {
+            "Base Color": [
+              0.7300000190734863,
+              0.3100000023841858,
+              0.4300000071525574,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              0.027000000700354576,
+              0.008999999612569809,
+              0.014000000432133675,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Alpha": 1.0
+          },
+          "Trunk_bark_plumblack.001": {
+            "Base Color": [
+              0.11372549086809158,
+              0.0470588244497776,
+              0.13333334028720856,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.8799999952316284,
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Alpha": 1.0
+          }
+        },
+        "objects": [
+          {
+            "name": "Branches_plum.001",
+            "triangles": 3732,
+            "materials": {
+              "Branches_plum.001": 3732
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Canopy_depth_rose.001",
+            "triangles": 480,
+            "materials": {
+              "Canopy_depth_rose.001": 480
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Canopy_peach.001",
+            "triangles": 3680,
+            "materials": {
+              "Canopy_peach.001": 3680
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Canopy_rose.001",
+            "triangles": 1040,
+            "materials": {
+              "Canopy_rose.001": 1040
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Golden_bark_veins.001",
+            "triangles": 230,
+            "materials": {
+              "Golden_bark_veins.001": 230
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R17b_bridge_eco",
+            "triangles": 3680,
+            "materials": {
+              "R17b_ShadowRose.001": 740,
+              "R17b_WarmRose.001": 1450,
+              "R17b_PetalPink.001": 960,
+              "R17b_PeachBlush.001": 530
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R17b_outer_eco",
+            "triangles": 7360,
+            "materials": {
+              "R17b_ShadowRose.001": 1710,
+              "R17b_WarmRose.001": 2390,
+              "R17b_PetalPink.001": 2330,
+              "R17b_PeachBlush.001": 930
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R17b_skirt_eco",
+            "triangles": 2760,
+            "materials": {
+              "R17b_ShadowRose.001": 690,
+              "R17b_WarmRose.001": 910,
+              "R17b_PetalPink.001": 810,
+              "R17b_PeachBlush.001": 350
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R18_Branch_Gold_Accents_eco",
+            "triangles": 10,
+            "materials": {
+              "Golden_bark_veins.001": 10
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R18_Connected_Branch_Supports_eco",
+            "triangles": 560,
+            "materials": {
+              "Branches_plum.001": 560
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "R18a_Surface_Gold_Inlays_eco",
+            "triangles": 2149,
+            "materials": {
+              "Golden_bark_veins.001": 2149
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Sakura_petal_blush.001",
+            "triangles": 11350,
+            "materials": {
+              "Sakura_petal_blush.001": 11350
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Sakura_petal_cream.001",
+            "triangles": 4560,
+            "materials": {
+              "Sakura_petal_cream.001": 4560
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Sakura_petal_pink.001",
+            "triangles": 11030,
+            "materials": {
+              "Sakura_petal_pink.001": 11030
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Sakura_petal_warm_rose.001",
+            "triangles": 5320,
+            "materials": {
+              "Sakura_petal_warm_rose.001": 5320
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "name": "Trunk_bark_plumblack.001",
+            "triangles": 2990,
+            "materials": {
+              "Trunk_bark_plumblack.001": 2990
+            },
+            "matrixWorld": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ],
+        "hideRender": true,
+        "hideViewport": true
+      }
+    },
+    "ownerReopen": true,
+    "visibilitySwitch": true,
+    "master": "QUALITY full-detail editable R18a plus ECO derivative collection; source recipe retained, no decimation or optional HIGH QUALITY export in this revision."
+  },
+  "cycles": {
+    "matched": 24,
+    "nativeNew": 16,
+    "reusedR17B": 8,
+    "reusedR18GoldControls": 4,
+    "lookOnlyNew": 2
+  },
+  "ownerArtGO": "PENDING",
+  "independentSAHash": "PENDING",
+  "gate": "P10B8_ART_SA_REVIEW_REQUIRED",
+  "costVNDSoftwareLicense": 0
+}
