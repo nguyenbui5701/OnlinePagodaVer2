@@ -1,0 +1,154 @@
+source=9c92fbc4945e661163c20bfaa5a72e4af1f49418
+node=v24.16.0
+
+> npm.cmd run assets:b9
+
+> @online-pagoda/v2-viewer@0.1.0 assets:b9
+> node scripts/stage-b9.mjs
+
+{"path":"Assets3D/Review/pond_environment/b9/r01/koi_kohaku_eco.glb","commit":"8626dba9a74793d529da4c1c8204f863cae253c3","gitBlob":"23cf4ecc874bc50beedf471d2a21dcf43286c17a","bytes":68796,"sha256":"38616f969f77610742767d997a396c79ff17ccac1bf9c093ca05ec2e87a2091a"}
+{"path":"Assets3D/Review/pond_environment/b9/r01/koi_sanke_eco.glb","commit":"8626dba9a74793d529da4c1c8204f863cae253c3","gitBlob":"f38903f6a6b46800c04b265d46ca442188afbcfa","bytes":68796,"sha256":"2da581fec72e6ff1e74bc6ae86e4afca50012759ec070b946dbbc3544b163f5d"}
+{"path":"Assets3D/Review/pond_environment/b9/r01/koi_yamabuki_eco.glb","commit":"8626dba9a74793d529da4c1c8204f863cae253c3","gitBlob":"3deafe82c0ba3e95530ecc6b225a26e26deaf7a6","bytes":68800,"sha256":"ee5581c83e61b177d1b62190e150f11e4c0e9cf9498523f0adf596c3eef93e2a"}
+{"path":"Assets3D/Review/pond_environment/b9/r01/distant_terrain_eco.glb","commit":"8626dba9a74793d529da4c1c8204f863cae253c3","gitBlob":"489c108a51456a8d667595f3308457ceee17f7c9","bytes":194156,"sha256":"463c7d5d26b7217705533070640c259712fd1894356448f7168b17737caa23c3"}
+{"path":"Assets3D/Review/pond_environment/b9/r01/koi_kohaku_quality.glb","commit":"8626dba9a74793d529da4c1c8204f863cae253c3","gitBlob":"5a7f0c3c7f6bc2d666172e2a159a2aacc80ff5e5","bytes":150560,"sha256":"e565c0748913bd505d5f7a0e509798bd5fd1d0d5df48c9e4b612f683cfe6ab83"}
+{"path":"Assets3D/Review/pond_environment/b9/r01/koi_sanke_quality.glb","commit":"8626dba9a74793d529da4c1c8204f863cae253c3","gitBlob":"04099de32c393f7a96a051af35e6a2069cbc2a0e","bytes":150556,"sha256":"7e3a55e405cbbd231bfefdf0d8d058d197683092d3a814a7c73dab764d655603"}
+{"path":"Assets3D/Review/pond_environment/b9/r01/koi_yamabuki_quality.glb","commit":"8626dba9a74793d529da4c1c8204f863cae253c3","gitBlob":"fd111bac5c2c57668b5606f6c07c0e581ec42dfc","bytes":150564,"sha256":"b44ea4827c1db509b408108297fd69d011f360604ac60c8eec2eb461ee9c293b"}
+{"path":"Assets3D/Review/pond_environment/b9/r01/distant_terrain_quality.glb","commit":"8626dba9a74793d529da4c1c8204f863cae253c3","gitBlob":"056b76862632ec3a411af7d5fb73c787e3380ff1","bytes":449172,"sha256":"1b4c279efa660505aa38cd3d6c7e596b5abab43f36869c397f602c551f31fa49"}
+exit=0
+
+> npm.cmd run build
+
+> @online-pagoda/v2-viewer@0.1.0 build
+> tsc --noEmit && vite build
+
+test/environment-b9.test.ts(16,25): error TS7016: Could not find a declaration file for module '../scripts/stage-b9.mjs'. 'D:/Vibecode/onlPagodaV2/OnlinePagodaVer2/.p10b9/apps/v2-viewer/scripts/stage-b9.mjs' implicitly has an 'any' type.
+exit=2
+
+source=b66bc2cd6b9bf4176ef4306dbfe65f5a86280285
+
+> npm.cmd run build
+
+> @online-pagoda/v2-viewer@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v7.3.8 building client environment for production...
+transforming...
+✓ 79 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/overlay/index.html                    0.95 kB │ gzip:   0.50 kB
+dist/index.html                            1.57 kB │ gzip:   0.67 kB
+dist/dashboard/index.html                  5.79 kB │ gzip:   2.02 kB
+dist/assets/main-07-zYg_G.css              3.40 kB │ gzip:   1.30 kB
+dist/assets/index-DYmFw9zb.css             3.46 kB │ gzip:   1.35 kB
+dist/assets/overlay-context-1aLgP4AC.js    0.02 kB │ gzip:   0.04 kB
+dist/assets/index-BI2O1JF3.js              1.94 kB │ gzip:   1.12 kB
+dist/assets/live-api-CYXtWydb.js           3.67 kB │ gzip:   1.71 kB
+dist/assets/live-receiver-DYhjC7Lf.js      8.86 kB │ gzip:   4.08 kB
+dist/assets/index-Cy85dyge.js             15.37 kB │ gzip:   6.34 kB
+dist/assets/main-BWZGRkj4.js             764.41 kB │ gzip: 217.64 kB
+System.Management.Automation.RemoteException
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.63s
+exit=0
+
+> node scripts/evidence-p10b9.mjs
+eco {"before":{"fps":144.0025977918769,"frames":1153,"p50":6.900000000000546,"p95":7,"p99":7.100000000000364,"calls":122,"triangles":755133,"geometries":59,"textures":1,"koi":0,"heap":26652775,"errors":[],"shot":"COMMUNITY","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)","treeLoadMs":51.899999998509884,"revision":"891786afaa50add5eeb16c969f094d79067d311d"},"after":{"fps":144.00439631808362,"frames":1153,"p50":6.900000000000546,"p95":7,"p99":7.100000000000364,"calls":148,"triangles":767445,"geometries":73,"textures":19,"koi":6,"heap":30806658,"errors":[],"shot":"COMMUNITY","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)","treeLoadMs":52,"revision":"b66bc2cd6b9bf4176ef4306dbfe65f5a86280285"},"fixed":[4,4,3,2],"restored":true}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+System.Management.Automation.RemoteException
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+System.Management.Automation.RemoteException
++ '90e594c1f152e5987d9f5ccee7a86e392a1686798a4d862b3b654842134bd468'
+- '4d867fb25fb2f388cdec24f4c78ad9de745da3ae8bb85dd5c496444c02a79cd7'
+System.Management.Automation.RemoteException
+    at file:///D:/Vibecode/onlPagodaV2/OnlinePagodaVer2/.p10b9/apps/v2-viewer/scripts/evidence-p10b9.mjs:225:14 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '90e594c1f152e5987d9f5ccee7a86e392a1686798a4d862b3b654842134bd468',
+  expected: '4d867fb25fb2f388cdec24f4c78ad9de745da3ae8bb85dd5c496444c02a79cd7',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+System.Management.Automation.RemoteException
+Node.js v24.16.0
+exit=1
+
+Candidate build b66bc2cd6b9bf4176ef4306dbfe65f5a86280285, native runner matches parity using fresh idle pages.
+
+> node scripts/evidence-p10b9.mjs
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+System.Management.Automation.RemoteException
+AssertionError [ERR_ASSERTION]: Expected "actual" to be strictly unequal to: 6
+    at proof (file:///D:/Vibecode/onlPagodaV2/OnlinePagodaVer2/.p10b9/apps/v2-viewer/scripts/evidence-p10b9.mjs:112:10)
+    at async file:///D:/Vibecode/onlPagodaV2/OnlinePagodaVer2/.p10b9/apps/v2-viewer/scripts/evidence-p10b9.mjs:239:21 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 6,
+  expected: 6,
+  operator: 'notStrictEqual',
+  diff: 'simple'
+}
+System.Management.Automation.RemoteException
+Node.js v24.16.0
+exit=1
+
+> node scripts/evidence-p10b9.mjs
+eco {"before":{"fps":144.00439631808362,"frames":1153,"p50":6.900000000000546,"p95":7,"p99":7.100000000000364,"calls":122,"triangles":755133,"geometries":59,"textures":1,"koi":0,"heap":26360643,"errors":[],"shot":"COMMUNITY","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)","treeLoadMs":48.100000001490116,"revision":"891786afaa50add5eeb16c969f094d79067d311d"},"after":{"fps":144.00259779187692,"frames":1153,"p50":6.900000000000546,"p95":7,"p99":7.100000000000364,"calls":148,"triangles":767445,"geometries":73,"textures":19,"koi":6,"heap":29029686,"errors":[],"shot":"COMMUNITY","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)","treeLoadMs":48,"revision":"b66bc2cd6b9bf4176ef4306dbfe65f5a86280285"},"fixed":[5,5,3,2],"restored":false}
+quality {"before":{"fps":144.0061948892164,"frames":1153,"p50":6.900000000000546,"p95":7,"p99":7.100000000000364,"calls":125,"triangles":1546194,"geometries":60,"textures":2,"koi":0,"heap":23795920,"errors":[],"shot":"COMMUNITY","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)","treeLoadMs":84.19999999925494,"revision":"891786afaa50add5eeb16c969f094d79067d311d"},"after":{"fps":143.50481471767398,"frames":1149,"p50":6.900000000000546,"p95":7,"p99":7.100000000000364,"calls":160,"triangles":1585658,"geometries":77,"textures":32,"koi":9,"heap":24399484,"errors":[],"shot":"COMMUNITY","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)","treeLoadMs":93.19999999925494,"revision":"b66bc2cd6b9bf4176ef4306dbfe65f5a86280285"},"fixed":[3,5,5,5],"restored":false}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+System.Management.Automation.RemoteException
+AssertionError [ERR_ASSERTION]: ["HERO_WIDE_TREE_REFLECTION","COMMUNITY","HERO_TOP_RING","AERIAL"]
+    at clip (file:///D:/Vibecode/onlPagodaV2/OnlinePagodaVer2/.p10b9/apps/v2-viewer/scripts/evidence-p10b9.mjs:224:3)
+    at async file:///D:/Vibecode/onlPagodaV2/OnlinePagodaVer2/.p10b9/apps/v2-viewer/scripts/evidence-p10b9.mjs:279:18 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+System.Management.Automation.RemoteException
+Node.js v24.16.0
+exit=1
+
+source=ad219fee9a5aa77ef83823dd4634fb4aa47e5ce2
+> npm.cmd run build
+exit=0
+
+> node scripts/evidence-p10b9.mjs
+eco {"before":{"fps":144.0043963180836,"frames":1153,"p50":6.900000000000546,"p95":7,"p99":7.100000000000364,"calls":122,"triangles":755133,"geometries":59,"textures":1,"koi":0,"heap":26053231,"errors":[],"shot":"COMMUNITY","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)","treeLoadMs":50.5,"revision":"891786afaa50add5eeb16c969f094d79067d311d"},"after":{"fps":144.0025977918769,"frames":1153,"p50":6.900000000000546,"p95":7,"p99":7.100000000000364,"calls":148,"triangles":767445,"geometries":73,"textures":19,"koi":6,"heap":31110434,"errors":[],"shot":"COMMUNITY","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)","treeLoadMs":56.69999999925494,"revision":"ad219fee9a5aa77ef83823dd4634fb4aa47e5ce2"},"fixed":[5,5,3,2],"restored":false}
+quality {"before":{"fps":143.87590703018648,"frames":1152,"p50":6.900000000000546,"p95":7.100000000000364,"p99":7.299999999999272,"calls":125,"triangles":1546194,"geometries":60,"textures":2,"koi":0,"heap":24070444,"errors":[],"shot":"COMMUNITY","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)","treeLoadMs":98.30000000074506,"revision":"891786afaa50add5eeb16c969f094d79067d311d"},"after":{"fps":144.00439631808362,"frames":1153,"p50":6.900000000000546,"p95":7,"p99":7.100000000000364,"calls":160,"triangles":1585658,"geometries":77,"textures":32,"koi":9,"heap":29835044,"errors":[],"shot":"COMMUNITY","renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)","treeLoadMs":92.59999999776483,"revision":"ad219fee9a5aa77ef83823dd4634fb4aa47e5ce2"},"fixed":[3,5,5,5],"restored":false}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+System.Management.Automation.RemoteException
+AssertionError [ERR_ASSERTION]: ["HERO_WIDE_TREE_REFLECTION","COMMUNITY","HERO_TOP_RING","AERIAL"]
+    at clip (file:///D:/Vibecode/onlPagodaV2/OnlinePagodaVer2/.p10b9/apps/v2-viewer/scripts/evidence-p10b9.mjs:224:3)
+    at async file:///D:/Vibecode/onlPagodaV2/OnlinePagodaVer2/.p10b9/apps/v2-viewer/scripts/evidence-p10b9.mjs:279:18 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+System.Management.Automation.RemoteException
+Node.js v24.16.0
+exit=1
+
+Final build terminal summary at ad219fee9a5aa77ef83823dd4634fb4aa47e5ce2 (initial stdout append failed):
+tsc --noEmit && vite build
+Vite 7.3.8 built in 1.76s
+dist/assets/main-BmFpeOjb.js 764.41 kB | gzip 217.64 kB
+Vite chunk-size warning (>500 kB)
+exit=0

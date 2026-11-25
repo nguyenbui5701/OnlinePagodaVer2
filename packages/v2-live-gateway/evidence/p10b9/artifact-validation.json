@@ -1,0 +1,24 @@
+{
+  "runtimeSource": "ad219fee9a5aa77ef83823dd4634fb4aa47e5ce2",
+  "matrixPngs": 36,
+  "syntheticFixturePngs": 3,
+  "webglRecoveryRgbDifference": {
+    "eco": {
+      "changedPixels": 36,
+      "maxChannelDelta": 1
+    },
+    "quality": {
+      "changedPixels": 142,
+      "maxChannelDelta": 1
+    }
+  },
+  "clip": {
+    "codec_name": "vp8",
+    "width": 720,
+    "height": 1280,
+    "nb_read_frames": "2137",
+    "packetSpanSeconds": 71.963,
+    "decodedFramesPerSecond": 29.695815905395833,
+    "sha256": "8984fae7d60af5002e57bca16149ae570c586aac0b6cf41da5371c9fc22d6d02"
+  }
+}

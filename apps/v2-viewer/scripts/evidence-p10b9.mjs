@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { cpus, totalmem } from 'node:os';
 import { resolve } from 'node:path';
 import { chromium } from 'playwright-core';
@@ -11,8 +11,9 @@ import { createTrunkMist } from '../src/trunk-mist.ts';
 import { richAmbientProfiles } from '../src/fx-profiles.ts';
 import pins from '../src/environment-b9.json' with { type: 'json' };
 
+const clipOnly = process.argv.includes('--clip-only');
 const baseline = process.env.V2_P10B8_APP;
-assert(baseline, 'Set V2_P10B8_APP to the built Viewer at 891786a');
+if (!clipOnly) assert(baseline, 'Set V2_P10B8_APP to the built Viewer at 891786a');
 const output = resolve(process.env.V2_EVIDENCE_DIR ?? '../../packages/v2-live-gateway/evidence/p10b9');
 const baseUrl = 'http://127.0.0.1:5198';
 const candidateUrl = 'http://127.0.0.1:5197';
@@ -31,7 +32,7 @@ let browser;
 await mkdir(output, { recursive: true });
 
 async function open(profile, enabled, { origin = candidateUrl, manual = true, demo = 'community',
-  missing = false, corrupt = false, importFailure = false } = {}) {
+  missing = false, corrupt = false, importFailure = false, giftIcons = 'on' } = {}) {
   const page = await browser.newPage({ viewport });
   page.on('pageerror', error => errors.push(error.message));
   page.on('console', msg => {
@@ -41,7 +42,7 @@ async function open(profile, enabled, { origin = candidateUrl, manual = true, de
   if (corrupt) await page.route('**/b9/koi_sanke_*.glb', route => route.fulfill({ body: 'invalid binary' }));
   if (importFailure) await page.route('**/b9/koi_yamabuki_*.glb', route => route.abort('failed'));
   const query = new URLSearchParams({ clean: '1', environment: enabled ? 'on' : 'off', tree: 'r18a', profile,
-    look: 'gold', density: 'lush', demo, seed: '9', presence: 'on', gifticons: 'on', blessing: 'on', chatbubbles: 'on',
+    look: 'gold', density: 'lush', demo, seed: '9', presence: 'on', gifticons: giftIcons, blessing: 'on', chatbubbles: 'on',
     seats: 'rings', shots: 'hero', ambience: 'rich', botanicals: 'on', diversity: 'on', ...(manual && { inspect: '1' }) });
   await page.goto(origin + '/?' + query);
   await page.waitForFunction(manual => (manual ? window.p08Review : window.viewerReport?.drawCalls) ||
@@ -186,15 +187,24 @@ async function benchmark(profile, enabled) {
 }
 
 async function clip() {
-  const { page } = await open('quality', true, { manual: false });
+  // Record the ordinary Community gifts and a complete route after return.
+  // Gift icon QA injects extra gifts late in the DEMO and restarts that route.
+  const { page, report } = await open('quality', true, { manual: false, giftIcons: 'off' });
+  await page.bringToFront();
   await page.evaluate(() => {
     const stream = document.querySelector('canvas').captureStream(30);
     const recorder = new MediaRecorder(stream, { mimeType: 'video/webm;codecs=vp8', videoBitsPerSecond: 2_450_000 });
     const start = performance.now();
-    const parts = [], shots = new Set(), gift = new Set();
+    const parts = [], shots = new Set(), gift = new Set(), traceRows = [];
+    let previous;
     const trace = setInterval(() => {
       const r = window.viewerReport;
       shots.add(r.shot);
+      const key = [r.shot, r.cycle, r.mode].join('/');
+      if (key !== previous) {
+        traceRows.push({ time: r.elapsedSeconds, shot: r.shot, cycle: r.cycle, route: r.routeId, mode: r.mode });
+        previous = key;
+      }
       if (r.mode === 'GIFT_FOCUS' && r.focus) gift.add(r.focus.seatId);
     }, 100);
     recorder.ondataavailable = event => parts.push(event.data);
@@ -210,13 +220,13 @@ async function clip() {
         link.download = 'quality-environment.webm';
         link.click();
         resolve({ width, height, frameRate, duration: (performance.now() - start) / 1000,
-          bytes: blob.size, shots: [...shots], focus: [...gift], errors: window.viewerReport.errors });
+          bytes: blob.size, shots: [...shots], focus: [...gift], trace: traceRows, errors: window.viewerReport.errors });
       };
     });
     recorder.start(1000);
-    setTimeout(() => recorder.stop(), 58_000);
+    setTimeout(() => recorder.stop(), 72_000);
   });
-  const download = await page.waitForEvent('download', { timeout: 75_000 });
+  const download = await page.waitForEvent('download', { timeout: 92_000 });
   await download.saveAs(resolve(output, 'quality-environment.webm'));
   const data = await page.evaluate(() => window.recording);
   await page.close();
@@ -225,7 +235,7 @@ async function clip() {
     .every(shot => data.shots.includes(shot)), JSON.stringify(data.shots));
   assert.deepEqual([data.width, data.height], [720, 1280]);
   assert.deepEqual(data.errors, []);
-  return data;
+  return { ...data, revision: report.repoRevision, extraIconDemoGifts: false };
 }
 
 const receipt = {
@@ -236,14 +246,17 @@ const receipt = {
   profiles: {},
 };
 try {
-  servers.push(await preview({ preview: { port: 5197 } }), await preview({ root: resolve(baseline), preview: { port: 5198 } }));
+  servers.push(await preview({ preview: { port: 5197 } }));
+  if (!clipOnly) servers.push(await preview({ root: resolve(baseline), preview: { port: 5198 } }));
+  else Object.assign(receipt, JSON.parse(await readFile(resolve(output, 'native.json'), 'utf8')));
   browser = await chromium.launch({
     executablePath: process.env.V2_BROWSER || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: process.env.V2_HEADED !== '1',
-    args: process.env.V2_GPU_HIGH === '1' ? ['--force-high-performance-gpu'] : [],
+    args: ['--disable-backgrounding-occluded-windows',
+      ...(process.env.V2_GPU_HIGH === '1' ? ['--force-high-performance-gpu'] : [])],
   });
   receipt.browser = browser.version();
-  for (const profile of ['eco', 'quality']) {
+  for (const profile of clipOnly ? [] : ['eco', 'quality']) {
     const off = await matrix(profile, false);
     const on = await matrix(profile, true);
     for (const shot of Object.keys(poses)) {
@@ -277,6 +290,7 @@ try {
     await writeFile(resolve(output, 'native.json'), JSON.stringify(receipt, null, 2) + '\n');
   }
   receipt.clip = await clip();
+  assert.equal(receipt.clip.revision, receipt.profiles.quality.on.revision);
   assert.deepEqual(errors, []);
   await writeFile(resolve(output, 'native.json'), JSON.stringify(receipt, null, 2) + '\n');
   console.log(JSON.stringify(receipt.clip));

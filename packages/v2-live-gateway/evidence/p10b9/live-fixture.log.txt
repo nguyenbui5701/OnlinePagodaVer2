@@ -1,0 +1,93 @@
+source=ad219fee9a5aa77ef83823dd4634fb4aa47e5ce2
+> node scripts/evidence-live-seating.mjs --b9
+{
+  "method": "Built Edge Overlay and Dashboard, loopback Gateway with mapped synthetic Member, Chat and Gift packets.",
+  "browser": "158.0.4370.33",
+  "member": {
+    "boundMs": 239,
+    "visibleMs": 246,
+    "shot": "HERO_WIDE_TREE_REFLECTION",
+    "goalMet": true
+  },
+  "waiting": {
+    "full": 2,
+    "refilled": 2,
+    "clearedOnDisconnect": true
+  },
+  "focus": [
+    {
+      "actorId": "demo-1795628209494-actor-4",
+      "requestId": "demo-1795628209494-gift-1",
+      "seatId": "seat-1"
+    },
+    {
+      "actorId": "demo-1795628209494-actor-5",
+      "requestId": "demo-1795628209494-gift-2",
+      "seatId": "seat-2"
+    },
+    {
+      "actorId": "demo-1795628209494-actor-7",
+      "requestId": "demo-1795628209494-gift-4",
+      "seatId": "seat-3"
+    }
+  ],
+  "final": {
+    "source": "ad219fee9a5aa77ef83823dd4634fb4aa47e5ce2",
+    "confirmedGiftCount": 8,
+    "graphics": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "visual": 2,
+    "audio": 1,
+    "world": {
+      "requestedTree": "R18A",
+      "tree": "R18A",
+      "requestedDensity": "lush",
+      "density": "lush",
+      "fallback": false,
+      "failures": [],
+      "pond": true
+    },
+    "treeSha256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+    "lotusVisible": {
+      "pad": 0,
+      "leaf": 2,
+      "bloom": 1,
+      "bud": 0
+    },
+    "launches": 1,
+    "stops": 0,
+    "connection": 1,
+    "acknowledged": 18,
+    "counters": {
+      "chat": 2,
+      "member": 8,
+      "like": 0,
+      "giftProgress": 3,
+      "giftFinal": 4,
+      "room": 0
+    },
+    "presence": {
+      "revision": 7,
+      "occupied": 3,
+      "waiting": 0,
+      "dropped": 0
+    },
+    "rollback": {
+      "appliedRevision": 3,
+      "liveApplyBlocked": true,
+      "pond": "off"
+    },
+    "fallback": {
+      "appliedRevision": 4,
+      "pond": [
+        "terrain",
+        "MISSING"
+      ]
+    }
+  },
+  "captures": {
+    "member.png": "bf6eb6bb5cd0cf0908efd17da6a45611d48c66a50c7f306c7ce98fd33e4655ba",
+    "gift-focus.png": "2aa3afdbbde80e29ec4a839e79127e52dae5efaacca817708349035b17814284",
+    "dashboard.png": "f19455fc858900f2eb17aef53dd43d1edf65cc8e6f503b08c011b1be148ca14f"
+  }
+}
+exit=0
