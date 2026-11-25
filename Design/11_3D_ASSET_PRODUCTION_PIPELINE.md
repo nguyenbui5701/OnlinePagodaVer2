@@ -67,3 +67,7 @@ Read this document and Design/01, /03, /04, /10 and owner video. Your job is ONL
 ## 8. What the connected fal tool does and does not settle
 
 Owner has connected fal in ChatGPT. AI 3D can investigate its available generation modalities and, **if a specific model produces a downloadable editable 3D mesh**, use it for prototype models. Availability/model/pricing/output format must be verified on the connected tool before choosing. The app connection by itself does not establish that a rigged low-poly GLB production model can be generated or that it satisfies our rig/LOD requirements.
+
+## Owner-approved authoring policy — Art First (2026-11-25)
+
+Follow [Design10 latest Owner decision](10_GRAPHICS_PROFILES.md) and Rules07. High-quality editable MASTER is the canonical art direction for all future assets (tree, vegetation, characters, koi, terrain, props). Produce appropriate ECO/QUALITY variants or reusable LOD derivation, optional separately validated HIGH QUALITY candidate for future runtime. No fixed universal per-asset triangle ceiling; per-asset references are advisory and measured cost/instance multiplicity matter. Report actual geometry/material/texture/animation/load budgets, preserve anchors/import/scale/rights. Do not force unnecessary rework of accepted art or three separate exports for every prop. HIGH QUALITY runtime pending future activation; no default change. Existing source/binary checksum and art-review requirements unchanged.
