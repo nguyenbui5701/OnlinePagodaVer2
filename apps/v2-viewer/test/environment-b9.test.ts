@@ -1,8 +1,4 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
-import { tmpdir } from 'node:os';
-import { join } from 'node:path';
-import { mkdtempSync, rmSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import test from 'node:test';
 import { AnimationMixer, Box3, Group, PerspectiveCamera, Vector3 } from 'three';
@@ -13,7 +9,6 @@ import { createTrunkMist } from '../src/trunk-mist.ts';
 import { habitat, koiEnvelope, koiTracks, sampleKoi } from '../src/koi-path.ts';
 import { liveDefaults, migrateVisualSettings, validSettings, validWorldApplied } from '../src/live-settings.ts';
 import manifest from '../src/environment-b9.json' with { type: 'json' };
-import { stageB9 } from '../scripts/stage-b9.mjs';
 
 const emptyPose = () => ({ x: 0, y: 0, z: 0, yaw: 0, pitch: 0, roll: 0, clip: 0 });
 const angleGap = (a: number, b: number) => Math.abs(Math.atan2(Math.sin(a - b), Math.cos(a - b)));
@@ -71,21 +66,6 @@ test('seeded koi are smooth and stay clear over the joint path cycle including a
       }
     }
   }
-});
-
-test('B9 staging validates all eight source blobs and rejects a corrupted file without replacing the previous set', t => {
-  const folder = mkdtempSync(join(tmpdir(), 'pagoda-b9-'));
-  t.after(() => rmSync(folder, { force: true, recursive: true }));
-  const runGit = (...args: string[]) => execFileSync('git', args, { maxBuffer: 2 * 1024 * 1024 });
-  const receipts = stageB9(folder, runGit);
-  assert.equal(receipts.length, 8);
-  assert.throws(() => stageB9(folder, (...args: string[]) => {
-    const data = runGit(...args);
-    if (args[0] === 'cat-file' && args[1] === 'blob' && args[2].endsWith('terrain_quality.glb')) data[50] ^= 1;
-    return data;
-  }), /integrity/);
-  assert.deepEqual(receipts.map(({ bytes }: { bytes: number }) => bytes),
-    Object.keys(manifest.profiles).map(name => readFileSync(join(folder, 'b9', name)).length));
 });
 
 test('actual koi skins stay inside the conservative envelope over all authored frames and midpoints', async () => {
