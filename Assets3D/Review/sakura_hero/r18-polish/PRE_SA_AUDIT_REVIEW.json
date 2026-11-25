@@ -1,0 +1,70 @@
+{
+  "baseline": "07f57cb35ba3ec68184abbd2c173e29a3fcc4788",
+  "reviewedSourceHead": "ed3ec810117c523fa8c3b79dfc5a1e418a7a7909",
+  "status": "AI_VISUAL_PRE_SA_AUDIT_EVIDENCE_VERIFIED_BUILD_CORRECTION_REQUIRED",
+  "files": [
+    {
+      "path": "attachment_audit.json",
+      "bytes": 84475,
+      "sha256": "d1bd1bc8d914893e6c98b96b00553191b0497dd548e982c44979af7a42c20baa"
+    },
+    {
+      "path": "R18_audit_stdout.log",
+      "bytes": 2279,
+      "sha256": "618d930bdc549000adf797b46930ae50cd62e252f05275cbae900bc5b6ba2345"
+    },
+    {
+      "path": "R18_audit_views_stdout.log",
+      "bytes": 37527,
+      "sha256": "7e874a10b29e39b5a1377612ab42c115a47d8566c51222aeeb4c7db12659d28f"
+    },
+    {
+      "path": "R18_Attachment_Audit.zip",
+      "bytes": 5541409,
+      "sha256": "23fb3ed75d5c86625936bd1690500e420292d9e9a3d06fb35a6278b567b72f50"
+    },
+    {
+      "path": "Owner screenshot (20261124-170120).png",
+      "bytes": 241931,
+      "sha256": "020cd40eede9d2b75389a72b622a11a62adff5b16ebd5e8d1344add70e4d2ce6"
+    }
+  ],
+  "profiles": {
+    "quality": {
+      "woodComponents": 83,
+      "rootedBVH": 65,
+      "unconfirmed": 18,
+      "drapedStems": 5,
+      "lowFlowers": 40,
+      "flowersPerStem": 8,
+      "isolatedOrnamentalCandidates": 13,
+      "minStemGapM": 2.7357780933380127,
+      "maxStemGapM": 4.95056676864624
+    },
+    "eco": {
+      "woodComponents": 61,
+      "rootedBVH": 49,
+      "unconfirmed": 12,
+      "drapedStems": 10,
+      "lowFlowers": 60,
+      "flowersPerStem": 6,
+      "isolatedOrnamentalCandidates": 2,
+      "minStemGapM": 1.296,
+      "maxStemGapM": 6.011
+    }
+  },
+  "evidence": {
+    "zipCRC": "PASS",
+    "imageHashes": "6/6 independently matched archive ledger",
+    "dimensions": "6/6 720x1280",
+    "nativeSamples": 32,
+    "usableViews": "5/6; quality_side_baseline near black, RGB mean 0.08",
+    "actualBytesNotUploaded": "Audit files supplied in chat; this report pins their bytes; Owner will upload original files without modification."
+  },
+  "limitations": [
+    "BVH intersection is contact proxy, not manifold or physical load proof.",
+    "No current R18 binary/Blender execution.",
+    "Original reference video chuav2.mp4 still unavailable.",
+    "Source classification and corrected native reimport must be verified on Owner's Blender."
+  ]
+}

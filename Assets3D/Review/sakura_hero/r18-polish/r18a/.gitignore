@@ -1,0 +1,4 @@
+render_checkpoint.json
+__pycache__/
+*.blend1
+*.tmp

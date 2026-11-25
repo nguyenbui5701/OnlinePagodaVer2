@@ -1,0 +1,80 @@
+{
+  "status": "AI_VISUAL_PRE_SA_FINAL_REVIEW_COMPLETE_RECOMMEND_SA_REVIEW",
+  "evidenceHead": "24cf39cf4df5e7a05be7cf126a422439a7cd4d60",
+  "reviewedR18Head": "631273440469b789bf7f1688bff30a35309de601",
+  "policyTaskBlob": "06eabf3c96b5a205d94f93e4b4ef197e63923d53",
+  "zip": {
+    "sha256": "8901701f2c264b01bda516019d076ea5c11e623b5df2afe8335d67df20a6fed6",
+    "CRC": "PASS",
+    "members": 3
+  },
+  "independentBinary": {
+    "profiles": {
+      "quality": {
+        "sha256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "gitBlobSHA": "44f2900490ddd682d5b951808b37aaeb0e714f78",
+        "triangles": 242954,
+        "bytes": 7152368,
+        "vertexRecords": 303136,
+        "primitiveCount": 26,
+        "goldOnlyDeltaTriangles": 5521,
+        "reconstructedR18SHA256": "656cfaf7302dc49ff24c8643f4946536b9d1e77e71a5be7d18538aae01e54f29",
+        "reconstructedR18GitBlob": "3adfaea2cefaab89c5bb4822450b2eb757bc28f3",
+        "reconstructedBytes": 6995332
+      },
+      "eco": {
+        "sha256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "gitBlobSHA": "fea7660aacdb61099d9ca1b377656440a2a0b8b7",
+        "triangles": 60931,
+        "bytes": 2229632,
+        "vertexRecords": 101192,
+        "primitiveCount": 25,
+        "goldOnlyDeltaTriangles": 2149,
+        "reconstructedR18SHA256": "ad6f84f1c04468bba376e5ab7040993870b676cc0ec31b5911b782747750ff9b",
+        "reconstructedR18GitBlob": "1b6048a9f654e19e50cfa10eaa7a646a0f488904",
+        "reconstructedBytes": 2165220
+      }
+    },
+    "method": "Actual attached bytes: CRC, SHA256/Git blob SHA1, GLB chunks/accessor range/finite/index/degenerate checks. Reverse only appended gold mesh/node/root and three accessors/views; restore original gold material; truncate BIN and serialize compact JSON. Both exact original R18 SHA256/Git blob/size reconstructed in memory. No file modifications.",
+    "degenerateTriangles": 0,
+    "blend": {
+      "bytes": 22877219,
+      "sha256": "07c5859ca2a6a9dec33c7999cabd7d2a45873285e09d04e0ea3771577a83266c",
+      "gitBlobSHA": "5239e9b4c0b2cb075d73c7e6636269fd6eafdfde",
+      "ownerNativeReopen": true,
+      "independentBlenderReopen": "NOT_RUN_BLENDER_UNAVAILABLE"
+    }
+  },
+  "native": {
+    "counts": {
+      "matched": 24,
+      "nativeNew": 16,
+      "reusedR17B": 8,
+      "reusedR18GoldControls": 4,
+      "lookOnlyNew": 2
+    },
+    "inventoryCount": 41,
+    "ledgerCount": 54,
+    "reusedCount": 12,
+    "matchedCameraPairs": 12,
+    "goldControls": 4,
+    "warmFillPairs": 2,
+    "contactSheetsViewed": 9,
+    "panelsViewed": 36,
+    "buildExit": 0,
+    "finalExit": 0,
+    "stderrBytes": 0,
+    "verification": "Remote metadata and ledger consistent; nine actual JPEG sheets viewed; remote images not independently SHA rehashed."
+  },
+  "art": {
+    "finding": "Long gold veins clearly visible at wide and low-water, major improvement over R18; crown and repaired blossoms preserved. QUALITY sometimes broad flat ribbon-like, 3 qualifying major branch components vs ECO 9. ECO finer accents. Warm-fill improves bark and blossom detail offline. No additional revision before SA decision.",
+    "limitations": [
+      "No original reference video re-review by artist; prior SA 33s finding used.",
+      "No independent Blender open; native proof Owner.",
+      "No GPU/runtime reflection/lighting/seat/LIVE claims. Seat/gift camera-only."
+    ]
+  },
+  "ownerArtGO": "PENDING",
+  "saArt": "PENDING",
+  "costVND": 0
+}

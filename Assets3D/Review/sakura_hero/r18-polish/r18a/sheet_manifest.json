@@ -1,0 +1,1807 @@
+[
+  {
+    "path": "R18a_Cycles_Evidence/aerial_AB.jpg",
+    "bytes": 185995,
+    "sha256": "1b45558fc219a820bc053afdd5aa5c6e891f0c3a26b5831b202487bb4aa61fba",
+    "sourceFrames": [
+      {
+        "lod": "quality",
+        "revision": "r17b",
+        "view": "aerial",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.10710859298706055
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.4929838180541992
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              87.97264099121094
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "../../r17-lush/r17b/final/quality_r17b_true_aerial_9x16_cycles.png",
+        "bytes": 1190123,
+        "sha256": "69fe8f410494e084ad6c95dc15e47f88d7719821f2bde6f586de2ff7677810ff",
+        "origin": "REUSED_R17B_FROZEN_RIG"
+      },
+      {
+        "lod": "quality",
+        "revision": "r18a",
+        "view": "aerial",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.10710859298706055
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.4929838180541992
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              87.97264099121094
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/quality_r18a_aerial_cycles.png",
+        "bytes": 1186773,
+        "sha256": "4cbaf4de765650ae05f46f2a1f9799908de27a06474f2ee3d70f7b513d11ffe4",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "eco",
+        "revision": "r17b",
+        "view": "aerial",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.10710859298706055
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.4929838180541992
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              87.97264099121094
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "../../r17-lush/r17b/final/eco_r17b_true_aerial_9x16_cycles.png",
+        "bytes": 1151467,
+        "sha256": "fd8ec70bee14be3ae700ab9d4584e0d2b9934d2af42b10286ab392a7bbcd2391",
+        "origin": "REUSED_R17B_FROZEN_RIG"
+      },
+      {
+        "lod": "eco",
+        "revision": "r18a",
+        "view": "aerial",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.10710859298706055
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.4929838180541992
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              87.97264099121094
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 25.73408317565918,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/eco_r18a_aerial_cycles.png",
+        "bytes": 1148155,
+        "sha256": "c7eaa1c178a76836c46c9a8ba06831e189e2aed15485d88f4a4d4ae79234c992",
+        "origin": "NATIVE_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "R18a_Cycles_Evidence/branch_close_AB.jpg",
+    "bytes": 284295,
+    "sha256": "5b43c83c7e5754fee0cf48abc3a7c3f11086b5ac638453b5811c2a6e23d1dece",
+    "sourceFrames": [
+      {
+        "lod": "quality",
+        "revision": "r17b",
+        "view": "branch_close",
+        "camera": {
+          "matrix": [
+            [
+              0.06905094534158707,
+              -0.241956889629364,
+              -0.9678267240524292,
+              -24.97211265563965
+            ],
+            [
+              -0.9976131319999695,
+              -0.01674729958176613,
+              -0.06698925793170929,
+              -1.7284835577011108
+            ],
+            [
+              2.63366040087476e-08,
+              0.9701424837112427,
+              -0.2425357550382614,
+              7.410245895385742
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 26.952442169189453,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "../R18_Repair_Preview/quality_r17b_repair_side.png",
+        "bytes": 1225720,
+        "sha256": "ed878ebc64558b1c62cdcd7b0dc78caf09a56f92ed84e91ff1c62a115e25e481",
+        "origin": "REUSED_R17B_FROZEN_RIG"
+      },
+      {
+        "lod": "quality",
+        "revision": "r18a",
+        "view": "branch_close",
+        "camera": {
+          "matrix": [
+            [
+              0.06905094534158707,
+              -0.241956889629364,
+              -0.9678267240524292,
+              -24.97211265563965
+            ],
+            [
+              -0.9976131319999695,
+              -0.01674729958176613,
+              -0.06698925793170929,
+              -1.7284835577011108
+            ],
+            [
+              2.63366040087476e-08,
+              0.9701424837112427,
+              -0.2425357550382614,
+              7.410245895385742
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 26.952442169189453,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/quality_r18a_branch_close_cycles.png",
+        "bytes": 1270206,
+        "sha256": "9b1fc1a2006dd005d22e43b99da4230707ef4d2c77aceefea47619c0518779e4",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "eco",
+        "revision": "r17b",
+        "view": "branch_close",
+        "camera": {
+          "matrix": [
+            [
+              -0.937127947807312,
+              -0.08464155346155167,
+              -0.3385661542415619,
+              -9.369929313659668
+            ],
+            [
+              -0.3489859998226166,
+              0.2272869199514389,
+              0.9091476202011108,
+              25.160953521728516
+            ],
+            [
+              -1.188058540435577e-08,
+              0.9701423645019531,
+              -0.24253566563129425,
+              7.286118507385254
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 26.952442169189453,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "../R18_Repair_Preview/eco_r17b_repair_side.png",
+        "bytes": 1215991,
+        "sha256": "fe9e61cf0e39aba731f75f9cfacbefa13a31cec7eccc6a97a519a709f207a802",
+        "origin": "REUSED_R17B_FROZEN_RIG"
+      },
+      {
+        "lod": "eco",
+        "revision": "r18a",
+        "view": "branch_close",
+        "camera": {
+          "matrix": [
+            [
+              -0.937127947807312,
+              -0.08464155346155167,
+              -0.3385661542415619,
+              -9.369929313659668
+            ],
+            [
+              -0.3489859998226166,
+              0.2272869199514389,
+              0.9091476202011108,
+              25.160953521728516
+            ],
+            [
+              -1.188058540435577e-08,
+              0.9701423645019531,
+              -0.24253566563129425,
+              7.286118507385254
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 26.952442169189453,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/eco_r18a_branch_close_cycles.png",
+        "bytes": 1277512,
+        "sha256": "c222e4a5c844ca29d4485d6b86724a12ee776ef53290f98ac18a928bcacc80c9",
+        "origin": "NATIVE_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "R18a_Cycles_Evidence/low_water_AB.jpg",
+    "bytes": 249182,
+    "sha256": "eb009efd1a63ee9b2fb98a686ec29728aeca2b4ecd7aa2a12087a6bf22e63807",
+    "sourceFrames": [
+      {
+        "lod": "quality",
+        "revision": "r17b",
+        "view": "low_water",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -0.243839293718338,
+              -0.9698156714439392,
+              -35.0
+            ],
+            [
+              0.0,
+              0.9698156714439392,
+              -0.243839293718338,
+              1.2000000476837158
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 19.97135353088379,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/quality_r17b_low_water_cycles.png",
+        "bytes": 1241806,
+        "sha256": "fa77a24f91f9bc7e0aa7e9167f29cdc64fd4eb97b2c3d7919399043ce88e8a73",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "quality",
+        "revision": "r18a",
+        "view": "low_water",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -0.243839293718338,
+              -0.9698156714439392,
+              -35.0
+            ],
+            [
+              0.0,
+              0.9698156714439392,
+              -0.243839293718338,
+              1.2000000476837158
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 19.97135353088379,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/quality_r18a_low_water_cycles.png",
+        "bytes": 1258018,
+        "sha256": "18abb5ce8612886bffdd0c7e220b1810d3c014adac880a72ebc30137ba2da9f6",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "eco",
+        "revision": "r17b",
+        "view": "low_water",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -0.243839293718338,
+              -0.9698156714439392,
+              -35.0
+            ],
+            [
+              0.0,
+              0.9698156714439392,
+              -0.243839293718338,
+              1.2000000476837158
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 19.97135353088379,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/eco_r17b_low_water_cycles.png",
+        "bytes": 1185133,
+        "sha256": "766f70c2aba35c5c2986f17421da32db9fe8c9ef70568ec10dbbc368f6c0206c",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "eco",
+        "revision": "r18a",
+        "view": "low_water",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -0.243839293718338,
+              -0.9698156714439392,
+              -35.0
+            ],
+            [
+              0.0,
+              0.9698156714439392,
+              -0.243839293718338,
+              1.2000000476837158
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 19.97135353088379,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/eco_r18a_low_water_cycles.png",
+        "bytes": 1192842,
+        "sha256": "ee732833c81928154fd4e476f5df471907ae0a73e1a7dea13d0a6b902bcd2371",
+        "origin": "NATIVE_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "R18a_Cycles_Evidence/seat_gift_composition_AB.jpg",
+    "bytes": 264691,
+    "sha256": "1f3f0e7772376aeed60000a808c2a5562df91c5c08d7571fa3782c72c65f1ea5",
+    "sourceFrames": [
+      {
+        "lod": "quality",
+        "revision": "r17b",
+        "view": "seat_gift_composition",
+        "camera": {
+          "matrix": [
+            [
+              0.9320046901702881,
+              0.12660863995552063,
+              0.33961379528045654,
+              8.0
+            ],
+            [
+              0.36244624853134155,
+              -0.32556506991386414,
+              -0.8732926845550537,
+              -18.0
+            ],
+            [
+              -4.2852796866554854e-09,
+              0.9370046257972717,
+              -0.3493169844150543,
+              2.799999952316284
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 23.051786422729492,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/quality_r17b_seat_gift_composition_cycles.png",
+        "bytes": 1191583,
+        "sha256": "faf1d6ae1ecad99afef2bc772aa19d36acb1213e8b51dbbd804f2079c614f4c3",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "quality",
+        "revision": "r18a",
+        "view": "seat_gift_composition",
+        "camera": {
+          "matrix": [
+            [
+              0.9320046901702881,
+              0.12660863995552063,
+              0.33961379528045654,
+              8.0
+            ],
+            [
+              0.36244624853134155,
+              -0.32556506991386414,
+              -0.8732926845550537,
+              -18.0
+            ],
+            [
+              -4.2852796866554854e-09,
+              0.9370046257972717,
+              -0.3493169844150543,
+              2.799999952316284
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 23.051786422729492,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/quality_r18a_seat_gift_composition_cycles.png",
+        "bytes": 1257692,
+        "sha256": "69f20c4cfd70e7e1705ea060ef323d6ee02472542a15ae42e700581b028a7ad1",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "eco",
+        "revision": "r17b",
+        "view": "seat_gift_composition",
+        "camera": {
+          "matrix": [
+            [
+              0.9320046901702881,
+              0.12660863995552063,
+              0.33961379528045654,
+              8.0
+            ],
+            [
+              0.36244624853134155,
+              -0.32556506991386414,
+              -0.8732926845550537,
+              -18.0
+            ],
+            [
+              -4.2852796866554854e-09,
+              0.9370046257972717,
+              -0.3493169844150543,
+              2.799999952316284
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 23.051786422729492,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/eco_r17b_seat_gift_composition_cycles.png",
+        "bytes": 1167782,
+        "sha256": "26968ec23992422e387c733e26b9832801bf58531a0a2bedf2f3517999b35f7c",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "eco",
+        "revision": "r18a",
+        "view": "seat_gift_composition",
+        "camera": {
+          "matrix": [
+            [
+              0.9320046901702881,
+              0.12660863995552063,
+              0.33961379528045654,
+              8.0
+            ],
+            [
+              0.36244624853134155,
+              -0.32556506991386414,
+              -0.8732926845550537,
+              -18.0
+            ],
+            [
+              -4.2852796866554854e-09,
+              0.9370046257972717,
+              -0.3493169844150543,
+              2.799999952316284
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 23.051786422729492,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/eco_r18a_seat_gift_composition_cycles.png",
+        "bytes": 1236283,
+        "sha256": "6f94fbe59f4df8d8165538f59173fc6838060b2c709f3f6e408d1b3a269258c1",
+        "origin": "NATIVE_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "R18a_Cycles_Evidence/under_tree_AB.jpg",
+    "bytes": 252007,
+    "sha256": "52058fb3b8ad8988a8a4b2529d85fc066b634498bc2e0ec337674bd8e1fca1aa",
+    "sourceFrames": [
+      {
+        "lod": "quality",
+        "revision": "r17b",
+        "view": "under_tree",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -8.204443346926382e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "../../r17-lush/r17b/final/quality_r17b_under_crown_9x16_cycles.png",
+        "bytes": 1157669,
+        "sha256": "c925024118c41950ddbf2fa7ffe943bbee22470388eb73716175ecae73cbce04",
+        "origin": "REUSED_R17B_FROZEN_RIG"
+      },
+      {
+        "lod": "quality",
+        "revision": "r18a",
+        "view": "under_tree",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -8.204443346926382e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/quality_r18a_under_tree_cycles.png",
+        "bytes": 1228914,
+        "sha256": "db6febfdddf17afbfd4d2f656ef20deb32e452d4c71bb62557988b80a73ba0ca",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "eco",
+        "revision": "r17b",
+        "view": "under_tree",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -8.204443346926382e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "../../r17-lush/r17b/final/eco_r17b_under_crown_9x16_cycles.png",
+        "bytes": 1137455,
+        "sha256": "1959e4f2369ab384eed970c3b52bd35e14bf3af7bcdbdac3f8fe76e57b583c2c",
+        "origin": "REUSED_R17B_FROZEN_RIG"
+      },
+      {
+        "lod": "eco",
+        "revision": "r18a",
+        "view": "under_tree",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -8.204443346926382e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/eco_r18a_under_tree_cycles.png",
+        "bytes": 1205729,
+        "sha256": "024e4a4b5d8a2510d263e31a42f74731570a69e5b7598b7ebc6c98edb924cf92",
+        "origin": "NATIVE_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "R18a_Cycles_Evidence/wide_AB.jpg",
+    "bytes": 130787,
+    "sha256": "81a5d8ea8a0f3c0ac7ada5a6decb4226d6aee0c8f97a00a29572a6dd9d868496",
+    "sourceFrames": [
+      {
+        "lod": "quality",
+        "revision": "r17b",
+        "view": "wide",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.00571386469528079,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.00571386469528079,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 21.64857292175293,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "../../r17-lush/r17b/final/quality_r17b_hero_wide_water_9x16_cycles.png",
+        "bytes": 999544,
+        "sha256": "49be575c6ae7e3fdeb1f9a7974e2c7c6a12468d5951689e04ffc02f3826eb022",
+        "origin": "REUSED_R17B_FROZEN_RIG"
+      },
+      {
+        "lod": "quality",
+        "revision": "r18a",
+        "view": "wide",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.00571386469528079,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.00571386469528079,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 21.64857292175293,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/quality_r18a_wide_cycles.png",
+        "bytes": 1011610,
+        "sha256": "8d34dc32f792a1d02c6705c0ec51359a42e111f3cb8bf7ce8497a6d3eb4dfd53",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "eco",
+        "revision": "r17b",
+        "view": "wide",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.00571386469528079,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.00571386469528079,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 21.64857292175293,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "../../r17-lush/r17b/final/eco_r17b_hero_wide_water_9x16_cycles.png",
+        "bytes": 974975,
+        "sha256": "7a907396dafa1a4640af776f51605cae7e49b40d21c2251646792cb4814f8fc1",
+        "origin": "REUSED_R17B_FROZEN_RIG"
+      },
+      {
+        "lod": "eco",
+        "revision": "r18a",
+        "view": "wide",
+        "camera": {
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.00571386469528079,
+              -0.9999836683273315,
+              -70.0
+            ],
+            [
+              0.0,
+              0.9999836683273315,
+              0.00571386469528079,
+              12.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 21.64857292175293,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/eco_r18a_wide_cycles.png",
+        "bytes": 982673,
+        "sha256": "90faa978f73f934dc28d71195090d873ae7ad1fd9ff573076e6338310a6cb1c5",
+        "origin": "NATIVE_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "R18a_Cycles_Evidence/gold_revision_under_tree_AB.jpg",
+    "bytes": 252156,
+    "sha256": "fb1912da8f525e7549cb7ff805bf933dd90c21117c9f0ec40a7ade3151e1cfe2",
+    "sourceFrames": [
+      {
+        "path": "../R18_Repair_Preview/quality_r18_under_tree.png",
+        "bytes": 1170139,
+        "sha256": "807a9304da9b831b18f861c8e62b1e3b344b8229c67d96093e19e7ca450565c3",
+        "lod": "quality",
+        "revision": "r18",
+        "view": "under_tree",
+        "origin": "REUSED_R18_PREVIEW_FROZEN_RIG",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -8.204443346926382e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "656cfaf7302dc49ff24c8643f4946536b9d1e77e71a5be7d18538aae01e54f29",
+        "width": 720,
+        "height": 1280,
+        "samples": 32
+      },
+      {
+        "lod": "quality",
+        "revision": "r18a",
+        "view": "under_tree",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -8.204443346926382e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/quality_r18a_under_tree_cycles.png",
+        "bytes": 1228914,
+        "sha256": "db6febfdddf17afbfd4d2f656ef20deb32e452d4c71bb62557988b80a73ba0ca",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "path": "../R18_Repair_Preview/eco_r18_under_tree.png",
+        "bytes": 1134519,
+        "sha256": "e77c9038aa393031dc9ab00e220870a855e80f492b72c25f2b1fd8864d21ccbc",
+        "lod": "eco",
+        "revision": "r18",
+        "view": "under_tree",
+        "origin": "REUSED_R18_PREVIEW_FROZEN_RIG",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -8.204443346926382e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "ad6f84f1c04468bba376e5ab7040993870b676cc0ec31b5911b782747750ff9b",
+        "width": 720,
+        "height": 1280,
+        "samples": 32
+      },
+      {
+        "lod": "eco",
+        "revision": "r18a",
+        "view": "under_tree",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -8.204443346926382e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/eco_r18a_under_tree_cycles.png",
+        "bytes": 1205729,
+        "sha256": "024e4a4b5d8a2510d263e31a42f74731570a69e5b7598b7ebc6c98edb924cf92",
+        "origin": "NATIVE_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "R18a_Cycles_Evidence/gold_revision_branch_close_AB.jpg",
+    "bytes": 280652,
+    "sha256": "737d37fe2b52f8417ea5aeeaaefeb17e8dd507f41fd1a342467f008e55775c9a",
+    "sourceFrames": [
+      {
+        "path": "../R18_Repair_Preview/quality_r18_repair_side.png",
+        "bytes": 1215543,
+        "sha256": "601ad1483079af2a16e7094a2a7b4bd849c4f566607bdac2af18d155c63c4dc7",
+        "lod": "quality",
+        "revision": "r18",
+        "view": "branch_close",
+        "origin": "REUSED_R18_PREVIEW_FROZEN_RIG",
+        "camera": {
+          "matrix": [
+            [
+              0.06905094534158707,
+              -0.241956889629364,
+              -0.967826783657074,
+              -24.97211265563965
+            ],
+            [
+              -0.9976131319999695,
+              -0.01674727164208889,
+              -0.06698926538228989,
+              -1.7284835577011108
+            ],
+            [
+              5.609424746921832e-08,
+              0.9701424837112427,
+              -0.2425357699394226,
+              7.410245895385742
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 26.952442169189453,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "656cfaf7302dc49ff24c8643f4946536b9d1e77e71a5be7d18538aae01e54f29",
+        "width": 720,
+        "height": 1280,
+        "samples": 32
+      },
+      {
+        "lod": "quality",
+        "revision": "r18a",
+        "view": "branch_close",
+        "camera": {
+          "matrix": [
+            [
+              0.06905094534158707,
+              -0.241956889629364,
+              -0.9678267240524292,
+              -24.97211265563965
+            ],
+            [
+              -0.9976131319999695,
+              -0.01674729958176613,
+              -0.06698925793170929,
+              -1.7284835577011108
+            ],
+            [
+              2.63366040087476e-08,
+              0.9701424837112427,
+              -0.2425357550382614,
+              7.410245895385742
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 26.952442169189453,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/quality_r18a_branch_close_cycles.png",
+        "bytes": 1270206,
+        "sha256": "9b1fc1a2006dd005d22e43b99da4230707ef4d2c77aceefea47619c0518779e4",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "path": "../R18_Repair_Preview/eco_r18_repair_side.png",
+        "bytes": 1221075,
+        "sha256": "4d9ec04f861451372a18053df78a8c6fe6c21aed4b9e6836366ca535a8ce39b0",
+        "lod": "eco",
+        "revision": "r18",
+        "view": "branch_close",
+        "origin": "REUSED_R18_PREVIEW_FROZEN_RIG",
+        "camera": {
+          "matrix": [
+            [
+              -0.937127947807312,
+              -0.08464155346155167,
+              -0.3385661542415619,
+              -9.369929313659668
+            ],
+            [
+              -0.3489859998226166,
+              0.2272869348526001,
+              0.9091476202011108,
+              25.160953521728516
+            ],
+            [
+              -1.188058540435577e-08,
+              0.9701424241065979,
+              -0.24253566563129425,
+              7.286118507385254
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 26.952442169189453,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "ad6f84f1c04468bba376e5ab7040993870b676cc0ec31b5911b782747750ff9b",
+        "width": 720,
+        "height": 1280,
+        "samples": 32
+      },
+      {
+        "lod": "eco",
+        "revision": "r18a",
+        "view": "branch_close",
+        "camera": {
+          "matrix": [
+            [
+              -0.937127947807312,
+              -0.08464155346155167,
+              -0.3385661542415619,
+              -9.369929313659668
+            ],
+            [
+              -0.3489859998226166,
+              0.2272869199514389,
+              0.9091476202011108,
+              25.160953521728516
+            ],
+            [
+              -1.188058540435577e-08,
+              0.9701423645019531,
+              -0.24253566563129425,
+              7.286118507385254
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 26.952442169189453,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/eco_r18a_branch_close_cycles.png",
+        "bytes": 1277512,
+        "sha256": "c222e4a5c844ca29d4485d6b86724a12ee776ef53290f98ac18a928bcacc80c9",
+        "origin": "NATIVE_CYCLES"
+      }
+    ]
+  },
+  {
+    "path": "R18a_Cycles_Evidence/gold_lighting_control_AB.jpg",
+    "bytes": 289980,
+    "sha256": "a1b65f8038d40d6af2bab0bfbb58168861a854c6ca52cb3351564cc2653b8375",
+    "sourceFrames": [
+      {
+        "lod": "quality",
+        "revision": "r18a",
+        "view": "under_tree",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -8.204443346926382e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/quality_r18a_under_tree_cycles.png",
+        "bytes": 1228914,
+        "sha256": "db6febfdddf17afbfd4d2f656ef20deb32e452d4c71bb62557988b80a73ba0ca",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "quality",
+        "revision": "r18a",
+        "view": "under_tree",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -8.204443346926382e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "additionalLight": {
+          "energyW": 950,
+          "color": [
+            1,
+            0.62,
+            0.32
+          ],
+          "sizeM": 7
+        },
+        "note": "Offline look only; same model and camera, not runtime",
+        "path": "R18a_Cycles_Evidence/quality_r18a_gold_look_only.png",
+        "bytes": 1280074,
+        "sha256": "b1493a840545b7bf5ad96ae38bab671a22114ce0cdf511a5ae297d4efccc3647",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "eco",
+        "revision": "r18a",
+        "view": "under_tree",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -8.204443346926382e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "renderer": "Blender Cycles CPU",
+        "path": "R18a_Cycles_Evidence/eco_r18a_under_tree_cycles.png",
+        "bytes": 1205729,
+        "sha256": "024e4a4b5d8a2510d263e31a42f74731570a69e5b7598b7ebc6c98edb924cf92",
+        "origin": "NATIVE_CYCLES"
+      },
+      {
+        "lod": "eco",
+        "revision": "r18a",
+        "view": "under_tree",
+        "camera": {
+          "matrix": [
+            [
+              0.9871054887771606,
+              0.056707724928855896,
+              0.14968973398208618,
+              3.0
+            ],
+            [
+              0.16007117927074432,
+              -0.3496975600719452,
+              -0.9230865836143494,
+              -18.5
+            ],
+            [
+              -8.204443346926382e-09,
+              0.93514484167099,
+              -0.35426563024520874,
+              4.800000190734863
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens": 29.701040267944336,
+          "sensorFit": "VERTICAL",
+          "sensorWidth": 36.0,
+          "sensorHeight": 24.0,
+          "clipStart": 0.05000000074505806,
+          "clipEnd": 500.0
+        },
+        "modelSHA256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "width": 720,
+        "height": 1280,
+        "samples": 32,
+        "additionalLight": {
+          "energyW": 950,
+          "color": [
+            1,
+            0.62,
+            0.32
+          ],
+          "sizeM": 7
+        },
+        "note": "Offline look only; same model and camera, not runtime",
+        "path": "R18a_Cycles_Evidence/eco_r18a_gold_look_only.png",
+        "bytes": 1247401,
+        "sha256": "660c43b4b40ed42d745248d94eea07b96c6a3948bd885616ab894513cab48136",
+        "origin": "NATIVE_CYCLES"
+      }
+    ]
+  }
+]

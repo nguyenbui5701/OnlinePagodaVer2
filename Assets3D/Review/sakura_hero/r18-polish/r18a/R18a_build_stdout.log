@@ -1,0 +1,81 @@
+R18_REPAIR_MODULE_IMPORT_PASS D:\Vibecode\onlPagodaV2\ReviewPR\R18_Artist\Assets3D\Review\sakura_hero\r18-polish\repair_r18_groups.py
+R18_BASELINE_SHA_PASS
+20:21:38 | INFO: Data are loaded, start creating Blender stuff
+20:21:38 | INFO: Blender create Mesh node Trunk_bark_plumblack
+20:21:38 | INFO: Blender create Mesh node Golden_bark_veins
+20:21:38 | INFO: Blender create Mesh node Branches_plum
+20:21:38 | INFO: Blender create Mesh node Canopy_depth_rose
+20:21:38 | INFO: Blender create Mesh node Canopy_peach
+20:21:38 | INFO: Blender create Mesh node Canopy_rose
+20:21:38 | INFO: Blender create Mesh node Sakura_petal_warm_rose
+20:21:38 | INFO: Blender create Mesh node Sakura_flower_gold
+20:21:38 | INFO: Blender create Mesh node Sakura_petal_blush
+20:21:38 | INFO: Blender create Mesh node Sakura_petal_pink
+20:21:38 | INFO: Blender create Mesh node Sakura_petal_cream
+20:21:38 | INFO: Blender create Mesh node R17b_outer_quality
+20:21:38 | INFO: Blender create Mesh node R17b_bridge_quality
+20:21:38 | INFO: Blender create Mesh node R17b_skirt_quality
+20:21:38 | INFO: Blender create Mesh node R18_Connected_Branch_Supports_quality
+20:21:38 | INFO: Blender create Mesh node R18_Branch_Gold_Accents_quality
+20:21:38 | INFO: glTF import finished in 0.16s
+20:21:45 | INFO: Data are loaded, start creating Blender stuff
+20:21:45 | INFO: Blender create Mesh node Trunk_bark_plumblack
+20:21:45 | INFO: Blender create Mesh node Golden_bark_veins
+20:21:45 | INFO: Blender create Mesh node Branches_plum
+20:21:45 | INFO: Blender create Mesh node Canopy_depth_rose
+20:21:45 | INFO: Blender create Mesh node Canopy_peach
+20:21:45 | INFO: Blender create Mesh node Canopy_rose
+20:21:45 | INFO: Blender create Mesh node Sakura_petal_warm_rose
+20:21:45 | INFO: Blender create Mesh node Sakura_flower_gold
+20:21:45 | INFO: Blender create Mesh node Sakura_petal_blush
+20:21:45 | INFO: Blender create Mesh node Sakura_petal_pink
+20:21:45 | INFO: Blender create Mesh node Sakura_petal_cream
+20:21:45 | INFO: Blender create Mesh node R17b_outer_quality
+20:21:45 | INFO: Blender create Mesh node R17b_bridge_quality
+20:21:45 | INFO: Blender create Mesh node R17b_skirt_quality
+20:21:45 | INFO: Blender create Mesh node R18_Connected_Branch_Supports_quality
+20:21:45 | INFO: Blender create Mesh node R18_Branch_Gold_Accents_quality
+20:21:45 | INFO: Blender create Mesh node R18a_Surface_Gold_Inlays_quality
+20:21:45 | INFO: glTF import finished in 0.14s
+R18A_GOLD_PROFILE_PASS quality 242954 5521
+20:21:49 | INFO: Data are loaded, start creating Blender stuff
+20:21:49 | INFO: Blender create Mesh node Trunk_bark_plumblack
+20:21:49 | INFO: Blender create Mesh node Golden_bark_veins
+20:21:49 | INFO: Blender create Mesh node Branches_plum
+20:21:49 | INFO: Blender create Mesh node Canopy_depth_rose
+20:21:49 | INFO: Blender create Mesh node Canopy_peach
+20:21:49 | INFO: Blender create Mesh node Canopy_rose
+20:21:49 | INFO: Blender create Mesh node Sakura_petal_blush
+20:21:49 | INFO: Blender create Mesh node Sakura_petal_cream
+20:21:49 | INFO: Blender create Mesh node Sakura_petal_pink
+20:21:49 | INFO: Blender create Mesh node Sakura_petal_warm_rose
+20:21:49 | INFO: Blender create Mesh node R17b_outer_eco
+20:21:49 | INFO: Blender create Mesh node R17b_bridge_eco
+20:21:49 | INFO: Blender create Mesh node R17b_skirt_eco
+20:21:49 | INFO: Blender create Mesh node R18_Connected_Branch_Supports_eco
+20:21:49 | INFO: Blender create Mesh node R18_Branch_Gold_Accents_eco
+20:21:49 | INFO: glTF import finished in 0.06s
+20:21:50 | INFO: Data are loaded, start creating Blender stuff
+20:21:50 | INFO: Blender create Mesh node Trunk_bark_plumblack
+20:21:50 | INFO: Blender create Mesh node Golden_bark_veins
+20:21:50 | INFO: Blender create Mesh node Branches_plum
+20:21:50 | INFO: Blender create Mesh node Canopy_depth_rose
+20:21:50 | INFO: Blender create Mesh node Canopy_peach
+20:21:50 | INFO: Blender create Mesh node Canopy_rose
+20:21:50 | INFO: Blender create Mesh node Sakura_petal_blush
+20:21:50 | INFO: Blender create Mesh node Sakura_petal_cream
+20:21:50 | INFO: Blender create Mesh node Sakura_petal_pink
+20:21:50 | INFO: Blender create Mesh node Sakura_petal_warm_rose
+20:21:50 | INFO: Blender create Mesh node R17b_outer_eco
+20:21:50 | INFO: Blender create Mesh node R17b_bridge_eco
+20:21:50 | INFO: Blender create Mesh node R17b_skirt_eco
+20:21:50 | INFO: Blender create Mesh node R18_Connected_Branch_Supports_eco
+20:21:50 | INFO: Blender create Mesh node R18_Branch_Gold_Accents_eco
+20:21:50 | INFO: Blender create Mesh node R18a_Surface_Gold_Inlays_eco
+20:21:50 | INFO: glTF import finished in 0.06s
+R18A_GOLD_PROFILE_PASS eco 60931 2149
+R18_BASELINE_SHA_PASS
+R18A_GOLD_NATIVE_BUILD_PASS
+Blender 4.5.16 LTS (hash 3f6797307da5 built 2026-11-10 01:34:06)
+
+Blender quit

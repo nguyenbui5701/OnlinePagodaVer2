@@ -1,0 +1,2976 @@
+{
+  "baseline": "07f57cb35ba3ec68184abbd2c173e29a3fcc4788",
+  "profiles": {
+    "quality": {
+      "root": "Trunk_bark_plumblack:0",
+      "woodComponents": 83,
+      "rootedStructuralCount": 65,
+      "structuralCount": 83,
+      "drapedStems": [
+        {
+          "id": "Branches_plum:61",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              9.133536338806152,
+              -5.8748931884765625,
+              10.975050926208496
+            ],
+            [
+              9.361220359802246,
+              -5.664491176605225,
+              12.391761779785156
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum:62",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -4.331630706787109,
+              7.845608234405518,
+              10.370087623596191
+            ],
+            [
+              -4.1042256355285645,
+              8.055736541748047,
+              11.786969184875488
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum:63",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -9.367494583129883,
+              -1.1833564043045044,
+              10.417681694030762
+            ],
+            [
+              -9.13998031616211,
+              -0.9733683466911316,
+              11.834671020507812
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum:64",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              10.329625129699707,
+              -5.244143486022949,
+              11.271865844726562
+            ],
+            [
+              10.557419776916504,
+              -5.034117221832275,
+              12.688864707946777
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum:65",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              4.589074611663818,
+              -9.94214153289795,
+              10.708745002746582
+            ],
+            [
+              4.817126274108887,
+              -9.731935501098633,
+              12.125662803649902
+            ]
+          ]
+        }
+      ],
+      "attachmentFindings": [
+        {
+          "id": "Branches_plum:0",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              -1.464838981628418,
+              -0.04749856889247894,
+              3.660432815551758
+            ],
+            [
+              -0.6054061651229858,
+              0.6209157109260559,
+              4.049415588378906
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.660015881061554,
+          "childPoint": [
+            -0.606309175491333,
+            -0.04363004490733147,
+            4.0091376304626465
+          ],
+          "parentPoint": [
+            -0.23800532519817352,
+            -0.1668705940246582,
+            3.47548508644104
+          ]
+        },
+        {
+          "id": "Branches_plum:2",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              3.326425075531006,
+              -2.2756574153900146,
+              1.521645188331604
+            ],
+            [
+              3.6222965717315674,
+              -1.5220649242401123,
+              2.2444469928741455
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:1",
+          "gapMetersVertexToSurface": 0.24983294308185577,
+          "childPoint": [
+            3.3276493549346924,
+            -1.5269267559051514,
+            1.5216472148895264
+          ],
+          "parentPoint": [
+            3.1475086212158203,
+            -1.5150090456008911,
+            1.3489515781402588
+          ]
+        },
+        {
+          "id": "Branches_plum:3",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              0.09333065897226334,
+              -1.7979483604431152,
+              4.747109889984131
+            ],
+            [
+              0.6560701131820679,
+              -1.5492037534713745,
+              5.153204917907715
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.0560358501970768,
+          "childPoint": [
+            0.6560701131820679,
+            -1.7953732013702393,
+            5.149225234985352
+          ],
+          "parentPoint": [
+            0.7114676833152771,
+            -1.8020009994506836,
+            5.144010066986084
+          ]
+        },
+        {
+          "id": "Branches_plum:6",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              2.2160327434539795,
+              0.9742807149887085,
+              2.2979633808135986
+            ],
+            [
+              2.517826795578003,
+              1.9821213483810425,
+              2.9947855472564697
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.15067680180072784,
+          "childPoint": [
+            2.432715892791748,
+            0.9742807149887085,
+            2.9896504878997803
+          ],
+          "parentPoint": [
+            2.368360996246338,
+            0.8503466844558716,
+            2.9330615997314453
+          ]
+        },
+        {
+          "id": "Branches_plum:8",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              -3.3088574409484863,
+              0.911270260810852,
+              1.9642878770828247
+            ],
+            [
+              -2.273714065551758,
+              1.1557714939117432,
+              3.2183046340942383
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.2347014844417572,
+          "childPoint": [
+            -3.301286220550537,
+            0.915210485458374,
+            1.9642878770828247
+          ],
+          "parentPoint": [
+            -3.1642816066741943,
+            0.9218487739562988,
+            1.7738398313522339
+          ]
+        },
+        {
+          "id": "Branches_plum:9",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              1.921822428703308,
+              -3.093830108642578,
+              9.285613059997559
+            ],
+            [
+              2.2897775173187256,
+              -2.5115206241607666,
+              10.216495513916016
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.005388025194406509,
+          "childPoint": [
+            1.9520115852355957,
+            -3.093830108642578,
+            9.290555953979492
+          ],
+          "parentPoint": [
+            1.9528820514678955,
+            -3.0991275310516357,
+            9.291014671325684
+          ]
+        },
+        {
+          "id": "Branches_plum:15",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              1.757031798362732,
+              0.9763274788856506,
+              3.064552068710327
+            ],
+            [
+              2.3136909008026123,
+              1.754186749458313,
+              3.326646566390991
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.24187375605106354,
+          "childPoint": [
+            2.2846455574035645,
+            1.0871163606643677,
+            3.144062042236328
+          ],
+          "parentPoint": [
+            2.176405906677246,
+            0.903161883354187,
+            3.0302734375
+          ]
+        },
+        {
+          "id": "Branches_plum:19",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              2.2168076038360596,
+              0.20205006003379822,
+              3.075047492980957
+            ],
+            [
+              2.6033194065093994,
+              1.190779685974121,
+              4.015097141265869
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.18856720626354218,
+          "childPoint": [
+            2.5982162952423096,
+            0.20205006003379822,
+            4.00997257232666
+          ],
+          "parentPoint": [
+            2.4760477542877197,
+            0.09075874835252762,
+            3.919161319732666
+          ]
+        },
+        {
+          "id": "Branches_plum:20",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              3.3267245292663574,
+              -1.6412577629089355,
+              8.910645484924316
+            ],
+            [
+              3.4019458293914795,
+              -1.5302640199661255,
+              9.771162033081055
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.11262334138154984,
+          "childPoint": [
+            3.3604984283447266,
+            -1.6375066041946411,
+            8.912254333496094
+          ],
+          "parentPoint": [
+            3.471404552459717,
+            -1.6562846899032593,
+            8.906665802001953
+          ]
+        },
+        {
+          "id": "Branches_plum:21",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              0.3883586823940277,
+              -0.12077532708644867,
+              4.446608066558838
+            ],
+            [
+              0.8917124271392822,
+              0.026380810886621475,
+              4.821035385131836
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.3682144284248352,
+          "childPoint": [
+            0.8917124271392822,
+            -0.11831532418727875,
+            4.815850257873535
+          ],
+          "parentPoint": [
+            1.0749189853668213,
+            -0.3528691828250885,
+            4.599051475524902
+          ]
+        },
+        {
+          "id": "Branches_plum:23",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              -0.8647587895393372,
+              1.764282464981079,
+              2.4366214275360107
+            ],
+            [
+              -0.6156931519508362,
+              2.3378329277038574,
+              3.6429409980773926
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.363565057516098,
+          "childPoint": [
+            -0.8472253680229187,
+            2.3310537338256836,
+            2.4379372596740723
+          ],
+          "parentPoint": [
+            -0.932243287563324,
+            2.099008798599243,
+            2.171278953552246
+          ]
+        },
+        {
+          "id": "Branches_plum:25",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              3.3173446655273438,
+              -1.906637191772461,
+              8.683419227600098
+            ],
+            [
+              3.405271291732788,
+              -1.5319721698760986,
+              9.376786231994629
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.0193867776542902,
+          "childPoint": [
+            3.385301351547241,
+            -1.904360055923462,
+            8.686760902404785
+          ],
+          "parentPoint": [
+            3.4037046432495117,
+            -1.9092137813568115,
+            8.690449714660645
+          ]
+        },
+        {
+          "id": "Branches_plum:30",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              2.8255903720855713,
+              -2.4608566761016846,
+              9.159527778625488
+            ],
+            [
+              3.3279812335968018,
+              -1.9122041463851929,
+              9.969048500061035
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.04773896932601929,
+          "childPoint": [
+            3.1401474475860596,
+            -2.258945941925049,
+            9.53788948059082
+          ],
+          "parentPoint": [
+            3.1708784103393555,
+            -2.295313596725464,
+            9.54135513305664
+          ]
+        },
+        {
+          "id": "Branches_plum:61",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              9.133536338806152,
+              -5.8748931884765625,
+              10.975050926208496
+            ],
+            [
+              9.361220359802246,
+              -5.664491176605225,
+              12.391761779785156
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum:32",
+          "gapMetersVertexToSurface": 3.182236671447754,
+          "childPoint": [
+            9.133536338806152,
+            -5.832466125488281,
+            12.368820190429688
+          ],
+          "parentPoint": [
+            6.416427135467529,
+            -6.1550421714782715,
+            13.993595123291016
+          ]
+        },
+        {
+          "id": "Branches_plum:62",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -4.331630706787109,
+              7.845608234405518,
+              10.370087623596191
+            ],
+            [
+              -4.1042256355285645,
+              8.055736541748047,
+              11.786969184875488
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum:49",
+          "gapMetersVertexToSurface": 2.7357780933380127,
+          "childPoint": [
+            -4.251408576965332,
+            7.860788822174072,
+            11.776928901672363
+          ],
+          "parentPoint": [
+            -2.835577964782715,
+            5.523504257202148,
+            11.646517753601074
+          ]
+        },
+        {
+          "id": "Branches_plum:63",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -9.367494583129883,
+              -1.1833564043045044,
+              10.417681694030762
+            ],
+            [
+              -9.13998031616211,
+              -0.9733683466911316,
+              11.834671020507812
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum:46",
+          "gapMetersVertexToSurface": 4.95056676864624,
+          "childPoint": [
+            -9.28971004486084,
+            -1.1152079105377197,
+            11.834671020507812
+          ],
+          "parentPoint": [
+            -4.812382698059082,
+            0.07039830833673477,
+            13.582809448242188
+          ]
+        },
+        {
+          "id": "Branches_plum:64",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              10.329625129699707,
+              -5.244143486022949,
+              11.271865844726562
+            ],
+            [
+              10.557419776916504,
+              -5.034117221832275,
+              12.688864707946777
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum:60",
+          "gapMetersVertexToSurface": 3.9626498222351074,
+          "childPoint": [
+            10.356941223144531,
+            -5.160791873931885,
+            12.680359840393066
+          ],
+          "parentPoint": [
+            9.455122947692871,
+            -1.4107779264450073,
+            11.771121978759766
+          ]
+        },
+        {
+          "id": "Branches_plum:65",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              4.589074611663818,
+              -9.94214153289795,
+              10.708745002746582
+            ],
+            [
+              4.817126274108887,
+              -9.731935501098633,
+              12.125662803649902
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum:37",
+          "gapMetersVertexToSurface": 3.5249862670898438,
+          "childPoint": [
+            4.616672992706299,
+            -9.858565330505371,
+            12.1172513961792
+          ],
+          "parentPoint": [
+            2.6834146976470947,
+            -7.748503684997559,
+            14.175328254699707
+          ]
+        }
+      ],
+      "lowFlowerFindings": [
+        {
+          "id": "Sakura_petal_pink:2341",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              8.491121292114258,
+              -6.496393203735352,
+              10.431173324584961
+            ],
+            [
+              8.803037643432617,
+              -6.144828796386719,
+              10.873022079467773
+            ]
+          ],
+          "parent": "Branches_plum:61",
+          "gapMetersVertexToSurface": 0.7248890995979309
+        },
+        {
+          "id": "Sakura_petal_pink:2342",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              9.288141250610352,
+              -6.37925386428833,
+              10.640496253967285
+            ],
+            [
+              9.673111915588379,
+              -6.076046466827393,
+              11.09138298034668
+            ]
+          ],
+          "parent": "Branches_plum:61",
+          "gapMetersVertexToSurface": 0.4380543529987335
+        },
+        {
+          "id": "Sakura_petal_pink:2343",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              9.556734085083008,
+              -5.718373775482178,
+              10.529082298278809
+            ],
+            [
+              9.866182327270508,
+              -5.257905960083008,
+              10.989241600036621
+            ]
+          ],
+          "parent": "Branches_plum:61",
+          "gapMetersVertexToSurface": 0.6048829555511475
+        },
+        {
+          "id": "Sakura_petal_pink:2344",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              8.824724197387695,
+              -5.797357082366943,
+              10.964498519897461
+            ],
+            [
+              9.268627166748047,
+              -5.438594341278076,
+              11.390096664428711
+            ]
+          ],
+          "parent": "Branches_plum:61",
+          "gapMetersVertexToSurface": 0.053632717579603195
+        },
+        {
+          "id": "Sakura_petal_pink:2345",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -4.902773380279541,
+              7.2933855056762695,
+              10.003549575805664
+            ],
+            [
+              -4.604743003845215,
+              7.626430034637451,
+              10.46648120880127
+            ]
+          ],
+          "parent": "Branches_plum:62",
+          "gapMetersVertexToSurface": 0.5756063461303711
+        },
+        {
+          "id": "Sakura_petal_pink:2346",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -4.0205769538879395,
+              7.165834426879883,
+              10.078266143798828
+            ],
+            [
+              -3.665905237197876,
+              7.431398391723633,
+              10.497285842895508
+            ]
+          ],
+          "parent": "Branches_plum:62",
+          "gapMetersVertexToSurface": 0.6715800762176514
+        },
+        {
+          "id": "Sakura_petal_pink:2347",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -3.974973201751709,
+              8.00214672088623,
+              10.292536735534668
+            ],
+            [
+              -3.701178550720215,
+              8.368230819702148,
+              10.692023277282715
+            ]
+          ],
+          "parent": "Branches_plum:62",
+          "gapMetersVertexToSurface": 0.3469448387622833
+        },
+        {
+          "id": "Sakura_petal_pink:2348",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -4.70943021774292,
+              8.073648452758789,
+              10.463034629821777
+            ],
+            [
+              -4.275150299072266,
+              8.414739608764648,
+              10.888833045959473
+            ]
+          ],
+          "parent": "Branches_plum:62",
+          "gapMetersVertexToSurface": 0.21627674996852875
+        },
+        {
+          "id": "Sakura_petal_pink:2349",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -9.954994201660156,
+              -1.7498081922531128,
+              10.304266929626465
+            ],
+            [
+              -9.616316795349121,
+              -1.372797966003418,
+              10.838617324829102
+            ]
+          ],
+          "parent": "Branches_plum:63",
+          "gapMetersVertexToSurface": 0.5551916360855103
+        },
+        {
+          "id": "Sakura_petal_pink:2350",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -9.114237785339355,
+              -1.8751540184020996,
+              10.582275390625
+            ],
+            [
+              -8.660645484924316,
+              -1.5212684869766235,
+              11.021377563476562
+            ]
+          ],
+          "parent": "Branches_plum:63",
+          "gapMetersVertexToSurface": 0.5936158895492554
+        },
+        {
+          "id": "Sakura_petal_pink:2351",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -8.885522842407227,
+              -0.9545888900756836,
+              10.253386497497559
+            ],
+            [
+              -8.596264839172363,
+              -0.5629032254219055,
+              10.693156242370605
+            ]
+          ],
+          "parent": "Branches_plum:63",
+          "gapMetersVertexToSurface": 0.5430899262428284
+        },
+        {
+          "id": "Sakura_petal_pink:2352",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -9.681573867797852,
+              -0.9997506737709045,
+              10.040878295898438
+            ],
+            [
+              -9.277603149414062,
+              -0.733465850353241,
+              10.462474822998047
+            ]
+          ],
+          "parent": "Branches_plum:63",
+          "gapMetersVertexToSurface": 0.28468093276023865
+        },
+        {
+          "id": "Sakura_petal_pink:2353",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              9.732172966003418,
+              -5.821130752563477,
+              10.846882820129395
+            ],
+            [
+              10.020891189575195,
+              -5.497718334197998,
+              11.280373573303223
+            ]
+          ],
+          "parent": "Branches_plum:61",
+          "gapMetersVertexToSurface": 0.4994335472583771
+        },
+        {
+          "id": "Sakura_petal_pink:2354",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              10.549355506896973,
+              -5.799862861633301,
+              10.89522933959961
+            ],
+            [
+              10.898603439331055,
+              -5.510178089141846,
+              11.299825668334961
+            ]
+          ],
+          "parent": "Branches_plum:64",
+          "gapMetersVertexToSurface": 0.5333364605903625
+        },
+        {
+          "id": "Sakura_petal_pink:2355",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              10.53310775756836,
+              -5.231062889099121,
+              10.83973217010498
+            ],
+            [
+              10.849065780639648,
+              -4.7949957847595215,
+              11.200685501098633
+            ]
+          ],
+          "parent": "Branches_plum:64",
+          "gapMetersVertexToSurface": 0.37866824865341187
+        },
+        {
+          "id": "Sakura_petal_pink:2356",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              10.033129692077637,
+              -5.101463317871094,
+              10.881038665771484
+            ],
+            [
+              10.428671836853027,
+              -4.808324337005615,
+              11.265548706054688
+            ]
+          ],
+          "parent": "Branches_plum:64",
+          "gapMetersVertexToSurface": 0.2738005220890045
+        },
+        {
+          "id": "Sakura_petal_pink:2357",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              4.232733726501465,
+              -10.300615310668945,
+              10.38710880279541
+            ],
+            [
+              4.551228046417236,
+              -9.945268630981445,
+              10.882281303405762
+            ]
+          ],
+          "parent": "Branches_plum:65",
+          "gapMetersVertexToSurface": 0.2611926198005676
+        },
+        {
+          "id": "Sakura_petal_pink:2358",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              4.729641437530518,
+              -10.453516960144043,
+              10.367218017578125
+            ],
+            [
+              5.138285160064697,
+              -10.133831024169922,
+              10.846159934997559
+            ]
+          ],
+          "parent": "Branches_plum:65",
+          "gapMetersVertexToSurface": 0.42941972613334656
+        },
+        {
+          "id": "Sakura_petal_pink:2359",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              4.870616436004639,
+              -9.84726619720459,
+              10.83019733428955
+            ],
+            [
+              5.1866021156311035,
+              -9.437541007995605,
+              11.195394515991211
+            ]
+          ],
+          "parent": "Branches_plum:65",
+          "gapMetersVertexToSurface": 0.1608179807662964
+        },
+        {
+          "id": "Sakura_petal_pink:2360",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              4.16206169128418,
+              -9.47718620300293,
+              10.520570755004883
+            ],
+            [
+              4.547419548034668,
+              -9.276605606079102,
+              10.976510047912598
+            ]
+          ],
+          "parent": "Branches_plum:65",
+          "gapMetersVertexToSurface": 0.5201940536499023
+        },
+        {
+          "id": "Sakura_petal_blush:2240",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              9.625142097473145,
+              -6.051002025604248,
+              10.756536483764648
+            ],
+            [
+              9.717591285705566,
+              -5.590556621551514,
+              11.232429504394531
+            ]
+          ],
+          "parent": "Branches_plum:61",
+          "gapMetersVertexToSurface": 0.4118051826953888
+        },
+        {
+          "id": "Sakura_petal_blush:2241",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              8.977726936340332,
+              -5.5013556480407715,
+              10.642877578735352
+            ],
+            [
+              9.435894966125488,
+              -5.33940315246582,
+              11.106451988220215
+            ]
+          ],
+          "parent": "Branches_plum:61",
+          "gapMetersVertexToSurface": 0.35049501061439514
+        },
+        {
+          "id": "Sakura_petal_blush:2242",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              8.398250579833984,
+              -5.9747395515441895,
+              11.205652236938477
+            ],
+            [
+              8.647537231445312,
+              -5.481721878051758,
+              11.574638366699219
+            ]
+          ],
+          "parent": "Branches_plum:61",
+          "gapMetersVertexToSurface": 0.6214774250984192
+        },
+        {
+          "id": "Sakura_petal_blush:2243",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              8.775897026062012,
+              -6.610519886016846,
+              11.165098190307617
+            ],
+            [
+              9.215506553649902,
+              -6.339008808135986,
+              11.570903778076172
+            ]
+          ],
+          "parent": "Branches_plum:61",
+          "gapMetersVertexToSurface": 0.6274181008338928
+        },
+        {
+          "id": "Sakura_petal_blush:2244",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -3.6230063438415527,
+              7.692845344543457,
+              10.19987678527832
+            ],
+            [
+              -3.5350570678710938,
+              8.10335922241211,
+              10.624110221862793
+            ]
+          ],
+          "parent": "Branches_plum:62",
+          "gapMetersVertexToSurface": 0.6132888793945312
+        },
+        {
+          "id": "Sakura_petal_blush:2245",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -4.460071086883545,
+              8.417654037475586,
+              10.417853355407715
+            ],
+            [
+              -4.011305332183838,
+              8.647126197814941,
+              10.870492935180664
+            ]
+          ],
+          "parent": "Branches_plum:62",
+          "gapMetersVertexToSurface": 0.404628187417984
+        },
+        {
+          "id": "Sakura_petal_blush:2246",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -4.766887187957764,
+              7.725244045257568,
+              10.25327205657959
+            ],
+            [
+              -4.628876209259033,
+              8.180319786071777,
+              10.651006698608398
+            ]
+          ],
+          "parent": "Branches_plum:62",
+          "gapMetersVertexToSurface": 0.35657545924186707
+        },
+        {
+          "id": "Sakura_petal_blush:2247",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -4.649289131164551,
+              7.293286323547363,
+              9.973661422729492
+            ],
+            [
+              -4.206589221954346,
+              7.504032135009766,
+              10.41079044342041
+            ]
+          ],
+          "parent": "Branches_plum:62",
+          "gapMetersVertexToSurface": 0.4643312394618988
+        },
+        {
+          "id": "Sakura_petal_blush:2248",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -9.148704528808594,
+              -1.3604508638381958,
+              10.45439624786377
+            ],
+            [
+              -8.869888305664062,
+              -0.899919867515564,
+              10.851943016052246
+            ]
+          ],
+          "parent": "Branches_plum:63",
+          "gapMetersVertexToSurface": 0.06056898087263107
+        },
+        {
+          "id": "Sakura_petal_blush:2249",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -9.496408462524414,
+              -0.40822428464889526,
+              10.322382926940918
+            ],
+            [
+              -9.0201416015625,
+              -0.2595466673374176,
+              10.823884010314941
+            ]
+          ],
+          "parent": "Branches_plum:63",
+          "gapMetersVertexToSurface": 0.6237865090370178
+        },
+        {
+          "id": "Sakura_petal_blush:2250",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -10.140021324157715,
+              -1.2669100761413574,
+              10.507987976074219
+            ],
+            [
+              -9.94310474395752,
+              -0.7816709876060486,
+              10.908016204833984
+            ]
+          ],
+          "parent": "Branches_plum:63",
+          "gapMetersVertexToSurface": 0.6935521364212036
+        },
+        {
+          "id": "Sakura_petal_blush:2251",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              -9.651721000671387,
+              -1.622674822807312,
+              9.992133140563965
+            ],
+            [
+              -9.185100555419922,
+              -1.312200903892517,
+              10.392827987670898
+            ]
+          ],
+          "parent": "Branches_plum:63",
+          "gapMetersVertexToSurface": 0.33355361223220825
+        },
+        {
+          "id": "Sakura_petal_blush:2252",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              10.614287376403809,
+              -5.408745765686035,
+              10.8409423828125
+            ],
+            [
+              10.883528709411621,
+              -4.974977970123291,
+              11.206025123596191
+            ]
+          ],
+          "parent": "Branches_plum:64",
+          "gapMetersVertexToSurface": 0.3915344774723053
+        },
+        {
+          "id": "Sakura_petal_blush:2253",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              10.190414428710938,
+              -4.776683330535889,
+              11.382956504821777
+            ],
+            [
+              10.648628234863281,
+              -4.492905139923096,
+              11.823100090026855
+            ]
+          ],
+          "parent": "Branches_plum:64",
+          "gapMetersVertexToSurface": 0.29229307174682617
+        },
+        {
+          "id": "Sakura_petal_blush:2254",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              9.854804039001465,
+              -5.383512496948242,
+              10.974902153015137
+            ],
+            [
+              9.992843627929688,
+              -4.871933460235596,
+              11.427949905395508
+            ]
+          ],
+          "parent": "Branches_plum:64",
+          "gapMetersVertexToSurface": 0.39101442694664
+        },
+        {
+          "id": "Sakura_petal_blush:2255",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              9.966503143310547,
+              -5.9061198234558105,
+              11.049287796020508
+            ],
+            [
+              10.414977073669434,
+              -5.765683650970459,
+              11.524334907531738
+            ]
+          ],
+          "parent": "Branches_plum:64",
+          "gapMetersVertexToSurface": 0.5897442102432251
+        },
+        {
+          "id": "Sakura_petal_blush:2256",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              4.809703826904297,
+              -10.138442039489746,
+              10.651835441589355
+            ],
+            [
+              5.065234661102295,
+              -9.638408660888672,
+              11.114684104919434
+            ]
+          ],
+          "parent": "Branches_plum:65",
+          "gapMetersVertexToSurface": 0.06717925518751144
+        },
+        {
+          "id": "Sakura_petal_blush:2257",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              4.450713157653809,
+              -9.390654563903809,
+              10.627777099609375
+            ],
+            [
+              4.911005020141602,
+              -9.21644115447998,
+              11.108163833618164
+            ]
+          ],
+          "parent": "Branches_plum:65",
+          "gapMetersVertexToSurface": 0.40754905343055725
+        },
+        {
+          "id": "Sakura_petal_blush:2258",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              4.093496799468994,
+              -10.114917755126953,
+              10.821772575378418
+            ],
+            [
+              4.4022088050842285,
+              -9.577939987182617,
+              11.194840431213379
+            ]
+          ],
+          "parent": "Branches_plum:65",
+          "gapMetersVertexToSurface": 0.3111196458339691
+        },
+        {
+          "id": "Sakura_petal_blush:2259",
+          "triangles": 20,
+          "boundsBlenderMeters": [
+            [
+              4.299225330352783,
+              -10.378875732421875,
+              10.60525894165039
+            ],
+            [
+              4.7449259757995605,
+              -10.178206443786621,
+              11.058976173400879
+            ]
+          ],
+          "parent": "Branches_plum:65",
+          "gapMetersVertexToSurface": 0.3288384675979614
+        }
+      ],
+      "unresolved": [],
+      "method": "Triangle BVH intersections and coordinate-weld component graph; not manifold weld or solid containment proof. Near/tangent contacts and original ornamental seams require visual review.",
+      "nativeGLBImport": {
+        "triangles": 236888,
+        "boundsYUpMeters": [
+          [
+            -14.178767204284668,
+            -0.5183812975883484,
+            -13.425017356872559
+          ],
+          [
+            14.489616394042969,
+            26.48044204711914,
+            14.410984992980957
+          ]
+        ],
+        "sha256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267"
+      }
+    },
+    "eco": {
+      "root": "Trunk_bark_plumblack.001:0",
+      "woodComponents": 61,
+      "rootedStructuralCount": 49,
+      "structuralCount": 61,
+      "drapedStems": [
+        {
+          "id": "Branches_plum.001:39",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -8.758211135864258,
+              4.164515018463135,
+              10.299625396728516
+            ],
+            [
+              -8.530527114868164,
+              4.374917030334473,
+              11.716337203979492
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:40",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -7.212057113647461,
+              -5.0546417236328125,
+              10.835622787475586
+            ],
+            [
+              -6.984652519226074,
+              -4.844513416290283,
+              12.252504348754883
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:41",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              5.218949317932129,
+              8.918188095092773,
+              11.231802940368652
+            ],
+            [
+              5.4464640617370605,
+              9.12817668914795,
+              12.648792266845703
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:42",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -4.919576168060303,
+              10.576362609863281,
+              10.552947044372559
+            ],
+            [
+              -4.691781520843506,
+              10.786388397216797,
+              11.969945907592773
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:43",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -5.797976970672607,
+              8.053956985473633,
+              10.617780685424805
+            ],
+            [
+              -5.569925308227539,
+              8.264162063598633,
+              12.034699440002441
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:44",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -9.081181526184082,
+              -0.10291022062301636,
+              10.678228378295898
+            ],
+            [
+              -8.85300350189209,
+              0.1075160875916481,
+              12.095022201538086
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:45",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              8.731043815612793,
+              7.0890679359436035,
+              10.312356948852539
+            ],
+            [
+              8.959173202514648,
+              7.2996392250061035,
+              11.729043960571289
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:46",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              1.2703608274459839,
+              -9.389931678771973,
+              10.852435111999512
+            ],
+            [
+              1.4983131885528564,
+              -9.179368019104004,
+              12.269083976745605
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:47",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              10.056920051574707,
+              -3.9219517707824707,
+              10.296394348144531
+            ],
+            [
+              10.284674644470215,
+              -3.7115492820739746,
+              11.713088035583496
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:48",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              6.904343605041504,
+              6.126519680023193,
+              10.586095809936523
+            ],
+            [
+              7.132001876831055,
+              6.336681365966797,
+              12.002886772155762
+            ]
+          ]
+        }
+      ],
+      "attachmentFindings": [
+        {
+          "id": "Branches_plum.001:0",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              -1.2481799125671387,
+              0.2193775475025177,
+              2.587599992752075
+            ],
+            [
+              -0.7839153409004211,
+              0.5948444604873657,
+              3.149604320526123
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack.001:0",
+          "gapMetersVertexToSurface": 0.010667656548321247,
+          "childPoint": [
+            -1.216393232345581,
+            0.30401018261909485,
+            2.9191668033599854
+          ],
+          "parentPoint": [
+            -1.2220821380615234,
+            0.30805784463882446,
+            2.927232265472412
+          ]
+        },
+        {
+          "id": "Branches_plum.001:3",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              -0.551925778388977,
+              -1.0139422416687012,
+              4.4409708976745605
+            ],
+            [
+              -0.039820753037929535,
+              -0.7587733864784241,
+              5.321802616119385
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack.001:0",
+          "gapMetersVertexToSurface": 0.02486407570540905,
+          "childPoint": [
+            -0.5449562072753906,
+            -0.8373425006866455,
+            4.4409708976745605
+          ],
+          "parentPoint": [
+            -0.5268352627754211,
+            -0.8459832072257996,
+            4.4263014793396
+          ]
+        },
+        {
+          "id": "Branches_plum.001:39",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -8.758211135864258,
+              4.164515018463135,
+              10.299625396728516
+            ],
+            [
+              -8.530527114868164,
+              4.374917030334473,
+              11.716337203979492
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum.001:28",
+          "gapMetersVertexToSurface": 4.807124137878418,
+          "childPoint": [
+            -8.67768669128418,
+            4.180143356323242,
+            11.706440925598145
+          ],
+          "parentPoint": [
+            -6.7687811851501465,
+            1.0826205015182495,
+            14.848076820373535
+          ]
+        },
+        {
+          "id": "Branches_plum.001:40",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -7.212057113647461,
+              -5.0546417236328125,
+              10.835622787475586
+            ],
+            [
+              -6.984652519226074,
+              -4.844513416290283,
+              12.252504348754883
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum.001:29",
+          "gapMetersVertexToSurface": 2.3370301723480225,
+          "childPoint": [
+            -7.131834983825684,
+            -5.039461612701416,
+            12.242465019226074
+          ],
+          "parentPoint": [
+            -4.8593363761901855,
+            -5.522370338439941,
+            12.495959281921387
+          ]
+        },
+        {
+          "id": "Branches_plum.001:41",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              5.218949317932129,
+              8.918188095092773,
+              11.231802940368652
+            ],
+            [
+              5.4464640617370605,
+              9.12817668914795,
+              12.648792266845703
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum.001:34",
+          "gapMetersVertexToSurface": 4.084562301635742,
+          "childPoint": [
+            5.24985408782959,
+            8.918188095092773,
+            12.624446868896484
+          ],
+          "parentPoint": [
+            5.203909873962402,
+            4.836851596832275,
+            12.468777656555176
+          ]
+        },
+        {
+          "id": "Branches_plum.001:42",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -4.919576168060303,
+              10.576362609863281,
+              10.552947044372559
+            ],
+            [
+              -4.691781520843506,
+              10.786388397216797,
+              11.969945907592773
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum.001:36",
+          "gapMetersVertexToSurface": 6.011204242706299,
+          "childPoint": [
+            -4.839710235595703,
+            10.591245651245117,
+            11.959759712219238
+          ],
+          "parentPoint": [
+            -1.4047123193740845,
+            5.813790798187256,
+            13.189104080200195
+          ]
+        },
+        {
+          "id": "Branches_plum.001:43",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -5.797976970672607,
+              8.053956985473633,
+              10.617780685424805
+            ],
+            [
+              -5.569925308227539,
+              8.264162063598633,
+              12.034699440002441
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum.001:33",
+          "gapMetersVertexToSurface": 4.905466079711914,
+          "childPoint": [
+            -5.718070030212402,
+            8.069040298461914,
+            12.024545669555664
+          ],
+          "parentPoint": [
+            -1.819653868675232,
+            5.126355171203613,
+            12.479026794433594
+          ]
+        },
+        {
+          "id": "Branches_plum.001:44",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -9.081181526184082,
+              -0.10291022062301636,
+              10.678228378295898
+            ],
+            [
+              -8.85300350189209,
+              0.1075160875916481,
+              12.095022201538086
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum.001:28",
+          "gapMetersVertexToSurface": 3.7073562145233154,
+          "childPoint": [
+            -9.002813339233398,
+            -0.03521675243973732,
+            12.095022201538086
+          ],
+          "parentPoint": [
+            -6.773315906524658,
+            1.0601739883422852,
+            14.847103118896484
+          ]
+        },
+        {
+          "id": "Branches_plum.001:45",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              8.731043815612793,
+              7.0890679359436035,
+              10.312356948852539
+            ],
+            [
+              8.959173202514648,
+              7.2996392250061035,
+              11.729043960571289
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum.001:34",
+          "gapMetersVertexToSurface": 4.272911548614502,
+          "childPoint": [
+            8.731043815612793,
+            7.130626201629639,
+            11.705896377563477
+          ],
+          "parentPoint": [
+            5.2159905433654785,
+            4.830339431762695,
+            12.487466812133789
+          ]
+        },
+        {
+          "id": "Branches_plum.001:46",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              1.2703608274459839,
+              -9.389931678771973,
+              10.852435111999512
+            ],
+            [
+              1.4983131885528564,
+              -9.179368019104004,
+              12.269083976745605
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum.001:19",
+          "gapMetersVertexToSurface": 1.296324610710144,
+          "childPoint": [
+            1.3506313562393188,
+            -9.374273300170898,
+            12.259105682373047
+          ],
+          "parentPoint": [
+            2.502988815307617,
+            -9.579157829284668,
+            12.816377639770508
+          ]
+        },
+        {
+          "id": "Branches_plum.001:47",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              10.056920051574707,
+              -3.9219517707824707,
+              10.296394348144531
+            ],
+            [
+              10.284674644470215,
+              -3.7115492820739746,
+              11.713088035583496
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum.001:17",
+          "gapMetersVertexToSurface": 2.4319019317626953,
+          "childPoint": [
+            10.135031700134277,
+            -3.853987455368042,
+            11.713088035583496
+          ],
+          "parentPoint": [
+            10.145492553710938,
+            -3.0947580337524414,
+            14.023414611816406
+          ]
+        },
+        {
+          "id": "Branches_plum.001:48",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              6.904343605041504,
+              6.126519680023193,
+              10.586095809936523
+            ],
+            [
+              7.132001876831055,
+              6.336681365966797,
+              12.002886772155762
+            ]
+          ],
+          "kind": "draped_twig",
+          "parent": "Branches_plum.001:34",
+          "gapMetersVertexToSurface": 2.212904691696167,
+          "childPoint": [
+            6.9358673095703125,
+            6.126519680023193,
+            11.978656768798828
+          ],
+          "parentPoint": [
+            5.2159905433654785,
+            4.830339431762695,
+            12.487466812133789
+          ]
+        }
+      ],
+      "lowFlowerFindings": [
+        {
+          "id": "Sakura_petal_pink.001:1073",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -9.321333885192871,
+              3.6202590465545654,
+              10.329450607299805
+            ],
+            [
+              -8.759583473205566,
+              4.204124450683594,
+              10.877554893493652
+            ]
+          ],
+          "parent": "Branches_plum.001:39",
+          "gapMetersVertexToSurface": 0.3533395230770111
+        },
+        {
+          "id": "Sakura_petal_pink.001:1074",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -8.588824272155762,
+              3.5113730430603027,
+              10.135015487670898
+            ],
+            [
+              -8.123175621032715,
+              3.896247625350952,
+              10.742696762084961
+            ]
+          ],
+          "parent": "Branches_plum.001:39",
+          "gapMetersVertexToSurface": 0.5506647825241089
+        },
+        {
+          "id": "Sakura_petal_pink.001:1075",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -8.471746444702148,
+              4.200980186462402,
+              10.196977615356445
+            ],
+            [
+              -8.048310279846191,
+              4.792326927185059,
+              10.836382865905762
+            ]
+          ],
+          "parent": "Branches_plum.001:39",
+          "gapMetersVertexToSurface": 0.21563412249088287
+        },
+        {
+          "id": "Sakura_petal_pink.001:1076",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -7.6700592041015625,
+              -5.501389026641846,
+              10.769683837890625
+            ],
+            [
+              -7.22694730758667,
+              -5.032110214233398,
+              11.275568008422852
+            ]
+          ],
+          "parent": "Branches_plum.001:40",
+          "gapMetersVertexToSurface": 0.3030935823917389
+        },
+        {
+          "id": "Sakura_petal_pink.001:1077",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -7.000784873962402,
+              -5.808444976806641,
+              10.196471214294434
+            ],
+            [
+              -6.445502281188965,
+              -5.339928150177002,
+              10.797287940979004
+            ]
+          ],
+          "parent": "Branches_plum.001:40",
+          "gapMetersVertexToSurface": 0.7090941071510315
+        },
+        {
+          "id": "Sakura_petal_pink.001:1078",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -7.0295257568359375,
+              -5.084529876708984,
+              10.703920364379883
+            ],
+            [
+              -6.602250576019287,
+              -4.495677471160889,
+              11.328619956970215
+            ]
+          ],
+          "parent": "Branches_plum.001:40",
+          "gapMetersVertexToSurface": 0.12636582553386688
+        },
+        {
+          "id": "Sakura_petal_pink.001:1079",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              4.705534934997559,
+              8.41092300415039,
+              11.023003578186035
+            ],
+            [
+              5.109139442443848,
+              8.838332176208496,
+              11.594393730163574
+            ]
+          ],
+          "parent": "Branches_plum.001:41",
+          "gapMetersVertexToSurface": 0.3982069790363312
+        },
+        {
+          "id": "Sakura_petal_pink.001:1080",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              5.230143070220947,
+              8.40829086303711,
+              10.819963455200195
+            ],
+            [
+              5.782801628112793,
+              8.835235595703125,
+              11.493228912353516
+            ]
+          ],
+          "parent": "Branches_plum.001:41",
+          "gapMetersVertexToSurface": 0.32752934098243713
+        },
+        {
+          "id": "Sakura_petal_pink.001:1081",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              5.573829174041748,
+              9.043539047241211,
+              10.904888153076172
+            ],
+            [
+              5.915515899658203,
+              9.573792457580566,
+              11.575124740600586
+            ]
+          ],
+          "parent": "Branches_plum.001:41",
+          "gapMetersVertexToSurface": 0.44024884700775146
+        },
+        {
+          "id": "Sakura_petal_pink.001:1082",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -5.491452217102051,
+              10.045967102050781,
+              9.958366394042969
+            ],
+            [
+              -4.975175857543945,
+              10.572855949401855,
+              10.52957820892334
+            ]
+          ],
+          "parent": "Branches_plum.001:42",
+          "gapMetersVertexToSurface": 0.49020710587501526
+        },
+        {
+          "id": "Sakura_petal_pink.001:1083",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -4.704666614532471,
+              9.834587097167969,
+              10.002860069274902
+            ],
+            [
+              -4.173941135406494,
+              10.265557289123535,
+              10.614093780517578
+            ]
+          ],
+          "parent": "Branches_plum.001:42",
+          "gapMetersVertexToSurface": 0.6711713671684265
+        },
+        {
+          "id": "Sakura_petal_pink.001:1084",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -4.72136116027832,
+              10.604889869689941,
+              10.340536117553711
+            ],
+            [
+              -4.407900333404541,
+              11.067694664001465,
+              10.898173332214355
+            ]
+          ],
+          "parent": "Branches_plum.001:42",
+          "gapMetersVertexToSurface": 0.20451977849006653
+        },
+        {
+          "id": "Sakura_petal_pink.001:1085",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -6.5099568367004395,
+              7.351779937744141,
+              10.268837928771973
+            ],
+            [
+              -6.060427665710449,
+              7.842403411865234,
+              10.928791046142578
+            ]
+          ],
+          "parent": "Branches_plum.001:43",
+          "gapMetersVertexToSurface": 0.6405386328697205
+        },
+        {
+          "id": "Sakura_petal_pink.001:1086",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -5.66137170791626,
+              7.451843738555908,
+              10.535358428955078
+            ],
+            [
+              -5.183004856109619,
+              7.842098236083984,
+              11.113415718078613
+            ]
+          ],
+          "parent": "Branches_plum.001:43",
+          "gapMetersVertexToSurface": 0.47041597962379456
+        },
+        {
+          "id": "Sakura_petal_pink.001:1087",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -5.352881908416748,
+              8.203782081604004,
+              10.760465621948242
+            ],
+            [
+              -4.944234371185303,
+              8.741117477416992,
+              11.291584968566895
+            ]
+          ],
+          "parent": "Branches_plum.001:43",
+          "gapMetersVertexToSurface": 0.316247820854187
+        },
+        {
+          "id": "Sakura_petal_pink.001:1088",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -9.796756744384766,
+              -0.8137291073799133,
+              10.211926460266113
+            ],
+            [
+              -9.357536315917969,
+              -0.3219046890735626,
+              10.857284545898438
+            ]
+          ],
+          "parent": "Branches_plum.001:44",
+          "gapMetersVertexToSurface": 0.6830858588218689
+        },
+        {
+          "id": "Sakura_petal_pink.001:1089",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -8.913734436035156,
+              -0.7729970812797546,
+              10.84904956817627
+            ],
+            [
+              -8.400192260742188,
+              -0.33144527673721313,
+              11.357365608215332
+            ]
+          ],
+          "parent": "Branches_plum.001:44",
+          "gapMetersVertexToSurface": 0.4872394800186157
+        },
+        {
+          "id": "Sakura_petal_pink.001:1090",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -8.645014762878418,
+              0.05559774860739708,
+              10.236106872558594
+            ],
+            [
+              -8.28989028930664,
+              0.5905976295471191,
+              10.875568389892578
+            ]
+          ],
+          "parent": "Branches_plum.001:44",
+          "gapMetersVertexToSurface": 0.5990654826164246
+        },
+        {
+          "id": "Sakura_petal_pink.001:1091",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              8.250073432922363,
+              6.615719318389893,
+              10.206340789794922
+            ],
+            [
+              8.79006576538086,
+              7.183476448059082,
+              10.789725303649902
+            ]
+          ],
+          "parent": "Branches_plum.001:45",
+          "gapMetersVertexToSurface": 0.24385958909988403
+        },
+        {
+          "id": "Sakura_petal_pink.001:1092",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              8.98294734954834,
+              6.35197639465332,
+              10.004989624023438
+            ],
+            [
+              9.442561149597168,
+              6.704596996307373,
+              10.595935821533203
+            ]
+          ],
+          "parent": "Branches_plum.001:45",
+          "gapMetersVertexToSurface": 0.6645113825798035
+        },
+        {
+          "id": "Sakura_petal_pink.001:1093",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              9.121102333068848,
+              7.172306060791016,
+              9.544585227966309
+            ],
+            [
+              9.619068145751953,
+              7.814416885375977,
+              10.137212753295898
+            ]
+          ],
+          "parent": "Branches_plum.001:45",
+          "gapMetersVertexToSurface": 0.7327709197998047
+        },
+        {
+          "id": "Sakura_petal_pink.001:1094",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              0.635097086429596,
+              -10.013591766357422,
+              10.324671745300293
+            ],
+            [
+              1.0736788511276245,
+              -9.531825065612793,
+              10.929156303405762
+            ]
+          ],
+          "parent": "Branches_plum.001:46",
+          "gapMetersVertexToSurface": 0.6027020215988159
+        },
+        {
+          "id": "Sakura_petal_pink.001:1095",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              1.3348344564437866,
+              -9.966111183166504,
+              10.606650352478027
+            ],
+            [
+              1.8546466827392578,
+              -9.541967391967773,
+              11.288106918334961
+            ]
+          ],
+          "parent": "Branches_plum.001:46",
+          "gapMetersVertexToSurface": 0.42109182476997375
+        },
+        {
+          "id": "Sakura_petal_pink.001:1096",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              1.6842302083969116,
+              -9.272655487060547,
+              10.217392921447754
+            ],
+            [
+              2.1056177616119385,
+              -8.696617126464844,
+              10.807344436645508
+            ]
+          ],
+          "parent": "Branches_plum.001:46",
+          "gapMetersVertexToSurface": 0.6626574993133545
+        },
+        {
+          "id": "Sakura_petal_pink.001:1097",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              9.489748001098633,
+              -4.483063220977783,
+              10.046073913574219
+            ],
+            [
+              9.910140037536621,
+              -4.033432960510254,
+              10.651314735412598
+            ]
+          ],
+          "parent": "Branches_plum.001:47",
+          "gapMetersVertexToSurface": 0.45941492915153503
+        },
+        {
+          "id": "Sakura_petal_pink.001:1098",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              10.109067916870117,
+              -4.4859113693237305,
+              9.867981910705566
+            ],
+            [
+              10.663458824157715,
+              -4.057672023773193,
+              10.543418884277344
+            ]
+          ],
+          "parent": "Branches_plum.001:47",
+          "gapMetersVertexToSurface": 0.3967585861682892
+        },
+        {
+          "id": "Sakura_petal_pink.001:1099",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              10.266737937927246,
+              -3.935166120529175,
+              10.227901458740234
+            ],
+            [
+              10.700963973999023,
+              -3.3513195514678955,
+              10.822454452514648
+            ]
+          ],
+          "parent": "Branches_plum.001:47",
+          "gapMetersVertexToSurface": 0.12902407348155975
+        },
+        {
+          "id": "Sakura_petal_pink.001:1100",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              6.305688858032227,
+              5.571803569793701,
+              9.967845916748047
+            ],
+            [
+              6.795602798461914,
+              6.072089672088623,
+              10.499250411987305
+            ]
+          ],
+          "parent": "Branches_plum.001:48",
+          "gapMetersVertexToSurface": 0.562937319278717
+        },
+        {
+          "id": "Sakura_petal_pink.001:1101",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              6.886438846588135,
+              5.649789810180664,
+              10.201658248901367
+            ],
+            [
+              7.438711166381836,
+              6.071444988250732,
+              10.890069007873535
+            ]
+          ],
+          "parent": "Branches_plum.001:48",
+          "gapMetersVertexToSurface": 0.2796546220779419
+        },
+        {
+          "id": "Sakura_petal_pink.001:1102",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              7.364956378936768,
+              6.327542304992676,
+              10.35051155090332
+            ],
+            [
+              7.6745285987854,
+              6.79706335067749,
+              10.935114860534668
+            ]
+          ],
+          "parent": "Branches_plum.001:48",
+          "gapMetersVertexToSurface": 0.5180814862251282
+        },
+        {
+          "id": "Sakura_petal_blush.001:1105",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -8.38956356048584,
+              3.9299840927124023,
+              9.858362197875977
+            ],
+            [
+              -8.177361488342285,
+              4.536502838134766,
+              10.442805290222168
+            ]
+          ],
+          "parent": "Branches_plum.001:39",
+          "gapMetersVertexToSurface": 0.3793052136898041
+        },
+        {
+          "id": "Sakura_petal_blush.001:1106",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -8.95827865600586,
+              4.514998435974121,
+              10.03874397277832
+            ],
+            [
+              -8.36976146697998,
+              4.6236162185668945,
+              10.62333869934082
+            ]
+          ],
+          "parent": "Branches_plum.001:39",
+          "gapMetersVertexToSurface": 0.2557554841041565
+        },
+        {
+          "id": "Sakura_petal_blush.001:1107",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -9.53877067565918,
+              4.041681289672852,
+              10.204209327697754
+            ],
+            [
+              -9.376270294189453,
+              4.611106872558594,
+              10.750344276428223
+            ]
+          ],
+          "parent": "Branches_plum.001:39",
+          "gapMetersVertexToSurface": 0.6932666897773743
+        },
+        {
+          "id": "Sakura_petal_blush.001:1108",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -6.9029459953308105,
+              -5.32659912109375,
+              10.606607437133789
+            ],
+            [
+              -6.701847553253174,
+              -4.639179229736328,
+              11.28277587890625
+            ]
+          ],
+          "parent": "Branches_plum.001:40",
+          "gapMetersVertexToSurface": 0.15298332273960114
+        },
+        {
+          "id": "Sakura_petal_blush.001:1109",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -7.40410852432251,
+              -4.59771728515625,
+              10.572884559631348
+            ],
+            [
+              -6.813543796539307,
+              -4.492250919342041,
+              11.16070556640625
+            ]
+          ],
+          "parent": "Branches_plum.001:40",
+          "gapMetersVertexToSurface": 0.36148717999458313
+        },
+        {
+          "id": "Sakura_petal_blush.001:1110",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -7.921140670776367,
+              -5.234346866607666,
+              10.567660331726074
+            ],
+            [
+              -7.785070419311523,
+              -4.569318771362305,
+              11.21528434753418
+            ]
+          ],
+          "parent": "Branches_plum.001:40",
+          "gapMetersVertexToSurface": 0.61507248878479
+        },
+        {
+          "id": "Sakura_petal_blush.001:1111",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              5.673079013824463,
+              8.668760299682617,
+              11.214447021484375
+            ],
+            [
+              5.958633899688721,
+              9.305834770202637,
+              11.79934024810791
+            ]
+          ],
+          "parent": "Branches_plum.001:41",
+          "gapMetersVertexToSurface": 0.25299036502838135
+        },
+        {
+          "id": "Sakura_petal_blush.001:1112",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              5.012667179107666,
+              9.546966552734375,
+              11.1963529586792
+            ],
+            [
+              5.68349552154541,
+              9.804373741149902,
+              11.821863174438477
+            ]
+          ],
+          "parent": "Branches_plum.001:41",
+          "gapMetersVertexToSurface": 0.4390886723995209
+        },
+        {
+          "id": "Sakura_petal_blush.001:1113",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              4.416172504425049,
+              8.739913940429688,
+              11.465155601501465
+            ],
+            [
+              4.794799327850342,
+              9.370270729064941,
+              11.975102424621582
+            ]
+          ],
+          "parent": "Branches_plum.001:41",
+          "gapMetersVertexToSurface": 0.5712215304374695
+        },
+        {
+          "id": "Sakura_petal_blush.001:1114",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -4.71120548248291,
+              10.341264724731445,
+              10.089910507202148
+            ],
+            [
+              -4.384198188781738,
+              10.946331024169922,
+              10.614513397216797
+            ]
+          ],
+          "parent": "Branches_plum.001:42",
+          "gapMetersVertexToSurface": 0.30578485131263733
+        },
+        {
+          "id": "Sakura_petal_blush.001:1115",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -5.125916004180908,
+              10.851468086242676,
+              10.169449806213379
+            ],
+            [
+              -4.540266990661621,
+              11.017661094665527,
+              10.727774620056152
+            ]
+          ],
+          "parent": "Branches_plum.001:42",
+          "gapMetersVertexToSurface": 0.25974008440971375
+        },
+        {
+          "id": "Sakura_petal_blush.001:1116",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -5.464148998260498,
+              10.40446662902832,
+              10.070305824279785
+            ],
+            [
+              -5.148134708404541,
+              10.97799015045166,
+              10.536139488220215
+            ]
+          ],
+          "parent": "Branches_plum.001:42",
+          "gapMetersVertexToSurface": 0.4372990131378174
+        },
+        {
+          "id": "Sakura_petal_blush.001:1117",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -5.419834136962891,
+              7.8196539878845215,
+              10.28130054473877
+            ],
+            [
+              -5.323034286499023,
+              8.422890663146973,
+              10.895503044128418
+            ]
+          ],
+          "parent": "Branches_plum.001:43",
+          "gapMetersVertexToSurface": 0.3221316337585449
+        },
+        {
+          "id": "Sakura_petal_blush.001:1118",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -5.97808313369751,
+              8.735029220581055,
+              10.332372665405273
+            ],
+            [
+              -5.3698410987854,
+              8.836919784545898,
+              10.93905258178711
+            ]
+          ],
+          "parent": "Branches_plum.001:43",
+          "gapMetersVertexToSurface": 0.5889833569526672
+        },
+        {
+          "id": "Sakura_petal_blush.001:1119",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -6.369541645050049,
+              7.891296863555908,
+              10.2155179977417
+            ],
+            [
+              -6.177360534667969,
+              8.47376537322998,
+              10.755224227905273
+            ]
+          ],
+          "parent": "Branches_plum.001:43",
+          "gapMetersVertexToSurface": 0.4783073961734772
+        },
+        {
+          "id": "Sakura_petal_blush.001:1120",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -8.648177146911621,
+              -0.341231107711792,
+              10.75220775604248
+            ],
+            [
+              -8.322518348693848,
+              0.27116504311561584,
+              11.286437034606934
+            ]
+          ],
+          "parent": "Branches_plum.001:44",
+          "gapMetersVertexToSurface": 0.22243785858154297
+        },
+        {
+          "id": "Sakura_petal_blush.001:1121",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -9.264693260192871,
+              0.34944358468055725,
+              10.693208694458008
+            ],
+            [
+              -8.670446395874023,
+              0.631572961807251,
+              11.22347354888916
+            ]
+          ],
+          "parent": "Branches_plum.001:44",
+          "gapMetersVertexToSurface": 0.27606984972953796
+        },
+        {
+          "id": "Sakura_petal_blush.001:1122",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              -9.758309364318848,
+              -0.264344185590744,
+              10.349891662597656
+            ],
+            [
+              -9.619105339050293,
+              0.35643208026885986,
+              10.950933456420898
+            ]
+          ],
+          "parent": "Branches_plum.001:44",
+          "gapMetersVertexToSurface": 0.5882730484008789
+        },
+        {
+          "id": "Sakura_petal_blush.001:1123",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              9.348737716674805,
+              6.862733840942383,
+              10.113012313842773
+            ],
+            [
+              9.460441589355469,
+              7.449399471282959,
+              10.706206321716309
+            ]
+          ],
+          "parent": "Branches_plum.001:45",
+          "gapMetersVertexToSurface": 0.4780227839946747
+        },
+        {
+          "id": "Sakura_petal_blush.001:1124",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              8.508700370788574,
+              7.437802791595459,
+              9.81246566772461
+            ],
+            [
+              9.150542259216309,
+              7.688644886016846,
+              10.393887519836426
+            ]
+          ],
+          "parent": "Branches_plum.001:45",
+          "gapMetersVertexToSurface": 0.4060712456703186
+        },
+        {
+          "id": "Sakura_petal_blush.001:1125",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              7.95720100402832,
+              6.910958290100098,
+              10.130270957946777
+            ],
+            [
+              8.125462532043457,
+              7.584368705749512,
+              10.780975341796875
+            ]
+          ],
+          "parent": "Branches_plum.001:45",
+          "gapMetersVertexToSurface": 0.6688549518585205
+        },
+        {
+          "id": "Sakura_petal_blush.001:1126",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              1.78746497631073,
+              -9.652527809143066,
+              10.379724502563477
+            ],
+            [
+              1.971423864364624,
+              -8.986120223999023,
+              11.039112091064453
+            ]
+          ],
+          "parent": "Branches_plum.001:46",
+          "gapMetersVertexToSurface": 0.5024377107620239
+        },
+        {
+          "id": "Sakura_petal_blush.001:1127",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              1.0736610889434814,
+              -8.858173370361328,
+              10.180832862854004
+            ],
+            [
+              1.6990758180618286,
+              -8.549914360046387,
+              10.711527824401855
+            ]
+          ],
+          "parent": "Branches_plum.001:46",
+          "gapMetersVertexToSurface": 0.691199004650116
+        },
+        {
+          "id": "Sakura_petal_blush.001:1128",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              0.7482934594154358,
+              -9.632730484008789,
+              10.645941734313965
+            ],
+            [
+              0.9516794681549072,
+              -8.929126739501953,
+              11.320197105407715
+            ]
+          ],
+          "parent": "Branches_plum.001:46",
+          "gapMetersVertexToSurface": 0.3905974328517914
+        },
+        {
+          "id": "Sakura_petal_blush.001:1129",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              10.801082611083984,
+              -4.145042419433594,
+              10.226451873779297
+            ],
+            [
+              10.96517276763916,
+              -3.5652434825897217,
+              10.798492431640625
+            ]
+          ],
+          "parent": "Branches_plum.001:47",
+          "gapMetersVertexToSurface": 0.5599842667579651
+        },
+        {
+          "id": "Sakura_petal_blush.001:1130",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              9.882532119750977,
+              -3.334150552749634,
+              9.864347457885742
+            ],
+            [
+              10.458588600158691,
+              -3.191598892211914,
+              10.422425270080566
+            ]
+          ],
+          "parent": "Branches_plum.001:47",
+          "gapMetersVertexToSurface": 0.565292477607727
+        },
+        {
+          "id": "Sakura_petal_blush.001:1131",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              9.55805492401123,
+              -4.0974650382995605,
+              10.044262886047363
+            ],
+            [
+              9.680159568786621,
+              -3.510042667388916,
+              10.616308212280273
+            ]
+          ],
+          "parent": "Branches_plum.001:47",
+          "gapMetersVertexToSurface": 0.4164733588695526
+        },
+        {
+          "id": "Sakura_petal_blush.001:1132",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              7.358590602874756,
+              5.8525824546813965,
+              9.877400398254395
+            ],
+            [
+              7.7598466873168945,
+              6.5431904792785645,
+              10.457764625549316
+            ]
+          ],
+          "parent": "Branches_plum.001:48",
+          "gapMetersVertexToSurface": 0.6517981290817261
+        },
+        {
+          "id": "Sakura_petal_blush.001:1133",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              6.717089653015137,
+              6.827960014343262,
+              10.513894081115723
+            ],
+            [
+              7.355619430541992,
+              7.029175281524658,
+              11.124205589294434
+            ]
+          ],
+          "parent": "Branches_plum.001:48",
+          "gapMetersVertexToSurface": 0.5210744738578796
+        },
+        {
+          "id": "Sakura_petal_blush.001:1134",
+          "triangles": 10,
+          "boundsBlenderMeters": [
+            [
+              6.329311847686768,
+              5.895452499389648,
+              10.101286888122559
+            ],
+            [
+              6.627607822418213,
+              6.597965240478516,
+              10.724593162536621
+            ]
+          ],
+          "parent": "Branches_plum.001:48",
+          "gapMetersVertexToSurface": 0.4291481375694275
+        }
+      ],
+      "unresolved": [],
+      "method": "Triangle BVH intersections and coordinate-weld component graph; not manifold weld or solid containment proof. Near/tangent contacts and original ornamental seams require visual review.",
+      "nativeGLBImport": {
+        "triangles": 58212,
+        "boundsYUpMeters": [
+          [
+            -14.275399208068848,
+            -1.026049256324768,
+            -13.268314361572266
+          ],
+          [
+            13.287308692932129,
+            24.86863899230957,
+            11.898303031921387
+          ]
+        ],
+        "sha256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770"
+      }
+    }
+  },
+  "status": "AUDIT_COMPLETE_REVIEW_REQUIRED"
+}
