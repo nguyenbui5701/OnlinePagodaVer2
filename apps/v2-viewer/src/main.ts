@@ -1,11 +1,11 @@
 import './style.css';
 import {
-  AgXToneMapping, DirectionalLight, Group, PCFShadowMap, PerspectiveCamera, Scene, SRGBColorSpace,
+  AgXToneMapping, Color, DirectionalLight, Group, PCFShadowMap, PerspectiveCamera, Scene, SRGBColorSpace,
   Mesh, Raycaster, Vector3, WebGLRenderer,
 } from 'three';
 import { loadSakura, parseTreeRevision, type Profile } from './asset.ts';
 import { capture, createCinematicRoutes, parseCinematicSeed, type CameraPose } from './camera.ts';
-import { bindGoldEmphasis, createTwilight, referenceViews, setupLighting } from './lighting.ts';
+import { addR18WarmFill, bindGoldEmphasis, createTwilight, referenceViews, setupLighting } from './lighting.ts';
 import { LookTimeline, lookOrder, parseLook } from './twilight.ts';
 import { createSeatScene, seatPose } from './seat-scene.ts';
 import { diversityEnabled } from './avatar-look.ts';
@@ -31,6 +31,8 @@ import { createGiftFx } from './gift-fx.ts';
 import { fxProfiles, richAmbientProfiles } from './fx-profiles.ts';
 import { blessingEnabled } from './gift-blessing.ts';
 import { createBlessingCloud } from './blessing-cloud.ts';
+import { createLotusBatches } from './lotus-batches.ts';
+import { lushLotus, parseDensity } from './lotus-density.ts';
 import { botanicalLayout, botanicalsEnabled } from './botanical-layout.ts';
 import { createBotanicalScene } from './botanical-scene.ts';
 import { createPresenceBubbles } from './presence-bubbles.ts';
@@ -44,6 +46,7 @@ const overlayMode = document.body.hasAttribute('data-overlay');
 const overlaySettings = overlayMode ? overlayContext.settings : undefined;
 const query = overlaySettings?.query ?? new URLSearchParams(location.search);
 const requestedTree = parseTreeRevision(query.get('tree'));
+const requestedDensity = parseDensity(query.get('density'));
 const treeLoading = `Đang tải Sakura ${requestedTree}…`;
 const liveRequested = query.get('source') === 'live';
 const profile: Profile = query.get('profile') === 'quality' ? 'quality' : 'eco';
@@ -146,6 +149,10 @@ async function boot() {
   const rig = setupLighting(scene, profile, !!comparison);
   const twilight = look === 'legacy' ? undefined : createTwilight(scene, rig);
   let gold: ReturnType<typeof bindGoldEmphasis> | undefined;
+  let lotus: ReturnType<typeof createLotusBatches> | undefined;
+  const warmRim = new Color('#ffd297');
+  let r18Fill: ReturnType<typeof addR18WarmFill> | undefined;
+  let world: import('./live-settings.ts').WorldApplied | undefined;
 
   let req = 0;
   let lost = false;
@@ -248,11 +255,19 @@ async function boot() {
         const weights = timeline.update(atMs, routeTime, mode === 'GIFT_TRANSITION' || mode === 'GIFT_FOCUS', look);
         const appearance = twilight.update(weights);
         renderer.toneMappingExposure = appearance.exposure;
-        gold?.update(appearance.veinEmissive);
-        water?.setAppearance(twilight.deepWater, twilight.horizon, twilight.reflection);
+        gold?.update(appearance.veinEmissive * (r18Fill ? 1.32 : 1));
+        if (r18Fill) {
+          rig.directionals[1].color.lerp(warmRim, .24);
+          rig.directionals[1].intensity *= 1.12;
+        }
+        const baseReflection = twilight.reflection;
+        const reflection = r18Fill ? {
+          rose: baseReflection.rose, gold: baseReflection.gold * 1.58, streaks: baseReflection.streaks * 1.12,
+        } : baseReflection;
+        water?.setAppearance(twilight.deepWater, twilight.horizon, reflection);
         report.appearance = { look, weights: [...weights], order: lookOrder,
           exposure: renderer.toneMappingExposure, fog: rig.fog?.color.toArray(), fogDensity: rig.fog?.density,
-          reflection: { ...twilight.reflection }, veinEmissive: appearance.veinEmissive };
+          reflection: { ...reflection }, veinEmissive: appearance.veinEmissive * (r18Fill ? 1.32 : 1) };
       }
       const live = director.move(atMs, cinematic, focus);
       pose = review?.fixed ?? (review?.angle !== undefined && reviewSeat ? seatPose(reviewSeat, review.angle, 5.35) : live);
@@ -318,6 +333,10 @@ async function boot() {
       routeId: cinematic?.routeId, direction: cinematic?.direction, cycle: cinematic?.cycle, routeFallback: cinematic?.fallback,
     });
     if (review && !review.draw) return;
+    if (lotus) {
+      lotus.group.visible = !review?.seatId;
+      report.lotusVisible = lotus.group.visible ? lotus.update(camera) : { pad: 0, leaf: 0, bloom: 0, bud: 0 };
+    }
     if (botanicals) {
       botanicals.group.visible = !review?.seatId;
       if (manual || now - lastReport >= 500) {
@@ -341,7 +360,7 @@ async function boot() {
       drawCalls: info.render.calls, trianglesDrawn: info.render.triangles,
       textures: info.memory.textures, geometries: info.memory.geometries, pointsDrawn: info.render.points,
       shaderPrograms: info.programs?.length,
-      lights: 1 + rig.directionals.length, shadowMaps: rig.directionals.filter(light => light.shadow.map).length,
+      lights: 1 + rig.directionals.length + Number(!!r18Fill), shadowMaps: rig.directionals.filter(light => light.shadow.map).length,
     });
     if (now - lastReport >= 500) {
       lastReport = now;
@@ -401,6 +420,9 @@ async function boot() {
     window.removeEventListener('pagehide', onPageHide);
     document.removeEventListener('visibilitychange', visibility);
     gold?.dispose();
+    lotus?.dispose();
+    r18Fill?.removeFromParent();
+    r18Fill?.dispose();
     botanicals?.dispose();
     communityNames?.dispose();
     nameplates?.dispose();
@@ -433,9 +455,13 @@ async function boot() {
     if (twilight) {
       gold = bindGoldEmphasis(asset.root);
       report.goldMaterial = gold.report;
+      if (asset.report.assetRevision === 'R18A' && query.get('r18light') !== 'off') {
+        r18Fill = addR18WarmFill(asset.root, profile);
+        report.r18Accent = { fill: r18Fill.intensity, emissive: 1.32, waterGold: 1.58, postprocess: false };
+      }
     }
     console.info(`Verified Sakura ${sakura.report.assetRevision}`, sakura.report.sha256, __REPO_REVISION__);
-    if (requestedTree === 'R17B') {
+    if (requestedTree !== 'R16') {
       const heading = document.querySelector('aside h1');
       if (heading) heading.textContent = `Sakura ${sakura.report.assetRevision}`;
       canvas.setAttribute('aria-label', `Cảnh 3D Sakura ${sakura.report.assetRevision}`);
@@ -443,12 +469,12 @@ async function boot() {
     if (sakura.report.fallbackReason) {
       const notice = document.createElement('p');
       notice.setAttribute('role', 'status');
-      notice.textContent = `Sakura R16 (${profile}) · thay thế R17B: ${sakura.report.fallbackReason}`;
+      notice.textContent = `Sakura ${sakura.report.assetRevision} (${profile}) · thay thế ${requestedTree}: ${sakura.report.fallbackReason}`;
       diagnostics?.before(notice);
-      document.title = 'OnlinePagoda V2 · Sakura R16 fallback';
+      document.title = 'OnlinePagoda V2 · Sakura ' + sakura.report.assetRevision + ' fallback';
       console.warn(notice.textContent);
-    } else if (requestedTree === 'R17B') {
-      document.title = 'OnlinePagoda V2 · Sakura R17B';
+    } else if (requestedTree !== 'R16') {
+      document.title = 'OnlinePagoda V2 · Sakura ' + requestedTree;
     }
     if (!comparison) {
       // Resolve the loaded tree's trunk pivot after scene attachment.
@@ -487,7 +513,21 @@ async function boot() {
       if (pair.slots) {
         report.communityLayout = pair.slots;
         report.communityPadRadius = pair.padRadius;
-        if (enableBotanicals && pair.padRadius !== undefined) {
+        if (requestedDensity === 'lush' && pair.padRadius !== undefined) {
+          const lowCameraSamples = Array.from({ length: 534 }, (_, i) => routes!.sample(i * .3).position)
+            .filter(point => point.y < 2.3).map(point => point.toArray());
+          const layout = lushLotus(profile, seed, tree.toArray(), pair.slots, pair.padRadius, lowCameraSamples, enableBotanicals);
+          lotus = createLotusBatches();
+          lotus.addPad(pair.preview.pad, layout);
+          environment.add(lotus.group);
+          if (enableBotanicals) {
+            const plants = await createBotanicalScene(profile, layout.filter(item => item.kind === 'bloom' || item.kind === 'bud'), abort.signal, lotus);
+            if (disposed) { plants.dispose(); return; }
+            botanicals = plants;
+            report.botanicals = plants.report;
+          }
+          report.lotusLayout = { existingPads: pair.slots.length, batches: lotus.batchCount, lowCameraSamples, instances: layout };
+        } else if (enableBotanicals && pair.padRadius !== undefined) {
           const layout = botanicalLayout(profile, seed, tree.toArray(), pair.slots, pair.padRadius);
           const plants = await createBotanicalScene(profile, layout, abort.signal);
           if (disposed) { plants.dispose(); return; }
@@ -498,12 +538,16 @@ async function boot() {
       }
       if (routes.rejected.length) console.warn('P0.9 cinematic clearance fallback', routes.rejected);
     }
+    world = { requestedTree, tree: asset.report.assetRevision, requestedDensity, density: lotus ? 'lush' : 'legacy',
+      fallback: !!asset.report.fallbackReason };
+    report.world = world;
     if (!lost) show('');
     if (overlaySettings) {
       overlayReceiver = createLiveReceiver({
         feed: entries => driver.enqueueLive(entries), sourceLost: () => driver.loseLiveSource(),
         receipt: () => driver.liveReceipt,
         audioStatus: () => audio?.applied,
+        worldStatus: () => world,
         presenceStatus: () => driver.presenceApplied,
         status: state => {
           updateLiveReport(report, state);

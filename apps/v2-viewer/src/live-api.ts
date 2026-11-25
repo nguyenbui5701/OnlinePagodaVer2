@@ -1,4 +1,4 @@
-import { validSettings, type SettingsSnapshot } from './live-settings.ts';
+import { migrateVisualSettings, type SettingsSnapshot } from './live-settings.ts';
 
 export const gatewayUrl = 'http://127.0.0.1:5203';
 export class GatewayError extends Error {
@@ -28,7 +28,8 @@ export async function postGateway(path: string, data: object = {}, signal?: Abor
 
 export function readSettings(value: unknown): SettingsSnapshot {
   const data = value as SettingsSnapshot | null;
-  if (!data || !Number.isSafeInteger(data.revision) || data.revision < 1 || !validSettings(data.settings) ||
+  const settings = migrateVisualSettings(data?.settings);
+  if (!data || !Number.isSafeInteger(data.revision) || data.revision < 1 || !settings ||
       !['', 'MISSING', 'INVALID'].includes(data.warning)) throw new Error('Invalid settings snapshot');
-  return data;
+  return { ...data, settings };
 }

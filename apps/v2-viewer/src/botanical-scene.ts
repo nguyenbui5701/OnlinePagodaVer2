@@ -5,6 +5,9 @@ import type { Profile } from './asset.ts';
 import { botanicalRadius, type BotanicalKind, type botanicalLayout } from './botanical-layout.ts';
 import { importVerifiedGlb, inspectMeshes } from './verified-glb.ts';
 
+import type { createLotusBatches } from './lotus-batches.ts';
+import type { LotusInstance } from './lotus-density.ts';
+
 type Plant = ReturnType<typeof botanicalLayout>[number];
 const kinds = ['bloom', 'bud'] as const;
 const epsilon = 1e-5;
@@ -42,7 +45,7 @@ async function loadBotanical(profile: Profile, kind: BotanicalKind, signal: Abor
   }
 }
 
-export async function createBotanicalScene(profile: Profile, plants: Plant[], signal: AbortSignal) {
+export async function createBotanicalScene(profile: Profile, plants: (Plant | LotusInstance)[], signal: AbortSignal, lush?: ReturnType<typeof createLotusBatches>) {
   const results = await Promise.allSettled(kinds.map(kind => loadBotanical(profile, kind, signal)));
   const sources = results.flatMap(result => result.status === 'fulfilled' ? [result.value] : []);
   const group = new Group();
@@ -64,6 +67,12 @@ export async function createBotanicalScene(profile: Profile, plants: Plant[], si
     for (const source of sources) {
       const instances = plants.filter(plant => plant.kind === source.kind);
       if (!instances.length) continue;
+      if (lush) {
+        const spec = manifest.profiles[profile][source.kind];
+        lush.add(source.kind, instances as LotusInstance[],
+          source.primitives.map(mesh => ({ mesh, local: mesh.matrixWorld })), spec.bounds[1][1]);
+        continue;
+      }
       for (const primitive of source.primitives) {
         const batch = new InstancedMesh(primitive.geometry, primitive.material, instances.length);
         batches.push(batch);
@@ -81,9 +90,9 @@ export async function createBotanicalScene(profile: Profile, plants: Plant[], si
     const frustum = new Frustum();
     const cameraMatrix = new Matrix4();
     const bounds = plants.map(plant => {
-      const height = manifest.profiles[profile][plant.kind].bounds[1][1];
+      const height = manifest.profiles[profile][plant.kind as BotanicalKind].bounds[1][1];
       return new Sphere(new Vector3(plant.position[0], height / 2, plant.position[2]),
-        Math.hypot(botanicalRadius[plant.kind], height / 2));
+        Math.hypot(botanicalRadius[plant.kind as BotanicalKind], height / 2));
     });
     return {
       group, dispose, report: { source: manifest.source, profile, plants, assets: sources.map(source => source.report),

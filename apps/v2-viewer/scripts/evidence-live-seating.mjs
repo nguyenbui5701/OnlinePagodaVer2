@@ -30,7 +30,9 @@ const presence = new PresenceSettingsStore(path);
 const server = createGatewayServer({ gateway, presence, settings: new SettingsStore(join(tmp, 'visual.json')),
   audio: new AudioSettingsStore(join(tmp, 'audio.json')) });
 const port = Number(process.env.V2_FIXTURE_VIEWER_PORT ?? 5196);
-const out = new URL('../../../packages/v2-live-gateway/evidence/p10b7/', import.meta.url);
+const r18 = process.argv.includes('--r18a');
+const out = new URL(r18 ? '../../../packages/v2-live-gateway/evidence/p10b8/live/' :
+  '../../../packages/v2-live-gateway/evidence/p10b7/', import.meta.url);
 server.listen(0, '127.0.0.1');
 await once(server, 'listening');
 
@@ -83,6 +85,15 @@ async function run() {
   assert(await dashboard.locator('#presence-autoJoinChat').isChecked());
   assert(await dashboard.locator('#presence-seatExpiryEnabled').isChecked());
   assert.equal(await dashboard.locator('#presence-idleSeconds').inputValue(), '60');
+  if (r18) {
+    await dashboard.getByLabel('Cây Sakura').selectOption('r18a');
+    await dashboard.getByLabel('Mật độ đầm sen').selectOption('lush');
+    await dashboard.locator('#save').click();
+    await dashboard.locator('#apply').click();
+    await wait(() => gateway.overlayReady && gateway.appliedRevision === 2 &&
+      gateway.worldApplied?.tree === 'R18A' && gateway.worldApplied?.density === 'lush', 'R18a/lush applied');
+    await dashboard.locator('#world-applied').getByText(/R18A.*dày theo cụm/).waitFor();
+  }
   const owner = gateway.owner;
   const identity = await overlay.evaluate(() => window.fixtureScene = crypto.randomUUID());
 
@@ -224,6 +235,27 @@ async function run() {
   await counts(3, 0);
   const seatActors = await Promise.all(['seat-1', 'seat-2', 'seat-3'].map(idAt));
 
+  if (r18) await overlay.evaluate(() => {
+    const canvas = document.querySelector('#capture');
+    const stream = canvas.captureStream(12);
+    const recorder = new MediaRecorder(stream, { mimeType: 'video/webm;codecs=vp8', videoBitsPerSecond: 1300_000 });
+    const chunks = [];
+    recorder.ondataavailable = event => chunks.push(event.data);
+    window.worldRecording = new Promise((resolve, reject) => {
+      recorder.onstop = () => {
+        for (const track of stream.getTracks()) track.stop();
+        const reader = new FileReader();
+        reader.onload = () => resolve(String(reader.result).split(',')[1]);
+        reader.onerror = reject;
+        reader.readAsDataURL(new Blob(chunks, { type: recorder.mimeType }));
+      };
+    });
+    window.finishWorldRecording = () => {
+      recorder.stop();
+      return window.worldRecording;
+    };
+    recorder.start();
+  });
   gift(211, 14, 'Dương Mây', 0);
   gift(212, 15, 'Em Mây', 0);
   gift(213, 16, 'Lam Mây', 0);
@@ -259,10 +291,12 @@ async function run() {
     source: window.viewerReport.repoRevision, confirmedGiftCount: window.viewerReport.confirmedGiftCount,
     graphics: window.viewerReport.graphics, visual: window.viewerReport.appliedSettingsRevision,
     scene: window.fixtureScene, audio: window.viewerReport.audio?.applied?.revision,
+    ...(window.viewerReport.world?.tree === 'R18A' && { world: window.viewerReport.world,
+      treeSha256: window.viewerReport.asset.sha256, lotusVisible: window.viewerReport.lotusVisible }),
   }));
   assert.equal(runtime.scene, identity);
   assert.equal(runtime.confirmedGiftCount, 8);
-  assert.equal(runtime.visual, 1);
+  assert.equal(runtime.visual, r18 ? 2 : 1);
   assert.equal(runtime.audio, 1);
   assert.equal(gateway.owner, owner);
   assert.equal(gateway.connection, 1);
@@ -278,14 +312,17 @@ async function run() {
   await dashboard.locator('#disconnect').click();
   await wait(() => stops === 1 && gateway.presenceApplied?.waiting === 0, 'disconnect clears queue');
 
+  await mkdir(out, { recursive: true });
+  const video = r18 ? Buffer.from(await overlay.evaluate(() => window.finishWorldRecording()), 'base64') : undefined;
+  if (video) await writeFile(new URL('motion.webm', out), video);
   const photos = { 'member.png': firstPng, 'gift-focus.png': giftPng, 'dashboard.png': dashboardPng };
   const receipt = {
     method: 'Built Edge Overlay and Dashboard, loopback Gateway with mapped synthetic Member, Chat and Gift packets.',
     browser: browser.version(), member: { boundMs, visibleMs: memberNameMs, shot: visible.shot, goalMet: memberNameMs <= 500 },
     waiting: { full: 2, refilled: 2, clearedOnDisconnect: true }, focus, final,
     captures: Object.fromEntries(Object.entries(photos).map(([key, png]) => [key, sha(png)])),
+    ...(video && { motion: { file: 'motion.webm', sha256: sha(video), bytes: video.length, source: 'native WebGL canvas' } }),
   };
-  await mkdir(out, { recursive: true });
   for (const [key, png] of Object.entries(photos)) await writeFile(new URL(key, out), png);
   await writeFile(new URL('receipt.json', out), JSON.stringify(receipt, null, 2) + '\n');
   console.log(JSON.stringify(receipt, null, 2));

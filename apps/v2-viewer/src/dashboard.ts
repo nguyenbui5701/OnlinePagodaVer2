@@ -4,7 +4,7 @@ import { dashboardPresence } from './dashboard-presence.ts';
 import { dashboardAudio } from './dashboard-audio.ts';
 import { readAudioSnapshot, validAudioApplied, type AudioApplied, type AudioSnapshot } from './live-audio-settings.ts';
 import { GatewayError, postGateway, readSettings } from './live-api.ts';
-import { choices, type LiveSettings, type SettingsSnapshot } from './live-settings.ts';
+import { choices, validWorldApplied, type WorldApplied, type LiveSettings, type SettingsSnapshot } from './live-settings.ts';
 import { reasons, type LiveCounters } from './live-receiver.ts';
 
 type Status = {
@@ -12,23 +12,24 @@ type Status = {
   deliveryUncertain: boolean; receiver: 'overlay' | 'legacy' | null;
   appliedRevision: number | null; overlayReady: boolean; applyPending: boolean; canApply: boolean; canConnect: boolean; canDisconnect: boolean;
   presenceDesired?: PresenceSnapshot; presenceApplied?: PresenceApplied;
+  world?: WorldApplied;
   desired: SettingsSnapshot; audioDesired?: AudioSnapshot; audioApplied?: AudioApplied | null; namedProvider?: string;
 };
 
 const element = <T extends HTMLElement>(id: string) => document.getElementById(id)! as T;
 const fields = element<HTMLFieldSetElement>('settings-fields');
 const groupFields: [string, (keyof LiveSettings)[]][] = [
-  ['Cảnh 3D', ['profile', 'tree', 'look', 'botanicals', 'diversity', 'seats']],
+  ['Cảnh 3D', ['profile', 'tree', 'look', 'botanicals', 'density', 'diversity', 'seats']],
   ['Hiệu ứng', ['ambience', 'fx', 'presence', 'chatbubbles', 'gifticons', 'blessing']],
   ['Camera', ['shots', 'seed']],
 ];
 const labels: Record<keyof LiveSettings, string> = {
-  profile: 'Chất lượng', tree: 'Cây Sakura', look: 'Ánh sáng', botanicals: 'Hoa và nụ sen',
+  density: 'Mật độ đầm sen', profile: 'Chất lượng', tree: 'Cây Sakura', look: 'Ánh sáng', botanicals: 'Hoa và nụ sen',
   diversity: 'Đa dạng nhân vật', seats: 'Bố cục ghế', ambience: 'Không khí', fx: 'Hiệu ứng cảnh',
   presence: 'Tên phía trên đầu', chatbubbles: 'Bong bóng chat', gifticons: 'Biểu tượng quà',
   blessing: 'Hiệu ứng lời chúc', shots: 'Tuyến camera', seed: 'Seed camera',
 };
-const optionLabels: Record<string, string> = { eco: 'ECO', quality: 'QUALITY', r17b: 'R17B', r16: 'R16',
+const optionLabels: Record<string, string> = { eco: 'ECO', quality: 'QUALITY', r18a: 'R18a', lush: 'Dày theo cụm', r17b: 'R17B', r16: 'R16',
   twilight: 'Chuyển cảnh chiều tối', dusk: 'Tím-xanh', pink: 'Hồng', gold: 'Vàng', legacy: 'Ánh sáng gốc',
   on: 'Bật', off: 'Tắt', rings: 'Vòng đồng tâm', default: 'Mặc định', rich: 'Tăng hạt và sương', hero: 'Góc hero' };
 const inputs = new Map<keyof LiveSettings, HTMLInputElement | HTMLSelectElement>();
@@ -49,7 +50,9 @@ for (const [name, keys] of groupFields) {
       inputs.set(key, input);
     } else {
       const select = document.createElement('select');
-      for (const value of choices[key]) select.add(new Option(optionLabels[value], value));
+      for (const value of choices[key]) {
+      select.add(new Option(key === 'density' && value === 'legacy' ? 'Mặc định' : optionLabels[value], value));
+    }
       label.append(select);
       inputs.set(key, select);
     }
@@ -122,6 +125,11 @@ function render(state?: Status) {
     'Đã lưu ' + (desired.warning ? '—' : 'r' + desired.revision) +
     ' · Overlay ' + (state?.appliedRevision ? 'r' + state.appliedRevision : '—') +
     (pending ? ' · Chờ áp dụng' : '') + (dirty ? ' · Có chỉnh sửa chưa lưu' : '') : 'Chưa đọc được cấu hình từ Gateway.';
+  const world = state?.world;
+  element('world-applied').textContent = world ?
+    'Cây đang dùng ' + world.tree + (world.fallback ? ' · Đã dùng dự phòng thay cho ' + world.requestedTree : '') +
+    ' · Đầm sen ' + (world.density === 'lush' ? 'dày theo cụm' : 'mặc định') +
+    (world.density !== world.requestedDensity ? ' · Bố cục chưa áp dụng mật độ dày' : '') : '';
   const warning = element('settings-warning');
   warning.hidden = !desired?.warning;
   warning.textContent = desired?.warning === 'INVALID' ? 'Tệp cấu hình không đọc được. Đang dùng mặc định.' :
@@ -141,6 +149,7 @@ async function refresh() {
   try {
     const state = await (await postGateway('/status')).json() as Status;
     state.desired = readSettings(state.desired);
+    if (!validWorldApplied(state.world)) state.world = undefined;
     state.presenceDesired = readPresenceSnapshot(state.presenceDesired);
     if (!validPresenceApplied(state.presenceApplied, state.presenceDesired?.revision ?? 0)) state.presenceApplied = undefined;
     state.audioDesired = readAudioSnapshot(state.audioDesired);

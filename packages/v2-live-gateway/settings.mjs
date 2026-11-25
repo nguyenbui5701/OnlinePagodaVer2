@@ -2,7 +2,7 @@ import { randomUUID } from 'node:crypto';
 import { mkdirSync, readFileSync, renameSync, statSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { liveDefaults, validSettings } from '../../apps/v2-viewer/src/live-settings.ts';
+import { liveDefaults, migrateVisualSettings, validSettings } from '../../apps/v2-viewer/src/live-settings.ts';
 
 import { audioDefaults, patchAudio, validAudioSettings } from '../../apps/v2-viewer/src/live-audio-settings.ts';
 
@@ -19,9 +19,10 @@ export class SettingsStore {
     try {
       if (statSync(path).size > 4096) throw new Error('settings file too large');
       const data = JSON.parse(readFileSync(path, 'utf8'));
+      const settings = validate === validSettings ? migrateVisualSettings(data?.settings) : data?.settings;
       if (data?.version !== 1 || !Number.isSafeInteger(data.revision) || data.revision < 1 ||
-          !validate(data.settings)) throw new Error('invalid settings');
-      this.snapshot = { revision: data.revision, settings: data.settings, warning: '' };
+          !validate(settings)) throw new Error('invalid settings');
+      this.snapshot = { revision: data.revision, settings, warning: '' };
     } catch (error) {
       this.snapshot = { revision: 1, settings: defaults, warning: error.code === 'ENOENT' ? 'MISSING' : 'INVALID' };
     }

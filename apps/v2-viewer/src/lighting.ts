@@ -1,5 +1,5 @@
 import { AmbientLight, Color, DirectionalLight, FogExp2, Mesh, MeshStandardMaterial,
-  PlaneGeometry, Scene, ShaderMaterial, type Material, type Object3D } from 'three';
+  PlaneGeometry, PointLight, Scene, ShaderMaterial, type Material, type Object3D } from 'three';
 import type { Profile } from './asset.ts';
 import { looks, lookOrder } from './twilight.ts';
 
@@ -123,7 +123,14 @@ export function createTwilight(scene: Scene, rig: ReturnType<typeof setupLightin
   };
 }
 
-/** Binds only the verified, named R16 gold material. Must run after loadSakura's source checks. */
+export function addR18WarmFill(parent: Object3D, profile: Profile) {
+  const fill = new PointLight('#ffd097', profile === 'quality' ? 48 : 38, 20, 1.5);
+  fill.position.set(-3, 4.5, 4.5);
+  parent.add(fill);
+  return fill;
+}
+
+/** Binds only the verified, named gold material. Must run after loadSakura's source checks. */
 export function bindGoldEmphasis(root: Object3D) {
   const name = 'Golden_bark_veins';
   const originals = new Map<Mesh, Material | Material[]>();
