@@ -10,7 +10,7 @@ function worldGeometry(mesh, matrix) {
 // Clip each indexed triangle against the top of the swept fish slab. All remaining
 // points below this plane are included, even those deeper than the fish can reach.
 // Horizontal norm is convex, so its maximum over each clipped polygon is at a vertex.
-export function submergedRadius(mesh, vertices, origin, upperY) {
+function submergedRadius(mesh, vertices, origin, upperY) {
   const index = mesh.geometry.index;
   const length = index?.count ?? vertices.length;
   let far = 0;
@@ -35,10 +35,7 @@ export function submergedRadius(mesh, vertices, origin, upperY) {
 }
 
 function spans() {
-  return {
-    count: 0, minY: Infinity, maxY: -Infinity, minRadius: Infinity, maxRadius: 0,
-    minYMatrix: null, minRadiusMatrix: null, componentAtMinY: null,
-  };
+  return { count: 0, minY: Infinity, maxY: -Infinity, minYMatrix: null, componentAtMinY: null };
 }
 
 export function installProbe() {
@@ -112,6 +109,7 @@ export function installProbe() {
     const report = window.viewerReport;
     scene.updateMatrixWorld(true);
     const origin = new Vector3().fromArray(report.treeTarget);
+    const pondMatrix = scene.getObjectByName('B9 pond environment').matrixWorld.toArray();
     const tracks = report.pond.tracks;
     // Exact continuous extrema of the existing .57 m radial and .048 m depth sinusoids.
     const fish = {
@@ -131,12 +129,15 @@ export function installProbe() {
       const kind = sourceForGeometry.get(mesh.geometry);
       if (!['tree', 'pad', 'bloom', 'bud', 'terrain'].includes(kind)) return;
       for (let i = 0; i < (mesh.isInstancedMesh ? mesh.count : 1); i++) {
-        const matrix = mesh.isInstancedMesh ? combined.multiplyMatrices(mesh.matrixWorld, mesh.getMatrixAt(i, instance) ?? instance) : mesh.matrixWorld;
+        let matrix = mesh.matrixWorld;
+        if (mesh.isInstancedMesh) {
+          mesh.getMatrixAt(i, instance);
+          matrix = combined.multiplyMatrices(matrix, instance);
+        }
         const points = worldGeometry(mesh, matrix);
         if (kind === 'tree') {
           const { far, crossingEdges } = submergedRadius(mesh, points, origin, fish.top);
-          const radial = Math.max(...points.map(p => Math.hypot(p.x - origin.x, p.z - origin.z)));
-          tree.fullRadialExtent = Math.max(tree.fullRadialExtent, radial);
+          for (const p of points) tree.fullRadialExtent = Math.max(tree.fullRadialExtent, Math.hypot(p.x - origin.x, p.z - origin.z));
           tree.belowFishTopRadius = Math.max(tree.belowFishTopRadius, far);
           tree.crossingEdges += crossingEdges;
           tree.meshCount++;
@@ -200,7 +201,8 @@ export function installProbe() {
     };
     return {
       profile: report.profile, seed: report.seed, actualTree: report.asset.assetRevision, treeFailures: report.asset.failures,
-      origin: origin.toArray(), fish, tree, terrain, pad, localMin, acrossSeeds, worldTransforms: Object.fromEntries(stemByAsset),
+      origin: origin.toArray(), pondMatrix, fish, tree, terrain, pad, localMin, acrossSeeds,
+      worldTransforms: Object.fromEntries(stemByAsset),
       margins: { tree: fish.inner - tree.belowFishTopRadius, terrain: terrain.nearestAabb - fish.outer,
         measuredPad: Math.min(...Object.values(pad).map(value => value.minY)) - fish.top,
         allSeedsPad: Math.min(...Object.values(acrossSeeds)) - fish.top,

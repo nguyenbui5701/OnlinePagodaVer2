@@ -46,6 +46,11 @@ async function loadAsset(spec: Spec, signal: AbortSignal) {
   const { gltf, bytes, hash } = await importVerifiedGlb('b9', spec, signal, 'assets:b9');
   const root = gltf.scene;
   const resources = inspectMeshes(root);
+  function dispose() {
+    const skins = root.getObjectsByProperty('isSkinnedMesh', true) as SkinnedMesh[];
+    for (const skeleton of new Set(skins.map(mesh => mesh.skeleton))) skeleton.dispose();
+    resources.dispose();
+  }
   try {
     signal.throwIfAborted();
     const terrain = spec.kind === 'terrain';
@@ -76,15 +81,10 @@ async function loadAsset(spec: Spec, signal: AbortSignal) {
       if (terrain) addDistantHaze(material);
       else makeSubmerged(material);
     }
-    function dispose() {
-      for (const skeleton of new Set(skins.map(mesh => mesh.skeleton))) skeleton.dispose();
-      resources.dispose();
-    }
     return { root, clip, meshes, dispose, receipt: { file: spec.file, bytes, sha256: hash, triangles: resources.triangles,
       bounds, ...(terrain ? { layers: layerCounts } : { clip: 'swim_loop', bones: 8, keys: 61, animatedBounds: 'animatedBounds' in spec && spec.animatedBounds }) } };
   } catch (error) {
-    for (const mesh of root.getObjectsByProperty('isSkinnedMesh', true) as SkinnedMesh[]) mesh.skeleton.dispose();
-    resources.dispose();
+    dispose();
     throw error;
   }
 }

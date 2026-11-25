@@ -12,6 +12,7 @@ import r18a from '../src/sakura-r18a.json' with { type: 'json' };
 import p08 from '../src/p08-assets.json' with { type: 'json' };
 import p012b from '../src/p012b-botanicals.json' with { type: 'json' };
 import p012d from '../src/p012d-actors.json' with { type: 'json' };
+import { validWorldApplied } from '../src/live-settings.ts';
 
 const execution = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
 const appDiff = execFileSync('git', ['status', '--porcelain', '--untracked-files=no', '--', '.'], { encoding: 'utf8' }).trim();
@@ -110,8 +111,10 @@ try {
         density: index === 1 ? 'legacy' : 'lush', seats: index === 2 ? 'default' : 'rings' });
       const measured = await page.evaluate(pose => window.b9Probe.stepAll(4, pose), fixed);
       measured.assets = await page.evaluate(() => window.b9Probe.parserCalls());
+      measured.renderer = report.graphics;
       assert.equal(measured.actualTree, ['R18A', 'R17B', 'R16'][index]);
       assert.equal(report.world.pond, true);
+      assert.deepEqual(measured.pondMatrix, [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, ...measured.origin, 1]);
       assert.equal(measured.terrain.count, 30);
       assert.equal(measured.pad.realSeatPad.count, 15);
       assert.equal(measured.pad.anonymousPad.count, 45);
@@ -147,6 +150,7 @@ try {
       }));
       const code = kind === 'parser' ? 'IMPORT' : 'INTEGRITY';
       assert.deepEqual(outcome, { ...reference, world: { ...reference.world, pond: ['sanke', code] } });
+      assert(validWorldApplied(outcome.world));
       assert.deepEqual(test.errors, []);
       const rejection = audit.calls.find(call => call.kind === 'sanke');
       if (kind === 'sha') {
@@ -162,6 +166,7 @@ try {
       assert.deepEqual(audit.disposal.map(asset => asset.kind).sort(), expected);
       for (const asset of audit.disposal) for (const counts of Object.values(asset.counts)) {
         assert.equal(counts.disposed, counts.objects);
+        assert.equal(counts.calls, counts.objects);
       }
       const details = { profile, kind, stagedMutation: test.stagedMutation,
         status: outcome.world.pond, referenceHash: reference.hash, actualHash: outcome.hash,
