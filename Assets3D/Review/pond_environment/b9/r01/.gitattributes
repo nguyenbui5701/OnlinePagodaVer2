@@ -1,0 +1,6 @@
+*.glb -text
+*.blend -text
+*.png -text
+*.json -text
+*.log -text
+*.txt -text

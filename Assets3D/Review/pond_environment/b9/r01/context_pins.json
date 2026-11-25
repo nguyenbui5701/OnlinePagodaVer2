@@ -1,0 +1,51 @@
+[
+  {
+    "file": "tree_quality.glb",
+    "commit": "84f3a621d83fa7af5a4995b007446fec49287bf9",
+    "path": "Assets3D/Review/sakura_hero/r18-polish/r18a/sakura_hero_r18a.glb",
+    "bytes": 7152368,
+    "sha256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab"
+  },
+  {
+    "file": "tree_eco.glb",
+    "commit": "84f3a621d83fa7af5a4995b007446fec49287bf9",
+    "path": "Assets3D/Review/sakura_hero/r18-polish/r18a/sakura_hero_r18a_eco.glb",
+    "bytes": 2229632,
+    "sha256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847"
+  },
+  {
+    "file": "lotus_pad_01.glb",
+    "commit": "ce0db947e5e9ea4c6214bc900b0cdd9c6a83cced",
+    "path": "Assets3D/Review/lotus_pad_chibi/p5f/p02_baseline/lotus_pad_01.glb",
+    "bytes": 262108,
+    "sha256": "80f572c35ab7cd9db98076b656fe3902d08c1a20e5d5f2149b2e78d7538cc0c9"
+  },
+  {
+    "file": "lotus_bloom_p012b_eco.glb",
+    "bytes": 20924,
+    "sha256": "8dce16649f0dff541601047628ad7175f0b9ec028e7803b967cf2dee5efc0bd5",
+    "commit": "9a01b39afde642d55dcf9bc7639f3a84ef913e4d",
+    "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bloom_p012b_eco.glb"
+  },
+  {
+    "file": "lotus_bud_p012b_eco.glb",
+    "bytes": 8552,
+    "sha256": "c442cc04c3b0094a920c2b86fb202233782d5076a97e1110a84b345df3f0d082",
+    "commit": "9a01b39afde642d55dcf9bc7639f3a84ef913e4d",
+    "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bud_p012b_eco.glb"
+  },
+  {
+    "file": "lotus_bloom_p012b_quality.glb",
+    "bytes": 50004,
+    "sha256": "63edb12d02664a44ce4484b847ef07aeffab6a22a36cf44415b141f56804f0d0",
+    "commit": "9a01b39afde642d55dcf9bc7639f3a84ef913e4d",
+    "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bloom_p012b_quality.glb"
+  },
+  {
+    "file": "lotus_bud_p012b_quality.glb",
+    "bytes": 20940,
+    "sha256": "fe62a2f9aeb166d0eadf758c75eb47950a9053d8f2149d2a66ceaf5007a05f1a",
+    "commit": "9a01b39afde642d55dcf9bc7639f3a84ef913e4d",
+    "path": "Assets3D/Review/lotus_botanicals/p012b/lotus_bud_p012b_quality.glb"
+  }
+]

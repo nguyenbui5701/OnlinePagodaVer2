@@ -1,0 +1,5 @@
+_context/
+__pycache__/
+*.blend1
+local_procedural_receipt.json
+B9_Cycles_Evidence/*.receipt.json
