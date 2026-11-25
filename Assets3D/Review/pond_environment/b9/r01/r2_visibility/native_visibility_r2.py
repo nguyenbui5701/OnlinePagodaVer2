@@ -167,7 +167,7 @@ def main():
         try:layout=b.habitat(lod,d,[])
         finally:b.render=original
         archived=next(x for x in old['layout'] if x['profile']==lod)
-        req(layout==archived,'LAYOUT_MISMATCH '+lod)
+        req(json.loads(json.dumps(layout))==archived,'LAYOUT_MISMATCH '+lod)
         s=bpy.context.scene;b.at(s,POSE);fish=fishes(layout)
         clearance=obstacle_clearance(s,fish)
         water=bpy.data.objects['Water_ART_PROXY']
