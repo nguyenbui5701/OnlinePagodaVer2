@@ -1,0 +1,1536 @@
+{
+  "status": "B9_R2_FOCUSED_RENDER_COMPLETE_ART_REVIEW_PENDING",
+  "base": "1f7565a38fe4ae644bb602c2bcfc7ed433905642",
+  "executionHEAD": "1c0938432be5df78fc416890b2b699752e0d79d2",
+  "blenderVersion": "4.5.16 LTS",
+  "source": {
+    "path": "native_visibility_r2.py",
+    "bytes": 12646,
+    "sha256": "52f253175cd9a10da4799bf41e571dfd54fe84c1d9b3c4a584da8f60138e9703"
+  },
+  "runner": {
+    "path": "run_r2.ps1",
+    "bytes": 1836,
+    "sha256": "96599f6cadd50b6da0462bb2c9a9cbf7fe080755d3400d264dde09b2b4e2bbc0"
+  },
+  "r01NativeManifestSHA256": "2fb7ff2958ac644886d47d433074db9a06e23bcb87159ddf5e7de65a1eede795",
+  "profiles": [
+    {
+      "profile": "eco",
+      "layoutMatchesR01": true,
+      "originalLowWaterCamera": {
+        "positionYUp": [
+          10,
+          2.25,
+          30
+        ],
+        "targetYUp": [
+          2,
+          1.15,
+          13
+        ],
+        "verticalFovDegrees": 53,
+        "lensMM": 36.102413177490234
+      },
+      "originalProjection": [
+        {
+          "index": 0,
+          "verticesInFrustum": 0,
+          "verticesTotal": 896,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -1635.446434020996,
+              257.3830032348633
+            ],
+            [
+              -1437.074203491211,
+              326.6762161254883
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -2.1619791984558105,
+            0.21977907419204712,
+            7.913564205169678
+          ]
+        },
+        {
+          "index": 1,
+          "verticesInFrustum": 0,
+          "verticesTotal": 896,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -1136.5862846374512,
+              -128.8802433013916
+            ],
+            [
+              -794.3522071838379,
+              -16.622391939163208
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -1.3064849376678467,
+            -0.05170969292521477,
+            4.517394542694092
+          ]
+        },
+        {
+          "index": 2,
+          "verticesInFrustum": 0,
+          "verticesTotal": 896,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -1110.3654384613037,
+              429.8906707763672
+            ],
+            [
+              -1023.4798049926758,
+              477.23941802978516
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -1.4670897722244263,
+            0.3575991988182068,
+            14.085833549499512
+          ]
+        },
+        {
+          "index": 3,
+          "verticesInFrustum": 0,
+          "verticesTotal": 896,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              890.5323600769043,
+              -63.77030849456787
+            ],
+            [
+              1039.8209381103516,
+              46.075239181518555
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            1.3123494386672974,
+            -0.015332678332924843,
+            4.6724114418029785
+          ]
+        },
+        {
+          "index": 4,
+          "verticesInFrustum": 0,
+          "verticesTotal": 896,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -476.3495922088623,
+              561.0750198364258
+            ],
+            [
+              -450.53232192993164,
+              578.5675048828125
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -0.6429188847541809,
+            0.44339004158973694,
+            23.911174774169922
+          ]
+        },
+        {
+          "index": 5,
+          "verticesInFrustum": 0,
+          "verticesTotal": 896,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              1431.509714126587,
+              354.6969223022461
+            ],
+            [
+              1505.3820419311523,
+              413.16490173339844
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            2.0373356342315674,
+            0.3037382960319519,
+            11.11034870147705
+          ]
+        }
+      ],
+      "focusedCamera": {
+        "positionYUp": [
+          4.7,
+          3.4,
+          33.5
+        ],
+        "targetYUp": [
+          3.5,
+          0.1,
+          25
+        ],
+        "verticalFovDegrees": 53,
+        "lensMM": 36.102413177490234
+      },
+      "focusedProjection": [
+        {
+          "index": 0,
+          "verticesInFrustum": 0,
+          "verticesTotal": 896,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -1005.5471992492676,
+              410.8138656616211
+            ],
+            [
+              -904.8712348937988,
+              499.16595458984375
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -1.343096375465393,
+            0.34472501277923584,
+            7.589208126068115
+          ]
+        },
+        {
+          "index": 1,
+          "verticesInFrustum": 896,
+          "verticesTotal": 896,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              261.9955587387085,
+              266.8242645263672
+            ],
+            [
+              438.6626672744751,
+              351.79737091064453
+            ]
+          ],
+          "samples": 128,
+          "firstNonWaterHitSameFish": 121,
+          "centerNDC": [
+            0.520540177822113,
+            0.2487870156764984,
+            6.572271347045898
+          ]
+        },
+        {
+          "index": 2,
+          "verticesInFrustum": 0,
+          "verticesTotal": 896,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -1073.5098266601562,
+              645.518798828125
+            ],
+            [
+              -999.6412754058838,
+              704.9629211425781
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -1.4453073740005493,
+            0.5336747169494629,
+            12.122879981994629
+          ]
+        },
+        {
+          "index": 3,
+          "verticesInFrustum": 0,
+          "verticesTotal": 896,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              1292.4592781066895,
+              494.88452911376953
+            ],
+            [
+              1357.2074604034424,
+              557.3027038574219
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            1.8443912267684937,
+            0.40466299653053284,
+            8.535195350646973
+          ]
+        },
+        {
+          "index": 4,
+          "verticesInFrustum": 0,
+          "verticesTotal": 896,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -632.4784469604492,
+              870.0920867919922
+            ],
+            [
+              -599.8699522018433,
+              891.0511016845703
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -0.856561005115509,
+            0.6856338977813721,
+            20.936058044433594
+          ]
+        },
+        {
+          "index": 5,
+          "verticesInFrustum": 0,
+          "verticesTotal": 896,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              1250.9345626831055,
+              775.5950164794922
+            ],
+            [
+              1294.3860054016113,
+              816.7354583740234
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            1.7681500911712646,
+            0.6252011656761169,
+            16.3852596282959
+          ]
+        }
+      ],
+      "eligibleFish": [
+        1
+      ],
+      "fish": [
+        {
+          "index": 0,
+          "palette": "kohaku",
+          "centerYUp": [
+            -4,
+            -0.42,
+            28
+          ],
+          "scale": 0.67,
+          "yaw": 0.6,
+          "boundsYUp": [
+            [
+              -4.187994956970215,
+              -0.5345699787139893,
+              27.528589248657227
+            ],
+            [
+              -3.7946395874023438,
+              -0.26388996839523315,
+              28.290359497070312
+            ]
+          ],
+          "topClearanceM": 0.26388996839523315,
+          "floorClearanceM": 1.2654300212860108,
+          "treeSurfaceAABBLowerBoundM": 16.66664357288221,
+          "lotusSurfaceAABBLowerBoundM": 2.594151811197136,
+          "otherFishAABBLowerBoundM": 6.13152984189849
+        },
+        {
+          "index": 1,
+          "palette": "sanke",
+          "centerYUp": [
+            4,
+            -0.495,
+            28
+          ],
+          "scale": 0.8,
+          "yaw": 2.34,
+          "boundsYUp": [
+            [
+              3.482959270477295,
+              -0.6317999958992004,
+              27.703384399414062
+            ],
+            [
+              4.3055315017700195,
+              -0.3086000084877014,
+              28.31605339050293
+            ]
+          ],
+          "topClearanceM": 0.3086000084877014,
+          "floorClearanceM": 1.1682000041007996,
+          "treeSurfaceAABBLowerBoundM": 16.844858101403393,
+          "lotusSurfaceAABBLowerBoundM": 3.7756983669938986,
+          "otherFishAABBLowerBoundM": 6.014143322070272
+        },
+        {
+          "index": 2,
+          "palette": "yamabuki",
+          "centerYUp": [
+            -10,
+            -0.57,
+            24
+          ],
+          "scale": 0.93,
+          "yaw": 4.08,
+          "boundsYUp": [
+            [
+              -10.394729614257812,
+              -0.7290300130844116,
+              23.702821731567383
+            ],
+            [
+              -9.536616325378418,
+              -0.3533099889755249,
+              24.53060531616211
+            ]
+          ],
+          "topClearanceM": 0.3533099889755249,
+          "floorClearanceM": 1.0709699869155884,
+          "treeSurfaceAABBLowerBoundM": 12.878369290005038,
+          "lotusSurfaceAABBLowerBoundM": 2.652717780346584,
+          "otherFishAABBLowerBoundM": 6.13152984189849
+        },
+        {
+          "index": 3,
+          "palette": "kohaku",
+          "centerYUp": [
+            10,
+            -0.42,
+            25
+          ],
+          "scale": 0.67,
+          "yaw": 5.819999999999999,
+          "boundsYUp": [
+            [
+              9.823884010314941,
+              -0.5345699787139893,
+              24.60655975341797
+            ],
+            [
+              10.320588111877441,
+              -0.26388996839523315,
+              25.312211990356445
+            ]
+          ],
+          "topClearanceM": 0.26388996839523315,
+          "floorClearanceM": 1.2654300212860108,
+          "treeSurfaceAABBLowerBoundM": 13.759904871069475,
+          "lotusSurfaceAABBLowerBoundM": 1.6884657951940434,
+          "otherFishAABBLowerBoundM": 6.014143322070272
+        },
+        {
+          "index": 4,
+          "palette": "sanke",
+          "centerYUp": [
+            -14,
+            -0.495,
+            15
+          ],
+          "scale": 0.8,
+          "yaw": 7.56,
+          "boundsYUp": [
+            [
+              -14.527531623840332,
+              -0.6317999958992004,
+              14.701786041259766
+            ],
+            [
+              -13.603575706481934,
+              -0.3086000084877014,
+              15.210148811340332
+            ]
+          ],
+          "topClearanceM": 0.3086000084877014,
+          "floorClearanceM": 1.1682000041007996,
+          "treeSurfaceAABBLowerBoundM": 6.026698637587717,
+          "lotusSurfaceAABBLowerBoundM": 2.8376193749646306,
+          "otherFishAABBLowerBoundM": 9.078666563628156
+        },
+        {
+          "index": 5,
+          "palette": "yamabuki",
+          "centerYUp": [
+            14,
+            -0.57,
+            16
+          ],
+          "scale": 0.93,
+          "yaw": 9.299999999999999,
+          "boundsYUp": [
+            [
+              13.76154613494873,
+              -0.7290300130844116,
+              15.524550437927246
+            ],
+            [
+              14.253212928771973,
+              -0.3533099889755249,
+              16.66287612915039
+            ]
+          ],
+          "topClearanceM": 0.3533099889755249,
+          "floorClearanceM": 1.0709699869155884,
+          "treeSurfaceAABBLowerBoundM": 4.896652400212993,
+          "lotusSurfaceAABBLowerBoundM": 2.4293429014805583,
+          "otherFishAABBLowerBoundM": 8.656922180486294
+        }
+      ],
+      "clearance": {
+        "treeMeshInstances": 16,
+        "lotusMeshInstances": 449,
+        "method": "Evaluated mesh/triangle AABB surface lower bounds at frame 15; not continuous collision or solid containment certification."
+      },
+      "pairIdentity": {
+        "cameraMatrix": [
+          [
+            0.9901811480522156,
+            -0.05015994608402252,
+            0.1304810345172882,
+            4.699999809265137
+          ],
+          [
+            0.13979028165340424,
+            0.35529953241348267,
+            -0.9242407083511353,
+            -33.5
+          ],
+          [
+            9.570857884000361e-09,
+            0.9334056973457336,
+            0.3588227927684784,
+            3.4000000953674316
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "frame": 15,
+        "exposure": 0.0,
+        "seed": 9,
+        "samples": 32
+      },
+      "waterA": {
+        "principledMix": 0.2800000011920929,
+        "transparentRGBA": [
+          0.7699999809265137,
+          0.8100000023841858,
+          0.9300000071525574,
+          1.0
+        ]
+      },
+      "waterB": {
+        "principledMix": 0.10000000149011612,
+        "transparentRGBA": [
+          0.9700000286102295,
+          0.9800000190734863,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "profile": "quality",
+      "layoutMatchesR01": true,
+      "originalLowWaterCamera": {
+        "positionYUp": [
+          10,
+          2.25,
+          30
+        ],
+        "targetYUp": [
+          2,
+          1.15,
+          13
+        ],
+        "verticalFovDegrees": 53,
+        "lensMM": 36.102413177490234
+      },
+      "originalProjection": [
+        {
+          "index": 0,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -1635.446434020996,
+              257.34527587890625
+            ],
+            [
+              -1437.074203491211,
+              326.6762161254883
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -2.1619791984558105,
+            0.21977907419204712,
+            7.913564205169678
+          ]
+        },
+        {
+          "index": 1,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -1136.5862846374512,
+              -128.8802433013916
+            ],
+            [
+              -794.3522071838379,
+              -16.622391939163208
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -1.3064849376678467,
+            -0.05170969292521477,
+            4.517394542694092
+          ]
+        },
+        {
+          "index": 2,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -1110.3654384613037,
+              429.8906707763672
+            ],
+            [
+              -1023.4798049926758,
+              477.23941802978516
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -1.4670897722244263,
+            0.3575991988182068,
+            14.085833549499512
+          ]
+        },
+        {
+          "index": 3,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              890.4902172088623,
+              -63.77411365509033
+            ],
+            [
+              1039.8209381103516,
+              46.075239181518555
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            1.3123494386672974,
+            -0.015332678332924843,
+            4.6724114418029785
+          ]
+        },
+        {
+          "index": 4,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -476.3495922088623,
+              561.0706329345703
+            ],
+            [
+              -450.53232192993164,
+              578.5675048828125
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -0.6429188847541809,
+            0.44339004158973694,
+            23.911174774169922
+          ]
+        },
+        {
+          "index": 5,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              1431.509714126587,
+              354.6969223022461
+            ],
+            [
+              1505.3820419311523,
+              413.16490173339844
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            2.0373356342315674,
+            0.3037382960319519,
+            11.11034870147705
+          ]
+        },
+        {
+          "index": 6,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -16880.030364990234,
+              -2134.154052734375
+            ],
+            [
+              -12371.58462524414,
+              -1278.2791900634766
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -19.249292373657227,
+            -1.185765266418457,
+            1.5375252962112427
+          ]
+        },
+        {
+          "index": 7,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": null,
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            3.1369218826293945,
+            1.176688551902771,
+            -4.462192058563232
+          ]
+        },
+        {
+          "index": 8,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -1608.460578918457,
+              471.58348083496094
+            ],
+            [
+              -1536.211051940918,
+              501.36524200439453
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -2.1869843006134033,
+            0.378044456243515,
+            15.679842948913574
+          ]
+        },
+        {
+          "index": 9,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": null,
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -9.530471801757812,
+            2.4239847660064697,
+            -1.4379576444625854
+          ]
+        },
+        {
+          "index": 10,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -405.2633285522461,
+              605.1348876953125
+            ],
+            [
+              -363.72934341430664,
+              617.3377990722656
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -0.5382095575332642,
+            0.47672903537750244,
+            33.6346321105957
+          ]
+        },
+        {
+          "index": 11,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              2008.8116455078125,
+              459.1157531738281
+            ],
+            [
+              2168.2194900512695,
+              497.5742721557617
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            2.9142038822174072,
+            0.3690463602542877,
+            14.9359712600708
+          ]
+        }
+      ],
+      "focusedCamera": {
+        "positionYUp": [
+          4.7,
+          3.4,
+          33.5
+        ],
+        "targetYUp": [
+          3.5,
+          0.1,
+          25
+        ],
+        "verticalFovDegrees": 53,
+        "lensMM": 36.102413177490234
+      },
+      "focusedProjection": [
+        {
+          "index": 0,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -1005.5471992492676,
+              410.80955505371094
+            ],
+            [
+              -904.8712348937988,
+              499.16595458984375
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -1.343096375465393,
+            0.34472501277923584,
+            7.589208126068115
+          ]
+        },
+        {
+          "index": 1,
+          "verticesInFrustum": 2258,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              261.9955587387085,
+              266.8242645263672
+            ],
+            [
+              438.6626672744751,
+              351.79737091064453
+            ]
+          ],
+          "samples": 128,
+          "firstNonWaterHitSameFish": 117,
+          "centerNDC": [
+            0.520540177822113,
+            0.2487870156764984,
+            6.572271347045898
+          ]
+        },
+        {
+          "index": 2,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -1073.5098266601562,
+              645.518798828125
+            ],
+            [
+              -999.6412754058838,
+              704.9629211425781
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -1.4453073740005493,
+            0.5336747169494629,
+            12.122879981994629
+          ]
+        },
+        {
+          "index": 3,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              1292.4592781066895,
+              494.78790283203125
+            ],
+            [
+              1357.2074604034424,
+              557.3027038574219
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            1.8443912267684937,
+            0.40466299653053284,
+            8.535195350646973
+          ]
+        },
+        {
+          "index": 4,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -632.4784469604492,
+              870.0896453857422
+            ],
+            [
+              -599.8324871063232,
+              891.0511016845703
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -0.856561005115509,
+            0.6856338977813721,
+            20.936058044433594
+          ]
+        },
+        {
+          "index": 5,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              1250.9345626831055,
+              775.5950164794922
+            ],
+            [
+              1294.3860054016113,
+              816.7354583740234
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            1.7681500911712646,
+            0.6252011656761169,
+            16.3852596282959
+          ]
+        },
+        {
+          "index": 6,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -50759.84619140625,
+              -18190.096435546875
+            ],
+            [
+              -21342.729034423828,
+              -7108.988037109375
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -42.266475677490234,
+            -8.110004425048828,
+            0.4562472403049469
+          ]
+        },
+        {
+          "index": 7,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": null,
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -0.20889365673065186,
+            2.970747470855713,
+            -2.006857395172119
+          ]
+        },
+        {
+          "index": 8,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -2167.723560333252,
+              629.7695922851562
+            ],
+            [
+              -1990.9911346435547,
+              673.8071441650391
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -2.875417709350586,
+            0.508661687374115,
+            11.31824779510498
+          ]
+        },
+        {
+          "index": 9,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              3889.094581604004,
+              -124.62745666503906
+            ],
+            [
+              4641.887741088867,
+              84.86193656921387
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            5.766282558441162,
+            0.01573345810174942,
+            4.718625068664551
+          ]
+        },
+        {
+          "index": 10,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              -695.1515865325928,
+              939.6586608886719
+            ],
+            [
+              -638.1150770187378,
+              953.8372039794922
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            -0.9333814382553101,
+            0.7384229302406311,
+            28.4495906829834
+          ]
+        },
+        {
+          "index": 11,
+          "verticesInFrustum": 0,
+          "verticesTotal": 2258,
+          "projectedPixelBoundsBottomLeft": [
+            [
+              1478.1749153137207,
+              884.9542999267578
+            ],
+            [
+              1563.7802124023438,
+              909.0913391113281
+            ]
+          ],
+          "samples": 0,
+          "firstNonWaterHitSameFish": 0,
+          "centerNDC": [
+            2.122821569442749,
+            0.6979084610939026,
+            22.735336303710938
+          ]
+        }
+      ],
+      "eligibleFish": [
+        1
+      ],
+      "fish": [
+        {
+          "index": 0,
+          "palette": "kohaku",
+          "centerYUp": [
+            -4,
+            -0.42,
+            28
+          ],
+          "scale": 0.67,
+          "yaw": 0.6,
+          "boundsYUp": [
+            [
+              -4.187994956970215,
+              -0.5345699787139893,
+              27.528589248657227
+            ],
+            [
+              -3.7946395874023438,
+              -0.26388996839523315,
+              28.290359497070312
+            ]
+          ],
+          "topClearanceM": 0.26388996839523315,
+          "floorClearanceM": 1.2654300212860108,
+          "treeSurfaceAABBLowerBoundM": 17.36920347243534,
+          "lotusSurfaceAABBLowerBoundM": 1.878303129713124,
+          "otherFishAABBLowerBoundM": 6.13152984189849
+        },
+        {
+          "index": 1,
+          "palette": "sanke",
+          "centerYUp": [
+            4,
+            -0.495,
+            28
+          ],
+          "scale": 0.8,
+          "yaw": 2.34,
+          "boundsYUp": [
+            [
+              3.482959270477295,
+              -0.6317999958992004,
+              27.703384399414062
+            ],
+            [
+              4.3055315017700195,
+              -0.3086000084877014,
+              28.31605339050293
+            ]
+          ],
+          "topClearanceM": 0.3086000084877014,
+          "floorClearanceM": 1.1682000041007996,
+          "treeSurfaceAABBLowerBoundM": 17.538171858449914,
+          "lotusSurfaceAABBLowerBoundM": 1.9462454704394392,
+          "otherFishAABBLowerBoundM": 6.014143322070272
+        },
+        {
+          "index": 2,
+          "palette": "yamabuki",
+          "centerYUp": [
+            -10,
+            -0.57,
+            24
+          ],
+          "scale": 0.93,
+          "yaw": 4.08,
+          "boundsYUp": [
+            [
+              -10.394729614257812,
+              -0.7290300130844116,
+              23.702821731567383
+            ],
+            [
+              -9.536616325378418,
+              -0.3533099889755249,
+              24.53060531616211
+            ]
+          ],
+          "topClearanceM": 0.3533099889755249,
+          "floorClearanceM": 1.0709699869155884,
+          "treeSurfaceAABBLowerBoundM": 14.464390699184557,
+          "lotusSurfaceAABBLowerBoundM": 2.503792025342825,
+          "otherFishAABBLowerBoundM": 6.13152984189849
+        },
+        {
+          "index": 3,
+          "palette": "kohaku",
+          "centerYUp": [
+            10,
+            -0.42,
+            25
+          ],
+          "scale": 0.67,
+          "yaw": 5.819999999999999,
+          "boundsYUp": [
+            [
+              9.823884010314941,
+              -0.5345699787139893,
+              24.60655975341797
+            ],
+            [
+              10.320588111877441,
+              -0.26388996839523315,
+              25.312211990356445
+            ]
+          ],
+          "topClearanceM": 0.26388996839523315,
+          "floorClearanceM": 1.2654300212860108,
+          "treeSurfaceAABBLowerBoundM": 15.06835938892976,
+          "lotusSurfaceAABBLowerBoundM": 2.4555570219535494,
+          "otherFishAABBLowerBoundM": 6.014143322070272
+        },
+        {
+          "index": 4,
+          "palette": "sanke",
+          "centerYUp": [
+            -14,
+            -0.495,
+            15
+          ],
+          "scale": 0.8,
+          "yaw": 7.56,
+          "boundsYUp": [
+            [
+              -14.527531623840332,
+              -0.6317999958992004,
+              14.701786041259766
+            ],
+            [
+              -13.603575706481934,
+              -0.3086000084877014,
+              15.210148811340332
+            ]
+          ],
+          "topClearanceM": 0.3086000084877014,
+          "floorClearanceM": 1.1682000041007996,
+          "treeSurfaceAABBLowerBoundM": 10.151944042489408,
+          "lotusSurfaceAABBLowerBoundM": 1.387445374648778,
+          "otherFishAABBLowerBoundM": 9.078666563628156
+        },
+        {
+          "index": 5,
+          "palette": "yamabuki",
+          "centerYUp": [
+            14,
+            -0.57,
+            16
+          ],
+          "scale": 0.93,
+          "yaw": 9.299999999999999,
+          "boundsYUp": [
+            [
+              13.76154613494873,
+              -0.7290300130844116,
+              15.524550437927246
+            ],
+            [
+              14.253212928771973,
+              -0.3533099889755249,
+              16.66287612915039
+            ]
+          ],
+          "topClearanceM": 0.3533099889755249,
+          "floorClearanceM": 1.0709699869155884,
+          "treeSurfaceAABBLowerBoundM": 8.325275241731372,
+          "lotusSurfaceAABBLowerBoundM": 1.4960733939668922,
+          "otherFishAABBLowerBoundM": 8.656922180486294
+        },
+        {
+          "index": 6,
+          "palette": "kohaku",
+          "centerYUp": [
+            -6,
+            -0.42,
+            36
+          ],
+          "scale": 0.67,
+          "yaw": 11.04,
+          "boundsYUp": [
+            [
+              -6.344709396362305,
+              -0.5345699787139893,
+              35.81636428833008
+            ],
+            [
+              -5.500333786010742,
+              -0.26388996839523315,
+              36.16926956176758
+            ]
+          ],
+          "topClearanceM": 0.26388996839523315,
+          "floorClearanceM": 1.2654300212860108,
+          "treeSurfaceAABBLowerBoundM": 24.62271155395924,
+          "lotusSurfaceAABBLowerBoundM": 5.572161247154883,
+          "otherFishAABBLowerBoundM": 7.639566828051994
+        },
+        {
+          "index": 7,
+          "palette": "sanke",
+          "centerYUp": [
+            6,
+            -0.495,
+            37
+          ],
+          "scale": 0.8,
+          "yaw": 12.78,
+          "boundsYUp": [
+            [
+              5.785550117492676,
+              -0.6317999958992004,
+              36.39402770996094
+            ],
+            [
+              6.196373462677002,
+              -0.3086000084877014,
+              37.403831481933594
+            ]
+          ],
+          "topClearanceM": 0.3086000084877014,
+          "floorClearanceM": 1.1682000041007996,
+          "treeSurfaceAABBLowerBoundM": 25.16985409669172,
+          "lotusSurfaceAABBLowerBoundM": 5.325746789971589,
+          "otherFishAABBLowerBoundM": 8.21243716619547
+        },
+        {
+          "index": 8,
+          "palette": "yamabuki",
+          "centerYUp": [
+            -18,
+            -0.57,
+            26
+          ],
+          "scale": 0.93,
+          "yaw": 14.52,
+          "boundsYUp": [
+            [
+              -18.69520378112793,
+              -0.7290300130844116,
+              25.77280616760254
+            ],
+            [
+              -17.552139282226562,
+              -0.3533099889755249,
+              26.23657989501953
+            ]
+          ],
+          "topClearanceM": 0.3533099889755249,
+          "floorClearanceM": 1.0709699869155884,
+          "treeSurfaceAABBLowerBoundM": 16.77295277114404,
+          "lotusSurfaceAABBLowerBoundM": 1.6495739258693833,
+          "otherFishAABBLowerBoundM": 7.264404732010178
+        },
+        {
+          "index": 9,
+          "palette": "kohaku",
+          "centerYUp": [
+            18,
+            -0.42,
+            28
+          ],
+          "scale": 0.67,
+          "yaw": 16.26,
+          "boundsYUp": [
+            [
+              17.807579040527344,
+              -0.5345699787139893,
+              27.701337814331055
+            ],
+            [
+              18.170602798461914,
+              -0.26388996839523315,
+              28.479883193969727
+            ]
+          ],
+          "topClearanceM": 0.26388996839523315,
+          "floorClearanceM": 1.2654300212860108,
+          "treeSurfaceAABBLowerBoundM": 18.109851122189465,
+          "lotusSurfaceAABBLowerBoundM": 1.845028485689461,
+          "otherFishAABBLowerBoundM": 7.858941109874045
+        },
+        {
+          "index": 10,
+          "palette": "sanke",
+          "centerYUp": [
+            -22,
+            -0.495,
+            8
+          ],
+          "scale": 0.8,
+          "yaw": 18.0,
+          "boundsYUp": [
+            [
+              -22.318143844604492,
+              -0.6317999958992004,
+              7.709098815917969
+            ],
+            [
+              -21.468400955200195,
+              -0.3086000084877014,
+              8.282843589782715
+            ]
+          ],
+          "topClearanceM": 0.3086000084877014,
+          "floorClearanceM": 1.1682000041007996,
+          "treeSurfaceAABBLowerBoundM": 13.274935332004212,
+          "lotusSurfaceAABBLowerBoundM": 1.7436772214383924,
+          "otherFishAABBLowerBoundM": 9.45401974137912
+        },
+        {
+          "index": 11,
+          "palette": "yamabuki",
+          "centerYUp": [
+            22,
+            -0.57,
+            8
+          ],
+          "scale": 0.93,
+          "yaw": 19.740000000000002,
+          "boundsYUp": [
+            [
+              21.562589645385742,
+              -0.7290300130844116,
+              7.447789192199707
+            ],
+            [
+              22.381669998168945,
+              -0.3533099889755249,
+              8.314558982849121
+            ]
+          ],
+          "topClearanceM": 0.3533099889755249,
+          "floorClearanceM": 1.0709699869155884,
+          "treeSurfaceAABBLowerBoundM": 10.542178184657423,
+          "lotusSurfaceAABBLowerBoundM": 1.3968005492806488,
+          "otherFishAABBLowerBoundM": 10.266984209965216
+        }
+      ],
+      "clearance": {
+        "treeMeshInstances": 17,
+        "lotusMeshInstances": 1016,
+        "method": "Evaluated mesh/triangle AABB surface lower bounds at frame 15; not continuous collision or solid containment certification."
+      },
+      "pairIdentity": {
+        "cameraMatrix": [
+          [
+            0.9901811480522156,
+            -0.05015994608402252,
+            0.1304810345172882,
+            4.699999809265137
+          ],
+          [
+            0.13979028165340424,
+            0.35529953241348267,
+            -0.9242407083511353,
+            -33.5
+          ],
+          [
+            9.570857884000361e-09,
+            0.9334056973457336,
+            0.3588227927684784,
+            3.4000000953674316
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "frame": 15,
+        "exposure": 0.0,
+        "seed": 9,
+        "samples": 32
+      },
+      "waterA": {
+        "principledMix": 0.2800000011920929,
+        "transparentRGBA": [
+          0.7699999809265137,
+          0.8100000023841858,
+          0.9300000071525574,
+          1.0
+        ]
+      },
+      "waterB": {
+        "principledMix": 0.10000000149011612,
+        "transparentRGBA": [
+          0.9700000286102295,
+          0.9800000190734863,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  ],
+  "frames": [
+    {
+      "path": "evidence/eco_A_original_water.png",
+      "bytes": 840537,
+      "sha256": "c548614ca342649603be80bceb379365cc2c7cb71425aeb59a511f50141e0049",
+      "profile": "eco",
+      "variant": "A_original_water",
+      "frame": 15,
+      "samples": 32,
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "evidence/eco_B_clearer_water.png",
+      "bytes": 874732,
+      "sha256": "eb7aa81a3a08b7138e74aa76d60dce147bf26005624d27cd7553e5bc69da419a",
+      "profile": "eco",
+      "variant": "B_clearer_water",
+      "frame": 15,
+      "samples": 32,
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "evidence/quality_A_original_water.png",
+      "bytes": 882347,
+      "sha256": "124b136b123a50a73a284e50cc1003c2476c33322affa47be444c0499a8aca2e",
+      "profile": "quality",
+      "variant": "A_original_water",
+      "frame": 15,
+      "samples": 32,
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "evidence/quality_B_clearer_water.png",
+      "bytes": 926023,
+      "sha256": "d655970773d5d724624eca8a521b11e2fd2ef0c7f962f3a7403d6324383b4e56",
+      "profile": "quality",
+      "variant": "B_clearer_water",
+      "frame": 15,
+      "samples": 32,
+      "resolution": [
+        720,
+        1280
+      ]
+    }
+  ],
+  "costVND": 0,
+  "limitations": "Offline above-water art proxy; no runtime visibility/physics/FPS claim; SA must inspect actual images for recognizable koi."
+}
