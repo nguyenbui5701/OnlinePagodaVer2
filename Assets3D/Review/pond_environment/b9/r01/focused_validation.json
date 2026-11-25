@@ -1,0 +1,17 @@
+{
+  "status": "B9_FOCUSED_PASS",
+  "identity": {
+    "sourceSHA256": "c3ade0ebe4bc106bdb26b6f9a7b38860cbbb86d1a1ecd440b9c43d514b201920",
+    "runnerSHA256": "7190197d48a05ff56c27da84fbb99231ffb8a5c15a1db63643d802bc0a290394",
+    "inputManifestSHA256": "da6610280697ba871ea2d660efed7453711caa5cdc5698f3256cac069c3070f9",
+    "contextPinsSHA256": "7485ff1ceb39516c6f12101eae308de5676766291ec31cbdef0228881830fc5f",
+    "blenderVersion": "4.5.16 LTS"
+  },
+  "file": "koi_kohaku_eco.glb",
+  "triangles": 1732,
+  "helperCount": 1,
+  "negativeMaterialRejected": true,
+  "seam": 0.0,
+  "excursion": 0.3314022123813629,
+  "periodFrames": 60.0
+}

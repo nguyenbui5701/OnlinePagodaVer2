@@ -1,0 +1,688 @@
+{
+  "status": "B9_NATIVE_EVIDENCE_READY_SA_REVIEW_PENDING",
+  "blenderVersion": "4.5.16 LTS",
+  "inventory": [
+    {
+      "path": "koi_kohaku_eco.glb",
+      "bytes": 68796,
+      "sha256": "38616f969f77610742767d997a396c79ff17ccac1bf9c093ca05ec2e87a2091a"
+    },
+    {
+      "path": "koi_sanke_eco.glb",
+      "bytes": 68796,
+      "sha256": "2da581fec72e6ff1e74bc6ae86e4afca50012759ec070b946dbbc3544b163f5d"
+    },
+    {
+      "path": "koi_yamabuki_eco.glb",
+      "bytes": 68800,
+      "sha256": "ee5581c83e61b177d1b62190e150f11e4c0e9cf9498523f0adf596c3eef93e2a"
+    },
+    {
+      "path": "distant_terrain_eco.glb",
+      "bytes": 194156,
+      "sha256": "463c7d5d26b7217705533070640c259712fd1894356448f7168b17737caa23c3"
+    },
+    {
+      "path": "koi_kohaku_quality.glb",
+      "bytes": 150560,
+      "sha256": "e565c0748913bd505d5f7a0e509798bd5fd1d0d5df48c9e4b612f683cfe6ab83"
+    },
+    {
+      "path": "koi_sanke_quality.glb",
+      "bytes": 150556,
+      "sha256": "7e3a55e405cbbd231bfefdf0d8d058d197683092d3a814a7c73dab764d655603"
+    },
+    {
+      "path": "koi_yamabuki_quality.glb",
+      "bytes": 150564,
+      "sha256": "b44ea4827c1db509b408108297fd69d011f360604ac60c8eec2eb461ee9c293b"
+    },
+    {
+      "path": "distant_terrain_quality.glb",
+      "bytes": 449172,
+      "sha256": "1b4c279efa660505aa38cd3d6c7e596b5abab43f36869c397f602c551f31fa49"
+    },
+    {
+      "path": "b9_editable_master.blend",
+      "bytes": 6697540,
+      "sha256": "47d74bed53f373fea82d7575805d2556c481570e7d43f58d737d082b4ae1c17d"
+    },
+    {
+      "path": "focused_validation.json",
+      "bytes": 654,
+      "sha256": "1e3b01f4593e47efae5a29909f2dd9790e01de820a9e5b62d540121332daf6cd"
+    },
+    {
+      "path": "native_validation.json",
+      "bytes": 5555,
+      "sha256": "1fd7f016f756b2e804656f13fe6a1b75bcd40af0af77886c1fd5c0191a4484ab"
+    },
+    {
+      "path": "cycles_manifest.json",
+      "bytes": 116461,
+      "sha256": "53287372fab99b3c477a0ab12fa9e783eb666b43c86f3e49c2d0a7293f714a9e"
+    },
+    {
+      "path": "B9_Cycles_Evidence/eco_aerial.png",
+      "bytes": 1101339,
+      "sha256": "8841e5f7796e5da230f774f4b772c5b3fd2553a7b66e365cd6a5afe23058cfa9",
+      "lod": "eco",
+      "view": "aerial",
+      "camera": {
+        "positionYUp": [
+          19,
+          43,
+          32
+        ],
+        "targetYUp": [
+          0,
+          10,
+          0
+        ],
+        "verticalFovDegrees": 54,
+        "lensMM": 35.326988220214844
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/eco_wide.png",
+      "bytes": 1045721,
+      "sha256": "4ea6eb12f15e2e980ab173edd91f330045a5084ee65c6bc684cda4744ac0c686",
+      "lod": "eco",
+      "view": "wide",
+      "camera": {
+        "positionYUp": [
+          0,
+          10,
+          44
+        ],
+        "targetYUp": [
+          0,
+          9.5,
+          0
+        ],
+        "verticalFovDegrees": 58,
+        "lensMM": 32.47285842895508
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/eco_under_tree.png",
+      "bytes": 1024277,
+      "sha256": "95f9818faeda89bb5e07e67c9aff503fdb8242105fc4e8dcb7e24a511dec34f8",
+      "lod": "eco",
+      "view": "under_tree",
+      "camera": {
+        "positionYUp": [
+          8,
+          3.4,
+          24
+        ],
+        "targetYUp": [
+          0,
+          6.2,
+          1.8
+        ],
+        "verticalFovDegrees": 55,
+        "lensMM": 34.57767868041992
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/eco_branch_close.png",
+      "bytes": 1053053,
+      "sha256": "1f74359acf26244569b745d6f5ddde74f1ecad097caf4e307ef9e3a5b4624299",
+      "lod": "eco",
+      "view": "branch_close",
+      "camera": {
+        "positionYUp": [
+          3,
+          4.8,
+          18.5
+        ],
+        "targetYUp": [
+          0,
+          11.9,
+          0
+        ],
+        "verticalFovDegrees": 44,
+        "lensMM": 44.55156326293945
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/eco_low_water.png",
+      "bytes": 933909,
+      "sha256": "2ad0f97ce56cc145c3d537c87985139943d15032517805783c27926260bc2ae0",
+      "lod": "eco",
+      "view": "low_water",
+      "camera": {
+        "positionYUp": [
+          10,
+          2.25,
+          30
+        ],
+        "targetYUp": [
+          2,
+          1.15,
+          13
+        ],
+        "verticalFovDegrees": 53,
+        "lensMM": 36.102413177490234
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/eco_seat_gift_proxy.png",
+      "bytes": 800008,
+      "sha256": "ebac87be84878050382dee5a4ec7eaa5bbbe2f4864df74fed9ac6629bb28c55d",
+      "lod": "eco",
+      "view": "seat_gift_proxy",
+      "camera": {
+        "positionYUp": [
+          -2.13745,
+          1.14939,
+          8.87026
+        ],
+        "targetYUp": [
+          -1.01607,
+          0.66939,
+          13.74289
+        ],
+        "verticalFovDegrees": 50,
+        "lensMM": 38.60112380981445
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/eco_swim_000.png",
+      "bytes": 795888,
+      "sha256": "aafe3b1ee7ba641429dbc8a3ff2f12e795663abb6abdc2436f8514f9acebdcee",
+      "lod": "eco",
+      "view": "swim_000",
+      "camera": {
+        "positionYUp": [
+          0,
+          6.9,
+          0.8
+        ],
+        "targetYUp": [
+          0,
+          0,
+          0
+        ],
+        "verticalFovDegrees": 43,
+        "lensMM": 45.69566345214844
+      },
+      "frame": 0,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/eco_swim_015.png",
+      "bytes": 796603,
+      "sha256": "77aafc83ebf2e724324ee63c2d0f856e260184587fcb55ce4be7460a1a39bbce",
+      "lod": "eco",
+      "view": "swim_015",
+      "camera": {
+        "positionYUp": [
+          0,
+          6.9,
+          0.8
+        ],
+        "targetYUp": [
+          0,
+          0,
+          0
+        ],
+        "verticalFovDegrees": 43,
+        "lensMM": 45.69566345214844
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/eco_swim_030.png",
+      "bytes": 795671,
+      "sha256": "b837b02100aa29cb0d71165e4fe9c78326059ec73cbe8179948b57adc638bc95",
+      "lod": "eco",
+      "view": "swim_030",
+      "camera": {
+        "positionYUp": [
+          0,
+          6.9,
+          0.8
+        ],
+        "targetYUp": [
+          0,
+          0,
+          0
+        ],
+        "verticalFovDegrees": 43,
+        "lensMM": 45.69566345214844
+      },
+      "frame": 30,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/eco_swim_045.png",
+      "bytes": 796377,
+      "sha256": "78d4298bc51877969f26637a223383b83051d1dd65244da93db8a5f2b275ef54",
+      "lod": "eco",
+      "view": "swim_045",
+      "camera": {
+        "positionYUp": [
+          0,
+          6.9,
+          0.8
+        ],
+        "targetYUp": [
+          0,
+          0,
+          0
+        ],
+        "verticalFovDegrees": 43,
+        "lensMM": 45.69566345214844
+      },
+      "frame": 45,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/eco_swim_060.png",
+      "bytes": 795892,
+      "sha256": "8757523c73675097194f52f0425231352ce5cb31bb17987f9d2c44bb225f7fc0",
+      "lod": "eco",
+      "view": "swim_060",
+      "camera": {
+        "positionYUp": [
+          0,
+          6.9,
+          0.8
+        ],
+        "targetYUp": [
+          0,
+          0,
+          0
+        ],
+        "verticalFovDegrees": 43,
+        "lensMM": 45.69566345214844
+      },
+      "frame": 60,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/quality_aerial.png",
+      "bytes": 1178646,
+      "sha256": "7752543a1fd68d43a60fb055c08fbad0c3829ce455979b4aa6608f1e849e0cff",
+      "lod": "quality",
+      "view": "aerial",
+      "camera": {
+        "positionYUp": [
+          19,
+          43,
+          32
+        ],
+        "targetYUp": [
+          0,
+          10,
+          0
+        ],
+        "verticalFovDegrees": 54,
+        "lensMM": 35.326988220214844
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/quality_wide.png",
+      "bytes": 1129793,
+      "sha256": "94b7625822d8f1969221fb1a230bbe6e1ac2be83d9168e0ee0dc80b1ea8fbc15",
+      "lod": "quality",
+      "view": "wide",
+      "camera": {
+        "positionYUp": [
+          0,
+          10,
+          44
+        ],
+        "targetYUp": [
+          0,
+          9.5,
+          0
+        ],
+        "verticalFovDegrees": 58,
+        "lensMM": 32.47285842895508
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/quality_under_tree.png",
+      "bytes": 1047883,
+      "sha256": "7dd7a93ecbddd8a10131522a9f2e136d6247d9a3967ed3109557aac36434619f",
+      "lod": "quality",
+      "view": "under_tree",
+      "camera": {
+        "positionYUp": [
+          8,
+          3.4,
+          24
+        ],
+        "targetYUp": [
+          0,
+          6.2,
+          1.8
+        ],
+        "verticalFovDegrees": 55,
+        "lensMM": 34.57767868041992
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/quality_branch_close.png",
+      "bytes": 1064423,
+      "sha256": "4b7d2bd69c8c2e4867438c790998918e93592283ba806b38c447d86d3749b615",
+      "lod": "quality",
+      "view": "branch_close",
+      "camera": {
+        "positionYUp": [
+          3,
+          4.8,
+          18.5
+        ],
+        "targetYUp": [
+          0,
+          11.9,
+          0
+        ],
+        "verticalFovDegrees": 44,
+        "lensMM": 44.55156326293945
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/quality_low_water.png",
+      "bytes": 957869,
+      "sha256": "e5bfba8f594fd3821898112f2859b2b271e91bf7611979f529fb43c4b6f8105f",
+      "lod": "quality",
+      "view": "low_water",
+      "camera": {
+        "positionYUp": [
+          10,
+          2.25,
+          30
+        ],
+        "targetYUp": [
+          2,
+          1.15,
+          13
+        ],
+        "verticalFovDegrees": 53,
+        "lensMM": 36.102413177490234
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/quality_seat_gift_proxy.png",
+      "bytes": 810708,
+      "sha256": "60044f2a47a1fdb05e3a42ca39bdf9beaac8f07c6fa5fb5c2675b5c155f26a81",
+      "lod": "quality",
+      "view": "seat_gift_proxy",
+      "camera": {
+        "positionYUp": [
+          -2.13745,
+          1.14939,
+          8.87026
+        ],
+        "targetYUp": [
+          -1.01607,
+          0.66939,
+          13.74289
+        ],
+        "verticalFovDegrees": 50,
+        "lensMM": 38.60112380981445
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/quality_swim_000.png",
+      "bytes": 797564,
+      "sha256": "ff40f0b89e86a10f791563289c36dbc69623bb9d03a60ea59d385eb543f69b37",
+      "lod": "quality",
+      "view": "swim_000",
+      "camera": {
+        "positionYUp": [
+          0,
+          6.9,
+          0.8
+        ],
+        "targetYUp": [
+          0,
+          0,
+          0
+        ],
+        "verticalFovDegrees": 43,
+        "lensMM": 45.69566345214844
+      },
+      "frame": 0,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/quality_swim_015.png",
+      "bytes": 797858,
+      "sha256": "a943b1287a1f97048e57d782b97a7b4a506eeb5f2e5cc473e6cafd29b48f6c33",
+      "lod": "quality",
+      "view": "swim_015",
+      "camera": {
+        "positionYUp": [
+          0,
+          6.9,
+          0.8
+        ],
+        "targetYUp": [
+          0,
+          0,
+          0
+        ],
+        "verticalFovDegrees": 43,
+        "lensMM": 45.69566345214844
+      },
+      "frame": 15,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/quality_swim_030.png",
+      "bytes": 797595,
+      "sha256": "c9020ddd4be909ff987334b685fbb3c8ef3ea28566e536a7942c7f1a6290315a",
+      "lod": "quality",
+      "view": "swim_030",
+      "camera": {
+        "positionYUp": [
+          0,
+          6.9,
+          0.8
+        ],
+        "targetYUp": [
+          0,
+          0,
+          0
+        ],
+        "verticalFovDegrees": 43,
+        "lensMM": 45.69566345214844
+      },
+      "frame": 30,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/quality_swim_045.png",
+      "bytes": 797926,
+      "sha256": "f0a93c129afa4d04d536bbee725713688f0d0f87528dd9bbd04515239a44e09a",
+      "lod": "quality",
+      "view": "swim_045",
+      "camera": {
+        "positionYUp": [
+          0,
+          6.9,
+          0.8
+        ],
+        "targetYUp": [
+          0,
+          0,
+          0
+        ],
+        "verticalFovDegrees": 43,
+        "lensMM": 45.69566345214844
+      },
+      "frame": 45,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    },
+    {
+      "path": "B9_Cycles_Evidence/quality_swim_060.png",
+      "bytes": 797568,
+      "sha256": "d1178e0c115feb5b569bf7d18e78eecd5447c32f994b2b6e0dc6b9a45a6770e4",
+      "lod": "quality",
+      "view": "swim_060",
+      "camera": {
+        "positionYUp": [
+          0,
+          6.9,
+          0.8
+        ],
+        "targetYUp": [
+          0,
+          0,
+          0
+        ],
+        "verticalFovDegrees": 43,
+        "lensMM": 45.69566345214844
+      },
+      "frame": 60,
+      "samples": 32,
+      "engine": "Blender Cycles",
+      "resolution": [
+        720,
+        1280
+      ]
+    }
+  ],
+  "gates": {
+    "SA": "P10B9_ART_SA_REVIEW_REQUIRED",
+    "ownerArt": "PENDING",
+    "codex": "HOLD"
+  },
+  "costVND": 0
+}
