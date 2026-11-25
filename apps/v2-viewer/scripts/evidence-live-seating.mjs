@@ -55,12 +55,14 @@ async function run() {
   browser = await chromium.launch({ executablePath: process.env.V2_BROWSER ||
     'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe' });
   const context = await browser.newContext({ viewport: { width: 720, height: 1280 } });
+  let omitTerrain = false;
   for (const [base, target] of [[origin, port], [api, server.address().port]]) {
     await context.route(base + '/**', async route => {
       const request = route.request();
       const url = new URL(request.url());
       url.port = String(target);
       if (base === origin) {
+        if (omitTerrain && url.pathname.startsWith('/b9/distant_terrain_')) return route.fulfill({ status: 404 });
         const response = await fetch(url, { redirect: 'error' });
         return route.fulfill({ status: response.status, contentType: response.headers.get('content-type') ?? undefined,
           body: Buffer.from(await response.arrayBuffer()) });
@@ -335,6 +337,14 @@ async function run() {
     await wait(() => gateway.overlayReady && gateway.appliedRevision === 3 && gateway.worldApplied?.pond === undefined,
       'B9 rollback applies after disconnect');
     final.rollback = { appliedRevision: gateway.appliedRevision, liveApplyBlocked: true, pond: 'off' };
+    omitTerrain = true;
+    await dashboard.getByLabel('Cá koi và cảnh quan B9').selectOption('on');
+    await dashboard.locator('#save').click();
+    await dashboard.locator('#apply').click();
+    await wait(() => gateway.overlayReady && gateway.appliedRevision === 4, 'B8 fallback stays ready');
+    await dashboard.getByText(/Cảnh quan B8 dự phòng.*terrain.*thiếu GLB/).waitFor();
+    assert.deepEqual(gateway.worldApplied.pond, ['terrain', 'MISSING']);
+    final.fallback = { appliedRevision: gateway.appliedRevision, pond: gateway.worldApplied.pond };
   }
   const photos = { 'member.png': firstPng, 'gift-focus.png': giftPng, 'dashboard.png': dashboardPng };
   const receipt = {

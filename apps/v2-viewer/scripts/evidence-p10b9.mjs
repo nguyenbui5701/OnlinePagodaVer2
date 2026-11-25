@@ -5,6 +5,10 @@ import { cpus, totalmem } from 'node:os';
 import { resolve } from 'node:path';
 import { chromium } from 'playwright-core';
 import { preview } from 'vite';
+import { PerspectiveCamera, Vector3 } from 'three';
+import { createAmbientFx } from '../src/ambient-fx.ts';
+import { createTrunkMist } from '../src/trunk-mist.ts';
+import { richAmbientProfiles } from '../src/fx-profiles.ts';
 import pins from '../src/environment-b9.json' with { type: 'json' };
 
 const baseline = process.env.V2_P10B8_APP;
@@ -18,7 +22,7 @@ const poses = {
   wide: { position: [0, 10, 44], target: [0, 9.5, 0], fov: 58 },
   under: { position: [8, 3.4, 24], target: [0, 6.2, 1.8], fov: 55 },
   branch: { position: [14, 11.5, 21], target: [3, 14, 0], fov: 49 },
-  low: { position: [4.7, 3.4, 33.5], target: [3.5, .1, 25], fov: 53 },
+  low: { position: [4.0, 4.1, 35.2], target: [3.55, .1, 25], fov: 55 },
   gift: undefined,
 };
 const errors = [];
@@ -71,6 +75,7 @@ async function frame(page, seconds, pose, file, restored = false) {
     return { hash, time: r.elapsedSeconds, camera: { position: r.position, target: r.target, fov: r.fov },
       appearance: r.appearance, lobes: r.driftingGold, pond: r.pondInspection, koi: r.koiVisible,
       fxBaseline: r.richAmbience, fx: r.pondFx, lotus: r.lotusVisible, nameplates: r.nameplates,
+      giftOpacity: r.fx?.gift?.opacity ?? 0, foreground: !!r.bubbles?.chat || !!r.focus,
       focus: r.focus, mode: r.mode, giftCount: r.confirmedGiftCount, counts: r.drawCalls, triangles: r.trianglesDrawn,
       gl: gl.getError(), errors: r.errors };
   }, { seconds, pose });
@@ -86,6 +91,31 @@ async function frame(page, seconds, pose, file, restored = false) {
   return result;
 }
 
+function referenceParticles(profile, report, shots) {
+  const tree = new Vector3().fromArray(report.treeTarget);
+  const budget = richAmbientProfiles[profile];
+  const local = { pads: report.communityLayout.map(slot => slot.position), each: budget.perPad };
+  const fx = createAmbientFx(tree, report.seed, budget.tree, local);
+  const mist = createTrunkMist(tree, profile);
+  const camera = new PerspectiveCamera(50, viewport.width / viewport.height, report.near, report.far);
+  try {
+    for (const shot of Object.values(shots)) {
+      assert.equal(fx.points.geometry.getAttribute('position').count, shot.fxBaseline.totalPoints);
+      camera.position.fromArray(shot.camera.position);
+      camera.lookAt(...shot.camera.target);
+      camera.fov = shot.camera.fov;
+      camera.updateProjectionMatrix();
+      camera.updateMatrixWorld();
+      fx.update(shot.time, shot.giftOpacity, shot.foreground);
+      mist.update(shot.time);
+      shot.referenceFx = { active: fx.totals, spatial: fx.spatialCounts(camera), mist: mist.spatialCount(camera) };
+    }
+  } finally {
+    fx.dispose();
+    mist.dispose();
+  }
+}
+
 async function matrix(profile, enabled) {
   const { page, report } = await open(profile, enabled, { origin: enabled ? candidateUrl : baseUrl });
   const shots = {};
@@ -93,6 +123,7 @@ async function matrix(profile, enabled) {
     shots[shot] = await frame(page, 18.1, pose, profile + '-' + (enabled ? 'on' : 'off') + '-' + shot + '.png');
   }
   assert.equal(shots.gift.mode, 'GIFT_FOCUS');
+  if (!enabled) referenceParticles(profile, report, shots);
   const plate = shots.gift.nameplates[shots.gift.focus.seatId];
   assert(plate.visible && plate.anchor.y < plate.head.y);
   await page.close();
@@ -107,9 +138,10 @@ async function proof(profile) {
   for (const t of [15, 17, 19, 21]) fixed.push(await frame(page, t, poses.low, profile + '-fish-t' + t + '.png'));
   assert(fixed.some(f => f.koi > 0));
   assert.notDeepEqual(withoutVisibility(fixed[0]), withoutVisibility(fixed.at(-1)));
-  const other = await frame(page, 21, poses.aerial);
+  const other = await frame(page, 21, poses.aerial, profile + '-fish-t21-aerial.png');
   assert.deepEqual(withoutVisibility(other), withoutVisibility(fixed.at(-1)));
-  assert.notEqual(other.pond.terrainVisible, fixed.at(-1).pond.terrainVisible);
+  assert.notDeepEqual(other.camera, fixed.at(-1).camera);
+  assert.notEqual(other.hash, fixed.at(-1).hash);
   const before = await frame(page, 21, poses.low);
   await page.evaluate(() => {
     window.loss = document.querySelector('canvas').getContext('webgl2').getExtension('WEBGL_lose_context');
@@ -189,6 +221,8 @@ async function clip() {
   const data = await page.evaluate(() => window.recording);
   await page.close();
   assert(data.duration >= 40 && data.focus.length);
+  assert(['HERO_WIDE_TREE_REFLECTION', 'COMMUNITY', 'HERO_TOP_RING', 'AERIAL', 'UNDER_TREE']
+    .every(shot => data.shots.includes(shot)), JSON.stringify(data.shots));
   assert.deepEqual([data.width, data.height], [720, 1280]);
   assert.deepEqual(data.errors, []);
   return data;
@@ -218,11 +252,14 @@ try {
       assert.deepEqual(on.shots[shot].lotus, off.shots[shot].lotus);
     }
     let fingerprint;
+    const baselineIdle = await open(profile, false, { origin: baseUrl, demo: 'idle' });
+    const baselineHash = (await frame(baselineIdle.page, 18.1, poses.wide)).hash;
+    await baselineIdle.page.close();
     const parity = [];
     for (const options of [{}, { missing: true }, { corrupt: true }, { importFailure: true }]) {
-      const { page, report } = await open(profile, Object.keys(options).length > 0, options);
+      const { page, report } = await open(profile, Object.keys(options).length > 0, { ...options, demo: 'idle' });
       const shot = await frame(page, 18.1, poses.wide);
-      assert.equal(shot.hash, off.shots.wide.hash);
+      assert.equal(shot.hash, baselineHash);
       if (options.missing) assert.deepEqual(report.world.pond, ['terrain', 'MISSING']);
       if (options.corrupt) assert.deepEqual(report.world.pond, ['sanke', 'INTEGRITY']);
       if (options.importFailure) assert.deepEqual(report.world.pond, ['yamabuki', 'IMPORT']);
