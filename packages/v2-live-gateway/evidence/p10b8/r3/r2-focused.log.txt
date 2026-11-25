@@ -1,0 +1,126 @@
+﻿source=5713e5c74877cbc716a68dc724899019becdb0ad
+node=v24.16.0
+
+> npm.cmd run assets:r17b
+
+> @online-pagoda/v2-viewer@0.1.0 assets:r17b
+> node scripts/stage-r17b.mjs
+
+{"path":"Assets3D/Review/sakura_hero/r17-lush/r17b/preview/sakura_hero_r17b.glb","commit":"07f57cb35ba3ec68184abbd2c173e29a3fcc4788","gitBlob":"cfcbaa2ed71bedafae959541487c91f6de42ab74","bytes":6981312,"sha256":"1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267"}
+{"path":"Assets3D/Review/sakura_hero/r17-lush/r17b/preview/sakura_hero_r17b_eco.glb","commit":"07f57cb35ba3ec68184abbd2c173e29a3fcc4788","gitBlob":"d5554055ab689680ca17744653cfc49197b1e773","bytes":2149264,"sha256":"3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770"}
+
+exit=0
+
+> npm.cmd run assets:r18a
+
+> @online-pagoda/v2-viewer@0.1.0 assets:r18a
+> node scripts/stage-r18a.mjs
+
+{"path":"Assets3D/Review/sakura_hero/r18-polish/r18a/sakura_hero_r18a.glb","commit":"84f3a621d83fa7af5a4995b007446fec49287bf9","gitBlob":"44f2900490ddd682d5b951808b37aaeb0e714f78","bytes":7152368,"sha256":"ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab"}
+{"path":"Assets3D/Review/sakura_hero/r18-polish/r18a/sakura_hero_r18a_eco.glb","commit":"84f3a621d83fa7af5a4995b007446fec49287bf9","gitBlob":"fea7660aacdb61099d9ca1b377656440a2a0b8b7","bytes":2229632,"sha256":"1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847"}
+
+exit=0
+
+> node --test test/r17b-stage.test.mjs test/r18a-stage.test.mjs
+✔ staging requires exact commit, both paths, blob IDs and raw SHA-256 (29.4542ms)
+✔ invalid second asset leaves an existing verified pair unchanged (45.206ms)
+✔ R18a stages the immutable pair and a swapped profile cannot replace it (494.9192ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 591.8122
+
+exit=0
+
+> node --test --test-name-pattern='R18a resolves' test/r18a-world.test.ts
+✔ R18a resolves down the same-profile chain, reports failures and honours abort (2.1952ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 166.7056
+
+exit=0
+
+> node --test ../../packages/v2-live-gateway/test/world-status.test.mjs
+✔ world status accepts only the failure codes and stages that match the applied tree (1.4863ms)
+✔ world status travels on owner poll and malformed telemetry leaves ACK, audio and presence intact (68.5528ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 232.1795
+
+exit=0
+
+> node scripts/check-p10b8-dashboard.mjs
+
+exit=1
+Default invocation exited 1 because the existing LIVE preview owns port 5189.
+
+> node --import [fixture port-map hook] scripts/check-p10b8-dashboard.mjs
+The temporary load hook substitutes 5196 for 5189 in the built Dashboard fixture harness and the fixture Gateway expected Origin. Checkout and build are unchanged. Gateway remains on 5203.
+{
+  "browser": "158.0.4370.33",
+  "results": [
+    {
+      "text": "Cây đang dùng R18A · Đầm sen dày theo cụm",
+      "world": {
+        "requestedTree": "R18A",
+        "tree": "R18A",
+        "requestedDensity": "lush",
+        "density": "lush",
+        "fallback": false,
+        "failures": []
+      }
+    },
+    {
+      "text": "Cây đang dùng R17B · Đã dùng dự phòng thay cho R18A (R18A – thiếu GLB) · Đầm sen dày theo cụm",
+      "world": {
+        "requestedTree": "R18A",
+        "tree": "R17B",
+        "requestedDensity": "lush",
+        "density": "lush",
+        "fallback": true,
+        "failures": [
+          {
+            "revision": "R18A",
+            "code": "MISSING"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Cây đang dùng R16 · Đã dùng dự phòng thay cho R18A (R18A – thiếu GLB, R17B – lỗi kiểm tra tính toàn vẹn) · Đầm sen dày theo cụm",
+      "world": {
+        "requestedTree": "R18A",
+        "tree": "R16",
+        "requestedDensity": "lush",
+        "density": "lush",
+        "fallback": true,
+        "failures": [
+          {
+            "revision": "R18A",
+            "code": "MISSING"
+          },
+          {
+            "revision": "R17B",
+            "code": "INTEGRITY"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+exit=0

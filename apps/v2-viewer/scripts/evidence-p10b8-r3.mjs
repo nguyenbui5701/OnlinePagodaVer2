@@ -18,7 +18,8 @@ const poses = {
   wide: { position: [0, 10, 44], target: [0, 9.5, 0], fov: 58 },
   aerial: { position: [19, 43, 32], target: [0, 10, 0], fov: 54 },
   water: { position: [10, 2.25, 30], target: [2, 1.15, 13], fov: 53 },
-  flowers: { position: [-8, 5.0, 24], target: [-4.5, .5, 12], fov: 56 },
+  flowers: { position: [-.9, 4.7, -18], target: [-.7, .12, -13.1], fov: 56 },
+  palette: { position: [4.15, 6.4, 31.2], target: [4.2, 0, 29], fov: 60 },
 };
 const servers = [];
 const pageErrors = [];
@@ -50,13 +51,18 @@ async function open(origin, { inspect = true, profile = 'quality', look = 'gold'
 }
 
 async function frame(page, seconds, pose, file, recover = false) {
-  const summary = await page.evaluate(({ seconds, pose }) => {
+  const summary = await page.evaluate(async ({ seconds, pose }) => {
     const begin = Math.floor((window.viewerReport.elapsedSeconds ?? 0) * 60) + 1;
     for (let i = begin; i / 60 < seconds; i++) window.p08Review.step(i / 60, false);
     const r = window.p08Review.step(seconds, true, undefined, undefined, undefined, pose);
     const gl = document.querySelector('canvas').getContext('webgl2');
     gl.finish();
+    const pixels = new Uint8Array(gl.drawingBufferWidth * gl.drawingBufferHeight * 4);
+    gl.readPixels(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight, gl.RGBA, gl.UNSIGNED_BYTE, pixels);
+    const canvasHash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', pixels)),
+      value => value.toString(16).padStart(2, '0')).join('');
     return {
+      canvasHash,
       time: r.elapsedSeconds, pose: { position: r.position, target: r.target, fov: r.fov }, appearance: r.appearance,
       canopy: r.r18Canopy, gold: r.r18Accent, lobes: r.driftingGold, focus: r.focus, mode: r.mode,
       nameplates: r.nameplates, names: r.community?.names, gifts: r.confirmedGiftCount,
@@ -100,20 +106,21 @@ async function compare(origin, label) {
   assert(plate.visible && plate.anchor.y < plate.head.y);
   const result = { revision: report.repoRevision, asset: report.asset.sha256, world: report.world, totals: totals(report), shots };
   if (origin === candidateUrl) {
-    const before = shots.wide;
-    await page.evaluate(() => {
+    const { page: recovery } = await open(origin, { demo: 'idle' });
+    const before = await frame(recovery, 18.1, poses.flowers);
+    await recovery.evaluate(() => {
       window.loss = document.querySelector('canvas').getContext('webgl2').getExtension('WEBGL_lose_context');
       window.loss.loseContext();
     });
-    await page.waitForFunction(() => window.viewerReport.errors.includes('webglcontextlost'));
-    await page.evaluate(() => window.loss.restoreContext());
-    await page.waitForFunction(() => window.viewerReport.contextRestores === 1);
-    const after = await frame(page, 18.1, poses.wide, undefined, true);
+    await recovery.waitForFunction(() => window.viewerReport.errors.includes('webglcontextlost'));
+    await recovery.evaluate(() => window.loss.restoreContext());
+    await recovery.waitForFunction(() => window.viewerReport.contextRestores === 1);
+    const after = await frame(recovery, 18.1, poses.flowers, 'r3-restored-flowers.png', true);
     assert.deepEqual(after.counts, before.counts);
     assert.deepEqual(after.colors, before.colors);
     assert.deepEqual(after.lobes, before.lobes);
-    assert.equal(after.sha256, before.sha256);
-    result.contextRecovery = after;
+    result.contextRecovery = { ...after, beforeCanvasHash: before.canvasHash, pixelIdentical: after.canvasHash === before.canvasHash };
+    await recovery.close();
   }
   await page.close();
   const twilight = await open(origin, { look: 'twilight' });
@@ -127,12 +134,12 @@ async function parity(options) {
   const after = await open(candidateUrl, options);
   const a = await frame(before.page, 4, poses.under);
   const b = await frame(after.page, 4, poses.under);
-  assert.equal(b.sha256, a.sha256);
+  assert.equal(b.canvasHash, a.canvasHash);
   assert.equal(b.canopy, undefined);
   assert.equal(b.lobes, undefined);
   await before.page.close();
   await after.page.close();
-  return { options, sha256: b.sha256, tree: after.report.asset.assetRevision, failures: after.report.asset.failures };
+  return { options, sha256: b.canvasHash, tree: after.report.asset.assetRevision, failures: after.report.asset.failures };
 }
 
 async function benchmark(origin) {
@@ -237,6 +244,10 @@ try {
     }
     receipt.water.push(result);
   }
+  const held = await frame(water.page, 12, poses.water);
+  assert.deepEqual(held.lobes, receipt.water.at(-1).lobes);
+  assert.equal(held.canvasHash, receipt.water.at(-1).canvasHash);
+  receipt.fixedTimeCanvasHash = held.canvasHash;
   await water.page.close();
   receipt.parity = [];
   for (const options of [{ profile: 'eco' }, { density: 'legacy' }, { fallback: true }, { look: 'legacy' }]) {

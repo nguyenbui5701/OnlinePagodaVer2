@@ -1,0 +1,3125 @@
+{
+  "browser": "158.0.4370.33",
+  "config": {
+    "viewport": {
+      "width": 720,
+      "height": 1280
+    },
+    "seed": 9,
+    "look": "gold",
+    "profile": "quality",
+    "density": "lush",
+    "visible": "Extra pads and plants whose bounding spheres intersect the frustum. No depth/occlusion test.",
+    "benchmark": "Native rAF, warmup 1.2s, sample 8s, same seed and route starting at scene boot, no Studio."
+  },
+  "baseline": {
+    "revision": "5713e5c74877cbc716a68dc724899019becdb0ad",
+    "asset": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+    "world": {
+      "requestedTree": "R18A",
+      "tree": "R18A",
+      "requestedDensity": "lush",
+      "density": "lush",
+      "fallback": false,
+      "failures": []
+    },
+    "totals": {
+      "realSeats": 3,
+      "decorativeSlots": 9,
+      "pad": 48,
+      "leaf": 86,
+      "bloom": 39,
+      "bud": 28,
+      "colors": {
+        "bloom": {},
+        "bud": {}
+      }
+    },
+    "shots": {
+      "under": {
+        "canvasHash": "c62f3f57e0840dfc60f9960c1242626c06cc479525ff0078c1708a060f7ea578",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            8,
+            3.4,
+            24
+          ],
+          "target": [
+            0,
+            6.2,
+            1.8
+          ],
+          "fov": 55
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": -0.1899982864068771,
+              "y": 0.7942387765381927,
+              "z": 0.9921117009161347
+            },
+            "anchor": {
+              "x": -0.18786789171400253,
+              "y": 0.768337638607862,
+              "z": 0.9921366738941757
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": false
+          },
+          "seat-2": {
+            "head": {
+              "x": -0.5291515619543683,
+              "y": 0.7211810552868491,
+              "z": 0.9953896417046832
+            },
+            "anchor": {
+              "x": -0.5272594095359593,
+              "y": 0.7058918537018951,
+              "z": 0.9953984858528778
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": false
+          },
+          "seat-3": {
+            "head": {
+              "x": 1.3727451019057553,
+              "y": 0.7933681403855195,
+              "z": 0.992150764463532
+            },
+            "anchor": {
+              "x": 1.3700634438775177,
+              "y": 0.767594386045365,
+              "z": 0.9921754971726459
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": false
+          }
+        },
+        "names": [],
+        "gifts": 3,
+        "counts": {
+          "pad": 9,
+          "leaf": 18,
+          "bloom": 6,
+          "bud": 6
+        },
+        "visibleDecorativeActors": 4,
+        "draws": 78,
+        "triangles": 665164,
+        "errors": [],
+        "gl": 0,
+        "sha256": "56df24ac5009b109dc84a64f4d28066eb8066be81949d0216d9e75a8d0a03be5",
+        "file": "r2-under.png"
+      },
+      "wide": {
+        "canvasHash": "7771615b0fa6a598de8f75e48f05e94982ca12d5768e1baff8a375a3b1b1b633",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            0,
+            10,
+            44
+          ],
+          "target": [
+            0,
+            9.5,
+            0
+          ],
+          "fov": 58
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": 0.44644060215638903,
+              "y": 0.7541828903477639,
+              "z": 0.996907691873613
+            },
+            "anchor": {
+              "x": 0.4464340900600387,
+              "y": 0.7445624950371612,
+              "z": 0.9969072915711668
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": true
+          },
+          "seat-2": {
+            "head": {
+              "x": 0.008272734296475237,
+              "y": 0.7140961862661129,
+              "z": 0.9974067918449693
+            },
+            "anchor": {
+              "x": 0.008222011321689537,
+              "y": 0.7059302086766422,
+              "z": 0.9974065037160585
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": true
+          },
+          "seat-3": {
+            "head": {
+              "x": 0.9509466427615464,
+              "y": 0.7240723054827567,
+              "z": 0.9972825840576408
+            },
+            "anchor": {
+              "x": 0.9509952277936592,
+              "y": 0.7155442432408663,
+              "z": 0.9972822697328282
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": true
+          }
+        },
+        "names": [
+          {
+            "seatId": "seat-1",
+            "actorId": "demo-1-actor-1",
+            "name": "An"
+          },
+          {
+            "seatId": "seat-2",
+            "actorId": "demo-1-actor-2",
+            "name": "Bình"
+          },
+          {
+            "seatId": "seat-3",
+            "actorId": "demo-1-actor-3",
+            "name": "Chi"
+          }
+        ],
+        "gifts": 3,
+        "counts": {
+          "pad": 18,
+          "leaf": 34,
+          "bloom": 13,
+          "bud": 13
+        },
+        "visibleDecorativeActors": 7,
+        "draws": 127,
+        "triangles": 1109882,
+        "errors": [],
+        "gl": 0,
+        "sha256": "dc5f56cb513efc5d023269fffcd3c7ff6e68b9a5b6702b811dc3fcb6d8c6a005",
+        "file": "r2-wide.png"
+      },
+      "aerial": {
+        "canvasHash": "46fcc6cf1450a1a10776211c92b969f4895d9da1cc321ce912fb8423a3882507",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            19,
+            43,
+            32
+          ],
+          "target": [
+            0,
+            10,
+            0
+          ],
+          "fov": 54
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": 0.2088522163356033,
+              "y": 0.7940874405011171,
+              "z": 0.9980814422645778
+            },
+            "anchor": {
+              "x": 0.20751623561936122,
+              "y": 0.7903588042188083,
+              "z": 0.9980717208132672
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": true
+          },
+          "seat-2": {
+            "head": {
+              "x": 0.062300913507792266,
+              "y": 0.6381882878516509,
+              "z": 0.9983651344061679
+            },
+            "anchor": {
+              "x": 0.060562471706240406,
+              "y": 0.6343417285163417,
+              "z": 0.998357846655475
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": true
+          },
+          "seat-3": {
+            "head": {
+              "x": 0.6251999469483616,
+              "y": 0.8338357597959696,
+              "z": 0.9980091116224048
+            },
+            "anchor": {
+              "x": 0.6257941552308055,
+              "y": 0.8301678679623375,
+              "z": 0.9979987134078929
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": true
+          }
+        },
+        "names": [
+          {
+            "seatId": "seat-1",
+            "actorId": "demo-1-actor-1",
+            "name": "An"
+          },
+          {
+            "seatId": "seat-2",
+            "actorId": "demo-1-actor-2",
+            "name": "Bình"
+          },
+          {
+            "seatId": "seat-3",
+            "actorId": "demo-1-actor-3",
+            "name": "Chi"
+          }
+        ],
+        "gifts": 3,
+        "counts": {
+          "pad": 17,
+          "leaf": 41,
+          "bloom": 13,
+          "bud": 11
+        },
+        "visibleDecorativeActors": 7,
+        "draws": 127,
+        "triangles": 1172474,
+        "errors": [],
+        "gl": 0,
+        "sha256": "f02119438eedcf7327210547325ab5935ae6098efe133c2c00a8d10201ae80c1",
+        "file": "r2-aerial.png"
+      },
+      "water": {
+        "canvasHash": "8d00c59e82adb6eb578cccbc8abbf9ca05cb8454c0b52fc0b83c2e1a3c692bb1",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            10,
+            2.25,
+            30
+          ],
+          "target": [
+            2,
+            1.15,
+            13
+          ],
+          "fov": 53
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": 0.22181172525182552,
+              "y": 0.5009077849390929,
+              "z": 0.9950587514549373
+            },
+            "anchor": {
+              "x": 0.22153980872030027,
+              "y": 0.48416598331616606,
+              "z": 0.9950537260960783
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": true
+          },
+          "seat-2": {
+            "head": {
+              "x": -0.10735665283726958,
+              "y": 0.4818507558484167,
+              "z": 0.9967020749283244
+            },
+            "anchor": {
+              "x": -0.10776043545180047,
+              "y": 0.47045108890608434,
+              "z": 0.9966997494258365
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": false
+          },
+          "seat-3": {
+            "head": {
+              "x": 1.298884478340153,
+              "y": 0.5041484162032167,
+              "z": 0.9947793057239374
+            },
+            "anchor": {
+              "x": 1.2997078389290815,
+              "y": 0.4864990418090236,
+              "z": 0.9947737189305756
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": false
+          }
+        },
+        "names": [
+          {
+            "seatId": "seat-1",
+            "actorId": "demo-1-actor-1",
+            "name": "An"
+          }
+        ],
+        "gifts": 3,
+        "counts": {
+          "pad": 11,
+          "leaf": 30,
+          "bloom": 8,
+          "bud": 10
+        },
+        "visibleDecorativeActors": 4,
+        "draws": 91,
+        "triangles": 841166,
+        "errors": [],
+        "gl": 0,
+        "sha256": "6bfcb9473b7295f026d8fbaec223ae488ff115e3dcf3563b510821ff18bce6a7",
+        "file": "r2-water.png"
+      },
+      "flowers": {
+        "canvasHash": "1c4d8c2962a42425acc4d975f4e0905950ddcd7d90a2bd157a5d13490461836f",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            -0.9,
+            4.7,
+            -18
+          ],
+          "target": [
+            -0.7,
+            0.12,
+            -13.1
+          ],
+          "fov": 56
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": 0.5918811397245539,
+              "y": -0.1972075157147264,
+              "z": 0.9962966932493054
+            },
+            "anchor": {
+              "x": 0.5926835740081109,
+              "y": -0.21209018729504947,
+              "z": 0.9962626039550752
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": false
+          },
+          "seat-2": {
+            "head": {
+              "x": 1.3720804339177408,
+              "y": -0.16110141608236106,
+              "z": 0.995518108809867
+            },
+            "anchor": {
+              "x": 1.381231782928509,
+              "y": -0.17860495292169298,
+              "z": 0.9954689782461137
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": false
+          },
+          "seat-3": {
+            "head": {
+              "x": -0.18036843937419522,
+              "y": -0.17734877437878205,
+              "z": 0.9958684634723859
+            },
+            "anchor": {
+              "x": -0.1869685718144647,
+              "y": -0.19368740087595337,
+              "z": 0.9958264438178672
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": false
+          }
+        },
+        "names": [],
+        "gifts": 3,
+        "counts": {
+          "pad": 3,
+          "leaf": 1,
+          "bloom": 0,
+          "bud": 1
+        },
+        "visibleDecorativeActors": 0,
+        "draws": 32,
+        "triangles": 202433,
+        "errors": [],
+        "gl": 0,
+        "sha256": "708ceeb012064459f01f70dc1a2ae73e4ddbc2ada501d2061e0fa744223528d9",
+        "file": "r2-flowers.png"
+      },
+      "gift": {
+        "canvasHash": "434ad4137dc101aa7c91fb96629821e8aac4eae02840dcf99ffa72fe5b3eb676",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            -2.1374503763825166,
+            1.1493887138912455,
+            8.870261580192393
+          ],
+          "target": [
+            -1.016070605667886,
+            0.6693887138912455,
+            13.742889968427228
+          ],
+          "fov": 50
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": 0.4976844218281918,
+              "y": 0.4087629140895326,
+              "z": 0.980048370553233
+            },
+            "anchor": {
+              "x": 0.49766983988294616,
+              "y": 0.3378516239797081,
+              "z": 0.979921469094043
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": true
+          },
+          "seat-2": {
+            "head": {
+              "x": -5.901449993583599,
+              "y": 0.3740901556203863,
+              "z": 1.0397713012214522
+            },
+            "anchor": {
+              "x": -5.823740646373556,
+              "y": 0.5112065775162022,
+              "z": 1.0392909321746095
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": false
+          },
+          "seat-3": {
+            "head": {
+              "x": -5.540770518170839,
+              "y": 0.41339771394295327,
+              "z": 0.972065047549001
+            },
+            "anchor": {
+              "x": -5.59401432063828,
+              "y": 0.3141872899910112,
+              "z": 0.9718170638007011
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": false
+          }
+        },
+        "names": [
+          {
+            "seatId": "seat-1",
+            "actorId": "demo-1-actor-1",
+            "name": "An"
+          }
+        ],
+        "gifts": 3,
+        "counts": {
+          "pad": 3,
+          "leaf": 4,
+          "bloom": 3,
+          "bud": 3
+        },
+        "visibleDecorativeActors": 0,
+        "draws": 47,
+        "triangles": 264751,
+        "errors": [],
+        "gl": 0,
+        "sha256": "b30031410f50ef42966f5efa283ef2a804a0071d821e43fe5d0073d23aaecaf2",
+        "file": "r2-gift.png"
+      },
+      "palette": {
+        "canvasHash": "e1423be1c2ebe8408d787f5d59dfe9cb587a4fdcdeacaf1638e64a2da0a02592",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            4.15,
+            6.4,
+            31.2
+          ],
+          "target": [
+            4.2,
+            0,
+            29
+          ],
+          "fov": 60
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": -0.30310437372994903,
+              "y": -0.6932929979526337,
+              "z": 0.9908178015213517
+            },
+            "anchor": {
+              "x": -0.3269472508979916,
+              "y": -0.7375603524239984,
+              "z": 0.9905392585447285
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": false
+          },
+          "seat-2": {
+            "head": {
+              "x": -1.4503773580303767,
+              "y": -0.8747548974340229,
+              "z": 0.9921023277350403
+            },
+            "anchor": {
+              "x": -1.5001509934460469,
+              "y": -0.9174378165991686,
+              "z": 0.991895674606637
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": false
+          },
+          "seat-3": {
+            "head": {
+              "x": 1.1414556238562437,
+              "y": -0.8420557989248645,
+              "z": 0.991870858488223
+            },
+            "anchor": {
+              "x": 1.1583057932984144,
+              "y": -0.8851318807192712,
+              "z": 0.9916520627093744
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": false
+          }
+        },
+        "names": [],
+        "gifts": 3,
+        "counts": {
+          "pad": 1,
+          "leaf": 2,
+          "bloom": 1,
+          "bud": 1
+        },
+        "visibleDecorativeActors": 0,
+        "draws": 21,
+        "triangles": 34324,
+        "errors": [],
+        "gl": 0,
+        "sha256": "2de7875da022b7de548fff33c4b3bb156df99bbbe6ec216f7460c39195e3d57b",
+        "file": "r2-palette.png"
+      }
+    },
+    "twilight": {
+      "canvasHash": "37353d92ca46f226909a6d9e885d06392c7abb02e25688a23f9491195addddf8",
+      "time": 18.1,
+      "pose": {
+        "position": [
+          8,
+          3.4,
+          24
+        ],
+        "target": [
+          0,
+          6.2,
+          1.8
+        ],
+        "fov": 55
+      },
+      "appearance": {
+        "look": "twilight",
+        "weights": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "DUSK_COMMUNITY",
+          "PINK_AERIAL_BLESSING",
+          "GOLDEN_UNDER_TREE"
+        ],
+        "exposure": 0.94,
+        "fog": [
+          0.057805430183792694,
+          0.04231141061442144,
+          0.12213877222015301
+        ],
+        "fogDensity": 0.012,
+        "reflection": {
+          "rose": 0.96,
+          "gold": 1.7064000000000001,
+          "streaks": 1.0752000000000002
+        },
+        "veinEmissive": 1.4784000000000002
+      },
+      "gold": {
+        "fill": 48,
+        "emissive": 1.32,
+        "waterGold": 1.58,
+        "postprocess": false
+      },
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          -1.0145664519164983,
+          1.0954871712066234,
+          13.722545496905653
+        ],
+        "nameWorld": [
+          -1.0153037821867865,
+          1.5954871712066234,
+          13.732518277063287
+        ],
+        "fxWorld": [
+          -1.3747113545055325,
+          1.0654871712066234,
+          13.575590915013372
+        ]
+      },
+      "mode": "GIFT_FOCUS",
+      "nameplates": {
+        "seat-1": {
+          "head": {
+            "x": -0.1899982864068771,
+            "y": 0.7942387765381927,
+            "z": 0.9921117009161347
+          },
+          "anchor": {
+            "x": -0.18786789171400253,
+            "y": 0.768337638607862,
+            "z": 0.9921366738941757
+          },
+          "actorId": "demo-1-actor-1",
+          "visible": false
+        },
+        "seat-2": {
+          "head": {
+            "x": -0.5291515619543683,
+            "y": 0.7211810552868491,
+            "z": 0.9953896417046832
+          },
+          "anchor": {
+            "x": -0.5272594095359593,
+            "y": 0.7058918537018951,
+            "z": 0.9953984858528778
+          },
+          "actorId": "demo-1-actor-2",
+          "visible": false
+        },
+        "seat-3": {
+          "head": {
+            "x": 1.3727451019057553,
+            "y": 0.7933681403855195,
+            "z": 0.992150764463532
+          },
+          "anchor": {
+            "x": 1.3700634438775177,
+            "y": 0.767594386045365,
+            "z": 0.9921754971726459
+          },
+          "actorId": "demo-1-actor-3",
+          "visible": false
+        }
+      },
+      "names": [],
+      "gifts": 3,
+      "counts": {
+        "pad": 9,
+        "leaf": 18,
+        "bloom": 6,
+        "bud": 6
+      },
+      "visibleDecorativeActors": 4,
+      "draws": 78,
+      "triangles": 665164,
+      "errors": [],
+      "gl": 0,
+      "sha256": "da5d8806001e9c1299383280c838da73c11bb00d551ea9321a8f7fee6268bb65",
+      "file": "r2-twilight-under.png"
+    }
+  },
+  "candidate": {
+    "revision": "cf612136111580b6cf48dea35b5030c6fe0878aa",
+    "asset": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+    "world": {
+      "requestedTree": "R18A",
+      "tree": "R18A",
+      "requestedDensity": "lush",
+      "density": "lush",
+      "fallback": false,
+      "failures": []
+    },
+    "totals": {
+      "realSeats": 3,
+      "decorativeSlots": 9,
+      "pad": 64,
+      "leaf": 120,
+      "bloom": 56,
+      "bud": 40,
+      "colors": {
+        "bloom": {
+          "deepPink": 9,
+          "palePink": 17,
+          "ivoryPink": 17,
+          "warmPink": 13
+        },
+        "bud": {
+          "warmPink": 7,
+          "palePink": 8,
+          "deepPink": 12,
+          "ivoryPink": 13
+        }
+      }
+    },
+    "shots": {
+      "under": {
+        "canvasHash": "ce3f9cbdc539af8acb089ddcebc4219a17f04a4776fae4c68d7889df41431c56",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            8,
+            3.4,
+            24
+          ],
+          "target": [
+            0,
+            6.2,
+            1.8
+          ],
+          "fov": 55
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "canopy": {
+          "clones": 11,
+          "meshes": 19
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "lobes": [
+          [
+            -7.392767307582334,
+            2.6685374528626595,
+            0.6460238769976704
+          ],
+          [
+            5.2991552716285435,
+            5.772166480581282,
+            0.7298217605188491
+          ],
+          [
+            2.162499133405655,
+            -4.588569497628554,
+            0.7917608364286195
+          ]
+        ],
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": -0.1899982864068771,
+              "y": 0.7942387765381927,
+              "z": 0.9921117009161347
+            },
+            "anchor": {
+              "x": -0.18786789171400253,
+              "y": 0.768337638607862,
+              "z": 0.9921366738941757
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": false
+          },
+          "seat-2": {
+            "head": {
+              "x": -0.5291515619543683,
+              "y": 0.7211810552868491,
+              "z": 0.9953896417046832
+            },
+            "anchor": {
+              "x": -0.5272594095359593,
+              "y": 0.7058918537018951,
+              "z": 0.9953984858528778
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": false
+          },
+          "seat-3": {
+            "head": {
+              "x": 1.3727451019057553,
+              "y": 0.7933681403855195,
+              "z": 0.992150764463532
+            },
+            "anchor": {
+              "x": 1.3700634438775177,
+              "y": 0.767594386045365,
+              "z": 0.9921754971726459
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": false
+          }
+        },
+        "names": [],
+        "gifts": 3,
+        "counts": {
+          "pad": 14,
+          "leaf": 32,
+          "bloom": 14,
+          "bud": 12
+        },
+        "colors": {
+          "bloom": {
+            "palePink": 8,
+            "deepPink": 1,
+            "ivoryPink": 2,
+            "warmPink": 3
+          },
+          "bud": {
+            "palePink": 3,
+            "deepPink": 3,
+            "ivoryPink": 5,
+            "warmPink": 1
+          }
+        },
+        "visibleDecorativeActors": 4,
+        "draws": 78,
+        "triangles": 885188,
+        "errors": [],
+        "gl": 0,
+        "sha256": "b34ce8790b72b00793f4af2a7e4d153ce6ce2024cd8835d112db586a90d621b1",
+        "file": "r3-under.png"
+      },
+      "wide": {
+        "canvasHash": "4d867fb25fb2f388cdec24f4c78ad9de745da3ae8bb85dd5c496444c02a79cd7",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            0,
+            10,
+            44
+          ],
+          "target": [
+            0,
+            9.5,
+            0
+          ],
+          "fov": 58
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "canopy": {
+          "clones": 11,
+          "meshes": 19
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "lobes": [
+          [
+            -7.392767307582334,
+            2.6685374528626595,
+            0.6460238769976704
+          ],
+          [
+            5.2991552716285435,
+            5.772166480581282,
+            0.7298217605188491
+          ],
+          [
+            2.162499133405655,
+            -4.588569497628554,
+            0.7917608364286195
+          ]
+        ],
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": 0.44644060215638903,
+              "y": 0.7541828903477639,
+              "z": 0.996907691873613
+            },
+            "anchor": {
+              "x": 0.4464340900600387,
+              "y": 0.7445624950371612,
+              "z": 0.9969072915711668
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": true
+          },
+          "seat-2": {
+            "head": {
+              "x": 0.008272734296475237,
+              "y": 0.7140961862661129,
+              "z": 0.9974067918449693
+            },
+            "anchor": {
+              "x": 0.008222011321689537,
+              "y": 0.7059302086766422,
+              "z": 0.9974065037160585
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": true
+          },
+          "seat-3": {
+            "head": {
+              "x": 0.9509466427615464,
+              "y": 0.7240723054827567,
+              "z": 0.9972825840576408
+            },
+            "anchor": {
+              "x": 0.9509952277936592,
+              "y": 0.7155442432408663,
+              "z": 0.9972822697328282
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": true
+          }
+        },
+        "names": [
+          {
+            "seatId": "seat-1",
+            "actorId": "demo-1-actor-1",
+            "name": "An"
+          },
+          {
+            "seatId": "seat-2",
+            "actorId": "demo-1-actor-2",
+            "name": "Bình"
+          },
+          {
+            "seatId": "seat-3",
+            "actorId": "demo-1-actor-3",
+            "name": "Chi"
+          }
+        ],
+        "gifts": 3,
+        "counts": {
+          "pad": 21,
+          "leaf": 54,
+          "bloom": 29,
+          "bud": 19
+        },
+        "colors": {
+          "bloom": {
+            "palePink": 11,
+            "deepPink": 6,
+            "ivoryPink": 8,
+            "warmPink": 4
+          },
+          "bud": {
+            "palePink": 3,
+            "deepPink": 5,
+            "ivoryPink": 8,
+            "warmPink": 3
+          }
+        },
+        "visibleDecorativeActors": 7,
+        "draws": 127,
+        "triangles": 1386322,
+        "errors": [],
+        "gl": 0,
+        "sha256": "0e940ed50872c900a24bee01619ceec3e1586f986bd1f278e208f56d03734ccf",
+        "file": "r3-wide.png"
+      },
+      "aerial": {
+        "canvasHash": "bf94a84ff8a57e0d54725e9588690f4ff47bd4875d79ba921beeaeea267e978b",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            19,
+            43,
+            32
+          ],
+          "target": [
+            0,
+            10,
+            0
+          ],
+          "fov": 54
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "canopy": {
+          "clones": 11,
+          "meshes": 19
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "lobes": [
+          [
+            -7.392767307582334,
+            2.6685374528626595,
+            0.6460238769976704
+          ],
+          [
+            5.2991552716285435,
+            5.772166480581282,
+            0.7298217605188491
+          ],
+          [
+            2.162499133405655,
+            -4.588569497628554,
+            0.7917608364286195
+          ]
+        ],
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": 0.2088522163356033,
+              "y": 0.7940874405011171,
+              "z": 0.9980814422645778
+            },
+            "anchor": {
+              "x": 0.20751623561936122,
+              "y": 0.7903588042188083,
+              "z": 0.9980717208132672
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": true
+          },
+          "seat-2": {
+            "head": {
+              "x": 0.062300913507792266,
+              "y": 0.6381882878516509,
+              "z": 0.9983651344061679
+            },
+            "anchor": {
+              "x": 0.060562471706240406,
+              "y": 0.6343417285163417,
+              "z": 0.998357846655475
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": true
+          },
+          "seat-3": {
+            "head": {
+              "x": 0.6251999469483616,
+              "y": 0.8338357597959696,
+              "z": 0.9980091116224048
+            },
+            "anchor": {
+              "x": 0.6257941552308055,
+              "y": 0.8301678679623375,
+              "z": 0.9979987134078929
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": true
+          }
+        },
+        "names": [
+          {
+            "seatId": "seat-1",
+            "actorId": "demo-1-actor-1",
+            "name": "An"
+          },
+          {
+            "seatId": "seat-2",
+            "actorId": "demo-1-actor-2",
+            "name": "Bình"
+          },
+          {
+            "seatId": "seat-3",
+            "actorId": "demo-1-actor-3",
+            "name": "Chi"
+          }
+        ],
+        "gifts": 3,
+        "counts": {
+          "pad": 27,
+          "leaf": 59,
+          "bloom": 31,
+          "bud": 16
+        },
+        "colors": {
+          "bloom": {
+            "palePink": 12,
+            "deepPink": 4,
+            "ivoryPink": 10,
+            "warmPink": 5
+          },
+          "bud": {
+            "palePink": 4,
+            "deepPink": 4,
+            "ivoryPink": 7,
+            "warmPink": 1
+          }
+        },
+        "visibleDecorativeActors": 7,
+        "draws": 127,
+        "triangles": 1504962,
+        "errors": [],
+        "gl": 0,
+        "sha256": "8c9a4dc00d84775d18446084fe76f9bb12ab4c9c2a171d2f7cb20a5f526effd6",
+        "file": "r3-aerial.png"
+      },
+      "water": {
+        "canvasHash": "732e4201c067697fdbd206dd64de03472c95765f6d168c553eccb7cbc13c12b2",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            10,
+            2.25,
+            30
+          ],
+          "target": [
+            2,
+            1.15,
+            13
+          ],
+          "fov": 53
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "canopy": {
+          "clones": 11,
+          "meshes": 19
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "lobes": [
+          [
+            -7.392767307582334,
+            2.6685374528626595,
+            0.6460238769976704
+          ],
+          [
+            5.2991552716285435,
+            5.772166480581282,
+            0.7298217605188491
+          ],
+          [
+            2.162499133405655,
+            -4.588569497628554,
+            0.7917608364286195
+          ]
+        ],
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": 0.22181172525182552,
+              "y": 0.5009077849390929,
+              "z": 0.9950587514549373
+            },
+            "anchor": {
+              "x": 0.22153980872030027,
+              "y": 0.48416598331616606,
+              "z": 0.9950537260960783
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": true
+          },
+          "seat-2": {
+            "head": {
+              "x": -0.10735665283726958,
+              "y": 0.4818507558484167,
+              "z": 0.9967020749283244
+            },
+            "anchor": {
+              "x": -0.10776043545180047,
+              "y": 0.47045108890608434,
+              "z": 0.9966997494258365
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": false
+          },
+          "seat-3": {
+            "head": {
+              "x": 1.298884478340153,
+              "y": 0.5041484162032167,
+              "z": 0.9947793057239374
+            },
+            "anchor": {
+              "x": 1.2997078389290815,
+              "y": 0.4864990418090236,
+              "z": 0.9947737189305756
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": false
+          }
+        },
+        "names": [
+          {
+            "seatId": "seat-1",
+            "actorId": "demo-1-actor-1",
+            "name": "An"
+          }
+        ],
+        "gifts": 3,
+        "counts": {
+          "pad": 20,
+          "leaf": 36,
+          "bloom": 20,
+          "bud": 14
+        },
+        "colors": {
+          "bloom": {
+            "palePink": 8,
+            "deepPink": 3,
+            "ivoryPink": 5,
+            "warmPink": 4
+          },
+          "bud": {
+            "palePink": 3,
+            "deepPink": 4,
+            "ivoryPink": 5,
+            "warmPink": 2
+          }
+        },
+        "visibleDecorativeActors": 4,
+        "draws": 91,
+        "triangles": 1024214,
+        "errors": [],
+        "gl": 0,
+        "sha256": "25c53291eba10a42771ab4c34e008590f44242a4f3e3f452c9c47aa39a937960",
+        "file": "r3-water.png"
+      },
+      "flowers": {
+        "canvasHash": "958f8518d05eabfd22fdd95980417bee5489790da3f608104142aa7003d0610c",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            -0.9,
+            4.7,
+            -18
+          ],
+          "target": [
+            -0.7,
+            0.12,
+            -13.1
+          ],
+          "fov": 56
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "canopy": {
+          "clones": 11,
+          "meshes": 19
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "lobes": [
+          [
+            -7.392767307582334,
+            2.6685374528626595,
+            0.6460238769976704
+          ],
+          [
+            5.2991552716285435,
+            5.772166480581282,
+            0.7298217605188491
+          ],
+          [
+            2.162499133405655,
+            -4.588569497628554,
+            0.7917608364286195
+          ]
+        ],
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": 0.5918811397245539,
+              "y": -0.1972075157147264,
+              "z": 0.9962966932493054
+            },
+            "anchor": {
+              "x": 0.5926835740081109,
+              "y": -0.21209018729504947,
+              "z": 0.9962626039550752
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": false
+          },
+          "seat-2": {
+            "head": {
+              "x": 1.3720804339177408,
+              "y": -0.16110141608236106,
+              "z": 0.995518108809867
+            },
+            "anchor": {
+              "x": 1.381231782928509,
+              "y": -0.17860495292169298,
+              "z": 0.9954689782461137
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": false
+          },
+          "seat-3": {
+            "head": {
+              "x": -0.18036843937419522,
+              "y": -0.17734877437878205,
+              "z": 0.9958684634723859
+            },
+            "anchor": {
+              "x": -0.1869685718144647,
+              "y": -0.19368740087595337,
+              "z": 0.9958264438178672
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": false
+          }
+        },
+        "names": [],
+        "gifts": 3,
+        "counts": {
+          "pad": 2,
+          "leaf": 3,
+          "bloom": 3,
+          "bud": 4
+        },
+        "colors": {
+          "bloom": {
+            "palePink": 3,
+            "deepPink": 0,
+            "ivoryPink": 0,
+            "warmPink": 0
+          },
+          "bud": {
+            "palePink": 1,
+            "deepPink": 1,
+            "ivoryPink": 1,
+            "warmPink": 1
+          }
+        },
+        "visibleDecorativeActors": 0,
+        "draws": 35,
+        "triangles": 220209,
+        "errors": [],
+        "gl": 0,
+        "sha256": "ed1de03331d6425becaffa0a7f9d3abf9658a35cee6c66781abac5cfb1e809b4",
+        "file": "r3-flowers.png"
+      },
+      "gift": {
+        "canvasHash": "462c63e78aa66ddc65b3a95e2d27674e0d5e00196852ca2b62b164802f6fef13",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            -2.1374503763825166,
+            1.1493887138912455,
+            8.870261580192393
+          ],
+          "target": [
+            -1.016070605667886,
+            0.6693887138912455,
+            13.742889968427228
+          ],
+          "fov": 50
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "canopy": {
+          "clones": 11,
+          "meshes": 19
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "lobes": [
+          [
+            -7.392767307582334,
+            2.6685374528626595,
+            0.6460238769976704
+          ],
+          [
+            5.2991552716285435,
+            5.772166480581282,
+            0.7298217605188491
+          ],
+          [
+            2.162499133405655,
+            -4.588569497628554,
+            0.7917608364286195
+          ]
+        ],
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": 0.4976844218281918,
+              "y": 0.4087629140895326,
+              "z": 0.980048370553233
+            },
+            "anchor": {
+              "x": 0.49766983988294616,
+              "y": 0.3378516239797081,
+              "z": 0.979921469094043
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": true
+          },
+          "seat-2": {
+            "head": {
+              "x": -5.901449993583599,
+              "y": 0.3740901556203863,
+              "z": 1.0397713012214522
+            },
+            "anchor": {
+              "x": -5.823740646373556,
+              "y": 0.5112065775162022,
+              "z": 1.0392909321746095
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": false
+          },
+          "seat-3": {
+            "head": {
+              "x": -5.540770518170839,
+              "y": 0.41339771394295327,
+              "z": 0.972065047549001
+            },
+            "anchor": {
+              "x": -5.59401432063828,
+              "y": 0.3141872899910112,
+              "z": 0.9718170638007011
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": false
+          }
+        },
+        "names": [
+          {
+            "seatId": "seat-1",
+            "actorId": "demo-1-actor-1",
+            "name": "An"
+          }
+        ],
+        "gifts": 3,
+        "counts": {
+          "pad": 2,
+          "leaf": 11,
+          "bloom": 5,
+          "bud": 2
+        },
+        "colors": {
+          "bloom": {
+            "palePink": 2,
+            "deepPink": 1,
+            "ivoryPink": 1,
+            "warmPink": 1
+          },
+          "bud": {
+            "palePink": 0,
+            "deepPink": 0,
+            "ivoryPink": 0,
+            "warmPink": 2
+          }
+        },
+        "visibleDecorativeActors": 0,
+        "draws": 47,
+        "triangles": 331447,
+        "errors": [],
+        "gl": 0,
+        "sha256": "d51850c607cd8e0df91e0f947423519adeaed03a0ffadc516bae2b0a0b488d0b",
+        "file": "r3-gift.png"
+      },
+      "palette": {
+        "canvasHash": "1982af0f4a2efec2753aff16c825070894c3390e2c9e14eeda8b27013b86cf9e",
+        "time": 18.1,
+        "pose": {
+          "position": [
+            4.15,
+            6.4,
+            31.2
+          ],
+          "target": [
+            4.2,
+            0,
+            29
+          ],
+          "fov": 60
+        },
+        "appearance": {
+          "look": "gold",
+          "weights": [
+            0,
+            0,
+            1
+          ],
+          "order": [
+            "DUSK_COMMUNITY",
+            "PINK_AERIAL_BLESSING",
+            "GOLDEN_UNDER_TREE"
+          ],
+          "exposure": 0.93,
+          "fog": [
+            0.06847816983662762,
+            0.036889450395083165,
+            0.08437621153575764
+          ],
+          "fogDensity": 0.013,
+          "reflection": {
+            "rose": 0.92,
+            "gold": 2.291,
+            "streaks": 1.2656
+          },
+          "veinEmissive": 1.8744
+        },
+        "canopy": {
+          "clones": 11,
+          "meshes": 19
+        },
+        "gold": {
+          "fill": 48,
+          "emissive": 1.32,
+          "waterGold": 1.58,
+          "postprocess": false
+        },
+        "lobes": [
+          [
+            -7.392767307582334,
+            2.6685374528626595,
+            0.6460238769976704
+          ],
+          [
+            5.2991552716285435,
+            5.772166480581282,
+            0.7298217605188491
+          ],
+          [
+            2.162499133405655,
+            -4.588569497628554,
+            0.7917608364286195
+          ]
+        ],
+        "focus": {
+          "actorId": "demo-1-actor-1",
+          "seatId": "seat-1",
+          "requestId": "demo-1-gift-1",
+          "name": "An",
+          "headWorld": [
+            -1.0145664519164983,
+            1.0954871712066234,
+            13.722545496905653
+          ],
+          "nameWorld": [
+            -1.0153037821867865,
+            1.5954871712066234,
+            13.732518277063287
+          ],
+          "fxWorld": [
+            -1.3747113545055325,
+            1.0654871712066234,
+            13.575590915013372
+          ]
+        },
+        "mode": "GIFT_FOCUS",
+        "nameplates": {
+          "seat-1": {
+            "head": {
+              "x": -0.30310437372994903,
+              "y": -0.6932929979526337,
+              "z": 0.9908178015213517
+            },
+            "anchor": {
+              "x": -0.3269472508979916,
+              "y": -0.7375603524239984,
+              "z": 0.9905392585447285
+            },
+            "actorId": "demo-1-actor-1",
+            "visible": false
+          },
+          "seat-2": {
+            "head": {
+              "x": -1.4503773580303767,
+              "y": -0.8747548974340229,
+              "z": 0.9921023277350403
+            },
+            "anchor": {
+              "x": -1.5001509934460469,
+              "y": -0.9174378165991686,
+              "z": 0.991895674606637
+            },
+            "actorId": "demo-1-actor-2",
+            "visible": false
+          },
+          "seat-3": {
+            "head": {
+              "x": 1.1414556238562437,
+              "y": -0.8420557989248645,
+              "z": 0.991870858488223
+            },
+            "anchor": {
+              "x": 1.1583057932984144,
+              "y": -0.8851318807192712,
+              "z": 0.9916520627093744
+            },
+            "actorId": "demo-1-actor-3",
+            "visible": false
+          }
+        },
+        "names": [],
+        "gifts": 3,
+        "counts": {
+          "pad": 1,
+          "leaf": 2,
+          "bloom": 4,
+          "bud": 1
+        },
+        "colors": {
+          "bloom": {
+            "palePink": 1,
+            "deepPink": 1,
+            "ivoryPink": 1,
+            "warmPink": 1
+          },
+          "bud": {
+            "palePink": 0,
+            "deepPink": 0,
+            "ivoryPink": 0,
+            "warmPink": 1
+          }
+        },
+        "visibleDecorativeActors": 0,
+        "draws": 21,
+        "triangles": 39508,
+        "errors": [],
+        "gl": 0,
+        "sha256": "14fbefc10254cce0701bbfa10a746660a7159d615c20727f7a8a861e65d2cae9",
+        "file": "r3-palette.png"
+      }
+    },
+    "contextRecovery": {
+      "canvasHash": "298c25d52f6ca98c724594f5390e46b98eb89d0bcf90577e65bfe11b3be30d59",
+      "time": 18.1,
+      "pose": {
+        "position": [
+          -0.9,
+          4.7,
+          -18
+        ],
+        "target": [
+          -0.7,
+          0.12,
+          -13.1
+        ],
+        "fov": 56
+      },
+      "appearance": {
+        "look": "gold",
+        "weights": [
+          0,
+          0,
+          1
+        ],
+        "order": [
+          "DUSK_COMMUNITY",
+          "PINK_AERIAL_BLESSING",
+          "GOLDEN_UNDER_TREE"
+        ],
+        "exposure": 0.93,
+        "fog": [
+          0.06847816983662762,
+          0.036889450395083165,
+          0.08437621153575764
+        ],
+        "fogDensity": 0.013,
+        "reflection": {
+          "rose": 0.92,
+          "gold": 2.291,
+          "streaks": 1.2656
+        },
+        "veinEmissive": 1.8744
+      },
+      "canopy": {
+        "clones": 11,
+        "meshes": 19
+      },
+      "gold": {
+        "fill": 48,
+        "emissive": 1.32,
+        "waterGold": 1.58,
+        "postprocess": false
+      },
+      "lobes": [
+        [
+          -7.392767307582334,
+          2.6685374528626595,
+          0.6460238769976704
+        ],
+        [
+          5.2991552716285435,
+          5.772166480581282,
+          0.7298217605188491
+        ],
+        [
+          2.162499133405655,
+          -4.588569497628554,
+          0.7917608364286195
+        ]
+      ],
+      "mode": "CINEMATIC",
+      "nameplates": {},
+      "names": [],
+      "gifts": 0,
+      "counts": {
+        "pad": 2,
+        "leaf": 3,
+        "bloom": 3,
+        "bud": 4
+      },
+      "colors": {
+        "bloom": {
+          "palePink": 3,
+          "deepPink": 0,
+          "ivoryPink": 0,
+          "warmPink": 0
+        },
+        "bud": {
+          "palePink": 1,
+          "deepPink": 1,
+          "ivoryPink": 1,
+          "warmPink": 1
+        }
+      },
+      "visibleDecorativeActors": 0,
+      "draws": 33,
+      "triangles": 220209,
+      "errors": [
+        "webglcontextlost"
+      ],
+      "gl": 0,
+      "sha256": "66c3d5629374ecc8e6a682960075ccf6394adb32f5ecafa6542dd8453269f96b",
+      "file": "r3-restored-flowers.png",
+      "beforeCanvasHash": "298c25d52f6ca98c724594f5390e46b98eb89d0bcf90577e65bfe11b3be30d59",
+      "pixelIdentical": true
+    },
+    "twilight": {
+      "canvasHash": "41e45f85116b7c4b818015acd5a27686cab01eced4ab9e07c029fcdc84a4349c",
+      "time": 18.1,
+      "pose": {
+        "position": [
+          8,
+          3.4,
+          24
+        ],
+        "target": [
+          0,
+          6.2,
+          1.8
+        ],
+        "fov": 55
+      },
+      "appearance": {
+        "look": "twilight",
+        "weights": [
+          1,
+          0,
+          0
+        ],
+        "order": [
+          "DUSK_COMMUNITY",
+          "PINK_AERIAL_BLESSING",
+          "GOLDEN_UNDER_TREE"
+        ],
+        "exposure": 0.94,
+        "fog": [
+          0.057805430183792694,
+          0.04231141061442144,
+          0.12213877222015301
+        ],
+        "fogDensity": 0.012,
+        "reflection": {
+          "rose": 0.96,
+          "gold": 1.7064000000000001,
+          "streaks": 1.0752000000000002
+        },
+        "veinEmissive": 1.4784000000000002
+      },
+      "canopy": {
+        "clones": 11,
+        "meshes": 19
+      },
+      "gold": {
+        "fill": 48,
+        "emissive": 1.32,
+        "waterGold": 1.58,
+        "postprocess": false
+      },
+      "lobes": [
+        [
+          -7.392767307582334,
+          2.6685374528626595,
+          0.6460238769976704
+        ],
+        [
+          5.2991552716285435,
+          5.772166480581282,
+          0.7298217605188491
+        ],
+        [
+          2.162499133405655,
+          -4.588569497628554,
+          0.7917608364286195
+        ]
+      ],
+      "focus": {
+        "actorId": "demo-1-actor-1",
+        "seatId": "seat-1",
+        "requestId": "demo-1-gift-1",
+        "name": "An",
+        "headWorld": [
+          -1.0145664519164983,
+          1.0954871712066234,
+          13.722545496905653
+        ],
+        "nameWorld": [
+          -1.0153037821867865,
+          1.5954871712066234,
+          13.732518277063287
+        ],
+        "fxWorld": [
+          -1.3747113545055325,
+          1.0654871712066234,
+          13.575590915013372
+        ]
+      },
+      "mode": "GIFT_FOCUS",
+      "nameplates": {
+        "seat-1": {
+          "head": {
+            "x": -0.1899982864068771,
+            "y": 0.7942387765381927,
+            "z": 0.9921117009161347
+          },
+          "anchor": {
+            "x": -0.18786789171400253,
+            "y": 0.768337638607862,
+            "z": 0.9921366738941757
+          },
+          "actorId": "demo-1-actor-1",
+          "visible": false
+        },
+        "seat-2": {
+          "head": {
+            "x": -0.5291515619543683,
+            "y": 0.7211810552868491,
+            "z": 0.9953896417046832
+          },
+          "anchor": {
+            "x": -0.5272594095359593,
+            "y": 0.7058918537018951,
+            "z": 0.9953984858528778
+          },
+          "actorId": "demo-1-actor-2",
+          "visible": false
+        },
+        "seat-3": {
+          "head": {
+            "x": 1.3727451019057553,
+            "y": 0.7933681403855195,
+            "z": 0.992150764463532
+          },
+          "anchor": {
+            "x": 1.3700634438775177,
+            "y": 0.767594386045365,
+            "z": 0.9921754971726459
+          },
+          "actorId": "demo-1-actor-3",
+          "visible": false
+        }
+      },
+      "names": [],
+      "gifts": 3,
+      "counts": {
+        "pad": 14,
+        "leaf": 32,
+        "bloom": 14,
+        "bud": 12
+      },
+      "colors": {
+        "bloom": {
+          "palePink": 8,
+          "deepPink": 1,
+          "ivoryPink": 2,
+          "warmPink": 3
+        },
+        "bud": {
+          "palePink": 3,
+          "deepPink": 3,
+          "ivoryPink": 5,
+          "warmPink": 1
+        }
+      },
+      "visibleDecorativeActors": 4,
+      "draws": 78,
+      "triangles": 885188,
+      "errors": [],
+      "gl": 0,
+      "sha256": "ff93b9839d157962abc591023275cbe74cc552d7ca9ca4428dc58f89c0af059e",
+      "file": "r3-twilight-under.png"
+    }
+  },
+  "water": [
+    {
+      "canvasHash": "5e30ac7e16d0b964c2874a96f77861e83e082250d477cc7a682767e78d4ad9be",
+      "time": 0,
+      "pose": {
+        "position": [
+          10,
+          2.25,
+          30
+        ],
+        "target": [
+          2,
+          1.15,
+          13
+        ],
+        "fov": 53
+      },
+      "appearance": {
+        "look": "gold",
+        "weights": [
+          0,
+          0,
+          1
+        ],
+        "order": [
+          "DUSK_COMMUNITY",
+          "PINK_AERIAL_BLESSING",
+          "GOLDEN_UNDER_TREE"
+        ],
+        "exposure": 0.93,
+        "fog": [
+          0.06847816983662762,
+          0.036889450395083165,
+          0.08437621153575764
+        ],
+        "fogDensity": 0.013,
+        "reflection": {
+          "rose": 0.92,
+          "gold": 2.291,
+          "streaks": 1.2656
+        },
+        "veinEmissive": 1.8744
+      },
+      "canopy": {
+        "clones": 11,
+        "meshes": 19
+      },
+      "gold": {
+        "fill": 48,
+        "emissive": 1.32,
+        "waterGold": 1.58,
+        "postprocess": false
+      },
+      "lobes": [
+        [
+          -5.053287617676522,
+          4.358404376595632,
+          0.857627435783596
+        ],
+        [
+          5.879864698948832,
+          6.036855537058399,
+          0.6855268712217322
+        ],
+        [
+          -0.7464007117039271,
+          -6.732069642620462,
+          0.6050561102543776
+        ]
+      ],
+      "mode": "CINEMATIC",
+      "nameplates": {},
+      "names": [],
+      "gifts": 0,
+      "counts": {
+        "pad": 20,
+        "leaf": 36,
+        "bloom": 20,
+        "bud": 14
+      },
+      "colors": {
+        "bloom": {
+          "palePink": 8,
+          "deepPink": 3,
+          "ivoryPink": 5,
+          "warmPink": 4
+        },
+        "bud": {
+          "palePink": 3,
+          "deepPink": 4,
+          "ivoryPink": 5,
+          "warmPink": 2
+        }
+      },
+      "visibleDecorativeActors": 4,
+      "draws": 89,
+      "triangles": 1024214,
+      "errors": [],
+      "gl": 0,
+      "sha256": "a9233ebb4cab14c2d49334dbb47e0d4271751b22b2de444b5831335a8fca9724",
+      "file": "water-t0.png"
+    },
+    {
+      "canvasHash": "052a865abbc50f8765c92cbaf4426d78001d341cf342088872786c67bb7f6a20",
+      "time": 4,
+      "pose": {
+        "position": [
+          10,
+          2.25,
+          30
+        ],
+        "target": [
+          2,
+          1.15,
+          13
+        ],
+        "fov": 53
+      },
+      "appearance": {
+        "look": "gold",
+        "weights": [
+          0,
+          0,
+          1
+        ],
+        "order": [
+          "DUSK_COMMUNITY",
+          "PINK_AERIAL_BLESSING",
+          "GOLDEN_UNDER_TREE"
+        ],
+        "exposure": 0.93,
+        "fog": [
+          0.06847816983662762,
+          0.036889450395083165,
+          0.08437621153575764
+        ],
+        "fogDensity": 0.013,
+        "reflection": {
+          "rose": 0.92,
+          "gold": 2.291,
+          "streaks": 1.2656
+        },
+        "veinEmissive": 1.8744
+      },
+      "canopy": {
+        "clones": 11,
+        "meshes": 19
+      },
+      "gold": {
+        "fill": 48,
+        "emissive": 1.32,
+        "waterGold": 1.58,
+        "postprocess": false
+      },
+      "lobes": [
+        [
+          -3.8626661908097244,
+          3.559836813551701,
+          0.9186352246755531
+        ],
+        [
+          4.281110934718316,
+          6.975753299240857,
+          0.8371913512721817
+        ],
+        [
+          -0.11035523996321417,
+          -7.04683986713349,
+          0.5414502241485402
+        ]
+      ],
+      "mode": "CINEMATIC",
+      "nameplates": {},
+      "names": [],
+      "gifts": 0,
+      "counts": {
+        "pad": 20,
+        "leaf": 36,
+        "bloom": 20,
+        "bud": 14
+      },
+      "colors": {
+        "bloom": {
+          "palePink": 8,
+          "deepPink": 3,
+          "ivoryPink": 5,
+          "warmPink": 4
+        },
+        "bud": {
+          "palePink": 3,
+          "deepPink": 4,
+          "ivoryPink": 5,
+          "warmPink": 2
+        }
+      },
+      "visibleDecorativeActors": 4,
+      "draws": 89,
+      "triangles": 1024214,
+      "errors": [],
+      "gl": 0,
+      "sha256": "fb0d4fe7b5ff8eeef617daae1e7e177a6a14217d34a79649b72a6ed96addd865",
+      "file": "water-t4.png"
+    },
+    {
+      "canvasHash": "51875cdf04abbcc100a0198bc57d7d57e574d11edad9aee3635336efc52596c2",
+      "time": 8,
+      "pose": {
+        "position": [
+          10,
+          2.25,
+          30
+        ],
+        "target": [
+          2,
+          1.15,
+          13
+        ],
+        "fov": 53
+      },
+      "appearance": {
+        "look": "gold",
+        "weights": [
+          0,
+          0,
+          1
+        ],
+        "order": [
+          "DUSK_COMMUNITY",
+          "PINK_AERIAL_BLESSING",
+          "GOLDEN_UNDER_TREE"
+        ],
+        "exposure": 0.93,
+        "fog": [
+          0.06847816983662762,
+          0.036889450395083165,
+          0.08437621153575764
+        ],
+        "fogDensity": 0.013,
+        "reflection": {
+          "rose": 0.92,
+          "gold": 2.291,
+          "streaks": 1.2656
+        },
+        "veinEmissive": 1.8744
+      },
+      "canopy": {
+        "clones": 11,
+        "meshes": 19
+      },
+      "gold": {
+        "fill": 48,
+        "emissive": 1.32,
+        "waterGold": 1.58,
+        "postprocess": false
+      },
+      "lobes": [
+        [
+          -4.041688701472205,
+          2.6035065807005804,
+          0.8216980300967913
+        ],
+        [
+          3.012592422760801,
+          7.443644240153081,
+          0.9815295100934146
+        ],
+        [
+          1.479885509566426,
+          -6.604578077697959,
+          0.6196057286738134
+        ]
+      ],
+      "mode": "CINEMATIC",
+      "nameplates": {},
+      "names": [],
+      "gifts": 0,
+      "counts": {
+        "pad": 20,
+        "leaf": 36,
+        "bloom": 20,
+        "bud": 14
+      },
+      "colors": {
+        "bloom": {
+          "palePink": 8,
+          "deepPink": 3,
+          "ivoryPink": 5,
+          "warmPink": 4
+        },
+        "bud": {
+          "palePink": 3,
+          "deepPink": 4,
+          "ivoryPink": 5,
+          "warmPink": 2
+        }
+      },
+      "visibleDecorativeActors": 4,
+      "draws": 89,
+      "triangles": 1024214,
+      "errors": [],
+      "gl": 0,
+      "sha256": "81b28b377fd995e01c7361d67d944f30ff61799bab3e0b52ae729fec3014081f",
+      "file": "water-t8.png"
+    },
+    {
+      "canvasHash": "50a8df1c0b6e044986de83d9c8ccd6b9aa2f29b36ed3705320e0dbeb23a171cb",
+      "time": 12,
+      "pose": {
+        "position": [
+          10,
+          2.25,
+          30
+        ],
+        "target": [
+          2,
+          1.15,
+          13
+        ],
+        "fov": 53
+      },
+      "appearance": {
+        "look": "gold",
+        "weights": [
+          0,
+          0,
+          1
+        ],
+        "order": [
+          "DUSK_COMMUNITY",
+          "PINK_AERIAL_BLESSING",
+          "GOLDEN_UNDER_TREE"
+        ],
+        "exposure": 0.93,
+        "fog": [
+          0.06847816983662762,
+          0.036889450395083165,
+          0.08437621153575764
+        ],
+        "fogDensity": 0.013,
+        "reflection": {
+          "rose": 0.92,
+          "gold": 2.291,
+          "streaks": 1.2656
+        },
+        "veinEmissive": 1.8744
+      },
+      "canopy": {
+        "clones": 11,
+        "meshes": 19
+      },
+      "gold": {
+        "fill": 48,
+        "emissive": 1.32,
+        "waterGold": 1.58,
+        "postprocess": false
+      },
+      "lobes": [
+        [
+          -5.4492210192435016,
+          2.070059694631077,
+          0.6655723999704141
+        ],
+        [
+          3.0743580197528497,
+          7.156443425840081,
+          0.9714941965820434
+        ],
+        [
+          2.770639837787442,
+          -5.673808197853947,
+          0.7599002677093657
+        ]
+      ],
+      "mode": "CINEMATIC",
+      "nameplates": {},
+      "names": [],
+      "gifts": 0,
+      "counts": {
+        "pad": 20,
+        "leaf": 36,
+        "bloom": 20,
+        "bud": 14
+      },
+      "colors": {
+        "bloom": {
+          "palePink": 8,
+          "deepPink": 3,
+          "ivoryPink": 5,
+          "warmPink": 4
+        },
+        "bud": {
+          "palePink": 3,
+          "deepPink": 4,
+          "ivoryPink": 5,
+          "warmPink": 2
+        }
+      },
+      "visibleDecorativeActors": 4,
+      "draws": 89,
+      "triangles": 1024214,
+      "errors": [],
+      "gl": 0,
+      "sha256": "fae09300c92890494dc70fc2522433afd244acdcd1b931c70e326f42fd112490",
+      "file": "water-t12.png"
+    }
+  ],
+  "fixedTimeCanvasHash": "50a8df1c0b6e044986de83d9c8ccd6b9aa2f29b36ed3705320e0dbeb23a171cb",
+  "parity": [
+    {
+      "options": {
+        "profile": "eco"
+      },
+      "sha256": "45a5aa0ab23d65b7f79056fe279b84a0d1dc3436f1085d2a5b54d22eacb63d56",
+      "tree": "R18A",
+      "failures": []
+    },
+    {
+      "options": {
+        "density": "legacy"
+      },
+      "sha256": "1c73316ca4e931ae950a4b1c6f6f2fed88cde0150b27298f49e18c4e1e908ac8",
+      "tree": "R18A",
+      "failures": []
+    },
+    {
+      "options": {
+        "fallback": true
+      },
+      "sha256": "3b78904e1f56c00d2317bbcd26110110fe136e12e1910649512b42464ccd2b4e",
+      "tree": "R17B",
+      "failures": [
+        {
+          "revision": "R18A",
+          "code": "MISSING"
+        }
+      ]
+    },
+    {
+      "options": {
+        "look": "legacy"
+      },
+      "sha256": "a3e03fbe3c174c0ca5f9c8df952044d90aa4e44ca50d19379e7852a0249b8d21",
+      "tree": "R18A",
+      "failures": []
+    }
+  ],
+  "benchmark": {
+    "r2": {
+      "frames": 1138,
+      "fps": 142.12564006494316,
+      "p50": 6.900000000000546,
+      "p95": 7.100000000000364,
+      "p99": 13.600000000000364,
+      "maxDrawCalls": 125,
+      "maxTriangles": 1224570,
+      "shot": "COMMUNITY",
+      "elapsedSeconds": 9.368,
+      "errors": [],
+      "graphics": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "revision": "5713e5c74877cbc716a68dc724899019becdb0ad"
+    },
+    "r3": {
+      "frames": 1135,
+      "fps": 141.75804960907251,
+      "p50": 6.900000000001455,
+      "p95": 7.199999999999818,
+      "p99": 13.800000000000182,
+      "maxDrawCalls": 125,
+      "maxTriangles": 1546194,
+      "shot": "COMMUNITY",
+      "elapsedSeconds": 9.4651,
+      "errors": [],
+      "graphics": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "revision": "cf612136111580b6cf48dea35b5030c6fe0878aa"
+    }
+  },
+  "clip": {
+    "duration": 28.005299999999814,
+    "bytes": 7789103,
+    "width": 720,
+    "height": 1280,
+    "frameRate": 30,
+    "shots": [
+      "HERO_WIDE_TREE_REFLECTION",
+      "COMMUNITY",
+      "HERO_TOP_RING"
+    ],
+    "giftFocus": [
+      [
+        "seat-1",
+        "An"
+      ]
+    ],
+    "errors": []
+  }
+}
