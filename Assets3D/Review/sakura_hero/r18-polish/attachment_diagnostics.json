@@ -1,0 +1,1745 @@
+{
+  "baseline": "07f57cb35ba3ec68184abbd2c173e29a3fcc4788",
+  "sourceAuditSHA256": "d1bd1bc8d914893e6c98b96b00553191b0497dd548e982c44979af7a42c20baa",
+  "profiles": {
+    "quality": {
+      "root": "Trunk_bark_plumblack:0",
+      "woodComponents": 83,
+      "rootedStructuralCount": 52,
+      "structuralCount": 52,
+      "ornamentalReliefCount": 31,
+      "ornamentalIsolatedPreserved": [
+        {
+          "id": "Branches_plum:0",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              -1.464838981628418,
+              -0.04749856889247894,
+              3.660432815551758
+            ],
+            [
+              -0.6054061651229858,
+              0.6209157109260559,
+              4.049415588378906
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.660015881061554,
+          "childPoint": [
+            -0.606309175491333,
+            -0.04363004490733147,
+            4.0091376304626465
+          ],
+          "parentPoint": [
+            -0.23800532519817352,
+            -0.1668705940246582,
+            3.47548508644104
+          ]
+        },
+        {
+          "id": "Branches_plum:2",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              3.326425075531006,
+              -2.2756574153900146,
+              1.521645188331604
+            ],
+            [
+              3.6222965717315674,
+              -1.5220649242401123,
+              2.2444469928741455
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:1",
+          "gapMetersVertexToSurface": 0.24983294308185577,
+          "childPoint": [
+            3.3276493549346924,
+            -1.5269267559051514,
+            1.5216472148895264
+          ],
+          "parentPoint": [
+            3.1475086212158203,
+            -1.5150090456008911,
+            1.3489515781402588
+          ]
+        },
+        {
+          "id": "Branches_plum:3",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              0.09333065897226334,
+              -1.7979483604431152,
+              4.747109889984131
+            ],
+            [
+              0.6560701131820679,
+              -1.5492037534713745,
+              5.153204917907715
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.0560358501970768,
+          "childPoint": [
+            0.6560701131820679,
+            -1.7953732013702393,
+            5.149225234985352
+          ],
+          "parentPoint": [
+            0.7114676833152771,
+            -1.8020009994506836,
+            5.144010066986084
+          ]
+        },
+        {
+          "id": "Branches_plum:6",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              2.2160327434539795,
+              0.9742807149887085,
+              2.2979633808135986
+            ],
+            [
+              2.517826795578003,
+              1.9821213483810425,
+              2.9947855472564697
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.15067680180072784,
+          "childPoint": [
+            2.432715892791748,
+            0.9742807149887085,
+            2.9896504878997803
+          ],
+          "parentPoint": [
+            2.368360996246338,
+            0.8503466844558716,
+            2.9330615997314453
+          ]
+        },
+        {
+          "id": "Branches_plum:8",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              -3.3088574409484863,
+              0.911270260810852,
+              1.9642878770828247
+            ],
+            [
+              -2.273714065551758,
+              1.1557714939117432,
+              3.2183046340942383
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.2347014844417572,
+          "childPoint": [
+            -3.301286220550537,
+            0.915210485458374,
+            1.9642878770828247
+          ],
+          "parentPoint": [
+            -3.1642816066741943,
+            0.9218487739562988,
+            1.7738398313522339
+          ]
+        },
+        {
+          "id": "Branches_plum:9",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              1.921822428703308,
+              -3.093830108642578,
+              9.285613059997559
+            ],
+            [
+              2.2897775173187256,
+              -2.5115206241607666,
+              10.216495513916016
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.005388025194406509,
+          "childPoint": [
+            1.9520115852355957,
+            -3.093830108642578,
+            9.290555953979492
+          ],
+          "parentPoint": [
+            1.9528820514678955,
+            -3.0991275310516357,
+            9.291014671325684
+          ]
+        },
+        {
+          "id": "Branches_plum:15",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              1.757031798362732,
+              0.9763274788856506,
+              3.064552068710327
+            ],
+            [
+              2.3136909008026123,
+              1.754186749458313,
+              3.326646566390991
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.24187375605106354,
+          "childPoint": [
+            2.2846455574035645,
+            1.0871163606643677,
+            3.144062042236328
+          ],
+          "parentPoint": [
+            2.176405906677246,
+            0.903161883354187,
+            3.0302734375
+          ]
+        },
+        {
+          "id": "Branches_plum:19",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              2.2168076038360596,
+              0.20205006003379822,
+              3.075047492980957
+            ],
+            [
+              2.6033194065093994,
+              1.190779685974121,
+              4.015097141265869
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.18856720626354218,
+          "childPoint": [
+            2.5982162952423096,
+            0.20205006003379822,
+            4.00997257232666
+          ],
+          "parentPoint": [
+            2.4760477542877197,
+            0.09075874835252762,
+            3.919161319732666
+          ]
+        },
+        {
+          "id": "Branches_plum:20",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              3.3267245292663574,
+              -1.6412577629089355,
+              8.910645484924316
+            ],
+            [
+              3.4019458293914795,
+              -1.5302640199661255,
+              9.771162033081055
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.11262334138154984,
+          "childPoint": [
+            3.3604984283447266,
+            -1.6375066041946411,
+            8.912254333496094
+          ],
+          "parentPoint": [
+            3.471404552459717,
+            -1.6562846899032593,
+            8.906665802001953
+          ]
+        },
+        {
+          "id": "Branches_plum:21",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              0.3883586823940277,
+              -0.12077532708644867,
+              4.446608066558838
+            ],
+            [
+              0.8917124271392822,
+              0.026380810886621475,
+              4.821035385131836
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.3682144284248352,
+          "childPoint": [
+            0.8917124271392822,
+            -0.11831532418727875,
+            4.815850257873535
+          ],
+          "parentPoint": [
+            1.0749189853668213,
+            -0.3528691828250885,
+            4.599051475524902
+          ]
+        },
+        {
+          "id": "Branches_plum:23",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              -0.8647587895393372,
+              1.764282464981079,
+              2.4366214275360107
+            ],
+            [
+              -0.6156931519508362,
+              2.3378329277038574,
+              3.6429409980773926
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.363565057516098,
+          "childPoint": [
+            -0.8472253680229187,
+            2.3310537338256836,
+            2.4379372596740723
+          ],
+          "parentPoint": [
+            -0.932243287563324,
+            2.099008798599243,
+            2.171278953552246
+          ]
+        },
+        {
+          "id": "Branches_plum:25",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              3.3173446655273438,
+              -1.906637191772461,
+              8.683419227600098
+            ],
+            [
+              3.405271291732788,
+              -1.5319721698760986,
+              9.376786231994629
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.0193867776542902,
+          "childPoint": [
+            3.385301351547241,
+            -1.904360055923462,
+            8.686760902404785
+          ],
+          "parentPoint": [
+            3.4037046432495117,
+            -1.9092137813568115,
+            8.690449714660645
+          ]
+        },
+        {
+          "id": "Branches_plum:30",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              2.8255903720855713,
+              -2.4608566761016846,
+              9.159527778625488
+            ],
+            [
+              3.3279812335968018,
+              -1.9122041463851929,
+              9.969048500061035
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack:0",
+          "gapMetersVertexToSurface": 0.04773896932601929,
+          "childPoint": [
+            3.1401474475860596,
+            -2.258945941925049,
+            9.53788948059082
+          ],
+          "parentPoint": [
+            3.1708784103393555,
+            -2.295313596725464,
+            9.54135513305664
+          ]
+        }
+      ],
+      "drapedStems": [
+        {
+          "id": "Branches_plum:61",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              9.133536338806152,
+              -5.8748931884765625,
+              10.975050926208496
+            ],
+            [
+              9.361220359802246,
+              -5.664491176605225,
+              12.391761779785156
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum:62",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -4.331630706787109,
+              7.845608234405518,
+              10.370087623596191
+            ],
+            [
+              -4.1042256355285645,
+              8.055736541748047,
+              11.786969184875488
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum:63",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -9.367494583129883,
+              -1.1833564043045044,
+              10.417681694030762
+            ],
+            [
+              -9.13998031616211,
+              -0.9733683466911316,
+              11.834671020507812
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum:64",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              10.329625129699707,
+              -5.244143486022949,
+              11.271865844726562
+            ],
+            [
+              10.557419776916504,
+              -5.034117221832275,
+              12.688864707946777
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum:65",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              4.589074611663818,
+              -9.94214153289795,
+              10.708745002746582
+            ],
+            [
+              4.817126274108887,
+              -9.731935501098633,
+              12.125662803649902
+            ]
+          ]
+        }
+      ],
+      "attachmentFindings": [
+        {
+          "id": "Branches_plum:61",
+          "oldParent": "Branches_plum:32",
+          "newParent": "Branches_plum:32",
+          "oldGapMeters": 3.182236671447754,
+          "childPoint": [
+            9.133536338806152,
+            -5.832466125488281,
+            12.368820190429688
+          ],
+          "parentPoint": [
+            6.416427135467529,
+            -6.1550421714782715,
+            13.993595123291016
+          ],
+          "newAnchor": [
+            6.416427135467529,
+            -6.1550421714782715,
+            13.993595123291016
+          ],
+          "deltaBlenderMeters": [
+            -2.717109203338623,
+            -0.32257604598999023,
+            1.4447749328613284
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              6.416427135467529,
+              -6.197469234466553,
+              12.419825859069825
+            ],
+            [
+              6.644111156463623,
+              -5.987067222595215,
+              13.836536712646485
+            ]
+          ],
+          "fix": "R18_support_0",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink:2341",
+              "fix": "R18_support_1"
+            },
+            {
+              "id": "Sakura_petal_pink:2342",
+              "fix": "R18_support_2"
+            },
+            {
+              "id": "Sakura_petal_pink:2343",
+              "fix": "R18_support_3"
+            },
+            {
+              "id": "Sakura_petal_pink:2344",
+              "fix": "R18_support_4"
+            },
+            {
+              "id": "Sakura_petal_blush:2240",
+              "fix": "R18_support_5"
+            },
+            {
+              "id": "Sakura_petal_blush:2241",
+              "fix": "R18_support_6"
+            },
+            {
+              "id": "Sakura_petal_blush:2242",
+              "fix": "R18_support_7"
+            },
+            {
+              "id": "Sakura_petal_blush:2243",
+              "fix": "R18_support_8"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum:62",
+          "oldParent": "Branches_plum:49",
+          "newParent": "Branches_plum:49",
+          "oldGapMeters": 2.7357780933380127,
+          "childPoint": [
+            -4.251408576965332,
+            7.860788822174072,
+            11.776928901672363
+          ],
+          "parentPoint": [
+            -2.835577964782715,
+            5.523504257202148,
+            11.646517753601074
+          ],
+          "newAnchor": [
+            -2.835577964782715,
+            5.523504257202148,
+            11.646517753601074
+          ],
+          "deltaBlenderMeters": [
+            1.4158306121826172,
+            -2.337284564971924,
+            -0.3104111480712888
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              -2.915800094604492,
+              5.508323669433594,
+              10.059676475524903
+            ],
+            [
+              -2.6883950233459473,
+              5.718451976776123,
+              11.4765580368042
+            ]
+          ],
+          "fix": "R18_support_9",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink:2345",
+              "fix": "R18_support_10"
+            },
+            {
+              "id": "Sakura_petal_pink:2346",
+              "fix": "R18_support_11"
+            },
+            {
+              "id": "Sakura_petal_pink:2347",
+              "fix": "R18_support_12"
+            },
+            {
+              "id": "Sakura_petal_pink:2348",
+              "fix": "R18_support_13"
+            },
+            {
+              "id": "Sakura_petal_blush:2244",
+              "fix": "R18_support_14"
+            },
+            {
+              "id": "Sakura_petal_blush:2245",
+              "fix": "R18_support_15"
+            },
+            {
+              "id": "Sakura_petal_blush:2246",
+              "fix": "R18_support_16"
+            },
+            {
+              "id": "Sakura_petal_blush:2247",
+              "fix": "R18_support_17"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum:63",
+          "oldParent": "Branches_plum:46",
+          "newParent": "Branches_plum:46",
+          "oldGapMeters": 4.95056676864624,
+          "childPoint": [
+            -9.28971004486084,
+            -1.1152079105377197,
+            11.834671020507812
+          ],
+          "parentPoint": [
+            -4.812382698059082,
+            0.07039830833673477,
+            13.582809448242188
+          ],
+          "newAnchor": [
+            -4.812382698059082,
+            0.07039830833673477,
+            13.582809448242188
+          ],
+          "deltaBlenderMeters": [
+            4.477327346801758,
+            1.1856062188744545,
+            1.5681384277343753
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              -4.890167236328125,
+              0.0022498145699501038,
+              11.985820121765137
+            ],
+            [
+              -4.662652969360352,
+              0.2122378721833229,
+              13.402809448242188
+            ]
+          ],
+          "fix": "R18_support_18",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink:2349",
+              "fix": "R18_support_19"
+            },
+            {
+              "id": "Sakura_petal_pink:2350",
+              "fix": "R18_support_20"
+            },
+            {
+              "id": "Sakura_petal_pink:2351",
+              "fix": "R18_support_21"
+            },
+            {
+              "id": "Sakura_petal_pink:2352",
+              "fix": "R18_support_22"
+            },
+            {
+              "id": "Sakura_petal_blush:2248",
+              "fix": "R18_support_23"
+            },
+            {
+              "id": "Sakura_petal_blush:2249",
+              "fix": "R18_support_24"
+            },
+            {
+              "id": "Sakura_petal_blush:2250",
+              "fix": "R18_support_25"
+            },
+            {
+              "id": "Sakura_petal_blush:2251",
+              "fix": "R18_support_26"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum:64",
+          "oldParent": "Branches_plum:60",
+          "newParent": "Branches_plum:60",
+          "oldGapMeters": 3.9626498222351074,
+          "childPoint": [
+            10.356941223144531,
+            -5.160791873931885,
+            12.680359840393066
+          ],
+          "parentPoint": [
+            9.455122947692871,
+            -1.4107779264450073,
+            11.771121978759766
+          ],
+          "newAnchor": [
+            9.455122947692871,
+            -1.4107779264450073,
+            11.771121978759766
+          ],
+          "deltaBlenderMeters": [
+            -0.9018182754516602,
+            3.7500139474868774,
+            -1.0892378616333005
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              9.427806854248047,
+              -1.4941295385360718,
+              10.182627983093262
+            ],
+            [
+              9.655601501464844,
+              -1.284103274345398,
+              11.599626846313477
+            ]
+          ],
+          "fix": "R18_support_27",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink:2353",
+              "fix": "R18_support_28"
+            },
+            {
+              "id": "Sakura_petal_pink:2354",
+              "fix": "R18_support_29"
+            },
+            {
+              "id": "Sakura_petal_pink:2355",
+              "fix": "R18_support_30"
+            },
+            {
+              "id": "Sakura_petal_pink:2356",
+              "fix": "R18_support_31"
+            },
+            {
+              "id": "Sakura_petal_blush:2252",
+              "fix": "R18_support_32"
+            },
+            {
+              "id": "Sakura_petal_blush:2253",
+              "fix": "R18_support_33"
+            },
+            {
+              "id": "Sakura_petal_blush:2254",
+              "fix": "R18_support_34"
+            },
+            {
+              "id": "Sakura_petal_blush:2255",
+              "fix": "R18_support_35"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum:65",
+          "oldParent": "Branches_plum:37",
+          "newParent": "Branches_plum:37",
+          "oldGapMeters": 3.5249862670898438,
+          "childPoint": [
+            4.616672992706299,
+            -9.858565330505371,
+            12.1172513961792
+          ],
+          "parentPoint": [
+            2.6834146976470947,
+            -7.748503684997559,
+            14.175328254699707
+          ],
+          "newAnchor": [
+            2.6834146976470947,
+            -7.748503684997559,
+            14.175328254699707
+          ],
+          "deltaBlenderMeters": [
+            -1.933258295059204,
+            2.1100616455078125,
+            1.878076858520508
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              2.6558163166046143,
+              -7.832079887390137,
+              12.58682186126709
+            ],
+            [
+              2.8838679790496826,
+              -7.62187385559082,
+              14.00373966217041
+            ]
+          ],
+          "fix": "R18_support_36",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink:2357",
+              "fix": "R18_support_37"
+            },
+            {
+              "id": "Sakura_petal_pink:2358",
+              "fix": "R18_support_38"
+            },
+            {
+              "id": "Sakura_petal_pink:2359",
+              "fix": "R18_support_39"
+            },
+            {
+              "id": "Sakura_petal_pink:2360",
+              "fix": "R18_support_40"
+            },
+            {
+              "id": "Sakura_petal_blush:2256",
+              "fix": "R18_support_41"
+            },
+            {
+              "id": "Sakura_petal_blush:2257",
+              "fix": "R18_support_42"
+            },
+            {
+              "id": "Sakura_petal_blush:2258",
+              "fix": "R18_support_43"
+            },
+            {
+              "id": "Sakura_petal_blush:2259",
+              "fix": "R18_support_44"
+            }
+          ]
+        }
+      ],
+      "flowerCount": 40,
+      "relocatedComponents": 45,
+      "addedTrianglesPlannedActual": 545,
+      "unresolved": [],
+      "method": "Exact audit component signatures; rigid group translations, separated real parent anchors, short indexed supports with measured BVH contact. Decorative bark preserved, not declared structural. Native GLB reimport contact check required.",
+      "reimportAttachmentCheck": {
+        "relocatedComponentsVerified": 45,
+        "contactEdgesVerified": 45,
+        "supportComponentsVerified": 45,
+        "status": "NATIVE_REIMPORT_CONTACT_PROXY_PASS"
+      }
+    },
+    "eco": {
+      "root": "Trunk_bark_plumblack.001:0",
+      "woodComponents": 61,
+      "rootedStructuralCount": 49,
+      "structuralCount": 49,
+      "ornamentalReliefCount": 12,
+      "ornamentalIsolatedPreserved": [
+        {
+          "id": "Branches_plum.001:0",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              -1.2481799125671387,
+              0.2193775475025177,
+              2.587599992752075
+            ],
+            [
+              -0.7839153409004211,
+              0.5948444604873657,
+              3.149604320526123
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack.001:0",
+          "gapMetersVertexToSurface": 0.010667656548321247,
+          "childPoint": [
+            -1.216393232345581,
+            0.30401018261909485,
+            2.9191668033599854
+          ],
+          "parentPoint": [
+            -1.2220821380615234,
+            0.30805784463882446,
+            2.927232265472412
+          ]
+        },
+        {
+          "id": "Branches_plum.001:3",
+          "triangles": 40,
+          "boundsBlenderMeters": [
+            [
+              -0.551925778388977,
+              -1.0139422416687012,
+              4.4409708976745605
+            ],
+            [
+              -0.039820753037929535,
+              -0.7587733864784241,
+              5.321802616119385
+            ]
+          ],
+          "kind": "woody_component",
+          "parent": "Trunk_bark_plumblack.001:0",
+          "gapMetersVertexToSurface": 0.02486407570540905,
+          "childPoint": [
+            -0.5449562072753906,
+            -0.8373425006866455,
+            4.4409708976745605
+          ],
+          "parentPoint": [
+            -0.5268352627754211,
+            -0.8459832072257996,
+            4.4263014793396
+          ]
+        }
+      ],
+      "drapedStems": [
+        {
+          "id": "Branches_plum.001:39",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -8.758211135864258,
+              4.164515018463135,
+              10.299625396728516
+            ],
+            [
+              -8.530527114868164,
+              4.374917030334473,
+              11.716337203979492
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:40",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -7.212057113647461,
+              -5.0546417236328125,
+              10.835622787475586
+            ],
+            [
+              -6.984652519226074,
+              -4.844513416290283,
+              12.252504348754883
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:41",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              5.218949317932129,
+              8.918188095092773,
+              11.231802940368652
+            ],
+            [
+              5.4464640617370605,
+              9.12817668914795,
+              12.648792266845703
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:42",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -4.919576168060303,
+              10.576362609863281,
+              10.552947044372559
+            ],
+            [
+              -4.691781520843506,
+              10.786388397216797,
+              11.969945907592773
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:43",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -5.797976970672607,
+              8.053956985473633,
+              10.617780685424805
+            ],
+            [
+              -5.569925308227539,
+              8.264162063598633,
+              12.034699440002441
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:44",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              -9.081181526184082,
+              -0.10291022062301636,
+              10.678228378295898
+            ],
+            [
+              -8.85300350189209,
+              0.1075160875916481,
+              12.095022201538086
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:45",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              8.731043815612793,
+              7.0890679359436035,
+              10.312356948852539
+            ],
+            [
+              8.959173202514648,
+              7.2996392250061035,
+              11.729043960571289
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:46",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              1.2703608274459839,
+              -9.389931678771973,
+              10.852435111999512
+            ],
+            [
+              1.4983131885528564,
+              -9.179368019104004,
+              12.269083976745605
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:47",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              10.056920051574707,
+              -3.9219517707824707,
+              10.296394348144531
+            ],
+            [
+              10.284674644470215,
+              -3.7115492820739746,
+              11.713088035583496
+            ]
+          ]
+        },
+        {
+          "id": "Branches_plum.001:48",
+          "triangles": 30,
+          "boundsBlenderMeters": [
+            [
+              6.904343605041504,
+              6.126519680023193,
+              10.586095809936523
+            ],
+            [
+              7.132001876831055,
+              6.336681365966797,
+              12.002886772155762
+            ]
+          ]
+        }
+      ],
+      "attachmentFindings": [
+        {
+          "id": "Branches_plum.001:39",
+          "oldParent": "Branches_plum.001:28",
+          "newParent": "Branches_plum.001:28",
+          "oldGapMeters": 4.807124137878418,
+          "childPoint": [
+            -8.67768669128418,
+            4.180143356323242,
+            11.706440925598145
+          ],
+          "parentPoint": [
+            -6.7687811851501465,
+            1.0826205015182495,
+            14.848076820373535
+          ],
+          "newAnchor": [
+            -6.7687811851501465,
+            1.0826205015182495,
+            14.848076820373535
+          ],
+          "deltaBlenderMeters": [
+            1.9089055061340332,
+            -3.0975228548049927,
+            2.961635894775391
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              -6.849305629730225,
+              1.066992163658142,
+              13.261261291503907
+            ],
+            [
+              -6.621621608734131,
+              1.27739417552948,
+              14.677973098754883
+            ]
+          ],
+          "fix": "R18_support_0",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink.001:1073",
+              "fix": "R18_support_1"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1074",
+              "fix": "R18_support_2"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1075",
+              "fix": "R18_support_3"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1105",
+              "fix": "R18_support_4"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1106",
+              "fix": "R18_support_5"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1107",
+              "fix": "R18_support_6"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum.001:40",
+          "oldParent": "Branches_plum.001:29",
+          "newParent": "Branches_plum.001:29",
+          "oldGapMeters": 2.3370301723480225,
+          "childPoint": [
+            -7.131834983825684,
+            -5.039461612701416,
+            12.242465019226074
+          ],
+          "parentPoint": [
+            -4.8593363761901855,
+            -5.522370338439941,
+            12.495959281921387
+          ],
+          "newAnchor": [
+            -4.8593363761901855,
+            -5.522370338439941,
+            12.495959281921387
+          ],
+          "deltaBlenderMeters": [
+            2.272498607635498,
+            -0.4829087257385254,
+            0.07349426269531278
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              -4.939558506011963,
+              -5.537550449371338,
+              10.909117050170899
+            ],
+            [
+              -4.712153911590576,
+              -5.327422142028809,
+              12.325998611450196
+            ]
+          ],
+          "fix": "R18_support_7",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink.001:1076",
+              "fix": "R18_support_8"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1077",
+              "fix": "R18_support_9"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1078",
+              "fix": "R18_support_10"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1108",
+              "fix": "R18_support_11"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1109",
+              "fix": "R18_support_12"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1110",
+              "fix": "R18_support_13"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum.001:41",
+          "oldParent": "Branches_plum.001:34",
+          "newParent": "Branches_plum.001:34",
+          "oldGapMeters": 4.084562301635742,
+          "childPoint": [
+            5.24985408782959,
+            8.918188095092773,
+            12.624446868896484
+          ],
+          "parentPoint": [
+            5.203909873962402,
+            4.836851596832275,
+            12.468777656555176
+          ],
+          "newAnchor": [
+            5.203909873962402,
+            4.836851596832275,
+            12.468777656555176
+          ],
+          "deltaBlenderMeters": [
+            -0.0459442138671875,
+            -4.081336498260498,
+            -0.3356692123413083
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              5.173005104064941,
+              4.836851596832275,
+              10.896133728027344
+            ],
+            [
+              5.400519847869873,
+              5.046840190887451,
+              12.313123054504395
+            ]
+          ],
+          "fix": "R18_support_14",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink.001:1079",
+              "fix": "R18_support_15"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1080",
+              "fix": "R18_support_16"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1081",
+              "fix": "R18_support_17"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1111",
+              "fix": "R18_support_18"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1112",
+              "fix": "R18_support_19"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1113",
+              "fix": "R18_support_20"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum.001:42",
+          "oldParent": "Branches_plum.001:36",
+          "newParent": "Branches_plum.001:36",
+          "oldGapMeters": 6.011204242706299,
+          "childPoint": [
+            -4.839710235595703,
+            10.591245651245117,
+            11.959759712219238
+          ],
+          "parentPoint": [
+            -1.4047123193740845,
+            5.813790798187256,
+            13.189104080200195
+          ],
+          "newAnchor": [
+            -1.4047123193740845,
+            5.813790798187256,
+            13.189104080200195
+          ],
+          "deltaBlenderMeters": [
+            3.4349979162216187,
+            -4.777454853057861,
+            1.0493443679809573
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              -1.484578251838684,
+              5.79890775680542,
+              11.602291412353516
+            ],
+            [
+              -1.2567836046218872,
+              6.0089335441589355,
+              13.01929027557373
+            ]
+          ],
+          "fix": "R18_support_21",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink.001:1082",
+              "fix": "R18_support_22"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1083",
+              "fix": "R18_support_23"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1084",
+              "fix": "R18_support_24"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1114",
+              "fix": "R18_support_25"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1115",
+              "fix": "R18_support_26"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1116",
+              "fix": "R18_support_27"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum.001:43",
+          "oldParent": "Branches_plum.001:33",
+          "newParent": "Branches_plum.001:33",
+          "oldGapMeters": 4.905466079711914,
+          "childPoint": [
+            -5.718070030212402,
+            8.069040298461914,
+            12.024545669555664
+          ],
+          "parentPoint": [
+            -1.819653868675232,
+            5.126355171203613,
+            12.479026794433594
+          ],
+          "newAnchor": [
+            -0.983103334903717,
+            4.085686365763347,
+            12.762786865234375
+          ],
+          "deltaBlenderMeters": [
+            4.734966695308685,
+            -3.9833539326985674,
+            0.5582411956787112
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              -1.0630102753639221,
+              4.070603052775065,
+              11.176021881103516
+            ],
+            [
+              -0.8349586129188538,
+              4.280808130900065,
+              12.592940635681153
+            ]
+          ],
+          "fix": "R18_support_28",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink.001:1085",
+              "fix": "R18_support_29"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1086",
+              "fix": "R18_support_30"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1087",
+              "fix": "R18_support_31"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1117",
+              "fix": "R18_support_32"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1118",
+              "fix": "R18_support_33"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1119",
+              "fix": "R18_support_34"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum.001:44",
+          "oldParent": "Branches_plum.001:28",
+          "newParent": "Branches_plum.001:28",
+          "oldGapMeters": 3.7073562145233154,
+          "childPoint": [
+            -9.002813339233398,
+            -0.03521675243973732,
+            12.095022201538086
+          ],
+          "parentPoint": [
+            -6.773315906524658,
+            1.0601739883422852,
+            14.847103118896484
+          ],
+          "newAnchor": [
+            -5.109957059224446,
+            0.2807358006636302,
+            15.082993189493815
+          ],
+          "deltaBlenderMeters": [
+            3.892856280008952,
+            0.3159525531033675,
+            2.807970987955729
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              -5.18832524617513,
+              0.21304233248035115,
+              13.486199366251627
+            ],
+            [
+              -4.960147221883138,
+              0.4234686406950156,
+              14.902993189493815
+            ]
+          ],
+          "fix": "R18_support_35",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink.001:1088",
+              "fix": "R18_support_36"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1089",
+              "fix": "R18_support_37"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1090",
+              "fix": "R18_support_38"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1120",
+              "fix": "R18_support_39"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1121",
+              "fix": "R18_support_40"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1122",
+              "fix": "R18_support_41"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum.001:45",
+          "oldParent": "Branches_plum.001:34",
+          "newParent": "Branches_plum.001:34",
+          "oldGapMeters": 4.272911548614502,
+          "childPoint": [
+            8.731043815612793,
+            7.130626201629639,
+            11.705896377563477
+          ],
+          "parentPoint": [
+            5.2159905433654785,
+            4.830339431762695,
+            12.487466812133789
+          ],
+          "newAnchor": [
+            3.9504007498423257,
+            3.4386014143625894,
+            12.927490870157877
+          ],
+          "deltaBlenderMeters": [
+            -4.780643065770468,
+            -3.6920247872670493,
+            1.0415944925944007
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              3.9504007498423253,
+              3.397043148676554,
+              11.35395144144694
+            ],
+            [
+              4.178530136744181,
+              3.607614437739054,
+              12.77063845316569
+            ]
+          ],
+          "fix": "R18_support_42",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink.001:1091",
+              "fix": "R18_support_43"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1092",
+              "fix": "R18_support_44"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1093",
+              "fix": "R18_support_45"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1123",
+              "fix": "R18_support_46"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1124",
+              "fix": "R18_support_47"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1125",
+              "fix": "R18_support_48"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum.001:46",
+          "oldParent": "Branches_plum.001:19",
+          "newParent": "Branches_plum.001:19",
+          "oldGapMeters": 1.296324610710144,
+          "childPoint": [
+            1.3506313562393188,
+            -9.374273300170898,
+            12.259105682373047
+          ],
+          "parentPoint": [
+            2.502988815307617,
+            -9.579157829284668,
+            12.816377639770508
+          ],
+          "newAnchor": [
+            2.502988815307617,
+            -9.579157829284668,
+            12.816377639770508
+          ],
+          "deltaBlenderMeters": [
+            1.1523574590682983,
+            -0.20488452911376953,
+            0.3772719573974612
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              2.4227182865142822,
+              -9.594816207885742,
+              11.229707069396973
+            ],
+            [
+              2.650670647621155,
+              -9.384252548217773,
+              12.646355934143067
+            ]
+          ],
+          "fix": "R18_support_49",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink.001:1094",
+              "fix": "R18_support_50"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1095",
+              "fix": "R18_support_51"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1096",
+              "fix": "R18_support_52"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1126",
+              "fix": "R18_support_53"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1127",
+              "fix": "R18_support_54"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1128",
+              "fix": "R18_support_55"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum.001:47",
+          "oldParent": "Branches_plum.001:17",
+          "newParent": "Branches_plum.001:17",
+          "oldGapMeters": 2.4319019317626953,
+          "childPoint": [
+            10.135031700134277,
+            -3.853987455368042,
+            11.713088035583496
+          ],
+          "parentPoint": [
+            10.145492553710938,
+            -3.0947580337524414,
+            14.023414611816406
+          ],
+          "newAnchor": [
+            10.145492553710938,
+            -3.0947580337524414,
+            14.023414611816406
+          ],
+          "deltaBlenderMeters": [
+            0.010460853576660156,
+            0.7592294216156006,
+            2.1303265762329104
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              10.067380905151367,
+              -3.16272234916687,
+              12.426720924377442
+            ],
+            [
+              10.295135498046875,
+              -2.952319860458374,
+              13.843414611816407
+            ]
+          ],
+          "fix": "R18_support_56",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink.001:1097",
+              "fix": "R18_support_57"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1098",
+              "fix": "R18_support_58"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1099",
+              "fix": "R18_support_59"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1129",
+              "fix": "R18_support_60"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1130",
+              "fix": "R18_support_61"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1131",
+              "fix": "R18_support_62"
+            }
+          ]
+        },
+        {
+          "id": "Branches_plum.001:48",
+          "oldParent": "Branches_plum.001:34",
+          "newParent": "Branches_plum.001:37",
+          "oldGapMeters": 2.212904691696167,
+          "childPoint": [
+            6.9358673095703125,
+            6.126519680023193,
+            11.978656768798828
+          ],
+          "parentPoint": [
+            5.2159905433654785,
+            4.830339431762695,
+            12.487466812133789
+          ],
+          "newAnchor": [
+            2.7651407718658447,
+            5.130495548248291,
+            13.173857688903809
+          ],
+          "deltaBlenderMeters": [
+            -4.170726537704468,
+            -0.9960241317749023,
+            1.0152009201049808
+          ],
+          "newBoundsBlenderMeters": [
+            [
+              2.733617067337036,
+              5.130495548248291,
+              11.601296730041504
+            ],
+            [
+              2.961275339126587,
+              5.3406572341918945,
+              13.018087692260742
+            ]
+          ],
+          "fix": "R18_support_63",
+          "flowers": [
+            {
+              "id": "Sakura_petal_pink.001:1100",
+              "fix": "R18_support_64"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1101",
+              "fix": "R18_support_65"
+            },
+            {
+              "id": "Sakura_petal_pink.001:1102",
+              "fix": "R18_support_66"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1132",
+              "fix": "R18_support_67"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1133",
+              "fix": "R18_support_68"
+            },
+            {
+              "id": "Sakura_petal_blush.001:1134",
+              "fix": "R18_support_69"
+            }
+          ]
+        }
+      ],
+      "flowerCount": 60,
+      "relocatedComponents": 70,
+      "addedTrianglesPlannedActual": 570,
+      "unresolved": [],
+      "method": "Exact audit component signatures; rigid group translations, separated real parent anchors, short indexed supports with measured BVH contact. Decorative bark preserved, not declared structural. Native GLB reimport contact check required.",
+      "reimportAttachmentCheck": {
+        "relocatedComponentsVerified": 70,
+        "contactEdgesVerified": 70,
+        "supportComponentsVerified": 70,
+        "status": "NATIVE_REIMPORT_CONTACT_PROXY_PASS"
+      }
+    }
+  },
+  "status": "NATIVE_REPAIR_PROXY_PASS_VISUAL_REVIEW_REQUIRED"
+}

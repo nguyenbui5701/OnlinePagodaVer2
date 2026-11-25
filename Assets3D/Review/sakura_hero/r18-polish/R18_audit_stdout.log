@@ -1,0 +1,39 @@
+R18_BASELINE_SHA_PASS
+23:54:40 | INFO: Data are loaded, start creating Blender stuff
+23:54:40 | INFO: Blender create Mesh node Trunk_bark_plumblack
+23:54:40 | INFO: Blender create Mesh node Golden_bark_veins
+23:54:40 | INFO: Blender create Mesh node Branches_plum
+23:54:40 | INFO: Blender create Mesh node Canopy_depth_rose
+23:54:40 | INFO: Blender create Mesh node Canopy_peach
+23:54:40 | INFO: Blender create Mesh node Canopy_rose
+23:54:40 | INFO: Blender create Mesh node Sakura_petal_warm_rose
+23:54:40 | INFO: Blender create Mesh node Sakura_flower_gold
+23:54:40 | INFO: Blender create Mesh node Sakura_petal_blush
+23:54:40 | INFO: Blender create Mesh node Sakura_petal_pink
+23:54:40 | INFO: Blender create Mesh node Sakura_petal_cream
+23:54:40 | INFO: Blender create Mesh node R17b_outer_quality
+23:54:40 | INFO: Blender create Mesh node R17b_bridge_quality
+23:54:40 | INFO: Blender create Mesh node R17b_skirt_quality
+23:54:40 | INFO: glTF import finished in 0.15s
+23:54:42 | INFO: Data are loaded, start creating Blender stuff
+23:54:42 | INFO: Blender create Mesh node Trunk_bark_plumblack
+23:54:42 | INFO: Blender create Mesh node Golden_bark_veins
+23:54:42 | INFO: Blender create Mesh node Branches_plum
+23:54:42 | INFO: Blender create Mesh node Canopy_depth_rose
+23:54:42 | INFO: Blender create Mesh node Canopy_peach
+23:54:42 | INFO: Blender create Mesh node Canopy_rose
+23:54:42 | INFO: Blender create Mesh node Sakura_petal_blush
+23:54:42 | INFO: Blender create Mesh node Sakura_petal_cream
+23:54:42 | INFO: Blender create Mesh node Sakura_petal_pink
+23:54:42 | INFO: Blender create Mesh node Sakura_petal_warm_rose
+23:54:42 | INFO: Blender create Mesh node R17b_outer_eco
+23:54:42 | INFO: Blender create Mesh node R17b_bridge_eco
+23:54:42 | INFO: Blender create Mesh node R17b_skirt_eco
+23:54:42 | INFO: glTF import finished in 0.07s
+R18_BASELINE_SHA_PASS
+R18_AUDIT_COMPLETE
+Blender 4.5.16 LTS (hash 3f6797307da5 built 2026-11-10 01:34:06)
+Read blend: "D:\Vibecode\onlPagodaV2\ReviewPR\R18_Artist\Assets3D\Review\sakura_hero\r17-lush\r17b\final\sakura_hero_r17b_editable.blend"
+Read blend: "D:\Vibecode\onlPagodaV2\ReviewPR\R18_Artist\Assets3D\Review\sakura_hero\r17-lush\r17b\final\sakura_hero_r17b_editable.blend"
+
+Blender quit
