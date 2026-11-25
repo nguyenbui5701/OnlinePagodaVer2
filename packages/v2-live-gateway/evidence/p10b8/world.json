@@ -1,0 +1,3403 @@
+{
+  "runtimeSource": "6606c794f9e122c32af8def3ad5dc79100a30881",
+  "browser": "158.0.4370.33",
+  "host": {
+    "cpu": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
+    "parallelism": 12,
+    "ram": 16948453376
+  },
+  "config": {
+    "highGpuRequested": false,
+    "headed": false,
+    "resolution": [
+      720,
+      1280
+    ],
+    "seed": 9,
+    "fps": "native rAF over 6.5s, scene animation warmup 1s",
+    "drawCounts": "renderer.info frame counters, Three.js main render (shadow pass not separately instrumented)",
+    "visibleCounts": "static frustum acceptance before depth occlusion"
+  },
+  "fallback": [
+    {
+      "requested": "R18A",
+      "actual": "R17B",
+      "reason": "Sai kích thước GLB sakura_hero_r18a_eco.glb."
+    },
+    {
+      "requested": "R18A",
+      "actual": "R16",
+      "reason": "R18A: Sai kích thước GLB sakura_hero_r18a_eco.glb. | R17B: Thiếu GLB sakura_hero_r17b_eco.glb (404). Chạy npm run assets:r17b."
+    }
+  ],
+  "parity": {
+    "eco": {
+      "source": "5faeb35a0c0279ca9dc0ad0ee6733435b7641008",
+      "sha256": "6c8ffa5f6038a96cb966022c49fb145da084e7d2cb2486de103db831814152f8",
+      "identical": true
+    },
+    "quality": {
+      "source": "5faeb35a0c0279ca9dc0ad0ee6733435b7641008",
+      "sha256": "afe3d636c2869dbe08bcaddb9e30bc4724205dde32dc35c417dc5a6ed3db074f",
+      "identical": true
+    }
+  },
+  "measured": {
+    "eco": {
+      "baseline": {
+        "fps": 144.00098357128587,
+        "frames": 937,
+        "p50": 6.900000000000546,
+        "p95": 7,
+        "p99": 7.100000000000364,
+        "max": 7.300000000000182,
+        "maxCalls": 109,
+        "maxTriangles": 342694,
+        "geometries": 56,
+        "textures": 1,
+        "maxShaders": 11,
+        "heap": 22268611,
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "errors": [],
+        "end": 7.7985,
+        "device": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "asset": "R17B",
+        "sha256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "loadMs": 74.20000000018626,
+        "repoRevision": "5faeb35a0c0279ca9dc0ad0ee6733435b7641008"
+      },
+      "lush": {
+        "fps": 127.86819739652974,
+        "frames": 832,
+        "p50": 7,
+        "p95": 13.900000000000091,
+        "p99": 14,
+        "max": 14.099999999999909,
+        "maxCalls": 122,
+        "maxTriangles": 755133,
+        "geometries": 59,
+        "textures": 1,
+        "maxShaders": 11,
+        "heap": 23611472,
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "errors": [],
+        "end": 7.847,
+        "device": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "asset": "R18A",
+        "sha256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "loadMs": 77.40000000037253,
+        "repoRevision": "6606c794f9e122c32af8def3ad5dc79100a30881"
+      }
+    },
+    "quality": {
+      "baseline": {
+        "fps": 58.58266750502247,
+        "frames": 382,
+        "p50": 14,
+        "p95": 21,
+        "p99": 34.69999999999982,
+        "max": 48.69999999999982,
+        "maxCalls": 112,
+        "maxTriangles": 531328,
+        "geometries": 57,
+        "textures": 2,
+        "maxShaders": 12,
+        "heap": 20455526,
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "errors": [],
+        "end": 7.9860999999999995,
+        "device": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "asset": "R17B",
+        "sha256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "loadMs": 115.09999999962747,
+        "repoRevision": "5faeb35a0c0279ca9dc0ad0ee6733435b7641008"
+      },
+      "lush": {
+        "fps": 46.31404603800206,
+        "frames": 302,
+        "p50": 20.800000000000182,
+        "p95": 27.800000000000182,
+        "p99": 28,
+        "max": 34.69999999999982,
+        "maxCalls": 125,
+        "maxTriangles": 1215002,
+        "geometries": 60,
+        "textures": 2,
+        "maxShaders": 12,
+        "heap": 21343298,
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "errors": [],
+        "end": 8.0971,
+        "device": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "asset": "R18A",
+        "sha256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "loadMs": 105.5,
+        "repoRevision": "6606c794f9e122c32af8def3ad5dc79100a30881"
+      }
+    }
+  },
+  "shotsByProfile": {
+    "eco": {
+      "baseline": {
+        "asset": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R17B",
+          "baselineCommit": "07f57cb35ba3ec68184abbd2c173e29a3fcc4788",
+          "profile": "eco",
+          "sha256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+          "bytes": 2149264,
+          "triangles": 58212,
+          "meshes": 22,
+          "gltfMeshes": 13,
+          "primitives": 22,
+          "vertices": 98632,
+          "bounds": [
+            [
+              -14.275399208068848,
+              -1.026049256324768,
+              -13.268314361572266
+            ],
+            [
+              13.287308692932129,
+              24.86863899230957,
+              11.898303031921387
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_ShadowRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_WarmRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PetalPink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PeachBlush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "goldPrimitives": 1,
+          "gltfTextures": 0,
+          "loadMs": 73,
+          "requestedRevision": "R17B",
+          "totalLoadMs": 73.19999999925494
+        },
+        "scenes": {
+          "aerial": {
+            "measure": {
+              "position": [
+                19,
+                43,
+                32
+              ],
+              "target": [
+                0,
+                10,
+                0
+              ],
+              "fov": 54,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 1,
+              "meshes": 1
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 6,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 111,
+            "triangles": 342694,
+            "errors": [],
+            "glError": 0,
+            "sha256": "a3cd0a23bd30ff99777e6785a69b0d0f7cc985b841c44e53ae1465335c8f0236"
+          },
+          "wide": {
+            "measure": {
+              "position": [
+                0,
+                10,
+                44
+              ],
+              "target": [
+                0,
+                9.5,
+                0
+              ],
+              "fov": 58,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 1,
+              "meshes": 1
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 7,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 111,
+            "triangles": 342694,
+            "errors": [],
+            "glError": 0,
+            "sha256": "c97f7cdf67abafdc82a8e511097ccd2c688a57b8d76b8dc59dc667d475fbec19"
+          },
+          "under-tree": {
+            "measure": {
+              "position": [
+                8,
+                3.4,
+                24
+              ],
+              "target": [
+                0,
+                6.2,
+                1.8
+              ],
+              "fov": 55,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 1,
+              "meshes": 1
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 0,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 62,
+            "triangles": 180446,
+            "errors": [],
+            "glError": 0,
+            "sha256": "6c8ffa5f6038a96cb966022c49fb145da084e7d2cb2486de103db831814152f8",
+            "file": "eco-baseline-under-tree.png"
+          },
+          "branch-close": {
+            "measure": {
+              "position": [
+                14,
+                11.5,
+                21
+              ],
+              "target": [
+                3,
+                14,
+                0
+              ],
+              "fov": 43,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 1,
+              "meshes": 1
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 0,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 3,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 55,
+            "triangles": 143084,
+            "errors": [],
+            "glError": 0,
+            "sha256": "71b253196916b20ca3d190f4d08c8c483a7fc4d717cf2334193ee1aaf6b48790"
+          },
+          "low-water": {
+            "measure": {
+              "position": [
+                10,
+                2.25,
+                30
+              ],
+              "target": [
+                2,
+                1.15,
+                13
+              ],
+              "fov": 53,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 1,
+              "meshes": 1
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 6,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 77,
+            "triangles": 201690,
+            "errors": [],
+            "glError": 0,
+            "sha256": "942cd35c99067a67aebf48064372c78a93e9c6bdda28a7cb2ee0a66fd4e73f6b",
+            "file": "eco-baseline-low-water.png"
+          },
+          "gift": {
+            "measure": {
+              "position": [
+                -2.1374503763825166,
+                1.1493887138912455,
+                8.870261580192393
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6693887138912455,
+                13.742889968427228
+              ],
+              "fov": 50,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 1,
+              "meshes": 1
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 3,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 0,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 28,
+            "triangles": 37264,
+            "errors": [],
+            "glError": 0,
+            "sha256": "2205553ffe3fd282a7484051eb59982df8a4d03c29dbeffcab92c77b6407745f"
+          }
+        }
+      },
+      "geometry": {
+        "asset": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R18A",
+          "baselineCommit": "84f3a621d83fa7af5a4995b007446fec49287bf9",
+          "profile": "eco",
+          "sha256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+          "bytes": 2229632,
+          "triangles": 60931,
+          "meshes": 25,
+          "gltfMeshes": 16,
+          "primitives": 25,
+          "vertices": 101192,
+          "bounds": [
+            [
+              -14.275399208068848,
+              -1.026049256324768,
+              -13.268314361572266
+            ],
+            [
+              13.287308692932129,
+              24.86863899230957,
+              11.898303031921387
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_ShadowRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_WarmRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PetalPink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PeachBlush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "goldPrimitives": 3,
+          "gltfTextures": 0,
+          "loadMs": 69,
+          "requestedRevision": "R18A",
+          "totalLoadMs": 69.19999999925494
+        },
+        "scenes": {
+          "aerial": {
+            "measure": {
+              "position": [
+                19,
+                43,
+                32
+              ],
+              "target": [
+                0,
+                10,
+                0
+              ],
+              "fov": 54,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 6,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 114,
+            "triangles": 345413,
+            "errors": [],
+            "glError": 0,
+            "sha256": "fa1c1cecd77b64b6e208c8a9849513e8f6704a899a81c0dce7b3ca3905610957"
+          },
+          "wide": {
+            "measure": {
+              "position": [
+                0,
+                10,
+                44
+              ],
+              "target": [
+                0,
+                9.5,
+                0
+              ],
+              "fov": 58,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 7,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 114,
+            "triangles": 345413,
+            "errors": [],
+            "glError": 0,
+            "sha256": "b9dee97f2923b819df543c4480519a279572710c4df84851ef47f94c3a794636"
+          },
+          "under-tree": {
+            "measure": {
+              "position": [
+                8,
+                3.4,
+                24
+              ],
+              "target": [
+                0,
+                6.2,
+                1.8
+              ],
+              "fov": 55,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 0,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 65,
+            "triangles": 183165,
+            "errors": [],
+            "glError": 0,
+            "sha256": "f4f8a8afd68257af4c2f1b8724c3b6066e77b77c2799db05caac66b5ec550585",
+            "file": "eco-geometry-under-tree.png"
+          },
+          "branch-close": {
+            "measure": {
+              "position": [
+                14,
+                11.5,
+                21
+              ],
+              "target": [
+                3,
+                14,
+                0
+              ],
+              "fov": 43,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 0,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 3,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 58,
+            "triangles": 145803,
+            "errors": [],
+            "glError": 0,
+            "sha256": "3c7d22faabe6cb42eefbe610677a0fab5f7fe8f79eb9985aeded9324f0dd9730"
+          },
+          "low-water": {
+            "measure": {
+              "position": [
+                10,
+                2.25,
+                30
+              ],
+              "target": [
+                2,
+                1.15,
+                13
+              ],
+              "fov": 53,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 6,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 80,
+            "triangles": 204409,
+            "errors": [],
+            "glError": 0,
+            "sha256": "250a2884d16cb32085b856a9a41ad4f84f7c6d019b13ab6a44ab7387efe5d433",
+            "file": "eco-geometry-low-water.png"
+          },
+          "gift": {
+            "measure": {
+              "position": [
+                -2.1374503763825166,
+                1.1493887138912455,
+                8.870261580192393
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6693887138912455,
+                13.742889968427228
+              ],
+              "fov": 50,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 3,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 0,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 29,
+            "triangles": 39413,
+            "errors": [],
+            "glError": 0,
+            "sha256": "e642a5b42e65d642ab36156d60991b1df496470dc0e75ebaf37c9c8d522f670a"
+          }
+        }
+      },
+      "lighting": {
+        "asset": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R18A",
+          "baselineCommit": "84f3a621d83fa7af5a4995b007446fec49287bf9",
+          "profile": "eco",
+          "sha256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+          "bytes": 2229632,
+          "triangles": 60931,
+          "meshes": 25,
+          "gltfMeshes": 16,
+          "primitives": 25,
+          "vertices": 101192,
+          "bounds": [
+            [
+              -14.275399208068848,
+              -1.026049256324768,
+              -13.268314361572266
+            ],
+            [
+              13.287308692932129,
+              24.86863899230957,
+              11.898303031921387
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_ShadowRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_WarmRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PetalPink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PeachBlush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "goldPrimitives": 3,
+          "gltfTextures": 0,
+          "loadMs": 68,
+          "requestedRevision": "R18A",
+          "totalLoadMs": 68.20000000018626
+        },
+        "scenes": {
+          "aerial": {
+            "measure": {
+              "position": [
+                19,
+                43,
+                32
+              ],
+              "target": [
+                0,
+                10,
+                0
+              ],
+              "fov": 54,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 38,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visibleLegacyPlants": 6,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 114,
+            "triangles": 345413,
+            "errors": [],
+            "glError": 0,
+            "sha256": "0d037dbc600f50f462e63e834bd95722280c264b89f2566c64495e362025f0ee"
+          },
+          "wide": {
+            "measure": {
+              "position": [
+                0,
+                10,
+                44
+              ],
+              "target": [
+                0,
+                9.5,
+                0
+              ],
+              "fov": 58,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 38,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visibleLegacyPlants": 7,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 114,
+            "triangles": 345413,
+            "errors": [],
+            "glError": 0,
+            "sha256": "6eb5b12d69dd2589e67c2ddba6f3f944c978bf282b6f1e120aa064fd7f3e4a55"
+          },
+          "under-tree": {
+            "measure": {
+              "position": [
+                8,
+                3.4,
+                24
+              ],
+              "target": [
+                0,
+                6.2,
+                1.8
+              ],
+              "fov": 55,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 38,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visibleLegacyPlants": 0,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 65,
+            "triangles": 183165,
+            "errors": [],
+            "glError": 0,
+            "sha256": "4dcd8480a7209b00e80a6cc992611b8ecb90d8e6d8e72ec133363e6eb9696175",
+            "file": "eco-lighting-under-tree.png"
+          },
+          "branch-close": {
+            "measure": {
+              "position": [
+                14,
+                11.5,
+                21
+              ],
+              "target": [
+                3,
+                14,
+                0
+              ],
+              "fov": 43,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 38,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visibleLegacyPlants": 0,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 3,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 58,
+            "triangles": 145803,
+            "errors": [],
+            "glError": 0,
+            "sha256": "d1d367247ceaba98dbdbe8c77fc94992a098d0b5a2b67a9aeade5a56f488ffb9"
+          },
+          "low-water": {
+            "measure": {
+              "position": [
+                10,
+                2.25,
+                30
+              ],
+              "target": [
+                2,
+                1.15,
+                13
+              ],
+              "fov": 53,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 38,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visibleLegacyPlants": 6,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 80,
+            "triangles": 204409,
+            "errors": [],
+            "glError": 0,
+            "sha256": "53ffef154117e425dd02813d06d6cd23d5abb09c1fd4dec435e5f29d26961a4a",
+            "file": "eco-lighting-low-water.png"
+          },
+          "gift": {
+            "measure": {
+              "position": [
+                -2.1374503763825166,
+                1.1493887138912455,
+                8.870261580192393
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6693887138912455,
+                13.742889968427228
+              ],
+              "fov": 50,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 38,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visibleLegacyPlants": 3,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 0,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 29,
+            "triangles": 39413,
+            "errors": [],
+            "glError": 0,
+            "sha256": "6c21c3390ed7cbe0bc2a099ea57e674f7bb09d8c1746cdcb3f7b5418528d0476"
+          }
+        }
+      },
+      "lush": {
+        "asset": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R18A",
+          "baselineCommit": "84f3a621d83fa7af5a4995b007446fec49287bf9",
+          "profile": "eco",
+          "sha256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+          "bytes": 2229632,
+          "triangles": 60931,
+          "meshes": 25,
+          "gltfMeshes": 16,
+          "primitives": 25,
+          "vertices": 101192,
+          "bounds": [
+            [
+              -14.275399208068848,
+              -1.026049256324768,
+              -13.268314361572266
+            ],
+            [
+              13.287308692932129,
+              24.86863899230957,
+              11.898303031921387
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_ShadowRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_WarmRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PetalPink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PeachBlush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "goldPrimitives": 3,
+          "gltfTextures": 0,
+          "loadMs": 64.09999999962747,
+          "requestedRevision": "R18A",
+          "totalLoadMs": 64.29999999981374
+        },
+        "scenes": {
+          "aerial": {
+            "measure": {
+              "position": [
+                19,
+                43,
+                32
+              ],
+              "target": [
+                0,
+                10,
+                0
+              ],
+              "fov": 54,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 38,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visible": {
+              "pad": 9,
+              "leaf": 19,
+              "bloom": 13,
+              "bud": 6
+            },
+            "batches": 15,
+            "visibleLegacyPlants": 19,
+            "totals": {
+              "existingPads": 12,
+              "pad": 18,
+              "bloom": 23,
+              "bud": 16,
+              "leaf": 52
+            },
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 124,
+            "triangles": 650228,
+            "errors": [],
+            "glError": 0,
+            "sha256": "9c47bcf95599cfabb68b014bbf318415641514596e38f411e1671c9e8edf9b25",
+            "file": "eco-lush-aerial.png"
+          },
+          "wide": {
+            "measure": {
+              "position": [
+                0,
+                10,
+                44
+              ],
+              "target": [
+                0,
+                9.5,
+                0
+              ],
+              "fov": 58,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 38,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visible": {
+              "pad": 11,
+              "leaf": 16,
+              "bloom": 10,
+              "bud": 4
+            },
+            "batches": 15,
+            "visibleLegacyPlants": 14,
+            "totals": {
+              "existingPads": 12,
+              "pad": 18,
+              "bloom": 23,
+              "bud": 16,
+              "leaf": 52
+            },
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 124,
+            "triangles": 637429,
+            "errors": [],
+            "glError": 0,
+            "sha256": "4cf9b4cd0bb8083170c07f57092150838f41b43be55ce53df1d7bf2e8025c026",
+            "file": "eco-lush-wide.png"
+          },
+          "under-tree": {
+            "measure": {
+              "position": [
+                8,
+                3.4,
+                24
+              ],
+              "target": [
+                0,
+                6.2,
+                1.8
+              ],
+              "fov": 55,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 38,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visible": {
+              "pad": 7,
+              "leaf": 9,
+              "bloom": 2,
+              "bud": 3
+            },
+            "batches": 15,
+            "visibleLegacyPlants": 5,
+            "totals": {
+              "existingPads": 12,
+              "pad": 18,
+              "bloom": 23,
+              "bud": 16,
+              "leaf": 52
+            },
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 77,
+            "triangles": 353511,
+            "errors": [],
+            "glError": 0,
+            "sha256": "822853da121d52c72b158161d9c7fbc4a5e7f8c1ba5b3d4b2633d72719ab3dbf",
+            "file": "eco-lush-under-tree.png"
+          },
+          "branch-close": {
+            "measure": {
+              "position": [
+                14,
+                11.5,
+                21
+              ],
+              "target": [
+                3,
+                14,
+                0
+              ],
+              "fov": 43,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 38,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visible": {
+              "pad": 2,
+              "leaf": 2,
+              "bloom": 1,
+              "bud": 1
+            },
+            "batches": 15,
+            "visibleLegacyPlants": 2,
+            "totals": {
+              "existingPads": 12,
+              "pad": 18,
+              "bloom": 23,
+              "bud": 16,
+              "leaf": 52
+            },
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 3,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 73,
+            "triangles": 189176,
+            "errors": [],
+            "glError": 0,
+            "sha256": "e8a8179f7a4dbafca0b54481ecc31d93a29e6196580e5a3ab6764104d89d41c8",
+            "file": "eco-lush-branch-close.png"
+          },
+          "low-water": {
+            "measure": {
+              "position": [
+                10,
+                2.25,
+                30
+              ],
+              "target": [
+                2,
+                1.15,
+                13
+              ],
+              "fov": 53,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 38,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visible": {
+              "pad": 7,
+              "leaf": 12,
+              "bloom": 9,
+              "bud": 3
+            },
+            "batches": 15,
+            "visibleLegacyPlants": 12,
+            "totals": {
+              "existingPads": 12,
+              "pad": 18,
+              "bloom": 23,
+              "bud": 16,
+              "leaf": 52
+            },
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 90,
+            "triangles": 410460,
+            "errors": [],
+            "glError": 0,
+            "sha256": "9646e330ec90784973c0e94e87954019be3877c46018ca16ac89d2d4b3f54a65",
+            "file": "eco-lush-low-water.png"
+          },
+          "gift": {
+            "measure": {
+              "position": [
+                -2.1374503763825166,
+                1.1493887138912455,
+                8.870261580192393
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6693887138912455,
+                13.742889968427228
+              ],
+              "fov": 50,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 38,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visible": {
+              "pad": 2,
+              "leaf": 3,
+              "bloom": 2,
+              "bud": 1
+            },
+            "batches": 15,
+            "visibleLegacyPlants": 3,
+            "totals": {
+              "existingPads": 12,
+              "pad": 18,
+              "bloom": 23,
+              "bud": 16,
+              "leaf": 52
+            },
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 0,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 39,
+            "triangles": 91885,
+            "errors": [],
+            "glError": 0,
+            "sha256": "538318f5517a35ef7709ab9a109d4753388000cd96491522f90cf9743ef8c8a9",
+            "file": "eco-lush-gift.png"
+          }
+        },
+        "contextRecovery": {
+          "restores": 1,
+          "glError": 0,
+          "visible": {
+            "pad": 11,
+            "leaf": 16,
+            "bloom": 10,
+            "bud": 4
+          }
+        }
+      }
+    },
+    "quality": {
+      "baseline": {
+        "asset": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R17B",
+          "baselineCommit": "07f57cb35ba3ec68184abbd2c173e29a3fcc4788",
+          "profile": "quality",
+          "sha256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+          "bytes": 6981312,
+          "triangles": 236888,
+          "meshes": 23,
+          "gltfMeshes": 14,
+          "primitives": 23,
+          "vertices": 297635,
+          "bounds": [
+            [
+              -14.178767204284668,
+              -0.5183812975883484,
+              -13.425017356872559
+            ],
+            [
+              14.489616394042969,
+              26.48044204711914,
+              14.410984992980957
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_flower_gold",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_ShadowRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_WarmRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PetalPink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PeachBlush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "goldPrimitives": 1,
+          "gltfTextures": 0,
+          "loadMs": 99.09999999962747,
+          "requestedRevision": "R17B",
+          "totalLoadMs": 99.29999999981374
+        },
+        "scenes": {
+          "aerial": {
+            "measure": {
+              "position": [
+                19,
+                43,
+                32
+              ],
+              "target": [
+                0,
+                10,
+                0
+              ],
+              "fov": 54,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 1,
+              "meshes": 1
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 11,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 114,
+            "triangles": 531328,
+            "errors": [],
+            "glError": 0,
+            "sha256": "2d6a44a6653fc585a810ad0b8c2ebad6db701b04140e903984f2684dc271d849"
+          },
+          "wide": {
+            "measure": {
+              "position": [
+                0,
+                10,
+                44
+              ],
+              "target": [
+                0,
+                9.5,
+                0
+              ],
+              "fov": 58,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 1,
+              "meshes": 1
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 12,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 114,
+            "triangles": 531328,
+            "errors": [],
+            "glError": 0,
+            "sha256": "2b7284ee3adc99d78ed39236d02fafb97af29b05d0634f5b7e2e71168364a067"
+          },
+          "under-tree": {
+            "measure": {
+              "position": [
+                8,
+                3.4,
+                24
+              ],
+              "target": [
+                0,
+                6.2,
+                1.8
+              ],
+              "fov": 55,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 1,
+              "meshes": 1
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 2,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 65,
+            "triangles": 369442,
+            "errors": [],
+            "glError": 0,
+            "sha256": "afe3d636c2869dbe08bcaddb9e30bc4724205dde32dc35c417dc5a6ed3db074f",
+            "file": "quality-baseline-under-tree.png"
+          },
+          "branch-close": {
+            "measure": {
+              "position": [
+                14,
+                11.5,
+                21
+              ],
+              "target": [
+                3,
+                14,
+                0
+              ],
+              "fov": 43,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 1,
+              "meshes": 1
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 0,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 3,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 61,
+            "triangles": 333856,
+            "errors": [],
+            "glError": 0,
+            "sha256": "dab0fa339c36964a3f8912e8032e3302c5b3ac6291b3216f6b0bb776affd521f"
+          },
+          "low-water": {
+            "measure": {
+              "position": [
+                10,
+                2.25,
+                30
+              ],
+              "target": [
+                2,
+                1.15,
+                13
+              ],
+              "fov": 53,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 1,
+              "meshes": 1
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 10,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 78,
+            "triangles": 390324,
+            "errors": [],
+            "glError": 0,
+            "sha256": "a046119cdaa923bf4d0615e21d75ce27d72aadf66acbde5ded321647bc6f758d",
+            "file": "quality-baseline-low-water.png"
+          },
+          "gift": {
+            "measure": {
+              "position": [
+                -2.1374503763825166,
+                1.1493887138912455,
+                8.870261580192393
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6693887138912455,
+                13.742889968427228
+              ],
+              "fov": 50,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 1,
+              "meshes": 1
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 4,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 0,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 36,
+            "triangles": 189662,
+            "errors": [],
+            "glError": 0,
+            "sha256": "91f66bf82c6b312756385df75d436cc965e6398f9b7c037fea33d34182bf6460"
+          }
+        }
+      },
+      "geometry": {
+        "asset": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R18A",
+          "baselineCommit": "84f3a621d83fa7af5a4995b007446fec49287bf9",
+          "profile": "quality",
+          "sha256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+          "bytes": 7152368,
+          "triangles": 242954,
+          "meshes": 26,
+          "gltfMeshes": 17,
+          "primitives": 26,
+          "vertices": 303136,
+          "bounds": [
+            [
+              -14.178767204284668,
+              -0.5183812975883484,
+              -13.425017356872559
+            ],
+            [
+              14.489616394042969,
+              26.48044204711914,
+              14.410984992980957
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_flower_gold",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_ShadowRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_WarmRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PetalPink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PeachBlush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "goldPrimitives": 3,
+          "gltfTextures": 0,
+          "loadMs": 100.40000000037253,
+          "requestedRevision": "R18A",
+          "totalLoadMs": 100.79999999981374
+        },
+        "scenes": {
+          "aerial": {
+            "measure": {
+              "position": [
+                19,
+                43,
+                32
+              ],
+              "target": [
+                0,
+                10,
+                0
+              ],
+              "fov": 54,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 11,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 117,
+            "triangles": 537394,
+            "errors": [],
+            "glError": 0,
+            "sha256": "b12418b1d555a38c97e35d25cdaf78b75f8c2fb188538f54c2ef96c2be30cd6d"
+          },
+          "wide": {
+            "measure": {
+              "position": [
+                0,
+                10,
+                44
+              ],
+              "target": [
+                0,
+                9.5,
+                0
+              ],
+              "fov": 58,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 12,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 117,
+            "triangles": 537394,
+            "errors": [],
+            "glError": 0,
+            "sha256": "c437327eda5cbea0263125b3d67fcbb86f79270f8896a760226bbbf9bd18ba94"
+          },
+          "under-tree": {
+            "measure": {
+              "position": [
+                8,
+                3.4,
+                24
+              ],
+              "target": [
+                0,
+                6.2,
+                1.8
+              ],
+              "fov": 55,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 2,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 68,
+            "triangles": 375508,
+            "errors": [],
+            "glError": 0,
+            "sha256": "701e92f4644dd6b822cf90dc9732eab7bb2108ec9819aa7825ef384ee5def35c",
+            "file": "quality-geometry-under-tree.png"
+          },
+          "branch-close": {
+            "measure": {
+              "position": [
+                14,
+                11.5,
+                21
+              ],
+              "target": [
+                3,
+                14,
+                0
+              ],
+              "fov": 43,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 0,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 3,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 64,
+            "triangles": 339922,
+            "errors": [],
+            "glError": 0,
+            "sha256": "944a6dce1b984fc19ff2b647171da7dfe0dc0f91a70395dcae464ca1d74594c2"
+          },
+          "low-water": {
+            "measure": {
+              "position": [
+                10,
+                2.25,
+                30
+              ],
+              "target": [
+                2,
+                1.15,
+                13
+              ],
+              "fov": 53,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 10,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 81,
+            "triangles": 396390,
+            "errors": [],
+            "glError": 0,
+            "sha256": "5bc3d1f98369cfe3987e56b726b147cfdd827f4083eb8b9f27cfa5b9f87d4132",
+            "file": "quality-geometry-low-water.png"
+          },
+          "gift": {
+            "measure": {
+              "position": [
+                -2.1374503763825166,
+                1.1493887138912455,
+                8.870261580192393
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6693887138912455,
+                13.742889968427228
+              ],
+              "fov": 50,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 1.45,
+              "streaks": 1.13
+            },
+            "visibleLegacyPlants": 4,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 0,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 37,
+            "triangles": 195183,
+            "errors": [],
+            "glError": 0,
+            "sha256": "91f66bf82c6b312756385df75d436cc965e6398f9b7c037fea33d34182bf6460"
+          }
+        }
+      },
+      "lighting": {
+        "asset": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R18A",
+          "baselineCommit": "84f3a621d83fa7af5a4995b007446fec49287bf9",
+          "profile": "quality",
+          "sha256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+          "bytes": 7152368,
+          "triangles": 242954,
+          "meshes": 26,
+          "gltfMeshes": 17,
+          "primitives": 26,
+          "vertices": 303136,
+          "bounds": [
+            [
+              -14.178767204284668,
+              -0.5183812975883484,
+              -13.425017356872559
+            ],
+            [
+              14.489616394042969,
+              26.48044204711914,
+              14.410984992980957
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_flower_gold",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_ShadowRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_WarmRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PetalPink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PeachBlush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "goldPrimitives": 3,
+          "gltfTextures": 0,
+          "loadMs": 105.6000000005588,
+          "requestedRevision": "R18A",
+          "totalLoadMs": 105.79999999981374
+        },
+        "scenes": {
+          "aerial": {
+            "measure": {
+              "position": [
+                19,
+                43,
+                32
+              ],
+              "target": [
+                0,
+                10,
+                0
+              ],
+              "fov": 54,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 48,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visibleLegacyPlants": 11,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 117,
+            "triangles": 537394,
+            "errors": [],
+            "glError": 0,
+            "sha256": "ba87e4145ce5a3a1012c99ae2ced9896791857131dbf6420514608d32c526058"
+          },
+          "wide": {
+            "measure": {
+              "position": [
+                0,
+                10,
+                44
+              ],
+              "target": [
+                0,
+                9.5,
+                0
+              ],
+              "fov": 58,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 48,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visibleLegacyPlants": 12,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 117,
+            "triangles": 537394,
+            "errors": [],
+            "glError": 0,
+            "sha256": "a783ab0b6b3c4cf5a929b62e15decf4fbc3993848c6573bccddb3bf4bfac4b5b"
+          },
+          "under-tree": {
+            "measure": {
+              "position": [
+                8,
+                3.4,
+                24
+              ],
+              "target": [
+                0,
+                6.2,
+                1.8
+              ],
+              "fov": 55,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 48,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visibleLegacyPlants": 2,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 68,
+            "triangles": 375508,
+            "errors": [],
+            "glError": 0,
+            "sha256": "914ca6ad0a53e13a7c499063b235166d8a07e9e80e82dd904521022a03219ea6",
+            "file": "quality-lighting-under-tree.png"
+          },
+          "branch-close": {
+            "measure": {
+              "position": [
+                14,
+                11.5,
+                21
+              ],
+              "target": [
+                3,
+                14,
+                0
+              ],
+              "fov": 43,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 48,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visibleLegacyPlants": 0,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 3,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 64,
+            "triangles": 339922,
+            "errors": [],
+            "glError": 0,
+            "sha256": "44a024363e0e80b5c2b0fc31e8ffee8b58753d47b4bab5b4028c0974509435c1"
+          },
+          "low-water": {
+            "measure": {
+              "position": [
+                10,
+                2.25,
+                30
+              ],
+              "target": [
+                2,
+                1.15,
+                13
+              ],
+              "fov": 53,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 48,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visibleLegacyPlants": 10,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 81,
+            "triangles": 396390,
+            "errors": [],
+            "glError": 0,
+            "sha256": "ecc37b72c44a372aeb667adc0a5c56d2b730a36be9d5a26b913ece4fa7aa3f66",
+            "file": "quality-lighting-low-water.png"
+          },
+          "gift": {
+            "measure": {
+              "position": [
+                -2.1374503763825166,
+                1.1493887138912455,
+                8.870261580192393
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6693887138912455,
+                13.742889968427228
+              ],
+              "fov": 50,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 48,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visibleLegacyPlants": 4,
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 0,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 37,
+            "triangles": 195183,
+            "errors": [],
+            "glError": 0,
+            "sha256": "61100f5339eeaabd6eb93da929405a24f16150b7df2140a0c2709f73cf9409a7"
+          }
+        }
+      },
+      "lush": {
+        "asset": {
+          "assetId": "sakura_hero",
+          "assetRevision": "R18A",
+          "baselineCommit": "84f3a621d83fa7af5a4995b007446fec49287bf9",
+          "profile": "quality",
+          "sha256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+          "bytes": 7152368,
+          "triangles": 242954,
+          "meshes": 26,
+          "gltfMeshes": 17,
+          "primitives": 26,
+          "vertices": 303136,
+          "bounds": [
+            [
+              -14.178767204284668,
+              -0.5183812975883484,
+              -13.425017356872559
+            ],
+            [
+              14.489616394042969,
+              26.48044204711914,
+              14.410984992980957
+            ]
+          ],
+          "axesValid": true,
+          "materials": [
+            {
+              "name": "Trunk_bark_plumblack",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Golden_bark_veins",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Branches_plum",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_depth_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_peach",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Canopy_rose",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_warm_rose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_flower_gold",
+              "pbr": true,
+              "doubleSided": false,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_blush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_pink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "Sakura_petal_cream",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_ShadowRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_WarmRose",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PetalPink",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            },
+            {
+              "name": "R17b_PeachBlush",
+              "pbr": true,
+              "doubleSided": true,
+              "matchesSource": true
+            }
+          ],
+          "goldPrimitives": 3,
+          "gltfTextures": 0,
+          "loadMs": 102.40000000037253,
+          "requestedRevision": "R18A",
+          "totalLoadMs": 102.80000000074506
+        },
+        "scenes": {
+          "aerial": {
+            "measure": {
+              "position": [
+                19,
+                43,
+                32
+              ],
+              "target": [
+                0,
+                10,
+                0
+              ],
+              "fov": 54,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 48,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visible": {
+              "pad": 17,
+              "leaf": 41,
+              "bloom": 13,
+              "bud": 11
+            },
+            "batches": 15,
+            "visibleLegacyPlants": 24,
+            "totals": {
+              "existingPads": 12,
+              "pad": 36,
+              "bloom": 39,
+              "bud": 28,
+              "leaf": 86
+            },
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 127,
+            "triangles": 1172474,
+            "errors": [],
+            "glError": 0,
+            "sha256": "87caa0f4b6bee0210e06aa85238d75fcd2de445104cd2422554a4ec2375619b7",
+            "file": "quality-lush-aerial.png"
+          },
+          "wide": {
+            "measure": {
+              "position": [
+                0,
+                10,
+                44
+              ],
+              "target": [
+                0,
+                9.5,
+                0
+              ],
+              "fov": 58,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 48,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visible": {
+              "pad": 18,
+              "leaf": 34,
+              "bloom": 13,
+              "bud": 13
+            },
+            "batches": 15,
+            "visibleLegacyPlants": 27,
+            "totals": {
+              "existingPads": 12,
+              "pad": 36,
+              "bloom": 39,
+              "bud": 28,
+              "leaf": 86
+            },
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 7,
+            "names": 3,
+            "focus": "seat-1",
+            "calls": 127,
+            "triangles": 1109882,
+            "errors": [],
+            "glError": 0,
+            "sha256": "74b84a72d0532e1585755453b6b7f09645671b3d10627d4e2e4c42d15f7e98da",
+            "file": "quality-lush-wide.png"
+          },
+          "under-tree": {
+            "measure": {
+              "position": [
+                8,
+                3.4,
+                24
+              ],
+              "target": [
+                0,
+                6.2,
+                1.8
+              ],
+              "fov": 55,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 48,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visible": {
+              "pad": 9,
+              "leaf": 18,
+              "bloom": 6,
+              "bud": 6
+            },
+            "batches": 15,
+            "visibleLegacyPlants": 12,
+            "totals": {
+              "existingPads": 12,
+              "pad": 36,
+              "bloom": 39,
+              "bud": 28,
+              "leaf": 86
+            },
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 78,
+            "triangles": 665164,
+            "errors": [],
+            "glError": 0,
+            "sha256": "ff71cde40a6131081827b7eda1d80abaebb6cf1bd55f0db6fe5ac05b82ef6c99",
+            "file": "quality-lush-under-tree.png"
+          },
+          "branch-close": {
+            "measure": {
+              "position": [
+                14,
+                11.5,
+                21
+              ],
+              "target": [
+                3,
+                14,
+                0
+              ],
+              "fov": 43,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 48,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visible": {
+              "pad": 4,
+              "leaf": 9,
+              "bloom": 4,
+              "bud": 2
+            },
+            "batches": 15,
+            "visibleLegacyPlants": 6,
+            "totals": {
+              "existingPads": 12,
+              "pad": 36,
+              "bloom": 39,
+              "bud": 28,
+              "leaf": 86
+            },
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 3,
+            "names": 0,
+            "focus": "seat-1",
+            "calls": 74,
+            "triangles": 474458,
+            "errors": [],
+            "glError": 0,
+            "sha256": "107297d44672470ff6f74855704757b98a2a0934fa2ad89e0a02c0d1dd923a1d",
+            "file": "quality-lush-branch-close.png"
+          },
+          "low-water": {
+            "measure": {
+              "position": [
+                10,
+                2.25,
+                30
+              ],
+              "target": [
+                2,
+                1.15,
+                13
+              ],
+              "fov": 53,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 48,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visible": {
+              "pad": 11,
+              "leaf": 30,
+              "bloom": 8,
+              "bud": 10
+            },
+            "batches": 15,
+            "visibleLegacyPlants": 18,
+            "totals": {
+              "existingPads": 12,
+              "pad": 36,
+              "bloom": 39,
+              "bud": 28,
+              "leaf": 86
+            },
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 4,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 91,
+            "triangles": 841166,
+            "errors": [],
+            "glError": 0,
+            "sha256": "0758c5a9bd6b5d69e6787232f2a350b690f6102827fc988f4f5789b4e26a4528",
+            "file": "quality-lush-low-water.png"
+          },
+          "gift": {
+            "measure": {
+              "position": [
+                -2.1374503763825166,
+                1.1493887138912455,
+                8.870261580192393
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6693887138912455,
+                13.742889968427228
+              ],
+              "fov": 50,
+              "mode": "GIFT_FOCUS",
+              "exposure": 0.93
+            },
+            "gold": {
+              "name": "Golden_bark_veins",
+              "clones": 2,
+              "meshes": 3
+            },
+            "accent": {
+              "fill": 48,
+              "emissive": 1.32,
+              "waterGold": 1.58,
+              "postprocess": false
+            },
+            "reflection": {
+              "rose": 0.92,
+              "gold": 2.291,
+              "streaks": 1.2656
+            },
+            "visible": {
+              "pad": 3,
+              "leaf": 4,
+              "bloom": 3,
+              "bud": 3
+            },
+            "batches": 15,
+            "visibleLegacyPlants": 6,
+            "totals": {
+              "existingPads": 12,
+              "pad": 36,
+              "bloom": 39,
+              "bud": 28,
+              "leaf": 86
+            },
+            "slotted": {
+              "real": 3,
+              "decor": 9
+            },
+            "visibleDecor": 0,
+            "names": 1,
+            "focus": "seat-1",
+            "calls": 47,
+            "triangles": 264751,
+            "errors": [],
+            "glError": 0,
+            "sha256": "36bf22c55ee0e9a103338d6056e92a268fd6683c5a989545ec0012b50cd8b8bf",
+            "file": "quality-lush-gift.png"
+          }
+        }
+      }
+    }
+  }
+}

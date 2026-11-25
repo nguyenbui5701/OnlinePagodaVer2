@@ -1,0 +1,16 @@
+[
+    {
+        "path":  "Assets3D/Review/sakura_hero/r18-polish/r18a/sakura_hero_r18a.glb",
+        "commit":  "84f3a621d83fa7af5a4995b007446fec49287bf9",
+        "gitBlob":  "44f2900490ddd682d5b951808b37aaeb0e714f78",
+        "bytes":  7152368,
+        "sha256":  "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab"
+    },
+    {
+        "path":  "Assets3D/Review/sakura_hero/r18-polish/r18a/sakura_hero_r18a_eco.glb",
+        "commit":  "84f3a621d83fa7af5a4995b007446fec49287bf9",
+        "gitBlob":  "fea7660aacdb61099d9ca1b377656440a2a0b8b7",
+        "bytes":  2229632,
+        "sha256":  "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847"
+    }
+]

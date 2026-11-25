@@ -6,7 +6,6 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import manifest from '../src/sakura-r17b.json' with { type: 'json' };
 
 const workspace = fileURLToPath(new URL('../', import.meta.url));
-const runGit = (...args) => execFileSync('git', args, { cwd: workspace, maxBuffer: 12 * 1024 * 1024 });
 const repository = 'https://github.com/nguyenbui5701/OnlinePagodaVer2.git';
 
 function validGlb(data) {
@@ -22,8 +21,10 @@ function validGlb(data) {
 export const readPair = git => readVerifiedPair(manifest, git);
 export const stageR17b = (publicDir, git) => stageVerifiedPair(manifest, publicDir, git);
 
-export function readVerifiedPair(manifest, git = runGit) {
+export function readVerifiedPair(manifest, git) {
   const { baselineCommit: commit, sourceRef, canonicalDirectory, profiles } = manifest;
+  const maxBuffer = Math.max(...Object.values(profiles).map(profile => profile.bytes)) + 1024 * 1024;
+  git ??= (...args) => execFileSync('git', args, { cwd: workspace, maxBuffer });
   try { git('cat-file', '-e', commit + '^{commit}'); }
   catch {
     git('fetch', repository, sourceRef);
@@ -42,7 +43,7 @@ export function readVerifiedPair(manifest, git = runGit) {
   });
 }
 
-export function stageVerifiedPair(manifest, publicDir = join(workspace, 'public'), git = runGit) {
+export function stageVerifiedPair(manifest, publicDir = join(workspace, 'public'), git) {
   const pair = readVerifiedPair(manifest, git);
   const directory = manifest.revision.toLowerCase();
   mkdirSync(publicDir, { recursive: true });
