@@ -4,7 +4,7 @@
   "parent": "07f57cb35ba3ec68184abbd2c173e29a3fcc4788",
   "branch": "assets/sakura-hero-r18-polish",
   "target": "assets/sakura-hero-r17-lush",
-  "status": "R18_NATIVE_FOCUSED_BUILD_PREVIEW_UPLOADED_READY_SA_PREVIEW_REVIEW",
+  "status": "R18_ACCEPTED_GEOMETRY_PREVIEW_R18A_GOLD_ONLY_ART_FIRST_ACTIVE",
   "source": {
     "acceptedReview": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6033463655",
     "quality": {
@@ -366,17 +366,17 @@
   "gates": {
     "saArt": "P10B8_ART_SA_REVIEW_REQUIRED",
     "native": "OWNER_NATIVE_BUILD_AND_PREVIEW_PASS",
-    "independentBinary": "PENDING_R18_RAW_GLB_BYTES_CONNECTOR_EMPTY",
+    "independentBinary": "R18_RAW_SHA_PENDING_R18A_NATIVE_PENDING",
     "ownerArtGO": "PENDING",
     "integration": "HOLD",
     "merge": "HOLD",
     "B9": "HOLD",
     "C0": "HOLD",
     "repair": "NATIVE_REIMPORT_CONTACT_PROXY_PASS",
-    "finalCycles": "HOLD_PENDING_SA_FOCUSED_PREVIEW",
-    "budget": "SA_DELTA_ACCEPTANCE_PENDING",
-    "preview": "AI_VISUAL_PRE_SA_VALIDATION_PASS_OWNER_UPLOAD_VERIFIED_METADATA",
-    "goldArt": "PARTIAL_SA_REVIEW_REQUIRED"
+    "finalCycles": "R18A_FINAL_EVIDENCE_AUTHORIZED_SCOPED_PENDING_NATIVE",
+    "budget": "SA_R18_RESOURCE_DELTA_ACCEPTED_HISTORICAL",
+    "preview": "SA_R18_GEOMETRY_PREVIEW_ACCEPTED",
+    "goldArt": "R18_PARTIAL_R18A_GOLD_ONLY_ACTIVE"
   },
   "preview": {
     "status": "NATIVE_FOCUSED_PREVIEW_UPLOADED_SA_REVIEW_REQUIRED",
@@ -709,5 +709,15 @@
       "shaStatus": "PRIOR_RECEIPT_OR_OWNER_LEDGER_NOT_REHASHED_REMOTE_BYTES",
       "status": "UPLOADED"
     }
-  ]
+  ],
+  "r18a": {
+    "path": "r18a/asset_manifest.json",
+    "reviewedHead": "631273440469b789bf7f1688bff30a35309de601",
+    "review": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/27#pullrequestreview-6058176405",
+    "policy": "ART_FIRST_SOFT_REFERENCES",
+    "status": "SOURCE_READY_PENDING_OWNER_NATIVE_GOLD_BUILD_FINAL",
+    "priorR18Preserved": true,
+    "ownerArtGO": "PENDING",
+    "gate": "P10B8_ART_SA_REVIEW_REQUIRED"
+  }
 }

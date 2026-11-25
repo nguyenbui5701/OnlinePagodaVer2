@@ -1,0 +1,126 @@
+{
+  "revision": "R18a",
+  "assetId": "sakura_hero",
+  "reviewedHead": "631273440469b789bf7f1688bff30a35309de601",
+  "review": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/27#pullrequestreview-6058176405",
+  "scope": "GOLD_ONLY_FINALIZATION_ART_FIRST",
+  "policy": {
+    "rulesBlob": "12a215cf31870d872d64a7d8b1f60689ed8e87e7",
+    "taskBlob": "06eabf3c96b5a205d94f93e4b4ef197e63923d53",
+    "design10Blob": "c158d948c433a8ee358eb7236cbb252be44efd75",
+    "softReferenceTriangles": {
+      "eco": 120000,
+      "quality": 500000,
+      "highQuality": 1000000
+    },
+    "master": "Flexible; keep highest-detail authored QUALITY mesh and editable ECO collection; preserve procedural recipe",
+    "hardTriangleByteCaps": false,
+    "retiredForR18aOnly": [
+      "+300 gold triangles",
+      "60k ECO",
+      "250k QUALITY",
+      "+5% bytes"
+    ]
+  },
+  "source": {
+    "quality": {
+      "path": "../sakura_hero_r18.glb",
+      "bytes": 6995332,
+      "triangles": 237433,
+      "sha256": "656cfaf7302dc49ff24c8643f4946536b9d1e77e71a5be7d18538aae01e54f29",
+      "gitBlobSHA": "3adfaea2cefaab89c5bb4822450b2eb757bc28f3"
+    },
+    "eco": {
+      "path": "../sakura_hero_r18_eco.glb",
+      "bytes": 2165220,
+      "triangles": 58782,
+      "sha256": "ad6f84f1c04468bba376e5ab7040993870b676cc0ec31b5911b782747750ff9b",
+      "gitBlobSHA": "1b6048a9f654e19e50cfa10eaa7a646a0f488904"
+    }
+  },
+  "sourceVerification": "SA accepted exact R18 geometry preview and delta; actual independent raw R18 GLB SHA pending. Native author script checks SHA and original receipt before any edits.",
+  "status": "SOURCE_READY_PENDING_OWNER_NATIVE_GOLD_BUILD_FINAL",
+  "output": {
+    "quality": {
+      "path": "sakura_hero_r18a.glb",
+      "status": "pending_owner_upload",
+      "bytes": null,
+      "sha256": null,
+      "triangles": null
+    },
+    "eco": {
+      "path": "sakura_hero_r18a_eco.glb",
+      "status": "pending_owner_upload",
+      "bytes": null,
+      "sha256": null,
+      "triangles": null
+    },
+    "editable": {
+      "path": "sakura_hero_r18a_editable.blend",
+      "status": "pending_owner_upload",
+      "bytes": null,
+      "sha256": null
+    },
+    "highQuality": {
+      "status": "NOT_REQUESTED_OPTIONAL_DEFERRED"
+    }
+  },
+  "gold": {
+    "method": "Triangle-surface barycentric clipped tapered branching inlays with small radial offset, non-overlapping within each original face; original GLB BIN prefix and non-gold material/accessor/node/mesh data unchanged; native surface-distance and bounds checks",
+    "goldMaterial": "Golden_bark_veins",
+    "emissionBefore": [
+      0.85,
+      0.38,
+      0.085
+    ],
+    "emissionProposed": [
+      0.95,
+      0.49,
+      0.12
+    ],
+    "roughnessBefore": 0.65,
+    "roughnessProposed": 0.58,
+    "actual": null
+  },
+  "evidence": {
+    "resolution": [
+      720,
+      1280
+    ],
+    "samples": 32,
+    "views": [
+      "aerial",
+      "wide",
+      "under_tree",
+      "branch_close",
+      "low_water",
+      "seat_gift_composition"
+    ],
+    "plannedMatchedRecords": 24,
+    "plannedNativeNew": 16,
+    "plannedReusedR17B": 8,
+    "plannedReusedR18Controls": 4,
+    "plannedWarmFillNew": 2,
+    "plannedSheets": 9,
+    "status": "PENDING_NATIVE",
+    "actual": null
+  },
+  "gates": {
+    "geometry": "SA_ACCEPTED_R18_REUSE_NON_GOLD_BYTES_EXACT_REQUIRED",
+    "budget": "ART_FIRST_REPORT_ACTUAL_COST",
+    "native": "PENDING",
+    "independentBinary": "PENDING",
+    "ownerArtGO": "PENDING",
+    "saArt": "P10B8_ART_SA_REVIEW_REQUIRED",
+    "integration": "HOLD",
+    "merge": "HOLD",
+    "B9": "HOLD",
+    "C0": "HOLD"
+  },
+  "costVND": 0,
+  "limitations": [
+    "No Blender/bpy in AI worker, Git DNS failed and original raw R18 GLB connector reads empty; no native source compile or new mesh/render asserted.",
+    "Reference video chuav2.mp4 unavailable to artist this turn; SA R1 reviewed 33s and supplied finding. Actual previous preview contact sheet viewed. Owner may reattach 33s frame.",
+    "No GPU benchmark or runtime gold/camera/seat claim."
+  ]
+}
