@@ -1,0 +1,273 @@
+{
+    "revision":  "B9",
+    "baselineCommit":  "8626dba9a74793d529da4c1c8204f863cae253c3",
+    "sourceRef":  "refs/heads/assets/pond-environment-b9",
+    "canonicalDirectory":  "Assets3D/Review/pond_environment/b9/r01",
+    "manifestBlob":  "3ee868138a92575eb5517c9b81f3f66124bddf0d",
+    "profiles":  {
+                     "koi_kohaku_eco.glb":  {
+                                                "file":  "koi_kohaku_eco.glb",
+                                                "profile":  "eco",
+                                                "kind":  "koi",
+                                                "palette":  "kohaku",
+                                                "bytes":  68796,
+                                                "sha256":  "38616f969f77610742767d997a396c79ff17ccac1bf9c093ca05ec2e87a2091a",
+                                                "gitBlob":  "23cf4ecc874bc50beedf471d2a21dcf43286c17a",
+                                                "triangles":  1732,
+                                                "materials":  3,
+                                                "meshes":  3,
+                                                "bounds":  [
+                                                               [
+                                                                   -0.2639999985694885,
+                                                                   -0.17100000381469727,
+                                                                   -0.7749999761581421
+                                                               ],
+                                                               [
+                                                                   0.2639999985694885,
+                                                                   0.2329999953508377,
+                                                                   0.5149999856948853
+                                                               ]
+                                                           ],
+                                                "animatedBounds":  [
+                                                                       [
+                                                                           -0.2753484845161438,
+                                                                           -0.17100000381469727,
+                                                                           -0.7617565989494324
+                                                                       ],
+                                                                       [
+                                                                           0.2753484845161438,
+                                                                           0.2329999953508377,
+                                                                           0.5149999856948853
+                                                                       ]
+                                                                   ]
+                                            },
+                     "koi_sanke_eco.glb":  {
+                                               "file":  "koi_sanke_eco.glb",
+                                               "profile":  "eco",
+                                               "kind":  "koi",
+                                               "palette":  "sanke",
+                                               "bytes":  68796,
+                                               "sha256":  "2da581fec72e6ff1e74bc6ae86e4afca50012759ec070b946dbbc3544b163f5d",
+                                               "gitBlob":  "f38903f6a6b46800c04b265d46ca442188afbcfa",
+                                               "triangles":  1732,
+                                               "materials":  3,
+                                               "meshes":  3,
+                                               "bounds":  [
+                                                              [
+                                                                  -0.2639999985694885,
+                                                                  -0.17100000381469727,
+                                                                  -0.7749999761581421
+                                                              ],
+                                                              [
+                                                                  0.2639999985694885,
+                                                                  0.2329999953508377,
+                                                                  0.5149999856948853
+                                                              ]
+                                                          ],
+                                               "animatedBounds":  [
+                                                                      [
+                                                                          -0.2753484845161438,
+                                                                          -0.17100000381469727,
+                                                                          -0.7617565989494324
+                                                                      ],
+                                                                      [
+                                                                          0.2753484845161438,
+                                                                          0.2329999953508377,
+                                                                          0.5149999856948853
+                                                                      ]
+                                                                  ]
+                                           },
+                     "koi_yamabuki_eco.glb":  {
+                                                  "file":  "koi_yamabuki_eco.glb",
+                                                  "profile":  "eco",
+                                                  "kind":  "koi",
+                                                  "palette":  "yamabuki",
+                                                  "bytes":  68800,
+                                                  "sha256":  "ee5581c83e61b177d1b62190e150f11e4c0e9cf9498523f0adf596c3eef93e2a",
+                                                  "gitBlob":  "3deafe82c0ba3e95530ecc6b225a26e26deaf7a6",
+                                                  "triangles":  1732,
+                                                  "materials":  3,
+                                                  "meshes":  3,
+                                                  "bounds":  [
+                                                                 [
+                                                                     -0.2639999985694885,
+                                                                     -0.17100000381469727,
+                                                                     -0.7749999761581421
+                                                                 ],
+                                                                 [
+                                                                     0.2639999985694885,
+                                                                     0.2329999953508377,
+                                                                     0.5149999856948853
+                                                                 ]
+                                                             ],
+                                                  "animatedBounds":  [
+                                                                         [
+                                                                             -0.2753484845161438,
+                                                                             -0.17100000381469727,
+                                                                             -0.7617565989494324
+                                                                         ],
+                                                                         [
+                                                                             0.2753484845161438,
+                                                                             0.2329999953508377,
+                                                                             0.5149999856948853
+                                                                         ]
+                                                                     ]
+                                              },
+                     "distant_terrain_eco.glb":  {
+                                                     "file":  "distant_terrain_eco.glb",
+                                                     "profile":  "eco",
+                                                     "kind":  "terrain",
+                                                     "palette":  "",
+                                                     "bytes":  194156,
+                                                     "sha256":  "463c7d5d26b7217705533070640c259712fd1894356448f7168b17737caa23c3",
+                                                     "gitBlob":  "489c108a51456a8d667595f3308457ceee17f7c9",
+                                                     "triangles":  8208,
+                                                     "materials":  3,
+                                                     "meshes":  30,
+                                                     "bounds":  [
+                                                                    [
+                                                                        -236.45246605050332,
+                                                                        -0.8500000238418579,
+                                                                        -224.43511585703564
+                                                                    ],
+                                                                    [
+                                                                        232.43152220864948,
+                                                                        27.072795867919922,
+                                                                        232.48068335457472
+                                                                    ]
+                                                                ]
+                                                 },
+                     "koi_kohaku_quality.glb":  {
+                                                    "file":  "koi_kohaku_quality.glb",
+                                                    "profile":  "quality",
+                                                    "kind":  "koi",
+                                                    "palette":  "kohaku",
+                                                    "bytes":  150560,
+                                                    "sha256":  "e565c0748913bd505d5f7a0e509798bd5fd1d0d5df48c9e4b612f683cfe6ab83",
+                                                    "gitBlob":  "5a7f0c3c7f6bc2d666172e2a159a2aacc80ff5e5",
+                                                    "triangles":  4456,
+                                                    "materials":  3,
+                                                    "meshes":  3,
+                                                    "bounds":  [
+                                                                   [
+                                                                       -0.2639999985694885,
+                                                                       -0.17100000381469727,
+                                                                       -0.7749999761581421
+                                                                   ],
+                                                                   [
+                                                                       0.2639999985694885,
+                                                                       0.2329999953508377,
+                                                                       0.5149999856948853
+                                                                   ]
+                                                               ],
+                                                    "animatedBounds":  [
+                                                                           [
+                                                                               -0.2753484845161438,
+                                                                               -0.17100000381469727,
+                                                                               -0.7617565989494324
+                                                                           ],
+                                                                           [
+                                                                               0.2753484845161438,
+                                                                               0.2329999953508377,
+                                                                               0.5149999856948853
+                                                                           ]
+                                                                       ]
+                                                },
+                     "koi_sanke_quality.glb":  {
+                                                   "file":  "koi_sanke_quality.glb",
+                                                   "profile":  "quality",
+                                                   "kind":  "koi",
+                                                   "palette":  "sanke",
+                                                   "bytes":  150556,
+                                                   "sha256":  "7e3a55e405cbbd231bfefdf0d8d058d197683092d3a814a7c73dab764d655603",
+                                                   "gitBlob":  "04099de32c393f7a96a051af35e6a2069cbc2a0e",
+                                                   "triangles":  4456,
+                                                   "materials":  3,
+                                                   "meshes":  3,
+                                                   "bounds":  [
+                                                                  [
+                                                                      -0.2639999985694885,
+                                                                      -0.17100000381469727,
+                                                                      -0.7749999761581421
+                                                                  ],
+                                                                  [
+                                                                      0.2639999985694885,
+                                                                      0.2329999953508377,
+                                                                      0.5149999856948853
+                                                                  ]
+                                                              ],
+                                                   "animatedBounds":  [
+                                                                          [
+                                                                              -0.2753484845161438,
+                                                                              -0.17100000381469727,
+                                                                              -0.7617565989494324
+                                                                          ],
+                                                                          [
+                                                                              0.2753484845161438,
+                                                                              0.2329999953508377,
+                                                                              0.5149999856948853
+                                                                          ]
+                                                                      ]
+                                               },
+                     "koi_yamabuki_quality.glb":  {
+                                                      "file":  "koi_yamabuki_quality.glb",
+                                                      "profile":  "quality",
+                                                      "kind":  "koi",
+                                                      "palette":  "yamabuki",
+                                                      "bytes":  150564,
+                                                      "sha256":  "b44ea4827c1db509b408108297fd69d011f360604ac60c8eec2eb461ee9c293b",
+                                                      "gitBlob":  "fd111bac5c2c57668b5606f6c07c0e581ec42dfc",
+                                                      "triangles":  4456,
+                                                      "materials":  3,
+                                                      "meshes":  3,
+                                                      "bounds":  [
+                                                                     [
+                                                                         -0.2639999985694885,
+                                                                         -0.17100000381469727,
+                                                                         -0.7749999761581421
+                                                                     ],
+                                                                     [
+                                                                         0.2639999985694885,
+                                                                         0.2329999953508377,
+                                                                         0.5149999856948853
+                                                                     ]
+                                                                 ],
+                                                      "animatedBounds":  [
+                                                                             [
+                                                                                 -0.2753484845161438,
+                                                                                 -0.17100000381469727,
+                                                                                 -0.7617565989494324
+                                                                             ],
+                                                                             [
+                                                                                 0.2753484845161438,
+                                                                                 0.2329999953508377,
+                                                                                 0.5149999856948853
+                                                                             ]
+                                                                         ]
+                                                  },
+                     "distant_terrain_quality.glb":  {
+                                                         "file":  "distant_terrain_quality.glb",
+                                                         "profile":  "quality",
+                                                         "kind":  "terrain",
+                                                         "palette":  "",
+                                                         "bytes":  449172,
+                                                         "sha256":  "1b4c279efa660505aa38cd3d6c7e596b5abab43f36869c397f602c551f31fa49",
+                                                         "gitBlob":  "056b76862632ec3a411af7d5fb73c787e3380ff1",
+                                                         "triangles":  20952,
+                                                         "materials":  3,
+                                                         "meshes":  30,
+                                                         "bounds":  [
+                                                                        [
+                                                                            -237.25027183663613,
+                                                                            -0.8500000238418579,
+                                                                            -225.11125950327587
+                                                                        ],
+                                                                        [
+                                                                            233.10356505532917,
+                                                                            27.072795867919922,
+                                                                            232.48068335457472
+                                                                        ]
+                                                                    ]
+                                                     }
+                 }
+}

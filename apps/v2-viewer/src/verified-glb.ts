@@ -16,7 +16,9 @@ export async function importVerifiedGlb(
   directory: string, expected: { file: string; bytes: number; sha256: string }, signal: AbortSignal,
   staging = 'assets:p08',
 ) {
-  const response = await fetch(`${import.meta.env.BASE_URL}${directory}/${expected.file}`, { signal });
+  const response = await fetch(`${import.meta.env.BASE_URL}${directory}/${expected.file}`, {
+    signal, headers: { Accept: 'model/gltf-binary' },
+  });
   if (response.status === 404 || response.status === 410) {
     throw new GlbLoadError('MISSING', `Thiếu GLB ${expected.file} (${response.status}). Chạy npm run ${staging}.`);
   }

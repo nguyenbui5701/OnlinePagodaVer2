@@ -1,0 +1,66 @@
+{
+  "execution": "385e9412bfa4278925b43799fd8c04835ae9c07b",
+  "reviewed": "ecd48aa82eea32646a5acee072e9cb4b3d1ad1a5",
+  "cases": [
+    {
+      "profile": "eco",
+      "diagnostic": [
+        "B9 environment fallback GlbLoadError: B9 runtime structure differs from pinned asset: koi_sanke_eco.glb\n    at loadAsset (http://127.0.0.1:5197/src/pond-environment.ts:77:13)\n    at async Promise.allSettled (index 1)\n    at async loadEnvironment (http://127.0.0.1:5197/src/pond-environment.ts:99:19)\n    at async boot (http://127.0.0.1:5197/src/main.ts:578:16)"
+      ],
+      "rejectedSanke": {
+        "file": "koi_sanke_eco.glb",
+        "kind": "sanke",
+        "directory": "b9",
+        "commit": "8626dba9a74793d529da4c1c8204f863cae253c3",
+        "bytes": 68796,
+        "counts": {
+          "geometry": {
+            "objects": 3,
+            "disposed": 3,
+            "calls": 3
+          },
+          "material": {
+            "objects": 3,
+            "disposed": 3,
+            "calls": 3
+          },
+          "skeleton": {
+            "objects": 1,
+            "disposed": 1,
+            "calls": 3
+          }
+        }
+      }
+    },
+    {
+      "profile": "quality",
+      "diagnostic": [
+        "B9 environment fallback GlbLoadError: B9 runtime structure differs from pinned asset: koi_sanke_quality.glb\n    at loadAsset (http://127.0.0.1:5197/src/pond-environment.ts:77:13)\n    at async Promise.allSettled (index 1)\n    at async loadEnvironment (http://127.0.0.1:5197/src/pond-environment.ts:99:19)\n    at async boot (http://127.0.0.1:5197/src/main.ts:578:16)"
+      ],
+      "rejectedSanke": {
+        "file": "koi_sanke_quality.glb",
+        "kind": "sanke",
+        "directory": "b9",
+        "commit": "8626dba9a74793d529da4c1c8204f863cae253c3",
+        "bytes": 150556,
+        "counts": {
+          "geometry": {
+            "objects": 3,
+            "disposed": 3,
+            "calls": 3
+          },
+          "material": {
+            "objects": 3,
+            "disposed": 3,
+            "calls": 3
+          },
+          "skeleton": {
+            "objects": 1,
+            "disposed": 1,
+            "calls": 3
+          }
+        }
+      }
+    }
+  ]
+}

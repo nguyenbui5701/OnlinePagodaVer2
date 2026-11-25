@@ -1,0 +1,45 @@
+source=9c92fbc4945e661163c20bfaa5a72e4af1f49418
+node=v24.16.0
+
+> npm.cmd test
+
+> @online-pagoda/v2-events@0.1.0 test
+> node --test
+
+✔ chat bounds bytes and graphemes while preserving Vietnamese and joined emoji (8.6713ms)
+✔ legacy, invalid, duplicate, throttled and stale chat never emit a cue (5.3346ms)
+✔ capacity chat carries no other seat and does not alter gifts, focus or viewer count (2.3096ms)
+✔ a new text-bearing chat has no seat even when the room has free seats (1.4192ms)
+✔ seeded 45s idle then A → B → C with real actor / seat bindings and cinematic return (8.9203ms)
+✔ one FIFO slot per giver, one capped active extension and a shared pending request ID (2.1528ms)
+✔ reconnect preserves identity, duplicate ledgers and revision; room change cancels old intents (1.0822ms)
+✔ bounded focus and no-seat outcomes acknowledge the correct giver; TTL releases seat (3.2324ms)
+✔ 120 viewers, 500 likes and room viewer total keep capacity and FX bounded (5.5389ms)
+✔ session ledger stays bounded and preserves idempotency at the limit (6.8015ms)
+✔ safe display text, graphemes, photo validation and private packet IDs (5.5754ms)
+✔ expired provisional focus adds zero spend; late final acknowledges without replaying the shot (2.5076ms)
+✔ LIVE member and text chat admit immediately; duplicates, empty chat and aggregate counts cannot create actors (9.9037ms)
+✔ HOT expiry uses prior activity; toggles leave seated actors and gift admission independent (3.3905ms)
+✔ waiting FIFO is bounded, source-aware, deduplicated, expires independently and never replays chat (3.7622ms)
+✔ re-enabled seat expiry skips an overdue queue head, and fresh interaction restores its eligibility (1.1566ms)
+✔ shortened duration skips entries at the expiry boundary; switching expiry off restores FIFO eligibility (0.8473ms)
+✔ skipped entries keep the independent 60-second queue expiry (0.5633ms)
+✔ confirmed streak seats the donor after unseated progress, protects active/pending and counts fallback once (1.8961ms)
+✔ final displaces the least recently active passive viewer, but an earlier donor stays after cinematic return (0.6219ms)
+✔ disconnect clears waiting and reconnect keeps existing seat bindings; room change clears both (5.0883ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 545.5766
+exit=0
+
+> npm.cmd run build
+
+> @online-pagoda/v2-events@0.1.0 build
+> tsc --noEmit
+
+exit=0

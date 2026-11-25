@@ -30,8 +30,9 @@ const presence = new PresenceSettingsStore(path);
 const server = createGatewayServer({ gateway, presence, settings: new SettingsStore(join(tmp, 'visual.json')),
   audio: new AudioSettingsStore(join(tmp, 'audio.json')) });
 const port = Number(process.env.V2_FIXTURE_VIEWER_PORT ?? 5196);
-const r18 = process.argv.includes('--r18a');
-const out = new URL(r18 ? '../../../packages/v2-live-gateway/evidence/p10b8/live/' :
+const b9 = process.argv.includes('--b9');
+const r18 = b9 || process.argv.includes('--r18a');
+const out = new URL(b9 ? '../../../packages/v2-live-gateway/evidence/p10b9/live/' : r18 ? '../../../packages/v2-live-gateway/evidence/p10b8/live/' :
   '../../../packages/v2-live-gateway/evidence/p10b7/', import.meta.url);
 server.listen(0, '127.0.0.1');
 await once(server, 'listening');
@@ -54,12 +55,14 @@ async function run() {
   browser = await chromium.launch({ executablePath: process.env.V2_BROWSER ||
     'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe' });
   const context = await browser.newContext({ viewport: { width: 720, height: 1280 } });
+  let omitTerrain = false;
   for (const [base, target] of [[origin, port], [api, server.address().port]]) {
     await context.route(base + '/**', async route => {
       const request = route.request();
       const url = new URL(request.url());
       url.port = String(target);
       if (base === origin) {
+        if (omitTerrain && url.pathname.startsWith('/b9/distant_terrain_')) return route.fulfill({ status: 404 });
         const response = await fetch(url, { redirect: 'error' });
         return route.fulfill({ status: response.status, contentType: response.headers.get('content-type') ?? undefined,
           body: Buffer.from(await response.arrayBuffer()) });
@@ -88,11 +91,16 @@ async function run() {
   if (r18) {
     await dashboard.getByLabel('Cây Sakura').selectOption('r18a');
     await dashboard.getByLabel('Mật độ đầm sen').selectOption('lush');
+    if (b9) await dashboard.getByLabel('Cá koi và cảnh quan B9').selectOption('on');
     await dashboard.locator('#save').click();
     await dashboard.locator('#apply').click();
     await wait(() => gateway.overlayReady && gateway.appliedRevision === 2 &&
       gateway.worldApplied?.tree === 'R18A' && gateway.worldApplied?.density === 'lush', 'R18a/lush applied');
     await dashboard.locator('#world-applied').getByText(/R18A.*dày theo cụm/).waitFor();
+    if (b9) {
+      await dashboard.getByText('Cảnh quan B9 đang chạy', { exact: false }).waitFor();
+      assert.equal(gateway.worldApplied.pond, true);
+    }
   }
   const owner = gateway.owner;
   const identity = await overlay.evaluate(() => window.fixtureScene = crypto.randomUUID());
@@ -235,7 +243,7 @@ async function run() {
   await counts(3, 0);
   const seatActors = await Promise.all(['seat-1', 'seat-2', 'seat-3'].map(idAt));
 
-  if (r18) await overlay.evaluate(() => {
+  if (r18 && !b9) await overlay.evaluate(() => {
     const canvas = document.querySelector('#capture');
     const stream = canvas.captureStream(12);
     const recorder = new MediaRecorder(stream, { mimeType: 'video/webm;codecs=vp8', videoBitsPerSecond: 1300_000 });
@@ -256,7 +264,7 @@ async function run() {
     };
     recorder.start();
   });
-  if (r18) await overlay.waitForTimeout(1400);
+  if (r18 && !b9) await overlay.waitForTimeout(1400);
   gift(211, 14, 'Dương Mây', 0);
   gift(212, 15, 'Em Mây', 0);
   gift(213, 16, 'Lam Mây', 0);
@@ -306,6 +314,14 @@ async function run() {
   assert.equal(gateway.deliveryUncertain, false);
   assert.deepEqual(new PresenceSettingsStore(path).snapshot, presence.snapshot);
   assert.deepEqual(errors, []);
+  if (b9) {
+    await dashboard.getByLabel('Cá koi và cảnh quan B9').selectOption('off');
+    await dashboard.locator('#save').click();
+    await dashboard.waitForFunction(() => document.querySelector('#settings-state').textContent.includes('r3'));
+    assert(await dashboard.locator('#apply').isDisabled());
+    assert.equal(gateway.owner, owner);
+    assert.equal(gateway.worldApplied.pond, true);
+  }
   const final = { ...runtime, scene: undefined, launches, stops, connection: gateway.connection,
     acknowledged: gateway.acknowledged, counters: { ...gateway.counters }, presence: gateway.presenceApplied };
   packet('member', 111, 18, 'Ngân Mây');
@@ -314,8 +330,22 @@ async function run() {
   await wait(() => stops === 1 && gateway.presenceApplied?.waiting === 0, 'disconnect clears queue');
 
   await mkdir(out, { recursive: true });
-  const video = r18 ? Buffer.from(await overlay.evaluate(() => window.finishWorldRecording()), 'base64') : undefined;
+  const video = r18 && !b9 ? Buffer.from(await overlay.evaluate(() => window.finishWorldRecording()), 'base64') : undefined;
   if (video) await writeFile(new URL('motion.webm', out), video);
+  if (b9) {
+    await dashboard.locator('#apply').click();
+    await wait(() => gateway.overlayReady && gateway.appliedRevision === 3 && gateway.worldApplied?.pond === undefined,
+      'B9 rollback applies after disconnect');
+    final.rollback = { appliedRevision: gateway.appliedRevision, liveApplyBlocked: true, pond: 'off' };
+    omitTerrain = true;
+    await dashboard.getByLabel('Cá koi và cảnh quan B9').selectOption('on');
+    await dashboard.locator('#save').click();
+    await dashboard.locator('#apply').click();
+    await wait(() => gateway.overlayReady && gateway.appliedRevision === 4, 'B8 fallback stays ready');
+    await dashboard.getByText(/Cảnh quan B8 dự phòng.*terrain.*thiếu GLB/).waitFor();
+    assert.deepEqual(gateway.worldApplied.pond, ['terrain', 'MISSING']);
+    final.fallback = { appliedRevision: gateway.appliedRevision, pond: gateway.worldApplied.pond };
+  }
   const photos = { 'member.png': firstPng, 'gift-focus.png': giftPng, 'dashboard.png': dashboardPng };
   const receipt = {
     method: 'Built Edge Overlay and Dashboard, loopback Gateway with mapped synthetic Member, Chat and Gift packets.',

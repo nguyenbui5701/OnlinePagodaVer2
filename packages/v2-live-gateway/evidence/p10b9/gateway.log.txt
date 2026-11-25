@@ -1,0 +1,41 @@
+source=9c92fbc4945e661163c20bfaa5a72e4af1f49418
+node=v24.16.0
+
+> npm.cmd test
+
+> @online-pagoda/v2-live-gateway@0.1.0 test
+> node --test
+
+✔ maps modern provider shapes with sanitized display text and no avatar URLs (7.3852ms)
+✔ gift progress and final use a stable group with separate packet IDs (2.6095ms)
+✔ scopes reconnect, deduplicates gifts and publishes them to the Event Engine (9.6791ms)
+✔ backpressure prioritizes final gifts and makes hard overflow explicit (3.5389ms)
+✔ provider denial and rate limits stop attempts with allowlisted reasons (1.5591ms)
+✔ HTTP accepts token-free JSON only from the expected loopback Host and Viewer Origin (151.4523ms)
+✔ actual pinned connector loads in a real isolated worker without opening a room (4322.0184ms)
+✔ unacknowledged finals persist across repeated polls and closing with only the consumed prefix reports uncertainty (0.833ms)
+✔ a confirmed closing ACK drains the final; lease expiry still marks a pending final never offered (0.6278ms)
+✔ normal disconnect preserves degradation and keeps pending entries available for drain (0.5383ms)
+✔ R2 migrates legacy audio and commits independent patches with a priority mute fence (600.4761ms)
+✔ R2 priority mute remains in RAM and reports UNSAVED when persistence fails (23.2417ms)
+✔ R2 name provenance, cache isolation across same-name actors, expiry/reset and unsafe aliases (10.1972ms)
+✔ R2 mute aborts active and waiting synthesis, and provider refusal cools down without retry (2.1382ms)
+✔ settings allowlist, atomic save, conflict, reload and corrupt-file fallback (67.0928ms)
+✔ audio settings persist independently and corrupt data is muted (46.5541ms)
+✔ visual settings migrate the old file without changing its revision or accepting unknown fields (264.5791ms)
+✔ Overlay audio piggybacks a consumed ACK without changing visual revision or accepting a second receiver (200.6341ms)
+✔ operator stays separate from receiver, and saved settings wait through LIVE and ACK drain (173.005ms)
+✔ dashboard polling cannot exhaust the Overlay budget or take a legacy lease (971.5703ms)
+✔ presence patches persist separately and reject invalid, stale and corrupt settings (45.8917ms)
+✔ presence heartbeat is owner-only and bad metadata cannot interrupt ACK or alter audio/visual revisions (226.9563ms)
+✔ world status accepts only the failure codes and stages that match the applied tree (3.4347ms)
+✔ world status travels on owner poll and malformed telemetry leaves ACK, audio and presence intact (251.1593ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5143.4638
+exit=0

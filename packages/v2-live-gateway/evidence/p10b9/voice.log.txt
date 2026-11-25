@@ -1,0 +1,21 @@
+source=9c92fbc4945e661163c20bfaa5a72e4af1f49418
+node=v24.16.0
+
+> node --test
+✔ worker defaults to OFF and rejects malformed local boundary requests (62.8603ms)
+✔ static fixture cache keeps exact synthetic template and count, expires and evicts at 32 (102.755ms)
+✔ one active job, at most four queued, aborted work releases the slot (83.2367ms)
+✔ oversized, silent and malformed PCM are not returned (6.8132ms)
+✔ authenticated request rate limit is bounded (23.3302ms)
+✔ local bounded child handles timeout and oversized output (941.1394ms)
+✔ Python opt-in is forwarded explicitly and absent dependencies fail locally (2199.1907ms)
+✔ an upstream refusal preserves fallback and prevents subsequent upstream calls (7.603ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3628.4946
+exit=0

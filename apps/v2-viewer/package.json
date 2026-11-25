@@ -7,6 +7,7 @@
   "scripts": {
     "assets": "node scripts/prepare-assets.mjs",
     "assets:p08": "node scripts/stage-p08.mjs",
+    "assets:b9": "node scripts/stage-b9.mjs",
     "assets:r18a": "node scripts/stage-r18a.mjs",
     "assets:r17b": "node scripts/stage-r17b.mjs",
     "assets:p012b": "node scripts/stage-p012b.mjs",

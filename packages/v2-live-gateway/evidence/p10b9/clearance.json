@@ -1,0 +1,97 @@
+{
+  "source": "b66bc2cd6b9bf4176ef4306dbfe65f5a86280285",
+  "samplePeriodSeconds": 0.25,
+  "jointCycleSeconds": 2880,
+  "envelope": {
+    "horizontal": 0.99,
+    "top": 0.34,
+    "bottom": 0.27
+  },
+  "units": "meters, meters per second",
+  "conservativeReference": {
+    "root": 7,
+    "padBottom": -0.26,
+    "floor": -1.8,
+    "outer": 37
+  },
+  "cases": [
+    {
+      "profile": "eco",
+      "seed": 9,
+      "fish": 8,
+      "rootGap": 1.1402091065378368,
+      "surfaceGap": 0.32200116086664926,
+      "padVerticalGap": 0.06200116086664925,
+      "floorGap": 0.722003806722727,
+      "boundaryGap": 6.2400008947112,
+      "pairGap": 2.79961959170867,
+      "minSpeed": 0.6940263596948717,
+      "maxSpeed": 1.1959231129414625
+    },
+    {
+      "profile": "eco",
+      "seed": 71,
+      "fish": 8,
+      "rootGap": 1.1400626755989443,
+      "surfaceGap": 0.32200036767254087,
+      "padVerticalGap": 0.06200036767254086,
+      "floorGap": 0.7220000200107848,
+      "boundaryGap": 6.240004366111419,
+      "pairGap": 2.9459668638972256,
+      "minSpeed": 0.7106757921093052,
+      "maxSpeed": 1.1956192848999156
+    },
+    {
+      "profile": "eco",
+      "seed": 1337,
+      "fish": 8,
+      "rootGap": 1.1400205008267932,
+      "surfaceGap": 0.32200166719976514,
+      "padVerticalGap": 0.06200166719976513,
+      "floorGap": 0.7220022518187406,
+      "boundaryGap": 6.240017550229487,
+      "pairGap": 2.8179658691110467,
+      "minSpeed": 0.7074956182196537,
+      "maxSpeed": 1.1952466089645006
+    },
+    {
+      "profile": "quality",
+      "seed": 9,
+      "fish": 14,
+      "rootGap": 1.1402091065378368,
+      "surfaceGap": 0.3220021922119198,
+      "padVerticalGap": 0.06200219221191977,
+      "floorGap": 0.692000521961214,
+      "boundaryGap": 1.1400001213446933,
+      "pairGap": 1.9889842342093824,
+      "minSpeed": 0.6940263596948717,
+      "maxSpeed": 1.2893972019627604
+    },
+    {
+      "profile": "quality",
+      "seed": 71,
+      "fish": 14,
+      "rootGap": 1.1400626755989443,
+      "surfaceGap": 0.3220002584224441,
+      "padVerticalGap": 0.06200025842244411,
+      "floorGap": 0.6920015772305954,
+      "boundaryGap": 1.1400002270601937,
+      "pairGap": 1.984486178532768,
+      "minSpeed": 0.7106757921093052,
+      "maxSpeed": 1.282249109555687
+    },
+    {
+      "profile": "quality",
+      "seed": 1337,
+      "fish": 14,
+      "rootGap": 1.1400205008267932,
+      "surfaceGap": 0.32200079746203564,
+      "padVerticalGap": 0.06200079746203563,
+      "floorGap": 0.6920003207771641,
+      "boundaryGap": 1.1400000016059144,
+      "pairGap": 1.991619015751422,
+      "minSpeed": 0.7074956182196537,
+      "maxSpeed": 1.2827449113083662
+    }
+  ]
+}

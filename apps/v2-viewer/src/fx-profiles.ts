@@ -13,6 +13,11 @@ export const fxProfiles = {
   },
 } as const;
 
+export const environmentFx = {
+  eco: { caps: { motes: 112, petals: 88, leaves: 22 }, perPad: 3, mist: 14, mistPixelCap: 115 },
+  quality: { caps: { motes: 190, petals: 150, leaves: 44 }, perPad: 6, mist: 21, mistPixelCap: 150 },
+} as const;
+
 export const giftTiming = { observedMs: 950, observedSparks: 4, confirmedMs: 1650, exitFadeMs: 260, rippleRadius: 2.25 };
 export type FxProfile = typeof fxProfiles[keyof typeof fxProfiles];
 export const richAmbientProfiles = {

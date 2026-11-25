@@ -1,8 +1,8 @@
-import { BufferGeometry, Float32BufferAttribute, Points, ShaderMaterial, type Vector3 } from 'three';
+import { BufferGeometry, Float32BufferAttribute, Points, ShaderMaterial, Frustum, Matrix4, Vector3, type PerspectiveCamera } from 'three';
 export type AmbientCounts = Readonly<{ motes: number; petals: number; leaves: number }>;
 
 export function createAmbientFx(origin: Vector3, seed: number, counts: AmbientCounts,
-  local?: { pads: readonly (readonly number[])[]; each: number }) {
+  local?: { pads: readonly (readonly number[])[]; each: number }, pond = false) {
   const positions: number[] = [];
   const details: number[] = [];
   let randomState = (seed ^ 0x51a73d19) >>> 0;
@@ -11,25 +11,39 @@ export function createAmbientFx(origin: Vector3, seed: number, counts: AmbientCo
     return randomState / 0x100000000;
   };
 
+  const placements = (local?.pads ?? []).flatMap((pad, index) =>
+    Array.from({ length: local!.each }, (_, i) => ({ pad, i, kind: i === 0 ? 0 : (index + i) % 4 === 0 ? 2 : i % 2 })));
+  const totals = [0, 0, 0];
+  if (pond) {
+    const caps = [counts.motes, counts.petals, counts.leaves];
+    // Local points spend the same budget as tree and mid-pond points.
+    for (let i = 0; i < placements.length; i++) {
+      const kind = placements[i].kind;
+      if (totals[kind] < caps[kind]) { totals[kind]++; continue; }
+      placements.splice(i--, 1);
+    }
+  }
   for (const [kind, count] of [counts.motes, counts.petals, counts.leaves].entries()) {
-    for (let i = 0; i < count; i++) {
+    const sceneCount = count - totals[kind];
+    totals[kind] = count;
+    for (let i = 0; i < sceneCount; i++) {
       const angle = random() * Math.PI * 2;
       const radius = 3.1 + Math.sqrt(random()) * (kind === 0 ? 12.9 : 11.6);
       const height = kind === 0 ? 0.8 + random() ** 1.7 * 10.2 : 14.8 + random() * 10.1;
-      positions.push(Math.cos(angle) * radius, height, Math.sin(angle) * radius);
+      const mid = pond && i % 4 === 0;
+      const spread = mid ? radius * 1.55 : radius;
+      positions.push(Math.cos(angle) * spread, mid ? height * .65 : height, Math.sin(angle) * spread);
       details.push(kind, random(), random(), random());
     }
   }
-  for (const [index, pad] of (local?.pads ?? []).entries()) {
-    for (let i = 0; i < local!.each; i++) {
-      const angle = (i / local!.each + random() * .2) * Math.PI * 2;
-      const kind = i === 0 ? 0 : (index + i) % 4 === 0 ? 2 : i % 2;
-      const radius = 1.85 + random() * 1.35;
-      positions.push(pad[0] - origin.x + Math.cos(angle) * radius,
-        kind === 0 ? .42 + random() * 1.1 : 1.35 + random() * 1.9,
-        pad[2] - origin.z + Math.sin(angle) * radius);
-      details.push(3 + kind, random(), random(), random());
-    }
+  for (const { pad, i, kind } of placements) {
+    const angle = (i / local!.each + random() * .2) * Math.PI * 2;
+    const radius = 1.85 + random() * 1.35;
+    positions.push(pad[0] - origin.x + Math.cos(angle) * radius,
+      kind === 0 ? .42 + random() * 1.1 : 1.35 + random() * 1.9,
+      pad[2] - origin.z + Math.sin(angle) * radius);
+    details.push(3 + kind, random(), random(), random());
+    if (!pond) totals[kind]++;
   }
   const geometry = new BufferGeometry();
   geometry.setAttribute('position', new Float32BufferAttribute(positions, 3));
@@ -131,8 +145,38 @@ export function createAmbientFx(origin: Vector3, seed: number, counts: AmbientCo
   points.name = 'Blessing tree ambience';
   points.position.copy(origin);
   points.frustumCulled = false;
+  const frustum = new Frustum();
+  const viewProjection = new Matrix4();
+  const center = new Vector3();
   return {
-    points, counts, localCount: (local?.pads.length ?? 0) * (local?.each ?? 0),
+    points, counts, localCount: placements.length,
+    totals: { motes: totals[0], petals: totals[1], leaves: totals[2] },
+    spatialCounts(camera: PerspectiveCamera) {
+      frustum.setFromProjectionMatrix(viewProjection.multiplyMatrices(camera.projectionMatrix, camera.matrixWorldInverse));
+      const hit = [0, 0, 0];
+      const t = uniforms.elapsed.value;
+      const fract = (x: number) => x - Math.floor(x);
+      for (let i = 0; i < details.length / 4; i++) {
+        const [tag, offset, , variation] = details.slice(i * 4, i * 4 + 4);
+        const kind = tag % 3;
+        const phase = offset * 6.283185;
+        const [x,y,z] = positions.slice(i * 3, i * 3 + 3);
+        const age = fract(t / (20 + 11 * variation) + offset);
+        if (kind && (age < .025 || age > .98)) continue;
+        if (tag >= 3 && uniforms.localDensity.value < .1) continue;
+        if (!kind) center.set(x + 1.25 * Math.sin(.25 * t + phase), y + .50 * Math.sin(.41 * t + phase * 1.9),
+          z + 1.30 * Math.cos(.22 * t + phase * 1.3));
+        else center.set(x + age * 3.6 + Math.sin(.61 * t + phase) * .80,
+          y + (.7 - y) * age + .14 * Math.sin(t * 1.2 + phase), z + age * 1.9 + Math.cos(.43 * t + phase * 1.4) * .58);
+        if (tag >= 3) {
+          center.x = x + .37 * Math.sin(.47 * t + phase);
+          center.z = z + .37 * Math.cos(.34 * t + phase);
+          if (kind) center.y = y + (.24 - y) * fract(t / 9 + offset);
+        }
+        if (frustum.containsPoint(center.add(origin))) hit[kind]++;
+      }
+      return { motes: hit[0], petals: hit[1], leaves: hit[2] };
+    },
     update(seconds: number, giftOpacity: number, foreground = false) {
       uniforms.elapsed.value = seconds;
       uniforms.density.value = 1 - giftOpacity * 0.28;
