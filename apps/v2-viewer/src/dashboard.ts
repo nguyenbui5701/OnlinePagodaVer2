@@ -126,8 +126,10 @@ function render(state?: Status) {
     ' · Overlay ' + (state?.appliedRevision ? 'r' + state.appliedRevision : '—') +
     (pending ? ' · Chờ áp dụng' : '') + (dirty ? ' · Có chỉnh sửa chưa lưu' : '') : 'Chưa đọc được cấu hình từ Gateway.';
   const world = state?.world;
+  const failureLabels = { MISSING: 'thiếu GLB', INTEGRITY: 'lỗi kiểm tra tính toàn vẹn', IMPORT: 'lỗi nạp GLB' };
+  const failureText = world?.failures.map(({ revision, code }) => revision + ' – ' + failureLabels[code]).join(', ');
   element('world-applied').textContent = world ?
-    'Cây đang dùng ' + world.tree + (world.fallback ? ' · Đã dùng dự phòng thay cho ' + world.requestedTree : '') +
+    'Cây đang dùng ' + world.tree + (world.fallback ? ' · Đã dùng dự phòng thay cho ' + world.requestedTree + ' (' + failureText + ')' : '') +
     ' · Đầm sen ' + (world.density === 'lush' ? 'dày theo cụm' : 'mặc định') +
     (world.density !== world.requestedDensity ? ' · Bố cục chưa áp dụng mật độ dày' : '') : '';
   const warning = element('settings-warning');

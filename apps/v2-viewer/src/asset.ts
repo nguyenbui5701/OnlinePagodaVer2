@@ -1,11 +1,12 @@
 import { Box3, DoubleSide, MeshStandardMaterial, Vector3 } from 'three';
-import { importVerifiedGlb, inspectMeshes } from './verified-glb.ts';
+import { GlbLoadError, importVerifiedGlb, inspectMeshes } from './verified-glb.ts';
+import { treeFallbackChain, type TreeFallback, type TreeRevision } from './live-settings.ts';
 import manifest from './sakura-r16.json' with {type: 'json'};
 import r18a from './sakura-r18a.json' with {type: 'json'};
 import r17b from './sakura-r17b.json' with {type: 'json'};
 
 export type Profile = keyof typeof manifest.profiles;
-export type TreeRevision = 'R16' | 'R17B' | 'R18A';
+export type { TreeRevision } from './live-settings.ts';
 export const parseTreeRevision = (value: string | null): TreeRevision =>
   value === 'r18a' ? 'R18A' : value === 'r17b' ? 'R17B' : 'R16';
 const sources = { R16: manifest, R17B: r17b, R18A: r18a };
@@ -50,12 +51,12 @@ async function loadTree(profile: Profile, signal: AbortSignal, revision: TreeRev
     const vertices = primitives.reduce((sum, primitive) => sum + Number(json.accessors[primitive.attributes.POSITION].count), 0);
     if (next) {
       root.traverse(node => {
-        if (!node.matrixWorld.elements.every(Number.isFinite)) throw new Error(revision + ' contains a non-finite transform');
+        if (!node.matrixWorld.elements.every(Number.isFinite)) throw new GlbLoadError('INTEGRITY', revision + ' contains a non-finite transform');
       });
       if (root.getWorldPosition(new Vector3()).length() > .001 ||
           gltfMeshes !== next.gltfMeshes || primitives.length !== next.primitives || meshes !== next.primitives ||
           vertices !== next.vertices || materials.length !== next.materials || json.textures?.length) {
-        throw new Error(revision + ' pivot or pinned primitive, vertex, material or texture count differs');
+        throw new GlbLoadError('INTEGRITY', revision + ' pivot or pinned primitive, vertex, material or texture count differs');
       }
     }
     const goldPrimitives = primitives.filter((primitive) =>
@@ -69,13 +70,13 @@ async function loadTree(profile: Profile, signal: AbortSignal, revision: TreeRev
           JSON.stringify(sourceGold.pbrMetallicRoughness?.baseColorFactor) !== JSON.stringify(r18a.gold.pbrMetallicRoughness.baseColorFactor) ||
           JSON.stringify(sourceGold.emissiveFactor) !== JSON.stringify(r18a.gold.emissiveFactor) ||
           json.images?.length || model.animations.length || model.cameras.length) {
-        throw new Error('R18A gold material, primitive count or scene content differs');
+        throw new GlbLoadError('INTEGRITY', 'R18A gold material, primitive count or scene content differs');
       }
     }
     if (triangles !== (next ?? legacy).triangles || !axesValid || materials.length !== json.materials.length ||
       materials.some(material => !material.matchesSource ||
         ((material.name.includes('petal') || (next && material.name.startsWith('R17b_'))) && !material.doubleSided))) {
-      throw new Error(`GLB ${revision} không đạt kiểm tra cấu trúc: ${triangles} triangles; bounds=${JSON.stringify(measured)}`);
+      throw new GlbLoadError('INTEGRITY', `GLB ${revision} không đạt kiểm tra cấu trúc: ${triangles} triangles; bounds=${JSON.stringify(measured)}`);
     }
     return {
       root, dispose,
@@ -92,9 +93,8 @@ async function loadTree(profile: Profile, signal: AbortSignal, revision: TreeRev
 export async function resolveTree<T>(revision: TreeRevision, signal: AbortSignal,
   load: (revision: TreeRevision) => Promise<T & { dispose(): void }>) {
   signal.throwIfAborted();
-  const chain: TreeRevision[] = revision === 'R18A' ? ['R18A', 'R17B', 'R16'] :
-    revision === 'R17B' ? ['R17B', 'R16'] : ['R16'];
-  const failures: { revision: TreeRevision; reason: string }[] = [];
+  const chain = treeFallbackChain(revision);
+  const failures: (TreeFallback & { reason: string })[] = [];
   for (const candidate of chain) {
     let asset;
     try {
@@ -103,7 +103,7 @@ export async function resolveTree<T>(revision: TreeRevision, signal: AbortSignal
       signal.throwIfAborted();
       if (error instanceof Error && error.name === 'AbortError') throw error;
       const reason = error instanceof Error ? error.message : String(error);
-      failures.push({ revision: candidate, reason });
+      failures.push({ revision: candidate, code: error instanceof GlbLoadError ? error.code : 'IMPORT', reason });
       if (candidate === 'R16') {
         if (chain.length === 1) throw error;
         throw new Error(failures.map(f => f.revision + ': ' + f.reason).join(' | '), { cause: error });
@@ -114,7 +114,8 @@ export async function resolveTree<T>(revision: TreeRevision, signal: AbortSignal
       asset.dispose();
       signal.throwIfAborted();
     }
-    return { asset, fallbackReason: failures.length === 1 ? failures[0].reason :
+    return { asset, failures: failures.map(({ revision, code }) => ({ revision, code })),
+      fallbackReason: failures.length === 1 ? failures[0].reason :
       failures.length ? failures.map(f => f.revision + ': ' + f.reason).join(' | ') : undefined };
   }
   throw new Error('Missing tree revision');
@@ -123,6 +124,6 @@ export async function resolveTree<T>(revision: TreeRevision, signal: AbortSignal
 
 export async function loadSakura(profile: Profile, signal: AbortSignal, requestedRevision: TreeRevision = 'R16') {
   const start = performance.now();
-  const { asset, fallbackReason } = await resolveTree(requestedRevision, signal, revision => loadTree(profile, signal, revision));
-  return { ...asset, report: { ...asset.report, requestedRevision, fallbackReason, totalLoadMs: performance.now() - start } };
+  const { asset, failures, fallbackReason } = await resolveTree(requestedRevision, signal, revision => loadTree(profile, signal, revision));
+  return { ...asset, report: { ...asset.report, requestedRevision, failures, fallbackReason, totalLoadMs: performance.now() - start } };
 }

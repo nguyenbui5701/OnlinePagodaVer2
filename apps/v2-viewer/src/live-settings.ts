@@ -29,16 +29,34 @@ export function migrateVisualSettings(value: unknown): LiveSettings | undefined 
   if (validSettings(migrated)) return migrated;
 }
 
-type TreeStatus = 'R16' | 'R17B' | 'R18A';
-export type WorldApplied = { requestedTree: TreeStatus; tree: TreeStatus; requestedDensity: 'legacy' | 'lush';
-  density: 'legacy' | 'lush'; fallback: boolean };
+const treeOrder = ['R18A', 'R17B', 'R16'] as const;
+const failureCodes = ['MISSING', 'INTEGRITY', 'IMPORT'] as const;
+export type TreeRevision = (typeof treeOrder)[number];
+export type GlbFailure = (typeof failureCodes)[number];
+export type TreeFallback = { revision: TreeRevision; code: GlbFailure };
+
+export function treeFallbackChain(revision: TreeRevision): readonly TreeRevision[] {
+  return treeOrder.slice(treeOrder.indexOf(revision));
+}
+
+export type WorldApplied = { requestedTree: TreeRevision; tree: TreeRevision; requestedDensity: 'legacy' | 'lush';
+  density: 'legacy' | 'lush'; fallback: boolean; failures: TreeFallback[] };
 
 export function validWorldApplied(value: unknown): value is WorldApplied {
   const data = value as WorldApplied | null;
-  return !!data && typeof data === 'object' && Object.keys(data).length === 5 &&
-    ['R16', 'R17B', 'R18A'].includes(data.requestedTree) && ['R16', 'R17B', 'R18A'].includes(data.tree) &&
-    choices.density.includes(data.requestedDensity) && choices.density.includes(data.density) &&
-    typeof data.fallback === 'boolean' && data.fallback === (data.tree !== data.requestedTree);
+  if (!data || typeof data !== 'object' || Array.isArray(data) || Object.keys(data).length !== 6 ||
+      !treeOrder.includes(data.requestedTree) || !treeOrder.includes(data.tree) ||
+      !choices.density.includes(data.requestedDensity) || !choices.density.includes(data.density) ||
+      !Array.isArray(data.failures)) return false;
+  const chain = treeFallbackChain(data.requestedTree);
+  const depth = chain.indexOf(data.tree);
+  return depth >= 0 && data.fallback === (depth > 0) && data.failures.length === depth &&
+    chain.slice(0, depth).every((revision, i) => {
+      const failure = data.failures[i];
+      return !!failure && typeof failure === 'object' && !Array.isArray(failure) &&
+        Object.keys(failure).length === 2 && Object.hasOwn(failure, 'revision') && Object.hasOwn(failure, 'code') &&
+        failure.revision === revision && failureCodes.includes(failure.code);
+    });
 }
 
 export function overlayQuery(settings: LiveSettings): URLSearchParams {

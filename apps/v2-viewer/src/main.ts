@@ -539,7 +539,7 @@ async function boot() {
       if (routes.rejected.length) console.warn('P0.9 cinematic clearance fallback', routes.rejected);
     }
     world = { requestedTree, tree: asset.report.assetRevision, requestedDensity, density: lotus ? 'lush' : 'legacy',
-      fallback: !!asset.report.fallbackReason };
+      fallback: asset.report.failures.length > 0, failures: asset.report.failures };
     report.world = world;
     if (!lost) show('');
     if (overlaySettings) {

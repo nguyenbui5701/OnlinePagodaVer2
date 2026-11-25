@@ -18,6 +18,7 @@ test('R18a resolves down the same-profile chain, reports failures and honours ab
   });
   assert.deepEqual(seen, ['R18A', 'R17B', 'R16']);
   assert.equal(result.asset.revision, 'R16');
+  assert.deepEqual(result.failures, [{ revision: 'R18A', code: 'IMPORT' }, { revision: 'R17B', code: 'IMPORT' }]);
   assert.match(result.fallbackReason!, /R18A.*R17B/);
   await assert.rejects(resolveTree('R18A', new AbortController().signal, async revision => { throw new Error(revision); }),
     /R18A.*R17B.*R16/);
