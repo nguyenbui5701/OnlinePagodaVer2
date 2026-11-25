@@ -94,7 +94,8 @@ def import_model(path,name,parent=None):
         # Keep proven custom shapes in their original non-rendering collection.
         require(o.type=='MESH' and o.parent is None and not o.children and
                 not any(source_name(o.name,n) for n in source_names if n) and
-                bool(o.users_collection) and all(c.hide_render and c.hide_viewport for c in o.users_collection),
+                len(o.users_collection)==1 and o.users_collection[0].name=='glTF_not_exported' and
+                all(c.hide_render and c.hide_viewport for c in o.users_collection),
                 'CUSTOM_SHAPE_UNPROVEN '+o.name)
         helpers.add(o)
     art=objs-helpers
@@ -150,13 +151,20 @@ def animation(col,repeat):
     require(len(tracks)==1 and len(tracks[0].strips)==1,'CLIP_COUNT')
     t=tracks[0];st=t.strips[0]
     require('swim_loop' in st.action.name or 'swim_loop' in t.name or 'swim_loop' in st.name,'CLIP_NAME')
-    ad.action=None;t.mute=False;st.mute=False
+    # Blender 4.5 glTF importer stashes a locked/muted strip with an explicit action slot.
+    # Preserve that slot, activate only the NLA path and unlock the editable track.
+    require(st.action_slot is not None,'NLA_ACTION_SLOT')
+    ad.action=None;t.mute=False;t.lock=False;st.mute=False
+    require(ad.use_nla and not st.use_animated_time and not st.use_reverse,'NLA_EVALUATION_MODE')
     st.repeat=1;st.scale=1
     lo=float(st.frame_start);duration=float(st.action_frame_end-st.action_frame_start)
     require(abs(duration-60)<.01,'CLIP_DURATION '+str(duration))
     st.repeat=repeat
     require(abs(float(st.frame_end)-lo-duration*repeat)<.01,'NLA_REPEAT_RANGE '+str((lo,st.frame_end,repeat)))
     require(abs(float(st.scale)-1)<.0001 and abs(float(st.repeat)-repeat)<.0001,'NLA_REPEAT_SCALE')
+    print('B9_NLA '+json.dumps({'armature':arm.name,'action':st.action.name,'slot':st.action_slot.identifier,
+      'track':t.name,'start':lo,'end':float(st.frame_end),'period':duration,'repeat':float(st.repeat),
+      'scale':float(st.scale),'locked':t.lock}),flush=True)
     return arm,lo,duration
 def at(scene,f):scene.frame_set(math.floor(f),subframe=f-math.floor(f));bpy.context.view_layer.update()
 def identity():
@@ -247,7 +255,8 @@ def validate_master():
                 require(len(arm.data.bones)==8,'MASTER_REOPEN_RIG')
                 for b in arm.pose.bones:
                     helper=b.custom_shape
-                    require(helper is not None and helper not in set(c.all_objects) and bool(helper.users_collection)
+                    require(helper is not None and helper not in set(c.all_objects) and len(helper.users_collection)==1
+                      and helper.users_collection[0].name=='glTF_not_exported'
                       and all(k.hide_render and k.hide_viewport for k in helper.users_collection),'MASTER_REOPEN_HELPER '+b.name)
     write(ROOT/'native_validation.json',{'status':'B9_NATIVE_IMPORT_AND_LOOP_PASS','identity':identity(),'blenderVersion':bpy.app.version_string,'profiles':report,'master':meta(dest),'masterReopened':True,'nativeUV':'No authored UV required: COLOR_0 vertex colors, no textures; finite existing UVs checked'})
     print('B9_NATIVE_IMPORT_AND_LOOP_PASS',flush=True)
