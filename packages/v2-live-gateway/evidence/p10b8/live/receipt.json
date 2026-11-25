@@ -1,0 +1,82 @@
+{
+  "method": "Built Edge Overlay and Dashboard, loopback Gateway with mapped synthetic Member, Chat and Gift packets.",
+  "browser": "158.0.4370.33",
+  "member": {
+    "boundMs": 260,
+    "visibleMs": 266,
+    "shot": "HERO_WIDE_TREE_REFLECTION",
+    "goalMet": true
+  },
+  "waiting": {
+    "full": 2,
+    "refilled": 2,
+    "clearedOnDisconnect": true
+  },
+  "focus": [
+    {
+      "actorId": "demo-1795615846941-actor-4",
+      "requestId": "demo-1795615846941-gift-1",
+      "seatId": "seat-1"
+    },
+    {
+      "actorId": "demo-1795615846941-actor-5",
+      "requestId": "demo-1795615846941-gift-2",
+      "seatId": "seat-2"
+    },
+    {
+      "actorId": "demo-1795615846941-actor-7",
+      "requestId": "demo-1795615846941-gift-4",
+      "seatId": "seat-3"
+    }
+  ],
+  "final": {
+    "source": "6606c794f9e122c32af8def3ad5dc79100a30881",
+    "confirmedGiftCount": 8,
+    "graphics": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "visual": 2,
+    "audio": 1,
+    "world": {
+      "requestedTree": "R18A",
+      "tree": "R18A",
+      "requestedDensity": "lush",
+      "density": "lush",
+      "fallback": false
+    },
+    "treeSha256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+    "lotusVisible": {
+      "pad": 0,
+      "leaf": 2,
+      "bloom": 1,
+      "bud": 0
+    },
+    "launches": 1,
+    "stops": 0,
+    "connection": 1,
+    "acknowledged": 18,
+    "counters": {
+      "chat": 2,
+      "member": 8,
+      "like": 0,
+      "giftProgress": 3,
+      "giftFinal": 4,
+      "room": 0
+    },
+    "presence": {
+      "revision": 7,
+      "occupied": 3,
+      "waiting": 0,
+      "dropped": 0
+    }
+  },
+  "captures": {
+    "member.png": "911c0b2b0f157cc8145b27d186412e7e3b8b50ca71e7641bfc4539db6d1afe5f",
+    "gift-focus.png": "0bcda31e0cdc1fc5234b9a56ab27ada93b0748b144b8bdc80919278a0db88b4b",
+    "dashboard.png": "60d88e197f39f10b545bd68971e5e7de7a5adf6a311e2b17583f49f500b067e2"
+  },
+  "motion": {
+    "file": "motion.webm",
+    "sha256": "04f6313b72415a84129de46f32ac9563d963abbeaac345ee706770777c8ec6b5",
+    "bytes": 1009532,
+    "source": "native WebGL canvas"
+  }
+}

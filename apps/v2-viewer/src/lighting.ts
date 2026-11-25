@@ -1,5 +1,5 @@
 import { AmbientLight, Color, DirectionalLight, FogExp2, Mesh, MeshStandardMaterial,
-  PlaneGeometry, Scene, ShaderMaterial, type Material, type Object3D } from 'three';
+  PlaneGeometry, PointLight, Scene, ShaderMaterial, type Material, type Object3D } from 'three';
 import type { Profile } from './asset.ts';
 import { looks, lookOrder } from './twilight.ts';
 
@@ -123,18 +123,23 @@ export function createTwilight(scene: Scene, rig: ReturnType<typeof setupLightin
   };
 }
 
-/** Binds only the verified, named R16 gold material. Must run after loadSakura's source checks. */
-export function bindGoldEmphasis(root: Object3D) {
-  const name = 'Golden_bark_veins';
+export function addR18WarmFill(parent: Object3D, profile: Profile) {
+  const fill = new PointLight('#ffd097', profile === 'quality' ? 48 : 38, 20, 1.5);
+  fill.position.set(-3, 4.5, 4.5);
+  parent.add(fill);
+  return fill;
+}
+
+function bindEmissiveMaterials(root: Object3D, gains: ReadonlyMap<string, number>) {
   const originals = new Map<Mesh, Material | Material[]>();
   const copies = new Map<MeshStandardMaterial, MeshStandardMaterial>();
   root.traverse(object => {
     if (!(object instanceof Mesh)) return;
     const original = object.material;
     const materials = Array.isArray(original) ? original : [original];
-    if (!materials.some(material => material instanceof MeshStandardMaterial && material.name === name)) return;
+    if (!materials.some(material => material instanceof MeshStandardMaterial && gains.has(material.name))) return;
     const replacement = materials.map(material => {
-      if (!(material instanceof MeshStandardMaterial) || material.name !== name) return material;
+      if (!(material instanceof MeshStandardMaterial) || !gains.has(material.name)) return material;
       const copy = copies.get(material) ?? material.clone();
       copies.set(material, copy);
       return copy;
@@ -143,9 +148,9 @@ export function bindGoldEmphasis(root: Object3D) {
     object.material = Array.isArray(original) ? replacement : replacement[0];
   });
   return {
-    report: { name, clones: copies.size, meshes: originals.size },
+    report: { clones: copies.size, meshes: originals.size },
     update(multiplier: number) {
-      for (const [base, copy] of copies) copy.emissiveIntensity = base.emissiveIntensity * multiplier;
+      for (const [base, copy] of copies) copy.emissiveIntensity = base.emissiveIntensity * gains.get(base.name)! * multiplier;
     },
     dispose() {
       for (const [mesh, original] of originals) mesh.material = original;
@@ -154,4 +159,23 @@ export function bindGoldEmphasis(root: Object3D) {
       copies.clear();
     },
   };
+}
+
+/** Bind after verifying the loaded GLB. Runtime copies are released before the source asset. */
+export function bindGoldEmphasis(root: Object3D) {
+  const name = 'Golden_bark_veins';
+  const binding = bindEmissiveMaterials(root, new Map([[name, 1]]));
+  return { ...binding, report: { name, ...binding.report } };
+}
+
+const canopyGains = new Map([
+  ['Canopy_depth_rose', 1.85], ['Canopy_peach', 3.6], ['Canopy_rose', 3.3],
+  ['Sakura_petal_warm_rose', 3.45], ['Sakura_petal_blush', 3.5], ['Sakura_petal_pink', 3.5], ['Sakura_petal_cream', 3.5],
+  ['R17b_ShadowRose', 1.55], ['R17b_WarmRose', 3.4], ['R17b_PetalPink', 3.6], ['R17b_PeachBlush', 3.6],
+]);
+
+export function liftR18Canopy(root: Object3D) {
+  const canopy = bindEmissiveMaterials(root, canopyGains);
+  canopy.update(1);
+  return canopy;
 }

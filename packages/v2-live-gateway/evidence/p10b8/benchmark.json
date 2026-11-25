@@ -1,0 +1,121 @@
+{
+  "runtimeSource": "6606c794f9e122c32af8def3ad5dc79100a30881",
+  "browser": "158.0.4370.33",
+  "host": {
+    "cpu": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
+    "parallelism": 12,
+    "ram": 16948453376
+  },
+  "config": {
+    "highGpuRequested": true,
+    "headed": false,
+    "resolution": [
+      720,
+      1280
+    ],
+    "seed": 9,
+    "fps": "native rAF over 6.5s, scene animation warmup 1s",
+    "drawCounts": "renderer.info frame counters, Three.js main render (shadow pass not separately instrumented)",
+    "visibleCounts": "static frustum acceptance before depth occlusion"
+  },
+  "fallback": [],
+  "parity": {},
+  "measured": {
+    "eco": {
+      "baseline": {
+        "fps": 144.0054098083514,
+        "frames": 937,
+        "p50": 6.900000000000546,
+        "p95": 7,
+        "p99": 7.100000000000364,
+        "max": 7.199999999999818,
+        "maxCalls": 109,
+        "maxTriangles": 342694,
+        "geometries": 56,
+        "textures": 1,
+        "maxShaders": 11,
+        "heap": 22880829,
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "errors": [],
+        "end": 8.09,
+        "device": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "asset": "R17B",
+        "sha256": "3b7e87f61ed120a2c938e572e0d0fe2c858c6fbc8027657efe16c232906de770",
+        "loadMs": 74.3999999994412,
+        "repoRevision": "5faeb35a0c0279ca9dc0ad0ee6733435b7641008"
+      },
+      "lush": {
+        "fps": 144.00098357128587,
+        "frames": 937,
+        "p50": 6.900000000000546,
+        "p95": 7,
+        "p99": 7.100000000000364,
+        "max": 7.199999999999818,
+        "maxCalls": 122,
+        "maxTriangles": 755133,
+        "geometries": 59,
+        "textures": 1,
+        "maxShaders": 11,
+        "heap": 21293778,
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "errors": [],
+        "end": 8.1318,
+        "device": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "asset": "R18A",
+        "sha256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+        "loadMs": 67.5,
+        "repoRevision": "6606c794f9e122c32af8def3ad5dc79100a30881"
+      }
+    },
+    "quality": {
+      "baseline": {
+        "fps": 144.00319665580625,
+        "frames": 937,
+        "p50": 6.900000000000546,
+        "p95": 7,
+        "p99": 7.100000000000364,
+        "max": 7.100000000000364,
+        "maxCalls": 112,
+        "maxTriangles": 531328,
+        "geometries": 57,
+        "textures": 2,
+        "maxShaders": 12,
+        "heap": 23565940,
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "errors": [],
+        "end": 8.263599999999999,
+        "device": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "asset": "R17B",
+        "sha256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+        "loadMs": 100.40000000037253,
+        "repoRevision": "5faeb35a0c0279ca9dc0ad0ee6733435b7641008"
+      },
+      "lush": {
+        "fps": 144.00319665580622,
+        "frames": 937,
+        "p50": 6.900000000000546,
+        "p95": 7,
+        "p99": 7.100000000000364,
+        "max": 7.199999999999818,
+        "maxCalls": 125,
+        "maxTriangles": 1224570,
+        "geometries": 60,
+        "textures": 2,
+        "maxShaders": 12,
+        "heap": 19314581,
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "errors": [],
+        "end": 8.4095,
+        "device": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Ti Laptop GPU (0x000025A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "asset": "R18A",
+        "sha256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+        "loadMs": 134.80000000074506,
+        "repoRevision": "6606c794f9e122c32af8def3ad5dc79100a30881"
+      }
+    }
+  },
+  "shotsByProfile": {
+    "eco": {},
+    "quality": {}
+  }
+}

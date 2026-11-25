@@ -5,6 +5,7 @@ type Figure = { root: Group; breath: Object3D };
 
 // Use the verified GLB's geometry and materials directly. Only instanced matrices are owned here.
 export function createCommunityBatches(figures: Figure[]) {
+  if (figures.length > 32) throw new RangeError('Animated community visibility mask supports up to 32 figures');
   const group = new Group();
   group.name = 'Anonymous lotus community';
   const bounds: Sphere[] = [];
@@ -39,7 +40,7 @@ export function createCommunityBatches(figures: Figure[]) {
   const frustum = new Frustum();
   const lastBreath = new Vector3();
   const lastPosition = new Vector3();
-  let lastMask = -1;
+  let lastMask: number | undefined;
   return {
     group, count: batches.length,
     update(scale: Vector3, camera: PerspectiveCamera, position?: Vector3) {

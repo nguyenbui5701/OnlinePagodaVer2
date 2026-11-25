@@ -2,6 +2,7 @@ import type { DemoEvent, SessionEvent } from '../../../packages/v2-events/src/pr
 import type { LiveVoiceIdentity } from './audio/live-alias.ts';
 import { readVoicePcm } from './audio/named-voice.ts';
 import type { PresenceApplied } from '../../../packages/v2-events/src/presence.ts';
+import type { WorldApplied } from './live-settings.ts';
 import type { AudioApplied } from './live-audio-settings.ts';
 import { GatewayError, postGateway } from './live-api.ts';
 
@@ -51,11 +52,12 @@ type Options = {
   sourceLost: () => void;
   receipt: () => { ack: number; failed: boolean };
   status: (state: ReceiverStatus) => void;
+  worldStatus?: () => WorldApplied | undefined;
   audioStatus?: () => AudioApplied | undefined;
   presenceStatus?: () => PresenceApplied | undefined;
 };
 
-export function createLiveReceiver({ feed, sourceLost, receipt, status, audioStatus, presenceStatus }: Options) {
+export function createLiveReceiver({ feed, sourceLost, receipt, status, audioStatus, presenceStatus, worldStatus }: Options) {
   const client = Array.from(crypto.getRandomValues(new Uint8Array(16)), value => value.toString(16).padStart(2, '0')).join('');
   const abort = new AbortController();
   let timer: ReturnType<typeof setTimeout>;
@@ -86,7 +88,7 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status, audioSta
       }
       const { ack } = receipt();
       sentReady = rendererReady;
-      const data = decodeLivePoll(await (await request('/poll', overlay ? { ack, ready: sentReady, audio: audioStatus?.(), presence: presenceStatus?.() } : { ack })).json(), ack);
+      const data = decodeLivePoll(await (await request('/poll', overlay ? { ack, ready: sentReady, audio: audioStatus?.(), presence: presenceStatus?.(), world: worldStatus?.() } : { ack })).json(), ack);
       if (closed) return;
       uncertain ||= data.deliveryUncertain;
       if (!feed(data.entries)) {

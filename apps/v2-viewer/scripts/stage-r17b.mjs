@@ -6,7 +6,6 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import manifest from '../src/sakura-r17b.json' with { type: 'json' };
 
 const workspace = fileURLToPath(new URL('../', import.meta.url));
-const runGit = (...args) => execFileSync('git', args, { cwd: workspace, maxBuffer: 12 * 1024 * 1024 });
 const repository = 'https://github.com/nguyenbui5701/OnlinePagodaVer2.git';
 
 function validGlb(data) {
@@ -19,8 +18,13 @@ function validGlb(data) {
     data.readUInt32LE(bin) % 4 === 0 && bin + 8 + data.readUInt32LE(bin) === data.length;
 }
 
-export function readPair(git = runGit) {
+export const readPair = git => readVerifiedPair(manifest, git);
+export const stageR17b = (publicDir, git) => stageVerifiedPair(manifest, publicDir, git);
+
+export function readVerifiedPair(manifest, git) {
   const { baselineCommit: commit, sourceRef, canonicalDirectory, profiles } = manifest;
+  const maxBuffer = Math.max(...Object.values(profiles).map(profile => profile.bytes)) + 1024 * 1024;
+  git ??= (...args) => execFileSync('git', args, { cwd: workspace, maxBuffer });
   try { git('cat-file', '-e', commit + '^{commit}'); }
   catch {
     git('fetch', repository, sourceRef);
@@ -33,22 +37,23 @@ export function readPair(git = runGit) {
     const data = git('cat-file', 'blob', key);
     const sha256 = createHash('sha256').update(data).digest('hex');
     if (gitBlob !== expected.gitBlob || data.length !== expected.bytes || sha256 !== expected.sha256 || !validGlb(data)) {
-      throw new Error(`R17B integrity check failed for ${key} (${gitBlob}, ${data.length} bytes, ${sha256})`);
+      throw new Error(`${manifest.revision} integrity check failed for ${key} (${gitBlob}, ${data.length} bytes, ${sha256})`);
     }
     return { file: expected.file, data, receipt: { path, commit, gitBlob, bytes: data.length, sha256 } };
   });
 }
 
-export function stageR17b(publicDir = join(workspace, 'public'), git = runGit) {
-  const pair = readPair(git);
+export function stageVerifiedPair(manifest, publicDir = join(workspace, 'public'), git) {
+  const pair = readVerifiedPair(manifest, git);
+  const directory = manifest.revision.toLowerCase();
   mkdirSync(publicDir, { recursive: true });
-  const target = join(publicDir, 'r17b');
-  const lock = join(publicDir, '.r17b-lock');
+  const target = join(publicDir, directory);
+  const lock = join(publicDir, '.' + directory + '-lock');
   mkdirSync(lock);
   let temp;
   let backedUp = false;
   try {
-    temp = mkdtempSync(join(publicDir, '.r17b-stage-'));
+    temp = mkdtempSync(join(publicDir, '.' + directory + '-stage-'));
     const pending = join(temp, 'pair');
     const previous = join(temp, 'previous');
     mkdirSync(pending);

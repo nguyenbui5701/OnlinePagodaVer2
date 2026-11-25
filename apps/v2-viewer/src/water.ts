@@ -2,6 +2,11 @@ import { Color, Mesh, PlaneGeometry, ShaderMaterial, Vector2, Vector3, Vector4 }
 import { giftTiming, type FxProfile } from './fx-profiles.ts';
 
 export type WaterRipple = { x: number; z: number; progress: number; opacity: number };
+const goldLobes = [
+  { x: -5.6, z: 3.3, phase: .3, strength: .92 },
+  { x: 4.7, z: 6.2, phase: 2.45, strength: 1 },
+  { x: 1.1, z: -5.8, phase: 4.65, strength: .82 },
+];
 
 export function createWater(options: FxProfile['water'], twilight = false) {
   const time = { value: 0 };
@@ -10,6 +15,7 @@ export function createWater(options: FxProfile['water'], twilight = false) {
   const deepWater = new Color();
   const horizon = new Color();
   const reflection = new Vector3();
+  const lobes = goldLobes.map(() => new Vector3());
   const material = new ShaderMaterial({
     defines: { ...(options.fineDetail && { FINE_WATER: 1 }), ...(twilight && { TWILIGHT_WATER: 1 }) },
     uniforms: {
@@ -17,6 +23,7 @@ export function createWater(options: FxProfile['water'], twilight = false) {
       wave: { value: new Vector4(options.waveAmplitude, options.waveSpeed, options.waveScale, options.reflection) },
       giftRadius: { value: giftTiming.rippleRadius },
       deepWater: { value: deepWater }, horizon: { value: horizon }, lookReflection: { value: reflection },
+      goldLobes: { value: lobes },
     },
     vertexShader: `
       varying vec3 world;
@@ -36,6 +43,9 @@ export function createWater(options: FxProfile['water'], twilight = false) {
         uniform vec3 deepWater;
         uniform vec3 horizon;
         uniform vec3 lookReflection;
+      #endif
+      #ifdef DRIFT_GOLD
+        uniform vec3 goldLobes[3];
       #endif
       varying vec3 world;
 
@@ -89,6 +99,21 @@ export function createWater(options: FxProfile['water'], twilight = false) {
           vec3 pink = lookReflection.x * (rose * vec3(0.53, 0.19, 0.27) + rootGlow * vec3(0.15,0.043,0.074));
           vec3 peach = lookReflection.y * (gold * vec3(0.63, 0.31, 0.11) + warmFan * vec3(0.32,0.13,0.060));
           color += wave.w * (pink * (0.34 + 0.73 * ribbons) + peach * ribbons * lookReflection.z);
+          #ifdef DRIFT_GOLD
+            // World-space lobes share the existing wave field and gleam at grazing angles.
+            vec2 broken = projected + vec2(crossing, .38 * broad) * .82;
+            vec2 across = vec2(.94, -.34);
+            vec2 along = vec2(.34, .94);
+            float highlights = 0.0;
+            for (int i = 0; i < 3; i++) {
+              vec2 offset = broken - goldLobes[i].xy;
+              vec2 ellipse = vec2(dot(offset, across) / 2.25, dot(offset, along) / 4.6);
+              highlights += falloff(ellipse) * goldLobes[i].z;
+            }
+            float breakup = .38 + .46 * band + .16 * glint;
+            color += vec3(.58, .275, .072) * highlights * breakup * wave.w *
+              lookReflection.y * (.35 + .65 * fresnel);
+          #endif
           color += glint * 0.009 * vec3(0.55,0.49,0.79);
         #else
           color += wave.w * (0.83 + 0.34 * glint) * (rose * vec3(0.55, 0.225, 0.30) +
@@ -112,7 +137,20 @@ export function createWater(options: FxProfile['water'], twilight = false) {
   const mesh = new Mesh(geometry, material);
   mesh.rotation.x = -Math.PI / 2;
   return {
-    mesh, time, tree,
+    mesh, tree,
+    enableDriftingGold() {
+      material.defines.DRIFT_GOLD = 1;
+      material.needsUpdate = true;
+    },
+    setTime(seconds: number) {
+      time.value = seconds;
+      if (!material.defines.DRIFT_GOLD) return;
+      for (const [i, { x, z, phase, strength }] of goldLobes.entries()) {
+        const t = seconds * .23 + phase;
+        lobes[i].set(x + 1.85 * Math.sin(t), z + 1.25 * Math.cos(t * .87 + phase),
+          strength * (.83 + .17 * Math.sin(t * 1.15 + phase)));
+      }
+    },
     setAppearance(deep: Color, skyHorizon: Color, weights: { rose: number; gold: number; streaks: number }) {
       deepWater.copy(deep);
       horizon.copy(skyHorizon);

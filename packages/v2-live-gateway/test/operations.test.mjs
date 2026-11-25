@@ -57,6 +57,15 @@ test('audio settings persist independently and corrupt data is muted', async t =
   assert.equal(new AudioSettingsStore(path).snapshot.settings.master.enabled, false);
 });
 
+test('visual settings migrate the old file without changing its revision or accepting unknown fields', async t => {
+  const { path } = await tempSettings(t);
+  const { density, ...old } = { ...liveDefaults, seed: 71 };
+  await writeFile(path, JSON.stringify({ version: 1, revision: 14, settings: old }));
+  assert.deepEqual(new SettingsStore(path).snapshot, { revision: 14, settings: { ...old, density }, warning: '' });
+  await writeFile(path, JSON.stringify({ version: 1, revision: 14, settings: { ...old, unknown: 'x' } }));
+  assert.equal(new SettingsStore(path).snapshot.warning, 'INVALID');
+});
+
 const receiver = 'a'.repeat(32);
 const other = 'b'.repeat(32);
 async function loopback(t) {

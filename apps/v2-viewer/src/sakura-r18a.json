@@ -1,0 +1,87 @@
+{
+  "assetId": "sakura_hero",
+  "revision": "R18A",
+  "baselineCommit": "84f3a621d83fa7af5a4995b007446fec49287bf9",
+  "sourceRef": "refs/heads/assets/sakura-hero-r18-polish",
+  "canonicalDirectory": "Assets3D/Review/sakura_hero/r18-polish/r18a",
+  "coordinateSystem": {
+    "up": "+Y",
+    "metersPerUnit": 1,
+    "pivot": [
+      0,
+      0,
+      0
+    ],
+    "waterY": 0
+  },
+  "textures": 0,
+  "gold": {
+    "pbrMetallicRoughness": {
+      "baseColorFactor": [
+        0.9686274509803922,
+        0.6784313725490196,
+        0.396078431372549,
+        1
+      ],
+      "roughnessFactor": 0.58,
+      "metallicFactor": 0
+    },
+    "emissiveFactor": [
+      0.95,
+      0.49,
+      0.12
+    ],
+    "name": "Golden_bark_veins",
+    "doubleSided": false
+  },
+  "profiles": {
+    "quality": {
+      "file": "sakura_hero_r18a.glb",
+      "bytes": 7152368,
+      "triangles": 242954,
+      "gltfMeshes": 17,
+      "primitives": 26,
+      "vertices": 303136,
+      "materials": 15,
+      "sha256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+      "gitBlob": "44f2900490ddd682d5b951808b37aaeb0e714f78",
+      "bounds": [
+        [
+          -14.178767204284668,
+          -0.5183812975883484,
+          -13.425017356872559
+        ],
+        [
+          14.489616394042969,
+          26.48044204711914,
+          14.410984992980957
+        ]
+      ],
+      "goldPrimitives": 3
+    },
+    "eco": {
+      "file": "sakura_hero_r18a_eco.glb",
+      "bytes": 2229632,
+      "triangles": 60931,
+      "gltfMeshes": 16,
+      "primitives": 25,
+      "vertices": 101192,
+      "materials": 14,
+      "sha256": "1ed0f0bb658a045fba09267020feebab99824ee06423bb92577a8cd2d2e7c847",
+      "gitBlob": "fea7660aacdb61099d9ca1b377656440a2a0b8b7",
+      "bounds": [
+        [
+          -14.275399208068848,
+          -1.026049256324768,
+          -13.268314361572266
+        ],
+        [
+          13.287308692932129,
+          24.86863899230957,
+          11.898303031921387
+        ]
+      ],
+      "goldPrimitives": 3
+    }
+  }
+}

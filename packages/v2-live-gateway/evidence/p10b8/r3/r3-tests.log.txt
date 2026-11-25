@@ -1,0 +1,41 @@
+source=cf612136111580b6cf48dea35b5030c6fe0878aa
+node=v24.16.0
+> node --test test/r18a-refinement.test.ts test/twilight.test.ts
+✔ QUALITY density plus is seeded and respects scaled plant, tree, seat and camera clearances (45.4966ms)
+✔ petal tint follows the packed matrix past index 32 and leaves green materials alone (4.4014ms)
+✔ canopy lift shares owned clones, keeps depth and restores all source materials (1.3712ms)
+✔ three gold lobes drift continuously, repeat at fixed time, and preserve the gift ripple (1.0753ms)
+✔ shot boundaries and 40s closure keep normalized deterministic weights (10.7592ms)
+✔ gift and route-clock reset ease from the current output and reuse weight storage (0.4938ms)
+✔ legacy pins P0.10 and comparison cameras, while lookup allows three review holds (0.2306ms)
+✔ twilight reuses light and sky resources, with bounded exposure and fog (3.524ms)
+✔ gold runtime clone stays scoped, shares across meshes and restores originals before disposing (1.5382ms)
+✔ water atmosphere leaves the exact P0.10 gift ripple inputs independent (0.8126ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 237.6263
+exit=0
+> node --test --test-name-pattern='density is deterministic|static pads|independent static pools' test/r18a-world.test.ts
+✔ density is deterministic with clearance and full budgets across seeds and profiles (39.5277ms)
+✔ static pads and leaves omit the nested seated actor and share the P02 mesh (4.0463ms)
+✔ independent static pools keep index 32 distinct from index zero and free only their matrices (3.9475ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 247.7427
+exit=0
+
+> npm.cmd run build
+tsc --noEmit && vite build
+Vite v7.3.8, 76 modules transformed, built in 1.56s
+Largest minified chunk: 752.27 kB (213.09 kB gzip), Vite chunk-size warning
+exit=0
