@@ -41,3 +41,7 @@ Real-seat capacity extension, new artwork beyond accepted B8/B9, audio offline p
 ## Owner scope decision — 2026-11-24
 
 Owner replied “tiếp tục theo đề xuất và rules” after the three-design roadmap and recommendation to activate only Design32 art first. **OWNER_P10C0_SCOPE_GO / P10C0_DEPENDENCY_HOLD.** Design scope approved; no code task active. Await B9 SA integration PASS + Owner visual GO, then pin actual input and issue Codex task; do not diagnose or edit camera runtime in B8 art. Existing PR26 Owner LIVE/Studio/listening and physical GPU evidence remain pending; scope GO is not final art/runtime acceptance.
+
+## Owner-approved HIGH QUALITY / Art First amendment (2026-11-25)
+
+Follow [Design10 latest policy](10_GRAPHICS_PROFILES.md). Camera route and framing must support scalable ECO/QUALITY and future HIGH QUALITY worlds using shared logic, bounds/LOD clearance and actual camera traces. Future HIGH QUALITY can showcase richer details without compromising gift focus, names, ACK or voice. Its runtime profile/benchmark and hardware requirements remain pending separate activation; current two-profile acceptance and final 30+ minute measured soak remain. No automatic profile switch or C0 activation now.
