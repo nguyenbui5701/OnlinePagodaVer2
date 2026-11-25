@@ -1,7 +1,7 @@
 """Original B9 native art verification, master and Cycles evidence. Blender 4.5 LTS.
 No runtime code; all new files local to this versioned asset directory.
 """
-import bpy, sys, json, math, hashlib, struct, random, subprocess
+import bpy, sys, json, math, hashlib, struct, random, subprocess, re
 from pathlib import Path
 from mathutils import Vector
 import numpy as np
@@ -26,14 +26,93 @@ def reset():
     s=bpy.context.scene;s.render.fps=20;s.render.fps_base=1;s.frame_start=0;s.frame_end=120
     s.unit_settings.system='METRIC';s.unit_settings.scale_length=1
     return s
+def source_doc(path):
+    b=path.read_bytes()
+    n,kind=struct.unpack_from('<II',b,12)
+    require(kind==0x4e4f534a and 20+n<=len(b),'GLB_JSON '+path.name)
+    return json.loads(b[20:20+n])
+def source_name(actual,expected):
+    return actual==expected or re.fullmatch(re.escape(expected)+r'\.\d{3,}',actual) is not None
+def hierarchy(o):
+    result=[]
+    while o.parent is not None:
+        o=o.parent;result.append(o)
+    return result
+def describe(o,refs):
+    return {'name':o.name,'type':o.type,'parent':o.parent.name if o.parent else None,
+      'collections':[{'name':c.name,'hide_render':c.hide_render,'hide_viewport':c.hide_viewport}
+                     for c in o.users_collection],
+      'hide_render':o.hide_render,'hide_viewport':o.hide_viewport,
+      'materialSlots':len(o.data.materials) if o.type=='MESH' else None,
+      'poseBoneCustomShapeRefs':refs.get(o,[])}
+def check_source_meshes(objs,doc,row):
+    nodes=[n for n in doc['nodes'] if 'mesh' in n]
+    require(len(nodes)==row['meshes'] and len({n['name'] for n in nodes})==len(nodes),'SOURCE_NODE_COUNT')
+    meshes=[o for o in objs if o.type=='MESH'];arms=[o for o in objs if o.type=='ARMATURE']
+    require(len(meshes)==len(nodes),'SOURCE_MESH_COUNT '+row['file'])
+    require(len(arms)==(1 if row['kind']=='koi' else 0),'SOURCE_ARMATURE_COUNT '+row['file'])
+    require(all(o.type in ('MESH','ARMATURE') or (o.type=='EMPTY' and
+      any(source_name(o.name,n.get('name','')) for n in doc['nodes'] if 'mesh' not in n))
+      for o in objs),'SOURCE_UNEXPLAINED_OBJECT')
+    root=doc['nodes'][doc['scenes'][doc.get('scene',0)]['nodes'][0]]['name']
+    used=set();mapping=[]
+    for n in nodes:
+        candidates=[o for o in meshes if source_name(o.name,n['name'])]
+        require(len(candidates)==1 and candidates[0] not in used,'SOURCE_NODE_MAPPING '+n['name'])
+        o=candidates[0];used.add(o)
+        prims=doc['meshes'][n['mesh']]['primitives']
+        require(len(prims)==1 and prims[0].get('mode',4)==4,'SOURCE_PRIMITIVE '+n['name'])
+        o.data.calc_loop_triangles()
+        expected=doc['accessors'][prims[0]['indices']]['count']//3
+        require(len(o.data.loop_triangles)==expected,'SOURCE_NODE_TRIANGLES '+n['name'])
+        if 'skin' in n:
+            require(len(arms)==1 and any(m.type=='ARMATURE' and m.object==arms[0] for m in o.modifiers),
+                    'SOURCE_SKIN_BINDING '+n['name'])
+            require(arms[0] in hierarchy(o) or any(source_name(a.name,root) for a in hierarchy(o)),
+                    'SOURCE_SKIN_HIERARCHY '+n['name'])
+        else:
+            require(any(source_name(a.name,root) for a in hierarchy(o)),'SOURCE_NODE_HIERARCHY '+n['name'])
+        mapping.append({'sourceNode':n['name'],'object':o.name,'triangles':expected})
+    require(set(meshes)==used,'SOURCE_UNEXPLAINED_MESH')
+    return mapping
 def import_model(path,name,parent=None):
-    before=set(bpy.data.objects);bpy.ops.import_scene.gltf(filepath=str(path))
+    before=set(bpy.data.objects)
+    result=bpy.ops.import_scene.gltf(filepath=str(path))
+    require('FINISHED' in result,'IMPORT_OPERATOR '+name)
     objs=set(bpy.data.objects)-before;require(bool(objs),'IMPORT_EMPTY '+name)
+    doc=source_doc(path)
+    source_names=[n.get('name','') for n in doc['nodes'] if 'mesh' in n]
+    refs={}
+    for arm in (o for o in objs if o.type=='ARMATURE'):
+        for bone in arm.pose.bones:
+            if bone.custom_shape is not None:
+                refs.setdefault(bone.custom_shape,[]).append(arm.name+'/'+bone.name)
+    print('B9_IMPORT_OBJECTS '+json.dumps({'file':path.name,'sourceMeshNodes':source_names,
+      'objects':[describe(o,refs) for o in sorted(objs,key=lambda o:o.name)]}),flush=True)
+    helpers=set()
+    for o in refs:
+        # Keep proven custom shapes in their original non-rendering collection.
+        require(o.type=='MESH' and o.parent is None and not o.children and
+                not any(source_name(o.name,n) for n in source_names if n) and
+                bool(o.users_collection) and all(c.hide_render and c.hide_viewport for c in o.users_collection),
+                'CUSTOM_SHAPE_UNPROVEN '+o.name)
+        helpers.add(o)
+    art=objs-helpers
+    require(bool(art),'IMPORT_NO_ART '+name)
+    require(all(o.parent is None or o.parent in art for o in art),'IMPORT_EXTERNAL_PARENT '+name)
+    row=next((x for x in MAN['files'] if path.parent==ROOT and x['file']==path.name),None)
+    if row:
+        mapping=check_source_meshes(art,doc,row)
+        print('B9_SOURCE_MAPPING '+json.dumps({'file':path.name,'meshes':mapping,
+          'helpers':[describe(o,refs) for o in sorted(helpers,key=lambda o:o.name)]}),flush=True)
     col=bpy.data.collections.new(name)
     (parent.children if parent else bpy.context.scene.collection.children).link(col)
-    for o in objs:
+    for o in art:
         prev=list(o.users_collection);col.objects.link(o)
         for c in prev:c.objects.unlink(o)
+    require(not (set(col.all_objects)&helpers),'HELPER_COLLECTION_LEAK')
+    require(all(b.custom_shape in helpers for o in art if o.type=='ARMATURE'
+                for b in o.pose.bones if b.custom_shape is not None),'HELPER_REFERENCE_LOST')
     bpy.context.view_layer.update()
     return col
 def geometry(col,evaluated=False):
@@ -76,9 +155,56 @@ def animation(col,repeat):
     lo=float(st.frame_start);duration=float(st.action_frame_end-st.action_frame_start)
     require(abs(duration-60)<.01,'CLIP_DURATION '+str(duration))
     st.repeat=repeat
+    require(abs(float(st.frame_end)-lo-duration*repeat)<.01,'NLA_REPEAT_RANGE '+str((lo,st.frame_end,repeat)))
+    require(abs(float(st.scale)-1)<.0001 and abs(float(st.repeat)-repeat)<.0001,'NLA_REPEAT_SCALE')
     return arm,lo,duration
 def at(scene,f):scene.frame_set(math.floor(f),subframe=f-math.floor(f));bpy.context.view_layer.update()
+def identity():
+    return {'sourceSHA256':sha(Path(__file__)),'runnerSHA256':sha(ROOT/'run_b9.ps1'),
+      'inputManifestSHA256':sha(ROOT/'asset_manifest.json'),
+      'contextPinsSHA256':sha(ROOT/'context_pins.json'),'blenderVersion':bpy.app.version_string}
+def require_receipt(name,status):
+    p=ROOT/name;require(p.is_file(),'RECEIPT_MISSING '+name)
+    v=json.loads(p.read_text(encoding='utf-8'))
+    require(v.get('status')==status and v.get('identity')==identity(),'STALE_RECEIPT '+name)
+    return v
+def focused():
+    s=reset()
+    row=next(x for x in MAN['files'] if x['file']=='koi_kohaku_eco.glb')
+    c=import_model(ROOT/row['file'],'B9_focus')
+    tris,p,_=geometry(c);require(tris==row['triangles'],'FOCUS_TRIANGLES')
+    arms=[o for o in c.all_objects if o.type=='ARMATURE']
+    helpers={b.custom_shape for a in arms for b in a.pose.bones if b.custom_shape is not None}
+    require(bool(helpers) and not (helpers&set(c.all_objects)),'FOCUS_HELPER_PROOF')
+    body=next(o for o in c.all_objects if o.type=='MESH' and source_name(o.name,'Koi_body'))
+    saved=list(body.data.materials);indices=[x.material_index for x in body.data.polygons]
+    require(bool(saved),'FOCUS_NEGATIVE_SETUP')
+    try:
+        body.data.materials.clear()
+        try:
+            geometry(c)
+        except RuntimeError as ex:
+            require(str(ex)=='B9_NATIVE_MATERIAL '+body.name,'FOCUS_WRONG_FAILURE '+str(ex))
+            print('B9_NEGATIVE_AUTHORED_MATERIAL_PASS '+body.name,flush=True)
+        else:
+            require(False,'FOCUS_NEGATIVE_NOT_REJECTED')
+    finally:
+        for m in saved:body.data.materials.append(m)
+        for poly,index in zip(body.data.polygons,indices):poly.material_index=index
+    require(geometry(c)[0]==tris,'FOCUS_RESTORE')
+    arm,start,period=animation(c,2)
+    poses=[]
+    for i in range(121):
+        at(s,start+i);n,q,_=geometry(c,True);require(n==tris,'FOCUS_DEFORM_COUNT');poses.append(q)
+    seam=max(float(np.max(np.abs(poses[i]-poses[i+60]))) for i in range(61))
+    excursion=float(np.max(np.abs(poses[15]-poses[45])))
+    require(seam<.0002 and excursion>.015,'FOCUS_LOOP '+str((seam,excursion)))
+    write(ROOT/'focused_validation.json',{'status':'B9_FOCUSED_PASS','identity':identity(),
+      'file':row['file'],'triangles':tris,'helperCount':len(helpers),'negativeMaterialRejected':True,
+      'seam':seam,'excursion':excursion,'periodFrames':period})
+    print('B9_FOCUSED_PASS',flush=True)
 def validate_master():
+    require_receipt('focused_validation.json','B9_FOCUSED_PASS')
     s=reset();report=[]
     for lod in PROFILES:
         group=bpy.data.collections.new('B9_'+lod.upper()+'_Editable');s.collection.children.link(group)
@@ -114,7 +240,16 @@ def validate_master():
     for lod in PROFILES:
         g=bpy.data.collections.get('B9_'+lod.upper()+'_Editable')
         require(g is not None and len(g.children)==4,'MASTER_REOPEN '+lod)
-    write(ROOT/'native_validation.json',{'status':'B9_NATIVE_IMPORT_AND_LOOP_PASS','blenderVersion':bpy.app.version_string,'profiles':report,'master':meta(dest),'masterReopened':True,'nativeUV':'No authored UV required: COLOR_0 vertex colors, no textures; finite existing UVs checked'})
+        for c in g.children:
+            row=next(x for x in MAN['files'] if c.name==x['file'].replace('.glb',''))
+            require(geometry(c)[0]==row['triangles'],'MASTER_REOPEN_TRIANGLES '+c.name)
+            for arm in (o for o in c.all_objects if o.type=='ARMATURE'):
+                require(len(arm.data.bones)==8,'MASTER_REOPEN_RIG')
+                for b in arm.pose.bones:
+                    helper=b.custom_shape
+                    require(helper is not None and helper not in set(c.all_objects) and bool(helper.users_collection)
+                      and all(k.hide_render and k.hide_viewport for k in helper.users_collection),'MASTER_REOPEN_HELPER '+b.name)
+    write(ROOT/'native_validation.json',{'status':'B9_NATIVE_IMPORT_AND_LOOP_PASS','identity':identity(),'blenderVersion':bpy.app.version_string,'profiles':report,'master':meta(dest),'masterReopened':True,'nativeUV':'No authored UV required: COLOR_0 vertex colors, no textures; finite existing UVs checked'})
     print('B9_NATIVE_IMPORT_AND_LOOP_PASS',flush=True)
 # Context is checked from frozen source commits, never written into other branches.
 CONTEXT=json.loads((ROOT/'context_pins.json').read_text(encoding='utf-8'))
@@ -236,18 +371,30 @@ def closeups(lod,rows):
         render(s,lod,'swim_'+str(frame).zfill(3),(0,6.9,0.8),(0,0,0),43,frame,rows)
 def main():
     verify();E.mkdir(exist_ok=True)
+    print('B9_NATIVE_IDENTITY '+json.dumps(identity()),flush=True)
+    if '--focused-only' in sys.argv:
+        if (ROOT/'focused_validation.json').exists():
+            require_receipt('focused_validation.json','B9_FOCUSED_PASS');print('B9_FOCUSED_RECEIPT_REUSED',flush=True)
+        else:focused()
+        return
     if '--validate-only' in sys.argv:
-        require(not (ROOT/'native_validation.json').exists(),'VALIDATION_EXISTS_USE_RENDER_PHASE')
-        validate_master();return
+        if (ROOT/'native_validation.json').exists():
+            v=require_receipt('native_validation.json','B9_NATIVE_IMPORT_AND_LOOP_PASS')
+            require_receipt('focused_validation.json','B9_FOCUSED_PASS')
+            require(sha(ROOT/v['master']['path'])==v['master']['sha256'],'MASTER_RECEIPT')
+            print('B9_NATIVE_VALIDATION_RECEIPT_REUSED',flush=True)
+        else:validate_master()
+        return
     require((ROOT/'native_validation.json').exists(),'VALIDATION_REQUIRED')
-    v=json.loads((ROOT/'native_validation.json').read_text(encoding='utf-8'))
+    v=require_receipt('native_validation.json','B9_NATIVE_IMPORT_AND_LOOP_PASS')
+    require_receipt('focused_validation.json','B9_FOCUSED_PASS')
     require(v['status']=='B9_NATIVE_IMPORT_AND_LOOP_PASS' and sha(ROOT/v['master']['path'])==v['master']['sha256'],'MASTER_RECEIPT')
     d=context();rows=[];layouts=[]
     for lod in PROFILES:
         layouts.append(habitat(lod,d,rows));closeups(lod,rows)
     verify();require(len(rows)==22,'FRAME_COUNT')
     write(ROOT/'cycles_manifest.json',{'status':'B9_NATIVE_CYCLES_COMPLETE','frames':rows,'layout':layouts,'artProxy':'Water transparent mixture, no runtime shader; fixed seed/camera/lights across profiles. No real actors, seat/gift camera-only. No GPU claim.'})
-    inventory=[meta(ROOT/x['file']) for x in MAN['files']]+[meta(ROOT/n) for n in ('b9_editable_master.blend','native_validation.json','cycles_manifest.json')]+rows
+    inventory=[meta(ROOT/x['file']) for x in MAN['files']]+[meta(ROOT/n) for n in ('b9_editable_master.blend','focused_validation.json','native_validation.json','cycles_manifest.json')]+rows
     write(ROOT/'native_manifest.json',{'status':'B9_NATIVE_EVIDENCE_READY_SA_REVIEW_PENDING','blenderVersion':bpy.app.version_string,'inventory':inventory,'gates':{'SA':'P10B9_ART_SA_REVIEW_REQUIRED','ownerArt':'PENDING','codex':'HOLD'},'costVND':0})
     (ROOT/'owner_sha256.txt').write_text(''.join(x['sha256']+'  '+x['path']+'\n' for x in inventory+[meta(ROOT/'native_manifest.json')]),encoding='utf-8')
     print('B9_NATIVE_CYCLES_COMPLETE 12 HABITAT + 10 SWIM; P10B9_ART_SA_REVIEW_REQUIRED',flush=True)
