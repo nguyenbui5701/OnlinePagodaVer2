@@ -4,7 +4,7 @@
   "parent": "07f57cb35ba3ec68184abbd2c173e29a3fcc4788",
   "branch": "assets/sakura-hero-r18-polish",
   "target": "assets/sakura-hero-r17-lush",
-  "status": "R18_ACCEPTED_GEOMETRY_PREVIEW_R18A_GOLD_ONLY_ART_FIRST_ACTIVE",
+  "status": "R18A_FINAL_EVIDENCE_UPLOADED_READY_SA_FINAL_REVIEW",
   "source": {
     "acceptedReview": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/18#pullrequestreview-6033463655",
     "quality": {
@@ -366,17 +366,17 @@
   "gates": {
     "saArt": "P10B8_ART_SA_REVIEW_REQUIRED",
     "native": "OWNER_NATIVE_BUILD_AND_PREVIEW_PASS",
-    "independentBinary": "R18_RAW_SHA_PENDING_R18A_NATIVE_PENDING",
+    "independentBinary": "AI_VISUAL_INDEPENDENT_R18A_SHA_STRUCTURE_PASS_SA_REVIEW_PENDING",
     "ownerArtGO": "PENDING",
     "integration": "HOLD",
     "merge": "HOLD",
     "B9": "HOLD",
     "C0": "HOLD",
     "repair": "NATIVE_REIMPORT_CONTACT_PROXY_PASS",
-    "finalCycles": "R18A_FINAL_EVIDENCE_AUTHORIZED_SCOPED_PENDING_NATIVE",
+    "finalCycles": "R18A_OWNER_NATIVE_FINAL_PASS",
     "budget": "SA_R18_RESOURCE_DELTA_ACCEPTED_HISTORICAL",
     "preview": "SA_R18_GEOMETRY_PREVIEW_ACCEPTED",
-    "goldArt": "R18_PARTIAL_R18A_GOLD_ONLY_ACTIVE"
+    "goldArt": "R18A_AI_VISUAL_GOLD_IMPROVED_SA_DECISION_PENDING"
   },
   "preview": {
     "status": "NATIVE_FOCUSED_PREVIEW_UPLOADED_SA_REVIEW_REQUIRED",
@@ -715,9 +715,11 @@
     "reviewedHead": "631273440469b789bf7f1688bff30a35309de601",
     "review": "https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/27#pullrequestreview-6058176405",
     "policy": "ART_FIRST_SOFT_REFERENCES",
-    "status": "SOURCE_READY_PENDING_OWNER_NATIVE_GOLD_BUILD_FINAL",
+    "status": "R18A_NATIVE_FINAL_UPLOADED_AI_VISUAL_PRE_SA_REVIEW_COMPLETE",
     "priorR18Preserved": true,
     "ownerArtGO": "PENDING",
-    "gate": "P10B8_ART_SA_REVIEW_REQUIRED"
+    "gate": "P10B8_ART_SA_REVIEW_REQUIRED",
+    "evidenceUploadHead": "24cf39cf4df5e7a05be7cf126a422439a7cd4d60",
+    "independentReview": "r18a/PRE_SA_FINAL_REVIEW.json"
   }
 }
