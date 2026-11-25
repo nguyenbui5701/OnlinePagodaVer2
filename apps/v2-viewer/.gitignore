@@ -1,5 +1,7 @@
 node_modules/
 dist/
+public/b9/
+public/.b9-*/
 public/r16/
 public/r18a/
 public/.r18a-*/

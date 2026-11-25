@@ -1,6 +1,6 @@
 export const choices = {
   profile: ['eco', 'quality'], tree: ['r18a', 'r17b', 'r16'], density: ['legacy', 'lush'], look: ['twilight', 'dusk', 'pink', 'gold', 'legacy'],
-  botanicals: ['on', 'off'], diversity: ['on', 'off'], seats: ['rings', 'default'],
+  environment: ['off', 'on'], botanicals: ['on', 'off'], diversity: ['on', 'off'], seats: ['rings', 'default'],
   ambience: ['rich', 'default'], shots: ['hero', 'default'], fx: ['on', 'off'], presence: ['on', 'off'],
   chatbubbles: ['on', 'off'], gifticons: ['on', 'off'], blessing: ['on', 'off'],
 } as const;
@@ -9,7 +9,7 @@ export type LiveSettings = { [K in keyof typeof choices]: (typeof choices)[K][nu
 export type SettingsSnapshot = { revision: number; settings: LiveSettings; warning: '' | 'MISSING' | 'INVALID' };
 export const liveDefaults: Readonly<LiveSettings> = Object.freeze({
   profile: 'eco', tree: 'r17b', density: 'legacy', seed: 9, look: 'twilight', botanicals: 'on', diversity: 'on',
-  seats: 'rings', ambience: 'rich', shots: 'hero', fx: 'on', presence: 'on',
+  environment: 'off', seats: 'rings', ambience: 'rich', shots: 'hero', fx: 'on', presence: 'on',
   chatbubbles: 'on', gifticons: 'on', blessing: 'on',
 });
 export function validSettings(input: unknown): input is LiveSettings {
@@ -24,8 +24,8 @@ export function validSettings(input: unknown): input is LiveSettings {
 
 export function migrateVisualSettings(value: unknown): LiveSettings | undefined {
   if (validSettings(value)) return value;
-  if (!value || typeof value !== 'object' || Array.isArray(value) || Object.hasOwn(value, 'density')) return;
-  const migrated = { ...value, density: 'legacy' };
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return;
+  const migrated = { density: 'legacy', environment: 'off', ...value };
   if (validSettings(migrated)) return migrated;
 }
 
@@ -39,12 +39,22 @@ export function treeFallbackChain(revision: TreeRevision): readonly TreeRevision
   return treeOrder.slice(treeOrder.indexOf(revision));
 }
 
+export const environmentAssets = ['kohaku', 'sanke', 'yamabuki', 'terrain'] as const;
+export type EnvironmentAsset = typeof environmentAssets[number];
+export type EnvironmentStatus = true | readonly [asset: EnvironmentAsset, code: GlbFailure];
+
+function validEnvironment(value: unknown): value is EnvironmentStatus {
+  return value === true || (Array.isArray(value) && value.length === 2 &&
+    environmentAssets.includes(value[0]) && failureCodes.includes(value[1]));
+}
+
 export type WorldApplied = { requestedTree: TreeRevision; tree: TreeRevision; requestedDensity: 'legacy' | 'lush';
-  density: 'legacy' | 'lush'; fallback: boolean; failures: TreeFallback[] };
+  density: 'legacy' | 'lush'; fallback: boolean; failures: TreeFallback[]; pond?: EnvironmentStatus };
 
 export function validWorldApplied(value: unknown): value is WorldApplied {
   const data = value as WorldApplied | null;
-  if (!data || typeof data !== 'object' || Array.isArray(data) || Object.keys(data).length !== 6 ||
+  if (!data || typeof data !== 'object' || Array.isArray(data) || Object.keys(data).length !== (Object.hasOwn(data, 'pond') ? 7 : 6) ||
+      (Object.hasOwn(data, 'pond') && !validEnvironment(data.pond)) ||
       !treeOrder.includes(data.requestedTree) || !treeOrder.includes(data.tree) ||
       !choices.density.includes(data.requestedDensity) || !choices.density.includes(data.density) ||
       !Array.isArray(data.failures)) return false;

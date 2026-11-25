@@ -19,12 +19,12 @@ type Status = {
 const element = <T extends HTMLElement>(id: string) => document.getElementById(id)! as T;
 const fields = element<HTMLFieldSetElement>('settings-fields');
 const groupFields: [string, (keyof LiveSettings)[]][] = [
-  ['Cảnh 3D', ['profile', 'tree', 'look', 'botanicals', 'density', 'diversity', 'seats']],
+  ['Cảnh 3D', ['profile', 'tree', 'look', 'botanicals', 'density', 'environment', 'diversity', 'seats']],
   ['Hiệu ứng', ['ambience', 'fx', 'presence', 'chatbubbles', 'gifticons', 'blessing']],
   ['Camera', ['shots', 'seed']],
 ];
 const labels: Record<keyof LiveSettings, string> = {
-  density: 'Mật độ đầm sen', profile: 'Chất lượng', tree: 'Cây Sakura', look: 'Ánh sáng', botanicals: 'Hoa và nụ sen',
+  environment: 'Cá koi và cảnh quan B9', density: 'Mật độ đầm sen', profile: 'Chất lượng', tree: 'Cây Sakura', look: 'Ánh sáng', botanicals: 'Hoa và nụ sen',
   diversity: 'Đa dạng nhân vật', seats: 'Bố cục ghế', ambience: 'Không khí', fx: 'Hiệu ứng cảnh',
   presence: 'Tên phía trên đầu', chatbubbles: 'Bong bóng chat', gifticons: 'Biểu tượng quà',
   blessing: 'Hiệu ứng lời chúc', shots: 'Tuyến camera', seed: 'Seed camera',
@@ -128,10 +128,13 @@ function render(state?: Status) {
   const world = state?.world;
   const failureLabels = { MISSING: 'thiếu GLB', INTEGRITY: 'lỗi kiểm tra tính toàn vẹn', IMPORT: 'lỗi nạp GLB' };
   const failureText = world?.failures.map(({ revision, code }) => revision + ' – ' + failureLabels[code]).join(', ');
+  const pond = world?.pond;
+  const environmentText = pond === true ? ' · Cảnh quan B9 đang chạy' : pond ?
+    ' · Cảnh quan B8 dự phòng (' + pond[0] + ' – ' + failureLabels[pond[1]] + ')' : '';
   element('world-applied').textContent = world ?
     'Cây đang dùng ' + world.tree + (world.fallback ? ' · Đã dùng dự phòng thay cho ' + world.requestedTree + ' (' + failureText + ')' : '') +
     ' · Đầm sen ' + (world.density === 'lush' ? 'dày theo cụm' : 'mặc định') +
-    (world.density !== world.requestedDensity ? ' · Bố cục chưa áp dụng mật độ dày' : '') : '';
+    (world.density !== world.requestedDensity ? ' · Bố cục chưa áp dụng mật độ dày' : '') + environmentText : '';
   const warning = element('settings-warning');
   warning.hidden = !desired?.warning;
   warning.textContent = desired?.warning === 'INVALID' ? 'Tệp cấu hình không đọc được. Đang dùng mặc định.' :

@@ -28,7 +28,7 @@ import { createAmbientFx } from './ambient-fx.ts';
 import { createTrunkMist } from './trunk-mist.ts';
 import { createHeroRoutes } from './hero-camera.ts';
 import { createGiftFx } from './gift-fx.ts';
-import { fxProfiles, richAmbientProfiles } from './fx-profiles.ts';
+import { environmentFx, fxProfiles, richAmbientProfiles } from './fx-profiles.ts';
 import { blessingEnabled } from './gift-blessing.ts';
 import { createBlessingCloud } from './blessing-cloud.ts';
 import { createLotusBatches } from './lotus-batches.ts';
@@ -36,6 +36,7 @@ import { lushLotus, parseDensity } from './lotus-density.ts';
 import { botanicalLayout, botanicalsEnabled } from './botanical-layout.ts';
 import { createBotanicalScene } from './botanical-scene.ts';
 import { createPresenceBubbles } from './presence-bubbles.ts';
+import { loadEnvironment } from './pond-environment.ts';
 import { presenceDemo } from './presence-demo.ts';
 
 declare const __REPO_REVISION__: string;
@@ -55,6 +56,7 @@ const view = Object.hasOwn(referenceViews, requestedView) ? requestedView as key
 const comparison = view ? referenceViews[view] : undefined;
 const look = parseLook(query.get('look'), !!comparison);
 const timeline = new LookTimeline();
+const requestedEnvironment = !comparison && query.get('environment') === 'on';
 const fxEnabled = !comparison && query.get('fx') !== 'off';
 const fxProfile = fxProfiles[profile];
 const captureWidth = view && view !== 'hero_full_9x16' ? 720 : capture.width;
@@ -143,6 +145,7 @@ async function boot() {
   const water = comparison ? undefined : createWater(fxProfile.water, look !== 'legacy');
   let ambient: ReturnType<typeof createAmbientFx> | undefined;
   let mist: ReturnType<typeof createTrunkMist> | undefined;
+  let pond: Awaited<ReturnType<typeof loadEnvironment>> | undefined;
   let giftFx: ReturnType<typeof createGiftFx> | undefined;
   let blessing: ReturnType<typeof createBlessingCloud> | undefined;
   if (water) environment.add(water.mesh);
@@ -313,7 +316,7 @@ async function boot() {
     if (bubbleState) report.bubbles = bubbleState;
     if (blessing && presentation) report.blessing = blessing.update(presentation.state, celebration?.gift, selected);
     ambient?.update(seconds, celebration?.gift?.opacity ?? 0, !!bubbleState?.chat || !!presentation?.state.focus);
-    mist?.update(seconds);
+    mist?.update(seconds, !!presentation?.state.focus);
     if (rich && ambient && mist) report.richAmbience = {
       localPoints: ambient.localCount, totalPoints: ambient.points.geometry.getAttribute('position').count,
       mistPoints: mist.count, mistPixelCap: mist.pixelCap, mistCenterY: [mist.minCenterY, mist.maxCenterY],
@@ -338,6 +341,11 @@ async function boot() {
       routeId: cinematic?.routeId, direction: cinematic?.direction, cycle: cinematic?.cycle, routeFallback: cinematic?.fallback,
     });
     if (review && !review.draw) return;
+    if (pond?.scene) {
+      report.koiVisible = pond.scene.update(seconds, camera);
+      if (manual) report.pondInspection = { ...pond.scene.inspect(camera),
+        ambience: ambient?.spatialCounts(camera), mist: mist?.spatialCount(camera) };
+    }
     if (lotus) {
       lotus.group.visible = !review?.seatId;
       report.lotusVisible = lotus.group.visible ? lotus.update(camera) : { pad: 0, leaf: 0, bloom: 0, bud: 0 };
@@ -438,6 +446,7 @@ async function boot() {
     seats?.dispose();
     ambient?.dispose();
     mist?.dispose();
+    pond?.scene?.dispose();
     giftFx?.dispose();
     blessing?.dispose();
     water?.dispose();
@@ -493,6 +502,15 @@ async function boot() {
       // Resolve the loaded tree's trunk pivot after scene attachment.
       const tree = asset.root.localToWorld(new Vector3());
       water?.tree.set(tree.x, tree.z);
+      if (requestedEnvironment) {
+        pond = await loadEnvironment(profile, seed, tree, abort.signal);
+        if (disposed) { pond.scene?.dispose(); return; }
+        if (pond.scene) {
+          water?.revealSubmergedFish();
+          environment.add(pond.scene.group);
+          report.pond = { assets: pond.scene.assets, tracks: pond.scene.tracks };
+        }
+      }
       const pair = await createSeatScene(abort.signal, tree, crowd ? seed : undefined, diversity ? profile : undefined, rings);
       if (disposed) { pair.dispose(); return; }
       seats = pair;
@@ -507,14 +525,18 @@ async function boot() {
       routes = hero ? createHeroRoutes(tree, seed) : createCinematicRoutes(seatPose(pair.preview, 0.16, 5.05), tree, seed);
       if (fxEnabled) {
         const budget = richAmbientProfiles[profile];
-        const pads = rich ? pair.slots?.map(slot => slot.position) ??
+        const pondBudget = pond?.scene ? environmentFx[profile] : undefined;
+        const local = rich || pondBudget;
+        const pads = local ? pair.slots?.map(slot => slot.position) ??
           [...pair.seats.values()].map(seat => seat.root.position.toArray()) : [];
-        ambient = createAmbientFx(tree, seed, rich ? budget.tree : fxProfile.ambient,
-          rich ? { pads, each: budget.perPad } : undefined);
-        if (rich) {
-          mist = createTrunkMist(tree, profile);
+        ambient = createAmbientFx(tree, seed, pondBudget?.caps ?? (rich ? budget.tree : fxProfile.ambient),
+          local ? { pads, each: pondBudget?.perPad ?? budget.perPad } : undefined, !!pondBudget);
+        if (local) {
+          mist = createTrunkMist(tree, profile, !!pondBudget);
           environment.add(mist.points);
         }
+        if (pondBudget) report.pondFx = { caps: pondBudget.caps, active: ambient.totals,
+          seatLocal: ambient.localCount, mist: mist?.count };
         giftFx = createGiftFx(fxProfile.giftSparks);
         environment.add(ambient.points, giftFx.cloud);
         if (enableBlessing) {
@@ -553,7 +575,7 @@ async function boot() {
       if (routes.rejected.length) console.warn('P0.9 cinematic clearance fallback', routes.rejected);
     }
     world = { requestedTree, tree: asset.report.assetRevision, requestedDensity, density: lotus ? 'lush' : 'legacy',
-      fallback: asset.report.failures.length > 0, failures: asset.report.failures };
+      fallback: asset.report.failures.length > 0, failures: asset.report.failures, ...(pond && { pond: pond.status }) };
     report.world = world;
     if (!lost) show('');
     if (overlaySettings) {

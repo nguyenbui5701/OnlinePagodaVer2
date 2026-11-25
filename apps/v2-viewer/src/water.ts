@@ -138,6 +138,11 @@ export function createWater(options: FxProfile['water'], twilight = false) {
   mesh.rotation.x = -Math.PI / 2;
   return {
     mesh, tree,
+    revealSubmergedFish() {
+      // Water paints after the opaque sky but keeps the foreground depth buffer for fish.
+      mesh.renderOrder = 101;
+      material.depthWrite = false;
+    },
     enableDriftingGold() {
       material.defines.DRIFT_GOLD = 1;
       material.needsUpdate = true;
