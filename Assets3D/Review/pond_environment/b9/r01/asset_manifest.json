@@ -1,0 +1,1270 @@
+{
+  "status": "PROCEDURAL_GLB_CREATED_NATIVE_BLENDER_PENDING",
+  "task": "dc6b673e53ca44c31bc48df05c13d2eaa3eeaf1b",
+  "artParent": "84f3a621d83fa7af5a4995b007446fec49287bf9",
+  "engineering": "891786afaa50add5eeb16c969f094d79067d311d",
+  "sourceBlob": "2dffe8c95da16483a18c72017f2f3f265046c9d4",
+  "files": [
+    {
+      "file": "koi_kohaku_eco.glb",
+      "lod": "eco",
+      "kind": "koi",
+      "palette": "kohaku",
+      "triangles": 1732,
+      "vertices": 896,
+      "primitives": 3,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 0,
+      "minDoubleArea": 0.0000067198886790130985,
+      "poseMinDoubleArea": 0.000006682855656681774,
+      "bounds": [
+        [
+          -0.2639999985694885,
+          -0.17100000381469727,
+          -0.7749999761581421
+        ],
+        [
+          0.2639999985694885,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "animatedBounds": [
+        [
+          -0.2753484845161438,
+          -0.17100000381469727,
+          -0.7617565989494324
+        ],
+        [
+          0.2753484845161438,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "animation": {
+        "clip": "swim_loop",
+        "durationSeconds": 3,
+        "keys": 61,
+        "joints": 8,
+        "channels": 8,
+        "endpointQuaternionExact": true,
+        "testedKeyPoses": 61,
+        "weightSums": "PASS",
+        "restPose": "straight",
+        "motion": "in-place, repeat in player; smooth cyclic progressive tail bend"
+      },
+      "bytes": 68796,
+      "closedIndexedTopology": "PASS",
+      "coordinateSystem": {
+        "up": "+Y",
+        "forward": "+Z",
+        "metersPerUnit": 1,
+        "pivot": [
+          0,
+          0,
+          0
+        ],
+        "waterY": 0,
+        "profile": "eco",
+        "palette": "kohaku"
+      },
+      "sha256": "38616f969f77610742767d997a396c79ff17ccac1bf9c093ca05ec2e87a2091a",
+      "gitBlobSHA": "23cf4ecc874bc50beedf471d2a21dcf43286c17a",
+      "status": "GIT_BLOB_VERIFIED_NATIVE_PENDING"
+    },
+    {
+      "file": "koi_sanke_eco.glb",
+      "lod": "eco",
+      "kind": "koi",
+      "palette": "sanke",
+      "triangles": 1732,
+      "vertices": 896,
+      "primitives": 3,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 0,
+      "minDoubleArea": 0.0000067198886790130985,
+      "poseMinDoubleArea": 0.000006682855656681774,
+      "bounds": [
+        [
+          -0.2639999985694885,
+          -0.17100000381469727,
+          -0.7749999761581421
+        ],
+        [
+          0.2639999985694885,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "animatedBounds": [
+        [
+          -0.2753484845161438,
+          -0.17100000381469727,
+          -0.7617565989494324
+        ],
+        [
+          0.2753484845161438,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "animation": {
+        "clip": "swim_loop",
+        "durationSeconds": 3,
+        "keys": 61,
+        "joints": 8,
+        "channels": 8,
+        "endpointQuaternionExact": true,
+        "testedKeyPoses": 61,
+        "weightSums": "PASS",
+        "restPose": "straight",
+        "motion": "in-place, repeat in player; smooth cyclic progressive tail bend"
+      },
+      "bytes": 68796,
+      "closedIndexedTopology": "PASS",
+      "coordinateSystem": {
+        "up": "+Y",
+        "forward": "+Z",
+        "metersPerUnit": 1,
+        "pivot": [
+          0,
+          0,
+          0
+        ],
+        "waterY": 0,
+        "profile": "eco",
+        "palette": "sanke"
+      },
+      "sha256": "2da581fec72e6ff1e74bc6ae86e4afca50012759ec070b946dbbc3544b163f5d",
+      "gitBlobSHA": "f38903f6a6b46800c04b265d46ca442188afbcfa",
+      "status": "GIT_BLOB_VERIFIED_NATIVE_PENDING"
+    },
+    {
+      "file": "koi_yamabuki_eco.glb",
+      "lod": "eco",
+      "kind": "koi",
+      "palette": "yamabuki",
+      "triangles": 1732,
+      "vertices": 896,
+      "primitives": 3,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 0,
+      "minDoubleArea": 0.0000067198886790130985,
+      "poseMinDoubleArea": 0.000006682855656681774,
+      "bounds": [
+        [
+          -0.2639999985694885,
+          -0.17100000381469727,
+          -0.7749999761581421
+        ],
+        [
+          0.2639999985694885,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "animatedBounds": [
+        [
+          -0.2753484845161438,
+          -0.17100000381469727,
+          -0.7617565989494324
+        ],
+        [
+          0.2753484845161438,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "animation": {
+        "clip": "swim_loop",
+        "durationSeconds": 3,
+        "keys": 61,
+        "joints": 8,
+        "channels": 8,
+        "endpointQuaternionExact": true,
+        "testedKeyPoses": 61,
+        "weightSums": "PASS",
+        "restPose": "straight",
+        "motion": "in-place, repeat in player; smooth cyclic progressive tail bend"
+      },
+      "bytes": 68800,
+      "closedIndexedTopology": "PASS",
+      "coordinateSystem": {
+        "up": "+Y",
+        "forward": "+Z",
+        "metersPerUnit": 1,
+        "pivot": [
+          0,
+          0,
+          0
+        ],
+        "waterY": 0,
+        "profile": "eco",
+        "palette": "yamabuki"
+      },
+      "sha256": "ee5581c83e61b177d1b62190e150f11e4c0e9cf9498523f0adf596c3eef93e2a",
+      "gitBlobSHA": "3deafe82c0ba3e95530ecc6b225a26e26deaf7a6",
+      "status": "GIT_BLOB_VERIFIED_NATIVE_PENDING"
+    },
+    {
+      "file": "distant_terrain_eco.glb",
+      "lod": "eco",
+      "kind": "terrain",
+      "palette": "",
+      "triangles": 8208,
+      "vertices": 4164,
+      "primitives": 30,
+      "meshes": 30,
+      "materials": 3,
+      "textures": 0,
+      "minDoubleArea": 2.213470052311253,
+      "bounds": [
+        [
+          -236.45246605050332,
+          -0.8500000238418579,
+          -224.43511585703564
+        ],
+        [
+          232.43152220864948,
+          27.072795867919922,
+          232.48068335457472
+        ]
+      ],
+      "bytes": 194156,
+      "closedIndexedTopology": "PASS",
+      "coordinateSystem": {
+        "up": "+Y",
+        "forward": null,
+        "metersPerUnit": 1,
+        "pivot": [
+          0,
+          0,
+          0
+        ],
+        "waterY": 0,
+        "profile": "eco",
+        "palette": null
+      },
+      "terrainModules": [
+        {
+          "name": "Low_islands_01",
+          "layer": 1,
+          "translation": [
+            -6.886316513064017,
+            0,
+            97.75465630141822
+          ],
+          "heightM": 3.905717433057726,
+          "halfWidthM": 25.70072166575119,
+          "halfDepthM": 12.238132508471608
+        },
+        {
+          "name": "Low_islands_02",
+          "layer": 1,
+          "translation": [
+            64.09725909329029,
+            0,
+            76.59597179374774
+          ],
+          "heightM": 4.330441213585436,
+          "halfWidthM": 25.66295544570312,
+          "halfDepthM": 13.825459407642484
+        },
+        {
+          "name": "Low_islands_03",
+          "layer": 1,
+          "translation": [
+            95.82853464669522,
+            0,
+            12.91681329834048
+          ],
+          "heightM": 5.3910769475623965,
+          "halfWidthM": 29.66557155130431,
+          "halfDepthM": 19.333223642781377
+        },
+        {
+          "name": "Low_islands_04",
+          "layer": 1,
+          "translation": [
+            86.43749898754974,
+            0,
+            -46.92354793758063
+          ],
+          "heightM": 2.868838395364582,
+          "halfWidthM": 26.96564815333113,
+          "halfDepthM": 14.24666996486485
+        },
+        {
+          "name": "Low_islands_05",
+          "layer": 1,
+          "translation": [
+            29.4094144951253,
+            0,
+            -95.27766139589046
+          ],
+          "heightM": 4.768779649399221,
+          "halfWidthM": 21.921764887403697,
+          "halfDepthM": 16.578875156119466
+        },
+        {
+          "name": "Low_islands_06",
+          "layer": 1,
+          "translation": [
+            -28.615634570539733,
+            0,
+            -89.96027760768098
+          ],
+          "heightM": 3.8826857591047883,
+          "halfWidthM": 22.242049728985876,
+          "halfDepthM": 13.761373030021787
+        },
+        {
+          "name": "Low_islands_07",
+          "layer": 1,
+          "translation": [
+            -81.6029472552357,
+            0,
+            -54.566349667585705
+          ],
+          "heightM": 3.164463355951011,
+          "halfWidthM": 25.169725868385285,
+          "halfDepthM": 16.034779431298375
+        },
+        {
+          "name": "Low_islands_08",
+          "layer": 1,
+          "translation": [
+            -91.08362844143598,
+            0,
+            11.440172498714828
+          ],
+          "heightM": 2.918031278438866,
+          "halfWidthM": 23.606158585753292,
+          "halfDepthM": 18.339417235925794
+        },
+        {
+          "name": "Low_islands_09",
+          "layer": 1,
+          "translation": [
+            -62.404205698207974,
+            0,
+            77.66364575346098
+          ],
+          "heightM": 4.39771119710058,
+          "halfWidthM": 21.171402126085013,
+          "halfDepthM": 14.705941351130605
+        },
+        {
+          "name": "Middle_hills_01",
+          "layer": 2,
+          "translation": [
+            29.941184365082588,
+            0,
+            138.36066762567845
+          ],
+          "heightM": 13.534640059806406,
+          "halfWidthM": 35.493359899148345,
+          "halfDepthM": 25.789209179813042
+        },
+        {
+          "name": "Middle_hills_02",
+          "layer": 2,
+          "translation": [
+            105.64464730085575,
+            0,
+            86.75849602869732
+          ],
+          "heightM": 18.981140206567943,
+          "halfWidthM": 38.204834250733256,
+          "halfDepthM": 23.423013085732237
+        },
+        {
+          "name": "Middle_hills_03",
+          "layer": 2,
+          "translation": [
+            139.19913818797212,
+            0,
+            9.421380926142856
+          ],
+          "heightM": 13.98383352626115,
+          "halfWidthM": 36.51893707178533,
+          "halfDepthM": 27.921671863878146
+        },
+        {
+          "name": "Middle_hills_04",
+          "layer": 2,
+          "translation": [
+            118.06833689670148,
+            0,
+            -68.65217107984869
+          ],
+          "heightM": 16.922932802699506,
+          "halfWidthM": 32.45415438525379,
+          "halfDepthM": 21.620697675505653
+        },
+        {
+          "name": "Middle_hills_05",
+          "layer": 2,
+          "translation": [
+            43.413315981828205,
+            0,
+            -128.73114081416972
+          ],
+          "heightM": 18.970459901727736,
+          "halfWidthM": 40.120524948462844,
+          "halfDepthM": 25.71699184202589
+        },
+        {
+          "name": "Middle_hills_06",
+          "layer": 2,
+          "translation": [
+            -44.546065005711526,
+            0,
+            -133.34239572816074
+          ],
+          "heightM": 13.428136396221817,
+          "halfWidthM": 40.64932775311172,
+          "halfDepthM": 20.833297970006242
+        },
+        {
+          "name": "Middle_hills_07",
+          "layer": 2,
+          "translation": [
+            -104.74768394060038,
+            0,
+            -95.42421757459172
+          ],
+          "heightM": 18.877774191088974,
+          "halfWidthM": 42.872769525274634,
+          "halfDepthM": 25.64515507617034
+        },
+        {
+          "name": "Middle_hills_08",
+          "layer": 2,
+          "translation": [
+            -137.2966443748566,
+            0,
+            -11.542460567608265
+          ],
+          "heightM": 15.144166148267686,
+          "halfWidthM": 33.753672225400805,
+          "halfDepthM": 27.570350712398067
+        },
+        {
+          "name": "Middle_hills_09",
+          "layer": 2,
+          "translation": [
+            -115.93927492890553,
+            0,
+            74.2170234712556
+          ],
+          "heightM": 17.07047671172768,
+          "halfWidthM": 34.56516054831445,
+          "halfDepthM": 26.520874090725556
+        },
+        {
+          "name": "Middle_hills_10",
+          "layer": 2,
+          "translation": [
+            -41.92093490191575,
+            0,
+            129.88645351384025
+          ],
+          "heightM": 16.10613253246993,
+          "halfWidthM": 34.82034942321479,
+          "halfDepthM": 20.71736920834519
+        },
+        {
+          "name": "Far_ridges_01",
+          "layer": 3,
+          "translation": [
+            -4.442324579798053,
+            0,
+            197.3647623340669
+          ],
+          "heightM": 22.276284124702215,
+          "halfWidthM": 57.93604201823473,
+          "halfDepthM": 33.08811729680747
+        },
+        {
+          "name": "Far_ridges_02",
+          "layer": 3,
+          "translation": [
+            102.08707733118554,
+            0,
+            169.48461044879954
+          ],
+          "heightM": 27.399121779948473,
+          "halfWidthM": 42.98981962352991,
+          "halfDepthM": 38.46445776801556
+        },
+        {
+          "name": "Far_ridges_03",
+          "layer": 3,
+          "translation": [
+            183.16661226867896,
+            0,
+            88.09956771557745
+          ],
+          "heightM": 20.73743237182498,
+          "halfWidthM": 53.33674622327089,
+          "halfDepthM": 36.96328316163272
+        },
+        {
+          "name": "Far_ridges_04",
+          "layer": 3,
+          "translation": [
+            191.84151824136433,
+            0,
+            -42.32732565618019
+          ],
+          "heightM": 26.295724872499704,
+          "halfWidthM": 52.6700896397233,
+          "halfDepthM": 35.05098599474877
+        },
+        {
+          "name": "Far_ridges_05",
+          "layer": 3,
+          "translation": [
+            157.01435344590587,
+            0,
+            -120.03790991841313
+          ],
+          "heightM": 27.722795363515615,
+          "halfWidthM": 52.86768800765276,
+          "halfDepthM": 31.61851933132857
+        },
+        {
+          "name": "Far_ridges_06",
+          "layer": 3,
+          "translation": [
+            42.44852433952593,
+            0,
+            -194.2209148835249
+          ],
+          "heightM": 20.928914535790682,
+          "halfWidthM": 55.898199774324894,
+          "halfDepthM": 27.56733428221196
+        },
+        {
+          "name": "Far_ridges_07",
+          "layer": 3,
+          "translation": [
+            -60.01658684848272,
+            0,
+            -188.4739226637901
+          ],
+          "heightM": 22.453015189617872,
+          "halfWidthM": 56.72735369950533,
+          "halfDepthM": 30.14531750511378
+        },
+        {
+          "name": "Far_ridges_08",
+          "layer": 3,
+          "translation": [
+            -148.22341421866827,
+            0,
+            -129.69099114440047
+          ],
+          "heightM": 21.579879734665155,
+          "halfWidthM": 43.22419885545969,
+          "halfDepthM": 28.032728704623878
+        },
+        {
+          "name": "Far_ridges_09",
+          "layer": 3,
+          "translation": [
+            -201.72673515450722,
+            0,
+            -14.405782451643315
+          ],
+          "heightM": 20.2073276899755,
+          "halfWidthM": 57.0673546269536,
+          "halfDepthM": 33.178138132207096
+        },
+        {
+          "name": "Far_ridges_10",
+          "layer": 3,
+          "translation": [
+            -181.91283770964185,
+            0,
+            73.03543126878425
+          ],
+          "heightM": 16.463403183966875,
+          "halfWidthM": 43.65126071125269,
+          "halfDepthM": 33.38436408620328
+        },
+        {
+          "name": "Far_ridges_11",
+          "layer": 3,
+          "translation": [
+            -117.92864351521476,
+            0,
+            161.97160178641266
+          ],
+          "heightM": 16.07356245443225,
+          "halfWidthM": 50.99242711812258,
+          "halfDepthM": 35.644410411827266
+        }
+      ],
+      "sha256": "463c7d5d26b7217705533070640c259712fd1894356448f7168b17737caa23c3",
+      "gitBlobSHA": "489c108a51456a8d667595f3308457ceee17f7c9",
+      "status": "GIT_BLOB_VERIFIED_NATIVE_PENDING"
+    },
+    {
+      "file": "koi_kohaku_quality.glb",
+      "lod": "quality",
+      "kind": "koi",
+      "palette": "kohaku",
+      "triangles": 4456,
+      "vertices": 2258,
+      "primitives": 3,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 0,
+      "minDoubleArea": 0.0000067198886790130985,
+      "poseMinDoubleArea": 0.000006682855656681774,
+      "bounds": [
+        [
+          -0.2639999985694885,
+          -0.17100000381469727,
+          -0.7749999761581421
+        ],
+        [
+          0.2639999985694885,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "animatedBounds": [
+        [
+          -0.2753484845161438,
+          -0.17100000381469727,
+          -0.7617565989494324
+        ],
+        [
+          0.2753484845161438,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "animation": {
+        "clip": "swim_loop",
+        "durationSeconds": 3,
+        "keys": 61,
+        "joints": 8,
+        "channels": 8,
+        "endpointQuaternionExact": true,
+        "testedKeyPoses": 61,
+        "weightSums": "PASS",
+        "restPose": "straight",
+        "motion": "in-place, repeat in player; smooth cyclic progressive tail bend"
+      },
+      "bytes": 150560,
+      "closedIndexedTopology": "PASS",
+      "coordinateSystem": {
+        "up": "+Y",
+        "forward": "+Z",
+        "metersPerUnit": 1,
+        "pivot": [
+          0,
+          0,
+          0
+        ],
+        "waterY": 0,
+        "profile": "quality",
+        "palette": "kohaku"
+      },
+      "sha256": "e565c0748913bd505d5f7a0e509798bd5fd1d0d5df48c9e4b612f683cfe6ab83",
+      "gitBlobSHA": "5a7f0c3c7f6bc2d666172e2a159a2aacc80ff5e5",
+      "status": "GIT_BLOB_VERIFIED_NATIVE_PENDING"
+    },
+    {
+      "file": "koi_sanke_quality.glb",
+      "lod": "quality",
+      "kind": "koi",
+      "palette": "sanke",
+      "triangles": 4456,
+      "vertices": 2258,
+      "primitives": 3,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 0,
+      "minDoubleArea": 0.0000067198886790130985,
+      "poseMinDoubleArea": 0.000006682855656681774,
+      "bounds": [
+        [
+          -0.2639999985694885,
+          -0.17100000381469727,
+          -0.7749999761581421
+        ],
+        [
+          0.2639999985694885,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "animatedBounds": [
+        [
+          -0.2753484845161438,
+          -0.17100000381469727,
+          -0.7617565989494324
+        ],
+        [
+          0.2753484845161438,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "animation": {
+        "clip": "swim_loop",
+        "durationSeconds": 3,
+        "keys": 61,
+        "joints": 8,
+        "channels": 8,
+        "endpointQuaternionExact": true,
+        "testedKeyPoses": 61,
+        "weightSums": "PASS",
+        "restPose": "straight",
+        "motion": "in-place, repeat in player; smooth cyclic progressive tail bend"
+      },
+      "bytes": 150556,
+      "closedIndexedTopology": "PASS",
+      "coordinateSystem": {
+        "up": "+Y",
+        "forward": "+Z",
+        "metersPerUnit": 1,
+        "pivot": [
+          0,
+          0,
+          0
+        ],
+        "waterY": 0,
+        "profile": "quality",
+        "palette": "sanke"
+      },
+      "sha256": "7e3a55e405cbbd231bfefdf0d8d058d197683092d3a814a7c73dab764d655603",
+      "gitBlobSHA": "04099de32c393f7a96a051af35e6a2069cbc2a0e",
+      "status": "GIT_BLOB_VERIFIED_NATIVE_PENDING"
+    },
+    {
+      "file": "koi_yamabuki_quality.glb",
+      "lod": "quality",
+      "kind": "koi",
+      "palette": "yamabuki",
+      "triangles": 4456,
+      "vertices": 2258,
+      "primitives": 3,
+      "meshes": 3,
+      "materials": 3,
+      "textures": 0,
+      "minDoubleArea": 0.0000067198886790130985,
+      "poseMinDoubleArea": 0.000006682855656681774,
+      "bounds": [
+        [
+          -0.2639999985694885,
+          -0.17100000381469727,
+          -0.7749999761581421
+        ],
+        [
+          0.2639999985694885,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "animatedBounds": [
+        [
+          -0.2753484845161438,
+          -0.17100000381469727,
+          -0.7617565989494324
+        ],
+        [
+          0.2753484845161438,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "animation": {
+        "clip": "swim_loop",
+        "durationSeconds": 3,
+        "keys": 61,
+        "joints": 8,
+        "channels": 8,
+        "endpointQuaternionExact": true,
+        "testedKeyPoses": 61,
+        "weightSums": "PASS",
+        "restPose": "straight",
+        "motion": "in-place, repeat in player; smooth cyclic progressive tail bend"
+      },
+      "bytes": 150564,
+      "closedIndexedTopology": "PASS",
+      "coordinateSystem": {
+        "up": "+Y",
+        "forward": "+Z",
+        "metersPerUnit": 1,
+        "pivot": [
+          0,
+          0,
+          0
+        ],
+        "waterY": 0,
+        "profile": "quality",
+        "palette": "yamabuki"
+      },
+      "sha256": "b44ea4827c1db509b408108297fd69d011f360604ac60c8eec2eb461ee9c293b",
+      "gitBlobSHA": "fd111bac5c2c57668b5606f6c07c0e581ec42dfc",
+      "status": "GIT_BLOB_VERIFIED_NATIVE_PENDING"
+    },
+    {
+      "file": "distant_terrain_quality.glb",
+      "lod": "quality",
+      "kind": "terrain",
+      "palette": "",
+      "triangles": 20952,
+      "vertices": 10536,
+      "primitives": 30,
+      "meshes": 30,
+      "materials": 3,
+      "textures": 0,
+      "minDoubleArea": 0.43408878150717856,
+      "bounds": [
+        [
+          -237.25027183663613,
+          -0.8500000238418579,
+          -225.11125950327587
+        ],
+        [
+          233.10356505532917,
+          27.072795867919922,
+          232.48068335457472
+        ]
+      ],
+      "bytes": 449172,
+      "closedIndexedTopology": "PASS",
+      "coordinateSystem": {
+        "up": "+Y",
+        "forward": null,
+        "metersPerUnit": 1,
+        "pivot": [
+          0,
+          0,
+          0
+        ],
+        "waterY": 0,
+        "profile": "quality",
+        "palette": null
+      },
+      "terrainModules": [
+        {
+          "name": "Low_islands_01",
+          "layer": 1,
+          "translation": [
+            -6.886316513064017,
+            0,
+            97.75465630141822
+          ],
+          "heightM": 3.905717433057726,
+          "halfWidthM": 25.70072166575119,
+          "halfDepthM": 12.238132508471608
+        },
+        {
+          "name": "Low_islands_02",
+          "layer": 1,
+          "translation": [
+            64.09725909329029,
+            0,
+            76.59597179374774
+          ],
+          "heightM": 4.330441213585436,
+          "halfWidthM": 25.66295544570312,
+          "halfDepthM": 13.825459407642484
+        },
+        {
+          "name": "Low_islands_03",
+          "layer": 1,
+          "translation": [
+            95.82853464669522,
+            0,
+            12.91681329834048
+          ],
+          "heightM": 5.3910769475623965,
+          "halfWidthM": 29.66557155130431,
+          "halfDepthM": 19.333223642781377
+        },
+        {
+          "name": "Low_islands_04",
+          "layer": 1,
+          "translation": [
+            86.43749898754974,
+            0,
+            -46.92354793758063
+          ],
+          "heightM": 2.868838395364582,
+          "halfWidthM": 26.96564815333113,
+          "halfDepthM": 14.24666996486485
+        },
+        {
+          "name": "Low_islands_05",
+          "layer": 1,
+          "translation": [
+            29.4094144951253,
+            0,
+            -95.27766139589046
+          ],
+          "heightM": 4.768779649399221,
+          "halfWidthM": 21.921764887403697,
+          "halfDepthM": 16.578875156119466
+        },
+        {
+          "name": "Low_islands_06",
+          "layer": 1,
+          "translation": [
+            -28.615634570539733,
+            0,
+            -89.96027760768098
+          ],
+          "heightM": 3.8826857591047883,
+          "halfWidthM": 22.242049728985876,
+          "halfDepthM": 13.761373030021787
+        },
+        {
+          "name": "Low_islands_07",
+          "layer": 1,
+          "translation": [
+            -81.6029472552357,
+            0,
+            -54.566349667585705
+          ],
+          "heightM": 3.164463355951011,
+          "halfWidthM": 25.169725868385285,
+          "halfDepthM": 16.034779431298375
+        },
+        {
+          "name": "Low_islands_08",
+          "layer": 1,
+          "translation": [
+            -91.08362844143598,
+            0,
+            11.440172498714828
+          ],
+          "heightM": 2.918031278438866,
+          "halfWidthM": 23.606158585753292,
+          "halfDepthM": 18.339417235925794
+        },
+        {
+          "name": "Low_islands_09",
+          "layer": 1,
+          "translation": [
+            -62.404205698207974,
+            0,
+            77.66364575346098
+          ],
+          "heightM": 4.39771119710058,
+          "halfWidthM": 21.171402126085013,
+          "halfDepthM": 14.705941351130605
+        },
+        {
+          "name": "Middle_hills_01",
+          "layer": 2,
+          "translation": [
+            29.941184365082588,
+            0,
+            138.36066762567845
+          ],
+          "heightM": 13.534640059806406,
+          "halfWidthM": 35.493359899148345,
+          "halfDepthM": 25.789209179813042
+        },
+        {
+          "name": "Middle_hills_02",
+          "layer": 2,
+          "translation": [
+            105.64464730085575,
+            0,
+            86.75849602869732
+          ],
+          "heightM": 18.981140206567943,
+          "halfWidthM": 38.204834250733256,
+          "halfDepthM": 23.423013085732237
+        },
+        {
+          "name": "Middle_hills_03",
+          "layer": 2,
+          "translation": [
+            139.19913818797212,
+            0,
+            9.421380926142856
+          ],
+          "heightM": 13.98383352626115,
+          "halfWidthM": 36.51893707178533,
+          "halfDepthM": 27.921671863878146
+        },
+        {
+          "name": "Middle_hills_04",
+          "layer": 2,
+          "translation": [
+            118.06833689670148,
+            0,
+            -68.65217107984869
+          ],
+          "heightM": 16.922932802699506,
+          "halfWidthM": 32.45415438525379,
+          "halfDepthM": 21.620697675505653
+        },
+        {
+          "name": "Middle_hills_05",
+          "layer": 2,
+          "translation": [
+            43.413315981828205,
+            0,
+            -128.73114081416972
+          ],
+          "heightM": 18.970459901727736,
+          "halfWidthM": 40.120524948462844,
+          "halfDepthM": 25.71699184202589
+        },
+        {
+          "name": "Middle_hills_06",
+          "layer": 2,
+          "translation": [
+            -44.546065005711526,
+            0,
+            -133.34239572816074
+          ],
+          "heightM": 13.428136396221817,
+          "halfWidthM": 40.64932775311172,
+          "halfDepthM": 20.833297970006242
+        },
+        {
+          "name": "Middle_hills_07",
+          "layer": 2,
+          "translation": [
+            -104.74768394060038,
+            0,
+            -95.42421757459172
+          ],
+          "heightM": 18.877774191088974,
+          "halfWidthM": 42.872769525274634,
+          "halfDepthM": 25.64515507617034
+        },
+        {
+          "name": "Middle_hills_08",
+          "layer": 2,
+          "translation": [
+            -137.2966443748566,
+            0,
+            -11.542460567608265
+          ],
+          "heightM": 15.144166148267686,
+          "halfWidthM": 33.753672225400805,
+          "halfDepthM": 27.570350712398067
+        },
+        {
+          "name": "Middle_hills_09",
+          "layer": 2,
+          "translation": [
+            -115.93927492890553,
+            0,
+            74.2170234712556
+          ],
+          "heightM": 17.07047671172768,
+          "halfWidthM": 34.56516054831445,
+          "halfDepthM": 26.520874090725556
+        },
+        {
+          "name": "Middle_hills_10",
+          "layer": 2,
+          "translation": [
+            -41.92093490191575,
+            0,
+            129.88645351384025
+          ],
+          "heightM": 16.10613253246993,
+          "halfWidthM": 34.82034942321479,
+          "halfDepthM": 20.71736920834519
+        },
+        {
+          "name": "Far_ridges_01",
+          "layer": 3,
+          "translation": [
+            -4.442324579798053,
+            0,
+            197.3647623340669
+          ],
+          "heightM": 22.276284124702215,
+          "halfWidthM": 57.93604201823473,
+          "halfDepthM": 33.08811729680747
+        },
+        {
+          "name": "Far_ridges_02",
+          "layer": 3,
+          "translation": [
+            102.08707733118554,
+            0,
+            169.48461044879954
+          ],
+          "heightM": 27.399121779948473,
+          "halfWidthM": 42.98981962352991,
+          "halfDepthM": 38.46445776801556
+        },
+        {
+          "name": "Far_ridges_03",
+          "layer": 3,
+          "translation": [
+            183.16661226867896,
+            0,
+            88.09956771557745
+          ],
+          "heightM": 20.73743237182498,
+          "halfWidthM": 53.33674622327089,
+          "halfDepthM": 36.96328316163272
+        },
+        {
+          "name": "Far_ridges_04",
+          "layer": 3,
+          "translation": [
+            191.84151824136433,
+            0,
+            -42.32732565618019
+          ],
+          "heightM": 26.295724872499704,
+          "halfWidthM": 52.6700896397233,
+          "halfDepthM": 35.05098599474877
+        },
+        {
+          "name": "Far_ridges_05",
+          "layer": 3,
+          "translation": [
+            157.01435344590587,
+            0,
+            -120.03790991841313
+          ],
+          "heightM": 27.722795363515615,
+          "halfWidthM": 52.86768800765276,
+          "halfDepthM": 31.61851933132857
+        },
+        {
+          "name": "Far_ridges_06",
+          "layer": 3,
+          "translation": [
+            42.44852433952593,
+            0,
+            -194.2209148835249
+          ],
+          "heightM": 20.928914535790682,
+          "halfWidthM": 55.898199774324894,
+          "halfDepthM": 27.56733428221196
+        },
+        {
+          "name": "Far_ridges_07",
+          "layer": 3,
+          "translation": [
+            -60.01658684848272,
+            0,
+            -188.4739226637901
+          ],
+          "heightM": 22.453015189617872,
+          "halfWidthM": 56.72735369950533,
+          "halfDepthM": 30.14531750511378
+        },
+        {
+          "name": "Far_ridges_08",
+          "layer": 3,
+          "translation": [
+            -148.22341421866827,
+            0,
+            -129.69099114440047
+          ],
+          "heightM": 21.579879734665155,
+          "halfWidthM": 43.22419885545969,
+          "halfDepthM": 28.032728704623878
+        },
+        {
+          "name": "Far_ridges_09",
+          "layer": 3,
+          "translation": [
+            -201.72673515450722,
+            0,
+            -14.405782451643315
+          ],
+          "heightM": 20.2073276899755,
+          "halfWidthM": 57.0673546269536,
+          "halfDepthM": 33.178138132207096
+        },
+        {
+          "name": "Far_ridges_10",
+          "layer": 3,
+          "translation": [
+            -181.91283770964185,
+            0,
+            73.03543126878425
+          ],
+          "heightM": 16.463403183966875,
+          "halfWidthM": 43.65126071125269,
+          "halfDepthM": 33.38436408620328
+        },
+        {
+          "name": "Far_ridges_11",
+          "layer": 3,
+          "translation": [
+            -117.92864351521476,
+            0,
+            161.97160178641266
+          ],
+          "heightM": 16.07356245443225,
+          "halfWidthM": 50.99242711812258,
+          "halfDepthM": 35.644410411827266
+        }
+      ],
+      "sha256": "1b4c279efa660505aa38cd3d6c7e596b5abab43f36869c397f602c551f31fa49",
+      "gitBlobSHA": "056b76862632ec3a411af7d5fb73c787e3380ff1",
+      "status": "GIT_BLOB_VERIFIED_NATIVE_PENDING"
+    }
+  ],
+  "license": "Original procedural assets authored for Owner project; no external textures or third-party model; zero paid services.",
+  "native": {
+    "status": "PENDING_OWNER_NATIVE",
+    "editable": "b9_editable_master.blend",
+    "render": "B9_Cycles_Evidence",
+    "receipt": "native_manifest.json",
+    "sha256": null,
+    "bytes": null
+  },
+  "costEstimate": {
+    "eco": {
+      "fish": [
+        6,
+        10
+      ],
+      "combinedTriangles": [
+        18600,
+        25528
+      ]
+    },
+    "quality": {
+      "fish": [
+        12,
+        18
+      ],
+      "combinedTriangles": [
+        74424,
+        101160
+      ]
+    },
+    "note": "terrain plus koi, not whole-scene or measured GPU cost"
+  },
+  "gates": {
+    "SA": "P10B9_ART_SA_REVIEW_REQUIRED",
+    "ownerArt": "PENDING",
+    "codex": "HOLD",
+    "merge": "HOLD"
+  },
+  "limitations": [
+    "No Blender/bpy available here; native import/deformation/visual acceptance and master pending.",
+    "Original video unavailable; reference descriptions and actual frozen B8 screenshots inspected.",
+    "Water art proxy only; actual opaque runtime shader and fish paths unchanged."
+  ]
+}

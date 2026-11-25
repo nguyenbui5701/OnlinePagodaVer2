@@ -1,0 +1,198 @@
+{
+  "status": "B9_NATIVE_IMPORT_AND_LOOP_PASS",
+  "identity": {
+    "sourceSHA256": "c3ade0ebe4bc106bdb26b6f9a7b38860cbbb86d1a1ecd440b9c43d514b201920",
+    "runnerSHA256": "7190197d48a05ff56c27da84fbb99231ffb8a5c15a1db63643d802bc0a290394",
+    "inputManifestSHA256": "da6610280697ba871ea2d660efed7453711caa5cdc5698f3256cac069c3070f9",
+    "contextPinsSHA256": "7485ff1ceb39516c6f12101eae308de5676766291ec31cbdef0228881830fc5f",
+    "blenderVersion": "4.5.16 LTS"
+  },
+  "blenderVersion": "4.5.16 LTS",
+  "profiles": [
+    {
+      "file": "koi_kohaku_eco.glb",
+      "triangles": 1732,
+      "boundsYUpMeters": [
+        [
+          -0.2639999985694885,
+          -0.17100000381469727,
+          -0.7749999165534973
+        ],
+        [
+          0.2639999985694885,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "minRestDoubleArea": 6.7198886790130985e-06,
+      "clip": "swim_loop",
+      "bones": 8,
+      "durationSeconds": 3.0,
+      "twoPeriodsSamples": 121,
+      "maxPeriodVertexErrorM": 0.0,
+      "motionExcursionM": 0.3314022123813629,
+      "minDeformedDoubleArea": 6.682839125576903e-06
+    },
+    {
+      "file": "koi_sanke_eco.glb",
+      "triangles": 1732,
+      "boundsYUpMeters": [
+        [
+          -0.2639999985694885,
+          -0.17100000381469727,
+          -0.7749999165534973
+        ],
+        [
+          0.2639999985694885,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "minRestDoubleArea": 6.7198886790130985e-06,
+      "clip": "swim_loop",
+      "bones": 8,
+      "durationSeconds": 3.0,
+      "twoPeriodsSamples": 121,
+      "maxPeriodVertexErrorM": 0.0,
+      "motionExcursionM": 0.3314022123813629,
+      "minDeformedDoubleArea": 6.682839125576903e-06
+    },
+    {
+      "file": "koi_yamabuki_eco.glb",
+      "triangles": 1732,
+      "boundsYUpMeters": [
+        [
+          -0.2639999985694885,
+          -0.17100000381469727,
+          -0.7749999165534973
+        ],
+        [
+          0.2639999985694885,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "minRestDoubleArea": 6.7198886790130985e-06,
+      "clip": "swim_loop",
+      "bones": 8,
+      "durationSeconds": 3.0,
+      "twoPeriodsSamples": 121,
+      "maxPeriodVertexErrorM": 0.0,
+      "motionExcursionM": 0.3314022123813629,
+      "minDeformedDoubleArea": 6.682839125576903e-06
+    },
+    {
+      "file": "distant_terrain_eco.glb",
+      "triangles": 8208,
+      "boundsYUpMeters": [
+        [
+          -236.45245361328125,
+          -0.8500000238418579,
+          -224.43511962890625
+        ],
+        [
+          232.4315185546875,
+          27.072795867919922,
+          232.48068237304688
+        ]
+      ],
+      "minRestDoubleArea": 2.213456797834432
+    },
+    {
+      "file": "koi_kohaku_quality.glb",
+      "triangles": 4456,
+      "boundsYUpMeters": [
+        [
+          -0.2639999985694885,
+          -0.17100000381469727,
+          -0.7749999165534973
+        ],
+        [
+          0.2639999985694885,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "minRestDoubleArea": 6.7198886790130985e-06,
+      "clip": "swim_loop",
+      "bones": 8,
+      "durationSeconds": 3.0,
+      "twoPeriodsSamples": 121,
+      "maxPeriodVertexErrorM": 0.0,
+      "motionExcursionM": 0.3314022123813629,
+      "minDeformedDoubleArea": 6.682839125576903e-06
+    },
+    {
+      "file": "koi_sanke_quality.glb",
+      "triangles": 4456,
+      "boundsYUpMeters": [
+        [
+          -0.2639999985694885,
+          -0.17100000381469727,
+          -0.7749999165534973
+        ],
+        [
+          0.2639999985694885,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "minRestDoubleArea": 6.7198886790130985e-06,
+      "clip": "swim_loop",
+      "bones": 8,
+      "durationSeconds": 3.0,
+      "twoPeriodsSamples": 121,
+      "maxPeriodVertexErrorM": 0.0,
+      "motionExcursionM": 0.3314022123813629,
+      "minDeformedDoubleArea": 6.682839125576903e-06
+    },
+    {
+      "file": "koi_yamabuki_quality.glb",
+      "triangles": 4456,
+      "boundsYUpMeters": [
+        [
+          -0.2639999985694885,
+          -0.17100000381469727,
+          -0.7749999165534973
+        ],
+        [
+          0.2639999985694885,
+          0.2329999953508377,
+          0.5149999856948853
+        ]
+      ],
+      "minRestDoubleArea": 6.7198886790130985e-06,
+      "clip": "swim_loop",
+      "bones": 8,
+      "durationSeconds": 3.0,
+      "twoPeriodsSamples": 121,
+      "maxPeriodVertexErrorM": 0.0,
+      "motionExcursionM": 0.3314022123813629,
+      "minDeformedDoubleArea": 6.682839125576903e-06
+    },
+    {
+      "file": "distant_terrain_quality.glb",
+      "triangles": 20952,
+      "boundsYUpMeters": [
+        [
+          -237.25027465820312,
+          -0.8500000238418579,
+          -225.11126708984375
+        ],
+        [
+          233.10357666015625,
+          27.072795867919922,
+          232.48068237304688
+        ]
+      ],
+      "minRestDoubleArea": 0.43408922507654585
+    }
+  ],
+  "master": {
+    "path": "b9_editable_master.blend",
+    "bytes": 6697540,
+    "sha256": "47d74bed53f373fea82d7575805d2556c481570e7d43f58d737d082b4ae1c17d"
+  },
+  "masterReopened": true,
+  "nativeUV": "No authored UV required: COLOR_0 vertex colors, no textures; finite existing UVs checked"
+}

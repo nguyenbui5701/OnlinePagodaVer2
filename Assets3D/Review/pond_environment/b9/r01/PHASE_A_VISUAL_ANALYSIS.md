@@ -1,0 +1,17 @@
+# B9 phase 1 — source-grounded habitat direction
+
+Read controlling Task at dc6b673e53ca44c31bc48df05c13d2eaa3eeaf1b; latest Rules07, Design01/03/10/11/13/14/23/27/32/33; [PR28 SA R4](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/28#pullrequestreview-6060240327), [PR27 SA final](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/27#pullrequestreview-6058734192). Frozen engineering 891786afaa50add5eeb16c969f094d79067d311d, frozen art 84f3a621d83fa7af5a4995b007446fec49287bf9. Reference original chuav2.mp4 not available after library search; no fabricated extraction. Actual committed B8 r2-wide, r3-wide/aerial/under/gift PNGs directly viewed. Findings: bare horizon visible in wide, under, gift; stronger B8 lotus and gold preserved. Source camera.ts 0.05/500m near/far, water.ts 800m plane and final alpha 1, lotus-density.ts rings 8.8–33m with clearance, community-layout.ts ring radii 13.8/20.2m, R3 native receipt 64 pads incl 3 real/9 decor, 120 leaves, 56 blooms, 40 buds. No new koi/terrain in frozen art tree. Current runtime remains read-only; no independent GPU/Studio/LIVE.
+
+## Placement guide (Y up, +Z fish nose, meters)
+| Zone | Proposed |
+|---|---|
+| Root/seat/lotus | Existing B8 authoritative layout unchanged; retain tree root radius >=7m and gift clearance 6.25m; real camera/collision checks later |
+| Fish | Nominal length 1.29m, scale .67–.93 in offline gallery; center depth -0.42 to -0.57m; actual animated envelope and body clearance must be used by Codex. Channels between plant bounds, no root/seat/pad crossing; proposed target 6–10 ECO,12–18 QUALITY, in-place 3s clip independent of eventual travel spline |
+| Low islands | 9 staggered modules around radius 96m, heights 2.8–5.4m |
+| Mid hills | 10 modules around 140m, heights 10–19m |
+| Far ridge | 11 modules around 200m, heights 16–28m, genuine parallax mesh rather than billboard |
+ 
+Soft violet/mauve gradient via original vertex colors; distant silhouettes not intended to compete with tree. Module names and placements in manifest. Actual terrain module edges and silhouette must be visually inspected in native render. No hard polygon cap. No actual fish visibility in opaque Viewer claimed. Render-only transparent water and seed9 representative lotus arrangement; exact frozen geometry, not identical B8 runtime placement/lighting. Six matched camera poses per profile; aerial/wide/under/low/gift derived from R3 native receipt, branch close from frozen referenceViews; gift seat pad only, no fabricated actor/nameplates. Original master recipe plus actual full QUALITY and ECO editable collections when Blender runs. No old B8 tests repeated.
+
+## Geometry
+Original closed indexed torpedo body, lens-volume fins and eyes; three palette files each profile, same dimensions and 8-bone skeleton; 3s 61-key quaternion clip, no root translation. Tested 61 analytic skin poses, exact endpoint, nondegenerate and manifold edge winding/rest normals. Native Blender import and actual evaluated repeat still pending. Color_0 normalized RGBA, no external texture/UV requirement. Fin motion primarily coupled to body chain, no separate pectoral flap; assess in close-ups. Quality has finer patch edges and fins; eco still exceeds old advisory 800. Terrain all 30 modules retained with fewer samples in ECO. Expected combined triangles: ECO 18,600–25,528; QUALITY 74,424–101,160; geometry only, no skinning/drawcall/FPS assertion. HIGH QUALITY optional deferred. 
