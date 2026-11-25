@@ -36,3 +36,11 @@ Owner replied “tiếp tục theo đề xuất và rules” after the three-des
 ## Owner-approved HIGH QUALITY / Art First amendment (2026-11-25)
 
 Follow [Design10 latest policy](10_GRAPHICS_PROFILES.md). Extend future HIGH QUALITY art direction to koi, botanical clusters, distant terrain, rocks/islands and all atmosphere assets; preserve master with appropriate rig/texture/LOD, derive runtime assets. §6 koi/terrain triangle caps and §3–4 density/FX counts are initial planning references only; not art rejection ceilings. Runtime pools still explicitly bounded per tested preset; profile instance-weighted geometry, skinning, transparency, water/reflection and GPU cost. Future HIGH QUALITY may use richer density, animation, materials, reflections and fog if measured, no mandatory extra current gallery or runtime activation. B9 dependency HOLD unchanged.
+
+## Owner B8 final visual GO / B9 art activation (2026-11-25)
+
+**OWNER_P10B8_WORLD_VISUAL_GO / CODEX24_COMPLETE / P10B8_COMPLETE / AI_VISUAL18_ACTIVE / P10B9_CODE_INTEGRATION_HOLD / P10C0_DEPENDENCY_HOLD / GPU_STUDIO_PENDING / MERGE_HOLD.**
+
+Owner explicitly stated “duyệt phase này, tiếp tục công việc theo plan” on 2026-11-25 following SA R4 and offline setup guidance. Record qualitative Owner phase acceptance at exact PR28 `891786afaa50add5eeb16c969f094d79067d311d` (open/unmerged), [formal SA R4](https://github.com/nguyenbui5701/OnlinePagodaVer2/pull/28#pullrequestreview-6060240327); no independent receipt that the last local install/build or preview completed, no new GPU/Studio/real LIVE/listening claim. R2 focused receipts accepted by R4. Freeze PR28 runtime and PR27 art `84f3a621d83fa7af5a4995b007446fec49287bf9`. CODEX24 complete for scoped visual implementation; retain task as dependency/provenance. Activate only AI Visual18 for B9 art per Design33, new branch assets/pond-environment-b9 based on exact PR27 art HEAD targeting assets/sakura-hero-r18-polish, not the runtime branch. No Codex integration until actual art/binary SA PASS and explicit Owner art GO. Keep R17B/default, no HIGH QUALITY runtime, no production broadcast/merge, C0 HOLD.
+
+[AI VISUAL 18](https://github.com/nguyenbui5701/OnlinePagodaVer2/blob/main/Task/AI_VISUAL_18_P10B9_KOI_AND_DISTANT_ENVIRONMENT.md) is the controlling scoped task.
