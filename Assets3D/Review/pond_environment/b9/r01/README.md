@@ -8,3 +8,14 @@ Use isolated branch assets/pond-environment-b9 from exact PR27 parent 84f3a621d8
 & .\run_b9.ps1
 ```
 Blender 4.5 LTS, uses bundled NumPy, no package installation. Checks branch, obtains exact missing approved botanical commits without modifying them, validates all eight GLB files, creates editable master, reopens it, records native evaluated loop seam across two periods, renders 12 habitat frames and 10 swim closeup frames with actual Cycles 720×1280/32 samples. Native failures STOP and provide log. If validation has passed and rendering interrupted use `& .\run_b9.ps1 -Phase Render` (matching rendered frame checksums reused). No repeat old B8 audit or renderer. Source syntax/runtime not verified in Blender worker; inspect native outputs before SA. Source recipe Node 22+ included for future revision; no required npm/Node install for native. 
+
+## SA R1 native correction (source candidate; actual Blender evidence pending)
+The failing import relinked all newly created objects including Blender bone display helpers. Blender 4.5 glTF defaults create custom bone shapes; the actual first GLB contains only Koi_body, Koi_fins, Koi_eyes_mouth as mesh nodes. The correction logs original object/collection/pose-bone references, preserves proven hidden helpers in their original collection, maps B9 meshes to source GLB nodes with per-node triangle and hierarchy/skin checks, and rejects unexplained objects. No GLB bytes changed. Actual Windows helper identity remains to be confirmed in focused logs; no native PASS claimed.
+
+Run in this order on the corrective HEAD (not the failing revision):
+```powershell
+& .\run_b9.ps1 -Phase Focused
+& .\run_b9.ps1 -Phase Validate
+& .\run_b9.ps1 -Phase Render
+```
+Run the next phase only after previous exit 0. Focused runs actual first-koi import, helper reference proof, negative authored body material regression and two-period evaluated loop. Validate runs all eight, checks master reopen including helper references. Native receipts bind source/runner/manifest/context/Blender version; a valid prior phase is reused without rerunning it. Preserve original failed logs (runner archives same-label logs). If a stale JSON receipt exists, archive it and its associated outputs before a fresh phase; never reuse an identity mismatch. Upload focus/validate/render stdout+stderr+exit receipts, focused_validation.json, native_validation.json, editable master, Cycles frames and final manifests for SA. No Blender/bpy or PowerShell in AI Visual worker; actual native, negative native regression, master and Cycles all HOLD until real execution.
