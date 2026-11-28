@@ -1,0 +1,8 @@
+ca7c155cf742e8b872662f7da36cc31bc63bfaa5
+npm.cmd run build
+
+> @online-pagoda/v2-viewer@0.1.0 build
+> tsc --noEmit && vite build
+
+test/cinematic-rotation.test.ts(126,8): error TS2367: This comparison appears to be unintentional because the types '"return-rejoin"' and '"idle"' have no overlap.
+exit=2

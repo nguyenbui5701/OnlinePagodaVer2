@@ -43,6 +43,7 @@ export function createCommunityBatches(figures: Figure[]) {
   let lastMask: number | undefined;
   return {
     group, count: batches.length,
+    cameraBounds: () => bounds.map(bound => ({ group: 'decorative-seat', box: bound.getBoundingBox(new Box3()) })),
     update(scale: Vector3, camera: PerspectiveCamera, position?: Vector3) {
       frustum.setFromProjectionMatrix(viewProjection.multiplyMatrices(camera.projectionMatrix, camera.matrixWorldInverse));
       const visible: number[] = [];

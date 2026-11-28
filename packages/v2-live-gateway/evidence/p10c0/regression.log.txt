@@ -1,0 +1,236 @@
+43ec21917d4b64a7c73becf272433ef0cc17be9f
+>>> packages/v2-live-gateway npm.cmd test
+
+> @online-pagoda/v2-live-gateway@0.1.0 test
+> node --test
+
+✔ maps modern provider shapes with sanitized display text and no avatar URLs (5.2123ms)
+✔ gift progress and final use a stable group with separate packet IDs (2.6205ms)
+✔ scopes reconnect, deduplicates gifts and publishes them to the Event Engine (10.5494ms)
+✔ backpressure prioritizes final gifts and makes hard overflow explicit (2.8599ms)
+✔ provider denial and rate limits stop attempts with allowlisted reasons (0.8839ms)
+✔ HTTP accepts token-free JSON only from the expected loopback Host and Viewer Origin (282.7135ms)
+✔ actual pinned connector loads in a real isolated worker without opening a room (1064.5669ms)
+✔ unacknowledged finals persist across repeated polls and closing with only the consumed prefix reports uncertainty (1.4432ms)
+✔ a confirmed closing ACK drains the final; lease expiry still marks a pending final never offered (0.9385ms)
+✔ normal disconnect preserves degradation and keeps pending entries available for drain (0.637ms)
+✔ R2 migrates legacy audio and commits independent patches with a priority mute fence (577.2561ms)
+✔ R2 priority mute remains in RAM and reports UNSAVED when persistence fails (27.8571ms)
+✔ R2 name provenance, cache isolation across same-name actors, expiry/reset and unsafe aliases (12.4696ms)
+✔ R2 mute aborts active and waiting synthesis, and provider refusal cools down without retry (1.4069ms)
+✔ settings allowlist, atomic save, conflict, reload and corrupt-file fallback (59.0982ms)
+✔ audio settings persist independently and corrupt data is muted (37.4618ms)
+✔ visual settings migrate the old file without changing its revision or accepting unknown fields (48.0158ms)
+✔ Overlay audio piggybacks a consumed ACK without changing visual revision or accepting a second receiver (299.2603ms)
+✔ operator stays separate from receiver, and saved settings wait through LIVE and ACK drain (109.0552ms)
+✔ dashboard polling cannot exhaust the Overlay budget or take a legacy lease (475.006ms)
+✔ presence patches persist separately and reject invalid, stale and corrupt settings (25.3398ms)
+✔ presence heartbeat is owner-only and bad metadata cannot interrupt ACK or alter audio/visual revisions (307.1637ms)
+✔ pinned protobuf encodes Like with lossless stable identity and leaves unsafe or missing identity aggregate-only (30.6626ms)
+✔ bounded worker leaves IPC room for identities, accounts filtered/overflow and fails closed on final saturation (21.9729ms)
+✔ identified Like flood (admission false) and repeated Chat leave an IPC lane for Member (21.6593ms)
+✔ Gateway Like admission false has a separate cap from new Member and Gift Final (16.059ms)
+✔ identified Like flood (admission true) and repeated Chat leave an IPC lane for Member (15.1675ms)
+✔ Gateway Like admission true has a separate cap from new Member and Gift Final (20.6495ms)
+✔ offered Chat repeats cannot use admission reserve and disabled Chat cannot stand in for a Member (21.9203ms)
+✔ disabled Chat is activity at IPC and a failed handoff releases the same identity for retry (12.5289ms)
+✔ initial and changed policy reach the worker and terminal IPC advertises an incomplete receipt once (5.6638ms)
+✔ drops under pressure are retryable after ACK, unique identities get reserve, opted-in likes are rate limited (3.569ms)
+✔ world status accepts only the failure codes and stages that match the applied tree (2.2815ms)
+✔ world status travels on owner poll and malformed telemetry leaves ACK, audio and presence intact (335.6735ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1873.7821
+exit=0
+>>> packages/v2-events npm.cmd test
+
+> @online-pagoda/v2-events@0.1.0 test
+> node --test
+
+✔ chat bounds bytes and graphemes while preserving Vietnamese and joined emoji (7.5444ms)
+✔ legacy, invalid, duplicate, throttled and stale chat never emit a cue (2.54ms)
+✔ capacity chat carries no other seat and does not alter gifts, focus or viewer count (1.0545ms)
+✔ a new text-bearing chat has no seat even when the room has free seats (0.2931ms)
+✔ seeded 45s idle then A → B → C with real actor / seat bindings and cinematic return (10.0713ms)
+✔ one FIFO slot per giver, one capped active extension and a shared pending request ID (1.7754ms)
+✔ reconnect preserves identity, duplicate ledgers and revision; room change cancels old intents (0.7976ms)
+✔ bounded focus and no-seat outcomes acknowledge the correct giver; TTL releases seat (0.6189ms)
+✔ 120 viewers, 500 likes and room viewer total keep capacity and FX bounded (2.0502ms)
+✔ session ledger stays bounded and preserves idempotency at the limit (3.9944ms)
+✔ safe display text, graphemes, photo validation and private packet IDs (1.6615ms)
+✔ expired provisional focus adds zero spend; late final acknowledges without replaying the shot (1.1274ms)
+✔ Like admission defaults OFF and requires a valid identity when explicitly enabled (4.7754ms)
+✔ LIVE member and text chat admit immediately; duplicates, empty chat and aggregate counts cannot create actors (3.5576ms)
+✔ HOT expiry uses prior activity; toggles leave seated actors and gift admission independent (1.8177ms)
+✔ waiting FIFO is bounded, source-aware, deduplicated, expires independently and never replays chat (1.7954ms)
+✔ re-enabled seat expiry skips an overdue queue head, and fresh interaction restores its eligibility (1.1791ms)
+✔ shortened duration skips entries at the expiry boundary; switching expiry off restores FIFO eligibility (0.8054ms)
+✔ skipped entries keep the independent 60-second queue expiry (0.5289ms)
+✔ confirmed streak seats the donor after unseated progress, protects active/pending and counts fallback once (0.8477ms)
+✔ final displaces the least recently active passive viewer, but an earlier donor stays after cinematic return (0.4666ms)
+✔ disconnect clears waiting and reconnect keeps existing seat bindings; room change clears both (0.3744ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 316.22
+exit=0
+>>> packages/v2-events npm.cmd run build
+
+> @online-pagoda/v2-events@0.1.0 build
+> tsc --noEmit
+
+exit=0
+>>> packages/v2-voice node --test
+✔ worker defaults to OFF and rejects malformed local boundary requests (43.5006ms)
+✔ static fixture cache keeps exact synthetic template and count, expires and evicts at 32 (64.4784ms)
+✔ one active job, at most four queued, aborted work releases the slot (86.7044ms)
+✔ oversized, silent and malformed PCM are not returned (10.8292ms)
+✔ authenticated request rate limit is bounded (18.273ms)
+✔ local bounded child handles timeout and oversized output (593.544ms)
+✔ Python opt-in is forwarded explicitly and absent dependencies fail locally (501.9134ms)
+✔ an upstream refusal preserves fallback and prevents subsequent upstream calls (6.0479ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1478.6877
+exit=0
+>>> apps/v2-viewer npm.cmd test
+
+> @online-pagoda/v2-viewer@0.1.0 test
+> node --test
+
+✔ background emits one neutral chime for a new gift and avoids offscreen or overdue speech replay (5.9484ms)
+✔ actual capacity fixture exposes accepted effects once and speaks A/B/C with original totals (62.5079ms)
+✔ accepted finals for the same request coalesce and a reused name cannot alter the seat binding (3.3601ms)
+✔ watermark, mute/resume and same-room reconnect do not replay (4.7198ms)
+✔ late buffers never speak across expiry or a different room, and SFX does not repeat while waiting (1.0546ms)
+✔ no-seat confirmation retries preload only during idle, then gives nonspatial short thanks (1.0082ms)
+✔ pending and dedup limits fail closed and unknown gift uses neutral audio (2.2286ms)
+✔ LIVE rolls past 256 unique requests and rejects old and recent replays with new cue sequences (17.4549ms)
+✔ an accepted LIVE gift never exposes a DEMO name identity to the voice path (2.4149ms)
+✔ R2 accepted final carries exact provenance and rename during the wait cancels the alias without replaying the chime (6.3514ms)
+✔ approved female and male Git blobs have the exact garment mappings and shared rig samples (597.105ms)
+✔ invalid, duplicate, or incomplete KHR primitive mappings fail closed (117.9901ms)
+✔ seeded real seat and anonymous looks are purely cosmetic and palette limits are deterministic (2.5467ms)
+✔ runtime manifest and pinned binary structure match the approved PR #10 art handoff (904.6524ms)
+✔ botanical switch only applies to an enabled 12-slot scene (0.4094ms)
+✔ seeded botanical layers are repeatable, bounded and clear the original slots and tree (6.1959ms)
+✔ 85s cinematic at 60Hz covers all shots per loop and changes actual route with fixed bounds (393.4421ms)
+✔ cross-variant closure uses the same pose and matching position, target and FOV tangents (15.1162ms)
+✔ seed query is a stable uint32 with a documented fallback (1.266ms)
+✔ rejecting a route reports which candidate failed and retains an accepted path (15.7546ms)
+✔ six timed compositions repeat at 68 s with matching eye, aim, lens and wall-clock tangents (96.4737ms)
+✔ swept cubic detects an obstruction between endpoints and reserves the water floor (1.6451ms)
+✔ geometry bounds include actual world and per-instance transforms (6.4079ms)
+✔ a blocked direct gift approach chooses a checked corridor and a blocked goal fails closed (1.3241ms)
+✔ gift A, B, C and return interruption keep the saved phase, move from the rendered pose and resume (7.5642ms)
+✔ hidden and long gaps pause camera motion and avoid a stale reached-focus marker (1.5358ms)
+✔ Cinematic Rotation is a QUALITY opt-in and historical settings keep their camera choices (1.7889ms)
+✔ twelve seeded visual slots keep original seats and clear the root and each other (7.6779ms)
+✔ community binds actual members by seat and keeps visual density out of the room count (5.6431ms)
+✔ gift reserves a real member past TTL, excess gift is text-only, room change drops old identity (53.2976ms)
+✔ idle seeded ranges stay reproducible and reset a complete quiet interval on activity (16.1219ms)
+✔ idle disable and busy interruptions leave no queued cue or catch-up (0.5461ms)
+✔ same-name different actor and coalesced sequence cannot borrow stale audio (13.5332ms)
+✔ slow, busy, corrupt, oversized and insufficient-hold voice choose fixed fallback (10.5289ms)
+✔ unseated and unknown gifts never request a synthetic name (3.3798ms)
+✔ preload timeout aborts the provider and leaves fixed fallback eligible (4.8946ms)
+✔ B9 is opt-in and preserves stored density and revisions through visual migration (4.2257ms)
+✔ seeded koi are smooth and stay clear over the joint path cycle including above-water pads (1052.8938ms)
+✔ actual koi skins stay inside the conservative envelope over all authored frames and midpoints (1439.3271ms)
+✔ FX includes seat emitters within the total cap and frees its buffers on teardown (5.1363ms)
+✔ blessing is explicitly enabled for gift DEMOs with FX only (2.714ms)
+✔ the warm, rising, tree-directed and fade envelopes are deterministic on the original cue clock (2.396ms)
+✔ observed, expired and foreign room/request/seat/actor cues never plan a spatial blessing (0.49ms)
+✔ fixture observed and duplicate receipts share the engine-owned FIFO and launch only three confirmed cues (42.0408ms)
+✔ profiles reuse one seeded fixed buffer and release the geometry and shader once (4.6912ms)
+✔ existing queue plays a provisional A halo, then exactly one confirmed A/B/C celebration (42.4742ms)
+✔ observed and confirmed phases follow typed ack, mode and exact actor/seat identity (2.6135ms)
+✔ missing seat, expired request and overlay never receive spatial FX (0.6128ms)
+✔ return shortens a live fade and the next actor owns the only cue (2.1733ms)
+✔ disconnect clears visuals, reconnect avoids replay and room epoch rejects old revision (2.1351ms)
+✔ visual ledger is bounded and has no eviction replay (3.8525ms)
+✔ profile pools have fixed capacity and deterministic seed attributes (6.7351ms)
+✔ local corpus loads and checks every clip with same-origin root paths from /overlay/ (197.0136ms)
+✔ missing corpus, duplicate/path IDs, hash mismatch and overflow do not expose partial speech (12.1662ms)
+✔ LIVE starts offline and reuses existing Camera and seat rules for received events (8.0052ms)
+✔ local link loss keeps already received final gifts and disconnects the same scope (1.1892ms)
+✔ gateway response requires the exact protocol and contiguous delivery cursor (1.1152ms)
+✔ repeated polls while frames are paused keep ACK at the consumed prefix and ingest once (2.0069ms)
+✔ a rejected final blocks ACK through a same-batch reconnect and does not replay the valid tail (0.7154ms)
+✔ an invalid final blocks the contiguous ACK even when its next sequence is accepted (0.4931ms)
+✔ the Engine session limit latches failure without acknowledging the rejected sequence (191.5934ms)
+✔ LIVE Overlay stages settings ahead of events, preserves consuming ACK and binds new donor alias to the reused seat (12.3615ms)
+✔ dev fixture confines files, requests and WebSocket registration to the local contract (475.162ms)
+ℹ dev: 127.0.0.1; Host/Origin/Fetch Metadata 403; fs outside 403; fs deny 403; WebSocket refused
+✔ built preview fixture serves an ordinary same-origin asset and refuses a foreign request (157.4016ms)
+ℹ preview: 127.0.0.1; Host/Origin/Fetch Metadata 403; same-origin asset 200; WebSocket refused
+✔ config refuses wildcard bind, permissive CORS and non-strict ports (659.0137ms)
+✔ preview strictPort rejects an occupied port without choosing another (198.7151ms)
+✔ P1-01A rejects queued name after registry changes to Bình (14.4423ms)
+✔ P1-01A rejects queued name after registry changes to Tên chưa duyệt (18.7736ms)
+✔ P1-01B uses latest generation and keeps original 350 ms deadline (true) (4.7582ms)
+✔ P1-01B uses latest generation and keeps original 350 ms deadline (false) (2.9458ms)
+✔ avatar binding holds for equal display names, profile updates, reconnect, TTL and reused seats (9.9407ms)
+✔ resolver refuses malformed, unapproved and only-origin-matching avatar URLs (1.6738ms)
+✔ approved synthetic photo load enforces fetch isolation, caps, decode and fallback (60.307ms)
+✔ nameplate follows one head-relative projection during pan and zoom (9.9482ms)
+✔ P0.14 maps all seven reference intentions to distinct, deterministic review cases (3.5882ms)
+✔ the QA-only under-tree framing preserves lens and adds distance from the trunk (0.4669ms)
+✔ third-seed route selection remains deterministic and continuous through two exact cycle seams (116.4283ms)
+✔ two concentric rings preserve the three actor seats and nine anonymous IDs (4.4787ms)
+✔ hero routes move through both new shots and share a continuous 40-second seam (86.9266ms)
+✔ rich particles stay deterministic in one batch and mist caps are separate by profile (7.4226ms)
+✔ chat has a bounded readable dwell followed by rising and fading (2.8335ms)
+✔ initials and gift type mapping use local fallback only (2.7715ms)
+✔ driver relays accepted chat and clears it at disconnect, TTL and room changes (7.565ms)
+✔ staging requires exact commit, both paths, blob IDs and raw SHA-256 (64.2908ms)
+✔ invalid second asset leaves an existing verified pair unchanged (131.9707ms)
+✔ QUALITY density plus is seeded and respects scaled plant, tree, seat and camera clearances (88.3518ms)
+✔ petal tint follows the packed matrix past index 32 and leaves green materials alone (8.5256ms)
+✔ canopy lift shares owned clones, keeps depth and restores all source materials (4.4422ms)
+✔ three gold lobes drift continuously, repeat at fixed time, and preserve the gift ripple (4.4455ms)
+✔ R18a stages the immutable pair and a swapped profile cannot replace it (1094.336ms)
+✔ R18a resolves down the same-profile chain, reports failures and honours abort (7.6133ms)
+✔ old settings gain only legacy density, quality and unknown options retain strict validation (1.1387ms)
+✔ density is deterministic with clearance and full budgets across seeds and profiles (95.1396ms)
+✔ static pads and leaves omit the nested seated actor and share the P02 mesh (6.2606ms)
+✔ animated mask initializes all 32 bits without treating them as a cached mask (9.3151ms)
+✔ independent static pools keep index 32 distinct from index zero and free only their matrices (2.4714ms)
+✔ turn all three actor pivots through their pad parents without moving pad or contact (13.434ms)
+✔ coincident X/Z leaves existing facing unchanged (1.7635ms)
+✔ v0.2.0 serialized snapshots resolve exact actor/seat and reject stale protocol/revision (9.9046ms)
+✔ integrated controller counts final gifts once, focuses A/B/C, and reports D fallback (15.5392ms)
+✔ renderer camera starts each handoff at the prior pose and reaches the current cinematic on return (43.4788ms)
+✔ B9 staging validates all eight source blobs and rejects a corrupted file without replacing the previous set (1573.2784ms)
+✔ R17B is opt-in and same-profile fallback is attempted once (4.6638ms)
+✔ abort prevents fallback and disposes an asset returned after abort (2.1192ms)
+✔ reports both failures and never retries a failed default R16 (0.8838ms)
+✔ shot boundaries and 40s closure keep normalized deterministic weights (17.9263ms)
+✔ gift and route-clock reset ease from the current output and reuse weight storage (0.9175ms)
+✔ legacy pins P0.10 and comparison cameras, while lookup allows three review holds (0.3673ms)
+✔ twilight reuses light and sky resources, with bounded exposure and fog (6.1605ms)
+✔ gold runtime clone stays scoped, shares across meshes and restores originals before disposing (3.0404ms)
+✔ water atmosphere leaves the exact P0.10 gift ripple inputs independent (1.5299ms)
+ℹ tests 111
+ℹ suites 0
+ℹ pass 111
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3815.2297
+exit=0

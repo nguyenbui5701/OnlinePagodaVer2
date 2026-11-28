@@ -129,7 +129,7 @@ export async function loadEnvironment(profile: Profile, seed: number, tree: Vect
   });
   let disposed = false;
   const scene = {
-    group, assets: sources.map(source => source.receipt), tracks,
+    group, terrain: terrain.root, assets: sources.map(source => source.receipt), tracks,
     update(seconds: number, camera: PerspectiveCamera) {
       frustum.setFromProjectionMatrix(projection.multiplyMatrices(camera.projectionMatrix, camera.matrixWorldInverse));
       let visible = 0;
