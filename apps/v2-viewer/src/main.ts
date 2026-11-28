@@ -283,6 +283,10 @@ async function boot() {
       const focus = selected && presentation.state.focus && {
         requestId: presentation.state.focus.requestId,
         pose: rotationGiftPoses?.get(selected.presentation.seatId) ?? seatPose(selected.seat, 0.30),
+        canSee: (eye: Vector3) => {
+          const head = seat!.head.getWorldPosition(new Vector3());
+          return !hitsTree(eye.toArray(), head.toArray());
+        },
       };
       const routeTime = rotation ? rotation.phase : director.routeSeconds(atMs, focus?.requestId);
       const controlled = rotation?.step(atMs, !document.hidden, focus);
@@ -309,7 +313,10 @@ async function boot() {
       const live = controlled ?? director.move(atMs, cinematic, focus);
       pose = review?.fixed ?? (review?.angle !== undefined && reviewSeat ? seatPose(reviewSeat, review.angle, 5.35) : live);
       report.routeSeconds = rotation?.phase ?? routeTime;
-      if (rotation) report.cameraPathBlocked = rotation.blocked;
+      if (rotation) {
+        report.cameraPathBlocked = rotation.blocked;
+        report.cameraMotion = { status: rotation.status, bridge: rotation.receipt };
+      }
       camera.position.copy(pose.position);
       camera.lookAt(pose.target);
       camera.fov = pose.fov;
@@ -402,9 +409,15 @@ async function boot() {
     if (overlayReceiver && !document.hidden && !shaderFailed) {
       lastDraw = now;
       const intent = presentation?.state.focus;
+      const head = rotation && rotation.reachedFocus && selected?.seat.head.getWorldPosition(new Vector3());
+      const points = head && head.clone().project(camera);
+      const donorVisible = points && presentation?.actor?.actorId === selected?.presentation.actorId &&
+        Math.abs(points.x) < .92 && Math.abs(points.y) < .92 && Math.abs(points.z) < 1 &&
+        !hitsTree(camera.position.toArray(), head.toArray());
       shownFocus = selected && intent && presentation?.state.camera.mode === 'GIFT_FOCUS' &&
-        (!rotation || rotation.reachedFocus)
+        (!rotation || donorVisible)
         ? { actorId: selected.presentation.actorId, seatId: selected.presentation.seatId, request: intent.requestId } : undefined;
+      if (rotation) report.renderedGiftFocus = shownFocus;
     }
     if (overlayReceiver) reportRendererReady(!lost && !shaderFailed && !gl.isContextLost() && renderer.info.render.calls > 0);
     if (last !== undefined && now > last) {
@@ -414,6 +427,7 @@ async function boot() {
     last = now;
     const info = renderer.info;
     Object.assign(report, {
+      renderMs: now,
       drawCalls: info.render.calls, trianglesDrawn: info.render.triangles,
       textures: info.memory.textures, geometries: info.memory.geometries, pointsDrawn: info.render.points,
       shaderPrograms: info.programs?.length,

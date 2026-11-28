@@ -19,7 +19,7 @@ import { audioDefaults } from '../src/live-audio-settings.ts';
 const app = resolve(process.env.C0_VIEWER_APP || '.');
 const out = resolve(process.env.C0_OUTPUT || '../../packages/v2-live-gateway/evidence/p10c0');
 const mode = process.argv[2] || 'native';
-assert(['native','perf','quick','fallback'].includes(mode));
+assert(['native','perf','quick','fallback','r1'].includes(mode));
 const baseline = process.argv.includes('--hero');
 const tree = process.env.C0_TREE || 'r18a';
 const missingTrees = (process.env.C0_MISSING_TREES || '').split(',').filter(Boolean);
@@ -70,8 +70,10 @@ function instrument() {
   function frame(at) {
     const r=window.viewerReport;
     if(r?.drawCalls>0 && window.c0Frames.length < 40000) {
-      window.c0Frames.push({ at, elapsed:r.elapsedSeconds, phase:r.routeSeconds, mode:r.mode,
+      window.c0Frames.push({ at, renderMs:r.renderMs, elapsed:r.elapsedSeconds, phase:r.routeSeconds, mode:r.mode,
         pathBlocked:r.cameraPathBlocked===true, shot:r.shot, position:r.position, target:r.target, fov:r.fov, route:r.routeId,
+        motion:r.cameraMotion, focus:r.focus, shown:r.renderedGiftFocus,
+        count:r.confirmedGiftCount, ack:r.liveReceipt?.ack,
         hidden:document.hidden, tick:r.liveTickMs, drawCalls:r.drawCalls, triangles:r.trianglesDrawn });
     }
     requestAnimationFrame(frame);
@@ -145,6 +147,7 @@ try {
       shot:r.shot,route:r.routeId,visibility:document.visibilityState,revision:r.repoRevision,
       focus:r.focus,names:r.community?.names,asset:r.asset,world:r.world,layout:r.lotusLayout,graphics:r.graphics,
       camera:r.cameraRotation,blocked:r.cameraPathBlocked,labels:r.labels,fx:r.fx?.gift,confirmed:r.confirmedGiftCount,
+      renderMs:r.renderMs,motion:r.cameraMotion,shown:r.renderedGiftFocus,
       pending:r.pendingGivers,receipt:r.liveReceipt,tick:r.liveTickMs,restores:r.contextRestores,ready:r.overlayRendererReady,
       audio:r.audio,pcm:window.readPCM?.(),heap:performance.memory?.usedJSHeapSize,
       canvas:[document.querySelector('canvas').width,document.querySelector('canvas').height]};
@@ -248,7 +251,7 @@ try {
   }
   await writeFrames('idle');
   if (mode==='native') await finishVideo();
-  if(mode==='quick') {
+  if(mode==='quick'||mode==='r1') {
     let packet=100;
     const startAt=Date.now();
     await dashboard.bringToFront();
@@ -276,6 +279,50 @@ try {
     await dashboard.reload();
     await overlay.bringToFront();
     note('seats-after-dashboard-reload',{ownerRetained:gateway.owner===owner,launches,occupied:gateway.presenceApplied.occupied,ack:gateway.acknowledged});
+    if(mode==='r1') {
+      const checkpoints=baseline?[[5,'HERO_WIDE_TREE_REFLECTION']]:[[5,'HERO_WIDE'],[17,'COMMUNITY'],
+        [27,'LOW_WATER_KOI'],[40,'AERIAL_RING'],[51,'UNDER_TREE_GOLD'],[61,'FAR_ATMOSPHERE']];
+      let total=0;
+      for(const [start,shot] of checkpoints){
+        const r=await wait(async()=>{
+          const r=await read();
+          return clock(r)>=start && r.shot===shot && r.mode==='CINEMATIC' && (!r.motion || r.motion.status==='idle') && r;
+        },'reach '+shot,85000);
+        const multi=shot==='FAR_ATMOSPHERE';
+        const queue=multi?[[11,'A'],[22,'B'],[33,'C']]:[[11,'A']];
+        note('gift-start-r1',{shot,phase:clock(r),renderMs:r.renderMs,total,queue:queue.map(([,name])=>name)});
+        for(const [id,name] of queue) gift(id,name);
+        total+=queue.length;
+        const focusNames=[], shownNames=[], shotsTaken=new Set();
+        let interrupted=false;
+        await wait(async()=>{
+          const now=await read();
+          if(now.mode==='GIFT_FOCUS' && now.focus && focusNames.at(-1)?.id!==now.focus.requestId)
+            focusNames.push({name:now.focus.name,id:now.focus.requestId,renderMs:now.renderMs});
+          if(now.shown && !shownNames.some(f=>f.request===now.shown.request)){
+            shownNames.push({...now.shown,name:now.focus.name,renderMs:now.renderMs});
+            if(!shotsTaken.has(now.focus.name)){
+              shotsTaken.add(now.focus.name);
+              await overlay.screenshot({path:join(out,'r1-'+shot+'-'+now.focus.name+'.png')});
+            }
+          }
+          if(multi && !interrupted && now.mode==='CINE_RETURN' && now.motion?.status==='return'){
+            interrupted=true;
+            gift(11,'A');total++;
+            note('return-interrupt-r1',{renderMs:now.renderMs,phase:now.phase});
+          }
+          return now.confirmed===total && now.mode==='CINEMATIC' && (!now.motion || now.motion.status==='idle') &&
+            focusNames.length>=(multi?4:1);
+        },'finish gifts '+shot,50000);
+        await ack();
+        const final=await read();
+        const expected=multi?['A','B','C','A']:['A'];
+        assert.deepEqual(focusNames.map(entry=>entry.name),expected);
+        note('gift-end-r1',{shot,focusNames,shownNames,phase:clock(final),ack:gateway.acknowledged,
+          voices:final.audio.marks.filter(mark=>mark.event==='voice-start' && focusNames.some(f=>f.id===mark.request))});
+      }
+      await writeFrames('live');
+    } else {
     const pausedAt=clock(await read());
     for(const [id,name] of [[11,'A'],[22,'B'],[33,'C'],[44,'D']]) gift(id,name);
     const visits=[];
@@ -347,6 +394,7 @@ try {
     const marks=(await read()).audio?.marks;
     writeFileSync(join(out,'audio-marks.json'),JSON.stringify(marks,null,2)+'\n');
     await writeFrames('live');
+    }
   }
   assert.deepEqual(errors,[]);
   note('complete',{mode,revision:ready.revision});
