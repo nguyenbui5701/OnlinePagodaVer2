@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { once } from 'node:events';
+import { appendFileSync, writeFileSync } from 'node:fs';
 import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
@@ -15,6 +16,7 @@ import { audioDefaults } from '../src/live-audio-settings.ts';
 import { liveDefaults } from '../src/live-settings.ts';
 
 const baseline = process.argv.includes('--baseline');
+const visualSmoke = process.env.V2_B9_SMOKE === '1';
 const profile = process.env.V2_SOAK_PROFILE ?? 'eco';
 const soakMs = Number(process.env.V2_SOAK_MS ?? 305_000);
 const viewerPort = Number(process.env.V2_FIXTURE_VIEWER_PORT ?? 5196);
@@ -24,10 +26,13 @@ const temp = await mkdtemp(join(tmpdir(), 'pagoda-26a-'));
 const room = '98025';
 const started = Date.now();
 const trace = [];
+const stdout = join(folder, (baseline ? 'baseline-' : '') + profile + '.stdout.log.txt');
 const note = (event, details = {}) => {
   const entry = { event, sinceMs: Date.now() - started, ...details };
   trace.push(entry);
-  console.log(JSON.stringify(entry));
+  const line = JSON.stringify(entry);
+  appendFileSync(stdout, line + '\n');
+  console.log(line);
 };
 let send;
 let launches = 0;
@@ -35,7 +40,8 @@ const gateway = new Gateway((_, cb) => { send = cb; launches++; return () => {};
 const settings = new SettingsStore(join(temp, 'settings.json'));
 const audio = new AudioSettingsStore(join(temp, 'audio.json'));
 const presence = new PresenceSettingsStore(join(temp, 'presence.json'));
-assert.equal(settings.save(1, { ...liveDefaults, profile, tree: 'r18a', density: 'lush', environment: 'on' }), undefined);
+assert.equal(settings.save(1, { ...liveDefaults, profile, tree: 'r18a', density: 'lush', environment: 'on',
+  ...(visualSmoke && { look: 'gold' }) }), undefined);
 assert.equal(audio.save(1, { ...audioDefaults, master: { enabled: true, volume: 100 }, idleSeconds: 10,
   giftThanks: { enabled: true, volume: 85 } }), undefined);
 assert.equal(presence.patch(1, { seatExpiryEnabled: false }), undefined);
@@ -108,6 +114,7 @@ let edge;
 let relay;
 try {
   await mkdir(folder, { recursive: true });
+  writeFileSync(stdout, '');
   viewer = await preview({ ...(baseline && { root: process.env.V2_PR30_APP }), preview: { port: viewerPort } });
   const userDir = join(temp, 'browser');
   edge = spawn(process.env.V2_BROWSER || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
@@ -206,6 +213,14 @@ try {
   const owner = gateway.owner;
   const source = (await read()).source;
   note('foreground', { source, gpu: (await read()).gpu, ...(await measure()) });
+  if (visualSmoke) {
+    const world = await overlay.evaluate(() => window.viewerReport.world);
+    assert.equal(world.tree.toLowerCase(), 'r18a');
+    assert.equal(world.density, 'lush');
+    assert.equal(world.pond, true);
+    await overlay.screenshot({ path: join(folder, profile + '-overlay.png') });
+    note('b9-visual-smoke', { world });
+  }
   const waitAck = () => wait(() => gateway.acknowledged === gateway.sequence, 'consumed ACK prefix');
   let message = 900;
   function packet(kind, id, fields = {}) {
@@ -220,6 +235,7 @@ try {
     return packet('gift', id, { giftId: '1', groupId: group, repeatCount: 1, repeatEnd: 1, gift: { type: 1 } });
   }
   const seatLatencies = [];
+  let audioMarks;
   async function joined(kind, id, expected, fields) {
     const at = packet(kind, id, fields);
     await wait(() => gateway.presenceApplied?.occupied === expected, 'seat ' + expected);
@@ -285,7 +301,7 @@ try {
     const bounds = await cdp.send('Browser.getWindowBounds', { windowId: overlayWindow.windowId });
     assert.equal(bounds.bounds.windowState, 'minimized');
     assert((await measure()).rms > .0001);
-    note('native-minimize', { state: bounds.bounds.windowState, ...(await measure()) });
+    note('native-minimize', { nativeWindowState: bounds.bounds.windowState, ...(await measure()) });
     await cdp.send('Browser.setWindowBounds', { windowId: overlayWindow.windowId, bounds: { windowState: 'normal' } });
     await popup.close();
 
@@ -318,12 +334,20 @@ try {
     gift(11);
     await wait(async () => (await read()).marks.some(mark => mark.event === 'voice-start' && mark.seat === 'seat-1'), 'visible Gift Camera and approved voice');
     await wait(async () => (await read()).marks.some(mark => mark.event === 'voice-end'), 'audible voice ends');
-    const statesBefore = await overlay.evaluate(() => window.pcmTap.states.length);
-    await overlay.evaluate(() => window.pcmTap.context.suspend());
-    await wait(async () => (await measure())?.rms > .0001, 'recover genuinely suspended Web Audio context');
-    const states = await overlay.evaluate(n => window.pcmTap.states.slice(n), statesBefore);
-    assert(states.includes('suspended') && states.includes('running'));
-    note('soak-complete', { soakElapsed, maxGap, seenOffscreenChimes: seenGifts.size, states });
+    const interruption = await overlay.evaluate(async () => {
+      const { context, states } = window.pcmTap;
+      const offset = states.length;
+      await context.suspend();
+      return { offset, state: context.state };
+    });
+    assert.equal(interruption.state, 'suspended');
+    const recovered = await wait(async () => {
+      const pcm = await measure();
+      return pcm.state === 'running' && pcm.rms > .0001 && pcm;
+    }, 'recover genuinely suspended Web Audio context');
+    const states = await overlay.evaluate(n => window.pcmTap.states.slice(n), interruption.offset);
+    note('soak-complete', { soakElapsed, maxGap, seenOffscreenChimes: seenGifts.size,
+      suspendedState: interruption.state, states, recovered });
 
     const duplicate = await context.newPage();
     await duplicate.goto(origin + '/overlay/');
@@ -335,6 +359,7 @@ try {
     await wait(() => gateway.audioApplied?.state === 'DISCONNECTED', 'disconnected audio state');
     await wait(async () => (await measure())?.rms === 0, 'disconnected PCM silence');
     note('disconnect-silent', await measure());
+    audioMarks = (await read()).marks;
     const encoded = await overlay.evaluate(() => window.pcmTap.finish());
     await writeFile(join(folder, profile + '-output.webm'), Buffer.from(encoded, 'base64'));
     await duplicate.close();
@@ -350,6 +375,7 @@ try {
   }
   assert.deepEqual(errors, []);
   const out = { profile, baseline, source, browser: browser.version(), seatLatencies, trace,
+    audioMarks,
     diagnostics: gateway.statusSnapshot().presenceDiagnostics };
   await writeFile(join(folder, (baseline ? 'baseline-' : '') + profile + '.json'), JSON.stringify(out, null, 2) + '\n');
 } finally {
