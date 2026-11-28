@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { spawn } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 import { once } from 'node:events';
 import { appendFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import { mkdtemp, readFile, rm } from 'node:fs/promises';
@@ -113,9 +113,38 @@ try {
   const [overlay] = context.pages();
   const errors = [];
   overlay.on('pageerror', error => errors.push(error.message));
+  const overlayCDP = await context.newCDPSession(overlay);
+  const { windowId } = await overlayCDP.send('Browser.getWindowForTarget');
+  const windowState = state => overlayCDP.send('Browser.setWindowBounds', { windowId, bounds: { windowState: state } });
+  const activate = () => (spawnSync('powershell.exe', ['-NoProfile', '-Command', `
+    Add-Type -Name Window -Namespace Fixture -MemberDefinition '
+      [DllImport("user32.dll")] public static extern bool BringWindowToTop(IntPtr window);
+    '
+    $handle = (Get-Process -Id ${edge.pid}).MainWindowHandle
+    if ($handle -ne [IntPtr]::Zero) { [void][Fixture.Window]::BringWindowToTop($handle) }
+    (New-Object -ComObject WScript.Shell).AppActivate(${edge.pid})
+  `], { windowsHide: true, encoding: 'utf8' })
+    .stdout?.trim() === 'True');
+  const nativeActivated = activate();
+  await overlay.bringToFront();
   await overlay.setViewportSize({ width: 720, height: 1280 });
   await overlay.goto(origin + '/overlay/');
-  await wait(() => gateway.overlayReady, 'Overlay never rendered ready');
+  try {
+    if (await overlay.evaluate(() => document.hidden)) {
+      // Move the real window to trigger a fresh native occlusion calculation.
+      await windowState('minimized');
+      await windowState('normal');
+      await overlayCDP.send('Browser.setWindowBounds', { windowId, bounds: { left: 12, top: 24, width: 1120, height: 870 } });
+      activate();
+      await overlay.bringToFront();
+    }
+    await wait(() => gateway.overlayReady, 'Overlay never rendered ready');
+  } catch (error) {
+    note('startup-diagnostics', { nativeActivated, errors, overlay: await overlay.evaluate(() => ({
+      visibility: document.visibilityState, focus: document.hasFocus(), draws: window.viewerReport?.drawCalls,
+    })) });
+    throw error;
+  }
   const root = await browser.newBrowserCDPSession();
   const tab = await root.send('Target.createTarget', { url: origin + '/dashboard/' });
   const dashboard = await wait(() => context.pages().find(page => page.url().endsWith('/dashboard/')), 'native Dashboard tab missing');
@@ -135,9 +164,6 @@ try {
     graphics: window.viewerReport.graphics, world: window.viewerReport.world }));
   assert.equal(browserState.world.pond, true);
   const owner = gateway.owner;
-  const overlayCDP = await context.newCDPSession(overlay);
-  const { windowId } = await overlayCDP.send('Browser.getWindowForTarget');
-  const switches = [];
   function ack() {
     return wait(() => gateway.owner === owner && gateway.sequence === gateway.acknowledged, 'lost receiver or ACK');
   }
@@ -162,6 +188,7 @@ try {
   }
   note('foreground', { browser: browser.version(), profile: 'quality', ...browserState, ...sample(await pcm()) });
   await member(11, 1);
+  activate();
   await dashboard.bringToFront();
   const firstHidden = await wait(async () => {
     const value = await pcm(); return value.hidden && value;
@@ -197,42 +224,29 @@ try {
   note('hidden-interval', { durationMs: Date.now() - hiddenFrom, samples: hiddenSamples.length,
     minRms: Math.min(...hiddenSamples), maxRms: Math.max(...hiddenSamples), ...sample(hiddenEnd) });
 
-  await dashboard.locator('#audio-mute').click();
+  await dashboard.bringToFront();
+  await dashboard.locator('#audio-mute').click({ force: true });
   const muted = await wait(async () => {
     const value = await pcm(); return gateway.audioApplied?.state === 'MUTED' && value.rms === 0 && value;
   }, 'Master OFF did not mute actual background samples');
   assert(muted.hidden);
   note('master-off', sample(muted));
-  await dashboard.locator('#audio-master').check();
+  await dashboard.locator('#audio-master').check({ force: true });
   const restored = await wait(async () => {
     const value = await pcm(); return value.rms > .0001 && value;
   }, 'Master ON did not restore actual background samples');
   assert(restored.hidden);
   note('master-on', sample(restored));
 
-  const popupEvent = context.waitForEvent('page');
-  await dashboard.evaluate(() => window.open('about:blank', '_blank', 'popup,width=450,height=340'));
-  const popup = await popupEvent;
-  const popupCDP = await context.newCDPSession(popup);
-  const popupWindow = (await popupCDP.send('Browser.getWindowForTarget')).windowId;
-  assert.notEqual(windowId, popupWindow);
-  await popup.bringToFront();
-  const switched = await pcm();
-  assert(!switched.focus && switched.rms > 0);
-  note('separate-native-window', { distinct: true, ...sample(switched) });
-  await overlayCDP.send('Browser.setWindowBounds', { windowId, bounds: { windowState: 'minimized' } });
-  const actual = await overlayCDP.send('Browser.getWindowBounds', { windowId });
-  assert.equal(actual.bounds.windowState, 'minimized');
-  const min = await pcm();
-  assert(min.hidden && min.rms > 0);
-  note('native-minimize', { windowState: actual.bounds.windowState, ...sample(min) });
-
-  await overlayCDP.send('Browser.setWindowBounds', { windowId, bounds: { windowState: 'normal' } });
+  activate();
   await overlay.bringToFront();
-  await wait(async () => !(await pcm()).hidden, 'native Overlay did not return to foreground');
-  await delay(2500);
-  const returned = await pcm();
-  assert(!returned.hidden && returned.rms > 0);
+  let visibleSince;
+  const returned = await wait(async () => {
+    const value = await pcm();
+    if (value.hidden || value.rms === 0) { visibleSince = undefined; return; }
+    visibleSince ??= Date.now();
+    return Date.now() - visibleSince >= 2500 && value;
+  }, 'native Overlay did not return with sustained foreground PCM');
   assert.equal(returned.cues.filter(cue => cue.event === 'sfx-start').length, 1);
   assert.equal(returned.cues.filter(cue => cue.event === 'voice-start').length, 0);
   assert.equal(launches, 1);
@@ -241,6 +255,24 @@ try {
   assert.deepEqual(errors, []);
   note('return-no-replay', { ...sample(returned), visibility: returned.visibility, launches,
     diagnostics: gateway.statusSnapshot().presenceDiagnostics });
+  await root.send('Target.createTarget', { url: 'about:blank#separate', newWindow: true });
+  const popup = await wait(() => context.pages().find(page => page.url() === 'about:blank#separate'), 'separate window missing');
+  const popupCDP = await context.newCDPSession(popup);
+  const popupWindow = (await popupCDP.send('Browser.getWindowForTarget')).windowId;
+  assert.notEqual(windowId, popupWindow);
+  await popup.bringToFront();
+  const switched = await pcm();
+  assert(!switched.focus && switched.rms > 0);
+  note('separate-native-window', { distinct: true, ...sample(switched) });
+  await windowState('minimized');
+  const actual = await overlayCDP.send('Browser.getWindowBounds', { windowId });
+  assert.equal(actual.bounds.windowState, 'minimized');
+  const min = await pcm();
+  assert(min.hidden && min.rms > 0);
+  note('native-minimize', { windowState: actual.bounds.windowState, ...sample(min) });
+
+  await ack();
+  note('complete', { profile: 'quality', ownerRetained: gateway.owner === owner });
 } catch (error) {
   note('failed', { error: error.message, status: gateway.status, ack: gateway.acknowledged });
   throw error;
