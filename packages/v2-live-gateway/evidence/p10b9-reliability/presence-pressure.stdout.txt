@@ -1,0 +1,2 @@
+{"version":"baseline","beforeDrain":224,"newIdentityAcceptedAtSaturation":false,"newIdentityDeliveredOrRetried":false,"acknowledged":224}
+{"version":"candidate","beforeDrain":193,"newIdentityAcceptedAtSaturation":true,"newIdentityDeliveredOrRetried":true,"acknowledged":193,"flow":{"mapped":232,"dedup":1,"queued":192,"coalesced":0,"pressure":39,"throttled":0,"sessionDrop":0,"overflow":0,"invalid":0,"entries":193,"consumed":193,"abandoned":0}}

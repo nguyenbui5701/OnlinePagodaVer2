@@ -62,6 +62,7 @@ Fixture dùng bản build, Chromium Edge native, các sự kiện giả lập c�
 # Từ packages/v2-live-gateway
 npm.cmd test
 # Từ packages/v2-events
+npm.cmd ci
 npm.cmd test
 npm.cmd run build
 # Từ packages/v2-voice
@@ -77,4 +78,30 @@ node scripts/evidence-live-reliability.mjs
 
 Fixture dùng cổng preview test 5196 và một cổng Gateway tạm, giữ nguyên Origin 5189 và Host 5203 khi gửi yêu cầu. Có thể đặt `V2_FIXTURE_VIEWER_PORT` nếu 5196 bận. Log và âm thanh ghi vào [thư mục bằng chứng](evidence/p10b9-reliability/).
 
+Để tái hiện baseline âm thanh, tạo worktree detached ở SHA PR #30 nêu trên, stage và build Viewer trong worktree đó. Từ `apps/v2-viewer` của nhánh 26A, đặt `V2_PR30_APP` thành đường dẫn tuyệt đối đến `apps/v2-viewer` đã build của baseline, rồi chạy `node scripts/evidence-live-reliability.mjs --baseline`.
+
 Fixture kiểm tra trạng thái hiển thị native của tab/cửa sổ, bỏ lệnh giả lập focus do Playwright mặc định gửi và xác nhận cửa sổ được minimize bằng CDP. Trong profile Edge tạm của fixture, cờ `CalculateNativeWinOcclusion` được tắt để loại ảnh hưởng của các tiến trình tự động hóa khác trên desktop. Các lần chạy ứng dụng và các file cấu hình triển khai dùng thiết lập trình duyệt bình thường.
+
+## Biên bản SA
+
+Execution SHA `76d26f863bfe04319c08f9475b890f65a56a0a0e`. 161 test qua gồm Gateway 27, Event Engine 22, Voice 8 và Viewer 104. Build Event Engine và Viewer exit 0. Các commit sau execution SHA bổ sung runner và bằng chứng. [Regression và build](evidence/p10b9-reliability/regression.log.txt)
+
+| Edge native 158.0.4370.45 | ECO | QUALITY |
+| --- | ---: | ---: |
+| Soak đổi foreground/background | 305,207 giây | 305,135 giây |
+| Khoảng từ sự kiện đến ACK dài nhất trong các đoạn soak | 607 ms | 604 ms |
+| Ba lượt từ callback định danh đến ghế + ACK | 355 / 569 / 605 ms | 288 / 533 / 572 ms |
+| Member thứ tư hiện trong danh sách chờ | 608 ms | 605 ms |
+| Chuông quà không gắn ghế được ghi nhận | 11 | 11 |
+| RMS nhỏ nhất tại các điểm đo hidden trong soak | 0,000894 | 0,000654 |
+| WebM giải mã bằng FFmpeg | 331,44 giây | 333,18 giây |
+
+Join-to-seat với ghế trống đạt p50 533 ms, p95 605 ms theo nearest rank trên 6 lượt giả lập. QUALITY đối soát đủ 32 callback qua Worker/Gateway và 34 entry đã xử lý và ACK, gồm cả session open/close. ECO ngắn đối soát 7 callback và 9 entry, ECO dài có ACK đến entry 32 trong soak. Không thấy thất thoát nội bộ trong workload đối soát. Trường hợp overload có lý do và số drop riêng trong bài test áp lực. [Kiểm tra PCM và đối soát](evidence/p10b9-reliability/pcm-verification.json)
+
+Cả hai profile đo PCM khác 0 khi chuyển Dashboard, tab khác, cửa sổ riêng và khi minimize. Master OFF và disconnect đưa PCM về 0. Master ON khôi phục được sau thao tác mở âm thanh ban đầu. Web Audio báo trạng thái suspended và trở lại running, có tín hiệu PCM. Giọng cảm ơn quay lại với Gift Camera khi Overlay đã hiện, và quà đã nhận khi ẩn không bị phát lại. Native smoke WebGL 720×1280 xác nhận R18a, lotus lush và cảnh quan B9 hoạt động. [ECO WebM](evidence/p10b9-reliability/eco-output.webm) · [QUALITY WebM](evidence/p10b9-reliability/quality-output.webm) · [ECO WebGL](evidence/p10b9-reliability/eco-overlay.png) · [QUALITY WebGL](evidence/p10b9-reliability/quality-overlay.png)
+
+Lượt ECO dài hoàn thành soak, thu âm và đo im lặng sau disconnect. CDP đóng target khi runner tạo tab mới sau đó, nên bằng chứng ECO về mở lại Overlay và thao tác mở tiếng lấy từ một lượt native ngắn độc lập trên cùng runtime. Lượt QUALITY hoàn thành toàn bộ. Hai lượt automation chạy song song trước đó cũng dừng sớm khi CDP đóng target. [ECO raw](evidence/p10b9-reliability/eco.stdout.log.txt) · [ECO lỗi mở lại](evidence/p10b9-reliability/eco-reopen.stderr.log.txt) · [ECO vòng đời riêng](evidence/p10b9-reliability/eco-lifecycle.json) · [QUALITY raw](evidence/p10b9-reliability/quality.json)
+
+Xác nhận với phòng TikTok do Owner kiểm soát, nghe trên hai máy Owner và kiểm tra vòng đời nguồn trong OBS/Studio vẫn chờ biên bản thực tế. Chi phí triển khai và kiểm thử 0 VND.
+
+**STOP `P10B9_LIVE_RELIABILITY_SA_REVIEW_REQUIRED`.**

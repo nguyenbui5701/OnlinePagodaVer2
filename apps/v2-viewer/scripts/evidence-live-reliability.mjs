@@ -236,6 +236,11 @@ try {
   }
   const seatLatencies = [];
   let audioMarks;
+  const receipt = async phase => {
+    const out = { profile, baseline, source, phase, browser: browser.version(), seatLatencies, trace,
+      audioMarks, diagnostics: gateway.statusSnapshot().presenceDiagnostics };
+    await writeFile(join(folder, (baseline ? 'baseline-' : '') + profile + '.json'), JSON.stringify(out, null, 2) + '\n');
+  };
   async function joined(kind, id, expected, fields) {
     const at = packet(kind, id, fields);
     await wait(() => gateway.presenceApplied?.occupied === expected, 'seat ' + expected);
@@ -362,10 +367,11 @@ try {
     audioMarks = (await read()).marks;
     const encoded = await overlay.evaluate(() => window.pcmTap.finish());
     await writeFile(join(folder, profile + '-output.webm'), Buffer.from(encoded, 'base64'));
+    await receipt('audio-recorded');
     await duplicate.close();
     await overlay.close();
     await wait(() => gateway.owner === undefined, 'pagehide releases receiver');
-    const restarted = await context.newPage();
+    const restarted = other;
     await restarted.goto(origin + '/overlay/');
     await wait(() => gateway.overlayReady, 'new load claims receiver');
     assert.notEqual(gateway.owner, owner);
@@ -374,10 +380,7 @@ try {
     await dashboard.screenshot({ path: join(folder, profile + '-dashboard.png'), fullPage: true });
   }
   assert.deepEqual(errors, []);
-  const out = { profile, baseline, source, browser: browser.version(), seatLatencies, trace,
-    audioMarks,
-    diagnostics: gateway.statusSnapshot().presenceDiagnostics };
-  await writeFile(join(folder, (baseline ? 'baseline-' : '') + profile + '.json'), JSON.stringify(out, null, 2) + '\n');
+  await receipt('complete');
 } finally {
   if (browser?.isConnected()) {
     const root = await browser.newBrowserCDPSession();
