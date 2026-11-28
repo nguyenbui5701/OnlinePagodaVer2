@@ -15,7 +15,7 @@ const receiverRoutes = new Set(['/attach', '/connect', '/poll', '/disconnect', '
 const operatorRoutes = new Set(['/status', '/settings', '/save-settings', '/save-audio', '/patch-audio', '/mute-audio', '/patch-presence', '/operate', '/apply']);
 
 export function createGatewayServer({ gateway = new Gateway(), settings = new SettingsStore(), audio = new AudioSettingsStore(), presence = new PresenceSettingsStore(), voice = createLiveVoice(), clock = Date.now } = {}) {
-  gateway.likeAdmission = presence.snapshot.settings.autoJoinLike;
+  gateway.configurePresence(presence.snapshot.settings);
   gateway.onVoiceGift = entry => voice.remember(entry, audio.snapshot.settings);
   gateway.onVoiceReset = () => voice.reset();
   let starts = 0;
@@ -96,7 +96,7 @@ export function createGatewayServer({ gateway = new Gateway(), settings = new Se
           const error = presence.patch(data.revision, data.patch);
           if (error === 'SETTINGS_CONFLICT') return reply(409, { reason: error, presence: presence.snapshot });
           if (error) return reply(error === 'INVALID_SETTINGS' ? 400 : 500, { reason: error });
-          gateway.likeAdmission = presence.snapshot.settings.autoJoinLike;
+          gateway.configurePresence(presence.snapshot.settings);
           return reply(200, presence.snapshot);
         }
         if (req.url === '/settings' && fields === 0) return reply(200, settings.snapshot);

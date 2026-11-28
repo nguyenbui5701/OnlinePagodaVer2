@@ -23,6 +23,10 @@ const faultAndFlush = code => { ingress.flush(); send({ type: 'fault', code }); 
 process.once('message', message => {
   const username = normalizeUsername(message?.username);
   if (message?.type !== 'connect' || !username) { send({ type: 'fault', code: 'INVALID_USERNAME' }); return; }
+  ingress.configurePresence(message.presence);
+  process.on('message', update => {
+    if (update?.type === 'presence') ingress.configurePresence(update.presence);
+  });
   try {
     const connection = new TikTokLiveConnection(username, options);
     const startedAt = Date.now();

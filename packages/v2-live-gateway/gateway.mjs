@@ -1,8 +1,9 @@
 import { launchWorker } from './transport.mjs';
 import { ingressKeys, newIngress } from './ingress.mjs';
+import { admissionSettings, admissionTier } from './admission.mjs';
 
 const queueLimit = 256;
-const lowPriorityLimit = queueLimit - 32;
+const caps = { activity: 192, like: 200, chat: 216, member: 224, giftFinal: queueLimit };
 const leaseMs = 15_000;
 const counts = () => ({ chat: 0, member: 0, like: 0, giftProgress: 0, giftFinal: 0, room: 0 });
 const faults = new Set(['ROOM_OFFLINE', 'ACCESS_DENIED', 'PAID_ROUTE', 'SIGNING_FAILED', 'RATE_LIMITED',
@@ -38,13 +39,14 @@ export class Gateway {
   attempts = 0;
   limited = false;
   priorityAt = new Map();
-  likeAdmission = false;
+  admission = admissionSettings();
   likeAt = new Map();
   observed = new Set();
   observedCapped = false;
   ingress = newIngress();
   ingressSnapshot = newIngress();
   ingressReports = 0;
+  ingressIncomplete = 0;
   flow = { mapped: 0, dedup: 0, queued: 0, coalesced: 0, pressure: 0, throttled: 0, sessionDrop: 0,
     overflow: 0, invalid: 0, entries: 0, consumed: 0, abandoned: 0 };
   presenceFlow;
@@ -81,11 +83,19 @@ export class Gateway {
       receiver: this.receiver ?? null, appliedRevision: this.appliedRevision, applyPending: this.applyPending,
       overlayReady: this.overlayReady, canApply: this.canApply, canConnect: this.overlayReady && this.canApply && !this.limited,
       canDisconnect: !!(this.online || this.stopWorker || this.retry),
-      presenceDiagnostics: { ingress: this.ingress, ingressReports: this.ingressReports, ...this.flow,
+      presenceDiagnostics: { ingress: this.ingress, ingressReports: this.ingressReports,
+        ingressIncomplete: this.ingressIncomplete, ...this.flow,
         observed: this.observed.size, observedCapped: this.observedCapped,
         offered: this.offered, acknowledged: this.acknowledged, pending: this.queue.length },
       presenceFlow: this.presenceFlow,
     };
+  }
+
+  configurePresence(settings) {
+    const next = admissionSettings(settings);
+    if (Object.keys(next).every(key => next[key] === this.admission[key])) return;
+    this.admission = next;
+    this.stopWorker?.configurePresence?.(next);
   }
 
   connect(client, username, receiver = 'legacy') {
@@ -112,15 +122,20 @@ export class Gateway {
       this.stopWorker = this.launch(username, value => {
         if (this.generation !== generation) return;
         if (value?.type === 'connected') this.connected(value.room, username);
-        else if (value?.type === 'fault') this.fail(faults.has(value.code) ? value.code : 'UNKNOWN', username);
+        else if (value?.type === 'fault') {
+          if (value.ingressIncomplete === true) this.ingressIncomplete++;
+          this.fail(faults.has(value.code) ? value.code : 'UNKNOWN', username);
+        }
         else if (value?.type === 'ingress') this.recordIngress(value.counts);
         else if (value?.type === 'event') {
           if (this.online) this.accept(value.event, username);
           else this.flow.sessionDrop++;
         }
       }, code => {
-        if (this.generation === generation) this.fail(code === 2 ? 'GIFT_DELIVERY_FAILED' : 'NETWORK', username);
-      });
+        if (this.generation !== generation) return;
+        if (code === 2) this.ingressIncomplete++;
+        this.fail(code === 2 ? 'GIFT_DELIVERY_FAILED' : 'NETWORK', username);
+      }, this.admission);
       this.deadline = setTimeout(() => this.fail('NETWORK', username), 30_000);
       this.deadline.unref();
     } catch {
@@ -166,8 +181,8 @@ export class Gateway {
   }
 
   accept(event, username) {
-    if (!event || typeof event.eventId !== 'string') return;
     this.flow.mapped++;
+    if (!event || typeof event.eventId !== 'string') { this.flow.invalid++; return; }
     if (this.seen.has(event.eventId)) { this.flow.dedup++; return; }
     const kind = event.type === 'gift' ? (event.phase === 'final' ? 'giftFinal' : 'giftProgress') : event.type;
     if (!Object.hasOwn(this.counters, kind)) { this.flow.invalid++; return; }
@@ -180,10 +195,10 @@ export class Gateway {
       else this.observedCapped = true;
     }
 
-    // Keep the final-gift reserve. Aggregate and repeated presence packets yield a separate reserve to identities.
+    // Reserve progressively for admission sources. Outstanding entries include the offered, unacknowledged prefix.
     const now = Date.now();
-    const identityLike = kind === 'like' && key && this.likeAdmission && now - (this.likeAt.get(key) ?? 0) >= 3000;
-    const aggregate = kind === 'room' || (kind === 'like' && !identityLike);
+    const tier = admissionTier(event, this.admission);
+    const identityLike = tier === 'like' && now - (this.likeAt.get(key) ?? 0) >= 3000;
     const interval = kind === 'like' && !identityLike ? 200 : 0;
     if (kind === 'room') {
       const unsent = this.queue.findLast(item => item.seq > this.offered && item.event.type === 'room' &&
@@ -195,10 +210,11 @@ export class Gateway {
         return;
       }
     }
-    const repeatsIdentity = key && kind !== 'giftProgress' && this.queue.length >= 192 &&
-      this.queue.some(entry => entry.seq > this.offered && entry.event.viewer?.userKey === key && entry.event.type !== 'gift');
-    if (kind !== 'giftFinal' && (this.queue.length >= lowPriorityLimit ||
-        (this.queue.length >= 192 && (aggregate || repeatsIdentity)))) {
+    const repeatsIdentity = this.queue.length >= caps.activity && tier !== 'activity' &&
+      this.queue.some(({ event: pending }) => pending.roomEpoch === this.roomEpoch &&
+        pending.connection === this.connection && pending.type === tier && pending.viewer?.userKey === key);
+    const priority = repeatsIdentity || (kind === 'like' && !identityLike) ? 'activity' : tier;
+    if (kind !== 'giftFinal' && this.queue.length >= caps[priority]) {
       this.flow.pressure++;
       this.dropped++;
       return;
@@ -208,7 +224,7 @@ export class Gateway {
       this.dropped++;
       return;
     }
-    if (this.queue.length >= queueLimit) { this.flow.overflow++; this.fail('GIFT_DELIVERY_FAILED', username); return; }
+    if (this.queue.length >= caps.giftFinal) { this.flow.overflow++; this.fail('GIFT_DELIVERY_FAILED', username); return; }
     if (interval) this.priorityAt.set(kind, now);
     if (identityLike) {
       if (this.likeAt.size >= 8192 && !this.likeAt.has(key)) this.likeAt.delete(this.likeAt.keys().next().value);

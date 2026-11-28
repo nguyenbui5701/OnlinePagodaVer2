@@ -78,7 +78,7 @@ test('drops under pressure are retryable after ACK, unique identities get reserv
     const like = (no, key) => ({ eventId: 'like:' + no, type: 'like', count: 1, viewer: { userKey: key, name: 'Synthetic' } });
     gateway.accept(like(1, 'new'), 'fixture');
     assert.equal(gateway.queue.at(-1).event.viewer, undefined);
-    gateway.likeAdmission = true;
+    gateway.configurePresence({ autoJoinMember: true, autoJoinChat: true, autoJoinLike: true });
     gateway.accept(like(2, 'new'), 'fixture');
     assert.equal(gateway.queue.at(-1).event.viewer.userKey, 'new');
     gateway.accept(like(3, 'new'), 'fixture');
