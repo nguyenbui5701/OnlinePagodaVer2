@@ -52,12 +52,14 @@ type Options = {
   sourceLost: () => void;
   receipt: () => { ack: number; failed: boolean };
   status: (state: ReceiverStatus) => void;
+  externalClock?: boolean;
   worldStatus?: () => WorldApplied | undefined;
   audioStatus?: () => AudioApplied | undefined;
+  presenceFlow?: () => number[] | undefined;
   presenceStatus?: () => PresenceApplied | undefined;
 };
 
-export function createLiveReceiver({ feed, sourceLost, receipt, status, audioStatus, presenceStatus, worldStatus }: Options) {
+export function createLiveReceiver({ feed, sourceLost, receipt, status, audioStatus, presenceStatus, presenceFlow, worldStatus, externalClock }: Options) {
   const client = Array.from(crypto.getRandomValues(new Uint8Array(16)), value => value.toString(16).padStart(2, '0')).join('');
   const abort = new AbortController();
   let timer: ReturnType<typeof setTimeout>;
@@ -70,6 +72,17 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status, audioSta
   let overlay = false;
   let rendererReady = false;
   let polling = false;
+  let nextPoll = Infinity;
+  function schedule(delay: number) {
+    if (externalClock && overlay) nextPoll = performance.now() + delay;
+    else timer = setTimeout(poll, delay);
+  }
+  function tick(now: number) {
+    if (now >= nextPoll && !polling) {
+      nextPoll = Infinity;
+      void poll();
+    }
+  }
 
   const request = (path: string, data = {}, keepalive = false) =>
     postGateway(path, { client, ...data }, abort.signal, keepalive);
@@ -88,7 +101,7 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status, audioSta
       }
       const { ack } = receipt();
       sentReady = rendererReady;
-      const data = decodeLivePoll(await (await request('/poll', overlay ? { ack, ready: sentReady, audio: audioStatus?.(), presence: presenceStatus?.(), world: worldStatus?.() } : { ack })).json(), ack);
+      const data = decodeLivePoll(await (await request('/poll', overlay ? { ack, ready: sentReady, audio: audioStatus?.(), presence: presenceStatus?.(), flow: presenceFlow?.(), world: worldStatus?.() } : { ack })).json(), ack);
       if (closed) return;
       uncertain ||= data.deliveryUncertain;
       if (!feed(data.entries)) {
@@ -123,7 +136,7 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status, audioSta
         'GIFT_DELIVERY_FAILED' : 'LOCAL_LINK_LOST', uncertain, terminal: true });
     } finally {
       polling = false;
-      if (watching && !closed) timer = setTimeout(poll, overlay && !linkRetries && sentReady !== rendererReady ? 0 : delay);
+      if (watching && !closed) schedule(overlay && !linkRetries && sentReady !== rendererReady ? 0 : delay);
     }
   }
 
@@ -132,7 +145,7 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status, audioSta
     rendererReady = ready;
     if (watching && !polling && !closed) {
       clearTimeout(timer);
-      timer = setTimeout(poll, 0);
+      schedule(0);
     }
   }
 
@@ -171,7 +184,7 @@ export function createLiveReceiver({ feed, sourceLost, receipt, status, audioSta
 
   window.addEventListener('pagehide', dispose, { once: true });
   window.addEventListener('pageshow', event => { if (event.persisted && closed) location.reload(); }, { once: true });
-  return { attach, setRendererReady, connect: (username: string) => claim('/connect', { username }),
+  return { attach, setRendererReady, tick, connect: (username: string) => claim('/connect', { username }),
     disconnect: () => request('/disconnect'),
     async voice(identity: LiveVoiceIdentity, signal: AbortSignal) {
       if (!overlay || !watching || closed || !rendererReady) throw new Error('voice-session');

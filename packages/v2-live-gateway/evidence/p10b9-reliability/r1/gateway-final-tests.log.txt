@@ -1,0 +1,49 @@
+b3e127e3a3618badaf30fd16d1802e8d55a4d174
+npm.cmd test (final Gateway assertions)
+
+> @online-pagoda/v2-live-gateway@0.1.0 test
+> node --test
+
+✔ maps modern provider shapes with sanitized display text and no avatar URLs (3.7603ms)
+✔ gift progress and final use a stable group with separate packet IDs (1.2774ms)
+✔ scopes reconnect, deduplicates gifts and publishes them to the Event Engine (5.1695ms)
+✔ backpressure prioritizes final gifts and makes hard overflow explicit (1.9081ms)
+✔ provider denial and rate limits stop attempts with allowlisted reasons (0.5331ms)
+✔ HTTP accepts token-free JSON only from the expected loopback Host and Viewer Origin (164.1001ms)
+✔ actual pinned connector loads in a real isolated worker without opening a room (516.8845ms)
+✔ unacknowledged finals persist across repeated polls and closing with only the consumed prefix reports uncertainty (0.5023ms)
+✔ a confirmed closing ACK drains the final; lease expiry still marks a pending final never offered (0.3839ms)
+✔ normal disconnect preserves degradation and keeps pending entries available for drain (0.3469ms)
+✔ R2 migrates legacy audio and commits independent patches with a priority mute fence (274.8571ms)
+✔ R2 priority mute remains in RAM and reports UNSAVED when persistence fails (10.2428ms)
+✔ R2 name provenance, cache isolation across same-name actors, expiry/reset and unsafe aliases (6.3907ms)
+✔ R2 mute aborts active and waiting synthesis, and provider refusal cools down without retry (1.1635ms)
+✔ settings allowlist, atomic save, conflict, reload and corrupt-file fallback (14.6885ms)
+✔ audio settings persist independently and corrupt data is muted (7.9501ms)
+✔ visual settings migrate the old file without changing its revision or accepting unknown fields (9.9285ms)
+✔ Overlay audio piggybacks a consumed ACK without changing visual revision or accepting a second receiver (152.179ms)
+✔ operator stays separate from receiver, and saved settings wait through LIVE and ACK drain (67.1796ms)
+✔ dashboard polling cannot exhaust the Overlay budget or take a legacy lease (230.4651ms)
+✔ presence patches persist separately and reject invalid, stale and corrupt settings (15.0822ms)
+✔ presence heartbeat is owner-only and bad metadata cannot interrupt ACK or alter audio/visual revisions (142.0797ms)
+✔ pinned protobuf encodes Like with lossless stable identity and leaves unsafe or missing identity aggregate-only (9.8815ms)
+✔ bounded worker leaves IPC room for identities, accounts filtered/overflow and fails closed on final saturation (11.1982ms)
+✔ identified Like flood (admission false) and repeated Chat leave an IPC lane for Member (15.0536ms)
+✔ Gateway Like admission false has a separate cap from new Member and Gift Final (18.1305ms)
+✔ identified Like flood (admission true) and repeated Chat leave an IPC lane for Member (10.8036ms)
+✔ Gateway Like admission true has a separate cap from new Member and Gift Final (12.0597ms)
+✔ offered Chat repeats cannot use admission reserve and disabled Chat cannot stand in for a Member (14.8275ms)
+✔ disabled Chat is activity at IPC and a failed handoff releases the same identity for retry (14.4984ms)
+✔ initial and changed policy reach the worker and terminal IPC advertises an incomplete receipt once (1.4362ms)
+✔ drops under pressure are retryable after ACK, unique identities get reserve, opted-in likes are rate limited (1.9938ms)
+✔ world status accepts only the failure codes and stages that match the applied tree (1.2793ms)
+✔ world status travels on owner poll and malformed telemetry leaves ACK, audio and presence intact (170.315ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 968.952
+exit=0

@@ -103,6 +103,9 @@ test('backpressure prioritizes final gifts and makes hard overflow explicit', ()
     receive({ type: 'connected', room });
     for (let i = 0; i < 500; i++) receive({ type: 'event', event: { type: 'chat', eventId: 'c:' + i } });
     assert(gateway.dropped > 0);
+    for (let i = 0; i < 40; i++) receive({ type: 'event',
+      event: { type: 'member', eventId: 'm:' + i, viewer: { userKey: 'viewer:' + i, name: 'Synthetic' } } });
+    assert.equal(gateway.queue.length, 224);
     for (let i = 0; i < 45; i++) receive({ type: 'event',
       event: { type: 'gift', phase: 'final', eventId: 'g:' + i } });
     assert.equal(gateway.status, 'DEGRADED');

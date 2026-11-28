@@ -1,0 +1,6 @@
+{"scenario":"identified Like IPC pressure while Like admission OFF","candidate":false,"baseline":"85c3e8ac9c02badd3faeee611564f84c9c08a013","beforeMember":240,"memberAccepted":false}
+{"scenario":"mixed","candidate":false,"eventAccepted":false,"pending":192,"pressure":1}
+{"scenario":"offered","candidate":false,"eventAccepted":true,"pending":193,"pressure":0}
+{"scenario":"identified Like IPC pressure while Like admission OFF","candidate":true,"baseline":"85c3e8ac9c02badd3faeee611564f84c9c08a013","beforeMember":208,"memberAccepted":true}
+{"scenario":"mixed","candidate":true,"eventAccepted":true,"pending":193,"pressure":0}
+{"scenario":"offered","candidate":true,"eventAccepted":false,"pending":192,"pressure":1}

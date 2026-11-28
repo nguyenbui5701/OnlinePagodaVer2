@@ -1,0 +1,8 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+browserContext.newPage: Target page, context or browser has been closed
+    at D:\Vibecode\onlPagodaV2\OnlinePagodaVer2\.p10b9-reliability\apps\v2-viewer\scripts\evidence-live-reliability.mjs:368:37
+
+Node.js v24.16.0

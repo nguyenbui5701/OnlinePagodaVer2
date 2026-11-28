@@ -1,0 +1,434 @@
+{
+  "profile": "eco",
+  "baseline": false,
+  "source": "76d26f863bfe04319c08f9475b890f65a56a0a0e",
+  "phase": "complete",
+  "browser": "158.0.4370.45",
+  "seatLatencies": [
+    392,
+    529,
+    604
+  ],
+  "trace": [
+    {
+      "event": "foreground",
+      "sinceMs": 5081,
+      "source": "76d26f863bfe04319c08f9475b890f65a56a0a0e",
+      "gpu": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "rms": 0.0004580564939440682,
+      "peak": 0.0013257861137390137,
+      "state": "running",
+      "hidden": false,
+      "focus": true,
+      "audioTime": 0.072
+    },
+    {
+      "event": "b9-visual-smoke",
+      "sinceMs": 5347,
+      "world": {
+        "requestedTree": "R18A",
+        "tree": "R18A",
+        "requestedDensity": "lush",
+        "density": "lush",
+        "fallback": false,
+        "failures": [],
+        "pond": true
+      }
+    },
+    {
+      "event": "initial-switch",
+      "sinceMs": 5779,
+      "hiddenMode": "tab",
+      "overlayWindow": {
+        "windowId": 797985592,
+        "bounds": {
+          "left": 10,
+          "top": 10,
+          "width": 1001,
+          "height": 882,
+          "windowState": "normal"
+        }
+      },
+      "dashboardWindow": {
+        "windowId": 797985592,
+        "bounds": {
+          "left": 10,
+          "top": 10,
+          "width": 1001,
+          "height": 882,
+          "windowState": "normal"
+        }
+      },
+      "overlay": {
+        "rms": 0.004080868228456065,
+        "peak": 0.013186335563659668,
+        "state": "running",
+        "hidden": true,
+        "focus": false,
+        "audioTime": 0.76
+      },
+      "dashboard": [
+        false,
+        true
+      ],
+      "visibility": [
+        {
+          "at": 1795848304688,
+          "state": "visible",
+          "focus": false
+        },
+        {
+          "at": 1795848307837,
+          "state": "visible",
+          "focus": false
+        },
+        {
+          "at": 1795848307843,
+          "state": "visible",
+          "focus": true
+        },
+        {
+          "at": 1795848307843,
+          "state": "visible",
+          "focus": true
+        },
+        {
+          "at": 1795848309499,
+          "state": "visible",
+          "focus": false
+        },
+        {
+          "at": 1795848309501,
+          "state": "hidden",
+          "focus": false
+        }
+      ]
+    },
+    {
+      "event": "hidden-over-15s",
+      "sinceMs": 25922,
+      "hiddenMode": "tab",
+      "waitingMs": 605,
+      "seatLatencies": [
+        392,
+        529,
+        604
+      ],
+      "ack": 6,
+      "rms": 0.0035283992843932496,
+      "peak": 0.016909003257751465,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 20.912
+    },
+    {
+      "event": "master-off-hidden",
+      "sinceMs": 26412,
+      "rms": 0,
+      "peak": 0,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 21.4
+    },
+    {
+      "event": "master-on-hidden",
+      "sinceMs": 26818,
+      "rms": 0.00018517073563005686,
+      "peak": 0.0008780956268310547,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 21.810666666666666
+    },
+    {
+      "event": "other-tab",
+      "sinceMs": 26915,
+      "rms": 0.0005934265783278108,
+      "peak": 0.0016881227493286133,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 21.901333333333334
+    },
+    {
+      "event": "separate-window",
+      "sinceMs": 27039,
+      "distinct": true,
+      "rms": 0.001209946241347132,
+      "peak": 0.0033672451972961426,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 22.032
+    },
+    {
+      "event": "native-minimize",
+      "sinceMs": 27066,
+      "nativeWindowState": "minimized",
+      "rms": 0.001015647890900011,
+      "peak": 0.002941131591796875,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 22.061333333333334
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 36244,
+      "segment": 1,
+      "ack": 7,
+      "state": "running",
+      "tick": 34013,
+      "rms": 0.001710924131263391,
+      "peak": 0.00469660758972168,
+      "hidden": false,
+      "focus": true,
+      "audioTime": 31.232
+    },
+    {
+      "event": "soak-complete",
+      "sinceMs": 40242,
+      "soakElapsed": 9145,
+      "maxGap": 461,
+      "seenOffscreenChimes": 1,
+      "suspendedState": "suspended",
+      "states": [
+        "suspended",
+        "running"
+      ],
+      "recovered": {
+        "rms": 0.0004140055058336603,
+        "peak": 0.001347184181213379,
+        "state": "running",
+        "hidden": false,
+        "focus": true,
+        "audioTime": 35.16
+      }
+    },
+    {
+      "event": "disconnect-silent",
+      "sinceMs": 41646,
+      "rms": 0,
+      "peak": 0,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 36.57066666666667
+    },
+    {
+      "event": "close-reload",
+      "sinceMs": 57986,
+      "oldOwnerReleased": true,
+      "gestureRequired": true
+    }
+  ],
+  "audioMarks": [
+    {
+      "event": "sfx-start",
+      "wallMs": 7656,
+      "sceneMs": 6314,
+      "contextSec": 3.501333333333333,
+      "room": "demo-1795848303757",
+      "request": "demo-1795848303757-gift-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 8312.800000000745,
+      "sceneMs": 6913,
+      "contextSec": 4.16,
+      "room": "demo-1795848303757",
+      "request": "demo-1795848303757-gift-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 25053.39999999851,
+      "sceneMs": 23714,
+      "contextSec": 20.901333333333334,
+      "variant": "lotus-bell-3",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-cut",
+      "wallMs": 25258.199999999255,
+      "sceneMs": 23913,
+      "contextSec": 21.101333333333333,
+      "variant": "lotus-bell-3",
+      "seconds": 0,
+      "reason": "output-off",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 37053.39999999851,
+      "sceneMs": 35714,
+      "contextSec": 32.90133333333333,
+      "room": "demo-1795848303757",
+      "request": "demo-1795848303757-gift-2",
+      "actor": "demo-1795848303757-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 4,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "voice-start",
+      "wallMs": 37053.699999999255,
+      "sceneMs": 35714,
+      "contextSec": 32.90133333333333,
+      "room": "demo-1795848303757",
+      "request": "demo-1795848303757-gift-2",
+      "actor": "demo-1795848303757-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 4,
+      "variant": "generic",
+      "seconds": 2.1,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 37712.39999999851,
+      "sceneMs": 36315,
+      "contextSec": 33.56,
+      "room": "demo-1795848303757",
+      "request": "demo-1795848303757-gift-2",
+      "actor": "demo-1795848303757-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 4,
+      "variant": "generic",
+      "ambienceGain": 0.2800000011920929,
+      "sfxGain": 0.2160000056028366,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "voice-end",
+      "wallMs": 39162.800000000745,
+      "sceneMs": 37815,
+      "contextSec": 35.010666666666665,
+      "room": "demo-1795848303757",
+      "request": "demo-1795848303757-gift-2",
+      "actor": "demo-1795848303757-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 4,
+      "variant": "generic",
+      "ambienceGain": 0.2800000011920929,
+      "sfxGain": 0.2160000056028366,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    }
+  ],
+  "diagnostics": {
+    "ingress": {
+      "chat": 1,
+      "member": 3,
+      "like": 1,
+      "roomUser": 0,
+      "gift": 2,
+      "noRoom": 0,
+      "wrongRoom": 0,
+      "time": 0,
+      "schema": 0,
+      "identity": 0,
+      "message": 0,
+      "mapped": 7,
+      "handoff": 7,
+      "ipcPressure": 0,
+      "ipcError": 0
+    },
+    "ingressReports": 8,
+    "mapped": 7,
+    "dedup": 0,
+    "queued": 7,
+    "coalesced": 0,
+    "pressure": 0,
+    "throttled": 0,
+    "sessionDrop": 0,
+    "overflow": 0,
+    "invalid": 0,
+    "entries": 9,
+    "consumed": 9,
+    "abandoned": 0,
+    "observed": 0,
+    "observedCapped": false,
+    "offered": 0,
+    "acknowledged": 0,
+    "pending": 0
+  }
+}

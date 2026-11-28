@@ -11,6 +11,7 @@ export type CueRecord = {
   revision: number;
   disposition: string;
   seatId?: string;
+  staleAudio?: boolean;
   liveGift?: { seq: number; roomEpoch: number; connection: number };
 };
 
@@ -80,7 +81,7 @@ export class AudioDirector {
     this.cut(reason);
   }
 
-  frame(state: Snapshot, epoch: number, records: readonly CueRecord[], binding?: Binding) {
+  frame(state: Snapshot, epoch: number, records: readonly CueRecord[], binding?: Binding, background = false) {
     if (state.revision < this.revision) return;
     this.revision = state.revision;
     if (this.room !== state.roomSessionId || this.epoch !== epoch) {
@@ -98,7 +99,7 @@ export class AudioDirector {
     for (const record of records) {
       if (record.sequence <= this.sequence) continue;
       this.sequence = record.sequence;
-      if (record.room === this.room && record.epoch === epoch && state.connected) this.accept(record);
+      if (record.room === this.room && record.epoch === epoch && state.connected) this.accept(record, background);
     }
     if (!this.enabled || !state.connected) return;
 
@@ -164,7 +165,7 @@ export class AudioDirector {
     this.pending.clear();
   }
 
-  private accept(record: CueRecord) {
+  private accept(record: CueRecord, background: boolean) {
     const { effect } = record;
     if (effect.type === 'focusStarted') {
       if (effect.intent.roomSessionId === record.room) this.focus = {
@@ -181,6 +182,7 @@ export class AudioDirector {
     }
     if (effect.type !== 'giftFx' || record.disposition !== 'accepted' || effect.confirmation !== 'confirmed') return;
     if (effect.dedicatedFocus !== (effect.anchor === 'giftFx')) return;
+    if (record.staleAudio) { this.count('overdue-delivery'); return; }
     if (!this.enabled) { this.count('disabled'); return; }
     if (effect.atMs <= this.watermark) { this.count('before-enable'); return; }
     const request = effect.requestId;
@@ -210,6 +212,12 @@ export class AudioDirector {
     if (this.pending.size >= maxPending) { this.count('queue-capacity'); return; }
     const cue: Cue = { room: record.room, request, binding, sequence: record.sequence, identity,
       count: effect.giftCount, sound, liveIdentity, expires: effect.atMs + (binding ? pendingTTL : overlayTTL) };
+    if (this.live && background && binding) {
+      // Off-screen gifts get the gift sound without announcing a focus the renderer never showed.
+      this.sink.sfx({ ...cue, binding: undefined, liveIdentity: undefined });
+      this.count('offscreen-gift');
+      return;
+    }
     this.pending.set(request, cue);
     this.sink.prepare?.(cue);
   }

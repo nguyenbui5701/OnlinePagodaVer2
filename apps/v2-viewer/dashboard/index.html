@@ -33,10 +33,13 @@
         <h2 id="presence-title">Người xem &amp; thời gian ngồi</h2>
         <p id="presence-state" role="status"></p>
         <p id="presence-counts" role="status"></p>
+        <p id="presence-ingress" class="muted"></p>
+        <p id="presence-flow" class="muted"></p>
         <p id="presence-warning" class="warning" hidden>Tệp cấu hình chỗ ngồi bị lỗi. Đang dùng mặc định.</p>
         <fieldset id="presence-fields" disabled>
           <label><input id="presence-autoJoinMember" type="checkbox" /> Tự xếp ghế khi người xem vào LIVE</label>
           <label><input id="presence-autoJoinChat" type="checkbox" /> Tự xếp ghế khi người xem bình luận</label>
+          <label><input id="presence-autoJoinLike" type="checkbox" /> Thử xếp ghế khi nhận Like có định danh</label>
           <label><input id="presence-seatExpiryEnabled" type="checkbox" /> Giới hạn thời gian ngồi khi không hoạt động</label>
           <label class="idle-gap">Thời gian không hoạt động (6–1.800 giây)
             <input id="presence-idleSeconds" type="number" min="6" max="1800" step="1" aria-describedby="presence-invalid" />

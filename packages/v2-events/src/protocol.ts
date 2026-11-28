@@ -35,7 +35,8 @@ type Packet = Scope & { eventId: string; atMs: number };
 export type DemoEvent =
   | (Packet & { type: 'chat'; viewer: DemoViewer; chatText?: string })
   | (Packet & { type: 'member'; viewer: DemoViewer })
-  | (Packet & { type: 'like' | 'room'; count: number })
+  | (Packet & { type: 'like'; count: number; viewer?: DemoViewer })
+  | (Packet & { type: 'room'; count: number })
   | (Packet & {
       type: 'gift';
       viewer: DemoViewer;

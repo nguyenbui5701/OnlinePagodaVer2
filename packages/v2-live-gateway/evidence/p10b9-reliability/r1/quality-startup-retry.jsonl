@@ -1,0 +1,2 @@
+{"event":"startup-diagnostics","sinceMs":16741,"nativeActivated":true,"errors":[],"overlay":{"visibility":"hidden","focus":true}}
+{"event":"failed","sinceMs":16746,"error":"Overlay never rendered ready","status":"OFFLINE","ack":0}

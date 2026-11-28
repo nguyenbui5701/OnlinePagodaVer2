@@ -1,0 +1,1598 @@
+{
+  "profile": "quality",
+  "baseline": false,
+  "source": "76d26f863bfe04319c08f9475b890f65a56a0a0e",
+  "browser": "158.0.4370.45",
+  "seatLatencies": [
+    288,
+    533,
+    572
+  ],
+  "trace": [
+    {
+      "event": "foreground",
+      "sinceMs": 9521,
+      "source": "76d26f863bfe04319c08f9475b890f65a56a0a0e",
+      "gpu": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "rms": 0.0004393760423604772,
+      "peak": 0.0013257861137390137,
+      "state": "running",
+      "hidden": false,
+      "focus": true,
+      "audioTime": 0.08
+    },
+    {
+      "event": "b9-visual-smoke",
+      "sinceMs": 9964,
+      "world": {
+        "requestedTree": "R18A",
+        "tree": "R18A",
+        "requestedDensity": "lush",
+        "density": "lush",
+        "fallback": false,
+        "failures": [],
+        "pond": true
+      }
+    },
+    {
+      "event": "initial-switch",
+      "sinceMs": 10294,
+      "hiddenMode": "tab",
+      "overlayWindow": {
+        "windowId": 1794797789,
+        "bounds": {
+          "left": 10,
+          "top": 10,
+          "width": 1001,
+          "height": 882,
+          "windowState": "normal"
+        }
+      },
+      "dashboardWindow": {
+        "windowId": 1794797789,
+        "bounds": {
+          "left": 10,
+          "top": 10,
+          "width": 1001,
+          "height": 882,
+          "windowState": "normal"
+        }
+      },
+      "overlay": {
+        "rms": 0.00480804099042062,
+        "peak": 0.014695167541503906,
+        "state": "running",
+        "hidden": true,
+        "focus": false,
+        "audioTime": 0.8506666666666667
+      },
+      "dashboard": [
+        false,
+        true
+      ],
+      "visibility": [
+        {
+          "at": 1795847463585,
+          "state": "visible",
+          "focus": false
+        },
+        {
+          "at": 1795847470809,
+          "state": "visible",
+          "focus": false
+        },
+        {
+          "at": 1795847470822,
+          "state": "visible",
+          "focus": true
+        },
+        {
+          "at": 1795847470822,
+          "state": "visible",
+          "focus": true
+        },
+        {
+          "at": 1795847472489,
+          "state": "visible",
+          "focus": false
+        },
+        {
+          "at": 1795847472492,
+          "state": "hidden",
+          "focus": false
+        }
+      ]
+    },
+    {
+      "event": "hidden-over-15s",
+      "sinceMs": 30343,
+      "hiddenMode": "tab",
+      "waitingMs": 605,
+      "seatLatencies": [
+        288,
+        533,
+        572
+      ],
+      "ack": 6,
+      "rms": 0.0025895414834438794,
+      "peak": 0.012483835220336914,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 20.901333333333334
+    },
+    {
+      "event": "master-off-hidden",
+      "sinceMs": 30943,
+      "rms": 0,
+      "peak": 0,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 21.501333333333335
+    },
+    {
+      "event": "master-on-hidden",
+      "sinceMs": 31353,
+      "rms": 0.00021127611796915546,
+      "peak": 0.0009920597076416016,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 21.912
+    },
+    {
+      "event": "other-tab",
+      "sinceMs": 31475,
+      "rms": 0.0007130650150656404,
+      "peak": 0.0020596981048583984,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 22.032
+    },
+    {
+      "event": "separate-window",
+      "sinceMs": 31637,
+      "distinct": true,
+      "rms": 0.0012719080949584875,
+      "peak": 0.004140734672546387,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 22.2
+    },
+    {
+      "event": "native-minimize",
+      "sinceMs": 31663,
+      "nativeWindowState": "minimized",
+      "rms": 0.001459129098702748,
+      "peak": 0.003512442111968994,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 22.221333333333334
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 50974,
+      "segment": 1,
+      "ack": 7,
+      "state": "running",
+      "tick": 45190,
+      "rms": 0.006431777981943602,
+      "peak": 0.018864810466766357,
+      "hidden": true,
+      "focus": false,
+      "audioTime": 41.53066666666667
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 70412,
+      "segment": 2,
+      "ack": 9,
+      "state": "running",
+      "tick": 64590,
+      "rms": 0.000654212676710457,
+      "peak": 0.0016938447952270508,
+      "hidden": true,
+      "focus": false,
+      "audioTime": 60.970666666666666
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 89804,
+      "segment": 3,
+      "ack": 11,
+      "state": "running",
+      "tick": 83989,
+      "rms": 0.006474079573187366,
+      "peak": 0.017946720123291016,
+      "hidden": true,
+      "focus": false,
+      "audioTime": 80.36
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 109110,
+      "segment": 4,
+      "ack": 12,
+      "state": "running",
+      "tick": 103290,
+      "rms": 0.0011738365337165793,
+      "peak": 0.003336489200592041,
+      "hidden": false,
+      "focus": true,
+      "audioTime": 99.66133333333333
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 128632,
+      "segment": 5,
+      "ack": 14,
+      "state": "running",
+      "tick": 122790,
+      "rms": 0.007117201143629359,
+      "peak": 0.018200993537902832,
+      "hidden": true,
+      "focus": false,
+      "audioTime": 119.18133333333333
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 148105,
+      "segment": 6,
+      "ack": 16,
+      "state": "running",
+      "tick": 142290,
+      "rms": 0.0009367577179372771,
+      "peak": 0.003065049648284912,
+      "hidden": true,
+      "focus": false,
+      "audioTime": 138.65066666666667
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 167603,
+      "segment": 7,
+      "ack": 17,
+      "state": "running",
+      "tick": 161790,
+      "rms": 0.005890213899952664,
+      "peak": 0.017226099967956543,
+      "hidden": false,
+      "focus": true,
+      "audioTime": 158.152
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 187013,
+      "segment": 8,
+      "ack": 19,
+      "state": "running",
+      "tick": 181190,
+      "rms": 0.0012390233930035226,
+      "peak": 0.003712773323059082,
+      "hidden": true,
+      "focus": false,
+      "audioTime": 177.56
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 206520,
+      "segment": 9,
+      "ack": 21,
+      "state": "running",
+      "tick": 200690,
+      "rms": 0.005451632485950968,
+      "peak": 0.015415430068969727,
+      "hidden": true,
+      "focus": false,
+      "audioTime": 197.072
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 226032,
+      "segment": 10,
+      "ack": 22,
+      "state": "running",
+      "tick": 220190,
+      "rms": 0.0011763953590444114,
+      "peak": 0.003679037094116211,
+      "hidden": false,
+      "focus": true,
+      "audioTime": 216.58133333333333
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 245541,
+      "segment": 11,
+      "ack": 24,
+      "state": "running",
+      "tick": 239690,
+      "rms": 0.005895656672251035,
+      "peak": 0.016097307205200195,
+      "hidden": true,
+      "focus": false,
+      "audioTime": 236.08
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 265044,
+      "segment": 12,
+      "ack": 26,
+      "state": "running",
+      "tick": 259190,
+      "rms": 0.0011763953590444114,
+      "peak": 0.003679037094116211,
+      "hidden": true,
+      "focus": false,
+      "audioTime": 255.58133333333333
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 284481,
+      "segment": 13,
+      "ack": 27,
+      "state": "running",
+      "tick": 278689,
+      "rms": 0.004568152638750928,
+      "peak": 0.013582587242126465,
+      "hidden": false,
+      "focus": true,
+      "audioTime": 275.02133333333336
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 303959,
+      "segment": 14,
+      "ack": 29,
+      "state": "running",
+      "tick": 298191,
+      "rms": 0.001389217874128062,
+      "peak": 0.004169285297393799,
+      "hidden": true,
+      "focus": false,
+      "audioTime": 294.5013333333333
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 323310,
+      "segment": 15,
+      "ack": 31,
+      "state": "running",
+      "tick": 317491,
+      "rms": 0.00382964031088476,
+      "peak": 0.01291036605834961,
+      "hidden": true,
+      "focus": false,
+      "audioTime": 313.85066666666665
+    },
+    {
+      "event": "soak-segment",
+      "sinceMs": 336841,
+      "segment": 16,
+      "ack": 32,
+      "state": "running",
+      "tick": 330990,
+      "rms": 0.002557403845871139,
+      "peak": 0.0070111751556396484,
+      "hidden": false,
+      "focus": true,
+      "audioTime": 327.3813333333333
+    },
+    {
+      "event": "soak-complete",
+      "sinceMs": 340560,
+      "soakElapsed": 305135,
+      "maxGap": 604,
+      "seenOffscreenChimes": 11,
+      "suspendedState": "suspended",
+      "states": [
+        "suspended",
+        "running"
+      ],
+      "recovered": {
+        "rms": 0.0001971921613226415,
+        "peak": 0.0008565187454223633,
+        "state": "running",
+        "hidden": false,
+        "focus": true,
+        "audioTime": 331.05066666666664
+      }
+    },
+    {
+      "event": "disconnect-silent",
+      "sinceMs": 343527,
+      "rms": 0,
+      "peak": 0,
+      "state": "running",
+      "hidden": true,
+      "focus": false,
+      "audioTime": 334.02133333333336
+    },
+    {
+      "event": "close-reload",
+      "sinceMs": 363801,
+      "oldOwnerReleased": true,
+      "gestureRequired": true
+    }
+  ],
+  "audioMarks": [
+    {
+      "event": "sfx-start",
+      "wallMs": 11769.79999999702,
+      "sceneMs": 7290,
+      "contextSec": 3.592,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 12423.599999997765,
+      "sceneMs": 7890,
+      "contextSec": 4.250666666666667,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-1",
+      "effectSequence": 1,
+      "variant": "generic",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 29067.89999999851,
+      "sceneMs": 24590,
+      "contextSec": 20.890666666666668,
+      "variant": "lotus-bell-3",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-cut",
+      "wallMs": 29373.599999997765,
+      "sceneMs": 24889,
+      "contextSec": 21.2,
+      "variant": "lotus-bell-3",
+      "seconds": 0,
+      "reason": "output-off",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 40067.5,
+      "sceneMs": 35590,
+      "contextSec": 31.890666666666668,
+      "variant": "lotus-bell-0",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 41464.199999999255,
+      "sceneMs": 36889,
+      "contextSec": 33.29066666666667,
+      "variant": "lotus-bell-0",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 50068.199999999255,
+      "sceneMs": 45590,
+      "contextSec": 41.89066666666667,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-2",
+      "effectSequence": 4,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 50724.099999997765,
+      "sceneMs": 46190,
+      "contextSec": 42.552,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-2",
+      "effectSequence": 4,
+      "variant": "generic",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 67367.29999999702,
+      "sceneMs": 62890,
+      "contextSec": 59.192,
+      "variant": "lotus-bell-2",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 68763.19999999925,
+      "sceneMs": 64190,
+      "contextSec": 60.592,
+      "variant": "lotus-bell-2",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 69467.19999999925,
+      "sceneMs": 64989,
+      "contextSec": 61.29066666666667,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-3",
+      "effectSequence": 7,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 70124,
+      "sceneMs": 65590,
+      "contextSec": 61.952,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-3",
+      "effectSequence": 7,
+      "variant": "generic",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 86867.09999999776,
+      "sceneMs": 82390,
+      "contextSec": 78.69066666666667,
+      "variant": "lotus-bell-1",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 88262.89999999851,
+      "sceneMs": 83690,
+      "contextSec": 80.09066666666666,
+      "variant": "lotus-bell-1",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 98268.39999999851,
+      "sceneMs": 93790,
+      "contextSec": 90.09066666666666,
+      "variant": "lotus-bell-3",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 99665.29999999702,
+      "sceneMs": 95090,
+      "contextSec": 91.49066666666667,
+      "variant": "lotus-bell-3",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 108268.5,
+      "sceneMs": 103790,
+      "contextSec": 100.09066666666666,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-4",
+      "effectSequence": 10,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 108923.09999999776,
+      "sceneMs": 104390,
+      "contextSec": 100.752,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-4",
+      "effectSequence": 10,
+      "variant": "generic",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 125567.79999999702,
+      "sceneMs": 121090,
+      "contextSec": 117.392,
+      "variant": "lotus-bell-0",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 126964,
+      "sceneMs": 122390,
+      "contextSec": 118.792,
+      "variant": "lotus-bell-0",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 127767,
+      "sceneMs": 123289,
+      "contextSec": 119.592,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-5",
+      "effectSequence": 13,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 128423,
+      "sceneMs": 123890,
+      "contextSec": 120.25066666666666,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-5",
+      "effectSequence": 13,
+      "variant": "generic",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 145067.19999999925,
+      "sceneMs": 140590,
+      "contextSec": 136.89066666666668,
+      "variant": "lotus-bell-2",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 146463.8999999985,
+      "sceneMs": 141889,
+      "contextSec": 138.29066666666668,
+      "variant": "lotus-bell-2",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 156467.69999999925,
+      "sceneMs": 151990,
+      "contextSec": 148.29066666666668,
+      "variant": "lotus-bell-1",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 157864.5,
+      "sceneMs": 153289,
+      "contextSec": 149.69066666666666,
+      "variant": "lotus-bell-1",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 166667.19999999925,
+      "sceneMs": 162189,
+      "contextSec": 158.49066666666667,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-6",
+      "effectSequence": 16,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 167323.09999999776,
+      "sceneMs": 162790,
+      "contextSec": 159.14933333333335,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-6",
+      "effectSequence": 16,
+      "variant": "generic",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 183967.3999999985,
+      "sceneMs": 179490,
+      "contextSec": 175.792,
+      "variant": "lotus-bell-3",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 185363.29999999702,
+      "sceneMs": 180790,
+      "contextSec": 177.192,
+      "variant": "lotus-bell-3",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 186167.8999999985,
+      "sceneMs": 181690,
+      "contextSec": 177.992,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-7",
+      "effectSequence": 19,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 186823.8999999985,
+      "sceneMs": 182328,
+      "contextSec": 178.65066666666667,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-7",
+      "effectSequence": 19,
+      "variant": "generic",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 203467.69999999925,
+      "sceneMs": 198990,
+      "contextSec": 195.29066666666668,
+      "variant": "lotus-bell-0",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 204862.59999999776,
+      "sceneMs": 200290,
+      "contextSec": 196.69066666666666,
+      "variant": "lotus-bell-0",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 214866.79999999702,
+      "sceneMs": 210389,
+      "contextSec": 206.69066666666666,
+      "variant": "lotus-bell-2",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 216264.79999999702,
+      "sceneMs": 211690,
+      "contextSec": 208.09066666666666,
+      "variant": "lotus-bell-2",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 225167.69999999925,
+      "sceneMs": 220690,
+      "contextSec": 216.992,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-8",
+      "effectSequence": 22,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 225824.29999999702,
+      "sceneMs": 221290,
+      "contextSec": 217.65066666666667,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-8",
+      "effectSequence": 22,
+      "variant": "generic",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 242586.29999999702,
+      "sceneMs": 238109,
+      "contextSec": 234.41066666666666,
+      "variant": "lotus-bell-1",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 243982.69999999925,
+      "sceneMs": 239489,
+      "contextSec": 235.81066666666666,
+      "variant": "lotus-bell-1",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 244667.79999999702,
+      "sceneMs": 240189,
+      "contextSec": 236.49066666666667,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-9",
+      "effectSequence": 25,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 245324.69999999925,
+      "sceneMs": 240789,
+      "contextSec": 237.14933333333335,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-9",
+      "effectSequence": 25,
+      "variant": "generic",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 261967.69999999925,
+      "sceneMs": 257490,
+      "contextSec": 253.792,
+      "variant": "lotus-bell-3",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 263363.69999999925,
+      "sceneMs": 258790,
+      "contextSec": 255.192,
+      "variant": "lotus-bell-3",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 273368.8999999985,
+      "sceneMs": 268891,
+      "contextSec": 265.192,
+      "variant": "lotus-bell-0",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 274764.3999999985,
+      "sceneMs": 270192,
+      "contextSec": 266.592,
+      "variant": "lotus-bell-0",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 283567.5,
+      "sceneMs": 279090,
+      "contextSec": 275.392,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-10",
+      "effectSequence": 28,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 284222.69999999925,
+      "sceneMs": 279690,
+      "contextSec": 276.05066666666664,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-10",
+      "effectSequence": 28,
+      "variant": "generic",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 300867.09999999776,
+      "sceneMs": 296390,
+      "contextSec": 292.6906666666667,
+      "variant": "lotus-bell-2",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 302264.69999999925,
+      "sceneMs": 297690,
+      "contextSec": 294.09066666666666,
+      "variant": "lotus-bell-2",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 302967.3999999985,
+      "sceneMs": 298490,
+      "contextSec": 294.792,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-11",
+      "effectSequence": 31,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 303624.59999999776,
+      "sceneMs": 299090,
+      "contextSec": 295.4506666666667,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-11",
+      "effectSequence": 31,
+      "variant": "generic",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 320267.19999999925,
+      "sceneMs": 315790,
+      "contextSec": 312.09066666666666,
+      "variant": "lotus-bell-1",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 321662.799999997,
+      "sceneMs": 317092,
+      "contextSec": 313.49066666666664,
+      "variant": "lotus-bell-1",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-start",
+      "wallMs": 331667.5,
+      "sceneMs": 327190,
+      "contextSec": 323.49066666666664,
+      "variant": "lotus-bell-3",
+      "seconds": 1.4,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "idle-end",
+      "wallMs": 333065.3999999985,
+      "sceneMs": 328489,
+      "contextSec": 324.8906666666667,
+      "variant": "lotus-bell-3",
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-start",
+      "wallMs": 337067.5,
+      "sceneMs": 332590,
+      "contextSec": 328.8906666666667,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-12",
+      "actor": "demo-1795847462235-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 34,
+      "variant": "generic",
+      "seconds": 0.655,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "voice-start",
+      "wallMs": 337068.19999999925,
+      "sceneMs": 332590,
+      "contextSec": 328.8906666666667,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-12",
+      "actor": "demo-1795847462235-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 34,
+      "variant": "generic",
+      "seconds": 2.1,
+      "ambienceGain": 1,
+      "sfxGain": 0.44999998807907104,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "sfx-end",
+      "wallMs": 337722.69999999925,
+      "sceneMs": 333189,
+      "contextSec": 329.5493333333333,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-12",
+      "actor": "demo-1795847462235-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 34,
+      "variant": "generic",
+      "ambienceGain": 0.2800000011920929,
+      "sfxGain": 0.2160000056028366,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    },
+    {
+      "event": "voice-end",
+      "wallMs": 339165.69999999925,
+      "sceneMs": 334604,
+      "contextSec": 330.992,
+      "room": "demo-1795847462235",
+      "request": "demo-1795847462235-gift-12",
+      "actor": "demo-1795847462235-actor-1",
+      "seat": "seat-1",
+      "effectSequence": 34,
+      "variant": "generic",
+      "ambienceGain": 0.2800000011920929,
+      "sfxGain": 0.2160000056028366,
+      "channelGains": {
+        "master": 0.5600000023841858,
+        "water": 0.20000000298023224,
+        "wind": 0.20000000298023224,
+        "thanks": 0.8500000238418579,
+        "idleBell": 0.44999998807907104,
+        "idleWish": 0.8500000238418579
+      }
+    }
+  ],
+  "diagnostics": {
+    "ingress": {
+      "chat": 1,
+      "member": 18,
+      "like": 1,
+      "roomUser": 0,
+      "gift": 12,
+      "noRoom": 0,
+      "wrongRoom": 0,
+      "time": 0,
+      "schema": 0,
+      "identity": 0,
+      "message": 0,
+      "mapped": 32,
+      "handoff": 32,
+      "ipcPressure": 0,
+      "ipcError": 0
+    },
+    "ingressReports": 33,
+    "mapped": 32,
+    "dedup": 0,
+    "queued": 32,
+    "coalesced": 0,
+    "pressure": 0,
+    "throttled": 0,
+    "sessionDrop": 0,
+    "overflow": 0,
+    "invalid": 0,
+    "entries": 34,
+    "consumed": 34,
+    "abandoned": 0,
+    "observed": 0,
+    "observedCapped": false,
+    "offered": 0,
+    "acknowledged": 0,
+    "pending": 0
+  }
+}

@@ -1,7 +1,9 @@
 import { launchWorker } from './transport.mjs';
+import { ingressKeys, newIngress } from './ingress.mjs';
+import { admissionSettings, admissionTier } from './admission.mjs';
 
 const queueLimit = 256;
-const lowPriorityLimit = queueLimit - 32;
+const caps = { activity: 192, like: 200, chat: 216, member: 224, giftFinal: queueLimit };
 const leaseMs = 15_000;
 const counts = () => ({ chat: 0, member: 0, like: 0, giftProgress: 0, giftFinal: 0, room: 0 });
 const faults = new Set(['ROOM_OFFLINE', 'ACCESS_DENIED', 'PAID_ROUTE', 'SIGNING_FAILED', 'RATE_LIMITED',
@@ -37,6 +39,17 @@ export class Gateway {
   attempts = 0;
   limited = false;
   priorityAt = new Map();
+  admission = admissionSettings();
+  likeAt = new Map();
+  observed = new Set();
+  observedCapped = false;
+  ingress = newIngress();
+  ingressSnapshot = newIngress();
+  ingressReports = 0;
+  ingressIncomplete = 0;
+  flow = { mapped: 0, dedup: 0, queued: 0, coalesced: 0, pressure: 0, throttled: 0, sessionDrop: 0,
+    overflow: 0, invalid: 0, entries: 0, consumed: 0, abandoned: 0 };
+  presenceFlow;
 
   constructor(launch = launchWorker) { this.launch = launch; }
 
@@ -70,7 +83,19 @@ export class Gateway {
       receiver: this.receiver ?? null, appliedRevision: this.appliedRevision, applyPending: this.applyPending,
       overlayReady: this.overlayReady, canApply: this.canApply, canConnect: this.overlayReady && this.canApply && !this.limited,
       canDisconnect: !!(this.online || this.stopWorker || this.retry),
+      presenceDiagnostics: { ingress: this.ingress, ingressReports: this.ingressReports,
+        ingressIncomplete: this.ingressIncomplete, ...this.flow,
+        observed: this.observed.size, observedCapped: this.observedCapped,
+        offered: this.offered, acknowledged: this.acknowledged, pending: this.queue.length },
+      presenceFlow: this.presenceFlow,
     };
+  }
+
+  configurePresence(settings) {
+    const next = admissionSettings(settings);
+    if (Object.keys(next).every(key => next[key] === this.admission[key])) return;
+    this.admission = next;
+    this.stopWorker?.configurePresence?.(next);
   }
 
   connect(client, username, receiver = 'legacy') {
@@ -86,6 +111,7 @@ export class Gateway {
 
   open(username) {
     const generation = ++this.generation;
+    this.ingressSnapshot = newIngress();
     this.status = this.attempts ? 'RECONNECTING' : 'CONNECTING';
     this.reason = '';
     if (this.stopping) {
@@ -96,11 +122,20 @@ export class Gateway {
       this.stopWorker = this.launch(username, value => {
         if (this.generation !== generation) return;
         if (value?.type === 'connected') this.connected(value.room, username);
-        else if (value?.type === 'fault') this.fail(faults.has(value.code) ? value.code : 'UNKNOWN', username);
-        else if (value?.type === 'event' && this.online) this.accept(value.event, username);
+        else if (value?.type === 'fault') {
+          if (value.ingressIncomplete === true) this.ingressIncomplete++;
+          this.fail(faults.has(value.code) ? value.code : 'UNKNOWN', username);
+        }
+        else if (value?.type === 'ingress') this.recordIngress(value.counts);
+        else if (value?.type === 'event') {
+          if (this.online) this.accept(value.event, username);
+          else this.flow.sessionDrop++;
+        }
       }, code => {
-        if (this.generation === generation) this.fail(code === 2 ? 'GIFT_DELIVERY_FAILED' : 'NETWORK', username);
-      });
+        if (this.generation !== generation) return;
+        if (code === 2) this.ingressIncomplete++;
+        this.fail(code === 2 ? 'GIFT_DELIVERY_FAILED' : 'NETWORK', username);
+      }, this.admission);
       this.deadline = setTimeout(() => this.fail('NETWORK', username), 30_000);
       this.deadline.unref();
     } catch {
@@ -122,6 +157,9 @@ export class Gateway {
       this.viewerCount = this.dropped = 0;
       this.seen.clear();
       this.priorityAt.clear();
+      this.likeAt.clear();
+      this.observed.clear();
+      this.observedCapped = false;
     }
     if (this.queue.length >= queueLimit) { this.fail('GIFT_DELIVERY_FAILED', username); return; }
     this.connection++;
@@ -130,37 +168,80 @@ export class Gateway {
     this.status = 'CONNECTED_NO_EVENTS';
   }
 
+  recordIngress(counts) {
+    if (!counts || !ingressKeys.every(key => Number.isSafeInteger(counts[key]) && counts[key] >= 0)) return;
+    this.ingressReports++;
+    for (const key of ingressKeys) this.ingress[key] += counts[key] - this.ingressSnapshot[key];
+    this.ingressSnapshot = Object.fromEntries(ingressKeys.map(key => [key, counts[key]]));
+  }
+
+  rememberEvent(eventId) {
+    if (this.seen.size >= 8192) this.seen.delete(this.seen.values().next().value);
+    this.seen.add(eventId);
+  }
+
   accept(event, username) {
-    if (!event || typeof event.eventId !== 'string' || this.seen.has(event.eventId)) return;
+    this.flow.mapped++;
+    if (!event || typeof event.eventId !== 'string') { this.flow.invalid++; return; }
+    if (this.seen.has(event.eventId)) { this.flow.dedup++; return; }
     const kind = event.type === 'gift' ? (event.phase === 'final' ? 'giftFinal' : 'giftProgress') : event.type;
-    if (!Object.hasOwn(this.counters, kind)) return;
+    if (!Object.hasOwn(this.counters, kind)) { this.flow.invalid++; return; }
     this.counters[kind]++;
     if (kind === 'room') this.viewerCount = event.count;
     this.status = 'EVENTS_VERIFIED';
-    if (this.seen.size >= 8192) this.seen.delete(this.seen.values().next().value);
-    this.seen.add(event.eventId);
+    const key = event.viewer?.userKey;
+    if (key && !this.observed.has(key)) {
+      if (this.observed.size < 8192) this.observed.add(key);
+      else this.observedCapped = true;
+    }
 
-    // Reserve capacity for confirmed gifts and session transitions when chat/like bursts arrive.
+    // Reserve progressively for admission sources. Outstanding entries include the offered, unacknowledged prefix.
     const now = Date.now();
-    const interval = kind === 'like' ? 200 : 0;
+    const tier = admissionTier(event, this.admission);
+    const identityLike = tier === 'like' && now - (this.likeAt.get(key) ?? 0) >= 3000;
+    const interval = kind === 'like' && !identityLike ? 200 : 0;
     if (kind === 'room') {
       const unsent = this.queue.findLast(item => item.seq > this.offered && item.event.type === 'room' &&
         item.event.roomEpoch === this.roomEpoch && item.event.connection === this.connection);
       if (unsent) {
         unsent.event = { ...unsent.event, count: event.count, eventId: event.eventId };
+        this.rememberEvent(event.eventId);
+        this.flow.coalesced++;
         return;
       }
     }
-    if (kind !== 'giftFinal' && (this.queue.length >= lowPriorityLimit ||
-        (interval && now - (this.priorityAt.get(kind) || 0) < interval))) { this.dropped++; return; }
-    if (this.queue.length >= queueLimit) { this.fail('GIFT_DELIVERY_FAILED', username); return; }
+    const repeatsIdentity = this.queue.length >= caps.activity && tier !== 'activity' &&
+      this.queue.some(({ event: pending }) => pending.roomEpoch === this.roomEpoch &&
+        pending.connection === this.connection && pending.type === tier && pending.viewer?.userKey === key);
+    const priority = repeatsIdentity || (kind === 'like' && !identityLike) ? 'activity' : tier;
+    if (kind !== 'giftFinal' && this.queue.length >= caps[priority]) {
+      this.flow.pressure++;
+      this.dropped++;
+      return;
+    }
+    if (interval && now - (this.priorityAt.get(kind) || 0) < interval) {
+      this.flow.throttled++;
+      this.dropped++;
+      return;
+    }
+    if (this.queue.length >= caps.giftFinal) { this.flow.overflow++; this.fail('GIFT_DELIVERY_FAILED', username); return; }
     if (interval) this.priorityAt.set(kind, now);
+    if (identityLike) {
+      if (this.likeAt.size >= 8192 && !this.likeAt.has(key)) this.likeAt.delete(this.likeAt.keys().next().value);
+      this.likeAt.set(key, now);
+    } else if (kind === 'like' && event.viewer) {
+      const { viewer, ...aggregateLike } = event;
+      event = aggregateLike;
+    }
+    this.rememberEvent(event.eventId);
+    this.flow.queued++;
     this.push(event);
   }
 
   push(event) {
     const entry = { seq: ++this.sequence, event: { ...event, atMs: Date.now(), roomEpoch: this.roomEpoch, connection: this.connection } };
     this.queue.push(entry);
+    this.flow.entries++;
     if (event.type === 'gift' && event.phase === 'final') this.onVoiceGift?.(entry);
   }
 
@@ -211,6 +292,7 @@ export class Gateway {
 
   acknowledge(client, ack) {
     if (this.owner !== client || !Number.isSafeInteger(ack) || ack < this.acknowledged || ack > this.offered) return false;
+    this.flow.consumed += ack - this.acknowledged;
     this.acknowledged = ack;
     while (this.queue.length && this.queue[0].seq <= ack) this.queue.shift();
     return true;
@@ -245,10 +327,15 @@ export class Gateway {
     this.appliedRevision = null;
     this.audioApplied = undefined;
     this.presenceApplied = undefined;
+    this.presenceFlow = undefined;
+    this.observed.clear();
+    this.observedCapped = false;
+    this.likeAt.clear();
     this.worldApplied = undefined;
     this.overlayReady = false;
     this.applyPending = false;
     this.deliveryUncertain ||= this.queue.some(({ event }) => event.type === 'gift' && event.phase === 'final');
+    this.flow.abandoned += this.queue.length;
     this.queue.length = 0;
     this.counters = counts();
     this.viewerCount = this.dropped = 0;

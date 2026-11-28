@@ -20,6 +20,23 @@ function gift(engine: DemoEngine, key: string, atMs: number, streakId: string, p
     streakId, phase, count, viewer: viewer(key) });
 }
 
+test('Like admission defaults OFF and requires a valid identity when explicitly enabled', () => {
+  const engine = setup();
+  engine.ingest({ ...room, type: 'like', eventId: 'off', count: 1, atMs: 100, viewer: viewer('a') });
+  assert.equal(engine.presenceCounts?.occupied, 0);
+  engine.configurePresence({ ...presenceDefaults, autoJoinLike: true });
+  engine.ingest({ ...room, type: 'like', eventId: 'anonymous', count: 100, atMs: 200 });
+  assert.equal(engine.presenceCounts?.occupied, 0);
+  engine.ingest({ ...room, type: 'like', eventId: 'valid', count: 1, atMs: 300, viewer: viewer('a') });
+  const actor = engine.snapshot().avatars[0];
+  join(engine, 'a', 400, 'member', 'renamed');
+  join(engine, 'b', 500, 'member', 'renamed');
+  assert.equal(engine.snapshot().avatars[0].actorId, actor.actorId);
+  assert.notEqual(engine.snapshot().avatars[1].actorId, actor.actorId);
+  assert.equal(engine.presenceFlow?.alreadySeated, 1);
+  assert.equal(engine.presenceCounts?.occupied, 2);
+});
+
 test('LIVE member and text chat admit immediately; duplicates, empty chat and aggregate counts cannot create actors', () => {
   const engine = setup();
   join(engine, 'viewer-a', 100, 'member', 'An Mây', 'member-a');
