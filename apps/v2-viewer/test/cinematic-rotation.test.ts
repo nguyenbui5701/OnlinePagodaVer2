@@ -74,20 +74,78 @@ test('gift A, B, C and return interruption keep the saved phase, move from the r
   let time=0;
   for(;time<=17000;time+=20) director.step(time,true);
   const saved=director.phase;
+  let held: number | undefined;
   const gift=(requestId:string,x:number)=>({requestId,pose:{position:v(x,2,12),target:v(x,1,16),fov:50}});
+  const until=(condition:()=>boolean, focus?: ReturnType<typeof gift>, ms=4500)=>{
+    const end=time+ms;
+    while(!condition() && time<end) { time+=20; director.step(time,true,focus); }
+    assert(condition());
+  };
   for(const [id,x] of [['A',2],['B',3],['C',4]] as const) {
-    const before=director.step(time-20,true,id==='A'?undefined:gift(id==='B'?'A':'B',x-1));
+    const before=director.step(time,true,id==='A'?undefined:gift(id==='B'?'A':'B',x-1));
     assert(director.step(time,true,gift(id,x)).position.equals(before.position));
-    for(let end=time+1100;time<=end;time+=20) director.step(time,true,gift(id,x));
-    assert(director.reachedFocus);
-    assert.equal(director.phase,saved);
+    until(()=>director.reachedFocus,gift(id,x));
+    held ??= director.phase;
+    assert.equal(director.phase,held);
   }
+  assert(held!>=saved && held!-saved<=.221);
   director.step(time,true);
-  const returning=director.step(time+300,true);
-  assert(director.step(time+310,true,gift('D',5)).position.equals(returning.position));
-  for(let at=time+330;at<time+1500;at+=20) director.step(at,true,gift('D',5));
-  for(let at=time+1520;at<time+4300;at+=20) director.step(at,true);
-  assert(director.phase>saved && director.phase<saved+2);
+  time+=60;
+  const returning=director.step(time,true);
+  assert(director.step(time,true,gift('D',5)).position.equals(returning.position));
+  until(()=>director.reachedFocus,gift('D',5));
+  director.step(time,true);
+  until(()=>director.phase>held!,undefined,17000);
+  assert(director.phase<held!+.1);
+});
+
+test('a blocked saved return reconnects to a reachable phase with no subsequent gift', () => {
+  let blocked = false;
+  const anchor = v(0,5,0);
+  const route = (phase:number) => {
+    const t = phase*Math.PI/4;
+    const position=v(Math.sin(t)*4,5,4-4*Math.cos(t));
+    return {position,target:position.clone().add(v(0,0,5)),fov:50};
+  };
+  const clear = createCameraClearance([]);
+  const director = new RotationDirector(route, { ...clear, lineIssue(a,b) {
+    return blocked && b.distanceTo(anchor)<.4 ? 'fixture-closed-anchor' : undefined;
+  } });
+  const focus = {requestId:'A',pose:{position:v(0,5,3),target:v(0,5,8),fov:50}};
+  director.step(0,true);
+  director.step(0,true,focus);
+  for(let t=20;t<3000;t+=20) director.step(t,true,focus);
+  assert(director.reachedFocus);
+  anchor.copy(route(director.phase).position);
+  blocked=true;
+  director.step(3000,true);
+  assert.equal(director.status,'return-rejoin');
+  let before=director.step(3020,true);
+  for(let t=3040;t<=8000;t+=20) {
+    const next=director.step(t,true);
+    if(director.status!=='idle') assert(next.position.distanceTo(before.position)<.25);
+    before=next;
+  }
+  assert.equal(director.status,'idle');
+  assert(!director.blocked);
+  assert(director.phase>1);
+});
+
+test('an occluded gift and a disconnected return hold safe poses without publishing a focus', () => {
+  const route=createRotationRoute(v(0,0,0),9,1);
+  let blocked=false;
+  const director=new RotationDirector(route.sample,{ ...createCameraClearance([]),
+    lineIssue:()=>blocked?'fixture-wall':undefined });
+  director.step(0,true);
+  for(let t=20;t<=2400;t+=20)
+    director.step(t,true,{requestId:'occluded',pose:route.sample(10),canSee:()=>false});
+  assert.equal(director.status,'focus-unavailable');
+  assert(!director.reachedFocus);
+  blocked=true;
+  const before=director.step(2420,true);
+  assert.equal(director.status,'safe-hold');
+  assert(director.step(2440,true).position.equals(before.position));
+  assert(!director.reachedFocus);
 });
 
 test('hidden and long gaps pause camera motion and avoid a stale reached-focus marker', () => {

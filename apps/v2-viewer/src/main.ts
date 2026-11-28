@@ -7,7 +7,7 @@ import { loadSakura, parseTreeRevision, type Profile } from './asset.ts';
 import { capture, createCinematicRoutes, parseCinematicSeed, type CameraPose } from './camera.ts';
 import { addR18WarmFill, bindGoldEmphasis, createTwilight, liftR18Canopy, referenceViews, setupLighting } from './lighting.ts';
 import { LookTimeline, lookOrder, parseLook } from './twilight.ts';
-import { createSeatScene, seatPose } from './seat-scene.ts';
+import { createSeatScene, seatPose, type ActorTarget } from './seat-scene.ts';
 import { diversityEnabled } from './avatar-look.ts';
 import { measureSeatContact } from './seat-contact.ts';
 import { SliceCamera } from './slice-camera.ts';
@@ -258,7 +258,8 @@ async function boot() {
     let pose: CameraPose | undefined;
     let cinematic: ReturnType<NonNullable<typeof routes>['sample']> | undefined;
     let presentation: ReturnType<SliceDriver['update']> | undefined;
-    let selected;
+    let selected: ActorTarget | undefined;
+    let visibleDonorName = false;
     if (comparison) {
       camera.position.fromArray(comparison.position);
       camera.up.fromArray(comparison.up);
@@ -289,7 +290,7 @@ async function boot() {
         },
       };
       const routeTime = rotation ? rotation.phase : director.routeSeconds(atMs, focus?.requestId);
-      const controlled = rotation?.step(atMs, !document.hidden, focus);
+      const controlled = rotation?.step(now, !document.hidden, focus);
       cinematic = routes.sample(rotation?.phase ?? routeTime);
       if (twilight && look !== 'legacy') {
         const mode = presentation.state.camera.mode;
@@ -338,6 +339,8 @@ async function boot() {
     if (presentation && (communityNames || nameplates || rings)) {
       const { avatars, viewerCount } = presentation.state;
       const plates = nameplates?.update(presentation.state, camera, manual);
+      visibleDonorName = plates?.names.some(name => name.actorId === selected?.presentation.actorId &&
+        name.seatId === selected?.presentation.seatId) ?? false;
       const names = plates?.names ?? communityNames?.update(avatars, camera, Math.round(seconds * 1000),
         labels?.name ? selected?.presentation.actorId : undefined) ?? [];
       if (plates && manual) report.nameplates = plates.projections;
@@ -413,7 +416,7 @@ async function boot() {
       const points = head && head.clone().project(camera);
       const donorVisible = points && presentation?.actor?.actorId === selected?.presentation.actorId &&
         Math.abs(points.x) < .92 && Math.abs(points.y) < .92 && Math.abs(points.z) < 1 &&
-        !hitsTree(camera.position.toArray(), head.toArray());
+        (nameplates ? visibleDonorName : !hitsTree(camera.position.toArray(), head.toArray()));
       shownFocus = selected && intent && presentation?.state.camera.mode === 'GIFT_FOCUS' &&
         (!rotation || donorVisible)
         ? { actorId: selected.presentation.actorId, seatId: selected.presentation.seatId, request: intent.requestId } : undefined;

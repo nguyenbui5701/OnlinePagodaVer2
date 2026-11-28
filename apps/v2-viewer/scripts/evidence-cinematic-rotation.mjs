@@ -313,7 +313,14 @@ try {
           }
           return now.confirmed===total && now.mode==='CINEMATIC' && (!now.motion || now.motion.status==='idle') &&
             focusNames.length>=(multi?4:1);
-        },'finish gifts '+shot,50000);
+        },'finish gifts '+shot,50000).catch(async error=>{
+          const r=await read();
+          note('r1-checkpoint-failure',{shot,focusNames,shownNames,mode:r.mode,motion:r.motion,
+            phase:r.phase,confirmed:r.confirmed,ack:gateway.acknowledged,sequence:gateway.sequence,
+            focus:r.focus,visibility:r.visibility});
+          await writeFrames('failed');
+          throw error;
+        });
         await ack();
         const final=await read();
         const expected=multi?['A','B','C','A']:['A'];

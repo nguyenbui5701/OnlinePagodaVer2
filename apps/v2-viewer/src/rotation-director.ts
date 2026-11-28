@@ -188,9 +188,11 @@ export class RotationDirector {
           this.brakeAge = 0;
           this.status = 'braking';
           this.blocked = false;
-        } else this.begin(initial,focus);
+        } else {
+          this.begin(initial,focus);
+          return initial;
+        }
       }
-      return initial;
     }
     if (this.brake) {
       this.brakeAge = Math.min(brakeMs,this.brakeAge+delta);
