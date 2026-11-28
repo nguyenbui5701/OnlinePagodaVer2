@@ -1,0 +1,116 @@
+{
+  "definition": "QUALITY baseline routes sampled 60 Hz across both mirrored hero cycles; mesh-box distance is a point-sample broad-phase lower bound only",
+  "tree": [
+    0,
+    0,
+    0
+  ],
+  "summary": [
+    {
+      "name": "R18A",
+      "file": "sakura_hero_r18a.glb",
+      "sha256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+      "bytes": 7152368,
+      "meshBoxes": 26,
+      "vertexBounds": [
+        [
+          -14.178767204284668,
+          -0.5183812975883484,
+          -13.425017356872559
+        ],
+        [
+          14.489616394042969,
+          26.48044204711914,
+          14.410984992980957
+        ]
+      ],
+      "sampledEyeDistanceLowerBound": 20.025320247077577
+    },
+    {
+      "name": "R17B",
+      "file": "sakura_hero_r17b.glb",
+      "sha256": "1ed05dd2c0451364122e20999955dedb3be213305a59a45c61853013495f0267",
+      "bytes": 6981312,
+      "meshBoxes": 23,
+      "vertexBounds": [
+        [
+          -14.178767204284668,
+          -0.5183812975883484,
+          -13.425017356872559
+        ],
+        [
+          14.489616394042969,
+          26.48044204711914,
+          14.410984992980957
+        ]
+      ],
+      "sampledEyeDistanceLowerBound": 20.025320247077577
+    },
+    {
+      "name": "R16",
+      "file": "sakura_hero.glb",
+      "sha256": "c8db96966410bf34c9be2cbdce887bee3b051beab5c9dd4c2a3b99875dbb938c",
+      "bytes": 5055232,
+      "meshBoxes": 11,
+      "vertexBounds": [
+        [
+          -12.705632209777832,
+          -0.5183812975883484,
+          -12.642970085144043
+        ],
+        [
+          13.742024421691895,
+          26.48044204711914,
+          13.2966947555542
+        ]
+      ],
+      "sampledEyeDistanceLowerBound": 20.50866716042411
+    },
+    {
+      "name": "B9 terrain",
+      "file": "distant_terrain_quality.glb",
+      "sha256": "1b4c279efa660505aa38cd3d6c7e596b5abab43f36869c397f602c551f31fa49",
+      "bytes": 449172,
+      "meshBoxes": 30,
+      "vertexBounds": [
+        [
+          -237.25027183663613,
+          -0.8500000238418579,
+          -225.11125950327587
+        ],
+        [
+          233.10356505532917,
+          27.072795867919922,
+          232.48068335457472
+        ]
+      ],
+      "sampledEyeDistanceLowerBound": 26.16063665369541
+    }
+  ],
+  "minY": 8.751258789062499,
+  "minDistance": 33.74221332418801,
+  "minFov": 54,
+  "maxFov": 62.10751231330705,
+  "lowCameraSamples": 0,
+  "peakSpeed": 6.246368285288309,
+  "peakAcceleration": 3.6904071895231425,
+  "peakAngularRadPerS": 0.17673086181362058,
+  "peakTargetUnitsPerS": 3.7605248127618713,
+  "peakFovDegPerS": 2.187469618055502,
+  "halfDiagonalMaxNearPlane": 0.06152248026985742,
+  "seam": [
+    {
+      "t": 40,
+      "stepBefore": 0.02891623535237056,
+      "stepAfter": 0.028489969841807173,
+      "fovRateBefore": 0.14592031439718767,
+      "fovRateAfter": 0.2524349471974574
+    },
+    {
+      "t": 80,
+      "stepBefore": 0.028846106867164458,
+      "stepAfter": null,
+      "fovRateBefore": 0.14592031439718767
+    }
+  ]
+}

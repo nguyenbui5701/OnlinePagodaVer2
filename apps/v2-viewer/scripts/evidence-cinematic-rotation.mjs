@@ -22,16 +22,17 @@ const mode = process.argv[2] || 'native';
 assert(['native','perf','quick','fallback'].includes(mode));
 const baseline = process.argv.includes('--hero');
 const tree = process.env.C0_TREE || 'r18a';
-const key = mode + '-' + (baseline ? 'hero' : 'cinematic') + (tree === 'r18a' ? '' : '-' + tree);
+const missingTrees = (process.env.C0_MISSING_TREES || '').split(',').filter(Boolean);
+assert(missingTrees.every(value => ['r18a', 'r17b'].includes(value)));
+const key = mode + '-' + (baseline ? 'hero' : 'cinematic') + (tree === 'r18a' ? '' : '-' + tree) +
+  (missingTrees.length ? '-missing-' + missingTrees.join('-') : '');
 const file = join(out, key + '.jsonl');
 const origin = 'http://127.0.0.1:5189';
 const port = 5203;
 const width = 720, height = 1280;
 const room = '79016';
 const temp = await mkdtemp(join(tmpdir(), 'pagoda-c0-'));
-const frames = join(temp, 'frames');
 mkdirSync(out, { recursive:true });
-mkdirSync(frames, { recursive:true });
 writeFileSync(file, '');
 const begin = Date.now();
 function note(event, details = {}) {
@@ -68,7 +69,7 @@ function instrument() {
   window.c0Frames=[];
   function frame(at) {
     const r=window.viewerReport;
-    if(r?.drawCalls>0 && window.c0Frames.length < 18000) {
+    if(r?.drawCalls>0 && window.c0Frames.length < 40000) {
       window.c0Frames.push({ at, elapsed:r.elapsedSeconds, phase:r.routeSeconds, mode:r.mode,
         pathBlocked:r.cameraPathBlocked===true, shot:r.shot, position:r.position, target:r.target, fov:r.fov, route:r.routeId,
         hidden:document.hidden, tick:r.liveTickMs, drawCalls:r.drawCalls, triangles:r.trianglesDrawn });
@@ -85,7 +86,8 @@ try {
   const visual = new SettingsStore(join(temp,'visual.json'));
   const audio = new AudioSettingsStore(join(temp,'audio.json'));
   const presence = new PresenceSettingsStore(join(temp,'presence.json'));
-  const settings = {...liveDefaults, profile:'quality',tree,look:'gold',density:'lush',environment:mode==='fallback'?'off':'on',
+  const settings = {...liveDefaults, profile:'quality',tree,look:'gold',density:'lush',
+    environment:mode==='fallback'&&!missingTrees.length?'off':'on',
     seats:'rings',ambience:'rich',seed:9,shots:'hero'};
   // The candidate's production settings path is exercised through Dashboard below.
   assert.equal(visual.save(1,settings),undefined);
@@ -125,6 +127,9 @@ try {
   browser=await chromium.connectOverCDP('ws://127.0.0.1:'+relay.address().port);
   const [context]=browser.contexts();
   await context.addInitScript(instrument);
+  for(const missing of missingTrees) {
+    await context.route('**/'+missing+'/*.glb', route=>route.fulfill({status:404}));
+  }
   const [overlay]=context.pages();
   const errors=[];
   overlay.on('pageerror',error=>errors.push(error.message));
@@ -134,7 +139,6 @@ try {
   await wait(()=>gateway.overlayReady,'initial hero ready');
   const dashboard=await context.newPage();
   await dashboard.goto(origin+'/dashboard/');
-  const cd=await context.newCDPSession(overlay);
   const read=()=>overlay.evaluate(()=>{
     const r=window.viewerReport;
     return { elapsed:r.elapsedSeconds, phase:r.routeSeconds, position:r.position,target:r.target,fov:r.fov,mode:r.mode,
@@ -163,53 +167,68 @@ try {
   assert.equal(layoutHash(ready),layoutHash(original),'lotus instances changed through Apply');
   note('ready',{revision:ready.revision, browser:browser.version(),graphics:ready.graphics,canvas:ready.canvas, effective:visual.snapshot,
     camera:ready.camera,asset:ready.asset,world:ready.world,layoutSha256:layoutHash(ready)});
-  if(mode==='fallback') {
+  if(mode==='fallback'&&!missingTrees.length) {
     assert.equal(ready.camera.effective,'hero');
     assert.equal(ready.camera.reason,'B9_ENVIRONMENT_UNAVAILABLE');
   } else {
     assert.equal(ready.world.pond,true);
     if(!baseline) assert.equal(ready.camera?.effective,'cinematic');
+    if(missingTrees.length) {
+      assert.equal(ready.world.tree,missingTrees.length===2?'R16':'R17B');
+      assert(ready.world.failures.every(failure=>failure.code==='MISSING'));
+    }
   }
 
-  const frameFiles=[];
-  let captureActive=false;
   async function finishVideo() {
-    captureActive=false;
-    await cd.send('Page.stopScreencast');
-    assert(frameFiles.length>200);
-    const lines=frameFiles.flatMap(({path,time},i)=>["file '"+path.replaceAll('\\','/')+"'",'duration '+
-      (i+1<frameFiles.length?Math.max(.01,frameFiles[i+1].time-time):.04)]);
-    lines.push("file '"+frameFiles.at(-1).path.replaceAll('\\','/')+"'");
-    const concat=join(temp,'frames.txt');
-    writeFileSync(concat,lines.join('\n')+'\n');
-    execFileSync('ffmpeg',['-hide_banner','-loglevel','error','-y','-f','concat','-safe','0','-i',concat,
-      '-vf','fps=24,scale=720:1280','-c:v','libx264','-preset','fast','-crf','28','-pix_fmt','yuv420p',join(out,'quality-overlay.mp4')],{stdio:'inherit'});
-    note('video',{frames:frameFiles.length, seconds:frameFiles.at(-1).time-frameFiles[0].time});
+    const encoded=await overlay.evaluate(()=>window.finishC0Video());
+    const source=join(temp,'capture.webm');
+    writeFileSync(source,Buffer.from(encoded,'base64'));
+    const target=join(out,'quality-overlay.mp4');
+    execFileSync('ffmpeg',['-hide_banner','-loglevel','error','-y','-i',source,
+      '-c:v','libx264','-preset','fast','-crf','26','-pix_fmt','yuv420p',target],{stdio:'inherit'});
+    const {streams:[video]}=JSON.parse(execFileSync('ffprobe',
+      ['-v','error','-select_streams','v:0','-show_entries','stream=width,height,duration','-of','json',target],
+      {encoding:'utf8'}));
+    assert.deepEqual([video.width,video.height],[width,height]);
+    assert(Number(video.duration)>=136);
+    note('video',video);
   }
   if(mode==='native') {
-    cd.on('Page.screencastFrame', frame=>{
-      void cd.send('Page.screencastFrameAck',{sessionId:frame.sessionId}).catch(()=>{});
-      if(!captureActive) return;
-      const path=join(frames,String(frameFiles.length).padStart(6,'0')+'.jpg');
-      writeFileSync(path, Buffer.from(frame.data,'base64'));
-      frameFiles.push({path,time:frame.metadata.timestamp ?? Date.now()/1000});
+    await overlay.evaluate(()=>{
+      const stream=document.querySelector('canvas').captureStream(18);
+      const recorder=new MediaRecorder(stream,{mimeType:'video/webm;codecs=vp8',videoBitsPerSecond:1_500_000});
+      const chunks=[];
+      recorder.ondataavailable=event=>chunks.push(event.data);
+      recorder.start(1000);
+      window.finishC0Video=()=>new Promise(resolve=>{
+        recorder.onstop=()=>{
+          stream.getTracks().forEach(track=>track.stop());
+          const reader=new FileReader();
+          reader.onload=()=>resolve(String(reader.result).split(',')[1]);
+          reader.readAsDataURL(new Blob(chunks,{type:recorder.mimeType}));
+        };
+        recorder.stop();
+      });
     });
-    captureActive=true;
-    await cd.send('Page.startScreencast',{format:'jpeg',quality:77,maxWidth:width,maxHeight:height,everyNthFrame:2});
   }
   const clock=r=>r.phase ?? r.elapsed;
   const initialPhase=clock(await read());
   const elapsedNeeded=mode==='native'?137:mode==='perf'?16:mode==='quick'?1:.5;
   await overlay.evaluate(()=>{window.c0Frames.length=0;});
   const sampled=new Set();
+  const representativePhase={HERO_WIDE:5,COMMUNITY:18,LOW_WATER_KOI:28,AERIAL_RING:42,UNDER_TREE_GOLD:52,FAR_ATMOSPHERE:62};
   await wait(async()=>{
-    const r=await read();
-    if(mode==='native' && !sampled.has(r.shot) && clock(r)-initialPhase > .2) {
+    const r=await overlay.evaluate(()=>{
+      const report=window.viewerReport;
+      return {phase:report.routeSeconds,elapsed:report.elapsedSeconds,shot:report.shot};
+    });
+    const phase=clock(r)%68;
+    if(mode==='native' && !sampled.has(r.shot) && phase >= representativePhase[r.shot]) {
       sampled.add(r.shot);
       await overlay.screenshot({path:join(out,r.shot+'.png')});
     }
     return clock(r)-initialPhase>=elapsedNeeded;
-  },'complete visible cycles',mode==='native'?220000:30000);
+  },'complete visible cycles',mode==='native'?480000:30000);
   const idle=await read();
   if(mode==='native'){
     assert.equal(sampled.size,6);
@@ -229,7 +248,7 @@ try {
   }
   await writeFrames('idle');
   if (mode==='native') await finishVideo();
-  if(mode==='native'||mode==='quick') {
+  if(mode==='quick') {
     let packet=100;
     const startAt=Date.now();
     await dashboard.bringToFront();

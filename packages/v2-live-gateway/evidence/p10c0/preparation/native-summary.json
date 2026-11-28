@@ -1,0 +1,374 @@
+{
+  "execution": "610b8c738c5925b722b028de7067fedcfaaafd06",
+  "browser": "158.0.4370.45",
+  "graphics": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "samples": 408,
+  "offlineSamples": 220,
+  "offlineInterval": [
+    1.9683999999988824,
+    42.00199999999888
+  ],
+  "offlineRecoveredByElapsedResidual": 0,
+  "offlineByShot": [
+    {
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "samples": 51,
+      "firstSec": 1.9683999999988824,
+      "lastSec": 42.00199999999888,
+      "ranges": [
+        [
+          -14.148870498,
+          2.630450046875
+        ],
+        [
+          10.02125,
+          14.036818755
+        ],
+        [
+          44.134555680664064,
+          52.0985
+        ]
+      ],
+      "eyeTravel": 22.399396743559215,
+      "aimTravel": 1.6944344110437393,
+      "fovRange": [
+        54.895990909250834,
+        57.97770481167491
+      ]
+    },
+    {
+      "shot": "COMMUNITY",
+      "samples": 38,
+      "firstSec": 9.183499999998883,
+      "lastSec": 15.96139999999888,
+      "ranges": [
+        [
+          -20.71594599696875,
+          -14.48442898396875
+        ],
+        [
+          14.519837227578124,
+          33.94055400929687
+        ],
+        [
+          40.00956265557812,
+          49.89622162657031
+        ]
+      ],
+      "eyeTravel": 23.951256845436653,
+      "aimTravel": 15.538304802008945,
+      "fovRange": [
+        54.84553268099366,
+        61.96488333176562
+      ]
+    },
+    {
+      "shot": "HERO_TOP_RING",
+      "samples": 55,
+      "firstSec": 16.148699999998883,
+      "lastSec": 25.863799999998882,
+      "ranges": [
+        [
+          -19.75738424521875,
+          15.657582740000006
+        ],
+        [
+          34.210550746414064,
+          36.15961304
+        ],
+        [
+          37.080822219999995,
+          40.444180672
+        ]
+      ],
+      "eyeTravel": 36.93673670562807,
+      "aimTravel": 12.268479274636771,
+      "fovRange": [
+        58.8366617335451,
+        62.10746451204198
+      ]
+    },
+    {
+      "shot": "AERIAL",
+      "samples": 38,
+      "firstSec": 26.037199999998883,
+      "lastSec": 32.911999999998876,
+      "ranges": [
+        [
+          10.874063456000005,
+          17.12069287613281
+        ],
+        [
+          12.540348768000003,
+          36.480819983749996
+        ],
+        [
+          33.9537171175,
+          36.99958852478907
+        ]
+      ],
+      "eyeTravel": 28.60059459524307,
+      "aimTravel": 9.837010516460783,
+      "fovRange": [
+        54.000329484343744,
+        58.46235047053158
+      ]
+    },
+    {
+      "shot": "UNDER_TREE",
+      "samples": 38,
+      "firstSec": 33.09259999999888,
+      "lastSec": 39.91889999999888,
+      "ranges": [
+        [
+          -2.767769611046875,
+          10.077719281773422
+        ],
+        [
+          8.7527229375,
+          12.160330128914055
+        ],
+        [
+          33.794861331999996,
+          43.86292219390624
+        ]
+      ],
+      "eyeTravel": 23.55117037934683,
+      "aimTravel": 1.9779614519408764,
+      "fovRange": [
+        54.62424143528125,
+        58.15658093447132
+      ]
+    }
+  ],
+  "gift": {
+    "interrupted": {
+      "elapsed": 52.09209999999889,
+      "shot": "COMMUNITY"
+    },
+    "resumed": {
+      "elapsed": 71.28599999999888,
+      "shot": "HERO_WIDE_TREE_REFLECTION",
+      "matchingRouteSeconds": 42.672,
+      "error": 7.105427357601002e-15,
+      "withoutGiftResetSeconds": 71.28599999999888,
+      "phaseDifferenceSeconds": 28.61399999999888
+    },
+    "engineFocus": [
+      "A",
+      "B",
+      "C"
+    ],
+    "genericVoiceSeats": [
+      "seat-1",
+      "seat-2",
+      "seat-3"
+    ],
+    "ack": 7,
+    "seq": 7,
+    "modes": [
+      {
+        "mode": "CINEMATIC",
+        "seconds": 1.9683999999988824,
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "renderMinusWorkerMs": 54,
+        "position": [
+          1.967748096,
+          10.492,
+          45.797417696
+        ],
+        "target": [
+          0,
+          9.522406860799999,
+          0
+        ],
+        "fov": 57.10077136566096,
+        "phase": "offline",
+        "ack": 0,
+        "pending": 0
+      },
+      {
+        "mode": "GIFT_TRANSITION",
+        "seconds": 52.23799999999888,
+        "shot": "COMMUNITY",
+        "renderMinusWorkerMs": 27,
+        "position": [
+          18.195718951682966,
+          23.52864823881094,
+          41.72926078455228
+        ],
+        "target": [
+          0.11057657532915782,
+          7.789923663140949,
+          4.330453640114741
+        ],
+        "fov": 55.18767579170149,
+        "phase": "live-gifts",
+        "focus": "A",
+        "seat": "seat-1",
+        "ack": 4,
+        "pending": 2
+      },
+      {
+        "mode": "GIFT_FOCUS",
+        "seconds": 53.41149999999888,
+        "shot": "COMMUNITY",
+        "renderMinusWorkerMs": 1,
+        "position": [
+          -2.1374503763825166,
+          1.1541320836197346,
+          8.870261580192393
+        ],
+        "target": [
+          -1.016070605667886,
+          0.6741320836197346,
+          13.742889968427228
+        ],
+        "fov": 50,
+        "phase": "live-gifts",
+        "focus": "A",
+        "seat": "seat-1",
+        "ack": 7,
+        "pending": 2
+      },
+      {
+        "mode": "GIFT_TRANSITION",
+        "seconds": 58.133599999998886,
+        "shot": "HERO_TOP_RING",
+        "renderMinusWorkerMs": 23,
+        "position": [
+          -2.137911223660303,
+          1.1493858587169197,
+          8.869902834882083
+        ],
+        "target": [
+          -1.0168451896163568,
+          0.6693858587169197,
+          13.742468017404375
+        ],
+        "fov": 50,
+        "phase": "live-gifts",
+        "focus": "B",
+        "seat": "seat-2",
+        "ack": 7,
+        "pending": 1
+      },
+      {
+        "mode": "GIFT_FOCUS",
+        "seconds": 59.32799999999888,
+        "shot": "HERO_TOP_RING",
+        "renderMinusWorkerMs": 13,
+        "position": [
+          -8.074734937245285,
+          1.155048292376187,
+          4.248398557782142
+        ],
+        "target": [
+          -10.995353418048422,
+          0.6750482923761869,
+          8.306721818636454
+        ],
+        "fov": 50,
+        "phase": "live-gifts",
+        "focus": "B",
+        "seat": "seat-2",
+        "ack": 7,
+        "pending": 1
+      },
+      {
+        "mode": "GIFT_TRANSITION",
+        "seconds": 63.93209999999888,
+        "shot": "HERO_TOP_RING",
+        "renderMinusWorkerMs": 21,
+        "position": [
+          -8.073700420209262,
+          1.149394913835653,
+          4.248647843421357
+        ],
+        "target": [
+          -10.99375061821349,
+          0.6693949138356531,
+          8.306840320480156
+        ],
+        "fov": 50,
+        "phase": "live-gifts",
+        "focus": "C",
+        "seat": "seat-3",
+        "ack": 7,
+        "pending": 0
+      },
+      {
+        "mode": "GIFT_FOCUS",
+        "seconds": 65.13339999999889,
+        "shot": "HERO_TOP_RING",
+        "renderMinusWorkerMs": 22,
+        "position": [
+          5.253372490089341,
+          1.1566345048819557,
+          7.460047727253996
+        ],
+        "target": [
+          9.65417446850852,
+          0.6766345048819558,
+          9.833429691191078
+        ],
+        "fov": 50,
+        "phase": "live-gifts",
+        "focus": "C",
+        "seat": "seat-3",
+        "ack": 7,
+        "pending": 0
+      },
+      {
+        "mode": "CINE_RETURN",
+        "seconds": 69.94579999999888,
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "renderMinusWorkerMs": 35,
+        "position": [
+          5.221379516927007,
+          1.2101226092118789,
+          7.7089007901045115
+        ],
+        "target": [
+          9.590924098867847,
+          0.7276638274128526,
+          9.769004911544487
+        ],
+        "fov": 50.048853822910296,
+        "phase": "live-gifts",
+        "ack": 7,
+        "pending": 0
+      },
+      {
+        "mode": "CINEMATIC",
+        "seconds": 71.28599999999888,
+        "shot": "HERO_WIDE_TREE_REFLECTION",
+        "renderMinusWorkerMs": 75,
+        "position": [
+          0.743414528000002,
+          10.668000000000001,
+          46.113557344
+        ],
+        "target": [
+          0,
+          9.578154931199999,
+          0
+        ],
+        "fov": 56.68679383536766,
+        "phase": "live-gifts",
+        "ack": 7,
+        "pending": 0
+      }
+    ]
+  },
+  "lotus": {
+    "pad": 52,
+    "bloom": 56,
+    "bud": 40,
+    "leaf": 120
+  },
+  "totalDecorativeLotus": 268,
+  "actualSlots": 12,
+  "lowCameraSamples": 0,
+  "stoppedViewpoint": "NOT_REPRODUCED in controlled visible baseline fixture"
+}

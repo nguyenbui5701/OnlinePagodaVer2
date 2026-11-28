@@ -1,0 +1,697 @@
+{
+  "base": "610b8c738c5925b722b028de7067fedcfaaafd06",
+  "execution": "43ec21917d4b64a7c73becf272433ef0cc17be9f",
+  "device": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "camera": {
+    "requested": "cinematic",
+    "effective": "cinematic",
+    "duration": 68,
+    "route": "cinematic-west",
+    "obstacles": {
+      "tree": 26,
+      "terrain": 30,
+      "real-seat": 3,
+      "decorative-seat": 9,
+      "lotus-pad": 260,
+      "lotus-leaf": 600,
+      "lotus-bloom": 168,
+      "lotus-bud": 80
+    },
+    "receipts": [
+      {
+        "route": "cinematic-west",
+        "motion": {
+          "speed": 4.893367964820331,
+          "acceleration": 2.889300598042969,
+          "aim": 0.1976431773973705,
+          "targetSpeed": 2.64229956320478,
+          "fovSpeed": 1.2999975000030872,
+          "minDistance": 11.089694928988848,
+          "minFov": 48.72141764955874,
+          "maxFov": 60.0064418765432
+        },
+        "motionFailures": [],
+        "collisions": [],
+        "giftFailures": [],
+        "giftPoses": [
+          {
+            "seat": "seat-1",
+            "position": [
+              -2.1374503763825166,
+              1.14915,
+              8.870261580192393
+            ],
+            "target": [
+              -1.016070605667886,
+              0.6691499999999999,
+              13.742889968427228
+            ],
+            "fov": 50
+          },
+          {
+            "seat": "seat-2",
+            "position": [
+              -8.074734937245285,
+              1.14915,
+              4.248398557782142
+            ],
+            "target": [
+              -10.995353418048422,
+              0.6691499999999999,
+              8.306721818636454
+            ],
+            "fov": 50
+          },
+          {
+            "seat": "seat-3",
+            "position": [
+              4.67652895379426,
+              1.14915,
+              9.361153151603297
+            ],
+            "target": [
+              9.65417446850852,
+              0.6691499999999999,
+              9.833429691191078
+            ],
+            "fov": 50
+          }
+        ]
+      },
+      {
+        "route": "cinematic-east",
+        "motion": {
+          "speed": 4.893367964820331,
+          "acceleration": 2.889300598042969,
+          "aim": 0.1976431773973705,
+          "targetSpeed": 2.64229956320478,
+          "fovSpeed": 1.2999975000030872,
+          "minDistance": 11.089694928988848,
+          "minFov": 48.72141764955874,
+          "maxFov": 60.0064418765432
+        },
+        "motionFailures": [],
+        "collisions": [],
+        "giftFailures": [],
+        "giftPoses": [
+          {
+            "seat": "seat-1",
+            "position": [
+              -2.1374503763825166,
+              1.14915,
+              8.870261580192393
+            ],
+            "target": [
+              -1.016070605667886,
+              0.6691499999999999,
+              13.742889968427228
+            ],
+            "fov": 50
+          },
+          {
+            "seat": "seat-2",
+            "position": [
+              -6.002375247329512,
+              1.14915,
+              8.571616112128119
+            ],
+            "target": [
+              -10.995353418048422,
+              0.6691499999999999,
+              8.306721818636454
+            ],
+            "fov": 50
+          },
+          {
+            "seat": "seat-3",
+            "position": [
+              4.67652895379426,
+              1.14915,
+              9.361153151603297
+            ],
+            "target": [
+              9.65417446850852,
+              0.6691499999999999,
+              9.833429691191078
+            ],
+            "fov": 50
+          }
+        ]
+      }
+    ]
+  },
+  "layoutSha256": "5e060728a512ba8985393db5ba2e9cbb88041912b0bb90b40256ee600e8a9245",
+  "assetSha256": "ff14eece4e43eba996a28bfdc8e7353693b4d0ab75911af2f0a61dbae57f35ab",
+  "offline": {
+    "phaseFrom": 0.07600000000000001,
+    "phaseTo": 137.13600000000443,
+    "actualFrames": 4545,
+    "shots": [
+      "HERO_WIDE",
+      "COMMUNITY",
+      "LOW_WATER_KOI",
+      "AERIAL_RING",
+      "UNDER_TREE_GOLD",
+      "FAR_ATMOSPHERE"
+    ],
+    "maxEyeStep": 0.645914456074561,
+    "maxEyeSpeedPerPhaseSecond": 4.893365171363375,
+    "video": {
+      "event": "video",
+      "ms": 194598,
+      "width": 720,
+      "height": 1280,
+      "duration": "152.017000"
+    }
+  },
+  "synthetic": {
+    "gifts": {
+      "event": "gifts-verified",
+      "ms": 35337,
+      "visits": [
+        {
+          "name": "A",
+          "actor": "demo-1795866139265-actor-1",
+          "seat": "seat-1",
+          "request": "demo-1795866139265-gift-1"
+        },
+        {
+          "name": "B",
+          "actor": "demo-1795866139265-actor-2",
+          "seat": "seat-2",
+          "request": "demo-1795866139265-gift-2"
+        },
+        {
+          "name": "C",
+          "actor": "demo-1795866139265-actor-3",
+          "seat": "seat-3",
+          "request": "demo-1795866139265-gift-3"
+        },
+        {
+          "name": "A",
+          "actor": "demo-1795866139265-actor-1",
+          "seat": "seat-1",
+          "request": "demo-1795866139265-gift-5"
+        }
+      ],
+      "unseated": true,
+      "count": 5,
+      "ack": 9,
+      "pausedAt": 2.123999999999999,
+      "resumed": 2.432100833333333,
+      "voices": [
+        "seat-1",
+        "seat-2",
+        "seat-3",
+        "seat-1"
+      ]
+    },
+    "hidden": {
+      "event": "background",
+      "ms": 43805,
+      "from": 2.4772008333333333,
+      "hidden": 2.4772008333333333,
+      "resumed": 2.8529999999999998,
+      "pcm": {
+        "rms": 0.005486581201525251,
+        "context": "running",
+        "time": 34.501333333333335
+      },
+      "ack": 10,
+      "ownerRetained": true,
+      "launches": 1,
+      "voices": 4,
+      "nonSpatialChimes": 1
+    },
+    "recovery": {
+      "event": "webgl-recovered",
+      "ms": 45614,
+      "restores": 1,
+      "ownerRetained": true
+    }
+  },
+  "fallback": [
+    {
+      "file": "fallback-cinematic",
+      "tree": "R18A",
+      "route": "hero",
+      "status": {
+        "requestedTree": "R18A",
+        "tree": "R18A",
+        "requestedDensity": "lush",
+        "density": "lush",
+        "fallback": false,
+        "failures": []
+      },
+      "reason": "B9_ENVIRONMENT_UNAVAILABLE",
+      "receipts": [
+        {
+          "route": "cinematic-west",
+          "motion": {
+            "speed": 4.893367964820331,
+            "acceleration": 2.889300598042969,
+            "aim": 0.1976431773973705,
+            "targetSpeed": 2.64229956320478,
+            "fovSpeed": 1.2999975000030872,
+            "minDistance": 11.089694928988848,
+            "minFov": 48.72141764955874,
+            "maxFov": 60.0064418765432
+          },
+          "motionFailures": [],
+          "collisions": [],
+          "giftFailures": [],
+          "giftPoses": [
+            {
+              "seat": "seat-1",
+              "position": [
+                -2.1374503763825166,
+                1.14915,
+                8.870261580192393
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6691499999999999,
+                13.742889968427228
+              ],
+              "fov": 50
+            },
+            {
+              "seat": "seat-2",
+              "position": [
+                -8.074734937245285,
+                1.14915,
+                4.248398557782142
+              ],
+              "target": [
+                -10.995353418048422,
+                0.6691499999999999,
+                8.306721818636454
+              ],
+              "fov": 50
+            },
+            {
+              "seat": "seat-3",
+              "position": [
+                4.67652895379426,
+                1.14915,
+                9.361153151603297
+              ],
+              "target": [
+                9.65417446850852,
+                0.6691499999999999,
+                9.833429691191078
+              ],
+              "fov": 50
+            }
+          ]
+        },
+        {
+          "route": "cinematic-east",
+          "motion": {
+            "speed": 4.893367964820331,
+            "acceleration": 2.889300598042969,
+            "aim": 0.1976431773973705,
+            "targetSpeed": 2.64229956320478,
+            "fovSpeed": 1.2999975000030872,
+            "minDistance": 11.089694928988848,
+            "minFov": 48.72141764955874,
+            "maxFov": 60.0064418765432
+          },
+          "motionFailures": [],
+          "collisions": [],
+          "giftFailures": [],
+          "giftPoses": [
+            {
+              "seat": "seat-1",
+              "position": [
+                -2.1374503763825166,
+                1.14915,
+                8.870261580192393
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6691499999999999,
+                13.742889968427228
+              ],
+              "fov": 50
+            },
+            {
+              "seat": "seat-2",
+              "position": [
+                -6.002375247329512,
+                1.14915,
+                8.571616112128119
+              ],
+              "target": [
+                -10.995353418048422,
+                0.6691499999999999,
+                8.306721818636454
+              ],
+              "fov": 50
+            },
+            {
+              "seat": "seat-3",
+              "position": [
+                4.67652895379426,
+                1.14915,
+                9.361153151603297
+              ],
+              "target": [
+                9.65417446850852,
+                0.6691499999999999,
+                9.833429691191078
+              ],
+              "fov": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "fallback-cinematic-missing-r18a",
+      "tree": "R17B",
+      "route": "cinematic",
+      "status": {
+        "requestedTree": "R18A",
+        "tree": "R17B",
+        "requestedDensity": "lush",
+        "density": "lush",
+        "fallback": true,
+        "failures": [
+          {
+            "revision": "R18A",
+            "code": "MISSING"
+          }
+        ],
+        "pond": true
+      },
+      "receipts": [
+        {
+          "route": "cinematic-west",
+          "motion": {
+            "speed": 4.893367964820331,
+            "acceleration": 2.889300598042969,
+            "aim": 0.1976431773973705,
+            "targetSpeed": 2.64229956320478,
+            "fovSpeed": 1.2999975000030872,
+            "minDistance": 11.089694928988848,
+            "minFov": 48.72141764955874,
+            "maxFov": 60.0064418765432
+          },
+          "motionFailures": [],
+          "collisions": [],
+          "giftFailures": [],
+          "giftPoses": [
+            {
+              "seat": "seat-1",
+              "position": [
+                2.4782207269119936,
+                1.14915,
+                10.166589074618495
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6691499999999999,
+                13.742889968427228
+              ],
+              "fov": 50
+            },
+            {
+              "seat": "seat-2",
+              "position": [
+                -6.4996706777499025,
+                1.14915,
+                10.495062902330217
+              ],
+              "target": [
+                -10.995353418048422,
+                0.6691499999999999,
+                8.306721818636454
+              ],
+              "fov": 50
+            },
+            {
+              "seat": "seat-3",
+              "position": [
+                4.88554619577426,
+                1.14915,
+                11.33682065713423
+              ],
+              "target": [
+                9.65417446850852,
+                0.6691499999999999,
+                9.833429691191078
+              ],
+              "fov": 50
+            }
+          ]
+        },
+        {
+          "route": "cinematic-east",
+          "motion": {
+            "speed": 4.893367964820331,
+            "acceleration": 2.889300598042969,
+            "aim": 0.1976431773973705,
+            "targetSpeed": 2.64229956320478,
+            "fovSpeed": 1.2999975000030872,
+            "minDistance": 11.089694928988848,
+            "minFov": 48.72141764955874,
+            "maxFov": 60.0064418765432
+          },
+          "motionFailures": [],
+          "collisions": [],
+          "giftFailures": [],
+          "giftPoses": [
+            {
+              "seat": "seat-1",
+              "position": [
+                2.4782207269119936,
+                1.14915,
+                10.166589074618495
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6691499999999999,
+                13.742889968427228
+              ],
+              "fov": 50
+            },
+            {
+              "seat": "seat-2",
+              "position": [
+                -6.4996706777499025,
+                1.14915,
+                10.495062902330217
+              ],
+              "target": [
+                -10.995353418048422,
+                0.6691499999999999,
+                8.306721818636454
+              ],
+              "fov": 50
+            },
+            {
+              "seat": "seat-3",
+              "position": [
+                4.88554619577426,
+                1.14915,
+                11.33682065713423
+              ],
+              "target": [
+                9.65417446850852,
+                0.6691499999999999,
+                9.833429691191078
+              ],
+              "fov": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "fallback-cinematic-missing-r18a-r17b",
+      "tree": "R16",
+      "route": "cinematic",
+      "status": {
+        "requestedTree": "R18A",
+        "tree": "R16",
+        "requestedDensity": "lush",
+        "density": "lush",
+        "fallback": true,
+        "failures": [
+          {
+            "revision": "R18A",
+            "code": "MISSING"
+          },
+          {
+            "revision": "R17B",
+            "code": "MISSING"
+          }
+        ],
+        "pond": true
+      },
+      "receipts": [
+        {
+          "route": "cinematic-west",
+          "motion": {
+            "speed": 4.893367964820331,
+            "acceleration": 2.889300598042969,
+            "aim": 0.1976431773973705,
+            "targetSpeed": 2.64229956320478,
+            "fovSpeed": 1.2999975000030872,
+            "minDistance": 11.089694928988848,
+            "minFov": 48.72141764955874,
+            "maxFov": 60.0064418765432
+          },
+          "motionFailures": [],
+          "collisions": [],
+          "giftFailures": [],
+          "giftPoses": [
+            {
+              "seat": "seat-1",
+              "position": [
+                -3.9464206415695124,
+                1.14915,
+                9.69158787316312
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6691499999999999,
+                13.742889968427228
+              ],
+              "fov": 50
+            },
+            {
+              "seat": "seat-2",
+              "position": [
+                -8.074734937245285,
+                1.14915,
+                4.248398557782142
+              ],
+              "target": [
+                -10.995353418048422,
+                0.6691499999999999,
+                8.306721818636454
+              ],
+              "fov": 50
+            },
+            {
+              "seat": "seat-3",
+              "position": [
+                4.88554619577426,
+                1.94915,
+                11.33682065713423
+              ],
+              "target": [
+                9.65417446850852,
+                0.6691499999999999,
+                9.833429691191078
+              ],
+              "fov": 50
+            }
+          ]
+        },
+        {
+          "route": "cinematic-east",
+          "motion": {
+            "speed": 4.893367964820331,
+            "acceleration": 2.889300598042969,
+            "aim": 0.1976431773973705,
+            "targetSpeed": 2.64229956320478,
+            "fovSpeed": 1.2999975000030872,
+            "minDistance": 11.089694928988848,
+            "minFov": 48.72141764955874,
+            "maxFov": 60.0064418765432
+          },
+          "motionFailures": [],
+          "collisions": [],
+          "giftFailures": [],
+          "giftPoses": [
+            {
+              "seat": "seat-1",
+              "position": [
+                -3.9464206415695124,
+                1.14915,
+                9.69158787316312
+              ],
+              "target": [
+                -1.016070605667886,
+                0.6691499999999999,
+                13.742889968427228
+              ],
+              "fov": 50
+            },
+            {
+              "seat": "seat-2",
+              "position": [
+                -6.002375247329512,
+                1.14915,
+                8.571616112128119
+              ],
+              "target": [
+                -10.995353418048422,
+                0.6691499999999999,
+                8.306721818636454
+              ],
+              "fov": 50
+            },
+            {
+              "seat": "seat-3",
+              "position": [
+                9.273543070419002,
+                1.14915,
+                4.8479387686450925
+              ],
+              "target": [
+                9.65417446850852,
+                0.6691499999999999,
+                9.833429691191078
+              ],
+              "fov": 50
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "perf": {
+    "baseline": {
+      "event": "idle-frames",
+      "ms": 22296,
+      "frames": 481,
+      "p50": 34.69999999999709,
+      "p95": 41.80000000000018,
+      "p99": 55.70000000000073,
+      "ranges": {
+        "calls": [
+          150,
+          163
+        ],
+        "triangles": [
+          1368958,
+          1791266
+        ]
+      },
+      "heap": 21640912
+    },
+    "candidate": {
+      "event": "idle-frames",
+      "ms": 24483,
+      "frames": 545,
+      "p50": 27.80000000000109,
+      "p95": 41.700000000000045,
+      "p99": 48.69999999999982,
+      "ranges": {
+        "calls": [
+          107,
+          154
+        ],
+        "triangles": [
+          997454,
+          1377370
+        ]
+      },
+      "heap": 28273106
+    }
+  }
+}
