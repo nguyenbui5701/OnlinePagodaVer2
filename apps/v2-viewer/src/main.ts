@@ -1,7 +1,7 @@
 import './style.css';
 import {
   AgXToneMapping, Color, DirectionalLight, Group, PCFShadowMap, PerspectiveCamera, Scene, SRGBColorSpace,
-  Mesh, Raycaster, Vector3, WebGLRenderer,
+  Box3, Mesh, Raycaster, Vector3, WebGLRenderer,
 } from 'three';
 import { loadSakura, parseTreeRevision, type Profile } from './asset.ts';
 import { capture, createCinematicRoutes, parseCinematicSeed, type CameraPose } from './camera.ts';
@@ -27,6 +27,9 @@ import { createWater } from './water.ts';
 import { createAmbientFx } from './ambient-fx.ts';
 import { createTrunkMist } from './trunk-mist.ts';
 import { createHeroRoutes } from './hero-camera.ts';
+import { createRotationRoute, validateRotation } from './cinematic-rotation.ts';
+import { createCameraClearance, meshCameraBounds } from './camera-clearance.ts';
+import { planCameraBridge, RotationDirector } from './rotation-director.ts';
 import { createGiftFx } from './gift-fx.ts';
 import { environmentFx, fxProfiles, richAmbientProfiles } from './fx-profiles.ts';
 import { blessingEnabled } from './gift-blessing.ts';
@@ -72,7 +75,8 @@ const giftIcons = !comparison && query.get('gifticons') === 'on';
 const enableBlessing = blessingEnabled(query.get('blessing'), liveRequested ? 'gifts' : scenario, fxEnabled);
 const rings = !comparison && query.get('seats') === 'rings';
 const rich = !comparison && query.get('ambience') === 'rich';
-const hero = !comparison && query.get('shots') === 'hero';
+const rotationRequested = !comparison && profile === 'quality' && query.get('shots') === 'cinematic';
+const hero = !comparison && (query.get('shots') === 'hero' || query.get('shots') === 'cinematic');
 const crowd = rings || liveRequested || (scenario === 'community' && query.get('crowd') !== 'off');
 const diversity = !comparison && diversityEnabled(crowd, query.get('diversity'));
 const enableBotanicals = !comparison && botanicalsEnabled(crowd, query.get('botanicals'));
@@ -166,7 +170,9 @@ async function boot() {
   let botanicals: Awaited<ReturnType<typeof createBotanicalScene>> | undefined;
   let communityNames: ReturnType<typeof createCommunityNames> | undefined;
   let nameplates: ReturnType<typeof createNameplates> | undefined;
-  let routes: ReturnType<typeof createCinematicRoutes> | ReturnType<typeof createHeroRoutes> | undefined;
+  let routes: ReturnType<typeof createCinematicRoutes> | ReturnType<typeof createHeroRoutes> | ReturnType<typeof createRotationRoute> | undefined;
+  let rotation: RotationDirector | undefined;
+  let rotationGiftPoses: Map<string, CameraPose> | undefined;
   let start: number | undefined;
   let livePresentation: ReturnType<SliceDriver['update']> | undefined;
   let liveClock: Worker | undefined;
@@ -275,13 +281,15 @@ async function boot() {
       const seat = actor && seats.seats.get(actor.seatId);
       selected = seat && seat.root.visible && actor ? { seat, presentation: actor } : undefined;
       const focus = selected && presentation.state.focus && {
-        requestId: presentation.state.focus.requestId, pose: seatPose(selected.seat, 0.30),
+        requestId: presentation.state.focus.requestId,
+        pose: rotationGiftPoses?.get(selected.presentation.seatId) ?? seatPose(selected.seat, 0.30),
       };
-      const routeTime = director.routeSeconds(atMs, focus?.requestId);
-      cinematic = routes.sample(routeTime);
+      const routeTime = rotation ? rotation.phase : director.routeSeconds(atMs, focus?.requestId);
+      const controlled = rotation?.step(atMs, !document.hidden, focus);
+      cinematic = routes.sample(rotation?.phase ?? routeTime);
       if (twilight && look !== 'legacy') {
         const mode = presentation.state.camera.mode;
-        const weights = timeline.update(atMs, routeTime, mode === 'GIFT_TRANSITION' || mode === 'GIFT_FOCUS', look);
+        const weights = timeline.update(atMs, rotation ? seconds : routeTime, mode === 'GIFT_TRANSITION' || mode === 'GIFT_FOCUS', look);
         const appearance = twilight.update(weights);
         renderer.toneMappingExposure = appearance.exposure;
         gold?.update(appearance.veinEmissive * (r18Fill ? 1.32 : 1));
@@ -298,8 +306,10 @@ async function boot() {
           exposure: renderer.toneMappingExposure, fog: rig.fog?.color.toArray(), fogDensity: rig.fog?.density,
           reflection: { ...reflection }, veinEmissive: appearance.veinEmissive * (r18Fill ? 1.32 : 1) };
       }
-      const live = director.move(atMs, cinematic, focus);
+      const live = controlled ?? director.move(atMs, cinematic, focus);
       pose = review?.fixed ?? (review?.angle !== undefined && reviewSeat ? seatPose(reviewSeat, review.angle, 5.35) : live);
+      report.routeSeconds = rotation?.phase ?? routeTime;
+      if (rotation) report.cameraPathBlocked = rotation.blocked;
       camera.position.copy(pose.position);
       camera.lookAt(pose.target);
       camera.fov = pose.fov;
@@ -392,7 +402,8 @@ async function boot() {
     if (overlayReceiver && !document.hidden && !shaderFailed) {
       lastDraw = now;
       const intent = presentation?.state.focus;
-      shownFocus = selected && intent && presentation?.state.camera.mode === 'GIFT_FOCUS'
+      shownFocus = selected && intent && presentation?.state.camera.mode === 'GIFT_FOCUS' &&
+        (!rotation || rotation.reachedFocus)
         ? { actorId: selected.presentation.actorId, seatId: selected.presentation.seatId, request: intent.requestId } : undefined;
     }
     if (overlayReceiver) reportRendererReady(!lost && !shaderFailed && !gl.isContextLost() && renderer.info.render.calls > 0);
@@ -428,11 +439,15 @@ async function boot() {
     nameplates?.clear();
     if (bubbles) report.bubbles = {};
   };
-  const visibility = () => { if (document.hidden) clearPresence(); };
-  if (bubbles || presence) document.addEventListener('visibilitychange', visibility);
+  const visibility = () => {
+    rotation?.pause();
+    if (document.hidden && (bubbles || presence)) clearPresence();
+  };
+  if (rotationRequested || bubbles || presence) document.addEventListener('visibilitychange', visibility);
   const contextLost = (event: Event) => {
     event.preventDefault();
     lost = true;
+    rotation?.pause();
     reportRendererReady(false);
     if (!overlaySettings) audioAction(manager => manager.suspend('webgl-context'));
     shownFocus = undefined;
@@ -579,7 +594,11 @@ async function boot() {
           environment.add(blessing.cloud);
         }
       }
-      Object.assign(report, { pair: pair.report, treeTarget: tree.toArray(), rejectedRoutes: routes.rejected });
+      // Layout sampling stays pinned to the pre-C0 hero route, even after a
+      // different cinematic route is selected below.
+      report.treeTarget = tree.toArray();
+      report.pair = pair.report;
+      report.rejectedRoutes = routes.rejected;
       if (pair.slots) {
         report.communityLayout = pair.slots;
         report.communityPadRadius = pair.padRadius;
@@ -608,6 +627,60 @@ async function boot() {
         }
       }
       if (routes.rejected.length) console.warn('P0.9 cinematic clearance fallback', routes.rejected);
+      if (rotationRequested) {
+        const seatBounds = [...pair.seats.values()].map(seat => {
+          const box = new Box3();
+          for (const phase of [0, .25, .5, .75, 1, 1.25, 1.5, 1.75]) {
+            seat.sample(phase);
+            seat.root.updateWorldMatrix(true, true);
+            box.union(new Box3().setFromObject(seat.root, true));
+          }
+          seat.sample(0);
+          return { group: 'real-seat', box: box.expandByScalar(.15) };
+        });
+        const clearance = createCameraClearance([
+          ...meshCameraBounds(asset.root, 'tree'),
+          ...(pond?.scene ? meshCameraBounds(pond.scene.terrain, 'terrain') : []),
+          ...seatBounds, ...(pair.batches?.cameraBounds() ?? []), ...(lotus?.cameraBounds() ?? []),
+          ...(botanicals ? meshCameraBounds(botanicals.group, 'botanicals') : []),
+        ]);
+        const first = ((Math.imul(seed ^ (seed >>> 7), 0x45d9f3b) >>> 29) & 1) ? -1 : 1;
+        const candidates = [createRotationRoute(tree, seed, first), createRotationRoute(tree, seed, first === 1 ? -1 : 1)];
+        const receipts = candidates.map(candidate => {
+          const route = validateRotation(candidate, clearance);
+          const giftFailures: string[] = [];
+          const samples = Array.from({ length: candidate.duration / 2 }, (_, index) => candidate.sample(index * 2).position);
+          const poses = new Map<string, CameraPose>();
+          const giftReachable = (from: Vector3, to: Vector3) => !!planCameraBridge(from, to, clearance) &&
+            !!planCameraBridge(to, from, clearance);
+          for (const [seatId, seat] of pair.seats) {
+            const pose = [.30, -.30, .70, -.70, 1.1, -1.1, 1.50, -1.50].flatMap(angle => [0, .8, 1.6].map(lift => {
+              const next = seatPose(seat, angle);
+              next.position.y += lift;
+              return next;
+            })).find(pose => !clearance.lineIssue(pose.position, pose.position) &&
+              samples.every(eye => giftReachable(eye, pose.position)) &&
+              [...poses.values()].every(previous => giftReachable(previous.position, pose.position)));
+            if (pose) poses.set(seatId, pose);
+            else giftFailures.push(seatId);
+          }
+          return { ...route, giftFailures, poses };
+        });
+        const accepted = receipts.findIndex(receipt =>
+          !receipt.collisions.length && !receipt.motionFailures.length && !receipt.giftFailures.length);
+        const selectedRoute = pond?.scene && accepted >= 0 ? candidates[accepted] : undefined;
+        if (selectedRoute) {
+          routes = selectedRoute;
+          rotationGiftPoses = receipts[accepted].poses;
+          rotation = new RotationDirector(selectedRoute.sample, clearance);
+        }
+        report.cameraRotation = { requested: 'cinematic', effective: selectedRoute ? 'cinematic' : 'hero',
+          duration: selectedRoute?.duration ?? 40, route: selectedRoute?.routeId,
+          reason: selectedRoute ? undefined : !pond?.scene ? 'B9_ENVIRONMENT_UNAVAILABLE' : 'NO_VALIDATED_ROUTE',
+          obstacles: clearance.overview, receipts: receipts.map(({ poses, ...receipt }) => ({ ...receipt,
+            giftPoses: [...poses].map(([seat, pose]) => ({ seat, position: pose.position.toArray(),
+              target: pose.target.toArray(), fov: pose.fov })) })) };
+      }
     }
     world = { requestedTree, tree: asset.report.assetRevision, requestedDensity, density: lotus ? 'lush' : 'legacy',
       fallback: asset.report.failures.length > 0, failures: asset.report.failures, ...(pond && { pond: pond.status }) };

@@ -58,6 +58,14 @@ export function createLotusBatches() {
       for (const kind of ['pad', 'leaf'] as const) add(kind, items.filter(item => item.kind === kind), sources, height);
     },
     get batchCount() { return pools.reduce((count, pool) => count + pool.batches.length, 0); },
+    cameraBounds() {
+      group.updateWorldMatrix(true, true);
+      return pools.flatMap(pool => pool.batches.flatMap(({ mesh, transforms }) => {
+        if (!mesh.geometry.boundingBox) mesh.geometry.computeBoundingBox();
+        return transforms.map(matrix => ({ group: 'lotus-' + pool.kind,
+          box: mesh.geometry.boundingBox!.clone().applyMatrix4(matrix).applyMatrix4(mesh.matrixWorld) }));
+      }));
+    },
     update(camera: PerspectiveCamera) {
       frustum.setFromProjectionMatrix(projection.multiplyMatrices(camera.projectionMatrix, camera.matrixWorldInverse));
       const counts = { pad: 0, leaf: 0, bloom: 0, bud: 0 };

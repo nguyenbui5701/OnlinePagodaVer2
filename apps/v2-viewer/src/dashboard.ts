@@ -32,7 +32,8 @@ const labels: Record<keyof LiveSettings, string> = {
 };
 const optionLabels: Record<string, string> = { eco: 'ECO', quality: 'QUALITY', r18a: 'R18a', lush: 'Dày theo cụm', r17b: 'R17B', r16: 'R16',
   twilight: 'Chuyển cảnh chiều tối', dusk: 'Tím-xanh', pink: 'Hồng', gold: 'Vàng', legacy: 'Ánh sáng gốc',
-  on: 'Bật', off: 'Tắt', rings: 'Vòng đồng tâm', default: 'Mặc định', rich: 'Tăng hạt và sương', hero: 'Góc hero' };
+  on: 'Bật', off: 'Tắt', rings: 'Vòng đồng tâm', default: 'Mặc định', rich: 'Tăng hạt và sương', hero: 'Góc hero',
+  cinematic: 'Cinematic Rotation · QUALITY' };
 const inputs = new Map<keyof LiveSettings, HTMLInputElement | HTMLSelectElement>();
 for (const [name, keys] of groupFields) {
   const group = document.createElement('section');
@@ -64,6 +65,8 @@ for (const [name, keys] of groupFields) {
 }
 
 const outputCounters = new Map<string, HTMLElement>();
+const cinematicOption = Array.from((inputs.get('shots') as HTMLSelectElement).options)
+  .find(option => option.value === 'cinematic')!;
 for (const [key, name] of [['chat', 'Chat'], ['member', 'Member'], ['like', 'Like'], ['giftFinal', 'Gói gift final'],
   ['giftProgress', 'Gói gift progress'], ['viewerCount', 'Đang xem'], ['dropped', 'Gói bỏ qua']]) {
   const group = document.createElement('div');
@@ -145,7 +148,10 @@ function render(state?: Status) {
   fields.disabled = !available;
   connect.disabled = !state?.canConnect || busy;
   disconnect.disabled = state?.receiver !== 'overlay' || !state.canDisconnect || busy;
-  save.disabled = !available || (!dirty && !desired?.warning);
+  const quality = inputs.get('profile')?.value === 'quality';
+  cinematicOption.disabled = !quality;
+  save.disabled = !available || (!dirty && !desired?.warning) || (!quality && inputs.get('shots')?.value === 'cinematic');
+  save.title = !quality && inputs.get('shots')?.value === 'cinematic' ? 'Cinematic Rotation yêu cầu QUALITY.' : '';
   apply.disabled = !pending || !state?.canApply || dirty || busy;
   reload.disabled = !available || !dirty;
 }

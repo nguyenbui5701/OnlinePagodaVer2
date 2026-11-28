@@ -1,7 +1,7 @@
 export const choices = {
   profile: ['eco', 'quality'], tree: ['r18a', 'r17b', 'r16'], density: ['legacy', 'lush'], look: ['twilight', 'dusk', 'pink', 'gold', 'legacy'],
   environment: ['off', 'on'], botanicals: ['on', 'off'], diversity: ['on', 'off'], seats: ['rings', 'default'],
-  ambience: ['rich', 'default'], shots: ['hero', 'default'], fx: ['on', 'off'], presence: ['on', 'off'],
+  ambience: ['rich', 'default'], shots: ['hero', 'default', 'cinematic'], fx: ['on', 'off'], presence: ['on', 'off'],
   chatbubbles: ['on', 'off'], gifticons: ['on', 'off'], blessing: ['on', 'off'],
 } as const;
 
@@ -18,6 +18,7 @@ export function validSettings(input: unknown): input is LiveSettings {
   const seed = fields.seed;
   return Object.keys(fields).length === Object.keys(liveDefaults).length &&
     Object.hasOwn(fields, 'seed') && typeof seed === 'number' && Number.isInteger(seed) && seed >= 0 && seed <= 0xffffffff &&
+    (fields.shots !== 'cinematic' || fields.profile === 'quality') &&
     Object.entries(choices).every(([key, values]) => Object.hasOwn(fields, key) &&
       (values as readonly unknown[]).includes(fields[key]));
 }
