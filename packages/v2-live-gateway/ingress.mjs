@@ -10,8 +10,9 @@ export function createIngress(transmit, exit) {
   let inFlight = 0;
   let halted = false;
   let previous = '';
+  let reporting = false;
 
-  function send(message, priority = 'control') {
+  function send(message, priority = 'control', done) {
     if (halted) return;
     const critical = priority === 'control' || priority === 'final';
     const cap = critical ? 256 : priority === 'identity' ? 240 : 208;
@@ -26,6 +27,7 @@ export function createIngress(transmit, exit) {
     inFlight++;
     const complete = error => {
       inFlight--;
+      done?.(error);
       if (!error) return;
       if (message.type === 'event') { metrics.handoff--; metrics.ipcError++; }
       if (critical) exit(2);
@@ -36,9 +38,12 @@ export function createIngress(transmit, exit) {
 
   function flush() {
     const wire = JSON.stringify(metrics);
-    if (wire === previous || halted || inFlight >= 240) return;
-    previous = wire;
-    send({ type: 'ingress', counts: JSON.parse(wire) }, 'identity');
+    if (wire === previous || reporting || halted || inFlight >= 240) return;
+    reporting = true;
+    send({ type: 'ingress', counts: { ...metrics } }, 'identity', error => {
+      reporting = false;
+      if (!error) previous = wire;
+    });
   }
 
   function receive(kind, packet, room, startedAt, now = Date.now()) {

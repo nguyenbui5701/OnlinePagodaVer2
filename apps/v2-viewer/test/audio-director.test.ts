@@ -52,6 +52,23 @@ function fixtures() {
   return { state, final, focus, record };
 }
 
+test('background emits one neutral chime for a new gift and avoids offscreen or overdue speech replay', () => {
+  const { director, starts, sounds } = harness(true);
+  const { state, final, focus } = fixtures();
+  const request = 'demo-room-gift-1';
+  director.enable(true);
+  director.frame(state(20, 'GIFT_TRANSITION', request), 0, [final(request, 20, first)], undefined, true);
+  director.frame(state(25, 'GIFT_FOCUS', request), 0, [focus(request, 25)], first);
+  director.frame(state(30, 'GIFT_FOCUS', request), 0, [final(request, 30, first)], first);
+  director.frame(state(32, 'GIFT_FOCUS', request), 0,
+    [{ ...final('demo-room-gift-2', 32, first), staleAudio: true }], first, true);
+  assert.equal(starts.length, 0);
+  assert.equal(sounds.length, 1);
+  assert.equal(sounds[0].binding, undefined);
+  assert.equal(director.suppressed['offscreen-gift'], 1);
+  assert.equal(director.suppressed['overdue-delivery'], 1);
+});
+
 test('actual capacity fixture exposes accepted effects once and speaks A/B/C with original totals', () => {
   const driver = new SliceDriver('capacity', [], true);
   const { director, starts, sounds } = harness();

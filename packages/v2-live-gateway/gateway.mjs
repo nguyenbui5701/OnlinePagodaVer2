@@ -45,7 +45,8 @@ export class Gateway {
   ingress = newIngress();
   ingressSnapshot = newIngress();
   ingressReports = 0;
-  flow = { mapped: 0, dedup: 0, queued: 0, coalesced: 0, pressure: 0, throttled: 0, sessionDrop: 0, overflow: 0 };
+  flow = { mapped: 0, dedup: 0, queued: 0, coalesced: 0, pressure: 0, throttled: 0, sessionDrop: 0,
+    overflow: 0, invalid: 0, entries: 0, consumed: 0, abandoned: 0 };
   presenceFlow;
 
   constructor(launch = launchWorker) { this.launch = launch; }
@@ -169,7 +170,7 @@ export class Gateway {
     this.flow.mapped++;
     if (this.seen.has(event.eventId)) { this.flow.dedup++; return; }
     const kind = event.type === 'gift' ? (event.phase === 'final' ? 'giftFinal' : 'giftProgress') : event.type;
-    if (!Object.hasOwn(this.counters, kind)) return;
+    if (!Object.hasOwn(this.counters, kind)) { this.flow.invalid++; return; }
     this.counters[kind]++;
     if (kind === 'room') this.viewerCount = event.count;
     this.status = 'EVENTS_VERIFIED';
@@ -224,6 +225,7 @@ export class Gateway {
   push(event) {
     const entry = { seq: ++this.sequence, event: { ...event, atMs: Date.now(), roomEpoch: this.roomEpoch, connection: this.connection } };
     this.queue.push(entry);
+    this.flow.entries++;
     if (event.type === 'gift' && event.phase === 'final') this.onVoiceGift?.(entry);
   }
 
@@ -274,6 +276,7 @@ export class Gateway {
 
   acknowledge(client, ack) {
     if (this.owner !== client || !Number.isSafeInteger(ack) || ack < this.acknowledged || ack > this.offered) return false;
+    this.flow.consumed += ack - this.acknowledged;
     this.acknowledged = ack;
     while (this.queue.length && this.queue[0].seq <= ack) this.queue.shift();
     return true;
@@ -316,6 +319,7 @@ export class Gateway {
     this.overlayReady = false;
     this.applyPending = false;
     this.deliveryUncertain ||= this.queue.some(({ event }) => event.type === 'gift' && event.phase === 'final');
+    this.flow.abandoned += this.queue.length;
     this.queue.length = 0;
     this.counters = counts();
     this.viewerCount = this.dropped = 0;

@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
+import { spawn } from 'node:child_process';
 import { once } from 'node:events';
-import { mkdir, mkdtemp, rm, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { chromium } from 'playwright-core';
@@ -9,6 +10,7 @@ import { Gateway } from '../../../packages/v2-live-gateway/gateway.mjs';
 import { createGatewayServer } from '../../../packages/v2-live-gateway/server.mjs';
 import { AudioSettingsStore, PresenceSettingsStore, SettingsStore } from '../../../packages/v2-live-gateway/settings.mjs';
 import { createIngress } from '../../../packages/v2-live-gateway/ingress.mjs';
+import { WebSocket, WebSocketServer } from '../../../packages/v2-live-gateway/node_modules/ws/wrapper.mjs';
 import { audioDefaults } from '../src/live-audio-settings.ts';
 import { liveDefaults } from '../src/live-settings.ts';
 
@@ -63,20 +65,24 @@ function captureAudio() {
     const result = connect.call(this, target, ...args);
     const context = this.context;
     if (target !== context.destination || window.pcmTap) return result;
+    const output = this;
     const analyser = context.createAnalyser();
     analyser.fftSize = 1024;
     connect.call(this, analyser);
-    const stream = context.createMediaStreamDestination();
-    connect.call(this, stream);
-    const recorder = new MediaRecorder(stream.stream, { mimeType: 'audio/webm;codecs=opus' });
+    let recorder;
     const bits = [];
-    recorder.ondataavailable = event => bits.push(event.data);
-    recorder.start(1000);
     const block = new Float32Array(analyser.fftSize);
     const states = [context.state];
     context.addEventListener('statechange', () => states.push(context.state));
     window.pcmTap = {
       context, states,
+      record() {
+        const stream = context.createMediaStreamDestination();
+        connect.call(output, stream);
+        recorder = new MediaRecorder(stream.stream, { mimeType: 'audio/webm;codecs=opus' });
+        recorder.ondataavailable = event => bits.push(event.data);
+        recorder.start(1000);
+      },
       measure() {
         analyser.getFloatTimeDomainData(block);
         return { rms: Math.sqrt(block.reduce((sum, x) => sum + x*x, 0) / block.length),
@@ -98,12 +104,42 @@ function captureAudio() {
 
 let viewer;
 let browser;
+let edge;
+let relay;
 try {
   await mkdir(folder, { recursive: true });
   viewer = await preview({ ...(baseline && { root: process.env.V2_PR30_APP }), preview: { port: viewerPort } });
-  browser = await chromium.launch({ headless: false, executablePath: process.env.V2_BROWSER ||
-    'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', args: ['--window-size=1000,900'] });
-  const context = await browser.newContext({ viewport: { width: 720, height: 1280 } });
+  const userDir = join(temp, 'browser');
+  edge = spawn(process.env.V2_BROWSER || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
+    ['--remote-debugging-port=0', '--no-first-run', '--no-default-browser-check',
+      '--disable-features=CalculateNativeWinOcclusion', '--window-size=1000,900', '--user-data-dir=' + userDir, 'about:blank'],
+    { stdio: 'ignore' });
+  const port = await wait(async () => {
+    try { return (await readFile(join(userDir, 'DevToolsActivePort'), 'utf8')).split(/\r?\n/)[0]; }
+    catch (error) { if (error.code !== 'ENOENT' && error.code !== 'EBUSY') throw error; }
+  }, 'native browser DevTools port');
+  const version = await fetch('http://127.0.0.1:' + port + '/json/version').then(response => response.json());
+  // Playwright turns on focus emulation per attached session. Leave native page visibility in charge.
+  relay = new WebSocketServer({ host: '127.0.0.1', port: 0 });
+  await once(relay, 'listening');
+  relay.on('connection', client => {
+    const native = new WebSocket(version.webSocketDebuggerUrl);
+    const opened = once(native, 'open');
+    client.on('message', async payload => {
+      const { id, sessionId, method } = JSON.parse(payload);
+      if (method === 'Emulation.setFocusEmulationEnabled') {
+        client.send(JSON.stringify({ id, sessionId, result: {} }));
+        return;
+      }
+      await opened;
+      if (native.readyState === WebSocket.OPEN) native.send(payload.toString());
+    });
+    native.on('message', payload => { if (client.readyState === WebSocket.OPEN) client.send(payload.toString()); });
+    native.on('close', () => client.close());
+    client.on('close', () => native.close());
+  });
+  browser = await chromium.connectOverCDP('ws://127.0.0.1:' + relay.address().port);
+  const [context] = browser.contexts();
   await context.addInitScript(captureAudio);
   const errors = [];
   context.on('page', page => page.on('pageerror', error => errors.push(error.message)));
@@ -121,10 +157,36 @@ try {
       await route.fulfill({ status: response.status, headers: output, body: Buffer.from(await response.arrayBuffer()) });
     });
   }
-  const overlay = await context.newPage();
+  const [overlay] = context.pages();
+  await overlay.setViewportSize({ width: 720, height: 1280 });
   await overlay.goto(origin + '/overlay/');
   await wait(() => gateway.overlayReady, 'Overlay attach');
-  const dashboard = await context.newPage();
+  const cdp = await context.newCDPSession(overlay);
+  await cdp.send('Emulation.setFocusEmulationEnabled', { enabled: false });
+  const overlayWindow = await cdp.send('Browser.getWindowForTarget');
+  const windowState = state => cdp.send('Browser.setWindowBounds',
+    { windowId: overlayWindow.windowId, bounds: { windowState: state } });
+  async function tab(url) {
+    const next = context.waitForEvent('page');
+    await overlay.evaluate(url => window.open(url, '_blank'), url);
+    const page = await next;
+    const session = await context.newCDPSession(page);
+    await session.send('Emulation.setFocusEmulationEnabled', { enabled: false });
+    return page;
+  }
+  async function foreground(page) {
+    if (page === overlay) await windowState('normal');
+    await page.bringToFront();
+    if (page !== overlay && !await overlay.evaluate(() => document.hidden)) {
+      await new Promise(resolve => setTimeout(resolve, 300));
+      if (!await overlay.evaluate(() => document.hidden)) {
+        await windowState('minimized');
+        return 'window-minimized';
+      }
+    }
+    return 'tab';
+  }
+  const dashboard = await tab(origin + '/dashboard/');
   await dashboard.setViewportSize({ width: 1150, height: 900 });
   await dashboard.goto(origin + '/dashboard/');
   await dashboard.locator('#username').fill('reliability_fixture');
@@ -132,8 +194,8 @@ try {
   await wait(() => launches === 1, 'fixture worker active');
   send({ type: 'connected', room });
   ingress.flush();
-  await wait(() => gateway.acknowledged === 1, 'open consumed');
   await overlay.bringToFront();
+  await wait(() => gateway.acknowledged === 1, 'open consumed');
   const measure = () => overlay.evaluate(() => window.pcmTap?.measure());
   const read = () => overlay.evaluate(() => ({ source: window.viewerReport.repoRevision, gpu: window.viewerReport.graphics,
     marks: window.viewerReport.audio?.marks ?? [], suppressed: window.viewerReport.audio?.suppressed,
@@ -164,16 +226,22 @@ try {
     await waitAck();
     seatLatencies.push(Date.now() - at);
   }
-  await joined('member', 11, 1);
-  await dashboard.bringToFront();
+  if (baseline) { packet('member', 11); await waitAck(); }
+  else await joined('member', 11, 1);
+  const hiddenMode = await foreground(dashboard);
+  const dashCDP = await context.newCDPSession(dashboard);
+  note('initial-switch', { hiddenMode, overlayWindow, dashboardWindow: await dashCDP.send('Browser.getWindowForTarget'),
+    overlay: await measure(), dashboard: await dashboard.evaluate(() => [document.hidden, document.hasFocus()]),
+    visibility: await overlay.evaluate(() => window.visibilityTrace) });
   await wait(async () => (await measure())?.hidden, 'real Dashboard foreground did not hide Overlay');
   if (baseline) {
     const sample = await wait(async () => {
-      const pcm = await measure(), state = await read();
-      return pcm.rms === 0 && state.state === 'MUTED' && pcm;
+      const pcm = await measure();
+      return pcm.rms === 0 && gateway.audioApplied?.state === 'MUTED' && pcm;
     }, 'baseline visibility-only mute');
-    note('baseline-hidden-mute', sample);
+    note('baseline-hidden-mute', { hiddenMode, ...sample });
   } else {
+    await overlay.evaluate(() => window.pcmTap.record());
     const hiddenAt = Date.now();
     await joined('chat', 12, 2, { content: 'Synthetic chat' });
     await dashboard.locator('#presence-autoJoinLike').check();
@@ -190,7 +258,7 @@ try {
     assert.equal(gateway.owner, owner);
     const hidden = await measure();
     assert(hidden.hidden && hidden.rms > .0001);
-    note('hidden-over-15s', { waitingMs, seatLatencies, ack: gateway.acknowledged, ...hidden });
+    note('hidden-over-15s', { hiddenMode, waitingMs, seatLatencies, ack: gateway.acknowledged, ...hidden });
     await dashboard.locator('#audio-mute').click();
     await wait(async () => (await measure())?.rms === 0 && gateway.audioApplied?.state === 'MUTED', 'silent after Master OFF');
     note('master-off-hidden', await measure());
@@ -198,17 +266,16 @@ try {
     await wait(async () => (await measure())?.rms > .0001, 'Master ON with prior gesture');
     note('master-on-hidden', await measure());
 
-    const other = await context.newPage();
-    await other.goto('about:blank');
-    await other.bringToFront();
+    await foreground(overlay);
+    const other = await tab('about:blank');
+    await foreground(other);
     await wait(async () => (await measure())?.hidden, 'other tab hides source');
     note('other-tab', await measure());
     const child = context.waitForEvent('page');
     await dashboard.evaluate(() => window.open('about:blank', '_blank', 'popup,width=360,height=320'));
     const popup = await child;
-    const cdp = await context.newCDPSession(overlay);
-    const overlayWindow = await cdp.send('Browser.getWindowForTarget');
     const remote = await context.newCDPSession(popup);
+    await remote.send('Emulation.setFocusEmulationEnabled', { enabled: false });
     const popupWindow = await remote.send('Browser.getWindowForTarget');
     await popup.bringToFront();
     assert.notEqual(popupWindow.windowId, overlayWindow.windowId, 'popup is a distinct native window');
@@ -227,7 +294,7 @@ try {
     const seenGifts = new Set();
     while (Date.now() - soakStart < soakMs) {
       const phase = segment++ % 3;
-      await (phase === 0 ? overlay : phase === 1 ? dashboard : other).bringToFront();
+      await foreground(phase === 0 ? overlay : phase === 1 ? dashboard : other);
       await wait(async () => (await measure()).hidden === (phase !== 0), 'actual visibility follows foreground');
       const before = (await read()).tick;
       const at = packet('member', 11);
@@ -244,7 +311,7 @@ try {
       note('soak-segment', { segment, ack: gateway.acknowledged, state: state.state, tick: state.tick, ...pcm });
     }
     const soakElapsed = Date.now() - soakStart;
-    await overlay.bringToFront();
+    await foreground(overlay);
     await wait(async () => !(await measure()).hidden, 'return visible');
     const hiddenVoices = (await read()).marks.filter(mark => mark.event === 'voice-start').length;
     assert.equal(hiddenVoices, 0, 'offscreen gifts must not replay upon return');
@@ -286,10 +353,16 @@ try {
     diagnostics: gateway.statusSnapshot().presenceDiagnostics };
   await writeFile(join(folder, (baseline ? 'baseline-' : '') + profile + '.json'), JSON.stringify(out, null, 2) + '\n');
 } finally {
-  await browser?.close();
+  if (browser?.isConnected()) {
+    const root = await browser.newBrowserCDPSession();
+    await root.send('Browser.close').catch(() => {});
+    await browser.close();
+  }
+  if (edge && edge.exitCode === null && edge.signalCode === null) { edge.kill(); await once(edge, 'exit'); }
+  if (relay) await new Promise(resolve => relay.close(resolve));
   await viewer?.close();
   gateway.release();
   server.closeAllConnections();
   await new Promise(done => server.close(done));
-  await rm(temp, { recursive: true, force: true });
+  await rm(temp, { recursive: true, force: true, maxRetries: 5 }).catch(() => {});
 }
