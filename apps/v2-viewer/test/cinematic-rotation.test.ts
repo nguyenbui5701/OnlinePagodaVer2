@@ -118,15 +118,16 @@ test('a blocked saved return reconnects to a reachable phase with no subsequent 
   assert(director.reachedFocus);
   anchor.copy(route(director.phase).position);
   blocked=true;
+  const status = () => director.status;
   director.step(3000,true);
-  assert.equal(director.status,'return-rejoin');
+  assert.equal(status(),'return-rejoin');
   let before=director.step(3020,true);
   for(let t=3040;t<=8000;t+=20) {
     const next=director.step(t,true);
-    if(director.status!=='idle') assert(next.position.distanceTo(before.position)<.25);
+    if(status()!=='idle') assert(next.position.distanceTo(before.position)<.25);
     before=next;
   }
-  assert.equal(director.status,'idle');
+  assert.equal(status(),'idle');
   assert(!director.blocked);
   assert(director.phase>1);
 });
