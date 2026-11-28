@@ -2,28 +2,29 @@
   "profile": "eco",
   "baseline": false,
   "source": "76d26f863bfe04319c08f9475b890f65a56a0a0e",
+  "phase": "complete",
   "browser": "158.0.4370.45",
   "seatLatencies": [
-    569,
-    568,
-    602
+    392,
+    529,
+    604
   ],
   "trace": [
     {
       "event": "foreground",
-      "sinceMs": 5210,
+      "sinceMs": 5081,
       "source": "76d26f863bfe04319c08f9475b890f65a56a0a0e",
       "gpu": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A68) Direct3D11 vs_5_0 ps_5_0, D3D11)",
-      "rms": 0.0003711885750674632,
-      "peak": 0.001027226448059082,
+      "rms": 0.0004580564939440682,
+      "peak": 0.0013257861137390137,
       "state": "running",
       "hidden": false,
       "focus": true,
-      "audioTime": 0.06133333333333333
+      "audioTime": 0.072
     },
     {
       "event": "b9-visual-smoke",
-      "sinceMs": 5498,
+      "sinceMs": 5347,
       "world": {
         "requestedTree": "R18A",
         "tree": "R18A",
@@ -36,10 +37,10 @@
     },
     {
       "event": "initial-switch",
-      "sinceMs": 6113,
+      "sinceMs": 5779,
       "hiddenMode": "tab",
       "overlayWindow": {
-        "windowId": 1829506795,
+        "windowId": 797985592,
         "bounds": {
           "left": 10,
           "top": 10,
@@ -49,7 +50,7 @@
         }
       },
       "dashboardWindow": {
-        "windowId": 1829506795,
+        "windowId": 797985592,
         "bounds": {
           "left": 10,
           "top": 10,
@@ -59,12 +60,12 @@
         }
       },
       "overlay": {
-        "rms": 0.004703451296243548,
-        "peak": 0.014173150062561035,
+        "rms": 0.004080868228456065,
+        "peak": 0.013186335563659668,
         "state": "running",
         "hidden": true,
         "focus": false,
-        "audioTime": 0.952
+        "audioTime": 0.76
       },
       "dashboard": [
         false,
@@ -72,32 +73,32 @@
       ],
       "visibility": [
         {
-          "at": 1795847515230,
+          "at": 1795848304688,
           "state": "visible",
           "focus": false
         },
         {
-          "at": 1795847518427,
+          "at": 1795848307837,
           "state": "visible",
           "focus": false
         },
         {
-          "at": 1795847518433,
+          "at": 1795848307843,
           "state": "visible",
           "focus": true
         },
         {
-          "at": 1795847518433,
+          "at": 1795848307843,
           "state": "visible",
           "focus": true
         },
         {
-          "at": 1795847520291,
+          "at": 1795848309499,
           "state": "visible",
           "focus": false
         },
         {
-          "at": 1795847520292,
+          "at": 1795848309501,
           "state": "hidden",
           "focus": false
         }
@@ -105,92 +106,92 @@
     },
     {
       "event": "hidden-over-15s",
-      "sinceMs": 26186,
+      "sinceMs": 25922,
       "hiddenMode": "tab",
-      "waitingMs": 573,
+      "waitingMs": 605,
       "seatLatencies": [
-        569,
-        568,
-        602
+        392,
+        529,
+        604
       ],
       "ack": 6,
-      "rms": 0.031987138912010105,
-      "peak": 0.06977438926696777,
+      "rms": 0.0035283992843932496,
+      "peak": 0.016909003257751465,
       "state": "running",
       "hidden": true,
       "focus": false,
-      "audioTime": 21.032
+      "audioTime": 20.912
     },
     {
       "event": "master-off-hidden",
-      "sinceMs": 26757,
+      "sinceMs": 26412,
       "rms": 0,
       "peak": 0,
       "state": "running",
       "hidden": true,
       "focus": false,
-      "audioTime": 21.6
+      "audioTime": 21.4
     },
     {
       "event": "master-on-hidden",
-      "sinceMs": 27171,
-      "rms": 0.00026147319663386237,
-      "peak": 0.0010603666305541992,
+      "sinceMs": 26818,
+      "rms": 0.00018517073563005686,
+      "peak": 0.0008780956268310547,
       "state": "running",
       "hidden": true,
       "focus": false,
-      "audioTime": 22.021333333333335
+      "audioTime": 21.810666666666666
     },
     {
       "event": "other-tab",
-      "sinceMs": 27268,
-      "rms": 0.000768898952550501,
-      "peak": 0.002059459686279297,
+      "sinceMs": 26915,
+      "rms": 0.0005934265783278108,
+      "peak": 0.0016881227493286133,
       "state": "running",
       "hidden": true,
       "focus": false,
-      "audioTime": 22.12
+      "audioTime": 21.901333333333334
     },
     {
       "event": "separate-window",
-      "sinceMs": 27423,
+      "sinceMs": 27039,
       "distinct": true,
-      "rms": 0.0009565454087907411,
-      "peak": 0.002800464630126953,
+      "rms": 0.001209946241347132,
+      "peak": 0.0033672451972961426,
       "state": "running",
       "hidden": true,
       "focus": false,
-      "audioTime": 22.272
+      "audioTime": 22.032
     },
     {
       "event": "native-minimize",
-      "sinceMs": 27455,
+      "sinceMs": 27066,
       "nativeWindowState": "minimized",
-      "rms": 0.0013685115605483317,
-      "peak": 0.004140734672546387,
+      "rms": 0.001015647890900011,
+      "peak": 0.002941131591796875,
       "state": "running",
       "hidden": true,
       "focus": false,
-      "audioTime": 22.301333333333332
+      "audioTime": 22.061333333333334
     },
     {
       "event": "soak-segment",
-      "sinceMs": 28684,
+      "sinceMs": 36244,
       "segment": 1,
       "ack": 7,
       "state": "running",
-      "tick": 26408,
-      "rms": 0.006491231933757184,
-      "peak": 0.019048869609832764,
+      "tick": 34013,
+      "rms": 0.001710924131263391,
+      "peak": 0.00469660758972168,
       "hidden": false,
       "focus": true,
-      "audioTime": 23.530666666666665
+      "audioTime": 31.232
     },
     {
       "event": "soak-complete",
-      "sinceMs": 32472,
-      "soakElapsed": 1193,
-      "maxGap": 530,
+      "sinceMs": 40242,
+      "soakElapsed": 9145,
+      "maxGap": 461,
       "seenOffscreenChimes": 1,
       "suspendedState": "suspended",
       "states": [
@@ -198,27 +199,27 @@
         "running"
       ],
       "recovered": {
-        "rms": 0.0009196998581138552,
-        "peak": 0.0040018558502197266,
+        "rms": 0.0004140055058336603,
+        "peak": 0.001347184181213379,
         "state": "running",
         "hidden": false,
         "focus": true,
-        "audioTime": 27.261333333333333
+        "audioTime": 35.16
       }
     },
     {
       "event": "disconnect-silent",
-      "sinceMs": 33875,
+      "sinceMs": 41646,
       "rms": 0,
       "peak": 0,
       "state": "running",
       "hidden": true,
       "focus": false,
-      "audioTime": 28.661333333333335
+      "audioTime": 36.57066666666667
     },
     {
       "event": "close-reload",
-      "sinceMs": 50634,
+      "sinceMs": 57986,
       "oldOwnerReleased": true,
       "gestureRequired": true
     }
@@ -226,11 +227,11 @@
   "audioMarks": [
     {
       "event": "sfx-start",
-      "wallMs": 7893.5,
-      "sceneMs": 6606,
-      "contextSec": 3.7013333333333334,
-      "room": "demo-1795847514221",
-      "request": "demo-1795847514221-gift-1",
+      "wallMs": 7656,
+      "sceneMs": 6314,
+      "contextSec": 3.501333333333333,
+      "room": "demo-1795848303757",
+      "request": "demo-1795848303757-gift-1",
       "effectSequence": 1,
       "variant": "generic",
       "seconds": 0.655,
@@ -247,11 +248,11 @@
     },
     {
       "event": "sfx-end",
-      "wallMs": 8551.400000002235,
-      "sceneMs": 7206,
-      "contextSec": 4.36,
-      "room": "demo-1795847514221",
-      "request": "demo-1795847514221-gift-1",
+      "wallMs": 8312.800000000745,
+      "sceneMs": 6913,
+      "contextSec": 4.16,
+      "room": "demo-1795848303757",
+      "request": "demo-1795848303757-gift-1",
       "effectSequence": 1,
       "variant": "generic",
       "ambienceGain": 1,
@@ -267,9 +268,9 @@
     },
     {
       "event": "idle-start",
-      "wallMs": 25191.900000002235,
-      "sceneMs": 23906,
-      "contextSec": 21,
+      "wallMs": 25053.39999999851,
+      "sceneMs": 23714,
+      "contextSec": 20.901333333333334,
       "variant": "lotus-bell-3",
       "seconds": 1.4,
       "ambienceGain": 1,
@@ -285,9 +286,9 @@
     },
     {
       "event": "idle-cut",
-      "wallMs": 25499.699999999255,
-      "sceneMs": 24207,
-      "contextSec": 21.301333333333332,
+      "wallMs": 25258.199999999255,
+      "sceneMs": 23913,
+      "contextSec": 21.101333333333333,
       "variant": "lotus-bell-3",
       "seconds": 0,
       "reason": "output-off",
@@ -304,12 +305,12 @@
     },
     {
       "event": "sfx-start",
-      "wallMs": 29292.800000000745,
-      "sceneMs": 28007,
-      "contextSec": 25.101333333333333,
-      "room": "demo-1795847514221",
-      "request": "demo-1795847514221-gift-2",
-      "actor": "demo-1795847514221-actor-1",
+      "wallMs": 37053.39999999851,
+      "sceneMs": 35714,
+      "contextSec": 32.90133333333333,
+      "room": "demo-1795848303757",
+      "request": "demo-1795848303757-gift-2",
+      "actor": "demo-1795848303757-actor-1",
       "seat": "seat-1",
       "effectSequence": 4,
       "variant": "generic",
@@ -327,12 +328,12 @@
     },
     {
       "event": "voice-start",
-      "wallMs": 29293.199999999255,
-      "sceneMs": 28007,
-      "contextSec": 25.101333333333333,
-      "room": "demo-1795847514221",
-      "request": "demo-1795847514221-gift-2",
-      "actor": "demo-1795847514221-actor-1",
+      "wallMs": 37053.699999999255,
+      "sceneMs": 35714,
+      "contextSec": 32.90133333333333,
+      "room": "demo-1795848303757",
+      "request": "demo-1795848303757-gift-2",
+      "actor": "demo-1795848303757-actor-1",
       "seat": "seat-1",
       "effectSequence": 4,
       "variant": "generic",
@@ -350,12 +351,12 @@
     },
     {
       "event": "sfx-end",
-      "wallMs": 29952,
-      "sceneMs": 28609,
-      "contextSec": 25.76,
-      "room": "demo-1795847514221",
-      "request": "demo-1795847514221-gift-2",
-      "actor": "demo-1795847514221-actor-1",
+      "wallMs": 37712.39999999851,
+      "sceneMs": 36315,
+      "contextSec": 33.56,
+      "room": "demo-1795848303757",
+      "request": "demo-1795848303757-gift-2",
+      "actor": "demo-1795848303757-actor-1",
       "seat": "seat-1",
       "effectSequence": 4,
       "variant": "generic",
@@ -372,12 +373,12 @@
     },
     {
       "event": "voice-end",
-      "wallMs": 31402.10000000149,
-      "sceneMs": 30108,
-      "contextSec": 27.21066666666667,
-      "room": "demo-1795847514221",
-      "request": "demo-1795847514221-gift-2",
-      "actor": "demo-1795847514221-actor-1",
+      "wallMs": 39162.800000000745,
+      "sceneMs": 37815,
+      "contextSec": 35.010666666666665,
+      "room": "demo-1795848303757",
+      "request": "demo-1795848303757-gift-2",
+      "actor": "demo-1795848303757-actor-1",
       "seat": "seat-1",
       "effectSequence": 4,
       "variant": "generic",

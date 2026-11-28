@@ -280,6 +280,7 @@ try {
     const hidden = await measure();
     assert(hidden.hidden && hidden.rms > .0001);
     note('hidden-over-15s', { hiddenMode, waitingMs, seatLatencies, ack: gateway.acknowledged, ...hidden });
+    await dashboard.bringToFront();
     await dashboard.locator('#audio-mute').click();
     await wait(async () => (await measure())?.rms === 0 && gateway.audioApplied?.state === 'MUTED', 'silent after Master OFF');
     note('master-off-hidden', await measure());
@@ -332,12 +333,21 @@ try {
       note('soak-segment', { segment, ack: gateway.acknowledged, state: state.state, tick: state.tick, ...pcm });
     }
     const soakElapsed = Date.now() - soakStart;
+    await overlay.evaluate(() => { window.beforeReturnFrameTiming = window.viewerReport.frameTiming; });
     await foreground(overlay);
-    await wait(async () => !(await measure()).hidden, 'return visible');
+    await wait(() => overlay.evaluate(() => !document.hidden &&
+      !!window.viewerReport.frameTiming && window.viewerReport.frameTiming !== window.beforeReturnFrameTiming),
+    'return visible with a fresh rendered frame');
     const hiddenVoices = (await read()).marks.filter(mark => mark.event === 'voice-start').length;
     assert.equal(hiddenVoices, 0, 'offscreen gifts must not replay upon return');
     gift(11);
-    await wait(async () => (await read()).marks.some(mark => mark.event === 'voice-start' && mark.seat === 'seat-1'), 'visible Gift Camera and approved voice');
+    try {
+      await wait(async () => (await read()).marks.some(mark => mark.event === 'voice-start' && mark.seat === 'seat-1'),
+        'visible Gift Camera and approved voice');
+    } catch (error) {
+      note('visible-gift-unavailable', { ...(await read()), ...(await measure()), ack: gateway.acknowledged });
+      throw error;
+    }
     await wait(async () => (await read()).marks.some(mark => mark.event === 'voice-end'), 'audible voice ends');
     const interruption = await overlay.evaluate(async () => {
       const { context, states } = window.pcmTap;
@@ -372,6 +382,7 @@ try {
     await overlay.close();
     await wait(() => gateway.owner === undefined, 'pagehide releases receiver');
     const restarted = other;
+    await restarted.bringToFront();
     await restarted.goto(origin + '/overlay/');
     await wait(() => gateway.overlayReady, 'new load claims receiver');
     assert.notEqual(gateway.owner, owner);
