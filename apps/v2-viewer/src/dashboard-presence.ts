@@ -1,8 +1,14 @@
-import { presenceKeys, readPresenceSnapshot, validIdleSeconds, type PresenceApplied, type PresenceSettings,
+import { presenceFlowKeys, presenceKeys, readPresenceSnapshot, validIdleSeconds, validPresenceFlow, type PresenceApplied, type PresenceSettings,
   type PresenceSnapshot } from '../../../packages/v2-events/src/presence.ts';
 import { GatewayError, postGateway } from './live-api.ts';
 
 const find = <T extends HTMLElement>(id: string) => document.getElementById(id)! as T;
+
+export type PresenceDiagnostics = {
+  ingress: Record<string, number>; ingressReports: number; mapped: number; dedup: number; observed: number; observedCapped: boolean;
+  queued: number; coalesced: number; pressure: number; throttled: number; overflow: number; sessionDrop: number;
+  offered: number; acknowledged: number; pending: number;
+};
 
 export function dashboardPresence() {
   const fields = find<HTMLFieldSetElement>('presence-fields');
@@ -12,6 +18,8 @@ export function dashboardPresence() {
   const alert = find('presence-message');
   const stateLine = find('presence-state');
   const counts = find('presence-counts');
+  const ingressLine = find('presence-ingress');
+  const flowLine = find('presence-flow');
   let desired: PresenceSnapshot | undefined;
   let applied: PresenceApplied | undefined;
   let sending = false;
@@ -84,9 +92,26 @@ export function dashboardPresence() {
     void save();
   });
 
-  return (snapshot?: PresenceSnapshot, report?: PresenceApplied) => {
+  return (snapshot?: PresenceSnapshot, report?: PresenceApplied, diagnostics?: PresenceDiagnostics, flow?: unknown) => {
     accept(snapshot);
     applied = report;
     display();
+    const d = diagnostics;
+    const i = d?.ingress;
+    ingressLine.textContent = !d || !i ? '' : (d.ingressReports ?
+      `Callback đã nhận · vào ${i.member}, chat ${i.chat}, Like ${i.like}, tổng phòng ${i.roomUser}, quà ${i.gift}. ` +
+        `Lọc · chưa có phòng ${i.noRoom}, sai phòng ${i.wrongRoom}, thời gian ${i.time}, cấu trúc ${i.schema}, ID người xem ${i.identity}, ID gói ${i.message}. ` +
+        `IPC · chuyển ${i.handoff}, quá tải ${i.ipcPressure}, lỗi ${i.ipcError}. `
+      : 'Chưa có báo cáo callback từ Connector. ') +
+      `Định danh quan sát ${d.observed}${d.observedCapped ? '+' : ''}. Gateway · đã ánh xạ ${d.mapped}, trùng ${d.dedup}, ` +
+      `đã xếp chuyển ${d.queued}, gộp ${d.coalesced}, quá tải ${d.pressure + d.overflow}, hạn nhịp ${d.throttled}, ngoài phiên ${d.sessionDrop}. ` +
+      `Đã gửi đến seq ${d.offered}, ACK ${d.acknowledged}, còn ${d.pending} gói.`;
+    if (validPresenceFlow(flow)) {
+      const s = Object.fromEntries(presenceFlowKeys.map((key, index) => [key, flow[index]]));
+      flowLine.textContent = `Engine nhận ${s.ingested}, từ chối ${s.rejected}, trùng ${s.duplicate}. ` +
+        `Ghế mới ${s.seated}, cập nhật ghế cũ ${s.alreadySeated}, vào hàng ${s.queued}, chuyển từ hàng sang ghế ${s.refilled}, ` +
+        `hết hạn chờ ${s.waitExpired}, hết hạn ghế ${s.seatExpired}, xóa khỏi hàng ${s.queueRemoved}, ` +
+        `hàng đầy ${s.capacity}, tự xếp ghế tắt ${s.disabled}. Tên đang thấy trên Overlay ${s.visibleNames}.`;
+    } else flowLine.textContent = '';
   };
 }

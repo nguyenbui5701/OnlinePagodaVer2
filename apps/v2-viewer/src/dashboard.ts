@@ -1,6 +1,6 @@
 import './dashboard.css';
 import { readPresenceSnapshot, validPresenceApplied, type PresenceApplied, type PresenceSnapshot } from '../../../packages/v2-events/src/presence.ts';
-import { dashboardPresence } from './dashboard-presence.ts';
+import { dashboardPresence, type PresenceDiagnostics } from './dashboard-presence.ts';
 import { dashboardAudio } from './dashboard-audio.ts';
 import { readAudioSnapshot, validAudioApplied, type AudioApplied, type AudioSnapshot } from './live-audio-settings.ts';
 import { GatewayError, postGateway, readSettings } from './live-api.ts';
@@ -11,6 +11,7 @@ type Status = {
   status: string; reason: string; viewerCount: number; counters: LiveCounters; dropped: number;
   deliveryUncertain: boolean; receiver: 'overlay' | 'legacy' | null;
   appliedRevision: number | null; overlayReady: boolean; applyPending: boolean; canApply: boolean; canConnect: boolean; canDisconnect: boolean;
+  presenceDiagnostics?: PresenceDiagnostics; presenceFlow?: unknown;
   presenceDesired?: PresenceSnapshot; presenceApplied?: PresenceApplied;
   world?: WorldApplied;
   desired: SettingsSnapshot; audioDesired?: AudioSnapshot; audioApplied?: AudioApplied | null; namedProvider?: string;
@@ -97,7 +98,7 @@ function loadDraft(snapshot: SettingsSnapshot) {
 
 function render(state?: Status) {
   current = state;
-  renderPresence(state?.presenceDesired, state?.presenceApplied);
+  renderPresence(state?.presenceDesired, state?.presenceApplied, state?.presenceDiagnostics, state?.presenceFlow);
   renderAudio(state?.audioDesired, state?.audioApplied, state?.namedProvider);
   const code = state?.status ?? 'GATEWAY_UNAVAILABLE';
   const titles: Record<string, string> = {

@@ -1,4 +1,4 @@
-import type { PresenceApplied, PresenceSnapshot } from '../../../packages/v2-events/src/presence.ts';
+import { presenceFlowKeys, type PresenceApplied, type PresenceSnapshot } from '../../../packages/v2-events/src/presence.ts';
 import type { CueRecord } from './audio/director.ts';
 import { liveBatchLimit, type LiveEntry } from './live-receiver.ts';
 import { DemoEngine, protocolVersion, type ChatCue, type DemoEvent, type Effect, type FocusIntent, type SessionEvent, type Snapshot } from '../../../packages/v2-events/src/engine.ts';
@@ -79,6 +79,11 @@ export class SliceDriver {
     this.observer.accept(this.engine.snapshot());
   }
 
+  presenceFlow(visibleNames: number) {
+    const counts = this.engine.presenceFlow;
+    if (counts) return presenceFlowKeys.map(key => key === 'visibleNames' ? visibleNames : counts[key]);
+  }
+
   get liveReceipt() {
     return { ack: this.liveAck, failed: this.liveDeliveryFailed };
   }
@@ -106,7 +111,7 @@ export class SliceDriver {
     if (counts && this.presenceRevision) return { revision: this.presenceRevision, ...counts };
   }
 
-  update(atMs: number) {
+  update(atMs: number, wallMs?: number) {
     if (this.pendingPresence) {
       this.engine.configurePresence(this.pendingPresence.settings);
       this.presenceRevision = this.pendingPresence.revision;
@@ -114,7 +119,7 @@ export class SliceDriver {
     }
     if (this.observeAudio) this.audioRecords = [];
     for (const { seq, event } of this.liveQueue.splice(0)) {
-      this.ingest({ ...event, atMs }, seq);
+      this.ingest({ ...event, atMs }, seq, wallMs !== undefined && wallMs - event.atMs > 5000);
       // A rejected final or session-limit cannot be acknowledged or skipped by a later sequence.
       if (!this.liveDeliveryFailed) this.liveAck = seq;
     }
@@ -140,8 +145,14 @@ export class SliceDriver {
       audio: this.observeAudio ? { epoch: this.audioEpoch, records: this.audioRecords } : undefined };
   }
 
-  private ingest(event: DemoEvent | SessionEvent, seq?: number) {
+  private ingest(event: DemoEvent | SessionEvent, seq?: number, staleAudio = false) {
     const result = this.engine.ingest(event);
+    const flow = this.engine.presenceFlow;
+    if (flow && seq !== undefined) {
+      flow.ingested++;
+      if (result.disposition === 'duplicate') flow.duplicate++;
+      else if (result.disposition !== 'accepted') flow.rejected++;
+    }
     if (event.type === 'session' && result.disposition === 'accepted') {
       this.chat = undefined;
       this.audioEpoch++;
@@ -157,10 +168,10 @@ export class SliceDriver {
     }
     const liveGift = seq !== undefined && event.type === 'gift' && event.phase === 'final' && result.disposition === 'accepted'
       ? { seq, roomEpoch: event.roomEpoch, connection: event.connection } : undefined;
-    this.record(event.atMs, result.effects, result.disposition, liveGift);
+    this.record(event.atMs, result.effects, result.disposition, liveGift, staleAudio);
   }
 
-  private record(atMs: number, effects: Effect[], disposition?: string, liveGift?: CueRecord['liveGift']) {
+  private record(atMs: number, effects: Effect[], disposition?: string, liveGift?: CueRecord['liveGift'], staleAudio = false) {
     const state = this.engine.snapshot();
     if (state.roomSessionId !== this.roomSessionId) {
       this.acknowledgements.clear();
@@ -175,7 +186,7 @@ export class SliceDriver {
       if (this.observeAudio && effect.type !== 'chatCue' && effect.type !== 'likeRipple') {
         const seatId = effect.type === 'giftFx' && effect.actorId
           ? state.avatars.find(avatar => avatar.actorId === effect.actorId && avatar.visible)?.seatId : undefined;
-        this.audioRecords.push({ effect, seatId, liveGift, sequence: ++this.audioSequence, epoch: this.audioEpoch,
+        this.audioRecords.push({ effect, seatId, liveGift, ...(staleAudio && { staleAudio }), sequence: ++this.audioSequence, epoch: this.audioEpoch,
           revision: state.revision, room: state.roomSessionId, disposition: disposition ?? 'advance' });
       }
     }

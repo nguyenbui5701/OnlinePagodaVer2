@@ -8,6 +8,7 @@ const labels: Record<AudioChannel, string> = {
 };
 const states: Record<AudioApplied['state'], string> = {
   LOCKED: 'Chờ bấm vào cảnh 3D', STARTING: 'Đang mở Web Audio', READY: 'Đã mở âm thanh', PLAYING: 'Đang phát giọng cảm ơn',
+  SUSPENDED: 'Trình duyệt tạm dừng Web Audio. Bấm vào cảnh 3D để mở lại.',
   MUTED: 'Đang tắt tiếng hoặc chờ mở lại', BLOCKED: 'Cửa sổ khác đang giữ quyền phát',
   UNAVAILABLE: 'Web Audio không khả dụng', DISCONNECTED: 'Đã mở Web Audio, đang chờ phiên LIVE',
 };

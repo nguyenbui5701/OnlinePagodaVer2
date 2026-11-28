@@ -57,7 +57,7 @@ export function readAudioSnapshot(v: unknown): AudioSnapshot | undefined {
       ['', 'MISSING', 'INVALID', 'UNSAVED'].includes(data.warning) && validAudioSettings(data.settings)) return data;
 }
 
-const audioStates = ['LOCKED', 'STARTING', 'READY', 'PLAYING', 'MUTED', 'BLOCKED', 'UNAVAILABLE', 'DISCONNECTED'] as const;
+const audioStates = ['LOCKED', 'STARTING', 'READY', 'PLAYING', 'MUTED', 'BLOCKED', 'UNAVAILABLE', 'DISCONNECTED', 'SUSPENDED'] as const;
 const clipStates = ['OFF', 'PENDING', 'LOADING', 'AVAILABLE', 'UNAVAILABLE'] as const;
 export type AudioApplied = { revision: number; state: typeof audioStates[number];
   thanks: typeof clipStates[number]; wishes: typeof clipStates[number] };

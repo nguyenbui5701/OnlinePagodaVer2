@@ -168,6 +168,13 @@ async function boot() {
   let nameplates: ReturnType<typeof createNameplates> | undefined;
   let routes: ReturnType<typeof createCinematicRoutes> | ReturnType<typeof createHeroRoutes> | undefined;
   let start: number | undefined;
+  let livePresentation: ReturnType<SliceDriver['update']> | undefined;
+  let liveClock: Worker | undefined;
+  let clockFallback: ReturnType<typeof setInterval> | undefined;
+  let lastTick = -Infinity;
+  let lastDraw = -Infinity;
+  let visibleNames = 0;
+  let shownFocus: { request: string; actorId: string; seatId: string } | undefined;
   let disposeLive: (() => void) | undefined;
   let overlayReceiver: ReturnType<typeof createLiveReceiver> | undefined;
   let overlayAttached = false;
@@ -200,6 +207,24 @@ async function boot() {
       if (!liveAudio) throw error;
       audio.fail();
     }
+  };
+  // Only this callback consumes LIVE entries and audio cues. Drawing reads its latest snapshot.
+  const advanceLive = (now: number) => {
+    if (disposed) return;
+    start ??= now;
+    if (now - lastTick > 5000) shownFocus = undefined;
+    lastTick = now;
+    const next = driver.update(Math.floor(Math.max(0, now - start)), Date.now());
+    livePresentation = next;
+    if (next.audio) {
+      const binding = shownFocus?.request === next.state.focus?.requestId ? shownFocus : undefined;
+      audioAction(manager => manager.frame(next.state, next.audio!, binding,
+        document.hidden || lost || now - lastDraw > 1000));
+    }
+    if (audio) report.audio = audio.report;
+    report.liveReceipt = driver.liveReceipt;
+    report.liveTickMs = next.state.atMs;
+    overlayReceiver?.tick(now);
   };
   const unlockAudio = (event: MouseEvent) => {
     if (!event.isTrusted || !navigator.userActivation?.isActive) return;
@@ -236,7 +261,7 @@ async function boot() {
     } else {
       if (!seats || !routes) return;
       const atMs = Math.round(seconds * 1000);
-      presentation = driver.update(atMs);
+      presentation = livePresentation ?? driver.update(atMs);
       seats.present(presentation.state.avatars, seconds, review?.idle);
       const reviewSeat = review?.seatId ? seats.seats.get(review.seatId) : seats.preview;
       if (review?.seatId && reviewSeat) {
@@ -299,13 +324,14 @@ async function boot() {
       const names = plates?.names ?? communityNames?.update(avatars, camera, Math.round(seconds * 1000),
         labels?.name ? selected?.presentation.actorId : undefined) ?? [];
       if (plates && manual) report.nameplates = plates.projections;
+      visibleNames = names.length;
       const slots = seats?.slots && occupancy(seats.slots, avatars);
       report.community = { slots, names, viewerCount, realActors: avatars.length,
         decorativeActors: slots?.filter(slot => slot.kind === 'DECORATIVE_ANONYMOUS').length ?? 0,
         batches: seats?.batches?.count ?? 0 };
     }
     const celebration = presentation && giftFx?.update(presentation.state, presentation.active, selected);
-    if (audio && presentation?.audio) {
+    if (audio && presentation?.audio && !overlaySettings) {
       const { state, audio: cues } = presentation;
       const binding = selected?.presentation;
       audioAction(manager => manager.frame(state, cues, binding));
@@ -363,6 +389,12 @@ async function boot() {
       reportRendererReady(false);
       throw error;
     }
+    if (overlayReceiver && !document.hidden && !shaderFailed) {
+      lastDraw = now;
+      const intent = presentation?.state.focus;
+      shownFocus = selected && intent && presentation?.state.camera.mode === 'GIFT_FOCUS'
+        ? { actorId: selected.presentation.actorId, seatId: selected.presentation.seatId, request: intent.requestId } : undefined;
+    }
     if (overlayReceiver) reportRendererReady(!lost && !shaderFailed && !gl.isContextLost() && renderer.info.render.calls > 0);
     if (last !== undefined && now > last) {
       frameTimes.push(now - last);
@@ -402,7 +434,8 @@ async function boot() {
     event.preventDefault();
     lost = true;
     reportRendererReady(false);
-    audioAction(manager => manager.suspend('webgl-context'));
+    if (!overlaySettings) audioAction(manager => manager.suspend('webgl-context'));
+    shownFocus = undefined;
     clearPresence();
     errors.push('webglcontextlost');
     cancelAnimationFrame(req);
@@ -427,6 +460,8 @@ async function boot() {
     disposeLive?.();
     canvas.removeEventListener('click', unlockAudio);
     window.removeEventListener('keydown', emergencyMute);
+    liveClock?.terminate();
+    clearInterval(clockFallback);
     audio?.dispose();
     cancelAnimationFrame(req);
     canvas.removeEventListener('webglcontextlost', contextLost);
@@ -580,11 +615,13 @@ async function boot() {
     if (!lost) show('');
     if (overlaySettings) {
       overlayReceiver = createLiveReceiver({
+        externalClock: true,
         feed: entries => driver.enqueueLive(entries), sourceLost: () => driver.loseLiveSource(),
         receipt: () => driver.liveReceipt,
         audioStatus: () => audio?.applied,
         worldStatus: () => world,
         presenceStatus: () => driver.presenceApplied,
+        presenceFlow: () => driver.presenceFlow(document.hidden || performance.now() - lastDraw > 1000 ? 0 : visibleNames),
         status: state => {
           updateLiveReport(report, state);
           const presenceSettings = readPresenceSnapshot(state.poll?.presenceDesired);
@@ -596,6 +633,17 @@ async function boot() {
         },
       });
       disposeLive = overlayReceiver.dispose;
+      advanceLive(performance.now());
+      const tick = () => advanceLive(performance.now());
+      const fallback = () => {
+        liveClock?.terminate();
+        if (!disposed) clockFallback ??= setInterval(tick, 100);
+      };
+      try {
+        liveClock = new Worker(new URL('./live-clock-worker.ts', import.meta.url), { type: 'module' });
+        liveClock.onmessage = tick;
+        liveClock.onerror = fallback;
+      } catch { fallback(); }
     } else if (liveOperator) {
       disposeLive = createLiveControls(report, entries => driver.enqueueLive(entries),
         () => driver.loseLiveSource(), () => driver.liveReceipt);

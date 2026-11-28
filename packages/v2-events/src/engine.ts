@@ -74,6 +74,8 @@ export class DemoEngine {
     this.seatingChanged = true;
   }
 
+  get presenceFlow() { return this.seating?.flow; }
+
   get presenceCounts() {
     if (this.seating) return { occupied: this.registry.size, ...this.seating.counts };
   }
@@ -90,7 +92,11 @@ export class DemoEngine {
     this.scheduler.advance(atMs, id => this.registry.contains(id), effects);
     if (this.seating) {
       const ttl = this.seating.ttl;
-      if (ttl !== undefined) this.registry.expire(atMs, ttl, this.scheduler.reserved());
+      if (ttl !== undefined) {
+        const before = this.registry.size;
+        this.registry.expire(atMs, ttl, this.scheduler.reserved());
+        this.seating.flow.seatExpired += before - this.registry.size;
+      }
       if (refill && this.connected) this.seating.refill(this.registry, atMs, this.revision);
     } else this.registry.expire(atMs, this.config.avatarTTLms, this.scheduler.reserved());
     return effects;
@@ -147,7 +153,8 @@ export class DemoEngine {
     } else if (event.type === 'chat' || event.type === 'member') {
       if (!validViewer(event.viewer)) return result('invalid');
     } else if (event.type === 'like' || event.type === 'room') {
-      if (!natural(event.count) || (event.type === 'like' && event.count === 0)) return result('invalid');
+      if (!natural(event.count) || (event.type === 'like' && (event.count === 0 ||
+          (event.viewer !== undefined && !validViewer(event.viewer))))) return result('invalid');
     } else return result('invalid');
 
     if (this.seen.size >= this.config.maxSessionKeys) return result('session-limit');
@@ -184,6 +191,7 @@ export class DemoEngine {
         this.viewerCount = event.count;
         break;
       case 'like':
+        if (event.viewer) this.seating?.join(this.registry, event.viewer, 'autoJoinLike', this.atMs, this.revision);
         if (this.atMs >= this.nextRippleAt) {
           this.nextRippleAt = this.atMs + this.config.likeIntervalMs;
           effects.push({ type: 'likeRipple', atMs: this.atMs });

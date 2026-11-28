@@ -8,45 +8,55 @@ const countIn = (value, min, max) => Number.isSafeInteger(value) && value >= min
 export const normalizeUsername = value => typeof value === 'string' && /^@?[a-zA-Z0-9_.]{1,24}$/.test(value.trim())
   ? value.trim().replace(/^@/, '').toLowerCase() : undefined;
 
-export function inScope(raw, roomId, startedAt, now = Date.now()) {
-  if (!raw || typeof raw !== 'object' || !numericId(roomId)) return false;
+function scopeRejection(raw, roomId, startedAt, now) {
+  if (!numericId(roomId)) return 'noRoom';
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return 'schema';
   const common = raw.common;
-  if (common?.roomId && common.roomId !== '0' && common.roomId !== roomId) return false;
-  const time = Number(numericId(common?.createTime));
+  if (common?.roomId && common.roomId !== '0' && common.roomId !== roomId) return 'wrongRoom';
+  const value = common?.createTime;
+  if (value === undefined || value === '0' || value === '') return;
+  const time = Number(numericId(value));
+  if (!Number.isSafeInteger(time)) return 'schema';
   const timeMs = time < 1e12 ? time * 1000 : time;
-  return !Number.isFinite(timeMs) || (timeMs >= startedAt - 5000 && timeMs <= now + 60_000);
+  if (timeMs < startedAt - 5000 || timeMs > now + 60_000) return 'time';
 }
 
-export function mapEvent(kind, raw, roomId, startedAt, now = Date.now()) {
-  if (!kinds.includes(kind) || !inScope(raw, roomId, startedAt, now)) return;
+export function inScope(raw, roomId, startedAt, now = Date.now()) {
+  return !scopeRejection(raw, roomId, startedAt, now);
+}
+
+export function mapEvent(kind, raw, roomId, startedAt, now = Date.now(), reject = () => {}) {
+  const reason = scopeRejection(raw, roomId, startedAt, now);
+  if (reason || !kinds.includes(kind)) { reject(reason ?? 'schema'); return; }
   const message = numericId(raw.common?.msgId);
   const eventId = message && stable(kind, roomId, message);
 
   if (kind === 'roomUser') {
     const count = typeof raw.total === 'string' && /^\d{1,12}$/.test(raw.total) ? Number(raw.total) : NaN;
     if (eventId && countIn(count, 0, 1_000_000_000)) return { type: 'room', eventId, count };
-    return;
-  }
-  if (kind === 'like') {
-    if (eventId && countIn(raw.count, 1, 1_000_000)) return { type: 'like', eventId, count: raw.count };
+    reject(eventId ? 'schema' : 'message');
     return;
   }
 
-  // Numeric provider identity stays stable when a viewer renames their handle or display name.
+  // Connector v3 exposes these uint64 fields as strings. Never use aliases as identity.
   const user = numericId(raw.user?.id);
-  if (!user) return;
+  if (kind === 'like' && !user && eventId && countIn(raw.count, 1, 1_000_000)) {
+    return { type: 'like', eventId, count: raw.count };
+  }
+  if (!user) { reject('identity'); return; }
   const name = [raw.user.nickname, raw.user.displayId].find(value => typeof value === 'string' && value.trim());
   const storedName = displayName(name || 'Khách TikTok');
   const viewer = { userKey: stable('tt', roomId, user), name: storedName === 'Khách DEMO' ? 'Khách TikTok' : storedName };
+  if (kind === 'like' && eventId && countIn(raw.count, 1, 1_000_000)) return { type: 'like', eventId, count: raw.count, viewer };
   if (kind === 'member' && eventId) return { type: 'member', eventId, viewer };
   if (kind === 'chat') {
     const chatText = sanitizeChat(raw.content)?.text;
     if (eventId && chatText) return { type: 'chat', eventId, viewer, chatText };
   }
-  if (kind !== 'gift') return;
+  if (kind !== 'gift') { reject(eventId ? 'schema' : 'message'); return; }
   const giftId = numericId(raw.giftId);
   if (!giftId || !countIn(raw.repeatCount, 1, 9999) || !countIn(raw.repeatEnd, 0, 1) ||
-      !countIn(raw.gift?.type, 0, 100)) return;
+      !countIn(raw.gift?.type, 0, 100)) { reject('schema'); return; }
   const group = numericId(raw.groupId);
   const order = numericId(raw.orderId);
   const recipient = numericId(raw.toUser?.id) || roomId;
@@ -55,7 +65,7 @@ export function mapEvent(kind, raw, roomId, startedAt, now = Date.now()) {
   // Group correlates progress and final. An order also identifies a final with no observed progress.
   const groupKey = combo && group && stable('group', roomId, user, giftId, group, recipient);
   const streakId = groupKey || (phase === 'final' && order && stable('order', roomId, user, giftId, order, recipient));
-  if ((combo && !streakId) || (!streakId && !message)) return;
+  if ((combo && !streakId) || (!streakId && !message)) { reject('message'); return; }
   return {
     type: 'gift', eventId: stable('gift', roomId, streakId || message, phase, phase === 'progress' ? raw.repeatCount : null),
     viewer, giftId, count: raw.repeatCount, phase, ...(streakId ? { streakId } : {})

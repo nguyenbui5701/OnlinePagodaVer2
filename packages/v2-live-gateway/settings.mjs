@@ -6,7 +6,7 @@ import { liveDefaults, migrateVisualSettings, validSettings } from '../../apps/v
 
 import { audioDefaults, patchAudio, validAudioSettings } from '../../apps/v2-viewer/src/live-audio-settings.ts';
 
-import { patchPresence, presenceDefaults, validPresenceSettings } from '../v2-events/src/presence.ts';
+import { migratePresenceSettings, patchPresence, presenceDefaults, validPresenceSettings } from '../v2-events/src/presence.ts';
 
 const presencePath = fileURLToPath(new URL('./data/presence-settings.json', import.meta.url));
 const audioPath = fileURLToPath(new URL('./data/audio-settings.json', import.meta.url));
@@ -19,7 +19,8 @@ export class SettingsStore {
     try {
       if (statSync(path).size > 4096) throw new Error('settings file too large');
       const data = JSON.parse(readFileSync(path, 'utf8'));
-      const settings = validate === validSettings ? migrateVisualSettings(data?.settings) : data?.settings;
+      const settings = validate === validSettings ? migrateVisualSettings(data?.settings) :
+        validate === validPresenceSettings ? migratePresenceSettings(data?.settings) : data?.settings;
       if (data?.version !== 1 || !Number.isSafeInteger(data.revision) || data.revision < 1 ||
           !validate(settings)) throw new Error('invalid settings');
       this.snapshot = { revision: data.revision, settings, warning: '' };
