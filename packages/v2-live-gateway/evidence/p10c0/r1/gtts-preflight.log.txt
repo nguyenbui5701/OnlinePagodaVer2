@@ -1,0 +1,89 @@
+>>> default shell on DEV
+{
+  "enabled": false,
+  "interpreterSelection": "PATH",
+  "ffmpegSelection": "PATH",
+  "dependencies": {
+    "python": "C:\\Python\\Python310\\python.exe",
+    "pythonVersion": "3.10.5",
+    "gttsReady": false,
+    "ffmpeg": "C:\\Users\\<local>\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.1.1-full_build\\bin\\ffmpeg.EXE",
+    "ffmpegReady": true
+  },
+  "reasons": [
+    "GATEWAY_LIVE_OPT_IN_DISABLED",
+    "GTTS_2_5_4_MISSING_OR_IMPORT_FAILED"
+  ],
+  "provider": "NOT_PROBED",
+  "serverProcess": "NOT_INSPECTED"
+}
+exit=1
+>>> flag enabled, default Python
+{
+  "enabled": true,
+  "interpreterSelection": "PATH",
+  "ffmpegSelection": "PATH",
+  "dependencies": {
+    "python": "C:\\Python\\Python310\\python.exe",
+    "pythonVersion": "3.10.5",
+    "gttsReady": false,
+    "ffmpeg": "C:\\Users\\<local>\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.1.1-full_build\\bin\\ffmpeg.EXE",
+    "ffmpegReady": true
+  },
+  "reasons": [
+    "GTTS_2_5_4_MISSING_OR_IMPORT_FAILED"
+  ],
+  "provider": "NOT_PROBED",
+  "serverProcess": "NOT_INSPECTED"
+}
+exit=1
+>>> unavailable interpreter
+{
+  "enabled": true,
+  "interpreterSelection": "TTS_PYTHON",
+  "ffmpegSelection": "PATH",
+  "reasons": [
+    "GTTS_PYTHON_UNAVAILABLE"
+  ],
+  "provider": "NOT_PROBED",
+  "serverProcess": "NOT_INSPECTED"
+}
+exit=1
+>>> invalid explicit FFmpeg override
+{
+  "enabled": true,
+  "interpreterSelection": "PATH",
+  "ffmpegSelection": "FFMPEG_PATH",
+  "dependencies": {
+    "python": "C:\\Python\\Python310\\python.exe",
+    "pythonVersion": "3.10.5",
+    "gttsReady": false,
+    "ffmpeg": "C:\\Users\\<local>\\AppData\\Local\\Temp\\missing-voice-ffmpeg.exe",
+    "ffmpegReady": false
+  },
+  "reasons": [
+    "GTTS_2_5_4_MISSING_OR_IMPORT_FAILED",
+    "FFMPEG_MISSING_OR_FILTER_FAILED"
+  ],
+  "provider": "NOT_PROBED",
+  "serverProcess": "NOT_INSPECTED"
+}
+exit=1
+>>> isolated venv pinned gTTS 2.5.4 and actual FFmpeg, offline probe
+{
+  "enabled": true,
+  "interpreterSelection": "TTS_PYTHON",
+  "ffmpegSelection": "PATH",
+  "dependencies": {
+    "python": "C:\\Users\\<local>\\AppData\\Local\\Temp\\pagoda-c0r1-tts-28080\\Scripts\\python.exe",
+    "pythonVersion": "3.10.5",
+    "gtts": "2.5.4",
+    "gttsReady": true,
+    "ffmpeg": "C:\\Users\\<local>\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.1.1-full_build\\bin\\ffmpeg.EXE",
+    "ffmpegReady": true
+  },
+  "reasons": [],
+  "provider": "NOT_PROBED",
+  "serverProcess": "NOT_INSPECTED"
+}
+exit=0

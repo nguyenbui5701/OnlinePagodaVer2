@@ -1,0 +1,298 @@
+{
+  "execution": "307b3fbd63f7bbe55949fb36f6180ab592377fca",
+  "legacyExecution": "2dca7f7518095aca2278fa738f4d3e53bc636269",
+  "nativeGiftMotion": {
+    "samples": 3463,
+    "discardedGaps": 0,
+    "eyeSpeed": 2.34629912647237,
+    "eyeAcceleration": 6.367311282298629,
+    "aimRadPerS": 1.249903754435952,
+    "fovDegPerS": 59.99665027329238,
+    "frameStep": 0.08165120960121117
+  },
+  "legacyHeroMotion": {
+    "samples": 112,
+    "discardedGaps": 0,
+    "eyeSpeed": 74.04092309227406,
+    "eyeAcceleration": 347.2096686452498,
+    "aimRadPerS": 35.301549325261874,
+    "fovDegPerS": 10.133221683955558,
+    "frameStep": 2.5490712368515513
+  },
+  "shots": [
+    {
+      "shot": "HERO_WIDE",
+      "phase": 5.027599999999998,
+      "resumed": 5.4143352083333305,
+      "ack": 5,
+      "styles": [
+        "focus-optical"
+      ],
+      "plannedBridges": [
+        {
+          "status": "focus-optical",
+          "distance": 0,
+          "durationMs": 1406.9498459436036,
+          "phase": 5.380499999999998
+        },
+        {
+          "status": "return",
+          "distance": 0,
+          "durationMs": 1406.9498459436036,
+          "phase": 5.380499999999998
+        }
+      ],
+      "visible": [
+        {
+          "name": "A",
+          "seat": "seat-1",
+          "delayAfterFirstFocusFrameMs": 715.2000000000007
+        }
+      ],
+      "motion": {
+        "samples": 433,
+        "discardedGaps": 0,
+        "eyeSpeed": 1.7689004066315834,
+        "eyeAcceleration": 4.84442545785643,
+        "aimRadPerS": 0.3761792316302216,
+        "fovDegPerS": 59.97662340677411,
+        "frameStep": 0.0459194164490621
+      }
+    },
+    {
+      "shot": "COMMUNITY",
+      "phase": 17.115000000000016,
+      "resumed": 17.528340008333355,
+      "ack": 6,
+      "styles": [
+        "focus-optical"
+      ],
+      "plannedBridges": [
+        {
+          "status": "focus-optical",
+          "distance": 0,
+          "durationMs": 1143.7510411227388,
+          "phase": 17.46070000000002
+        },
+        {
+          "status": "return",
+          "distance": 0,
+          "durationMs": 1143.7510411227388,
+          "phase": 17.46070000000002
+        }
+      ],
+      "visible": [
+        {
+          "name": "A",
+          "seat": "seat-1",
+          "delayAfterFirstFocusFrameMs": 444.40000000000146
+        }
+      ],
+      "motion": {
+        "samples": 421,
+        "discardedGaps": 0,
+        "eyeSpeed": 1.135804230699137,
+        "eyeAcceleration": 3.169995030501694,
+        "aimRadPerS": 0.2644385501274365,
+        "fovDegPerS": 59.986138965516496,
+        "frameStep": 0.023738308421613615
+      }
+    },
+    {
+      "shot": "LOW_WATER_KOI",
+      "phase": 27.04240000000002,
+      "resumed": 27.55287613333335,
+      "ack": 7,
+      "styles": [
+        "focus-optical"
+      ],
+      "plannedBridges": [
+        {
+          "status": "focus-optical",
+          "distance": 0,
+          "durationMs": 986.4227997142032,
+          "phase": 27.38830000000002
+        },
+        {
+          "status": "return",
+          "distance": 0,
+          "durationMs": 986.4227997142032,
+          "phase": 27.38830000000002
+        }
+      ],
+      "visible": [
+        {
+          "name": "A",
+          "seat": "seat-1",
+          "delayAfterFirstFocusFrameMs": 291.70000000000437
+        }
+      ],
+      "motion": {
+        "samples": 427,
+        "discardedGaps": 0,
+        "eyeSpeed": 1.288771287120523,
+        "eyeAcceleration": 3.3421495683272227,
+        "aimRadPerS": 0.3071237794626272,
+        "fovDegPerS": 59.992282894421734,
+        "frameStep": 0.02693531990082081
+      }
+    },
+    {
+      "shot": "AERIAL_RING",
+      "phase": 40.08800000000016,
+      "resumed": 40.46048240833349,
+      "ack": 8,
+      "styles": [
+        "focus-optical"
+      ],
+      "plannedBridges": [
+        {
+          "status": "focus-optical",
+          "distance": 0,
+          "durationMs": 1500.2133174515177,
+          "phase": 40.454700000000166
+        },
+        {
+          "status": "return",
+          "distance": 0,
+          "durationMs": 1500.2133174515177,
+          "phase": 40.454700000000166
+        }
+      ],
+      "visible": [
+        {
+          "name": "A",
+          "seat": "seat-1",
+          "delayAfterFirstFocusFrameMs": 798.5
+        }
+      ],
+      "motion": {
+        "samples": 478,
+        "discardedGaps": 0,
+        "eyeSpeed": 2.232378225610073,
+        "eyeAcceleration": 6.075902558302362,
+        "aimRadPerS": 0.15798101344020316,
+        "fovDegPerS": 59.99665027329238,
+        "frameStep": 0.06183687684939252
+      }
+    },
+    {
+      "shot": "UNDER_TREE_GOLD",
+      "phase": 51.07120000000028,
+      "resumed": 51.5691803000003,
+      "ack": 9,
+      "styles": [
+        "focus-optical"
+      ],
+      "plannedBridges": [
+        {
+          "status": "focus-optical",
+          "distance": 0,
+          "durationMs": 1306.9092385264078,
+          "phase": 51.54200000000029
+        },
+        {
+          "status": "return",
+          "distance": 0,
+          "durationMs": 1306.9092385264078,
+          "phase": 51.54200000000029
+        }
+      ],
+      "visible": [
+        {
+          "name": "A",
+          "seat": "seat-1",
+          "delayAfterFirstFocusFrameMs": 624.8000000000029
+        }
+      ],
+      "motion": {
+        "samples": 327,
+        "discardedGaps": 0,
+        "eyeSpeed": 1.7623969249758507,
+        "eyeAcceleration": 5.552908392667005,
+        "aimRadPerS": 1.249903754435952,
+        "fovDegPerS": 50.35302564583877,
+        "frameStep": 0.04899463451433377
+      }
+    },
+    {
+      "shot": "FAR_ATMOSPHERE",
+      "phase": 61.12360000000036,
+      "resumed": 61.48711470000037,
+      "ack": 13,
+      "styles": [
+        "focus-optical"
+      ],
+      "plannedBridges": [
+        {
+          "status": "focus-optical",
+          "distance": 0,
+          "durationMs": 1532.9462084879806,
+          "phase": 61.46940000000037
+        },
+        {
+          "status": "focus-optical",
+          "distance": 0,
+          "durationMs": 432.57041353304794,
+          "phase": 61.46940000000037
+        },
+        {
+          "status": "focus-optical",
+          "distance": 0,
+          "durationMs": 655.2498398923938,
+          "phase": 61.46940000000037
+        },
+        {
+          "status": "return",
+          "distance": 0,
+          "durationMs": 1532.9462084879806,
+          "phase": 61.46940000000037
+        },
+        {
+          "status": "focus-optical",
+          "distance": 0,
+          "durationMs": 388.18463042505005,
+          "phase": 61.46940000000037
+        }
+      ],
+      "visible": [
+        {
+          "name": "A",
+          "seat": "seat-1",
+          "delayAfterFirstFocusFrameMs": 826.1999999999971
+        },
+        {
+          "name": "B",
+          "seat": "seat-2",
+          "delayAfterFirstFocusFrameMs": 0
+        },
+        {
+          "name": "C",
+          "seat": "seat-3",
+          "delayAfterFirstFocusFrameMs": 0
+        },
+        {
+          "name": "A",
+          "seat": "seat-1",
+          "delayAfterFirstFocusFrameMs": 0
+        }
+      ],
+      "motion": {
+        "samples": 1377,
+        "discardedGaps": 0,
+        "eyeSpeed": 2.34629912647237,
+        "eyeAcceleration": 6.367311282298629,
+        "aimRadPerS": 1.249587207647176,
+        "fovDegPerS": 59.98574168926682,
+        "frameStep": 0.08165120960121117
+      }
+    }
+  ],
+  "blockedReturn": {
+    "recoveryMs": 1312,
+    "savedPhase": 0.2,
+    "rejoinedPhase": 1.300456533333333,
+    "samples": 618
+  },
+  "returnInterrupted": true
+}
